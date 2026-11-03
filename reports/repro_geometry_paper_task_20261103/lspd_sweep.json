@@ -1,0 +1,90 @@
+{
+  "reproduction": "geometry_lspd_grid_sweep",
+  "run": "runs\\confirmation100_baseline_20261102T204500Z",
+  "n_tasks": 30,
+  "sweeps": [
+    {
+      "grid": 4,
+      "cell_tokens": 256,
+      "eps": 1e-06,
+      "auc_genuine_vs_forged": 0.14444444444444443,
+      "genuine_mean": 1.4052425934889023,
+      "forged_mean": 0.9839431068651938,
+      "control_mean": 0.983218421291235,
+      "control_gap": 0.4220241721976673
+    },
+    {
+      "grid": 4,
+      "cell_tokens": 256,
+      "eps": 0.01,
+      "auc_genuine_vs_forged": 0.14444444444444443,
+      "genuine_mean": 1.381178520609564,
+      "forged_mean": 0.9686674909304381,
+      "control_mean": 0.9680424469635494,
+      "control_gap": 0.41313607364601457
+    },
+    {
+      "grid": 8,
+      "cell_tokens": 64,
+      "eps": 1e-06,
+      "auc_genuine_vs_forged": 0.18666666666666668,
+      "genuine_mean": 1.9451493455837552,
+      "forged_mean": 1.627947704359552,
+      "control_mean": 1.6583756062944617,
+      "control_gap": 0.2867737392892935
+    },
+    {
+      "grid": 8,
+      "cell_tokens": 64,
+      "eps": 0.01,
+      "auc_genuine_vs_forged": 0.18555555555555556,
+      "genuine_mean": 1.903454496288719,
+      "forged_mean": 1.5978060291560838,
+      "control_mean": 1.6271137374939935,
+      "control_gap": 0.2763407587947255
+    },
+    {
+      "grid": 16,
+      "cell_tokens": 16,
+      "eps": 1e-06,
+      "auc_genuine_vs_forged": 0.48,
+      "genuine_mean": 3.284135883133298,
+      "forged_mean": 3.3338500795032244,
+      "control_mean": 3.375163390582991,
+      "control_gap": 0.0910275074496929
+    },
+    {
+      "grid": 16,
+      "cell_tokens": 16,
+      "eps": 0.01,
+      "auc_genuine_vs_forged": 0.5055555555555555,
+      "genuine_mean": 3.130161899310107,
+      "forged_mean": 3.1957944297656597,
+      "control_mean": 3.2352196421560104,
+      "control_gap": 0.10505774284590341
+    },
+    {
+      "grid": 32,
+      "cell_tokens": 4,
+      "eps": 1e-06,
+      "auc_genuine_vs_forged": 0.9755555555555555,
+      "genuine_mean": 20.399868040399635,
+      "forged_mean": 21.20082149983093,
+      "control_mean": 21.24396871250858,
+      "control_gap": 0.8441006721089437
+    },
+    {
+      "grid": 32,
+      "cell_tokens": 4,
+      "eps": 0.01,
+      "auc_genuine_vs_forged": 0.9977777777777778,
+      "genuine_mean": 7.754107563252258,
+      "forged_mean": 8.584438956652649,
+      "control_mean": 8.599658456660666,
+      "control_gap": 0.8455508934084088
+    }
+  ],
+  "paper_reference": {
+    "lspd_auc_gs_sdxl_20updates": 0.997
+  }
+}
