@@ -1,0 +1,34 @@
+{
+  "started_at_utc": "2026-11-02T20:46:04.629284+00:00",
+  "outcome": {
+    "completed": true,
+    "exit_code": 0,
+    "stop_reason": null,
+    "process_wall_seconds": 1174.4497663490183,
+    "artifacts": {
+      "candidate.png": "205535eac00b4a5f9b5fe83bf761c4fa46567ec8a24f309c19ca0cafdf0797e1",
+      "candidates_frozen.json": "c74d52d3ac3a403e1d61e3967b45fd17fb6bb1eb9f68042e47dfd6cf30a8cd1f",
+      "claim.json": "b284dcf67974d3c24bbb6500168ecdc40ee51d160b8650ada19df59080c498d4",
+      "device_preimport.json": "f57dd1c50a43df682a5aa8865e5609b45c5677aa91a13b29a819e366301add22",
+      "initial_z0.npy": "fa4082f07cfd986b5c5a653f9f70e0a34c05d9076876bb7c5c949fe10d38a896",
+      "optimization.json": "27c13937648d5d269f7615b6a938e92e94ee406b8396bfd7d3b20d0ecf183c3d",
+      "parameter_flags.json": "3329893e3364ce8f6ff8b936ba8f88654199b7ba3bb9f550b05f54cd4ca572a7",
+      "process.json": "cee1add2160041283a141e392d81877a253c39c504f0daa7afa7668d4ea389cb",
+      "reference_proxy_inverse.npy": "0504961c2ec98e524a79c6df1bcde891f99b929f1e48ce10f65fbf69d23a62f5",
+      "stderr.log": "f3a5568765beeaed8a348f35bc7146c9cf7a4fc5d3f925260b143f3060b61ee3",
+      "stdout.log": "12061eac1269ab2c336891daf0af54683cf99c7bd44fa8edf1b8f8b6c9d7f70f",
+      "summary.json": "87190669408fa9b209dde2a86f843b0bf8d8e23e427b2705ce5da3558fec5424",
+      "update_20.png": "fa714e485c3b193118e8577baa72c40c96cae73c15747e0a883f1ba871df9823",
+      "update_20_adam_avg.npy": "a084a5de740f18ac12b51b213bb9d325b736080329b33740489948dd85cb03e6",
+      "update_20_adam_sq.npy": "59df064808af7116a420add072af604a44ee6aa2228154f4e57447e72a23c93c",
+      "update_20_latent.npy": "65a9adbd14af1f2ff2f64a228b00cfb785a5ad9257b44f564ef1a3ebe0c132b3",
+      "update_30.png": "205535eac00b4a5f9b5fe83bf761c4fa46567ec8a24f309c19ca0cafdf0797e1",
+      "update_30_adam_avg.npy": "a6e7b96fc1f1ba0f3d53a716f3dfbfe1044385f697713cf3c776a29208988b17",
+      "update_30_adam_sq.npy": "235d5f396823568adae2f5945f713a7c8797fde02204645808580ae9c2eabcd8",
+      "update_30_latent.npy": "d60fb4f3b74badfd52c78803f3dee21105542c97010663e73845aef8d86e25af"
+    },
+    "candidate_sha256": "205535eac00b4a5f9b5fe83bf761c4fa46567ec8a24f309c19ca0cafdf0797e1"
+  },
+  "gpu_index": 5,
+  "gpu_uuid": "GPU-e6f35928-0155-f121-e707-1eaf3c14965c"
+}

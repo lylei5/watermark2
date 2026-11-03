@@ -1,0 +1,34 @@
+{
+  "started_at_utc": "2026-11-02T21:05:49.411091+00:00",
+  "outcome": {
+    "completed": true,
+    "exit_code": 0,
+    "stop_reason": null,
+    "process_wall_seconds": 1172.353418452025,
+    "artifacts": {
+      "candidate.png": "1abffeefcc8c33d088b5fc5e00bf2c3441dd677f1585f72f86d6236d27ab5172",
+      "candidates_frozen.json": "140a8513d807a89e4ef8944d5f4eabc799ccc334e62f6f488e02fbfd1340e3c8",
+      "claim.json": "36cb9b9332179b9800b00078aeeeebf734d94a6dc1ea3d79e50fd516673397cf",
+      "device_preimport.json": "516b9ebd6f96c244b83f73082e369e823c0660a8d917e0359522cf911e26d137",
+      "initial_z0.npy": "5cae58530ba1f06f59c35e27f16e530552897fbd2872b0a438a508efd2f2d78a",
+      "optimization.json": "9b7fd1870c461fba792cee44240f21c81da28667f2abc2feb85099ccad60538a",
+      "parameter_flags.json": "3329893e3364ce8f6ff8b936ba8f88654199b7ba3bb9f550b05f54cd4ca572a7",
+      "process.json": "b94fb7a0c9621b8537c96587dc460ef176e7d83c8af6006b043832556ca6c568",
+      "reference_proxy_inverse.npy": "906d5a183961c339b08f8c7b96e074fa219a6c8929c01e7699afbd22b60b9f96",
+      "stderr.log": "95c229df4345fc5a1d767421529f2556d48193b8ccc1c9998d2185d989226a58",
+      "stdout.log": "1e056dd0d98b12e555ee47a346c5ed686f22f05070c0af5a181a98595236ce5e",
+      "summary.json": "67100d4fff0d898faf1f0ff0d7293cac68d06c8a5ffa8dc7308f2bff2269c5b2",
+      "update_20.png": "00cfa1409fa64d504a394aeafd3420926ded6dcf242912cefdf54611d80bb43b",
+      "update_20_adam_avg.npy": "a81d3e28a0217dbc3d6fff2ea2bf5463a27f7c4b176e98d2844002ffd19c74a7",
+      "update_20_adam_sq.npy": "9bdc009db9f4718d5db82efde9f4d3b19892239030f70bca9486550db2c3a458",
+      "update_20_latent.npy": "bf07970001e3c53882f3da0c9da4878f9b496ce6a088c0dff260c6c2db5a0cf6",
+      "update_30.png": "1abffeefcc8c33d088b5fc5e00bf2c3441dd677f1585f72f86d6236d27ab5172",
+      "update_30_adam_avg.npy": "ed1b07388af4db1efcd75914fbeb919afe60ca292c0268414fda156ac81192af",
+      "update_30_adam_sq.npy": "59950d10858cdbbc513d0b7ef93d9e6cdee86b549f4283e385382ab9497cffc7",
+      "update_30_latent.npy": "4b21abe6f148613a00c84417e979aa898cb859a35217c9b76201376e2bc072d5"
+    },
+    "candidate_sha256": "1abffeefcc8c33d088b5fc5e00bf2c3441dd677f1585f72f86d6236d27ab5172"
+  },
+  "gpu_index": 2,
+  "gpu_uuid": "GPU-3d3813cb-3429-0174-212f-fa9c7fe5e99a"
+}

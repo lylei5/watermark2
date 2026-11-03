@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "task_id": 12,
+  "seed": 33312,
+  "reference": {
+    "path": "reference.png",
+    "sha256": "9b7854d076579b0c50d21a6735c6eda291f01f36ce2c9ca06dd1f56d847174c0",
+    "bytes": 298725
+  },
+  "cover": {
+    "path": "cover.png",
+    "sha256": "1f992ea17615131aeacd2dac4f624c37b35277322015116c7ecaa7210e95773c",
+    "bytes": 446928
+  },
+  "proxy": {
+    "model_id": "Manojb/stable-diffusion-2-1-base",
+    "revision": "0094d483a120f3f33dafbd187ea4aa60d10de75c",
+    "snapshot": "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c",
+    "dtype": "float32",
+    "resolution": 512
+  },
+  "native": {
+    "actual_adam_updates": 30,
+    "learning_rate": 0.01,
+    "adam_betas": [
+      0.9,
+      0.999
+    ],
+    "adam_eps": 1e-08,
+    "variable": "proxy z0 latent",
+    "loss": "MSE(DiffPipe(z0,empty_prompt,CFG1,50),detached_reference_proxy_inverse)",
+    "mask": null,
+    "pixel_constraint": null,
+    "cover_preprocessing": "Exact upstream PIL.Image.open(path).resize((512,512)).convert(RGB), Pillow version pinned",
+    "cover_encoding_range": [
+      -1,
+      1
+    ],
+    "reference_encoding_range": [
+      0,
+      1
+    ],
+    "reference_path": "Exact CLI: target_provider.PIL_to_torch([generated_PIL]) gives RGB01; invert_image(image_pt=generated_pt) forwards it to VAE without another range map. Preserve this asymmetric code behavior.",
+    "proxy_parameter_flags": "Retain original load_attacker_pipe flags; DiffPipe freezes UNet only. Do not additionally freeze text_encoder/VAE to claim full entry equivalence.",
+    "inversion_steps": 50,
+    "inversion_prompt": "",
+    "inversion_cfg": 1.0,
+    "expected_proxy_timesteps": [
+      1,
+      21,
+      41,
+      61,
+      81,
+      101,
+      121,
+      141,
+      161,
+      181,
+      201,
+      221,
+      241,
+      261,
+      281,
+      301,
+      321,
+      341,
+      361,
+      381,
+      401,
+      421,
+      441,
+      461,
+      481,
+      501,
+      521,
+      541,
+      561,
+      581,
+      601,
+      621,
+      641,
+      661,
+      681,
+      701,
+      721,
+      741,
+      761,
+      781,
+      801,
+      821,
+      841,
+      861,
+      881,
+      901,
+      921,
+      941,
+      961,
+      981
+    ],
+    "endpoint": "Truncated 30-update schedule for an 8-hour advisor deadline; not the published 151-update endpoint",
+    "checkpoint_actual_updates": [
+      20,
+      30
+    ],
+    "checkpoint_label_note": "Checkpoints of the same truncated trajectory; primary is 30; no checkpoint selection.",
+    "save_all_checkpoints_and_seal_before_any_target_scores": true
+  }
+}

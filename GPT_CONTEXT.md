@@ -1,5 +1,15 @@
 # 研究接续入口
 
+## 最新进展（2026-11-03 UTC）：防御基线已评估
+
+- 30 对、30 步 Imprint：普通 GS 30/30（BA 0.8228，PSNR 24.04 dB）；共享身份，不外推。
+- Geometry：G-Cos AUC 0.9958、L-SPD 0.638（无公开阈值，只报 AUC）。
+- PGID：官方 151 步、1 图，防御后 0.578/0.621/0.664（阈值 0.707，差 4.3pp）；n=1 且模型设定不同。
+- SemBind：单对伪造 0.484；30 对批量 28 例中 2 例通过（平均 0.5379）；151 步对照未完成。
+- 负结果：无密钥“投票边际”代理不可行（参考逐坐标符号错误 24.3%，模板一致率 42.6%，Spearman −0.025）。
+- 报告：`reports/defense_baselines_20261103/report.md`；run：`runs/confirmation100_baseline_20261102T204500Z`。
+
+
 **当前状态（2026-10-25 UTC）：**100 对确认资产 v1.1 已完成并发布：100 张载体、100 条唯一文本及固定配对。恢复核查通过服务器 200 份原图/PNG 的存在性、大小与 SHA256，以及315项执行封存文件哈希。[资产报告](https://github.com/liylei666-hub/watermark2/blob/e5c86c769dbb39853e8994367e4210045d782a54/reports/confirmation100_assets_v11_completed/report.md) / [恢复核验](https://github.com/liylei666-hub/watermark2/blob/e5c86c769dbb39853e8994367e4210045d782a54/reports/confirmation100_assets_v11_completed/recovery_verification_20261025.json)，研究提交 `e5c86c769dbb39853e8994367e4210045d782a54`。
 **模型实验边界：**100 对模型实验尚未启动。Stage31 已发布结果仅为4对共享身份原生校准及事后CPU LPIPS，不构成100对完整论文复现。[校准报告](https://github.com/liylei666-hub/watermark2/blob/e5c86c769dbb39853e8994367e4210045d782a54/reports/31_native_calibration/report.md) / [质量补充](https://github.com/liylei666-hub/watermark2/blob/e5c86c769dbb39853e8994367e4210045d782a54/reports/31_native_calibration_lpips_20261025/report.md)。确定性选择与像素检查采用历史服务器回执，本轮没有重跑。
 **下一项：**审阅完整 corrected native Imprint 100 对基线协议、独立私有 GS 材料及实际资源预算；100 对模型实验尚未启动。Stage30、八攻击对照和 Jain 原设置保持 hold。本轮仅发布及审阅，不启动GPU作业，不下载新模型。

@@ -1,0 +1,34 @@
+{
+  "started_at_utc": "2026-11-02T22:04:39.974223+00:00",
+  "outcome": {
+    "completed": true,
+    "exit_code": 0,
+    "stop_reason": null,
+    "process_wall_seconds": 1164.6288752510154,
+    "artifacts": {
+      "candidate.png": "2b9a76fac19de356932447c0749fe772064ae768bb8e1cada14d1f4b0406f41e",
+      "candidates_frozen.json": "b681042e9b9daab4b100aaa23bfdb5369f06727ec5362bdf4c63d113e429cdaa",
+      "claim.json": "93fcace164f95958dbe7d0cb575b30093f7c1a05f9362fb1fe4bdaf4d3a5f99c",
+      "device_preimport.json": "3d22bb72af6ce86e3fffce430802ce69b224afaa226ef8348e2575ec4ce7a416",
+      "initial_z0.npy": "cc8ab6e8f4ddb5342cae2e9be9337fd91775bbdee14c37a4327334e048b63354",
+      "optimization.json": "e325a98daf55ad53282d067eab0797e9f3303c2c8207d916378b00b7899202d6",
+      "parameter_flags.json": "3329893e3364ce8f6ff8b936ba8f88654199b7ba3bb9f550b05f54cd4ca572a7",
+      "process.json": "ee765a9164a6a154803048799c0e666a0ba962fb5accd323a8d6b5749a12a650",
+      "reference_proxy_inverse.npy": "b149b9db440edc2c7ef5a0fff781f5f1b7509a06a8bf8daf5bf4dca2cf84c0e8",
+      "stderr.log": "b3e091efe6edaa30f38cbb029652d887e8eaa92b83afe1f8dc9c096f98d32992",
+      "stdout.log": "10c16c08fc5ef7f169c531d72ba9666f1476ee428b03c918b69f1d0ad396c7ac",
+      "summary.json": "a626e3071f4a9851e1546c32a59068fbaecb6b75a0ac098a1c983f1dd0da8045",
+      "update_20.png": "fcc732460306dfa5e2d32f17b9d165e1093284a5c1bcbdbd7fb60efb69298474",
+      "update_20_adam_avg.npy": "d3b471ae0be04bcae601d33a76b9c17c67d55e698c2f08647ca690f6dc2397a7",
+      "update_20_adam_sq.npy": "ae9d05ab1dc601c587eb82874632b22ccf5a6e750a042f8546eaee24c6acdcdc",
+      "update_20_latent.npy": "2e0defbf3efaccae7c6bd6658a16a65676ce589ad1adddac819dbd4283ccf679",
+      "update_30.png": "2b9a76fac19de356932447c0749fe772064ae768bb8e1cada14d1f4b0406f41e",
+      "update_30_adam_avg.npy": "5ba4725d544b697e7cf1310fab147c234522c297762bc5b527865784575e3922",
+      "update_30_adam_sq.npy": "78e97c64b4b6c613ae6a553ac47624d733ae46ee26f8794c529411dc3956e5a4",
+      "update_30_latent.npy": "30b33c08028b604336b3d7cd150a5017ef6a02bdb49808defbebb6c319575434"
+    },
+    "candidate_sha256": "2b9a76fac19de356932447c0749fe772064ae768bb8e1cada14d1f4b0406f41e"
+  },
+  "gpu_index": 3,
+  "gpu_uuid": "GPU-e602f6b2-50a3-72ee-ae1b-a0ae80eca5da"
+}

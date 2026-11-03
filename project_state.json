@@ -1,5 +1,5 @@
 {
-  "as_of_utc": "2026-10-25T17:53:25.655083+00:00",
+  "as_of_utc": "2026-11-03T02:05:00+00:00",
   "research_topic": "Black-box forgery attacks on diffusion-model semantic watermarks",
   "completed_stages": [
     "01",
@@ -32,7 +32,7 @@
     "29",
     "31"
   ],
-  "current_stage_status": "assets_ready_for_full_baseline_protocol_review_model_experiments_not_started",
+  "current_stage_status": "defense_baselines_evaluated_vma_falsified_method_direction_under_review",
   "new_experiment_authorized_by_archive": false,
   "formal_model_runs_by_stage": {
     "01": 0,
@@ -610,7 +610,7 @@
     "protocol": "protocols/17_cover_pilot.json",
     "next_step": "Launch the frozen stage17 serial pilot after a fresh idle check; stop on any engineering failure."
   },
-  "last_updated_utc": "2026-10-25T17:53:25.655083+00:00",
+  "last_updated_utc": "2026-11-03T02:05:00+00:00",
   "cover_pilot": {
     "stage": "17",
     "checked_at_utc": "2026-10-18T00:30:28.738802+00:00",
@@ -1610,5 +1610,74 @@
     "novelty_established": false,
     "candidate_status": "hypothesis_to_freeze_and_test"
   },
-  "cumulative_execution_records_scope": "Historical ledger through stage27; later research evidence is linked by exact commit."
+  "cumulative_execution_records_scope": "Historical ledger through stage27; later research evidence is linked by exact commit.",
+  "defense_baselines_20261103": {
+    "status": "completed_defense_baseline_evaluation_with_recorded_limits",
+    "report": "reports/defense_baselines_20261103/report.md",
+    "run_dir": "runs/confirmation100_baseline_20261102T204500Z",
+    "scripts": [
+      "scripts/defense/geometry.py",
+      "scripts/defense/evaluate_geometry.py",
+      "scripts/defense/sembind.py",
+      "scripts/defense/sembind_smoke.py",
+      "scripts/defense/sembind_pairs.py",
+      "scripts/defense/sembind_pairs_aggregate.py",
+      "scripts/salvage30/template_diag.py"
+    ],
+    "ordinary_gs": {
+      "pairs": 30,
+      "steps": 30,
+      "pass_count": 30,
+      "mean_bit_accuracy": 0.8228,
+      "mean_psnr_db": 24.04,
+      "twenty_step_mean_bit_accuracy": 0.7783,
+      "cover_pass_count": 0,
+      "reference_pass_count": 30,
+      "shared_identity": true
+    },
+    "geometry": {
+      "g_cos_auc": 0.9958,
+      "l_spd_auc": 0.638,
+      "thresholds_public": false,
+      "evidence": "reports/geometry_30.json"
+    },
+    "pgid": {
+      "upstream_steps": 151,
+      "images": 1,
+      "undefended_bit_accuracy": 1.0,
+      "defended_bit_accuracy_by_step": {
+        "50": 0.578125,
+        "100": 0.62109375,
+        "150": 0.6640625
+      },
+      "threshold": 0.70703125,
+      "gap_pp": 4.3,
+      "model_setting": "Manojb/stable-diffusion-2-1-base",
+      "limited": "n=1 and different model setting from the SDXL pairs"
+    },
+    "sembind": {
+      "binding_reimplemented_from_paper": true,
+      "single_pair_forgery_unbound_bit_accuracy": 0.4844,
+      "batch_pairs_completed": 28,
+      "batch_pass_count": 2,
+      "batch_mean_unbound_bit_accuracy": 0.5379,
+      "batch_median_unbound_bit_accuracy": 0.5059,
+      "one_hundred_fifty_one_step_control": "pending"
+    },
+    "vma_negative_result": {
+      "reference_ba": 0.99987,
+      "reference_coordinate_sign_error_mean": 0.2427,
+      "template_sign_agreement_mean": 0.4257,
+      "template_spearman_mean": -0.0254,
+      "conclusion": "key-free vote-margin proxy is not estimable from a single reference; VMA closed",
+      "evidence": "reports/template_diag_30.json"
+    },
+    "limitations": [
+      "30 pairs share one GS identity; no independent-key inference",
+      "PGID n=1 with a different model setting",
+      "SemBind binding is our reimplementation; 30-step budget, 151-step control pending",
+      "Geometry thresholds unpublished; AUC only",
+      "No independent human content labels"
+    ]
+  }
 }

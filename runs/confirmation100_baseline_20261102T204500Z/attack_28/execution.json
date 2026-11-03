@@ -1,0 +1,34 @@
+{
+  "started_at_utc": "2026-11-02T22:23:46.596047+00:00",
+  "outcome": {
+    "completed": true,
+    "exit_code": 0,
+    "stop_reason": null,
+    "process_wall_seconds": 1149.8588597220078,
+    "artifacts": {
+      "candidate.png": "9c78759f7c222c3936b6ec0a0d9f8ff134290e8abd65d4800c731e19754caaa4",
+      "candidates_frozen.json": "4d2a4d64ec4c8c0a35af0056ed2241e93ef51fdebb6b37ed79596d93956fcadb",
+      "claim.json": "373709ced52827a73a0f9018a7a45aa40794b9c8f993da65a7a95ae922b76cdc",
+      "device_preimport.json": "4ebc7fa239f1b2081f6c23bfee017667b6cf50ee62e5025eb3d5660f55309167",
+      "initial_z0.npy": "8b83241305741fe6f48897fe337d329ae1dde3595e28913bfe4da744345be248",
+      "optimization.json": "df34402b1c7698a38bc6f364306913410c3632c7cae3d28765738d14503efe7f",
+      "parameter_flags.json": "3329893e3364ce8f6ff8b936ba8f88654199b7ba3bb9f550b05f54cd4ca572a7",
+      "process.json": "604436e3b1fdaf53471a276c6cf99a52cf74d1a283ddaef1783d549f8d3406b8",
+      "reference_proxy_inverse.npy": "c8a2111922e521dbbfd0b7644ccb6e10979db2ea3b7b70b5f9b93e7eeacbc3cf",
+      "stderr.log": "a46fc40ea3f137c8ef6f8c46103b4625a125ee5eff2871c6fbd21827e26ccf87",
+      "stdout.log": "f2b3d3c947f9a7408855e732e017e9c48738bb8bcc899ae4d9bc99c2d5d5e699",
+      "summary.json": "559159f12d2ab6d203d55916dc148ef51eced50956d597030f4870547359ef6c",
+      "update_20.png": "461fdc686eb76b4e3dd83d6f7152c218c786c43d1600f74febd5f3e72858f3c9",
+      "update_20_adam_avg.npy": "286f6bc3e2fa011f681f71808bd8c7430c0a9b8977a87421a104233059650b78",
+      "update_20_adam_sq.npy": "690ef857fdcfd6dc1502f05f820491767f2efd708b3ada630fbcc297d966c405",
+      "update_20_latent.npy": "14ddc3e798fcdd4d0eac88fee4024728ec878f20085f8d59d77a12a5877f3433",
+      "update_30.png": "9c78759f7c222c3936b6ec0a0d9f8ff134290e8abd65d4800c731e19754caaa4",
+      "update_30_adam_avg.npy": "5d4ec4f8bccfec6314988585805b4811fc5c76462131206a545b26947c0894db",
+      "update_30_adam_sq.npy": "4322d1d6d529f818bdc3701f516f9814506fc7763463fa7c7c2833fa7bfe84b0",
+      "update_30_latent.npy": "c4d20709ef24fe25d759809f0b7b8805c1998969372efa65fe35397b9f364c7e"
+    },
+    "candidate_sha256": "9c78759f7c222c3936b6ec0a0d9f8ff134290e8abd65d4800c731e19754caaa4"
+  },
+  "gpu_index": 7,
+  "gpu_uuid": "GPU-9644fb82-cb6f-7311-8017-eaee41409bb7"
+}

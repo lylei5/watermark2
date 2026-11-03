@@ -1,0 +1,25 @@
+{
+  "completed": true,
+  "actual_updates": 30,
+  "candidate_checkpoints": 2,
+  "timing": {
+    "model_load_seconds": 5.624013146996731,
+    "reference_and_cover_preparation_seconds": 4.753927830024622,
+    "optimization_and_export_seconds": 1143.016312895983,
+    "core_seconds": 1147.7702407260076,
+    "peak_allocated_bytes": 11459363840
+  },
+  "images": {
+    "20": {
+      "path": "update_20.png",
+      "sha256": "04a31e38086848a0bcad70d895b9ade8bb8502f0bd5b093a8b2c930d8b5f8f3b",
+      "bytes": 550511
+    },
+    "30": {
+      "path": "update_30.png",
+      "sha256": "e26b6baaec9b8295cce77083d48dde403e11247f6f2c0e486957bdb2a254bfe0",
+      "bytes": 550769
+    }
+  },
+  "target_scores_seen": 0
+}

@@ -1,0 +1,63 @@
+{
+  "stage": "confirmation100",
+  "source_commit": "e457085+confirmation100-v7",
+  "design_path": "/data0/liyanlei/watermark_research/protocols/confirmation100_design_v7.json",
+  "design_sha256": "773676abb941fad3b667515ad4c8b7bc7f21b25814657cc0ed7badafcdabad66",
+  "devices": [
+    {
+      "index": 2,
+      "uuid": "GPU-3d3813cb-3429-0174-212f-fa9c7fe5e99a",
+      "model": "NVIDIA GeForce RTX 3090"
+    },
+    {
+      "index": 3,
+      "uuid": "GPU-e602f6b2-50a3-72ee-ae1b-a0ae80eca5da",
+      "model": "NVIDIA GeForce RTX 3090"
+    },
+    {
+      "index": 4,
+      "uuid": "GPU-748b31fa-0510-6b56-f820-f3812266ed28",
+      "model": "NVIDIA GeForce RTX 3090"
+    },
+    {
+      "index": 5,
+      "uuid": "GPU-e6f35928-0155-f121-e707-1eaf3c14965c",
+      "model": "NVIDIA GeForce RTX 3090"
+    },
+    {
+      "index": 7,
+      "uuid": "GPU-9644fb82-cb6f-7311-8017-eaee41409bb7",
+      "model": "NVIDIA GeForce RTX 3090"
+    }
+  ],
+  "versions": {
+    "torch": "2.5.1",
+    "torchvision": "0.20.1",
+    "diffusers": "0.31.0",
+    "transformers": "4.46.3",
+    "accelerate": "1.1.1",
+    "Pillow": "11.0.0",
+    "numpy": "2.2.6"
+  },
+  "code_hashes": {
+    "/data0/liyanlei/watermark_research/scripts/confirmation100/common100.py": "c26bd6f1f74b482f1f58553eeb07598c146545382cf6bf0380844aba97cdcfe3",
+    "/data0/liyanlei/watermark_research/scripts/confirmation100/prepare100.py": "917796703bc9b55de6f2bf32c066d489f59aec03030f6e58a74b0bc1e2b9bee3",
+    "/data0/liyanlei/watermark_research/scripts/confirmation100/attack100.py": "767b7206e0c70bd847345f858325430827d09fd6a278ef6869df91b97406683f",
+    "/data0/liyanlei/watermark_research/scripts/confirmation100/evaluate100.py": "9c4d535940d428504cb07b5140bc3e7fdc41b3cfeb96977108414f08306c9008",
+    "/data0/liyanlei/watermark_research/scripts/confirmation100/analyze100.py": "a1e6a3ec6aa165ed23f957705b96b8731f3f3b4435277fb517713c387521b8f0",
+    "/data0/liyanlei/watermark_research/scripts/confirmation100/control100.py": "45bfdb0277f15d9550f40547f56f7d93d2946e1e53b4f3c40aa5f25c09f50385",
+    "/data0/liyanlei/watermark_research/scripts/confirmation100/start100.py": "ea819ff9dd14a511cc6f077eea1401f48256130c156acb2cd5b0e18485cf26c3",
+    "/data0/liyanlei/watermark_research/scripts/cover_pilot/contract.py": "238cfe33403329d9d93536e06a937672e944e374e2cc245ff49a6eb2cd7c66d7",
+    "/data0/liyanlei/watermark_research/scripts/cover_pilot/runtime.py": "85c718d5ff8bf1cb84c9f2fbf8f31533f0046d786a516ab6f71b14e76ebd63e1",
+    "/data0/liyanlei/watermark_research/scripts/parallel_execution/launcher.py": "daaf020d26b0dbbf1bafc2889b16302f08c414d9dec41fcda515fc9b3cb39c68",
+    "/data0/liyanlei/watermark_research/scripts/parallel_execution/scheduler.py": "af9d5237502ee5724b12d9da031ed53d8efdd4ffdeb7d0e49ef4219085a32c3c",
+    "/data0/liyanlei/watermark_research/scripts/reference_reliability/private_state.py": "8f848a85d0650812cbdc30c35983885ec10d6b0c2e588a84c77339b3d39a1e19",
+    "/data0/liyanlei/watermark_research/scripts/cross_generator/verify_message_scores.py": "a7534b4205fc5c248f4767247dd6807e1c444a13b623bb23a326e595faa46670",
+    "/data0/liyanlei/watermark_research/third_party/semantic-forgery/run_imprint_forgery.py": "636dd0cb86f8b5d494e2b5213a9fdcf5001b1f4ba9705caae89ca14e9d71d12f",
+    "/data0/liyanlei/watermark_research/third_party/semantic-forgery/utils/imprint_utils.py": "1c95450d48462cac0b1a631e97f83f5abeafd73452de9e46919a403d0641830b",
+    "/data0/liyanlei/watermark_research/third_party/semantic-forgery/utils/image_utils.py": "99095d47638908c6b104797ea5bd99e41d57e98dbe00f77861f5e20b74f2d628",
+    "/data0/liyanlei/watermark_research/third_party/semantic-forgery/utils/pipe/pipe_utils.py": "85f1648dbfec0168ce5ecd697eb50d4b505efabb7f6b864953c58d6a5a2058bd",
+    "/data0/liyanlei/watermark_research/third_party/semantic-forgery/utils/wm/gs_provider.py": "233ff05fa47d18d5875577d2cd920bd21d8ceea05149f5f100c1fab32c524d99"
+  },
+  "role": "attacker"
+}

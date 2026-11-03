@@ -1,0 +1,14 @@
+{
+  "unet": {
+    "total": 686,
+    "requires_grad": 0
+  },
+  "vae": {
+    "total": 248,
+    "requires_grad": 248
+  },
+  "text_encoder": {
+    "total": 372,
+    "requires_grad": 372
+  }
+}
