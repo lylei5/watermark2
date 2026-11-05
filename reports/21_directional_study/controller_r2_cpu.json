@@ -1,5 +1,0 @@
-{
-  "test_exit_code": 0,
-  "stdout": "{\"child\": \"child\", \"completed\": false, \"elapsed_seconds\": 0.0008019302040338516}\n{\"child\": \"child\", \"completed\": true, \"elapsed_seconds\": 0.00020700134336948395}\n{\"child\": \"child\", \"completed\": false, \"elapsed_seconds\": 0.0005213767290115356}\n{\"child\": \"child\", \"completed\": false, \"elapsed_seconds\": 0.0002787369303405285}\n{\"tests_run\": 4, \"failures\": 0, \"errors\": 0, \"gpu_used\": false, \"models_loaded\": false, \"new_model_experiments_run\": 0, \"scope\": \"mock subprocess and killpg only; no real process launched or signaled\"}\n",
-  "stderr": "test_stalled_termination_records_kill (__main__.Tests) ... ok\ntest_success_records_actual_wait_result (__main__.Tests) ... ok\ntest_timeout_records_termination (__main__.Tests) ... ok\ntest_zero_exit_without_completion_marker_rejected (__main__.Tests) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.040s\n\nOK\n"
-}

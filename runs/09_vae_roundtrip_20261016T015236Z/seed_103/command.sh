@@ -1,2 +1,0 @@
-cd /data0/liyanlei/watermark_research/third_party/semantic-forgery
-CUDA_VISIBLE_DEVICES=GPU-aafaf524-a6f4-f646-a2b5-7d243e80c8a5 CUDA_DEVICE_ORDER=PCI_BUS_ID HF_HOME=/data0/liyanlei/watermark_research/cache/huggingface HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 HF_HUB_DISABLE_IMPLICIT_TOKEN=1 PYTHONDONTWRITEBYTECODE=1 /data0/liyanlei/watermark_research/envs/semantic_forgery_py310/bin/python /data0/liyanlei/watermark_research/scripts/vae_roundtrip/experiment.py /data0/liyanlei/watermark_research/runs/09_vae_roundtrip_20261016T015236Z/seed_103

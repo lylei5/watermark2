@@ -1,65 +1,86 @@
-# 扩散语义水印的黑盒伪造研究
+# 基于 SemBind 的扩散模型语义水印防御与鲁棒性研究
 
-**当前状态（2026-10-25 UTC）：**100 对确认资产 v1.1 已完成并发布：100 张载体、100 条唯一文本及固定配对。恢复核查通过服务器 200 份原图/PNG 的存在性、大小与 SHA256，以及315项执行封存文件哈希。[资产报告](https://github.com/liylei666-hub/watermark2/blob/e5c86c769dbb39853e8994367e4210045d782a54/reports/confirmation100_assets_v11_completed/report.md) / [恢复核验](https://github.com/liylei666-hub/watermark2/blob/e5c86c769dbb39853e8994367e4210045d782a54/reports/confirmation100_assets_v11_completed/recovery_verification_20261025.json)，研究提交 `e5c86c769dbb39853e8994367e4210045d782a54`。
-**模型实验边界：**100 对模型实验尚未启动。Stage31 已发布结果仅为4对共享身份原生校准及事后CPU LPIPS，不构成100对完整论文复现。[校准报告](https://github.com/liylei666-hub/watermark2/blob/e5c86c769dbb39853e8994367e4210045d782a54/reports/31_native_calibration/report.md) / [质量补充](https://github.com/liylei666-hub/watermark2/blob/e5c86c769dbb39853e8994367e4210045d782a54/reports/31_native_calibration_lpips_20261025/report.md)。确定性选择与像素检查采用历史服务器回执，本轮没有重跑。
-**下一项：**审阅完整 corrected native Imprint 100 对基线协议、独立私有 GS 材料及实际资源预算；100 对模型实验尚未启动。Stage30、八攻击对照和 Jain 原设置保持 hold。本轮仅发布及审阅，不启动GPU作业，不下载新模型。
+**当前研究方向（2026-11-06 更新）：** 面向 **CCF-A 类会议**，研究重心已由早期的黑盒伪造攻击转向 **基于 SemBind（ICML 2026）的语义水印防御端与鲁棒性提升**。核心目标是系统剖析 SemBind 及 2025–2026 最新防御方案（ISTS、PGID、Geometry、SEAL、PAI、Sign-Clamping 等）的安全漏洞与鲁棒性缺陷，提出兼具**高抗伪造能力（含自适应攻击）**、**强失真/编辑鲁棒性**与**单遍生成高效性**的新一代语义绑定水印防御框架（**SemBind+**）。
 
-研究目标：在明确的攻击信息边界下研究伪造方法与误差来源，形成可复现代码、充分实验和论文初稿。
+---
 
-**阶段27历史结果：完整方法比较已完成，交付路径Imprint的普通GS通过为6/12，原生Imprint为8/12。按冻结规则关闭该固定候选；已有证据尚未建立新方法贡献。**
+## 1. 核心发现：SemBind 与现有防御的漏洞诊断（已验证实测证据）
 
-- **[完整方法比较结果](reports/27_method_resume_20261019T173017Z/report.md)：** 12个独立身份任务，Imprint/delivery普通GS通过8/12与6/12；delivery平均BA低1.82个百分点，中位配对失真比0.909、核心时间比1.052。Jain交付11张、通过3张，1次原始工程失败保留。35候选封存后评估，59个分数经独立解码复核，附全部图片、逐任务表和实际时间。该历史下一项已由阶段28/29完成，最新关闭结论见页首。
-- [代理交付目标审查](docs/PROXY_DELIVERY_OBJECTIVE_CONTRACT.md)：核对Imprint、Reprompting、Jain和PnP，4项合成CPU检查通过；生成器参数化尚未建立新的跨模型迁移机制。
-- [固定校正配对交付](reports/25_delivery_transfer/report.md)：参考位恢复改善没有传递到最终图像，消息准确率均值0.937012→0.882812，7/8下降、1/8持平。普通GS两组均8/8通过；按预定规则关闭该映射。
-- [跨生成器位恢复诊断](reports/24_cross_generator/report.md)：固定代理监督在8张SDXL参考上平均降低0.2991个百分点坐标位错误；参考级结果与上述最终交付结果分别保留。
-- [参考可靠性诊断](reports/23_reference_reliability/report.md)：4张独立加密参考，跨步数一致性在50%覆盖下四图均未优于幅值排序，平均位错误率高0.247个百分点；参考GS均1.0，代码、原始数据与独立复算齐备。
-- [解码与采样契约](reports/22_decoder_contract/report.md)：区分连续距离、取位、重复投票与GS接受；明确逐图key/nonce与历史开发组的差异。
-- [固定方向迁移诊断](reports/21_directional_study/report.md)：4对新图中反演方向相对VAE方向均更好，但只有3对改善原载体；20候选普通GS全部未通过，8项中心差分均超容差。一阶机制与新方法尚未建立。
-- [三对载体试验](reports/17_cover_pilot/report.md)：约376秒核心预算下，Imprint普通GS通过2/3，适配的Jain通过0/3；全部候选固定后评估，192文件及12个分数核验通过。完整防御与正式内容标签仍未知。
-- [基线计算成本](reports/15_imprint_timing/report.md)：Imprint参考准备+10步375.33秒，Jain参考编码+100步83.91秒；阶段17采用10/447步近似预算，完整输出轨迹核对通过。
-- [真实VAE核心核验](reports/13_vae_core/report.md)：原参数状态三步输出跨进程一致；参数冻结等价检查未通过，保留原核心执行状态。
-- [载体攻击比较契约](docs/COVER_BASELINE_CONTRACT.md)：核对Imprint/Jain预算、浮点与PNG检测对象、共享代理适配及成本；六项CPU核心检查通过。
-- [组件残差定位](reports/12_imprint_components/report.md)：链式梯度逐位一致，较大有限步长残差主要在VAE组合映射；贡献与目标迁移收益尚待证明。
-- [固定点梯度诊断](reports/11_imprint_gradient/report.md)：两个点梯度余弦0.731/0.676，原生下降仍改善交付目标；交付自方向的两项差分核验超出容差，原因待定位。
-- [Imprint交付路径诊断](reports/10_imprint_delivery/report.md)：10步原生优化已完成，PNG保留91.52%的内部损失改善；包含失败证据、确定性核验与完整轨迹对照。
-- [研究审查](reports/research_review.md)：可行性、创新空间、理论问题与继续/停止条件。
-- [导师讨论 Word](docs/advisor_briefing.docx) / [可检索正文](docs/advisor_briefing.md)：原论文、两篇 ICML 2026 防御、结果与研究问题。
-- [评估对象与威胁模型契约](docs/EVALUATION_CONTRACT.md)：最终会议版与固定源码核查，参考、判定、基线差异及明确缺项。
-- [可运行的评估事件检查](reports/evaluation_events_20261017/report.md)：候选哈希、计划分母、未知标签与真实CSV接入。
-- [PAI 验证契约](docs/PAI_EVALUATION_CONTRACT.md)：普通阈值、密钥/时间戳参考、稳健PCA缺项与接口阻塞。
-- [内容评审规则](docs/CONTENT_ADJUDICATION.md)：逐项可见内容、未知判定与独立评审记录表。
-- [攻击比较契约](docs/BASELINE_COMPARISON_CONTRACT.md)：任务轨道、信息权限、计算预算与成功分母。
-- [当前计划](docs/RESEARCH_PLAN.md)：正在解决的问题与证据门槛。
-- [文献矩阵](docs/LITERATURE.md)：截至 2026-10-17 的核查范围、版本状态和实现缺项。
-- [GPT 接续入口](GPT_CONTEXT.md) / [机器可读状态](project_state.json)。
+在前期复现与基线评估（2026-11-02 / 11-03）中，我们对 **SemBind（ICML 2026）**、**PGID（NeurIPS 2026）**、**Geometry（ICML 2026）** 和 **Gaussian Shading（GS）** 进行了代码级审计与实测，发现了支撑新防御研究的四个关键切入点（详见 **[漏洞剖析与 CCF-A 改进方案](docs/SEMBIND_VULNERABILITY_AND_DEFENSE_ANALYSIS.md)**）：
 
-## 已有证据
+1. **SemBind 跨图语义哈希自然碰撞与多数投票放大漏洞（已实测证实）**
+   - **位级复现**：我们实现的 `SemanticMasker.code()` 与官方 `AttnSupConHashingModel.forward(stage='binarize', s=12.0)` 在 20 张测试图及失真变体上 **Hamming 距离恒为 0**（见 [SemBind Masker 复现报告](reports/repro_sembind_masker_20261103/report.md)）。
+   - **自然碰撞证据**：在仅 20 张不同内容载体（190 个跨图配对）中，两个语义完全不同的图像出现了 **Hamming 距离仅 29/1024（位一致率高达 97.2%）** 的自然碰撞！
+   - **伪造绕过后果**：由于底层 GS 采用 $64 \times 256$ 重复多数投票（数学边界见 [GS 解码与投票契约](reports/22_decoder_contract/report.md)），部分掩码重合会被多数投票指数级放大。在 30 对、仅 30 步的普通黑盒 Imprint 攻击下，**28 对已测样本中有 2 对直接攻破 SemBind-GS，最高伪造解绑 BA 达 0.9844**（见 [防御基线评估报告](reports/defense_baselines_20261103/report.md)）。
+2. **SemBind 公开骨干特征瓶颈与“无密钥特征对齐”绕过风险**
+   - SemBind 虽将下游哈希网络与置换密钥 $\pi$ 设为私有，但其输入完全依赖**公开且冻结的 `DINOv2-giant` `[CLS]` 向量**。攻击者无需知道私有 masker 权重或置换密钥，只需在 Imprint 优化中增加公开 `DINOv2 [CLS]` 余弦对齐项，即可迫使未知私有 masker 输出完全相同的掩码。
+3. **SemBind 硬二值化悬崖、空间盲区与双倍生成开销**
+   - **硬二值化脆弱性**：轻度模糊与 $0.8\times$ 缩放即可导致最多 **78/1024 位翻转（7.6%）**；而通过降低掩码比例 $\sigma < 1$ 换取鲁棒性会使 $(1-\sigma)L$ 个潜坐标完全失去语义保护。
+   - **空间盲区与双倍耗时**：仅使用全局 `[CLS]` token 无法防御局部区域篡改/拼接；且嵌入需先生成辅助干净图 $x_{\text{aux}}$（$2\times$ 扩散生成开销），并在 $x_{\text{aux}}$ 与最终水印图 $x_{\text{wm}}$ 之间引入跨轨迹语义漂移。
+4. **同期其他前沿防御的实测局限**
+   - **PGID（NeurIPS 2026）**：防御后位准确率随攻击步数增加呈单调上升（50/100/150 步下 BA 为 `0.5781 → 0.6211 → 0.6641`，距阈值 `0.7070` 仅差 4.3 个百分点，见 [PGID 复现报告](reports/repro_pgid_20261103/report.md)）。
+   - **Geometry（ICML 2026）**：需有状态保存/检索原生成潜变量 $z_T$；实测全局 `G-Cos` AUC 为 `1.000`，但局部协方差指标 `L-SPD` 在论文 $16 \times 16$ 网格下 **AUC 仅为 0.480（随机水平）**，仅在 $32 \times 32$ 网格因秩亏退化产生假高分（见 [Geometry 复现报告](reports/repro_geometry_paper_task_20261103/report.md)）。
+   - **ISTS（CVPR 2026 Findings）**：离散 $(t, l)$ 频域/时间步空间较小且聚类固定，双边检测针对符号反转移除，不防全潜空间复制伪造（见 [防御基线清单](docs/DEFENSE_BASELINE_INVENTORY.md)）。
 
-阶段 01–05 完成环境与代码审计、官方 GS Reprompting 复现、真实潜变量留存。阶段 05 八种子在固定配置下原 GS 均通过，参考/攻击余弦均值为 0.813845 / 0.347934。这是固定提示词、共享基础水印设置的开发数据。
+---
 
-[CPU 诊断](reports/06_cpu_diagnostics/report.md)进一步区分消息解码、坐标符号和幅值，并量化参考关联敏感性。完整官方几何判定仍未复现，几何接受结果与阈值为 null；当前没有新攻击成功结论。
+## 2. SemBind+ 改进方案与研究路线（面向 CCF-A）
 
-[三种子提示词配对诊断](reports/07_prompt_control/report.md)已完成 6 次运行：同提示词与更换提示词的候选余弦均值分别为 0.290478 与 0.306216，配对差值方向不一致；两组原 GS 各通过 3/3。保持茶壶提示词仍出现低余弦，因此不能把此前差距专门归因于主体类别变化。此结果仍是开发诊断，不能单独定位架构差异。
+围绕上述漏洞，本项目提出三项递进的防御增强机制（详见 **[完整技术方案](docs/SEMBIND_VULNERABILITY_AND_DEFENSE_ANALYSIS.md#4-面向-ccf-a-的核心方法设计sembind-防御与鲁棒性提升方案)** 与 **[研究计划](docs/RESEARCH_PLAN.md)**）：
 
-[目标模型自身往返](reports/08_target_roundtrip/report.md)在六个配对上均高于代理往返，但本身也损失余弦。[VAE 编解码对照](reports/09_vae_roundtrip/report.md)完成两个种子后按设备规则停止；已完成图像保持原茶壶外观，代理 VAE 后余弦仍降至约 0.51。结果支持研究处理流程敏感性，尚不构成完整防御错误接受/拒绝或新攻击贡献。
+1. **置信度感知的软解绑与加权 LLR 软判决译码（Margin-Aware Soft Unbinding & LLR Decoding）**
+   - 保持 $\sigma = 1.0$（100% 坐标绑定，零未掩码泄漏），利用 masker 连续 logit 幅值 $|h_i|$ 与反演潜变量幅值 $|z_{\text{inv}}|$ 构造联合可靠度权重，在 $64 \times 256$ 解码器中执行软判决投票，消除边界位硬翻转导致的鲁棒性悬崖。
+2. **密钥化多层空间-语义正交绑定（Keyed Multi-Granular Spatial-Semantic Binding）**
+   - 引入验证端密钥化随机正交子空间投影（阻断基于公开 DINOv2 特征的无密钥对齐攻击）、平衡码本/最小距离约束（消除跨图长尾碰撞），并将 DINOv2 空间 Patch Tokens 与潜空间分块绑定，实现**局部篡改检测与定位（Tamper Localization）**。
+3. **单遍轨迹自绑定与检测端流形协同（Single-Pass Trajectory Binding & Defense-in-Depth）**
+   - 在单次扩散生成早期步利用 Tweedie 估计 $\hat{x}_{0|t}$ 提取语义掩码完成自洽绑定，将生成开销从 $2\times$ 降至 $\sim 1.15\times$ 并消除辅助图构图漂移；验证端可进一步与轻量去噪投影（PGID 思想）协同抵御高步数自适应攻击。
 
-[SEAL 源码契约](docs/SEAL_EVALUATION_CONTRACT.md)进一步区分语义绑定与穷举判定，列明依赖和工作点缺项。
+---
 
-## 复核入口
+## 3. 仓库结构与核心文档导航
 
-[历史实验谱系](docs/PROJECT_STATE.md)、[证据导航](docs/ARTIFACT_GUIDE.md)、[原始要求](prompts/README.md)。`runs/` 保留原始图像、CSV、张量、配置和运行记录；模型权重和环境不进入 Git。当前入口持续更新，历史说明与决策由 Git 追溯。
+本仓库已清理早期纯攻击探索阶段的冗余过程产物，保留并整编所有服务于 **SemBind 防御改进与对比评估** 的核心代码、契约与实测报告：
 
-Python 3.10+，标准库，只读核验：
+### 3.1 研究设计与文献契约（`docs/`）
+- **[`docs/SEMBIND_VULNERABILITY_AND_DEFENSE_ANALYSIS.md`](docs/SEMBIND_VULNERABILITY_AND_DEFENSE_ANALYSIS.md)**：SemBind 四大漏洞剖析、2025–2026 前沿防御对比及 SemBind+ 三大创新模块设计。
+- **[`docs/RESEARCH_PLAN.md`](docs/RESEARCH_PLAN.md)**：面向 CCF-A 会议的阶段性实验路线图、验证指标与论文结构规划。
+- **[`docs/DEFENSE_BASELINE_INVENTORY.md`](docs/DEFENSE_BASELINE_INVENTORY.md)**：7 项顶会防御（SemBind、ISTS、PGID、Geometry、SEAL、PAI、SLICE）与最新预印本（Sign-Clamping、CoverLock）盘点。
+- **[`docs/LITERATURE.md`](docs/LITERATURE.md)**：扩散水印伪造与防御相关文献、官方源码版本与实现覆盖矩阵。
+- **[`docs/EVALUATION_CONTRACT.md`](docs/EVALUATION_CONTRACT.md)**：GS、SemBind、Geometry 等评估对象与源码边界契约。
+- **[`docs/SEAL_EVALUATION_CONTRACT.md`](docs/SEAL_EVALUATION_CONTRACT.md)** / **[`docs/PAI_EVALUATION_CONTRACT.md`](docs/PAI_EVALUATION_CONTRACT.md)** / **[`docs/CSI_INFORMATION_CONTRACT.md`](docs/CSI_INFORMATION_CONTRACT.md)**：SEAL（ICCV 2025）、PAI（ICLR 2026）与 CSI 自适应攻击（WWW 2026）的源码契约审计。
+- **[`docs/PROJECT_STATE.md`](docs/PROJECT_STATE.md)** / **[`GPT_CONTEXT.md`](GPT_CONTEXT.md)** / **[`project_state.json`](project_state.json)**：当前项目状态与实验接续入口。
+
+### 3.2 已验证实测报告与数据证据（`reports/`）
+- **[`reports/repro_sembind_masker_20261103/report.md`](reports/repro_sembind_masker_20261103/report.md)**：SemBind 官方 masker 位级等价性核验、失真稳定性 R2 与跨图碰撞发现 R3。
+- **[`reports/defense_baselines_20261103/report.md`](reports/defense_baselines_20261103/report.md)**：30 对基线在 GS、SemBind、PGID、Geometry 下的评估结果汇总。
+- **[`reports/repro_pgid_20261103/report.md`](reports/repro_pgid_20261103/report.md)**：PGID（NeurIPS 2026）复现与随攻击步数单调退化分析。
+- **[`reports/repro_geometry_paper_task_20261103/report.md`](reports/repro_geometry_paper_task_20261103/report.md)**：Geometry（ICML 2026）`G-Cos` 精确复现与 `L-SPD` 秩亏退化证明。
+- **[`reports/diag_two_pair_identity_20261103/report.md`](reports/diag_two_pair_identity_20261103/report.md)**：逐对独立加密身份（Per-Pair Identity）与共享身份的对比诊断。
+- **[`reports/22_decoder_contract/report.md`](reports/22_decoder_contract/report.md)**：GS 量化取位、ChaCha20 解密与 $64 \times 256$ 重复多数投票的数学边界（支撑软判决译码设计）。
+- **[`reports/confirmation100_assets_v11_completed/report.md`](reports/confirmation100_assets_v11_completed/report.md)**：100 对冻结评估图像与唯一文本资产（`confirmation100 v1.1`）核验报告。
+
+### 3.3 防御实现与评估脚本（`scripts/` & `protocols/`）
+- **`scripts/defense/`**：
+  - [`sembind.py`](scripts/defense/sembind.py)：SemBind 语义掩码提取、平铺置换与潜变量绑定/解绑实现。
+  - [`sembind_smoke.py`](scripts/defense/sembind_smoke.py) / [`sembind_pairs.py`](scripts/defense/sembind_pairs.py) / [`sembind_pairs_aggregate.py`](scripts/defense/sembind_pairs_aggregate.py)：SemBind 单对自检与 30 对批量抗伪造评估。
+  - [`sembind_algebra_test.py`](scripts/defense/sembind_algebra_test.py) / [`sembind_cpu_test.py`](scripts/defense/sembind_cpu_test.py)：SemBind 绑定/解绑代数性质与掩码截断单元测试。
+  - [`repro/sembind_masker_equiv.py`](scripts/defense/repro/sembind_masker_equiv.py) / [`repro/sembind_exact_inversion.py`](scripts/defense/repro/sembind_exact_inversion.py)：SemBind 官方 masker 位级等价核验与精确反演测试。
+  - [`geometry.py`](scripts/defense/geometry.py) / [`evaluate_geometry.py`](scripts/defense/evaluate_geometry.py) / [`repro/geometry_paper_task.py`](scripts/defense/repro/geometry_paper_task.py) / [`repro/geometry_lspd_sweep.py`](scripts/defense/repro/geometry_lspd_sweep.py)：Geometry 防御指标与网格正则化扫描。
+  - [`seal_smoke.py`](scripts/defense/seal_smoke.py)：SEAL（ICCV 2025）语义水印生成与验证测试。
+- **`scripts/confirmation100/` & `scripts/salvage30/`**：100 对/30 对标准评估集协议驱动、逐对独立密钥诊断与投票边际分析工具。
+- **`protocols/`**：`confirmation100_design_v7.json` 与 `confirmation100_assets_v11.json` 冻结测试集协议。
+
+---
+
+## 4. 快速自检命令（纯 CPU）
 
 ```bash
-CUDA_VISIBLE_DEVICES="" python tools/verify_archive.py
-# 新往返诊断另需已有 Pillow
-CUDA_VISIBLE_DEVICES="" python tools/verify_roundtrip_controls.py
-CUDA_VISIBLE_DEVICES="" python -m unittest discover -s scripts -p test_cpu_latent_audit.py -v
+# 验证 SemBind 绑定/解绑代数不变量（平铺、掩码率截断、置换对合性）
+CUDA_VISIBLE_DEVICES="" python scripts/defense/sembind_algebra_test.py
+
+# 验证 Geometry 防御指标（G-Cos / SAD / L-SPD / AUC）单元测试
+CUDA_VISIBLE_DEVICES="" python -m unittest scripts/defense/test_geometry.py -v
+
+# 验证 GS 解码与 64x256 多数投票数学契约
+CUDA_VISIBLE_DEVICES="" python scripts/check_gs_decoder_contract.py
 ```
-
-PowerShell 先设置 `$env:CUDA_VISIBLE_DEVICES=''`。历史 GPU 脚本带有服务器路径，读取本仓库不授权执行。本次工作为成果发布与协议审阅，不启动 GPU；历史设备范围见各阶段协议及 [AGENTS.md](AGENTS.md)，下一轮资源须另行审阅。
-
-[固定候选残差诊断](reports/18_endpoint_residual/report.md)：Imprint三对保留87%–94%的内部改善；两对出现代理与目标参考反演的候选排序反转。开发诊断已核验，完整防御接受仍未建立。
-
-[目标编码定位](reports/19_target_encoding/report.md)完成12张固定图，发现候选排序差异的出现阶段依赖任务和指标；报告附四种表示空间的对比图。

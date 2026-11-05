@@ -1,5 +1,0 @@
-The config attributes {'sample_max_value': 1.0, 'skip_prk_steps': True} were passed to DDIMInverseScheduler, but are not expected and will be ignored. Please verify your scheduler_config.json configuration file.
-Couldn't connect to the Hub: Cannot reach https://huggingface.co/api/models/stabilityai/stable-diffusion-xl-base-1.0: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable..
-Will try to load from local cache.
-Keyword arguments {'safety_checker': None} are not expected by StableDiffusionXLPipeline and will be ignored.
-Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]Loading pipeline components...:  29%|██▊       | 2/7 [00:00<00:00,  7.78it/s]Loading pipeline components...:  43%|████▎     | 3/7 [00:00<00:00,  5.30it/s]Loading pipeline components...:  86%|████████▌ | 6/7 [00:00<00:00, 10.75it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:00<00:00,  7.24it/s]

@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "/data0/liyanlei/watermark_research/scripts/vae_core/experiment.py", line 152, in <module>
-    main(Path(sys.argv[1]), Path(sys.argv[2]))
-  File "/data0/liyanlei/watermark_research/scripts/vae_core/experiment.py", line 146, in main
-    raise RuntimeError('Exact equivalence failed; preserve all evidence without retry')
-RuntimeError: Exact equivalence failed; preserve all evidence without retry

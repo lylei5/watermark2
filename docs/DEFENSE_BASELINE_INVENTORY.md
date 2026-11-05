@@ -1,80 +1,47 @@
-# 针对 Imprint 伪造方向的防御基线清单
+# 语义水印防御端基线清单与漏洞对比（2026-11-06 更新）
 
-核查日期：2026-11-03。判据：**顶刊顶会 + 有可运行代码 + 直接针对黑盒语义水印伪造**。
-检索入口：Müller et al. CVPR 2025 攻击基线（arXiv 2412.03283）的完整引用列表，共 44 篇可见引用（30 防御类 / 14 攻击复现类），逐篇筛选。
+**研究视角：** 本清单服务于 **基于 SemBind 的语义水印防御与鲁棒性提升研究（面向 CCF-A 类会议）**。我们将 2025–2026 年针对扩散语义水印伪造（Reprompting / Imprinting / LFA）的顶会防御与最新预印本分为 **生成端新水印方案** 与 **检测端投影/判别层** 两类，梳理其代码可用性、本仓库复现状态以及我们发现的**防御缺陷/改进切入点**。
 
-## 0. 结论先说
+---
 
-**有缺口。** 此前评估的三项（SemBind / PGID / Geometry）不是全集。**ISTS（CVPR 2026 Findings）是最大的漏项**：官方仓库完整、代码里直接内置 `--atk_type imprinting`，且用了比我们更强的白盒威胁模型。
+## 1. 两类防御机制的严格区分（决定论文对比表与协同设计）
 
-另外 CoverLock 与 Sign-Clamping 两篇新防御**只有预印本、无会议**，按"顶刊顶会"判据暂不列为基线，但需跟踪。
+| 防御类型 | 核心机制 | 代表工作 | 与我们研究（SemBind+）的关系 |
+|---|---|---|---|
+| **生成端语义绑定方案（New Watermarking Schemes）** | 在水印生成/嵌入阶段将图像或提示词语义与潜变量/轨迹绑定；验证端先提取语义解绑再检测 | **SemBind**（ICML 2026）、**ISTS**（CVPR 2026 Findings）、**SEAL**（ICCV 2025）、**PAI**（ICLR 2026）、**SLICE**（BMVC 2026） | **直接对标基线与核心改进对象**：我们在 SemBind 基础上解决其哈希碰撞、公开特征对齐绕过、空间盲区、硬二值化鲁棒性悬崖及 $2\times$ 生成开销问题 |
+| **检测端投影/几何判别层（Detection-Layer Defenses）** | 不改变原水印（如 GS）嵌入方式，在检测端通过引导反演去噪或几何偏移判别伪造 | **PGID**（NeurIPS 2026）、**Geometry / GeoDistort-WM**（ICML 2026） | **横轴对比 + 纵深协同组件**：一方面单独对比其高步数攻击退化与有状态限制，另一方面可将轻量流形投影与 SemBind+ 软解绑结合构建纵深防御 |
 
-## 1. 先分清两类防御（决定比较是否公平）
+---
 
-这个区分之前没有写清楚，会影响论文里的对比口径：
+## 2. 顶会防御基线与缺陷对比矩阵
 
-| 类型 | 含义 | 我们的攻击怎么比 |
-|---|---|---|
-| **检测层 / 后处理** | 不改水印方案，在检测端加投影或判别 | 保持 GS + Imprint 不变，只在评估端加该层 |
-| **新水印方案** | 替换 GS 的嵌入方式（语义绑定、动态注入等） | 必须换掉水印方案，重新跑攻击；这是**方案级对比**，不是防御层对比 |
+| # | 防御方案 | 会议 / 年份 | 类型 | 官方代码状态 | 本仓库复现状态 | 核心缺陷与我们的改进空间 |
+|---|---|---|---|---|---|---|
+| 1 | **SemBind** | ICML 2026 | 生成端语义掩码绑定 | ⚠️ 部分公开（`XinZhang1999/SemBind@337c9f90`，仅发布 masker 与反演） | ✅ **Masker 位级零误差复现**（Hamming=0）；已按论文实现完整绑定/解绑链路（[`sembind.py`](../scripts/defense/sembind.py)）并完成 30 对实测 | **核心基座**：(1) 1024 位对比哈希存在跨图自然碰撞（最小 Hamming 29/1024），30 步 Imprint 下 2/28 样本被攻破（最高 BA 0.9844）；(2) 依赖公开 `DINOv2 [CLS]`，可被无密钥特征对齐攻击绕过；(3) 无空间局部性；(4) 硬二值化在失真下易翻转，降低 $\sigma$ 则泄漏未绑定坐标；(5) 需辅助图生成（$2\times$ 开销与语义漂移） |
+| 2 | **PGID** | NeurIPS 2026 | 检测端引导反演去噪 | ✅ 完整公开（`MinhQDuong/PGID@eb7fb0dd`） | ✅ **已跑通复现**（[`repro_pgid_20261103`](../reports/repro_pgid_20261103/report.md)，Det 完全命中论文 0.00） | **无语义绑定，随攻击预算单调失守**：在 50/100/150 步攻击下防御后 BA 从 `0.5781 → 0.6211 → 0.6641` 单调上升，距阈值 `0.7070` 仅差 4.3pp；易受流形残差预补偿自适应攻击突破 |
+| 3 | **ISTS** | CVPR 2026 Findings | 实例特定时间/频域选择 + 双边检测 | ✅ 完整公开（`hala64/ISTS@562ec0fa`，内置 `--atk_type imprinting`） | 🔄 权重与代码已盘点，待在独立环境中跑对比基线 | **参数熵低且不防全潜变量复制**：用 `CLIP + K-Means(1024)` 选 $t \in [10,20], l \in [-12,12]^2$，离散空间极小；双边检测 $\min(s_+, s_-)$ 仅防符号取反移除，无法阻止复制完整潜变量的 Imprint 伪造 |
+| 4 | **Geometry** (`GeoDistort-WM`) | ICML 2026 | 检测端全局/局部几何距离 | ❌ 防御代码未发布（`chengyi-chris/geodistort-wm@72880c9` 仅含重跑入口） | ✅ **按论文公式实现并完成网格扫描**（[`repro_geometry_paper_task_20261103`](../reports/repro_geometry_paper_task_20261103/report.md)） | **有状态存储依赖 + `L-SPD` 数值退化**：需保存/检索每张原图的初始潜变量 $z_T$；实测 `G-Cos` AUC=1.000，但局部指标 `L-SPD` 在论文 $16\times 16$ 网格下 AUC 仅为 **0.480（随机猜测）**，$32\times 32$ 网格因协方差秩亏（$\text{rank}\le 3$）被 $\epsilon I$ 主导而退化 |
+| 5 | **SEAL** | ICCV 2025 | 生成端 `BLIP-2` 文本描述 SimHash 分块绑定 | ✅ 公开（`Kasraarabi/SEAL@92d31b31`） | ✅ 已完成源码审计（[`SEAL_EVALUATION_CONTRACT.md`](SEAL_EVALUATION_CONTRACT.md)）与测试脚本（[`seal_smoke.py`](../scripts/defense/seal_smoke.py)） | **模型栈沉重且受限于文本重描述稳定性**：需额外加载 15.8 GB `BLIP-2` 与句向量模型并执行 $2\times$ 扩散生成；轻度图像失真或编辑引起的描述措辞变化即可破坏分块噪声匹配 |
+| 6 | **PAI** | ICLR 2026 | 去噪轨迹前 5 步乘性偏转 + 稳健 PCA | ✅ 部分公开（`QingyuLiu/PAI@9ebc58d1`，缺 `pca_reference.npy`） | ✅ 已完成源码与连续性审计（[`PAI_EVALUATION_CONTRACT.md`](PAI_EVALUATION_CONTRACT.md)） | **中心化数据库依赖**：验证端必须按文件名从本地登记表读取生成时的密钥与时间戳 RNG 状态，无法进行无状态独立验证 |
+| 7 | **SLICE** | BMVC 2026 Oral | 多语义因子分区绑定 | ❌ 未公开代码 | ✅ 已完成论文理论边界核查 | 依赖预设语义因子（subject/environment/action/detail）显式分离假设，尚无公开实现 |
 
-- 检测层：**PGID、Geometry**
-- 新方案：**SemBind、ISTS、PAI、SEAL、SLICE**
+---
 
-把新方案和检测层放在同一张表里比"检测率"是不成立的，必须在论文里分开。
+## 3. 重点跟踪的最新预印本（2026 年 9–10 月，启发防御设计）
 
-## 2. 顶会防御基线清单
+| 工作 | arXiv 编号 | 核心思想 | 对我们设计 SemBind+ 的借鉴与区分 |
+|---|---|---|---|
+| **Latent Coordinate Sign Clamping** | `2610.40204`（2026-10-29） | 结合幅值加权多数投票、BCH/Chase 软判决译码与感知哈希 + CLIP 上的 Reed-Solomon 模糊承诺（Fuzzy Commitment） | **高度相关**：验证了“幅值加权软译码 + 纠错模糊承诺”在抗伪造与鲁棒性上的潜力。区别在于其针对事后多比特嵌入，而我们在原生无损扩散水印（SemBind-GS）上构建**语义 logit 裕度 + 潜变量幅值联合软解绑**与**密钥化空间-语义绑定** |
+| **CoverLock / Residual Transferability** | `2609.32241`（v2 2026-10-24） | 分析残差可迁移性，通过增强水印证据对载体图的依赖来抵抗跨图残差迁移 | 与我们对 SemBind“跨图掩码一致率/多数投票放大”的分析互为印证 |
+| **PP-Mark** | `2610.41170`（2026-10） | 可公开验证与形式化不可伪造水印 | 提供公开验证威胁模型参考；我们聚焦于保持扩散语义水印高鲁棒性的同时实现抗伪造绑定 |
+| **Gaussian Shading++** | `2504.15026v2` | 双通道设计、伪随机纠错码、软判决解码与公钥签名 | 侧重密码学签名与双通道编码，未绑定图像视觉语义（仍面临同图反演重生成/移植风险），可与我们的语义绑定层正交结合 |
 
-| # | 防御 | 会议 | 类型 | 官方代码 | 复现状态 |
-|---|---|---|---|---|---|
-| 1 | **ISTS** | CVPR 2026 Findings | 新方案 | ✅ 完整（`hala64/ISTS` @`562ec0fa`） | ❌ **未评估（最大缺口）** |
-| 2 | **PGID** | NeurIPS 2026 | 检测层 | ✅（`MinhQDuong/PGID` @`eb7fb0dd`） | ✅ 已复现（Det 完全一致，BA +0.04–0.05） |
-| 3 | **SemBind** | ICML 2026 | 新方案 | ⚠️ 部分（`XinZhang1999/SemBind` @`337c9f90`） | ⚠️ masker 位级复现；绑定链路未发布 |
-| 4 | **Geometry** | ICML 2026 | 检测层 | ❌ **未发布**（README: "will be released soon"） | ⚠️ G-Cos 复现（AUC 1.000）；L-SPD 不可复现 |
-| 5 | **SEAL** | ICCV 2025 | 新方案 | ✅（`Kasraarabi/SEAL` @`92d31b31`） | ❌ 阻塞：需未缓存 BLIP2/embedding 与固定语义协议 |
-| 6 | **PAI** | ICLR 2026 | 新方案 | ✅（`QingyuLiu/PAI` @`9ebc58d1`） | ❌ 阻塞：缺稳健 PCA 参考与拟合协议 |
-| 7 | **SLICE** | BMVC 2026 Oral | 新方案 | ❌ 作者页无 Code 链接 | ❌ 阻塞：无公开实现 |
+---
 
-## 3. ISTS 详情（下一步重点）
+## 4. 论文实验对比规范
 
-- 论文：*Towards Robust Content Watermarking Against Removal and Forgery Attacks*，Yifan Zhu / Yihan Wang / Xiao-Shan Gao
-- arXiv 2604.06662，CVPR 2026 Findings
-- 仓库：`github.com/hala64/ISTS`，单次 initial commit `562ec0fa936a7852831534a841a3ec73ed28a3c0`（2026-04-08）
-- 方法：实例特定水印 + 双边检测。按 prompt 语义用 CLIP + K-Means(1024) 选择**注入时间 t∈[10,20] 与频域偏移 l∈[−12,12]²**；检测时取正反两向匹配度较小者，专门对抗"把水印推向反方向"的 imprint 移除。
-- **它评估的攻击里直接包含 Imp-Forgery（Müller 的 imprint 伪造）**，还有 Imp/Avg/VAE 三种移除与三种伪造，且设定为**白盒（攻击者可用同一模型）**，比我们的黑盒更强。
-- 依赖：python 3.12、diffusers 0.33.1、torch 2.6.0、transformers 4.51.2、numpy 1.26.4；`open_clip` 已内置；训练好的分类器在 `./results`
-- 环境可行性：服务器 **pip 网络可用**（已验证），可建独立 env；模型侧只需 SD2.1（本地已有 Manojb 快照），**不需要下载新模型**
-
-**风险**：diffusers 0.33.1 与本机 0.31.0 不同，且 ISTS 的 `inverse_stable_diffusion.py` 与 SemBind 同源，可能撞上同一个 `convert_model_output` 签名漂移。必须建独立 env 按它 pin 的版本跑，不要混用。
-
-## 4. 预印本（暂不列为基线，需跟踪）
-
-| 工作 | arXiv | 与我们的关系 |
-|---|---|---|
-| CoverLock / Residual Transferability | 2609.32241（v2 2026-10-24） | 提出"增强水印证据对封面图依赖"来抗残差迁移；与我们的"语义掩码一致率"是同一现象的两面 |
-| Latent Coordinate Sign Clamping | 2610.40204（2026-10-29） | 双层伪造防御（感知哈希 + CLIP 上的 RS 模糊承诺），报告 98.8% 伪造检测准确率；**直接针对 GS 符号结构**，最贴近我们的攻击面 |
-| PP-Mark | 2610.41170 | 可公开验证、形式化不可伪造 |
-
-Sign-Clamping 这篇值得特别盯——它五天前才挂出来，且攻击面对得最准。
-
-## 5. 顶会但与伪造方向不同（不作基线）
-
-- **TokenTrace**（CVPR 2026，2602.19019）：多概念归属，不是抗伪造
-- **PSyDUCK**（IEEE WIFS 2025）：把信息藏进去噪过程以提升容量，不是抗伪造
-- **Latents-Inv**（IJCAI 2026）：鲁棒性导向，非抗伪造
-- **PDMark**（Neural Networks 2026）：可否认水印，威胁模型是胁迫披露，不同
-
-## 6. 建议评估顺序
-
-1. **ISTS** —— 唯一"顶会 + 完整代码 + 内置 imprinting 评估"的缺口，优先
-2. **SEAL / PAI** —— 代码都在，卡在材料缺项；若能从作者仓库补齐参考协议即可解阻
-3. **SLICE** —— 等作者放代码
-4. **Geometry** —— 等作者放代码；在此之前只报 G-Cos AUC，L-SPD 不引用
-5. **Sign-Clamping** —— 若在正式会议前有代码，纳入
-
-## 7. 必须写进论文的口径
-
-- 新方案与检测层分开报告，不混表
-- 每一项标注"官方代码 / 打补丁的官方代码 / 按论文重写"三档之一
-- 只报 AUC 的项（Geometry）不产生接受/拒绝，`D=null`
-- 未复现的项不得写成"该防御无效"
+1. **生成端方案与检测端防御分层汇报**：主表分别展示生成端语义绑定方案（Vanilla GS、SEAL、ISTS、SemBind、**SemBind+ [Ours]**）与检测端/组合方案（PGID、Geometry、**SemBind+ w/ PGID**），保证威胁模型与信息权限公平。
+2. **双轴评估指标（Security × Robustness × Efficiency）**：
+   - **安全性（Anti-Forgery Security）**：在标准黑盒伪造（Reprompting、Imprint 30/150 步、Jain LFA）与自适应伪造（DINOv2-CLS 对齐攻击、碰撞筛选攻击、局部拼接攻击）下的伪造位准确率（Forged BA $\downarrow$）与伪造通过率（ASR / FAR $\downarrow$，越接近 0 越好）；
+   - **鲁棒性（Distortion & Edit Robustness）**：在 JPEG 压缩、高斯模糊、缩放、随机裁剪、色彩抖动、高斯噪声及重生成编辑下的合法水印位准确率（Clean/Distorted BA $\uparrow$）与真阳性检测率（TPR@FPR=$10^{-6}$ $\uparrow$）；
+   - **生成与验证效率（Efficiency & Kualitas）**：单图生成 NFE / 秒数、FID $\downarrow$、CLIP-Score $\uparrow$ 以及是否无状态（Stateless Verification）。

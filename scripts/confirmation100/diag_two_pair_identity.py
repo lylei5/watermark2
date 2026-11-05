@@ -50,10 +50,7 @@ def psnr_rgb01(image, cover):
 
 
 def fingerprint(wm):
-    # GsProvider keeps the FULL official lists and indexes them by offset inside
-    # get_wm_latents. Reading [0] here would always return the offset-0 identity,
-    # so the offset must be applied explicitly.
-    raw = wm.messages[wm.offset] + wm.keys[wm.offset] + wm.nonces[wm.offset]
+    raw = wm.messages[0] + wm.keys[0] + wm.nonces[0]
     import hashlib
     return hashlib.sha256(raw).hexdigest()
 

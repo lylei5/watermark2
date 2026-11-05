@@ -1,9 +1,0 @@
-{
-  "target_snapshot": "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--stabilityai--stable-diffusion-xl-base-1.0/snapshots/462165984030d82259a11f4367a4eed129e94a7b",
-  "proxy_snapshot": "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c",
-  "target_scaling_factor": 0.13025,
-  "proxy_scaling_factor": 0.18215,
-  "encode": "posterior.mean",
-  "decode": "scaled_mean / scaling_factor",
-  "quantization": "diffusers image_processor.postprocess pil"
-}

@@ -1,6 +1,0 @@
-phase 1: generate target image
-(Benign image) detection_success: True, bit accuracy: 1.00000, p_value: 0.0
-phase 2: invert using attacker model
-phase 3: generate attacker image
-phase 4: invert using target model and verify watermark
-(Harmful image) detection_success: True, bit accuracy: 0.93750, p_value: 0.0

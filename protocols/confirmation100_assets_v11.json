@@ -1,0 +1,53 @@
+{
+  "schema": 2,
+  "kind": "data_assets_only_no_model_experiment",
+  "created_at_utc": "2026-10-25T05:45:06.595559+00:00",
+  "seed": "wm-native100-20261025-v1",
+  "metadata_url": "https://images.cocodataset.org/annotations/annotations_trainval2017.zip",
+  "metadata_member": "annotations/captions_val2017.json",
+  "source_basis": "Official COCO download page; only metadata bundle and per-image objects, never the image archive",
+  "license_policy": "Same metadata-declared CC BY2.0/3.0/4.0 allowlist. Reliable Flickr photoID and original URL required; static URLs may have unknown creator account/display name recorded as null. Preserve metadata license/source; no image redistribution until independently cleared; no fictional attribution.",
+  "counts": {
+    "covers": 100,
+    "unique_captions": 100,
+    "disjoint_caption_source_images": 100
+  },
+  "ranking": "ascending SHA256(seed|cover|COCO_ID), separate seed|caption|COCO_ID; exact code fixed by workerSHA",
+  "eligibility": "Valid COCO2017val filename/URL and positive dimensions<=20M pixels; at least200 eligible source IDs; no semantic/content/target-score selection",
+  "exclusions": "Known explicit historicalCOCO IDs, source bytes,originalRGB pixels,canonicalRGB512 pixels; 63AC-bit pHash with DC bit0 and median threshold, Hamming<=4, against prior bank and accepted covers; disjoint FlickrphotoIDs; unique NFKC-casefold-whitespace-normalized captions excluding historical prompt hashes; lowest valid captionAnnotationID per ranked source",
+  "scope_limit": "No finite audit proves all prior development use absent. AnonymousCOCO_1..10 are not original IDs. Prior transformed/undocumented/out-of-project uses may escape. No foundation-training-unseen claim.",
+  "preprocessing": "Pillow11: Image.open(source).resize((512,512)).convert(RGB), no EXIF correction or semantic changes; raw JPG retained",
+  "budgets": {
+    "all_new_artifact_cap_bytes": 10737418240,
+    "dataset_cap_bytes": 536870912,
+    "metadata_zip_cap_bytes": 268435456,
+    "decoded_metadata_member_cap_bytes": 16777216,
+    "source_image_cap_bytes": 8388608,
+    "download_candidate_cap": 150,
+    "engineering_watchdog_seconds": 7200
+  },
+  "failure_policy": "No automatic retries, no access workaround, no relaxed selection rules; preserve partial files and all failed/excluded candidates. Existing outputs are never overwritten.",
+  "confirmation_use": "Frozen baseline confirmation only; never method/hyperparameter selection, never inspect target scores during development. No model generation, attack optimization, keys/messages or service credentials generated.",
+  "publication": "Only protocol,manifests,hashes,metadata attribution,logs,and acquisition/verification scripts; no raw JPG,canonical PNG or annotation archive in GitHub.",
+  "revision": "v1.1",
+  "supersedes_sampling_schema_assumption_only": "v1 owner/photos URL assumption; preserve failed v1 execution",
+  "attribution_parser": "Legacy farm*.staticflickr.com or modern live.staticflickr.com static image URL, or public flickr.com/photos/account/id page; strict parser tests; missing/invalid photoID excluded deterministically. Unknown owner does not mean unknown license ID.",
+  "same_seed_counts_ranking_exclusion_and_preprocessing": true,
+  "original_protocol_sha256": "561fd8b5be87e364a59b3b09a941ef4cf0409da52c27a3656e23699df8c65648",
+  "prior_coverage_sha256": "a8bbd98d20797e58da8edd4f949f75d779078437cc9cb159c6eb3216daae48fe",
+  "sources": [
+    "https://raw.githubusercontent.com/cocodataset/cocodataset.github.io/master/dataset/format-data.htm",
+    "https://www.flickr.com/services/api/misc.urls.html"
+  ],
+  "transport_source": "Verified official regional S3 path-style HTTPS; metadata/member already SHA256 verified; no repeated full package",
+  "combined_windows_and_server_dataset_copy_cap_bytes": 536870912,
+  "implementation_hashes": {
+    "tools/confirmation_attribution.py": "af4e3d9906d4999c8927f491204e72a8e6902ced9ad2bd08e6e3f9b3b2e2f855",
+    "tools/prepare_confirmation100_assets_v11.py": "ef6fa9eb039fff19f1643ff67bc706740a9e343e8513a3e8600add8bec7d0796",
+    "tools/relay_confirmation100_assets_v11.py": "b222dc8861c9a96817582b633d32a15249cecd6d71c95dac4259f59ac5b3e3c0",
+    "tools/windows_confirmation_relay_v11.py": "df47400a8ad548792bd9e6167b4f529bc994eb89693b320a77b8880775f53453"
+  },
+  "derived_from_original_created_at_utc": "2026-10-25T03:09:54.884577+00:00",
+  "prelaunch_draft_protocol_sha256": "2450adf3aee47f11530afa6a7087e588b633895e1a9373331cd5c7fd7a9520b7",
+  "frozen_at_utc": "2026-10-25T05:45:06.595559+00:00"
+}

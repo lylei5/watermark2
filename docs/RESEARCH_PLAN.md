@@ -1,54 +1,58 @@
-# 论文导向的研究计划
+# 面向 CCF-A 的语义绑定水印防御与鲁棒性提升研究计划
 
-**当前状态（2026-10-25 UTC）：**100 对确认资产 v1.1 已完成并发布：100 张载体、100 条唯一文本及固定配对。恢复核查通过服务器 200 份原图/PNG 的存在性、大小与 SHA256，以及315项执行封存文件哈希。[资产报告](https://github.com/liylei666-hub/watermark2/blob/e5c86c769dbb39853e8994367e4210045d782a54/reports/confirmation100_assets_v11_completed/report.md) / [恢复核验](https://github.com/liylei666-hub/watermark2/blob/e5c86c769dbb39853e8994367e4210045d782a54/reports/confirmation100_assets_v11_completed/recovery_verification_20261025.json)，研究提交 `e5c86c769dbb39853e8994367e4210045d782a54`。
-**模型实验边界：**100 对模型实验尚未启动。Stage31 已发布结果仅为4对共享身份原生校准及事后CPU LPIPS，不构成100对完整论文复现。[校准报告](https://github.com/liylei666-hub/watermark2/blob/e5c86c769dbb39853e8994367e4210045d782a54/reports/31_native_calibration/report.md) / [质量补充](https://github.com/liylei666-hub/watermark2/blob/e5c86c769dbb39853e8994367e4210045d782a54/reports/31_native_calibration_lpips_20261025/report.md)。确定性选择与像素检查采用历史服务器回执，本轮没有重跑。
-**下一项：**审阅完整 corrected native Imprint 100 对基线协议、独立私有 GS 材料及实际资源预算；100 对模型实验尚未启动。Stage30、八攻击对照和 Jain 原设置保持 hold。本轮仅发布及审阅，不启动GPU作业，不下载新模型。
+**更新日期：** 2026-11-06  
+**核心目标：** 以 **SemBind（ICML 2026）** 为基础，针对其在自然语义碰撞、公开骨干无密钥特征对齐、局部空间盲区、硬二值化鲁棒性悬崖及双倍生成开销等方面的漏洞，设计并验证新一代语义绑定水印防御框架（**SemBind+**），在抗伪造能力（含自适应攻击）与失真/编辑鲁棒性上全面超越现有 SOTA 防御（SemBind、PGID、ISTS、Geometry、SEAL、PAI），冲击 CCF-A 类顶会（CVPR / ICCV / ICML / NeurIPS / CCS / S&P / USENIX Security）。
 
-## 阶段27历史计划与结果
+---
 
-以下保留阶段27结束时的计划。其后阶段28/29结果已关闭，当前决定以上述研究提交及下一项为准。
+## 1. 论文核心故事线（Storyline）
 
-更新：2026-10-20。目标是可发表的方法贡献、充分实验、可复现代码和论文初稿。当前已有基线和开发诊断，尚未建立新方法贡献。历史证据、失败与冻结配置保留在各阶段报告和Git历史中。
+1. **现状与痛点（Why Existing Defenses Fail）**：
+   - 潜空间扩散水印（如 Gaussian Shading、Tree-Ring）易受黑盒伪造攻击（CVPR 2025 Reprompting / Imprinting）和单图 VAE 优化攻击（Jain et al. LFA）威胁。
+   - 2025–2026 年提出的两类防御均存在关键漏洞：
+     - **以 SemBind（ICML 2026）为代表的语义掩码绑定方案**：
+       1. **跨图哈希碰撞与投票放大（V1）**：对比学习训练的 1024 位语义哈希存在非平凡跨图碰撞（实测 190 对不同图像最小 Hamming 距离仅 29/1024，一致率 97.2%），经 GS 的 $64 \times 256$ 多数投票放大后，在仅 30 步普通黑盒 Imprint 攻击下即出现 2/28 样本被直接伪造攻破（最高 BA 0.9844）。
+       2. **公开骨干特征瓶颈（V2）**：私有 masker 完全建立在公开 `DINOv2-giant` `[CLS]` 特征之上，攻击者无需获知私有 masker 权重或秘密置换 $\pi$，仅需在攻击损失中对齐公开 `DINOv2 [CLS]` 即可实现“无密钥特征对齐绕过”。
+       3. **全局 `[CLS]` 空间盲区（V3）**：丢弃全部空间 patch tokens，无法抵抗局部区域篡改与拼接伪造。
+       4. **硬二值化鲁棒性悬崖与 $2\times$ 生成漂移（V4）**：边界 logits（$|h_i|\approx 0$）在轻度失真下易翻转（实测最多 78/1024 位翻转）；降低掩码率 $\sigma < 1$ 则直接暴露 $(1-\sigma)L$ 个未绑定坐标；且两阶段生成带来 $2\times$ 延迟与跨轨迹语义漂移。
+     - **以 PGID（NeurIPS 2026）/ Geometry（ICML 2026）/ ISTS（CVPR 2026）为代表的同期方案**：
+       - PGID 无语义与密码学绑定，随攻击优化步数增加防御后 BA 单调攀升（150 步达 0.6641，距阈值仅 4.3pp）；
+       - Geometry 依赖有状态原图潜变量检索，且局部 `L-SPD` 指标在 $16\times 16$ 网格下实测 AUC 仅 0.480（随机猜测），$32\times 32$ 网格因秩亏退化；
+       - ISTS 离散时间/频域参数空间熵过低，双边检测仅防符号反转移除而不防全潜空间复制伪造。
 
-## 论文问题
+2. **我们的方法贡献（SemBind+：Three Synergistic Pillars）**：
+   - **贡献一：置信度感知的软解绑与加权 LLR 译码（Margin-Aware Soft Unbinding & LLR Decoding）**
+     - 保持 $\sigma = 1.0$（100% 坐标全绑定），利用语义 logit 裕度 $|h_i|$ 与反演潜变量幅值 $|z_{\text{inv}}|$ 对 $64 \times 256$ 重复投票做对数似然比加权，并给出加权集中不等式下的信噪比增益与抗伪造安全性理论界。
+   - **贡献二：密钥化多层空间-语义联合绑定（Keyed Multi-Granular Spatial-Semantic Binding）**
+     - 对多层 DINOv2 特征施加验证端密钥化随机正交投影（抵御基于公开骨干的无密钥特征对齐攻击）与平衡码本约束（消除自然碰撞长尾）；同时融合全局 token 与空间 patch tokens 进行分块潜空间绑定，实现局部篡改检测与定位（Tamper Localization）。
+   - **贡献三：单遍轨迹自绑定与流形净化协同（Single-Pass Trajectory Binding & Detection-Layer Synergy）**
+     - 在单次扩散去噪早期步通过 Tweedie 干净图像估计 $\hat{x}_{0|t}$ 提取语义掩码，将生成成本从 $2\times$ 降至 $\sim 1.15\times$ 并消除辅助图漂移；验证端结合轻量级流形去噪投影抵御高步数自适应攻击。
 
-在不使用目标检测反馈的条件下，如何把参考图的水印证据迁移到指定内容的图像，并改善最终交付图片的攻击效果、内容保留或计算效率？方法要在真实交付端点成立；代理损失和参考噪声恢复只作解释指标。
+---
 
-该历史计划的第一优先级是得到一个可检验的完整方法结果。理论解释服务于实际现象，不要求先证明普遍迁移定理才能做开发试验。只有会影响算法定义、比较公平性、信息权限或结果真实性的问题需要在运行前解决。
+## 2. 分阶段实验执行路线图
 
-## 阶段27方法决定
+### 阶段 1：漏洞实证与基线补齐（Vulnerability Audit & SOTA Baseline Completion）
+- **任务 1.1（SemBind 跨图碰撞与 150 步基线）**：在 `confirmation100` 全部 100 张载体（4950 对跨图组合）上完成 `SemanticMasker` 碰撞分布统计；补齐 30 对逐对独立身份（Per-Pair Identity）下 150 步 Imprint 对 SemBind-GS 的完整基线测试。
+- **任务 1.2（SemBind 无密钥 DINOv2-CLS 对齐自适应攻击验证）**：实现加入公开 `DINOv2 [CLS]` 对齐损失的自适应 Imprint 攻击，定量证明原版 SemBind 在不泄露 masker 权重与置换 $\pi$ 时的脆弱性。
+- **任务 1.3（ISTS 与 PGID 扩展评估）**：在服务器独立环境跑通 ISTS（CVPR 2026 Findings，`hala64/ISTS`）的 `Imp-Forgery` 基线，完成 PGID $n \ge 5$ 与流形预补偿对照。
 
-[阶段27](../reports/27_method_resume_20261019T173017Z/report.md)完成12个新参考/载体任务、每参考独立GS身份的完整方法比较。原生Imprint普通GS通过8/12，交付路径Imprint通过6/12；delivery平均BA低1.822917个百分点，2对改善、10对下降。中位配对失真比0.908971、核心时间比1.051660虽符合门槛，但主要条件“至少多通过3个”失败。因此关闭该固定候选，保留原始结果，不补样或调参。Jain交付11张、普通GS通过3张，原始任务2工程失败留为缺失；主比较12对完整。
+### 阶段 2：SemBind+ 防御算法开发与模块消融（Method Development & Ablation）
+- **任务 2.1（Margin-Aware Soft Unbinding）**：在 `scripts/defense/` 下实现基于连续 logit 与潜变量幅值的软判决解码器，无需重新训练模型即可在 6 类常见失真（JPEG、高斯模糊、缩放、裁剪、亮度、高斯噪声）与黑盒伪造上验证 TPR/FPR 与鲁棒性提升。
+- **任务 2.2（Keyed Multi-Layer Spatial-Semantic Masker）**：实现密钥化多层特征投影与空间分块绑定，验证对“DINOv2-CLS 对齐攻击”的防御率（FPR/ASR $\to 0$）及局部拼接篡改定位能力。
+- **任务 2.3（Single-Pass Tweedie Binding）**：实现单遍去噪早期语义提取绑定，对比两阶段生成与单遍生成的自检位准确率、FID、CLIP-Score 与单图耗时。
 
-全部35候选先封存后评估，59个分数由独立CPU解码复核；全部图片与逐任务表已公开。12任务属于开发筛选，助手内容观察不替代独立人工标签，普通GS通过不替代完整防御接受。
+### 阶段 3：全面对比实验与论文成稿（Full Benchmark & Paper Writing）
+- 在统一协议（逐图独立密钥/nonce、固定 FPR=$10^{-6}$ 阈值校准、100 对测试集）下完成 **Vanilla GS、SemBind、PGID、ISTS、Geometry、SEAL 与 SemBind+（Ours）** 的全矩阵对比表与理论证明整理。
 
-**阶段27结束时的历史下一项：分阶段反演优化的独立开发比较（已由阶段28/29完成并关闭）。** 新假设是，早期使用短反演轨迹降低单次更新成本，末期回到原50步反演目标精化，可以在相同实际核心预算内取得更好的最终PNG结果。这改变优化计算分配，尚未证明有效性或新颖性。原生Imprint和固定短轨迹作为完整方法对照，分别检验是否只是多做更新、是否需要末期完整目标。
+---
 
-先完成实现并冻结方法、计时依据、独立任务、去留标准和文件哈希，再进行完整比较。CPU检查仅排除会改变执行决定的具体实现错误；不以普遍迁移证明或完整防御材料缺项阻塞可运行的普通GS开发。当前12任务和此前关闭的固定候选保持关闭。
+## 3. 实验服务器与资产规范
 
-主要端点仍是最终PNG的普通GS、消息准确率、载体失真、内容与实际计算成本。每项攻击交付一个固定候选，整组封存后统一评估，不按目标分数筛选候选或调参。完整几何/SemBind结论保持unknown。
-
-## 从开发结果到论文
-
-1. **方法可行：** 完整候选相对基线有可复核的交付收益，成本和内容变化可以解释；负结果也直接作研究决定。
-2. **贡献成立：** 明确区别于已有Imprint、Jain、Reprompting与PnP；具有能够解释收益且经消融支持的机制，而不只是增加计算。
-3. **证据充分：** 方法固定后使用独立提示词、种子和水印身份确认，扩展可用模型/水印设置，报告不确定性、失败案例、内容、失真和成本。具体样本量依据开发效应与采样层级制定。
-4. **形成论文：** 问题、方法、实验和局限同时写入稿件；没有证据的位置保留待验证，不提前写成功结论。
-
-完整几何与SemBind评估材料不足，不能声称突破这些防御。普通GS任务可以独立推进，但其结果不会替代完整防御接受。该缺项不再阻塞所有方法开发，也不通过自行发明验证器补齐。
-
-## 已有证据的用途
-
-- [阶段17–19](../reports/19_target_encoding/report.md)：载体任务可运行，代理匹配排序可能在目标端反转；原开发组关闭。
-- [阶段21](../reports/21_directional_study/report.md)：有限步长方向差异不等于完整攻击成功；原组关闭。
-- [阶段23](../reports/23_reference_reliability/report.md)：预定跨步数一致性指标未优于幅值；不继续优化此指标。
-- [阶段24/25](../reports/25_delivery_transfer/report.md)：固定校正改善参考位恢复，但最终消息准确率下降；固定映射关闭。
-- [阶段26](../reports/26_delivery_objectives/report.md)：生成器参数化和交付路径不能单凭形式主张新颖性；基础代数检查到此为止。
-
-## 执行与报告
-
-仅在liyanlei@172.18.185.249的/data0/liyanlei/watermark_research运行模型，物理GPU0–2中核对空闲的一张，逐子进程核对UUID、占用和计算进程，UUID绑定、单卡cuda:0、串行。用户已取消GPU时间授权上限，冻结协议保留1200秒进程watchdog，记录真实用量。新增文件最多10GiB，不下载新模型，不使用本机或其他服务器GPU，不终止他人进程。
-
-CPU显式CUDA_VISIBLE_DEVICES为空。保护原始证据与凭据；阶段09不重试。目标密钥/消息、原始噪声、RNG、内部反演和分数只用于评估；文件分离不宣称权限隔离。只访问授权服务器、模型数据、GitHub及公开学术材料。
-
-每次实质更新回答三个问题：方法得到了什么结果、这能否支持论文贡献、下一项决定性工作是什么。避免用阶段数、文件数或提交次数代表科研进度。完成可复核的方法实现或结果后正常提交GitHub；日常说明原位更新。
+- **服务器与工作目录**：`liyanlei@172.18.185.249`，主目录 `/data0/liyanlei/watermark_research`。
+- **核心已就绪模型与数据资产**：
+  - 扩散模型缓存：`Manojb/stable-diffusion-2-1-base`、`stabilityai/stable-diffusion-xl-base-1.0`；
+  - SemBind 模型权重：`models/sembind/dinov2-giant`、`models/sembind/sembind_masker.pth`（886 MB，位级复现已验证）；
+  - 第三方防御基准代码：`third_party/SemBind`、`third_party/PGID`、`third_party/SEAL`、`third_party/semantic-forgery`、`third_party/geodistort-wm`；
+  - 标准测试集：`datasets/confirmation100_relay_v11/rgb512`（100 张 512×512 PNG 载体与配对提示词，SHA256 已核验）。
+- **GPU 使用规范**：启动任何 GPU 任务前核对 `nvidia-smi` 空闲状态与物理卡 UUID，通过 `CUDA_DEVICE_ORDER=PCI_BUS_ID` 与 `CUDA_VISIBLE_DEVICES=<UUID>` 绑定单卡，不干扰服务器上其他用户的进程。

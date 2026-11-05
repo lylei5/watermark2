@@ -1,6 +1,0 @@
-{
-  "seed": 103,
-  "error": "GPU occupied or unclear",
-  "at": "2026-10-16T01:53:57.161470+00:00",
-  "traceback": "Traceback (most recent call last):\n  File \"/data0/liyanlei/watermark_research/scripts/target_roundtrip/control.py\", line 80, in execute\n    write(case/'preflight.json',guard(run))\n  File \"/data0/liyanlei/watermark_research/scripts/vae_roundtrip/control.py\", line 17, in guard\n    g=c.guard();p=read(run/'protocol.json')\n  File \"/data0/liyanlei/watermark_research/scripts/prompt_control/control.py\", line 50, in guard\n    assert not g['compute_apps'] and int(g['row'][4]) <= 50 and int(g['row'][5]) == 0, 'GPU occupied or unclear'\nAssertionError: GPU occupied or unclear\n"
-}

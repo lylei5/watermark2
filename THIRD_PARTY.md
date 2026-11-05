@@ -1,14 +1,21 @@
-# 上游来源、版本与材料边界
+# Third-Party Codebases & Baselines
 
-上游采用 Git submodule 固定到已审计版本；浏览 GitHub 目录会转到对应上游。普通 clone 不会自动初始化子模块，也不会下载模型。
+This file documents the third-party watermark defense and attack codebases used in this project, both as Git submodules in `third_party/` and as full offline clones in `/data0/liyanlei/watermark_research/third_party/` on server `172.18.185.249`.
 
-| 来源 | 固定 commit | 许可核查 |
-|---|---|---|
-| [semantic-forgery](https://github.com/and-mill/semantic-forgery/tree/ca68950cd7b53b8438a49580f134b2a0db28d778) | ca68950cd7b53b8438a49580f134b2a0db28d778 | 上游有 MIT LICENSE 正文 |
-| [geodistort-wm](https://github.com/chengyi-chris/geodistort-wm/tree/72880c9bb1cee0b04bcb2433deb2ab2cc95ff622) | 72880c9bb1cee0b04bcb2433deb2ab2cc95ff622 | 未发现许可正文；README 徽章不能代替核实 |
+## 1. Git Submodules in Repository (`third_party/`)
 
-研究起点：Black-Box Forgery Attacks on Semantic Watermarks for Diffusion Models，CVPR 2025。几何审计指定版本：[Rethinking Forgery Attacks on Semantic Watermarks in Black-Box Settings: A Geometric Distortion Perspective，arXiv:2606.29807v1](https://arxiv.org/html/2606.29807v1)。论文核查的章节、公式和源码行号见阶段 03 报告。
+| Submodule Path | Upstream Repository | Venue / Paper | Role in This Project |
+|---|---|---|---|
+| `third_party/semantic-forgery` | `https://github.com/ai-secure/semantic-forgery` (`da7b497`) | ICLR 2026 (`arXiv:2503.05660`) | Provides Gaussian Shading (`GsProvider`), Tree-Ring (`TrProvider`), and black-box `Imprint` / `Reprompt` forgery attackers used to stress-test defenses |
+| `third_party/geodistort-wm` | `https://github.com/chenyi99/geodistort-wm` (`21ef69a`) | ICML 2026 (`arXiv:2602.11702`) | Official implementation of **Geometry** (`L-SPD`, `Cond`, `Det` Jacobian distortion detectors) |
 
-完整论文 HTML、两份上游 Git bundle 未在这里重分发；其原始 SHA256 和排除原因保留在 provenance/source_manifest.json。代码来源通过固定上游 commit 获取。模型权重、环境和缓存留在授权服务器；模型 ID、revision、文件大小/哈希清单、安装包版本在阶段 02 记录中。
+## 2. Defense Baselines on Server (`/data0/liyanlei/watermark_research/third_party/`)
 
-本仓库没有为第三方代码、论文或权重重新赋予许可证。项目自有材料的统一开放许可尚未指定。
+| Server Directory | Upstream Source | Venue / Paper | Local Weights & Env on `249` | Wrapper / Reproduction Script |
+|---|---|---|---|---|
+| `third_party/SemBind` | Official SemBind repo (`models/masker.py`, `sembind_pipeline.py`) | ICML 2026 (`arXiv:2602.07512`) | `models/sembind/dinov2-giant`, `models/sembind/sembind_masker.pth` (`semantic_forgery_py310`) | `scripts/defense/sembind.py`, `scripts/defense/sembind_smoke.py`, `scripts/defense/sembind_pairs.py`, `scripts/defense/repro/sembind_masker_equiv.py` |
+| `third_party/PGID` | `https://github.com/jisut/PGID` (`c91071f`) | NeurIPS 2026 | `cache/huggingface` SD1.5/SD2.1 (`pgid_py310`) | `reports/repro_pgid_20261103/report.md` |
+| `third_party/SEAL` | Official SEAL repo (`seal_pipe.py`, `perceptual_hash.py`) | ICLR 2026 (`arXiv:2503.12172`) | `models/seal/eva02_base_patch14_448` (`semantic_forgery_py310`) | `scripts/defense/seal_smoke.py`, `scripts/salvage30/seal.py` |
+| `third_party/ISTS` | Official ISTS repo (`ists_watermark.py`) | CVPR 2026 Findings | `models/openclip/` (`ists_py311`) | `docs/DEFENSE_BASELINE_INVENTORY.md` |
+| `third_party/geodistort-wm` | `https://github.com/chenyi99/geodistort-wm` | ICML 2026 (`arXiv:2602.11702`) | `semantic_forgery_py310` | `scripts/defense/geometry.py`, `scripts/defense/evaluate_geometry.py` |
+| `third_party/semantic-forgery` | `https://github.com/ai-secure/semantic-forgery` | ICLR 2026 (`arXiv:2503.05660`) | `semantic_forgery_py310` | `scripts/confirmation100/*`, `scripts/salvage30/eval.py` |

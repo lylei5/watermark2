@@ -1,8 +1,0 @@
-{
-  "scope": "Post-run standard-library ledger readback",
-  "explicit_cpu_visibility_omitted_once": true,
-  "cuda_capable_modules_imported": false,
-  "gpu_model_started": false,
-  "remediation": "Repeated readback with CUDA_VISIBLE_DEVICES explicitly empty; retained both records",
-  "corrected_record": "execution_recheck_cpu.json"
-}

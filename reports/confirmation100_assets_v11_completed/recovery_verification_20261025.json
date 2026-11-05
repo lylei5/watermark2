@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "status": "passed",
+  "observed_at_utc": "2026-10-25T17:41:32.592168+00:00",
+  "manifest_sha256": "a41bbad8a755418cbc06f83a6660f170dd0b48d5b9cb31d31d434d42657c8220",
+  "server_original_and_png_files_currently_verified": 200,
+  "server_sealed_report_artifacts_currently_verified": 315,
+  "local_failed_execution_artifacts_verified": 210,
+  "local_report_files": 322,
+  "server_report_files": 318,
+  "local_supplemental_files": [
+    "report.md",
+    "cpu_checks.json",
+    "public_verification.json",
+    "storage_audit.json"
+  ],
+  "historical_only_checks": [
+    "deterministic selection replay",
+    "pixel decoding and pixel hashes",
+    "parser and relay and atomic-ready regression tests",
+    "storage totals"
+  ],
+  "current_process_snapshot": "No matching leftover project processes observed in Windows filtered CIM or server same-user project command-line/cwd checks; inspection processes themselves excluded.",
+  "model_experiments_started": 0,
+  "gpu_used": false,
+  "models_downloaded": 0,
+  "stage31_scope": "four-pair calibration and posthoc CPU LPIPS already published, not full100-pair reproduction",
+  "research_baseline": "188a885ec4c3b0c700aa8b30b83960eacf8e524c",
+  "main_baseline": "87374327d6704689db2a1686394da1bfbd80671b",
+  "verification_method": "Native SSH identity option with approved read-only standard-library file hashes; local hash and Git checks. No model imports, pixel decoding, selection rerun or inference.",
+  "publication_evidence": "This is a recovery check receipt. Published state must be verified from the resulting Git commit and branch head."
+}

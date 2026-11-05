@@ -1,17 +1,0 @@
-Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|█▋        | 1/6 [00:01<00:07,  1.54s/it]Loading pipeline components...:  33%|███▎      | 2/6 [00:01<00:03,  1.13it/s]Loading pipeline components...:  67%|██████▋   | 4/6 [00:02<00:00,  2.07it/s]Loading pipeline components...:  83%|████████▎ | 5/6 [00:04<00:00,  1.06it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:04<00:00,  1.36it/s]
-/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py:632: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
-  return fn(*args, **kwargs)
-Traceback (most recent call last):
-  File "/data0/liyanlei/watermark_research/scripts/imprint_delivery/experiment.py", line 224, in <module>
-    main(Path(sys.argv[1]), Path(sys.argv[2]))
-  File "/data0/liyanlei/watermark_research/scripts/imprint_delivery/experiment.py", line 199, in main
-    gradient_before = torch.autograd.grad(loss, z)[0].detach().clone()
-  File "/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/lib/python3.10/site-packages/torch/autograd/__init__.py", line 496, in grad
-    result = _engine_run_backward(
-  File "/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/lib/python3.10/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
-    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
-  File "/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/lib/python3.10/site-packages/torch/autograd/function.py", line 307, in apply
-    return user_fn(self, *args)
-  File "/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/lib/python3.10/site-packages/torch/utils/checkpoint.py", line 270, in backward
-    raise RuntimeError(
-RuntimeError: When use_reentrant=True, torch.utils.checkpoint is incompatible with .grad() or passing an `inputs` parameter to .backward(). To resolve this error, you can either set use_reentrant=False, or call .backward() without passing the `inputs` argument.

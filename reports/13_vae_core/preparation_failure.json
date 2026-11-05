@@ -1,6 +1,0 @@
-{
-  "error": "KeyError: elapsed_seconds",
-  "scope": "CPU ledger reconciliation before tests; no model process",
-  "cause": "Historical stage07 uses wall_time_seconds; later supervisors use elapsed_seconds",
-  "repair": "Read the recorded field for each schema and retain hash equality"
-}

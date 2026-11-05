@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "/data0/liyanlei/watermark_research/scripts/method_comparison/attack.py", line 82, in <module>
-    if __name__=='__main__':main(*sys.argv[1:])
-  File "/data0/liyanlei/watermark_research/scripts/method_comparison/attack.py", line 67, in main
-    job_path=Path(job_path);output=Path(output);cfg=r.check_device(Path(runtime),output)
-  File "/data0/liyanlei/watermark_research/scripts/cover_pilot/runtime.py", line 38, in check_device
-    raise RuntimeError('GPU not verified idle')
-RuntimeError: GPU not verified idle
