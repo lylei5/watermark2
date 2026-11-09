@@ -1,15 +1,17 @@
-# Research state: semantic watermark defense
+# Research state: content-bound diffusion watermark defense
 
-Updated 2026-11-09. Status: paused at the user's request. Do not start experiments without a new resume instruction.
+Updated 2026-11-10. Objective: a publishable defense with matched absolute genuine detection, image quality and computation budgets.
 
-Read `reports/content_auth_independent_20261109/report.md` and `progress.json` for the latest asset inventory. Read `reports/codeword_binding_20261109/report.md` for completed small-sample and channel results, including robustness regressions. No independent SOTA result is established.
+Read reports/content_verifier_20261110/report.md and method.md. Completed: 216 genuine development queries and 36 standard CVPR2025 Reprompt candidates. No experiments remain running. Independent calibration and confirmation decisions remain unscored.
 
-The objective is a publishable defense that improves performance at matched absolute genuine-image detection. Use established defense papers' baseline tests and official implementations with documented parameters. Keep the work to authorized offline image experiments. Do not devise custom attack methods.
+SemBind-DDIM accepts 16/16 genuine images in each of five noncrop conditions, 0/16 center crops, and 1/16 Reprompt candidates. Calibrated BA and content verification both accept 0/16 at matched development genuine count 77/96. All 80 noncrop genuine BAs exceed the single default-accepted candidate BA. No superiority or SOTA result is established.
 
-Completed new assets: 320 independent COCO val2017 images; 112 auxiliary images; 224 SemBind/CoverLock-GS-adapter references and four plain GS controls; benign query images. Feature extraction and development inversions are partial. Full Imprint151 and final calibration/confirmation have not been completed.
+The content/channel mixture estimates actual rates accurately on noncrop genuine images and Reprompt candidates. At inversion noise near one-half, content is unidentifiable. Content disagreement d spans [0,1], with regression tests for d>0.5. Likelihood support is not a guaranteed confidence interval under correlated errors.
 
-CoverLock-g uses the official checkpoint and preprocessing, with a four-image equivalence check. Its auxiliary-image GS adaptation is not a native post-hoc reproduction. Current SemBind assets use DDIM, not official exact inversion. Resolve these boundaries before comparative paper claims.
+The CoverLock official-head auxiliary-image GS adapter accepts only 10/16 clean references. Its 0/16 Reprompt acceptance cannot establish superiority at unequal genuine utility. It is not native CoverLock. SemBind assets use DDIM, not its complete paper exact-inversion pipeline.
 
-The content-first verifier is a tested statistical prototype. Prior work covers message wrapping, semifragile hypothesis tests and semantic payload recovery. A new contribution requires measured advantages over calibrated BA, raw agreement and content-majority controls. Calibration must compare absolute genuine rates, not method-specific conditional retention.
+New methods must beat calibrated BA, raw agreement and content majority at equal absolute genuine utility. Priorities are official baseline closure and a defensible mechanism addressing output-content consistency or geometric channel alignment. Message wrapping, regional semantics, soft decoding and statistical authentication have prior work.
 
-Server root: `/data0/liyanlei/watermark_research`; this round's assets: `runs/content_auth_20261109`. Use only idle GPUs and exclude index 6. Preserve private keys and large model/image assets outside Git. Local and server experiment processes were stopped for this update.
+Use only published top-venue attack baselines with documented parameters on authorized offline assets. Do not devise or improve attacks. Keep verifier secrets outside baseline processes; distinguish process separation from OS access isolation. Production ceramic-system changes are outside this research repository.
+
+Local assets: sibling independent_research and assets directories. Server: /data0/liyanlei/watermark_research on SSH alias 249. Use only idle GPUs, always exclude index 6, bind by current UUID. Completed GPU work used local RTX 4070 Laptop; server GPU use was zero.

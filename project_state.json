@@ -1,12 +1,12 @@
 {
   "project_name": "watermark2 — Content-bound diffusion watermark defense",
-  "updated_at": "2026-11-09T04:14:40.404088+00:00",
+  "updated_at": "2026-11-10",
   "research_goal": {
     "direction": "Defense with matched robustness, quality and attack budgets",
     "core_thesis": "Separate authentication differences from communication errors in watermark decoding"
   },
   "evidence_report": "reports/codeword_binding_20261109/report.md",
-  "status": "paused_by_user",
+  "status": "research_in_progress",
   "verified_empirical_findings": {
     "gs_imprint30": {
       "n": 30,
@@ -31,20 +31,19 @@
   },
   "novelty_boundary": "CoverLock already uses message-level content wrapping; coding order alone is not novel",
   "required_validation": [
-    "independent genuine stability",
-    "Imprint151",
-    "published adaptive baseline reproduction",
-    "secret verifier isolation",
-    "content annotation",
-    "quality and full baselines",
-    "fresh confirmation set"
+    "faithful SemBind official inversion and generation closure",
+    "new defense advantage over calibrated simple controls",
+    "independent absolute-TPR calibration and confirmation",
+    "full published Imprint budget",
+    "content annotation and quality metrics",
+    "empirical FPR and multi-identity evaluation"
   ],
   "server_workspace": {
     "host": "172.18.185.249",
     "root": "/data0/liyanlei/watermark_research",
     "primary_python": "/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/bin/python"
   },
-  "latest_progress_report": "reports/content_auth_independent_20261109/report.md",
+  "latest_progress_report": "reports/content_verifier_20261110/report.md",
   "independent_progress": {
     "independent_images": 320,
     "source_prompts": 112,
@@ -52,9 +51,37 @@
     "reference_images": 228,
     "benign_queries": 1368,
     "natural_feature_files": 292,
-    "query_feature_files": 125,
-    "development_inversions": 20
+    "query_feature_files": 252,
+    "development_inversions": 216,
+    "development_genuine_scored": 216,
+    "development_reprompt_candidates": 36,
+    "development_reprompt_scored": 36,
+    "independent_confirmation_scored": 0
   },
   "evaluation_policy": "Published standard baselines only; matched absolute genuine detection; no custom attack development",
-  "requires_user_resume": true
+  "requires_user_resume": false,
+  "active_experiments": 0,
+  "current_findings": {
+    "sembind_genuine_non_crop": {
+      "accepted": 80,
+      "n": 80
+    },
+    "sembind_genuine_crop": {
+      "accepted": 0,
+      "n": 16
+    },
+    "sembind_default_reprompt": {
+      "accepted": 1,
+      "n": 16
+    },
+    "matched_genuine_count": 77,
+    "matched_genuine_denominator": 96,
+    "calibrated_ba_reprompt_accepted": 0,
+    "profile_content_reprompt_accepted": 0,
+    "superiority_established": false,
+    "coverlock_gs_adapter_clean": {
+      "accepted": 10,
+      "n": 16
+    }
+  }
 }

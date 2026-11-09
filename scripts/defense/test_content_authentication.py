@@ -26,7 +26,16 @@ class ContentAuthenticationTest(unittest.TestCase):
     def test_unidentified_channel_cannot_claim_content_confidence(self):
         groups=np.tile(np.array([0]*8+[1]*8,dtype=np.uint8),(1024,1))
         score=content_scores(groups,np.zeros(1024,dtype=np.uint8))
-        self.assertEqual(score['profile_content_lower_bound'],.5)
+        self.assertEqual(score['profile_content_lower_bound'],0)
+
+    def test_content_disagreement_can_exceed_half(self):
+        rng=np.random.default_rng(47)
+        query=rng.integers(0,2,1024,dtype=np.uint8)
+        delta=rng.random(1024)<.8
+        noise=rng.random((1024,16))<.15
+        score=content_scores(query[:,None]^delta[:,None]^noise,query)
+        self.assertLess(abs(score['profiled_content_agreement']-(1-delta.mean())),.03)
+        self.assertLess(abs(score['estimated_channel_error']-.15),.03)
 
 
 if __name__=='__main__':unittest.main()
