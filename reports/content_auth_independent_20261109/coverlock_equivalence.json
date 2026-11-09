@@ -1,0 +1,30 @@
+{
+  "rows": [
+    {
+      "image": "000000000885.png",
+      "max_feature_difference": 2.440810203552246e-05,
+      "max_logit_difference": 1.2218952178955078e-06,
+      "code_hamming": 0
+    },
+    {
+      "image": "000000001993.png",
+      "max_feature_difference": 3.123283386230469e-05,
+      "max_logit_difference": 1.0132789611816406e-06,
+      "code_hamming": 0
+    },
+    {
+      "image": "000000007278.png",
+      "max_feature_difference": 4.6253204345703125e-05,
+      "max_logit_difference": 1.0281801223754883e-06,
+      "code_hamming": 0
+    },
+    {
+      "image": "000000008211.png",
+      "max_feature_difference": 8.344650268554688e-06,
+      "max_logit_difference": 9.98377799987793e-07,
+      "code_hamming": 0
+    }
+  ],
+  "completed": true,
+  "weights": "official CoverLock-g; official DINO tensor names mapped from existing HF weights"
+}

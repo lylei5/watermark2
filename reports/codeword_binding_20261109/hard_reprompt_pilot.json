@@ -1,0 +1,310 @@
+{
+  "purpose": "same-category instance-change reprompt pilot",
+  "n": 5,
+  "resolution": 512,
+  "steps": 50,
+  "scheduler": "DDIM / DDIMInverseScheduler",
+  "generation_cfg": 7.5,
+  "inversion_cfg": 1,
+  "inversion_prompt": "",
+  "diffusion_dtype": "float16",
+  "semantic_dtype": "float32",
+  "threshold": 0.70703125,
+  "comparison": ">",
+  "target_and_proxy": "same SD2.1 snapshot",
+  "permission_isolation_implemented": false,
+  "methods": [
+    "sembind",
+    "aligned_parity4"
+  ],
+  "prompts": [
+    "A cat sitting on a wooden bench in a garden.",
+    "A red bus parked next to a brick building.",
+    "A bowl of apples and oranges on a kitchen table.",
+    "A white sailboat on a blue lake with mountains.",
+    "A train passing through a rural landscape."
+  ],
+  "reprompt_prompts": [
+    "A black cat sleeping inside a cardboard box on a tiled kitchen floor.",
+    "An old yellow school bus driving across a snowy mountain road.",
+    "Several sliced oranges and green apples in a glass bowl on a picnic blanket.",
+    "A red sailboat stranded on a sandy beach at sunset.",
+    "A blue modern passenger train inside a busy indoor city station."
+  ],
+  "key_note": "deterministic development keys, not final secret-key evaluation",
+  "completed": true,
+  "seconds": 263.7189999999973,
+  "rows": [
+    {
+      "task": 0,
+      "method": "sembind",
+      "label": "clean",
+      "ba": 1.0,
+      "accepted": true,
+      "semantic_hamming": 23,
+      "candidate_sha256": null
+    },
+    {
+      "task": 0,
+      "method": "sembind",
+      "label": "jpeg50",
+      "ba": 1.0,
+      "accepted": true,
+      "semantic_hamming": 23,
+      "candidate_sha256": null
+    },
+    {
+      "task": 0,
+      "method": "sembind",
+      "label": "reprompt",
+      "ba": 0.98828125,
+      "accepted": true,
+      "semantic_hamming": 232,
+      "candidate_sha256": "dc1716ffca02b9f2ab9c0fd2fb0fe879fc6a21cebd1bfae85bfea6c5c236dc57"
+    },
+    {
+      "task": 0,
+      "method": "aligned_parity4",
+      "label": "clean",
+      "ba": 0.9453125,
+      "accepted": true,
+      "semantic_hamming": 16,
+      "candidate_sha256": null
+    },
+    {
+      "task": 0,
+      "method": "aligned_parity4",
+      "label": "jpeg50",
+      "ba": 0.953125,
+      "accepted": true,
+      "semantic_hamming": 14,
+      "candidate_sha256": null
+    },
+    {
+      "task": 0,
+      "method": "aligned_parity4",
+      "label": "reprompt",
+      "ba": 0.546875,
+      "accepted": false,
+      "semantic_hamming": 256,
+      "candidate_sha256": "1345b788d3e3251ff6420fdf01e8506a3e6438d5d4bf4a33a781e68f9fbf9629"
+    },
+    {
+      "task": 1,
+      "method": "sembind",
+      "label": "clean",
+      "ba": 1.0,
+      "accepted": true,
+      "semantic_hamming": 29,
+      "candidate_sha256": null
+    },
+    {
+      "task": 1,
+      "method": "sembind",
+      "label": "jpeg50",
+      "ba": 1.0,
+      "accepted": true,
+      "semantic_hamming": 24,
+      "candidate_sha256": null
+    },
+    {
+      "task": 1,
+      "method": "sembind",
+      "label": "reprompt",
+      "ba": 1.0,
+      "accepted": true,
+      "semantic_hamming": 92,
+      "candidate_sha256": "a698ffb5d7f1c6821f9d66930dec306866f5bae1632f3ee80e57539a3fdee3ca"
+    },
+    {
+      "task": 1,
+      "method": "aligned_parity4",
+      "label": "clean",
+      "ba": 0.7265625,
+      "accepted": true,
+      "semantic_hamming": 90,
+      "candidate_sha256": null
+    },
+    {
+      "task": 1,
+      "method": "aligned_parity4",
+      "label": "jpeg50",
+      "ba": 0.703125,
+      "accepted": false,
+      "semantic_hamming": 104,
+      "candidate_sha256": null
+    },
+    {
+      "task": 1,
+      "method": "aligned_parity4",
+      "label": "reprompt",
+      "ba": 0.5703125,
+      "accepted": false,
+      "semantic_hamming": 208,
+      "candidate_sha256": "d0ae31ca453eef6d5b619681f09a82083fe83dc225c8ce4b207f3d31add3ca5e"
+    },
+    {
+      "task": 2,
+      "method": "sembind",
+      "label": "clean",
+      "ba": 1.0,
+      "accepted": true,
+      "semantic_hamming": 26,
+      "candidate_sha256": null
+    },
+    {
+      "task": 2,
+      "method": "sembind",
+      "label": "jpeg50",
+      "ba": 1.0,
+      "accepted": true,
+      "semantic_hamming": 29,
+      "candidate_sha256": null
+    },
+    {
+      "task": 2,
+      "method": "sembind",
+      "label": "reprompt",
+      "ba": 1.0,
+      "accepted": true,
+      "semantic_hamming": 54,
+      "candidate_sha256": "1578059839ab037f8aaef4f0a8aefbed99ecdc2a0d613f28b35563c3868032d2"
+    },
+    {
+      "task": 2,
+      "method": "aligned_parity4",
+      "label": "clean",
+      "ba": 0.86328125,
+      "accepted": true,
+      "semantic_hamming": 39,
+      "candidate_sha256": null
+    },
+    {
+      "task": 2,
+      "method": "aligned_parity4",
+      "label": "jpeg50",
+      "ba": 0.84375,
+      "accepted": true,
+      "semantic_hamming": 44,
+      "candidate_sha256": null
+    },
+    {
+      "task": 2,
+      "method": "aligned_parity4",
+      "label": "reprompt",
+      "ba": 0.72265625,
+      "accepted": true,
+      "semantic_hamming": 99,
+      "candidate_sha256": "c015e491221b7582e52035794e598e51f001ce86c8ca31072893fcc43207a0d1"
+    },
+    {
+      "task": 3,
+      "method": "sembind",
+      "label": "clean",
+      "ba": 1.0,
+      "accepted": true,
+      "semantic_hamming": 34,
+      "candidate_sha256": null
+    },
+    {
+      "task": 3,
+      "method": "sembind",
+      "label": "jpeg50",
+      "ba": 0.9921875,
+      "accepted": true,
+      "semantic_hamming": 34,
+      "candidate_sha256": null
+    },
+    {
+      "task": 3,
+      "method": "sembind",
+      "label": "reprompt",
+      "ba": 1.0,
+      "accepted": true,
+      "semantic_hamming": 178,
+      "candidate_sha256": "79f3e09e69ef66058345d095dd362f383d326d4559a8d7de6482efd2d8f950a8"
+    },
+    {
+      "task": 3,
+      "method": "aligned_parity4",
+      "label": "clean",
+      "ba": 0.8515625,
+      "accepted": true,
+      "semantic_hamming": 46,
+      "candidate_sha256": null
+    },
+    {
+      "task": 3,
+      "method": "aligned_parity4",
+      "label": "jpeg50",
+      "ba": 0.8359375,
+      "accepted": true,
+      "semantic_hamming": 52,
+      "candidate_sha256": null
+    },
+    {
+      "task": 3,
+      "method": "aligned_parity4",
+      "label": "reprompt",
+      "ba": 0.74609375,
+      "accepted": true,
+      "semantic_hamming": 99,
+      "candidate_sha256": "0f1bc3b47ca9db2f10c3fd412bfd74db727a8cd9f83e2e37c97fde690d00087f"
+    },
+    {
+      "task": 4,
+      "method": "sembind",
+      "label": "clean",
+      "ba": 1.0,
+      "accepted": true,
+      "semantic_hamming": 60,
+      "candidate_sha256": null
+    },
+    {
+      "task": 4,
+      "method": "sembind",
+      "label": "jpeg50",
+      "ba": 1.0,
+      "accepted": true,
+      "semantic_hamming": 72,
+      "candidate_sha256": null
+    },
+    {
+      "task": 4,
+      "method": "sembind",
+      "label": "reprompt",
+      "ba": 0.99609375,
+      "accepted": true,
+      "semantic_hamming": 195,
+      "candidate_sha256": "64cb717d8b34ed83cdf11f099a55f35dc4dfae9c01d95dc73b49c4b48fedbbbd"
+    },
+    {
+      "task": 4,
+      "method": "aligned_parity4",
+      "label": "clean",
+      "ba": 0.80859375,
+      "accepted": true,
+      "semantic_hamming": 65,
+      "candidate_sha256": null
+    },
+    {
+      "task": 4,
+      "method": "aligned_parity4",
+      "label": "jpeg50",
+      "ba": 0.8046875,
+      "accepted": true,
+      "semantic_hamming": 66,
+      "candidate_sha256": null
+    },
+    {
+      "task": 4,
+      "method": "aligned_parity4",
+      "label": "reprompt",
+      "ba": 0.58984375,
+      "accepted": false,
+      "semantic_hamming": 203,
+      "candidate_sha256": "ece037d7bf721985b607295634015ac937bfcdcd84710d74456866ceb4d49da8"
+    }
+  ],
+  "script_sha256": "f3f08dafd9de06e25d4e62dacfec90cf2bd4e96262d0e407670f37398b0adb81"
+}

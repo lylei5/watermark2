@@ -1,0 +1,15 @@
+{
+  "purpose": "same-category instance-change reprompt pilot; fixed prompts before running this arm",
+  "source_run": "diffusion_pilot",
+  "targets": [
+    "A black cat sleeping inside a cardboard box on a tiled kitchen floor.",
+    "An old yellow school bus driving across a snowy mountain road.",
+    "Several sliced oranges and green apples in a glass bowl on a picnic blanket.",
+    "A red sailboat stranded on a sandy beach at sunset.",
+    "A blue modern passenger train inside a busy indoor city station."
+  ],
+  "n": 5,
+  "steps": 50,
+  "guidance": 7.5,
+  "selection": "one fixed output per reference, no detector feedback selection"
+}

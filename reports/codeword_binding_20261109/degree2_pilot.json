@@ -1,0 +1,174 @@
+{
+  "purpose": "exploratory degree-two pilot; selected after observing degree-four JPEG rejection; not confirmatory",
+  "n": 5,
+  "resolution": 512,
+  "steps": 50,
+  "scheduler": "DDIM / DDIMInverseScheduler",
+  "generation_cfg": 7.5,
+  "inversion_cfg": 1,
+  "inversion_prompt": "",
+  "diffusion_dtype": "float16",
+  "semantic_dtype": "float32",
+  "threshold": 0.70703125,
+  "comparison": ">",
+  "target_and_proxy": "same SD2.1 snapshot",
+  "permission_isolation_implemented": false,
+  "methods": [
+    "aligned_parity2"
+  ],
+  "prompts": [
+    "A cat sitting on a wooden bench in a garden.",
+    "A red bus parked next to a brick building.",
+    "A bowl of apples and oranges on a kitchen table.",
+    "A white sailboat on a blue lake with mountains.",
+    "A train passing through a rural landscape."
+  ],
+  "reprompt_prompts": [
+    "A black cat sleeping inside a cardboard box on a tiled kitchen floor.",
+    "An old yellow school bus driving across a snowy mountain road.",
+    "Several sliced oranges and green apples in a glass bowl on a picnic blanket.",
+    "A red sailboat stranded on a sandy beach at sunset.",
+    "A blue modern passenger train inside a busy indoor city station."
+  ],
+  "key_note": "deterministic development keys, not final secret-key evaluation",
+  "completed": true,
+  "seconds": 176.23500000000058,
+  "rows": [
+    {
+      "task": 0,
+      "method": "aligned_parity2",
+      "label": "clean",
+      "ba": 0.98828125,
+      "accepted": true,
+      "semantic_hamming": 7,
+      "candidate_sha256": null
+    },
+    {
+      "task": 0,
+      "method": "aligned_parity2",
+      "label": "jpeg50",
+      "ba": 0.984375,
+      "accepted": true,
+      "semantic_hamming": 7,
+      "candidate_sha256": null
+    },
+    {
+      "task": 0,
+      "method": "aligned_parity2",
+      "label": "reprompt",
+      "ba": 0.5703125,
+      "accepted": false,
+      "semantic_hamming": 261,
+      "candidate_sha256": "0791e7e32595868979f0cc902b1fd8002d0b298ce08f3f5dd94f049513135bb1"
+    },
+    {
+      "task": 1,
+      "method": "aligned_parity2",
+      "label": "clean",
+      "ba": 0.83984375,
+      "accepted": true,
+      "semantic_hamming": 77,
+      "candidate_sha256": null
+    },
+    {
+      "task": 1,
+      "method": "aligned_parity2",
+      "label": "jpeg50",
+      "ba": 0.80078125,
+      "accepted": true,
+      "semantic_hamming": 101,
+      "candidate_sha256": null
+    },
+    {
+      "task": 1,
+      "method": "aligned_parity2",
+      "label": "reprompt",
+      "ba": 0.68359375,
+      "accepted": false,
+      "semantic_hamming": 183,
+      "candidate_sha256": "7861d6aabcc76e12ba0f6c5136262653370e4cb302c5fcdf29bf16a3b1fdb3e9"
+    },
+    {
+      "task": 2,
+      "method": "aligned_parity2",
+      "label": "clean",
+      "ba": 0.9296875,
+      "accepted": true,
+      "semantic_hamming": 40,
+      "candidate_sha256": null
+    },
+    {
+      "task": 2,
+      "method": "aligned_parity2",
+      "label": "jpeg50",
+      "ba": 0.8671875,
+      "accepted": true,
+      "semantic_hamming": 35,
+      "candidate_sha256": null
+    },
+    {
+      "task": 2,
+      "method": "aligned_parity2",
+      "label": "reprompt",
+      "ba": 0.92578125,
+      "accepted": true,
+      "semantic_hamming": 44,
+      "candidate_sha256": "01d56275f58cd548de51641ee356e5c5cdb814feff4356aed92008cc6159d42c"
+    },
+    {
+      "task": 3,
+      "method": "aligned_parity2",
+      "label": "clean",
+      "ba": 0.90234375,
+      "accepted": true,
+      "semantic_hamming": 49,
+      "candidate_sha256": null
+    },
+    {
+      "task": 3,
+      "method": "aligned_parity2",
+      "label": "jpeg50",
+      "ba": 0.90234375,
+      "accepted": true,
+      "semantic_hamming": 49,
+      "candidate_sha256": null
+    },
+    {
+      "task": 3,
+      "method": "aligned_parity2",
+      "label": "reprompt",
+      "ba": 0.71875,
+      "accepted": true,
+      "semantic_hamming": 179,
+      "candidate_sha256": "a20dfa74a9b120c423fd8966fab9b396ec6ace111f674b44f88a93ade637e090"
+    },
+    {
+      "task": 4,
+      "method": "aligned_parity2",
+      "label": "clean",
+      "ba": 0.89453125,
+      "accepted": true,
+      "semantic_hamming": 49,
+      "candidate_sha256": null
+    },
+    {
+      "task": 4,
+      "method": "aligned_parity2",
+      "label": "jpeg50",
+      "ba": 0.90625,
+      "accepted": true,
+      "semantic_hamming": 45,
+      "candidate_sha256": null
+    },
+    {
+      "task": 4,
+      "method": "aligned_parity2",
+      "label": "reprompt",
+      "ba": 0.7265625,
+      "accepted": true,
+      "semantic_hamming": 189,
+      "candidate_sha256": "caef3eaa2a58f569466ad5fec5f63e5de4823f11c27f9780f5c0eac94bd5dab3"
+    }
+  ],
+  "script_sha256": "3f768b16c849e895a59435f2df7957812acc59fdb0d71054b7e875c6e12ac52a"
+}

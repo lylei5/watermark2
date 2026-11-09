@@ -1,33 +1,15 @@
-# Continuation Context — SemBind+ Semantic Watermark Defense & Robustness
+# Research state: semantic watermark defense
 
-Use this file as the single entry point when continuing research in a new AI session.
+Updated 2026-11-09. Status: paused at the user's request. Do not start experiments without a new resume instruction.
 
-## 1. Current Research Goal (CCF-A Defense Track)
+Read `reports/content_auth_independent_20261109/report.md` and `progress.json` for the latest asset inventory. Read `reports/codeword_binding_20261109/report.md` for completed small-sample and channel results, including robustness regressions. No independent SOTA result is established.
 
-Our research objective is **defense-side semantic diffusion watermarking (`SemBind+`)**:
-- **Base Paradigm**: Build on **SemBind (ICML 2026)** and **Gaussian Shading (CVPR 2024)** to defend diffusion watermarks against black-box **Imprint forgery**, **Reprompt forgery**, **adaptive feature-alignment forgery**, **regional splicing**, and **composite post-processing**.
-- **Core Diagnosis (Already Verified on Server)**:
-  1. Unbound initial-noise watermarks (`Gaussian Shading`) fail under 30-step black-box Imprint (`96.0%` forgery success on 50 pairs, `runs/confirmation100_baseline_20261102T204500Z`).
-  2. `SemBind` (ICML 2026) reduces mean forged BA (`0.5484` on 28 pairs), but exhibits **four structural vulnerabilities (`V1`–`V4`)**:
-     - **V1 (Hash Collision + Majority-Vote Amplification)**: `SemanticMasker` hashes unrelated natural images to as few as `29/1024` Hamming bits apart (`97.2%` agreement across 190 pairs), and $64\times 256$ majority voting amplifies $\sim 60\%$ per-coordinate bit agreement into **2/28 (7.14%) forgery bypasses** (`ba_unbound` up to `0.9844`).
-     - **V2 (Public `[CLS]` Bottleneck)**: Because `SemanticMasker` is a deterministic function of the public frozen `DINOv2-giant` `[CLS]` token, an adaptive attacker who adds $\lambda_{\text{sem}}\|\text{CLS}(x_{\text{cand}}) - \text{CLS}(x_{\text{ref}})\|_2^2$ to Imprint forces $S(x_{\text{cand}}) = S(x_{\text{ref}})$ without knowing the private MLP weights or $\pi$.
-     - **V3 (Spatial Blindness)**: Discards all 256 spatial patch tokens, failing on regional splicing.
-     - **V4 (Hard-Sign Discontinuity & $2\times$ Generation Overhead)**: Flips up to `78/1024` bits under mild blur + $0.8\times$ resize and requires $2\times$ DDIM generation passes.
-- **Proposed Solution (`SemBind+`)**:
-  - **Module M1**: Keyed Orthogonal Codebook & Sub-block All-or-Nothing Checksum (eliminates V1 collision + voting amplification).
-  - **Module M2**: Secret-Keyed Multi-Layer Patch-Attention Binding (eliminates V2 keyless `[CLS]` alignment and V3 spatial blindness).
-  - **Module M3**: Single-Pass Mid-Trajectory Lookahead Binding & Confidence-Weighted LLR Verification (eliminates V4 $2\times$ generation cost and hard-sign bit flips).
+The objective is a publishable defense that improves performance at matched absolute genuine-image detection. Use established defense papers' baseline tests and official implementations with documented parameters. Keep the work to authorized offline image experiments. Do not devise custom attack methods.
 
-## 2. Read Order for New Sessions
+Completed new assets: 320 independent COCO val2017 images; 112 auxiliary images; 224 SemBind/CoverLock-GS-adapter references and four plain GS controls; benign query images. Feature extraction and development inversions are partial. Full Imprint151 and final calibration/confirmation have not been completed.
 
-1. [`README.md`](README.md) — Project overview, empirical summary table, and repository layout.
-2. [`docs/SEMBIND_VULNERABILITY_AND_DEFENSE_ANALYSIS.md`](docs/SEMBIND_VULNERABILITY_AND_DEFENSE_ANALYSIS.md) — Complete mathematical and empirical analysis of V1–V4, comparison with PGID/Geometry/SEAL/PAI/ISTS, and SemBind+ M1–M3 formulations.
-3. [`docs/RESEARCH_PLAN.md`](docs/RESEARCH_PLAN.md) — Stage D1 $\to$ D2 $\to$ D3 experimental execution plan for our CCF-A submission.
-4. [`docs/DEFENSE_BASELINE_INVENTORY.md`](docs/DEFENSE_BASELINE_INVENTORY.md) — Detailed inventory of reproduced 2025–2026 defense baselines.
-5. [`reports/defense_baselines_20261103/report.md`](reports/defense_baselines_20261103/report.md) — Master empirical report from the 2026-11-03 server runs.
-6. [`AGENTS.md`](AGENTS.md) — Server `172.18.185.249` environment, GPU safety, and scientific integrity rules.
+CoverLock-g uses the official checkpoint and preprocessing, with a four-image equivalence check. Its auxiliary-image GS adaptation is not a native post-hoc reproduction. Current SemBind assets use DDIM, not official exact inversion. Resolve these boundaries before comparative paper claims.
 
-## 3. Immediate Next Experimental Step (`Stage D1` $\to$ `Stage D2`)
+The content-first verifier is a tested statistical prototype. Prior work covers message wrapping, semifragile hypothesis tests and semantic payload recovery. A new contribution requires measured advantages over calibrated BA, raw agreement and content-majority controls. Calibration must compare absolute genuine rates, not method-specific conditional retention.
 
-- Implement the **adaptive `[CLS]`-aligned Imprint attack** (`scripts/defense/sembind_adaptive_cls_attack.py`) on the 28-pair / 50-pair `confirmation100` benchmark to empirically demonstrate **Vulnerability V2** against vanilla `SemBind-GS`.
-- Implement **`SemBind+` (`M1 + M2 + M3`)** in `scripts/defense/sembind_plus.py` and evaluate on the 50-pair `confirmation100` benchmark across standard Imprint, adaptive `[CLS]`-aligned Imprint, Reprompt, regional splicing, and composite corruptions.
+Server root: `/data0/liyanlei/watermark_research`; this round's assets: `runs/content_auth_20261109`. Use only idle GPUs and exclude index 6. Preserve private keys and large model/image assets outside Git. Local and server experiment processes were stopped for this update.

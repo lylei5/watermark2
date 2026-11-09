@@ -1,35 +1,35 @@
-# AGENTS.md — Operating Rules for SemBind+ Watermark Defense Research
+# Operating rules for semantic watermark defense research
 
-These instructions apply to the entire repository and the remote server workspace `/data0/liyanlei/watermark_research` on `172.18.185.249`.
+These rules apply to this repository and `/data0/liyanlei/watermark_research` on SSH host `249`.
 
-## 1. Research Objective & Scope
+## Objective and current state
 
-- **Primary Goal**: **Defense-side semantic diffusion watermarking (`SemBind+`)** targeting a **CCF-A conference submission**.
-- **Core Focus**:
-  1. Expose and rigorously quantify the structural vulnerabilities (`V1`–`V4`) of **SemBind (ICML 2026)** and contemporary 2025–2026 defenses (**PGID**, **Geometry**, **SEAL**, **PAI**, **ISTS**).
-  2. Design, implement, and verify **`SemBind+`** (`M1`: Keyed Orthogonal Codebook & All-or-Nothing Sub-block Checksum; `M2`: Secret-Keyed Multi-Layer Patch-Attention Binding; `M3`: Single-Pass Mid-Trajectory Lookahead & Confidence-Weighted LLR Verification).
-  3. Evaluate defense robustness (`FPR` under Imprint, Adaptive `[CLS]`-Aligned Imprint, Reprompt, and Regional Splicing) and distortion resilience (`TPR` under JPEG, blur, resize, crop, noise) alongside image generation quality (`FID`, `CLIP-Score`, `LPIPS`, `PSNR`, `NFE`) on the frozen 50-pair `confirmation100` benchmark.
+- Develop a publishable defense with benefits at matched absolute legitimate-image detection rates, documented image quality and computation budgets.
+- Current status is paused at the user's request. Do not start or automatically resume experiments until the user requests continuation.
+- Read `reports/content_auth_independent_20261109/report.md` and `progress.json` for the latest evidence and incomplete work.
 
-## 2. Scientific Integrity Rules
+## Evaluation scope
 
-1. **No Fabrication**: Never invent experimental numbers, logs, image quality metrics, or citations. Every reported number must trace to a committed JSON/report artifact or server run directory.
-2. **Preserve Negative & Diagnostic Results**: If an ablation or baseline variant underperforms, record it honestly in `reports/` and use it to sharpen the analytical diagnosis.
-3. **Contract-Verified Evaluation**:
-   - Gaussian Shading / SemBind-GS detection threshold is frozen at $\tau = 0.70703125$ (`181/256` bits, $\text{FPR} \approx 10^{-8}$) per [`docs/EVALUATION_CONTRACT.md`](docs/EVALUATION_CONTRACT.md).
-   - Never leak private verifier keys ($\pi$, secret projection matrices $R_K$, or stored reference latents) into black-box attacker processes.
+- Use baseline tests, official implementations and stated parameters from SemBind and other established defense papers. Do not devise custom attack methods.
+- Work only on authorized offline image-watermark experiments. Do not conduct network-security testing or interact with third-party systems as experimental targets.
+- Distinguish a released component, a project adapter and a complete paper reproduction. The CoverLock hash on an auxiliary-image GS pipeline is not its native post-hoc system.
+- Keep development, calibration and confirmation data separate. Freeze methods and calibration before viewing confirmation decisions.
+- Compare absolute legitimate-image detection rates. Conditional retention among each method's already-accepted samples is not an equal-TPR comparison.
+- Preserve the default GS working point `BA > 181/256`. Any supplementary calibrated point must be separately identified and have its false-positive implications reported.
 
-## 3. Remote Server & GPU Discipline (`172.18.185.249`)
+## Scientific integrity
 
-- **Server Workspace**: `/data0/liyanlei/watermark_research` (SSH alias `249`; on multi-homed campus/VPN Windows hosts, bind SSH to the campus WLAN IP if needed, e.g. `ssh -b 172.26.12.72 249`).
-- **Offline Model & Cache Roots**:
-  - Set `HF_HOME=/data0/liyanlei/watermark_research/cache/huggingface`, `HF_HUB_OFFLINE=1`, `TRANSFORMERS_OFFLINE=1`.
-  - Reuse local model weights in `/data0/liyanlei/watermark_research/models/` (`sembind/dinov2-giant`, `sembind/sembind_masker.pth`, `seal/`, `openclip/`).
-- **Python Environments**:
-  - Primary env: `/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/bin/python`
-  - PGID env: `/data0/liyanlei/watermark_research/envs/pgid_py310/bin/python`
-  - ISTS env: `/data0/liyanlei/watermark_research/envs/ists_py311/bin/python`
-- **Shared GPU Safety**:
-  - Never touch processes belonging to other users.
-  - Never use GPU index `6` (`GPU-518229d6-dc60-c78f-6f59-473ef2ba67c7`, hardware ECC fault).
-  - Always check `nvidia-smi` before launching GPU jobs and bind child processes by GPU UUID (`CUDA_DEVICE_ORDER=PCI_BUS_ID`, `CUDA_VISIBLE_DEVICES=<GPU-UUID>`).
-  - Never touch unrelated directories under `/data0/liyanlei/` (such as `ceramic_watermark`, `FontGuard_repro`, `genstego_sota_*`, `natural_image_512bit_watermark_poc`, `official_hidden_compare`, `trajectory_orth_20261103`).
+- Every result must trace to an artifact and execution record. Prepared assets and short runtime probes are not completed benchmarks.
+- Preserve all negative and partial results. Do not omit invalid genuine references from unconditional denominators.
+- Keep model weights, private watermark keys and large image assets outside Git; publish manifests and hashes where appropriate.
+- Distinguish ideal independent-bit tail probabilities from empirical or multiuser false-positive rates.
+- Keep private verifier inputs out of baseline test processes. Record the actual isolation boundary rather than assuming it.
+
+## Server and compute
+
+- Workspace: `/data0/liyanlei/watermark_research` on SSH alias `249`.
+- Primary Python: `/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/bin/python`.
+- Reuse local models and cache. Set `HF_HOME=/data0/liyanlei/watermark_research/cache/huggingface`, `HF_HUB_OFFLINE=1` and `TRANSFORMERS_OFFLINE=1` for offline runs.
+- Check occupancy before launching a GPU job. Use only idle devices, bind by current UUID and always exclude GPU index 6.
+- Never terminate another user's process or use their occupied GPU. Use the authorized local GPU when server GPUs are occupied.
+- Do not modify unrelated directories under `/data0/liyanlei/`, including `ceramic_watermark`, `FontGuard_repro`, `genstego_sota_*`, `natural_image_512bit_watermark_poc`, `official_hidden_compare` and `trajectory_orth_20261103`.

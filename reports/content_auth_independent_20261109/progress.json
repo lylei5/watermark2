@@ -1,0 +1,39 @@
+{
+  "status": "paused_by_user",
+  "updated_at": "2026-11-09T04:14:40.404088+00:00",
+  "counts": {
+    "independent_images": 320,
+    "source_prompts": 112,
+    "auxiliary_images": 112,
+    "reference_images": 228,
+    "benign_queries": 1368,
+    "natural_feature_files": 292,
+    "query_feature_files": 125,
+    "development_inversions": 20
+  },
+  "completed": [
+    "Independent source data and exact-hash overlap audit",
+    "112 auxiliary images and their two official-head codes",
+    "224 bound references plus 4 plain GS controls",
+    "Benign query image preparation",
+    "CoverLock backbone adaptation equivalence on 4 images",
+    "Three content-verifier algebra and identifiability tests"
+  ],
+  "incomplete": [
+    "Complete genuine-image inversions and scores",
+    "Absolute matched-retention calibration",
+    "Full published Imprint151 baseline",
+    "Paper-standard Reprompt benchmark",
+    "Independent confirmation comparison",
+    "Publication-level superiority evidence"
+  ],
+  "invalid_cache_files": [],
+  "active_experiments": 0,
+  "scope": "Defense research; published benchmark methods and official baseline code only; offline image experiments on authorized assets",
+  "claims": "No demonstrated superiority over SemBind or CoverLock on independent data",
+  "assets_server_root": "/data0/liyanlei/watermark_research/runs/content_auth_20261109",
+  "asset_storage": {
+    "local": "Independent generation, reference/query images, partial feature and inversion caches retained under work/independent_research; source images under work/assets/independent_coco2017",
+    "server": "Independent natural-image assets and partial feature/query assets; not a complete mirror of local outputs"
+  }
+}

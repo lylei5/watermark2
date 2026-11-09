@@ -1,0 +1,25 @@
+{
+  "purpose": "Mechanistic pilot of semantic binding and repetition decoding; not a SOTA or end-to-end forgery claim",
+  "primary_candidate": "codeword_aligned_parity4",
+  "primary_channel_flip_probability": 0.25,
+  "channel_sensitivity": [0.0, 0.1, 0.25, 0.35],
+  "threshold": 0.70703125,
+  "comparison": "strictly_greater",
+  "message_bits": 256,
+  "repetitions": 64,
+  "semantic_bits": 1024,
+  "methods": ["sembind_scattered", "parity4_scattered", "codeword_aligned_degree1", "codeword_aligned_parity4"],
+  "experimental_keys": 5,
+  "key_note": "Public reproducibility seeds are diagnostic keys, not deployment secrets or proof of secrecy",
+  "natural_images": "100 sorted PNGs in confirmation100_relay_v11/rgb512",
+  "split": "first 20 development, remaining 80 held-out for this pilot only; all are historical project assets",
+  "positive_pairs": ["clean/jpeg50", "clean/blur_radius1_resize0.8", "clean/center_crop90pct"],
+  "negative_pairs": "all unordered clean/clean pairs within each split; shared-image dependence must not be treated as iid trials",
+  "historical_attack_pairs": "all 30 reference/forged pairs in sembind_pairs30_20261102T233720Z, diagnostic only",
+  "falsification": [
+    "reject a security improvement bought with more than 5 percentage points of positive-pair acceptance loss at the primary channel",
+    "do not claim collision resistance for an unchanged public semantic representation",
+    "do not reinterpret synthetic channel acceptance as actual Imprint or Reprompt success",
+    "require new watermark generation, genuine-reference validity, fixed quality budgets and independent unseen keys before any SOTA claim"
+  ]
+}

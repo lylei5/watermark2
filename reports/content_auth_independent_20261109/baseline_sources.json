@@ -1,0 +1,17 @@
+{
+  "coverlock": {
+    "url": "https://github.com/holdrain/Coverlock",
+    "commit": "bb888efeba42da5ecbb342127fbd0a4fd231ea82",
+    "checkpoint_sha256": "7fd5e2dfd8ef5e8d43b015632794220b80487170060aa009a52f680eea049858",
+    "boundary": "Official hash head and preprocessing; GS auxiliary-image adaptation, not native post-hoc CoverLock reproduction"
+  },
+  "sembind": {
+    "url": "https://github.com/XinZhang1999/SemBind",
+    "paper": "https://proceedings.mlr.press/v306/zhang26hj.html",
+    "boundary": "Official masker; current generated assets use DDIM rather than official exact DPM inversion"
+  },
+  "imprint": {
+    "url": "https://github.com/and-mill/semantic-forgery",
+    "full_budget_completed": false
+  }
+}

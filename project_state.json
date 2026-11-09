@@ -1,58 +1,60 @@
 {
-  "project_name": "watermark2 — SemBind+ Semantic Watermark Defense & Robustness",
-  "updated_at": "2026-11-06T01:15:00+08:00",
+  "project_name": "watermark2 — Content-bound diffusion watermark defense",
+  "updated_at": "2026-11-09T04:14:40.404088+00:00",
   "research_goal": {
-    "target_venue": "CCF-A (ICML / NeurIPS / CVPR / IEEE S&P / CCS)",
-    "direction": "Defense-side semantic diffusion watermarking based on SemBind (ICML 2026)",
-    "core_thesis": "Existing semantic-bound diffusion watermarks (SemBind, SEAL, PGID, ISTS, Geometry) suffer from non-cryptographic feature collisions, majority-voting amplification, keyless public-backbone alignment bottlenecks, and spatial blindness. SemBind+ resolves these vulnerabilities via (M1) Keyed Orthogonal Codebook & All-or-Nothing Sub-block Checksum, (M2) Secret-Keyed Multi-Layer Patch-Attention Binding, and (M3) Single-Pass Mid-Trajectory Lookahead & Confidence-Weighted LLR Verification."
+    "direction": "Defense with matched robustness, quality and attack budgets",
+    "core_thesis": "Separate authentication differences from communication errors in watermark decoding"
   },
+  "evidence_report": "reports/codeword_binding_20261109/report.md",
+  "status": "paused_by_user",
   "verified_empirical_findings": {
-    "unbound_gs_baseline_50pairs": {
-      "run_dir": "runs/confirmation100_baseline_20261102T204500Z",
-      "pairs": 50,
-      "attack_steps": 30,
-      "forgery_success_rate": 0.96,
-      "mean_ba_forged": 0.8588,
-      "mean_psnr_db": 29.01,
-      "threshold_tau": 0.70703125
+    "gs_imprint30": {
+      "n": 30,
+      "accepted": 30,
+      "mean_ba": 0.8227864583,
+      "mean_psnr_db": 24.03971145
     },
-    "sembind_icml2026_reproduction": {
-      "masker_bit_equivalence_hamming": 0,
-      "natural_cover_190pairs_min_hamming": "29/1024 (97.17% bit agreement)",
-      "natural_cover_190pairs_mean_hamming": "331.4/1024 (67.64% bit agreement)",
-      "imprint30_28pairs_bypass_rate": "2/28 (7.14%, max ba_unbound = 0.9844, mean ba_unbound = 0.5484)",
-      "imprint151_exact_50step_inversion_ba_unbound": 0.5625,
-      "blur_resize_bit_flips": "78/1024 bits"
+    "historical_sembind": {
+      "n": 30,
+      "accepted": 2,
+      "mean_ba": 0.5361979167,
+      "model": "SD2.1"
     },
-    "pgid_neurips2026_reproduction": {
-      "report": "reports/repro_pgid_20261103/report.md",
-      "pairs": 5,
-      "ba_forged_50steps": 0.5781,
-      "ba_forged_100steps": 0.6211,
-      "ba_forged_150steps": 0.6641
-    },
-    "geometry_icml2026_reproduction": {
-      "report": "reports/repro_geometry_paper_task_20261103/report.md",
-      "stateful_requires_zT": true,
-      "auc_lspd_16x16": 0.48,
-      "auc_cond_16x16": 0.958,
-      "auc_det_16x16": 0.985
-    }
+    "semantic_records": 460,
+    "cpu_gpu_equal_records": 120
   },
-  "sembind_vulnerabilities": [
-    "V1: Cross-image semantic hash collision (min Hamming 29/1024) + 64x256 majority-vote amplification causing 7.14% (2/28) black-box Imprint bypass.",
-    "V2: Public frozen DINOv2-giant [CLS] bottleneck allowing keyless adaptive feature-alignment bypass.",
-    "V3: Spatial patch blindness (all 256 patch tokens discarded), failing under regional splicing.",
-    "V4: Hard-sign binarization discontinuity (78/1024 flips under blur+resize), partial mask ratio sigma<1 leakage, and 2x NFE generation drift."
+  "detector": {
+    "operator": ">",
+    "threshold": 0.70703125,
+    "ideal_iid_fair_bit_tail": 5.634806966794078e-12,
+    "empirical_fpr_estimated": false
+  },
+  "novelty_boundary": "CoverLock already uses message-level content wrapping; coding order alone is not novel",
+  "required_validation": [
+    "independent genuine stability",
+    "Imprint151",
+    "published adaptive baseline reproduction",
+    "secret verifier isolation",
+    "content annotation",
+    "quality and full baselines",
+    "fresh confirmation set"
   ],
-  "roadmap_stages": {
-    "Stage_D1": "Vulnerability Exposure Suite (V1 collision/voting analysis complete; V2 adaptive [CLS]-aligned Imprint attack & V3 regional splicing scripts next)",
-    "Stage_D2": "SemBind+ Defense Implementation (M1 Keyed Orthogonal Codebook + Sub-block Checksum, M2 Keyed Multi-Layer Patch Binding, M3 Single-Pass Lookahead + Soft LLR)",
-    "Stage_D3": "CCF-A 50-Pair Full Benchmark & Ablation Matrix vs GS, SemBind, PGID, SEAL, Geometry, ISTS, Sign-Clamping"
-  },
   "server_workspace": {
     "host": "172.18.185.249",
     "root": "/data0/liyanlei/watermark_research",
     "primary_python": "/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/bin/python"
-  }
+  },
+  "latest_progress_report": "reports/content_auth_independent_20261109/report.md",
+  "independent_progress": {
+    "independent_images": 320,
+    "source_prompts": 112,
+    "auxiliary_images": 112,
+    "reference_images": 228,
+    "benign_queries": 1368,
+    "natural_feature_files": 292,
+    "query_feature_files": 125,
+    "development_inversions": 20
+  },
+  "evaluation_policy": "Published standard baselines only; matched absolute genuine detection; no custom attack development",
+  "requires_user_resume": true
 }

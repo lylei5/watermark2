@@ -1,0 +1,11 @@
+{
+  "purpose": "exploratory sensitivity experiment",
+  "degree": 2,
+  "reason": "degree-four pilot rejected one of five JPEG positives",
+  "threshold": 0.70703125,
+  "comparison": ">",
+  "same_prompts_and_seeds": true,
+  "new_reference_generation": true,
+  "n": 5,
+  "claim_limit": "This is adaptation on development data; a final independent test remains necessary."
+}

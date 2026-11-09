@@ -1,0 +1,18 @@
+{
+  "status": "paused_by_user",
+  "research_objective": "Publishable defense improvements at matched absolute genuine-image detection",
+  "baseline_policy": "Published SemBind and other established defense benchmark methods, official code and stated parameters only",
+  "environment_policy": "Offline image experiments on authorized local/server assets; GPU6 excluded",
+  "data": {
+    "n": 320,
+    "source_prompts": {
+      "development": 16,
+      "calibration": 32,
+      "confirmation": 64
+    }
+  },
+  "current_asset_setting": "SD2.1 DDIM50; preliminary baseline adapters; paper-protocol alignment incomplete",
+  "calibration": "Common absolute genuine retention on calibration data; freeze before confirmation; report FPR and default points separately",
+  "full_baseline_results_available": false,
+  "requires_user_resume": true
+}

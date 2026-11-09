@@ -1,0 +1,19 @@
+{
+  "retrieval": "CrossRef and arXiv metadata scripts; OpenAlex discovery; primary-source web verification",
+  "sembind_publication_enrichment": {
+    "source": "https://proceedings.mlr.press/v306/zhang26hj.html",
+    "fields": [
+      "booktitle",
+      "series",
+      "volume",
+      "pages",
+      "publisher",
+      "url"
+    ],
+    "doi": "not supplied by PMLR; omitted"
+  },
+  "seal": "CrossRef published ICCV record replaces arXiv entry with same citation key",
+  "preprints": "Retained as preprints unless a published record was independently verified; author-submitted venue comments are not independent confirmation.",
+  "IRIS": "arXiv:2608.03539 v2 withdrawn; not included as an active validated baseline",
+  "bibliography_limit": "Field validation checks metadata completeness, not the correctness of paper claims."
+}

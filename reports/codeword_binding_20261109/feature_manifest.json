@@ -1,0 +1,13 @@
+{
+  "completed": true,
+  "image_count": 160,
+  "record_count": 460,
+  "dtype": "torch.float32",
+  "device": "cuda:0",
+  "torch": "2.1.2+cu121",
+  "seconds": 111.7190000000046,
+  "script_sha256": "6e90c5fa5a0635f0143a4480e41bc3c4cca1f3c3fbdbdbb5b4e315b9dae297e7",
+  "masker_sha256": "85f98477bc5c3ae37d429b527d852384fefe70a4c69b25b483759635f3e9ebfd",
+  "dino_sha256": "917d3c470db999d32a312f8542149be91c7cbac61ee8fb4b67ae3d82b79ce21f",
+  "purpose": "real-image feature extraction; not end-to-end defense evaluation"
+}
