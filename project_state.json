@@ -148,5 +148,35 @@
     "superiority_established": false,
     "gpu_used": false,
     "server_status_polled": false
+  },
+  "latest_validation_plan": "reports/geometry_calibration_20261110/analysis_plan.md",
+  "queued_geometry_validation": {
+    "status_at_launch": "waiting_for_full_pipeline_exit",
+    "pid": 34472,
+    "predecessor_supervisor_pid": 22316,
+    "protocol": "protocols/geometry_calibration_20261110.json",
+    "server_root": "/data0/liyanlei/watermark_research/runs/geometry_calibration_20261110",
+    "full_baseline_queries": 144,
+    "calibration_sources": 32,
+    "calibration_queries": 192,
+    "calibration_identity_decisions": 6144,
+    "wrong_identity_decisions": 5952,
+    "gpu_indices": [
+      7,
+      5,
+      4
+    ],
+    "max_concurrent_gpus": 3,
+    "runtime_matched": true,
+    "decisions_available": false,
+    "independent_confirmation_scored": false,
+    "wait_mode": "kernel process-exit event; no periodic polling"
+  },
+  "cross_pipeline_model_audit": {
+    "effective_fp16_unet_equal": true,
+    "vae_equal": false,
+    "text_encoder_equal": false,
+    "semantic_assets_equal": true,
+    "calibration_uses_matched_ddim_model": true
   }
 }
