@@ -4,6 +4,8 @@
 
 ## 当前进展
 
+[查询驱动几何认证开发实验](reports/blind_geometry_development_20261110/report.md)已完成：合法查询 160/160 通过，既有 Reprompt 候选 0/16 通过。严格阈值的无对齐对照为 144/160 和 0/16，因此当前收益是恢复裁剪图检出。2048 次理想随机模板试验显示几何搜索必须校正误报；这不构成实际密钥误报或 SOTA 结论。
+
 完整预算 Imprint 开发实验已安排在 249 的 GPU7、5、4：每例完整 151 次更新，随后自动接续全部检查点的检测与质量评测。[运行协议](protocols/published_imprint_dpm_full_20261110.json)记录配置；实验尚未形成最终结论。同步完成的 [CPU 裁剪诊断](reports/crop_transport_diagnostic_20261110/report.md)显示已知几何下的载体可恢复性，属于机制证据。
 
 **已完成 296 个合法开发查询、36 个既有标准 Reprompt 候选评分，以及独立的 DPM 全精度正常图组件检查。** [最新评测报告](reports/sembind_official_audit_20261110/report.md)记录新增 80 个扰动查询、18 次 DPM 反演和同等合法检出率比较。内容模型目前没有优于校准后 SemBind BA 的证据；独立确认集尚未评分。
@@ -35,7 +37,7 @@ python scripts/defense/test_codeword_binding.py
 python scripts/defense/codeword_diffusion_pilot.py --help
 ```
 
-服务器资产位于 `/data0/liyanlei/watermark_research`，SSH 别名 `249`。只使用即时确认空闲且索引不为 6 的 GPU，并按 UUID 绑定；不得终止其他用户任务。本次 GPU 实验运行于本机 RTX 4070 Laptop。
+服务器资产位于 `/data0/liyanlei/watermark_research`，SSH 别名 `249`。当前只使用 GPU7、5、4，最多三张；启动前确认空闲并按 UUID 绑定，不得终止其他用户任务。完整预算任务通过进程退出事件接续评测，不持续轮询。
 
 ## 研究入口
 

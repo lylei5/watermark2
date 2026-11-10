@@ -120,7 +120,7 @@
     "server_root": "/data0/liyanlei/watermark_research/runs/published_imprint_dpm_full_20261110",
     "completion_mode": "Kernel process-exit events; no periodic polling"
   },
-  "latest_mechanism_report": "reports/crop_transport_diagnostic_20261110/report.md",
+  "latest_mechanism_report": "reports/blind_geometry_development_20261110/report.md",
   "historical_verifier_audit": {
     "reference_accepted": 30,
     "reference_n": 30,
@@ -128,5 +128,25 @@
     "candidate_n": 30,
     "max_ba_difference": 0.0,
     "short_budget_diagnostic_only": true
+  },
+  "blind_geometry_development": {
+    "genuine_accepted": 160,
+    "genuine_n": 160,
+    "crop_accepted": 16,
+    "crop_n": 16,
+    "reprompt_accepted": 0,
+    "reprompt_n": 16,
+    "wrong_identity_accepted": 0,
+    "wrong_identity_n": 160,
+    "identity_with_same_penalty_genuine_accepted": 144,
+    "identity_with_same_penalty_reprompt_accepted": 0,
+    "split_fit_improvement_over_all_fit": false,
+    "ideal_null_draws": 2048,
+    "real_key_empirical_fpr_established": false,
+    "independent_confirmation_scored": false,
+    "novelty_established": false,
+    "superiority_established": false,
+    "gpu_used": false,
+    "server_status_polled": false
   }
 }

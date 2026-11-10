@@ -1,0 +1,183 @@
+{
+  "scope": "Conditional Monte Carlo with ideal random templates; not natural-image or real-key empirical FPR",
+  "sources": 16,
+  "queries": 32,
+  "draws_per_query": 64,
+  "total_draws": 2048,
+  "seed": 202611102,
+  "null": "Fresh independent fair template sign at each latent coordinate; fixed observed query, independent draws",
+  "semantic_mask": "A fixed query mask xor independent fair cipher signs has the same ideal template distribution",
+  "levels": [
+    0.05,
+    0.01,
+    0.001,
+    5.634806966794078e-12
+  ],
+  "grid_size": 251,
+  "gpu_used": false,
+  "new_attacks_run": false,
+  "verifier_sha256": "fcc5dc6b78f05552004819b674440a779c3138074e1f6daca436199ec8470d76",
+  "script_sha256": "de074ba25a1d04b0777c8cce038f3215bb30fcb6020f1ff6b8d83a7557d6718c",
+  "cases": [
+    {
+      "task": 0,
+      "label": "clean",
+      "input_sha256": "2bb679cff751903dd78c551a6b223124f5c74f8b4fcbde3efa4560ad742a2651"
+    },
+    {
+      "task": 0,
+      "label": "crop90",
+      "input_sha256": "e2b3d5b9ba45448c46e60523b6c02f92e02a58d03326b9b8bed5a72a0539b5cd"
+    },
+    {
+      "task": 1,
+      "label": "clean",
+      "input_sha256": "d77628fe7ea90b01cf4e60f9d4dbf673599c4192bd5a0838c69b052079855d7d"
+    },
+    {
+      "task": 1,
+      "label": "crop90",
+      "input_sha256": "0c6caad87ba57637448741c73232ab14dd7b30741fb2c337ae5e0b1076585099"
+    },
+    {
+      "task": 2,
+      "label": "clean",
+      "input_sha256": "0eac4ac3402f0a1eb073f2faea84e9513aee2d663a91a36d4e87a4635ea43b78"
+    },
+    {
+      "task": 2,
+      "label": "crop90",
+      "input_sha256": "0b9de2e750696321abe926eb90b44dd3ae339777a608c1443d12aee901939b4e"
+    },
+    {
+      "task": 3,
+      "label": "clean",
+      "input_sha256": "2f428130f7d6133aeaa1c39e36680517ea8b12e519ef6b80ac4a02c6385bf2a9"
+    },
+    {
+      "task": 3,
+      "label": "crop90",
+      "input_sha256": "5d879ea911230ee5f54703703296012a763bfc78eecdfa3d2938ae521b2b1db2"
+    },
+    {
+      "task": 4,
+      "label": "clean",
+      "input_sha256": "644e17bfe835b63fc299b4e4a80dc28cb4d6536b4c38812dbb0d4f120acc76fe"
+    },
+    {
+      "task": 4,
+      "label": "crop90",
+      "input_sha256": "db59e5da85166069c91b33ea167791e00709f845ce4628a861ed71b3af135b8f"
+    },
+    {
+      "task": 5,
+      "label": "clean",
+      "input_sha256": "a69fa98432e4b9afe54e63bbc3a74401cb680b878729e5ab6e05d8d54fc29814"
+    },
+    {
+      "task": 5,
+      "label": "crop90",
+      "input_sha256": "2dbd4254bb1ff981d1a2ce0fdd0a88c273535969c72f04da1b52e2954fb12340"
+    },
+    {
+      "task": 6,
+      "label": "clean",
+      "input_sha256": "64bcc167acb14a00c32da140c908e547c0a7f0f873d0984fa7a97a14087d081e"
+    },
+    {
+      "task": 6,
+      "label": "crop90",
+      "input_sha256": "8b47282025d416de454537ac2531ccc47cf2f9d15599f5fbe164e997c0d161fe"
+    },
+    {
+      "task": 7,
+      "label": "clean",
+      "input_sha256": "b627f4de36b6214fdf21b570fe25c94f4c0851b60fac209980b520044e5dc501"
+    },
+    {
+      "task": 7,
+      "label": "crop90",
+      "input_sha256": "62cea9b771790386b77b85bcc5ba6481445601e4114066bbb46f76c8e9c67db4"
+    },
+    {
+      "task": 8,
+      "label": "clean",
+      "input_sha256": "fc7483b445742b6d8d82a176c7f8fb4f6dd30735f3c5eb1d66e16b13660e5093"
+    },
+    {
+      "task": 8,
+      "label": "crop90",
+      "input_sha256": "dad8cad0a99b4bc058d616bef41d21bb60729fa7760a151328ca16077dde7c8e"
+    },
+    {
+      "task": 9,
+      "label": "clean",
+      "input_sha256": "fced698c3854af96bc55c2e37f17f4ba5f1fa77e4f2a5bfdbe0ff9bd0e4d2e4d"
+    },
+    {
+      "task": 9,
+      "label": "crop90",
+      "input_sha256": "1e95d872e611492f258d16b53a9bb79632bae86b6ac1b0210be461d41140f993"
+    },
+    {
+      "task": 10,
+      "label": "clean",
+      "input_sha256": "6f54d78f13f774b4d022e80b75c85a92400f7586c672d3af89666c63fe6e199e"
+    },
+    {
+      "task": 10,
+      "label": "crop90",
+      "input_sha256": "f66467c3ac237baf58edaa0363d8c5d7df8f9bfb57ac8193512031dc1dc9f9ac"
+    },
+    {
+      "task": 11,
+      "label": "clean",
+      "input_sha256": "ace9d81953834d4189ad2ca6ad03319c8e954253cb768aeeae66480473229ffc"
+    },
+    {
+      "task": 11,
+      "label": "crop90",
+      "input_sha256": "861b849a1c564b3f43094c683d6fe1c7b2aaccd212976a592d2eb8c020419aa9"
+    },
+    {
+      "task": 12,
+      "label": "clean",
+      "input_sha256": "5ebd448e6faf6200c96934ea6c1bddc2ef091ceea381fe5567d832b56fbbda1a"
+    },
+    {
+      "task": 12,
+      "label": "crop90",
+      "input_sha256": "6e4ca9b5b4479845dcd78f720acee415b79359c8561636266c4e34745ab05e2a"
+    },
+    {
+      "task": 13,
+      "label": "clean",
+      "input_sha256": "96ea3df5c6eb827fd517725f8681d4370fd810c55f852d313f6142acecbcd624"
+    },
+    {
+      "task": 13,
+      "label": "crop90",
+      "input_sha256": "840d4d5a690b402711a36a246fe06c0cc7193be87eded3c1d31778e784dabf8c"
+    },
+    {
+      "task": 14,
+      "label": "clean",
+      "input_sha256": "8d6ef581ddded85eb570e39503ecc62d3dd08a94daf8442b73b1f389c66a59f6"
+    },
+    {
+      "task": 14,
+      "label": "crop90",
+      "input_sha256": "154ece52fbc7aa42aa9c81605104b66ec2a20675ba5bf9c5f98ade8238c0e670"
+    },
+    {
+      "task": 15,
+      "label": "clean",
+      "input_sha256": "161da1e4009b55d52f25e40c98452be7518d90f95e436ca25b9a291747f29bf9"
+    },
+    {
+      "task": 15,
+      "label": "crop90",
+      "input_sha256": "cb9dbdc68ad402076be518dcc3978eb67ba1645bcd0885bcba1efa39f8b92b7d"
+    }
+  ]
+}

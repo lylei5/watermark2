@@ -1,0 +1,23 @@
+{
+  "scope": "Post-result explanatory control; no refitting or threshold optimization",
+  "source_results_sha256": "fa44c299623a23281eb3045953ca945c7b242ab796a168fc6efddec858989798",
+  "rule": "min(1,251*identity.p) <= frozen nominal alpha",
+  "nominal_alpha": 5.634806966794078e-12,
+  "summary": [
+    {
+      "kind": "genuine",
+      "n": 160,
+      "accepted": 144
+    },
+    {
+      "kind": "candidate",
+      "n": 16,
+      "accepted": 0
+    },
+    {
+      "kind": "wrong_identity",
+      "n": 160,
+      "accepted": 0
+    }
+  ]
+}
