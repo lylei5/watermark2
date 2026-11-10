@@ -1,0 +1,17 @@
+{
+  "published_update_ast_match": true,
+  "full_updates": 151,
+  "source_inverse_steps": 50,
+  "jobs": 8,
+  "checkpoint_images": 128,
+  "evaluation_images": 144,
+  "gpu_indices": [
+    7,
+    5,
+    4
+  ],
+  "max_concurrent_gpus": 3,
+  "all_new_scripts_compile": true,
+  "evaluator_cpu_preflight": "passed on server; original full-precision model hashes match",
+  "final_results_available": false
+}

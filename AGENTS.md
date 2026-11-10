@@ -5,7 +5,7 @@ These rules apply to this repository and `/data0/liyanlei/watermark_research` on
 ## Objective and current state
 
 - Develop a publishable defense with benefits at matched absolute legitimate-image detection rates, documented image quality and computation budgets.
-- Read `reports/sembind_official_audit_20261110/report.md` for current development results and `project_state.json` for remaining validation.
+- Read `reports/crop_transport_diagnostic_20261110/report.md` for the latest mechanism diagnostic and `reports/sembind_official_audit_20261110/report.md` for completed development results and `project_state.json` for remaining validation.
 - The statistical content verifier has no demonstrated advantage over calibrated BA on the completed development Reprompt comparison. Independent confirmation remains unscored.
 
 ## Evaluation scope
@@ -30,6 +30,10 @@ These rules apply to this repository and `/data0/liyanlei/watermark_research` on
 - Workspace: `/data0/liyanlei/watermark_research` on SSH alias `249`.
 - Primary Python: `/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/bin/python`.
 - Reuse local models and cache. Set `HF_HOME=/data0/liyanlei/watermark_research/cache/huggingface`, `HF_HUB_OFFLINE=1` and `TRANSFORMERS_OFFLINE=1` for offline runs.
+- Use at most three GPUs concurrently. Current user-selected server GPUs are 7, 5, and 4; use only these, in that order.
+- Run the full published implementation and update schedule; do not truncate baselines to save time.
 - Check occupancy before launching a GPU job. Use only idle devices, bind by current UUID and always exclude GPU index 6.
-- Never terminate another user's process or use their occupied GPU. Use the authorized local GPU when server GPUs are occupied.
+- Never terminate another user's process or use their occupied GPU. Under the current device selection, wait if GPUs 7, 5 and 4 are occupied; do not switch devices automatically.
 - Do not modify unrelated directories under `/data0/liyanlei/`, including `ceramic_watermark`, `FontGuard_repro`, `genstego_sota_*`, `natural_image_512bit_watermark_poc`, `official_hidden_compare` and `trajectory_orth_20261103`.
+
+- Do not continuously poll experiment progress. The full-budget run has an event-driven completion supervisor; continue independent research while it runs.

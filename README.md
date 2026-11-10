@@ -4,6 +4,8 @@
 
 ## 当前进展
 
+完整预算 Imprint 开发实验已安排在 249 的 GPU7、5、4：每例完整 151 次更新，随后自动接续全部检查点的检测与质量评测。[运行协议](protocols/published_imprint_dpm_full_20261110.json)记录配置；实验尚未形成最终结论。同步完成的 [CPU 裁剪诊断](reports/crop_transport_diagnostic_20261110/report.md)显示已知几何下的载体可恢复性，属于机制证据。
+
 **已完成 296 个合法开发查询、36 个既有标准 Reprompt 候选评分，以及独立的 DPM 全精度正常图组件检查。** [最新评测报告](reports/sembind_official_audit_20261110/report.md)记录新增 80 个扰动查询、18 次 DPM 反演和同等合法检出率比较。内容模型目前没有优于校准后 SemBind BA 的证据；独立确认集尚未评分。
 
 评测限定为已发表论文的标准基线、官方代码与既定参数；研究创新集中在防御方法。

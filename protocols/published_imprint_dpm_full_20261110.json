@@ -1,0 +1,132 @@
+{
+  "scope": "Full-update published baseline on fixed DPM development references; small component validation, not a paper-scale result",
+  "source": "https://openaccess.thecvf.com/content/CVPR2025/html/Muller_Black-Box_Forgery_Attacks_on_Semantic_Watermarks_for_Diffusion_Models_CVPR_2025_paper.html",
+  "upstream_revision": "ca68950cd7b53b8438a49580f134b2a0db28d778",
+  "updates": 151,
+  "inverse_steps": 50,
+  "lr": 0.01,
+  "seed": 1,
+  "checkpoint_source_steps": [
+    0,
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90,
+    100,
+    110,
+    120,
+    130,
+    140,
+    150
+  ],
+  "early_stop": false,
+  "shortened_budget_allowed": false,
+  "max_concurrent_gpus": 3,
+  "excluded_gpu_indices": [
+    6
+  ],
+  "worker_gpu_indices": [
+    7,
+    5,
+    4
+  ],
+  "selection": "All 4 previously fixed DPM development prompts, both carriers; covers are corresponding first 4 entries in disjoint development cover half, in original manifest order; no similarity or score selection",
+  "reference_condition": "SD2.1 DPM50 fp32; same private identity within each carrier pair",
+  "verifier": "Released SemBind DPM inverse order0, 50 steps, blank prompt CFG3, full 100-step VAE decoder inversion; default strict BA>181/256",
+  "validation": "Every released checkpoint plus original covers and references; separate evaluator, no feedback",
+  "jobs": [
+    {
+      "id": "000_sembind",
+      "task": 0,
+      "method": "sembind",
+      "split": "development",
+      "reference": "inputs/000_sembind.png",
+      "cover": "inputs/000_cover.png",
+      "reference_sha256": "87e46600e11c668ad2df4825353952bf9cee7b3d1618674e2de4d41dfd7454e8",
+      "cover_sha256": "996b65b746a3de367e27db378a125986637d70f4cbbe03e558c915b80bb2dc80",
+      "cover_image_id": 471023
+    },
+    {
+      "id": "000_gs",
+      "task": 0,
+      "method": "gs",
+      "split": "development",
+      "reference": "inputs/000_gs.png",
+      "cover": "inputs/000_cover.png",
+      "reference_sha256": "7fc9d993566b1ce17957da413618d2370084b8109ed44f0141e798010997224c",
+      "cover_sha256": "996b65b746a3de367e27db378a125986637d70f4cbbe03e558c915b80bb2dc80",
+      "cover_image_id": 471023
+    },
+    {
+      "id": "001_sembind",
+      "task": 1,
+      "method": "sembind",
+      "split": "development",
+      "reference": "inputs/001_sembind.png",
+      "cover": "inputs/001_cover.png",
+      "reference_sha256": "6d5f3fffe7fef003a7936a62b0075e898bea71bf207b6a0f0cd60795475e7562",
+      "cover_sha256": "59d114f57425a083cb377addd169eafeb8b547be801739991bfa55a0821596dc",
+      "cover_image_id": 518326
+    },
+    {
+      "id": "001_gs",
+      "task": 1,
+      "method": "gs",
+      "split": "development",
+      "reference": "inputs/001_gs.png",
+      "cover": "inputs/001_cover.png",
+      "reference_sha256": "c19fc3e621ae152d75d246a43e6ceff3e38f6c0f3d01365e8ee0f7ec1c532ada",
+      "cover_sha256": "59d114f57425a083cb377addd169eafeb8b547be801739991bfa55a0821596dc",
+      "cover_image_id": 518326
+    },
+    {
+      "id": "002_sembind",
+      "task": 2,
+      "method": "sembind",
+      "split": "development",
+      "reference": "inputs/002_sembind.png",
+      "cover": "inputs/002_cover.png",
+      "reference_sha256": "9257eb3c28812dbd5e50dda03bf176308f56fbccfff17fdb61b6ebfe39878270",
+      "cover_sha256": "60fc8bd63c4d2292bf86f2e9160bd0bca3acbfab2382626bcd7f1bdac8b8f34e",
+      "cover_image_id": 259097
+    },
+    {
+      "id": "002_gs",
+      "task": 2,
+      "method": "gs",
+      "split": "development",
+      "reference": "inputs/002_gs.png",
+      "cover": "inputs/002_cover.png",
+      "reference_sha256": "a3a512357c153e7e7b766e4a3395fd7df9207fabf4284ad8c34893f533667f5b",
+      "cover_sha256": "60fc8bd63c4d2292bf86f2e9160bd0bca3acbfab2382626bcd7f1bdac8b8f34e",
+      "cover_image_id": 259097
+    },
+    {
+      "id": "003_sembind",
+      "task": 3,
+      "method": "sembind",
+      "split": "development",
+      "reference": "inputs/003_sembind.png",
+      "cover": "inputs/003_cover.png",
+      "reference_sha256": "c3cc2cd5c572775f604c6d2c83ebd10593159c01d2ddd9b1b154fb5883753e8c",
+      "cover_sha256": "c968a0ca34f02b68da5865ee21dc0a99aee4e1261acf314f4eb2d906fe271b2c",
+      "cover_image_id": 36539
+    },
+    {
+      "id": "003_gs",
+      "task": 3,
+      "method": "gs",
+      "split": "development",
+      "reference": "inputs/003_gs.png",
+      "cover": "inputs/003_cover.png",
+      "reference_sha256": "f77b5cb707c3bc502919904946042ae5ef0e056b364e1f07ab45318aa7f79ecc",
+      "cover_sha256": "c968a0ca34f02b68da5865ee21dc0a99aee4e1261acf314f4eb2d906fe271b2c",
+      "cover_image_id": 36539
+    }
+  ]
+}

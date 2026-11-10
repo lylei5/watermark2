@@ -1,0 +1,521 @@
+{
+  "scope": "historical diagnostic only; no new attacks",
+  "selection": "All 30 existing pairs plus both pairs in the named151 directory",
+  "budget": "Actual launch budgets unverified; directory names are not evidence",
+  "generation": "Historical SD2.1/DDIM project adapter",
+  "independent_confirmation_read": false,
+  "rows": [
+    {
+      "id": "historical30_01_reference",
+      "run": "historical30",
+      "task": 1,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/1_reference.png",
+      "image_sha256": "854552c5f78d0825218f2c7a154d50ccac25f2f95e5ff78ad4650c1fba78fccf"
+    },
+    {
+      "id": "historical30_01_forged",
+      "run": "historical30",
+      "task": 1,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/1_forged.png",
+      "image_sha256": "751cfbe219623d3c800d8b1af8bd8e36288a00ba2f333a26b91af99af9c7612c"
+    },
+    {
+      "id": "historical30_02_reference",
+      "run": "historical30",
+      "task": 2,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/2_reference.png",
+      "image_sha256": "93a00a7ecb6ec5220ca8ce89a9abb731c05d157e51ef9c46b6f08293efb3689c"
+    },
+    {
+      "id": "historical30_02_forged",
+      "run": "historical30",
+      "task": 2,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/2_forged.png",
+      "image_sha256": "29c2e3fa6fe2a58f9dd01faf8214d435cc70f38347a603906793662dab2c1865"
+    },
+    {
+      "id": "historical30_03_reference",
+      "run": "historical30",
+      "task": 3,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/3_reference.png",
+      "image_sha256": "58953f9dacca211ef63a3262558c8a10cd62f6bd9ba3ef804ac90bf9b86ada61"
+    },
+    {
+      "id": "historical30_03_forged",
+      "run": "historical30",
+      "task": 3,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/3_forged.png",
+      "image_sha256": "dffa90b7240eb3804a722c1577d37d481f8afe9ef242e4813c07bea61f365cc5"
+    },
+    {
+      "id": "historical30_04_reference",
+      "run": "historical30",
+      "task": 4,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/4_reference.png",
+      "image_sha256": "1c0906e2b57b33daf06668594612b2b1e3fd4d81c47dcf0d3646a5e004c0b400"
+    },
+    {
+      "id": "historical30_04_forged",
+      "run": "historical30",
+      "task": 4,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/4_forged.png",
+      "image_sha256": "c07bfce5989208b1a08627b55f8315575107853023e2d57e861655a8f9674357"
+    },
+    {
+      "id": "historical30_05_reference",
+      "run": "historical30",
+      "task": 5,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/5_reference.png",
+      "image_sha256": "f6750fe49b1e81fd0e87d0620fe12b0696daa9330ece0cb3be4e09ba0f01bbad"
+    },
+    {
+      "id": "historical30_05_forged",
+      "run": "historical30",
+      "task": 5,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/5_forged.png",
+      "image_sha256": "4505fecc9257403b1f44abf1215698491649e3e63a89e0b0d9d86b469165aa95"
+    },
+    {
+      "id": "historical30_06_reference",
+      "run": "historical30",
+      "task": 6,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/6_reference.png",
+      "image_sha256": "f2aadc56f1f147620cc1794f9ef654a7f12aa4796f0f9dfbed3c4737c4d158da"
+    },
+    {
+      "id": "historical30_06_forged",
+      "run": "historical30",
+      "task": 6,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/6_forged.png",
+      "image_sha256": "e9944e3f82007a3c0e4d8eccc1bace6931239e276ab6d3f1a314779b66adb3d4"
+    },
+    {
+      "id": "historical30_07_reference",
+      "run": "historical30",
+      "task": 7,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/7_reference.png",
+      "image_sha256": "6904b3b50551dbd3928b9c3db74b18da5af1c0fc4ac1985d226300e0f71c6246"
+    },
+    {
+      "id": "historical30_07_forged",
+      "run": "historical30",
+      "task": 7,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/7_forged.png",
+      "image_sha256": "f6633f28498f198a79e22e48695bb51ca406b3d13a7090ba9da750d48c929ca2"
+    },
+    {
+      "id": "historical30_08_reference",
+      "run": "historical30",
+      "task": 8,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/8_reference.png",
+      "image_sha256": "2878f60e16c55fb28f8a9672be3ed575575101cc6b4af11bffe6ea4dcf2818c0"
+    },
+    {
+      "id": "historical30_08_forged",
+      "run": "historical30",
+      "task": 8,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/8_forged.png",
+      "image_sha256": "820a676303bccc0b8b3b073af3ae4004d39f57fee22049653919b71d653f36a0"
+    },
+    {
+      "id": "historical30_09_reference",
+      "run": "historical30",
+      "task": 9,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/9_reference.png",
+      "image_sha256": "a7759402ef7897b763eee3c5190430229e8ba09c6f454262e271fd745ef2106a"
+    },
+    {
+      "id": "historical30_09_forged",
+      "run": "historical30",
+      "task": 9,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/9_forged.png",
+      "image_sha256": "7234260beaaa6fa666ed4b44b46db716518e7bbeba5015f73d13b6124e327210"
+    },
+    {
+      "id": "historical30_10_reference",
+      "run": "historical30",
+      "task": 10,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/10_reference.png",
+      "image_sha256": "015b725b1728826ab561fd510bf6e818366ebcedc77736a7e41e37c27f2bd338"
+    },
+    {
+      "id": "historical30_10_forged",
+      "run": "historical30",
+      "task": 10,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/10_forged.png",
+      "image_sha256": "989f04a6f93a404ca4d5ef5d4e5c347526a794b69451570bb90a3129e8d1e33d"
+    },
+    {
+      "id": "historical30_11_reference",
+      "run": "historical30",
+      "task": 11,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/11_reference.png",
+      "image_sha256": "32a8a527fb0942eb33785857f622ad291915f9e710c24afc15abda861550de5c"
+    },
+    {
+      "id": "historical30_11_forged",
+      "run": "historical30",
+      "task": 11,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/11_forged.png",
+      "image_sha256": "a3afe39b0c1ad0f7923de3e856972925cf2511d84ebd7afedbda6a8132a68c7e"
+    },
+    {
+      "id": "historical30_12_reference",
+      "run": "historical30",
+      "task": 12,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/12_reference.png",
+      "image_sha256": "eecfe01f1a0e2dae817770ad0a8a535b51e280aea1d837f840bc616c8048a7d7"
+    },
+    {
+      "id": "historical30_12_forged",
+      "run": "historical30",
+      "task": 12,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/12_forged.png",
+      "image_sha256": "57c9476cc59ecf35d56c2f537e0d5f80fc81a213f3bd774893f0da1fafefd22b"
+    },
+    {
+      "id": "historical30_13_reference",
+      "run": "historical30",
+      "task": 13,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/13_reference.png",
+      "image_sha256": "eb2d3ed58f31c9fa65444a8e9ef7411d147c4a5a419eec5e1f54b2340eaeb0ba"
+    },
+    {
+      "id": "historical30_13_forged",
+      "run": "historical30",
+      "task": 13,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/13_forged.png",
+      "image_sha256": "d9a7c036cb78fe4df6bdb89f46f99eb877182b55c1c2a9b300ceab3eb2e58e6a"
+    },
+    {
+      "id": "historical30_14_reference",
+      "run": "historical30",
+      "task": 14,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/14_reference.png",
+      "image_sha256": "a480764c019ae2d79f53a1eec7c7aac9be19eb0a75c88157cca67819fdfe8da0"
+    },
+    {
+      "id": "historical30_14_forged",
+      "run": "historical30",
+      "task": 14,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/14_forged.png",
+      "image_sha256": "e584162df9549da2c3c60c49aefbb6d8860f2e45fa13ac5024f92c5c32b88a86"
+    },
+    {
+      "id": "historical30_15_reference",
+      "run": "historical30",
+      "task": 15,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/15_reference.png",
+      "image_sha256": "2c28a86f94572830961285cb3a8dbaf74488d3d0eaa76ec9dc21cf9b1f2d899d"
+    },
+    {
+      "id": "historical30_15_forged",
+      "run": "historical30",
+      "task": 15,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/15_forged.png",
+      "image_sha256": "243848638b9eeaf5d7eb26929ed092b7a3701a8261ef593711a903dd130f080b"
+    },
+    {
+      "id": "historical30_16_reference",
+      "run": "historical30",
+      "task": 16,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/16_reference.png",
+      "image_sha256": "069f4a79e67db51e63faaf2fda17fa10de782fb880ec08445e5df22128ef5da3"
+    },
+    {
+      "id": "historical30_16_forged",
+      "run": "historical30",
+      "task": 16,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/16_forged.png",
+      "image_sha256": "69b71580df90fbcfe401abe381efdc27b88a3bf926a4a678124a698e50402751"
+    },
+    {
+      "id": "historical30_17_reference",
+      "run": "historical30",
+      "task": 17,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/17_reference.png",
+      "image_sha256": "86886da4a280d61c6160dca323983f0f26a8877573aabd3505ccbbaa23b17cac"
+    },
+    {
+      "id": "historical30_17_forged",
+      "run": "historical30",
+      "task": 17,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/17_forged.png",
+      "image_sha256": "b65d49052e4e623b4502b04483a98c8e8efc2d28ba336467510a0b1356f66310"
+    },
+    {
+      "id": "historical30_18_reference",
+      "run": "historical30",
+      "task": 18,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/18_reference.png",
+      "image_sha256": "a5e695202111f23341b14eb997594961aeb41d232d73a10d73f7d832d90ec12f"
+    },
+    {
+      "id": "historical30_18_forged",
+      "run": "historical30",
+      "task": 18,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/18_forged.png",
+      "image_sha256": "bca383196bf642d4d40cd2f0dfe9ae8dbaa01a6f60b890c2d88bb1dbbcc67a5f"
+    },
+    {
+      "id": "historical30_19_reference",
+      "run": "historical30",
+      "task": 19,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/19_reference.png",
+      "image_sha256": "10ee154a49685b599e7aed489f0f65408fdb20782a15945ca0eec3dbf35354d8"
+    },
+    {
+      "id": "historical30_19_forged",
+      "run": "historical30",
+      "task": 19,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/19_forged.png",
+      "image_sha256": "95139aa6905427283da17f2377b4a2e1ac25648fa3ec7d7393cdd0e4178932c5"
+    },
+    {
+      "id": "historical30_20_reference",
+      "run": "historical30",
+      "task": 20,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/20_reference.png",
+      "image_sha256": "c09cbff87f049146bef911cf0327c49ccd1f5eeff79f855354137189a5e3606d"
+    },
+    {
+      "id": "historical30_20_forged",
+      "run": "historical30",
+      "task": 20,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/20_forged.png",
+      "image_sha256": "6d08313e431f25abfa45599eae9b1f89fc6c0d68057e34182e5a13310be604e4"
+    },
+    {
+      "id": "historical30_21_reference",
+      "run": "historical30",
+      "task": 21,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/21_reference.png",
+      "image_sha256": "c07bf7e7ac03f1adc63566fcf9614bff37745cab1625201cabe6fb777dc8a27f"
+    },
+    {
+      "id": "historical30_21_forged",
+      "run": "historical30",
+      "task": 21,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/21_forged.png",
+      "image_sha256": "ca028ef65ad08013316700a650c7eab5dc91e471d9d16cc734d150dfc6e4c3ba"
+    },
+    {
+      "id": "historical30_22_reference",
+      "run": "historical30",
+      "task": 22,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/22_reference.png",
+      "image_sha256": "5eac5285a484ff33d876ed0bf6daab168e014a3f6e836bb087da8f0376a909f6"
+    },
+    {
+      "id": "historical30_22_forged",
+      "run": "historical30",
+      "task": 22,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/22_forged.png",
+      "image_sha256": "16c7a09b9cc01a6c7d381d120cd1374423525cb9a9a619c4438ffa0e636451fe"
+    },
+    {
+      "id": "historical30_23_reference",
+      "run": "historical30",
+      "task": 23,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/23_reference.png",
+      "image_sha256": "1005a1d37224ba80405d028ca61c7c0e28221a4aba24ec9f304c0b662be55947"
+    },
+    {
+      "id": "historical30_23_forged",
+      "run": "historical30",
+      "task": 23,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/23_forged.png",
+      "image_sha256": "bf13421098aa73f029b6db36706ee614026867bc62c8d4fc67738a7268e54eb3"
+    },
+    {
+      "id": "historical30_24_reference",
+      "run": "historical30",
+      "task": 24,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/24_reference.png",
+      "image_sha256": "171e9a4f3653a62c8bde06f687362a8e741f424198aa5e7b2809a3c60a50b50e"
+    },
+    {
+      "id": "historical30_24_forged",
+      "run": "historical30",
+      "task": 24,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/24_forged.png",
+      "image_sha256": "1c047f9ace399fd04dbf09d68ea44564823f51b6dc511731fcc76230c5e8577b"
+    },
+    {
+      "id": "historical30_25_reference",
+      "run": "historical30",
+      "task": 25,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/25_reference.png",
+      "image_sha256": "4b6a1b2dbfbc9d727ab25e4c9220c23ec2bc9855fddcdcc84c583b653035687d"
+    },
+    {
+      "id": "historical30_25_forged",
+      "run": "historical30",
+      "task": 25,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/25_forged.png",
+      "image_sha256": "342eeaa10d3c1464914bd85d5e9844e8612d198568b637dd62acdb3008cf332f"
+    },
+    {
+      "id": "historical30_26_reference",
+      "run": "historical30",
+      "task": 26,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/26_reference.png",
+      "image_sha256": "7f6278b254e4f978d768ffdfe9a3ac9d6ab8d17ac159a2a49f96484e48c729d9"
+    },
+    {
+      "id": "historical30_26_forged",
+      "run": "historical30",
+      "task": 26,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/26_forged.png",
+      "image_sha256": "60e9fc45540c2d928fc93b81323fa9da88760958c812deb3668e2763901261b7"
+    },
+    {
+      "id": "historical30_27_reference",
+      "run": "historical30",
+      "task": 27,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/27_reference.png",
+      "image_sha256": "a600b74d6a05bce8de4197d51309356d6c0283f15cf6d962704d9cd913ee23f0"
+    },
+    {
+      "id": "historical30_27_forged",
+      "run": "historical30",
+      "task": 27,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/27_forged.png",
+      "image_sha256": "25a8b2e797c3c098a099e9ccbde5e4c723b2be4594be17c0dbe3bd2868d2d3c0"
+    },
+    {
+      "id": "historical30_28_reference",
+      "run": "historical30",
+      "task": 28,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/28_reference.png",
+      "image_sha256": "df3d6421143dd0f520692102cfb70ff795a793f92152bd8c96292e38cb7a9530"
+    },
+    {
+      "id": "historical30_28_forged",
+      "run": "historical30",
+      "task": 28,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/28_forged.png",
+      "image_sha256": "52b43ec82b841efb7710f0ac66f81165a3606544a348b331b0011f8ec59705f4"
+    },
+    {
+      "id": "historical30_29_reference",
+      "run": "historical30",
+      "task": 29,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/29_reference.png",
+      "image_sha256": "e4dd6ca2ba4b4a98a8e1852db356d48e05eacaf325171369dbb8909f6dd602de"
+    },
+    {
+      "id": "historical30_29_forged",
+      "run": "historical30",
+      "task": 29,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/29_forged.png",
+      "image_sha256": "1d121faffeb18adbeaa922bc8190dc58c931702a5f5e42c794f9f1e476680a59"
+    },
+    {
+      "id": "historical30_30_reference",
+      "run": "historical30",
+      "task": 30,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/30_reference.png",
+      "image_sha256": "c3df1be0257a7a650e62b0e0dee8cc9250209b484fbc8920fd49adcbc916992b"
+    },
+    {
+      "id": "historical30_30_forged",
+      "run": "historical30",
+      "task": 30,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_pairs30_20261102T233720Z/30_forged.png",
+      "image_sha256": "de6a4f2296ae9a85ca588e06ea91b4d6296a487952cf6b314356f5962d5a80e0"
+    },
+    {
+      "id": "historical_named151_01_reference",
+      "run": "historical_named151",
+      "task": 1,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_151step_20261103T002848Z/1_reference.png",
+      "image_sha256": "854552c5f78d0825218f2c7a154d50ccac25f2f95e5ff78ad4650c1fba78fccf"
+    },
+    {
+      "id": "historical_named151_01_forged",
+      "run": "historical_named151",
+      "task": 1,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_151step_20261103T002848Z/1_forged.png",
+      "image_sha256": "0fe121a1aed2a262bd4c45178fe721073f2595d73ebd927e99f0e21b1dbb4d27"
+    },
+    {
+      "id": "historical_named151_02_reference",
+      "run": "historical_named151",
+      "task": 2,
+      "kind": "reference",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_151step_20261103T002848Z/2_reference.png",
+      "image_sha256": "93a00a7ecb6ec5220ca8ce89a9abb731c05d157e51ef9c46b6f08293efb3689c"
+    },
+    {
+      "id": "historical_named151_02_forged",
+      "run": "historical_named151",
+      "task": 2,
+      "kind": "forged",
+      "image_path": "/data0/liyanlei/watermark_research/runs/sembind_151step_20261103T002848Z/2_forged.png",
+      "image_sha256": "0cb01597bc768fae35693e7528772676e562d4a4d57babe252b43dece8c85077"
+    }
+  ]
+}

@@ -60,7 +60,7 @@
   },
   "evaluation_policy": "Published standard baselines only; matched absolute genuine detection; no custom attack development",
   "requires_user_resume": false,
-  "active_experiments": 0,
+  "active_experiments": 3,
   "current_findings": {
     "sembind_genuine_non_crop": {
       "accepted": 144,
@@ -94,8 +94,39 @@
     "complete_paper_reproduction": false
   },
   "artifact_sync": {
-    "new_results": "local only",
-    "server": "SSH connection closed at port 22",
-    "existing_paper_queries_and_features": "already on server"
+    "new_results": "uploaded and all 370 manifest hashes verified",
+    "server_root": "/data0/liyanlei/watermark_research/runs/sembind_audit_evidence_20261110",
+    "archive_sha256": "1f88d4484d121e631533b6940315b6404f60367549317582e423e4eb77cc4b01"
+  },
+  "max_concurrent_gpus": 3,
+  "baseline_budget_policy": "Full published implementation and update schedule; no time-saving truncation",
+  "allowed_gpu_indices": [
+    7,
+    5,
+    4
+  ],
+  "running_full_baseline": {
+    "protocol": "protocols/published_imprint_dpm_full_20261110.json",
+    "gpu_indices": [
+      7,
+      5,
+      4
+    ],
+    "jobs": 8,
+    "updates_per_job": 151,
+    "checkpoint_images": 128,
+    "evaluation_images": 144,
+    "status": "running",
+    "server_root": "/data0/liyanlei/watermark_research/runs/published_imprint_dpm_full_20261110",
+    "completion_mode": "Kernel process-exit events; no periodic polling"
+  },
+  "latest_mechanism_report": "reports/crop_transport_diagnostic_20261110/report.md",
+  "historical_verifier_audit": {
+    "reference_accepted": 30,
+    "reference_n": 30,
+    "candidate_accepted": 2,
+    "candidate_n": 30,
+    "max_ba_difference": 0.0,
+    "short_budget_diagnostic_only": true
   }
 }

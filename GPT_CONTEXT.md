@@ -2,7 +2,7 @@
 
 Updated 2026-11-10. Objective: a publishable defense with matched absolute genuine detection, image quality and computation budgets.
 
-Read reports/sembind_official_audit_20261110/report.md and the prior content_verifier report/method. Completed: 296 DDIM genuine development queries and 36 standard CVPR2025 Reprompt candidates; plus a separate DPM/fp32 component audit (8 images, 18 inversion settings). No experiments remain running. Independent calibration and confirmation decisions remain unscored.
+Read reports/sembind_official_audit_20261110/report.md and the prior content_verifier report/method. Completed: 296 DDIM genuine development queries and 36 standard CVPR2025 Reprompt candidates; plus a separate DPM/fp32 component audit (8 images, 18 inversion settings). Full-budget Imprint is running on GPUs 7,5,4 only, with at most three GPUs. The protocol is protocols/published_imprint_dpm_full_20261110.json: eight fixed DPM development jobs, 151 updates each, all 16 checkpoints, then separate complete DPM/VAE verification and quality metrics. A kernel process-exit event supervisor handles stage transitions without periodic polling. Do not monitor repeatedly; work on other research unless asked for status. Historical 30-step experiments are diagnostic only; future baselines must use full published schedules. Independent calibration and confirmation decisions remain unscored.
 
 SemBind-DDIM accepts 16/16 genuine images in each of nine noncrop conditions, 0/16 center crops, and 1/16 Reprompt candidates. Calibrated BA and content verification both accept 0/16 at matched development genuine count 144/160. All 144 noncrop genuine BAs exceed the single default-accepted candidate BA. No superiority or SOTA result is established.
 
@@ -16,4 +16,6 @@ Use only published top-venue attack baselines with documented parameters on auth
 
 Local assets: sibling independent_research and assets directories. Server: /data0/liyanlei/watermark_research on SSH alias 249. Use only idle GPUs, always exclude index 6, bind by current UUID. Completed GPU work used local RTX 4070 Laptop; server GPU use was zero.
 
-The 80 added distortion queries are complete. Historical 30-pair Imprint CLI budget is unverified; a 2-step probe is not a full benchmark. Latest results are local; SSH to 249 closes at port 22, so new result upload is pending.
+The 80 added distortion queries are complete. Historical 30-pair Imprint CLI budget is unverified; a 2-step probe is not a full benchmark. The previous evidence archive is now uploaded to 249 and all 370 manifest hashes verified. Historical 64-image verifier audit matches all old candidate BAs exactly.
+
+CPU known-crop diagnostic: pure latent-coordinate alignment restores evidence in the cached DDIM development crop views. SemBind bilinear alignment accepts 16/16 with fixed zero-on-tie decoding and 15/16 when ties remain unknown, versus 0/16 without alignment. Coordinates are oracle information, and 32/256 message bits have no observed repetitions in this adapter. Read reports/crop_transport_diagnostic_20261110/report.md; this is not a blind-defense or superiority result.
