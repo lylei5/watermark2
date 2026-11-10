@@ -1,0 +1,18 @@
+{
+  "installed": {
+    "error": "RuntimeError",
+    "message": "The size of tensor a (51) must match the size of tensor b (64) at non-singleton dimension 3"
+  },
+  "inv_dpm_0_21_4": {
+    "shape": [
+      1,
+      4,
+      64,
+      64
+    ],
+    "finite": true,
+    "scalar_timestep": 0,
+    "same_shape": true,
+    "mean": 1.0004253387451172
+  }
+}

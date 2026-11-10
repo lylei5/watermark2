@@ -31,7 +31,7 @@
   },
   "novelty_boundary": "CoverLock already uses message-level content wrapping; coding order alone is not novel",
   "required_validation": [
-    "faithful SemBind official inversion and generation closure",
+    "full SemBind baseline environment and end-to-end benchmark beyond completed genuine DPM component closure",
     "new defense advantage over calibrated simple controls",
     "independent absolute-TPR calibration and confirmation",
     "full published Imprint budget",
@@ -43,7 +43,7 @@
     "root": "/data0/liyanlei/watermark_research",
     "primary_python": "/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/bin/python"
   },
-  "latest_progress_report": "reports/content_verifier_20261110/report.md",
+  "latest_progress_report": "reports/sembind_official_audit_20261110/report.md",
   "independent_progress": {
     "independent_images": 320,
     "source_prompts": 112,
@@ -51,9 +51,9 @@
     "reference_images": 228,
     "benign_queries": 1368,
     "natural_feature_files": 292,
-    "query_feature_files": 252,
-    "development_inversions": 216,
-    "development_genuine_scored": 216,
+    "query_feature_files": 332,
+    "development_inversions": 296,
+    "development_genuine_scored": 296,
     "development_reprompt_candidates": 36,
     "development_reprompt_scored": 36,
     "independent_confirmation_scored": 0
@@ -63,8 +63,8 @@
   "active_experiments": 0,
   "current_findings": {
     "sembind_genuine_non_crop": {
-      "accepted": 80,
-      "n": 80
+      "accepted": 144,
+      "n": 144
     },
     "sembind_genuine_crop": {
       "accepted": 0,
@@ -74,8 +74,8 @@
       "accepted": 1,
       "n": 16
     },
-    "matched_genuine_count": 77,
-    "matched_genuine_denominator": 96,
+    "matched_genuine_count": 144,
+    "matched_genuine_denominator": 160,
     "calibrated_ba_reprompt_accepted": 0,
     "profile_content_reprompt_accepted": 0,
     "superiority_established": false,
@@ -83,5 +83,19 @@
       "accepted": 10,
       "n": 16
     }
+  },
+  "official_dpm_component_audit": {
+    "source_prompts": 4,
+    "reference_images": 8,
+    "inversion_runs": 18,
+    "blind_runs": 16,
+    "blind_accepted": 16,
+    "oracle_diagnostic_runs": 2,
+    "complete_paper_reproduction": false
+  },
+  "artifact_sync": {
+    "new_results": "local only",
+    "server": "SSH connection closed at port 22",
+    "existing_paper_queries_and_features": "already on server"
   }
 }

@@ -1,0 +1,21 @@
+[
+  {
+    "command": "python scripts/defense/test_codeword_binding.py",
+    "returncode": 0,
+    "output": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.344s\n\nOK\n"
+  },
+  {
+    "command": "python scripts/defense/test_content_authentication.py",
+    "returncode": 0,
+    "output": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.119s\n\nOK\n"
+  },
+  {
+    "command": "python scripts/defense/test_absolute_calibration.py",
+    "returncode": 0,
+    "output": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.000s\n\nOK\n"
+  },
+  {
+    "check": "compile five new scripts",
+    "passed": true
+  }
+]

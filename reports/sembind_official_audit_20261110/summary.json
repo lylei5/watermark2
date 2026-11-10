@@ -1,0 +1,59 @@
+{
+  "summary": [
+    {
+      "method": "sembind",
+      "setting": "blind_encoder",
+      "n": 4,
+      "accepted": 4,
+      "mean_ba": 1.0,
+      "min_ba": 1.0,
+      "mean_channel_error": 0.16644287109375
+    },
+    {
+      "method": "sembind",
+      "setting": "blind_decoder",
+      "n": 4,
+      "accepted": 4,
+      "mean_ba": 1.0,
+      "min_ba": 1.0,
+      "mean_channel_error": 0.13262939453125
+    },
+    {
+      "method": "sembind",
+      "setting": "oracle_decoder",
+      "n": 1,
+      "accepted": 1,
+      "mean_ba": 1.0,
+      "min_ba": 1.0,
+      "mean_channel_error": 0.14678955078125
+    },
+    {
+      "method": "gs",
+      "setting": "blind_encoder",
+      "n": 4,
+      "accepted": 4,
+      "mean_ba": 1.0,
+      "min_ba": 1.0,
+      "mean_channel_error": 0.1448822021484375
+    },
+    {
+      "method": "gs",
+      "setting": "blind_decoder",
+      "n": 4,
+      "accepted": 4,
+      "mean_ba": 1.0,
+      "min_ba": 1.0,
+      "mean_channel_error": 0.1020660400390625
+    },
+    {
+      "method": "gs",
+      "setting": "oracle_decoder",
+      "n": 1,
+      "accepted": 1,
+      "mean_ba": 1.0,
+      "min_ba": 1.0,
+      "mean_channel_error": 0.09088134765625
+    }
+  ],
+  "hash_checks": 18
+}

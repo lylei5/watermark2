@@ -1,0 +1,79 @@
+{
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+  "local_gpu_uuid": "GPU-e380eaee-65d6-2d86-a984-f51d74ca88c0",
+  "local_gpu_name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+  "server_gpu_used": false,
+  "excluded_server_index": 6,
+  "weights_match_server_sha256": true,
+  "model_path": "D:/watermark2-assets/sd21_fp32",
+  "model_revision": "Manojb/stable-diffusion-2-1-base@0094d483a120f3f33dafbd187ea4aa60d10de75c",
+  "execution": [
+    "float32 weights and states",
+    "TF32 disabled for CUDA matmul and cuDNN",
+    "max attention slicing",
+    "frozen model parameters; decoder inversion optimizes only image latents",
+    "text encoder moved to CPU after encoding",
+    "UNet moved to CPU during official 100-step VAE decoder inversion"
+  ],
+  "scheduler_source": "https://github.com/huggingface/diffusers/blob/v0.21.4/src/diffusers/schedulers/scheduling_dpmsolver_multistep.py",
+  "scheduler_git_blob": "babba2206de03e996407784b6b2c95ea9cd0aea3",
+  "official_environment": {
+    "diffusers": "0.35.1",
+    "torch": "2.4.1",
+    "transformers": "4.56.1",
+    "python": "3.12.4",
+    "git_blob": "fa250f3aed2c73051184463f061b386ab3f52b8a"
+  },
+  "actual_dependencies": {
+    "torch": "2.1.2+cu121",
+    "diffusers": "0.30.3",
+    "transformers": "4.46.3"
+  },
+  "claim_boundary": "Original inv-dpm scheduler component under installed diffusers0.30.3; not a full SemBind environment reproduction",
+  "activation_checkpointing": "Enabled only inside VAE latent optimization after validating actual full-resolution VAE forward and gradients; frozen weights; no BatchNorm and dropout p=0",
+  "checkpoint_validation": {
+    "passed": true,
+    "dtype": "float32",
+    "shape": [
+      1,
+      4,
+      64,
+      64
+    ],
+    "max_output_difference": 0.0,
+    "max_gradient_difference": 1.1444091796875e-05,
+    "tolerance": {
+      "atol": 1e-05,
+      "rtol": 1e-05
+    },
+    "training_dependent_layers": "No BatchNorm; all Dropout p=0",
+    "modes": [
+      {
+        "seconds": 0.8600000000005821,
+        "peak_allocated_bytes": 6452269568
+      },
+      {
+        "seconds": 0.7969999999986612,
+        "peak_allocated_bytes": 3631348224
+      }
+    ],
+    "script_sha256": "6d9c7a4ebbcd018c221af0b6ee5a696dad49fe726009762651f1cb7f5993efc0",
+    "limitation": "Single actual VAE full-resolution forward/gradient check; not an all-input proof"
+  },
+  "initial_execution_ids": [
+    "000_sembind_blind_encoder",
+    "000_sembind_blind_decoder",
+    "000_sembind_oracle_decoder",
+    "000_gs_blind_encoder",
+    "000_gs_blind_decoder",
+    "000_gs_oracle_decoder",
+    "001_sembind_blind_encoder",
+    "001_sembind_blind_decoder",
+    "001_gs_blind_encoder"
+  ],
+  "initial_runner_sha256": "9ea38f6a045adb67f726a3021915433acba465a53999cc0f1694dc046aace1d3",
+  "checkpointed_runner_sha256": "6973ff75af65ecd29dfb52cde4394339eadf7998497e143744d683ce6a2c465e",
+  "runtime_note": "Per-case timing JSON records completed computations. Resumed stage timer excludes prior invocations; these are not throughput benchmarks.",
+  "source_transport": "Text checkout through GitHub connector; runtime files have normalized line endings and recorded SHA256 hashes"
+}

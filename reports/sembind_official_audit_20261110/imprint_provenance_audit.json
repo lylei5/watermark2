@@ -1,0 +1,23 @@
+{
+  "scope": "read-only source and existing artifact audit; no new attacks",
+  "upstream": "and-mill/semantic-forgery",
+  "revision": "ca68950cd7b53b8438a49580f134b2a0db28d778",
+  "released_entry_default_steps": 151,
+  "paper_reported_budget": 150,
+  "historical_pair_count": 30,
+  "historical_entry": "scripts/defense/sembind_pairs.py",
+  "historical_steps_source": "required CLI argument; absent from available per-pair result and summary",
+  "historical_budget_verified": false,
+  "smoke_default_steps": 30,
+  "smoke_default_does_not_establish_pair_budget": true,
+  "short_runtime_probe_steps": 2,
+  "full_budget_new_benchmark_completed": false,
+  "reference_detection_scores_present": false,
+  "server_status": "SSH connection closed at port 22 during audit",
+  "requirements": [
+    "Recover exact historical launch command before assigning a budget",
+    "Evaluate legitimate references with the same verifier",
+    "Keep official published attack method and stated budget; no custom attack variants",
+    "Distinguish entry default 151 updates from paper budget 150; record actual choice and rationale"
+  ]
+}

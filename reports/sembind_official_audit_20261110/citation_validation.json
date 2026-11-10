@@ -1,0 +1,32 @@
+{
+  "filepath": "reports\\sembind_official_audit_20261110\\references.bib",
+  "total_entries": 5,
+  "valid_entries": 5,
+  "errors": [],
+  "warnings": [
+    {
+      "type": "missing_recommended_field",
+      "field": "pages",
+      "severity": "medium",
+      "message": "Entry gesny2026guidance: Missing recommended field \"pages\"",
+      "entry": "gesny2026guidance"
+    },
+    {
+      "type": "missing_recommended_field",
+      "field": "pages",
+      "severity": "medium",
+      "message": "Entry luo2026grow: Missing recommended field \"pages\"",
+      "entry": "luo2026grow"
+    }
+  ],
+  "duplicates": [],
+  "venue_standard_checked": null,
+  "min_count_checked": null,
+  "manuscript_results": {
+    "checked": false,
+    "manuscript_filepath": null,
+    "cited_keys": [],
+    "missing_keys": [],
+    "unused_keys": []
+  }
+}

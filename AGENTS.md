@@ -5,7 +5,7 @@ These rules apply to this repository and `/data0/liyanlei/watermark_research` on
 ## Objective and current state
 
 - Develop a publishable defense with benefits at matched absolute legitimate-image detection rates, documented image quality and computation budgets.
-- Read `reports/content_verifier_20261110/report.md` for current development results and `project_state.json` for remaining validation.
+- Read `reports/sembind_official_audit_20261110/report.md` for current development results and `project_state.json` for remaining validation.
 - The statistical content verifier has no demonstrated advantage over calibrated BA on the completed development Reprompt comparison. Independent confirmation remains unscored.
 
 ## Evaluation scope
