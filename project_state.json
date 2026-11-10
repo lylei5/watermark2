@@ -178,5 +178,32 @@
     "text_encoder_equal": false,
     "semantic_assets_equal": true,
     "calibration_uses_matched_ddim_model": true
+  },
+  "compute_policy": {
+    "experiment_host": "249",
+    "server_only": true,
+    "local_cpu_experiments_allowed": false,
+    "local_gpu_experiments_allowed": false,
+    "local_model_downloads_allowed": false,
+    "local_code_and_document_work_allowed": true,
+    "allowed_gpu_indices": [
+      7,
+      5,
+      4
+    ],
+    "max_concurrent_gpus": 3
+  },
+  "local_storage_cleanup": {
+    "scope": "Verified research model weights, incomplete downloads and temporary transfer archives",
+    "deleted_bytes": 14608733513,
+    "deleted_gib": 13.605443307198584,
+    "deleted_gb": 14.608733513,
+    "deleted_files": 15,
+    "remaining_bytes": 1109372447,
+    "remaining_files": 11,
+    "weights_deleted": true,
+    "archives_deletion_blocked": true,
+    "block_reason": "Automatic approval review returned blocked by policy, without further explanation",
+    "report": "reports/local_storage_cleanup_20261110/report.md"
   }
 }

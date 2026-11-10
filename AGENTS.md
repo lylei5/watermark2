@@ -28,6 +28,7 @@ These rules apply to this repository and `/data0/liyanlei/watermark_research` on
 ## Server and compute
 
 - Workspace: `/data0/liyanlei/watermark_research` on SSH alias `249`.
+- All future research experiments, including CPU scoring and GPU runs, must execute on server 249 only. Do not use the user's PC as a compute fallback or download model weights there. Local code editing, documentation and file management remain allowed.
 - Primary Python: `/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/bin/python`.
 - Reuse local models and cache. Set `HF_HOME=/data0/liyanlei/watermark_research/cache/huggingface`, `HF_HUB_OFFLINE=1` and `TRANSFORMERS_OFFLINE=1` for offline runs.
 - Use at most three GPUs concurrently. Current user-selected server GPUs are 7, 5, and 4; use only these, in that order.

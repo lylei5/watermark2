@@ -1,5 +1,7 @@
 # Research state: content-bound diffusion watermark defense
 
+Compute policy: all future experiments (CPU and GPU) run exclusively on server 249. No local experimental execution, GPU fallback, or model downloads. Local work is limited to code, documents and file management. GPU selection remains 7,5,4 with at most three devices.
+
 Updated 2026-11-10. Objective: a publishable defense with matched absolute genuine detection, image quality and computation budgets.
 
 Frozen continuation is ARMED on 249 (PID 34472, initial state waiting_for_full_pipeline_exit). Read reports/geometry_calibration_20261110/analysis_plan.md and protocols/geometry_calibration_20261110.json. It waits for predecessor supervisor 22316 via a kernel exit event; first scores all 144 completed full-budget Imprint observations with the frozen geometry verifier, then caches 192 held-out calibration queries (32 sources x 6 conditions) on GPUs 7,5,4 and scores all 32 real identities per query (6144 decisions, 5952 wrong identity). No threshold changes or confirmation scoring. Do not launch a duplicate continuation or repeatedly poll it. Run root /data0/liyanlei/watermark_research/runs/geometry_calibration_20261110; complete.json or failed.json records final status. Two development bridge queries must have identical semantic codes and relative inversion L2 <= 0.001 before calibration scoring. New results are pending, not completed.
@@ -20,7 +22,9 @@ New methods must beat calibrated BA, raw agreement and content majority at equal
 
 Use only published top-venue attack baselines with documented parameters on authorized offline assets. Do not devise or improve attacks. Keep verifier secrets outside baseline processes; distinguish process separation from OS access isolation. Production ceramic-system changes are outside this research repository.
 
-Local assets: sibling independent_research and assets directories. Server: /data0/liyanlei/watermark_research on SSH alias 249. Use only idle GPUs, always exclude index 6, bind by current UUID. Earlier completed GPU work used local RTX 4070 Laptop; the full-budget baseline was subsequently launched on server GPUs 7, 5 and 4.
+Local storage cleanup: all known research model weight files and two incomplete downloads were removed after server verification; see reports/local_storage_cleanup_20261110/report.md. Model configs, original experimental data and records remain locally. Temporary ZIP deletion was blocked by automatic approval and those archives remain. Do not use old local model paths or repopulate them.
+
+Local data records: sibling independent_research and assets directories. Server: /data0/liyanlei/watermark_research on SSH alias 249. Use only idle GPUs, always exclude index 6, bind by current UUID. Earlier completed GPU work used local RTX 4070 Laptop; the full-budget baseline was subsequently launched on server GPUs 7, 5 and 4.
 
 The 80 added distortion queries are complete. Historical 30-pair Imprint CLI budget is unverified; a 2-step probe is not a full benchmark. The previous evidence archive is now uploaded to 249 and all 370 manifest hashes verified. Historical 64-image verifier audit matches all old candidate BAs exactly.
 
