@@ -60,7 +60,7 @@
   },
   "evaluation_policy": "Published standard baselines only; matched absolute genuine detection; no custom attack development",
   "requires_user_resume": false,
-  "active_experiments": 0,
+  "active_experiments": 1,
   "current_findings": {
     "sembind_genuine_non_crop": {
       "accepted": 144,
@@ -152,8 +152,8 @@
   },
   "latest_validation_plan": "reports/geometry_calibration_20261111/runtime_audit.md",
   "queued_geometry_validation": {
-    "status_at_launch": "waiting_for_full_pipeline_exit",
-    "pid": 36153,
+    "status_at_launch": "installing_recorded_runtime",
+    "pid": 44097,
     "predecessor_supervisor_pid": 22316,
     "protocol": "protocols/geometry_calibration_replay_20261111.json",
     "server_root": "/data0/liyanlei/watermark_research/runs/geometry_calibration_replay_20261111",
@@ -170,10 +170,14 @@
     "decisions_available": false,
     "independent_confirmation_scored": false,
     "wait_mode": "kernel process-exit event; no periodic polling",
-    "status_at_last_observation": "installing_recorded_runtime",
+    "status_at_last_observation": "caching_calibration",
     "bridge_gate": 0.001,
     "prior_bridge_failed": true,
-    "cache_batch": 2
+    "cache_batch": 2,
+    "bridge_passed": true,
+    "cache_worker_pid": 42257,
+    "package_index": "https://pypi.tuna.tsinghua.edu.cn/simple/",
+    "installation_report": "reports/geometry_calibration_20261111/runtime_setup_repair/report.md"
   },
   "cross_pipeline_model_audit": {
     "effective_fp16_unet_equal": true,
@@ -209,7 +213,7 @@
     "block_reason": "Automatic approval review returned blocked by policy, without further explanation",
     "report": "reports/local_storage_cleanup_20261110/report.md"
   },
-  "active_experiments_observation": "Prior GPU cache exited at bridge failure; isolated runtime installation is active, new GPU work gated on replay",
+  "active_experiments_observation": "Recorded runtime installed and all dependency checks passed; DDIM50 development bridge passed at unchanged 0.001 tolerance; GPU5 caching calibration with three sequential shards",
   "full_budget_findings": {
     "source_count_per_method": 4,
     "sem_reference_accepted": 4,

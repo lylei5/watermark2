@@ -1807,7 +1807,7 @@
     "codeword_binding.py": "f49aa1342031a1c54be17bb4153b79150e5f70903719275c37329bf093186c59",
     "test_geometry_completion.py": "4947d43321877b4c4d9549cefe2eee70814d99f8c36516b66bec3db741d5814f",
     "bridge_ddim_runtime.py": "048ac14e46749b3d9a20bb19440fd0555671e5b7dc66e8a70e635b9d1bf43658",
-    "setup_ddim_replay.py": "52a3f45a4f6a044542c5aa8f6eb67487ea6e491d540f9fe124b0ca74e7d80b6f"
+    "setup_ddim_replay.py": "3ebcb20c15af1777a356f2f58451534d55557678365cfdd252fd34f730880f4d"
   },
   "nominal_alpha": 5.634806966794078e-12,
   "detector": "Unchanged 251-pose query-only geometry verifier from development; all-fit x251 and split-fit x2",
@@ -1900,5 +1900,12 @@
     "safetensors": "0.7.0",
     "Pillow": "12.2.0",
     "cryptography": "48.0.0"
+  },
+  "installation_repair": {
+    "parent_protocol_sha256": "1beef4effd4c75d80991c831b48cbe6503de2806d3c4804226835aa5a77dbe96",
+    "package_index": "https://pypi.tuna.tsinghua.edu.cn/simple/",
+    "cached_torch_wheels_reused": true,
+    "resume_isolated_environment": true,
+    "scientific_parameters_unchanged": true
   }
 }

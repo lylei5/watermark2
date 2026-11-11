@@ -20,3 +20,5 @@
 新环境安装失败、GPU5 被占用或桥接仍失败时，将记录失败并停止，不自动放宽门限、切换到其它显卡或读取校准判决。软件环境恢复属于数值兼容性核验，不是新防御结果。
 
 证据包括 [batch=1 桥接](bridge_batch1.json)、[batch=2 回放](bridge_batch2.json)、[失败记录](bridge_failure.json)、[数值阈值修复检查](repair_validation.json)、[新的冻结执行协议](../../protocols/geometry_calibration_replay_20261111.json)。首次 2026-11-11 运行的两个执行文件快照保留于 `source_snapshots/`，以对应该次协议的源文件哈希。
+
+2026-11-11 后续核验：隔离环境已通过清华镜像完成安装，11 个固定版本与协议一致，导入检查和 `pip check` 均通过。完整 DDIM50 桥接的 clean/crop90 相对 L2 分别为 0.000547554、0.000569046，均通过原有 0.001 门限。流程已在 GPU5 启动校准缓存，三个分片顺序执行。安装修复、逐文件一致性检查和桥接结果详见[运行环境修复记录](runtime_setup_repair/report.md)；当前记录不宣称校准评分已经完成。
