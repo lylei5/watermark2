@@ -108,7 +108,9 @@ def main():
     summary=summarize(output,'kind')
     result=dict(completed=True,mode=args.mode,rows=output,summary=summary,
         protocol_sha256=sha(args.frozen_protocol),seconds=time.monotonic()-start,
-        unique_queries=len(rows),identity_decisions=len(output),new_attacks_run=False,
+        unique_queries=len(rows),identity_decisions=len(output),
+        new_attacks_run=plan.get('published_distortion_instances_generated',False),
+        novel_or_modified_attacks=False,
         independent_confirmation_scored=args.mode=='confirmation',thresholds_changed=False,
         threshold_audit=dict(runtime_computed_alpha=computed_alpha,applied_alpha=ALPHA,
             frozen_alpha=plan['nominal_alpha'],relative_roundoff_tolerance=1e-12),

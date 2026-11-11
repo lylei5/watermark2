@@ -28,8 +28,12 @@ def main():
     py=root/'envs/ddim_replay_py310/bin/python';primary=root/'envs/semantic_forgery_py310/bin/python'
     try:
         for name,digest in plan['source_sha256'].items():assert sha(run/'scripts'/name)==digest,name
-        assert len(plan['rows'])==384 and plan['identity_tasks']==list(range(48,112))
-        assert len({r['id'] for r in plan['rows']})==384
+        expected=plan['confirmation_queries']
+        assert len(plan['rows'])==expected and plan['identity_tasks']==list(range(48,112))
+        assert len({r['id'] for r in plan['rows']})==expected
+        labels={r['label'] for r in plan['rows']}
+        assert expected==64*len(labels)
+        assert all({r['label'] for r in plan['rows'] if r['task']==task}==labels for task in plan['identity_tasks'])
         assert set(plan['source_image_ids']).isdisjoint(plan['excluded_source_image_ids'])
         for row in plan['rows']:assert sha(run/row['image'])==row['image_sha256']
         for task in plan['identity_tasks']:
@@ -66,10 +70,10 @@ def main():
                  '--frozen-protocol',str(run/'protocol.json')]
         with (run/'score.log').open('w') as log:subprocess.run(command,env=env,stdout=log,stderr=subprocess.STDOUT,check=True)
         scores=json.loads((run/'scores/results.json').read_text())
-        assert scores['completed'] and scores['identity_decisions']==24576 and scores['unique_queries']==384
-        write(run/'complete.json',dict(completed=True,confirmation_sources=64,queries=384,identity_decisions=24576,
-              wrong_identity_decisions=24192,protocol_sha256=sha(run/'protocol.json'),results_sha256=sha(run/'scores/results.json'),
-              new_attacks_run=False))
+        assert scores['completed'] and scores['identity_decisions']==expected*64 and scores['unique_queries']==expected
+        write(run/'complete.json',dict(completed=True,confirmation_sources=64,queries=expected,identity_decisions=expected*64,
+              wrong_identity_decisions=expected*63,protocol_sha256=sha(run/'protocol.json'),results_sha256=sha(run/'scores/results.json'),
+              new_attacks_run=plan.get('published_distortion_instances_generated',False),novel_or_modified_attacks=False))
         write(run/'status.json',dict(stage='complete',pid=os.getpid()))
     except Exception as exc:
         write(run/'failed.json',dict(error=str(exc),traceback=traceback.format_exc()))
