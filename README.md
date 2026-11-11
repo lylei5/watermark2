@@ -45,6 +45,8 @@ python scripts/defense/codeword_diffusion_pilot.py --help
 
 ## 研究入口
 
+- [文献与历史结论审计](reports/repository_audit_20261111/report.md)、[核验后的文献](docs/LITERATURE.md)及[防御研究计划](docs/RESEARCH_PLAN.md)。
+
 - [当前状态](GPT_CONTEXT.md)与[机器可读状态](project_state.json)。
 - [GS 解码契约](reports/22_decoder_contract/report.md)。
 - [SemBind 官方 masker 核验](reports/repro_sembind_masker_20261103/report.md)。

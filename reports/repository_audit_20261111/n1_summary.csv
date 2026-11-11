@@ -1,0 +1,8 @@
+stage,attack_step,num_images,detection_rate,mean_bit_accuracy
+watermarked,-1,1,1.0,1.0
+attacked,50,1,1.0,1.0
+defended,50,1,0.0,0.578125
+attacked,100,1,1.0,1.0
+defended,100,1,0.0,0.62109375
+attacked,150,1,1.0,1.0
+defended,150,1,0.0,0.6640625

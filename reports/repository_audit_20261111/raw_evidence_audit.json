@@ -1,0 +1,455 @@
+{
+  "audit_date": "2026-11-11",
+  "execution_host": "249",
+  "threshold": 0.70703125,
+  "operator": ">",
+  "pgid": {
+    "pgid_smoke_20261102T231752Z": {
+      "raw_path": "runs/pgid_smoke_20261102T231752Z/attack=forgery/all_results.csv",
+      "raw_sha256": "ae833948bdd8f128126a564e479a624a3b633c10ff2310f5ac2c1577de181afa",
+      "summary_sha256": "10647f16054f92a470e0e059701469f7005ab56884a55da44ef60928e7fdcce5",
+      "rows": [
+        {
+          "image_idx": 0,
+          "stage": "watermarked",
+          "attack_step": -1,
+          "bit_accuracy": 1.0,
+          "accepted": true
+        },
+        {
+          "image_idx": 0,
+          "stage": "attacked",
+          "attack_step": 50,
+          "bit_accuracy": 1.0,
+          "accepted": true
+        },
+        {
+          "image_idx": 0,
+          "stage": "defended",
+          "attack_step": 50,
+          "bit_accuracy": 0.578125,
+          "accepted": false
+        },
+        {
+          "image_idx": 0,
+          "stage": "attacked",
+          "attack_step": 100,
+          "bit_accuracy": 1.0,
+          "accepted": true
+        },
+        {
+          "image_idx": 0,
+          "stage": "defended",
+          "attack_step": 100,
+          "bit_accuracy": 0.62109375,
+          "accepted": false
+        },
+        {
+          "image_idx": 0,
+          "stage": "attacked",
+          "attack_step": 150,
+          "bit_accuracy": 1.0,
+          "accepted": true
+        },
+        {
+          "image_idx": 0,
+          "stage": "defended",
+          "attack_step": 150,
+          "bit_accuracy": 0.6640625,
+          "accepted": false
+        }
+      ],
+      "verified_summary": [
+        {
+          "stage": "watermarked",
+          "attack_step": -1,
+          "n": 1,
+          "accepted": 1,
+          "mean_bit_accuracy": 1.0
+        },
+        {
+          "stage": "attacked",
+          "attack_step": 50,
+          "n": 1,
+          "accepted": 1,
+          "mean_bit_accuracy": 1.0
+        },
+        {
+          "stage": "defended",
+          "attack_step": 50,
+          "n": 1,
+          "accepted": 0,
+          "mean_bit_accuracy": 0.578125
+        },
+        {
+          "stage": "attacked",
+          "attack_step": 100,
+          "n": 1,
+          "accepted": 1,
+          "mean_bit_accuracy": 1.0
+        },
+        {
+          "stage": "defended",
+          "attack_step": 100,
+          "n": 1,
+          "accepted": 0,
+          "mean_bit_accuracy": 0.62109375
+        },
+        {
+          "stage": "attacked",
+          "attack_step": 150,
+          "n": 1,
+          "accepted": 1,
+          "mean_bit_accuracy": 1.0
+        },
+        {
+          "stage": "defended",
+          "attack_step": 150,
+          "n": 1,
+          "accepted": 0,
+          "mean_bit_accuracy": 0.6640625
+        }
+      ],
+      "all_checks_passed": true,
+      "distinct_initial_payloads": 1,
+      "key_identity_independence_established": false
+    },
+    "repro_pgid_n5_20261103": {
+      "raw_path": "runs/repro_pgid_n5_20261103/attack=forgery/all_results.csv",
+      "raw_sha256": "b6e9ea2ff66624d1999d05cee8a1178a6aa2dbe6b42f9e99f02363b763616dbd",
+      "summary_sha256": "95308ae455095c7d36cc6c25530794fb73bbf82104dc20c3b72343c7c624728a",
+      "rows": [
+        {
+          "image_idx": 0,
+          "stage": "watermarked",
+          "attack_step": -1,
+          "bit_accuracy": 1.0,
+          "accepted": true
+        },
+        {
+          "image_idx": 0,
+          "stage": "attacked",
+          "attack_step": 50,
+          "bit_accuracy": 1.0,
+          "accepted": true
+        },
+        {
+          "image_idx": 0,
+          "stage": "defended",
+          "attack_step": 50,
+          "bit_accuracy": 0.578125,
+          "accepted": false
+        },
+        {
+          "image_idx": 0,
+          "stage": "attacked",
+          "attack_step": 100,
+          "bit_accuracy": 1.0,
+          "accepted": true
+        },
+        {
+          "image_idx": 0,
+          "stage": "defended",
+          "attack_step": 100,
+          "bit_accuracy": 0.6171875,
+          "accepted": false
+        },
+        {
+          "image_idx": 0,
+          "stage": "attacked",
+          "attack_step": 150,
+          "bit_accuracy": 1.0,
+          "accepted": true
+        },
+        {
+          "image_idx": 0,
+          "stage": "defended",
+          "attack_step": 150,
+          "bit_accuracy": 0.6796875,
+          "accepted": false
+        },
+        {
+          "image_idx": 1,
+          "stage": "watermarked",
+          "attack_step": -1,
+          "bit_accuracy": 1.0,
+          "accepted": true
+        },
+        {
+          "image_idx": 1,
+          "stage": "attacked",
+          "attack_step": 50,
+          "bit_accuracy": 1.0,
+          "accepted": true
+        },
+        {
+          "image_idx": 1,
+          "stage": "defended",
+          "attack_step": 50,
+          "bit_accuracy": 0.58984375,
+          "accepted": false
+        },
+        {
+          "image_idx": 1,
+          "stage": "attacked",
+          "attack_step": 100,
+          "bit_accuracy": 1.0,
+          "accepted": true
+        },
+        {
+          "image_idx": 1,
+          "stage": "defended",
+          "attack_step": 100,
+          "bit_accuracy": 0.61328125,
+          "accepted": false
+        },
+        {
+          "image_idx": 1,
+          "stage": "attacked",
+          "attack_step": 150,
+          "bit_accuracy": 1.0,
+          "accepted": true
+        },
+        {
+          "image_idx": 1,
+          "stage": "defended",
+          "attack_step": 150,
+          "bit_accuracy": 0.68359375,
+          "accepted": false
+        },
+        {
+          "image_idx": 2,
+          "stage": "watermarked",
+          "attack_step": -1,
+          "bit_accuracy": 1.0,
+          "accepted": true
+        },
+        {
+          "image_idx": 2,
+          "stage": "attacked",
+          "attack_step": 50,
+          "bit_accuracy": 1.0,
+          "accepted": true
+        },
+        {
+          "image_idx": 2,
+          "stage": "defended",
+          "attack_step": 50,
+          "bit_accuracy": 0.53125,
+          "accepted": false
+        },
+        {
+          "image_idx": 2,
+          "stage": "attacked",
+          "attack_step": 100,
+          "bit_accuracy": 1.0,
+          "accepted": true
+        },
+        {
+          "image_idx": 2,
+          "stage": "defended",
+          "attack_step": 100,
+          "bit_accuracy": 0.58984375,
+          "accepted": false
+        },
+        {
+          "image_idx": 2,
+          "stage": "attacked",
+          "attack_step": 150,
+          "bit_accuracy": 1.0,
+          "accepted": true
+        },
+        {
+          "image_idx": 2,
+          "stage": "defended",
+          "attack_step": 150,
+          "bit_accuracy": 0.66015625,
+          "accepted": false
+        },
+        {
+          "image_idx": 3,
+          "stage": "watermarked",
+          "attack_step": -1,
+          "bit_accuracy": 1.0,
+          "accepted": true
+        },
+        {
+          "image_idx": 3,
+          "stage": "attacked",
+          "attack_step": 50,
+          "bit_accuracy": 1.0,
+          "accepted": true
+        },
+        {
+          "image_idx": 3,
+          "stage": "defended",
+          "attack_step": 50,
+          "bit_accuracy": 0.53125,
+          "accepted": false
+        },
+        {
+          "image_idx": 3,
+          "stage": "attacked",
+          "attack_step": 100,
+          "bit_accuracy": 1.0,
+          "accepted": true
+        },
+        {
+          "image_idx": 3,
+          "stage": "defended",
+          "attack_step": 100,
+          "bit_accuracy": 0.53515625,
+          "accepted": false
+        },
+        {
+          "image_idx": 3,
+          "stage": "attacked",
+          "attack_step": 150,
+          "bit_accuracy": 1.0,
+          "accepted": true
+        },
+        {
+          "image_idx": 3,
+          "stage": "defended",
+          "attack_step": 150,
+          "bit_accuracy": 0.609375,
+          "accepted": false
+        },
+        {
+          "image_idx": 4,
+          "stage": "watermarked",
+          "attack_step": -1,
+          "bit_accuracy": 1.0,
+          "accepted": true
+        },
+        {
+          "image_idx": 4,
+          "stage": "attacked",
+          "attack_step": 50,
+          "bit_accuracy": 1.0,
+          "accepted": true
+        },
+        {
+          "image_idx": 4,
+          "stage": "defended",
+          "attack_step": 50,
+          "bit_accuracy": 0.58203125,
+          "accepted": false
+        },
+        {
+          "image_idx": 4,
+          "stage": "attacked",
+          "attack_step": 100,
+          "bit_accuracy": 1.0,
+          "accepted": true
+        },
+        {
+          "image_idx": 4,
+          "stage": "defended",
+          "attack_step": 100,
+          "bit_accuracy": 0.640625,
+          "accepted": false
+        },
+        {
+          "image_idx": 4,
+          "stage": "attacked",
+          "attack_step": 150,
+          "bit_accuracy": 1.0,
+          "accepted": true
+        },
+        {
+          "image_idx": 4,
+          "stage": "defended",
+          "attack_step": 150,
+          "bit_accuracy": 0.6953125,
+          "accepted": false
+        }
+      ],
+      "verified_summary": [
+        {
+          "stage": "watermarked",
+          "attack_step": -1,
+          "n": 5,
+          "accepted": 5,
+          "mean_bit_accuracy": 1.0
+        },
+        {
+          "stage": "attacked",
+          "attack_step": 50,
+          "n": 5,
+          "accepted": 5,
+          "mean_bit_accuracy": 1.0
+        },
+        {
+          "stage": "defended",
+          "attack_step": 50,
+          "n": 5,
+          "accepted": 0,
+          "mean_bit_accuracy": 0.5625
+        },
+        {
+          "stage": "attacked",
+          "attack_step": 100,
+          "n": 5,
+          "accepted": 5,
+          "mean_bit_accuracy": 1.0
+        },
+        {
+          "stage": "defended",
+          "attack_step": 100,
+          "n": 5,
+          "accepted": 0,
+          "mean_bit_accuracy": 0.59921875
+        },
+        {
+          "stage": "attacked",
+          "attack_step": 150,
+          "n": 5,
+          "accepted": 5,
+          "mean_bit_accuracy": 1.0
+        },
+        {
+          "stage": "defended",
+          "attack_step": 150,
+          "n": 5,
+          "accepted": 0,
+          "mean_bit_accuracy": 0.665625
+        }
+      ],
+      "all_checks_passed": true,
+      "distinct_initial_payloads": 5,
+      "key_identity_independence_established": false
+    }
+  },
+  "sembind_masker": {
+    "raw_path": "runs/repro_sembind_masker_20261103/masker_equiv.json",
+    "raw_sha256": "7f262b5df03a4560508be9dfe311c226ab996677dd733986a0270426f31d535e",
+    "n_images": 20,
+    "bits": 1024,
+    "r1_original_max": 0,
+    "r1_distorted_max": 0,
+    "r2_recomputed": {
+      "mean": 20.55,
+      "median": 8.0,
+      "min": 1,
+      "max": 78
+    },
+    "r2_recorded": {
+      "n": 20,
+      "mean": 20.55,
+      "min": 1,
+      "max": 78,
+      "median": 9
+    },
+    "median_discrepancy": "Historical code used the upper middle observation, not the mean of two middle observations.",
+    "r3_recorded_summary": {
+      "n": 190,
+      "mean": 501.70526315789476,
+      "min": 29,
+      "max": 571,
+      "median": 520
+    },
+    "r3_pairwise_distances_independently_recomputed": false,
+    "scope": "R1/R2 recomputed from per-image records; R3 is stored aggregate only, without semantic labels."
+  }
+}

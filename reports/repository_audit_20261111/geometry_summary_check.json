@@ -1,0 +1,33 @@
+{
+  "execution_host": "249",
+  "input": "reports/repro_geometry_paper_task_20261103/result.json",
+  "sha256": "d05e62b42eb222a43457a53641e9066b22c81b0c49de9a8b11954fed80471c2b",
+  "summary_matches_per_task_scores": true,
+  "checks": {
+    "G-Cos_genuine_vs_forged20": {
+      "auc": 1.0,
+      "n_per_class": 30
+    },
+    "G-Cos_genuine_vs_forged30": {
+      "auc": 1.0,
+      "n_per_class": 30
+    },
+    "G-Cos_genuine_vs_cover": {
+      "auc": 1.0,
+      "n_per_class": 30
+    },
+    "L-SPD_genuine_vs_forged20": {
+      "auc": 0.48,
+      "n_per_class": 30
+    },
+    "L-SPD_genuine_vs_forged30": {
+      "auc": 0.4111111111111111,
+      "n_per_class": 30
+    },
+    "L-SPD_genuine_vs_cover": {
+      "auc": 0.72,
+      "n_per_class": 30
+    }
+  },
+  "raw_latent_scores_recomputed": false
+}

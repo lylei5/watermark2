@@ -2,6 +2,10 @@
 
 Updated 2026-11-11. Goal: a publishable defense with matched genuine detection, image quality, computation budgets and credible false-positive calibration. No superiority or SOTA claim is established.
 
+## Literature and historical evidence audit
+
+Read reports/repository_audit_20261111/report.md and docs/LITERATURE.md. Primary records correct the SemBind, Geometry, semantic-forgery and PAI identifiers, PGID expansion and SEAL venue. PAI is confirmed in the ICLR2026 proceedings. Third-party origins and versions are recorded in THIRD_PARTY.md. PGID historical n=1 and completed n=5 CSVs were rechecked on server: all three defended checkpoints accepted0/1 and0/5 respectively. SemBind masker R2 standard median is8, not the historical upper-middle value9; the statistics function is corrected. Geometry aggregates agree with its saved30-task scores, but do not establish author-implementation equivalence. Historical near-code observations do not prove a collision vulnerability. Full reproduction and superiority remain unestablished.
+
 ## Compute and safety
 
 All future research experiments and scoring, including CPU work, run on server 249 only. No local model downloads, experimental execution or GPU fallback. Local code/document editing and file management are allowed. Server root is /data0/liyanlei/watermark_research. Only GPUs 7,5,4, at most three, and only idle devices. Never use GPU6 or terminate other users' jobs. Do not continuously poll; use process-exit events and independent research between meaningful checks.

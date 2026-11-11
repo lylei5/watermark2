@@ -2,7 +2,7 @@
 
 ## 0. 一句话
 
-我们重写的 `SemanticMasker.code()` 与作者发布的官方入口 `AttnSupConHashingModel.forward(stage='binarize', s=12.0)` 在 20 张图上**位级完全相同（Hamming 恒为 0）**，含失真变体。这是 SemBind 唯一被公开的组件，现已确认忠实复现。
+我们重写的 `SemanticMasker.code()` 与作者发布的官方入口 `AttnSupConHashingModel.forward(stage='binarize', s=12.0)` 在 20 张图上**位级完全相同（Hamming 恒为 0）**，含失真变体。本轮核验对象是公开masker组件；逐位一致只适用于所测样本，不能推出整条SemBind流程等价。
 
 ## 1. 为什么只核验 masker
 
@@ -30,16 +30,18 @@ SemBind 官方库（`third_party/SemBind` @ `337c9f90a150157ac1d410208ae20e6530c
 |---|---|
 | R1 官方 vs 我们（原图） | **identical = true，max Hamming = 0** |
 | R1 官方 vs 我们（失真图） | **max Hamming = 0** |
-| R2 同内容+失真 | 均值 20.55/1024（2.0%），中位 9，min 1，max 78 |
-| R3 跨图（190 对） | 均值 501.7/1024，中位 520，min **29**，max 571 |
+| R2 同内容+失真 | 均值 20.55/1024（2.0%），标准中位数8，min 1，max 78 |
+| R3 跨图（190 对） | 均值 501.7/1024，历史上中位观测值520，min **29**，max 571 |
 
 参考：随机基线为 512/1024。
 
 ## 4. 两个结论
 
-**（1）masker 复现成立。** 位级零差异，说明我们的预处理（DINOv2 CLS → `F.normalize`）、前向顺序（encoder → proj_head → hash_head）、饱和常数 s=12.0、取位规则（sign → {0,1}）全部与作者一致。R2 也复现了 notebook 展示的核心性质：轻度失真下哈希稳定。
+**（1）所测masker输出一致。** 20张原图及其失真变体的输出逐位相同，支持该组件封装在这些输入上的一致性；它不独立证明所有预处理分支、输入分布或完整生成验证流程一致。
 
-**（2）跨图出现自然碰撞。** 190 对不同图像里，最相似的一对 Hamming 仅 **29/1024（一致率 97.2%）**。这说明 1024 位语义哈希不是密码学抗碰撞的——两个**内容不同**的封面可以自然撞到近乎相同的码。这条为"掩码碰撞"攻击路线提供了独立于优化实验的直接证据。
+**（2）观察到跨图近码，尚无语义碰撞结论。** 历史190对汇总最小Hamming距离为29/1024，距离非零；没有独立语义标注，不能从图像文件不同推出内容语义不同，更不能据此证明可实施绕过。
+
+2026-11-11在249从原始JSON的20条逐图记录复核R1/R2：位级差异仍为0，失真距离均值20.55，标准中位数为8。历史统计函数偶数样本取上中位观测值，产生了原报告的9；函数现已修正。R3只保存汇总，未保存全部190对距离，本轮无法重新计算其标准中位数；520保留并明确标为历史上中位观测值。见[哈希与复算记录](../repository_audit_20261111/raw_evidence_audit.json)。
 
 ## 5. 文件
 
@@ -47,7 +49,7 @@ SemBind 官方库（`third_party/SemBind` @ `337c9f90a150157ac1d410208ae20e6530c
 - 结果：`runs/repro_sembind_masker_20261103/masker_equiv.json`（服务器）
 - 设备：GPU3，UUID `GPU-e602f6b2-50a3-72ee-ae1b-a0ae80eca5da`，`cuda:0`，单卡串行
 
-## 6. 仍未复现
+## 6. 2026-11-03时的未完成项
 
 - 绑定/解绑链路（作者未发布）
 - E.1/Table 17 的 `Det.=0.00`：需 5 个独立 proxy masker，本地只有 1 个 checkpoint
@@ -55,13 +57,13 @@ SemBind 官方库（`third_party/SemBind` @ `337c9f90a150157ac1d410208ae20e6530c
 
 ---
 
-## 7. 补充（2026-11-03）：官方精确反演无法运行
+## 7. 2026-11-03环境中的官方精确反演失败记录
 
 尝试用官方 `inversion.py::exact_inversion` 复现自检行为，遇到两个层面的阻塞。
 
 ### 7.1 结构性：官方反演只支持 SD2.1
 
-`exact_inversion` 依赖 `InversableStableDiffusionPipeline` + `DPMSolverMultistepScheduler`，只对 SD2.1 成立。我们的基线目标是 SDXL，**无法套用**。所以真正的 SemBind 复现必须把目标模型换回 SD2.1（这也是论文设定）。
+`exact_inversion` 依赖 `InversableStableDiffusionPipeline` + `DPMSolverMultistepScheduler`，该固定入口和当时评测按SD2.1设置；当前记录没有验证它可直接套用SDXL。按该论文设置比较需要匹配SD2.1及其数值配置。
 
 ### 7.2 技术性：diffusers 版本漂移导致官方代码崩溃
 
@@ -96,4 +98,4 @@ RuntimeError: The size of tensor a (51) must match the size of tensor b (64) at 
 | 绑定/解绑代数（S、π、σ） | ❌ 作者未发布，是我们的重写 |
 | E.1/Table 17 的 Det.=0.00 | ❌ 需 5 个独立 proxy masker，本地只有 1 个 |
 
-脚本保留在 `scripts/defense/repro/sembind_exact_inversion.py`（含 `datasets` stub 处理），一旦决定打补丁即可继续。
+脚本保留在 `scripts/defense/repro/sembind_exact_inversion.py`（含 `datasets` stub 处理），该历史失败记录不代表当前运行状态；后续已完成的组件检查见[2026-11-10报告](../sembind_official_audit_20261110/report.md)，仍须区分兼容处理与完整原生复现。

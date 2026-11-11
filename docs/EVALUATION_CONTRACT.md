@@ -1,5 +1,7 @@
 # 评估对象与威胁模型契约
 
+适用范围：以下源码结论针对文中固定版本和原核查日期；本轮未重新逐行认证全部来源。当前部署、实验与复现状态见[基线证据清单](DEFENSE_BASELINE_INVENTORY.md)。
+
 核查日期：2026-10-16（Asia/Shanghai）。范围：公开论文最终会议版、固定代码和既有实验记录的静态核查。未 import 上游入口，未加载模型、下载权重或运行新实验。来源字节哈希、文件清单和状态见 [审计证据](../reports/evaluation_contract_evidence.json)。
 
 ## 结论
@@ -48,7 +50,7 @@
 
 这些是论文数学说明；公开代码尚不能确定 token 的轴/patch 到 tensor 的映射、ε 数值、零范数处理、特征值截断、矩阵对数实现、精度、局部分数究竟按何种参考配对聚合，以及最后如何融合两个分数。相同符号名不是数值等价证据。
 
-公开树缺 `utils/pipe/pipe_utils.py`、`utils/finger_utils.py`、`utils/spd_utils.py`。几何调用和张量保存被注释，活动代码不计算几何分数。证据：同 commit [`run_reprompting.py:23–33`](https://github.com/chengyi-chris/geodistort-wm/blob/72880c9bb1cee0b04bcb2433deb2ab2cc95ff622/run_reprompting.py#L23-L33)、[`345–438`](https://github.com/chengyi-chris/geodistort-wm/blob/72880c9bb1cee0b04bcb2433deb2ab2cc95ff622/run_reprompting.py#L345-L438)，以及既有 [完整文件证据](../reports/03_geometry_audit_20261013T020025Z/source_evidence.json)。注释阈值 0.125、0.37 等不是正式可执行协议。
+公开树缺 `utils/pipe/pipe_utils.py`、`utils/finger_utils.py`、`utils/spd_utils.py`。几何调用和张量保存被注释，活动代码不计算几何分数。证据：同 commit [`run_reprompting.py:23–33`](https://github.com/chengyi-chris/geodistort-wm/blob/72880c9bb1cee0b04bcb2433deb2ab2cc95ff622/run_reprompting.py#L23-L33)、[`345–438`](https://github.com/chengyi-chris/geodistort-wm/blob/72880c9bb1cee0b04bcb2433deb2ab2cc95ff622/run_reprompting.py#L345-L438)。原引本地完整文件证据未随当前仓库保存，不能作为可访问附件；其余来源清单见[契约审计证据](../reports/evaluation_contract_evidence.json)。注释阈值 0.125、0.37 等不是正式可执行协议。
 
 ### 3.3 判定闭合状态
 
@@ -101,7 +103,7 @@ Jain 核心：commit `04433962437cbf08ad701b7b43124de07df0b666`，[`Gaussian-Sha
 
 [CSI 信息契约](CSI_INFORMATION_CONTRACT.md)已固定作者公开库 `8723e362835a6a61efd11b61f677b3321face3fa`：code 模式仅有文本/视觉过滤，随后查询检测器并将失败反馈下一轮；paper 模式增加的 CSW 参考来自生成端保存的草图 caption embedding。SD 后端只复制反演所得 zT，eps_schedule=None。公开库不是原始实验归档，故当前源码权限已确定，原始论文每项实验的精确访问条件仍需原始记录。删去反馈或替换参考会形成另一个明确命名的比较变体，不能冒称原样复现。
 
-所以待研究区别是：限定参考图和代理计算，固定候选预算，解释并检验方法是否能提升真实语义目标与完整防御接受的联合结果。当前尚无新的算法，不能仅据零查询标签、损失拼接或保留主体宣布新颖性。
+本项目使用上述信息契约界定已发表基线的可比范围。创新研究只针对防御；不新增候选生成、损失、反馈或选择策略，不以提高伪造接受率为研究目标。
 
 ### 5.1 单图 VAE 基线的精确数值约定
 
@@ -115,7 +117,7 @@ Jain 的 GS 核心参数名容易混淆：`clean_img` 是希望保留的新内�
 
 ### 5.2 参数来源与真实交付对象
 
-[载体比较契约](COVER_BASELINE_CONTRACT.md)补充核验：同一固定Jain commit的README GS命令使用λ=10000，与裸CLI默认2不同。入口先检测浮点输出再存PNG；独立evaluation/eval_gs.py虽读取PNG计算质量，其ASR仍来自文件名保存的旧分数，并非重新执行PNG水印检测。共同比较须使用冻结后的PNG与统一评估实现；原入口汇总不能直接当作文件交付成功率。该来源差异尚不能证明论文实际运行路径或表格有误。
+历史载体比较记录（原链接文件未随当前仓库保存，以下细节尚待重新核对固定源码）记载：同一固定Jain commit的README GS命令使用λ=10000，与裸CLI默认2不同。入口先检测浮点输出再存PNG；独立evaluation/eval_gs.py虽读取PNG计算质量，其ASR仍来自文件名保存的旧分数，并非重新执行PNG水印检测。共同比较须使用冻结后的PNG与统一评估实现；原入口汇总不能直接当作文件交付成功率。该来源差异尚不能证明论文实际运行路径或表格有误。
 
 ## 6 主威胁模型与交付接口
 
@@ -125,7 +127,7 @@ Jain 的 GS 核心参数名容易混淆：`clean_img` 是希望保留的新内�
 
 候选先固定再评估：攻击输出目录只交付 `candidate.png` 和 manifest，含文件 SHA256、任务 ID、参考图片 SHA256、攻击代码/代理版本、公共参数、种子、预算、退出状态。评估端核对哈希后读取候选；评估后不改变本任务候选或参数。目标原始潜变量关联表仅由评估端持有。重新编码图片会改变文件哈希，应视为新产物而非静默替换。
 
-主设置一任务一候选；如未来研究多候选，预先声明候选数和仅依赖允许输入的选择规则，any-of-k 与 single-output 分列。不用目标分数淘汰失败种子、调参或挑图。现有目录/脚本划分不是权限隔离，当前 `permission_isolation_implemented=false`；本轮没有部署隔离系统。
+单候选与已发表基线自带的多候选协议分别报告；仅沿用原方法固定的候选数、选择规则和预算，any-of-k 与 single-output 分列。不用目标分数淘汰失败种子、调参或挑图。现有目录/脚本划分不是权限隔离，当前 `permission_isolation_implemented=false`；本轮没有部署隔离系统。
 
 评估结果应分别保留参考有效性、内容要求达成、旧 WM 结果、各几何分数、完整防御接受、归属身份、运行状态。攻击失败、运行失败、未知判定分开。只有规则闭合后才能统计最终接受率；正常误拒需用正常图和预声明良性变换测量，伪造接受需明确分母与参考有效条件。AUC 可单独报告，但不替代固定工作点，不从测试集择优反推阈值。
 

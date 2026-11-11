@@ -111,7 +111,7 @@ def main(out_path, n_images=20, device=None):
             return None
         xs = sorted(xs)
         n = len(xs)
-        return dict(n=n, mean=sum(xs) / n, min=xs[0], max=xs[-1], median=xs[n // 2])
+        return dict(n=n, mean=sum(xs) / n, min=xs[0], max=xs[-1], median=(xs[(n - 1) // 2] + xs[n // 2]) / 2)
 
     result = dict(
         check='sembind_masker_bit_equivalence',

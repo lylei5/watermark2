@@ -26,6 +26,8 @@ These rules apply to this repository and `/data0/liyanlei/watermark_research` on
 
 - Version research code, protocols, results, references and reproducibility documentation. Store machine administration records separately from this repository.
 - Every result must trace to an artifact and execution record. Prepared assets and short runtime probes are not completed benchmarks.
+- Treat inherited prose and verification labels as claims requiring evidence. Verify bibliographic metadata against primary records and distinguish conference proceedings from author acceptance statements.
+- Check experimental claims against per-sample artifacts, denominators, thresholds and implementation scope. See `reports/repository_audit_20261111/report.md` for corrected historical claims and remaining audit limits.
 - Preserve all negative and partial results. Do not omit invalid genuine references from unconditional denominators.
 - Keep model weights, private watermark keys and large image assets outside Git; publish manifests and hashes where appropriate.
 - Distinguish ideal independent-bit tail probabilities from empirical or multiuser false-positive rates.
