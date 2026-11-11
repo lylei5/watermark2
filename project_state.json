@@ -7,22 +7,6 @@
   },
   "evidence_report": "reports/codeword_binding_20261109/report.md",
   "status": "research_in_progress",
-  "verified_empirical_findings": {
-    "gs_imprint30": {
-      "n": 30,
-      "accepted": 30,
-      "mean_ba": 0.8227864583,
-      "mean_psnr_db": 24.03971145
-    },
-    "historical_sembind": {
-      "n": 30,
-      "accepted": 2,
-      "mean_ba": 0.5361979167,
-      "model": "SD2.1"
-    },
-    "semantic_records": 460,
-    "cpu_gpu_equal_records": 120
-  },
   "detector": {
     "operator": ">",
     "threshold": 0.70703125,
@@ -60,7 +44,7 @@
   },
   "evaluation_policy": "Published standard baselines only; matched absolute genuine detection; no custom attack development",
   "requires_user_resume": false,
-  "active_experiments": 3,
+  "active_experiments": 2,
   "current_findings": {
     "sembind_genuine_non_crop": {
       "accepted": 144,
@@ -202,7 +186,7 @@
     "python_package_index": "https://pypi.tuna.tsinghua.edu.cn/simple/",
     "automatic_aliyun_fallback": false
   },
-  "active_experiments_observation": "Fresh component and PGID jobs launched; startup observed on GPUs4/7/5; completion not yet observed",
+  "active_experiments_observation": "Fresh masker complete and audited; two full PGID shards running on GPUs7/5; controls queued by kernel exit events",
   "full_budget_findings": {
     "source_count_per_method": 4,
     "sem_reference_accepted": 4,
@@ -313,7 +297,7 @@
   "revalidation": {
     "protocol": "protocols/defense_revalidation_20261111.json",
     "plan": "reports/defense_revalidation_20261111/plan.md",
-    "status": "running",
+    "status": "partially_complete",
     "server_root": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111",
     "masker_sources": 100,
     "masker_observations": 1000,
@@ -334,6 +318,32 @@
       "masker": 37791,
       "pgid0": 37792,
       "pgid5": 37793
+    },
+    "report": "reports/defense_revalidation_20261111/report.md",
+    "masker_status": "complete",
+    "masker_official_vs_adapter_max_hamming": 0,
+    "masker_audit_passed": true,
+    "pgid_status": "running",
+    "controls_status": "waiting_for_parent",
+    "controls_supervisor_pids": {
+      "pgid0": 6472,
+      "pgid5": 6473
     }
+  },
+  "historical_empirical_findings": {
+    "gs_imprint30": {
+      "n": 30,
+      "accepted": 30,
+      "mean_ba": 0.8227864583,
+      "mean_psnr_db": 24.03971145
+    },
+    "historical_sembind": {
+      "n": 30,
+      "accepted": 2,
+      "mean_ba": 0.5361979167,
+      "model": "SD2.1"
+    },
+    "semantic_records": 460,
+    "cpu_gpu_equal_records": 120
   }
 }

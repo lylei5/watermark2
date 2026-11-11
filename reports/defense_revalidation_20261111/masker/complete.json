@@ -1,0 +1,93 @@
+{
+  "sources": 100,
+  "observations": 1000,
+  "pairs": 4950,
+  "official_vs_adapter_max": 0,
+  "conditions": {
+    "brightness_factor": {
+      "n": 100,
+      "mean": 90.32,
+      "median": 33.5,
+      "min": 0,
+      "max": 533
+    },
+    "clean": {
+      "n": 100,
+      "mean": 0,
+      "median": 0.0,
+      "min": 0,
+      "max": 0
+    },
+    "gaussian_blur_r": {
+      "n": 100,
+      "mean": 73.55,
+      "median": 46.0,
+      "min": 2,
+      "max": 394
+    },
+    "gaussian_std": {
+      "n": 100,
+      "mean": 68.61,
+      "median": 33.5,
+      "min": 1,
+      "max": 506
+    },
+    "jpeg_ratio": {
+      "n": 100,
+      "mean": 31.76,
+      "median": 16.0,
+      "min": 1,
+      "max": 452
+    },
+    "median_blur_k": {
+      "n": 100,
+      "mean": 50.67,
+      "median": 25.0,
+      "min": 1,
+      "max": 485
+    },
+    "random_crop_ratio": {
+      "n": 100,
+      "mean": 76.99,
+      "median": 38.5,
+      "min": 1,
+      "max": 536
+    },
+    "random_drop_ratio": {
+      "n": 100,
+      "mean": 218.26,
+      "median": 146.5,
+      "min": 2,
+      "max": 549
+    },
+    "resize_ratio": {
+      "n": 100,
+      "mean": 38.5,
+      "median": 21.5,
+      "min": 1,
+      "max": 230
+    },
+    "sp_prob": {
+      "n": 100,
+      "mean": 48.01,
+      "median": 26.0,
+      "min": 1,
+      "max": 502
+    }
+  },
+  "cross_image": {
+    "n": 4950,
+    "mean": 507.8189898989899,
+    "median": 518.0,
+    "min": 12,
+    "max": 624
+  },
+  "protocol_sha256": "da5e861164c6ebda532f017a62c506f6f55a0d71cf9010fbc1d810890f424ab6",
+  "output_sha256": {
+    "rows.jsonl": "bdabdf31d3634870845b4d55fdba730c8f08814303f993e8bbac3268f7796751",
+    "pairs.json": "64f490c65a2fd11582ae51d799e759a3342620b78bbed7bee97baf183a7bbff9"
+  },
+  "independent_confirmation": false,
+  "full_sembind_reproduction": false,
+  "semantic_collision_established": false
+}

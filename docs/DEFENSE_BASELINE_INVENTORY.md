@@ -4,7 +4,7 @@
 
 | 方法 | 证据与当前实现范围 | 尚不能作出的结论 |
 |---|---|---|
-| SemBind | [官方masker组件比对](../reports/repro_sembind_masker_20261103/report.md)；[官方反演组件检查](../reports/sembind_official_audit_20261110/report.md)；[项目适配器完整预算结果](../reports/full_imprint_20261111/report.md) | 有限组件一致不等于完整原生方法复现；开发语义码相近不证明公开特征绕过或普遍碰撞 |
+| SemBind | [本轮100图/1000条件组件重验](../reports/defense_revalidation_20261111/report.md)；[官方反演组件检查](../reports/sembind_official_audit_20261110/report.md)；[项目适配器完整预算结果](../reports/full_imprint_20261111/report.md) | 有限组件一致不等于完整原生方法复现；开发语义码相近不证明公开特征绕过或普遍碰撞 |
 | PGID | [历史n=1及n=5原始CSV核验](../reports/repro_pgid_20261103/report.md)，各检查点防御后均零接受；模型快照的官方字节等价性未建立 | 小样本零接受不证明完整论文复现或总体安全性；BA上升但未过门限不证明防御失守 |
 | Geometry | [公开评估契约](EVALUATION_CONTRACT.md)及[公式重实现诊断](../reports/repro_geometry_paper_task_20261103/report.md) | 未完整确定局部映射与拒绝规则；项目L-SPD结果不能充当作者原生组件失效证据 |
 | SEAL | [固定源码契约审计](SEAL_EVALUATION_CONTRACT.md)，区分语义路径和穷举路径 | 测试脚本存在不证明原生语义防伪评测完成；现有GS样本不能替代原生SEAL参考 |
@@ -12,6 +12,8 @@
 | ISTS | [CVPR2026 Findings论文](https://openaccess.thecvf.com/content/CVPR2026F/html/Zhu_Towards_Robust_Content_Watermarking_Against_Removal_and_Forgery_Attacks_CVPRF_2026_paper.html)与作者仓库已定位 | 尚未建立本项目同条件完整比较；参数空间大小本身不证明可被伪造 |
 | CoverLock | [官方组件与项目适配说明](../reports/content_verifier_20261110/report.md) | 辅助图GS适配不等于原生后处理防御 |
 | SLICE、Sign Clamping、PP-Mark、GS++ | 文献来源及状态见[LITERATURE.md](LITERATURE.md) | 尚未完成同条件原生复现，不据摘要进行数值排名或断言漏洞 |
+
+当前关键历史结论按[重验计划](../reports/defense_revalidation_20261111/plan.md)重新执行。PGID历史CSV核验不等于本轮10例模型复跑已经完成。
 
 ## 项目验证器
 
