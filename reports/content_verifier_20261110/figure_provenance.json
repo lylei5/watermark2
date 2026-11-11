@@ -1,0 +1,17 @@
+{
+  "audience": "research review; target venue not specified",
+  "sources": {
+    "genuine_full_domain.json": "7a0a44e005e38f4551cef016b673533069b7a4bf21ecbe8c384d22cfbac082f5",
+    "reprompt_full_domain.json": "d117515f00d1a11258b2688a5ee535a93be7a4b47c1c3d10cc1f49ac0019a123"
+  },
+  "raw_observations": "80 noncrop +16 crop genuine queries from16 sources,16 Reprompt candidates",
+  "transformations": "content mismatch=1-agreement; no filtering beyond labeled groups",
+  "uncertainty": "panel c: per-condition Clopper-Pearson two-sided95% intervals,16 sources; conditions are repeated measurements",
+  "image_dimensions_px": [
+    3840,
+    1290
+  ],
+  "dpi": 300,
+  "matplotlib": "3.10.8",
+  "limitation": "development evidence; no superiority or journal-compliance claim"
+}

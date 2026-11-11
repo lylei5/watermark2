@@ -1,15 +1,37 @@
-# Research state: semantic watermark defense
+# Research state: content-bound diffusion watermark defense
 
-Updated 2026-11-09. Status: paused at the user's request. Do not start experiments without a new resume instruction.
+Updated 2026-11-11. Goal: a publishable defense with matched genuine detection, image quality, computation budgets and credible false-positive calibration. No superiority or SOTA claim is established.
 
-Read `reports/content_auth_independent_20261109/report.md` and `progress.json` for the latest asset inventory. Read `reports/codeword_binding_20261109/report.md` for completed small-sample and channel results, including robustness regressions. No independent SOTA result is established.
+## Compute and safety
 
-The objective is a publishable defense that improves performance at matched absolute genuine-image detection. Use established defense papers' baseline tests and official implementations with documented parameters. Keep the work to authorized offline image experiments. Do not devise custom attack methods.
+All future research experiments and scoring, including CPU work, run on server 249 only. No local model downloads, experimental execution or GPU fallback. Local code/document editing and file management are allowed. Server root is /data0/liyanlei/watermark_research. Only GPUs 7,5,4, at most three, and only idle devices. Never use GPU6 or terminate other users' jobs. Do not continuously poll; use process-exit events and independent research between meaningful checks.
 
-Completed new assets: 320 independent COCO val2017 images; 112 auxiliary images; 224 SemBind/CoverLock-GS-adapter references and four plain GS controls; benign query images. Feature extraction and development inversions are partial. Full Imprint151 and final calibration/confirmation have not been completed.
+Only existing published top-conference/top-journal attacks with full documented implementations and schedules are allowed. Never invent or improve attacks. Keep verifier keys outside baseline generation processes. Same-account directory separation is not an OS sandbox. Preserve calibration and confirmation splits.
 
-CoverLock-g uses the official checkpoint and preprocessing, with a four-image equivalence check. Its auxiliary-image GS adaptation is not a native post-hoc reproduction. Current SemBind assets use DDIM, not official exact inversion. Resolve these boundaries before comparative paper claims.
+## Latest completed evidence
 
-The content-first verifier is a tested statistical prototype. Prior work covers message wrapping, semifragile hypothesis tests and semantic payload recovery. A new contribution requires measured advantages over calibrated BA, raw agreement and content-majority controls. Calibration must compare absolute genuine rates, not method-specific conditional retention.
+Read reports/full_imprint_20261111/report.md and research_direction.md in the same folder. All eight fixed DPM/fp32 Imprint jobs completed 151 updates; all 128 checkpoint images plus 8 references and 8 covers were verified with DPM50 and full 100-step VAE inversion. Four paired sources per method, not a paper-scale reproduction. SemBind carrier/binding is a project adaptation using the released semantic head.
 
-Server root: `/data0/liyanlei/watermark_research`; this round's assets: `runs/content_auth_20261109`. Use only idle GPUs and exclude index 6. Preserve private keys and large model/image assets outside Git. Local and server experiment processes were stopped for this update.
+Final update: SemBind references 4/4, covers 0/4, candidates 0/4, mean candidate BA 0.451171875, PSNR 18.41738 dB, LPIPS 0.2782693. GS references 4/4, covers 0/4, candidates 4/4, candidate BA 1, PSNR 18.48838 dB, LPIPS 0.2707488. SemBind rejects all 64 saved candidates; GS accepts 60/64 (all four at every saved checkpoint from update11 onward). Checkpoints repeat the same four sources and are not independent samples.
+
+The frozen geometry verifier, its split variant, identity-only binomial detector, stricter identity-only detector, and default BA make exactly the same decisions on all 144 observations. No added anti-forgery benefit is observed in this complete-baseline experiment. Raw results and trajectory plots are committed in the report folder.
+
+Previous DDIM development evidence: 160 SemBind genuine views, default BA 144/160, query-only geometry 160/160. Existing Reprompt candidates: default 1/16, stricter identity-only and geometry 0/16. Thus the observed gain is crop recovery. Ideal random-template Monte Carlo has 2048 draws; it is not empirical real-key FPR. References: reports/blind_geometry_development_20261110/report.md and method.md. TAG-WM is ICCV2025, not merely a preprint; its current citation has been verified and updated.
+
+## Calibration execution and numerical compatibility
+
+The 32 held-out calibration source identities are tasks16..47, 192 fixed legitimate queries, with 6144 intended real-identity decisions including 5952 wrong identities. Confirmation remains unscored. Thresholds, 251-pose grid and data are frozen.
+
+First continuation failed on exact comparison of two floating-point binomial tails. The runtime computed 5.634806966794081e-12 versus frozen 5.634806966794078e-12 (relative difference 5.7343e-16). score_frozen_geometry.py now validates only library roundoff (relative tolerance1e-12, zero absolute tolerance) and applies the exact protocol value to every rule. Six server tests pass; all 144 original BAs match exactly.
+
+The next execution at runs/geometry_calibration_20261111 completed shard0 caches but failed the development bridge: relative latent L2 0.00177317 and 0.00202889 exceed the fixed0.001 gate, while semantic bits match exactly. A recorded-batch2 replay remains at0.00177830 and0.00203351. No calibration decisions were read. Read reports/geometry_calibration_20261111/runtime_audit.md; preserve both failed attempts.
+
+Current automatic workflow: runs/geometry_calibration_replay_20261111. The isolated envs/ddim_replay_py310 matches all 11 recorded package versions; imports and pip check pass. Complete DDIM50 development replay passes the unchanged 0.001 gate: clean relative L2 0.000547554, crop90 0.000569046. Calibration was launched on GPU5, with all three shards scheduled sequentially; the latest archived stage is caching_calibration, not completed scoring. It rechecks GPU5 before work, uses complete DDIM50 and recorded batch2, and stops on a failure without threshold changes. Read reports/geometry_calibration_20261111/runtime_setup_repair/report.md and protocols/geometry_calibration_replay_20261111.json. Source snapshots and prior numerical compatibility evidence remain available for reproducibility.
+
+Do not launch duplicate setup/continuation jobs. runtime_setup_status.json and complete.json/failed.json distinguish installation, bridge failure and validation completion. A setup or partial cache is not a completed experiment.
+
+## Runtime assets
+
+The original DPM server snapshot and local DDIM assets have equal effective fp16 UNet weights but different VAE/text-encoder weights. A separate matched DDIM model is retained on server under runs/geometry_calibration_20261110/model; its 3 weight groups,8 configurations and5 semantic assets were audited. Do not attribute cross-pipeline differences only to schedulers. The primary server environment remains available alongside the validated isolated replay environment.
+
+Model weights and private verifier assets reside on server 249. Private identities are under private_eval and remain outside Git; the repository records research code, protocols, results and artifact hashes.

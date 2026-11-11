@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-10",
+  "local_gpu": {
+    "index": 0,
+    "name": "RTX 4070 Laptop",
+    "uuid": "GPU-e380eaee-65d6-2d86-a984-f51d74ca88c0",
+    "memory_mib": 8188
+  },
+  "server": {
+    "host": "249",
+    "excluded_indices": [
+      6
+    ],
+    "occupied_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "gpu_jobs_launched": 0,
+    "cpu_threads": 4
+  },
+  "baseline_repo_commit": "483a068",
+  "confirmation_scored": false
+}

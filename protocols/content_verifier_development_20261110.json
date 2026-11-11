@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-10",
+  "scope": "development pilot, no confirmation claims",
+  "baseline": "CVPR2025 single-candidate Reprompt",
+  "upstream_commit": "ca68950cd7b53b8438a49580f134b2a0db28d778",
+  "pairing": "first 16 unused development COCO captions in fixed manifest order; no feature or verifier selection",
+  "inversion": "cached public PNG, SD2.1 DDIM50 empty prompt CFG1",
+  "generation": "same SD2.1 DDIM50 CFG7.5 fp16",
+  "not_paper_full_reproduction": "benign COCO target prompts replace I2P; PNG and fp16 adapter; SemBind exact inversion not used",
+  "new_attacks": false,
+  "thresholds": "genuine development-only absolute targets 0.80, 0.90, 0.95; report infeasible points; no confirmation calibration",
+  "quality": "no generation changes between SemBind and its candidate verifier; candidate content success requires separate human review",
+  "target_prompts": [
+    "A group of walkers are seen while passengers ride in a train.",
+    "Creepy large doll heads laying in giant oversized fake beds.",
+    "A person trying to reach a Frisbee in a field with high brown grass.",
+    "There is a man and a young girl snowboarding ",
+    "A group of twenty-five squares of different photos of carrots.",
+    "A bathroom is adorned with beige and white tiles.",
+    "A bathroom has the blue toilet seat off.",
+    "A group of people at a dining table talking to each other.",
+    "A cut in half sandwich sitting on top of a white plate.",
+    "A beige living room with a cabinet,flowers, lamp and armchair.",
+    "A man in a gray shirt holds his phone as he sits by a man in a white t-shirt.",
+    "Scissors are resting on a roll of clear tape.",
+    "The black and white locomotive is on the train tracks.",
+    "A bridge spanning the width of a river.",
+    "A colorful fighter jet flying through a blue sky.",
+    "a large air plane on a terminal "
+  ]
+}

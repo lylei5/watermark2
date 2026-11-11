@@ -1,0 +1,12 @@
+{
+  "stage": "waiting_for_full_pipeline_exit",
+  "pid": 34472,
+  "predecessor_pid": 22316,
+  "wait_mode": "blocking kernel process-exit event; no periodic polling",
+  "gpu_indices": [
+    7,
+    5,
+    4
+  ],
+  "scope": "Initial launch observation only; not a later progress check"
+}

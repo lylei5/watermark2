@@ -1,0 +1,30 @@
+{
+  "scope": "Preflight comparison before calibration scoring",
+  "effective_weight_comparison": {
+    "unet/diffusion_pytorch_model.safetensors": true,
+    "vae/diffusion_pytorch_model.safetensors": false,
+    "text_encoder/model.safetensors": false
+  },
+  "semantic_assets_all_equal": true,
+  "resolution": "Deploy exact local VAE/text encoder and configuration; reuse numerically identical UNet via original fp32 file loaded as fp16; verify effective runtime again",
+  "tests": {
+    "completion_schedule_gate": {
+      "passed": 4,
+      "cases": [
+        "complete 151-update checkpoint schedule",
+        "missing final checkpoint rejected",
+        "duplicate update rejected",
+        "missing reference rejected"
+      ]
+    }
+  },
+  "matched_runtime_exact": true,
+  "matched_effective_weight_groups": 3,
+  "matched_configuration_files": 8,
+  "matched_semantic_assets": 5,
+  "input_payload_files_verified": 211,
+  "remote_cache_import_preflight_passed": true,
+  "continuation_initial_stage": "waiting_for_full_pipeline_exit",
+  "continuation_pid": 34472,
+  "confirmation_decisions_scored": 0
+}

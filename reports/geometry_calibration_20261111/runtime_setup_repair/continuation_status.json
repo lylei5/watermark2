@@ -1,0 +1,8 @@
+{
+  "stage": "caching_calibration",
+  "gpu_indices": [
+    5
+  ],
+  "shards": 3,
+  "scheduling": "Sequential shards per assigned idle GPU; no progress polling"
+}

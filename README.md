@@ -2,15 +2,19 @@
 
 目标是在合法图检出率、图像质量与计算预算可比的条件下，提高语义水印抵抗迁移伪造与自适应攻击的能力。
 
+后续 CPU/GPU 实验统一在 249 服务器执行，本机仅保留代码、文档和必要研究记录，不再作为实验算力后备。
+
 ## 当前进展
 
-**状态：按用户要求暂停。** [独立防御评测进展](reports/content_auth_independent_20261109/report.md)记录了 320 张独立数据、112 组来源提示词、228 张参考／控制图和部分特征／反演缓存。完整基线与同等合法检出率确认实验尚未完成。
+[完整预算 Imprint 评测](reports/full_imprint_20261111/report.md)已完成：8 个案例各151次更新，全部144张图完成验证。最终候选 SemBind 项目适配器接受0/4、GS接受4/4；五种冻结判定规则在全部图上完全一致，几何验证器没有额外防伪收益。
 
-评测限定为已发表论文的标准基线、官方代码与既定参数；研究创新集中在防御方法。
+[跨运行环境核验](reports/geometry_calibration_20261111/runtime_audit.md)已完成记录软件版本的恢复：11个固定依赖版本一致，完整DDIM50开发桥接的相对L2为0.000548和0.000569，均通过原定0.001门限。随后已在GPU5启动32个来源、192个查询和6144次身份验证的校准流程，三个分片顺序执行。最新已归档状态为校准缓存阶段，尚未报告完整校准分数；详见[运行环境与桥接证据](reports/geometry_calibration_20261111/runtime_setup_repair/report.md)。
+
+[已有开发实验](reports/blind_geometry_development_20261110/report.md)显示合法查询从144/160恢复为160/160，但收益仍需新来源及实际误报验证。独立确认集保留，当前没有SOTA结论。攻击仅采用已发表顶会顶刊的既定基线，创新集中于防御。
 
 ## 当前可核查结果
 
-最新研究报告：[解码感知内容绑定：机制验证与研究评估](reports/codeword_binding_20261109/report.md)，日期 2026-11-09。报告区分历史审计、模拟信道与实际 SD2.1 生成—验证实验，并保留逐图结果和负面结果。当前证据不支持宣称已达到 SOTA。
+最新研究报告：[SemBind 官方组件检查与合法扰动扩展](reports/sembind_official_audit_20261110/report.md)，日期 2026-11-10。SemBind-DDIM 在九种非裁剪条件下各为 16/16 通过，中心裁剪为 0/16；校准 BA 与内容验证器在相同 144/160 合法通过数下均拒绝全部 16 个既有 Reprompt 候选。DPM 组件检查的 8 张正常图在两种盲反演设置下全部通过。此前的[内容认证评测](reports/content_verifier_20261110/report.md)与[解码感知研究](reports/codeword_binding_20261109/report.md)保留开发证据。当前证据不支持宣称已达到 SOTA。
 
 研究问题：重复纠错应消除传输误差，但可能同时消除防伪所需的内容差异。原型将语义码对齐到重复码字，使内容差异保留在解码后的消息层。CoverLock 已有消息级内容包装的先例；编码顺序本身不作为首创贡献。
 
@@ -33,7 +37,7 @@ python scripts/defense/test_codeword_binding.py
 python scripts/defense/codeword_diffusion_pilot.py --help
 ```
 
-服务器资产位于 `/data0/liyanlei/watermark_research`，SSH 别名 `249`。只使用即时确认空闲且索引不为 6 的 GPU，并按 UUID 绑定；不得终止其他用户任务。本次 GPU 实验运行于本机 RTX 4070 Laptop。
+服务器资产位于 `/data0/liyanlei/watermark_research`，SSH 别名 `249`。当前只使用 GPU7、5、4，最多三张；启动前确认空闲并按 UUID 绑定，不得终止其他用户任务。完整预算任务通过进程退出事件接续评测，不持续轮询。
 
 ## 研究入口
 
@@ -42,4 +46,4 @@ python scripts/defense/codeword_diffusion_pilot.py --help
 - [SemBind 官方 masker 核验](reports/repro_sembind_masker_20261103/report.md)。
 - [既有防御实现](scripts/defense/)及[基线源码契约](docs/EVALUATION_CONTRACT.md)。
 
-历史报告保留原始记录；当前数值和证据等级以最新研究报告为准。当前实验暂停。恢复后按已发表论文的标准基线和官方实现完成复现、同等绝对合法检出率校准与独立确认。
+历史报告保留原始记录；当前数值和证据等级以最新研究报告为准。后续验证须完成官方基线闭环、同等绝对合法检出率校准与独立确认；仅使用已发表攻击，不开发或改进攻击方法。

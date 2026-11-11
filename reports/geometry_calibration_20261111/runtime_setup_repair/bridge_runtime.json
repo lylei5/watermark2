@@ -1,0 +1,34 @@
+{
+  "rows": [
+    {
+      "id": "000_sembind_scattered_clean",
+      "batch_members": [
+        "clean",
+        "jpeg50"
+      ],
+      "relative_l2": 0.0005475535872392356,
+      "sign_disagreement": 0.0
+    },
+    {
+      "id": "000_sembind_scattered_crop90",
+      "batch_members": [
+        "crop90",
+        "noise0.01"
+      ],
+      "relative_l2": 0.0005690459511242807,
+      "sign_disagreement": 0.00018310546875
+    }
+  ],
+  "steps": 50,
+  "batch": 2,
+  "calibration_decisions_read": false,
+  "relative_l2_gate": 0.001,
+  "passed": true,
+  "dependencies": {
+    "torch": "2.1.2+cu121",
+    "diffusers": "0.30.3",
+    "transformers": "4.46.3",
+    "scipy": "1.15.3"
+  },
+  "seconds": 5.807050573988818
+}

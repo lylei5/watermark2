@@ -1,0 +1,736 @@
+{
+  "scope": "post-initial-pilot development extension; no confirmation claims",
+  "source": "https://proceedings.mlr.press/v306/zhang26hj.html",
+  "source_location": "Tables 5 and 6: JPEG Q70, GauBlur radius3, Median kernel7, Resize x0.5",
+  "implementation": "PIL JPEG default subsampling; GaussianBlur(3); MedianFilter(7); bicubic 512->256->512",
+  "omitted": "Brightness factor unspecified in table; existing clean/noise0.01 views remain separately available",
+  "grouping": "all 16 development SemBind references and all 4 GS controls; no score-based selection",
+  "prior_information": "Earlier genuine and Reprompt development results have been seen; this is exploratory",
+  "comparison": "Report all four distortion strata; no candidate-based parameter or subset selection",
+  "pipeline": "existing SD2.1 DDIM50 references; separate from DPM component audit",
+  "pillow": "12.2.0",
+  "script_sha256": "399c0118ed9a5fbebb81f243b6ddde54d54d9f410cdda75bb1081ec9d3caf350",
+  "plan_sha256": "f12d02da902f3755fbc8fd915c8e4b2fb6fdd36be33a006dee15f420a279f76f",
+  "rows": [
+    {
+      "task": 0,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "jpeg70",
+      "id": "000_sembind_scattered_paper20261110_jpeg70",
+      "reference_sha256": "00a582b2a144160487eb286a518a8aaa2fc60442ad266705baffacd6fc656888",
+      "image_sha256": "6d0b17af7469c94c31a076b754045f665ea0e8f444151c50b3fd6973fb55a430"
+    },
+    {
+      "task": 0,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "gaussian_blur3",
+      "id": "000_sembind_scattered_paper20261110_gaussian_blur3",
+      "reference_sha256": "00a582b2a144160487eb286a518a8aaa2fc60442ad266705baffacd6fc656888",
+      "image_sha256": "298bfe4056ec5a9ae791d4f7ab1d7ceb04ea606538ac4ec23569ac39f0f5ffa8"
+    },
+    {
+      "task": 0,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "median7",
+      "id": "000_sembind_scattered_paper20261110_median7",
+      "reference_sha256": "00a582b2a144160487eb286a518a8aaa2fc60442ad266705baffacd6fc656888",
+      "image_sha256": "ef30ba98a3fd94521fa21c1ff20a28e844c8d78614ff69cda8a01f8d8823db58"
+    },
+    {
+      "task": 0,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "resize50",
+      "id": "000_sembind_scattered_paper20261110_resize50",
+      "reference_sha256": "00a582b2a144160487eb286a518a8aaa2fc60442ad266705baffacd6fc656888",
+      "image_sha256": "13a83c2b9137d249a54f017a8f0a5de907e0945e0f60d2806079577c8d9050c6"
+    },
+    {
+      "task": 0,
+      "split": "development",
+      "method": "gs_control",
+      "label": "jpeg70",
+      "id": "000_gs_control_paper20261110_jpeg70",
+      "reference_sha256": "be6b04aaa3a9019e2a307efeee286363e2812eabb501010e5bffc7dc090d08ea",
+      "image_sha256": "6913765373fd0ca13ad5e658fca73d9410107f2d17bf0091878686810f3f530b"
+    },
+    {
+      "task": 0,
+      "split": "development",
+      "method": "gs_control",
+      "label": "gaussian_blur3",
+      "id": "000_gs_control_paper20261110_gaussian_blur3",
+      "reference_sha256": "be6b04aaa3a9019e2a307efeee286363e2812eabb501010e5bffc7dc090d08ea",
+      "image_sha256": "481c8ffe9ee1825e9ad9dc2b237999a27cfbb7ffe8425ebad171b71f9e940477"
+    },
+    {
+      "task": 0,
+      "split": "development",
+      "method": "gs_control",
+      "label": "median7",
+      "id": "000_gs_control_paper20261110_median7",
+      "reference_sha256": "be6b04aaa3a9019e2a307efeee286363e2812eabb501010e5bffc7dc090d08ea",
+      "image_sha256": "ffdcf7e550915826bb4be46a368d0be8ffb096baccfd7b99e11488cdaf6f3e6a"
+    },
+    {
+      "task": 0,
+      "split": "development",
+      "method": "gs_control",
+      "label": "resize50",
+      "id": "000_gs_control_paper20261110_resize50",
+      "reference_sha256": "be6b04aaa3a9019e2a307efeee286363e2812eabb501010e5bffc7dc090d08ea",
+      "image_sha256": "bd861446df6e75198d68c50c6904f91d7cbfc78ed95c5bc34305348462b071f4"
+    },
+    {
+      "task": 1,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "jpeg70",
+      "id": "001_sembind_scattered_paper20261110_jpeg70",
+      "reference_sha256": "e7b1b6fcd2e68a08742a2ebe62840f902895b3fa7dcfdf9cb9a3a87575ba6ace",
+      "image_sha256": "7dd330aa311c1a5d98b68f971a74d14dbd7e1422b74b4bb207b6fa69df7f4db1"
+    },
+    {
+      "task": 1,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "gaussian_blur3",
+      "id": "001_sembind_scattered_paper20261110_gaussian_blur3",
+      "reference_sha256": "e7b1b6fcd2e68a08742a2ebe62840f902895b3fa7dcfdf9cb9a3a87575ba6ace",
+      "image_sha256": "68e06ad3b9b79490547ac2ad96a10dd21c109d23547c2a616ec66a97e9dd132d"
+    },
+    {
+      "task": 1,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "median7",
+      "id": "001_sembind_scattered_paper20261110_median7",
+      "reference_sha256": "e7b1b6fcd2e68a08742a2ebe62840f902895b3fa7dcfdf9cb9a3a87575ba6ace",
+      "image_sha256": "53b16fdb231552c8cd2cf79bcfbc9620d72eba0b269ffddf38462d8df0d16bdb"
+    },
+    {
+      "task": 1,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "resize50",
+      "id": "001_sembind_scattered_paper20261110_resize50",
+      "reference_sha256": "e7b1b6fcd2e68a08742a2ebe62840f902895b3fa7dcfdf9cb9a3a87575ba6ace",
+      "image_sha256": "51ab9ad5f41a96509fa4a0f59b3e11870f3910ce968934756eac69fe236e0139"
+    },
+    {
+      "task": 1,
+      "split": "development",
+      "method": "gs_control",
+      "label": "jpeg70",
+      "id": "001_gs_control_paper20261110_jpeg70",
+      "reference_sha256": "9cd3e346995f7d74aaf493798394d4ac177280e3243580c4ce3dc680ccad505b",
+      "image_sha256": "48a9aa4b05e3ff2210c56f13c9362d0ea7fbce4098a7b62d6ca954d2991a3c72"
+    },
+    {
+      "task": 1,
+      "split": "development",
+      "method": "gs_control",
+      "label": "gaussian_blur3",
+      "id": "001_gs_control_paper20261110_gaussian_blur3",
+      "reference_sha256": "9cd3e346995f7d74aaf493798394d4ac177280e3243580c4ce3dc680ccad505b",
+      "image_sha256": "0ef58566e31a80989356d1e5b562c35245c5569438797512ea45c0facdf32b7d"
+    },
+    {
+      "task": 1,
+      "split": "development",
+      "method": "gs_control",
+      "label": "median7",
+      "id": "001_gs_control_paper20261110_median7",
+      "reference_sha256": "9cd3e346995f7d74aaf493798394d4ac177280e3243580c4ce3dc680ccad505b",
+      "image_sha256": "7488e2c5453a31da908d3549e90b6cfd1365ec21f164537e0ebfa71d09020999"
+    },
+    {
+      "task": 1,
+      "split": "development",
+      "method": "gs_control",
+      "label": "resize50",
+      "id": "001_gs_control_paper20261110_resize50",
+      "reference_sha256": "9cd3e346995f7d74aaf493798394d4ac177280e3243580c4ce3dc680ccad505b",
+      "image_sha256": "41ac41cab727ebd8a067750a26ab156465cd2567eb010f3a72671f150d8ff1e3"
+    },
+    {
+      "task": 2,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "jpeg70",
+      "id": "002_sembind_scattered_paper20261110_jpeg70",
+      "reference_sha256": "965e7784d8e3102c45538b19db844d92ba151231c6d43ee6eb7e1bb18a2e6069",
+      "image_sha256": "2c83c434838b0f7aa9cd082e279cffa8ff20ad743a4e322ecca5a4d581adccf0"
+    },
+    {
+      "task": 2,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "gaussian_blur3",
+      "id": "002_sembind_scattered_paper20261110_gaussian_blur3",
+      "reference_sha256": "965e7784d8e3102c45538b19db844d92ba151231c6d43ee6eb7e1bb18a2e6069",
+      "image_sha256": "97edc24c08da0c9f6938335f5e01435a30bc1f0ac6393bc2f2ac5df621b2973f"
+    },
+    {
+      "task": 2,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "median7",
+      "id": "002_sembind_scattered_paper20261110_median7",
+      "reference_sha256": "965e7784d8e3102c45538b19db844d92ba151231c6d43ee6eb7e1bb18a2e6069",
+      "image_sha256": "073e54c96ba2b2056eb9e92ee741c06fc920dd4ec6f777ece9096c4f03fcf6ce"
+    },
+    {
+      "task": 2,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "resize50",
+      "id": "002_sembind_scattered_paper20261110_resize50",
+      "reference_sha256": "965e7784d8e3102c45538b19db844d92ba151231c6d43ee6eb7e1bb18a2e6069",
+      "image_sha256": "7b353208585b9cf6096f47a8943e4bf7d117f557e8f5e8a8326b5224fc9c9353"
+    },
+    {
+      "task": 2,
+      "split": "development",
+      "method": "gs_control",
+      "label": "jpeg70",
+      "id": "002_gs_control_paper20261110_jpeg70",
+      "reference_sha256": "b5216553aefa4938e541f3fe7a3ec501c6395046d6883645db8bba7824e1f478",
+      "image_sha256": "35d324e20171a287cf7085d160efac35fa076f0a7991c8d99865861d9d0a6d72"
+    },
+    {
+      "task": 2,
+      "split": "development",
+      "method": "gs_control",
+      "label": "gaussian_blur3",
+      "id": "002_gs_control_paper20261110_gaussian_blur3",
+      "reference_sha256": "b5216553aefa4938e541f3fe7a3ec501c6395046d6883645db8bba7824e1f478",
+      "image_sha256": "62992124fd87f07b441f466040bf57591d6890bee8dae821b7f0b7f90f362881"
+    },
+    {
+      "task": 2,
+      "split": "development",
+      "method": "gs_control",
+      "label": "median7",
+      "id": "002_gs_control_paper20261110_median7",
+      "reference_sha256": "b5216553aefa4938e541f3fe7a3ec501c6395046d6883645db8bba7824e1f478",
+      "image_sha256": "987a475c693ac866858b125e9297139e4f3b7ea548f26b34f88d9d948b09c301"
+    },
+    {
+      "task": 2,
+      "split": "development",
+      "method": "gs_control",
+      "label": "resize50",
+      "id": "002_gs_control_paper20261110_resize50",
+      "reference_sha256": "b5216553aefa4938e541f3fe7a3ec501c6395046d6883645db8bba7824e1f478",
+      "image_sha256": "376706da729fc5ca7ff7dd1f5f7d9c2116b96d5dbb00df333b574461c3808a7f"
+    },
+    {
+      "task": 3,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "jpeg70",
+      "id": "003_sembind_scattered_paper20261110_jpeg70",
+      "reference_sha256": "847ec60251f8da6dc99ba2fa52290625b36fb21f61a1bcb9053df3483e924e17",
+      "image_sha256": "673ea7e068f6a0f8d37a10b4d57b4c9759ddb95b0d0e1a28cb57f32c1b956212"
+    },
+    {
+      "task": 3,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "gaussian_blur3",
+      "id": "003_sembind_scattered_paper20261110_gaussian_blur3",
+      "reference_sha256": "847ec60251f8da6dc99ba2fa52290625b36fb21f61a1bcb9053df3483e924e17",
+      "image_sha256": "5ca767d81ba4a7e67cacb73bb716d11456be49af0f5556c756ab5d6dedc77fc2"
+    },
+    {
+      "task": 3,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "median7",
+      "id": "003_sembind_scattered_paper20261110_median7",
+      "reference_sha256": "847ec60251f8da6dc99ba2fa52290625b36fb21f61a1bcb9053df3483e924e17",
+      "image_sha256": "1b22fcba76ea3b1ca7551c935dfa5d088d040e08bcacd8ca9a84ad6f1e72abff"
+    },
+    {
+      "task": 3,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "resize50",
+      "id": "003_sembind_scattered_paper20261110_resize50",
+      "reference_sha256": "847ec60251f8da6dc99ba2fa52290625b36fb21f61a1bcb9053df3483e924e17",
+      "image_sha256": "5f309c29fc57443d1bf36f2db6ddccfb84c28e4d1d68c9398b3af66ec260f809"
+    },
+    {
+      "task": 3,
+      "split": "development",
+      "method": "gs_control",
+      "label": "jpeg70",
+      "id": "003_gs_control_paper20261110_jpeg70",
+      "reference_sha256": "ff272447c9b954561375d494388881e7ad0b7d64b55b148079bb3054f732460e",
+      "image_sha256": "57cab21f532f40d4897d0f5e29b062202c212a8df72cf1775f20528d03d28141"
+    },
+    {
+      "task": 3,
+      "split": "development",
+      "method": "gs_control",
+      "label": "gaussian_blur3",
+      "id": "003_gs_control_paper20261110_gaussian_blur3",
+      "reference_sha256": "ff272447c9b954561375d494388881e7ad0b7d64b55b148079bb3054f732460e",
+      "image_sha256": "c82f4f20a68b5fbe9de4a8bd7d5885e2920b5faaead337bd43f7c70d7f312738"
+    },
+    {
+      "task": 3,
+      "split": "development",
+      "method": "gs_control",
+      "label": "median7",
+      "id": "003_gs_control_paper20261110_median7",
+      "reference_sha256": "ff272447c9b954561375d494388881e7ad0b7d64b55b148079bb3054f732460e",
+      "image_sha256": "41025ff80b03513a541912ea1899f4b7fd71fa7402e7e3ff3312ebd1250e10d8"
+    },
+    {
+      "task": 3,
+      "split": "development",
+      "method": "gs_control",
+      "label": "resize50",
+      "id": "003_gs_control_paper20261110_resize50",
+      "reference_sha256": "ff272447c9b954561375d494388881e7ad0b7d64b55b148079bb3054f732460e",
+      "image_sha256": "fe93c9c96990a89d0aba07fe7a8741bddce63d7d1feac49e73ae979eef9a2129"
+    },
+    {
+      "task": 4,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "jpeg70",
+      "id": "004_sembind_scattered_paper20261110_jpeg70",
+      "reference_sha256": "17de8d6f70f0149740e02252ef7a4d8f02735c70b2e3ffb219ea37bfcc541775",
+      "image_sha256": "8b0f9983eb928448e3fd611a591b576bdeaf95c04c268061e6d287f1e9be4180"
+    },
+    {
+      "task": 4,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "gaussian_blur3",
+      "id": "004_sembind_scattered_paper20261110_gaussian_blur3",
+      "reference_sha256": "17de8d6f70f0149740e02252ef7a4d8f02735c70b2e3ffb219ea37bfcc541775",
+      "image_sha256": "6753ab0099d675854f0a0d6deb72ec1427c5f6b8b9fc85af544f8f03a667a7e4"
+    },
+    {
+      "task": 4,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "median7",
+      "id": "004_sembind_scattered_paper20261110_median7",
+      "reference_sha256": "17de8d6f70f0149740e02252ef7a4d8f02735c70b2e3ffb219ea37bfcc541775",
+      "image_sha256": "2a35d6d27a70f53944c11f13bce6c9dfe78efb0e922f8424afcdbb2c3544ffc5"
+    },
+    {
+      "task": 4,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "resize50",
+      "id": "004_sembind_scattered_paper20261110_resize50",
+      "reference_sha256": "17de8d6f70f0149740e02252ef7a4d8f02735c70b2e3ffb219ea37bfcc541775",
+      "image_sha256": "aa86b1cbf0bd25af361a2ae9647b20b9fed38f41d0bb0249cca87b5b8e2e71bd"
+    },
+    {
+      "task": 5,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "jpeg70",
+      "id": "005_sembind_scattered_paper20261110_jpeg70",
+      "reference_sha256": "57064af30a4b2526521b527af4373e5ebacae9b3e6d3c672e6e7f96586607013",
+      "image_sha256": "4b56686639449a227d750899e27883fad72498c5909d9c0abac796812c1f8040"
+    },
+    {
+      "task": 5,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "gaussian_blur3",
+      "id": "005_sembind_scattered_paper20261110_gaussian_blur3",
+      "reference_sha256": "57064af30a4b2526521b527af4373e5ebacae9b3e6d3c672e6e7f96586607013",
+      "image_sha256": "7296c87e8d96e471aa32f9b7ba780b34c8255457c6c2c9deb3f315842e2927ca"
+    },
+    {
+      "task": 5,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "median7",
+      "id": "005_sembind_scattered_paper20261110_median7",
+      "reference_sha256": "57064af30a4b2526521b527af4373e5ebacae9b3e6d3c672e6e7f96586607013",
+      "image_sha256": "c5b134eae2fb4f3ae5bef488dcdad6ab510559388ceff20796df9969186a2213"
+    },
+    {
+      "task": 5,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "resize50",
+      "id": "005_sembind_scattered_paper20261110_resize50",
+      "reference_sha256": "57064af30a4b2526521b527af4373e5ebacae9b3e6d3c672e6e7f96586607013",
+      "image_sha256": "c8aa2526e65e299fff03e3bcfc18d320004e77f409472bed8d775d4915174d94"
+    },
+    {
+      "task": 6,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "jpeg70",
+      "id": "006_sembind_scattered_paper20261110_jpeg70",
+      "reference_sha256": "ff9b88bd77a4755cc0ba75d5c9272597b3c8efc70228129e280f031a3330deac",
+      "image_sha256": "beda41a606a54309fbd0a3a2098f6348f14c88f22e717b03b0edc824983bba97"
+    },
+    {
+      "task": 6,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "gaussian_blur3",
+      "id": "006_sembind_scattered_paper20261110_gaussian_blur3",
+      "reference_sha256": "ff9b88bd77a4755cc0ba75d5c9272597b3c8efc70228129e280f031a3330deac",
+      "image_sha256": "d5155cdf0b12ef94b5d9e92b879a72c5f6e9dc0617e0179f4a18f08b1cfc450b"
+    },
+    {
+      "task": 6,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "median7",
+      "id": "006_sembind_scattered_paper20261110_median7",
+      "reference_sha256": "ff9b88bd77a4755cc0ba75d5c9272597b3c8efc70228129e280f031a3330deac",
+      "image_sha256": "8127470b85a505b0686e8ff8c9fc7abebb407cdf6d4ea4a65be36bc0294729df"
+    },
+    {
+      "task": 6,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "resize50",
+      "id": "006_sembind_scattered_paper20261110_resize50",
+      "reference_sha256": "ff9b88bd77a4755cc0ba75d5c9272597b3c8efc70228129e280f031a3330deac",
+      "image_sha256": "737794fbba3935733edb3e3c7b970b3caf736aa9821eea6a5c790fcff375876e"
+    },
+    {
+      "task": 7,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "jpeg70",
+      "id": "007_sembind_scattered_paper20261110_jpeg70",
+      "reference_sha256": "d04e65fe66f434cc7159801a9e69f796dc8a7890398cac8d9faa8493128ea281",
+      "image_sha256": "37948c2b0e9ffeb4c48e6b831e28a691ba7d2ea7f96ca5dee95f5e05fd3dc339"
+    },
+    {
+      "task": 7,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "gaussian_blur3",
+      "id": "007_sembind_scattered_paper20261110_gaussian_blur3",
+      "reference_sha256": "d04e65fe66f434cc7159801a9e69f796dc8a7890398cac8d9faa8493128ea281",
+      "image_sha256": "23746255e69e6023daa46874ec9c8e54bdaaf33a6d1e9742329624adc6f5466c"
+    },
+    {
+      "task": 7,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "median7",
+      "id": "007_sembind_scattered_paper20261110_median7",
+      "reference_sha256": "d04e65fe66f434cc7159801a9e69f796dc8a7890398cac8d9faa8493128ea281",
+      "image_sha256": "6fd892c12f0a96b448084acbfd55f8c7202d633c4767f63a0829ad3dd706e195"
+    },
+    {
+      "task": 7,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "resize50",
+      "id": "007_sembind_scattered_paper20261110_resize50",
+      "reference_sha256": "d04e65fe66f434cc7159801a9e69f796dc8a7890398cac8d9faa8493128ea281",
+      "image_sha256": "ba5db9277de5759c4aa3263b108324d43b63a5be7444e586172cc2a6e692bf0c"
+    },
+    {
+      "task": 8,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "jpeg70",
+      "id": "008_sembind_scattered_paper20261110_jpeg70",
+      "reference_sha256": "af065b7289615093ee49b5687c90083eaa0ae9a3b3e35f6a1b725702841f2902",
+      "image_sha256": "a3855693c1c82b7a68951983962a13a53045d48f8aca8a4f49a54c8db35d5fe4"
+    },
+    {
+      "task": 8,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "gaussian_blur3",
+      "id": "008_sembind_scattered_paper20261110_gaussian_blur3",
+      "reference_sha256": "af065b7289615093ee49b5687c90083eaa0ae9a3b3e35f6a1b725702841f2902",
+      "image_sha256": "b7215aa028ecbcc81a7fd96d9b317419fe69293645a2ce6e62834bfe7621fd01"
+    },
+    {
+      "task": 8,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "median7",
+      "id": "008_sembind_scattered_paper20261110_median7",
+      "reference_sha256": "af065b7289615093ee49b5687c90083eaa0ae9a3b3e35f6a1b725702841f2902",
+      "image_sha256": "e114059fc18a747280f85b0f5934fe6554e897391a55ee622561b63f8824f45f"
+    },
+    {
+      "task": 8,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "resize50",
+      "id": "008_sembind_scattered_paper20261110_resize50",
+      "reference_sha256": "af065b7289615093ee49b5687c90083eaa0ae9a3b3e35f6a1b725702841f2902",
+      "image_sha256": "d77d4a3a7e683ff783ddd749b78895cfa3ff83c15dd857cd32c4c614dfa11663"
+    },
+    {
+      "task": 9,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "jpeg70",
+      "id": "009_sembind_scattered_paper20261110_jpeg70",
+      "reference_sha256": "408e8a517cb9505eba91ca37765e71f87aa3e080915ec9209bc737b3904d7db8",
+      "image_sha256": "68e36eef8660acc36380a4fe2c8d5ef94ed3b7c4a43158c896928bfd280de24e"
+    },
+    {
+      "task": 9,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "gaussian_blur3",
+      "id": "009_sembind_scattered_paper20261110_gaussian_blur3",
+      "reference_sha256": "408e8a517cb9505eba91ca37765e71f87aa3e080915ec9209bc737b3904d7db8",
+      "image_sha256": "d56fe5383c502f1dead9cc44feafdadd587485ccfc37c69c879eb9f5806c9d78"
+    },
+    {
+      "task": 9,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "median7",
+      "id": "009_sembind_scattered_paper20261110_median7",
+      "reference_sha256": "408e8a517cb9505eba91ca37765e71f87aa3e080915ec9209bc737b3904d7db8",
+      "image_sha256": "30e64058bd7a017e8b571a6fd2fd45f2c1329a2e6115d67e10da1f9605be849e"
+    },
+    {
+      "task": 9,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "resize50",
+      "id": "009_sembind_scattered_paper20261110_resize50",
+      "reference_sha256": "408e8a517cb9505eba91ca37765e71f87aa3e080915ec9209bc737b3904d7db8",
+      "image_sha256": "f8985700447a7ce267afe13a956084923080455a3c6a5d6e58151652f1dcd43c"
+    },
+    {
+      "task": 10,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "jpeg70",
+      "id": "010_sembind_scattered_paper20261110_jpeg70",
+      "reference_sha256": "f85a4fbf711d5252258017bdac98cf9a00bc578839972677c7bd8d6e17c0d961",
+      "image_sha256": "fd83f182a2fbcf8a487a1bdbb7e4c0e288cc6c379d07fde5a15c253f6e5f5cd0"
+    },
+    {
+      "task": 10,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "gaussian_blur3",
+      "id": "010_sembind_scattered_paper20261110_gaussian_blur3",
+      "reference_sha256": "f85a4fbf711d5252258017bdac98cf9a00bc578839972677c7bd8d6e17c0d961",
+      "image_sha256": "8601ac89637c4dc588d41175a2ae7baea11bddade5ce69a048e47c378ceef73b"
+    },
+    {
+      "task": 10,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "median7",
+      "id": "010_sembind_scattered_paper20261110_median7",
+      "reference_sha256": "f85a4fbf711d5252258017bdac98cf9a00bc578839972677c7bd8d6e17c0d961",
+      "image_sha256": "a79a6a99e8467d6206501b6c62d4f83d94e358e12b80143f4adb4de38c094e84"
+    },
+    {
+      "task": 10,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "resize50",
+      "id": "010_sembind_scattered_paper20261110_resize50",
+      "reference_sha256": "f85a4fbf711d5252258017bdac98cf9a00bc578839972677c7bd8d6e17c0d961",
+      "image_sha256": "36475e95c78328275420564f3597fd1044774787e457568641f4336ad2db4360"
+    },
+    {
+      "task": 11,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "jpeg70",
+      "id": "011_sembind_scattered_paper20261110_jpeg70",
+      "reference_sha256": "7617d57844b862a4abdf2684ad3421fa4304cd3435638fb0fbba41db20e857b1",
+      "image_sha256": "1ae626cc706f9ae722b5afd365eb3a8679bea18f5ba6d3059ebe44c453b99dea"
+    },
+    {
+      "task": 11,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "gaussian_blur3",
+      "id": "011_sembind_scattered_paper20261110_gaussian_blur3",
+      "reference_sha256": "7617d57844b862a4abdf2684ad3421fa4304cd3435638fb0fbba41db20e857b1",
+      "image_sha256": "aed91a5a780c42cdb3d07da5527b31e58454b30e9f966c65476171f478ee93e0"
+    },
+    {
+      "task": 11,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "median7",
+      "id": "011_sembind_scattered_paper20261110_median7",
+      "reference_sha256": "7617d57844b862a4abdf2684ad3421fa4304cd3435638fb0fbba41db20e857b1",
+      "image_sha256": "d101d860c5b9341ca633af47eb48ec0e50a75d264f1ed84e23b7450849399703"
+    },
+    {
+      "task": 11,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "resize50",
+      "id": "011_sembind_scattered_paper20261110_resize50",
+      "reference_sha256": "7617d57844b862a4abdf2684ad3421fa4304cd3435638fb0fbba41db20e857b1",
+      "image_sha256": "f97446d2aea0bc6f4fbff3306c22ad98c2174c5b06d8beaa4fee5915b1e067e6"
+    },
+    {
+      "task": 12,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "jpeg70",
+      "id": "012_sembind_scattered_paper20261110_jpeg70",
+      "reference_sha256": "f3e1dc20801277a700ab2a1a8a6298e0caed5c6b7afc6082a101d841d398e87a",
+      "image_sha256": "f6c237e3dd6fcb8ce153abac878345e0665dfa0c65813ffa092559ab77eb06ec"
+    },
+    {
+      "task": 12,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "gaussian_blur3",
+      "id": "012_sembind_scattered_paper20261110_gaussian_blur3",
+      "reference_sha256": "f3e1dc20801277a700ab2a1a8a6298e0caed5c6b7afc6082a101d841d398e87a",
+      "image_sha256": "c65c0e311eba61931ea3244fa0a1d4973d3a1117d05b063d3b78a92027e06644"
+    },
+    {
+      "task": 12,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "median7",
+      "id": "012_sembind_scattered_paper20261110_median7",
+      "reference_sha256": "f3e1dc20801277a700ab2a1a8a6298e0caed5c6b7afc6082a101d841d398e87a",
+      "image_sha256": "b9e5eb431e52eba3e3db75ef3f571cd0d3086a5e99039ebf1931ccaa2e571547"
+    },
+    {
+      "task": 12,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "resize50",
+      "id": "012_sembind_scattered_paper20261110_resize50",
+      "reference_sha256": "f3e1dc20801277a700ab2a1a8a6298e0caed5c6b7afc6082a101d841d398e87a",
+      "image_sha256": "971c790f5ec42df1e1200ffdd1caa5dc0c88cbeca3b15a7ef13fb34bcffd168c"
+    },
+    {
+      "task": 13,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "jpeg70",
+      "id": "013_sembind_scattered_paper20261110_jpeg70",
+      "reference_sha256": "95f429b59af8d7901bd1a0d4ca60189da5d19790fb5d58023a69770abf91ff4e",
+      "image_sha256": "af9852c55a3b498c93e21248f7bccbb7df251b8f3664ed2ba75f98cfb998b9c1"
+    },
+    {
+      "task": 13,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "gaussian_blur3",
+      "id": "013_sembind_scattered_paper20261110_gaussian_blur3",
+      "reference_sha256": "95f429b59af8d7901bd1a0d4ca60189da5d19790fb5d58023a69770abf91ff4e",
+      "image_sha256": "6fcdf5d4fffacf0d134888969aef73cf5c0503f536c009b70e3068d3727e89d1"
+    },
+    {
+      "task": 13,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "median7",
+      "id": "013_sembind_scattered_paper20261110_median7",
+      "reference_sha256": "95f429b59af8d7901bd1a0d4ca60189da5d19790fb5d58023a69770abf91ff4e",
+      "image_sha256": "f5f6c87169613f49d165cf77b0ccf26ff3aad522cdca2056648b7a283793fb1a"
+    },
+    {
+      "task": 13,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "resize50",
+      "id": "013_sembind_scattered_paper20261110_resize50",
+      "reference_sha256": "95f429b59af8d7901bd1a0d4ca60189da5d19790fb5d58023a69770abf91ff4e",
+      "image_sha256": "35f91e3233da0d6c4eded0eb7a519feeae3304d97d0da96b7156635f4847bf2b"
+    },
+    {
+      "task": 14,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "jpeg70",
+      "id": "014_sembind_scattered_paper20261110_jpeg70",
+      "reference_sha256": "1a29537f8bea90474966d277cfe22ccbd9fa193fb4afb31ce4721389e205aed3",
+      "image_sha256": "bf206e192777f5b17d2ca79ce2da256339e4779c5817d9d391d1bef94ccda84f"
+    },
+    {
+      "task": 14,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "gaussian_blur3",
+      "id": "014_sembind_scattered_paper20261110_gaussian_blur3",
+      "reference_sha256": "1a29537f8bea90474966d277cfe22ccbd9fa193fb4afb31ce4721389e205aed3",
+      "image_sha256": "6dd4faac5c002913e2dddc1ee4684bbc5fe022267154940f2b15b305df860148"
+    },
+    {
+      "task": 14,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "median7",
+      "id": "014_sembind_scattered_paper20261110_median7",
+      "reference_sha256": "1a29537f8bea90474966d277cfe22ccbd9fa193fb4afb31ce4721389e205aed3",
+      "image_sha256": "abf1fb83f2277fc79f5b11947bd34ab25094c6236affca0413d1fa288a0b7621"
+    },
+    {
+      "task": 14,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "resize50",
+      "id": "014_sembind_scattered_paper20261110_resize50",
+      "reference_sha256": "1a29537f8bea90474966d277cfe22ccbd9fa193fb4afb31ce4721389e205aed3",
+      "image_sha256": "8f593a427653b2a9ea95d08927824b9d52d7f9f3df8d9042b129730172df11ed"
+    },
+    {
+      "task": 15,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "jpeg70",
+      "id": "015_sembind_scattered_paper20261110_jpeg70",
+      "reference_sha256": "a87dc8dda29f8bb6b1fb06e8291b5731f90383c1bc4fda7521cca6fe13936aff",
+      "image_sha256": "0ead6239994974564fd621a6b7fdda05f061ddeecaffeebf56cc315a3267f823"
+    },
+    {
+      "task": 15,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "gaussian_blur3",
+      "id": "015_sembind_scattered_paper20261110_gaussian_blur3",
+      "reference_sha256": "a87dc8dda29f8bb6b1fb06e8291b5731f90383c1bc4fda7521cca6fe13936aff",
+      "image_sha256": "4d60a08c6ac164aba0b887f2e69777722c8f1688bb080171445e4ccd34ff765d"
+    },
+    {
+      "task": 15,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "median7",
+      "id": "015_sembind_scattered_paper20261110_median7",
+      "reference_sha256": "a87dc8dda29f8bb6b1fb06e8291b5731f90383c1bc4fda7521cca6fe13936aff",
+      "image_sha256": "6e2ab2149057bfac3edd62b9e08e6e7f7bde872ee712123fd8d3ed61775ea500"
+    },
+    {
+      "task": 15,
+      "split": "development",
+      "method": "sembind_scattered",
+      "label": "resize50",
+      "id": "015_sembind_scattered_paper20261110_resize50",
+      "reference_sha256": "a87dc8dda29f8bb6b1fb06e8291b5731f90383c1bc4fda7521cca6fe13936aff",
+      "image_sha256": "de875cc54ae92f04986790988f06e139546fb62243cdeae0e70af718cd114e32"
+    }
+  ]
+}

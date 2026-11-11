@@ -1,0 +1,6 @@
+{
+  "completed": false,
+  "error": "RuntimeError",
+  "message": "Calibration cache return codes: [1]; no scoring performed",
+  "traceback": "Traceback (most recent call last):\n  File \"/data0/liyanlei/watermark_research/runs/geometry_calibration_20261111/scripts/continue_geometry_validation.py\", line 73, in main\n    if any(c!=0 for c in codes):raise RuntimeError(f'Calibration cache return codes: {codes}; no scoring performed')\nRuntimeError: Calibration cache return codes: [1]; no scoring performed\n"
+}

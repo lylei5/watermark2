@@ -1,0 +1,23 @@
+{
+  "scope": "CPU oracle diagnostic; known benign crop metadata; no new attacks or defense claims",
+  "images": "All 16 SemBind and 4 GS development references with existing clean/crop90 inversions",
+  "crop_box": [
+    25,
+    25,
+    486,
+    486
+  ],
+  "original_size": 512,
+  "query_size": 512,
+  "latent_size": 64,
+  "mapping": "Latent-cell centers interpreted as image coordinates; geometric proxy, not assumed diffusion equivariance",
+  "modes": [
+    "nearest",
+    "bilinear"
+  ],
+  "support": "All points with complete in-bounds bilinear stencil; shared across modes",
+  "threshold": "Conservative full-message agreement > 181/256; unsupported bits count as unknown failures",
+  "erasure_policy": "Unsupported bits remain unknown; fixed zero-on-tie decoder plus stricter no-tie evidence reported",
+  "scores_used_for_transform_selection": false,
+  "script_sha256": "7becef5b433969b3fa7db86f71e2730e733d5d245a33c79f086491cb1df036bb"
+}

@@ -1,0 +1,24 @@
+{
+  "effective_weights": {
+    "unet/diffusion_pytorch_model.safetensors": "fbafc06f8378778eeb6c8c189a0680f9f00d16981d0947bcaddc62fa3530c090",
+    "vae/diffusion_pytorch_model.safetensors": "af75928e9ce6a96de9474a9a4ce91c6473f562dc8f954637da1854f75bbdbabe",
+    "text_encoder/model.safetensors": "7042053768977f46664a92aa879f3408899fb5e03fa6c3dd039d61fc4f5aef61"
+  },
+  "configs": {
+    "unet/config.json": "d7dbbdf11d81e7a8841fedc5a7251bfa832137f4cec0032b8f554582cb474445",
+    "vae/config.json": "d635057cf377ae999aa5d38c709363a28a1c5d3fa2fa234a77596c0ad78a576f",
+    "text_encoder/config.json": "0fdea97f7283f0247e50b48c4e837ea49526ca8610e92bbd56fcbddf39ee7d72",
+    "scheduler/scheduler_config.json": "15fd8940a1bcd9a3e008f16448aad36ebb0523b211af1dce4fffa74ae221edeb",
+    "tokenizer/merges.txt": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+    "tokenizer/special_tokens_map.json": "38a41095e8e960bc998be41575ca75b68ef2030408a9f990278444bdc4d4239f",
+    "tokenizer/tokenizer_config.json": "2fa5a995a90996e1e77280b4d7b293254a286ade49413da85cad7aa57d22bfba",
+    "tokenizer/vocab.json": "51b8a58f8c87bc7af902c70cbcdd0287f5baffaa34044e30b8ff8e22c54ec1a0"
+  },
+  "semantic": {
+    "dinov2-giant/config.json": "15d2e68b709674c0eb9bb5cc8b73e57ebe9a169a425bef224f46ae10053806a2",
+    "dinov2-giant/model.safetensors": "917d3c470db999d32a312f8542149be91c7cbac61ee8fb4b67ae3d82b79ce21f",
+    "dinov2-giant/preprocessor_config.json": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
+    "sembind_masker.pth": "85f98477bc5c3ae37d429b527d852384fefe70a4c69b25b483759635f3e9ebfd",
+    "model.py": "cc37ad6243e4b0d6565c617ed153e2a4640caf968285b74b7ba10d51cca9bf18"
+  }
+}

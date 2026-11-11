@@ -34,7 +34,9 @@ def content_scores(groups,query_code):
     e_grid=np.linspace(.005,.495,99)
     a=counts[:,None]*np.log(e_grid)+(n-counts[:,None])*np.log1p(-e_grid)
     b=(n-counts[:,None])*np.log(e_grid)+counts[:,None]*np.log1p(-e_grid)
-    d_grid=np.linspace(0,.5,101)
+    # Different image codes can disagree on more than half their coordinates.
+    # Restrict only the channel orientation (e < .5), not the content mismatch.
+    d_grid=np.linspace(0,1,201)
     best=(-np.inf,None,None);profile=[]
     for d in d_grid:
         ll=(np.logaddexp(a+np.log(max(1-d,1e-15)),b+np.log(max(d,1e-15)))*histogram[:,None]).sum(0)
