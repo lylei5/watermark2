@@ -2,6 +2,10 @@
 
 Updated 2026-11-11. Goal: a publishable defense with matched genuine detection, image quality, computation budgets and credible false-positive calibration. No superiority or SOTA claim is established.
 
+## Fresh execution policy and revalidation
+
+The user requires fresh execution before critical inherited experimental claims support further research. Historical artifacts remain comparisons; arithmetic audit is not a fresh model experiment. The authorized first batch is protocols/defense_revalidation_20261111.json, with scope and limitations in reports/defense_revalidation_20261111/plan.md:100-source SemBind component measurements under clean plus9 unchanged published conditions, and all10 supplied PGID examples with151 updates and full defense computation. This reuses development inputs, not an independent confirmation set. Future pip installation uses Tsinghua exclusively by default. Execution state is recorded in project_state.json.
+
 ## Literature and historical evidence audit
 
 Read reports/repository_audit_20261111/report.md and docs/LITERATURE.md. Primary records correct the SemBind, Geometry, semantic-forgery and PAI identifiers, PGID expansion and SEAL venue. PAI is confirmed in the ICLR2026 proceedings. Third-party origins and versions are recorded in THIRD_PARTY.md. PGID historical n=1 and completed n=5 CSVs were rechecked on server: all three defended checkpoints accepted0/1 and0/5 respectively. SemBind masker R2 standard median is8, not the historical upper-middle value9; the statistics function is corrected. Geometry aggregates agree with its saved30-task scores, but do not establish author-implementation equivalence. Historical near-code observations do not prove a collision vulnerability. Full reproduction and superiority remain unestablished.
@@ -46,7 +50,7 @@ Server run: runs/gs_published_conditions_20261111 completed. Default554/576, ide
 
 Protocol protocols/unwatermarked_validation_20261111.json was published before launch in3886df4. All100 existing natural RGB512 COCO images completed DDIM50/batch2 and64-identity scoring:6400 decisions. Default, identity-only, identity with251 penalty, all-fit and split-fit all accepted0/6400; each accepted0/100 queries under any identity. Supplementary BA calibration targets80/90/95/100% accepted0/472/1385/6337 pairs and0/100/100/100 queries. Thresholds remain unchanged.
 
-Read reports/unwatermarked_validation_20261111/report.md. Input/bridge/source/cache hashes, all6400 unique pairs, bridge criteria and summary decisions were audited on server. Existing development assets, not independent confirmation. Shared identities and finite sample size preclude an ultra-low FPR claim. Scoring took54.13 seconds excluding inversion. Run root: runs/unwatermarked_validation_20261111; complete.json and audit.json exist. The research experiment pipeline is complete; no next GPU job is queued. Do not rerun completed jobs.
+Read reports/unwatermarked_validation_20261111/report.md. Input/bridge/source/cache hashes, all6400 unique pairs, bridge criteria and summary decisions were audited on server. Existing development assets, not independent confirmation. Shared identities and finite sample size preclude an ultra-low FPR claim. Scoring took54.13 seconds excluding inversion. Run root: runs/unwatermarked_validation_20261111; complete.json and audit.json exist. The research experiment pipeline is complete; no next GPU job is queued. Any reruns must use a fresh protocol and output directory under the user-authorized revalidation plan.
 
 The outstanding scientific gap is a defense benefit beyond recovery of the studied center crop-resize condition. Official nine-condition results and full-budget Imprint did not establish broader superiority. Further method development must use development data, preserve published-only attack baselines, and obtain new independent validation sources.
 

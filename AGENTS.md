@@ -26,6 +26,7 @@ These rules apply to this repository and `/data0/liyanlei/watermark_research` on
 
 - Version research code, protocols, results, references and reproducibility documentation. Store machine administration records separately from this repository.
 - Every result must trace to an artifact and execution record. Prepared assets and short runtime probes are not completed benchmarks.
+- Critical claims inherited from historical experiments require fresh execution before they support new research decisions. Preserve old artifacts as historical evidence; an arithmetic recheck is not a new model experiment.
 - Treat inherited prose and verification labels as claims requiring evidence. Verify bibliographic metadata against primary records and distinguish conference proceedings from author acceptance statements.
 - Check experimental claims against per-sample artifacts, denominators, thresholds and implementation scope. See `reports/repository_audit_20261111/report.md` for corrected historical claims and remaining audit limits.
 - Preserve all negative and partial results. Do not omit invalid genuine references from unconditional denominators.
@@ -38,6 +39,7 @@ These rules apply to this repository and `/data0/liyanlei/watermark_research` on
 - Workspace: `/data0/liyanlei/watermark_research` on SSH alias `249`.
 - All future research experiments, including CPU scoring and GPU runs, must execute on server 249 only. Do not use the user's PC as a compute fallback or download model weights there. Local code editing, documentation and file management remain allowed.
 - Primary Python: `/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/bin/python`.
+- Use the Tsinghua mirror `https://pypi.tuna.tsinghua.edu.cn/simple/` for future Python dependency installation. Do not fall back to Aliyun automatically. Prefer existing local packages and caches.
 - Reuse local models and cache. Set `HF_HOME=/data0/liyanlei/watermark_research/cache/huggingface`, `HF_HUB_OFFLINE=1` and `TRANSFORMERS_OFFLINE=1` for offline runs.
 - Use at most three GPUs concurrently. Current user-selected server GPUs are 7, 5, and 4; use only these, in that order.
 - Run the full published implementation and update schedule; do not truncate baselines to save time.

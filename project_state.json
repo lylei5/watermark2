@@ -198,7 +198,9 @@
       5,
       4
     ],
-    "max_concurrent_gpus": 3
+    "max_concurrent_gpus": 3,
+    "python_package_index": "https://pypi.tuna.tsinghua.edu.cn/simple/",
+    "automatic_aliyun_fallback": false
   },
   "active_experiments_observation": "Natural-negative evaluation complete and audited; no next GPU job queued",
   "full_budget_findings": {
@@ -306,5 +308,24 @@
     "sembind_r2_corrected_standard_median": 8,
     "all_historical_claims_certified": false,
     "new_model_experiments": false
+  },
+  "evidence_policy": "Fresh execution required for critical inherited experimental claims; retain old records as historical comparisons",
+  "revalidation": {
+    "protocol": "protocols/defense_revalidation_20261111.json",
+    "plan": "reports/defense_revalidation_20261111/plan.md",
+    "status": "prepared",
+    "server_root": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111",
+    "masker_sources": 100,
+    "masker_observations": 1000,
+    "masker_pairs": 4950,
+    "pgid_sources": 10,
+    "pgid_updates_per_source": 151,
+    "gpu_indices": [
+      7,
+      5,
+      4
+    ],
+    "historical_outputs_reused": false,
+    "independent_confirmation": false
   }
 }
