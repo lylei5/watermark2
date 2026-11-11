@@ -1,0 +1,100 @@
+{
+  "freeze_time_utc": "2026-11-11T17:56:33.139929+00:00",
+  "purpose": "Genuine-only channel-conditioned content likelihood defense experiment",
+  "chain_run": "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111",
+  "conditions_run": "/data0/liyanlei/watermark_research/runs/sembind_published_revalidation_20261112",
+  "baseline_run": "/data0/liyanlei/watermark_research/runs/imprint_fresh_revalidation_20261112",
+  "external_sha256": {
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/scripts/codeword_binding.py": "f49aa1342031a1c54be17bb4153b79150e5f70903719275c37329bf093186c59",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/scripts/sembind_official_audit.py": "52fde572e2f9ed0f0ccb2774e03185c223400886b38cabf83ee1c401ecb17f03",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/scripts/sembind.py": "4ef939f5559403bb033e0d1650930b113cce050b82861c886522074ada39a3cf",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/paths.json": "a5d30553bd57ed22902a1e63bffb8ffff2b0f8363e7fe8603c478627f37592ac",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/verified_results.json": "bdcfd37db8df86b011d688a8aea66a2b98b43a4ff7f2b17814fe3ec04dd88fe5",
+    "/data0/liyanlei/watermark_research/runs/sembind_published_revalidation_20261112/verified_results.json": "a4a6ae546ee9304af969acfbaaf6e150d3b5d3c17878c39487d1015798fe162e",
+    "/data0/liyanlei/watermark_research/runs/imprint_fresh_revalidation_20261112/protocol.json": "d27152e2bc749cfadcdabfffb816c1815d88c8823bc6ab0995033f4097b84333"
+  },
+  "source_sha256": {
+    "conditional_content_likelihood.py": "14ddefe68bb9736c95e9e231f89c16dec8d1c378708e0547f5284a58b11b1911",
+    "run_conditional_content_experiment.py": "327a1af3d9362f51b837cdedde400d1841b2933670939585bb46cd1acc9f9858",
+    "wait_conditional_evaluation.py": "ea90e6fe068b356271e3f821e0fb30acc08033e0e87071211bab00d18e411a85",
+    "helpers/content_authentication.py": "33bcd430df9f36c7c2ec911f723c1f8a95b8264d27b51b47911053b3dcc2d70f"
+  },
+  "score_names": [
+    "ba",
+    "content_agreement",
+    "profile_content_lower_bound",
+    "global_content_llr",
+    "reliability_weighted_content_agreement",
+    "conditional_content_llr"
+  ],
+  "folds": [
+    {
+      "test_source": 0,
+      "calibration_source": 1,
+      "training_sources": [
+        2,
+        3
+      ]
+    },
+    {
+      "test_source": 1,
+      "calibration_source": 2,
+      "training_sources": [
+        0,
+        3
+      ]
+    },
+    {
+      "test_source": 2,
+      "calibration_source": 3,
+      "training_sources": [
+        0,
+        1
+      ]
+    },
+    {
+      "test_source": 3,
+      "calibration_source": 0,
+      "training_sources": [
+        1,
+        2
+      ]
+    }
+  ],
+  "calibration": "Minimum of10 genuine conditions from one separate source; >= comparison. No coverage claim from10 correlated views.",
+  "l2": 0.001,
+  "features": [
+    "normalized_abs_latent",
+    "squared_normalized_abs_latent",
+    "local3x3_mean_abs_latent",
+    "log_global_rms"
+  ],
+  "channel_error_clip": [
+    0.005,
+    0.495
+  ],
+  "semantic_prior_clip": [
+    0.005,
+    0.495
+  ],
+  "fit_optimizer": {
+    "name": "L-BFGS-B",
+    "maxiter": 200,
+    "ftol": 1e-12,
+    "gtol": 1e-08
+  },
+  "training_labels": "True channel flips from enrollment identity and code; training sources only",
+  "query_inputs": [
+    "query latent",
+    "query semantic code",
+    "claimed private watermark identity and permutation"
+  ],
+  "inference_enrollment_code": false,
+  "training_attack_images": false,
+  "attacks_modified": false,
+  "independent_confirmation": false,
+  "research_scope": "Candidate hypothesis; soft decoding and heteroscedastic detection already exist. Novelty and benefit not established.",
+  "primary_forgery_endpoint": 151,
+  "checkpoints": "All16 released checkpoints retained; no candidate selection",
+  "advance_rule": "Must improve held-out operating counts over calibrated BA and ablations; ties are not superiority."
+}
