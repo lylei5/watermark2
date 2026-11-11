@@ -27,7 +27,7 @@
     "root": "/data0/liyanlei/watermark_research",
     "primary_python": "/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/bin/python"
   },
-  "latest_progress_report": "reports/pgid_published_revalidation_20261112/report.md",
+  "latest_progress_report": "reports/conditional_content_likelihood_20261112/report.md",
   "independent_progress": {
     "independent_images": 320,
     "source_prompts": 112,
@@ -186,7 +186,7 @@
     "python_package_index": "https://pypi.tuna.tsinghua.edu.cn/simple/",
     "automatic_aliyun_fallback": false
   },
-  "active_experiments_observation": "All three fresh paired published-condition workers reached full inversion on GPUs7/5/4; event-driven coordinator will audit144 records then launch frozen full Imprint baseline.",
+  "active_experiments_observation": "Full151-update Imprint runs onGPU7/5/4. CPU likelihood fitting completed; fixed defense scoring and new embedding pilot attach to baseline exit event.",
   "full_budget_findings": {
     "source_count_per_method": 4,
     "sem_reference_accepted": 4,
@@ -413,7 +413,7 @@
     "max_gpus": 3,
     "completion_mode": "child exit -> independent CPU audit -> full published baseline -> independent CPU audit",
     "report": "reports/sembind_published_revalidation_20261112/plan.md",
-    "stage": "full_inversion",
+    "stage": "published_full_baseline",
     "coordinator_pid": 32044,
     "worker_pids": [
       32096,
@@ -421,6 +421,45 @@
       32098
     ],
     "prelaunch_git_commit": "8476bd3",
-    "next_stage_status": "queued_after_successful_audit"
+    "next_stage_status": "Full-budget generation active; verification and audit automatic",
+    "paired_conditions_complete": true,
+    "paired_condition_acceptance": "SemBind and GS each36/36 under both inversion settings",
+    "baseline_pid": 2154
+  },
+  "conditional_content_likelihood": {
+    "status": "genuine_test_complete_awaiting_forgery",
+    "protocol": "protocols/conditional_content_likelihood_20261112.json",
+    "report": "reports/conditional_content_likelihood_20261112/report.md",
+    "coordinator_pid": 41738,
+    "genuine_accepted": 30,
+    "genuine_n": 40,
+    "calibrated_ba_accepted": 39,
+    "default_ba_accepted": 40,
+    "channel_logloss": 0.6148969567743989,
+    "constant_channel_logloss": 0.6310196754644377,
+    "superiority_established": false,
+    "advance_decision": "Do not expand current likelihood candidate; finish frozen forgery evaluation and retain negative results"
+  },
+  "conditional_anchor_pilot": {
+    "status": "queued",
+    "protocol": "protocols/conditional_anchor_pilot_20261112.json",
+    "plan": "reports/conditional_anchor_pilot_20261112/plan.md",
+    "parent_pid": 2154,
+    "gpu_indices": [
+      7,
+      5,
+      4
+    ],
+    "max_gpus": 3,
+    "new_sources": 6,
+    "embedding_arms": 4,
+    "genuine_verification_records": 240,
+    "generation_steps": 50,
+    "inversion_steps": 50,
+    "decoder_steps": 100,
+    "after_positive_gate": "12 unchanged full151-update Imprint jobs and216 full verification records",
+    "superiority_established": false,
+    "independent_audit": "BA, semantic mismatch, and LPIPS gates",
+    "completion_mode": "Kernel process-exit wait; no continuous polling"
   }
 }

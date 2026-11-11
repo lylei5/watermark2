@@ -125,7 +125,7 @@
   "upstream": "/data0/liyanlei/watermark_research/third_party/semantic-forgery",
   "attack_python": "/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/bin/python",
   "source_sha256": {
-    "run_anchor_binding_pipeline.py": "9047ed93c19ebb57bffb7225d7a8e3b8cdb06cf81eef15aa7dbb8043e5248a7d",
+    "run_anchor_binding_pipeline.py": "059b3e67f0eedcc86a1530c0bf26651afb23874c93b9ccef3511157b2337bc66",
     "run_anchor_binding_worker.py": "7bb01b3335396965dc995f9fd618f90741106a1af1f11e9b7be8d261800343d4",
     "anchor_binding.py": "82d474e45273fdcb97d1805686ae0f6d8c8151c27feaafbdc7173040cff087b1",
     "run_published_imprint_full.py": "476895a566d94b3c374d77207183a67c038a0679f6fc755eb10c434a3162a908"
@@ -224,5 +224,6 @@
     "Distribution argument is conditional on ideal independent pseudorandom cipher bits; empirical image quality still required",
     "IRIS v1 is relevant prior disclosure; current arXiv record is withdrawn",
     "No claim of novelty or superiority before evidence and broader prior-art audit"
-  ]
+  ],
+  "independent_audit": "Message scores, reference semantic mismatch, and LPIPS gate measurements independently recomputed"
 }

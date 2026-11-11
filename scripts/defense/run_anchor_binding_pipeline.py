@@ -43,6 +43,24 @@ def audit(run,stage,plan):
         expected={(i,a,c['name']) for i in range(6) for a in plan['arms'] for c in plan['conditions']}
         assert len(rows)==240 and {(r['task'],r['arm'],r['condition']) for r in rows}==expected
         assert len(refs)==24
+        import torch
+        import lpips
+        from PIL import Image
+        torch.set_num_threads(4)
+        sys.path.insert(0,plan['upstream'])
+        from utils.image_utils import lpips_PIL
+        quality=lpips.LPIPS(net='alex').eval().cpu()
+        for ref in refs:
+            directory=run/f"genuine_{ref['task']%3}"
+            q=np.load(directory/'codes'/f"{ref['task']:03}_{ref['arm']}.npz")['code']
+            h=np.load(directory/'codes'/f"{ref['task']:03}_aux.npz")['code']
+            assert float((q!=h).mean())==ref['semantic_mismatch']
+            assert sha(run/ref['image'])==ref['image_sha256']
+            with torch.no_grad():
+                value=float(lpips_PIL(Image.open(run/ref['image']).convert('RGB'),
+                                     Image.open(run/ref['auxiliary']).convert('RGB'),quality,'cpu'))
+            assert abs(value-ref['lpips'])<1e-6
+        del quality
     else:
         attack=json.loads((run/'attack_protocol.json').read_text())
         expected={j['id']+'_'+k for j in attack['jobs'] for k in ['reference','cover']}
