@@ -1,0 +1,22 @@
+{
+  "scope": "Server-only numerical compatibility repair and continuation",
+  "tests_passed": 6,
+  "runtime_alpha": 5.634806966794081e-12,
+  "frozen_and_applied_alpha": 5.634806966794078e-12,
+  "relative_difference": 5.734312260963999e-16,
+  "comparison_tolerance_relative": 1e-12,
+  "absolute_tolerance": 0,
+  "default_ba_exact_matches": 144,
+  "all_five_decisions_equal": 144,
+  "detector_source_unchanged": true,
+  "queries_unchanged": 192,
+  "calibration_scores_available": false,
+  "observed_stage": "bridge_failed_before_calibration_scoring",
+  "gpu_indices": [
+    5
+  ],
+  "supervisor_pid": 1047,
+  "bridge_tolerance": 0.001,
+  "subsequent_runtime_setup": "installing_recorded_runtime",
+  "runtime_setup_pid": 36153
+}

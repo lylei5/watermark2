@@ -31,7 +31,7 @@
 
 当前支持的判断是：裁剪失效既有坐标错位，也有空间擦除；在已知几何条件下，残留载体足以支持当前这批开发图的认证证据。实际未知变换下能否成立，仍需检验。
 
-同步本身已有充分先例。[SynTag（ICCV 2025）](https://openaccess.thecvf.com/content/ICCV2025/html/Fang_SynTag_Enhancing_the_Geometric_Robustness_of_Inversion-based_Generative_Image_Watermarking_ICCV_2025_paper.html)通过修改 VAE 解码器嵌入同步特征，并学习几何校正；[SyncSeal（ICASSP 2026）](https://doi.org/10.1109/ICASSP55912.2026.11464560)使用独立的同步嵌入和变换预测；[TAG-WM 预印本](https://arxiv.org/abs/2506.23484)已研究定位引导的解码。因此，增加对齐模块或忽略不可靠位置本身不能构成我们的首创贡献。
+同步本身已有充分先例。[SynTag（ICCV 2025）](https://openaccess.thecvf.com/content/ICCV2025/html/Fang_SynTag_Enhancing_the_Geometric_Robustness_of_Inversion-based_Generative_Image_Watermarking_ICCV_2025_paper.html)通过修改 VAE 解码器嵌入同步特征，并学习几何校正；[SyncSeal（ICASSP 2026）](https://doi.org/10.1109/ICASSP55912.2026.11464560)使用独立的同步嵌入和变换预测；[TAG-WM（ICCV 2025）](https://doi.org/10.1109/ICCV51701.2025.01553)已研究定位引导的解码。因此，增加对齐模块或忽略不可靠位置本身不能构成我们的首创贡献。
 
 值得进一步检验的防御假设是：**同一潜变量中的认证证据，能否在不添加同步水印的情况下识别合法几何变化，同时用未参与几何估计的证据验证内容真实性？** 核心是估计几何与验证真实性的证据依赖关系。若在同一组符号上选出最高检测分数再报告该分数，几何搜索可能人为提高接受率；仅提高合法图通过率不足以证明安全改进。
 

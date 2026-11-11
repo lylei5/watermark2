@@ -5,7 +5,7 @@ These rules apply to this repository and `/data0/liyanlei/watermark_research` on
 ## Objective and current state
 
 - Develop a publishable defense with benefits at matched absolute legitimate-image detection rates, documented image quality and computation budgets.
-- Read `reports/blind_geometry_development_20261110/report.md` and `method.md` in that directory for the latest blind geometry and null-calibration evidence; read `reports/crop_transport_diagnostic_20261110/report.md` for the oracle mechanism diagnostic and `reports/sembind_official_audit_20261110/report.md` for completed development results and `project_state.json` for remaining validation.
+- Read `reports/full_imprint_20261111/report.md` for complete baseline findings and `reports/geometry_calibration_20261111/runtime_audit.md` for the active runtime-gated calibration workflow. Also read `reports/blind_geometry_development_20261110/report.md` and `method.md` in that directory for the latest blind geometry and null-calibration evidence; read `reports/crop_transport_diagnostic_20261110/report.md` for the oracle mechanism diagnostic and `reports/sembind_official_audit_20261110/report.md` for completed development results and `project_state.json` for remaining validation.
 - The statistical content verifier has no demonstrated advantage over calibrated BA on the completed development Reprompt comparison. Independent confirmation remains unscored.
 
 ## Evaluation scope

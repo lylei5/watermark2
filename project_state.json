@@ -1,6 +1,6 @@
 {
   "project_name": "watermark2 — Content-bound diffusion watermark defense",
-  "updated_at": "2026-11-10",
+  "updated_at": "2026-11-11",
   "research_goal": {
     "direction": "Defense with matched robustness, quality and attack budgets",
     "core_thesis": "Separate authentication differences from communication errors in watermark decoding"
@@ -43,7 +43,7 @@
     "root": "/data0/liyanlei/watermark_research",
     "primary_python": "/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/bin/python"
   },
-  "latest_progress_report": "reports/sembind_official_audit_20261110/report.md",
+  "latest_progress_report": "reports/full_imprint_20261111/report.md",
   "independent_progress": {
     "independent_images": 320,
     "source_prompts": 112,
@@ -60,7 +60,7 @@
   },
   "evaluation_policy": "Published standard baselines only; matched absolute genuine detection; no custom attack development",
   "requires_user_resume": false,
-  "active_experiments": 3,
+  "active_experiments": 0,
   "current_findings": {
     "sembind_genuine_non_crop": {
       "accepted": 144,
@@ -116,9 +116,10 @@
     "updates_per_job": 151,
     "checkpoint_images": 128,
     "evaluation_images": 144,
-    "status": "running",
+    "status": "complete",
     "server_root": "/data0/liyanlei/watermark_research/runs/published_imprint_dpm_full_20261110",
-    "completion_mode": "Kernel process-exit events; no periodic polling"
+    "completion_mode": "Kernel process-exit events; no periodic polling",
+    "completed_report": "reports/full_imprint_20261111/report.md"
   },
   "latest_mechanism_report": "reports/blind_geometry_development_20261110/report.md",
   "historical_verifier_audit": {
@@ -149,28 +150,30 @@
     "gpu_used": false,
     "server_status_polled": false
   },
-  "latest_validation_plan": "reports/geometry_calibration_20261110/analysis_plan.md",
+  "latest_validation_plan": "reports/geometry_calibration_20261111/runtime_audit.md",
   "queued_geometry_validation": {
     "status_at_launch": "waiting_for_full_pipeline_exit",
-    "pid": 34472,
+    "pid": 36153,
     "predecessor_supervisor_pid": 22316,
-    "protocol": "protocols/geometry_calibration_20261110.json",
-    "server_root": "/data0/liyanlei/watermark_research/runs/geometry_calibration_20261110",
+    "protocol": "protocols/geometry_calibration_replay_20261111.json",
+    "server_root": "/data0/liyanlei/watermark_research/runs/geometry_calibration_replay_20261111",
     "full_baseline_queries": 144,
     "calibration_sources": 32,
     "calibration_queries": 192,
     "calibration_identity_decisions": 6144,
     "wrong_identity_decisions": 5952,
     "gpu_indices": [
-      7,
-      5,
-      4
+      5
     ],
     "max_concurrent_gpus": 3,
     "runtime_matched": true,
     "decisions_available": false,
     "independent_confirmation_scored": false,
-    "wait_mode": "kernel process-exit event; no periodic polling"
+    "wait_mode": "kernel process-exit event; no periodic polling",
+    "status_at_last_observation": "installing_recorded_runtime",
+    "bridge_gate": 0.001,
+    "prior_bridge_failed": true,
+    "cache_batch": 2
   },
   "cross_pipeline_model_audit": {
     "effective_fp16_unet_equal": true,
@@ -205,5 +208,18 @@
     "archives_deletion_blocked": true,
     "block_reason": "Automatic approval review returned blocked by policy, without further explanation",
     "report": "reports/local_storage_cleanup_20261110/report.md"
+  },
+  "active_experiments_observation": "Prior GPU cache exited at bridge failure; isolated runtime installation is active, new GPU work gated on replay",
+  "full_budget_findings": {
+    "source_count_per_method": 4,
+    "sem_reference_accepted": 4,
+    "gs_reference_accepted": 4,
+    "sem_final_candidate_accepted": 0,
+    "gs_final_candidate_accepted": 4,
+    "sem_all_checkpoints_accepted": 0,
+    "gs_all_checkpoints_accepted": 60,
+    "checkpoints_per_method": 64,
+    "all_five_rules_agree_on": 144,
+    "new_defense_superiority_established": false
   }
 }

@@ -1,6 +1,7 @@
 """A partial or duplicated published trajectory must not enter scoring."""
 import unittest
-from score_frozen_geometry import validate_full_records
+from score_frozen_geometry import validate_full_records,bind_frozen_alpha
+import blind_geometry_verifier as geometry_verifier
 
 
 class CompletionTests(unittest.TestCase):
@@ -26,6 +27,19 @@ class CompletionTests(unittest.TestCase):
     def test_missing_reference_disguised_as_cover(self):
         self.rows[0]['kind']='cover'
         with self.assertRaises(AssertionError):validate_full_records(self.rows)
+
+    def test_frozen_threshold_survives_library_roundoff(self):
+        frozen=5.634806966794078e-12
+        old=geometry_verifier.ALPHA
+        try:
+            self.assertEqual(bind_frozen_alpha(frozen,frozen*(1+1e-15)),frozen)
+            self.assertEqual(geometry_verifier.ALPHA,frozen)
+        finally:geometry_verifier.ALPHA=old
+
+    def test_threshold_change_is_rejected(self):
+        frozen=5.634806966794078e-12
+        for computed in [frozen*1.01,0.,float('nan')]:
+            with self.assertRaises(ValueError):bind_frozen_alpha(frozen,computed)
 
 
 if __name__=='__main__':unittest.main()

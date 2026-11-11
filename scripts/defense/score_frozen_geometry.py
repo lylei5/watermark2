@@ -1,6 +1,7 @@
 """CPU-only scoring of complete published baselines or held-out calibration."""
 import argparse
 import json
+import math
 import os
 os.environ['CUDA_VISIBLE_DEVICES']=''
 from pathlib import Path
@@ -9,9 +10,18 @@ import time
 import numpy as np
 import torch
 
+import blind_geometry_verifier as geometry_verifier
 from blind_geometry_verifier import ALPHA,geometry_bank,query_observations,verify
 from codeword_binding import sembind_mask_bits,bit_accuracy
 from sembind_official_audit import carrier,sha,write
+
+
+def bind_frozen_alpha(frozen,computed):
+    """Keep the protocol value exact; only tolerate numerical library roundoff."""
+    if not math.isfinite(frozen) or frozen<=0 or not math.isclose(computed,frozen,rel_tol=1e-12,abs_tol=0.):
+        raise ValueError('Runtime binomial tail disagrees with the frozen threshold')
+    geometry_verifier.ALPHA=frozen
+    return frozen
 
 
 def validate_full_records(rows):
@@ -37,6 +47,7 @@ def summarize(rows,field):
 
 
 def main():
+    global ALPHA
     p=argparse.ArgumentParser()
     p.add_argument('--run',type=Path,required=True)
     p.add_argument('--mode',choices=['full_baseline','calibration'],required=True)
@@ -66,7 +77,9 @@ def main():
         assert {r['id'] for r in rows}=={r['id'] for r in plan['rows']}
         claims=list(range(16,48))
     identities={task:carrier(args.identity_root,task) for task in claims}
-    poses,grid,support,counts,folds=geometry_bank();assert len(poses)==251 and ALPHA==plan['nominal_alpha']
+    poses,grid,support,counts,folds=geometry_bank();assert len(poses)==251
+    computed_alpha=ALPHA
+    ALPHA=bind_frozen_alpha(plan['nominal_alpha'],computed_alpha)
     output=[];start=time.monotonic()
     for r in rows:
         cache=r['cache'];inv=cache/(r['id']+'.npy');feat=cache/(r['id']+'.npz')
@@ -95,6 +108,8 @@ def main():
         protocol_sha256=sha(args.frozen_protocol),seconds=time.monotonic()-start,
         unique_queries=len(rows),identity_decisions=len(output),new_attacks_run=False,
         independent_confirmation_scored=False,thresholds_changed=False,
+        threshold_audit=dict(runtime_computed_alpha=computed_alpha,applied_alpha=ALPHA,
+            frozen_alpha=plan['nominal_alpha'],relative_roundoff_tolerance=1e-12),
         scope='Frozen detector evaluation; correlated views and identities; no empirical ultra-low FPR claim')
     if args.mode=='calibration':
         result['genuine_by_condition']=summarize([r for r in output if r['kind']=='genuine'],'label')

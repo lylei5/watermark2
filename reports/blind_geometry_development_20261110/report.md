@@ -55,7 +55,7 @@
 | [Lichtenauer 等，SPIE 2003](https://doi.org/10.1117/12.503186) | 几何搜索的误报、图像和密钥依赖 | 搜索校正本身不能作为首创；理想 Bernoulli 模型需谨慎解释 |
 | [SynTag，ICCV 2025](https://openaccess.thecvf.com/content/ICCV2025/html/Fang_SynTag_Enhancing_the_Geometric_Robustness_of_Inversion-based_Generative_Image_Watermarking_ICCV_2025_paper.html) | 用同步标记提高反演式生成水印的几何鲁棒性 | 几何恢复的实际强基线 |
 | [SyncSeal，ICASSP 2026](https://doi.org/10.1109/ICASSP55912.2026.11464560) | 用额外图像水印估计同步变换 | 单纯增加同步器不构成充分创新 |
-| [TAG-WM，预印本](https://arxiv.org/abs/2506.23484) | 定位篡改并进行感知篡改的解码 | 依据可见区域忽略不可靠证据已有相关工作 |
+| [TAG-WM，ICCV 2025](https://doi.org/10.1109/ICCV51701.2025.01553) | 定位篡改并进行感知篡改的解码 | 依据可见区域忽略不可靠证据已有相关工作 |
 | [AnchorMark，2026 预印本](https://arxiv.org/abs/2607.27551) | 潜空间旋转对应与中心同步锚点 | 不能宣称首次利用反演潜空间几何对应 |
 
 本原型直接使用既有内容绑定载体进行几何推断，不额外嵌入同步锚点，适用于已经生成的这批图像。这是实现差异，**尚不是已经确立的原创贡献**。相关书目信息见 [references.bib](references.bib)。
