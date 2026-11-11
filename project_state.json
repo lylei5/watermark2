@@ -60,7 +60,7 @@
   },
   "evaluation_policy": "Published standard baselines only; matched absolute genuine detection; no custom attack development",
   "requires_user_resume": false,
-  "active_experiments": 0,
+  "active_experiments": 3,
   "current_findings": {
     "sembind_genuine_non_crop": {
       "accepted": 144,
@@ -202,7 +202,7 @@
     "python_package_index": "https://pypi.tuna.tsinghua.edu.cn/simple/",
     "automatic_aliyun_fallback": false
   },
-  "active_experiments_observation": "Natural-negative evaluation complete and audited; no next GPU job queued",
+  "active_experiments_observation": "Fresh component and PGID jobs launched; startup observed on GPUs4/7/5; completion not yet observed",
   "full_budget_findings": {
     "source_count_per_method": 4,
     "sem_reference_accepted": 4,
@@ -313,7 +313,7 @@
   "revalidation": {
     "protocol": "protocols/defense_revalidation_20261111.json",
     "plan": "reports/defense_revalidation_20261111/plan.md",
-    "status": "prepared",
+    "status": "running",
     "server_root": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111",
     "masker_sources": 100,
     "masker_observations": 1000,
@@ -326,6 +326,14 @@
       4
     ],
     "historical_outputs_reused": false,
-    "independent_confirmation": false
+    "independent_confirmation": false,
+    "protocol_commit": "c2f928a",
+    "controls_protocol": "protocols/pgid_revalidation_controls_20261111.json",
+    "controls_observations": 40,
+    "supervisor_pids": {
+      "masker": 37791,
+      "pgid0": 37792,
+      "pgid5": 37793
+    }
   }
 }
