@@ -44,7 +44,7 @@
   },
   "evaluation_policy": "Published standard baselines only; matched absolute genuine detection; no custom attack development",
   "requires_user_resume": false,
-  "active_experiments": 2,
+  "active_experiments": 1,
   "current_findings": {
     "sembind_genuine_non_crop": {
       "accepted": 144,
@@ -186,7 +186,7 @@
     "python_package_index": "https://pypi.tuna.tsinghua.edu.cn/simple/",
     "automatic_aliyun_fallback": false
   },
-  "active_experiments_observation": "Fresh masker complete and audited; two full PGID shards running on GPUs7/5; controls queued by kernel exit events",
+  "active_experiments_observation": "PGID main and authentic/cover controls complete; SemBind fresh chain running; published-nine PGID extension prepared",
   "full_budget_findings": {
     "source_count_per_method": 4,
     "sem_reference_accepted": 4,
@@ -297,7 +297,7 @@
   "revalidation": {
     "protocol": "protocols/defense_revalidation_20261111.json",
     "plan": "reports/defense_revalidation_20261111/plan.md",
-    "status": "partially_complete",
+    "status": "complete",
     "server_root": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111",
     "masker_sources": 100,
     "masker_observations": 1000,
@@ -323,12 +323,22 @@
     "masker_status": "complete",
     "masker_official_vs_adapter_max_hamming": 0,
     "masker_audit_passed": true,
-    "pgid_status": "running",
-    "controls_status": "waiting_for_parent",
+    "pgid_status": "complete",
+    "controls_status": "complete",
     "controls_supervisor_pids": {
       "pgid0": 6472,
       "pgid5": 6473
-    }
+    },
+    "pgid_defended_accepted": [
+      0,
+      0,
+      0
+    ],
+    "pgid_n": 10,
+    "pgid_genuine_after_defense_accepted": 10,
+    "pgid_genuine_n": 10,
+    "pgid_cover_after_defense_accepted": 0,
+    "pgid_cover_n": 10
   },
   "historical_empirical_findings": {
     "gs_imprint30": {
@@ -345,5 +355,30 @@
     },
     "semantic_records": 460,
     "cpu_gpu_equal_records": 120
+  },
+  "sembind_chain_revalidation": {
+    "status": "running",
+    "protocol": "protocols/sembind_chain_revalidation_20261111.json",
+    "plan": "reports/sembind_chain_revalidation_20261111/plan.md",
+    "gpu": 4,
+    "pid": 25076,
+    "sources": 4,
+    "inversion_records": 18,
+    "generation_steps": 50,
+    "inversion_steps": 50,
+    "decoder_optimization_steps": 100,
+    "historical_outputs_reused": false
+  },
+  "pgid_published_revalidation": {
+    "status": "prepared",
+    "protocol": "protocols/pgid_published_revalidation_20261112.json",
+    "plan": "reports/pgid_published_revalidation_20261112/plan.md",
+    "gpu_indices": [
+      7,
+      5
+    ],
+    "sources": 10,
+    "queries": 90,
+    "decisions": 180
   }
 }

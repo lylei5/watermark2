@@ -1,0 +1,128 @@
+{
+  "freeze_time_utc": "2026-11-11T16:09:41.321019+00:00",
+  "parent_run": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111",
+  "parent_protocol_sha256": "da5e861164c6ebda532f017a62c506f6f55a0d71cf9010fbc1d810890f424ab6",
+  "inputs": [
+    {
+      "index": 0,
+      "image": "pgid0/attack=forgery/watermarked_images/image_000.png",
+      "sha256": "b89c2dde3a0b6f4ff386c36d9aa47f22956d16cfe1456c9fe2f998157c8c54f6"
+    },
+    {
+      "index": 1,
+      "image": "pgid0/attack=forgery/watermarked_images/image_001.png",
+      "sha256": "94328f3c4e2f1261203f8f6e4ffcae9cb3b3a9fafb6b60287650eac859b40db6"
+    },
+    {
+      "index": 2,
+      "image": "pgid0/attack=forgery/watermarked_images/image_002.png",
+      "sha256": "d5fbac2bc3c6222544da0d480949ea7f07843735fdf3ebbd089a5c8afe027d8f"
+    },
+    {
+      "index": 3,
+      "image": "pgid0/attack=forgery/watermarked_images/image_003.png",
+      "sha256": "7d304e87186be51c72185621f7ce0d89db45dab17bbf3802d74691beefa4fb02"
+    },
+    {
+      "index": 4,
+      "image": "pgid0/attack=forgery/watermarked_images/image_004.png",
+      "sha256": "bdbbf997c102c21e489f1321f1fd00ca84e0a7d70aa794362803626f562cd427"
+    },
+    {
+      "index": 5,
+      "image": "pgid5/attack=forgery/watermarked_images/image_005.png",
+      "sha256": "b213dd66cc5e019b7e0abc6d6eab303b8c6aad7c48a1a46d03ca58c2d44b1755"
+    },
+    {
+      "index": 6,
+      "image": "pgid5/attack=forgery/watermarked_images/image_006.png",
+      "sha256": "c957432d199a1129b3eec4a50b72d62335adcb301520cc18a7706075d59abbe8"
+    },
+    {
+      "index": 7,
+      "image": "pgid5/attack=forgery/watermarked_images/image_007.png",
+      "sha256": "d1ddfdba8afaec4bdee8ffda740235a3750dd8647efc928cf196adb7c04948b1"
+    },
+    {
+      "index": 8,
+      "image": "pgid5/attack=forgery/watermarked_images/image_008.png",
+      "sha256": "451305b6b844d8e082cd6a3baabe1b134e170dff5898f65ff2d50dfd8cdd9604"
+    },
+    {
+      "index": 9,
+      "image": "pgid5/attack=forgery/watermarked_images/image_009.png",
+      "sha256": "204fffeb08f2c2299a7c03c3d9435c15f77809936864a3c219ec783040aca231"
+    }
+  ],
+  "conditions": [
+    {
+      "name": "random_crop_ratio",
+      "value": 0.6
+    },
+    {
+      "name": "random_drop_ratio",
+      "value": 0.8
+    },
+    {
+      "name": "brightness_factor",
+      "value": 6
+    },
+    {
+      "name": "jpeg_ratio",
+      "value": 25
+    },
+    {
+      "name": "gaussian_blur_r",
+      "value": 4
+    },
+    {
+      "name": "gaussian_std",
+      "value": 0.05
+    },
+    {
+      "name": "median_blur_k",
+      "value": 7
+    },
+    {
+      "name": "sp_prob",
+      "value": 0.05
+    },
+    {
+      "name": "resize_ratio",
+      "value": 0.25
+    }
+  ],
+  "seed_base": 2026111200,
+  "script_sha256": "18c02ba8bae885d2efc346e766274c19ead485662fe11429ee66a550296be5ab",
+  "distortion_source_sha256": "aa0dd86b4543bde39983e5b7ec8fd487fba476d7a435f83308891e187ee93fbb",
+  "model_revision": "0094d483a120f3f33dafbd187ea4aa60d10de75c",
+  "threshold": 0.70703125,
+  "operator": ">",
+  "target_steps": 50,
+  "defense_steps": 50,
+  "stopping_timestep": 15,
+  "num_skip_inversion": 3,
+  "guidance_strength": 0.001,
+  "source_count": 10,
+  "distorted_images": 90,
+  "decisions": 180,
+  "gpu_indices": [
+    7,
+    5
+  ],
+  "global_max_gpus": 3,
+  "purpose": "Measure standard-versus-PGID genuine retention across all nine unchanged published Gaussian Shading conditions",
+  "source_repository": "https://github.com/bsmhmmlf/Gaussian-Shading",
+  "source_commit": "09c678fadc7545acf7be12647ddf2a5e66f6a9dc",
+  "paper": "https://openaccess.thecvf.com/content/CVPR2024/html/Yang_Gaussian_Shading_Provable_Performance-Lossless_Image_Watermarking_for_Diffusion_Models_CVPR_2024_paper.html",
+  "novel_or_modified_attacks": false,
+  "independent_confirmation": false,
+  "clean_scores_previously_observed": true,
+  "distorted_scores_read_before_freeze": false,
+  "limitations": [
+    "Same10 freshly generated development references as the completed PGID run",
+    "Published transformations may change visible content; no independent semantic annotations",
+    "No threshold tuning and no selection of conditions or images based on their scores",
+    "No direct ranking against SemBind from unequal pipelines or source cohorts"
+  ]
+}

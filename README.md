@@ -8,7 +8,7 @@
 
 ## 当前进展
 
-[关键结论重验](reports/defense_revalidation_20261111/report.md)已完成100张自然图的SemBind组件重新推理：原图及官方九条件共1000次比对，官方与封装最大位差0，4950条跨图距离全部归档。PGID官方10例的完整151次更新正在GPU7、5运行，正常图对照退出后自动接续。下列此前结果保留作历史研究记录，关键结论须经本轮重验后作为后续研究依据。
+[关键结论重验](reports/defense_revalidation_20261111/report.md)已完成：SemBind组件1000次比对最大位差0；PGID官方10例完整151次更新后，各检查点伪造接受均0/10，正常图经PGID后仍10/10通过，未加水印封面0/10接受。正在推进[SemBind生成与完整反演链路](reports/sembind_chain_revalidation_20261111/plan.md)及[PGID官方九条件](reports/pgid_published_revalidation_20261112/plan.md)。下列此前结果保留作历史研究记录，关键结论须经重验后作为后续研究依据。
 
 [完整预算 Imprint 评测](reports/full_imprint_20261111/report.md)已完成：8 个案例各151次更新，全部144张图完成验证。最终候选 SemBind 项目适配器接受0/4、GS接受4/4；五种冻结判定规则在全部图上完全一致，几何验证器没有额外防伪收益。
 
