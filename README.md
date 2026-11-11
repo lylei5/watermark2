@@ -10,7 +10,9 @@
 
 [32来源校准](reports/geometry_calibration_20261111/completed/report.md)与[64来源独立确认](reports/geometry_confirmation_20261111/report.md)均已完成。确认集384张合法查询：默认BA通过319张，全组几何验证通过382张，分组版本通过381张；三者在24,192次错误身份判决中均为0次接受。收益来自中心裁剪后放大的恢复，不能据此宣称新增防伪收益或SOTA。
 
-[Gaussian Shading官方九条件评测](reports/gs_published_conditions_20261111/plan.md)已接续启动：同一组64来源的576张查询，完整DDIM50及36,864次身份判决。固定官方代码和九项参数，未创造或改进攻击；GPU7、5执行，完成后自动评分。共享来源与前一轮分别报告。
+[Gaussian Shading官方九条件评测](reports/gs_published_conditions_20261111/report.md)也已完成：默认554/576、全组几何552/576、分组529/576，均0/36,288错误身份接受。本轮几何搜索没有额外收益；官方填黑裁剪与中心裁剪后放大分别报告，不能合并为普适鲁棒性提升。
+
+下一项为[100张未加水印自然图评测](reports/unwatermarked_validation_20261111/plan.md)：协议已冻结，针对64身份报告6,400次判决及按查询误接受，补充不同负例类型的证据。
 
 ## 当前可核查结果
 

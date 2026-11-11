@@ -30,13 +30,17 @@ All-fit failures: task108 JPEG50 andcrop90; split-fit additionally misses itsJPE
 
 Confirmation protocol was published in commit1dee4bc before scoring. Original execution sources are preserved in source_snapshots when generic orchestration was later extended to another query count. Audits validate full50-step caches, source/input/result hashes, complete identity combinations and threshold decisions. No new attacks were created or improved.
 
-## Active published-condition benchmark
+## Completed published-condition benchmark
 
 Read reports/gs_published_conditions_20261111/plan.md. Official Gaussian Shading CVPR2024 image_distortion at pinned commit09c678fadc7545acf7be12647ddf2a5e66f6a9dc, unchanged function and all9 parameter settings from official scripts/run.sh.64 SemBind adapter clean images ×9 =576 queries;64 identities each =36864 decisions,36288 wrong. It shares sources with the six-condition confirmation, so is not a second independent source cohort.
 
 Protocol published in commit8b7246d before reading the six-condition confirmation scores. No changed verifier or BA thresholds. Official crop zero-pads outside a random retained window; this is different from crop-and-resize. No composition or optimization of published distortions. This reproduces an official distortion component on the project DDIM adapter, not the full Gaussian Shading system.
 
-Server run: runs/gs_published_conditions_20261111. Supervisor45448, queue45441. Last observation: caching_confirmation on GPUs7 and5, three shards scheduled, complete DDIM50/batch2. Child exit triggers automatic CPU scoring. Do not launch a duplicate or poll repeatedly; use complete.json/failed.json and event-driven follow-up. GPU4 was occupied by others.
+Server run: runs/gs_published_conditions_20261111 completed. Default554/576, identity-only556/576, identity with251 penalty552/576, all-fit552/576, split-fit529/576. All five0/36288 wrong identities. All-fit restored0 and lost2 default accepts (task084 officialcrop0.6, task097 salt-and-pepper0.05). Identity-penalty and all-fit agree on all36864 decisions. Source-cluster paired gain−0.35 percentage points,95% interval−0.87 to0. Read reports/gs_published_conditions_20261111/report.md. No universal robustness gain is supported.
+
+## Prepared natural-negative evaluation
+
+Protocol protocols/unwatermarked_validation_20261111.json is frozen: all100 existing natural RGB512 COCO images ×64 identities =6400 decisions, completeDDIM50/batch2, unchanged methods and thresholds. Existing development assets, not independent confirmation. No generated attacks or new distortions. Full row/input/source hashes recorded. Plan: reports/unwatermarked_validation_20261111/plan.md. Execution root runs/unwatermarked_validation_20261111. Check status/complete/failed once when needed; do not duplicate launch.
 
 ## Numerical compatibility evidence
 

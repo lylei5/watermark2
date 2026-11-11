@@ -10,8 +10,8 @@ These rules apply to this repository and `/data0/liyanlei/watermark_research` on
 ## Objective and current state
 
 - Develop a publishable defense with benefits at matched absolute legitimate-image detection rates, documented image quality and computation budgets.
-- Read `reports/geometry_confirmation_20261111/report.md` for completed independent confirmation, `reports/geometry_calibration_20261111/completed/report.md` for calibration, and `reports/full_imprint_20261111/report.md` for full-budget forgery results. The active official nine-condition benchmark is documented in `reports/gs_published_conditions_20261111/plan.md`; consult `project_state.json` for execution state.
-- Frozen all-fit geometry accepted382/384 genuine queries versus default319/384, both with0/24,192 wrong-identity accepts. Added forgery rejection and SOTA remain unproven. The confirmation set is consumed; future method changes require new independent validation. The nine-condition benchmark shares these64 sources and must be reported separately.
+- Read `reports/geometry_confirmation_20261111/report.md` for completed independent confirmation, `reports/geometry_calibration_20261111/completed/report.md` for calibration, and `reports/full_imprint_20261111/report.md` for full-budget forgery results. The completed official nine-condition benchmark is documented in `reports/gs_published_conditions_20261111/report.md`, and the next natural-negative evaluation in `reports/unwatermarked_validation_20261111/plan.md`; consult `project_state.json` for execution state.
+- Frozen all-fit geometry accepted382/384 genuine queries versus default319/384, both with0/24,192 wrong-identity accepts. Added forgery rejection and SOTA remain unproven. The confirmation set is consumed; future method changes require new independent validation. The nine-condition benchmark shares these64 sources: default554/576, all-fit552/576, split-fit529/576; it supplies no additional robustness gain and must be reported separately.
 
 ## Evaluation scope
 

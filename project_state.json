@@ -33,7 +33,7 @@
   "required_validation": [
     "Native end-to-end SemBind, GaussMarker and ROAR matched comparisons",
     "Additional forgery rejection benefit over simple calibrated controls",
-    "Complete official distortion benchmark beyond center crop-resize",
+    "Broader published geometric conditions and same-condition native baseline comparison",
     "Image-quality and computation-budget comparisons",
     "Broader empirical false-positive validation; zero correlated wrong-key observations do not establish ultra-low FPR",
     "New independent sources for any future method changes"
@@ -43,7 +43,7 @@
     "root": "/data0/liyanlei/watermark_research",
     "primary_python": "/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/bin/python"
   },
-  "latest_progress_report": "reports/geometry_confirmation_20261111/report.md",
+  "latest_progress_report": "reports/gs_published_conditions_20261111/report.md",
   "independent_progress": {
     "independent_images": 320,
     "source_prompts": 112,
@@ -60,7 +60,7 @@
   },
   "evaluation_policy": "Published standard baselines only; matched absolute genuine detection; no custom attack development",
   "requires_user_resume": false,
-  "active_experiments": 1,
+  "active_experiments": 0,
   "current_findings": {
     "sembind_genuine_non_crop": {
       "accepted": 144,
@@ -150,7 +150,7 @@
     "gpu_used": false,
     "server_status_polled": false
   },
-  "latest_validation_plan": "reports/gs_published_conditions_20261111/plan.md",
+  "latest_validation_plan": "reports/unwatermarked_validation_20261111/plan.md",
   "queued_geometry_validation": {
     "status_at_launch": "installing_recorded_runtime",
     "pid": 44097,
@@ -200,7 +200,7 @@
     ],
     "max_concurrent_gpus": 3
   },
-  "active_experiments_observation": "Official Gaussian Shading nine published distortions: 576 queries on GPUs7/5; complete DDIM50, frozen verifier and BA controls; automatic scoring after cache workers exit",
+  "active_experiments_observation": "Official nine-condition scoring and audit completed; natural-negative protocol prepared before launch",
   "full_budget_findings": {
     "source_count_per_method": 4,
     "sem_reference_accepted": 4,
@@ -237,7 +237,7 @@
     "report": "reports/geometry_confirmation_20261111/report.md"
   },
   "published_gs_conditions": {
-    "status_at_last_observation": "caching_confirmation",
+    "status_at_last_observation": "complete",
     "sources": 64,
     "queries": 576,
     "identity_decisions": 36864,
@@ -251,6 +251,20 @@
     "supervisor_pid": 45448,
     "completion_mode": "child process-exit events then automatic CPU scoring",
     "server_root": "/data0/liyanlei/watermark_research/runs/gs_published_conditions_20261111",
-    "novel_or_modified_attacks": false
+    "novel_or_modified_attacks": false,
+    "default_accepted": 554,
+    "identity_accepted": 556,
+    "identity_penalty_accepted": 552,
+    "all_fit_accepted": 552,
+    "split_fit_accepted": 529,
+    "wrong_identity_accepted": 0,
+    "report": "reports/gs_published_conditions_20261111/report.md"
+  },
+  "unwatermarked_validation": {
+    "status": "prepared",
+    "queries": 100,
+    "identity_decisions": 6400,
+    "independent_confirmation": false,
+    "protocol": "protocols/unwatermarked_validation_20261111.json"
   }
 }
