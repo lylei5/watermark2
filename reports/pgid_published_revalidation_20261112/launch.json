@@ -1,0 +1,30 @@
+{
+  "protocol_commit": "d8bca79",
+  "shards": {
+    "0": {
+      "pid": 46597,
+      "gpu": 7,
+      "command": [
+        "/data0/liyanlei/watermark_research/envs/pgid_revalidation_py310/bin/python",
+        "/data0/liyanlei/watermark_research/runs/pgid_published_revalidation_20261112/revalidate_pgid_published.py",
+        "--run",
+        "/data0/liyanlei/watermark_research/runs/pgid_published_revalidation_20261112",
+        "--shard",
+        "0"
+      ]
+    },
+    "1": {
+      "pid": 46598,
+      "gpu": 5,
+      "command": [
+        "/data0/liyanlei/watermark_research/envs/pgid_revalidation_py310/bin/python",
+        "/data0/liyanlei/watermark_research/runs/pgid_published_revalidation_20261112/revalidate_pgid_published.py",
+        "--run",
+        "/data0/liyanlei/watermark_research/runs/pgid_published_revalidation_20261112",
+        "--shard",
+        "1"
+      ]
+    }
+  },
+  "no_periodic_polling": true
+}
