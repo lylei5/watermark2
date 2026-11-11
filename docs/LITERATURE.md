@@ -28,6 +28,11 @@
 | Gaussian Shading++ | [Gaussian Shading++: Rethinking the Realistic Deployment Challenge of Performance-Lossless Image Watermark for Diffusion Models，2504.15026](https://arxiv.org/abs/2504.15026) | 已核对arXiv题名与摘要；双通道、软译码和公钥签名，不能只凭摘要推断其失效条件。 |
 | SLICE | [SLICE: Semantic Latent Injection via Compartmentalized Embedding for Image Watermarking，2603.12749](https://arxiv.org/abs/2603.12749) | [BMVC2026官方日程](https://bmvc2026.bmva.org/programme/tuesday/)列出论文；日程收录不等于本项目已完成实现审计。 |
 
+## 与当前防御假设有关的补充核查
+
+- [Heteroscedastic watermark detector in the contourlet domain](https://doi.org/10.1049/iet-cvi.2018.5254)，Maryam Amirmazlaghani，IET Computer Vision 13(3):249–260，2019。条件异方差统计检测已有先例，不能将非均匀信道或软加权单独作为创新。
+- [IRIS: Visual-Semantic Binding for Forgery-Resistant Watermarking of Diffusion Images](https://arxiv.org/abs/2608.03539)：v1发表于2026-08-04；当前v2记录注明2026-08-26撤回、Substantial revisions。v1涉及最终图内容绑定与末期轨迹注入。仅作为相关公开披露及查新边界，不当作经确认的有效防御结果或攻击基线。
+
 ## 本项目的证据边界
 
 - 官方masker在有限样本上的逐位一致，只核验该组件；SemBind项目适配器不应标为完整原生复现。见[组件核验](../reports/repro_sembind_masker_20261103/report.md)、[当前完整预算实验](../reports/full_imprint_20261111/report.md)。
