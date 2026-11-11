@@ -8,7 +8,7 @@
 
 ## 当前进展
 
-[关键结论重验](reports/defense_revalidation_20261111/report.md)已完成：SemBind组件1000次比对最大位差0；PGID官方10例完整151次更新后，各检查点伪造接受均0/10，正常图经PGID后仍10/10通过，未加水印封面0/10接受。正在推进[SemBind生成与完整反演链路](reports/sembind_chain_revalidation_20261111/plan.md)及[PGID官方九条件](reports/pgid_published_revalidation_20261112/plan.md)。下列此前结果保留作历史研究记录，关键结论须经重验后作为后续研究依据。
+[关键结论重验](reports/defense_revalidation_20261111/report.md)已完成。新增[PGID 九条件结果](reports/pgid_published_revalidation_20261112/report.md)：标准检测90/90、PGID后61/90；[SemBind/GS完整链路](reports/sembind_chain_revalidation_20261111/report.md)的18条干净图反演记录全部通过，所有消息分数由潜变量独立复核。下一轮[配对九条件及完整Imprint任务链](reports/sembind_published_revalidation_20261112/plan.md)已冻结：72个查询、144次完整设置反演，审计通过后衔接151次更新基线。均为小规模开发集结果，尚未建立优于SemBind的结论。下列此前结果保留作历史研究记录，关键结论须经重验后作为后续研究依据。
 
 [完整预算 Imprint 评测](reports/full_imprint_20261111/report.md)已完成：8 个案例各151次更新，全部144张图完成验证。最终候选 SemBind 项目适配器接受0/4、GS接受4/4；五种冻结判定规则在全部图上完全一致，几何验证器没有额外防伪收益。
 

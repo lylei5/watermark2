@@ -1,0 +1,731 @@
+{
+  "freeze_time_utc": "2026-11-11T17:12:22.555928+00:00",
+  "scope": "Fresh paired SemBind project-adapter/GS, four development identities and nine unchanged published GS distortions",
+  "parent_run": "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111",
+  "parent_protocol_sha256": "54bcbb5ce8cf979bc5f73dbfe5edee96790d37eb645ad6f7f2f2243fd0900683",
+  "source_sha256": {
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/official/inversion.py": "dcf0dd6e9b5af1e64c24fe5c3c16473be54f1936c44da096f85b0437bf2fb14b",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/official/model.py": "ee22217258acd3c86899ce616cc5d7dbb6d14948208145a1daa7ace0c1943da3",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/official/src/optim_utils.py": "d96765a945a6d26514799bc6d8da0afc74f63a3482ff02e4ebd9391eb0dde344",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/official/src/modified_stable_diffusion.py": "fc4ac3795d51821c0a7a10fb57c28ecb414cc47e4af5629e6bfdaaccdc709ba2",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/official/src/inverse_stable_diffusion.py": "64027a1a974bb018d8569fa670802996e6ed0a87ba94f9151f574dd33326ef17",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/scripts/codeword_binding.py": "f49aa1342031a1c54be17bb4153b79150e5f70903719275c37329bf093186c59",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/scripts/sembind_official_audit.py": "52fde572e2f9ed0f0ccb2774e03185c223400886b38cabf83ee1c401ecb17f03",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/scripts/sembind.py": "4ef939f5559403bb033e0d1650930b113cce050b82861c886522074ada39a3cf",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/run_sembind_chain_revalidation.py": "e8a797c3c618a9addfb344ca9a7025ecfcc0b3666225d772b6af9d2789ede181",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/scheduling_dpmsolver_multistep.py": "c0902d1446e51c33be9b0deb5b9a9e2694e7930620a95d5ee8bef024607ed5ff",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/paths.json": "a5d30553bd57ed22902a1e63bffb8ffff2b0f8363e7fe8603c478627f37592ac",
+    "/data0/liyanlei/watermark_research/runs/sembind_published_revalidation_20261112/finish_sembind_published.py": "aeed98d963258f562be32e8cd8737da66531a2aa7312bea5e56fd4479ef2f08f",
+    "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/gs_image_utils.py": "aa0dd86b4543bde39983e5b7ec8fd487fba476d7a435f83308891e187ee93fbb"
+  },
+  "input_sha256": {
+    "/data0/liyanlei/watermark_research/models/sembind/sembind_masker.pth": "85f98477bc5c3ae37d429b527d852384fefe70a4c69b25b483759635f3e9ebfd",
+    "/data0/liyanlei/watermark_research/models/sembind/dinov2-giant/config.json": "15d2e68b709674c0eb9bb5cc8b73e57ebe9a169a425bef224f46ae10053806a2",
+    "/data0/liyanlei/watermark_research/models/sembind/dinov2-giant/.gitattributes": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361",
+    "/data0/liyanlei/watermark_research/models/sembind/dinov2-giant/model.safetensors": "917d3c470db999d32a312f8542149be91c7cbac61ee8fb4b67ae3d82b79ce21f",
+    "/data0/liyanlei/watermark_research/models/sembind/dinov2-giant/preprocessor_config.json": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
+    "/data0/liyanlei/watermark_research/models/sembind/dinov2-giant/README.md": "129a5b66134a5739a3c35033483ca00427f497ce5052d8cf8e2446dac19eec1b",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/model_index.json": "518553e098fdaa4153d9a92139e344e44f53bb329c22f383293e3099c4f1bad2",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/scheduler/scheduler_config.json": "11ac5627d7df0fa344b875c4b5722b1767a8a2aa1684c2cf8b4d614300127234",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/vae/config.json": "424117cb534ce03497c41305ed868980123917b2b6abba4bbaa615e968772903",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/vae/diffusion_pytorch_model.safetensors": "a1d993488569e928462932c8c38a0760b874d166399b14414135bd9c42df5815",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/text_encoder/config.json": "7e33bfc475f6cf76e69b28b101993ca834d1f22ff4d35caefde32d63d4f42fba",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/text_encoder/model.safetensors": "cce6febb0b6d876ee5eb24af35e27e764eb4f9b1d0b7c026c8c3333d4cfc916c",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/tokenizer/merges.txt": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/tokenizer/tokenizer_config.json": "d562b18a0c6d32a168fce3d7a342fce64579ebacffb98fb71b0affc494fc32d8",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/tokenizer/special_tokens_map.json": "f118ab3a983206e4f32583448de6bd6aae4ee21869135cef1f5848a753cdaab6",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/tokenizer/vocab.json": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/feature_extractor/preprocessor_config.json": "2a1da83b5e1032aaeef397552ddb408dca0d8cd1dc58f61bf6abf38d6f33a0a2",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/unet/config.json": "ce0c6d379e3b1d3e1f79338de70c80a1e36f17a6372439a8249b6fb0dfa1b608",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/unet/diffusion_pytorch_model.safetensors": "6dfae3e5f7d459b50f4b0850ead945972c75bb0e1897628933e169eb43974214",
+    "/data0/liyanlei/watermark_research/private_eval/sembind_chain_revalidation_20261111/generation_plan.json": "90c0f3c801c7ddb1207b2aa39ba7fd4c762ce62209f32741a2cd875598921226",
+    "/data0/liyanlei/watermark_research/private_eval/sembind_chain_revalidation_20261111/private/002.json": "c2c4f1c053036841db17583286a389c0bf0912acc81dc5005db8366a9113d84e",
+    "/data0/liyanlei/watermark_research/private_eval/sembind_chain_revalidation_20261111/private/000.json": "f00441892c58d5a21493ff7c5608dfab915d6b26eddebdd0770e499e2e37a4b4",
+    "/data0/liyanlei/watermark_research/private_eval/sembind_chain_revalidation_20261111/private/003.json": "66ed17e2f755f949ff1b71e7187809ab729208745670873647dd0ed1a5243d35",
+    "/data0/liyanlei/watermark_research/private_eval/sembind_chain_revalidation_20261111/private/001.json": "45b23dd80eb6c62b85e29c3d7714f19d439b9fc6425931974e2966b113fcfa53",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/output/images/000_gs.png": "cf2fd58f5072ab9e4bd43def8c1e8a2675d9b32c29a0a7fe23e505f80a0899ee",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/output/images/001_sembind.png": "35dd3b7fda980684c8c8173e9d156eb8701ffff2691e3cac5cc3e6791a334128",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/output/images/003_aux.png": "e7bbd45fafc03a9eb37700996937a117486ce947373b712673ce614795b0e763",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/output/images/000_aux.png": "1f2ba3867756134a492f372f57ca4d2798155aaae383a7d724466c898f069372",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/output/images/001_aux.png": "4f02db601f6f2a1e6fa454a3cff22abe0ed35a36092a408d7ed872babf8f0cc7",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/output/images/002_gs.png": "faa1152886b887a6ed48afeedcaab56df19ff07ee371e4205fe5a4e3f7d9a7ed",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/output/images/000_sembind.png": "cb53f893766102bbad5dd6d55a2fe4709a9abbc79f9fd8444f12519f960941fc",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/output/images/001_gs.png": "b4c409863a1de8e3e7f43c39c4c8aa2e508c86c7ff7d8ee8d813ab457c18f246",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/output/images/003_gs.png": "b4a0f3608e7b1e7fea63fbe304f6afbf3891cdd6a58c357ba36ec4a3943c630c",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/output/images/002_aux.png": "4fbd2149505fc2881e151e2cb7fda2c00a90db613dddea4c4e73a29a191d3bd6",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/output/images/002_sembind.png": "7830b309713d6dc9e415b4bd0218ba7c4ac2467e052cfd36aaee8783cbe8a858",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/output/images/003_sembind.png": "4f78ecb9d65ec701b1bc09ddd9a0b9ce562ee224bb248aa6952d29d3101b53e6",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/output/codes/002_gs.npz": "a17239664d9ab21364fbc1f3818284722c0851f9150f08212de64c155df9b6d0",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/output/codes/001_aux.npz": "42b8c6cdcbcd61c18a335a3cf7f51b9f43cf0c61bf3dd0d0bf7f23c231ca96c3",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/output/codes/001_gs.npz": "40525d9b97ebb47a4abb6e4c179c1ca0dc5c73c6e1dda40bda859e521285546b",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/output/codes/000_sembind.npz": "a0c9ff00bd6e6e6009881cbeb3f1ea3a01435bcd65ca9a61f30b741ed9abd996",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/output/codes/002_sembind.npz": "8d6881b74289007163f30719b75c1e7c92475ffd7a6a8365d734e08db05f5075",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/output/codes/003_sembind.npz": "2eba9745a458809617bdf8980b843cfc65c5fe594a34508a24e5d6c51b0af33d",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/output/codes/001_sembind.npz": "335695090083530994b72a03aba7c9d7a06c21dadfad24e73864445346e807a7",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/output/codes/000_gs.npz": "47200b869278a0864f14c8756e07858f6b4c0e127f61b3a29b1609016a455e22",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/output/codes/003_aux.npz": "595835b847a2c9c5a7e24505665d8c6fb95d352fe0ab6a6299bf6a999ce91c5d",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/output/codes/000_aux.npz": "c6597bbfe199b69300fa756f11645a4233be89a6f2faa468527b7b5cddeb0a78",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/output/codes/002_aux.npz": "4ee35a7711f134f835937a41951c102afc038de6452291e842bd2621c6b466b6",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/output/codes/003_gs.npz": "82369dd8aabd148422d68f29d3dbfcc9ae456bf4ed847992bffcdc321e013006"
+  },
+  "script_sha256": "d66df6c4b043fbe681a0faa38aeb631dc9827d3e97209fa0547db6f94f4a3a72",
+  "finalizer_sha256": "aeed98d963258f562be32e8cd8737da66531a2aa7312bea5e56fd4479ef2f08f",
+  "distortion_source": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/gs_image_utils.py",
+  "distortion_commit": "09c678fadc7545acf7be12647ddf2a5e66f6a9dc",
+  "conditions": [
+    {
+      "name": "random_crop_ratio",
+      "value": 0.6
+    },
+    {
+      "name": "random_drop_ratio",
+      "value": 0.8
+    },
+    {
+      "name": "brightness_factor",
+      "value": 6
+    },
+    {
+      "name": "jpeg_ratio",
+      "value": 25
+    },
+    {
+      "name": "gaussian_blur_r",
+      "value": 4
+    },
+    {
+      "name": "gaussian_std",
+      "value": 0.05
+    },
+    {
+      "name": "median_blur_k",
+      "value": 7
+    },
+    {
+      "name": "sp_prob",
+      "value": 0.05
+    },
+    {
+      "name": "resize_ratio",
+      "value": 0.25
+    }
+  ],
+  "jobs": [
+    {
+      "id": "000_sembind_00",
+      "task": 0,
+      "method": "sembind",
+      "condition": "random_crop_ratio",
+      "value": 0.6,
+      "seed": 2026111200
+    },
+    {
+      "id": "000_sembind_01",
+      "task": 0,
+      "method": "sembind",
+      "condition": "random_drop_ratio",
+      "value": 0.8,
+      "seed": 2026111201
+    },
+    {
+      "id": "000_sembind_02",
+      "task": 0,
+      "method": "sembind",
+      "condition": "brightness_factor",
+      "value": 6,
+      "seed": 2026111202
+    },
+    {
+      "id": "000_sembind_03",
+      "task": 0,
+      "method": "sembind",
+      "condition": "jpeg_ratio",
+      "value": 25,
+      "seed": 2026111203
+    },
+    {
+      "id": "000_sembind_04",
+      "task": 0,
+      "method": "sembind",
+      "condition": "gaussian_blur_r",
+      "value": 4,
+      "seed": 2026111204
+    },
+    {
+      "id": "000_sembind_05",
+      "task": 0,
+      "method": "sembind",
+      "condition": "gaussian_std",
+      "value": 0.05,
+      "seed": 2026111205
+    },
+    {
+      "id": "000_sembind_06",
+      "task": 0,
+      "method": "sembind",
+      "condition": "median_blur_k",
+      "value": 7,
+      "seed": 2026111206
+    },
+    {
+      "id": "000_sembind_07",
+      "task": 0,
+      "method": "sembind",
+      "condition": "sp_prob",
+      "value": 0.05,
+      "seed": 2026111207
+    },
+    {
+      "id": "000_sembind_08",
+      "task": 0,
+      "method": "sembind",
+      "condition": "resize_ratio",
+      "value": 0.25,
+      "seed": 2026111208
+    },
+    {
+      "id": "000_gs_00",
+      "task": 0,
+      "method": "gs",
+      "condition": "random_crop_ratio",
+      "value": 0.6,
+      "seed": 2026111200
+    },
+    {
+      "id": "000_gs_01",
+      "task": 0,
+      "method": "gs",
+      "condition": "random_drop_ratio",
+      "value": 0.8,
+      "seed": 2026111201
+    },
+    {
+      "id": "000_gs_02",
+      "task": 0,
+      "method": "gs",
+      "condition": "brightness_factor",
+      "value": 6,
+      "seed": 2026111202
+    },
+    {
+      "id": "000_gs_03",
+      "task": 0,
+      "method": "gs",
+      "condition": "jpeg_ratio",
+      "value": 25,
+      "seed": 2026111203
+    },
+    {
+      "id": "000_gs_04",
+      "task": 0,
+      "method": "gs",
+      "condition": "gaussian_blur_r",
+      "value": 4,
+      "seed": 2026111204
+    },
+    {
+      "id": "000_gs_05",
+      "task": 0,
+      "method": "gs",
+      "condition": "gaussian_std",
+      "value": 0.05,
+      "seed": 2026111205
+    },
+    {
+      "id": "000_gs_06",
+      "task": 0,
+      "method": "gs",
+      "condition": "median_blur_k",
+      "value": 7,
+      "seed": 2026111206
+    },
+    {
+      "id": "000_gs_07",
+      "task": 0,
+      "method": "gs",
+      "condition": "sp_prob",
+      "value": 0.05,
+      "seed": 2026111207
+    },
+    {
+      "id": "000_gs_08",
+      "task": 0,
+      "method": "gs",
+      "condition": "resize_ratio",
+      "value": 0.25,
+      "seed": 2026111208
+    },
+    {
+      "id": "001_sembind_00",
+      "task": 1,
+      "method": "sembind",
+      "condition": "random_crop_ratio",
+      "value": 0.6,
+      "seed": 2026111300
+    },
+    {
+      "id": "001_sembind_01",
+      "task": 1,
+      "method": "sembind",
+      "condition": "random_drop_ratio",
+      "value": 0.8,
+      "seed": 2026111301
+    },
+    {
+      "id": "001_sembind_02",
+      "task": 1,
+      "method": "sembind",
+      "condition": "brightness_factor",
+      "value": 6,
+      "seed": 2026111302
+    },
+    {
+      "id": "001_sembind_03",
+      "task": 1,
+      "method": "sembind",
+      "condition": "jpeg_ratio",
+      "value": 25,
+      "seed": 2026111303
+    },
+    {
+      "id": "001_sembind_04",
+      "task": 1,
+      "method": "sembind",
+      "condition": "gaussian_blur_r",
+      "value": 4,
+      "seed": 2026111304
+    },
+    {
+      "id": "001_sembind_05",
+      "task": 1,
+      "method": "sembind",
+      "condition": "gaussian_std",
+      "value": 0.05,
+      "seed": 2026111305
+    },
+    {
+      "id": "001_sembind_06",
+      "task": 1,
+      "method": "sembind",
+      "condition": "median_blur_k",
+      "value": 7,
+      "seed": 2026111306
+    },
+    {
+      "id": "001_sembind_07",
+      "task": 1,
+      "method": "sembind",
+      "condition": "sp_prob",
+      "value": 0.05,
+      "seed": 2026111307
+    },
+    {
+      "id": "001_sembind_08",
+      "task": 1,
+      "method": "sembind",
+      "condition": "resize_ratio",
+      "value": 0.25,
+      "seed": 2026111308
+    },
+    {
+      "id": "001_gs_00",
+      "task": 1,
+      "method": "gs",
+      "condition": "random_crop_ratio",
+      "value": 0.6,
+      "seed": 2026111300
+    },
+    {
+      "id": "001_gs_01",
+      "task": 1,
+      "method": "gs",
+      "condition": "random_drop_ratio",
+      "value": 0.8,
+      "seed": 2026111301
+    },
+    {
+      "id": "001_gs_02",
+      "task": 1,
+      "method": "gs",
+      "condition": "brightness_factor",
+      "value": 6,
+      "seed": 2026111302
+    },
+    {
+      "id": "001_gs_03",
+      "task": 1,
+      "method": "gs",
+      "condition": "jpeg_ratio",
+      "value": 25,
+      "seed": 2026111303
+    },
+    {
+      "id": "001_gs_04",
+      "task": 1,
+      "method": "gs",
+      "condition": "gaussian_blur_r",
+      "value": 4,
+      "seed": 2026111304
+    },
+    {
+      "id": "001_gs_05",
+      "task": 1,
+      "method": "gs",
+      "condition": "gaussian_std",
+      "value": 0.05,
+      "seed": 2026111305
+    },
+    {
+      "id": "001_gs_06",
+      "task": 1,
+      "method": "gs",
+      "condition": "median_blur_k",
+      "value": 7,
+      "seed": 2026111306
+    },
+    {
+      "id": "001_gs_07",
+      "task": 1,
+      "method": "gs",
+      "condition": "sp_prob",
+      "value": 0.05,
+      "seed": 2026111307
+    },
+    {
+      "id": "001_gs_08",
+      "task": 1,
+      "method": "gs",
+      "condition": "resize_ratio",
+      "value": 0.25,
+      "seed": 2026111308
+    },
+    {
+      "id": "002_sembind_00",
+      "task": 2,
+      "method": "sembind",
+      "condition": "random_crop_ratio",
+      "value": 0.6,
+      "seed": 2026111400
+    },
+    {
+      "id": "002_sembind_01",
+      "task": 2,
+      "method": "sembind",
+      "condition": "random_drop_ratio",
+      "value": 0.8,
+      "seed": 2026111401
+    },
+    {
+      "id": "002_sembind_02",
+      "task": 2,
+      "method": "sembind",
+      "condition": "brightness_factor",
+      "value": 6,
+      "seed": 2026111402
+    },
+    {
+      "id": "002_sembind_03",
+      "task": 2,
+      "method": "sembind",
+      "condition": "jpeg_ratio",
+      "value": 25,
+      "seed": 2026111403
+    },
+    {
+      "id": "002_sembind_04",
+      "task": 2,
+      "method": "sembind",
+      "condition": "gaussian_blur_r",
+      "value": 4,
+      "seed": 2026111404
+    },
+    {
+      "id": "002_sembind_05",
+      "task": 2,
+      "method": "sembind",
+      "condition": "gaussian_std",
+      "value": 0.05,
+      "seed": 2026111405
+    },
+    {
+      "id": "002_sembind_06",
+      "task": 2,
+      "method": "sembind",
+      "condition": "median_blur_k",
+      "value": 7,
+      "seed": 2026111406
+    },
+    {
+      "id": "002_sembind_07",
+      "task": 2,
+      "method": "sembind",
+      "condition": "sp_prob",
+      "value": 0.05,
+      "seed": 2026111407
+    },
+    {
+      "id": "002_sembind_08",
+      "task": 2,
+      "method": "sembind",
+      "condition": "resize_ratio",
+      "value": 0.25,
+      "seed": 2026111408
+    },
+    {
+      "id": "002_gs_00",
+      "task": 2,
+      "method": "gs",
+      "condition": "random_crop_ratio",
+      "value": 0.6,
+      "seed": 2026111400
+    },
+    {
+      "id": "002_gs_01",
+      "task": 2,
+      "method": "gs",
+      "condition": "random_drop_ratio",
+      "value": 0.8,
+      "seed": 2026111401
+    },
+    {
+      "id": "002_gs_02",
+      "task": 2,
+      "method": "gs",
+      "condition": "brightness_factor",
+      "value": 6,
+      "seed": 2026111402
+    },
+    {
+      "id": "002_gs_03",
+      "task": 2,
+      "method": "gs",
+      "condition": "jpeg_ratio",
+      "value": 25,
+      "seed": 2026111403
+    },
+    {
+      "id": "002_gs_04",
+      "task": 2,
+      "method": "gs",
+      "condition": "gaussian_blur_r",
+      "value": 4,
+      "seed": 2026111404
+    },
+    {
+      "id": "002_gs_05",
+      "task": 2,
+      "method": "gs",
+      "condition": "gaussian_std",
+      "value": 0.05,
+      "seed": 2026111405
+    },
+    {
+      "id": "002_gs_06",
+      "task": 2,
+      "method": "gs",
+      "condition": "median_blur_k",
+      "value": 7,
+      "seed": 2026111406
+    },
+    {
+      "id": "002_gs_07",
+      "task": 2,
+      "method": "gs",
+      "condition": "sp_prob",
+      "value": 0.05,
+      "seed": 2026111407
+    },
+    {
+      "id": "002_gs_08",
+      "task": 2,
+      "method": "gs",
+      "condition": "resize_ratio",
+      "value": 0.25,
+      "seed": 2026111408
+    },
+    {
+      "id": "003_sembind_00",
+      "task": 3,
+      "method": "sembind",
+      "condition": "random_crop_ratio",
+      "value": 0.6,
+      "seed": 2026111500
+    },
+    {
+      "id": "003_sembind_01",
+      "task": 3,
+      "method": "sembind",
+      "condition": "random_drop_ratio",
+      "value": 0.8,
+      "seed": 2026111501
+    },
+    {
+      "id": "003_sembind_02",
+      "task": 3,
+      "method": "sembind",
+      "condition": "brightness_factor",
+      "value": 6,
+      "seed": 2026111502
+    },
+    {
+      "id": "003_sembind_03",
+      "task": 3,
+      "method": "sembind",
+      "condition": "jpeg_ratio",
+      "value": 25,
+      "seed": 2026111503
+    },
+    {
+      "id": "003_sembind_04",
+      "task": 3,
+      "method": "sembind",
+      "condition": "gaussian_blur_r",
+      "value": 4,
+      "seed": 2026111504
+    },
+    {
+      "id": "003_sembind_05",
+      "task": 3,
+      "method": "sembind",
+      "condition": "gaussian_std",
+      "value": 0.05,
+      "seed": 2026111505
+    },
+    {
+      "id": "003_sembind_06",
+      "task": 3,
+      "method": "sembind",
+      "condition": "median_blur_k",
+      "value": 7,
+      "seed": 2026111506
+    },
+    {
+      "id": "003_sembind_07",
+      "task": 3,
+      "method": "sembind",
+      "condition": "sp_prob",
+      "value": 0.05,
+      "seed": 2026111507
+    },
+    {
+      "id": "003_sembind_08",
+      "task": 3,
+      "method": "sembind",
+      "condition": "resize_ratio",
+      "value": 0.25,
+      "seed": 2026111508
+    },
+    {
+      "id": "003_gs_00",
+      "task": 3,
+      "method": "gs",
+      "condition": "random_crop_ratio",
+      "value": 0.6,
+      "seed": 2026111500
+    },
+    {
+      "id": "003_gs_01",
+      "task": 3,
+      "method": "gs",
+      "condition": "random_drop_ratio",
+      "value": 0.8,
+      "seed": 2026111501
+    },
+    {
+      "id": "003_gs_02",
+      "task": 3,
+      "method": "gs",
+      "condition": "brightness_factor",
+      "value": 6,
+      "seed": 2026111502
+    },
+    {
+      "id": "003_gs_03",
+      "task": 3,
+      "method": "gs",
+      "condition": "jpeg_ratio",
+      "value": 25,
+      "seed": 2026111503
+    },
+    {
+      "id": "003_gs_04",
+      "task": 3,
+      "method": "gs",
+      "condition": "gaussian_blur_r",
+      "value": 4,
+      "seed": 2026111504
+    },
+    {
+      "id": "003_gs_05",
+      "task": 3,
+      "method": "gs",
+      "condition": "gaussian_std",
+      "value": 0.05,
+      "seed": 2026111505
+    },
+    {
+      "id": "003_gs_06",
+      "task": 3,
+      "method": "gs",
+      "condition": "median_blur_k",
+      "value": 7,
+      "seed": 2026111506
+    },
+    {
+      "id": "003_gs_07",
+      "task": 3,
+      "method": "gs",
+      "condition": "sp_prob",
+      "value": 0.05,
+      "seed": 2026111507
+    },
+    {
+      "id": "003_gs_08",
+      "task": 3,
+      "method": "gs",
+      "condition": "resize_ratio",
+      "value": 0.25,
+      "seed": 2026111508
+    }
+  ],
+  "gpu_indices": [
+    7,
+    5,
+    4
+  ],
+  "max_concurrent_gpus": 3,
+  "excluded_gpu_indices": [
+    6
+  ],
+  "hf_home": "/data0/liyanlei/watermark_research/cache/huggingface",
+  "inversion_steps": 50,
+  "decoder_optimization_steps": 100,
+  "inv_order": 0,
+  "prompt": "",
+  "guidance_scale": 3.0,
+  "dtype": "float32",
+  "threshold": 0.70703125,
+  "operator": ">",
+  "unique_sources": 4,
+  "queries": 72,
+  "inversion_records": 144,
+  "independent_confirmation": false,
+  "full_native_sembind": false,
+  "primary_measure": "Query-derived mask and default message detector",
+  "diagnostic_only": [
+    "Auxiliary enrollment code unbinding",
+    "Clean-reference code unbinding",
+    "Channel sign error",
+    "Semantic code agreement"
+  ],
+  "no_threshold_selection": true,
+  "no_attack_modification": true,
+  "next_pipeline": {
+    "protocol": "/data0/liyanlei/watermark_research/runs/imprint_fresh_revalidation_20261112/protocol.json",
+    "protocol_sha256": "d27152e2bc749cfadcdabfffb816c1815d88c8823bc6ab0995033f4097b84333",
+    "script": "/data0/liyanlei/watermark_research/runs/imprint_fresh_revalidation_20261112/scripts/run_fresh_imprint_pipeline.py",
+    "script_sha256": "93044fa8d2d220c3764db179af39d5d1082e61aedc266ec790f0f80429a3bc49",
+    "python": "/data0/liyanlei/watermark_research/envs/ddim_replay_py310/bin/python",
+    "run": "/data0/liyanlei/watermark_research/runs/imprint_fresh_revalidation_20261112"
+  }
+}

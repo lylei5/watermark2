@@ -1,0 +1,150 @@
+{
+  "scope": "Fresh full-budget CVPR2025 baseline on newly generated paired SemBind/GS development references",
+  "source": "https://openaccess.thecvf.com/content/CVPR2025/html/Muller_Black-Box_Forgery_Attacks_on_Semantic_Watermarks_for_Diffusion_Models_CVPR_2025_paper.html",
+  "upstream_revision": "ca68950cd7b53b8438a49580f134b2a0db28d778",
+  "updates": 151,
+  "inverse_steps": 50,
+  "lr": 0.01,
+  "seed": 1,
+  "checkpoint_source_steps": [
+    0,
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90,
+    100,
+    110,
+    120,
+    130,
+    140,
+    150
+  ],
+  "early_stop": false,
+  "shortened_budget_allowed": false,
+  "max_concurrent_gpus": 3,
+  "excluded_gpu_indices": [
+    6
+  ],
+  "worker_gpu_indices": [
+    7,
+    5,
+    4
+  ],
+  "selection": "All four fixed development identities from the freshly executed chain; original fixed four development covers, no score selection",
+  "reference_condition": "SD2.1 DPM50 fp32; same private identity within each carrier pair",
+  "verifier": "Released SemBind DPM inverse order0, 50 steps, blank prompt CFG3, full 100-step VAE decoder inversion; default strict BA>181/256",
+  "validation": "Every released checkpoint plus original covers and references; separate evaluator, no feedback",
+  "jobs": [
+    {
+      "id": "000_sembind",
+      "task": 0,
+      "method": "sembind",
+      "split": "development",
+      "reference": "inputs/000_sembind.png",
+      "cover": "inputs/000_cover.png",
+      "reference_sha256": "cb53f893766102bbad5dd6d55a2fe4709a9abbc79f9fd8444f12519f960941fc",
+      "cover_sha256": "996b65b746a3de367e27db378a125986637d70f4cbbe03e558c915b80bb2dc80",
+      "cover_image_id": 471023
+    },
+    {
+      "id": "000_gs",
+      "task": 0,
+      "method": "gs",
+      "split": "development",
+      "reference": "inputs/000_gs.png",
+      "cover": "inputs/000_cover.png",
+      "reference_sha256": "cf2fd58f5072ab9e4bd43def8c1e8a2675d9b32c29a0a7fe23e505f80a0899ee",
+      "cover_sha256": "996b65b746a3de367e27db378a125986637d70f4cbbe03e558c915b80bb2dc80",
+      "cover_image_id": 471023
+    },
+    {
+      "id": "001_sembind",
+      "task": 1,
+      "method": "sembind",
+      "split": "development",
+      "reference": "inputs/001_sembind.png",
+      "cover": "inputs/001_cover.png",
+      "reference_sha256": "35dd3b7fda980684c8c8173e9d156eb8701ffff2691e3cac5cc3e6791a334128",
+      "cover_sha256": "59d114f57425a083cb377addd169eafeb8b547be801739991bfa55a0821596dc",
+      "cover_image_id": 518326
+    },
+    {
+      "id": "001_gs",
+      "task": 1,
+      "method": "gs",
+      "split": "development",
+      "reference": "inputs/001_gs.png",
+      "cover": "inputs/001_cover.png",
+      "reference_sha256": "b4c409863a1de8e3e7f43c39c4c8aa2e508c86c7ff7d8ee8d813ab457c18f246",
+      "cover_sha256": "59d114f57425a083cb377addd169eafeb8b547be801739991bfa55a0821596dc",
+      "cover_image_id": 518326
+    },
+    {
+      "id": "002_sembind",
+      "task": 2,
+      "method": "sembind",
+      "split": "development",
+      "reference": "inputs/002_sembind.png",
+      "cover": "inputs/002_cover.png",
+      "reference_sha256": "7830b309713d6dc9e415b4bd0218ba7c4ac2467e052cfd36aaee8783cbe8a858",
+      "cover_sha256": "60fc8bd63c4d2292bf86f2e9160bd0bca3acbfab2382626bcd7f1bdac8b8f34e",
+      "cover_image_id": 259097
+    },
+    {
+      "id": "002_gs",
+      "task": 2,
+      "method": "gs",
+      "split": "development",
+      "reference": "inputs/002_gs.png",
+      "cover": "inputs/002_cover.png",
+      "reference_sha256": "faa1152886b887a6ed48afeedcaab56df19ff07ee371e4205fe5a4e3f7d9a7ed",
+      "cover_sha256": "60fc8bd63c4d2292bf86f2e9160bd0bca3acbfab2382626bcd7f1bdac8b8f34e",
+      "cover_image_id": 259097
+    },
+    {
+      "id": "003_sembind",
+      "task": 3,
+      "method": "sembind",
+      "split": "development",
+      "reference": "inputs/003_sembind.png",
+      "cover": "inputs/003_cover.png",
+      "reference_sha256": "4f78ecb9d65ec701b1bc09ddd9a0b9ce562ee224bb248aa6952d29d3101b53e6",
+      "cover_sha256": "c968a0ca34f02b68da5865ee21dc0a99aee4e1261acf314f4eb2d906fe271b2c",
+      "cover_image_id": 36539
+    },
+    {
+      "id": "003_gs",
+      "task": 3,
+      "method": "gs",
+      "split": "development",
+      "reference": "inputs/003_gs.png",
+      "cover": "inputs/003_cover.png",
+      "reference_sha256": "b4a0f3608e7b1e7fea63fbe304f6afbf3891cdd6a58c357ba36ec4a3943c630c",
+      "cover_sha256": "c968a0ca34f02b68da5865ee21dc0a99aee4e1261acf314f4eb2d906fe271b2c",
+      "cover_image_id": 36539
+    }
+  ],
+  "freeze_time_utc": "2026-11-11T17:12:22.486083+00:00",
+  "root": "/data0/liyanlei/watermark_research",
+  "chain_run": "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111",
+  "generation_python": "/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/bin/python",
+  "verification_python": "/data0/liyanlei/watermark_research/envs/ddim_replay_py310/bin/python",
+  "upstream": "/data0/liyanlei/watermark_research/third_party/semantic-forgery",
+  "attacks_modified": false,
+  "reference_images_reused_from_historical_run": false,
+  "independent_confirmation": false,
+  "pipeline_source_sha256": {
+    "scripts/evaluate_published_imprint_full.py": "f944210ac87c75099e055cb88677e1c60f83e3cddc4292a96ff49a83f8c1c719",
+    "scripts/codeword_binding.py": "f49aa1342031a1c54be17bb4153b79150e5f70903719275c37329bf093186c59",
+    "scripts/run_fresh_imprint_pipeline.py": "93044fa8d2d220c3764db179af39d5d1082e61aedc266ec790f0f80429a3bc49",
+    "scripts/content_authentication.py": "33bcd430df9f36c7c2ec911f723c1f8a95b8264d27b51b47911053b3dcc2d70f",
+    "scripts/run_published_imprint_full.py": "476895a566d94b3c374d77207183a67c038a0679f6fc755eb10c434a3162a908",
+    "scripts/sembind_official_audit.py": "52fde572e2f9ed0f0ccb2774e03185c223400886b38cabf83ee1c401ecb17f03",
+    "scripts/sembind.py": "4ef939f5559403bb033e0d1650930b113cce050b82861c886522074ada39a3cf"
+  }
+}

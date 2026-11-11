@@ -2,6 +2,7 @@
 import argparse
 import gc
 import importlib.metadata
+import importlib.util
 import json
 import os
 from pathlib import Path
@@ -24,6 +25,7 @@ def main():
     p.add_argument('--root',type=Path,required=True)
     p.add_argument('--run',type=Path,required=True)
     p.add_argument('--identity-root',type=Path,required=True)
+    p.add_argument('--chain-run',type=Path,help='Use a freshly executed chain and its pinned released source')
     p.add_argument('--shard',type=int,required=True,choices=range(3))
     args=p.parse_args()
     root,run=args.root,args.run
@@ -33,16 +35,24 @@ def main():
     device=subprocess.check_output(['nvidia-smi','-i',uuid,'--query-gpu=index,uuid,memory.used,utilization.gpu','--format=csv,noheader,nounits'],text=True).strip().split(', ')
     if int(device[0]) not in [7,5,4] or int(device[2])>50 or int(device[3])!=0: raise RuntimeError('Evaluator GPU not idle or allowed')
     torch.set_num_threads(4);torch.backends.cuda.matmul.allow_tf32=False;torch.backends.cudnn.allow_tf32=False
-    bundle=root/'runs/sembind_audit_evidence_20261110'
-    original=json.loads((bundle/'sembind_official_audit_20261110/protocol.json').read_text())
-    official=bundle/'third_party/SemBind_pinned'
+    if args.chain_run:
+        chain_paths=json.loads((args.chain_run/'paths.json').read_text())
+        original=json.loads((Path(chain_paths['output'])/'protocol.json').read_text())
+        official=Path(chain_paths['official'])
+        scheduler=Path(chain_paths['scheduler'])
+        model=chain_paths['model']
+    else:
+        bundle=root/'runs/sembind_audit_evidence_20261110'
+        original=json.loads((bundle/'sembind_official_audit_20261110/protocol.json').read_text())
+        official=bundle/'third_party/SemBind_pinned'
+        scheduler=bundle/'third_party/legacy_diffusers/scheduling_dpmsolver_multistep.py'
+        model=json.loads((root/'protocols/confirmation100_design_v7.json').read_text())['proxy']['snapshot']
     for rel,digest in original['source_sha256'].items():
         assert sha(official/rel.replace('\\','/'))==digest
-    scheduler=bundle/'third_party/legacy_diffusers/scheduling_dpmsolver_multistep.py'
     assert sha(scheduler)==original['scheduler_sha256']
-    model=json.loads((root/'protocols/confirmation100_design_v7.json').read_text())['proxy']['snapshot']
     for rel in ['unet/diffusion_pytorch_model.safetensors','vae/diffusion_pytorch_model.safetensors','text_encoder/model.safetensors']:
-        assert sha(Path(model)/rel)==original['model_files_sha256'][rel.replace('/','\\')]
+        hashes=original['model_files_sha256']
+        assert sha(Path(model)/rel)==hashes.get(rel,hashes.get(rel.replace('/','\\')))
     jobs=[j for i,j in enumerate(plan['jobs']) if i%3==args.shard]
     out=run/'evaluation'/f'shard_{args.shard}';out.mkdir(parents=True,exist_ok=True)
     records=[]
@@ -64,7 +74,14 @@ def main():
         scope='All 16 checkpoints and both reference/cover inputs for each assigned full-budget job',
         dependencies={k:importlib.metadata.version(k) for k in ['torch','diffusers','transformers']},
         script_sha256=sha(__file__),helper_sha256=sha(Path(__file__).with_name('sembind_official_audit.py'))))
-    sys.path.insert(0,str(root/'scripts/defense'))
+    if args.chain_run:
+        sys.path.insert(0,str(args.chain_run/'scripts'))
+        spec=importlib.util.spec_from_file_location('model',official/'model.py')
+        official_model=importlib.util.module_from_spec(spec)
+        sys.modules['model']=official_model
+        spec.loader.exec_module(official_model)
+    else:
+        sys.path.insert(0,str(root/'scripts/defense'))
     from sembind import SemanticMasker
     masker=SemanticMasker(root/'models/sembind/dinov2-giant',root/'models/sembind/sembind_masker.pth')
     for r in records:
@@ -86,7 +103,7 @@ def main():
         code=np.load(out/(r['id']+'.npz'))['sembind_code']
         mask=sembind_mask_bits(code[None],perm)[0] if r['method']=='sembind' else np.zeros(16384,dtype=np.uint8)
         ba=float(bit_accuracy((latent.reshape(-1)>0).astype(np.uint8)^mask^stream,message)[0])
-        extra=content_scores(recover_groups(latent,cipher,perm),code) if r['method']=='sembind' else {}
+        extra=content_scores(recover_groups(latent,cipher,perm),code) if r['method']=='sembind' and not args.chain_run else {}
         scores.append(dict(**r,ba=ba,accepted=ba>181/256,**extra,inversion_sha256=sha(path),features_sha256=sha(out/(r['id']+'.npz'))))
         write(out/'progress.json',dict(completed=len(scores),required=len(records),seconds=time.monotonic()-started))
         print('VERIFIED',r['id'],ba,len(scores),len(records),flush=True)
