@@ -50,7 +50,7 @@ def main():
     global ALPHA
     p=argparse.ArgumentParser()
     p.add_argument('--run',type=Path,required=True)
-    p.add_argument('--mode',choices=['full_baseline','calibration'],required=True)
+    p.add_argument('--mode',choices=['full_baseline','calibration','confirmation'],required=True)
     p.add_argument('--identity-root',type=Path,required=True)
     p.add_argument('--output',type=Path,required=True)
     p.add_argument('--frozen-protocol',type=Path,required=True)
@@ -72,10 +72,12 @@ def main():
         for i in range(3):
             cache=args.run/'cache'/f'shard_{i}';part=json.loads((cache/'complete.json').read_text())
             assert part['completed'] and part['protocol_sha256']==sha(args.frozen_protocol)
-            rows.extend(dict(r,cache=cache,kind='genuine') for r in part['rows'] if r['split']=='calibration')
-        assert len(rows)==192 and len({r['task'] for r in rows})==32
+            rows.extend(dict(r,cache=cache,kind='genuine') for r in part['rows'] if r['split']==args.mode)
+        expected_claims=list(range(16,48)) if args.mode=='calibration' else plan['identity_tasks']
+        assert len(rows)==len(plan['rows']) and {r['task'] for r in rows}==set(expected_claims)
         assert {r['id'] for r in rows}=={r['id'] for r in plan['rows']}
-        claims=list(range(16,48))
+        assert len({r['id'] for r in rows})==len(rows)
+        claims=expected_claims
     identities={task:carrier(args.identity_root,task) for task in claims}
     poses,grid,support,counts,folds=geometry_bank();assert len(poses)==251
     computed_alpha=ALPHA
@@ -86,7 +88,7 @@ def main():
         assert sha(inv)==r['inversion_sha256'] and sha(feat)==r['features_sha256']
         latent=np.load(inv,allow_pickle=False);code=np.load(feat,allow_pickle=False)['sembind_code']
         signs,valid=query_observations(latent,grid,support)
-        for claimed in (claims if args.mode=='calibration' else [r['task']]):
+        for claimed in (claims if args.mode!='full_baseline' else [r['task']]):
             _,cipher,message,perm=identities[claimed]
             mask=sembind_mask_bits(code[None],perm)[0] if r['method']!='gs' else np.zeros(16384,dtype=np.uint8)
             stream=cipher^np.tile(message,64)
@@ -107,15 +109,29 @@ def main():
     result=dict(completed=True,mode=args.mode,rows=output,summary=summary,
         protocol_sha256=sha(args.frozen_protocol),seconds=time.monotonic()-start,
         unique_queries=len(rows),identity_decisions=len(output),new_attacks_run=False,
-        independent_confirmation_scored=False,thresholds_changed=False,
+        independent_confirmation_scored=args.mode=='confirmation',thresholds_changed=False,
         threshold_audit=dict(runtime_computed_alpha=computed_alpha,applied_alpha=ALPHA,
             frozen_alpha=plan['nominal_alpha'],relative_roundoff_tolerance=1e-12),
         scope='Frozen detector evaluation; correlated views and identities; no empirical ultra-low FPR claim')
-    if args.mode=='calibration':
+    if args.mode!='full_baseline':
         result['genuine_by_condition']=summarize([r for r in output if r['kind']=='genuine'],'label')
         wrong=[r for r in output if r['kind']=='wrong_identity']
         result['wrong_identity_query_level']={k:len({r['id'] for r in wrong if r[k]}) for k in
             ['default_accepted','identity_penalty_accepted','all_fit_accepted','split_fit_accepted']}
+        if args.mode=='confirmation':
+            controls=[]
+            for point in plan['supplementary_ba_controls']:
+                assert point['operator']=='>=' and point['feasible']
+                threshold=point['threshold']
+                genuine=[r for r in output if r['kind']=='genuine']
+                controls.append(dict(target_absolute_tpr=point['target_absolute_tpr'],threshold=threshold,operator='>=',
+                    calibration_tpr=point['calibration_tpr'],genuine_accepted=sum(r['ba']>=threshold for r in genuine),
+                    genuine_n=len(genuine),wrong_identity_accepted=sum(r['ba']>=threshold for r in wrong),
+                    wrong_identity_n=len(wrong),wrong_identity_queries=len({r['id'] for r in wrong if r['ba']>=threshold}),
+                    genuine_by_condition={label:dict(n=sum(r['label']==label for r in genuine),
+                        accepted=sum(r['label']==label and r['ba']>=threshold for r in genuine))
+                        for label in sorted({r['label'] for r in genuine})}))
+            result['supplementary_ba_controls']=controls
     else:
         result['by_method']={method:dict(
             final=summarize([r for r in output if r['method']==method and (r['kind']!='candidate' or r['update']==151)],'kind'),

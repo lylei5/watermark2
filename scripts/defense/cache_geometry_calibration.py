@@ -25,6 +25,9 @@ def main():
     p.add_argument('--gpu-index',type=int,choices=[7,5,4])
     args=p.parse_args();run=args.run
     plan=json.loads((run/'protocol.json').read_text())
+    evaluation_split=plan.get('evaluation_split','calibration')
+    assert evaluation_split in ['calibration','confirmation']
+    assert all(r['split']==evaluation_split for r in plan['rows'])
     for name,digest in plan['source_sha256'].items():
         assert sha(Path(__file__).with_name(name))==digest,name
     uuid=os.environ['CUDA_VISIBLE_DEVICES']

@@ -1,0 +1,298 @@
+{
+  "completed": true,
+  "calibration_sources": 32,
+  "calibration_queries": 192,
+  "identity_decisions": 6144,
+  "summary": [
+    {
+      "group": "genuine",
+      "n": 192,
+      "default_accepted": 160,
+      "identity_accepted": 160,
+      "identity_penalty_accepted": 160,
+      "all_fit_accepted": 192,
+      "split_fit_accepted": 192
+    },
+    {
+      "group": "wrong_identity",
+      "n": 5952,
+      "default_accepted": 0,
+      "identity_accepted": 0,
+      "identity_penalty_accepted": 0,
+      "all_fit_accepted": 0,
+      "split_fit_accepted": 0
+    }
+  ],
+  "genuine_by_condition": [
+    {
+      "group": "blur1_resize80",
+      "n": 32,
+      "default_accepted": 32,
+      "identity_accepted": 32,
+      "identity_penalty_accepted": 32,
+      "all_fit_accepted": 32,
+      "split_fit_accepted": 32
+    },
+    {
+      "group": "clean",
+      "n": 32,
+      "default_accepted": 32,
+      "identity_accepted": 32,
+      "identity_penalty_accepted": 32,
+      "all_fit_accepted": 32,
+      "split_fit_accepted": 32
+    },
+    {
+      "group": "crop90",
+      "n": 32,
+      "default_accepted": 0,
+      "identity_accepted": 0,
+      "identity_penalty_accepted": 0,
+      "all_fit_accepted": 32,
+      "split_fit_accepted": 32
+    },
+    {
+      "group": "jpeg50",
+      "n": 32,
+      "default_accepted": 32,
+      "identity_accepted": 32,
+      "identity_penalty_accepted": 32,
+      "all_fit_accepted": 32,
+      "split_fit_accepted": 32
+    },
+    {
+      "group": "jpeg75",
+      "n": 32,
+      "default_accepted": 32,
+      "identity_accepted": 32,
+      "identity_penalty_accepted": 32,
+      "all_fit_accepted": 32,
+      "split_fit_accepted": 32
+    },
+    {
+      "group": "noise0.01",
+      "n": 32,
+      "default_accepted": 32,
+      "identity_accepted": 32,
+      "identity_penalty_accepted": 32,
+      "all_fit_accepted": 32,
+      "split_fit_accepted": 32
+    }
+  ],
+  "wrong_identity_query_level": {
+    "default_accepted": 0,
+    "identity_penalty_accepted": 0,
+    "all_fit_accepted": 0,
+    "split_fit_accepted": 0
+  },
+  "comparison": {
+    "queries_with_different_geometry_decisions": 0,
+    "restored_genuine": 32,
+    "lost_genuine": 0,
+    "restored_sources": 32
+  },
+  "supplementary_ba_controls": [
+    {
+      "n": 192,
+      "base_count": 192,
+      "required_count": 154,
+      "target_absolute_tpr": 0.8,
+      "operator": ">=",
+      "base_required": false,
+      "base_tpr": 1.0,
+      "feasible": true,
+      "threshold": 0.9921875,
+      "calibration_count": 154,
+      "calibration_tpr": 0.8020833333333334,
+      "tie_overshoot": 0,
+      "selection": "Genuine calibration BA only; no prefilter by default GS decision",
+      "wrong_identity_accepted": 0,
+      "wrong_identity_queries": 0,
+      "genuine_by_condition": {
+        "blur1_resize80": {
+          "n": 32,
+          "accepted": 32
+        },
+        "clean": {
+          "n": 32,
+          "accepted": 32
+        },
+        "crop90": {
+          "n": 32,
+          "accepted": 0
+        },
+        "jpeg50": {
+          "n": 32,
+          "accepted": 28
+        },
+        "jpeg75": {
+          "n": 32,
+          "accepted": 30
+        },
+        "noise0.01": {
+          "n": 32,
+          "accepted": 32
+        }
+      }
+    },
+    {
+      "n": 192,
+      "base_count": 192,
+      "required_count": 173,
+      "target_absolute_tpr": 0.9,
+      "operator": ">=",
+      "base_required": false,
+      "base_tpr": 1.0,
+      "feasible": true,
+      "threshold": 0.546875,
+      "calibration_count": 175,
+      "calibration_tpr": 0.9114583333333334,
+      "tie_overshoot": 2,
+      "selection": "Genuine calibration BA only; no prefilter by default GS decision",
+      "wrong_identity_accepted": 466,
+      "wrong_identity_queries": 180,
+      "genuine_by_condition": {
+        "blur1_resize80": {
+          "n": 32,
+          "accepted": 32
+        },
+        "clean": {
+          "n": 32,
+          "accepted": 32
+        },
+        "crop90": {
+          "n": 32,
+          "accepted": 15
+        },
+        "jpeg50": {
+          "n": 32,
+          "accepted": 32
+        },
+        "jpeg75": {
+          "n": 32,
+          "accepted": 32
+        },
+        "noise0.01": {
+          "n": 32,
+          "accepted": 32
+        }
+      }
+    },
+    {
+      "n": 192,
+      "base_count": 192,
+      "required_count": 183,
+      "target_absolute_tpr": 0.95,
+      "operator": ">=",
+      "base_required": false,
+      "base_tpr": 1.0,
+      "feasible": true,
+      "threshold": 0.52734375,
+      "calibration_count": 183,
+      "calibration_tpr": 0.953125,
+      "tie_overshoot": 0,
+      "selection": "Genuine calibration BA only; no prefilter by default GS decision",
+      "wrong_identity_accepted": 1294,
+      "wrong_identity_queries": 192,
+      "genuine_by_condition": {
+        "blur1_resize80": {
+          "n": 32,
+          "accepted": 32
+        },
+        "clean": {
+          "n": 32,
+          "accepted": 32
+        },
+        "crop90": {
+          "n": 32,
+          "accepted": 23
+        },
+        "jpeg50": {
+          "n": 32,
+          "accepted": 32
+        },
+        "jpeg75": {
+          "n": 32,
+          "accepted": 32
+        },
+        "noise0.01": {
+          "n": 32,
+          "accepted": 32
+        }
+      }
+    },
+    {
+      "n": 192,
+      "base_count": 192,
+      "required_count": 192,
+      "target_absolute_tpr": 1.0,
+      "operator": ">=",
+      "base_required": false,
+      "base_tpr": 1.0,
+      "feasible": true,
+      "threshold": 0.4296875,
+      "calibration_count": 192,
+      "calibration_tpr": 1.0,
+      "tie_overshoot": 0,
+      "selection": "Genuine calibration BA only; no prefilter by default GS decision",
+      "wrong_identity_accepted": 5902,
+      "wrong_identity_queries": 192,
+      "genuine_by_condition": {
+        "blur1_resize80": {
+          "n": 32,
+          "accepted": 32
+        },
+        "clean": {
+          "n": 32,
+          "accepted": 32
+        },
+        "crop90": {
+          "n": 32,
+          "accepted": 32
+        },
+        "jpeg50": {
+          "n": 32,
+          "accepted": 32
+        },
+        "jpeg75": {
+          "n": 32,
+          "accepted": 32
+        },
+        "noise0.01": {
+          "n": 32,
+          "accepted": 32
+        }
+      }
+    }
+  ],
+  "default_ba_operator": ">",
+  "default_ba_threshold": 0.70703125,
+  "detector_changed": false,
+  "confirmation_scores_read": false,
+  "new_attacks_run": false,
+  "limitations": [
+    "Correlated views and shared identities; counts are not independent Bernoulli trials",
+    "No empirical ultra-low false-positive guarantee",
+    "No added forgery rejection demonstrated beyond calibrated simple controls"
+  ],
+  "provenance": {
+    "results_sha256": "218937f4064ceb5caa5f7b011cd2b7229806fc393ed050a49c04c6b006344e64",
+    "protocol_sha256": "1feb60c64671f860a3fb8b783042b696b5bada699eacdd9644cd910a90ba1997",
+    "complete_sha256": "da68b54b5a961edbe7e01f4b286cc05390bf1e5dfe5ce9d11710dbb73f7d5dad",
+    "input_cache_files_verified": true
+  },
+  "bridge": {
+    "rows": [
+      {
+        "id": "000_sembind_scattered_clean",
+        "relative_l2": 0.0005475535872392356,
+        "code_equal": true
+      },
+      {
+        "id": "000_sembind_scattered_crop90",
+        "relative_l2": 0.0005690459511242807,
+        "code_equal": true
+      }
+    ]
+  }
+}
