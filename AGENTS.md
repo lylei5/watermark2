@@ -19,6 +19,7 @@ These rules apply to this repository and `/data0/liyanlei/watermark_research` on
 
 ## Scientific integrity
 
+- Version research code, protocols, results, references and reproducibility documentation. Store machine administration records separately from this repository.
 - Every result must trace to an artifact and execution record. Prepared assets and short runtime probes are not completed benchmarks.
 - Preserve all negative and partial results. Do not omit invalid genuine references from unconditional denominators.
 - Keep model weights, private watermark keys and large image assets outside Git; publish manifests and hashes where appropriate.

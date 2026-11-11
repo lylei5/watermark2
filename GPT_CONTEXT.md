@@ -30,8 +30,8 @@ Current automatic workflow: runs/geometry_calibration_replay_20261111, setup PID
 
 Do not launch duplicate setup/continuation jobs. runtime_setup_status.json and complete.json/failed.json distinguish installation, bridge failure and validation completion. A setup or partial cache is not a completed experiment.
 
-## Runtime assets and local storage
+## Runtime assets
 
 The original DPM server snapshot and local DDIM assets have equal effective fp16 UNet weights but different VAE/text-encoder weights. A separate matched DDIM model is retained on server under runs/geometry_calibration_20261110/model; its 3 weight groups,8 configurations and5 semantic assets were audited. Do not attribute cross-pipeline differences only to schedulers. The current primary server env remains unchanged while the isolated replay env is prepared.
 
-Local model weights and two incomplete downloads were removed after server verification (14.61GB); do not repopulate them. Codes, reports, configs and original experimental data remain locally. Temporary ZIP deletion was blocked by automatic approval and those archives remain; see reports/local_storage_cleanup_20261110/report.md. Private identities are on server under private_eval, not in Git.
+Model weights and private verifier assets reside on server 249. Private identities are under private_eval and remain outside Git; the repository records research code, protocols, results and artifact hashes.

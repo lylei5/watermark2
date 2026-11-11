@@ -200,19 +200,6 @@
     ],
     "max_concurrent_gpus": 3
   },
-  "local_storage_cleanup": {
-    "scope": "Verified research model weights, incomplete downloads and temporary transfer archives",
-    "deleted_bytes": 14608733513,
-    "deleted_gib": 13.605443307198584,
-    "deleted_gb": 14.608733513,
-    "deleted_files": 15,
-    "remaining_bytes": 1109372447,
-    "remaining_files": 11,
-    "weights_deleted": true,
-    "archives_deletion_blocked": true,
-    "block_reason": "Automatic approval review returned blocked by policy, without further explanation",
-    "report": "reports/local_storage_cleanup_20261110/report.md"
-  },
   "active_experiments_observation": "Recorded runtime installed and all dependency checks passed; DDIM50 development bridge passed at unchanged 0.001 tolerance; GPU5 caching calibration with three sequential shards",
   "full_budget_findings": {
     "source_count_per_method": 4,
