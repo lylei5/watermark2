@@ -11,3 +11,5 @@ Only after a successful complete audit, Stage 2 starts the unchanged CVPR2025 Im
 The coordinator uses blocking process-exit waits, with one fixed10-second teardown settling interval before each second-stage process. GPU7/5/4 only, at most three; every worker checks that its assigned GPU is idle. Failures leave a failed record and preserve logs. Dependencies are installed from Tsinghua; model assets stay server-side.
 
 These are four reused development identities with fresh image generation and inference. No independent confirmation, native full SemBind reproduction, ultra-low empirical FPR, or SOTA claim. The next method decision must combine the genuine-query decomposition and baseline outcomes and be tested on new independent sources.
+
+Observed launch: coordinator PID32044; workers32096/32097/32098 reached full inversion onGPU7/5/4. Both protocols and source snapshots were pushed to main at8476bd3 before launch. Stage2 is queued and requires a successful complete Stage1 audit.
