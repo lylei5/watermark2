@@ -134,6 +134,7 @@ def main():
     p.add_argument("--stage", choices=["prepare", "aux", "codes", "reference", "invert", "score"], required=True)
     p.add_argument("--features", choices=["aux", "reference"], default="aux")
     p.add_argument("--count", type=int, default=4)
+    p.add_argument("--semantic-only", action="store_true", help="Extract only the released SemBind code")
     args = p.parse_args()
     torch.set_num_threads(4)
     torch.backends.cuda.matmul.allow_tf32 = False
@@ -164,7 +165,7 @@ def main():
                                 for f in args.model.rglob("*") if f.is_file()},
             dependencies=dict(torch=torch.__version__, diffusers=diffusers.__version__,
                               transformers=transformers.__version__),
-            attacks_run=False, confirmation_read=False)
+            attacks_run=False, confirmation_read=False, semantic_only=args.semantic_only)
         write(out / "protocol.json", protocol)
         write(out / "scheduler_compatibility.json", scheduler_audit(args.scheduler))
         print("PREPARED", len(rows), flush=True)
@@ -179,8 +180,19 @@ def main():
             raise RuntimeError("Official source changed: " + rel)
     start = time.monotonic()
     if args.stage == "codes":
-        from research_semantics import ResearchSemantics
-        model = ResearchSemantics(str(args.semantic), str(args.coverlock), "cuda")
+        if args.semantic_only:
+            spec = importlib.util.spec_from_file_location("model", args.official / "model.py")
+            official_model = importlib.util.module_from_spec(spec)
+            sys.modules["model"] = official_model
+            spec.loader.exec_module(official_model)
+            from sembind import SemanticMasker
+            model = SemanticMasker(args.semantic / "dinov2-giant", args.semantic / "sembind_masker.pth")
+            def extract(image):
+                return dict(sembind_code=model.code(image).cpu().numpy().astype(np.uint8))
+        else:
+            from research_semantics import ResearchSemantics
+            model = ResearchSemantics(str(args.semantic), str(args.coverlock), "cuda")
+            extract = model.extract
         for row in rows:
             task = row["task"]
             names = [f"{task:03}_aux"] if args.features == "aux" else [
@@ -190,7 +202,7 @@ def main():
                 if dst.exists():
                     continue
                 dst.parent.mkdir(exist_ok=True)
-                np.savez_compressed(dst, **model.extract(Image.open(out / "images" / (name + ".png")).convert("RGB")))
+                np.savez_compressed(dst, **extract(Image.open(out / "images" / (name + ".png")).convert("RGB")))
                 print("CODES", name, flush=True)
     elif args.stage in ("aux", "reference", "invert"):
         inversion, pipe = load_official(args)

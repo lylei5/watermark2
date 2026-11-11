@@ -1,0 +1,10 @@
+{
+  "restart_time_utc": "2026-11-11T15:57:53.952440+00:00",
+  "supervisors": {
+    "pgid0": 3563,
+    "pgid5": 3564
+  },
+  "protocol_unchanged": true,
+  "initial_failure": "GPU startup guard rejected nonzero utilization after parent exit; no control inference occurred",
+  "initial_failure_directory": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/controls_initial_failure"
+}

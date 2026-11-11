@@ -1,0 +1,64 @@
+{
+  "freeze_time_utc": "2026-11-11T16:04:37.847346+00:00",
+  "purpose": "Fresh four-source paired SemBind project-adapter/GS generation and full inversion diagnosis",
+  "scientific_protocol_sha256": "e5bc54488407a642adddcf9fe02f3374217f21eb98a8a96d6383da480606525a",
+  "source_sha256": {
+    "official/inversion.py": "dcf0dd6e9b5af1e64c24fe5c3c16473be54f1936c44da096f85b0437bf2fb14b",
+    "official/model.py": "ee22217258acd3c86899ce616cc5d7dbb6d14948208145a1daa7ace0c1943da3",
+    "official/src/optim_utils.py": "d96765a945a6d26514799bc6d8da0afc74f63a3482ff02e4ebd9391eb0dde344",
+    "official/src/modified_stable_diffusion.py": "fc4ac3795d51821c0a7a10fb57c28ecb414cc47e4af5629e6bfdaaccdc709ba2",
+    "official/src/inverse_stable_diffusion.py": "64027a1a974bb018d8569fa670802996e6ed0a87ba94f9151f574dd33326ef17",
+    "scripts/codeword_binding.py": "f49aa1342031a1c54be17bb4153b79150e5f70903719275c37329bf093186c59",
+    "scripts/sembind_official_audit.py": "52fde572e2f9ed0f0ccb2774e03185c223400886b38cabf83ee1c401ecb17f03",
+    "scripts/sembind.py": "4ef939f5559403bb033e0d1650930b113cce050b82861c886522074ada39a3cf",
+    "run_sembind_chain_revalidation.py": "e8a797c3c618a9addfb344ca9a7025ecfcc0b3666225d772b6af9d2789ede181",
+    "scheduling_dpmsolver_multistep.py": "c0902d1446e51c33be9b0deb5b9a9e2694e7930620a95d5ee8bef024607ed5ff",
+    "paths.json": "a5d30553bd57ed22902a1e63bffb8ffff2b0f8363e7fe8603c478627f37592ac"
+  },
+  "semantic_assets_sha256": {
+    "sembind_masker.pth": "85f98477bc5c3ae37d429b527d852384fefe70a4c69b25b483759635f3e9ebfd",
+    "dinov2-giant/config.json": "15d2e68b709674c0eb9bb5cc8b73e57ebe9a169a425bef224f46ae10053806a2",
+    "dinov2-giant/.gitattributes": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361",
+    "dinov2-giant/model.safetensors": "917d3c470db999d32a312f8542149be91c7cbac61ee8fb4b67ae3d82b79ce21f",
+    "dinov2-giant/preprocessor_config.json": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
+    "dinov2-giant/README.md": "129a5b66134a5739a3c35033483ca00427f497ce5052d8cf8e2446dac19eec1b"
+  },
+  "private_inputs_sha256": {
+    "generation_plan.json": "90c0f3c801c7ddb1207b2aa39ba7fd4c762ce62209f32741a2cd875598921226",
+    "private/002.json": "c2c4f1c053036841db17583286a389c0bf0912acc81dc5005db8366a9113d84e",
+    "private/000.json": "f00441892c58d5a21493ff7c5608dfab915d6b26eddebdd0770e499e2e37a4b4",
+    "private/003.json": "66ed17e2f755f949ff1b71e7187809ab729208745670873647dd0ed1a5243d35",
+    "private/001.json": "45b23dd80eb6c62b85e29c3d7714f19d439b9fc6425931974e2966b113fcfa53"
+  },
+  "python": "/data0/liyanlei/watermark_research/envs/ddim_replay_py310/bin/python",
+  "hf_home": "/data0/liyanlei/watermark_research/cache/huggingface",
+  "gpu": 4,
+  "global_max_gpus": 3,
+  "steps": 50,
+  "decoder_inversion_steps": 100,
+  "source_count": 4,
+  "reference_images": 8,
+  "auxiliary_images": 4,
+  "inversion_records": 18,
+  "settings": [
+    "blind encoder-only inversion",
+    "blind full decoder inversion",
+    "first source known-prompt full decoder diagnostic"
+  ],
+  "primary_measure": "Default candidate-derived semantic unbinding; strict BA>181/256",
+  "enrollment_code_measure": "Diagnostic only: recompute score with auxiliary semantic code to separate binding drift from inversion errors",
+  "same_fixed_inputs_as_historical": true,
+  "reuse_historical_images_or_latents": false,
+  "independent_confirmation": false,
+  "novel_attacks": false,
+  "algorithm_source": {
+    "SemBind": "337c9f90a150157ac1d410208ae20e6530ca8cdd",
+    "scheduler": "huggingface/diffusers v0.21.4"
+  },
+  "limitations": [
+    "Project GS binding adapter, not the full native SemBind release",
+    "Small four-source development rerun; no superiority claim",
+    "Known-prompt and auxiliary-code scores are diagnostics, not deployable detector inputs",
+    "Full100-step decoder optimization uses activation checkpointing and inactive-module CPU offload; no iteration truncation"
+  ]
+}
