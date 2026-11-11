@@ -8,13 +8,13 @@
 
 [完整预算 Imprint 评测](reports/full_imprint_20261111/report.md)已完成：8 个案例各151次更新，全部144张图完成验证。最终候选 SemBind 项目适配器接受0/4、GS接受4/4；五种冻结判定规则在全部图上完全一致，几何验证器没有额外防伪收益。
 
-[跨运行环境核验](reports/geometry_calibration_20261111/runtime_audit.md)已完成记录软件版本的恢复：11个固定依赖版本一致，完整DDIM50开发桥接的相对L2为0.000548和0.000569，均通过原定0.001门限。随后已在GPU5启动32个来源、192个查询和6144次身份验证的校准流程，三个分片顺序执行。最新已归档状态为校准缓存阶段，尚未报告完整校准分数；详见[运行环境与桥接证据](reports/geometry_calibration_20261111/runtime_setup_repair/report.md)。
+[32来源校准](reports/geometry_calibration_20261111/completed/report.md)与[64来源独立确认](reports/geometry_confirmation_20261111/report.md)均已完成。确认集384张合法查询：默认BA通过319张，全组几何验证通过382张，分组版本通过381张；三者在24,192次错误身份判决中均为0次接受。收益来自中心裁剪后放大的恢复，不能据此宣称新增防伪收益或SOTA。
 
-[已有开发实验](reports/blind_geometry_development_20261110/report.md)显示合法查询从144/160恢复为160/160，但收益仍需新来源及实际误报验证。独立确认集保留，当前没有SOTA结论。攻击仅采用已发表顶会顶刊的既定基线，创新集中于防御。
+[Gaussian Shading官方九条件评测](reports/gs_published_conditions_20261111/plan.md)已接续启动：同一组64来源的576张查询，完整DDIM50及36,864次身份判决。固定官方代码和九项参数，未创造或改进攻击；GPU7、5执行，完成后自动评分。共享来源与前一轮分别报告。
 
 ## 当前可核查结果
 
-最新研究报告：[SemBind 官方组件检查与合法扰动扩展](reports/sembind_official_audit_20261110/report.md)，日期 2026-11-10。SemBind-DDIM 在九种非裁剪条件下各为 16/16 通过，中心裁剪为 0/16；校准 BA 与内容验证器在相同 144/160 合法通过数下均拒绝全部 16 个既有 Reprompt 候选。DPM 组件检查的 8 张正常图在两种盲反演设置下全部通过。此前的[内容认证评测](reports/content_verifier_20261110/report.md)与[解码感知研究](reports/codeword_binding_20261109/report.md)保留开发证据。当前证据不支持宣称已达到 SOTA。
+此前开发报告：[SemBind 官方组件检查与合法扰动扩展](reports/sembind_official_audit_20261110/report.md)，日期 2026-11-10。SemBind-DDIM 在九种非裁剪条件下各为 16/16 通过，中心裁剪为 0/16；校准 BA 与内容验证器在相同 144/160 合法通过数下均拒绝全部 16 个既有 Reprompt 候选。DPM 组件检查的 8 张正常图在两种盲反演设置下全部通过。此前的[内容认证评测](reports/content_verifier_20261110/report.md)与[解码感知研究](reports/codeword_binding_20261109/report.md)保留开发证据。当前证据不支持宣称已达到 SOTA。
 
 研究问题：重复纠错应消除传输误差，但可能同时消除防伪所需的内容差异。原型将语义码对齐到重复码字，使内容差异保留在解码后的消息层。CoverLock 已有消息级内容包装的先例；编码顺序本身不作为首创贡献。
 

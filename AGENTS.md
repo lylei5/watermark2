@@ -10,8 +10,8 @@ These rules apply to this repository and `/data0/liyanlei/watermark_research` on
 ## Objective and current state
 
 - Develop a publishable defense with benefits at matched absolute legitimate-image detection rates, documented image quality and computation budgets.
-- Read `reports/full_imprint_20261111/report.md` for complete baseline findings and `reports/geometry_calibration_20261111/runtime_audit.md` for the active runtime-gated calibration workflow. Also read `reports/blind_geometry_development_20261110/report.md` and `method.md` in that directory for the latest blind geometry and null-calibration evidence; read `reports/crop_transport_diagnostic_20261110/report.md` for the oracle mechanism diagnostic and `reports/sembind_official_audit_20261110/report.md` for completed development results and `project_state.json` for remaining validation.
-- The statistical content verifier has no demonstrated advantage over calibrated BA on the completed development Reprompt comparison. Independent confirmation remains unscored.
+- Read `reports/geometry_confirmation_20261111/report.md` for completed independent confirmation, `reports/geometry_calibration_20261111/completed/report.md` for calibration, and `reports/full_imprint_20261111/report.md` for full-budget forgery results. The active official nine-condition benchmark is documented in `reports/gs_published_conditions_20261111/plan.md`; consult `project_state.json` for execution state.
+- Frozen all-fit geometry accepted382/384 genuine queries versus default319/384, both with0/24,192 wrong-identity accepts. Added forgery rejection and SOTA remain unproven. The confirmation set is consumed; future method changes require new independent validation. The nine-condition benchmark shares these64 sources and must be reported separately.
 
 ## Evaluation scope
 
