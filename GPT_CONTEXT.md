@@ -38,9 +38,13 @@ Protocol published in commit8b7246d before reading the six-condition confirmatio
 
 Server run: runs/gs_published_conditions_20261111 completed. Default554/576, identity-only556/576, identity with251 penalty552/576, all-fit552/576, split-fit529/576. All five0/36288 wrong identities. All-fit restored0 and lost2 default accepts (task084 officialcrop0.6, task097 salt-and-pepper0.05). Identity-penalty and all-fit agree on all36864 decisions. Source-cluster paired gain−0.35 percentage points,95% interval−0.87 to0. Read reports/gs_published_conditions_20261111/report.md. No universal robustness gain is supported.
 
-## Active natural-negative evaluation
+## Completed natural-negative evaluation
 
-Protocol protocols/unwatermarked_validation_20261111.json is frozen: all100 existing natural RGB512 COCO images ×64 identities =6400 decisions, completeDDIM50/batch2, unchanged methods and thresholds. Existing development assets, not independent confirmation. No generated attacks or new distortions. Full row/input/source hashes recorded. Plan: reports/unwatermarked_validation_20261111/plan.md. Execution root runs/unwatermarked_validation_20261111. Supervisor34016 launched after protocol publication in3886df4; observed caching_unwatermarked on GPUs7/5. Automatic frozen CPU scoring follows successful full caches. Check status/complete/failed once when needed; do not duplicate launch.
+Protocol protocols/unwatermarked_validation_20261111.json was published before launch in3886df4. All100 existing natural RGB512 COCO images completed DDIM50/batch2 and64-identity scoring:6400 decisions. Default, identity-only, identity with251 penalty, all-fit and split-fit all accepted0/6400; each accepted0/100 queries under any identity. Supplementary BA calibration targets80/90/95/100% accepted0/472/1385/6337 pairs and0/100/100/100 queries. Thresholds remain unchanged.
+
+Read reports/unwatermarked_validation_20261111/report.md. Input/bridge/source/cache hashes, all6400 unique pairs, bridge criteria and summary decisions were audited on server. Existing development assets, not independent confirmation. Shared identities and finite sample size preclude an ultra-low FPR claim. Scoring took54.13 seconds excluding inversion. Run root: runs/unwatermarked_validation_20261111; complete.json and audit.json exist. The research experiment pipeline is complete; no next GPU job is queued. Do not rerun completed jobs.
+
+The outstanding scientific gap is a defense benefit beyond recovery of the studied center crop-resize condition. Official nine-condition results and full-budget Imprint did not establish broader superiority. Further method development must use development data, preserve published-only attack baselines, and obtain new independent validation sources.
 
 ## Numerical compatibility evidence
 

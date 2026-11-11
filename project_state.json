@@ -43,7 +43,7 @@
     "root": "/data0/liyanlei/watermark_research",
     "primary_python": "/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/bin/python"
   },
-  "latest_progress_report": "reports/gs_published_conditions_20261111/report.md",
+  "latest_progress_report": "reports/unwatermarked_validation_20261111/report.md",
   "independent_progress": {
     "independent_images": 320,
     "source_prompts": 112,
@@ -60,7 +60,7 @@
   },
   "evaluation_policy": "Published standard baselines only; matched absolute genuine detection; no custom attack development",
   "requires_user_resume": false,
-  "active_experiments": 1,
+  "active_experiments": 0,
   "current_findings": {
     "sembind_genuine_non_crop": {
       "accepted": 144,
@@ -200,7 +200,7 @@
     ],
     "max_concurrent_gpus": 3
   },
-  "active_experiments_observation": "100 natural negatives caching full DDIM50 on GPUs7/5; automatic frozen CPU scoring across64 identities follows successful cache completion",
+  "active_experiments_observation": "Natural-negative evaluation complete and audited; no next GPU job queued",
   "full_budget_findings": {
     "source_count_per_method": 4,
     "sem_reference_accepted": 4,
@@ -261,7 +261,7 @@
     "report": "reports/gs_published_conditions_20261111/report.md"
   },
   "unwatermarked_validation": {
-    "status": "caching_unwatermarked",
+    "status": "complete",
     "queries": 100,
     "identity_decisions": 6400,
     "independent_confirmation": false,
@@ -273,6 +273,24 @@
     ],
     "server_root": "/data0/liyanlei/watermark_research/runs/unwatermarked_validation_20261111",
     "completion_mode": "child process exit then automatic CPU scoring",
-    "protocol_published_commit": "3886df4"
+    "protocol_published_commit": "3886df4",
+    "default_false_accepts": 0,
+    "all_fit_false_accepts": 0,
+    "split_fit_false_accepts": 0,
+    "any_identity_accepted_queries": 0,
+    "audit_passed": true,
+    "report": "reports/unwatermarked_validation_20261111/report.md",
+    "supplementary_ba_false_accepts": [
+      0,
+      472,
+      1385,
+      6337
+    ],
+    "supplementary_ba_any_identity_queries": [
+      0,
+      100,
+      100,
+      100
+    ]
   }
 }

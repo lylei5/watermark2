@@ -1,0 +1,96 @@
+{
+  "completed": true,
+  "protocol_sha256": "0eaa15e1ac972795bce4dc5f302d5d2ed43032bee3ae47dc0a09622621fbeb58",
+  "results_sha256": "efa80a0a8da2b0c76587d67400087b2f3f8369a78b910230dcfe1892c55cb413",
+  "audit_source_sha256": "1eb4af85114949ec4dbe79c77c43370f6436e74408fd9ad238cb27b14ab1ee15",
+  "image_and_bridge_hashes_verified": true,
+  "frozen_source_and_cache_hashes_verified": true,
+  "identity_pairs_verified": 6400,
+  "full_ddim_steps": 50,
+  "bridge": {
+    "rows": [
+      {
+        "id": "000_sembind_scattered_clean",
+        "relative_l2": 0.0005475535872392356,
+        "code_equal": true
+      },
+      {
+        "id": "000_sembind_scattered_crop90",
+        "relative_l2": 0.0005690459511242807,
+        "code_equal": true
+      }
+    ]
+  },
+  "summary": {
+    "default_accepted": {
+      "accepted": 0,
+      "n": 6400,
+      "any_identity_accepted_queries": 0,
+      "queries": 100
+    },
+    "identity_accepted": {
+      "accepted": 0,
+      "n": 6400,
+      "any_identity_accepted_queries": 0,
+      "queries": 100
+    },
+    "identity_penalty_accepted": {
+      "accepted": 0,
+      "n": 6400,
+      "any_identity_accepted_queries": 0,
+      "queries": 100
+    },
+    "all_fit_accepted": {
+      "accepted": 0,
+      "n": 6400,
+      "any_identity_accepted_queries": 0,
+      "queries": 100
+    },
+    "split_fit_accepted": {
+      "accepted": 0,
+      "n": 6400,
+      "any_identity_accepted_queries": 0,
+      "queries": 100
+    }
+  },
+  "supplementary_ba_controls": [
+    {
+      "target_calibration_tpr": 0.8,
+      "threshold": 0.9921875,
+      "operator": ">=",
+      "accepted": 0,
+      "n": 6400,
+      "any_identity_accepted_queries": 0,
+      "queries": 100
+    },
+    {
+      "target_calibration_tpr": 0.9,
+      "threshold": 0.546875,
+      "operator": ">=",
+      "accepted": 472,
+      "n": 6400,
+      "any_identity_accepted_queries": 100,
+      "queries": 100
+    },
+    {
+      "target_calibration_tpr": 0.95,
+      "threshold": 0.52734375,
+      "operator": ">=",
+      "accepted": 1385,
+      "n": 6400,
+      "any_identity_accepted_queries": 100,
+      "queries": 100
+    },
+    {
+      "target_calibration_tpr": 1.0,
+      "threshold": 0.4296875,
+      "operator": ">=",
+      "accepted": 6337,
+      "n": 6400,
+      "any_identity_accepted_queries": 100,
+      "queries": 100
+    }
+  ],
+  "independent_confirmation": false,
+  "limitation": "Existing development images and shared identities; no independent-trial or ultra-low FPR claim"
+}
