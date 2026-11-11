@@ -38,9 +38,9 @@ Protocol published in commit8b7246d before reading the six-condition confirmatio
 
 Server run: runs/gs_published_conditions_20261111 completed. Default554/576, identity-only556/576, identity with251 penalty552/576, all-fit552/576, split-fit529/576. All five0/36288 wrong identities. All-fit restored0 and lost2 default accepts (task084 officialcrop0.6, task097 salt-and-pepper0.05). Identity-penalty and all-fit agree on all36864 decisions. Source-cluster paired gain−0.35 percentage points,95% interval−0.87 to0. Read reports/gs_published_conditions_20261111/report.md. No universal robustness gain is supported.
 
-## Prepared natural-negative evaluation
+## Active natural-negative evaluation
 
-Protocol protocols/unwatermarked_validation_20261111.json is frozen: all100 existing natural RGB512 COCO images ×64 identities =6400 decisions, completeDDIM50/batch2, unchanged methods and thresholds. Existing development assets, not independent confirmation. No generated attacks or new distortions. Full row/input/source hashes recorded. Plan: reports/unwatermarked_validation_20261111/plan.md. Execution root runs/unwatermarked_validation_20261111. Check status/complete/failed once when needed; do not duplicate launch.
+Protocol protocols/unwatermarked_validation_20261111.json is frozen: all100 existing natural RGB512 COCO images ×64 identities =6400 decisions, completeDDIM50/batch2, unchanged methods and thresholds. Existing development assets, not independent confirmation. No generated attacks or new distortions. Full row/input/source hashes recorded. Plan: reports/unwatermarked_validation_20261111/plan.md. Execution root runs/unwatermarked_validation_20261111. Supervisor34016 launched after protocol publication in3886df4; observed caching_unwatermarked on GPUs7/5. Automatic frozen CPU scoring follows successful full caches. Check status/complete/failed once when needed; do not duplicate launch.
 
 ## Numerical compatibility evidence
 
