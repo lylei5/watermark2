@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-12T18:08:39.618240+00:00",
+  "updated_at": "2026-11-12T18:24:12.945557+00:00",
   "status": "phase1_trajectory_native_gs_running",
   "active_experiments": 1,
   "queued_experiments": 0,
-  "latest_progress_report": "reports/phase1_wrong_key_null_20261113/report.md",
+  "latest_progress_report": "reports/phase1_trajectory_native_gs_20261113/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/PHASE1_PROTOCOL.md",
   "native_sembind_reproduction_complete": false,
@@ -59,6 +59,18 @@
   "evaluation_policy": "Unchanged published top-venue attacks only; full budgets; no attack development; matched absolute genuine detection",
   "current_decision": "Execute phase1 baseline working-point audit and observational trajectory probe; no carrier or attack variants",
   "completed_evidence": [
+    {
+      "path": "reports/phase1_hamming_radius_20261113/report.md",
+      "scope": "100提示词已观察码的半径重叠；非FE或攻击实验"
+    },
+    {
+      "path": "reports/phase1_trajectory_native_gs_20261113/report.md",
+      "scope": "100/100生成与轨迹测量完成；第35步门槛未通过；反演验证仍运行"
+    },
+    {
+      "path": "reports/phase1_public_inputs_20261113/report.md",
+      "scope": "100张COCO输入校验和100条过滤I2P目标准备；未执行攻击"
+    },
     {
       "path": "reports/phase1_backend_audit_20261113/report.md",
       "scope": "PRC原码8/8 CPU往返；SD1.5与CLIP权重哈希；不构成图像复现"
@@ -197,10 +209,9 @@
     "Defense benefit over simple controls at matched absolute genuine detection"
   ],
   "phase1": {
-    "status": "generation_running",
+    "status": "generation_complete_verification_running",
     "report": "reports/phase1_contract_20261113/report.md",
     "model_experiments_started": 1,
-    "paper_gs_minimum_matching_bits": 167,
     "original_gs_source_minimum_matching_bits": 166,
     "empirical_fpr_established": false,
     "randomized_identity_null_trials": 3000000,
@@ -227,6 +238,26 @@
       "sd15_assets_hashed": true,
       "clip_vitl14_assets_hashed": true,
       "gspp_complete_implementation_located": false
+    },
+    "ideal_single_identity_gs_minimum_matching_bits": 167,
+    "verification_worker_pids": [
+      28851,
+      28852,
+      28853
+    ],
+    "generation_complete": true,
+    "generation_prompts": 100,
+    "trajectory35_p5": {
+      "COCO": 0.904638671875,
+      "SDP": 0.8923828125
+    },
+    "trajectory_necessary_condition_passed": false,
+    "hamming_radius_diagnostic": "reports/phase1_hamming_radius_20261113/report.md",
+    "public_inputs": {
+      "coco_images_verified": 100,
+      "filtered_i2p_targets": 100,
+      "attack_jobs": 0,
+      "report": "reports/phase1_public_inputs_20261113/report.md"
     }
   },
   "baseline_comparisons": {
@@ -237,5 +268,12 @@
       "evidence": "reports/phase1_seal_status_20261113/assets.json",
       "contract": "docs/SEAL_EVALUATION_CONTRACT.md"
     }
+  },
+  "content_key_review": {
+    "document": "docs/CONTENT_KEY_FEASIBILITY.md",
+    "extractor_implemented": false,
+    "encoder_training_started": false,
+    "overall_fpr_established": false,
+    "priority": "Resolve final-instance reference and generation order; test instance separation and added value over direct matching"
   }
 }

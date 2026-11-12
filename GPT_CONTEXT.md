@@ -1,6 +1,6 @@
 # Research handoff: content-bound diffusion watermark defense
 
-Authoritative execution state: [project_state.json](project_state.json). Completed evidence: [reports/README.md](reports/README.md). Updated 2026-11-13. Phase1 contract audit and 3,000,000 randomized-identity null trials are complete. The 100-prompt trajectory/native-GS run is active on GPUs 7, 5, 4, with process-exit sequencing of generation and exact-inversion verification. Latest report: reports/phase1_wrong_key_null_20261113/report.md. The 167-bit null had 0/3,000,000 accepts with two-sided 95% upper 1.22963e-6; this is conditional on six historical inversions, not fixed-user natural-image FPR.
+Authoritative execution state: [project_state.json](project_state.json). Completed evidence: [reports/README.md](reports/README.md). Updated 2026-11-13. Phase1 contract audit and 3,000,000 randomized-identity null trials are complete. The 100-prompt generation stage is complete; exact-inversion verification is active on GPUs 7, 5, 4. Step35 P5 is0.904639/0.892383 for COCO/SDP, failing the frozen0.95 gate. Latest report: reports/phase1_trajectory_native_gs_20261113/report.md. The 167-bit null had 0/3,000,000 accepts with two-sided 95% upper 1.22963e-6; this is conditional on six historical inversions, not fixed-user natural-image FPR.
 
 ## Baseline and implementation
 
@@ -15,6 +15,10 @@ Semantic extraction is in `scripts/defense/semantic_code.py`; it has no watermar
 [Conditional transport](reports/semantic_transport_pilot_20261112/report.md): 240 genuine records, 1200 wrong-identity pairs. Full / saturated / transport / shuffled transport accept 53 / 52 / 55 / 57 of 60. Better preview LPIPS did not provide improved binding or retention over the matched control; no Imprint branch ran.
 
 Other completed negative results, calibration, diagnostics and published baselines are indexed in reports/README.md. No candidate establishes superior defense at matched absolute genuine detection. Confirmation sources already inspected must not be reused as independent validation after a method change.
+
+## Content-key research assessment
+
+See docs/CONTENT_KEY_FEASIBILITY.md. Fuzzy extraction and a new instance encoder have not been implemented. In the inspected100-prompt cohort, empirical radii covering at least95% of aux/final pairs also cover82%/90% of same-prompt independent instances (COCO/SDP); this is descriptive overlap, not forgery acceptance. Resolve the final-image reference and generation order before combining instance separation with key recovery. Public content is not a provider secret; helper data location/authentication, entropy assumptions, and comparison to direct content matching remain essential. Complete the original baseline work; do not launch training or claim1e-6 from key length.
 
 ## Next research requirement
 

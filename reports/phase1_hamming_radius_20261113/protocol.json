@@ -1,0 +1,23 @@
+{
+  "created_at": "2026-11-12T18:18:37.199445+00:00",
+  "source": "/data0/liyanlei/watermark_research/runs/phase1_trajectory_native_gs_20261113",
+  "source_summary_sha256": "3a3e91a464843cee48df49159b323bcdd0c024530769d08de04309bbdc5a9c8d",
+  "script_sha256": "8872cc9b68ee9038e58c9e88010dff95fc3e37f0e75c2d22dd1dab7b5423d153",
+  "bits": 1024,
+  "fixed_radii": [
+    51,
+    102,
+    154,
+    195,
+    205,
+    256,
+    307
+  ],
+  "empirical_coverage_targets": [
+    0.95,
+    1.0
+  ],
+  "scope": "Post-hoc descriptive overlap on an already inspected cohort; no independent calibration, no fuzzy extractor, no key derivation, no newly generated images and no attacks",
+  "interpretation": "Same-prompt independent images are an instance-separation control, not measured forgeries; aux/bound codes come from SemBind sign modulation, not the proposed key-derived carrier",
+  "uncertainty": "Pointwise Clopper-Pearson intervals at fixed radii only; not simultaneous bands. Data-selected coverage radii have descriptive counts only and no validation confidence claim."
+}

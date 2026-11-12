@@ -6,7 +6,7 @@
 
 **SemBind 完整原生复现尚未完成。** 当前代码使用作者发布的语义网络与 DPM 生成/反演组件，载体、绑定和评测编排属于项目实现。当前执行[第一阶段协议](docs/PHASE1_PROTOCOL.md)：论文规格基线、工作点及正常去噪轨迹语义测量；载体变体暂停。
 
-[第一阶段规格核验](reports/phase1_contract_20261113/report.md)及[300万次随机错误身份核验](reports/phase1_wrong_key_null_20261113/report.md)已完成。167位门槛误报0/300万，双侧95%上界1.22963e-6；这不是固定用户的自然图FPR。100个新提示词的轨迹测量与原GS载体基线正在249运行，冻结[执行协议](protocols/phase1_trajectory_native_gs_20261113.json)。此前完成的[连续语义区域筛选](reports/continuous_geometry_screen_20261113/report.md)有 24 条干净图验证：四组均接受 6/6，但主候选未通过绑定偏差和比特准确率门槛，没有执行攻击评测。它不支持鲁棒性或防伪优势。
+[第一阶段规格核验](reports/phase1_contract_20261113/report.md)及[300万次随机错误身份核验](reports/phase1_wrong_key_null_20261113/report.md)已完成。167位门槛误报0/300万，双侧95%上界1.22963e-6；这不是固定用户的自然图FPR。[100提示词生成与轨迹测量](reports/phase1_trajectory_native_gs_20261113/report.md)已完成，COCO/SDP第35步一致率P5为0.904639/0.892383，未通过预注册0.95门槛；原GS载体基线的完整反演验证仍在249运行，冻结[执行协议](protocols/phase1_trajectory_native_gs_20261113.json)。此前完成的[连续语义区域筛选](reports/continuous_geometry_screen_20261113/report.md)有 24 条干净图验证：四组均接受 6/6，但主候选未通过绑定偏差和比特准确率门槛，没有执行攻击评测。它不支持鲁棒性或防伪优势。
 
 | 已完成研究 | 主要结果 | 结论范围 |
 |---|---|---|
@@ -17,6 +17,8 @@
 | [连续语义区域](reports/continuous_geometry_screen_20261113/report.md) | 主候选平均 BA 0.968750，量化对照 1.000000 | 仅六来源干净图筛选，未通过推进门槛 |
 
 各实验使用不同来源，表格只作证据导航，不能跨行比较方法排名。完整失败结果和冻结协议见[报告索引](reports/README.md)。
+
+[内容密钥可行性评估](docs/CONTENT_KEY_FEASIBILITY.md)：当前码器在保留至少95%辅助图→最终图配对的半径下，同提示词不同实例落入比例为COCO 82%、SDP 90%。这是描述性诊断，不是攻击成功率；模糊提取器、实例码器训练及整体1e-6保证尚未实现。
 
 ## 当前实现
 
