@@ -10,6 +10,8 @@ Semantic feedback finished at 19:09 CST with 180 genuine queries, 18 feedback tr
 
 Read reports/completion_audit_20261112/audit.json for the later read-only artifact and arithmetic audit. It does not constitute fresh model execution. Preserve prior launch snapshots as historical records. No SOTA, convergence or distribution-preservation claim is established.
 
+Replica-moment development screen completed on249 using cached full-budget artifacts. Six-source60-query calibration and previously inspected12-source development data. Primary normalized first moment with fixed stability penalty accepts86/120 genuine and0/12 final Imprint versus default107/120 and1/12; wrong identities0/1320. Ratio without penalty accepts8/1320 wrong identities. Screen gate failed, no GPU expansion. This is new CPU scoring, not new model execution or independent confirmation. Read reports/replica_moments_development_20261112/report.md. No threshold retuning on these sources.
+
 ## Fresh execution policy and revalidation
 
 The user requires fresh execution before critical inherited experimental claims support further research. Historical artifacts remain comparisons; arithmetic audit is not a fresh model experiment. The authorized first batch is protocols/defense_revalidation_20261111.json, with scope and limitations in reports/defense_revalidation_20261111/plan.md:100-source SemBind component measurements under clean plus9 unchanged published conditions, and all10 supplied PGID examples with151 updates and full defense computation. This reuses development inputs, not an independent confirmation set. Future pip installation uses Tsinghua exclusively by default. Execution state is recorded in project_state.json.

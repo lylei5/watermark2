@@ -12,6 +12,8 @@
 
 同日其他完整结果：[新执行Imprint](reports/imprint_fresh_revalidation_20261112/report.md)最终SemBind项目适配器接受0/4、GS接受4/4；[条件内容似然](reports/conditional_content_likelihood_20261112/report.md)合法接受30/40，低于校准BA的39/40，未增加拒绝收益；[共享内容锚](reports/conditional_anchor_pilot_20261112/report.md)未通过冻结鲁棒性门槛；[内容耦合分位载体](reports/conditional_quantile_pilot_20261112/report.md)合法接受48/60，低于full的59/60及独立采样对照54/60。各实验保留完整结果及适用边界。
 
+[重复观测二阶矩开发筛选](reports/replica_moments_development_20261112/report.md)已在249上完成：利用既有缓存进行新的CPU评分，主候选合法接受86/120、最终Imprint接受0/12，未达到默认BA的合法保留水平。此项不算新模型执行或独立确认，未扩大GPU实验。
+
 [完整预算 Imprint 评测](reports/full_imprint_20261111/report.md)已完成：8 个案例各151次更新，全部144张图完成验证。最终候选 SemBind 项目适配器接受0/4、GS接受4/4；五种冻结判定规则在全部图上完全一致，几何验证器没有额外防伪收益。
 
 [32来源校准](reports/geometry_calibration_20261111/completed/report.md)与[64来源独立确认](reports/geometry_confirmation_20261111/report.md)均已完成。确认集384张合法查询：默认BA通过319张，全组几何验证通过382张，分组版本通过381张；三者在24,192次错误身份判决中均为0次接受。收益来自中心裁剪后放大的恢复，不能据此宣称新增防伪收益或SOTA。

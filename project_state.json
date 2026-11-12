@@ -903,5 +903,23 @@
     }
   },
   "queued_experiments": 0,
-  "completion_audit": "reports/completion_audit_20261112/audit.json"
+  "completion_audit": "reports/completion_audit_20261112/audit.json",
+  "replica_moments_development": {
+    "status": "complete",
+    "execution_host": "249",
+    "report": "reports/replica_moments_development_20261112/report.md",
+    "server_root": "/data0/liyanlei/watermark_research/runs/replica_moments_development_20261112_v2",
+    "fresh_model_execution": false,
+    "independent_confirmation": false,
+    "primary": "replica_lower",
+    "genuine_accepted": 86,
+    "genuine_n": 120,
+    "final_imprint_accepted": 0,
+    "final_imprint_n": 12,
+    "wrong_identity_accepted": 0,
+    "wrong_identity_n": 1320,
+    "advance_to_fresh_pilot": false,
+    "gpu_used": false,
+    "superiority_established": false
+  }
 }

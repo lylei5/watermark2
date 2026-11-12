@@ -1,0 +1,13 @@
+{
+  "time_utc": "2026-11-12T12:29:55.884043+00:00",
+  "scorer_sha256": "e0ea7bff274bc098554caee15518aa49b9becefd8baf7e66b6f582a17441dc48",
+  "runner_sha256": "244ba46ee22a526c54164de9f100aeb396f354c978bace17a2064ce5fdf37ca4",
+  "primary": "replica_lower",
+  "stability_multiplier": 2.576,
+  "threshold_rank": 3,
+  "threshold_operator": ">=",
+  "calibration": "60 full-carrier queries from conditional_quantile_pilot_20261112_v2",
+  "development": "shared_semantic_evidence_20261112; previously inspected outcomes",
+  "reuse_scope": "Cached-model development screen; not fresh execution or independent confirmation",
+  "attacks": "Existing unchanged published CVPR2025 Imprint outputs only"
+}
