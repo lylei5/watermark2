@@ -1,0 +1,22 @@
+{
+  "protocol_sha256": "df38260a3811a858c10c02c1af4287ec145515108842ca612891d515de95b464",
+  "data_sha256": "5013197efc463645c2d5669601635b39fa4044b7c3d14f1010baa7852ad7f055",
+  "script_sha256": "13a4dbb136af813d414846c093f33fbeee7e1abcab02edd07b3cbd41a7322652",
+  "n": 6,
+  "unit": "independent source, paired across arms; each source has ten correlated genuine conditions",
+  "uncertainty": "All six sources shown. No confidence bands or significance claims.",
+  "transformations": "Accepted count summed within source. Reference Hamming and LPIPS directly from audited references. Equal source means. Horizontal jitter is fixed by task ID.",
+  "exclusions": "None. All 240 genuine queries retained, including invalid clean references.",
+  "packages": {
+    "python": "3.10.18",
+    "numpy": "2.2.6",
+    "matplotlib": "3.9.2"
+  },
+  "figure_inches": [
+    9,
+    3.35
+  ],
+  "png_dpi": 300,
+  "publisher": "Provisional research figure; no submission target specified",
+  "alt_text": "Three paired-source plots show genuine detection counts, semantic mismatch, and preview fidelity for all four embedding arms. Lower mismatch or LPIPS alone does not establish stronger authentication."
+}

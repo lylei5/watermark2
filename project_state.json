@@ -27,7 +27,7 @@
     "root": "/data0/liyanlei/watermark_research",
     "primary_python": "/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/bin/python"
   },
-  "latest_progress_report": "reports/decision_region_pilot_20261112/report.md",
+  "latest_progress_report": "reports/semantic_transport_pilot_20261112/report.md",
   "independent_progress": {
     "independent_images": 320,
     "source_prompts": 112,
@@ -186,7 +186,7 @@
     "python_package_index": "https://pypi.tuna.tsinghua.edu.cn/simple/",
     "automatic_aliyun_fallback": false
   },
-  "active_experiments_observation": "Conditional Gaussian transport running on249 from2026-11-12T15:29:43Z on7/5/4. Continuous geometry v2 coordinator31134 queued after parent15104 via kernel process-exit event; prelaunch commita2852c0. No repeated progress polling; independent research continues.",
+  "active_experiments_observation": "Conditional Gaussian transport completed2026-11-12T16:32:31Z with240 audited genuine queries and failed gates. Continuous geometry v2 started2026-11-12T16:32:41Z, coordinator31134, workers42901/42902/42903, after parent-exit event; prelaunch commita2852c0. No repeated progress polling.",
   "full_budget_findings": {
     "source_count_per_method": 4,
     "sem_reference_accepted": 4,
@@ -902,7 +902,7 @@
       "stage": "failed_frozen_feasibility_gate"
     }
   },
-  "queued_experiments": 1,
+  "queued_experiments": 0,
   "completion_audit": "reports/completion_audit_20261112/audit.json",
   "replica_moments_development": {
     "status": "complete",
@@ -956,7 +956,10 @@
     "superiority_established": false
   },
   "continuous_geometry_screen": {
-    "status": "queued_on_parent_exit",
+    "status": "running",
+    "stage": "clean_mechanism_screen",
+    "start_time_utc": "2026-11-12T16:32:41.995130+00:00",
+    "worker_pids": [42901, 42902, 42903],
     "coordinator_pid": 31134,
     "prelaunch_commit": "a2852c0",
     "initial_prelaunch_commit": "65913d4",
@@ -975,8 +978,17 @@
     "superiority_established": false
   },
   "semantic_transport_pilot": {
-    "status": "running",
-    "stage": "genuine",
+    "status": "complete",
+    "stage": "genuine_audited_gate_failed",
+    "completion_time_utc": "2026-11-12T16:32:31.140450+00:00",
+    "report": "reports/semantic_transport_pilot_20261112/report.md",
+    "genuine_records_completed": 240,
+    "wrong_identity_pairs_completed": 1200,
+    "actual_imprint_jobs": 0,
+    "primary_genuine_accepted": 55,
+    "full_genuine_accepted": 53,
+    "shuffled_control_genuine_accepted": 57,
+    "genuine_denominator_per_arm": 60,
     "start_time_utc": "2026-11-12T15:29:43.272994+00:00",
     "coordinator_pid": 15104,
     "worker_pids": [15111, 15112, 15113],

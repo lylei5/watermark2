@@ -1,0 +1,1213 @@
+{
+  "completed": true,
+  "summary": {
+    "full": {
+      "initial_mse": 1.9957624205522275,
+      "clean": 6,
+      "wrong": 0,
+      "channel": {
+        "actual_accepted": 53,
+        "oracle_accepted": 57,
+        "physical_error": 0.3281178792317708,
+        "binding_error": 0.12985026041666667,
+        "classes": {
+          "reflected": {
+            "n": 490290,
+            "physical_flips": 160892
+          },
+          "retained_correct": {
+            "n": 492750,
+            "physical_flips": 161661
+          },
+          "retained_wrong": {
+            "n": 0,
+            "physical_flips": 0
+          }
+        }
+      }
+    },
+    "saturated": {
+      "initial_mse": 1.9897867020699287,
+      "clean": 6,
+      "wrong": 0,
+      "channel": {
+        "actual_accepted": 52,
+        "oracle_accepted": 58,
+        "physical_error": 0.32639668782552084,
+        "binding_error": 0.11658528645833334,
+        "classes": {
+          "reflected": {
+            "n": 490290,
+            "physical_flips": 159901
+          },
+          "retained_correct": {
+            "n": 492750,
+            "physical_flips": 160960
+          },
+          "retained_wrong": {
+            "n": 0,
+            "physical_flips": 0
+          }
+        }
+      }
+    },
+    "transport": {
+      "initial_mse": 0.8365171831240726,
+      "clean": 6,
+      "wrong": 0,
+      "channel": {
+        "actual_accepted": 55,
+        "oracle_accepted": 59,
+        "physical_error": 0.32063395182291665,
+        "binding_error": 0.105029296875,
+        "classes": {
+          "reflected": {
+            "n": 490290,
+            "physical_flips": 190480
+          },
+          "retained_correct": {
+            "n": 492750,
+            "physical_flips": 124716
+          },
+          "retained_wrong": {
+            "n": 0,
+            "physical_flips": 0
+          }
+        }
+      }
+    },
+    "shuffled_transport": {
+      "initial_mse": 2.005349918247775,
+      "clean": 6,
+      "wrong": 0,
+      "channel": {
+        "actual_accepted": 57,
+        "oracle_accepted": 59,
+        "physical_error": 0.32153116861979164,
+        "binding_error": 0.1109375,
+        "classes": {
+          "reflected": {
+            "n": 490290,
+            "physical_flips": 156704
+          },
+          "retained_correct": {
+            "n": 492750,
+            "physical_flips": 159374
+          },
+          "retained_wrong": {
+            "n": 0,
+            "physical_flips": 0
+          }
+        }
+      }
+    }
+  },
+  "paired": {
+    "full": {
+      "restored": 3,
+      "lost": 1,
+      "rows": [
+        {
+          "task": 0,
+          "condition": "clean",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 0,
+          "condition": "random_crop_ratio",
+          "candidate": true,
+          "control": false
+        },
+        {
+          "task": 0,
+          "condition": "random_drop_ratio",
+          "candidate": false,
+          "control": false
+        },
+        {
+          "task": 0,
+          "condition": "brightness_factor",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 0,
+          "condition": "jpeg_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 0,
+          "condition": "gaussian_blur_r",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 0,
+          "condition": "gaussian_std",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 0,
+          "condition": "median_blur_k",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 0,
+          "condition": "sp_prob",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 0,
+          "condition": "resize_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 3,
+          "condition": "clean",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 3,
+          "condition": "random_crop_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 3,
+          "condition": "random_drop_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 3,
+          "condition": "brightness_factor",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 3,
+          "condition": "jpeg_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 3,
+          "condition": "gaussian_blur_r",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 3,
+          "condition": "gaussian_std",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 3,
+          "condition": "median_blur_k",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 3,
+          "condition": "sp_prob",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 3,
+          "condition": "resize_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 1,
+          "condition": "clean",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 1,
+          "condition": "random_crop_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 1,
+          "condition": "random_drop_ratio",
+          "candidate": true,
+          "control": false
+        },
+        {
+          "task": 1,
+          "condition": "brightness_factor",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 1,
+          "condition": "jpeg_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 1,
+          "condition": "gaussian_blur_r",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 1,
+          "condition": "gaussian_std",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 1,
+          "condition": "median_blur_k",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 1,
+          "condition": "sp_prob",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 1,
+          "condition": "resize_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "clean",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "random_crop_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "random_drop_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "brightness_factor",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "jpeg_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "gaussian_blur_r",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "gaussian_std",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "median_blur_k",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "sp_prob",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "resize_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 2,
+          "condition": "clean",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 2,
+          "condition": "random_crop_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 2,
+          "condition": "random_drop_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 2,
+          "condition": "brightness_factor",
+          "candidate": false,
+          "control": false
+        },
+        {
+          "task": 2,
+          "condition": "jpeg_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 2,
+          "condition": "gaussian_blur_r",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 2,
+          "condition": "gaussian_std",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 2,
+          "condition": "median_blur_k",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 2,
+          "condition": "sp_prob",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 2,
+          "condition": "resize_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 5,
+          "condition": "clean",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 5,
+          "condition": "random_crop_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 5,
+          "condition": "random_drop_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 5,
+          "condition": "brightness_factor",
+          "candidate": false,
+          "control": false
+        },
+        {
+          "task": 5,
+          "condition": "jpeg_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 5,
+          "condition": "gaussian_blur_r",
+          "candidate": false,
+          "control": true
+        },
+        {
+          "task": 5,
+          "condition": "gaussian_std",
+          "candidate": false,
+          "control": false
+        },
+        {
+          "task": 5,
+          "condition": "median_blur_k",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 5,
+          "condition": "sp_prob",
+          "candidate": true,
+          "control": false
+        },
+        {
+          "task": 5,
+          "condition": "resize_ratio",
+          "candidate": true,
+          "control": true
+        }
+      ]
+    },
+    "saturated": {
+      "restored": 4,
+      "lost": 1,
+      "rows": [
+        {
+          "task": 0,
+          "condition": "clean",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 0,
+          "condition": "random_crop_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 0,
+          "condition": "random_drop_ratio",
+          "candidate": false,
+          "control": false
+        },
+        {
+          "task": 0,
+          "condition": "brightness_factor",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 0,
+          "condition": "jpeg_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 0,
+          "condition": "gaussian_blur_r",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 0,
+          "condition": "gaussian_std",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 0,
+          "condition": "median_blur_k",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 0,
+          "condition": "sp_prob",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 0,
+          "condition": "resize_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 3,
+          "condition": "clean",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 3,
+          "condition": "random_crop_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 3,
+          "condition": "random_drop_ratio",
+          "candidate": true,
+          "control": false
+        },
+        {
+          "task": 3,
+          "condition": "brightness_factor",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 3,
+          "condition": "jpeg_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 3,
+          "condition": "gaussian_blur_r",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 3,
+          "condition": "gaussian_std",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 3,
+          "condition": "median_blur_k",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 3,
+          "condition": "sp_prob",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 3,
+          "condition": "resize_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 1,
+          "condition": "clean",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 1,
+          "condition": "random_crop_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 1,
+          "condition": "random_drop_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 1,
+          "condition": "brightness_factor",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 1,
+          "condition": "jpeg_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 1,
+          "condition": "gaussian_blur_r",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 1,
+          "condition": "gaussian_std",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 1,
+          "condition": "median_blur_k",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 1,
+          "condition": "sp_prob",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 1,
+          "condition": "resize_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "clean",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "random_crop_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "random_drop_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "brightness_factor",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "jpeg_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "gaussian_blur_r",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "gaussian_std",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "median_blur_k",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "sp_prob",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "resize_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 2,
+          "condition": "clean",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 2,
+          "condition": "random_crop_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 2,
+          "condition": "random_drop_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 2,
+          "condition": "brightness_factor",
+          "candidate": false,
+          "control": false
+        },
+        {
+          "task": 2,
+          "condition": "jpeg_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 2,
+          "condition": "gaussian_blur_r",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 2,
+          "condition": "gaussian_std",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 2,
+          "condition": "median_blur_k",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 2,
+          "condition": "sp_prob",
+          "candidate": true,
+          "control": false
+        },
+        {
+          "task": 2,
+          "condition": "resize_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 5,
+          "condition": "clean",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 5,
+          "condition": "random_crop_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 5,
+          "condition": "random_drop_ratio",
+          "candidate": true,
+          "control": false
+        },
+        {
+          "task": 5,
+          "condition": "brightness_factor",
+          "candidate": false,
+          "control": false
+        },
+        {
+          "task": 5,
+          "condition": "jpeg_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 5,
+          "condition": "gaussian_blur_r",
+          "candidate": false,
+          "control": true
+        },
+        {
+          "task": 5,
+          "condition": "gaussian_std",
+          "candidate": false,
+          "control": false
+        },
+        {
+          "task": 5,
+          "condition": "median_blur_k",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 5,
+          "condition": "sp_prob",
+          "candidate": true,
+          "control": false
+        },
+        {
+          "task": 5,
+          "condition": "resize_ratio",
+          "candidate": true,
+          "control": true
+        }
+      ]
+    },
+    "shuffled_transport": {
+      "restored": 1,
+      "lost": 3,
+      "rows": [
+        {
+          "task": 0,
+          "condition": "clean",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 0,
+          "condition": "random_crop_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 0,
+          "condition": "random_drop_ratio",
+          "candidate": false,
+          "control": false
+        },
+        {
+          "task": 0,
+          "condition": "brightness_factor",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 0,
+          "condition": "jpeg_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 0,
+          "condition": "gaussian_blur_r",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 0,
+          "condition": "gaussian_std",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 0,
+          "condition": "median_blur_k",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 0,
+          "condition": "sp_prob",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 0,
+          "condition": "resize_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 3,
+          "condition": "clean",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 3,
+          "condition": "random_crop_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 3,
+          "condition": "random_drop_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 3,
+          "condition": "brightness_factor",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 3,
+          "condition": "jpeg_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 3,
+          "condition": "gaussian_blur_r",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 3,
+          "condition": "gaussian_std",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 3,
+          "condition": "median_blur_k",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 3,
+          "condition": "sp_prob",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 3,
+          "condition": "resize_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 1,
+          "condition": "clean",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 1,
+          "condition": "random_crop_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 1,
+          "condition": "random_drop_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 1,
+          "condition": "brightness_factor",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 1,
+          "condition": "jpeg_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 1,
+          "condition": "gaussian_blur_r",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 1,
+          "condition": "gaussian_std",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 1,
+          "condition": "median_blur_k",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 1,
+          "condition": "sp_prob",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 1,
+          "condition": "resize_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "clean",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "random_crop_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "random_drop_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "brightness_factor",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "jpeg_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "gaussian_blur_r",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "gaussian_std",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "median_blur_k",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "sp_prob",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 4,
+          "condition": "resize_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 2,
+          "condition": "clean",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 2,
+          "condition": "random_crop_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 2,
+          "condition": "random_drop_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 2,
+          "condition": "brightness_factor",
+          "candidate": false,
+          "control": true
+        },
+        {
+          "task": 2,
+          "condition": "jpeg_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 2,
+          "condition": "gaussian_blur_r",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 2,
+          "condition": "gaussian_std",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 2,
+          "condition": "median_blur_k",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 2,
+          "condition": "sp_prob",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 2,
+          "condition": "resize_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 5,
+          "condition": "clean",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 5,
+          "condition": "random_crop_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 5,
+          "condition": "random_drop_ratio",
+          "candidate": true,
+          "control": false
+        },
+        {
+          "task": 5,
+          "condition": "brightness_factor",
+          "candidate": false,
+          "control": false
+        },
+        {
+          "task": 5,
+          "condition": "jpeg_ratio",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 5,
+          "condition": "gaussian_blur_r",
+          "candidate": false,
+          "control": true
+        },
+        {
+          "task": 5,
+          "condition": "gaussian_std",
+          "candidate": false,
+          "control": true
+        },
+        {
+          "task": 5,
+          "condition": "median_blur_k",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 5,
+          "condition": "sp_prob",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "task": 5,
+          "condition": "resize_ratio",
+          "candidate": true,
+          "control": true
+        }
+      ]
+    }
+  },
+  "script_sha256": "1ee27135cde0eb0472987d5779411f03122673a75ac77a98d9b49ca9d6cd2ece",
+  "inputs": {
+    "protocol.json": "df38260a3811a858c10c02c1af4287ec145515108842ca612891d515de95b464",
+    "genuine_verified.json": "5013197efc463645c2d5669601635b39fa4044b7c3d14f1010baa7852ad7f055",
+    "projection_audit.json": "0c8e0baca3a78ac5985acb4deed2e6c05d7b562ba53af68c3cda89b0c86f0817",
+    "channel_diagnostic.json": "15218183e6ec15cecc208aaf7b9b4e56a46e990d631a74694f50d04cfe987418"
+  },
+  "scope": "Six source paired descriptive audit; no new model execution, threshold changes or independent-sample intervals."
+}
