@@ -185,8 +185,8 @@ def main():
             official_model = importlib.util.module_from_spec(spec)
             sys.modules["model"] = official_model
             spec.loader.exec_module(official_model)
-            from sembind import SemanticMasker
-            model = SemanticMasker(args.semantic / "dinov2-giant", args.semantic / "sembind_masker.pth")
+            from semantic_code import SemanticCodeExtractor
+            model = SemanticCodeExtractor(args.semantic / "dinov2-giant", args.semantic / "sembind_masker.pth")
             def extract(image):
                 return dict(sembind_code=model.code(image).cpu().numpy().astype(np.uint8))
         else:

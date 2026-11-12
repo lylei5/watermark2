@@ -51,5 +51,5 @@
 
 ## 7. 文件
 
-- 脚本：`scripts/confirmation100/diag_two_pair_identity.py`（已修正指纹）
+- 脚本：[执行版本源码](https://github.com/lylei5/watermark2/blob/ba6283f0e93f86a03f1636f5515fb91d10562bbf/scripts/confirmation100/diag_two_pair_identity.py)（已修正指纹）
 - 结果：`runs/diag_two_pair_identity_20261103/1_result.json`（服务器）

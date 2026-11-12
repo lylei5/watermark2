@@ -16,4 +16,4 @@
 
 完整伪造侧评估已结束，见[全部结果](analysis.md)与[逐条记录](complete.json)。六种冻结规则均接受0/4个最终Imprint样本、0/64个检查点和0/4个封面。条件内容似然没有增加伪造拒绝，却将真实接受数从校准BA的39/40降到30/40；本候选保留为负结果，不进入扩大确认。
 
-下一项嵌入端机制证据见[条件内容锚结果](../conditional_anchor_pilot_20261112/report.md)，随后实验见[内容耦合分位载体](../conditional_quantile_pilot_20261112/plan.md)。
+相关已完成证据见[条件内容锚](../conditional_anchor_pilot_20261112/report.md)与[内容耦合分位载体](../conditional_quantile_pilot_20261112/report.md)。

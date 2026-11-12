@@ -12,11 +12,11 @@ SemBind 官方库（`third_party/SemBind` @ `337c9f90a150157ac1d410208ae20e6530c
 - `inversion.py`：含 `exact_inversion`（默认 `inv_order=1`，论文用 0）
 - `semantimark.ipynb`：只演示**哈希**（生成 10 张原图 + 10 张失真图，打印 hex code）
 
-**绑定/解绑代数（S ⊙ zT、置换 π、σ）没有发布。** notebook 里没有 π、没有 σ、没有嵌入或解绑代码。所以本项目的 `scripts/defense/sembind.py` 是按论文重写的绑定链路，不属于"复现"，无法与作者实现做数值对照。可对照的只有 masker。
+**绑定/解绑代数（S ⊙ zT、置换 π、σ）没有发布。** notebook 里没有 π、没有 σ、没有嵌入或解绑代码。所以本项目的 [执行版本源码](https://github.com/lylei5/watermark2/blob/ba6283f0e93f86a03f1636f5515fb91d10562bbf/scripts/defense/sembind.py) 是按论文重写的绑定链路，不属于"复现"，无法与作者实现做数值对照。可对照的只有 masker。
 
 ## 2. 核验方法
 
-`scripts/defense/repro/sembind_masker_equiv.py`，GPU3（`GPU-e602f6b2-50a3-72ee-ae1b-a0ae80eca5da`），20 张 confirmation100 v1.1 封面。
+[执行版本源码](https://github.com/lylei5/watermark2/blob/ba6283f0e93f86a03f1636f5515fb91d10562bbf/scripts/defense/repro/sembind_masker_equiv.py)，GPU3（`GPU-e602f6b2-50a3-72ee-ae1b-a0ae80eca5da`），20 张 confirmation100 v1.1 封面。
 
 三条检查：
 
@@ -45,7 +45,7 @@ SemBind 官方库（`third_party/SemBind` @ `337c9f90a150157ac1d410208ae20e6530c
 
 ## 5. 文件
 
-- 脚本：`scripts/defense/repro/sembind_masker_equiv.py`
+- 脚本：[执行版本源码](https://github.com/lylei5/watermark2/blob/ba6283f0e93f86a03f1636f5515fb91d10562bbf/scripts/defense/repro/sembind_masker_equiv.py)
 - 结果：`runs/repro_sembind_masker_20261103/masker_equiv.json`（服务器）
 - 设备：GPU3，UUID `GPU-e602f6b2-50a3-72ee-ae1b-a0ae80eca5da`，`cuda:0`，单卡串行
 
@@ -53,7 +53,7 @@ SemBind 官方库（`third_party/SemBind` @ `337c9f90a150157ac1d410208ae20e6530c
 
 - 绑定/解绑链路（作者未发布）
 - E.1/Table 17 的 `Det.=0.00`：需 5 个独立 proxy masker，本地只有 1 个 checkpoint
-- 精确反演对齐（`inv_order=0`）与 150 步预算：下一步
+- 后续完整反演组件与 151 次更新重验见[完整预算结果](../imprint_fresh_revalidation_20261112/report.md)。
 
 ---
 
@@ -98,4 +98,4 @@ RuntimeError: The size of tensor a (51) must match the size of tensor b (64) at 
 | 绑定/解绑代数（S、π、σ） | ❌ 作者未发布，是我们的重写 |
 | E.1/Table 17 的 Det.=0.00 | ❌ 需 5 个独立 proxy masker，本地只有 1 个 |
 
-脚本保留在 `scripts/defense/repro/sembind_exact_inversion.py`（含 `datasets` stub 处理），该历史失败记录不代表当前运行状态；后续已完成的组件检查见[2026-11-10报告](../sembind_official_audit_20261110/report.md)，仍须区分兼容处理与完整原生复现。
+脚本保留在 [执行版本源码](https://github.com/lylei5/watermark2/blob/ba6283f0e93f86a03f1636f5515fb91d10562bbf/scripts/defense/repro/sembind_exact_inversion.py)（含 `datasets` stub 处理），该历史失败记录不代表当前运行状态；后续已完成的组件检查见[2026-11-10报告](../sembind_official_audit_20261110/report.md)，仍须区分兼容处理与完整原生复现。

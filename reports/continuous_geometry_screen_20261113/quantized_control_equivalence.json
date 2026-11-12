@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "identities": 16,
+  "max_absolute_embedding_difference": 0.0,
+  "arbitrary_observation_decoder_matches": 16,
+  "script_sha256": "7fa71079258e4eedfd393110e0bb94ad5d1f530d6d69f7b6e8714cf645ffd7f2",
+  "interpretation": "The quantized control is exactly a binary semantic mask under a content-independent secret pair rotation, with identical Gaussian conditional transport; numeric checks support implementation equivalence, not new defense efficacy."
+}

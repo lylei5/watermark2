@@ -32,6 +32,7 @@ def main():
     os.environ.update(CUDA_VISIBLE_DEVICES=info[1],HF_HOME=plan['hf_home'],HF_HUB_OFFLINE='1',TRANSFORMERS_OFFLINE='1',
                       OMP_NUM_THREADS='4',MKL_NUM_THREADS='4',TOKENIZERS_PARALLELISM='false')
     sys.path.insert(0,str(Path(plan['chain_run'])/'scripts'))
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
     import numpy as np
     import torch
     from PIL import Image
@@ -40,7 +41,7 @@ def main():
     from sembind_official_audit import load_official
     spec=importlib.util.spec_from_file_location('model',paths['official']/'model.py')
     model_module=importlib.util.module_from_spec(spec);sys.modules['model']=model_module;spec.loader.exec_module(model_module)
-    from sembind import SemanticMasker
+    from semantic_code import SemanticCodeExtractor
     torch.set_num_threads(4);torch.backends.cuda.matmul.allow_tf32=False;torch.backends.cudnn.allow_tf32=False
     out=run/f'{args.stage}_{args.shard}';out.mkdir(exist_ok=False)
     for folder in ['images','codes','latents','work']:(out/folder).mkdir()
@@ -48,7 +49,7 @@ def main():
     state=dict(status='running',stage=args.stage,pid=os.getpid(),gpu=gpu,protocol_sha256=sha(run/'protocol.json'))
     save(out/'state.json',state)
     try:
-        masker=SemanticMasker(paths['semantic']/'dinov2-giant',paths['semantic']/'sembind_masker.pth')
+        masker=SemanticCodeExtractor(paths['semantic']/'dinov2-giant',paths['semantic']/'sembind_masker.pth')
         inversion,pipe=load_official(SimpleNamespace(**paths))
         spec=importlib.util.spec_from_file_location('gs_distortions',plan['distortion_source'])
         distort=importlib.util.module_from_spec(spec);spec.loader.exec_module(distort)

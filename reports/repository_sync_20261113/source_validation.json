@@ -1,0 +1,367 @@
+{
+  "passed": true,
+  "host": "249",
+  "gpu_used": false,
+  "python": "3.10.18 (main, Jun  5 2025, 13:14:17) [GCC 11.2.0]",
+  "python_files_compiled": 112,
+  "imports": {
+    "semantic_code": "scripts/defense/semantic_code.py",
+    "sembind_official_audit": "scripts/defense/sembind_official_audit.py",
+    "run_anchor_binding_worker": "scripts/defense/run_anchor_binding_worker.py",
+    "run_semantic_feedback_worker": "scripts/defense/run_semantic_feedback_worker.py",
+    "extract_semantic_evidence": "scripts/defense/extract_semantic_evidence.py",
+    "revalidate_masker": "scripts/defense/revalidate_masker.py",
+    "revalidate_sembind_published": "scripts/defense/revalidate_sembind_published.py",
+    "evaluate_published_imprint_full": "scripts/defense/evaluate_published_imprint_full.py"
+  },
+  "semantic_code_function_ast_unchanged": true,
+  "semantic_code_baseline_commit": "ba6283f0e93f86a03f1636f5515fb91d10562bbf",
+  "source_sha256": {
+    "scripts/check_geometry_proof_examples.py": "a79c55b9103906a814b3d15f5e5edd7cfafda7d1b05d4797879bfdd09f935b22",
+    "scripts/check_gs_decoder_contract.py": "252e41ad8833278370f9d74896f9e50a522e4a59a52c20fd086304039de99763",
+    "scripts/check_pai_initialization_continuity.py": "6765a7c6d138941cf058e813db53f91caa5586288023ef67168be9e796729109",
+    "scripts/cross_generator/verify_message_scores.py": "a7534b4205fc5c248f4767247dd6807e1c444a13b623bb23a326e595faa46670",
+    "scripts/defense/absolute_calibration.py": "c985e17b6a78dcef7af4345c180b04d88548f11e65abeca7f3680554022b5c39",
+    "scripts/defense/analyze_geometry_tradeoff.py": "9cde192df9e20523bd44c41509faa73e486f8125643a3e95889f7bee887c68a8",
+    "scripts/defense/analyze_quantile_failure.py": "9f783b65f1f1542f0882c9e2a8e1fd8f062a96782ec19145888c6ce6877be265",
+    "scripts/defense/anchor_binding.py": "82d474e45273fdcb97d1805686ae0f6d8c8151c27feaafbdc7173040cff087b1",
+    "scripts/defense/audit_completed_revalidation.py": "9011dfd9d270be584108aacf6e752c063eb7b02466996ba1121fbc1589a43a2b",
+    "scripts/defense/audit_completed_semantic_runs.py": "297e35da0cfa9df625fe5c2ee200e891d6d86e6aad9bebc8a43ac59745df56b9",
+    "scripts/defense/audit_geometry_confirmation.py": "5a7a1fb1a4fab27bf18511670b3ac69ae5e3ef3e253e088a30ac6eb0710d98d6",
+    "scripts/defense/audit_geometry_runtime.py": "83e5fe93ca7eeeabb590714eb2d8978bb96c2488a7e98cfbba4869024a073bbd",
+    "scripts/defense/audit_unwatermarked_validation.py": "1eb4af85114949ec4dbe79c77c43370f6436e74408fd9ad238cb27b14ab1ee15",
+    "scripts/defense/blind_geometry_verifier.py": "fcc5dc6b78f05552004819b674440a779c3138074e1f6daca436199ec8470d76",
+    "scripts/defense/check_geometry_null.py": "de074ba25a1d04b0777c8cce038f3215bb30fcb6020f1ff6b8d83a7557d6718c",
+    "scripts/defense/check_quantized_geometry_control.py": "7fa71079258e4eedfd393110e0bb94ad5d1f530d6d69f7b6e8714cf645ffd7f2",
+    "scripts/defense/codeword_binding.py": "f49aa1342031a1c54be17bb4153b79150e5f70903719275c37329bf093186c59",
+    "scripts/defense/codeword_channel_pilot.py": "aca0eff5a906309ccd93b43c69df90f40a09604e983c7a387b412c2cc7c849ce",
+    "scripts/defense/conditional_content_likelihood.py": "14ddefe68bb9736c95e9e231f89c16dec8d1c378708e0547f5284a58b11b1911",
+    "scripts/defense/content_authentication.py": "33bcd430df9f36c7c2ec911f723c1f8a95b8264d27b51b47911053b3dcc2d70f",
+    "scripts/defense/continuous_geometry_binding.py": "b50839d40a58618ef95d0f88da4e59529af6ecc168ff9e5d1829f5b1030a5bf7",
+    "scripts/defense/decision_region_binding.py": "457f327f286bfd010c3bedd9ceacd3fe30e8f152636a90e04448c8336bd4241e",
+    "scripts/defense/describe_confirmation_failures.py": "24e31ec02c47d75b29fa2b6f81043b18cbfd7c9771d8e70d586a64e909bc928b",
+    "scripts/defense/diagnose_continuous_geometry.py": "3b0d6c6c30af84673011fc43e2d41fc0fd706e3b3bdd890e92a377554eb12723",
+    "scripts/defense/diagnose_continuous_semantics.py": "efa3c45c8ddc904c01c49ca26720de7bbf735bbb591337b365195f934a42da25",
+    "scripts/defense/diagnose_crop_transport.py": "7becef5b433969b3fa7db86f71e2730e733d5d245a33c79f086491cb1df036bb",
+    "scripts/defense/diagnose_decision_region.py": "1ce0fa8f5b3038d7c95e97d225f53cec1f2d4c01b2ca7375d1483a2c1db0d464",
+    "scripts/defense/diagnose_published_forgery_binding.py": "210bd83bc29e084b0d3d5440337ee335dea1e10dd4da5c3fcd235195dea962f5",
+    "scripts/defense/diagnose_registration_reference.py": "527df90ac50b2c82c33703233a32b9811aa32c662ff1026569837f579d5bda52",
+    "scripts/defense/diagnose_replica_identifiability.py": "c5a70572b2fc28ec71d446de7b36a517a1cb77e6414315bb35048c55366d9ecf",
+    "scripts/defense/diagnose_shared_evidence.py": "d45490b76949f7735de7ebfcb95386d3e267daef4b1c06a74b9716cfce4fc257",
+    "scripts/defense/evaluate_attack_quality.py": "30167c5f1e9ea65a23bf298f966b995eaf3af1b175cdf567b6a9e372825a59c6",
+    "scripts/defense/evaluate_blind_geometry.py": "608b008f6ff527fb8fcabcba18799439ae97645686f05d31935068aba5787326",
+    "scripts/defense/evaluate_content_reprompt.py": "3639b9403ce2352f2e8f5ead6950027d32a4c84ebb38f2b3fc72cb53371d8f43",
+    "scripts/defense/evaluate_geometry.py": "e37d8082a8ed3735cbf85d7d7a1d8e2d5d26aaf68859f666d8881514624df5c0",
+    "scripts/defense/evaluate_published_imprint_full.py": "593510efd0ceb5afb57a2420d7b9d1dd7d36265ffea34a24b384f776b71815ec",
+    "scripts/defense/extract_independent_features.py": "b0d94d2f601b7ef543a068abe26dfbb626ce99bc9363c7ab67522bb8bf74989e",
+    "scripts/defense/extract_semantic_codes.py": "6e90c5fa5a0635f0143a4480e41bc3c4cca1f3c3fbdbdbb5b4e315b9dae297e7",
+    "scripts/defense/extract_semantic_evidence.py": "f1580b9f97ccc96d5bc632bf8567ec9a01d1d0ef5ac90777d0d5f83ff185abd3",
+    "scripts/defense/feedback_binding.py": "cd35f83798c590c9dde3bec8e04b66cc85b5d25a4f69c1390cb95d899bd66ef5",
+    "scripts/defense/finish_published_imprint_full.py": "f5595dd24d5f7f3bff371c31df4f977c685ad7650aee73c7ab5dba87498bbfef",
+    "scripts/defense/finish_sembind_published.py": "aeed98d963258f562be32e8cd8737da66531a2aa7312bea5e56fd4479ef2f08f",
+    "scripts/defense/fit_semantic_evidence.py": "c79488cf849a8777ae19538ff36008cc1d1ff8eff86778dc5f6c7376518b5960",
+    "scripts/defense/geometry.py": "cc517f7b72c5c781e2680647efe980c393924ca20e1d6e8886a6f39736bf91bc",
+    "scripts/defense/plot_content_verification.py": "b7d771639f7a4b193945ca5fe6b7d1540a9639f77eeb7fad014bf8d1f53331cc",
+    "scripts/defense/plot_continuous_geometry_ideal.py": "28e2c96641cfeccd934f0912ab365aeafe6c4ceaf05f3fe7217b1ad21df51a71",
+    "scripts/defense/plot_decision_region_ideal.py": "5bba890bb7708039ab88a5bb486c4830d22a3f3e32f0c0b9917d1a27c0414fcb",
+    "scripts/defense/plot_decision_region_results.py": "13a4dbb136af813d414846c093f33fbeee7e1abcab02edd07b3cbd41a7322652",
+    "scripts/defense/plot_frozen_confirmation.py": "fdd53036b695a25489b415dbab81b20cafc9cab450216f2bfcfb51fd70404f5d",
+    "scripts/defense/plot_geometry_calibration.py": "2d88acfd1c659b8eba388b33542ff8b085b921827709bd59e4bff05c4276dacd",
+    "scripts/defense/plot_official_audit.py": "8dc618cec1bee97106085c1c460a5839dc7793ffd210efd7ef00e4109107d98f",
+    "scripts/defense/plot_registration_diagnostic.py": "971c60c586991511f17bbd0a360bf0b742314c72b44cf2e19ff24141fd711245",
+    "scripts/defense/prepare_continuous_geometry.py": "2f7aa34f82586df055be3d1229d49491a5d236e7a8f3d22cabaf2eef816cec5c",
+    "scripts/defense/prepare_decision_region.py": "4d572f1558ea6979758b03a38bd06df1382883cef262548e0e9134aef821cf83",
+    "scripts/defense/prepare_semantic_transport.py": "c9036362f1cdf445e28498e687e70e90d3f2ff778ae55efba67f3e607ce2c169",
+    "scripts/defense/published_reprompt_cached.py": "8832d44e558081c2fa022c3ec015e73e8b688ac84395f73c34ed220568a6b0ba",
+    "scripts/defense/quantile_binding.py": "11d313d5cd9c5961955d6cbc8bf341aa115c651b7dc8aefea6fef82fe4b71377",
+    "scripts/defense/replica_moments.py": "e0ea7bff274bc098554caee15518aa49b9becefd8baf7e66b6f582a17441dc48",
+    "scripts/defense/repro/_stubs/galois.py": "7b5864e4e64596a27b875cd2ecb19212485ece7a590d308f4d73e4407bdd1ccd",
+    "scripts/defense/repro/_stubs/ldpc.py": "2946b0774e063dde0f76cf987486b66fb21affcfcf9d5da532052bd22f5bdfbf",
+    "scripts/defense/repro/geometry_lspd_sweep.py": "ac2d746c6504f6ec5db1982c17ae5dd015f02de04043aba3902d5f3b40584a11",
+    "scripts/defense/repro/geometry_paper_task.py": "cd01d723df88f7607329876b6c71273a63f71b4d721113ce1576022896523988",
+    "scripts/defense/research_semantics.py": "cf17318bb41ecf723b5c9a083641166c02c77063f7ee3c582919106d0851e21e",
+    "scripts/defense/revalidate_masker.py": "05df094690873fba5ad38b6432364000b207c63b51d57f876009f3499ee04d69",
+    "scripts/defense/revalidate_pgid_controls.py": "cee99e456ba14e1e6dc25fd1d4f29488933dc15b287f0e662058ccaa00c8d8b7",
+    "scripts/defense/revalidate_pgid_published.py": "18c02ba8bae885d2efc346e766274c19ead485662fe11429ee66a550296be5ab",
+    "scripts/defense/revalidate_sembind_published.py": "a2496a4e322f9f86b1168ad8a4c0bed479535643f90095d6375c456879793a3b",
+    "scripts/defense/run_anchor_binding_pipeline.py": "a41c1e84c8d434c0f3d4a58697d387cd9bccaa0f0cd66b9874a55e624313ab56",
+    "scripts/defense/run_anchor_binding_worker.py": "20c5e4cbd6c5fc314fb3e46517faf32c365f838a97d697717209aea4a10dde02",
+    "scripts/defense/run_conditional_content_experiment.py": "327a1af3d9362f51b837cdedde400d1841b2933670939585bb46cd1acc9f9858",
+    "scripts/defense/run_continuous_geometry_screen.py": "5c04ab3872f1028f76f77d88ab965cbf0398425de4a7daab1e9ed9b55d134793",
+    "scripts/defense/run_decision_region_pipeline.py": "8175000875502ef7fc7836e2674061206ee5afba40de2213c9f8d168278ec92c",
+    "scripts/defense/run_defense_revalidation.py": "8bb8795662e71ad92e9afbfad4c0102547eeff9ef01ee98a232b5735b9ef1f98",
+    "scripts/defense/run_fresh_imprint_pipeline.py": "93044fa8d2d220c3764db179af39d5d1082e61aedc266ec790f0f80429a3bc49",
+    "scripts/defense/run_published_imprint_full.py": "476895a566d94b3c374d77207183a67c038a0679f6fc755eb10c434a3162a908",
+    "scripts/defense/run_semantic_evidence_pipeline.py": "6f7fcd74184599cf5348f11d79daa3a2e001bb6ff451b04868220fe0730de493",
+    "scripts/defense/run_semantic_feedback_pipeline.py": "8304ba60a70910b5db244f600ca4f5a1e82451f69f1586fb0a285d7b7abebe6c",
+    "scripts/defense/run_semantic_feedback_worker.py": "696fdd1b5d920d74ce290b6fef94a5f0433096df778cbabd81235622bd358517",
+    "scripts/defense/run_sembind_chain_revalidation.py": "e8a797c3c618a9addfb344ca9a7025ecfcc0b3666225d772b6af9d2789ede181",
+    "scripts/defense/score_content_development.py": "d1df1275ca3e686f2ac1fe4a3db445a99b6388cb81b3ef81c47ca9579a5f063b",
+    "scripts/defense/score_frozen_geometry.py": "64f5a8f6444ce02e38ec5c6d80b9b74b06968525da7256f34756c80c2220432b",
+    "scripts/defense/score_paper_distortions.py": "0259e2f8b1e8b7a86b58c2628e53ae32d730fcdebec1141afe50e3d3c52e75d2",
+    "scripts/defense/score_unwatermarked_validation.py": "9cc5cddcd32a0ba5e04ab26bfa6f8a79c3a6f15b4e530661f9ade40c327bb887",
+    "scripts/defense/screen_replica_moments.py": "244ba46ee22a526c54164de9f100aeb396f354c978bace17a2064ce5fdf37ca4",
+    "scripts/defense/semantic_code.py": "be284b3198ef25eff71eec5ae2b043ce0823ffb6ad184fdf1c9aecafe0bfd710",
+    "scripts/defense/semantic_evidence.py": "fd76553ffc300860add3a85c416819565b29ed8211eb6306f1aecd86e516302a",
+    "scripts/defense/semantic_evidence_reference.py": "fbd9d377ecd81d7dc40aaa8822070ebf81f9a0325af458be24db032ad0137980",
+    "scripts/defense/sembind_official_audit.py": "568a415bec83152ca7fd0cb5fbbffdbf6b4b19d03371cc792468082db1bd6a9f",
+    "scripts/defense/summarize_embedding_failures.py": "65936297d1fdb9d3dfd6b61879ff29c891260a244af1817f88c8b241909530b2",
+    "scripts/defense/summarize_full_imprint.py": "9d9c77eb4aa7266414accdef02be20170956c288a22481ffbb4b320a9b4fd18e",
+    "scripts/defense/summarize_geometry_calibration.py": "c20a1f9e7be015d68ec367d411ccf57d9ee637fc1b53a6dae43bfa3a4a0ccdf7",
+    "scripts/defense/summarize_transport_completion.py": "1ee27135cde0eb0472987d5779411f03122673a75ac77a98d9b49ca9d6cd2ece",
+    "scripts/defense/test_absolute_calibration.py": "f2258779f3b6930f63ebcce80979d326234f22b77b8c9c166df36dcebf434da9",
+    "scripts/defense/test_blind_geometry_verifier.py": "9c9a6e2d58948880dd9363564155c5dbe59be3d9807ca05057c3741b9818c139",
+    "scripts/defense/test_codeword_binding.py": "e9f464af50bd797ed52b00cfd0f5045106e940afddc864476c484253076f0dbb",
+    "scripts/defense/test_content_authentication.py": "a267de4ba42a4fe3027d085a29022da825d7d62f5f4e2161aa95724692ddf3c8",
+    "scripts/defense/test_continuous_geometry.py": "1b95e4cb4ecfa311ec639917e6495ebcfa7e4d42d8a54a478a5438b695db1aab",
+    "scripts/defense/test_decision_region_binding.py": "85351c56ad09eeeb8c68e7e4a80b9548572dc4c0571b1ff65146b77af6e5fd1d",
+    "scripts/defense/test_feedback_binding.py": "ee8e7e8789f3608d6e9ebbe10df9c7819791fe18295fcaaf0da96f8e16467a17",
+    "scripts/defense/test_geometry.py": "b45b2f4f28bdca353672558950d3669d7d1c7a15908eb083c7234796fd3845b5",
+    "scripts/defense/test_geometry_completion.py": "4947d43321877b4c4d9549cefe2eee70814d99f8c36516b66bec3db741d5814f",
+    "scripts/defense/test_quantile_binding.py": "6e41a6ea9c87da3271f514e2adf17c2fa746eed9d07207c97f3a3a9ab1f626fc",
+    "scripts/defense/test_semantic_evidence.py": "dec0b6ab0a2a7fe9d3beec714c3005690edbb21ee9a97035c8d91e6c612632dc",
+    "scripts/defense/test_transport_binding.py": "1c06e9ef4c5ecca1af02b58a25978b0f9b0034da1360cf2a518bbbda50cd67f1",
+    "scripts/defense/transport_binding.py": "0925ae2c35fd2fadcdeee75494d1e0280182ccdba4cc1988ace54591ca2c9b21",
+    "scripts/defense/validate_decoder_checkpointing.py": "6d9c7a4ebbcd018c221af0b6ee5a696dad49fe726009762651f1cb7f5993efc0",
+    "scripts/defense/wait_conditional_evaluation.py": "ea90e6fe068b356271e3f821e0fb30acc08033e0e87071211bab00d18e411a85",
+    "scripts/gpu_preflight.py": "a5aed9f30ff6ff27a4259999ade4122d6e99cbd179c072317d3cda4190b4c494",
+    "scripts/preflight.py": "97b7f749da1e744c489955a9c86fe80b49fa09432930adb75db37f94a4b89fe8",
+    "scripts/reference_reliability/private_state.py": "8f848a85d0650812cbdc30c35983885ec10d6b0c2e588a84c77339b3d39a1e19",
+    "scripts/resolve_cache.py": "58e5e20525fc9846e4b3f9343320be83fe1042b866cb07ae682749f8696e7302",
+    "scripts/verify_cache.py": "db45a31d2a9e83e404e7167f8ab43adc471b6b85639f41232857a133a2487d69"
+  },
+  "existing_carrier_checks": {
+    "test_continuous_geometry.py": {
+      "passed": true,
+      "roundtrips": 48,
+      "raw_sign_errors": 0,
+      "orthogonal_inverse_and_energy_checks": true,
+      "finite_uniform_domain_separation_checks": true,
+      "channel": [
+        {
+          "sigma": 0.0,
+          "angle": 0.0,
+          "n": 300000,
+          "measured": 1.0,
+          "analytic": 1.0,
+          "mc_standard_error": 0.0
+        },
+        {
+          "sigma": 0.0,
+          "angle": 0.05,
+          "n": 300000,
+          "measured": 0.98463,
+          "analytic": 0.9840845056908107,
+          "mc_standard_error": 0.000228489178081322
+        },
+        {
+          "sigma": 0.0,
+          "angle": 0.1,
+          "n": 300000,
+          "measured": 0.9688466666666666,
+          "analytic": 0.968169011381621,
+          "mc_standard_error": 0.0003205088494979798
+        },
+        {
+          "sigma": 0.0,
+          "angle": 0.2,
+          "n": 300000,
+          "measured": 0.9367833333333333,
+          "analytic": 0.9363380227632419,
+          "mc_standard_error": 0.0004457545284535897
+        },
+        {
+          "sigma": 0.0,
+          "angle": 0.5,
+          "n": 300000,
+          "measured": 0.8403033333333333,
+          "analytic": 0.8408450569081047,
+          "mc_standard_error": 0.0006678938218542197
+        },
+        {
+          "sigma": 0.0,
+          "angle": 1.0,
+          "n": 300000,
+          "measured": 0.6807633333333334,
+          "analytic": 0.6816901138162094,
+          "mc_standard_error": 0.0008504679154078515
+        },
+        {
+          "sigma": 0.4,
+          "angle": 0.0,
+          "n": 300000,
+          "measured": 0.87893,
+          "analytic": 0.8788810584091565,
+          "mc_standard_error": 0.0005956764882013204
+        },
+        {
+          "sigma": 0.4,
+          "angle": 0.05,
+          "n": 300000,
+          "measured": 0.8781366666666667,
+          "analytic": 0.8778903995961522,
+          "mc_standard_error": 0.0005977704294377577
+        },
+        {
+          "sigma": 0.4,
+          "angle": 0.1,
+          "n": 300000,
+          "measured": 0.8747133333333333,
+          "analytic": 0.8749656038068887,
+          "mc_standard_error": 0.0006038785638457878
+        },
+        {
+          "sigma": 0.4,
+          "angle": 0.2,
+          "n": 300000,
+          "measured": 0.86339,
+          "analytic": 0.8638948010304158,
+          "mc_standard_error": 0.0006260473192526639
+        },
+        {
+          "sigma": 0.4,
+          "angle": 0.5,
+          "n": 300000,
+          "measured": 0.8024266666666666,
+          "analytic": 0.8031614943009702,
+          "mc_standard_error": 0.0007259318342039259
+        },
+        {
+          "sigma": 0.4,
+          "angle": 1.0,
+          "n": 300000,
+          "measured": 0.66609,
+          "analytic": 0.667276442117907,
+          "mc_standard_error": 0.0008602685470486807
+        },
+        {
+          "sigma": 1.0,
+          "angle": 0.0,
+          "n": 300000,
+          "measured": 0.7510733333333334,
+          "analytic": 0.75,
+          "mc_standard_error": 0.0007905694150420948
+        },
+        {
+          "sigma": 1.0,
+          "angle": 0.05,
+          "n": 300000,
+          "measured": 0.7509533333333334,
+          "analytic": 0.7496024436911316,
+          "mc_standard_error": 0.0007909880321543335
+        },
+        {
+          "sigma": 1.0,
+          "angle": 0.1,
+          "n": 300000,
+          "measured": 0.74944,
+          "analytic": 0.7484137224023741,
+          "mc_standard_error": 0.0007922344403062269
+        },
+        {
+          "sigma": 1.0,
+          "angle": 0.2,
+          "n": 300000,
+          "measured": 0.7443233333333333,
+          "analytic": 0.74371660135236,
+          "mc_standard_error": 0.0007970826352502707
+        },
+        {
+          "sigma": 1.0,
+          "angle": 0.5,
+          "n": 300000,
+          "measured": 0.7129566666666667,
+          "analytic": 0.7130884085870317,
+          "mc_standard_error": 0.0008258194518695682
+        },
+        {
+          "sigma": 1.0,
+          "angle": 1.0,
+          "n": 300000,
+          "measured": 0.62464,
+          "analytic": 0.6247822812307203,
+          "mc_standard_error": 0.0008839860147665562
+        }
+      ],
+      "small_angle": [
+        {
+          "sigma": 0.4,
+          "delta": 0.1,
+          "penalty_over_delta_squared": 0.3915454602267888,
+          "limit": 0.3978873577297384
+        },
+        {
+          "sigma": 0.4,
+          "delta": 0.01,
+          "penalty_over_delta_squared": 0.3978218936044441,
+          "limit": 0.3978873577297384
+        },
+        {
+          "sigma": 0.4,
+          "delta": 0.001,
+          "penalty_over_delta_squared": 0.3978867029444848,
+          "limit": 0.3978873577297384
+        },
+        {
+          "sigma": 1.0,
+          "delta": 0.1,
+          "penalty_over_delta_squared": 0.15862775976258472,
+          "limit": 0.15915494309189535
+        },
+        {
+          "sigma": 1.0,
+          "delta": 0.01,
+          "penalty_over_delta_squared": 0.15914963826345452,
+          "limit": 0.15915494309189535
+        },
+        {
+          "sigma": 1.0,
+          "delta": 0.001,
+          "penalty_over_delta_squared": 0.15915489006955752,
+          "limit": 0.15915494309189535
+        }
+      ],
+      "illustrative_distribution": {
+        "n": 300000,
+        "mean": [
+          -1.0940049981613844e-05,
+          -0.0007113465312239828
+        ],
+        "covariance": [
+          [
+            1.0011673014525715,
+            8.820476611002347e-05
+          ],
+          [
+            8.820476611002347e-05,
+            0.9998083024445237
+          ]
+        ],
+        "cross_square_moment": 1.0020063934546817,
+        "mse": 0.8375921953929738
+      },
+      "source_sha256": {
+        "continuous_geometry_binding.py": "b50839d40a58618ef95d0f88da4e59529af6ecc168ff9e5d1829f5b1030a5bf7",
+        "transport_binding.py": "0925ae2c35fd2fadcdeee75494d1e0280182ccdba4cc1988ace54591ca2c9b21",
+        "test_continuous_geometry.py": "1b95e4cb4ecfa311ec639917e6495ebcfa7e4d42d8a54a478a5438b695db1aab"
+      },
+      "scope": "Ideal Gaussian channel and mathematical roundtrip checks only; no image/model experiment or empirical authentication guarantee. Monte Carlo moments do not prove Gaussianity."
+    },
+    "test_transport_binding.py": {
+      "passed": true,
+      "roundtrips": 64,
+      "central_quantile_and_inverse_checks": true,
+      "full_sign_match": true,
+      "within_orthant_permutation_preserves_magnitudes": true,
+      "rearrangement_cost_checks": true,
+      "illustrative_gaussian_sample": {
+        "n": 200000,
+        "mean": 0.001981971086934209,
+        "second_moment": 0.9961066973029052,
+        "mse": 0.8381754460179917
+      },
+      "limitation": "Monte Carlo moments are descriptive; distribution preservation follows only under the stated ideal independent-cipher model.",
+      "source_sha256": "0925ae2c35fd2fadcdeee75494d1e0280182ccdba4cc1988ace54591ca2c9b21"
+    }
+  }
+}

@@ -19,8 +19,10 @@ def main():
     from PIL import Image
     torch.set_num_threads(4);torch.backends.cuda.matmul.allow_tf32=False;torch.backends.cudnn.allow_tf32=False
     spec=importlib.util.spec_from_file_location('model',Path(plan['paths']['official'])/'model.py');m=importlib.util.module_from_spec(spec);sys.modules['model']=m;spec.loader.exec_module(m)
-    sys.path.insert(0,str(Path(plan['chain_run'])/'scripts'));from sembind import SemanticMasker
-    masker=SemanticMasker(Path(plan['paths']['semantic'])/'dinov2-giant',Path(plan['paths']['semantic'])/'sembind_masker.pth');captured={}
+    sys.path.insert(0,str(Path(plan['chain_run'])/'scripts'))
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from semantic_code import SemanticCodeExtractor
+    masker=SemanticCodeExtractor(Path(plan['paths']['semantic'])/'dinov2-giant',Path(plan['paths']['semantic'])/'sembind_masker.pth');captured={}
     masker.model.hash_head.register_forward_hook(lambda module,inputs,output:captured.update(logits=output.detach().cpu().numpy().ravel()))
     out=r/f'features_{a.shard}';out.mkdir(exist_ok=False);rows=[]
     for i,item in enumerate(plan['development']):

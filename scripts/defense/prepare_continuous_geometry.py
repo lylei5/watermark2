@@ -53,7 +53,7 @@ def main():
         attack_jobs=0, no_new_attacks=True,
         distribution_scope='Ideal fresh independent uniform ciphertext and independent uniform pair phases; keyed finite-precision implementation is not a proof of unconditional security.',
         parent_run=str(root/'runs/semantic_transport_pilot_20261112'))
-    scripts=['anchor_binding.py','transport_binding.py','continuous_geometry_binding.py',
+    scripts=['semantic_code.py','sembind_official_audit.py','codeword_binding.py','anchor_binding.py','transport_binding.py','continuous_geometry_binding.py',
              'test_continuous_geometry.py','run_anchor_binding_worker.py',
              'run_continuous_geometry_screen.py','prepare_continuous_geometry.py']
     for name in scripts:

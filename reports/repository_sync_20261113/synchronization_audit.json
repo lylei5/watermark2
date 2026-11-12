@@ -1,0 +1,219 @@
+{
+  "observed_at": "2026-11-12T16:54:48.140761+00:00",
+  "run_states": [
+    {
+      "run": "conditional_anchor_pilot_20261112",
+      "state": {
+        "status": "complete",
+        "pid": 17607,
+        "stage": "pilot_failed_feasibility_gate",
+        "decision": "Do not expand this embedding candidate; preserve all negative results."
+      },
+      "sha256": "30b05befbd9cf558a6027310a61287f68be975bb5df0e1616ae63e9875882c02"
+    },
+    {
+      "run": "conditional_content_likelihood_20261112",
+      "state": {
+        "status": "complete",
+        "pid": 41738,
+        "models_sha256": "991f910b227c6cb2927a3c85f93183a27732bf25b2c8d742f624d52bb706afd9",
+        "stage": "defense_evaluation"
+      },
+      "sha256": "214971bb46a0e1e678cb81f1204a9f4c20f008d7bdae35d0422f64fff9967181"
+    },
+    {
+      "run": "conditional_quantile_pilot_20261112",
+      "state": {
+        "status": "aborted_implementation_issue",
+        "time_utc": "2026-11-12T04:02:28.494012+00:00",
+        "verified_own_pids": [
+          36064,
+          39356,
+          39364,
+          39365
+        ],
+        "reason": "Unequal modulation-channel repetitions per identity bit discovered by deterministic encoding audit; replace with32 magnitude plus32 sign observations per bit before scoring results are inspected",
+        "image_scores_inspected": false,
+        "completed_benchmark": false,
+        "preserve_original_artifacts": true,
+        "replacement_run": "/data0/liyanlei/watermark_research/runs/conditional_quantile_pilot_20261112_v2",
+        "original_protocol_sha256": "09f1faa1884159a0fcb2541893dba1baed76438161a54e68c94a3b577627840c",
+        "replacement_protocol_sha256": "a44ae87b9004edc38967611f01efea301133a811fde1902d5aa71cde9271a426"
+      },
+      "sha256": "fa0fe2cbda9b764d14d3027f21e0b7e83ea79698f3e515b75f08a12d04e8a432"
+    },
+    {
+      "run": "conditional_quantile_pilot_20261112_v2",
+      "state": {
+        "status": "complete",
+        "pid": 7040,
+        "stage": "pilot_failed_feasibility_gate",
+        "decision": "Do not expand this embedding candidate; preserve all negative results."
+      },
+      "sha256": "00b75c7c39f8ce96594723f788986ba35885721715b839bbda10e23000d2e717"
+    },
+    {
+      "run": "continuous_geometry_screen_20261113",
+      "state": {
+        "status": "failed",
+        "pid": 37733,
+        "time_utc": "2026-11-12T16:17:36.651171+00:00",
+        "error": "AttributeError(\"module 'os' has no attribute 'pidfd_open'\")"
+      },
+      "sha256": "41a4fa0dae74618b2c29d02410afa8d244b1355f95c2c8a224ca5761e6f0530d"
+    },
+    {
+      "run": "continuous_geometry_screen_20261113_v2",
+      "state": {
+        "status": "complete",
+        "pid": 31134,
+        "time_utc": "2026-11-12T16:41:17.775563+00:00",
+        "stage": "clean_screen_audited",
+        "genuine_records": 24,
+        "attack_jobs": 0
+      },
+      "sha256": "f912b3c7a8686f70171defcc5c4dee18a1bd265aff465932d257b8978b3cf3b6"
+    },
+    {
+      "run": "decision_region_pilot_20261112",
+      "state": {
+        "status": "complete",
+        "pid": 45097,
+        "time_utc": "2026-11-12T15:28:40.708674+00:00",
+        "stage": "genuine_audited_gate_failed",
+        "genuine_records": 240,
+        "forgery_jobs": 0
+      },
+      "sha256": "7d6914a0db3a95871726120efed9f6ed693be49cbfeed6447299edfb7f4b70ef"
+    },
+    {
+      "run": "imprint_fresh_revalidation_20261112",
+      "state": {
+        "status": "complete",
+        "stage": "independently_audited",
+        "records": 144
+      },
+      "sha256": "b334589455bf4ce50af1f4f95d67b490a7fe819fdde136f0de09a31b347f23f9"
+    },
+    {
+      "run": "semantic_feedback_pilot_20261112",
+      "state": {
+        "status": "complete",
+        "pid": 20195,
+        "time_utc": "2026-11-12T11:09:13.756885+00:00",
+        "stage": "failed_frozen_feasibility_gate"
+      },
+      "sha256": "3ec42934332ad3743aa8e35c3daa4e716a1d0570aeb036612af42acb3330b987"
+    },
+    {
+      "run": "semantic_transport_pilot_20261112",
+      "state": {
+        "status": "complete",
+        "pid": 15104,
+        "time_utc": "2026-11-12T16:32:31.140450+00:00",
+        "stage": "genuine_audited_gate_failed",
+        "genuine_records": 240,
+        "forgery_jobs": 0
+      },
+      "sha256": "7bdb59d191416ee1a0770b8675bbc8881c481d380c5364c0c2faddd2060e2d71"
+    },
+    {
+      "run": "sembind_published_revalidation_20261112",
+      "state": {
+        "status": "complete",
+        "stage": "published_conditions_and_baseline"
+      },
+      "sha256": "a477df17c86ae6b60e59fd437670b788cde4692374a4c3e8c4077ef4666776b2"
+    },
+    {
+      "run": "shared_semantic_evidence_20261112",
+      "state": {
+        "status": "complete",
+        "pid": 24027,
+        "time_utc": "2026-11-12T10:13:01.212718+00:00",
+        "stage": "all_endpoints_independently_audited",
+        "genuine_records": 120,
+        "forgery_records": 216
+      },
+      "sha256": "df3796070c46ffaca1b6fff6e0fa1b72cf1572d6f858e3c5f6424f51c532c6fc"
+    }
+  ],
+  "project_python_processes": [],
+  "latest_artifact_sha256": {
+    "unit_checks.json": "581e563f8bbbc478c20753f0f8934d258112ecc1103c94f0795ec729104a5438",
+    "pipeline_state.json": "f912b3c7a8686f70171defcc5c4dee18a1bd265aff465932d257b8978b3cf3b6",
+    "protocol.json": "45787294dc25d21666d1378cbca0a4d5de25b0bea5f913f8dab07340cf587fc9",
+    "pilot_decision.json": "6ac4b70a17633d0f88113e065f9f3e65ff95cd47798bffce1ec947e5cdad4590",
+    "genuine_verified.json": "f4997c4cf7d6a2dcc11f971f0452b44fe53d8612cf7a6fc596b9f8c138b9deba"
+  },
+  "retired_source_commit": "ba6283f0e93f86a03f1636f5515fb91d10562bbf",
+  "retired_paths": [
+    "docs/DEFENSE_MECHANISM_DECISION_20261112.md",
+    "docs/SEMBIND_VULNERABILITY_AND_DEFENSE_ANALYSIS.md",
+    "reports/full_imprint_20261111/research_direction.md",
+    "reports/geometry_confirmation_20261111/research_direction.md",
+    "reports/sembind_official_audit_20261110/research_decision.md",
+    "scripts/confirmation100/analyze100.py",
+    "scripts/confirmation100/attack100.py",
+    "scripts/confirmation100/common100.py",
+    "scripts/confirmation100/control100.py",
+    "scripts/confirmation100/diag_two_pair_identity.py",
+    "scripts/confirmation100/evaluate100.py",
+    "scripts/confirmation100/freeze100.py",
+    "scripts/confirmation100/make_report.py",
+    "scripts/confirmation100/posthoc100.py",
+    "scripts/confirmation100/prepare100.py",
+    "scripts/confirmation100/start100.py",
+    "scripts/confirmation100/test_cpu.py",
+    "scripts/cover_pilot/attack.py",
+    "scripts/cover_pilot/bundle.py",
+    "scripts/cover_pilot/contract.py",
+    "scripts/cover_pilot/control.py",
+    "scripts/cover_pilot/evaluate.py",
+    "scripts/cover_pilot/prepare.py",
+    "scripts/cover_pilot/runtime.py",
+    "scripts/cover_pilot/test_bundle.py",
+    "scripts/cover_pilot/test_contract.py",
+    "scripts/cover_pilot/test_gs_state.py",
+    "scripts/cover_pilot/test_runtime.py",
+    "scripts/cover_pilot/test_workflow.py",
+    "scripts/defense/after_confirmation.py",
+    "scripts/defense/audit_after_confirmation.py",
+    "scripts/defense/audit_historical_sembind.py",
+    "scripts/defense/bridge_ddim_runtime.py",
+    "scripts/defense/cache_geometry_calibration.py",
+    "scripts/defense/codeword_degree2_pilot.py",
+    "scripts/defense/codeword_diffusion_pilot.py",
+    "scripts/defense/codeword_hard_reprompt_pilot.py",
+    "scripts/defense/continue_geometry_validation.py",
+    "scripts/defense/independent_evaluation.py",
+    "scripts/defense/independent_feature_shard.py",
+    "scripts/defense/independent_generation.py",
+    "scripts/defense/independent_inversion_batch.py",
+    "scripts/defense/independent_reference_batch.py",
+    "scripts/defense/prepare_gs_published_conditions.py",
+    "scripts/defense/prepare_paper_distortions.py",
+    "scripts/defense/prepare_unwatermarked_validation.py",
+    "scripts/defense/repro/sembind_exact_inversion.py",
+    "scripts/defense/repro/sembind_masker_equiv.py",
+    "scripts/defense/run_after_confirmation100.py",
+    "scripts/defense/run_geometry_confirmation.py",
+    "scripts/defense/run_unwatermarked_validation.py",
+    "scripts/defense/seal_smoke.py",
+    "scripts/defense/sembind.py",
+    "scripts/defense/sembind_algebra_test.py",
+    "scripts/defense/sembind_cpu_test.py",
+    "scripts/defense/sembind_pairs.py",
+    "scripts/defense/sembind_pairs_aggregate.py",
+    "scripts/defense/sembind_smoke.py",
+    "scripts/defense/setup_ddim_replay.py",
+    "scripts/parallel_execution/launcher.py",
+    "scripts/parallel_execution/scheduler.py",
+    "scripts/parallel_execution/worker.py",
+    "scripts/salvage30/analyze.py",
+    "scripts/salvage30/eval.py",
+    "scripts/salvage30/seal.py",
+    "scripts/salvage30/template_diag.py"
+  ],
+  "preservation": "Frozen server runs, protocols and negative result artifacts are retained; current source is separate from executed source."
+}

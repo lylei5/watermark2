@@ -34,7 +34,7 @@ def main():
                    fidelity='candidate LPIPS <= saturated-0.05',wrong_identity='candidate <= minimum control accepts'),
         scope='Six new source feasibility screen, not paper-scale confirmation; no threshold tuning or attack modifications',
         isolation='Verifier inputs excluded from baseline process arguments and loading; same OS account, not an OS sandbox')
-    scripts=['anchor_binding.py','decision_region_binding.py','test_decision_region_binding.py',
+    scripts=['semantic_code.py','sembind_official_audit.py','codeword_binding.py','anchor_binding.py','decision_region_binding.py','test_decision_region_binding.py',
              'run_anchor_binding_worker.py','run_anchor_binding_pipeline.py','run_decision_region_pipeline.py',
              'run_published_imprint_full.py','prepare_decision_region.py']
     for n in scripts:shutil.copyfile(Path(__file__).parent/n,run/n)

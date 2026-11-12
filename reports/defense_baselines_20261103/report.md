@@ -45,7 +45,7 @@
 
 ## 4. SemBind（ICML 2026）
 
-masker 权重公开（886,343,333 bytes），DINOv2-giant 公开；绑定流水线未发布，按论文复现（`scripts/defense/sembind.py`）：DINOv2 CLS → masker → 1024 bit → tile → σ=1 → 固定置换 → `S=1−2m` → `S⊙zT`；验证端用候选自身语义重建 mask 后解绑。
+masker 权重公开（886,343,333 bytes），DINOv2-giant 公开；绑定流水线未发布，按论文复现（[执行版本源码](https://github.com/lylei5/watermark2/blob/ba6283f0e93f86a03f1636f5515fb91d10562bbf/scripts/defense/sembind.py)）：DINOv2 CLS → masker → 1024 bit → tile → σ=1 → 固定置换 → `S=1−2m` → `S⊙zT`；验证端用候选自身语义重建 mask 后解绑。
 
 - 自检（单对）：SemBind-GS 绑定态 BA 0.5117、解绑后 1.000；vanilla GS 1.000 / 0.5039。
 - 伪造（30 步 Imprint，单对）：对 SemBind-GS 解绑后 **0.4844**（被防住），对 vanilla GS 1.000（通过）。
@@ -56,7 +56,7 @@ masker 权重公开（886,343,333 bytes），DINOv2-giant 公开；绑定流水�
 
 ## 5. 负结果：无密钥“投票边际”代理不可行
 
-GS 解码是先 ChaCha20 去白化、再按 64×256 多数投票；不知道密钥时只能用参考反演符号做模板。30 对离线诊断（仅评估端使用密钥，`scripts/salvage30/template_diag.py`，结果 `reports/template_diag_30.json`）：
+GS 解码是先 ChaCha20 去白化、再按 64×256 多数投票；不知道密钥时只能用参考反演符号做模板。30 对离线诊断（仅评估端使用密钥，[执行版本源码](https://github.com/lylei5/watermark2/blob/ba6283f0e93f86a03f1636f5515fb91d10562bbf/scripts/salvage30/template_diag.py)，结果 `reports/template_diag_30.json`）：
 
 - 参考图 BA **0.99987**，但逐坐标符号错误率 **24.27%**（最高 29.78%）。
 - 无密钥模板与真实票差的符号一致率 **42.57%**；Spearman **−0.0254**。
@@ -78,10 +78,3 @@ GS 解码是先 ChaCha20 去白化、再按 64×256 多数投票；不知道密�
 - SemBind 的绑定是我们按论文复现，非作者完整流水线；30 步预算，151 步对照未完成。
 - Geometry 阈值/融合未公开，只报 AUC，不构成接受/拒绝。
 - 无独立人工内容评审；所有模型辅助视觉检查不等同人工标签。
-
-## 8. 下一步
-
-1. 完成 SemBind 151 步对照与 30 对统计，确认“防住”不是步数削减造成。
-2. 独立身份补跑（重生成参考 + 重攻击）。
-3. PGID 多图（n≥5）与偏移稳定性 `cos(d150,d120)` 诊断。
-4. 按“验证端流形不动点（Frozen-Residual Pre-Compensation）”写 5 对 pilot；SemBind 用公开 masker 做 mask 碰撞/边界审计，不用“同语义封面”弱化威胁模型。

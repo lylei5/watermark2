@@ -59,7 +59,7 @@ def main():
     os.chdir(output / 'transform_work')
     upstream = module('model', run / 'sembind_official_model.py')
     distortions = module('official_gs_distortions', run / 'gs_image_utils.py')
-    adapter = module('sembind_adapter', run / 'sembind_adapter.py')
+    adapter = module('semantic_code', run / 'semantic_code.py')
     dino_path = root / 'models/sembind/dinov2-giant'
     checkpoint = root / 'models/sembind/sembind_masker.pth'
     processor = AutoImageProcessor.from_pretrained(str(dino_path), local_files_only=True)
@@ -67,7 +67,7 @@ def main():
     official = upstream.AttnSupConHashingModel(input_dim=1536, feat_dim=8192, hash_dim=1024)
     official.load_state_dict(torch.load(checkpoint, map_location='cpu', weights_only=True), strict=True)
     official.to('cuda:0').eval()
-    ours = adapter.SemanticMasker(str(dino_path), str(checkpoint), device='cuda:0')
+    ours = adapter.SemanticCodeExtractor(str(dino_path), str(checkpoint), device='cuda:0')
 
     @torch.no_grad()
     def official_code(image):

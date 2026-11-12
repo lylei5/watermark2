@@ -1,80 +1,43 @@
 # 扩散模型水印防御研究
 
-本仓库研究扩散模型水印的防御方法，重点是内容绑定、抗伪造验证、合法编辑鲁棒性与误报控制。目标是在合法图检出率、图像质量与计算预算可比的条件下提升防御效果。
+本仓库研究内容绑定扩散水印的防御机制。有效改进必须同时有合法检出率、误接受、图像质量和计算预算的可比证据。当前尚未建立优于原生 SemBind 的结果。
 
-攻击基线仅用于防御评测，采用顶会顶刊已发表方法的既定实现与完整预算。研究创新集中于防御方法。
+## 当前状态
 
-后续 CPU/GPU 实验统一在 249 服务器执行，本机仅保留代码、文档和必要研究记录，不再作为实验算力后备。
+**SemBind 完整原生复现尚未完成。** 当前代码使用作者发布的语义网络与 DPM 生成/反演组件，载体、绑定和评测编排属于项目实现。方法扩展暂缓，下一项研究工作是补齐原生基线的端到端等价性与工作点校准。
 
-## SemBind 实现状态
+249 上已登记实验均已结束，当前运行数和排队数均为 0。最近完成的[连续语义区域筛选](reports/continuous_geometry_screen_20261113/report.md)有 24 条干净图验证：四组均接受 6/6，但主候选未通过绑定偏差和比特准确率门槛，没有执行攻击评测。它不支持鲁棒性或防伪优势。
 
-**尚未完成 SemBind 的完整原生复现。** 当前实验使用作者发布的语义网络和生成／反演组件，水印载体、绑定、评分与实验编排仍包含项目实现。结果属于项目适配器内的机制比较，不能直接作为超过原生 SemBind 的证据。
-
-仓库保留了两条不同的实验路径：
-
-| 路径 | 反演与置换 | 代码入口 |
+| 已完成研究 | 主要结果 | 结论范围 |
 |---|---|---|
-| 历史 DDIM 适配器 | DDIM 50步；旧绑定接口默认使用公开固定种子 `20260128` 的置换 | [sembind.py](scripts/defense/sembind.py) 的绑定接口及历史实验脚本 |
-| 当前 DPM 组件适配器 | 发布的 `exact_inversion` 组件，50步、`inv_order=0`、`decoder_inv=True`；实际载体置换由秘密 `binding_key` 的HMAC排序产生 | [run_anchor_binding_worker.py](scripts/defense/run_anchor_binding_worker.py)、[sembind_official_audit.py](scripts/defense/sembind_official_audit.py)、[anchor_binding.py](scripts/defense/anchor_binding.py) |
+| [共享语义证据](reports/shared_semantic_evidence_20261112/report.md) | 默认合法接受 107/120、最终 Imprint 接受 1/12；候选 85/120、0/12 | 未建立匹配合法检出率下的增益 |
+| [固定语义反馈](reports/semantic_feedback_pilot_20261112/report.md) | full / feedback / consensus 为 58 / 56 / 57，分母均为 60 | 未通过冻结门槛 |
+| [最小反射区域](reports/decision_region_pilot_20261112/report.md) | 主候选 44/60，full 59/60 | 未通过冻结门槛 |
+| [完整码字条件传输](reports/semantic_transport_pilot_20261112/report.md) | 主候选 55/60，full 53/60，同符号重排 57/60 | 保真改善，绑定和合法接受门槛未通过 |
+| [连续语义区域](reports/continuous_geometry_screen_20261113/report.md) | 主候选平均 BA 0.968750，量化对照 1.000000 | 仅六来源干净图筛选，未通过推进门槛 |
 
-当前工作进程从旧类中只调用 `SemanticMasker.code()` 提取语义码，不调用其 `embed()`、`unbind()` 或 `mask_from_bits()`；类中保留的公开种子置换不参与这条DPM链路的实际绑定。各冻结实验使用服务器源文件快照，具体文件哈希见对应协议，不能仅凭通用文件名判断执行路径。
+各实验使用不同来源，表格只作证据导航，不能跨行比较方法排名。完整失败结果和冻结协议见[报告索引](reports/README.md)。
 
-DPM加载器使用固定版本的 `DPMSolverMultistepScheduler`，并包含显存管理包装。`inv_order=0`关闭扩散反演的固定点修正；100步VAE decoder优化另行执行。函数名中的“exact”不表示启用了所有精确修正。当前 `BA > 181/256` 工作点也尚未与论文报告的理论FPR `10⁻⁶` 工作点对齐。配置与复现边界见[官方组件检查](reports/sembind_official_audit_20261110/report.md)及[基线证据清单](docs/DEFENSE_BASELINE_INVENTORY.md)。
+## 当前实现
 
-## 当前进展
+| 功能 | 代码与实际范围 |
+|---|---|
+| 1024 位语义码提取 | [semantic_code.py](scripts/defense/semantic_code.py)，仅语义提取，无水印绑定接口 |
+| 官方生成与反演组件 | [sembind_official_audit.py](scripts/defense/sembind_official_audit.py) 的 `load_official()`，加载发布的 `inversion.exact_inversion` 与原始 diffusers 0.21.4 DPM scheduler |
+| 完整预算实验工作进程 | [run_anchor_binding_worker.py](scripts/defense/run_anchor_binding_worker.py)：生成/反演各 50 步，`inv_order=0`、`decoder_inv=True`，VAE decoder 优化 100 步 |
+| 项目 full 载体 | [anchor_binding.py](scripts/defense/anchor_binding.py)：私有 `binding_key` 派生 HMAC 置换、256 位消息、64 次重复 |
+| 既有攻击基线调用 | [run_published_imprint_full.py](scripts/defense/run_published_imprint_full.py)，固定上游实现，完整 151 次更新 |
 
-[条件高斯传输嵌入](reports/semantic_transport_pilot_20261112/report.md)已于北京时间2026-11-13 00:32完成：六个新来源、四组配对、240次完整合法验证。full／saturated／transport／shuffled_transport分别接受53／52／55／57条，共60条每组；主候选未通过合法接受与绑定门槛，未启动Imprint扩展。[失败机制诊断](reports/decision_region_pilot_20261112/failure_evidence.md)记录已有结果中的登记偏差、语义距离重叠与载体可靠性取舍。
+`inv_order=0` 关闭扩散反演中的固定点校正；VAE decoder 优化是另一项操作。论文默认 inverse order 也为 0，但调用该组件本身不证明完整原生复现。[官方论文 §4.1](https://arxiv.org/html/2601.20310v1)的理论 FPR 工作点为 1e-6；本项目的 `BA > 181/256` 尚未与其对齐。
 
-[解码区域约束嵌入](reports/decision_region_pilot_20261112/report.md)于23:28完成240次完整验证：full59/60、saturated55/60、minimal56为44/60、random56为54/60；四组均干净6/6、错误身份0/300。最小反射改善了潜变量距离和辅助图LPIPS，但绑定差异增大，未通过推进门槛，未执行Imprint扩展。完整逐位误差分解与全部结果已归档。
+现行代码与已执行版本分别保存：已完成结果对应服务器 `runs/<run>/` 中冻结源码及协议哈希；复核这些结果应使用该冻结版本。当前源码清理不会改写既有实验的来源记录。
 
-两项2026-11-12实验均已完成并核对服务器记录。[共享语义证据](reports/shared_semantic_evidence_20261112/report.md)包含120条合法查询和216条完整Imprint验证：默认BA接受合法图107/120、最终伪造1/12，查询置信度候选为85/120、0/12。该候选未在匹配合法检出率下建立收益。[固定三轮语义反馈](reports/semantic_feedback_pilot_20261112/report.md)完成180条合法查询：full 58/60、feedback 56/60、相同生成预算consensus 57/60；七项门槛未全部通过，未启动条件扩展的Imprint评估。这两项流水线已结束，尚未建立优于SemBind的结论。逐条复核见[完成审计](reports/completion_audit_20261112/audit.json)。
+## 工作约束与入口
 
-同日其他完整结果：[新执行Imprint](reports/imprint_fresh_revalidation_20261112/report.md)最终SemBind项目适配器接受0/4、GS接受4/4；[条件内容似然](reports/conditional_content_likelihood_20261112/report.md)合法接受30/40，低于校准BA的39/40，未增加拒绝收益；[共享内容锚](reports/conditional_anchor_pilot_20261112/report.md)未通过冻结鲁棒性门槛；[内容耦合分位载体](reports/conditional_quantile_pilot_20261112/report.md)合法接受48/60，低于full的59/60及独立采样对照54/60。各实验保留完整结果及适用边界。
+实验仅在 SSH 主机 `249` 的 `/data0/liyanlei/watermark_research` 执行。仅使用空闲 GPU 7、5、4，最多三张，始终排除 GPU 6；不持续轮询。模型、图像与私钥留在服务器。
 
-[重复观测二阶矩开发筛选](reports/replica_moments_development_20261112/report.md)已在249上完成：利用既有缓存进行新的CPU评分，主候选合法接受86/120、最终Imprint接受0/12，未达到默认BA的合法保留水平。此项不算新模型执行或独立确认，未扩大GPU实验。
+防御评测只使用顶会顶刊已经发表的攻击基线及其既定实现和完整预算，不创造或改进攻击。所有论文主张需要新的独立确认，并报告实际合法检出率与误接受。
 
-[完整预算 Imprint 评测](reports/full_imprint_20261111/report.md)已完成：8 个案例各151次更新，全部144张图完成验证。最终候选 SemBind 项目适配器接受0/4、GS接受4/4；五种冻结判定规则在全部图上完全一致，几何验证器没有额外防伪收益。
-
-[32来源校准](reports/geometry_calibration_20261111/completed/report.md)与[64来源独立确认](reports/geometry_confirmation_20261111/report.md)均已完成。确认集384张合法查询：默认BA通过319张，全组几何验证通过382张，分组版本通过381张；三者在24,192次错误身份判决中均为0次接受。收益来自中心裁剪后放大的恢复，不能据此宣称新增防伪收益或SOTA。
-
-[Gaussian Shading官方九条件评测](reports/gs_published_conditions_20261111/report.md)也已完成：默认554/576、全组几何552/576、分组529/576，均0/36,288错误身份接受。本轮几何搜索没有额外收益；官方填黑裁剪与中心裁剪后放大分别报告，不能合并为普适鲁棒性提升。
-
-[100张未加水印自然图评测](reports/unwatermarked_validation_20261111/report.md)已完成：完整DDIM50及6,400次身份判决，五种固定规则均0次误接受，按查询为0/100。降低BA门限的90%、95%、100%校准工作点分别误接受472、1,385、6,337次。该轮使用已有开发资产，不能据此证明极低FPR。该历史评测流水线已结束；当前重验状态见上方。
-
-## 当前可核查结果
-
-此前开发报告：[SemBind 官方组件检查与合法扰动扩展](reports/sembind_official_audit_20261110/report.md)，日期 2026-11-10。SemBind-DDIM 在九种非裁剪条件下各为 16/16 通过，中心裁剪为 0/16；校准 BA 与内容验证器在相同 144/160 合法通过数下均拒绝全部 16 个既有 Reprompt 候选。DPM 组件检查的 8 张正常图在两种盲反演设置下全部通过。此前的[内容认证评测](reports/content_verifier_20261110/report.md)与[解码感知研究](reports/codeword_binding_20261109/report.md)保留开发证据。当前证据不支持宣称已达到 SOTA。
-
-研究问题：重复纠错应消除传输误差，但可能同时消除防伪所需的内容差异。原型将语义码对齐到重复码字，使内容差异保留在解码后的消息层。CoverLock 已有消息级内容包装的先例；编码顺序本身不作为首创贡献。
-
-- 官方语义网络：100 张自然图的四种版本，加上 30 对历史图像，共 460 条 float32 特征记录；CPU/GPU 重叠 120 条语义码逐位一致。
-- 真实语义码与模拟信道：在预声明 25% 符号翻转条件下，跨图接受率由 5.50% 降至 0.63%，同时中心裁剪正例通过率由 100% 降至 93.25%。这些是信道实验，不能代替真实攻击结果。
-- 实际 SD2.1/DDIM：5 个固定提示词的配对试验，包含原图、JPEG Q50、跨类别与同类场景 Reprompt；完整结果见报告。使用可复现开发密钥，尚无严格进程隔离或最终确认集。
-- 历史 GS 原始结果为 30 对、30/30 通过；历史 SemBind 完成 30 对、2/30 通过。具体适用条件和证据路径见报告审计表。
-
-## 实现与运行
-
-- `scripts/defense/codeword_binding.py`：码字对齐、密钥化稀疏奇偶、GS 多数译码。
-- `scripts/defense/test_codeword_binding.py`：代数不变量、覆盖与平票边界。
-- `scripts/defense/extract_semantic_codes.py`：官方语义特征与输入哈希。
-- `scripts/defense/codeword_channel_pilot.py`：共享随机量的配对信道实验。
-- `scripts/defense/codeword_diffusion_pilot.py`、`codeword_hard_reprompt_pilot.py`、`codeword_degree2_pilot.py`：实际生成与验证。
-- `protocols/codeword*.json`：冻结工作点与开发性实验说明。
-
-```bash
-python scripts/defense/test_codeword_binding.py
-python scripts/defense/codeword_diffusion_pilot.py --help
-```
-
-服务器资产位于 `/data0/liyanlei/watermark_research`，SSH 别名 `249`。当前只使用 GPU7、5、4，最多三张；启动前确认空闲并按 UUID 绑定，不得终止其他用户任务。完整预算任务通过进程退出事件接续评测，不持续轮询。
-
-## 研究入口
-
-- [文献与历史结论审计](reports/repository_audit_20261111/report.md)、[核验后的文献](docs/LITERATURE.md)及[防御研究计划](docs/RESEARCH_PLAN.md)。
-
-- [当前状态](GPT_CONTEXT.md)与[机器可读状态](project_state.json)。
-- [GS 解码契约](reports/22_decoder_contract/report.md)。
-- [SemBind 官方 masker 核验](reports/repro_sembind_masker_20261103/report.md)。
-- [既有防御实现](scripts/defense/)及[基线源码契约](docs/EVALUATION_CONTRACT.md)。
-
-历史报告保留原始记录；当前数值和证据等级以最新研究报告为准。后续验证须完成官方基线闭环、同等绝对合法检出率校准与独立确认；仅使用已发表攻击，不开发或改进攻击方法。
+- [机器可读状态](project_state.json)、[研究交接](GPT_CONTEXT.md)、[研究计划](docs/RESEARCH_PLAN.md)
+- [基线复现清单](docs/DEFENSE_BASELINE_INVENTORY.md)、[文献](docs/LITERATURE.md)、[第三方来源](THIRD_PARTY.md)
+- [仓库同步核验](reports/repository_sync_20261113/report.md)、[操作规则](AGENTS.md)

@@ -1,0 +1,1642 @@
+{
+  "audit_passed": true,
+  "rows": [
+    {
+      "task": 0,
+      "arm": "full",
+      "id": "000_full_00",
+      "ba": 1.0,
+      "accepted": true,
+      "latent": "genuine_0/latents/000_full_00.npy",
+      "latent_sha256": "6e7fd761bcf219c9f32785395f5615f769cbc764d6b02a626b12fabb837a7131",
+      "code": "genuine_0/codes/000_full_00.npz",
+      "code_sha256": "793525fc4c144bb02e4c66eac13e179f286bbc9858f0f5b9784304ee23891420",
+      "condition": "clean",
+      "image": "genuine_0/images/000_full_00.png",
+      "image_sha256": "689bf5ce3fb242eb87e8bd22c079b46cd3be66e2f394ae7cbe4dab72a0f5e9f7",
+      "semantic_mismatch": 0.033203125
+    },
+    {
+      "task": 0,
+      "arm": "quantized_geometry",
+      "id": "000_quantized_geometry_00",
+      "ba": 1.0,
+      "accepted": true,
+      "latent": "genuine_0/latents/000_quantized_geometry_00.npy",
+      "latent_sha256": "58d855d84159bf188043f1d4791c27e4e07aa7894c435f2db12f087b348efb47",
+      "code": "genuine_0/codes/000_quantized_geometry_00.npz",
+      "code_sha256": "47ed91d803cf6cee6065518261e6d18267f9e03c5538c4baa720b3e02c810745",
+      "condition": "clean",
+      "image": "genuine_0/images/000_quantized_geometry_00.png",
+      "image_sha256": "666d1f557b791548d7070bc021a6f26a7548f6b3ac876b01fb30fdcee3ebb824",
+      "semantic_mismatch": 0.046875
+    },
+    {
+      "task": 0,
+      "arm": "continuous_independent",
+      "id": "000_continuous_independent_00",
+      "ba": 1.0,
+      "accepted": true,
+      "latent": "genuine_0/latents/000_continuous_independent_00.npy",
+      "latent_sha256": "28125a83604009d51f91d0171490864018480281c577006b65071509eba76ca7",
+      "code": "genuine_0/codes/000_continuous_independent_00.npz",
+      "code_sha256": "e5c89cfea6c404bc035253f59f977afb096eb5cc58e6afe7592fe534906b1e05",
+      "condition": "clean",
+      "image": "genuine_0/images/000_continuous_independent_00.png",
+      "image_sha256": "7a34931b88ee3cde3418d0f4b71d934aabfc005561b03183598027b9ae199dcc",
+      "semantic_mismatch": 0.078125
+    },
+    {
+      "task": 0,
+      "arm": "continuous_transport",
+      "id": "000_continuous_transport_00",
+      "ba": 1.0,
+      "accepted": true,
+      "latent": "genuine_0/latents/000_continuous_transport_00.npy",
+      "latent_sha256": "b104a3e13d506d9f0d87151f6c664a457002e66678af83e1e078adbd139fb0d8",
+      "code": "genuine_0/codes/000_continuous_transport_00.npz",
+      "code_sha256": "86fb13d5d7415d7ee8d65489c8d932115816ef62404aaa05fdde37be70ee8c56",
+      "condition": "clean",
+      "image": "genuine_0/images/000_continuous_transport_00.png",
+      "image_sha256": "3fee306786472a0d55f3630a424d177072289f18e0b92ad0906986c8cfe48417",
+      "semantic_mismatch": 0.044921875
+    },
+    {
+      "task": 3,
+      "arm": "full",
+      "id": "003_full_00",
+      "ba": 1.0,
+      "accepted": true,
+      "latent": "genuine_0/latents/003_full_00.npy",
+      "latent_sha256": "d11f5c19b595c5561b2c6fd365d25dbd90746ce737df33c585b65516bd3b3871",
+      "code": "genuine_0/codes/003_full_00.npz",
+      "code_sha256": "a3bbff4b3d842453d798581a24aea4ef9d077e47bdbbd345db127a9d465a89db",
+      "condition": "clean",
+      "image": "genuine_0/images/003_full_00.png",
+      "image_sha256": "b9661fc90e41017ebfa3c6761775f469bd07a75eaf9d6793b88f666b83f40a93",
+      "semantic_mismatch": 0.0419921875
+    },
+    {
+      "task": 3,
+      "arm": "quantized_geometry",
+      "id": "003_quantized_geometry_00",
+      "ba": 1.0,
+      "accepted": true,
+      "latent": "genuine_0/latents/003_quantized_geometry_00.npy",
+      "latent_sha256": "8e7397201a955fc6fb151ab7b0e2eb828395c99a85f1b8b8a28d12748db0b259",
+      "code": "genuine_0/codes/003_quantized_geometry_00.npz",
+      "code_sha256": "cfab50ec8c2db612bab0250bf96401c1a78d24ec1cc2c5a9570439530559aeff",
+      "condition": "clean",
+      "image": "genuine_0/images/003_quantized_geometry_00.png",
+      "image_sha256": "4725f2211fce793a878eefa02668a5dff5f81950a11c447b602f5aa7bdff4f91",
+      "semantic_mismatch": 0.0078125
+    },
+    {
+      "task": 3,
+      "arm": "continuous_independent",
+      "id": "003_continuous_independent_00",
+      "ba": 1.0,
+      "accepted": true,
+      "latent": "genuine_0/latents/003_continuous_independent_00.npy",
+      "latent_sha256": "81d8d40ee6e0756f187e68a38b4f8e91bf06534013edc9ef270ec3ab38c9cfdb",
+      "code": "genuine_0/codes/003_continuous_independent_00.npz",
+      "code_sha256": "88d68738ae0ab84784e95a96979295ec6f2197c768bfe680130a1a4921fd0a56",
+      "condition": "clean",
+      "image": "genuine_0/images/003_continuous_independent_00.png",
+      "image_sha256": "57dac7c41282059725a73bca5fa88c5f4513091755fe6d35492a5f14bc2a30b4",
+      "semantic_mismatch": 0.037109375
+    },
+    {
+      "task": 3,
+      "arm": "continuous_transport",
+      "id": "003_continuous_transport_00",
+      "ba": 1.0,
+      "accepted": true,
+      "latent": "genuine_0/latents/003_continuous_transport_00.npy",
+      "latent_sha256": "818f33ed9f87506b4f41758a87b35c5012a1e216e3a02a69c3de4e83481051a8",
+      "code": "genuine_0/codes/003_continuous_transport_00.npz",
+      "code_sha256": "8f47f306f200a6ee1a7d866dcf9e474b6c19e3069a5442bceae45a4d4dfc9a85",
+      "condition": "clean",
+      "image": "genuine_0/images/003_continuous_transport_00.png",
+      "image_sha256": "6592b2e0c89b778814fc445e7f94daa0c1c543071ca01867a75090c1bba2a330",
+      "semantic_mismatch": 0.044921875
+    },
+    {
+      "task": 1,
+      "arm": "full",
+      "id": "001_full_00",
+      "ba": 1.0,
+      "accepted": true,
+      "latent": "genuine_1/latents/001_full_00.npy",
+      "latent_sha256": "bf32478922bed7c5305a5ee44cc7b671d464c49fcfe2ad2c6b4b699efe7ed355",
+      "code": "genuine_1/codes/001_full_00.npz",
+      "code_sha256": "ce2c7d36592a45416090d2958ddb88a074203eb5ef4fa6f1b0ea9910252e5c65",
+      "condition": "clean",
+      "image": "genuine_1/images/001_full_00.png",
+      "image_sha256": "561bae7ea6b6360e04123fc3053ab03605f30e309cc170112272f7537cf314ff",
+      "semantic_mismatch": 0.0244140625
+    },
+    {
+      "task": 1,
+      "arm": "quantized_geometry",
+      "id": "001_quantized_geometry_00",
+      "ba": 1.0,
+      "accepted": true,
+      "latent": "genuine_1/latents/001_quantized_geometry_00.npy",
+      "latent_sha256": "d46d55224dcf1c1b654930f02a63f63d9bae34a7c4e007594a14c0679715dee7",
+      "code": "genuine_1/codes/001_quantized_geometry_00.npz",
+      "code_sha256": "77dda8d9db33c64018b4ea4f3a2e8567e030afdd0e9c6483099e1baa8e24c8da",
+      "condition": "clean",
+      "image": "genuine_1/images/001_quantized_geometry_00.png",
+      "image_sha256": "06f8e810184ab346e16066c523a3867be876ca06cc5a579a97ff6ce63db4c3c4",
+      "semantic_mismatch": 0.111328125
+    },
+    {
+      "task": 1,
+      "arm": "continuous_independent",
+      "id": "001_continuous_independent_00",
+      "ba": 1.0,
+      "accepted": true,
+      "latent": "genuine_1/latents/001_continuous_independent_00.npy",
+      "latent_sha256": "1de0e056bb9c8679b181f9aeeed9f50f5b88953b6e92d92d5e12d5908229e73c",
+      "code": "genuine_1/codes/001_continuous_independent_00.npz",
+      "code_sha256": "c35313c0d8a0c26c4faece44f3f6d8d31df770513b6dc1eb4d16a7cba19d8d55",
+      "condition": "clean",
+      "image": "genuine_1/images/001_continuous_independent_00.png",
+      "image_sha256": "7de18e97d4a4d13fe5c8864d3c1be0657625b1f8a7c4f2de4b3d0bc3ef37dbf6",
+      "semantic_mismatch": 0.068359375
+    },
+    {
+      "task": 1,
+      "arm": "continuous_transport",
+      "id": "001_continuous_transport_00",
+      "ba": 1.0,
+      "accepted": true,
+      "latent": "genuine_1/latents/001_continuous_transport_00.npy",
+      "latent_sha256": "75eef7c43e1dded73674f989d38ad92013f0fffb3d5c29df6838142adfbfa99b",
+      "code": "genuine_1/codes/001_continuous_transport_00.npz",
+      "code_sha256": "67773a5b19e294fb1f9635ec2ea465863e2405ab31c1ec00f76607a91b55e0a7",
+      "condition": "clean",
+      "image": "genuine_1/images/001_continuous_transport_00.png",
+      "image_sha256": "317ff067aa3134b7fda868ca7acd3cbcddca2748e3358246f1f60ff567d88803",
+      "semantic_mismatch": 0.07421875
+    },
+    {
+      "task": 4,
+      "arm": "full",
+      "id": "004_full_00",
+      "ba": 1.0,
+      "accepted": true,
+      "latent": "genuine_1/latents/004_full_00.npy",
+      "latent_sha256": "cc92031a5ac459e8469a8b243fda52e4ccfae3eb0d9b23a05c653fdd29ed26d5",
+      "code": "genuine_1/codes/004_full_00.npz",
+      "code_sha256": "80bb572f3456d64a69b70e6b5560a2bb5f378d782d4e4978926d6e08a95d94a5",
+      "condition": "clean",
+      "image": "genuine_1/images/004_full_00.png",
+      "image_sha256": "6ec8117428f35d7af80fc3926656426c2c6df34678ceb0ce57ce22e2a8d907c0",
+      "semantic_mismatch": 0.017578125
+    },
+    {
+      "task": 4,
+      "arm": "quantized_geometry",
+      "id": "004_quantized_geometry_00",
+      "ba": 1.0,
+      "accepted": true,
+      "latent": "genuine_1/latents/004_quantized_geometry_00.npy",
+      "latent_sha256": "e8d5f8a8707d645091988155fa4c03cf603487ee0ab40c1e267628da74b6c995",
+      "code": "genuine_1/codes/004_quantized_geometry_00.npz",
+      "code_sha256": "1056ee9b86455c9c40b22f0c67525ce0423ce1021faf81e00d5f1713cddf353e",
+      "condition": "clean",
+      "image": "genuine_1/images/004_quantized_geometry_00.png",
+      "image_sha256": "a36a1d5ba6975fcc94f6286e200279b68156c296b934b04fc86f5098f9362d0f",
+      "semantic_mismatch": 0.0380859375
+    },
+    {
+      "task": 4,
+      "arm": "continuous_independent",
+      "id": "004_continuous_independent_00",
+      "ba": 1.0,
+      "accepted": true,
+      "latent": "genuine_1/latents/004_continuous_independent_00.npy",
+      "latent_sha256": "468cc243d5dcdb56e8bf45181bfb7943a61646e5c5145d4bbafd5af47f2f4894",
+      "code": "genuine_1/codes/004_continuous_independent_00.npz",
+      "code_sha256": "4dce3cc7df08077869ae8fc09482a9c358b8c4159d339c4daebeae0926d51104",
+      "condition": "clean",
+      "image": "genuine_1/images/004_continuous_independent_00.png",
+      "image_sha256": "34fb7008bdada79fcb7295d0da21eebf2ad75955f59d880d2732e5dbf8dea877",
+      "semantic_mismatch": 0.046875
+    },
+    {
+      "task": 4,
+      "arm": "continuous_transport",
+      "id": "004_continuous_transport_00",
+      "ba": 1.0,
+      "accepted": true,
+      "latent": "genuine_1/latents/004_continuous_transport_00.npy",
+      "latent_sha256": "de84ef51645d584eb7afdf4f2976628a4569c69b088309ea5677ab1a8f92fb66",
+      "code": "genuine_1/codes/004_continuous_transport_00.npz",
+      "code_sha256": "b5770fff9a4b0083654d54e3a27df9944c5694d3b82799aee570873735ac9fb2",
+      "condition": "clean",
+      "image": "genuine_1/images/004_continuous_transport_00.png",
+      "image_sha256": "b7812dff49a2e9bce91f0bdebca7c205bad25aa734910e2ffb54e4c8437e54b0",
+      "semantic_mismatch": 0.0908203125
+    },
+    {
+      "task": 2,
+      "arm": "full",
+      "id": "002_full_00",
+      "ba": 1.0,
+      "accepted": true,
+      "latent": "genuine_2/latents/002_full_00.npy",
+      "latent_sha256": "0b5253103fd7193ea6c92a8bb8f5064f94630c4e20ad3fa4d00861e1e215ce60",
+      "code": "genuine_2/codes/002_full_00.npz",
+      "code_sha256": "d3c297b6b0a6edccd64ceb779aaf3f0d16b7ccea049f51f9d312a82026205b81",
+      "condition": "clean",
+      "image": "genuine_2/images/002_full_00.png",
+      "image_sha256": "bd81184c8f0ec0a7d07b4744cc31e9d026a27c87b13ecf8312d943a35855057b",
+      "semantic_mismatch": 0.0703125
+    },
+    {
+      "task": 2,
+      "arm": "quantized_geometry",
+      "id": "002_quantized_geometry_00",
+      "ba": 1.0,
+      "accepted": true,
+      "latent": "genuine_2/latents/002_quantized_geometry_00.npy",
+      "latent_sha256": "73b0a222ec2870aaffd1b3cdc22154ac3802b49eba70b2b5f7fc29ac56465e84",
+      "code": "genuine_2/codes/002_quantized_geometry_00.npz",
+      "code_sha256": "bca6bb02a6146274a3bddd0b486ee02c196e6a96516e59f566b3fdfc64c70140",
+      "condition": "clean",
+      "image": "genuine_2/images/002_quantized_geometry_00.png",
+      "image_sha256": "6dd19a0eb2306d04440e9d401e6db4364cb620ace9295f145fa3923dea843532",
+      "semantic_mismatch": 0.2490234375
+    },
+    {
+      "task": 2,
+      "arm": "continuous_independent",
+      "id": "002_continuous_independent_00",
+      "ba": 0.81640625,
+      "accepted": true,
+      "latent": "genuine_2/latents/002_continuous_independent_00.npy",
+      "latent_sha256": "aa6454ed0de1674f7d56a89b6ba518828de3e52493c23a197214c4cfd627b67f",
+      "code": "genuine_2/codes/002_continuous_independent_00.npz",
+      "code_sha256": "e0dbfc925efea4a2367c70e96414cc5c7fe069bff9c5acbe033949f776386f93",
+      "condition": "clean",
+      "image": "genuine_2/images/002_continuous_independent_00.png",
+      "image_sha256": "32c2005f4bc49f7e4d288e2dfaabf4b84fc77b389f348f8c0594730993f2faab",
+      "semantic_mismatch": 0.306640625
+    },
+    {
+      "task": 2,
+      "arm": "continuous_transport",
+      "id": "002_continuous_transport_00",
+      "ba": 0.8125,
+      "accepted": true,
+      "latent": "genuine_2/latents/002_continuous_transport_00.npy",
+      "latent_sha256": "943b67e24d9ac46e8e014f6392313099f819ddeac79e738b195db32b6bec8d7c",
+      "code": "genuine_2/codes/002_continuous_transport_00.npz",
+      "code_sha256": "2da85cfd0d00169a181a5150eb5715fd5ed76914fc4b98c00fe1e83fe2e27a29",
+      "condition": "clean",
+      "image": "genuine_2/images/002_continuous_transport_00.png",
+      "image_sha256": "80205b4fdb91a04f5bfafc25d6422de2c17513375f8511ee274fa4756728ee0e",
+      "semantic_mismatch": 0.296875
+    },
+    {
+      "task": 5,
+      "arm": "full",
+      "id": "005_full_00",
+      "ba": 1.0,
+      "accepted": true,
+      "latent": "genuine_2/latents/005_full_00.npy",
+      "latent_sha256": "e916c2e4da8fcce46ee4aa50187ce7d9647b7ddc21c35b458b247a453ee362cf",
+      "code": "genuine_2/codes/005_full_00.npz",
+      "code_sha256": "8ea17693c80770eb0ec82481895be1cd9549d85b8f0d11773720f07e8eae90be",
+      "condition": "clean",
+      "image": "genuine_2/images/005_full_00.png",
+      "image_sha256": "4b5b53c98fd81a06fd6f54546effa88e647bb51656b148aa922b51840fb2bee0",
+      "semantic_mismatch": 0.03125
+    },
+    {
+      "task": 5,
+      "arm": "quantized_geometry",
+      "id": "005_quantized_geometry_00",
+      "ba": 1.0,
+      "accepted": true,
+      "latent": "genuine_2/latents/005_quantized_geometry_00.npy",
+      "latent_sha256": "6b9fdb0753b170c432809ec7c22eabb5836018c32e1ff709020b49e19de2f5bb",
+      "code": "genuine_2/codes/005_quantized_geometry_00.npz",
+      "code_sha256": "bc12859b1847ccb4b6b95c692c03feccf956c7478dfb2f0fdabeaa12fd300c2c",
+      "condition": "clean",
+      "image": "genuine_2/images/005_quantized_geometry_00.png",
+      "image_sha256": "d8ad201e9ef5585c20229249e1bb47398a9c5eb36f21809e6e7db1818112554c",
+      "semantic_mismatch": 0.0185546875
+    },
+    {
+      "task": 5,
+      "arm": "continuous_independent",
+      "id": "005_continuous_independent_00",
+      "ba": 1.0,
+      "accepted": true,
+      "latent": "genuine_2/latents/005_continuous_independent_00.npy",
+      "latent_sha256": "51067dd2d57db4e9cb53896552f101bcd615427f9edaeca583a9ea43b93e154c",
+      "code": "genuine_2/codes/005_continuous_independent_00.npz",
+      "code_sha256": "3f816835bb97cf1badba72f700af7974a33e336dbabdc729def727d3f05bd66d",
+      "condition": "clean",
+      "image": "genuine_2/images/005_continuous_independent_00.png",
+      "image_sha256": "ee8da31871d81b5b2faa1a33e10f526447398ac9a35c24eacad63bc3497b6d57",
+      "semantic_mismatch": 0.025390625
+    },
+    {
+      "task": 5,
+      "arm": "continuous_transport",
+      "id": "005_continuous_transport_00",
+      "ba": 1.0,
+      "accepted": true,
+      "latent": "genuine_2/latents/005_continuous_transport_00.npy",
+      "latent_sha256": "a312108d4249595bdff8ed224d858ef1e04f5690d4c4105ea75fe780196b57c7",
+      "code": "genuine_2/codes/005_continuous_transport_00.npz",
+      "code_sha256": "068783142d99aa288b3439255a24737f4f572126fedcd4a0a75228e18232872c",
+      "condition": "clean",
+      "image": "genuine_2/images/005_continuous_transport_00.png",
+      "image_sha256": "04d2ec0f114dd57e8e3e5e1b48abd5af54f5763c2fe18440b73f4ce07ca9602e",
+      "semantic_mismatch": 0.0263671875
+    }
+  ],
+  "references": [
+    {
+      "task": 0,
+      "arm": "full",
+      "image": "genuine_0/images/000_full.png",
+      "image_sha256": "689bf5ce3fb242eb87e8bd22c079b46cd3be66e2f394ae7cbe4dab72a0f5e9f7",
+      "auxiliary": "genuine_0/images/000_aux.png",
+      "semantic_mismatch": 0.033203125,
+      "initial_latent": "genuine_0/latents/000_full_initial.npy",
+      "initial_latent_sha256": "1a0fb4607d2d6305800ea43320d8ce59163c9621fe82913276aff60484b9df31",
+      "lpips": 0.8180510401725769,
+      "psnr": 8.901924133300781,
+      "ssim": 0.2172960706134005,
+      "ms_ssim": 0.12711387872695923,
+      "continuous_registration_distance": 0.14726942571858845,
+      "initial_mse": 2.029937689660809
+    },
+    {
+      "task": 0,
+      "arm": "quantized_geometry",
+      "image": "genuine_0/images/000_quantized_geometry.png",
+      "image_sha256": "666d1f557b791548d7070bc021a6f26a7548f6b3ac876b01fb30fdcee3ebb824",
+      "auxiliary": "genuine_0/images/000_aux.png",
+      "semantic_mismatch": 0.046875,
+      "initial_latent": "genuine_0/latents/000_quantized_geometry_initial.npy",
+      "initial_latent_sha256": "bd585d514cfc0b78e92cb4e8d4da0cb6debb61885c1da6db1363479119eee3e6",
+      "lpips": 0.5764020085334778,
+      "psnr": 12.560837745666504,
+      "ssim": 0.2998599743513348,
+      "ms_ssim": 0.43043774366378784,
+      "continuous_registration_distance": 0.21403059951200054,
+      "initial_mse": 0.8394015656155873
+    },
+    {
+      "task": 0,
+      "arm": "continuous_independent",
+      "image": "genuine_0/images/000_continuous_independent.png",
+      "image_sha256": "7a34931b88ee3cde3418d0f4b71d934aabfc005561b03183598027b9ae199dcc",
+      "auxiliary": "genuine_0/images/000_aux.png",
+      "semantic_mismatch": 0.078125,
+      "initial_latent": "genuine_0/latents/000_continuous_independent_initial.npy",
+      "initial_latent_sha256": "789114ad9806fbe9e212e2fe5cc59e08a6b1d0a7b719bee9a7dae50c09f2aa77",
+      "lpips": 0.6857406497001648,
+      "psnr": 10.798110961914062,
+      "ssim": 0.20032466376908986,
+      "ms_ssim": 0.25249776244163513,
+      "continuous_registration_distance": 0.28524670326830526,
+      "initial_mse": 2.0117499534315497
+    },
+    {
+      "task": 0,
+      "arm": "continuous_transport",
+      "image": "genuine_0/images/000_continuous_transport.png",
+      "image_sha256": "3fee306786472a0d55f3630a424d177072289f18e0b92ad0906986c8cfe48417",
+      "auxiliary": "genuine_0/images/000_aux.png",
+      "semantic_mismatch": 0.044921875,
+      "initial_latent": "genuine_0/latents/000_continuous_transport_initial.npy",
+      "initial_latent_sha256": "ef473387cb636b35fe0f6927516db0e2394e545c935cbe8fbb21ac944a4f0fed",
+      "lpips": 0.603685736656189,
+      "psnr": 10.552773475646973,
+      "ssim": 0.33427257155802464,
+      "ms_ssim": 0.44120150804519653,
+      "continuous_registration_distance": 0.1582309719730263,
+      "initial_mse": 0.8404920207540628
+    },
+    {
+      "task": 3,
+      "arm": "full",
+      "image": "genuine_0/images/003_full.png",
+      "image_sha256": "b9661fc90e41017ebfa3c6761775f469bd07a75eaf9d6793b88f666b83f40a93",
+      "auxiliary": "genuine_0/images/003_aux.png",
+      "semantic_mismatch": 0.0419921875,
+      "initial_latent": "genuine_0/latents/003_full_initial.npy",
+      "initial_latent_sha256": "dea79a9bf100f60b42838fb81e383c9ae1bef134badf1b3399f6d3d94a55b5f7",
+      "lpips": 0.7602870464324951,
+      "psnr": 10.206694602966309,
+      "ssim": 0.306354677926257,
+      "ms_ssim": 0.21436943113803864,
+      "continuous_registration_distance": 0.16919590969250334,
+      "initial_mse": 1.9845952748503628
+    },
+    {
+      "task": 3,
+      "arm": "quantized_geometry",
+      "image": "genuine_0/images/003_quantized_geometry.png",
+      "image_sha256": "4725f2211fce793a878eefa02668a5dff5f81950a11c447b602f5aa7bdff4f91",
+      "auxiliary": "genuine_0/images/003_aux.png",
+      "semantic_mismatch": 0.0078125,
+      "initial_latent": "genuine_0/latents/003_quantized_geometry_initial.npy",
+      "initial_latent_sha256": "28bb3eb45bd9492071423c9d892cb9835a883ae22f5a87e434e632ee27035a46",
+      "lpips": 0.6882964372634888,
+      "psnr": 10.53494644165039,
+      "ssim": 0.38587919827472944,
+      "ms_ssim": 0.37639230489730835,
+      "continuous_registration_distance": 0.041362214221056466,
+      "initial_mse": 0.8312774865552044
+    },
+    {
+      "task": 3,
+      "arm": "continuous_independent",
+      "image": "genuine_0/images/003_continuous_independent.png",
+      "image_sha256": "57dac7c41282059725a73bca5fa88c5f4513091755fe6d35492a5f14bc2a30b4",
+      "auxiliary": "genuine_0/images/003_aux.png",
+      "semantic_mismatch": 0.037109375,
+      "initial_latent": "genuine_0/latents/003_continuous_independent_initial.npy",
+      "initial_latent_sha256": "8cfc2ee62bf5291f3d73da76bee055f825ec587aee6cf74fb1a6760636c3eb50",
+      "lpips": 0.7645537257194519,
+      "psnr": 10.209112167358398,
+      "ssim": 0.3200679740427445,
+      "ms_ssim": 0.2509702444076538,
+      "continuous_registration_distance": 0.12714457435388407,
+      "initial_mse": 1.9653838197492532
+    },
+    {
+      "task": 3,
+      "arm": "continuous_transport",
+      "image": "genuine_0/images/003_continuous_transport.png",
+      "image_sha256": "6592b2e0c89b778814fc445e7f94daa0c1c543071ca01867a75090c1bba2a330",
+      "auxiliary": "genuine_0/images/003_aux.png",
+      "semantic_mismatch": 0.044921875,
+      "initial_latent": "genuine_0/latents/003_continuous_transport_initial.npy",
+      "initial_latent_sha256": "f7c828cdc461d81671b4ecb2dd5887a25a682494dbf739f6441053ea06d2cac6",
+      "lpips": 0.6478321552276611,
+      "psnr": 10.946292877197266,
+      "ssim": 0.44117293364212556,
+      "ms_ssim": 0.3928419351577759,
+      "continuous_registration_distance": 0.1600158839639274,
+      "initial_mse": 0.82619634508335
+    },
+    {
+      "task": 1,
+      "arm": "full",
+      "image": "genuine_1/images/001_full.png",
+      "image_sha256": "561bae7ea6b6360e04123fc3053ab03605f30e309cc170112272f7537cf314ff",
+      "auxiliary": "genuine_1/images/001_aux.png",
+      "semantic_mismatch": 0.0244140625,
+      "initial_latent": "genuine_1/latents/001_full_initial.npy",
+      "initial_latent_sha256": "2ed8022f78a42f7764b39380952a944d2bbf920bce37afc62735f98194a2ca73",
+      "lpips": 0.6950199007987976,
+      "psnr": 8.135558128356934,
+      "ssim": 0.07525187660874952,
+      "ms_ssim": 0.05467550456523895,
+      "continuous_registration_distance": 0.09059203535365463,
+      "initial_mse": 2.0118740899846506
+    },
+    {
+      "task": 1,
+      "arm": "quantized_geometry",
+      "image": "genuine_1/images/001_quantized_geometry.png",
+      "image_sha256": "06f8e810184ab346e16066c523a3867be876ca06cc5a579a97ff6ce63db4c3c4",
+      "auxiliary": "genuine_1/images/001_aux.png",
+      "semantic_mismatch": 0.111328125,
+      "initial_latent": "genuine_1/latents/001_quantized_geometry_initial.npy",
+      "initial_latent_sha256": "8eb12af9d8c967716b6b78cbd3119118d37b735e726d5d0def126ce88ef41211",
+      "lpips": 0.6208160519599915,
+      "psnr": 11.628857612609863,
+      "ssim": 0.249541773321207,
+      "ms_ssim": 0.29337990283966064,
+      "continuous_registration_distance": 0.39410500308385155,
+      "initial_mse": 0.846288013587046
+    },
+    {
+      "task": 1,
+      "arm": "continuous_independent",
+      "image": "genuine_1/images/001_continuous_independent.png",
+      "image_sha256": "7de18e97d4a4d13fe5c8864d3c1be0657625b1f8a7c4f2de4b3d0bc3ef37dbf6",
+      "auxiliary": "genuine_1/images/001_aux.png",
+      "semantic_mismatch": 0.068359375,
+      "initial_latent": "genuine_1/latents/001_continuous_independent_initial.npy",
+      "initial_latent_sha256": "eef2ac0172d1e23e94f862521a41a69cfabfadbdf5a15c844a343920e157ea5f",
+      "lpips": 0.6855511665344238,
+      "psnr": 8.122060775756836,
+      "ssim": 0.10779552187526265,
+      "ms_ssim": 0.0,
+      "continuous_registration_distance": 0.22607659889311937,
+      "initial_mse": 2.048961603809414
+    },
+    {
+      "task": 1,
+      "arm": "continuous_transport",
+      "image": "genuine_1/images/001_continuous_transport.png",
+      "image_sha256": "317ff067aa3134b7fda868ca7acd3cbcddca2748e3358246f1f60ff567d88803",
+      "auxiliary": "genuine_1/images/001_aux.png",
+      "semantic_mismatch": 0.07421875,
+      "initial_latent": "genuine_1/latents/001_continuous_transport_initial.npy",
+      "initial_latent_sha256": "08cfab543394993b31e9f7ffe46f2739b3eec39a821a96bce9af82d6c07e29ec",
+      "lpips": 0.6173609495162964,
+      "psnr": 9.434643745422363,
+      "ssim": 0.20857822737788667,
+      "ms_ssim": 0.20893140137195587,
+      "continuous_registration_distance": 0.27507028305980447,
+      "initial_mse": 0.8536855192193344
+    },
+    {
+      "task": 4,
+      "arm": "full",
+      "image": "genuine_1/images/004_full.png",
+      "image_sha256": "6ec8117428f35d7af80fc3926656426c2c6df34678ceb0ce57ce22e2a8d907c0",
+      "auxiliary": "genuine_1/images/004_aux.png",
+      "semantic_mismatch": 0.017578125,
+      "initial_latent": "genuine_1/latents/004_full_initial.npy",
+      "initial_latent_sha256": "6cffc5d007b3f2a281b131c21d750c828308be0caf2f84f9f804bbafe65b73a4",
+      "lpips": 0.8466008305549622,
+      "psnr": 8.108036994934082,
+      "ssim": 0.3530003990957708,
+      "ms_ssim": 0.15455272793769836,
+      "continuous_registration_distance": 0.09518696913710886,
+      "initial_mse": 1.990261364522891
+    },
+    {
+      "task": 4,
+      "arm": "quantized_geometry",
+      "image": "genuine_1/images/004_quantized_geometry.png",
+      "image_sha256": "a36a1d5ba6975fcc94f6286e200279b68156c296b934b04fc86f5098f9362d0f",
+      "auxiliary": "genuine_1/images/004_aux.png",
+      "semantic_mismatch": 0.0380859375,
+      "initial_latent": "genuine_1/latents/004_quantized_geometry_initial.npy",
+      "initial_latent_sha256": "f1a3a38f90ea1f7cba615373cd32a30dc8f87efdc19ae663537ab98631962b4a",
+      "lpips": 0.7402846217155457,
+      "psnr": 11.652745246887207,
+      "ssim": 0.4731675809045875,
+      "ms_ssim": 0.34405604004859924,
+      "continuous_registration_distance": 0.18795476533431407,
+      "initial_mse": 0.8367538472145656
+    },
+    {
+      "task": 4,
+      "arm": "continuous_independent",
+      "image": "genuine_1/images/004_continuous_independent.png",
+      "image_sha256": "34fb7008bdada79fcb7295d0da21eebf2ad75955f59d880d2732e5dbf8dea877",
+      "auxiliary": "genuine_1/images/004_aux.png",
+      "semantic_mismatch": 0.046875,
+      "initial_latent": "genuine_1/latents/004_continuous_independent_initial.npy",
+      "initial_latent_sha256": "74c86ff888439bd2cf87f65451bd3b084ce623d75cf8d5759e430e48bcd1d3d3",
+      "lpips": 0.8622769713401794,
+      "psnr": 8.558436393737793,
+      "ssim": 0.31282698857329533,
+      "ms_ssim": 0.10419175773859024,
+      "continuous_registration_distance": 0.2006340088732913,
+      "initial_mse": 2.00187786838
+    },
+    {
+      "task": 4,
+      "arm": "continuous_transport",
+      "image": "genuine_1/images/004_continuous_transport.png",
+      "image_sha256": "b7812dff49a2e9bce91f0bdebca7c205bad25aa734910e2ffb54e4c8437e54b0",
+      "auxiliary": "genuine_1/images/004_aux.png",
+      "semantic_mismatch": 0.0908203125,
+      "initial_latent": "genuine_1/latents/004_continuous_transport_initial.npy",
+      "initial_latent_sha256": "619c99512f292392a7322689926fb1828e96663bb3427c0c35d0c227f8b0fa40",
+      "lpips": 0.7275396585464478,
+      "psnr": 9.947608947753906,
+      "ssim": 0.3645338116971873,
+      "ms_ssim": 0.26876503229141235,
+      "continuous_registration_distance": 0.3637546901161348,
+      "initial_mse": 0.8387809342652643
+    },
+    {
+      "task": 2,
+      "arm": "full",
+      "image": "genuine_2/images/002_full.png",
+      "image_sha256": "bd81184c8f0ec0a7d07b4744cc31e9d026a27c87b13ecf8312d943a35855057b",
+      "auxiliary": "genuine_2/images/002_aux.png",
+      "semantic_mismatch": 0.0703125,
+      "initial_latent": "genuine_2/latents/002_full_initial.npy",
+      "initial_latent_sha256": "6c38d88be37186ccc9a3d0e02a6d6eb5784d5d0cd55f2e5b17da6a0aa42a200c",
+      "lpips": 0.7809944748878479,
+      "psnr": 8.840575218200684,
+      "ssim": 0.3305424940333156,
+      "ms_ssim": 0.15034110844135284,
+      "continuous_registration_distance": 0.22436244826330845,
+      "initial_mse": 1.9663222966270697
+    },
+    {
+      "task": 2,
+      "arm": "quantized_geometry",
+      "image": "genuine_2/images/002_quantized_geometry.png",
+      "image_sha256": "6dd19a0eb2306d04440e9d401e6db4364cb620ace9295f145fa3923dea843532",
+      "auxiliary": "genuine_2/images/002_aux.png",
+      "semantic_mismatch": 0.2490234375,
+      "initial_latent": "genuine_2/latents/002_quantized_geometry_initial.npy",
+      "initial_latent_sha256": "e3ab7dd83cd0214835f5b353cea674b20c1cc05895592aece388fbf1fc4e5072",
+      "lpips": 0.636181652545929,
+      "psnr": 9.990995407104492,
+      "ssim": 0.44807856950470265,
+      "ms_ssim": 0.3213675320148468,
+      "continuous_registration_distance": 0.7456601973424628,
+      "initial_mse": 0.8270120366478562
+    },
+    {
+      "task": 2,
+      "arm": "continuous_independent",
+      "image": "genuine_2/images/002_continuous_independent.png",
+      "image_sha256": "32c2005f4bc49f7e4d288e2dfaabf4b84fc77b389f348f8c0594730993f2faab",
+      "auxiliary": "genuine_2/images/002_aux.png",
+      "semantic_mismatch": 0.306640625,
+      "initial_latent": "genuine_2/latents/002_continuous_independent_initial.npy",
+      "initial_latent_sha256": "c0eb29db6c3e748c43a204d7052d15dc587840168b424494f3b2a67e260a0632",
+      "lpips": 0.7705528736114502,
+      "psnr": 9.568734169006348,
+      "ssim": 0.42093334701735063,
+      "ms_ssim": 0.1856108158826828,
+      "continuous_registration_distance": 0.9079718851856021,
+      "initial_mse": 1.9843559321080886
+    },
+    {
+      "task": 2,
+      "arm": "continuous_transport",
+      "image": "genuine_2/images/002_continuous_transport.png",
+      "image_sha256": "80205b4fdb91a04f5bfafc25d6422de2c17513375f8511ee274fa4756728ee0e",
+      "auxiliary": "genuine_2/images/002_aux.png",
+      "semantic_mismatch": 0.296875,
+      "initial_latent": "genuine_2/latents/002_continuous_transport_initial.npy",
+      "initial_latent_sha256": "5383a0231098492e28c832f8124f5ff8ff80e6b14ab5971eea3343126df60b90",
+      "lpips": 0.6963425278663635,
+      "psnr": 10.46686840057373,
+      "ssim": 0.4744494358143128,
+      "ms_ssim": 0.34617698192596436,
+      "continuous_registration_distance": 0.8897074800338951,
+      "initial_mse": 0.8409967513357905
+    },
+    {
+      "task": 5,
+      "arm": "full",
+      "image": "genuine_2/images/005_full.png",
+      "image_sha256": "4b5b53c98fd81a06fd6f54546effa88e647bb51656b148aa922b51840fb2bee0",
+      "auxiliary": "genuine_2/images/005_aux.png",
+      "semantic_mismatch": 0.03125,
+      "initial_latent": "genuine_2/latents/005_full_initial.npy",
+      "initial_latent_sha256": "0b78595ff7e95e6890fbfce3ec71f2ff1779f73c56f37aeeabd34276290ed53d",
+      "lpips": 0.6374066472053528,
+      "psnr": 9.982337951660156,
+      "ssim": 0.06516893901857294,
+      "ms_ssim": 0.06065303832292557,
+      "continuous_registration_distance": 0.11579515987361756,
+      "initial_mse": 1.9884954624981417
+    },
+    {
+      "task": 5,
+      "arm": "quantized_geometry",
+      "image": "genuine_2/images/005_quantized_geometry.png",
+      "image_sha256": "d8ad201e9ef5585c20229249e1bb47398a9c5eb36f21809e6e7db1818112554c",
+      "auxiliary": "genuine_2/images/005_aux.png",
+      "semantic_mismatch": 0.0185546875,
+      "initial_latent": "genuine_2/latents/005_quantized_geometry_initial.npy",
+      "initial_latent_sha256": "b1503fdb6ad2ec978e6af1a6a1fa936d790d7d1e75559ee94daac96186db504b",
+      "lpips": 0.5845644474029541,
+      "psnr": 10.545961380004883,
+      "ssim": 0.18436903444962396,
+      "ms_ssim": 0.2508338391780853,
+      "continuous_registration_distance": 0.06527842466842013,
+      "initial_mse": 0.8162626047720922
+    },
+    {
+      "task": 5,
+      "arm": "continuous_independent",
+      "image": "genuine_2/images/005_continuous_independent.png",
+      "image_sha256": "ee8da31871d81b5b2faa1a33e10f526447398ac9a35c24eacad63bc3497b6d57",
+      "auxiliary": "genuine_2/images/005_aux.png",
+      "semantic_mismatch": 0.025390625,
+      "initial_latent": "genuine_2/latents/005_continuous_independent_initial.npy",
+      "initial_latent_sha256": "b7912597f0dd27ff099f1e7916e7438d4a9b3e54fddeafc5ba9ac0397f0badee",
+      "lpips": 0.6190245151519775,
+      "psnr": 9.327678680419922,
+      "ssim": 0.08169127734167071,
+      "ms_ssim": 0.07743026316165924,
+      "continuous_registration_distance": 0.1255150474246694,
+      "initial_mse": 1.9646222476907114
+    },
+    {
+      "task": 5,
+      "arm": "continuous_transport",
+      "image": "genuine_2/images/005_continuous_transport.png",
+      "image_sha256": "04d2ec0f114dd57e8e3e5e1b48abd5af54f5763c2fe18440b73f4ce07ca9602e",
+      "auxiliary": "genuine_2/images/005_aux.png",
+      "semantic_mismatch": 0.0263671875,
+      "initial_latent": "genuine_2/latents/005_continuous_transport_initial.npy",
+      "initial_latent_sha256": "6d10e8782c03577a1c1b25f0278ea5c2225f3319236e7cf2f927bf8693052579",
+      "lpips": 0.5719541907310486,
+      "psnr": 10.759760856628418,
+      "ssim": 0.19100380351926421,
+      "ms_ssim": 0.27837511897087097,
+      "continuous_registration_distance": 0.09025378614627114,
+      "initial_mse": 0.8205303121270374
+    }
+  ],
+  "wrong_identity": [
+    {
+      "id": "000_full_00",
+      "arm": "full",
+      "identity": 1,
+      "ba": 0.51953125,
+      "accepted": false
+    },
+    {
+      "id": "000_full_00",
+      "arm": "full",
+      "identity": 2,
+      "ba": 0.52734375,
+      "accepted": false
+    },
+    {
+      "id": "000_full_00",
+      "arm": "full",
+      "identity": 3,
+      "ba": 0.55859375,
+      "accepted": false
+    },
+    {
+      "id": "000_full_00",
+      "arm": "full",
+      "identity": 4,
+      "ba": 0.515625,
+      "accepted": false
+    },
+    {
+      "id": "000_full_00",
+      "arm": "full",
+      "identity": 5,
+      "ba": 0.55078125,
+      "accepted": false
+    },
+    {
+      "id": "000_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 1,
+      "ba": 0.5390625,
+      "accepted": false
+    },
+    {
+      "id": "000_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 2,
+      "ba": 0.484375,
+      "accepted": false
+    },
+    {
+      "id": "000_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 3,
+      "ba": 0.5,
+      "accepted": false
+    },
+    {
+      "id": "000_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 4,
+      "ba": 0.46875,
+      "accepted": false
+    },
+    {
+      "id": "000_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 5,
+      "ba": 0.51171875,
+      "accepted": false
+    },
+    {
+      "id": "000_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 1,
+      "ba": 0.54296875,
+      "accepted": false
+    },
+    {
+      "id": "000_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 2,
+      "ba": 0.51953125,
+      "accepted": false
+    },
+    {
+      "id": "000_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 3,
+      "ba": 0.5078125,
+      "accepted": false
+    },
+    {
+      "id": "000_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 4,
+      "ba": 0.51953125,
+      "accepted": false
+    },
+    {
+      "id": "000_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 5,
+      "ba": 0.51171875,
+      "accepted": false
+    },
+    {
+      "id": "000_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 1,
+      "ba": 0.5078125,
+      "accepted": false
+    },
+    {
+      "id": "000_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 2,
+      "ba": 0.53125,
+      "accepted": false
+    },
+    {
+      "id": "000_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 3,
+      "ba": 0.46875,
+      "accepted": false
+    },
+    {
+      "id": "000_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 4,
+      "ba": 0.48046875,
+      "accepted": false
+    },
+    {
+      "id": "000_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 5,
+      "ba": 0.46875,
+      "accepted": false
+    },
+    {
+      "id": "003_full_00",
+      "arm": "full",
+      "identity": 0,
+      "ba": 0.49609375,
+      "accepted": false
+    },
+    {
+      "id": "003_full_00",
+      "arm": "full",
+      "identity": 1,
+      "ba": 0.484375,
+      "accepted": false
+    },
+    {
+      "id": "003_full_00",
+      "arm": "full",
+      "identity": 2,
+      "ba": 0.5546875,
+      "accepted": false
+    },
+    {
+      "id": "003_full_00",
+      "arm": "full",
+      "identity": 4,
+      "ba": 0.50390625,
+      "accepted": false
+    },
+    {
+      "id": "003_full_00",
+      "arm": "full",
+      "identity": 5,
+      "ba": 0.5390625,
+      "accepted": false
+    },
+    {
+      "id": "003_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 0,
+      "ba": 0.4453125,
+      "accepted": false
+    },
+    {
+      "id": "003_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 1,
+      "ba": 0.5390625,
+      "accepted": false
+    },
+    {
+      "id": "003_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 2,
+      "ba": 0.515625,
+      "accepted": false
+    },
+    {
+      "id": "003_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 4,
+      "ba": 0.5,
+      "accepted": false
+    },
+    {
+      "id": "003_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 5,
+      "ba": 0.46875,
+      "accepted": false
+    },
+    {
+      "id": "003_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 0,
+      "ba": 0.46875,
+      "accepted": false
+    },
+    {
+      "id": "003_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 1,
+      "ba": 0.48828125,
+      "accepted": false
+    },
+    {
+      "id": "003_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 2,
+      "ba": 0.546875,
+      "accepted": false
+    },
+    {
+      "id": "003_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 4,
+      "ba": 0.47265625,
+      "accepted": false
+    },
+    {
+      "id": "003_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 5,
+      "ba": 0.51953125,
+      "accepted": false
+    },
+    {
+      "id": "003_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 0,
+      "ba": 0.5078125,
+      "accepted": false
+    },
+    {
+      "id": "003_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 1,
+      "ba": 0.4609375,
+      "accepted": false
+    },
+    {
+      "id": "003_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 2,
+      "ba": 0.5,
+      "accepted": false
+    },
+    {
+      "id": "003_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 4,
+      "ba": 0.48828125,
+      "accepted": false
+    },
+    {
+      "id": "003_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 5,
+      "ba": 0.453125,
+      "accepted": false
+    },
+    {
+      "id": "001_full_00",
+      "arm": "full",
+      "identity": 0,
+      "ba": 0.48046875,
+      "accepted": false
+    },
+    {
+      "id": "001_full_00",
+      "arm": "full",
+      "identity": 2,
+      "ba": 0.5234375,
+      "accepted": false
+    },
+    {
+      "id": "001_full_00",
+      "arm": "full",
+      "identity": 3,
+      "ba": 0.48046875,
+      "accepted": false
+    },
+    {
+      "id": "001_full_00",
+      "arm": "full",
+      "identity": 4,
+      "ba": 0.4765625,
+      "accepted": false
+    },
+    {
+      "id": "001_full_00",
+      "arm": "full",
+      "identity": 5,
+      "ba": 0.48828125,
+      "accepted": false
+    },
+    {
+      "id": "001_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 0,
+      "ba": 0.5078125,
+      "accepted": false
+    },
+    {
+      "id": "001_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 2,
+      "ba": 0.50390625,
+      "accepted": false
+    },
+    {
+      "id": "001_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 3,
+      "ba": 0.51953125,
+      "accepted": false
+    },
+    {
+      "id": "001_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 4,
+      "ba": 0.50390625,
+      "accepted": false
+    },
+    {
+      "id": "001_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 5,
+      "ba": 0.4765625,
+      "accepted": false
+    },
+    {
+      "id": "001_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 0,
+      "ba": 0.50390625,
+      "accepted": false
+    },
+    {
+      "id": "001_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 2,
+      "ba": 0.59765625,
+      "accepted": false
+    },
+    {
+      "id": "001_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 3,
+      "ba": 0.53125,
+      "accepted": false
+    },
+    {
+      "id": "001_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 4,
+      "ba": 0.46484375,
+      "accepted": false
+    },
+    {
+      "id": "001_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 5,
+      "ba": 0.49609375,
+      "accepted": false
+    },
+    {
+      "id": "001_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 0,
+      "ba": 0.484375,
+      "accepted": false
+    },
+    {
+      "id": "001_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 2,
+      "ba": 0.546875,
+      "accepted": false
+    },
+    {
+      "id": "001_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 3,
+      "ba": 0.5546875,
+      "accepted": false
+    },
+    {
+      "id": "001_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 4,
+      "ba": 0.45703125,
+      "accepted": false
+    },
+    {
+      "id": "001_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 5,
+      "ba": 0.51171875,
+      "accepted": false
+    },
+    {
+      "id": "004_full_00",
+      "arm": "full",
+      "identity": 0,
+      "ba": 0.453125,
+      "accepted": false
+    },
+    {
+      "id": "004_full_00",
+      "arm": "full",
+      "identity": 1,
+      "ba": 0.4765625,
+      "accepted": false
+    },
+    {
+      "id": "004_full_00",
+      "arm": "full",
+      "identity": 2,
+      "ba": 0.4921875,
+      "accepted": false
+    },
+    {
+      "id": "004_full_00",
+      "arm": "full",
+      "identity": 3,
+      "ba": 0.4765625,
+      "accepted": false
+    },
+    {
+      "id": "004_full_00",
+      "arm": "full",
+      "identity": 5,
+      "ba": 0.55859375,
+      "accepted": false
+    },
+    {
+      "id": "004_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 0,
+      "ba": 0.48046875,
+      "accepted": false
+    },
+    {
+      "id": "004_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 1,
+      "ba": 0.484375,
+      "accepted": false
+    },
+    {
+      "id": "004_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 2,
+      "ba": 0.55078125,
+      "accepted": false
+    },
+    {
+      "id": "004_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 3,
+      "ba": 0.45703125,
+      "accepted": false
+    },
+    {
+      "id": "004_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 5,
+      "ba": 0.4765625,
+      "accepted": false
+    },
+    {
+      "id": "004_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 0,
+      "ba": 0.515625,
+      "accepted": false
+    },
+    {
+      "id": "004_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 1,
+      "ba": 0.453125,
+      "accepted": false
+    },
+    {
+      "id": "004_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 2,
+      "ba": 0.55859375,
+      "accepted": false
+    },
+    {
+      "id": "004_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 3,
+      "ba": 0.5,
+      "accepted": false
+    },
+    {
+      "id": "004_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 5,
+      "ba": 0.453125,
+      "accepted": false
+    },
+    {
+      "id": "004_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 0,
+      "ba": 0.515625,
+      "accepted": false
+    },
+    {
+      "id": "004_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 1,
+      "ba": 0.48828125,
+      "accepted": false
+    },
+    {
+      "id": "004_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 2,
+      "ba": 0.4765625,
+      "accepted": false
+    },
+    {
+      "id": "004_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 3,
+      "ba": 0.51953125,
+      "accepted": false
+    },
+    {
+      "id": "004_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 5,
+      "ba": 0.48828125,
+      "accepted": false
+    },
+    {
+      "id": "002_full_00",
+      "arm": "full",
+      "identity": 0,
+      "ba": 0.53125,
+      "accepted": false
+    },
+    {
+      "id": "002_full_00",
+      "arm": "full",
+      "identity": 1,
+      "ba": 0.5546875,
+      "accepted": false
+    },
+    {
+      "id": "002_full_00",
+      "arm": "full",
+      "identity": 3,
+      "ba": 0.46875,
+      "accepted": false
+    },
+    {
+      "id": "002_full_00",
+      "arm": "full",
+      "identity": 4,
+      "ba": 0.484375,
+      "accepted": false
+    },
+    {
+      "id": "002_full_00",
+      "arm": "full",
+      "identity": 5,
+      "ba": 0.47265625,
+      "accepted": false
+    },
+    {
+      "id": "002_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 0,
+      "ba": 0.5,
+      "accepted": false
+    },
+    {
+      "id": "002_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 1,
+      "ba": 0.515625,
+      "accepted": false
+    },
+    {
+      "id": "002_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 3,
+      "ba": 0.52734375,
+      "accepted": false
+    },
+    {
+      "id": "002_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 4,
+      "ba": 0.53125,
+      "accepted": false
+    },
+    {
+      "id": "002_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 5,
+      "ba": 0.55859375,
+      "accepted": false
+    },
+    {
+      "id": "002_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 0,
+      "ba": 0.5078125,
+      "accepted": false
+    },
+    {
+      "id": "002_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 1,
+      "ba": 0.4921875,
+      "accepted": false
+    },
+    {
+      "id": "002_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 3,
+      "ba": 0.44921875,
+      "accepted": false
+    },
+    {
+      "id": "002_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 4,
+      "ba": 0.48046875,
+      "accepted": false
+    },
+    {
+      "id": "002_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 5,
+      "ba": 0.51171875,
+      "accepted": false
+    },
+    {
+      "id": "002_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 0,
+      "ba": 0.50390625,
+      "accepted": false
+    },
+    {
+      "id": "002_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 1,
+      "ba": 0.5234375,
+      "accepted": false
+    },
+    {
+      "id": "002_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 3,
+      "ba": 0.4765625,
+      "accepted": false
+    },
+    {
+      "id": "002_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 4,
+      "ba": 0.4921875,
+      "accepted": false
+    },
+    {
+      "id": "002_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 5,
+      "ba": 0.5390625,
+      "accepted": false
+    },
+    {
+      "id": "005_full_00",
+      "arm": "full",
+      "identity": 0,
+      "ba": 0.515625,
+      "accepted": false
+    },
+    {
+      "id": "005_full_00",
+      "arm": "full",
+      "identity": 1,
+      "ba": 0.45703125,
+      "accepted": false
+    },
+    {
+      "id": "005_full_00",
+      "arm": "full",
+      "identity": 2,
+      "ba": 0.5546875,
+      "accepted": false
+    },
+    {
+      "id": "005_full_00",
+      "arm": "full",
+      "identity": 3,
+      "ba": 0.421875,
+      "accepted": false
+    },
+    {
+      "id": "005_full_00",
+      "arm": "full",
+      "identity": 4,
+      "ba": 0.44140625,
+      "accepted": false
+    },
+    {
+      "id": "005_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 0,
+      "ba": 0.5546875,
+      "accepted": false
+    },
+    {
+      "id": "005_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 1,
+      "ba": 0.49609375,
+      "accepted": false
+    },
+    {
+      "id": "005_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 2,
+      "ba": 0.44140625,
+      "accepted": false
+    },
+    {
+      "id": "005_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 3,
+      "ba": 0.54296875,
+      "accepted": false
+    },
+    {
+      "id": "005_quantized_geometry_00",
+      "arm": "quantized_geometry",
+      "identity": 4,
+      "ba": 0.4921875,
+      "accepted": false
+    },
+    {
+      "id": "005_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 0,
+      "ba": 0.453125,
+      "accepted": false
+    },
+    {
+      "id": "005_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 1,
+      "ba": 0.484375,
+      "accepted": false
+    },
+    {
+      "id": "005_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 2,
+      "ba": 0.44140625,
+      "accepted": false
+    },
+    {
+      "id": "005_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 3,
+      "ba": 0.484375,
+      "accepted": false
+    },
+    {
+      "id": "005_continuous_independent_00",
+      "arm": "continuous_independent",
+      "identity": 4,
+      "ba": 0.55859375,
+      "accepted": false
+    },
+    {
+      "id": "005_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 0,
+      "ba": 0.51171875,
+      "accepted": false
+    },
+    {
+      "id": "005_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 1,
+      "ba": 0.50390625,
+      "accepted": false
+    },
+    {
+      "id": "005_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 2,
+      "ba": 0.46875,
+      "accepted": false
+    },
+    {
+      "id": "005_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 3,
+      "ba": 0.515625,
+      "accepted": false
+    },
+    {
+      "id": "005_continuous_transport_00",
+      "arm": "continuous_transport",
+      "identity": 4,
+      "ba": 0.54296875,
+      "accepted": false
+    }
+  ],
+  "summary": [
+    {
+      "arm": "full",
+      "n": 6,
+      "accepted": 6,
+      "mean_ba": 1.0,
+      "mean_distance": 0.1404003246731302,
+      "mean_hamming": 0.036458333333333336,
+      "mean_lpips": 0.7563933233420054,
+      "mean_initial_mse": 1.9952476963573205,
+      "wrong_identity_accepts": 0
+    },
+    {
+      "arm": "quantized_geometry",
+      "n": 6,
+      "accepted": 6,
+      "mean_ba": 1.0,
+      "mean_distance": 0.27473186736035093,
+      "mean_hamming": 0.07861328125,
+      "mean_lpips": 0.6410908699035645,
+      "mean_initial_mse": 0.8328325923987251,
+      "wrong_identity_accepts": 0
+    },
+    {
+      "arm": "continuous_independent",
+      "n": 6,
+      "accepted": 6,
+      "mean_ba": 0.9694010416666666,
+      "mean_distance": 0.31209813633314526,
+      "mean_hamming": 0.09375,
+      "mean_lpips": 0.7312833170096079,
+      "mean_initial_mse": 1.9961585708615026,
+      "wrong_identity_accepts": 0
+    },
+    {
+      "arm": "continuous_transport",
+      "n": 6,
+      "accepted": 6,
+      "mean_ba": 0.96875,
+      "mean_distance": 0.32283884921550987,
+      "mean_hamming": 0.09635416666666667,
+      "mean_lpips": 0.6441192030906677,
+      "mean_initial_mse": 0.8367803137974733,
+      "wrong_identity_accepts": 0
+    }
+  ],
+  "protocol_sha256": "45787294dc25d21666d1378cbca0a4d5de25b0bea5f913f8dab07340cf587fc9",
+  "audit_scope": "Input/output hashes, independent complex rotation and direct-CDF embedding reconstruction, hard vote and threshold recomputation, CPU LPIPS; keyed phase helper shared with worker.",
+  "scope": "Six new source clean mechanism screen. No robustness, forgery, matched-TPR or SOTA claim. Any later published-baseline evaluation needs a separately frozen full protocol."
+}

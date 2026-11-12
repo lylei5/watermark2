@@ -1,0 +1,32 @@
+# 研究证据索引
+
+本页索引已完成证据。当前任务状态以 [project_state.json](../project_state.json) 为准；各目录内的 plan、protocol 和执行快照是对应实验的冻结记录，不是待执行队列。失败、部分失败和否定结果保留。不同来源、载体和检测工作点之间不可直接排名。
+
+## DPM 组件研究与基线重验
+
+| 研究 | 已完成证据与边界 |
+|---|---|
+| [连续语义区域](continuous_geometry_screen_20261113/report.md) | 24 条干净图验证；绑定和 BA 门槛未通过；未执行攻击 |
+| [完整码字条件传输](semantic_transport_pilot_20261112/report.md) | 240 条合法查询；主候选 55/60，重排对照 57/60；未执行攻击 |
+| [最小反射区域](decision_region_pilot_20261112/report.md) | 240 条合法查询；主候选 44/60，full 59/60；未执行攻击 |
+| [固定语义反馈](semantic_feedback_pilot_20261112/report.md) | 180 条合法查询；58/56/57，分母均为 60；未执行攻击 |
+| [共享语义证据](shared_semantic_evidence_20261112/report.md) | 120 条合法查询及 216 条完整 Imprint 验证；未建立匹配合法检出率收益 |
+| [重复结构诊断](replica_moments_development_20261112/report.md) | 已消费数据的开发诊断；未建立独立优势 |
+| [条件分位载体](conditional_quantile_pilot_20261112/report.md) | 240 条合法查询；候选 48/60，full 59/60；未执行攻击 |
+| [共享内容锚](conditional_anchor_pilot_20261112/report.md) | 候选 53/60，独立对照 54/60；未通过门槛 |
+| [条件内容似然](conditional_content_likelihood_20261112/report.md) | 候选合法 30/40，校准 BA 39/40；没有新增最终伪造拒绝 |
+| [完整 Imprint 重验](imprint_fresh_revalidation_20261112/report.md) | 144 条复核；项目 SemBind 组件适配 0/4、GS 4/4 最终接受 |
+| [SemBind 组件九条件](sembind_published_revalidation_20261112/report.md) | 配对项目适配与反演设置诊断 |
+| [SemBind/GS 完整链路组件](sembind_chain_revalidation_20261111/report.md) | 18 条干净图记录全部接受；不是完整原生复现 |
+| [PGID 九条件](pgid_published_revalidation_20261112/report.md) | 标准 90/90，PGID 后 61/90；开发评估 |
+| [防御组件重验](defense_revalidation_20261111/report.md) | 100 图语义组件及 PGID 官方完整预算重验 |
+
+## 历史证据
+
+[历史证据审计](repository_audit_20261111/report.md)记录适用条件和纠正后的分母。历史 DDIM 项目适配、短预算探针及旧确认集不构成原生 SemBind 的最新成绩。已执行源码可从各报告所列的服务器冻结目录和 Git 历史定位。
+
+- [官方 DPM 组件检查](sembind_official_audit_20261110/report.md)
+- [完整预算 Imprint](full_imprint_20261111/report.md)
+- [几何校准](geometry_calibration_20261111/completed/report.md)、[六条件确认](geometry_confirmation_20261111/report.md)、[官方九条件](gs_published_conditions_20261111/report.md)
+- [自然负例](unwatermarked_validation_20261111/report.md)
+- [仓库同步与源码核验](repository_sync_20261113/report.md)

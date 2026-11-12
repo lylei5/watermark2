@@ -27,6 +27,6 @@ LPIPS is a paired auxiliary-image fidelity diagnostic, not FID or a general qual
 
 登记码仅用于定位绑定相关损失，不是可部署检测器。幅值加权只是已有思路的诊断对照，不是GS++完整复现，也未使共享锚超过同样加权的full。完整逐条记录见[channel_diagnostic.json](channel_diagnostic.json)。这项诊断没有改变原实验门槛或最终结论。
 
-下一项[内容耦合分位实验](../conditional_quantile_pilot_20261112/plan.md)检验共享内容自由度与完整身份容量是否能够兼得，使用新来源和相同编码预算的独立采样对照。
+后续已完成的[内容耦合分位实验](../conditional_quantile_pilot_20261112/report.md)记录相同完整容量下的耦合与独立采样对照。
 
 按源图检查，共享低频锚相对独立锚在4/6来源上减小绑定差异，在6/6来源上降低配对LPIPS；第5号来源的绑定差异反而增加0.040039，真实接受数由9/10降到7/10。均值改善不能解释为所有来源均获益。见[source_mechanism.json](source_mechanism.json)。

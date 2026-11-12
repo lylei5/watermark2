@@ -1,0 +1,17 @@
+{
+  "frozen_at_utc": "2026-10-25T06:04:43.240834+00:00",
+  "kind": "offline_data_completion_after_closed_receipt_race",
+  "sampling_protocol_sha256": "3d89100585bacc14bffba10423d46a2d62c712fbc7d3a634d0b758c9f1496f7f",
+  "sampling_or_licensing_changes": false,
+  "network_data_requests": 0,
+  "new_model_or_GPU_experiments": 0,
+  "preserve_closed_failure": true,
+  "preserve_all_preexisting_data_file_bytes": true,
+  "source": "100 received images and complete immutable receipts; no new download",
+  "atomic_receipt_publication": "Validate completed staging JSON and body SHA/size then exclusive os.link; retain staging",
+  "implementation_hashes": {
+    "tools/prepare_confirmation100_assets_v11_completion.py": "1dd86e9b131493867059bfc6d5fe5a5fe8cf323287a8ac7bf233c7a4501ad280",
+    "tools/complete_confirmation_v11_offline.py": "1a75c221947f84fe891a631db326e4b4ce63186034859ac7f0526184facf9145",
+    "tools/confirmation_ready.py": "3a274c4f6f06927a13218039d341426494bed8f6999025cd9a6e03c5d10a5f15"
+  }
+}

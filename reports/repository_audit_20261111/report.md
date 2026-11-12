@@ -33,7 +33,7 @@
 
 [服务器目录与Git元数据观察](server_sources.json)及本地`.gitmodules`/Git索引支持[第三方来源清单](../../THIRD_PARTY.md)。PGID、SEAL和两个子模块有可核对HEAD；SemBind、ISTS目录本次没有可用Git元数据；没有观察到PAI目录。目录或HEAD存在不证明完整权重、干净工作树或方法复现。
 
-[研究计划](../../docs/RESEARCH_PLAN.md)与[SemBind机制分析](../../docs/SEMBIND_VULNERABILITY_AND_DEFENSE_ANALYSIS.md)只保留防御假设及其所需对照。撤回无证据的普适漏洞、完整复现、性能和理论保证；删除与研究约束冲突的自定义攻击开发计划。已有标准基线的事实与原始结果继续保留。源码契约仍用于解释已发表基线的信息权限，不作为改进攻击的计划。
+[研究计划](../../docs/RESEARCH_PLAN.md)与[基线复现清单](../../docs/DEFENSE_BASELINE_INVENTORY.md)只保留防御假设及其所需对照。撤回无证据的普适漏洞、完整复现、性能和理论保证；删除与研究约束冲突的自定义攻击开发计划。已有标准基线的事实与原始结果继续保留。源码契约仍用于解释已发表基线的信息权限，不作为改进攻击的计划。
 
 ## 核查覆盖与剩余缺口
 

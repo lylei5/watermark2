@@ -50,6 +50,7 @@ def main():
             TOKENIZERS_PARALLELISM='false', OMP_NUM_THREADS='4', MKL_NUM_THREADS='4',
             PIP_INDEX_URL='https://pypi.tuna.tsinghua.edu.cn/simple/')
         sys.path.insert(0, str(parent/'scripts'))
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
         import numpy as np
         import torch
         from PIL import Image
@@ -65,8 +66,8 @@ def main():
         official_model = importlib.util.module_from_spec(spec)
         sys.modules['model'] = official_model
         spec.loader.exec_module(official_model)
-        from sembind import SemanticMasker
-        model = SemanticMasker(paths['semantic']/'dinov2-giant', paths['semantic']/'sembind_masker.pth')
+        from semantic_code import SemanticCodeExtractor
+        model = SemanticCodeExtractor(paths['semantic']/'dinov2-giant', paths['semantic']/'sembind_masker.pth')
         jobs = [j for n, j in enumerate(plan['jobs']) if n % 3 == args.shard]
         for folder in ['images', 'codes', 'inversions', 'work']:
             (out/folder).mkdir()

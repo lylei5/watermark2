@@ -36,7 +36,7 @@ def main():
         distribution_scope='Joint Gaussian only averaged over ideal fresh independent uniform ciphertext; not a fixed-key or empirical security proof',
         scope='Six new source feasibility screen; no tuning after outcomes; neither a native complete SemBind reproduction nor paper-scale confirmation',
         isolation='Baseline arguments and loading exclude private verifier inputs; same OS account, not an OS sandbox')
-    scripts=['anchor_binding.py','transport_binding.py','test_transport_binding.py','prepare_semantic_transport.py',
+    scripts=['semantic_code.py','sembind_official_audit.py','codeword_binding.py','anchor_binding.py','transport_binding.py','test_transport_binding.py','prepare_semantic_transport.py',
         'run_anchor_binding_worker.py','run_anchor_binding_pipeline.py','run_decision_region_pipeline.py','run_published_imprint_full.py']
     for n in scripts:shutil.copyfile(Path(__file__).parent/n,run/n)
     plan['source_sha256']={n:sha(run/n) for n in scripts};plan['identity_sha256']={}

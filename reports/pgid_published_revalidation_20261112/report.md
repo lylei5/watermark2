@@ -18,6 +18,6 @@
 
 这不是 90 个独立样本：只有 10 个源图，条件内重复相关。失真强度取自官方脚本，未做人类语义不变性标注。不能把这些结果外推到总体误拒率，或与另一数据集、另一反演器下的 SemBind 直接排名。
 
-下一步：同一批新生成的 SemBind/GS 配对图，九条件、两种完整反演设置，以及原样完整预算的 CVPR 2025 Imprint 基线。核查查询语义码、登记语义码与信道符号误差的关系。
+同批配对链路的后续证据已完成：[九条件与反演诊断](../sembind_published_revalidation_20261112/report.md)、[完整 Imprint 重验](../imprint_fresh_revalidation_20261112/report.md)。
 
 按源图聚合（见[source_analysis.json](source_analysis.json)），10个源图中9个至少丢失一个条件；两张各仅2/9通过。该分布表明问题不只集中于单张源图，但不改变开发样本量及条件相关性的限制。

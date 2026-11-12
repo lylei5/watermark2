@@ -82,8 +82,9 @@ def main():
         spec.loader.exec_module(official_model)
     else:
         sys.path.insert(0,str(root/'scripts/defense'))
-    from sembind import SemanticMasker
-    masker=SemanticMasker(root/'models/sembind/dinov2-giant',root/'models/sembind/sembind_masker.pth')
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from semantic_code import SemanticCodeExtractor
+    masker=SemanticCodeExtractor(root/'models/sembind/dinov2-giant',root/'models/sembind/sembind_masker.pth')
     for r in records:
         path=out/(r['id']+'.npz')
         code=masker.code(Image.open(r['image_path']).convert('RGB')).cpu().numpy().astype(np.uint8)

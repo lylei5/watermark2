@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-25T06:08:47.218101+00:00",
+  "execution_sealed_files": 315,
+  "metadata_eligible": 857,
+  "covers": 100,
+  "unique_caption_texts": 100,
+  "disjoint_source_identities": 200,
+  "downloaded_candidates": 100,
+  "deterministic_cover_order_replayed": true,
+  "deterministic_caption_order_replayed": true,
+  "cover_rejections_replayed": 0,
+  "original_and_RGB512_hashes_verified": 200,
+  "Windows_receipt_hashes_match_server": true,
+  "known_owner_accounts": 0,
+  "unknown_owner_accounts": 100,
+  "image_redistribution_cleared": false,
+  "model_imports": 0,
+  "gpu_used": false,
+  "target_generation_or_scoring_started": false,
+  "manifest_sha256": "a41bbad8a755418cbc06f83a6660f170dd0b48d5b9cb31d31d434d42657c8220",
+  "original_data_verification": {
+    "status": "passed",
+    "covers": 100,
+    "captions": 100,
+    "disjoint_source_ids": true,
+    "unique_caption_texts": true,
+    "original_and_preprocessed_hashes": 200,
+    "model_imports": 0,
+    "gpu_used": false,
+    "private_keys_or_messages_generated": false,
+    "manifest_sha256": "a41bbad8a755418cbc06f83a6660f170dd0b48d5b9cb31d31d434d42657c8220"
+  },
+  "server_dataset_bytes": 64942727,
+  "all_confirmation_dataset_bytes": 69609367,
+  "project_budget": {
+    "artifact_bytes_excluding_existing_cache_env_git": 1071384845,
+    "dataset_bytes": 64942727,
+    "free_disk_bytes": 547075063808
+  }
+}

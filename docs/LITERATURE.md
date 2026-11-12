@@ -42,7 +42,7 @@
 - 跨图语义码相近是描述性观察，需要内容标注才能判断是否违背语义绑定目标；不能直接称为密码学碰撞或已验证绕过。
 - 默认规则是`BA > 181/256`，最小通过整数为182位。独立公平比特模型下单次尾概率约5.6348e-12；这不是实测FPR，也不能无条件代替多用户总体误报率。
 
-最新新执行证据：[PGID官方九条件](../reports/pgid_published_revalidation_20261112/report.md)标准90/90、PGID后61/90；[SemBind/GS完整链路](../reports/sembind_chain_revalidation_20261111/report.md)18条干净图记录全部接受，均通过独立潜变量复核。机制研究与创新边界见[防御机制决策](DEFENSE_MECHANISM_DECISION_20261112.md)。
+最新新执行证据：[PGID官方九条件](../reports/pgid_published_revalidation_20261112/report.md)标准90/90、PGID后61/90；[SemBind/GS完整链路](../reports/sembind_chain_revalidation_20261111/report.md)18条干净图记录全部接受，均通过独立潜变量复核。当前研究顺序与创新要求见[研究计划](RESEARCH_PLAN.md)。
 
 当前实验结果见[研究状态](../GPT_CONTEXT.md)与[基线证据清单](DEFENSE_BASELINE_INVENTORY.md)。只使用已发表顶会顶刊基线的既定实现和完整预算，不创造或改进攻击。
 

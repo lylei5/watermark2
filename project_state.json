@@ -1,174 +1,32 @@
 {
-  "project_name": "watermark2 — Content-bound diffusion watermark defense",
-  "updated_at": "2026-11-13",
-  "research_goal": {
-    "direction": "Defense with matched robustness, quality and attack budgets",
-    "core_thesis": "Separate authentication differences from communication errors in watermark decoding"
+  "schema_version": 2,
+  "project_name": "watermark2",
+  "updated_at": "2026-11-12T16:53:54.484939+00:00",
+  "status": "baseline_equivalence_required",
+  "active_experiments": 0,
+  "queued_experiments": 0,
+  "latest_progress_report": "reports/continuous_geometry_screen_20261113/report.md",
+  "evidence_index": "reports/README.md",
+  "research_plan": "docs/RESEARCH_PLAN.md",
+  "native_sembind_reproduction_complete": false,
+  "superiority_established": false,
+  "baseline": {
+    "scope": "Released semantic and DPM components with project GS carrier and binding",
+    "semantic_extractor": "scripts/defense/semantic_code.py",
+    "inversion_loader": "scripts/defense/sembind_official_audit.py",
+    "generation_steps": 50,
+    "inversion_steps": 50,
+    "inv_order": 0,
+    "decoder_inv": true,
+    "decoder_optimization_steps": 100,
+    "binding": "Private HMAC permutation derived from binding_key",
+    "detector": "BA > 181/256",
+    "paper_fpr_working_point_aligned": false
   },
-  "evidence_report": "reports/codeword_binding_20261109/report.md",
-  "status": "research_in_progress",
-  "detector": {
-    "operator": ">",
-    "threshold": 0.70703125,
-    "ideal_iid_fair_bit_tail": 5.634806966794078e-12,
-    "empirical_fpr_estimated": false
-  },
-  "novelty_boundary": "CoverLock already uses message-level content wrapping; coding order alone is not novel",
-  "required_validation": [
-    "Native end-to-end SemBind, GaussMarker and ROAR matched comparisons",
-    "Additional forgery rejection benefit over simple calibrated controls",
-    "Broader published geometric conditions and same-condition native baseline comparison",
-    "Image-quality and computation-budget comparisons",
-    "Broader empirical false-positive validation; zero correlated wrong-key observations do not establish ultra-low FPR",
-    "New independent sources for any future method changes"
-  ],
   "server_workspace": {
     "host": "172.18.185.249",
     "root": "/data0/liyanlei/watermark_research",
     "primary_python": "/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/bin/python"
-  },
-  "latest_progress_report": "reports/semantic_transport_pilot_20261112/report.md",
-  "independent_progress": {
-    "independent_images": 320,
-    "source_prompts": 112,
-    "auxiliary_images": 112,
-    "reference_images": 228,
-    "benign_queries": 1368,
-    "natural_feature_files": 292,
-    "query_feature_files": 332,
-    "development_inversions": 296,
-    "development_genuine_scored": 296,
-    "development_reprompt_candidates": 36,
-    "development_reprompt_scored": 36,
-    "independent_confirmation_scored": 384
-  },
-  "evaluation_policy": "Published standard baselines only; matched absolute genuine detection; no custom attack development",
-  "requires_user_resume": false,
-  "active_experiments": 1,
-  "current_findings": {
-    "sembind_genuine_non_crop": {
-      "accepted": 144,
-      "n": 144
-    },
-    "sembind_genuine_crop": {
-      "accepted": 0,
-      "n": 16
-    },
-    "sembind_default_reprompt": {
-      "accepted": 1,
-      "n": 16
-    },
-    "matched_genuine_count": 144,
-    "matched_genuine_denominator": 160,
-    "calibrated_ba_reprompt_accepted": 0,
-    "profile_content_reprompt_accepted": 0,
-    "superiority_established": false,
-    "coverlock_gs_adapter_clean": {
-      "accepted": 10,
-      "n": 16
-    }
-  },
-  "official_dpm_component_audit": {
-    "source_prompts": 4,
-    "reference_images": 8,
-    "inversion_runs": 18,
-    "blind_runs": 16,
-    "blind_accepted": 16,
-    "oracle_diagnostic_runs": 2,
-    "complete_paper_reproduction": false
-  },
-  "artifact_sync": {
-    "new_results": "uploaded and all 370 manifest hashes verified",
-    "server_root": "/data0/liyanlei/watermark_research/runs/sembind_audit_evidence_20261110",
-    "archive_sha256": "1f88d4484d121e631533b6940315b6404f60367549317582e423e4eb77cc4b01"
-  },
-  "max_concurrent_gpus": 3,
-  "baseline_budget_policy": "Full published implementation and update schedule; no time-saving truncation",
-  "allowed_gpu_indices": [
-    7,
-    5,
-    4
-  ],
-  "running_full_baseline": {
-    "protocol": "protocols/published_imprint_dpm_full_20261110.json",
-    "gpu_indices": [
-      7,
-      5,
-      4
-    ],
-    "jobs": 8,
-    "updates_per_job": 151,
-    "checkpoint_images": 128,
-    "evaluation_images": 144,
-    "status": "complete",
-    "server_root": "/data0/liyanlei/watermark_research/runs/published_imprint_dpm_full_20261110",
-    "completion_mode": "Kernel process-exit events; no periodic polling",
-    "completed_report": "reports/full_imprint_20261111/report.md"
-  },
-  "latest_mechanism_report": "reports/blind_geometry_development_20261110/report.md",
-  "historical_verifier_audit": {
-    "reference_accepted": 30,
-    "reference_n": 30,
-    "candidate_accepted": 2,
-    "candidate_n": 30,
-    "max_ba_difference": 0.0,
-    "short_budget_diagnostic_only": true
-  },
-  "blind_geometry_development": {
-    "genuine_accepted": 160,
-    "genuine_n": 160,
-    "crop_accepted": 16,
-    "crop_n": 16,
-    "reprompt_accepted": 0,
-    "reprompt_n": 16,
-    "wrong_identity_accepted": 0,
-    "wrong_identity_n": 160,
-    "identity_with_same_penalty_genuine_accepted": 144,
-    "identity_with_same_penalty_reprompt_accepted": 0,
-    "split_fit_improvement_over_all_fit": false,
-    "ideal_null_draws": 2048,
-    "real_key_empirical_fpr_established": false,
-    "independent_confirmation_scored": true,
-    "novelty_established": false,
-    "superiority_established": false,
-    "gpu_used": false,
-    "server_status_polled": false
-  },
-  "latest_validation_plan": "reports/unwatermarked_validation_20261111/plan.md",
-  "queued_geometry_validation": {
-    "status_at_launch": "installing_recorded_runtime",
-    "pid": 44097,
-    "predecessor_supervisor_pid": 22316,
-    "protocol": "protocols/geometry_calibration_replay_20261111.json",
-    "server_root": "/data0/liyanlei/watermark_research/runs/geometry_calibration_replay_20261111",
-    "full_baseline_queries": 144,
-    "calibration_sources": 32,
-    "calibration_queries": 192,
-    "calibration_identity_decisions": 6144,
-    "wrong_identity_decisions": 5952,
-    "gpu_indices": [
-      5
-    ],
-    "max_concurrent_gpus": 3,
-    "runtime_matched": true,
-    "decisions_available": true,
-    "independent_confirmation_scored": true,
-    "wait_mode": "kernel process-exit event; no periodic polling",
-    "status_at_last_observation": "complete",
-    "bridge_gate": 0.001,
-    "prior_bridge_failed": true,
-    "cache_batch": 2,
-    "bridge_passed": true,
-    "package_index": "https://pypi.tuna.tsinghua.edu.cn/simple/",
-    "installation_report": "reports/geometry_calibration_20261111/runtime_setup_repair/report.md",
-    "completed_report": "reports/geometry_calibration_20261111/completed/report.md"
-  },
-  "cross_pipeline_model_audit": {
-    "effective_fp16_unet_equal": true,
-    "vae_equal": false,
-    "text_encoder_equal": false,
-    "semantic_assets_equal": true,
-    "calibration_uses_matched_ddim_model": true
   },
   "compute_policy": {
     "experiment_host": "249",
@@ -184,824 +42,150 @@
     ],
     "max_concurrent_gpus": 3,
     "python_package_index": "https://pypi.tuna.tsinghua.edu.cn/simple/",
-    "automatic_aliyun_fallback": false
-  },
-  "active_experiments_observation": "Conditional Gaussian transport completed2026-11-12T16:32:31Z with240 audited genuine queries and failed gates. Continuous geometry v2 started2026-11-12T16:32:41Z, coordinator31134, workers42901/42902/42903, after parent-exit event; prelaunch commita2852c0. No repeated progress polling.",
-  "full_budget_findings": {
-    "source_count_per_method": 4,
-    "sem_reference_accepted": 4,
-    "gs_reference_accepted": 4,
-    "sem_final_candidate_accepted": 0,
-    "gs_final_candidate_accepted": 4,
-    "sem_all_checkpoints_accepted": 0,
-    "gs_all_checkpoints_accepted": 60,
-    "checkpoints_per_method": 64,
-    "all_five_rules_agree_on": 144,
-    "new_defense_superiority_established": false
-  },
-  "geometry_calibration": {
-    "status": "complete",
-    "sources": 32,
-    "queries": 192,
-    "default_accepted": 160,
-    "all_fit_accepted": 192,
-    "split_fit_accepted": 192,
-    "wrong_identity_n": 5952,
-    "wrong_identity_accepted": 0
-  },
-  "geometry_confirmation": {
-    "status": "complete",
-    "sources": 64,
-    "queries": 384,
-    "default_accepted": 319,
-    "all_fit_accepted": 382,
-    "split_fit_accepted": 381,
-    "wrong_identity_n": 24192,
-    "wrong_identity_accepted": 0,
-    "confirmation_set_consumed": true,
-    "thresholds_changed": false,
-    "report": "reports/geometry_confirmation_20261111/report.md"
-  },
-  "published_gs_conditions": {
-    "status_at_last_observation": "complete",
-    "sources": 64,
-    "queries": 576,
-    "identity_decisions": 36864,
-    "wrong_identity_decisions": 36288,
-    "shared_sources_with_six_condition_confirmation": true,
-    "protocol": "protocols/gs_published_conditions_20261111.json",
-    "gpu_indices": [
-      7,
-      5
-    ],
-    "supervisor_pid": 45448,
-    "completion_mode": "child process-exit events then automatic CPU scoring",
-    "server_root": "/data0/liyanlei/watermark_research/runs/gs_published_conditions_20261111",
-    "novel_or_modified_attacks": false,
-    "default_accepted": 554,
-    "identity_accepted": 556,
-    "identity_penalty_accepted": 552,
-    "all_fit_accepted": 552,
-    "split_fit_accepted": 529,
-    "wrong_identity_accepted": 0,
-    "report": "reports/gs_published_conditions_20261111/report.md"
-  },
-  "unwatermarked_validation": {
-    "status": "complete",
-    "queries": 100,
-    "identity_decisions": 6400,
-    "independent_confirmation": false,
-    "protocol": "protocols/unwatermarked_validation_20261111.json",
-    "supervisor_pid": 34016,
-    "gpu_indices": [
-      7,
-      5
-    ],
-    "server_root": "/data0/liyanlei/watermark_research/runs/unwatermarked_validation_20261111",
-    "completion_mode": "child process exit then automatic CPU scoring",
-    "protocol_published_commit": "3886df4",
-    "default_false_accepts": 0,
-    "all_fit_false_accepts": 0,
-    "split_fit_false_accepts": 0,
-    "any_identity_accepted_queries": 0,
-    "audit_passed": true,
-    "report": "reports/unwatermarked_validation_20261111/report.md",
-    "supplementary_ba_false_accepts": [
-      0,
-      472,
-      1385,
-      6337
-    ],
-    "supplementary_ba_any_identity_queries": [
-      0,
-      100,
-      100,
-      100
+    "automatic_aliyun_fallback": false,
+    "excluded_gpu_indices": [
+      6
     ]
   },
-  "documentation_audit": {
-    "date": "2026-11-11",
-    "report": "reports/repository_audit_20261111/report.md",
-    "primary_literature_entries": 14,
-    "pgid_raw_rows_checked": 42,
-    "pgid_n5_defended_accepted_at_50_100_150": [
-      0,
-      0,
-      0
-    ],
-    "sembind_r2_corrected_standard_median": 8,
-    "all_historical_claims_certified": false,
-    "new_model_experiments": false
-  },
-  "evidence_policy": "Fresh execution required for critical inherited experimental claims; retain old records as historical comparisons",
-  "revalidation": {
-    "protocol": "protocols/defense_revalidation_20261111.json",
-    "plan": "reports/defense_revalidation_20261111/plan.md",
-    "status": "complete",
-    "server_root": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111",
-    "masker_sources": 100,
-    "masker_observations": 1000,
-    "masker_pairs": 4950,
-    "pgid_sources": 10,
-    "pgid_updates_per_source": 151,
-    "gpu_indices": [
-      7,
-      5,
-      4
-    ],
-    "historical_outputs_reused": false,
-    "independent_confirmation": false,
-    "protocol_commit": "c2f928a",
-    "controls_protocol": "protocols/pgid_revalidation_controls_20261111.json",
-    "controls_observations": 40,
-    "supervisor_pids": {
-      "masker": 37791,
-      "pgid0": 37792,
-      "pgid5": 37793
+  "allowed_gpu_indices": [
+    7,
+    5,
+    4
+  ],
+  "excluded_gpu_indices": [
+    6
+  ],
+  "max_concurrent_gpus": 3,
+  "evaluation_policy": "Unchanged published top-venue attacks only; full budgets; no attack development; matched absolute genuine detection",
+  "current_decision": "Pause method expansion pending native baseline equivalence and matched detector working point",
+  "completed_evidence": [
+    {
+      "path": "reports/continuous_geometry_screen_20261113/report.md",
+      "scope": "24 条干净图验证；绑定和 BA 门槛未通过；未执行攻击"
     },
-    "report": "reports/defense_revalidation_20261111/report.md",
-    "masker_status": "complete",
-    "masker_official_vs_adapter_max_hamming": 0,
-    "masker_audit_passed": true,
-    "pgid_status": "complete",
-    "controls_status": "complete",
-    "controls_supervisor_pids": {
-      "pgid0": 6472,
-      "pgid5": 6473
+    {
+      "path": "reports/semantic_transport_pilot_20261112/report.md",
+      "scope": "240 条合法查询；主候选 55/60，重排对照 57/60；未执行攻击"
     },
-    "pgid_defended_accepted": [
-      0,
-      0,
-      0
-    ],
-    "pgid_n": 10,
-    "pgid_genuine_after_defense_accepted": 10,
-    "pgid_genuine_n": 10,
-    "pgid_cover_after_defense_accepted": 0,
-    "pgid_cover_n": 10
-  },
-  "historical_empirical_findings": {
-    "gs_imprint30": {
-      "n": 30,
-      "accepted": 30,
-      "mean_ba": 0.8227864583,
-      "mean_psnr_db": 24.03971145
+    {
+      "path": "reports/decision_region_pilot_20261112/report.md",
+      "scope": "240 条合法查询；主候选 44/60，full 59/60；未执行攻击"
     },
-    "historical_sembind": {
-      "n": 30,
-      "accepted": 2,
-      "mean_ba": 0.5361979167,
-      "model": "SD2.1"
+    {
+      "path": "reports/semantic_feedback_pilot_20261112/report.md",
+      "scope": "180 条合法查询；58/56/57，分母均为 60；未执行攻击"
     },
-    "semantic_records": 460,
-    "cpu_gpu_equal_records": 120
-  },
-  "sembind_chain_revalidation": {
-    "status": "complete",
-    "protocol": "protocols/sembind_chain_revalidation_20261111.json",
-    "plan": "reports/sembind_chain_revalidation_20261111/plan.md",
-    "gpu": 4,
-    "pid": 25076,
-    "sources": 4,
-    "inversion_records": 18,
-    "generation_steps": 50,
-    "inversion_steps": 50,
-    "decoder_optimization_steps": 100,
-    "historical_outputs_reused": false,
-    "stage_at_last_observation": "invert",
-    "completed_stages": [
-      "aux",
-      "codes_aux",
-      "reference",
-      "codes_reference"
-    ],
-    "report": "reports/sembind_chain_revalidation_20261111/report.md",
-    "independent_latent_audit_passed": true,
-    "stage": "score_complete"
-  },
-  "pgid_published_revalidation": {
-    "status": "complete",
-    "protocol": "protocols/pgid_published_revalidation_20261112.json",
-    "plan": "reports/pgid_published_revalidation_20261112/plan.md",
-    "gpu_indices": [
-      7,
-      5
-    ],
-    "sources": 10,
-    "queries": 90,
-    "decisions": 180,
-    "protocol_commit": "d8bca79",
-    "worker_pids": [
-      46597,
-      46598
-    ],
-    "report": "reports/pgid_published_revalidation_20261112/report.md",
-    "independent_latent_audit_passed": true,
-    "standard_accepted": 90,
-    "pgid_accepted": 61,
-    "unique_sources": 10
-  },
-  "fresh_paired_pipeline": {
-    "status": "complete",
-    "protocol": "protocols/sembind_published_revalidation_20261112.json",
-    "next_protocol": "protocols/imprint_fresh_revalidation_20261112.json",
-    "gpu_indices": [
-      7,
-      5,
-      4
-    ],
-    "max_gpus": 3,
-    "completion_mode": "child exit -> independent CPU audit -> full published baseline -> independent CPU audit",
-    "report": "reports/sembind_published_revalidation_20261112/plan.md",
-    "stage": "independently_audited",
-    "coordinator_pid": 32044,
-    "worker_pids": [
-      32096,
-      32097,
-      32098
-    ],
-    "prelaunch_git_commit": "8476bd3",
-    "next_stage_status": "complete",
-    "paired_conditions_complete": true,
-    "paired_condition_acceptance": "SemBind and GS each36/36 under both inversion settings",
-    "baseline_pid": 2154,
-    "baseline_report": "reports/imprint_fresh_revalidation_20261112/report.md",
-    "baseline_final_acceptance": {
-      "sembind": 0,
-      "gs": 4,
-      "n_per_method": 4
+    {
+      "path": "reports/shared_semantic_evidence_20261112/report.md",
+      "scope": "120 条合法查询及 216 条完整 Imprint 验证；未建立匹配合法检出率收益"
     },
-    "baseline_records": 144
-  },
-  "conditional_content_likelihood": {
-    "status": "complete",
-    "protocol": "protocols/conditional_content_likelihood_20261112.json",
-    "report": "reports/conditional_content_likelihood_20261112/report.md",
-    "coordinator_pid": 41738,
-    "genuine_accepted": 30,
-    "genuine_n": 40,
-    "calibrated_ba_accepted": 39,
-    "default_ba_accepted": 40,
-    "channel_logloss": 0.6148969567743989,
-    "constant_channel_logloss": 0.6310196754644377,
-    "superiority_established": false,
-    "advance_decision": "Do not expand: no added forgery rejection and reduced genuine retention",
-    "final_forgery_accepted": 0,
-    "all_checkpoint_accepted": 0,
-    "all_checkpoint_n": 64
-  },
-  "conditional_anchor_pilot": {
-    "status": "complete",
-    "protocol": "protocols/conditional_anchor_pilot_20261112.json",
-    "plan": "reports/conditional_anchor_pilot_20261112/plan.md",
-    "parent_pid": 2154,
-    "gpu_indices": [
-      7,
-      5,
-      4
-    ],
-    "max_gpus": 3,
-    "new_sources": 6,
-    "embedding_arms": 4,
-    "genuine_verification_records": 240,
-    "generation_steps": 50,
-    "inversion_steps": 50,
-    "decoder_steps": 100,
-    "after_positive_gate": "12 unchanged full151-update Imprint jobs and216 full verification records",
-    "superiority_established": false,
-    "independent_audit": "BA, semantic mismatch, and LPIPS gates",
-    "completion_mode": "Kernel process-exit wait; no continuous polling",
-    "stage": "pilot_failed_feasibility_gate",
-    "report": "reports/conditional_anchor_pilot_20261112/report.md",
-    "summary": [
-      {
-        "arm": "full",
-        "n": 60,
-        "accepted": 53,
-        "mean_ba": 0.8822916666666667,
-        "mean_binding_mismatch": 0.09505208333333333,
-        "mean_reference_lpips": 0.7259464661280314
-      },
-      {
-        "arm": "anchor_low",
-        "n": 60,
-        "accepted": 53,
-        "mean_ba": 0.8734375,
-        "mean_binding_mismatch": 0.058756510416666664,
-        "mean_reference_lpips": 0.37081558257341385
-      },
-      {
-        "arm": "independent_low",
-        "n": 60,
-        "accepted": 54,
-        "mean_ba": 0.8633463541666667,
-        "mean_binding_mismatch": 0.08024088541666667,
-        "mean_reference_lpips": 0.7666466931502024
-      },
-      {
-        "arm": "anchor_random",
-        "n": 60,
-        "accepted": 49,
-        "mean_ba": 0.8731770833333333,
-        "mean_binding_mismatch": 0.06380208333333333,
-        "mean_reference_lpips": 0.6660532454649607
-      }
-    ],
-    "advance_to_published_forgery": false
-  },
-  "conditional_quantile_pilot": {
-    "status": "complete",
-    "protocol": "protocols/conditional_quantile_pilot_20261112.json",
-    "plan": "reports/conditional_quantile_pilot_20261112/plan.md",
-    "server_root": "/data0/liyanlei/watermark_research/runs/conditional_quantile_pilot_20261112_v2",
-    "gpu_indices": [
-      7,
-      5,
-      4
-    ],
-    "new_sources": 6,
-    "genuine_queries": 240,
-    "arms": [
-      "full",
-      "anchor_low",
-      "quantile_coupled",
-      "quantile_independent"
-    ],
-    "unit_checks_passed": true,
-    "completion_mode": "Process exit -> independent audit -> frozen feasibility gate -> unchanged full published baseline if feasible",
-    "superiority_established": false,
-    "implementation_version": 2,
-    "repetitions_per_channel": 32,
-    "stage": "pilot_failed_feasibility_gate",
-    "coordinator_pid": 7040,
-    "worker_pids": [
-      10342,
-      10343,
-      10344
-    ],
-    "prelaunch_commit": "5a44e9e0836b3347c190fc6e265005968d683465",
-    "last_observation": {
-      "observed_at_utc": "2026-11-12T04:07:16.305855+00:00",
-      "pipeline": {
-        "status": "running",
-        "pid": 7040,
-        "stage": "genuine_defense_pilot",
-        "worker_pids": [
-          10342,
-          10343,
-          10344
-        ]
-      },
-      "workers": [
-        {
-          "shard": 0,
-          "pid": 10342,
-          "gpu": 7,
-          "status": "running",
-          "auxiliary_generated": true,
-          "scored_queries": 0
-        },
-        {
-          "shard": 1,
-          "pid": 10343,
-          "gpu": 5,
-          "status": "running",
-          "auxiliary_generated": true,
-          "scored_queries": 0
-        },
-        {
-          "shard": 2,
-          "pid": 10344,
-          "gpu": 4,
-          "status": "running",
-          "auxiliary_generated": true,
-          "scored_queries": 0
-        }
-      ]
+    {
+      "path": "reports/replica_moments_development_20261112/report.md",
+      "scope": "已消费数据的开发诊断；未建立独立优势"
     },
-    "report": "reports/conditional_quantile_pilot_20261112/report.md",
-    "summary": [
-      {
-        "arm": "full",
-        "n": 60,
-        "accepted": 59,
-        "mean_ba": 0.9372395833333333,
-        "mean_binding_mismatch": 0.072265625,
-        "mean_reference_lpips": 0.8281306624412537
-      },
-      {
-        "arm": "anchor_low",
-        "n": 60,
-        "accepted": 54,
-        "mean_ba": 0.8888020833333333,
-        "mean_binding_mismatch": 0.04638671875,
-        "mean_reference_lpips": 0.36732199788093567
-      },
-      {
-        "arm": "quantile_coupled",
-        "n": 60,
-        "accepted": 48,
-        "mean_ba": 0.8503255208333333,
-        "mean_binding_mismatch": 0.09651692708333333,
-        "mean_reference_lpips": 0.6438509374856949
-      },
-      {
-        "arm": "quantile_independent",
-        "n": 60,
-        "accepted": 54,
-        "mean_ba": 0.8695963541666667,
-        "mean_binding_mismatch": 0.061686197916666664,
-        "mean_reference_lpips": 0.8044129014015198
-      }
-    ],
-    "advance_to_published_forgery": false
-  },
-  "shared_semantic_evidence": {
-    "status": "complete",
-    "protocol": "protocols/shared_semantic_evidence_20261112.json",
-    "plan": "reports/shared_semantic_evidence_20261112/plan.md",
-    "server_root": "/data0/liyanlei/watermark_research/runs/shared_semantic_evidence_20261112",
-    "fit_sources": 6,
-    "calibration_sources": 6,
-    "test_sources": 12,
-    "development_extractions": 120,
-    "genuine_inversions": 120,
-    "imprint_jobs": 12,
-    "imprint_updates": 151,
-    "forgery_inversions": 216,
-    "gpu_indices": [
-      7,
-      5,
-      4
-    ],
-    "unit_checks_passed": true,
-    "superiority_established": false,
-    "coordinator_pid": 24027,
-    "stage": "all_endpoints_independently_audited",
-    "prelaunch_commit": "7a40f98fbbf8d34301338c9f703c31673636d60a",
-    "worker_pids": [
-      45285,
-      45306,
-      45307
-    ],
-    "model_frozen": true,
-    "official_code_comparisons": 120,
-    "calibration_query_semantic_nll": 0.23836752861883143,
-    "calibration_constant_semantic_nll": 0.29745503739611634,
-    "report": "reports/shared_semantic_evidence_20261112/report.md",
-    "generation_observation": {
-      "time_utc": "2026-11-12T06:16:20.641948+00:00",
-      "auxiliary_generated_by_shard": [
-        true,
-        true,
-        true
-      ],
-      "pipeline": {
-        "status": "running",
-        "pid": 24027,
-        "time_utc": "2026-11-12T06:14:21.206499+00:00",
-        "stage": "heldout_full_genuine",
-        "worker_pids": [
-          45285,
-          45306,
-          45307
-        ]
-      },
-      "completion_wait": "filesystem creation events, not polling"
+    {
+      "path": "reports/conditional_quantile_pilot_20261112/report.md",
+      "scope": "240 条合法查询；候选 48/60，full 59/60；未执行攻击"
     },
-    "genuine_completed": true,
-    "genuine_audited": true,
-    "genuine_accepts": {
-      "default_ba": 107,
-      "ba": 101,
-      "latent_soft_ba": 95,
-      "coordinate_soft_ba": 100,
-      "group_constant": 87,
-      "group_query": 85
+    {
+      "path": "reports/conditional_anchor_pilot_20261112/report.md",
+      "scope": "候选 53/60，独立对照 54/60；未通过门槛"
     },
-    "wrong_identity_pairs": 1320,
-    "all_rules_wrong_accepts": 0,
-    "forgery_completed": true,
-    "latest_observation": {
-      "status": "complete",
-      "pid": 24027,
-      "time_utc": "2026-11-12T10:13:01.212718+00:00",
-      "stage": "all_endpoints_independently_audited",
-      "genuine_records": 120,
-      "forgery_records": 216
+    {
+      "path": "reports/conditional_content_likelihood_20261112/report.md",
+      "scope": "候选合法 30/40，校准 BA 39/40；没有新增最终伪造拒绝"
     },
-    "forgery_audited": true,
-    "forgery_summary": [
-      {
-        "method": "default_ba",
-        "reference": {
-          "accepted": 12,
-          "n": 12
-        },
-        "cover": {
-          "accepted": 0,
-          "n": 12
-        },
-        "final_candidate": {
-          "accepted": 1,
-          "n": 12
-        },
-        "all_checkpoints": {
-          "accepted": 15,
-          "n": 192
-        }
-      },
-      {
-        "method": "ba",
-        "reference": {
-          "accepted": 12,
-          "n": 12
-        },
-        "cover": {
-          "accepted": 0,
-          "n": 12
-        },
-        "final_candidate": {
-          "accepted": 1,
-          "n": 12
-        },
-        "all_checkpoints": {
-          "accepted": 15,
-          "n": 192
-        }
-      },
-      {
-        "method": "latent_soft_ba",
-        "reference": {
-          "accepted": 12,
-          "n": 12
-        },
-        "cover": {
-          "accepted": 0,
-          "n": 12
-        },
-        "final_candidate": {
-          "accepted": 1,
-          "n": 12
-        },
-        "all_checkpoints": {
-          "accepted": 15,
-          "n": 192
-        }
-      },
-      {
-        "method": "coordinate_soft_ba",
-        "reference": {
-          "accepted": 12,
-          "n": 12
-        },
-        "cover": {
-          "accepted": 0,
-          "n": 12
-        },
-        "final_candidate": {
-          "accepted": 1,
-          "n": 12
-        },
-        "all_checkpoints": {
-          "accepted": 15,
-          "n": 192
-        }
-      },
-      {
-        "method": "group_constant",
-        "reference": {
-          "accepted": 9,
-          "n": 12
-        },
-        "cover": {
-          "accepted": 0,
-          "n": 12
-        },
-        "final_candidate": {
-          "accepted": 0,
-          "n": 12
-        },
-        "all_checkpoints": {
-          "accepted": 3,
-          "n": 192
-        }
-      },
-      {
-        "method": "group_query",
-        "reference": {
-          "accepted": 9,
-          "n": 12
-        },
-        "cover": {
-          "accepted": 0,
-          "n": 12
-        },
-        "final_candidate": {
-          "accepted": 0,
-          "n": 12
-        },
-        "all_checkpoints": {
-          "accepted": 4,
-          "n": 192
-        }
-      }
-    ],
-    "completion": {
-      "status": "complete",
-      "pid": 24027,
-      "time_utc": "2026-11-12T10:13:01.212718+00:00",
-      "stage": "all_endpoints_independently_audited",
-      "genuine_records": 120,
-      "forgery_records": 216
+    {
+      "path": "reports/imprint_fresh_revalidation_20261112/report.md",
+      "scope": "144 条复核；项目 SemBind 组件适配 0/4、GS 4/4 最终接受"
+    },
+    {
+      "path": "reports/sembind_published_revalidation_20261112/report.md",
+      "scope": "配对项目适配与反演设置诊断"
+    },
+    {
+      "path": "reports/sembind_chain_revalidation_20261111/report.md",
+      "scope": "18 条干净图记录全部接受；不是完整原生复现"
+    },
+    {
+      "path": "reports/pgid_published_revalidation_20261112/report.md",
+      "scope": "标准 90/90，PGID 后 61/90；开发评估"
+    },
+    {
+      "path": "reports/defense_revalidation_20261111/report.md",
+      "scope": "100 图语义组件及 PGID 官方完整预算重验"
     }
-  },
-  "semantic_feedback_pilot": {
+  ],
+  "latest_experiment": {
+    "run": "continuous_geometry_screen_20261113_v2",
     "status": "complete",
-    "protocol": "protocols/semantic_feedback_pilot_20261112.json",
-    "plan": "reports/semantic_feedback_pilot_20261112/plan.md",
-    "server_root": "/data0/liyanlei/watermark_research/runs/semantic_feedback_pilot_20261112",
-    "genuine_records": 180,
-    "wrong_identity_pairs": 900,
-    "conditional_imprint_jobs": 18,
-    "conditional_forgery_records": 324,
-    "gpu_indices": [
-      7,
-      5,
-      4
-    ],
-    "parent_pid": 24027,
-    "unit_checks_passed": true,
-    "audit_regression_records": 240,
-    "superiority_established": false,
-    "coordinator_pid": 20195,
-    "prelaunch_commit": "f61c582",
-    "queue_observation": {
-      "time_utc": "2026-11-12T09:31:22.487115+00:00",
-      "pipeline": {
-        "status": "waiting",
-        "pid": 20195,
-        "time_utc": "2026-11-12T09:31:11.869367+00:00",
-        "stage": "parent_full_evaluation",
-        "parent_pid": 24027,
-        "mode": "pidfd process-exit event; no polling"
-      },
-      "parent_pidfd_open": true,
-      "new_gpu_workers": 0
-    },
-    "launch": "reports/semantic_feedback_pilot_20261112/launch.json",
-    "stage": "failed_frozen_feasibility_gate",
-    "report": "reports/semantic_feedback_pilot_20261112/report.md",
-    "summary": [
-      {
-        "arm": "full",
-        "n": 60,
-        "accepted": 58,
-        "mean_ba": 0.9051432291666667,
-        "mean_binding_mismatch": 0.10546875,
-        "mean_reference_lpips": 0.7268839776515961
-      },
-      {
-        "arm": "feedback",
-        "n": 60,
-        "accepted": 56,
-        "mean_ba": 0.899609375,
-        "mean_binding_mismatch": 0.09391276041666667,
-        "mean_reference_lpips": 0.722011148929596
-      },
-      {
-        "arm": "consensus",
-        "n": 60,
-        "accepted": 57,
-        "mean_ba": 0.9063802083333333,
-        "mean_binding_mismatch": 0.11995442708333333,
-        "mean_reference_lpips": 0.7206004659334818
-      }
-    ],
-    "decision": {
-      "advance": false,
-      "gates": {
-        "binding_vs_full": false,
-        "binding_vs_consensus": true,
-        "genuine_gain": false,
-        "clean_retention": true,
-        "source_consistency": false,
-        "preview_fidelity": true,
-        "wrong_identity": true
-      },
-      "scope": "Six-source feasibility screen, not statistical superiority"
-    },
-    "advance_to_published_forgery": false,
-    "actual_imprint_jobs": 0,
-    "actual_forgery_records": 0,
-    "genuine_audited": true,
-    "completion": {
-      "status": "complete",
-      "pid": 20195,
-      "time_utc": "2026-11-12T11:09:13.756885+00:00",
-      "stage": "failed_frozen_feasibility_gate"
-    }
-  },
-  "queued_experiments": 0,
-  "completion_audit": "reports/completion_audit_20261112/audit.json",
-  "replica_moments_development": {
-    "status": "complete",
-    "execution_host": "249",
-    "report": "reports/replica_moments_development_20261112/report.md",
-    "server_root": "/data0/liyanlei/watermark_research/runs/replica_moments_development_20261112_v2",
-    "fresh_model_execution": false,
-    "independent_confirmation": false,
-    "primary": "replica_lower",
-    "genuine_accepted": 86,
-    "genuine_n": 120,
-    "final_imprint_accepted": 0,
-    "final_imprint_n": 12,
-    "wrong_identity_accepted": 0,
-    "wrong_identity_n": 1320,
-    "advance_to_fresh_pilot": false,
-    "gpu_used": false,
-    "superiority_established": false
-  },
-  "decision_region_pilot": {
-    "status": "complete",
-    "stage": "genuine_audited_gate_failed",
-    "completion_time_utc": "2026-11-12T15:28:40.708674+00:00",
-    "report": "reports/decision_region_pilot_20261112/report.md",
-    "genuine_records_completed": 240,
-    "wrong_identity_pairs_completed": 1200,
-    "actual_imprint_jobs": 0,
-    "primary_genuine_accepted": 44,
-    "full_genuine_accepted": 59,
-    "genuine_denominator_per_arm": 60,
-    "protocol": "protocols/decision_region_pilot_20261112.json",
-    "plan": "reports/decision_region_pilot_20261112/plan.md",
-    "server_root": "/data0/liyanlei/watermark_research/runs/decision_region_pilot_20261112",
-    "prelaunch_commit": "7d2b430",
-    "coordinator_pid": 45097,
-    "worker_pids": [
-      45324,
-      45325,
-      45326
-    ],
-    "gpu_indices": [
-      7,
-      5,
-      4
-    ],
-    "genuine_records_planned": 240,
-    "wrong_identity_pairs_planned": 1200,
-    "conditional_imprint_jobs": 24,
-    "conditional_forgery_records": 432,
-    "unit_checks_passed": true,
-    "superiority_established": false
-  },
-  "continuous_geometry_screen": {
-    "status": "running",
-    "stage": "clean_mechanism_screen",
-    "start_time_utc": "2026-11-12T16:32:41.995130+00:00",
-    "worker_pids": [42901, 42902, 42903],
-    "coordinator_pid": 31134,
-    "prelaunch_commit": "a2852c0",
-    "initial_prelaunch_commit": "65913d4",
-    "initial_launch_state": "reports/continuous_geometry_screen_20261113/initial_launch_state.json",
+    "completed_at": "2026-11-12T16:41:17.775563+00:00",
     "protocol": "protocols/continuous_geometry_screen_20261113_v2.json",
     "protocol_sha256": "45787294dc25d21666d1378cbca0a4d5de25b0bea5f913f8dab07340cf587fc9",
-    "plan": "reports/continuous_geometry_screen_20261113/plan.md",
-    "server_root": "/data0/liyanlei/watermark_research/runs/continuous_geometry_screen_20261113_v2",
-    "parent_coordinator_pid": 15104,
-    "genuine_records_planned": 24,
-    "wrong_identity_pairs_planned": 120,
-    "attack_jobs_planned": 0,
-    "unit_roundtrips": 48,
-    "unit_raw_sign_errors": 0,
-    "unit_checks_passed": true,
-    "superiority_established": false
+    "genuine_records": 24,
+    "wrong_identity_pairs": 120,
+    "attack_jobs": 0,
+    "advance": false,
+    "summary": [
+      {
+        "arm": "full",
+        "n": 6,
+        "accepted": 6,
+        "mean_ba": 1.0,
+        "mean_distance": 0.1404003246731302,
+        "mean_hamming": 0.036458333333333336,
+        "mean_lpips": 0.7563933233420054,
+        "mean_initial_mse": 1.9952476963573205,
+        "wrong_identity_accepts": 0
+      },
+      {
+        "arm": "quantized_geometry",
+        "n": 6,
+        "accepted": 6,
+        "mean_ba": 1.0,
+        "mean_distance": 0.27473186736035093,
+        "mean_hamming": 0.07861328125,
+        "mean_lpips": 0.6410908699035645,
+        "mean_initial_mse": 0.8328325923987251,
+        "wrong_identity_accepts": 0
+      },
+      {
+        "arm": "continuous_independent",
+        "n": 6,
+        "accepted": 6,
+        "mean_ba": 0.9694010416666666,
+        "mean_distance": 0.31209813633314526,
+        "mean_hamming": 0.09375,
+        "mean_lpips": 0.7312833170096079,
+        "mean_initial_mse": 1.9961585708615026,
+        "wrong_identity_accepts": 0
+      },
+      {
+        "arm": "continuous_transport",
+        "n": 6,
+        "accepted": 6,
+        "mean_ba": 0.96875,
+        "mean_distance": 0.32283884921550987,
+        "mean_hamming": 0.09635416666666667,
+        "mean_lpips": 0.6441192030906677,
+        "mean_initial_mse": 0.8367803137974733,
+        "wrong_identity_accepts": 0
+      }
+    ],
+    "gates": {
+      "clean": true,
+      "binding": false,
+      "continuous_vs_quantized": false,
+      "fidelity": true,
+      "wrong_identity": true
+    }
   },
-  "semantic_transport_pilot": {
-    "status": "complete",
-    "stage": "genuine_audited_gate_failed",
-    "completion_time_utc": "2026-11-12T16:32:31.140450+00:00",
-    "report": "reports/semantic_transport_pilot_20261112/report.md",
-    "genuine_records_completed": 240,
-    "wrong_identity_pairs_completed": 1200,
-    "actual_imprint_jobs": 0,
-    "primary_genuine_accepted": 55,
-    "full_genuine_accepted": 53,
-    "shuffled_control_genuine_accepted": 57,
-    "genuine_denominator_per_arm": 60,
-    "start_time_utc": "2026-11-12T15:29:43.272994+00:00",
-    "coordinator_pid": 15104,
-    "worker_pids": [15111, 15112, 15113],
-    "prelaunch_commit": "da91c9d",
-    "protocol": "protocols/semantic_transport_pilot_20261112.json",
-    "protocol_sha256": "df38260a3811a858c10c02c1af4287ec145515108842ca612891d515de95b464",
-    "plan": "reports/semantic_transport_pilot_20261112/plan.md",
-    "server_root": "/data0/liyanlei/watermark_research/runs/semantic_transport_pilot_20261112",
-    "genuine_records_planned": 240,
-    "wrong_identity_pairs_planned": 1200,
-    "conditional_imprint_jobs": 24,
-    "conditional_forgery_records": 432,
-    "unit_checks_passed": true,
-    "superiority_established": false
-  }
+  "provenance_policy": "Executed run source and protocol hashes remain frozen; use their exact versions for replay",
+  "required_validation": [
+    "Native SemBind end-to-end equivalence",
+    "Matched detection working points and empirical negatives",
+    "New independent sources",
+    "Image quality and compute cost",
+    "Defense benefit over simple controls at matched absolute genuine detection"
+  ]
 }
