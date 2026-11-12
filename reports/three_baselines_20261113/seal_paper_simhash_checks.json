@@ -1,0 +1,16 @@
+{
+  "repeated_noise_exact": true,
+  "fresh_instance_replay_exact": true,
+  "global_rng_unchanged": true,
+  "salt_changes_projections_and_noise": true,
+  "missing_salt_rejected": true,
+  "shape": [
+    1,
+    4,
+    64,
+    64
+  ],
+  "finite": true,
+  "scope": "CPU component verification of final Algorithm2; no model, image, defense-performance or attack result",
+  "source_sha256": "f462b221a58aa4edeb3a2e3bb8d0928db10e3bf722477bf38bf8c95557637f78"
+}

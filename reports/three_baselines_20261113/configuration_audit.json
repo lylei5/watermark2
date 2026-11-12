@@ -1,0 +1,245 @@
+{
+  "blip2": {
+    "revision": "0eb0d3b46c14c1f8c7680bca2693baafdb90bb28",
+    "files": [
+      {
+        "file": ".gitattributes",
+        "exists": true,
+        "exact": true,
+        "expected": "c7d9f3332a950355d5a77d85000f05e6f45435ea",
+        "actual": "c7d9f3332a950355d5a77d85000f05e6f45435ea"
+      },
+      {
+        "file": "README.md",
+        "exists": true,
+        "exact": true,
+        "expected": "39035c4810e61938192e7b9cf1d441601a07d90c",
+        "actual": "39035c4810e61938192e7b9cf1d441601a07d90c"
+      },
+      {
+        "file": "added_tokens.json",
+        "exists": true,
+        "exact": true,
+        "expected": "54eb6ebf95bc42860c58acdfd4df6efe76d13285",
+        "actual": "54eb6ebf95bc42860c58acdfd4df6efe76d13285"
+      },
+      {
+        "file": "config.json",
+        "exists": true,
+        "exact": true,
+        "expected": "57338092b9a27d25d5e9bc1bcf8b565da554ab1c",
+        "actual": "57338092b9a27d25d5e9bc1bcf8b565da554ab1c"
+      },
+      {
+        "file": "generation_config.json",
+        "exists": true,
+        "exact": true,
+        "expected": "5c7eec55cfc375b014756c62c3408f780802cd9e",
+        "actual": "5c7eec55cfc375b014756c62c3408f780802cd9e"
+      },
+      {
+        "file": "model.safetensors.index.json",
+        "exists": true,
+        "exact": true,
+        "expected": "c95437f6b82c1456e8322437725f738806f9ae86",
+        "actual": "c95437f6b82c1456e8322437725f738806f9ae86"
+      },
+      {
+        "file": "preprocessor_config.json",
+        "exists": true,
+        "exact": true,
+        "expected": "0b0fa393c4e1fa80a41fd3b84e022c6e3488230e",
+        "actual": "0b0fa393c4e1fa80a41fd3b84e022c6e3488230e"
+      },
+      {
+        "file": "processor_config.json",
+        "exists": true,
+        "exact": true,
+        "expected": "881af9c00e0a6cee3fb9685aef961267a60d3f8b",
+        "actual": "881af9c00e0a6cee3fb9685aef961267a60d3f8b"
+      },
+      {
+        "file": "pytorch_model.bin.index.json",
+        "exists": false
+      },
+      {
+        "file": "special_tokens_map.json",
+        "exists": true,
+        "exact": true,
+        "expected": "17ade346a1042cbe0c1436f5bedcbd85c099d582",
+        "actual": "17ade346a1042cbe0c1436f5bedcbd85c099d582"
+      },
+      {
+        "file": "tokenizer.json",
+        "exists": true,
+        "exact": true,
+        "expected": "dedcbcb6ff843c5056d0452a38afb1c7199899a4",
+        "actual": "dedcbcb6ff843c5056d0452a38afb1c7199899a4"
+      },
+      {
+        "file": "tokenizer_config.json",
+        "exists": true,
+        "exact": true,
+        "expected": "fa164b172bdb265a415fe809e419f5d1f1c896b9",
+        "actual": "fa164b172bdb265a415fe809e419f5d1f1c896b9"
+      }
+    ]
+  },
+  "embedding": {
+    "revision": "1f155d6a17f7a176d7d269f7ec04bcfa376ce297",
+    "files": [
+      {
+        "file": ".gitattributes",
+        "exists": false
+      },
+      {
+        "file": "1_Pooling/config.json",
+        "exists": true,
+        "exact": true,
+        "expected": "9213783a33aa495a3c2d3791c7c5888d90607a4e",
+        "actual": "9213783a33aa495a3c2d3791c7c5888d90607a4e"
+      },
+      {
+        "file": "README.md",
+        "exists": false
+      },
+      {
+        "file": "config.json",
+        "exists": true,
+        "exact": true,
+        "expected": "a79461b927c42c82c56fcc667ef02703f2c11fa3",
+        "actual": "a79461b927c42c82c56fcc667ef02703f2c11fa3"
+      },
+      {
+        "file": "config_sentence_transformers.json",
+        "exists": false
+      },
+      {
+        "file": "modules.json",
+        "exists": true,
+        "exact": true,
+        "expected": "f7640f94e81bb7f4f04daf1668850b38763a13d9",
+        "actual": "f7640f94e81bb7f4f04daf1668850b38763a13d9"
+      },
+      {
+        "file": "sentence_bert_config.json",
+        "exists": true,
+        "exact": true,
+        "expected": "f789d99277496b282d19020415c5ba9ca79ac875",
+        "actual": "f789d99277496b282d19020415c5ba9ca79ac875"
+      },
+      {
+        "file": "special_tokens_map.json",
+        "exists": true,
+        "exact": true,
+        "expected": "f8b386f07f964a5431cc027051fa4487d8b3141c",
+        "actual": "f8b386f07f964a5431cc027051fa4487d8b3141c"
+      },
+      {
+        "file": "tokenizer.json",
+        "exists": true,
+        "exact": true,
+        "expected": "87ccbe6dafb1f88c5ff2ed64acbd96ae4f4b242a",
+        "actual": "87ccbe6dafb1f88c5ff2ed64acbd96ae4f4b242a"
+      },
+      {
+        "file": "tokenizer_config.json",
+        "exists": true,
+        "exact": true,
+        "expected": "7240ba223aa01b4577f50b76aa7c1baddc78e3a7",
+        "actual": "7240ba223aa01b4577f50b76aa7c1baddc78e3a7"
+      },
+      {
+        "file": "vocab.txt",
+        "exists": true,
+        "exact": true,
+        "expected": "1c51ab79a2298a340952d3e6012042a9c84bbe4d",
+        "actual": "1c51ab79a2298a340952d3e6012042a9c84bbe4d"
+      }
+    ]
+  },
+  "sd21_mirror": {
+    "revision": "0094d483a120f3f33dafbd187ea4aa60d10de75c",
+    "files": [
+      {
+        "file": ".gitattributes",
+        "exists": false
+      },
+      {
+        "file": "README.md",
+        "exists": false
+      },
+      {
+        "file": "feature_extractor/preprocessor_config.json",
+        "exists": true,
+        "exact": true,
+        "expected": "5294955ff7801083f720b34b55d0f1f51313c5c5",
+        "actual": "5294955ff7801083f720b34b55d0f1f51313c5c5"
+      },
+      {
+        "file": "model_index.json",
+        "exists": true,
+        "exact": true,
+        "expected": "0f48b2256e823029112effea0c3586bf369da56c",
+        "actual": "0f48b2256e823029112effea0c3586bf369da56c"
+      },
+      {
+        "file": "scheduler/scheduler_config.json",
+        "exists": true,
+        "exact": true,
+        "expected": "b68a817036d3f5c36537e9c332a42c7e63a9d4e9",
+        "actual": "b68a817036d3f5c36537e9c332a42c7e63a9d4e9"
+      },
+      {
+        "file": "text_encoder/config.json",
+        "exists": true,
+        "exact": true,
+        "expected": "f9ac7c0b3b341525cd1b65e1a715128fee97b25c",
+        "actual": "f9ac7c0b3b341525cd1b65e1a715128fee97b25c"
+      },
+      {
+        "file": "tokenizer/merges.txt",
+        "exists": true,
+        "exact": true,
+        "expected": "76e821f1b6f0a9709293c3b6b51ed90980b3166b",
+        "actual": "76e821f1b6f0a9709293c3b6b51ed90980b3166b"
+      },
+      {
+        "file": "tokenizer/special_tokens_map.json",
+        "exists": true,
+        "exact": true,
+        "expected": "ae0c5be6f35217e51c4c000fd325d8de0294e99c",
+        "actual": "ae0c5be6f35217e51c4c000fd325d8de0294e99c"
+      },
+      {
+        "file": "tokenizer/tokenizer_config.json",
+        "exists": true,
+        "exact": true,
+        "expected": "65d055d1103982d6ba7cf1c5c876a9413077daf5",
+        "actual": "65d055d1103982d6ba7cf1c5c876a9413077daf5"
+      },
+      {
+        "file": "tokenizer/vocab.json",
+        "exists": true,
+        "exact": true,
+        "expected": "469be27c5c010538f845f518c4f5e8574c78f7c8",
+        "actual": "469be27c5c010538f845f518c4f5e8574c78f7c8"
+      },
+      {
+        "file": "unet/config.json",
+        "exists": true,
+        "exact": true,
+        "expected": "0fa07f924dabbf7517dc62af845cd31573bc09e3",
+        "actual": "0fa07f924dabbf7517dc62af845cd31573bc09e3"
+      },
+      {
+        "file": "vae/config.json",
+        "exists": true,
+        "exact": true,
+        "expected": "9421ac5a7caf02657fa559cffe7c73a47572cd64",
+        "actual": "9421ac5a7caf02657fa559cffe7c73a47572cd64"
+      }
+    ]
+  },
+  "worker_syntax_valid": true
+}

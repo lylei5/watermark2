@@ -19,3 +19,9 @@ SEAL语义入口使用官方生成、caption、SimHash和反演函数；最终�
 [PGID-R协议](../../protocols/pgid_native_removal_20261113_v2.json)固定作者原样run.py及全部151次Imprint更新，对10个官方案例保存51/101/151次实际更新处的原判定和防御后判定。原生入口CPU导入/参数解析已通过，未改攻击函数。已有PGID-F10例结果和新旧源码可执行AST等价证据分别保留。
 
 [队列启动收据](queue_launch.json)记录三个新协调器及协议哈希。旧等待队列在任何GPU工作进程启动前结束；新协调器增加固定3秒设备释放间隔和真实工作进程启动记录，所有数值worker、来源和样本数保持不变。执行顺序是原GS验证、SEAL100、PRC-S6、PGID-R10。旧协议留作溯源，不是重复实验结果。
+
+## SEAL论文私有salt链路
+
+[论文算法2组件检查](seal_paper_simhash_checks.json)通过确定性、密钥隔离和全局RNG不变检查。[独立100提示词图像协议](../../protocols/seal_paper_native_20261113.json)固定了32字节私有salt和公开的哈希/RNG约定，不能据此声称作者实现等价或图像防御通过。此分支插入PRC-S之后、PGID-R之前，新增[队列收据](paper_seal_queue.json)记录实际进程；PGID原数值worker、10来源和完整151更新均未改变。
+
+[预处理与分词配置核验](configuration_audit.json)显示所载配置均与上游Git blob匹配。作者embedding缺失的元数据配置在新固定目录补齐；[3条CPU编码比较](seal_embedding_config_check.json)逐值相同，最大差为0。实际GPU完整链路仍须独立验收。

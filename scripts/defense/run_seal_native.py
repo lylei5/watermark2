@@ -59,6 +59,13 @@ def main():
         from inverse_stable_diffusion import InversableStableDiffusionPipeline
         from utils import (generate_caption, generate_initial_noise, transform_img,
                            calculate_patch_l2, set_random_seed)
+        paper_sampler = None
+        if plan.get('noise_variant') == 'paper_secret_salt':
+            assert sha(run / 'seal_paper_simhash.py') == plan['salted_sampler_sha256']
+            salt_file = Path(plan['private_salt_file'])
+            assert sha(salt_file) == plan['private_salt_sha256']
+            from seal_paper_simhash import SealPaperSimHash
+            paper_sampler = SealPaperSimHash(bytes.fromhex(json.loads(salt_file.read_text())['salt']), device='cuda')
         torch.set_num_threads(4)
         pipe = InversableStableDiffusionPipeline.from_pretrained(
             plan['diffusion_model'], torch_dtype=torch.float16, local_files_only=True).to('cuda')
@@ -82,6 +89,8 @@ def main():
             return caption, embedding / torch.norm(embedding)
 
         def noise(embedding):
+            if paper_sampler is not None:
+                return paper_sampler.sample(embedding).to(dtype=pipe.vae.dtype)
             return generate_initial_noise(embedding, plan['patches'], plan['bits_per_patch'],
                                           plan['official_projection_seed'], 'cuda').to(dtype=pipe.vae.dtype)
 
@@ -112,6 +121,11 @@ def main():
                 path = output / 'images' / f'{task:03}_{kind}.png'
                 image.save(path)
                 images[kind] = dict(path=str(path.relative_to(run)), sha256=sha(path))
+            preview_control_equal = None
+            if paper_sampler is not None:
+                control = Path(plan['released_code_run']) / f'native_{args.shard}' / 'images' / f'{task:03}_preview.png'
+                preview_control_equal = sha(control) == images['preview']['sha256']
+                assert preview_control_equal, 'The paired preview image changed'
             latent_path = output / 'latents' / f'{task:03}.npz'
             np.savez_compressed(latent_path, initial=initial.cpu().numpy(),
                                 genuine_reference=genuine_reference.cpu().numpy(),
@@ -126,6 +140,7 @@ def main():
                 decisions.append(dict(kind=kind, distances=distances, matches=matches,
                                       accepted=matches >= plan['minimum_matches']))
             rows.append(dict(task=task, dataset=item['dataset'], images=images,
+                             preview_control_equal=preview_control_equal,
                              captions=dict(preview=preview_caption, genuine=genuine_caption, null=null_caption),
                              latents=dict(path=str(latent_path.relative_to(run)), sha256=sha(latent_path)),
                              decisions=decisions, seconds=time.monotonic()-tick))

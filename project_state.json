@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-12T19:01:14.000463+00:00",
+  "updated_at": "2026-11-12T19:10:30.556335+00:00",
   "status": "three_native_baselines_reproduction",
   "active_experiments": 1,
-  "queued_experiments": 3,
+  "queued_experiments": 4,
   "latest_progress_report": "reports/phase1_trajectory_native_gs_20261113/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/THREE_BASELINE_REPRODUCTION.md",
@@ -278,16 +278,25 @@
       "protocol_sha256": "e55d8caba0c940c65e5d570fc25e1bbc56aa5207e8a1a69aa1b38c2b8426c73a",
       "coordinator_pid": 43086,
       "status": "queued",
-      "official_sd21_snapshot_equivalence": false
+      "official_sd21_snapshot_equivalence": false,
+      "paper_variant": {
+        "run": "seal_paper_native_20261113",
+        "protocol": "protocols/seal_paper_native_20261113.json",
+        "protocol_sha256": "80c6ed73c323a44b73aab45831b06c98a9fd07b3c82775beff3805433cde4e28",
+        "coordinator_pid": 46551,
+        "status": "queued",
+        "component_checks": "reports/three_baselines_20261113/seal_paper_simhash_checks.json",
+        "author_implementation_equivalence": false
+      }
     },
     "pgid": {
       "source_commit": "dc4ad963ffefcb4cf84340084db617472983d3e0",
       "previous_executable_ast_equal": true,
       "paper_scale_reproduction_complete": false,
-      "run": "pgid_native_removal_20261113_v2",
-      "protocol": "protocols/pgid_native_removal_20261113_v2.json",
-      "protocol_sha256": "e90f82182167bcb28574216998eed1ec81cd30a0aeb43a408f3c5909ae4788fe",
-      "coordinator_pid": 43088,
+      "run": "pgid_native_removal_20261113_v3",
+      "protocol": "protocols/pgid_native_removal_20261113_v3.json",
+      "protocol_sha256": "d6c9f8770d612b231c08824fc1ca457172cdc4614292477c463e9ff8cb2cda56",
+      "coordinator_pid": 46552,
       "status": "queued"
     },
     "sembind": {
@@ -315,6 +324,7 @@
     "phase1_trajectory_native_gs_20261113",
     "seal_native_20261113_v3",
     "sembind_prc_native_20261113_v2",
-    "pgid_native_removal_20261113_v2"
+    "seal_paper_native_20261113",
+    "pgid_native_removal_20261113_v3"
   ]
 }

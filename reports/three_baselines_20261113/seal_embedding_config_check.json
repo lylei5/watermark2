@@ -1,0 +1,19 @@
+{
+  "upstream_configuration_blob": "9fada1907cd71d2b037a6675c780f8493aa3b2d0",
+  "configuration_sha256": "5e175aa4dd8001f383d77052318cf94604c30ef7c8c81ed980952a6d461560e9",
+  "old_path": "/data0/liyanlei/watermark_research/models/seal/caption-embedding",
+  "pinned_complete_path": "/data0/liyanlei/watermark_research/models/seal/caption-embedding-pinned",
+  "old_prompts": {},
+  "new_prompts": {},
+  "old_default_prompt": null,
+  "new_default_prompt": null,
+  "old_similarity": "cosine",
+  "new_similarity": "cosine",
+  "shape": [
+    3,
+    768
+  ],
+  "exact_cpu_embedding_equality": true,
+  "max_absolute_difference": 0.0,
+  "scope": "Three CPU embedding fixtures verify defaults of the missing metadata config; no image or defense performance claim"
+}
