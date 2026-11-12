@@ -1,0 +1,21 @@
+{
+  "frozen_at": "2026-11-12T17:54:18.948535+00:00",
+  "prc_commit": "3f372c1d9cafcd0732331c0d00f0430ee822a389",
+  "source_sha256": {
+    "src/prc.py": "6e3743687fe01ce148fd44998c82e785b9b408548f22820c5f0defbcf3e67a5f",
+    "src/pseudogaussians.py": "6cc92bd53afe9004a2d878c7db406454c04a36d4724db41410821dac7ad872f8",
+    "decode.py": "748c436cfc28b2b44fb51a12a826ec7a9912f821a0d44b730dc909d9481aa932",
+    "encode.py": "954cc2bfc565ebf8dd22875f37b3600d37f8810a80f671d477567f1001dee016",
+    "requirements.txt": "b014709fa592c36d759f65c47eade0d5f8dc0232a7f39a7c96148d238b576320"
+  },
+  "script_sha256": "24e03c5126c6a1c3bfe94cfb6b1a82557b9714d0bacab228529a4cd8edc727a6",
+  "samples": 8,
+  "codeword_length": 16384,
+  "message_length": 512,
+  "nominal_fpr": 1e-06,
+  "posterior_variance": 1.5,
+  "sigma": 0.5,
+  "attack_jobs": 0,
+  "gpu_used": false,
+  "scope": "Original PRC CPU sampling/unbinding/detection/decoding checks only; no image or native SemBind experiment"
+}

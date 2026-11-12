@@ -1,0 +1,13 @@
+{
+  "status": "failed",
+  "stage": "first original PRC Decode call",
+  "detected_before_decode": null,
+  "error": "TypeError: GF(2) arrays must have integer dtypes, not float64.",
+  "environment": "pgid_revalidation_py310",
+  "galois": "0.4.10",
+  "ldpc": "2.4.1",
+  "original_source_modified": false,
+  "gpu_used": false,
+  "scope": "Dependency compatibility failure, no completed PRC benchmark",
+  "detection_value_recorded": false
+}

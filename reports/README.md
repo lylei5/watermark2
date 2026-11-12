@@ -6,6 +6,7 @@
 
 | 研究 | 已完成证据与边界 |
 |---|---|
+| [PRC与模型资产](phase1_backend_audit_20261113/report.md) | PRC原码8/8 CPU往返；SD1.5/CLIP权重核验；未完成PRC-S图像实验 |
 | [随机错误身份工作点](phase1_wrong_key_null_20261113/report.md) | 300万次随机身份；167位0次误报，95%上界1.22963e-6；不代表固定用户自然图FPR |
 | [第一阶段规格审计](phase1_contract_20261113/report.md) | 最终论文设置、原GS布局与理论检测工作点 |
 | [连续语义区域](continuous_geometry_screen_20261113/report.md) | 24 条干净图验证；绑定和 BA 门槛未通过；未执行攻击 |

@@ -1,0 +1,161 @@
+{
+  "status": "complete",
+  "protocol_sha256": "bb65c8490e8cd1f870fe666c13db490d6435e3e8118fce551d8aaf9ab9c32ca8",
+  "prc_matches_sembind_ast": true,
+  "rows": [
+    {
+      "task": 0,
+      "detected": true,
+      "decoded_correctly": true
+    },
+    {
+      "task": 1,
+      "detected": true,
+      "decoded_correctly": true
+    },
+    {
+      "task": 2,
+      "detected": true,
+      "decoded_correctly": true
+    },
+    {
+      "task": 3,
+      "detected": true,
+      "decoded_correctly": true
+    },
+    {
+      "task": 4,
+      "detected": true,
+      "decoded_correctly": true
+    },
+    {
+      "task": 5,
+      "detected": true,
+      "decoded_correctly": true
+    },
+    {
+      "task": 6,
+      "detected": true,
+      "decoded_correctly": true
+    },
+    {
+      "task": 7,
+      "detected": true,
+      "decoded_correctly": true
+    }
+  ],
+  "passed": true,
+  "dependencies": {
+    "torch": "2.5.1",
+    "numpy": "1.26.0",
+    "scipy": "1.13.1",
+    "galois": "0.4.1",
+    "ldpc": "0.1.51",
+    "numba": "0.60.0"
+  },
+  "original_requirements": {
+    "galois": "0.4.1",
+    "ldpc": "0.1.51"
+  },
+  "model_files": {
+    "sd15": {
+      "root": "/data0/liyanlei/huggingface/hub/models--runwayml--stable-diffusion-v1-5/snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+      "files": {
+        "model_index.json": {
+          "bytes": 541,
+          "sha256": "e2f6f22e274374010aec30c79eb2d6e53fff4a36ac0225523a92cb2d41a83347"
+        },
+        "scheduler/scheduler_config.json": {
+          "bytes": 308,
+          "sha256": "699cce92eb7c122e2eb7dfdea78e6187fda76a5ed4a8e42319b85610e620e091"
+        },
+        "vae/config.json": {
+          "bytes": 547,
+          "sha256": "786a7d21647ddea6a04b9675c03d3cb45e90a2f3c6da5fbda2c54ade040036de"
+        },
+        "vae/diffusion_pytorch_model.safetensors": {
+          "bytes": 334643276,
+          "sha256": "a2b5134f4dbc140d9c11f11cba3233099e00af40f262f136c691fb7d38d2194c"
+        },
+        "safety_checker/config.json": {
+          "bytes": 4723,
+          "sha256": "5dd77a06cbd9b155060bd58deb81ffd1aafc1c6d7970acac674c1128bd4edfe2"
+        },
+        "safety_checker/model.safetensors": {
+          "bytes": 1215981830,
+          "sha256": "9d6a233ff6fd5ccb9f76fd99618d73369c52dd3d8222376384d0e601911089e8"
+        },
+        "text_encoder/config.json": {
+          "bytes": 617,
+          "sha256": "845df614cb9327ae7bbea027316246fae917827407da6df13572e41b5f93b4cc"
+        },
+        "text_encoder/model.safetensors": {
+          "bytes": 492265874,
+          "sha256": "d008943c017f0092921106440254dbbe00b6a285f7883ec8ba160c3faad88334"
+        },
+        "tokenizer/tokenizer_config.json": {
+          "bytes": 806,
+          "sha256": "00439066fcba73de57644cf41e4e3b9f2dbb09d7f3fc2005898ba52399045882"
+        },
+        "tokenizer/special_tokens_map.json": {
+          "bytes": 472,
+          "sha256": "c4864a9376a8401918425bed71fc14fc0e81f9b59ec45c1cf96cccb2df508eac"
+        },
+        "tokenizer/vocab.json": {
+          "bytes": 1059962,
+          "sha256": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349"
+        },
+        "feature_extractor/preprocessor_config.json": {
+          "bytes": 342,
+          "sha256": "2a1da83b5e1032aaeef397552ddb408dca0d8cd1dc58f61bf6abf38d6f33a0a2"
+        },
+        "unet/config.json": {
+          "bytes": 743,
+          "sha256": "78f474de6bab3d893868f37be97b636ae65c0df3073ed3256ca458ff599b5f96"
+        },
+        "unet/diffusion_pytorch_model.safetensors": {
+          "bytes": 3438167540,
+          "sha256": "19da7aaa4b880e59d56843f1fcb4dd9b599c28a1d9d9af7c1143057c8ffae9f1"
+        }
+      }
+    },
+    "clip_vitl14": {
+      "root": "/data0/liyanlei/genstego_sota_assets/model_weights/mas_grdh/clip/clip-vit-large-patch14-local",
+      "files": {
+        "config.json": {
+          "bytes": 4519,
+          "sha256": "8a09b467700c58138c29d53c605b34ebc69beaadd13274a8a2af8ad2c2f4032a"
+        },
+        "model.safetensors": {
+          "bytes": 1710540580,
+          "sha256": "a2bf730a0c7debf160f7a6b50b3aaf3703e7e88ac73de7a314903141db026dcb"
+        },
+        "preprocessor_config.json": {
+          "bytes": 316,
+          "sha256": "910e70b3956ac9879ebc90b22fb3bc8a75b6a0677814500101a4c072bd7857bd"
+        },
+        "tokenizer.json": {
+          "bytes": 2224003,
+          "sha256": "a83e0809aa4c3af7208b2df632a7a69668c6d48775b3c3fe4e1b1199d1f8b8f4"
+        },
+        "tokenizer_config.json": {
+          "bytes": 905,
+          "sha256": "deef455e52fa5e8151e339add0582e4235f066009601360999d3a9cda83b1129"
+        },
+        "special_tokens_map.json": {
+          "bytes": 389,
+          "sha256": "f8c0d6c39aee3f8431078ef6646567b0aba7f2246e9c54b8b99d55c22b707cbf"
+        },
+        "vocab.json": {
+          "bytes": 961143,
+          "sha256": "3f0c4f7d2086b61b38487075278ea9ed04edb53a03cbb045b86c27190fa8fb69"
+        }
+      }
+    }
+  },
+  "private_key_sha256": "15bcca5a6bf3a6bea78b8845bba036737d6a332b124282a7bb08d71e9e416b03",
+  "seconds": 76.27284297998995,
+  "completed_at": "2026-11-12T17:59:27.829936+00:00",
+  "scope": "Original PRC CPU sampling/unbinding/detection/decoding checks only; no image or native SemBind experiment",
+  "limitation": "Roundtrip success is not dependency equivalence or empirical FPR calibration. Original decode.py uses Detect OR Decode; individual nominal1e-6 thresholds do not automatically prove the union FPR1e-6."
+}

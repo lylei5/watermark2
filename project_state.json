@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-12T17:49:11.818055+00:00",
+  "updated_at": "2026-11-12T18:00:12.546303+00:00",
   "status": "phase1_trajectory_native_gs_running",
   "active_experiments": 1,
   "queued_experiments": 0,
@@ -59,6 +59,10 @@
   "evaluation_policy": "Unchanged published top-venue attacks only; full budgets; no attack development; matched absolute genuine detection",
   "current_decision": "Execute phase1 baseline working-point audit and observational trajectory probe; no carrier or attack variants",
   "completed_evidence": [
+    {
+      "path": "reports/phase1_backend_audit_20261113/report.md",
+      "scope": "PRC原码8/8 CPU往返；SD1.5与CLIP权重哈希；不构成图像复现"
+    },
     {
       "path": "reports/phase1_wrong_key_null_20261113/report.md",
       "scope": "300万次新随机身份，167位0次误报；条件于6个历史反演，不代表固定用户自然图FPR"
@@ -215,6 +219,14 @@
       5,
       4
     ],
-    "samples_per_dataset": 50
+    "samples_per_dataset": 50,
+    "backend_audit": {
+      "report": "reports/phase1_backend_audit_20261113/report.md",
+      "prc_cpu_roundtrips": 8,
+      "prc_image_benchmark_complete": false,
+      "sd15_assets_hashed": true,
+      "clip_vitl14_assets_hashed": true,
+      "gspp_complete_implementation_located": false
+    }
   }
 }
