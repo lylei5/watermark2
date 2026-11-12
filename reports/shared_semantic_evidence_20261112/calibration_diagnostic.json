@@ -1,0 +1,428 @@
+{
+  "scope": "Descriptive held-out-source semantic probability diagnostic; parameters remain frozen and no test decisions used",
+  "n": 60,
+  "query_nll": 0.23836752861883143,
+  "constant_nll": 0.29745503739611634,
+  "rows": [
+    {
+      "task": 0,
+      "condition": "clean",
+      "query_nll": 0.13305251664857565,
+      "constant_nll": 0.1946793907420012,
+      "semantic_ber": 0.0400390625
+    },
+    {
+      "task": 0,
+      "condition": "random_crop_ratio",
+      "query_nll": 0.1411698448148151,
+      "constant_nll": 0.2201697336944514,
+      "semantic_ber": 0.0517578125
+    },
+    {
+      "task": 0,
+      "condition": "random_drop_ratio",
+      "query_nll": 0.12633738822586338,
+      "constant_nll": 0.1776858287737011,
+      "semantic_ber": 0.0322265625
+    },
+    {
+      "task": 0,
+      "condition": "brightness_factor",
+      "query_nll": 0.13339629344609705,
+      "constant_nll": 0.1968035859880387,
+      "semantic_ber": 0.041015625
+    },
+    {
+      "task": 0,
+      "condition": "jpeg_ratio",
+      "query_nll": 0.13866723133059367,
+      "constant_nll": 0.21592134320237635,
+      "semantic_ber": 0.0498046875
+    },
+    {
+      "task": 0,
+      "condition": "gaussian_blur_r",
+      "query_nll": 0.13491878783470668,
+      "constant_nll": 0.1798100240197386,
+      "semantic_ber": 0.033203125
+    },
+    {
+      "task": 0,
+      "condition": "gaussian_std",
+      "query_nll": 0.13052505068884557,
+      "constant_nll": 0.20317617172615127,
+      "semantic_ber": 0.0439453125
+    },
+    {
+      "task": 0,
+      "condition": "median_blur_k",
+      "query_nll": 0.13638681623105242,
+      "constant_nll": 0.18193421926577613,
+      "semantic_ber": 0.0341796875
+    },
+    {
+      "task": 0,
+      "condition": "sp_prob",
+      "query_nll": 0.13293160801926263,
+      "constant_nll": 0.20105197648011375,
+      "semantic_ber": 0.04296875
+    },
+    {
+      "task": 0,
+      "condition": "resize_ratio",
+      "query_nll": 0.12723447563868007,
+      "constant_nll": 0.1883068050038887,
+      "semantic_ber": 0.037109375
+    },
+    {
+      "task": 3,
+      "condition": "clean",
+      "query_nll": 0.1980455080240091,
+      "constant_nll": 0.2796472005835018,
+      "semantic_ber": 0.0791015625
+    },
+    {
+      "task": 3,
+      "condition": "random_crop_ratio",
+      "query_nll": 1.1494181306269868,
+      "constant_nll": 0.75121854520383,
+      "semantic_ber": 0.2958984375
+    },
+    {
+      "task": 3,
+      "condition": "random_drop_ratio",
+      "query_nll": 1.9693516947770726,
+      "constant_nll": 1.0592268558792697,
+      "semantic_ber": 0.4375
+    },
+    {
+      "task": 3,
+      "condition": "brightness_factor",
+      "query_nll": 0.18368964815172717,
+      "constant_nll": 0.2690262243533142,
+      "semantic_ber": 0.07421875
+    },
+    {
+      "task": 3,
+      "condition": "jpeg_ratio",
+      "query_nll": 0.1906831054739797,
+      "constant_nll": 0.27539881009142675,
+      "semantic_ber": 0.0771484375
+    },
+    {
+      "task": 3,
+      "condition": "gaussian_blur_r",
+      "query_nll": 0.2446675001356482,
+      "constant_nll": 0.34974564370273975,
+      "semantic_ber": 0.111328125
+    },
+    {
+      "task": 3,
+      "condition": "gaussian_std",
+      "query_nll": 0.29207409384846983,
+      "constant_nll": 0.39647793911556506,
+      "semantic_ber": 0.1328125
+    },
+    {
+      "task": 3,
+      "condition": "median_blur_k",
+      "query_nll": 0.26048323559695064,
+      "constant_nll": 0.34974564370273975,
+      "semantic_ber": 0.111328125
+    },
+    {
+      "task": 3,
+      "condition": "sp_prob",
+      "query_nll": 0.32796770767268413,
+      "constant_nll": 0.4198440868219777,
+      "semantic_ber": 0.1435546875
+    },
+    {
+      "task": 3,
+      "condition": "resize_ratio",
+      "query_nll": 0.21849688846857873,
+      "constant_nll": 0.3200069102582145,
+      "semantic_ber": 0.09765625
+    },
+    {
+      "task": 1,
+      "condition": "clean",
+      "query_nll": 0.10914823032751353,
+      "constant_nll": 0.17343743828162608,
+      "semantic_ber": 0.0302734375
+    },
+    {
+      "task": 1,
+      "condition": "random_crop_ratio",
+      "query_nll": 0.1355178883204729,
+      "constant_nll": 0.23079070992463896,
+      "semantic_ber": 0.056640625
+    },
+    {
+      "task": 1,
+      "condition": "random_drop_ratio",
+      "query_nll": 0.10337797224899381,
+      "constant_nll": 0.16706485254351355,
+      "semantic_ber": 0.02734375
+    },
+    {
+      "task": 1,
+      "condition": "brightness_factor",
+      "query_nll": 0.12329254956705038,
+      "constant_nll": 0.19255519549596373,
+      "semantic_ber": 0.0390625
+    },
+    {
+      "task": 1,
+      "condition": "jpeg_ratio",
+      "query_nll": 0.11158741300768105,
+      "constant_nll": 0.1776858287737011,
+      "semantic_ber": 0.0322265625
+    },
+    {
+      "task": 1,
+      "condition": "gaussian_blur_r",
+      "query_nll": 0.1087121298666005,
+      "constant_nll": 0.16494065729747603,
+      "semantic_ber": 0.0263671875
+    },
+    {
+      "task": 1,
+      "condition": "gaussian_std",
+      "query_nll": 0.18049013650976153,
+      "constant_nll": 0.26265363861520163,
+      "semantic_ber": 0.0712890625
+    },
+    {
+      "task": 1,
+      "condition": "median_blur_k",
+      "query_nll": 0.10819583793936538,
+      "constant_nll": 0.17131324303558856,
+      "semantic_ber": 0.029296875
+    },
+    {
+      "task": 1,
+      "condition": "sp_prob",
+      "query_nll": 0.16057502722352957,
+      "constant_nll": 0.24990846713897658,
+      "semantic_ber": 0.0654296875
+    },
+    {
+      "task": 1,
+      "condition": "resize_ratio",
+      "query_nll": 0.13574414656485279,
+      "constant_nll": 0.2180455384484139,
+      "semantic_ber": 0.05078125
+    },
+    {
+      "task": 4,
+      "condition": "clean",
+      "query_nll": 0.1128339609341733,
+      "constant_nll": 0.19892778123407623,
+      "semantic_ber": 0.0419921875
+    },
+    {
+      "task": 4,
+      "condition": "random_crop_ratio",
+      "query_nll": 0.14325766379689342,
+      "constant_nll": 0.23716329566275152,
+      "semantic_ber": 0.0595703125
+    },
+    {
+      "task": 4,
+      "condition": "random_drop_ratio",
+      "query_nll": 0.18157431825100734,
+      "constant_nll": 0.28814398156765186,
+      "semantic_ber": 0.0830078125
+    },
+    {
+      "task": 4,
+      "condition": "brightness_factor",
+      "query_nll": 0.10572053073204879,
+      "constant_nll": 0.1904310002499262,
+      "semantic_ber": 0.0380859375
+    },
+    {
+      "task": 4,
+      "condition": "jpeg_ratio",
+      "query_nll": 0.10044805101500032,
+      "constant_nll": 0.16918904778955104,
+      "semantic_ber": 0.0283203125
+    },
+    {
+      "task": 4,
+      "condition": "gaussian_blur_r",
+      "query_nll": 0.10510916154142108,
+      "constant_nll": 0.18405841451181362,
+      "semantic_ber": 0.03515625
+    },
+    {
+      "task": 4,
+      "condition": "gaussian_std",
+      "query_nll": 0.11469888937543038,
+      "constant_nll": 0.20317617172615127,
+      "semantic_ber": 0.0439453125
+    },
+    {
+      "task": 4,
+      "condition": "median_blur_k",
+      "query_nll": 0.10708312900828987,
+      "constant_nll": 0.18618260975785114,
+      "semantic_ber": 0.0361328125
+    },
+    {
+      "task": 4,
+      "condition": "sp_prob",
+      "query_nll": 0.11096968355428971,
+      "constant_nll": 0.1925551954959637,
+      "semantic_ber": 0.0390625
+    },
+    {
+      "task": 4,
+      "condition": "resize_ratio",
+      "query_nll": 0.09966829197001315,
+      "constant_nll": 0.16918904778955102,
+      "semantic_ber": 0.0283203125
+    },
+    {
+      "task": 2,
+      "condition": "clean",
+      "query_nll": 0.2785655006333059,
+      "constant_nll": 0.39010535337745256,
+      "semantic_ber": 0.1298828125
+    },
+    {
+      "task": 2,
+      "condition": "random_crop_ratio",
+      "query_nll": 0.19592325045439907,
+      "constant_nll": 0.2966407625518019,
+      "semantic_ber": 0.0869140625
+    },
+    {
+      "task": 2,
+      "condition": "random_drop_ratio",
+      "query_nll": 0.20021050692176345,
+      "constant_nll": 0.2796472005835018,
+      "semantic_ber": 0.0791015625
+    },
+    {
+      "task": 2,
+      "condition": "brightness_factor",
+      "query_nll": 0.4305003435983963,
+      "constant_nll": 0.5218054586317784,
+      "semantic_ber": 0.1904296875
+    },
+    {
+      "task": 2,
+      "condition": "jpeg_ratio",
+      "query_nll": 0.2606184983342814,
+      "constant_nll": 0.3816085723933025,
+      "semantic_ber": 0.1259765625
+    },
+    {
+      "task": 2,
+      "condition": "gaussian_blur_r",
+      "query_nll": 0.2743816689981031,
+      "constant_nll": 0.3752359866551899,
+      "semantic_ber": 0.123046875
+    },
+    {
+      "task": 2,
+      "condition": "gaussian_std",
+      "query_nll": 0.4011010298970348,
+      "constant_nll": 0.48994252994121573,
+      "semantic_ber": 0.17578125
+    },
+    {
+      "task": 2,
+      "condition": "median_blur_k",
+      "query_nll": 0.2538831569023614,
+      "constant_nll": 0.3667392056710399,
+      "semantic_ber": 0.119140625
+    },
+    {
+      "task": 2,
+      "condition": "sp_prob",
+      "query_nll": 0.262883577602679,
+      "constant_nll": 0.3582424246868898,
+      "semantic_ber": 0.115234375
+    },
+    {
+      "task": 2,
+      "condition": "resize_ratio",
+      "query_nll": 0.27021943168921325,
+      "constant_nll": 0.3858569628853775,
+      "semantic_ber": 0.1279296875
+    },
+    {
+      "task": 5,
+      "condition": "clean",
+      "query_nll": 0.25823634455895217,
+      "constant_nll": 0.35186983894877727,
+      "semantic_ber": 0.1123046875
+    },
+    {
+      "task": 5,
+      "condition": "random_crop_ratio",
+      "query_nll": 0.19990383855599703,
+      "constant_nll": 0.28601978632161434,
+      "semantic_ber": 0.08203125
+    },
+    {
+      "task": 5,
+      "condition": "random_drop_ratio",
+      "query_nll": 0.3756197706316584,
+      "constant_nll": 0.458079601250653,
+      "semantic_ber": 0.1611328125
+    },
+    {
+      "task": 5,
+      "condition": "brightness_factor",
+      "query_nll": 0.32529486982326716,
+      "constant_nll": 0.45807960125065295,
+      "semantic_ber": 0.1611328125
+    },
+    {
+      "task": 5,
+      "condition": "jpeg_ratio",
+      "query_nll": 0.2668106372094883,
+      "constant_nll": 0.36673920567103985,
+      "semantic_ber": 0.119140625
+    },
+    {
+      "task": 5,
+      "condition": "gaussian_blur_r",
+      "query_nll": 0.24719396426598905,
+      "constant_nll": 0.33275208173443965,
+      "semantic_ber": 0.103515625
+    },
+    {
+      "task": 5,
+      "condition": "gaussian_std",
+      "query_nll": 0.18929909899748054,
+      "constant_nll": 0.24353588140086405,
+      "semantic_ber": 0.0625
+    },
+    {
+      "task": 5,
+      "condition": "median_blur_k",
+      "query_nll": 0.24293225810831132,
+      "constant_nll": 0.3115101292740645,
+      "semantic_ber": 0.09375
+    },
+    {
+      "task": 5,
+      "condition": "sp_prob",
+      "query_nll": 0.27889990314369584,
+      "constant_nll": 0.3709875961631149,
+      "semantic_ber": 0.12109375
+    },
+    {
+      "task": 5,
+      "condition": "resize_ratio",
+      "query_nll": 0.26207152939451817,
+      "constant_nll": 0.36461501042500233,
+      "semantic_ber": 0.1181640625
+    }
+  ]
+}

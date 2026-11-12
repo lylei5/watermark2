@@ -1,0 +1,27 @@
+{
+  "gain": 0.44218779327272295,
+  "noise_variance": 0.7558450907885409,
+  "temperature": 3.408085323917814,
+  "semantic_error": 0.102001953125,
+  "thresholds": {
+    "ba": 0.76171875,
+    "latent_soft_ba": 0.79296875,
+    "coordinate_soft_ba": 0.79296875,
+    "group_constant": 0.06578962447417816,
+    "group_query": 0.11935644478621538
+  },
+  "source_splits": {
+    "fit_sources": 6,
+    "calibration_sources": 6
+  },
+  "calibration_target": 0.95,
+  "threshold_operator": ">=",
+  "default_ba_operator": ">",
+  "default_ba_threshold": 0.70703125,
+  "protocol_sha256": "82cc5bdcdee60bb5ab1d78f8d3173ad5437d6fcf8a70bf339d26c6747c7de256",
+  "feature_manifests_sha256": {
+    "0": "71c4d22fbade562d7c6e2e00e2cac9d207a1bea26694940e9ce9e92a6f0b51b2",
+    "1": "7152143852aac2e81455a42fec0562d14af811313cfbcf55d880a2d000a389dc",
+    "2": "61686edee662f9ddfd71f108b45f855180034cfc48f897645c7d087b128cc3bc"
+  }
+}

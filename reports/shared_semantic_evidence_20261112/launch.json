@@ -1,0 +1,32 @@
+{
+  "pid": 24027,
+  "time_utc": "2026-11-12T06:13:16.721633+00:00",
+  "prelaunch_commit": "7a40f98fbbf8d34301338c9f703c31673636d60a",
+  "protocol_sha256": "82cc5bdcdee60bb5ab1d78f8d3173ad5437d6fcf8a70bf339d26c6747c7de256",
+  "devices": [
+    {
+      "index": 7,
+      "uuid": "GPU-9644fb82-cb6f-7311-8017-eaee41409bb7",
+      "memory_mib": 1,
+      "utilization": 0
+    },
+    {
+      "index": 5,
+      "uuid": "GPU-e6f35928-0155-f121-e707-1eaf3c14965c",
+      "memory_mib": 1,
+      "utilization": 0
+    },
+    {
+      "index": 4,
+      "uuid": "GPU-748b31fa-0510-6b56-f820-f3812266ed28",
+      "memory_mib": 1,
+      "utilization": 0
+    }
+  ],
+  "command": [
+    "/data0/liyanlei/watermark_research/envs/ddim_replay_py310/bin/python",
+    "/data0/liyanlei/watermark_research/runs/shared_semantic_evidence_20261112/run_semantic_evidence_pipeline.py",
+    "--run",
+    "/data0/liyanlei/watermark_research/runs/shared_semantic_evidence_20261112"
+  ]
+}

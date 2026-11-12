@@ -27,7 +27,7 @@
     "root": "/data0/liyanlei/watermark_research",
     "primary_python": "/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/bin/python"
   },
-  "latest_progress_report": "reports/shared_semantic_evidence_20261112/plan.md",
+  "latest_progress_report": "reports/shared_semantic_evidence_20261112/report.md",
   "independent_progress": {
     "independent_images": 320,
     "source_prompts": 112,
@@ -44,7 +44,7 @@
   },
   "evaluation_policy": "Published standard baselines only; matched absolute genuine detection; no custom attack development",
   "requires_user_resume": false,
-  "active_experiments": 0,
+  "active_experiments": 1,
   "current_findings": {
     "sembind_genuine_non_crop": {
       "accepted": 144,
@@ -186,7 +186,7 @@
     "python_package_index": "https://pypi.tuna.tsinghua.edu.cn/simple/",
     "automatic_aliyun_fallback": false
   },
-  "active_experiments_observation": "Quantile failure decomposed; next shared-semantic-evidence method and full evaluation protocol frozen before launch.",
+  "active_experiments_observation": "Development extraction and source-separated calibration completed; all120 code checks passed. Frozen decoder now evaluating12 new full-budget source images, followed automatically by full unchanged Imprint and audit.",
   "full_budget_findings": {
     "source_count_per_method": 4,
     "sem_reference_accepted": 4,
@@ -617,7 +617,7 @@
     "advance_to_published_forgery": false
   },
   "shared_semantic_evidence": {
-    "status": "prepared",
+    "status": "running",
     "protocol": "protocols/shared_semantic_evidence_20261112.json",
     "plan": "reports/shared_semantic_evidence_20261112/plan.md",
     "server_root": "/data0/liyanlei/watermark_research/runs/shared_semantic_evidence_20261112",
@@ -635,6 +635,39 @@
       4
     ],
     "unit_checks_passed": true,
-    "superiority_established": false
+    "superiority_established": false,
+    "coordinator_pid": 24027,
+    "stage": "heldout_full_genuine",
+    "prelaunch_commit": "7a40f98fbbf8d34301338c9f703c31673636d60a",
+    "worker_pids": [
+      45285,
+      45306,
+      45307
+    ],
+    "model_frozen": true,
+    "official_code_comparisons": 120,
+    "calibration_query_semantic_nll": 0.23836752861883143,
+    "calibration_constant_semantic_nll": 0.29745503739611634,
+    "report": "reports/shared_semantic_evidence_20261112/report.md",
+    "generation_observation": {
+      "time_utc": "2026-11-12T06:16:20.641948+00:00",
+      "auxiliary_generated_by_shard": [
+        true,
+        true,
+        true
+      ],
+      "pipeline": {
+        "status": "running",
+        "pid": 24027,
+        "time_utc": "2026-11-12T06:14:21.206499+00:00",
+        "stage": "heldout_full_genuine",
+        "worker_pids": [
+          45285,
+          45306,
+          45307
+        ]
+      },
+      "completion_wait": "filesystem creation events, not polling"
+    }
   }
 }

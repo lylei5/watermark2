@@ -61,3 +61,6 @@
 [On Calibration of Modern Neural Networks](https://proceedings.mlr.press/v70/guo17a.html)，Chuan Guo、Geoff Pleiss、Yu Sun、Kilian Q. Weinberger，ICML2017，PMLR70:1321–1330。题名、作者、会议信息及页码由官方PMLR记录核验；单参数温度缩放为已有校准技术。本项目的新实验只将其用作固定的语义置信度估计手段。
 
 本项目此前的分组内容似然已经包含共享语义变量边缘化；此次查询相关语义先验的价值必须通过相同分组、固定先验对照验证。不能以检索未返回同名方法作为新颖性证明。见[实验协议](../reports/shared_semantic_evidence_20261112/plan.md)。
+
+- [Latents-Inv:Robust Semantic Watermark via Dual-Path Mutual Information Redundancy for Diffusion Models](https://ijcai.org/proceedings/2026/75)，Cong Li、Lingyun Yu、Peiqi Jiang、Hongtao Xie，IJCAI2026 Main Track，661–669，DOI10.24963/ijcai.2026/75。题名、作者、页码、会议信息核对官方论文集；正文描述可逆双路径、互信息冗余及负例对比约束。说明联合训练和多路径冗余已有直接先例，本项目未复现其性能。
+- ForenMark检索返回出版商题名“Semantic keyed watermarking with evidence recovery for latent diffusion images”，但原页面此次返回403；仅列为待核查线索，不据摘要补全作者、卷页或推断与当前算法等价。出版商入口：https://www.sciencedirect.com/science/article/pii/S0950705126018101 。

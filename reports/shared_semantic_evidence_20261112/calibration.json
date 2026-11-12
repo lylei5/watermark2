@@ -1,0 +1,1174 @@
+{
+  "model": {
+    "gain": 0.44218779327272295,
+    "noise_variance": 0.7558450907885409,
+    "temperature": 3.408085323917814,
+    "semantic_error": 0.102001953125,
+    "thresholds": {
+      "ba": 0.76171875,
+      "latent_soft_ba": 0.79296875,
+      "coordinate_soft_ba": 0.79296875,
+      "group_constant": 0.06578962447417816,
+      "group_query": 0.11935644478621538
+    },
+    "source_splits": {
+      "fit_sources": 6,
+      "calibration_sources": 6
+    },
+    "calibration_target": 0.95,
+    "threshold_operator": ">=",
+    "default_ba_operator": ">",
+    "default_ba_threshold": 0.70703125,
+    "protocol_sha256": "82cc5bdcdee60bb5ab1d78f8d3173ad5437d6fcf8a70bf339d26c6747c7de256",
+    "feature_manifests_sha256": {
+      "0": "71c4d22fbade562d7c6e2e00e2cac9d207a1bea26694940e9ce9e92a6f0b51b2",
+      "1": "7152143852aac2e81455a42fec0562d14af811313cfbcf55d880a2d000a389dc",
+      "2": "61686edee662f9ddfd71f108b45f855180034cfc48f897645c7d087b128cc3bc"
+    }
+  },
+  "calibration": [
+    {
+      "task": 0,
+      "condition": "clean",
+      "scores": {
+        "ba": 1.0,
+        "latent_soft_ba": 1.0,
+        "coordinate_soft_ba": 1.0,
+        "group_constant": 0.49794447182956175,
+        "group_query": 0.559510150353895
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 0,
+      "condition": "random_crop_ratio",
+      "scores": {
+        "ba": 0.80078125,
+        "latent_soft_ba": 0.8046875,
+        "coordinate_soft_ba": 0.80078125,
+        "group_constant": 0.19945355032938006,
+        "group_query": 0.2044990445898157
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 0,
+      "condition": "random_drop_ratio",
+      "scores": {
+        "ba": 0.94140625,
+        "latent_soft_ba": 0.93359375,
+        "coordinate_soft_ba": 0.9140625,
+        "group_constant": 0.27656803040176997,
+        "group_query": 0.2768755847133295
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 0,
+      "condition": "brightness_factor",
+      "scores": {
+        "ba": 1.0,
+        "latent_soft_ba": 1.0,
+        "coordinate_soft_ba": 1.0,
+        "group_constant": 0.49158771193135165,
+        "group_query": 0.5541784544936479
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 0,
+      "condition": "jpeg_ratio",
+      "scores": {
+        "ba": 0.9921875,
+        "latent_soft_ba": 0.9921875,
+        "coordinate_soft_ba": 0.99609375,
+        "group_constant": 0.45630753210594943,
+        "group_query": 0.5297143896323406
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 0,
+      "condition": "gaussian_blur_r",
+      "scores": {
+        "ba": 0.99609375,
+        "latent_soft_ba": 1.0,
+        "coordinate_soft_ba": 0.99609375,
+        "group_constant": 0.44038676714913694,
+        "group_query": 0.47210776720477865
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 0,
+      "condition": "gaussian_std",
+      "scores": {
+        "ba": 0.98828125,
+        "latent_soft_ba": 0.98828125,
+        "coordinate_soft_ba": 0.99609375,
+        "group_constant": 0.40662383247305034,
+        "group_query": 0.46230734176926924
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 0,
+      "condition": "median_blur_k",
+      "scores": {
+        "ba": 1.0,
+        "latent_soft_ba": 1.0,
+        "coordinate_soft_ba": 1.0,
+        "group_constant": 0.48412476546779903,
+        "group_query": 0.5303310358727882
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 0,
+      "condition": "sp_prob",
+      "scores": {
+        "ba": 1.0,
+        "latent_soft_ba": 0.99609375,
+        "coordinate_soft_ba": 0.99609375,
+        "group_constant": 0.44935657032803633,
+        "group_query": 0.5095520817870421
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 0,
+      "condition": "resize_ratio",
+      "scores": {
+        "ba": 1.0,
+        "latent_soft_ba": 1.0,
+        "coordinate_soft_ba": 1.0,
+        "group_constant": 0.4817318715606582,
+        "group_query": 0.5378556248479216
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 3,
+      "condition": "clean",
+      "scores": {
+        "ba": 1.0,
+        "latent_soft_ba": 1.0,
+        "coordinate_soft_ba": 1.0,
+        "group_constant": 0.4130317027807523,
+        "group_query": 0.4944421076795546
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 3,
+      "condition": "random_crop_ratio",
+      "scores": {
+        "ba": 0.73828125,
+        "latent_soft_ba": 0.75,
+        "coordinate_soft_ba": 0.74609375,
+        "group_constant": -0.05797582923453685,
+        "group_query": -0.20763201405459064
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": false,
+        "latent_soft_ba": false,
+        "coordinate_soft_ba": false,
+        "group_constant": false,
+        "group_query": false
+      }
+    },
+    {
+      "task": 3,
+      "condition": "random_drop_ratio",
+      "scores": {
+        "ba": 0.6171875,
+        "latent_soft_ba": 0.55859375,
+        "coordinate_soft_ba": 0.58203125,
+        "group_constant": -0.25318438251353736,
+        "group_query": -0.5769674042992355
+      },
+      "decisions": {
+        "default_ba": false,
+        "ba": false,
+        "latent_soft_ba": false,
+        "coordinate_soft_ba": false,
+        "group_constant": false,
+        "group_query": false
+      }
+    },
+    {
+      "task": 3,
+      "condition": "brightness_factor",
+      "scores": {
+        "ba": 1.0,
+        "latent_soft_ba": 1.0,
+        "coordinate_soft_ba": 1.0,
+        "group_constant": 0.4169262858156132,
+        "group_query": 0.49992434437717487
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 3,
+      "condition": "jpeg_ratio",
+      "scores": {
+        "ba": 1.0,
+        "latent_soft_ba": 1.0,
+        "coordinate_soft_ba": 1.0,
+        "group_constant": 0.38564817819448904,
+        "group_query": 0.4621227073639085
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 3,
+      "condition": "gaussian_blur_r",
+      "scores": {
+        "ba": 0.96484375,
+        "latent_soft_ba": 0.99609375,
+        "coordinate_soft_ba": 0.99609375,
+        "group_constant": 0.2576294627717183,
+        "group_query": 0.3327729624614633
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 3,
+      "condition": "gaussian_std",
+      "scores": {
+        "ba": 0.91015625,
+        "latent_soft_ba": 0.9296875,
+        "coordinate_soft_ba": 0.95703125,
+        "group_constant": 0.1825693093955545,
+        "group_query": 0.22200582682627557
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 3,
+      "condition": "median_blur_k",
+      "scores": {
+        "ba": 0.98828125,
+        "latent_soft_ba": 0.99609375,
+        "coordinate_soft_ba": 1.0,
+        "group_constant": 0.29526960332469454,
+        "group_query": 0.3706158663146658
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 3,
+      "condition": "sp_prob",
+      "scores": {
+        "ba": 0.95703125,
+        "latent_soft_ba": 0.953125,
+        "coordinate_soft_ba": 0.97265625,
+        "group_constant": 0.20557646653817876,
+        "group_query": 0.2706579570268379
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 3,
+      "condition": "resize_ratio",
+      "scores": {
+        "ba": 0.98828125,
+        "latent_soft_ba": 1.0,
+        "coordinate_soft_ba": 1.0,
+        "group_constant": 0.3446634153877102,
+        "group_query": 0.42583396362653403
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 1,
+      "condition": "clean",
+      "scores": {
+        "ba": 1.0,
+        "latent_soft_ba": 1.0,
+        "coordinate_soft_ba": 1.0,
+        "group_constant": 0.5194706006212563,
+        "group_query": 0.5837209920134898
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 1,
+      "condition": "random_crop_ratio",
+      "scores": {
+        "ba": 0.78515625,
+        "latent_soft_ba": 0.8046875,
+        "coordinate_soft_ba": 0.82421875,
+        "group_constant": 0.25561433310073733,
+        "group_query": 0.2657282875744631
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 1,
+      "condition": "random_drop_ratio",
+      "scores": {
+        "ba": 0.9296875,
+        "latent_soft_ba": 0.92578125,
+        "coordinate_soft_ba": 0.9296875,
+        "group_constant": 0.3120877390184683,
+        "group_query": 0.3247221941669456
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 1,
+      "condition": "brightness_factor",
+      "scores": {
+        "ba": 0.9921875,
+        "latent_soft_ba": 1.0,
+        "coordinate_soft_ba": 1.0,
+        "group_constant": 0.4167069307952157,
+        "group_query": 0.47106357700157564
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 1,
+      "condition": "jpeg_ratio",
+      "scores": {
+        "ba": 1.0,
+        "latent_soft_ba": 1.0,
+        "coordinate_soft_ba": 1.0,
+        "group_constant": 0.5134759722054276,
+        "group_query": 0.5792142036989065
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 1,
+      "condition": "gaussian_blur_r",
+      "scores": {
+        "ba": 0.99609375,
+        "latent_soft_ba": 0.99609375,
+        "coordinate_soft_ba": 0.99609375,
+        "group_constant": 0.4488509447068647,
+        "group_query": 0.4940429812589092
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 1,
+      "condition": "gaussian_std",
+      "scores": {
+        "ba": 0.98828125,
+        "latent_soft_ba": 0.9921875,
+        "coordinate_soft_ba": 0.98828125,
+        "group_constant": 0.3621290315349516,
+        "group_query": 0.42856170928112314
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 1,
+      "condition": "median_blur_k",
+      "scores": {
+        "ba": 1.0,
+        "latent_soft_ba": 1.0,
+        "coordinate_soft_ba": 1.0,
+        "group_constant": 0.509758055009401,
+        "group_query": 0.5709948339871271
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 1,
+      "condition": "sp_prob",
+      "scores": {
+        "ba": 1.0,
+        "latent_soft_ba": 1.0,
+        "coordinate_soft_ba": 1.0,
+        "group_constant": 0.43043364763968445,
+        "group_query": 0.5161089545632356
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 1,
+      "condition": "resize_ratio",
+      "scores": {
+        "ba": 0.99609375,
+        "latent_soft_ba": 1.0,
+        "coordinate_soft_ba": 1.0,
+        "group_constant": 0.46087226209851756,
+        "group_query": 0.5394042093561788
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 4,
+      "condition": "clean",
+      "scores": {
+        "ba": 1.0,
+        "latent_soft_ba": 1.0,
+        "coordinate_soft_ba": 1.0,
+        "group_constant": 0.4941479382276796,
+        "group_query": 0.579952086991186
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 4,
+      "condition": "random_crop_ratio",
+      "scores": {
+        "ba": 0.7578125,
+        "latent_soft_ba": 0.78125,
+        "coordinate_soft_ba": 0.77734375,
+        "group_constant": 0.21877676716874636,
+        "group_query": 0.24084818320440513
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": false,
+        "latent_soft_ba": false,
+        "coordinate_soft_ba": false,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 4,
+      "condition": "random_drop_ratio",
+      "scores": {
+        "ba": 0.8359375,
+        "latent_soft_ba": 0.87109375,
+        "coordinate_soft_ba": 0.87890625,
+        "group_constant": 0.17146729697586857,
+        "group_query": 0.18877807599207191
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 4,
+      "condition": "brightness_factor",
+      "scores": {
+        "ba": 0.96875,
+        "latent_soft_ba": 0.98046875,
+        "coordinate_soft_ba": 0.9765625,
+        "group_constant": 0.37419609711218416,
+        "group_query": 0.4208326961091338
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 4,
+      "condition": "jpeg_ratio",
+      "scores": {
+        "ba": 0.9921875,
+        "latent_soft_ba": 0.99609375,
+        "coordinate_soft_ba": 1.0,
+        "group_constant": 0.3988797370626538,
+        "group_query": 0.44975840768172376
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 4,
+      "condition": "gaussian_blur_r",
+      "scores": {
+        "ba": 0.984375,
+        "latent_soft_ba": 0.99609375,
+        "coordinate_soft_ba": 0.99609375,
+        "group_constant": 0.3678731115168098,
+        "group_query": 0.4215435692373061
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 4,
+      "condition": "gaussian_std",
+      "scores": {
+        "ba": 0.92578125,
+        "latent_soft_ba": 0.94140625,
+        "coordinate_soft_ba": 0.9375,
+        "group_constant": 0.2465892605328136,
+        "group_query": 0.2597434677228859
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 4,
+      "condition": "median_blur_k",
+      "scores": {
+        "ba": 0.99609375,
+        "latent_soft_ba": 0.99609375,
+        "coordinate_soft_ba": 1.0,
+        "group_constant": 0.4730353585758926,
+        "group_query": 0.5465220332220614
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 4,
+      "condition": "sp_prob",
+      "scores": {
+        "ba": 0.9453125,
+        "latent_soft_ba": 0.92578125,
+        "coordinate_soft_ba": 0.953125,
+        "group_constant": 0.24022876448320138,
+        "group_query": 0.2518549674568875
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 4,
+      "condition": "resize_ratio",
+      "scores": {
+        "ba": 0.99609375,
+        "latent_soft_ba": 1.0,
+        "coordinate_soft_ba": 1.0,
+        "group_constant": 0.4624343429117769,
+        "group_query": 0.5185629970691339
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 2,
+      "condition": "clean",
+      "scores": {
+        "ba": 1.0,
+        "latent_soft_ba": 1.0,
+        "coordinate_soft_ba": 1.0,
+        "group_constant": 0.302932727032856,
+        "group_query": 0.41440608739842577
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 2,
+      "condition": "random_crop_ratio",
+      "scores": {
+        "ba": 0.80078125,
+        "latent_soft_ba": 0.80859375,
+        "coordinate_soft_ba": 0.8125,
+        "group_constant": 0.20606499750299628,
+        "group_query": 0.25570841752185547
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 2,
+      "condition": "random_drop_ratio",
+      "scores": {
+        "ba": 0.921875,
+        "latent_soft_ba": 0.8984375,
+        "coordinate_soft_ba": 0.90234375,
+        "group_constant": 0.254707026640719,
+        "group_query": 0.2794200035608543
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 2,
+      "condition": "brightness_factor",
+      "scores": {
+        "ba": 0.828125,
+        "latent_soft_ba": 0.86328125,
+        "coordinate_soft_ba": 0.88671875,
+        "group_constant": 0.06578962447417816,
+        "group_query": 0.11935644478621538
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 2,
+      "condition": "jpeg_ratio",
+      "scores": {
+        "ba": 0.9921875,
+        "latent_soft_ba": 0.99609375,
+        "coordinate_soft_ba": 1.0,
+        "group_constant": 0.28845032078259064,
+        "group_query": 0.3956407965934491
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 2,
+      "condition": "gaussian_blur_r",
+      "scores": {
+        "ba": 0.94140625,
+        "latent_soft_ba": 0.98046875,
+        "coordinate_soft_ba": 0.984375,
+        "group_constant": 0.24595775489347277,
+        "group_query": 0.31852690321796895
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 2,
+      "condition": "gaussian_std",
+      "scores": {
+        "ba": 0.859375,
+        "latent_soft_ba": 0.87890625,
+        "coordinate_soft_ba": 0.890625,
+        "group_constant": 0.08900498094764911,
+        "group_query": 0.1229465715025039
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 2,
+      "condition": "median_blur_k",
+      "scores": {
+        "ba": 1.0,
+        "latent_soft_ba": 1.0,
+        "coordinate_soft_ba": 1.0,
+        "group_constant": 0.31663932699800923,
+        "group_query": 0.4245210919969344
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 2,
+      "condition": "sp_prob",
+      "scores": {
+        "ba": 0.86328125,
+        "latent_soft_ba": 0.8828125,
+        "coordinate_soft_ba": 0.9140625,
+        "group_constant": 0.1239595061067183,
+        "group_query": 0.16361482171429817
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 2,
+      "condition": "resize_ratio",
+      "scores": {
+        "ba": 0.9921875,
+        "latent_soft_ba": 1.0,
+        "coordinate_soft_ba": 1.0,
+        "group_constant": 0.2892988281213562,
+        "group_query": 0.39619485431501866
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 5,
+      "condition": "clean",
+      "scores": {
+        "ba": 1.0,
+        "latent_soft_ba": 1.0,
+        "coordinate_soft_ba": 1.0,
+        "group_constant": 0.34116156650442836,
+        "group_query": 0.43462298152595225
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 5,
+      "condition": "random_crop_ratio",
+      "scores": {
+        "ba": 0.80859375,
+        "latent_soft_ba": 0.79296875,
+        "coordinate_soft_ba": 0.79296875,
+        "group_constant": 0.15344669159633836,
+        "group_query": 0.19423651688156382
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 5,
+      "condition": "random_drop_ratio",
+      "scores": {
+        "ba": 0.84375,
+        "latent_soft_ba": 0.81640625,
+        "coordinate_soft_ba": 0.84765625,
+        "group_constant": 0.10196947361328697,
+        "group_query": 0.15149430440807807
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 5,
+      "condition": "brightness_factor",
+      "scores": {
+        "ba": 0.8828125,
+        "latent_soft_ba": 0.9453125,
+        "coordinate_soft_ba": 0.9609375,
+        "group_constant": 0.1611538680609983,
+        "group_query": 0.22652010556527935
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 5,
+      "condition": "jpeg_ratio",
+      "scores": {
+        "ba": 0.98046875,
+        "latent_soft_ba": 0.99609375,
+        "coordinate_soft_ba": 1.0,
+        "group_constant": 0.2744981563002086,
+        "group_query": 0.36129946623510084
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 5,
+      "condition": "gaussian_blur_r",
+      "scores": {
+        "ba": 0.9453125,
+        "latent_soft_ba": 0.984375,
+        "coordinate_soft_ba": 0.96875,
+        "group_constant": 0.24704154944876594,
+        "group_query": 0.3050876305891669
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 5,
+      "condition": "gaussian_std",
+      "scores": {
+        "ba": 0.76171875,
+        "latent_soft_ba": 0.80078125,
+        "coordinate_soft_ba": 0.84375,
+        "group_constant": 0.05850995154435254,
+        "group_query": 0.058050432537489184
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": false,
+        "group_query": false
+      }
+    },
+    {
+      "task": 5,
+      "condition": "median_blur_k",
+      "scores": {
+        "ba": 1.0,
+        "latent_soft_ba": 0.99609375,
+        "coordinate_soft_ba": 0.99609375,
+        "group_constant": 0.34290708348254595,
+        "group_query": 0.40210514228585187
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 5,
+      "condition": "sp_prob",
+      "scores": {
+        "ba": 0.84765625,
+        "latent_soft_ba": 0.890625,
+        "coordinate_soft_ba": 0.90625,
+        "group_constant": 0.13894666112758935,
+        "group_query": 0.18539563980154422
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    },
+    {
+      "task": 5,
+      "condition": "resize_ratio",
+      "scores": {
+        "ba": 0.9921875,
+        "latent_soft_ba": 1.0,
+        "coordinate_soft_ba": 1.0,
+        "group_constant": 0.2813257631387029,
+        "group_query": 0.36074825610944794
+      },
+      "decisions": {
+        "default_ba": true,
+        "ba": true,
+        "latent_soft_ba": true,
+        "coordinate_soft_ba": true,
+        "group_constant": true,
+        "group_query": true
+      }
+    }
+  ],
+  "fit_semantic_nll": 0.26149361521349485,
+  "fit_constant_nll": 0.3294595791030815,
+  "scope": "Six fit sources and six separate calibration sources are prior development cohorts; only forthcoming sources test the frozen method. Correlated coordinates are not independent samples."
+}
