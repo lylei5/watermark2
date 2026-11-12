@@ -1,0 +1,20 @@
+{
+  "time_utc": "2026-11-12T09:31:11.566290+00:00",
+  "pid": 20195,
+  "command": [
+    "/data0/liyanlei/watermark_research/envs/ddim_replay_py310/bin/python",
+    "/data0/liyanlei/watermark_research/runs/semantic_feedback_pilot_20261112/run_semantic_feedback_pipeline.py",
+    "--run",
+    "/data0/liyanlei/watermark_research/runs/semantic_feedback_pilot_20261112"
+  ],
+  "prelaunch_commit": "f61c582",
+  "protocol_sha256": "4fe3da58970a62270b5a2192752415e107cdff80983b5e96e7947eed97ff38d0",
+  "parent_pid": 24027,
+  "mode": "Kernel process-exit event; no new GPU workers before parent audit completes",
+  "gpu_indices": [
+    7,
+    5,
+    4
+  ],
+  "max_gpus": 3
+}

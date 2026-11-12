@@ -713,7 +713,7 @@
     }
   },
   "semantic_feedback_pilot": {
-    "status": "frozen_pending_launch",
+    "status": "queued",
     "protocol": "protocols/semantic_feedback_pilot_20261112.json",
     "plan": "reports/semantic_feedback_pilot_20261112/plan.md",
     "server_root": "/data0/liyanlei/watermark_research/runs/semantic_feedback_pilot_20261112",
@@ -729,6 +729,23 @@
     "parent_pid": 24027,
     "unit_checks_passed": true,
     "audit_regression_records": 240,
-    "superiority_established": false
-  }
+    "superiority_established": false,
+    "coordinator_pid": 20195,
+    "prelaunch_commit": "f61c582",
+    "queue_observation": {
+      "time_utc": "2026-11-12T09:31:22.487115+00:00",
+      "pipeline": {
+        "status": "waiting",
+        "pid": 20195,
+        "time_utc": "2026-11-12T09:31:11.869367+00:00",
+        "stage": "parent_full_evaluation",
+        "parent_pid": 24027,
+        "mode": "pidfd process-exit event; no polling"
+      },
+      "parent_pidfd_open": true,
+      "new_gpu_workers": 0
+    },
+    "launch": "reports/semantic_feedback_pilot_20261112/launch.json"
+  },
+  "queued_experiments": 1
 }
