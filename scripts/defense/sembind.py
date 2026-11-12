@@ -1,12 +1,14 @@
-"""SemBind binding/unbinding (paper arXiv 2601.20310, sections 3.2-3.3).
+"""Released semantic-code extraction and legacy project binding interfaces.
 
-Implemented from the paper because the authors did not release the binding
-pipeline. The released masker (model.py + checkpoint) is used verbatim.
+This module contains no diffusion inversion implementation. Historical DDIM
+experiments used its embed/unbind interfaces with a public fixed-seed permutation;
+those interfaces are not a complete native SemBind reproduction.
 
-Deviation notes:
-- inversion uses this project's pinned DDIM 50-step inversion instead of the
-  paper's exact DPM-Solver inversion (inv_order=0); the GS decoder is unchanged.
-- the permutation pi is a fixed random permutation shared by embedder/verifier.
+The DPM component pipeline in run_anchor_binding_worker.py calls code() only.
+It uses load_official() from sembind_official_audit.py for inversion and the
+selected carrier module for binding/decoding. The full carrier in anchor_binding.py
+derives its actual permutation from a private binding_key, not self.perm here.
+See README.md for the execution paths and remaining reproduction differences.
 """
 import sys
 
@@ -37,6 +39,7 @@ class SemanticMasker:
         self.model.load_state_dict(state, strict=True)
         self.model.to(device).eval()
         self.L = int(np.prod(self.shape))
+        # Used by the legacy binding interfaces; code() does not read self.perm.
         generator = torch.Generator().manual_seed(permutation_seed)
         self.perm = torch.randperm(self.L, generator=generator)
 

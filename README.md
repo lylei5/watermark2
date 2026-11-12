@@ -6,13 +6,28 @@
 
 后续 CPU/GPU 实验统一在 249 服务器执行，本机仅保留代码、文档和必要研究记录，不再作为实验算力后备。
 
+## SemBind 实现状态
+
+**尚未完成 SemBind 的完整原生复现。** 当前实验使用作者发布的语义网络和生成／反演组件，水印载体、绑定、评分与实验编排仍包含项目实现。结果属于项目适配器内的机制比较，不能直接作为超过原生 SemBind 的证据。
+
+仓库保留了两条不同的实验路径：
+
+| 路径 | 反演与置换 | 代码入口 |
+|---|---|---|
+| 历史 DDIM 适配器 | DDIM 50步；旧绑定接口默认使用公开固定种子 `20260128` 的置换 | [sembind.py](scripts/defense/sembind.py) 的绑定接口及历史实验脚本 |
+| 当前 DPM 组件适配器 | 发布的 `exact_inversion` 组件，50步、`inv_order=0`、`decoder_inv=True`；实际载体置换由秘密 `binding_key` 的HMAC排序产生 | [run_anchor_binding_worker.py](scripts/defense/run_anchor_binding_worker.py)、[sembind_official_audit.py](scripts/defense/sembind_official_audit.py)、[anchor_binding.py](scripts/defense/anchor_binding.py) |
+
+当前工作进程从旧类中只调用 `SemanticMasker.code()` 提取语义码，不调用其 `embed()`、`unbind()` 或 `mask_from_bits()`；类中保留的公开种子置换不参与这条DPM链路的实际绑定。各冻结实验使用服务器源文件快照，具体文件哈希见对应协议，不能仅凭通用文件名判断执行路径。
+
+DPM加载器使用固定版本的 `DPMSolverMultistepScheduler`，并包含显存管理包装。`inv_order=0`关闭扩散反演的固定点修正；100步VAE decoder优化另行执行。函数名中的“exact”不表示启用了所有精确修正。当前 `BA > 181/256` 工作点也尚未与论文报告的理论FPR `10⁻⁶` 工作点对齐。配置与复现边界见[官方组件检查](reports/sembind_official_audit_20261110/report.md)及[基线证据清单](docs/DEFENSE_BASELINE_INVENTORY.md)。
+
 ## 当前进展
 
-[条件高斯传输嵌入](reports/semantic_transport_pilot_20261112/plan.md)已于2026-11-12 23:29在249启动：六个新来源、四组配对、240次完整合法验证。它通过单调分位耦合保留完整64/64符号码字，并以同符号组内幅值重排作为精确对照。[失败机制诊断](reports/decision_region_pilot_20261112/failure_evidence.md)记录已有结果中的登记偏差、语义距离重叠与载体可靠性取舍。当前尚无该方案的模型结果。
+[条件高斯传输嵌入](reports/semantic_transport_pilot_20261112/report.md)已于北京时间2026-11-13 00:32完成：六个新来源、四组配对、240次完整合法验证。full／saturated／transport／shuffled_transport分别接受53／52／55／57条，共60条每组；主候选未通过合法接受与绑定门槛，未启动Imprint扩展。[失败机制诊断](reports/decision_region_pilot_20261112/failure_evidence.md)记录已有结果中的登记偏差、语义距离重叠与载体可靠性取舍。
 
 [解码区域约束嵌入](reports/decision_region_pilot_20261112/report.md)于23:28完成240次完整验证：full59/60、saturated55/60、minimal56为44/60、random56为54/60；四组均干净6/6、错误身份0/300。最小反射改善了潜变量距离和辅助图LPIPS，但绑定差异增大，未通过推进门槛，未执行Imprint扩展。完整逐位误差分解与全部结果已归档。
 
-两项2026-11-12实验均已完成并核对服务器记录。[共享语义证据](reports/shared_semantic_evidence_20261112/report.md)包含120条合法查询和216条完整Imprint验证：默认BA接受合法图107/120、最终伪造1/12，查询置信度候选为85/120、0/12。该候选未在匹配合法检出率下建立收益。[固定三轮语义反馈](reports/semantic_feedback_pilot_20261112/report.md)完成180条合法查询：full 58/60、feedback 56/60、相同生成预算consensus 57/60；七项门槛未全部通过，未启动条件扩展的Imprint评估。当前无排队实验，尚未建立优于SemBind的结论。逐条复核见[完成审计](reports/completion_audit_20261112/audit.json)。
+两项2026-11-12实验均已完成并核对服务器记录。[共享语义证据](reports/shared_semantic_evidence_20261112/report.md)包含120条合法查询和216条完整Imprint验证：默认BA接受合法图107/120、最终伪造1/12，查询置信度候选为85/120、0/12。该候选未在匹配合法检出率下建立收益。[固定三轮语义反馈](reports/semantic_feedback_pilot_20261112/report.md)完成180条合法查询：full 58/60、feedback 56/60、相同生成预算consensus 57/60；七项门槛未全部通过，未启动条件扩展的Imprint评估。这两项流水线已结束，尚未建立优于SemBind的结论。逐条复核见[完成审计](reports/completion_audit_20261112/audit.json)。
 
 同日其他完整结果：[新执行Imprint](reports/imprint_fresh_revalidation_20261112/report.md)最终SemBind项目适配器接受0/4、GS接受4/4；[条件内容似然](reports/conditional_content_likelihood_20261112/report.md)合法接受30/40，低于校准BA的39/40，未增加拒绝收益；[共享内容锚](reports/conditional_anchor_pilot_20261112/report.md)未通过冻结鲁棒性门槛；[内容耦合分位载体](reports/conditional_quantile_pilot_20261112/report.md)合法接受48/60，低于full的59/60及独立采样对照54/60。各实验保留完整结果及适用边界。
 
