@@ -1,0 +1,336 @@
+{
+  "status": "complete",
+  "protocol_sha256": "6b318d8c33907ae09c3e6220e6bb7eb64418500394d9dab355d0d118fca079a8",
+  "summaries": [
+    {
+      "decoder": "original_tie0",
+      "message": "fresh_message",
+      "minimum_matching_bits": 166,
+      "accepted": 2,
+      "n": 3000000,
+      "rate": 6.666666666666667e-07,
+      "cp95": [
+        8.073643637820984e-08,
+        2.408227125587605e-06
+      ]
+    },
+    {
+      "decoder": "original_tie0",
+      "message": "fresh_message",
+      "minimum_matching_bits": 167,
+      "accepted": 0,
+      "n": 3000000,
+      "rate": 0.0,
+      "cp95": [
+        0.0,
+        1.2296257287143092e-06
+      ]
+    },
+    {
+      "decoder": "original_tie0",
+      "message": "fresh_message",
+      "minimum_matching_bits": 182,
+      "accepted": 0,
+      "n": 3000000,
+      "rate": 0.0,
+      "cp95": [
+        0.0,
+        1.2296257287143092e-06
+      ]
+    },
+    {
+      "decoder": "original_tie0",
+      "message": "fixed_ones112",
+      "minimum_matching_bits": 166,
+      "accepted": 5,
+      "n": 3000000,
+      "rate": 1.6666666666666667e-06,
+      "cp95": [
+        5.411623443861498e-07,
+        3.889439703758409e-06
+      ]
+    },
+    {
+      "decoder": "original_tie0",
+      "message": "fixed_ones112",
+      "minimum_matching_bits": 167,
+      "accepted": 2,
+      "n": 3000000,
+      "rate": 6.666666666666667e-07,
+      "cp95": [
+        8.073643637820984e-08,
+        2.408227125587605e-06
+      ]
+    },
+    {
+      "decoder": "original_tie0",
+      "message": "fixed_ones112",
+      "minimum_matching_bits": 182,
+      "accepted": 0,
+      "n": 3000000,
+      "rate": 0.0,
+      "cp95": [
+        0.0,
+        1.2296257287143092e-06
+      ]
+    },
+    {
+      "decoder": "original_tie0",
+      "message": "fixed_ones128",
+      "minimum_matching_bits": 166,
+      "accepted": 0,
+      "n": 3000000,
+      "rate": 0.0,
+      "cp95": [
+        0.0,
+        1.2296257287143092e-06
+      ]
+    },
+    {
+      "decoder": "original_tie0",
+      "message": "fixed_ones128",
+      "minimum_matching_bits": 167,
+      "accepted": 0,
+      "n": 3000000,
+      "rate": 0.0,
+      "cp95": [
+        0.0,
+        1.2296257287143092e-06
+      ]
+    },
+    {
+      "decoder": "original_tie0",
+      "message": "fixed_ones128",
+      "minimum_matching_bits": 182,
+      "accepted": 0,
+      "n": 3000000,
+      "rate": 0.0,
+      "cp95": [
+        0.0,
+        1.2296257287143092e-06
+      ]
+    },
+    {
+      "decoder": "original_tie0",
+      "message": "fixed_ones144",
+      "minimum_matching_bits": 166,
+      "accepted": 0,
+      "n": 3000000,
+      "rate": 0.0,
+      "cp95": [
+        0.0,
+        1.2296257287143092e-06
+      ]
+    },
+    {
+      "decoder": "original_tie0",
+      "message": "fixed_ones144",
+      "minimum_matching_bits": 167,
+      "accepted": 0,
+      "n": 3000000,
+      "rate": 0.0,
+      "cp95": [
+        0.0,
+        1.2296257287143092e-06
+      ]
+    },
+    {
+      "decoder": "original_tie0",
+      "message": "fixed_ones144",
+      "minimum_matching_bits": 182,
+      "accepted": 0,
+      "n": 3000000,
+      "rate": 0.0,
+      "cp95": [
+        0.0,
+        1.2296257287143092e-06
+      ]
+    },
+    {
+      "decoder": "fair_tie_diagnostic",
+      "message": "fresh_message",
+      "minimum_matching_bits": 166,
+      "accepted": 3,
+      "n": 3000000,
+      "rate": 1e-06,
+      "cp95": [
+        2.062240884423889e-07,
+        2.9224215474787457e-06
+      ]
+    },
+    {
+      "decoder": "fair_tie_diagnostic",
+      "message": "fresh_message",
+      "minimum_matching_bits": 167,
+      "accepted": 2,
+      "n": 3000000,
+      "rate": 6.666666666666667e-07,
+      "cp95": [
+        8.073643637820984e-08,
+        2.408227125587605e-06
+      ]
+    },
+    {
+      "decoder": "fair_tie_diagnostic",
+      "message": "fresh_message",
+      "minimum_matching_bits": 182,
+      "accepted": 0,
+      "n": 3000000,
+      "rate": 0.0,
+      "cp95": [
+        0.0,
+        1.2296257287143092e-06
+      ]
+    },
+    {
+      "decoder": "fair_tie_diagnostic",
+      "message": "fixed_ones112",
+      "minimum_matching_bits": 166,
+      "accepted": 1,
+      "n": 3000000,
+      "rate": 3.3333333333333335e-07,
+      "cp95": [
+        8.439269292485992e-09,
+        1.8572130485446618e-06
+      ]
+    },
+    {
+      "decoder": "fair_tie_diagnostic",
+      "message": "fixed_ones112",
+      "minimum_matching_bits": 167,
+      "accepted": 0,
+      "n": 3000000,
+      "rate": 0.0,
+      "cp95": [
+        0.0,
+        1.2296257287143092e-06
+      ]
+    },
+    {
+      "decoder": "fair_tie_diagnostic",
+      "message": "fixed_ones112",
+      "minimum_matching_bits": 182,
+      "accepted": 0,
+      "n": 3000000,
+      "rate": 0.0,
+      "cp95": [
+        0.0,
+        1.2296257287143092e-06
+      ]
+    },
+    {
+      "decoder": "fair_tie_diagnostic",
+      "message": "fixed_ones128",
+      "minimum_matching_bits": 166,
+      "accepted": 3,
+      "n": 3000000,
+      "rate": 1e-06,
+      "cp95": [
+        2.062240884423889e-07,
+        2.9224215474787457e-06
+      ]
+    },
+    {
+      "decoder": "fair_tie_diagnostic",
+      "message": "fixed_ones128",
+      "minimum_matching_bits": 167,
+      "accepted": 0,
+      "n": 3000000,
+      "rate": 0.0,
+      "cp95": [
+        0.0,
+        1.2296257287143092e-06
+      ]
+    },
+    {
+      "decoder": "fair_tie_diagnostic",
+      "message": "fixed_ones128",
+      "minimum_matching_bits": 182,
+      "accepted": 0,
+      "n": 3000000,
+      "rate": 0.0,
+      "cp95": [
+        0.0,
+        1.2296257287143092e-06
+      ]
+    },
+    {
+      "decoder": "fair_tie_diagnostic",
+      "message": "fixed_ones144",
+      "minimum_matching_bits": 166,
+      "accepted": 3,
+      "n": 3000000,
+      "rate": 1e-06,
+      "cp95": [
+        2.062240884423889e-07,
+        2.9224215474787457e-06
+      ]
+    },
+    {
+      "decoder": "fair_tie_diagnostic",
+      "message": "fixed_ones144",
+      "minimum_matching_bits": 167,
+      "accepted": 2,
+      "n": 3000000,
+      "rate": 6.666666666666667e-07,
+      "cp95": [
+        8.073643637820984e-08,
+        2.408227125587605e-06
+      ]
+    },
+    {
+      "decoder": "fair_tie_diagnostic",
+      "message": "fixed_ones144",
+      "minimum_matching_bits": 182,
+      "accepted": 0,
+      "n": 3000000,
+      "rate": 0.0,
+      "cp95": [
+        0.0,
+        1.2296257287143092e-06
+      ]
+    }
+  ],
+  "per_image": [
+    {
+      "source_index": 0,
+      "trials": 500000,
+      "fresh_message_hits_at167": 0
+    },
+    {
+      "source_index": 1,
+      "trials": 500000,
+      "fresh_message_hits_at167": 0
+    },
+    {
+      "source_index": 2,
+      "trials": 500000,
+      "fresh_message_hits_at167": 0
+    },
+    {
+      "source_index": 3,
+      "trials": 500000,
+      "fresh_message_hits_at167": 0
+    },
+    {
+      "source_index": 4,
+      "trials": 500000,
+      "fresh_message_hits_at167": 0
+    },
+    {
+      "source_index": 5,
+      "trials": 500000,
+      "fresh_message_hits_at167": 0
+    }
+  ],
+  "bit_observations": 768000000,
+  "tie_bits": 76302705,
+  "tie_fraction": 0.09935248046875,
+  "decoded_one_fraction": 0.45032553645833334,
+  "fair_decoded_one_fraction": 0.49999588671875,
+  "original_source_decoder_checks": 16,
+  "seconds": 259.33760650095064,
+  "completed_at": "2026-11-12T17:41:39.423532+00:00",
+  "scope": "Not a fixed-user natural-image FPR or fresh image-generation benchmark. Published source remains unchanged.",
+  "gpu_used": false
+}

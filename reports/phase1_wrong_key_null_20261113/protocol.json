@@ -1,0 +1,58 @@
+{
+  "frozen_at": "2026-11-12T17:37:20.085307+00:00",
+  "trials": 3000000,
+  "trials_per_source": 500000,
+  "batch": 512,
+  "sources": [
+    {
+      "path": "/data0/liyanlei/watermark_research/runs/continuous_geometry_screen_20261113_v2/genuine_0/latents/000_full_00.npy",
+      "sha256": "6e7fd761bcf219c9f32785395f5615f769cbc764d6b02a626b12fabb837a7131",
+      "source_task": 0
+    },
+    {
+      "path": "/data0/liyanlei/watermark_research/runs/continuous_geometry_screen_20261113_v2/genuine_0/latents/003_full_00.npy",
+      "sha256": "d11f5c19b595c5561b2c6fd365d25dbd90746ce737df33c585b65516bd3b3871",
+      "source_task": 3
+    },
+    {
+      "path": "/data0/liyanlei/watermark_research/runs/continuous_geometry_screen_20261113_v2/genuine_1/latents/001_full_00.npy",
+      "sha256": "bf32478922bed7c5305a5ee44cc7b671d464c49fcfe2ad2c6b4b699efe7ed355",
+      "source_task": 1
+    },
+    {
+      "path": "/data0/liyanlei/watermark_research/runs/continuous_geometry_screen_20261113_v2/genuine_1/latents/004_full_00.npy",
+      "sha256": "cc92031a5ac459e8469a8b243fda52e4ccfae3eb0d9b23a05c653fdd29ed26d5",
+      "source_task": 4
+    },
+    {
+      "path": "/data0/liyanlei/watermark_research/runs/continuous_geometry_screen_20261113_v2/genuine_2/latents/002_full_00.npy",
+      "sha256": "0b5253103fd7193ea6c92a8bb8f5064f94630c4e20ad3fa4d00861e1e215ce60",
+      "source_task": 2
+    },
+    {
+      "path": "/data0/liyanlei/watermark_research/runs/continuous_geometry_screen_20261113_v2/genuine_2/latents/005_full_00.npy",
+      "sha256": "e916c2e4da8fcce46ee4aa50187ce7d9647b7ddc21c35b458b247a453ee362cf",
+      "source_task": 5
+    }
+  ],
+  "generator": "Separate ChaCha20 streams for fresh OTP identities, messages, and diagnostic fair ties",
+  "source_sha256": {
+    "/data0/liyanlei/watermark_research/runs/phase1_contract_20261113/gs_watermark.py": "70ed2e4bb0d01baeaa228c0c6aef285b96726f9ae73dcdddd2fa90c54a6609b4",
+    "/data0/liyanlei/watermark_research/tools/measure_phase1_wrong_key_null.py": "5e0a6b4fc030451abceb6383df6955315764b0a8180f72a027cdb158ee6f6564"
+  },
+  "private_rng_sha256": "bded340e7cf714f8181848eb4a074a0b40a9b1392783d02585410d17c4ab7763",
+  "message_bits": 256,
+  "repetitions": 64,
+  "working_points": [
+    166,
+    167,
+    182
+  ],
+  "original_gs_tau": 0.6484375,
+  "main": "Fresh random identity and message for every trial, conditional on six fixed historical DPM image inversions",
+  "controls": "Fixed messages with112/128/144 ones; original tie0 and independent fair-tie diagnostic",
+  "claim_limit": "Not a fixed-user natural-image FPR or fresh image-generation benchmark. Published source remains unchanged.",
+  "gpu_used": false,
+  "model_calls": 0,
+  "attack_jobs": 0
+}

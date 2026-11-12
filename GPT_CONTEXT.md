@@ -1,6 +1,6 @@
 # Research handoff: content-bound diffusion watermark defense
 
-Authoritative execution state: [project_state.json](project_state.json). Completed evidence: [reports/README.md](reports/README.md). Updated 2026-11-13. Phase1 contract audit is complete; model experiments are being prepared. Latest report: reports/phase1_contract_20261113/report.md.
+Authoritative execution state: [project_state.json](project_state.json). Completed evidence: [reports/README.md](reports/README.md). Updated 2026-11-13. Phase1 contract audit and3,000,000 randomized-identity null trials are complete; model experiments are being prepared. Latest report: reports/phase1_wrong_key_null_20261113/report.md. The167-bit null had0/3,000,000 accepts with two-sided95% upper1.22963e-6; this is conditional on six historical inversions, not fixed-user natural-image FPR.
 
 ## Baseline and implementation
 
