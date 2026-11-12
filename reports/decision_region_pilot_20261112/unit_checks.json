@@ -1,0 +1,186 @@
+{
+  "passed": true,
+  "identities": 16,
+  "roundtrips": 64,
+  "rows": [
+    {
+      "identity": 0,
+      "distortion": {
+        "full": 32639.526116440764,
+        "saturated": 32341.58271256204,
+        "minimal56": 9660.939989833572,
+        "random56": 24467.455757217595
+      },
+      "flips": 6160
+    },
+    {
+      "identity": 1,
+      "distortion": {
+        "full": 32566.99925944743,
+        "saturated": 31746.46560300061,
+        "minimal56": 9422.126031090318,
+        "random56": 23968.891168771923
+      },
+      "flips": 6082
+    },
+    {
+      "identity": 2,
+      "distortion": {
+        "full": 32664.9741336581,
+        "saturated": 33292.12701302933,
+        "minimal56": 9984.100697596128,
+        "random56": 25016.427359103294
+      },
+      "flips": 6076
+    },
+    {
+      "identity": 3,
+      "distortion": {
+        "full": 32427.537530749243,
+        "saturated": 32666.640759756785,
+        "minimal56": 9453.712897949603,
+        "random56": 24595.00686502569
+      },
+      "flips": 6088
+    },
+    {
+      "identity": 4,
+      "distortion": {
+        "full": 32906.27715060491,
+        "saturated": 32864.86193788189,
+        "minimal56": 9722.778248733754,
+        "random56": 24884.24435700094
+      },
+      "flips": 6206
+    },
+    {
+      "identity": 5,
+      "distortion": {
+        "full": 32481.689248143055,
+        "saturated": 32405.13008467384,
+        "minimal56": 9513.334872153562,
+        "random56": 24352.34693503977
+      },
+      "flips": 6100
+    },
+    {
+      "identity": 6,
+      "distortion": {
+        "full": 32747.53896119752,
+        "saturated": 32755.89118161305,
+        "minimal56": 9753.352325832071,
+        "random56": 24557.284780421385
+      },
+      "flips": 6136
+    },
+    {
+      "identity": 7,
+      "distortion": {
+        "full": 33084.335359276825,
+        "saturated": 33951.53882794103,
+        "minimal56": 10168.157452495412,
+        "random56": 25496.93906209394
+      },
+      "flips": 6224
+    },
+    {
+      "identity": 8,
+      "distortion": {
+        "full": 32855.15370914106,
+        "saturated": 33663.279342881986,
+        "minimal56": 9743.406894273974,
+        "random56": 25444.54723111824
+      },
+      "flips": 6215
+    },
+    {
+      "identity": 9,
+      "distortion": {
+        "full": 32983.35108913858,
+        "saturated": 33138.24127975148,
+        "minimal56": 9777.615349678468,
+        "random56": 24985.020681593465
+      },
+      "flips": 6152
+    },
+    {
+      "identity": 10,
+      "distortion": {
+        "full": 32823.922347839776,
+        "saturated": 33288.548031425555,
+        "minimal56": 9852.303176750032,
+        "random56": 25299.29901925926
+      },
+      "flips": 6170
+    },
+    {
+      "identity": 11,
+      "distortion": {
+        "full": 32396.550535068796,
+        "saturated": 32585.311656791855,
+        "minimal56": 9556.479315906996,
+        "random56": 24372.279985699726
+      },
+      "flips": 6068
+    },
+    {
+      "identity": 12,
+      "distortion": {
+        "full": 33191.548207313295,
+        "saturated": 33792.60437424196,
+        "minimal56": 9997.720750854991,
+        "random56": 25265.74919767722
+      },
+      "flips": 6108
+    },
+    {
+      "identity": 13,
+      "distortion": {
+        "full": 33031.16500503781,
+        "saturated": 33455.302585433004,
+        "minimal56": 9982.332175314728,
+        "random56": 25125.54988631453
+      },
+      "flips": 6187
+    },
+    {
+      "identity": 14,
+      "distortion": {
+        "full": 32588.116560272312,
+        "saturated": 31924.847114609467,
+        "minimal56": 9447.521541935115,
+        "random56": 23827.278298056757
+      },
+      "flips": 6157
+    },
+    {
+      "identity": 15,
+      "distortion": {
+        "full": 32147.58783292083,
+        "saturated": 31840.643888203067,
+        "minimal56": 9285.836022475785,
+        "random56": 23840.078872469785
+      },
+      "flips": 6121
+    }
+  ],
+  "ideal_small_system_output_counts": [
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16,
+    16
+  ],
+  "scope": "Algebraic and combinatorial tests, not image robustness or cryptographic security proof"
+}

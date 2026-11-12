@@ -81,11 +81,16 @@ def main():
                 enrollment=code(aux,out/'codes'/f'{task:03}_aux.npz')
                 for arm in plan['arms']:
                     initial=embed(auxz,enrollment,Path(plan['identity_root']),task,arm)
+                    if plan.get('capture_initial',False):
+                        np.save(out/'latents'/f'{task:03}_{arm}_initial.npy',initial)
                     ref,_,_=inversion.generate(prompt=item['caption'],guidance_scale=7.5,num_inference_steps=50,solver_order=1,pipe=pipe,init_latents=torch.from_numpy(initial).cuda())
                     refpath=out/'images'/f'{task:03}_{arm}.png';ref.save(refpath)
                     refcode=code(ref,out/'codes'/f'{task:03}_{arm}.npz')
                     references.append(dict(task=task,arm=arm,image=str(refpath.relative_to(run)),image_sha256=sha(refpath),
                         auxiliary=str(auxpath.relative_to(run)),semantic_mismatch=float((refcode!=enrollment).mean())))
+                    if plan.get('capture_initial',False):
+                        ip=out/'latents'/f'{task:03}_{arm}_initial.npy'
+                        references[-1].update(initial_latent=str(ip.relative_to(run)),initial_latent_sha256=sha(ip))
                     for c,condition in enumerate(plan['conditions']):
                         jid=f'{task:03}_{arm}_{c:02}';seed=2026111200+task*100+c
                         if condition['name']=='clean':query=ref.copy()
