@@ -946,5 +946,18 @@
     "conditional_forgery_records": 432,
     "unit_checks_passed": true,
     "superiority_established": false
+  },
+  "semantic_transport_pilot": {
+    "status": "prepared_not_launched",
+    "protocol": "protocols/semantic_transport_pilot_20261112.json",
+    "protocol_sha256": "df38260a3811a858c10c02c1af4287ec145515108842ca612891d515de95b464",
+    "plan": "reports/semantic_transport_pilot_20261112/plan.md",
+    "server_root": "/data0/liyanlei/watermark_research/runs/semantic_transport_pilot_20261112",
+    "genuine_records_planned": 240,
+    "wrong_identity_pairs_planned": 1200,
+    "conditional_imprint_jobs": 24,
+    "conditional_forgery_records": 432,
+    "unit_checks_passed": true,
+    "superiority_established": false
   }
 }

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "roundtrips": 64,
+  "central_quantile_and_inverse_checks": true,
+  "full_sign_match": true,
+  "within_orthant_permutation_preserves_magnitudes": true,
+  "rearrangement_cost_checks": true,
+  "illustrative_gaussian_sample": {
+    "n": 200000,
+    "mean": 0.001981971086934209,
+    "second_moment": 0.9961066973029052,
+    "mse": 0.8381754460179917
+  },
+  "limitation": "Monte Carlo moments are descriptive; distribution preservation follows only under the stated ideal independent-cipher model.",
+  "source_sha256": "0925ae2c35fd2fadcdeee75494d1e0280182ccdba4cc1988ace54591ca2c9b21"
+}

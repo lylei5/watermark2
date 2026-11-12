@@ -1,0 +1,221 @@
+{
+  "paths": {
+    "root": "/data0/liyanlei/watermark_research/private_eval/sembind_chain_revalidation_20261111",
+    "output": "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/output",
+    "official": "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/official",
+    "scheduler": "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/scheduling_dpmsolver_multistep.py",
+    "model": "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c",
+    "semantic": "/data0/liyanlei/watermark_research/models/sembind",
+    "coverlock": "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111"
+  },
+  "chain_run": "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111",
+  "distortion_source": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/gs_image_utils.py",
+  "conditions": [
+    {
+      "name": "clean",
+      "value": null
+    },
+    {
+      "name": "random_crop_ratio",
+      "value": 0.6
+    },
+    {
+      "name": "random_drop_ratio",
+      "value": 0.8
+    },
+    {
+      "name": "brightness_factor",
+      "value": 6
+    },
+    {
+      "name": "jpeg_ratio",
+      "value": 25
+    },
+    {
+      "name": "gaussian_blur_r",
+      "value": 4
+    },
+    {
+      "name": "gaussian_std",
+      "value": 0.05
+    },
+    {
+      "name": "median_blur_k",
+      "value": 7
+    },
+    {
+      "name": "sp_prob",
+      "value": 0.05
+    },
+    {
+      "name": "resize_ratio",
+      "value": 0.25
+    }
+  ],
+  "covers": [
+    {
+      "path": "/data0/liyanlei/watermark_research/runs/published_imprint_dpm_full_20261110/inputs/000_cover.png",
+      "sha256": "996b65b746a3de367e27db378a125986637d70f4cbbe03e558c915b80bb2dc80"
+    },
+    {
+      "path": "/data0/liyanlei/watermark_research/runs/published_imprint_dpm_full_20261110/inputs/001_cover.png",
+      "sha256": "59d114f57425a083cb377addd169eafeb8b547be801739991bfa55a0821596dc"
+    },
+    {
+      "path": "/data0/liyanlei/watermark_research/runs/published_imprint_dpm_full_20261110/inputs/002_cover.png",
+      "sha256": "60fc8bd63c4d2292bf86f2e9160bd0bca3acbfab2382626bcd7f1bdac8b8f34e"
+    },
+    {
+      "path": "/data0/liyanlei/watermark_research/runs/published_imprint_dpm_full_20261110/inputs/003_cover.png",
+      "sha256": "c968a0ca34f02b68da5865ee21dc0a99aee4e1261acf314f4eb2d906fe271b2c"
+    }
+  ],
+  "hf_home": "/data0/liyanlei/watermark_research/cache/huggingface",
+  "upstream": "/data0/liyanlei/watermark_research/third_party/semantic-forgery",
+  "attack_python": "/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/bin/python",
+  "external_sha256": {
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/official/inversion.py": "dcf0dd6e9b5af1e64c24fe5c3c16473be54f1936c44da096f85b0437bf2fb14b",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/official/model.py": "ee22217258acd3c86899ce616cc5d7dbb6d14948208145a1daa7ace0c1943da3",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/official/src/optim_utils.py": "d96765a945a6d26514799bc6d8da0afc74f63a3482ff02e4ebd9391eb0dde344",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/official/src/modified_stable_diffusion.py": "fc4ac3795d51821c0a7a10fb57c28ecb414cc47e4af5629e6bfdaaccdc709ba2",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/official/src/inverse_stable_diffusion.py": "64027a1a974bb018d8569fa670802996e6ed0a87ba94f9151f574dd33326ef17",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/scripts/codeword_binding.py": "f49aa1342031a1c54be17bb4153b79150e5f70903719275c37329bf093186c59",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/scripts/sembind_official_audit.py": "52fde572e2f9ed0f0ccb2774e03185c223400886b38cabf83ee1c401ecb17f03",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/scripts/sembind.py": "4ef939f5559403bb033e0d1650930b113cce050b82861c886522074ada39a3cf",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/run_sembind_chain_revalidation.py": "e8a797c3c618a9addfb344ca9a7025ecfcc0b3666225d772b6af9d2789ede181",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/scheduling_dpmsolver_multistep.py": "c0902d1446e51c33be9b0deb5b9a9e2694e7930620a95d5ee8bef024607ed5ff",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/paths.json": "a5d30553bd57ed22902a1e63bffb8ffff2b0f8363e7fe8603c478627f37592ac",
+    "/data0/liyanlei/watermark_research/models/sembind/sembind_masker.pth": "85f98477bc5c3ae37d429b527d852384fefe70a4c69b25b483759635f3e9ebfd",
+    "/data0/liyanlei/watermark_research/models/sembind/dinov2-giant/config.json": "15d2e68b709674c0eb9bb5cc8b73e57ebe9a169a425bef224f46ae10053806a2",
+    "/data0/liyanlei/watermark_research/models/sembind/dinov2-giant/.gitattributes": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361",
+    "/data0/liyanlei/watermark_research/models/sembind/dinov2-giant/model.safetensors": "917d3c470db999d32a312f8542149be91c7cbac61ee8fb4b67ae3d82b79ce21f",
+    "/data0/liyanlei/watermark_research/models/sembind/dinov2-giant/preprocessor_config.json": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
+    "/data0/liyanlei/watermark_research/models/sembind/dinov2-giant/README.md": "129a5b66134a5739a3c35033483ca00427f497ce5052d8cf8e2446dac19eec1b",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/model_index.json": "518553e098fdaa4153d9a92139e344e44f53bb329c22f383293e3099c4f1bad2",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/scheduler/scheduler_config.json": "11ac5627d7df0fa344b875c4b5722b1767a8a2aa1684c2cf8b4d614300127234",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/vae/config.json": "424117cb534ce03497c41305ed868980123917b2b6abba4bbaa615e968772903",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/vae/diffusion_pytorch_model.safetensors": "a1d993488569e928462932c8c38a0760b874d166399b14414135bd9c42df5815",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/text_encoder/config.json": "7e33bfc475f6cf76e69b28b101993ca834d1f22ff4d35caefde32d63d4f42fba",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/text_encoder/model.safetensors": "cce6febb0b6d876ee5eb24af35e27e764eb4f9b1d0b7c026c8c3333d4cfc916c",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/tokenizer/merges.txt": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/tokenizer/tokenizer_config.json": "d562b18a0c6d32a168fce3d7a342fce64579ebacffb98fb71b0affc494fc32d8",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/tokenizer/special_tokens_map.json": "f118ab3a983206e4f32583448de6bd6aae4ee21869135cef1f5848a753cdaab6",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/tokenizer/vocab.json": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/feature_extractor/preprocessor_config.json": "2a1da83b5e1032aaeef397552ddb408dca0d8cd1dc58f61bf6abf38d6f33a0a2",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/unet/config.json": "ce0c6d379e3b1d3e1f79338de70c80a1e36f17a6372439a8249b6fb0dfa1b608",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/unet/diffusion_pytorch_model.safetensors": "6dfae3e5f7d459b50f4b0850ead945972c75bb0e1897628933e169eb43974214",
+    "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/gs_image_utils.py": "aa0dd86b4543bde39983e5b7ec8fd487fba476d7a435f83308891e187ee93fbb",
+    "/data0/liyanlei/watermark_research/private_eval/semantic_feedback_pilot_20261112/004.json": "9d498747eb1fead675e44224d94ea2e0fac8280f7ffe22339b28f43b491777a0",
+    "/data0/liyanlei/watermark_research/private_eval/semantic_feedback_pilot_20261112/002.json": "992d4f8062a1a4d81c3ced5e657d863130561ab9259888810579344496abfcb8",
+    "/data0/liyanlei/watermark_research/private_eval/semantic_feedback_pilot_20261112/005.json": "0be8de5d11af22a39f965cc13f0d2e5230aa8078753da7f3e87db00ec0e76192",
+    "/data0/liyanlei/watermark_research/private_eval/semantic_feedback_pilot_20261112/000.json": "e153ac02071456973055fd8e77ceb345743b05c93ab08650d04cc7b2fdc0e9eb",
+    "/data0/liyanlei/watermark_research/private_eval/semantic_feedback_pilot_20261112/003.json": "cc23123a2c7299565db8cb8e6a594c4ecb8326d2ef38adc1d90b478e2d215697",
+    "/data0/liyanlei/watermark_research/private_eval/semantic_feedback_pilot_20261112/001.json": "ba86d726bca0bd5c63b4517d29e72d002dd4c7cb05c75b09fc71bde562a5c8a7"
+  },
+  "purpose": "Monotone conditional Gaussian transport couples the semantic preview to a fully matching sign codeword",
+  "freeze_time_utc": "2026-11-12T15:12:57.076217+00:00",
+  "sources": [
+    {
+      "task": 0,
+      "caption": "A red tram passing through a rainy city street with reflections on the pavement.",
+      "aux_seed": 202611128100
+    },
+    {
+      "task": 1,
+      "caption": "A ceramic tea set on a wooden table beside a bamboo garden.",
+      "aux_seed": 202611128101
+    },
+    {
+      "task": 2,
+      "caption": "A small sailboat on a calm lake beneath a pale sunrise.",
+      "aux_seed": 202611128102
+    },
+    {
+      "task": 3,
+      "caption": "A snow-covered log cabin surrounded by tall pine trees.",
+      "aux_seed": 202611128103
+    },
+    {
+      "task": 4,
+      "caption": "An orange tabby cat stretching on a grey sofa beside a bookcase.",
+      "aux_seed": 202611128104
+    },
+    {
+      "task": 5,
+      "caption": "A silver microscope on a laboratory bench against a blue background.",
+      "aux_seed": 202611128105
+    }
+  ],
+  "identity_root": "/data0/liyanlei/watermark_research/private_eval/semantic_transport_pilot_20261112",
+  "arms": [
+    "full",
+    "saturated",
+    "transport",
+    "shuffled_transport"
+  ],
+  "primary": "transport",
+  "coupling_control": "shuffled_transport",
+  "carrier_module": "transport_binding",
+  "capture_initial": true,
+  "gpu_indices": [
+    7,
+    5,
+    4
+  ],
+  "max_gpus": 3,
+  "excluded_gpus": [
+    6
+  ],
+  "generation_steps": 50,
+  "inversion_steps": 50,
+  "decoder_optimization_steps": 100,
+  "margin_correct": 64,
+  "repetitions": 64,
+  "message_bits": 256,
+  "semantic_bits": 1024,
+  "generation_calls_per_arm": 2,
+  "unique_generation_calls": 30,
+  "genuine_records": 240,
+  "wrong_identity_pairs": 1200,
+  "after_positive_gate": {
+    "arms": [
+      "full",
+      "saturated",
+      "transport",
+      "shuffled_transport"
+    ],
+    "jobs": 24,
+    "updates": 151,
+    "verification_records": 432
+  },
+  "gates": {
+    "genuine": "candidate >= all three controls",
+    "clean": "6/6",
+    "binding": "candidate <= saturated-0.02 and candidate <= shuffled_transport",
+    "fidelity": "candidate LPIPS <= saturated-0.05",
+    "wrong_identity": "candidate <= minimum control accepts"
+  },
+  "decoder": "Original hard majority and BA>181/256; unchanged for all arms",
+  "distribution_scope": "Joint Gaussian only averaged over ideal fresh independent uniform ciphertext; not a fixed-key or empirical security proof",
+  "scope": "Six new source feasibility screen; no tuning after outcomes; neither a native complete SemBind reproduction nor paper-scale confirmation",
+  "isolation": "Baseline arguments and loading exclude private verifier inputs; same OS account, not an OS sandbox",
+  "source_sha256": {
+    "anchor_binding.py": "82d474e45273fdcb97d1805686ae0f6d8c8151c27feaafbdc7173040cff087b1",
+    "transport_binding.py": "0925ae2c35fd2fadcdeee75494d1e0280182ccdba4cc1988ace54591ca2c9b21",
+    "test_transport_binding.py": "1c06e9ef4c5ecca1af02b58a25978b0f9b0034da1360cf2a518bbbda50cd67f1",
+    "prepare_semantic_transport.py": "6292f9ca8cb083206c561486e3747dde60a1395323883cc9248f931864045a5e",
+    "run_anchor_binding_worker.py": "8284874bf311a0b21c8c4f8320aa632b6f7a0531ea407482ecfd8e413e6a8c90",
+    "run_anchor_binding_pipeline.py": "a41c1e84c8d434c0f3d4a58697d387cd9bccaa0f0cd66b9874a55e624313ab56",
+    "run_decision_region_pipeline.py": "8175000875502ef7fc7836e2674061206ee5afba40de2213c9f8d168278ec92c",
+    "run_published_imprint_full.py": "476895a566d94b3c374d77207183a67c038a0679f6fc755eb10c434a3162a908"
+  },
+  "identity_sha256": {
+    "000.json": "52bc288c3d3b66eb1e7d7451fecfa950815f5abd516ea99118e43c84e3cd3835",
+    "001.json": "d9448c8129d8baa3a2fd520a79934dc0dfc34e0018bf5b9a0d902e56544b0f9f",
+    "002.json": "4197c903433d041810fe95c9ea3a4d679e33ec3468f79bd686536110b93e540b",
+    "003.json": "e0cdab317a25502fdbd37633609dd973852063194ba0f6bd586bdc28804ce3c3",
+    "004.json": "0076f225b7a952d68f839a282c2b3ed5430dc5ece01f2929e1d557589be6999a",
+    "005.json": "023cddf6cca0dd1275e41999b161e1fa1ed7973d07e319b64c50c1564e1274f6"
+  },
+  "unit_checks_sha256": "847115098f7cf8ba45eeee21dc729d51778fd70439587f78eb8e85a558c43d62"
+}

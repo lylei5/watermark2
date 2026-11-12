@@ -4,6 +4,8 @@ Updated 2026-11-12. Goal: a publishable defense with matched genuine detection, 
 
 ## Decision-region embedding experiment
 
+Conditional Gaussian transport is prepared, not yet launched: protocols/semantic_transport_pilot_20261112.json, SHA256df38260a3811a858c10c02c1af4287ec145515108842ca612891d515de95b464. Six new sources, full/saturated/transport/shuffled_transport arms,240 genuine records. Mapping Phi^-1((Phi(z)+target)/2) preserves full64/64 target matches; same-sign permutation control preserves the exact conditional amplitude multiset. Unit checks passed64 identity roundtrips on249. Report reports/semantic_transport_pilot_20261112/plan.md. Requires idle7/5/4 after current run; no GPUs launched for this protocol yet. Generic orchestration was extended locally and in tools; the running decision-region source snapshots remain unchanged.
+
 Frozen protocol protocols/decision_region_pilot_20261112.json in prelaunch commit7d2b430. New six-source paired full/saturated/minimal56/random56 experiment:240 full genuine inversions,1200 wrong identities, originalBA>181/256. Primary minimal56 reflects the least-energy mismatched signs until each64-copy message group has56 matches; random56 changes the same count. All magnitudes stay fixed except the original full control. No additional detector. Coordinator45097 started on249, workers45324/45325/45326 use idle7/5/4 only. Completion tracked via kernel process-exit event. All frozen gates must pass before24 unchanged151-update Imprint jobs and432 verifications. Read reports/decision_region_pilot_20261112/plan.md. No result or novelty claim yet.
 
 ## Completed semantic experiments

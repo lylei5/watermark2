@@ -20,7 +20,8 @@ def audit_projection(run,plan,genuine):
         directory=run/f'genuine_{t%3}'
         h=np.load(directory/'codes'/f'{t:03}_aux.npz')['code']
         secret,c,_,_=keys[t];target=c^np.tile(h,16)[perms[t]]
-        base_wrong=(z.ravel()>0)!=target;ranks=np.random.default_rng(secret['projection_order_seed']).random(16384)
+        base_wrong=(z.ravel()>0)!=target
+        ranks=np.random.default_rng(secret.get('projection_order_seed',0)).random(16384)
         for arm in plan['arms']:
             ref=next(r for r in genuine['references'] if r['task']==t and r['arm']==arm)
             initial=np.load(run/ref['initial_latent']);assert sha(run/ref['initial_latent'])==ref['initial_latent_sha256']
@@ -28,13 +29,23 @@ def audit_projection(run,plan,genuine):
                 amp=np.abs(np.random.default_rng(secret['amplitude_seed']).standard_normal(16384))
                 expected=(amp*(2*target.astype(float)-1)).astype(np.float32)
             elif arm=='saturated':expected=np.abs(z.ravel())*(2*target.astype(np.float32)-1)
+            elif arm in ['transport','shuffled_transport']:
+                from scipy.stats import norm
+                expected=norm.ppf((norm.cdf(z.ravel().astype(float))+target)/2).astype(np.float32)
+                if arm=='shuffled_transport':
+                    rng=np.random.default_rng(secret['transport_shuffle_seed'])
+                    for bit in [0,1]:
+                        positions=np.flatnonzero(target==bit)
+                        expected[positions]=expected[rng.permutation(positions)]
             else:
                 expected=z.ravel().copy()
                 for b in range(256):
                     wrong=[i for i in range(b,16384,256) if base_wrong[i]]
                     ranked=sorted(wrong,key=lambda i:abs(float(z.ravel()[i])) if arm=='minimal56' else float(ranks[i]))
                     for i in ranked[:max(0,len(wrong)-8)]:expected[i]=-expected[i]
-            assert np.array_equal(initial.ravel(),expected),(t,arm)
+            if arm in ['transport','shuffled_transport']:
+                np.testing.assert_allclose(initial.ravel(),expected,rtol=2e-6,atol=1e-7)
+            else:assert np.array_equal(initial.ravel(),expected),(t,arm)
             mismatch=((initial.ravel()>0)!=target).reshape(64,256).sum(0)
             assert np.all(mismatch<=8) if arm.endswith('56') else np.all(mismatch==0)
             details.append(dict(task=t,arm=arm,latent_l2=float(np.mean((initial.astype(float)-z)**2)),
@@ -65,12 +76,13 @@ def main():
     try:
         processes=[launch(worker('genuine',i),run/f'genuine_{i}.log') for i in range(3)]
         state('running',stage='genuine',worker_pids=[p.pid for p in processes]);codes=[p.wait() for p in processes];assert not any(codes),codes
-        genuine=audit(run,'genuine',plan);detail=audit_projection(run,plan,genuine);s={r['arm']:r for r in genuine['summary']};a=s['minimal56']
-        gates=dict(genuine=a['accepted']>=max(s[k]['accepted'] for k in ['full','saturated','random56']),
-            clean=all(r['accepted'] for r in genuine['rows'] if r['arm']=='minimal56' and r['condition']=='clean'),
-            binding=a['mean_binding_mismatch']<=s['saturated']['mean_binding_mismatch']-.02 and a['mean_binding_mismatch']<=s['random56']['mean_binding_mismatch'],
+        genuine=audit(run,'genuine',plan);detail=audit_projection(run,plan,genuine);s={r['arm']:r for r in genuine['summary']}
+        primary=plan.get('primary','minimal56');coupling=plan.get('coupling_control','random56');controls=[k for k in plan['arms'] if k!=primary];a=s[primary]
+        gates=dict(genuine=a['accepted']>=max(s[k]['accepted'] for k in controls),
+            clean=all(r['accepted'] for r in genuine['rows'] if r['arm']==primary and r['condition']=='clean'),
+            binding=a['mean_binding_mismatch']<=s['saturated']['mean_binding_mismatch']-.02 and a['mean_binding_mismatch']<=s[coupling]['mean_binding_mismatch'],
             fidelity=a['mean_reference_lpips']<=s['saturated']['mean_reference_lpips']-.05,
-            wrong_identity=detail['wrong_accepts']['minimal56']<=min(detail['wrong_accepts'][k] for k in ['full','saturated','random56']))
+            wrong_identity=detail['wrong_accepts'][primary]<=min(detail['wrong_accepts'][k] for k in controls))
         advance=all(gates.values());save(run/'pilot_decision.json',dict(advance=advance,gates=gates))
         lines=['# Decision-region embedding experiment','','All240 full genuine inversions audited. Threshold BA>181/256 unchanged.','',
             '| Arm | Genuine | Binding mismatch | Preview LPIPS | Wrong identity |','|---|---:|---:|---:|---:|']
