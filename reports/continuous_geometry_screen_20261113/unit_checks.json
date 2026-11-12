@@ -1,0 +1,216 @@
+{
+  "passed": true,
+  "roundtrips": 48,
+  "raw_sign_errors": 0,
+  "orthogonal_inverse_and_energy_checks": true,
+  "finite_uniform_domain_separation_checks": true,
+  "channel": [
+    {
+      "sigma": 0.0,
+      "angle": 0.0,
+      "n": 300000,
+      "measured": 1.0,
+      "analytic": 1.0,
+      "mc_standard_error": 0.0
+    },
+    {
+      "sigma": 0.0,
+      "angle": 0.05,
+      "n": 300000,
+      "measured": 0.98463,
+      "analytic": 0.9840845056908107,
+      "mc_standard_error": 0.000228489178081322
+    },
+    {
+      "sigma": 0.0,
+      "angle": 0.1,
+      "n": 300000,
+      "measured": 0.9688466666666666,
+      "analytic": 0.968169011381621,
+      "mc_standard_error": 0.0003205088494979798
+    },
+    {
+      "sigma": 0.0,
+      "angle": 0.2,
+      "n": 300000,
+      "measured": 0.9367833333333333,
+      "analytic": 0.9363380227632419,
+      "mc_standard_error": 0.0004457545284535897
+    },
+    {
+      "sigma": 0.0,
+      "angle": 0.5,
+      "n": 300000,
+      "measured": 0.8403033333333333,
+      "analytic": 0.8408450569081047,
+      "mc_standard_error": 0.0006678938218542197
+    },
+    {
+      "sigma": 0.0,
+      "angle": 1.0,
+      "n": 300000,
+      "measured": 0.6807633333333334,
+      "analytic": 0.6816901138162094,
+      "mc_standard_error": 0.0008504679154078515
+    },
+    {
+      "sigma": 0.4,
+      "angle": 0.0,
+      "n": 300000,
+      "measured": 0.87893,
+      "analytic": 0.8788810584091565,
+      "mc_standard_error": 0.0005956764882013204
+    },
+    {
+      "sigma": 0.4,
+      "angle": 0.05,
+      "n": 300000,
+      "measured": 0.8781366666666667,
+      "analytic": 0.8778903995961522,
+      "mc_standard_error": 0.0005977704294377577
+    },
+    {
+      "sigma": 0.4,
+      "angle": 0.1,
+      "n": 300000,
+      "measured": 0.8747133333333333,
+      "analytic": 0.8749656038068887,
+      "mc_standard_error": 0.0006038785638457878
+    },
+    {
+      "sigma": 0.4,
+      "angle": 0.2,
+      "n": 300000,
+      "measured": 0.86339,
+      "analytic": 0.8638948010304158,
+      "mc_standard_error": 0.0006260473192526639
+    },
+    {
+      "sigma": 0.4,
+      "angle": 0.5,
+      "n": 300000,
+      "measured": 0.8024266666666666,
+      "analytic": 0.8031614943009702,
+      "mc_standard_error": 0.0007259318342039259
+    },
+    {
+      "sigma": 0.4,
+      "angle": 1.0,
+      "n": 300000,
+      "measured": 0.66609,
+      "analytic": 0.667276442117907,
+      "mc_standard_error": 0.0008602685470486807
+    },
+    {
+      "sigma": 1.0,
+      "angle": 0.0,
+      "n": 300000,
+      "measured": 0.7510733333333334,
+      "analytic": 0.75,
+      "mc_standard_error": 0.0007905694150420948
+    },
+    {
+      "sigma": 1.0,
+      "angle": 0.05,
+      "n": 300000,
+      "measured": 0.7509533333333334,
+      "analytic": 0.7496024436911316,
+      "mc_standard_error": 0.0007909880321543335
+    },
+    {
+      "sigma": 1.0,
+      "angle": 0.1,
+      "n": 300000,
+      "measured": 0.74944,
+      "analytic": 0.7484137224023741,
+      "mc_standard_error": 0.0007922344403062269
+    },
+    {
+      "sigma": 1.0,
+      "angle": 0.2,
+      "n": 300000,
+      "measured": 0.7443233333333333,
+      "analytic": 0.74371660135236,
+      "mc_standard_error": 0.0007970826352502707
+    },
+    {
+      "sigma": 1.0,
+      "angle": 0.5,
+      "n": 300000,
+      "measured": 0.7129566666666667,
+      "analytic": 0.7130884085870317,
+      "mc_standard_error": 0.0008258194518695682
+    },
+    {
+      "sigma": 1.0,
+      "angle": 1.0,
+      "n": 300000,
+      "measured": 0.62464,
+      "analytic": 0.6247822812307203,
+      "mc_standard_error": 0.0008839860147665562
+    }
+  ],
+  "small_angle": [
+    {
+      "sigma": 0.4,
+      "delta": 0.1,
+      "penalty_over_delta_squared": 0.3915454602267888,
+      "limit": 0.3978873577297384
+    },
+    {
+      "sigma": 0.4,
+      "delta": 0.01,
+      "penalty_over_delta_squared": 0.3978218936044441,
+      "limit": 0.3978873577297384
+    },
+    {
+      "sigma": 0.4,
+      "delta": 0.001,
+      "penalty_over_delta_squared": 0.3978867029444848,
+      "limit": 0.3978873577297384
+    },
+    {
+      "sigma": 1.0,
+      "delta": 0.1,
+      "penalty_over_delta_squared": 0.15862775976258472,
+      "limit": 0.15915494309189535
+    },
+    {
+      "sigma": 1.0,
+      "delta": 0.01,
+      "penalty_over_delta_squared": 0.15914963826345452,
+      "limit": 0.15915494309189535
+    },
+    {
+      "sigma": 1.0,
+      "delta": 0.001,
+      "penalty_over_delta_squared": 0.15915489006955752,
+      "limit": 0.15915494309189535
+    }
+  ],
+  "illustrative_distribution": {
+    "n": 300000,
+    "mean": [
+      -1.0940049981613844e-05,
+      -0.0007113465312239828
+    ],
+    "covariance": [
+      [
+        1.0011673014525715,
+        8.820476611002347e-05
+      ],
+      [
+        8.820476611002347e-05,
+        0.9998083024445237
+      ]
+    ],
+    "cross_square_moment": 1.0020063934546817,
+    "mse": 0.8375921953929738
+  },
+  "source_sha256": {
+    "continuous_geometry_binding.py": "b50839d40a58618ef95d0f88da4e59529af6ecc168ff9e5d1829f5b1030a5bf7",
+    "transport_binding.py": "0925ae2c35fd2fadcdeee75494d1e0280182ccdba4cc1988ace54591ca2c9b21",
+    "test_continuous_geometry.py": "1b95e4cb4ecfa311ec639917e6495ebcfa7e4d42d8a54a478a5438b695db1aab"
+  },
+  "scope": "Ideal Gaussian channel and mathematical roundtrip checks only; no image/model experiment or empirical authentication guarantee. Monte Carlo moments do not prove Gaussianity."
+}

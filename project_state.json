@@ -1,6 +1,6 @@
 {
   "project_name": "watermark2 — Content-bound diffusion watermark defense",
-  "updated_at": "2026-11-12",
+  "updated_at": "2026-11-13",
   "research_goal": {
     "direction": "Defense with matched robustness, quality and attack budgets",
     "core_thesis": "Separate authentication differences from communication errors in watermark decoding"
@@ -952,6 +952,21 @@
     "wrong_identity_pairs_planned": 1200,
     "conditional_imprint_jobs": 24,
     "conditional_forgery_records": 432,
+    "unit_checks_passed": true,
+    "superiority_established": false
+  },
+  "continuous_geometry_screen": {
+    "status": "prepared",
+    "protocol": "protocols/continuous_geometry_screen_20261113.json",
+    "protocol_sha256": "9ca93db05b76992ae0695708822b6cf57620b8805d4a96b0e775175a53a257c5",
+    "plan": "reports/continuous_geometry_screen_20261113/plan.md",
+    "server_root": "/data0/liyanlei/watermark_research/runs/continuous_geometry_screen_20261113",
+    "parent_coordinator_pid": 15104,
+    "genuine_records_planned": 24,
+    "wrong_identity_pairs_planned": 120,
+    "attack_jobs_planned": 0,
+    "unit_roundtrips": 48,
+    "unit_raw_sign_errors": 0,
     "unit_checks_passed": true,
     "superiority_established": false
   },

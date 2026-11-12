@@ -60,7 +60,12 @@ def main():
             extra={'logits':captured['logits']} if plan.get('capture_semantic_logits',False) else {}
             if extra:assert np.array_equal((extra['logits']>0).astype(np.uint8),value)
             np.savez_compressed(path,code=value,**extra)
+            if plan.get('carrier_feature')=='logits':
+                assert extra
+                return dict(code=value,logits=extra['logits'])
             return value
+        def semantic_bits(value):
+            return value['code'] if isinstance(value,dict) else value
         def invert_score(image,code_value,task,arm,jid,extra):
             torch.manual_seed(202611120000+task)
             z=inversion.exact_inversion(image,prompt='',guidance_scale=3.,num_inference_steps=50,
@@ -87,7 +92,7 @@ def main():
                     refpath=out/'images'/f'{task:03}_{arm}.png';ref.save(refpath)
                     refcode=code(ref,out/'codes'/f'{task:03}_{arm}.npz')
                     references.append(dict(task=task,arm=arm,image=str(refpath.relative_to(run)),image_sha256=sha(refpath),
-                        auxiliary=str(auxpath.relative_to(run)),semantic_mismatch=float((refcode!=enrollment).mean())))
+                        auxiliary=str(auxpath.relative_to(run)),semantic_mismatch=float((semantic_bits(refcode)!=semantic_bits(enrollment)).mean())))
                     if plan.get('capture_initial',False):
                         ip=out/'latents'/f'{task:03}_{arm}_initial.npy'
                         references[-1].update(initial_latent=str(ip.relative_to(run)),initial_latent_sha256=sha(ip))
@@ -101,7 +106,7 @@ def main():
                         imagepath=out/'images'/(jid+'.png');query.save(imagepath)
                         q=code(query,out/'codes'/(jid+'.npz'))
                         invert_score(query,q,task,arm,jid,dict(condition=condition['name'],image=str(imagepath.relative_to(run)),
-                            image_sha256=sha(imagepath),semantic_mismatch=float((q!=enrollment).mean())))
+                            image_sha256=sha(imagepath),semantic_mismatch=float((semantic_bits(q)!=semantic_bits(enrollment)).mean())))
             count=sum(x['task']%3==args.shard for x in plan['sources'])*len(plan['arms'])
             assert len(rows)==count*len(plan['conditions']) and len(references)==count
         else:

@@ -1,6 +1,12 @@
 # Research state: content-bound diffusion watermark defense
 
-Updated 2026-11-12. Goal: a publishable defense with matched genuine detection, image quality, computation budgets and credible false-positive calibration. No superiority or SOTA claim is established.
+Updated 2026-11-13 CST. Goal: a publishable defense with matched genuine detection, image quality, computation budgets and credible false-positive calibration. No superiority or SOTA claim is established.
+
+## Continuous semantic geometry
+
+Prepared six-source clean mechanism screen: protocols/continuous_geometry_screen_20261113.json, SHA2569ca93db05b76992ae0695708822b6cf57620b8805d4a96b0e775175a53a257c5. Four arms full/quantized_geometry/continuous_independent/continuous_transport;30 full generation calls,24 full50-step inversions and100-step decoder optimization,120 wrong identities. No attack jobs in this clean screen. Read reports/continuous_geometry_screen_20261113/plan.md for exact encoding, ideal assumptions and prior-art boundaries. Content-dependent pair rotations use1024 Gaussian frequency vectors,8192 secret phases,alpha2 fixed before images. Unit checks48 roundtrips,0 raw sign errors,18 ideal channel settings passed on249. No model outcomes yet. Intended event scheduling after transport coordinator15104 exits; only idle7/5/4,max3,never6.
+
+All336 consumed shared-evidence records also checked with normalized continuous logits:8 original-accepted genuine queries are farther from auxiliary registration than accepted finalImprint004; with delivered-reference registration1 officialcrop query remains farther. See continuous_semantics.json. No distance threshold fit or decisions changed. The continuous encoding hypothesis concerns the embedding/decoding geometry, not an assertion that continuous distances alone separate existing data. Rotations, Gaussian sign probabilities, random Fourier kernels and conditional Gaussian transport are established ideas; the specific diffusion registration mechanism is unproven.
 
 ## Decision-region embedding experiment
 
