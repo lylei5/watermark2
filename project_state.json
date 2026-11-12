@@ -186,7 +186,7 @@
     "python_package_index": "https://pypi.tuna.tsinghua.edu.cn/simple/",
     "automatic_aliyun_fallback": false
   },
-  "active_experiments_observation": "Conditional Gaussian transport running on249, started2026-11-12T15:29:43Z on7/5/4. Decision-region pilot complete. No repeated progress polling; continue independent research until completion.",
+  "active_experiments_observation": "Conditional Gaussian transport running on249 from2026-11-12T15:29:43Z on7/5/4. Continuous geometry v2 prepared with syscall process-exit scheduling after original coordinator failed before GPU launch. No repeated progress polling; independent research continues.",
   "full_budget_findings": {
     "source_count_per_method": 4,
     "sem_reference_accepted": 4,
@@ -957,10 +957,12 @@
   },
   "continuous_geometry_screen": {
     "status": "prepared",
-    "protocol": "protocols/continuous_geometry_screen_20261113.json",
-    "protocol_sha256": "9ca93db05b76992ae0695708822b6cf57620b8805d4a96b0e775175a53a257c5",
+    "initial_prelaunch_commit": "65913d4",
+    "initial_launch_state": "reports/continuous_geometry_screen_20261113/initial_launch_state.json",
+    "protocol": "protocols/continuous_geometry_screen_20261113_v2.json",
+    "protocol_sha256": "45787294dc25d21666d1378cbca0a4d5de25b0bea5f913f8dab07340cf587fc9",
     "plan": "reports/continuous_geometry_screen_20261113/plan.md",
-    "server_root": "/data0/liyanlei/watermark_research/runs/continuous_geometry_screen_20261113",
+    "server_root": "/data0/liyanlei/watermark_research/runs/continuous_geometry_screen_20261113_v2",
     "parent_coordinator_pid": 15104,
     "genuine_records_planned": 24,
     "wrong_identity_pairs_planned": 120,

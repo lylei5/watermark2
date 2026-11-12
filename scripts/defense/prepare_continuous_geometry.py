@@ -18,9 +18,9 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument('--root', type=Path, required=True)
     root = p.parse_args().root
-    run = root / 'runs/continuous_geometry_screen_20261113'
+    run = root / 'runs/continuous_geometry_screen_20261113_v2'
     run.mkdir(exist_ok=False)
-    private = root / 'private_eval/continuous_geometry_screen_20261113'
+    private = root / 'private_eval/continuous_geometry_screen_20261113_v2'
     private.mkdir(mode=0o700, exist_ok=False)
     source = json.loads((root / 'runs/semantic_transport_pilot_20261112/protocol.json').read_text())
     plan = {k: source[k] for k in ['paths', 'chain_run', 'distortion_source', 'hf_home', 'upstream', 'external_sha256']}
@@ -32,6 +32,7 @@ def main():
         'A bowl of sliced citrus fruit beside a glass pitcher on a kitchen counter.',
         'A blue bicycle leaning against a stone wall beside a flowering tree.']
     plan.update(purpose='Full-step clean feasibility of continuous content-dependent Gaussian decoding regions',
+        execution_repair='Original coordinator lacked Python os.pidfd_open before GPU launch; syscall434 event wait used. Same frozen method, sources and gates; original artifacts preserved.',
         freeze_time_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),
         sources=[dict(task=t, caption=c, aux_seed=202611130200+t) for t,c in enumerate(captions)],
         identity_root=str(private), arms=['full', 'quantized_geometry', 'continuous_independent', 'continuous_transport'],

@@ -1,5 +1,6 @@
 """Event-scheduled clean mechanism screen with artifact and decoder audit."""
 import argparse
+import ctypes
 import datetime
 import hashlib
 import json
@@ -144,9 +145,10 @@ def main():
         assert json.loads((run/'unit_checks.json').read_text())['passed']
         parent=Path(plan['parent_run'])/'pipeline_state.json'
         state('waiting',stage='parent_exit_event',parent_pid=a.parent_pid)
-        try:
-            fd=os.pidfd_open(a.parent_pid)
-        except ProcessLookupError:
+        libc=ctypes.CDLL(None,use_errno=True)
+        fd=libc.syscall(434,a.parent_pid,0)
+        if fd<0:
+            if ctypes.get_errno()!=3:raise OSError(ctypes.get_errno(),'pidfd_open syscall failed')
             assert parent.exists()
         else:
             select.select([fd],[],[]);os.close(fd)
