@@ -8,9 +8,9 @@
 
 ## 当前进展
 
-[条件高斯传输嵌入](reports/semantic_transport_pilot_20261112/plan.md)已完成249上的实现检查并冻结新来源协议，尚未启动模型实验。它通过单调分位耦合保留完整64/64符号码字，并以同符号组内幅值重排作为精确对照。[失败机制诊断](reports/decision_region_pilot_20261112/failure_evidence.md)记录已有结果中的登记偏差、语义距离重叠与载体可靠性取舍。
+[条件高斯传输嵌入](reports/semantic_transport_pilot_20261112/plan.md)已于2026-11-12 23:29在249启动：六个新来源、四组配对、240次完整合法验证。它通过单调分位耦合保留完整64/64符号码字，并以同符号组内幅值重排作为精确对照。[失败机制诊断](reports/decision_region_pilot_20261112/failure_evidence.md)记录已有结果中的登记偏差、语义距离重叠与载体可靠性取舍。当前尚无该方案的模型结果。
 
-[解码区域约束嵌入](reports/decision_region_pilot_20261112/plan.md)已冻结并在249启动：六个新来源、四组配对、240次完整合法验证。主候选通过最小代价符号反射满足56/64重复符合约束，保持原始BA检测器；与相同反射数量的随机对照比较。完整既有Imprint扩展受预声明门槛约束，目前尚无结果。
+[解码区域约束嵌入](reports/decision_region_pilot_20261112/report.md)于23:28完成240次完整验证：full59/60、saturated55/60、minimal56为44/60、random56为54/60；四组均干净6/6、错误身份0/300。最小反射改善了潜变量距离和辅助图LPIPS，但绑定差异增大，未通过推进门槛，未执行Imprint扩展。完整逐位误差分解与全部结果已归档。
 
 两项2026-11-12实验均已完成并核对服务器记录。[共享语义证据](reports/shared_semantic_evidence_20261112/report.md)包含120条合法查询和216条完整Imprint验证：默认BA接受合法图107/120、最终伪造1/12，查询置信度候选为85/120、0/12。该候选未在匹配合法检出率下建立收益。[固定三轮语义反馈](reports/semantic_feedback_pilot_20261112/report.md)完成180条合法查询：full 58/60、feedback 56/60、相同生成预算consensus 57/60；七项门槛未全部通过，未启动条件扩展的Imprint评估。当前无排队实验，尚未建立优于SemBind的结论。逐条复核见[完成审计](reports/completion_audit_20261112/audit.json)。
 

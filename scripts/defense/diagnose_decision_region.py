@@ -51,7 +51,7 @@ def main():
                             physical_flips=sum(r['coordinate_classes'][k]['physical_flips'] for r in rr)) for k in classes})
     result=dict(completed=True,diagnostic_script_sha256=sha(__file__),protocol_sha256=sha(run/'protocol.json'),
         genuine_manifest_sha256=sha(run/'genuine_verified.json'),rows=rows,summary=summary,
-        limitation='Enrollment oracle is unavailable at inference; correlated coordinate rates are descriptive, not independent trials. Full control also changes amplitudes.')
+        limitation='Enrollment oracle is unavailable at inference; correlated coordinate rates are descriptive, not independent trials. Coordinate classes describe signs only; full, transport and shuffled_transport may also change amplitudes.')
     (run/'channel_diagnostic.json').write_text(json.dumps(result,indent=2)+'\n')
     print(json.dumps(summary,indent=2))
 

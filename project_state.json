@@ -27,7 +27,7 @@
     "root": "/data0/liyanlei/watermark_research",
     "primary_python": "/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/bin/python"
   },
-  "latest_progress_report": "reports/semantic_feedback_pilot_20261112/report.md",
+  "latest_progress_report": "reports/decision_region_pilot_20261112/report.md",
   "independent_progress": {
     "independent_images": 320,
     "source_prompts": 112,
@@ -923,8 +923,16 @@
     "superiority_established": false
   },
   "decision_region_pilot": {
-    "status": "running",
-    "stage": "genuine",
+    "status": "complete",
+    "stage": "genuine_audited_gate_failed",
+    "completion_time_utc": "2026-11-12T15:28:40.708674+00:00",
+    "report": "reports/decision_region_pilot_20261112/report.md",
+    "genuine_records_completed": 240,
+    "wrong_identity_pairs_completed": 1200,
+    "actual_imprint_jobs": 0,
+    "primary_genuine_accepted": 44,
+    "full_genuine_accepted": 59,
+    "genuine_denominator_per_arm": 60,
     "protocol": "protocols/decision_region_pilot_20261112.json",
     "plan": "reports/decision_region_pilot_20261112/plan.md",
     "server_root": "/data0/liyanlei/watermark_research/runs/decision_region_pilot_20261112",
@@ -948,7 +956,12 @@
     "superiority_established": false
   },
   "semantic_transport_pilot": {
-    "status": "prepared_not_launched",
+    "status": "running",
+    "stage": "genuine",
+    "start_time_utc": "2026-11-12T15:29:43.272994+00:00",
+    "coordinator_pid": 15104,
+    "worker_pids": [15111, 15112, 15113],
+    "prelaunch_commit": "da91c9d",
     "protocol": "protocols/semantic_transport_pilot_20261112.json",
     "protocol_sha256": "df38260a3811a858c10c02c1af4287ec145515108842ca612891d515de95b464",
     "plan": "reports/semantic_transport_pilot_20261112/plan.md",
