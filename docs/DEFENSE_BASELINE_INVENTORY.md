@@ -25,4 +25,4 @@
 
 本项目只使用已发表顶会顶刊的既定攻击基线，不设计或改进攻击。已有小样本、短预算和数值模拟不能替代完整比较。
 
-最新防御候选：[条件内容似然](../reports/conditional_content_likelihood_20261112/report.md)无额外伪造拒绝且降低真实接受；[共享内容锚](../reports/conditional_anchor_pilot_20261112/report.md)未通过预设门槛。[内容耦合分位载体](../reports/conditional_quantile_pilot_20261112/plan.md)正在新来源上进行完整预算机制验证，尚无性能结论。
+最新防御候选：[条件内容似然](../reports/conditional_content_likelihood_20261112/report.md)无额外伪造拒绝且降低真实接受；[共享内容锚](../reports/conditional_anchor_pilot_20261112/report.md)未通过预设门槛。[内容耦合分位载体](../reports/conditional_quantile_pilot_20261112/report.md)已完成240条完整验证：候选48/60，full59/60，独立对照54/60；未通过冻结门槛，不扩大该载体。

@@ -27,7 +27,7 @@
     "root": "/data0/liyanlei/watermark_research",
     "primary_python": "/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/bin/python"
   },
-  "latest_progress_report": "reports/conditional_quantile_pilot_20261112/plan.md",
+  "latest_progress_report": "reports/conditional_quantile_pilot_20261112/report.md",
   "independent_progress": {
     "independent_images": 320,
     "source_prompts": 112,
@@ -44,7 +44,7 @@
   },
   "evaluation_policy": "Published standard baselines only; matched absolute genuine detection; no custom attack development",
   "requires_user_resume": false,
-  "active_experiments": 1,
+  "active_experiments": 0,
   "current_findings": {
     "sembind_genuine_non_crop": {
       "accepted": 144,
@@ -186,7 +186,7 @@
     "python_package_index": "https://pypi.tuna.tsinghua.edu.cn/simple/",
     "automatic_aliyun_fallback": false
   },
-  "active_experiments_observation": "Three workers on249 GPUs7/5/4 passed preflight and each generated its fresh50-step auxiliary image; complete genuine evaluation is running.",
+  "active_experiments_observation": "2026-11-12 13:49 CST: balanced quantile pilot complete; all240 records independently audited; failed frozen feasibility gates; GPUs7/5/4 idle.",
   "full_budget_findings": {
     "source_count_per_method": 4,
     "sem_reference_accepted": 4,
@@ -510,7 +510,7 @@
     "advance_to_published_forgery": false
   },
   "conditional_quantile_pilot": {
-    "status": "running",
+    "status": "complete",
     "protocol": "protocols/conditional_quantile_pilot_20261112.json",
     "plan": "reports/conditional_quantile_pilot_20261112/plan.md",
     "server_root": "/data0/liyanlei/watermark_research/runs/conditional_quantile_pilot_20261112_v2",
@@ -532,7 +532,7 @@
     "superiority_established": false,
     "implementation_version": 2,
     "repetitions_per_channel": 32,
-    "stage": "genuine_defense_pilot",
+    "stage": "pilot_failed_feasibility_gate",
     "coordinator_pid": 7040,
     "worker_pids": [
       10342,
@@ -578,6 +578,42 @@
           "scored_queries": 0
         }
       ]
-    }
+    },
+    "report": "reports/conditional_quantile_pilot_20261112/report.md",
+    "summary": [
+      {
+        "arm": "full",
+        "n": 60,
+        "accepted": 59,
+        "mean_ba": 0.9372395833333333,
+        "mean_binding_mismatch": 0.072265625,
+        "mean_reference_lpips": 0.8281306624412537
+      },
+      {
+        "arm": "anchor_low",
+        "n": 60,
+        "accepted": 54,
+        "mean_ba": 0.8888020833333333,
+        "mean_binding_mismatch": 0.04638671875,
+        "mean_reference_lpips": 0.36732199788093567
+      },
+      {
+        "arm": "quantile_coupled",
+        "n": 60,
+        "accepted": 48,
+        "mean_ba": 0.8503255208333333,
+        "mean_binding_mismatch": 0.09651692708333333,
+        "mean_reference_lpips": 0.6438509374856949
+      },
+      {
+        "arm": "quantile_independent",
+        "n": 60,
+        "accepted": 54,
+        "mean_ba": 0.8695963541666667,
+        "mean_binding_mismatch": 0.061686197916666664,
+        "mean_reference_lpips": 0.8044129014015198
+      }
+    ],
+    "advance_to_published_forgery": false
   }
 }

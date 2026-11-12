@@ -8,7 +8,7 @@
 
 ## 当前进展
 
-[新执行完整Imprint](reports/imprint_fresh_revalidation_20261112/report.md)已完成，144条记录独立复核：最终样本SemBind项目适配器接受0/4、GS接受4/4。[条件内容似然](reports/conditional_content_likelihood_20261112/report.md)没有增加拒绝收益，真实接受数30/40低于校准BA的39/40。[共享内容锚](reports/conditional_anchor_pilot_20261112/report.md)改善绑定差异与预览保真，但未通过冻结鲁棒性门槛，保留负结果。下一项[内容耦合分位载体](reports/conditional_quantile_pilot_20261112/plan.md)已在249的GPU7、5、4启动：6个新来源、4组、240条完整验证，检验内容稳定性与完整载荷容量能否兼得。尚未建立优于SemBind的结论。下列此前结果保留作历史研究记录，关键结论须经新执行验证。
+[新执行完整Imprint](reports/imprint_fresh_revalidation_20261112/report.md)已完成，144条记录独立复核：最终样本SemBind项目适配器接受0/4、GS接受4/4。[条件内容似然](reports/conditional_content_likelihood_20261112/report.md)没有增加拒绝收益，真实接受数30/40低于校准BA的39/40。[共享内容锚](reports/conditional_anchor_pilot_20261112/report.md)改善绑定差异与预览保真，但未通过冻结鲁棒性门槛，保留负结果。[内容耦合分位载体](reports/conditional_quantile_pilot_20261112/report.md)已完成240条完整验证及独立复核：候选真实接受48/60，低于同轮full的59/60及独立采样对照54/60，绑定差异也未改善，未进入伪造侧扩展。尚未建立优于SemBind的结论。下列此前结果保留作历史研究记录，关键结论须经新执行验证。
 
 [完整预算 Imprint 评测](reports/full_imprint_20261111/report.md)已完成：8 个案例各151次更新，全部144张图完成验证。最终候选 SemBind 项目适配器接受0/4、GS接受4/4；五种冻结判定规则在全部图上完全一致，几何验证器没有额外防伪收益。
 
