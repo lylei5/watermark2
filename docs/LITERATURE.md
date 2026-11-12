@@ -64,3 +64,11 @@
 
 - [Latents-Inv:Robust Semantic Watermark via Dual-Path Mutual Information Redundancy for Diffusion Models](https://ijcai.org/proceedings/2026/75)，Cong Li、Lingyun Yu、Peiqi Jiang、Hongtao Xie，IJCAI2026 Main Track，661–669，DOI10.24963/ijcai.2026/75。题名、作者、页码、会议信息核对官方论文集；正文描述可逆双路径、互信息冗余及负例对比约束。说明联合训练和多路径冗余已有直接先例，本项目未复现其性能。
 - ForenMark检索返回出版商题名“Semantic keyed watermarking with evidence recovery for latent diffusion images”，但原页面此次返回403；仅列为待核查线索，不据摘要补全作者、卷页或推断与当前算法等价。出版商入口：https://www.sciencedirect.com/science/article/pii/S0950705126018101 。
+
+## 登记一致性与生成耦合的进一步查新
+
+- Mathon、Cayre、Bas、Macq，*Optimal Transport for Secure Spread-Spectrum Watermarking of Still Images*，TIP23(4):1694–1705，2014，DOI10.1109/TIP.2014.2305873。[作者稿全文](https://scispace.com/pdf/optimal-transport-for-secure-spread-spectrum-watermarking-of-1831ieowih.pdf)式(17)–(22)已给出本项目条件高斯传输采用的同一个正态到指定半正态映射及最优性证明。其原始HAL标识为hal-00940754v2。当前试验属于扩散语义登记问题上的机制检验，不能将该公式作为新算法。
+- [NoisePrints: Distortion-Free Watermarks for Authorship in Private Diffusion Models](https://arxiv.org/html/2510.13793v2)，Nir Goren、Oren Katzir、Abhinav Nakarmi、Eyal Ronen、Mahmood Sharif、Or Patashnik；[ICLR2026论文](https://openreview.net/pdf?id=gwHCXvPDBd)。该方法直接利用生成种子与图像VAE潜变量的相关性进行归属验证，并讨论秘密种子的证明。说明无需辅助图、使用初始噪声作为来源证据已有直接先例。其验证协议、载荷与私有模型假设应分别比较，不能把来源登记直接当成同载荷SemBind替代。
+- [Guidance Watermarking for Diffusion Models](https://proceedings.iclr.cc/paper_files/paper/2026/hash/b9501301a7a0f99e57406cc901f4e3ce-Abstract-Conference.html)，Enoal Gesny、Eva Giboulot、Teddy Furon、Vivien Chappelier，ICLR2026。既有解码器梯度与图像增强被用于生成过程引导，无需重新训练解码器；因此单纯加入检测损失或增强后的梯度引导不能作为新贡献。
+
+这些条目用于确定防御方法的贡献边界，没有据此新增或修改攻击。尚未执行上述两项2026方法的原生比较。

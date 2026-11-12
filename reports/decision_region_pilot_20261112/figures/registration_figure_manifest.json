@@ -1,0 +1,29 @@
+{
+  "script_sha256": "971c60c586991511f17bbd0a360bf0b742314c72b44cf2e19ff24141fd711245",
+  "registration_sha256": "734151a579a7aee812617cc9c692f33ddf9028993f611b16eeca0483407e60fd",
+  "replica_diagnostic_sha256": "20cc8aab9fd22bd414a52debfc3881839c222f897f1684a29f10a071b77c815e",
+  "source_rows": 132,
+  "sources": 12,
+  "packages": {
+    "python": "3.10.18",
+    "matplotlib": "3.9.2"
+  },
+  "exclusions": "None within 120 genuine and12 final endpoints; intermediate checkpoints are outside this figure scope.",
+  "uncertainty": "All observations shown; conditions from the same source are dependent. No confidence intervals or fitted boundaries.",
+  "oracle_scope": "Physical correctness uses initial target signs; right panel also uses stored delivered-reference semantic codes. Neither is an implemented defense.",
+  "monotone_discordance_obstruction": {
+    "endpoint": "004_full_update_151",
+    "genuine_ids": [
+      "008_full_00",
+      "008_full_03",
+      "008_full_04"
+    ],
+    "scope": "Only suspicion scores nondecreasing in BOTH physical correctness and auxiliary semantic mismatch. This is not an impossibility result for arbitrary detectors."
+  },
+  "figure_inches": [
+    8,
+    4
+  ],
+  "png_dpi": 300,
+  "alt_text": "Oracle scatter plots compare physical recovery with semantic mismatch under auxiliary versus delivered-image registration. A clean legitimate source has more auxiliary mismatch and stronger carrier recovery than the accepted forgery; a cropped genuine query remains distant from the delivered reference."
+}
