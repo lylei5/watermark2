@@ -72,3 +72,12 @@
 - [Guidance Watermarking for Diffusion Models](https://proceedings.iclr.cc/paper_files/paper/2026/hash/b9501301a7a0f99e57406cc901f4e3ce-Abstract-Conference.html)，Enoal Gesny、Eva Giboulot、Teddy Furon、Vivien Chappelier，ICLR2026。既有解码器梯度与图像增强被用于生成过程引导，无需重新训练解码器；因此单纯加入检测损失或增强后的梯度引导不能作为新贡献。
 
 这些条目用于确定防御方法的贡献边界，没有据此新增或修改攻击。尚未执行上述两项2026方法的原生比较。
+
+## 连续内容区域查新（2026-11-13）
+
+- [Rahimi与Recht，Random Features for Large-Scale Kernel Machines，NIPS2007](https://proceedings.neurips.cc/paper_files/paper/2007/hash/013a006f03dbc5392effeb8f18fda755-Abstract.html)：高斯随机频率的余弦相关对应RBF核为已有机制，本项目不能将该恒等式作为新贡献。
+- [LAW作者稿](https://arxiv.org/html/2607.22386v1)采用相对参考对的角度载荷；[LatentSeal作者稿](https://arxiv.org/html/2510.00799v1)采用连续文本载荷和秘密可逆旋转。两者均提示角度编码、连续语义通信和秘密旋转各自已有先例，预印本仅用于查新。
+- [Tzeng等，An Asymmetric Subspace Watermarking Method，IEEE TSP2005作者稿](https://scholars.lib.ntu.edu.tw/bitstreams/db8a4814-be6e-4372-b7fd-40be0ac11a57/download)已有内容相关正交子空间与转置提取；不能把内容依赖正交编码的一般描述称为首次提出。
+- [Goemans作者论述](https://math.mit.edu/~goemans/PAPERS/icm98.pdf)明确随机超平面分离概率与夹角的关系。本轮高斯符号概率使用这一经典几何结论，不主张新的概率定理。
+
+当前具体研究的是平滑语义变化下扩散登记循环的解码区域，详见[机制与限制](../reports/continuous_geometry_screen_20261113/plan.md)。理想模型仅支持局部响应差异，不能推出全距离或真实防伪优势。SemBind正文与附录明确按提示词标签构造对比正例，因此改变同提示词图像的不变性目标会改变认证粒度，必须分别定义合法变化及错误绑定；不能把更敏感的特征直接视为更好的防御。
