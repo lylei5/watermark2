@@ -35,7 +35,8 @@ def main():
     import numpy as np
     import torch
     from PIL import Image
-    from anchor_binding import embed,decode
+    carrier=__import__(plan.get('carrier_module','anchor_binding'))
+    embed,decode=carrier.embed,carrier.decode
     from sembind_official_audit import load_official
     spec=importlib.util.spec_from_file_location('model',paths['official']/'model.py')
     model_module=importlib.util.module_from_spec(spec);sys.modules['model']=model_module;spec.loader.exec_module(model_module)

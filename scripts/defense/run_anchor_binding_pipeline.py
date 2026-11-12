@@ -71,6 +71,15 @@ def audit(run,stage,plan):
         assert sha(latent)==r['latent_sha256'] and sha(codepath)==r['code_sha256'] and sha(imagepath)==r['image_sha256']
         z=np.load(latent);code=np.load(codepath)['code'];cipher,message,perms=identities[r['task']]
         if r['arm']=='full':values=z.ravel()
+        elif r['arm'] in ['quantile_coupled','quantile_independent']:
+            # Independent implementation: recover the Gaussian bit plane directly.
+            from scipy.stats import norm
+            low=sorted(range(4096),key=lambda j:(j//64+j%64,j))[:2048]
+            anchor=np.asarray([j+4096*c for c in range(4) for j in low])
+            coordinates=dctn(z.astype(np.float64),axes=(-2,-1),norm='ortho').ravel()
+            raw=(coordinates>0).astype(np.uint8)
+            raw[anchor]=(np.abs(coordinates[anchor])>=norm.ppf(.75)).astype(np.uint8)
+            values=2*raw.astype(float)-1
         else:
             if r['arm']=='anchor_random':a=np.sort(np.random.default_rng(2026111201).permutation(4096)[:2048])
             else:a=np.asarray(sorted(range(4096),key=lambda j:(j//64+j%64,j))[:2048])
@@ -88,7 +97,7 @@ def audit(run,stage,plan):
             summary.append(dict(arm=arm,n=60,accepted=sum(r['accepted'] for r in g),mean_ba=float(np.mean([r['ba'] for r in g])),
                 mean_binding_mismatch=float(np.mean([r['semantic_mismatch'] for r in f])),mean_reference_lpips=float(np.mean([r['lpips'] for r in f]))))
     else:
-        for arm in ['anchor_low','full']:
+        for arm in plan['after_positive_gate']['arms']:
             for kind in ['reference','cover','candidate']:
                 g=[r for r in rows if r['arm']==arm and r['kind']==kind and (kind!='candidate' or r['update']==151)]
                 assert len(g)==6
@@ -124,31 +133,38 @@ def main():
         state('running',stage='genuine_defense_pilot',worker_pids=[p.pid for p in processes])
         codes=[p.wait() for p in processes];assert not any(codes),codes
         genuine=audit(run,'genuine',plan);s={x['arm']:x for x in genuine['summary']}
-        a,b,c,f=[s[k] for k in ['anchor_low','independent_low','anchor_random','full']]
-        gates=dict(binding_vs_independent=b['mean_binding_mismatch']-a['mean_binding_mismatch']>=.02,
-                   binding_vs_random=c['mean_binding_mismatch']-a['mean_binding_mismatch']>=.01,
-                   genuine_retention=a['accepted']>=max(b['accepted'],f['accepted']),
-                   reference_fidelity=a['mean_reference_lpips']<b['mean_reference_lpips'])
+        if plan.get('carrier_module')=='quantile_binding':
+            a,b,c,f=[s[k] for k in ['quantile_coupled','quantile_independent','anchor_low','full']]
+            gates=dict(binding_vs_independent=b['mean_binding_mismatch']-a['mean_binding_mismatch']>=.02,
+                       genuine_retention=a['accepted']>=max(b['accepted'],c['accepted'],f['accepted']),
+                       clean_retention=all(r['accepted'] for r in genuine['rows'] if r['arm']=='quantile_coupled' and r['condition']=='clean'),
+                       reference_fidelity=a['mean_reference_lpips']<b['mean_reference_lpips'])
+        else:
+            a,b,c,f=[s[k] for k in ['anchor_low','independent_low','anchor_random','full']]
+            gates=dict(binding_vs_independent=b['mean_binding_mismatch']-a['mean_binding_mismatch']>=.02,
+                       binding_vs_random=c['mean_binding_mismatch']-a['mean_binding_mismatch']>=.01,
+                       genuine_retention=a['accepted']>=max(b['accepted'],f['accepted']),
+                       reference_fidelity=a['mean_reference_lpips']<b['mean_reference_lpips'])
         advance=all(gates.values());save(run/'pilot_decision.json',dict(advance_to_published_forgery=advance,gates=gates,
             interpretation='Prespecified feasibility gate on six new pilot sources; not a novelty or superiority claim.'))
-        lines=['# Conditional-anchor defense pilot','','All240 genuine-query scores independently recomputed. Six new neutral prompts, four embedding arms, ten conditions, full50-step generation/inversion and100-step decoder optimization.','',
+        lines=['# Content-coupled defense pilot','','All240 genuine-query scores independently recomputed. Six new neutral prompts, four embedding arms, ten conditions, full50-step generation/inversion and100-step decoder optimization.','',
             '| Arm | Accepted | Mean BA | Binding mismatch | LPIPS to auxiliary |','|---|---:|---:|---:|---:|']
         for r in genuine['summary']:lines.append(f"| {r['arm']} | {r['accepted']}/60 | {r['mean_ba']:.6f} | {r['mean_binding_mismatch']:.6f} | {r['mean_reference_lpips']:.6f} |")
         lines+=['',f'Prespecified feasibility gates: {gates}. Advance: {advance}.',
-            'LPIPS is a paired auxiliary-image fidelity diagnostic, not FID or a general quality guarantee. Full carrier has64 repetitions; partitioned arms have32. Only the partitioned controls isolate anchor sharing.']
+            'LPIPS is a paired auxiliary-image fidelity diagnostic, not FID or a general quality guarantee. Carrier budgets and matched controls are specified in protocol.json. Shared and independent variants isolate coupling; full-carrier comparisons also change the encoding geometry.']
         (run/'analysis.md').write_text('\n'.join(lines)+'\n')
         if not advance:
             state('complete',stage='pilot_failed_feasibility_gate',decision='Do not expand this embedding candidate; preserve all negative results.')
             return
         jobs=[]
         for item in plan['sources']:
-            for arm in ['anchor_low','full']:
+            for arm in plan['after_positive_gate']['arms']:
                 ref=next(r for r in genuine['references'] if r['task']==item['task'] and r['arm']==arm)
                 cover=plan['covers'][item['task']%len(plan['covers'])]
                 assert sha(cover['path'])==cover['sha256']
                 jobs.append(dict(id=f"{item['task']:03}_{arm}",task=item['task'],method=arm,
                     reference=ref['image'],reference_sha256=ref['image_sha256'],cover=cover['path'],cover_sha256=cover['sha256']))
-        attack=dict(scope='Unchanged CVPR2025 Imprint on conditional-anchor and full-carrier controls',jobs=jobs,updates=151,
+        attack=dict(scope='Unchanged CVPR2025 Imprint on frozen defensive carrier and full-carrier control',jobs=jobs,updates=151,
                     inverse_steps=50,lr=.01,max_concurrent_gpus=3,excluded_gpu_indices=[6],worker_gpu_indices=[7,5,4],
                     checkpoint_source_steps=list(range(0,151,10)),early_stop=False,shortened_budget_allowed=False,
                     parent_protocol_sha256=sha(run/'protocol.json'),source='https://arxiv.org/abs/2412.03283')

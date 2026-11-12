@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "identities": 32,
+  "roundtrips": 64,
+  "raw_bit_errors": 0,
+  "statistics": {
+    "quantile_coupled": {
+      "n": 524288,
+      "mean": -0.002367191067882221,
+      "variance": 1.0015048316282944,
+      "ks_statistic": 0.0018324046051143017
+    },
+    "quantile_independent": {
+      "n": 524288,
+      "mean": 0.0003246624026616608,
+      "variance": 1.002047106510751,
+      "ks_statistic": 0.0012677367368874037
+    }
+  },
+  "scope": "Synthetic algebra and marginal sanity checks; not robustness, security, or joint-distribution proof",
+  "source_sha256": {
+    "test_quantile_binding.py": "0488a349b93c57c4ca080fd529b338f28d4c26ab959c1e217352239f8867e403",
+    "quantile_binding.py": "bc9d5735228b2b971093bf8295f931c33840e0a0e2f49250d4bc6de48c434f8c",
+    "anchor_binding.py": "82d474e45273fdcb97d1805686ae0f6d8c8151c27feaafbdc7173040cff087b1"
+  }
+}

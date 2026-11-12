@@ -45,3 +45,11 @@
 最新新执行证据：[PGID官方九条件](../reports/pgid_published_revalidation_20261112/report.md)标准90/90、PGID后61/90；[SemBind/GS完整链路](../reports/sembind_chain_revalidation_20261111/report.md)18条干净图记录全部接受，均通过独立潜变量复核。机制研究与创新边界见[防御机制决策](DEFENSE_MECHANISM_DECISION_20261112.md)。
 
 当前实验结果见[研究状态](../GPT_CONTEXT.md)与[基线证据清单](DEFENSE_BASELINE_INVENTORY.md)。只使用已发表顶会顶刊基线的既定实现和完整预算，不创造或改进攻击。
+
+## 内容耦合载体查新（2026-11-12）
+
+- [Gaussian Shading: Provable Performance-Lossless Image Watermarking for Diffusion Models](https://arxiv.org/html/2404.04956v1)，2404.04956，CVPR2024。§3.2已有等概率区间编码、逆CDF采样与重复扩展；不能将高斯分位调制或恢复重复容量本身作为创新。
+- [ShapeMark: Robust and Diversity-Preserving Watermarking for Diffusion Models](https://arxiv.org/html/2603.09454v1)，2603.09454。已核验原文题名与结构编码/块重排机制；此条仅引用预印本，不从模板关键词推断会议录用。
+- [Correlation-Aware and Gaussianity-Preserving Robust Latent Angular Watermarking for Diffusion Models](https://arxiv.org/html/2607.22386v1)，2607.22386。已核验题名与成对角度载体、幅值选择变体；边际正态性不能替代联合独立性论证。本文性能与安全主张尚未由本项目复现。
+
+本项目的[内容耦合分位实验](../reports/conditional_quantile_pilot_20261112/plan.md)属于待验证的防御假设。上述论文只用于方法查新，不引入其中任何新攻击。

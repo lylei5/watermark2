@@ -27,7 +27,7 @@
     "root": "/data0/liyanlei/watermark_research",
     "primary_python": "/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/bin/python"
   },
-  "latest_progress_report": "reports/conditional_content_likelihood_20261112/report.md",
+  "latest_progress_report": "reports/conditional_quantile_pilot_20261112/plan.md",
   "independent_progress": {
     "independent_images": 320,
     "source_prompts": 112,
@@ -44,7 +44,7 @@
   },
   "evaluation_policy": "Published standard baselines only; matched absolute genuine detection; no custom attack development",
   "requires_user_resume": false,
-  "active_experiments": 3,
+  "active_experiments": 0,
   "current_findings": {
     "sembind_genuine_non_crop": {
       "accepted": 144,
@@ -186,7 +186,7 @@
     "python_package_index": "https://pypi.tuna.tsinghua.edu.cn/simple/",
     "automatic_aliyun_fallback": false
   },
-  "active_experiments_observation": "Full151-update Imprint runs onGPU7/5/4. CPU likelihood fitting completed; fixed defense scoring and new embedding pilot attach to baseline exit event.",
+  "active_experiments_observation": "Prior full baseline, conditional likelihood, and anchor pilot completed; quantile coupling protocol frozen before launch.",
   "full_budget_findings": {
     "source_count_per_method": 4,
     "sem_reference_accepted": 4,
@@ -402,7 +402,7 @@
     "unique_sources": 10
   },
   "fresh_paired_pipeline": {
-    "status": "running",
+    "status": "complete",
     "protocol": "protocols/sembind_published_revalidation_20261112.json",
     "next_protocol": "protocols/imprint_fresh_revalidation_20261112.json",
     "gpu_indices": [
@@ -413,7 +413,7 @@
     "max_gpus": 3,
     "completion_mode": "child exit -> independent CPU audit -> full published baseline -> independent CPU audit",
     "report": "reports/sembind_published_revalidation_20261112/plan.md",
-    "stage": "published_full_baseline",
+    "stage": "independently_audited",
     "coordinator_pid": 32044,
     "worker_pids": [
       32096,
@@ -421,13 +421,20 @@
       32098
     ],
     "prelaunch_git_commit": "8476bd3",
-    "next_stage_status": "Full-budget generation active; verification and audit automatic",
+    "next_stage_status": "complete",
     "paired_conditions_complete": true,
     "paired_condition_acceptance": "SemBind and GS each36/36 under both inversion settings",
-    "baseline_pid": 2154
+    "baseline_pid": 2154,
+    "baseline_report": "reports/imprint_fresh_revalidation_20261112/report.md",
+    "baseline_final_acceptance": {
+      "sembind": 0,
+      "gs": 4,
+      "n_per_method": 4
+    },
+    "baseline_records": 144
   },
   "conditional_content_likelihood": {
-    "status": "genuine_test_complete_awaiting_forgery",
+    "status": "complete",
     "protocol": "protocols/conditional_content_likelihood_20261112.json",
     "report": "reports/conditional_content_likelihood_20261112/report.md",
     "coordinator_pid": 41738,
@@ -438,10 +445,13 @@
     "channel_logloss": 0.6148969567743989,
     "constant_channel_logloss": 0.6310196754644377,
     "superiority_established": false,
-    "advance_decision": "Do not expand current likelihood candidate; finish frozen forgery evaluation and retain negative results"
+    "advance_decision": "Do not expand: no added forgery rejection and reduced genuine retention",
+    "final_forgery_accepted": 0,
+    "all_checkpoint_accepted": 0,
+    "all_checkpoint_n": 64
   },
   "conditional_anchor_pilot": {
-    "status": "queued",
+    "status": "complete",
     "protocol": "protocols/conditional_anchor_pilot_20261112.json",
     "plan": "reports/conditional_anchor_pilot_20261112/plan.md",
     "parent_pid": 2154,
@@ -460,6 +470,65 @@
     "after_positive_gate": "12 unchanged full151-update Imprint jobs and216 full verification records",
     "superiority_established": false,
     "independent_audit": "BA, semantic mismatch, and LPIPS gates",
-    "completion_mode": "Kernel process-exit wait; no continuous polling"
+    "completion_mode": "Kernel process-exit wait; no continuous polling",
+    "stage": "pilot_failed_feasibility_gate",
+    "report": "reports/conditional_anchor_pilot_20261112/report.md",
+    "summary": [
+      {
+        "arm": "full",
+        "n": 60,
+        "accepted": 53,
+        "mean_ba": 0.8822916666666667,
+        "mean_binding_mismatch": 0.09505208333333333,
+        "mean_reference_lpips": 0.7259464661280314
+      },
+      {
+        "arm": "anchor_low",
+        "n": 60,
+        "accepted": 53,
+        "mean_ba": 0.8734375,
+        "mean_binding_mismatch": 0.058756510416666664,
+        "mean_reference_lpips": 0.37081558257341385
+      },
+      {
+        "arm": "independent_low",
+        "n": 60,
+        "accepted": 54,
+        "mean_ba": 0.8633463541666667,
+        "mean_binding_mismatch": 0.08024088541666667,
+        "mean_reference_lpips": 0.7666466931502024
+      },
+      {
+        "arm": "anchor_random",
+        "n": 60,
+        "accepted": 49,
+        "mean_ba": 0.8731770833333333,
+        "mean_binding_mismatch": 0.06380208333333333,
+        "mean_reference_lpips": 0.6660532454649607
+      }
+    ],
+    "advance_to_published_forgery": false
+  },
+  "conditional_quantile_pilot": {
+    "status": "prepared",
+    "protocol": "protocols/conditional_quantile_pilot_20261112.json",
+    "plan": "reports/conditional_quantile_pilot_20261112/plan.md",
+    "server_root": "/data0/liyanlei/watermark_research/runs/conditional_quantile_pilot_20261112",
+    "gpu_indices": [
+      7,
+      5,
+      4
+    ],
+    "new_sources": 6,
+    "genuine_queries": 240,
+    "arms": [
+      "full",
+      "anchor_low",
+      "quantile_coupled",
+      "quantile_independent"
+    ],
+    "unit_checks_passed": true,
+    "completion_mode": "Process exit -> independent audit -> frozen feasibility gate -> unchanged full published baseline if feasible",
+    "superiority_established": false
   }
 }
