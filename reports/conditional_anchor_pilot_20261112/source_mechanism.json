@@ -1,0 +1,73 @@
+{
+  "sources": [
+    {
+      "task": 0,
+      "binding_gain_vs_independent": 0.0791015625,
+      "lpips_gain_vs_independent": 0.2172779142856598,
+      "accepted": {
+        "full": 10,
+        "anchor_low": 9,
+        "independent_low": 10,
+        "anchor_random": 10
+      }
+    },
+    {
+      "task": 1,
+      "binding_gain_vs_independent": 0.048828125,
+      "lpips_gain_vs_independent": 0.3889637887477875,
+      "accepted": {
+        "full": 9,
+        "anchor_low": 7,
+        "independent_low": 7,
+        "anchor_random": 3
+      }
+    },
+    {
+      "task": 2,
+      "binding_gain_vs_independent": 0.0224609375,
+      "lpips_gain_vs_independent": 0.6057326346635818,
+      "accepted": {
+        "full": 8,
+        "anchor_low": 10,
+        "independent_low": 9,
+        "anchor_random": 8
+      }
+    },
+    {
+      "task": 3,
+      "binding_gain_vs_independent": 0.0224609375,
+      "lpips_gain_vs_independent": 0.13461479544639587,
+      "accepted": {
+        "full": 10,
+        "anchor_low": 10,
+        "independent_low": 9,
+        "anchor_random": 10
+      }
+    },
+    {
+      "task": 4,
+      "binding_gain_vs_independent": -0.00390625,
+      "lpips_gain_vs_independent": 0.513591080904007,
+      "accepted": {
+        "full": 10,
+        "anchor_low": 10,
+        "independent_low": 10,
+        "anchor_random": 10
+      }
+    },
+    {
+      "task": 5,
+      "binding_gain_vs_independent": -0.0400390625,
+      "lpips_gain_vs_independent": 0.5148064494132996,
+      "accepted": {
+        "full": 6,
+        "anchor_low": 7,
+        "independent_low": 9,
+        "anchor_random": 8
+      }
+    }
+  ],
+  "binding_improvement_sources": 4,
+  "fidelity_improvement_sources": 6,
+  "scope": "Source-level descriptive paired mechanism analysis; six pilot sources, no population superiority claim"
+}

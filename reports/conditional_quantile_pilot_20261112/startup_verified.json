@@ -1,0 +1,39 @@
+{
+  "observed_at_utc": "2026-11-12T04:07:16.305855+00:00",
+  "pipeline": {
+    "status": "running",
+    "pid": 7040,
+    "stage": "genuine_defense_pilot",
+    "worker_pids": [
+      10342,
+      10343,
+      10344
+    ]
+  },
+  "workers": [
+    {
+      "shard": 0,
+      "pid": 10342,
+      "gpu": 7,
+      "status": "running",
+      "auxiliary_generated": true,
+      "scored_queries": 0
+    },
+    {
+      "shard": 1,
+      "pid": 10343,
+      "gpu": 5,
+      "status": "running",
+      "auxiliary_generated": true,
+      "scored_queries": 0
+    },
+    {
+      "shard": 2,
+      "pid": 10344,
+      "gpu": 4,
+      "status": "running",
+      "auxiliary_generated": true,
+      "scored_queries": 0
+    }
+  ]
+}

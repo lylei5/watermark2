@@ -44,7 +44,7 @@
   },
   "evaluation_policy": "Published standard baselines only; matched absolute genuine detection; no custom attack development",
   "requires_user_resume": false,
-  "active_experiments": 0,
+  "active_experiments": 1,
   "current_findings": {
     "sembind_genuine_non_crop": {
       "accepted": 144,
@@ -186,7 +186,7 @@
     "python_package_index": "https://pypi.tuna.tsinghua.edu.cn/simple/",
     "automatic_aliyun_fallback": false
   },
-  "active_experiments_observation": "Prior full baseline, conditional likelihood, and anchor pilot completed; quantile coupling protocol frozen before launch.",
+  "active_experiments_observation": "Three workers on249 GPUs7/5/4 passed preflight and each generated its fresh50-step auxiliary image; complete genuine evaluation is running.",
   "full_budget_findings": {
     "source_count_per_method": 4,
     "sem_reference_accepted": 4,
@@ -510,7 +510,7 @@
     "advance_to_published_forgery": false
   },
   "conditional_quantile_pilot": {
-    "status": "prepared",
+    "status": "running",
     "protocol": "protocols/conditional_quantile_pilot_20261112.json",
     "plan": "reports/conditional_quantile_pilot_20261112/plan.md",
     "server_root": "/data0/liyanlei/watermark_research/runs/conditional_quantile_pilot_20261112_v2",
@@ -531,6 +531,53 @@
     "completion_mode": "Process exit -> independent audit -> frozen feasibility gate -> unchanged full published baseline if feasible",
     "superiority_established": false,
     "implementation_version": 2,
-    "repetitions_per_channel": 32
+    "repetitions_per_channel": 32,
+    "stage": "genuine_defense_pilot",
+    "coordinator_pid": 7040,
+    "worker_pids": [
+      10342,
+      10343,
+      10344
+    ],
+    "prelaunch_commit": "5a44e9e0836b3347c190fc6e265005968d683465",
+    "last_observation": {
+      "observed_at_utc": "2026-11-12T04:07:16.305855+00:00",
+      "pipeline": {
+        "status": "running",
+        "pid": 7040,
+        "stage": "genuine_defense_pilot",
+        "worker_pids": [
+          10342,
+          10343,
+          10344
+        ]
+      },
+      "workers": [
+        {
+          "shard": 0,
+          "pid": 10342,
+          "gpu": 7,
+          "status": "running",
+          "auxiliary_generated": true,
+          "scored_queries": 0
+        },
+        {
+          "shard": 1,
+          "pid": 10343,
+          "gpu": 5,
+          "status": "running",
+          "auxiliary_generated": true,
+          "scored_queries": 0
+        },
+        {
+          "shard": 2,
+          "pid": 10344,
+          "gpu": 4,
+          "status": "running",
+          "auxiliary_generated": true,
+          "scored_queries": 0
+        }
+      ]
+    }
   }
 }

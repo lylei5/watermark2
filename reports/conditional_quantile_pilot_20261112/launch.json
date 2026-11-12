@@ -1,0 +1,34 @@
+{
+  "pid": 7040,
+  "time_utc": "2026-11-12T04:04:29.101804+00:00",
+  "prelaunch_commit": "5a44e9e0836b3347c190fc6e265005968d683465",
+  "protocol_sha256": "a44ae87b9004edc38967611f01efea301133a811fde1902d5aa71cde9271a426",
+  "devices": [
+    {
+      "index": 7,
+      "uuid": "GPU-9644fb82-cb6f-7311-8017-eaee41409bb7",
+      "memory_mib": 1,
+      "utilization": 0
+    },
+    {
+      "index": 5,
+      "uuid": "GPU-e6f35928-0155-f121-e707-1eaf3c14965c",
+      "memory_mib": 1,
+      "utilization": 0
+    },
+    {
+      "index": 4,
+      "uuid": "GPU-748b31fa-0510-6b56-f820-f3812266ed28",
+      "memory_mib": 1,
+      "utilization": 0
+    }
+  ],
+  "command": [
+    "/data0/liyanlei/watermark_research/envs/ddim_replay_py310/bin/python",
+    "/data0/liyanlei/watermark_research/runs/conditional_quantile_pilot_20261112_v2/run_anchor_binding_pipeline.py",
+    "--run",
+    "/data0/liyanlei/watermark_research/runs/conditional_quantile_pilot_20261112_v2",
+    "--parent-pid",
+    "2154"
+  ]
+}
