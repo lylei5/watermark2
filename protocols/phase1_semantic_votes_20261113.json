@@ -1,0 +1,18 @@
+{
+  "frozen_at": "2026-11-12T17:57:29.162385+00:00",
+  "parent_protocol_sha256": "bd09828a85d57cb8433b2c5c42c48dae0aea98d4929d98a91f07d6fe1def3633",
+  "script_sha256": "2ea5287b33e054d4a38fd9c9e2171f64378c3b39265412a511baaa9b033c8dfb",
+  "observed_model_results_before_freeze": false,
+  "controls": [
+    "same_prompt",
+    "aux_final",
+    "different_prompt",
+    "trajectory35"
+  ],
+  "working_points": [
+    166,
+    167,
+    182
+  ],
+  "scope": "Noise-free original-GS decoder response to observed semantic-code differences; algebraic diagnostic only, not image forgery acceptance or defense success; no attack image, optimization, query feedback or new attack algorithm"
+}
