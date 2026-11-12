@@ -8,6 +8,8 @@
 
 ## 当前进展
 
+[解码区域约束嵌入](reports/decision_region_pilot_20261112/plan.md)已冻结并在249启动：六个新来源、四组配对、240次完整合法验证。主候选通过最小代价符号反射满足56/64重复符合约束，保持原始BA检测器；与相同反射数量的随机对照比较。完整既有Imprint扩展受预声明门槛约束，目前尚无结果。
+
 两项2026-11-12实验均已完成并核对服务器记录。[共享语义证据](reports/shared_semantic_evidence_20261112/report.md)包含120条合法查询和216条完整Imprint验证：默认BA接受合法图107/120、最终伪造1/12，查询置信度候选为85/120、0/12。该候选未在匹配合法检出率下建立收益。[固定三轮语义反馈](reports/semantic_feedback_pilot_20261112/report.md)完成180条合法查询：full 58/60、feedback 56/60、相同生成预算consensus 57/60；七项门槛未全部通过，未启动条件扩展的Imprint评估。当前无排队实验，尚未建立优于SemBind的结论。逐条复核见[完成审计](reports/completion_audit_20261112/audit.json)。
 
 同日其他完整结果：[新执行Imprint](reports/imprint_fresh_revalidation_20261112/report.md)最终SemBind项目适配器接受0/4、GS接受4/4；[条件内容似然](reports/conditional_content_likelihood_20261112/report.md)合法接受30/40，低于校准BA的39/40，未增加拒绝收益；[共享内容锚](reports/conditional_anchor_pilot_20261112/report.md)未通过冻结鲁棒性门槛；[内容耦合分位载体](reports/conditional_quantile_pilot_20261112/report.md)合法接受48/60，低于full的59/60及独立采样对照54/60。各实验保留完整结果及适用边界。

@@ -44,7 +44,7 @@
   },
   "evaluation_policy": "Published standard baselines only; matched absolute genuine detection; no custom attack development",
   "requires_user_resume": false,
-  "active_experiments": 0,
+  "active_experiments": 1,
   "current_findings": {
     "sembind_genuine_non_crop": {
       "accepted": 144,
@@ -186,7 +186,7 @@
     "python_package_index": "https://pypi.tuna.tsinghua.edu.cn/simple/",
     "automatic_aliyun_fallback": false
   },
-  "active_experiments_observation": "Both semantic pipelines completed: shared evidence 120 genuine and 216 forgery verification records; feedback 180 genuine records, frozen feasibility gate failed, no conditional forgery jobs executed.",
+  "active_experiments_observation": "Decision-region embedding full genuine experiment running on249; protocol frozen before new-source model execution.",
   "full_budget_findings": {
     "source_count_per_method": 4,
     "sem_reference_accepted": 4,
@@ -920,6 +920,31 @@
     "wrong_identity_n": 1320,
     "advance_to_fresh_pilot": false,
     "gpu_used": false,
+    "superiority_established": false
+  },
+  "decision_region_pilot": {
+    "status": "running",
+    "stage": "genuine",
+    "protocol": "protocols/decision_region_pilot_20261112.json",
+    "plan": "reports/decision_region_pilot_20261112/plan.md",
+    "server_root": "/data0/liyanlei/watermark_research/runs/decision_region_pilot_20261112",
+    "prelaunch_commit": "7d2b430",
+    "coordinator_pid": 45097,
+    "worker_pids": [
+      45324,
+      45325,
+      45326
+    ],
+    "gpu_indices": [
+      7,
+      5,
+      4
+    ],
+    "genuine_records_planned": 240,
+    "wrong_identity_pairs_planned": 1200,
+    "conditional_imprint_jobs": 24,
+    "conditional_forgery_records": 432,
+    "unit_checks_passed": true,
     "superiority_established": false
   }
 }

@@ -2,6 +2,10 @@
 
 Updated 2026-11-12. Goal: a publishable defense with matched genuine detection, image quality, computation budgets and credible false-positive calibration. No superiority or SOTA claim is established.
 
+## Decision-region embedding experiment
+
+Frozen protocol protocols/decision_region_pilot_20261112.json in prelaunch commit7d2b430. New six-source paired full/saturated/minimal56/random56 experiment:240 full genuine inversions,1200 wrong identities, originalBA>181/256. Primary minimal56 reflects the least-energy mismatched signs until each64-copy message group has56 matches; random56 changes the same count. All magnitudes stay fixed except the original full control. No additional detector. Coordinator45097 started on249, workers45324/45325/45326 use idle7/5/4 only. Completion tracked via kernel process-exit event. All frozen gates must pass before24 unchanged151-update Imprint jobs and432 verifications. Read reports/decision_region_pilot_20261112/plan.md. No result or novelty claim yet.
+
 ## Completed semantic experiments
 
 Both pipelines completed on 2026-11-12. Shared semantic evidence finished at 18:13 CST with all 120 genuine and 216 full Imprint verification records audited. Genuine accepts: default BA 107/120, calibrated BA 101/120, latent-soft 95/120, coordinate-soft 100/120, group-constant 87/120, group-query 85/120. Final Imprint accepts are respectively 1/12, 1/12, 1/12, 1/12, 0/12, 0/12; all checkpoints 15/192, 15/192, 15/192, 15/192, 3/192, 4/192. All six rules accept zero of 12 cover observations and zero of 1320 wrong identities. Twelve jobs each completed the unchanged 151-update schedule. No matched-TPR advantage is established. See reports/shared_semantic_evidence_20261112/report.md.
