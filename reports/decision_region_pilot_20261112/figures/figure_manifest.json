@@ -1,0 +1,22 @@
+{
+  "seed": 202611120,
+  "n": 50000,
+  "unit": "independent 64-coordinate group",
+  "uncertainty": "Pointwise: distortion \u00b11.96 Monte Carlo SE; bit correctness 95% Wilson interval. Not simultaneous; same groups paired across arms and noise levels.",
+  "target": "All positive by random-key sign symmetry; no semantic mismatch in this illustrative channel.",
+  "measurement": "Additive independent standard Gaussian measurement error times sigma. This is a mathematical channel simulation, not an image transformation or an attack baseline.",
+  "limitation": "No evidence of model robustness or defense superiority; publisher formatting pending target selection.",
+  "raw_sha256": "73fdf0bc283c3031de9abbb2f86121fb8a2b2b180d61c9cff590e78a9aff5636",
+  "script_sha256": "5bba890bb7708039ab88a5bb486c4830d22a3f3e32f0c0b9917d1a27c0414fcb",
+  "packages": {
+    "python": "3.10.18",
+    "numpy": "2.2.6",
+    "matplotlib": "3.9.2"
+  },
+  "figure_inches": [
+    7.2,
+    3.25
+  ],
+  "png_dpi": 300,
+  "alt_text": "Two panels compare Gaussian latent distortion and ideal majority decoding. Curves show the tension between small embedding change and reliable bit transmission. Exact plotted data are in ideal_summary.csv."
+}
