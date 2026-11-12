@@ -1,0 +1,81 @@
+{
+  "status": "assets_present_not_end_to_end_reproduced",
+  "official_commit": "92d31b31b93a6e373fe88a584c640beafb68c6fa",
+  "model_root": "/data0/liyanlei/watermark_research/models/seal",
+  "blip_shards": [
+    "model-00001-of-00002.safetensors",
+    "model-00002-of-00002.safetensors"
+  ],
+  "files": {
+    "blip2-flan-t5-xl/config.json": {
+      "bytes": 2224
+    },
+    "blip2-flan-t5-xl/model.safetensors.index.json": {
+      "bytes": 127890
+    },
+    "blip2-flan-t5-xl/.gitattributes": {
+      "bytes": 1477
+    },
+    "blip2-flan-t5-xl/preprocessor_config.json": {
+      "bytes": 432
+    },
+    "blip2-flan-t5-xl/tokenizer.json": {
+      "bytes": 2422417
+    },
+    "blip2-flan-t5-xl/spiece.model": {
+      "bytes": 791656
+    },
+    "blip2-flan-t5-xl/README.md": {
+      "bytes": 7192
+    },
+    "blip2-flan-t5-xl/model-00002-of-00002.safetensors": {
+      "bytes": 5808636312
+    },
+    "blip2-flan-t5-xl/tokenizer_config.json": {
+      "bytes": 20984
+    },
+    "blip2-flan-t5-xl/generation_config.json": {
+      "bytes": 168
+    },
+    "blip2-flan-t5-xl/model-00001-of-00002.safetensors": {
+      "bytes": 9961318232
+    },
+    "blip2-flan-t5-xl/added_tokens.json": {
+      "bytes": 23
+    },
+    "blip2-flan-t5-xl/special_tokens_map.json": {
+      "bytes": 2543
+    },
+    "blip2-flan-t5-xl/processor_config.json": {
+      "bytes": 68
+    },
+    "caption-embedding/config.json": {
+      "bytes": 620
+    },
+    "caption-embedding/vocab.txt": {
+      "bytes": 231536
+    },
+    "caption-embedding/model.safetensors": {
+      "bytes": 437967672
+    },
+    "caption-embedding/tokenizer.json": {
+      "bytes": 711831
+    },
+    "caption-embedding/tokenizer_config.json": {
+      "bytes": 1310
+    },
+    "caption-embedding/modules.json": {
+      "bytes": 229
+    },
+    "caption-embedding/special_tokens_map.json": {
+      "bytes": 964
+    },
+    "caption-embedding/sentence_bert_config.json": {
+      "bytes": 53
+    },
+    "caption-embedding/1_Pooling/config.json": {
+      "bytes": 296
+    }
+  },
+  "scope": "Existence, sizes and shard-index closure only; weights not loaded or fully hashed in this check; no new SEAL image experiment"
+}

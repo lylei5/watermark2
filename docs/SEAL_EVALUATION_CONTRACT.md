@@ -2,7 +2,9 @@
 
 适用范围：以下源码结论针对文中固定版本和原核查日期；本轮未重新逐行认证全部来源。当前部署、实验与复现状态见[基线证据清单](DEFENSE_BASELINE_INVENTORY.md)。
 
-核查时间：2026-10-16 UTC。结论：公开实现包含语义绑定分数和另一个具有布尔判定的穷举检测器，但两者不能混作同一评估对象。当前缓存缺少所需 caption/embedding 权重，现有 GS 图像也没有按 SEAL 方式生成，因此本轮尚不能忠实运行 SEAL 的完整语义防伪造评估。
+当前状态（2026-11-13）：**尚未完整复现SEAL防御基线**。249上已有BLIP2与caption-embedding权重文件，分片索引所列文件均存在；本次只检查存在性、文件大小和分片闭合，没有加载模型或完成逐权重哈希。见[资产核验](../reports/phase1_seal_status_20261113/assets.json)。尚无原生生成、语义判定与完整攻击评测结果。
+
+以下源码审查完成于2026-10-16 UTC。公开实现包含语义绑定分数和另一个具有布尔判定的穷举检测器，两者不能混作同一评估对象。现有GS图像也不能追认为SEAL原生样本。
 
 ## 来源与范围
 
@@ -34,7 +36,7 @@ v1 §3.2 Algorithm 1–3：由候选图像 caption 的语义向量和含秘密 s
 
 ## 当前依赖和执行边界
 
-[`SEAL.py:34–52`](https://github.com/Kasraarabi/SEAL/blob/92d31b31b93a6e373fe88a584c640beafb68c6fa/SEAL.py#L34-L52) 默认扩散模型为 `stabilityai/stable-diffusion-2-1-base`、float16、revision=`fp16`，额外加载 `Salesforce/blip2-flan-t5-xl` 和 `kasraarabi/finetuned-caption-embedding`，并读取 `Gustavosta/Stable-Diffusion-Prompts`。穷举 TPR 脚本默认扩散模型改为 Manojb 镜像，但两个语义模型依然加载。当前已知项目模型缓存只有 Manojb SD2.1 与 SDXL；本轮未下载缺失权重，也不能默换 embedding 或目标模型。
+[`SEAL.py:34–52`](https://github.com/Kasraarabi/SEAL/blob/92d31b31b93a6e373fe88a584c640beafb68c6fa/SEAL.py#L34-L52) 默认扩散模型为 `stabilityai/stable-diffusion-2-1-base`、float16、revision=`fp16`，额外加载 `Salesforce/blip2-flan-t5-xl` 和 `kasraarabi/finetuned-caption-embedding`，并读取 `Gustavosta/Stable-Diffusion-Prompts`。穷举 TPR 脚本默认扩散模型改为 Manojb 镜像，但两个语义模型依然加载。2026-11-13实地检查已确认`/data0/liyanlei/watermark_research/models/seal/blip2-flan-t5-xl`与`caption-embedding`内存在权重、配置和分词文件。资产可用性与模型实际加载、官方快照同一性、端到端结果仍须分别验证，不能默换embedding或目标模型。
 
 相同代码段在 `online=false` 默认下仍调用 `wandb.init`；GPU 自动选择也没有本项目的 UUID 绑定。安装脚本包含系统安装和依赖重装。因此入口不能直接作为受控复现命令执行。需要明确关闭外部日志、固定离线缓存和设备限制，再验证其行为。
 

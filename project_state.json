@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-12T18:00:12.546303+00:00",
+  "updated_at": "2026-11-12T18:08:39.618240+00:00",
   "status": "phase1_trajectory_native_gs_running",
   "active_experiments": 1,
   "queued_experiments": 0,
@@ -227,6 +227,15 @@
       "sd15_assets_hashed": true,
       "clip_vitl14_assets_hashed": true,
       "gspp_complete_implementation_located": false
+    }
+  },
+  "baseline_comparisons": {
+    "seal": {
+      "end_to_end_reproduced": false,
+      "weight_files_present": true,
+      "weight_hashes_verified": false,
+      "evidence": "reports/phase1_seal_status_20261113/assets.json",
+      "contract": "docs/SEAL_EVALUATION_CONTRACT.md"
     }
   }
 }
