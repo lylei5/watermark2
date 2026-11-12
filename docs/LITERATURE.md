@@ -53,3 +53,11 @@
 - [Correlation-Aware and Gaussianity-Preserving Robust Latent Angular Watermarking for Diffusion Models](https://arxiv.org/html/2607.22386v1)，2607.22386。已核验题名与成对角度载体、幅值选择变体；边际正态性不能替代联合独立性论证。本文性能与安全主张尚未由本项目复现。
 
 本项目的[内容耦合分位实验](../reports/conditional_quantile_pilot_20261112/plan.md)属于待验证的防御假设。上述论文只用于方法查新，不引入其中任何新攻击。
+
+## 共享语义证据的查新边界（2026-11-12）
+
+[SemBind §3.1–3.3](https://arxiv.org/html/2601.20310v1)明确区分训练logit与推理二值模式；其对比和比特一致性损失已存在。[Gaussian Shading++ §IV-C](https://arxiv.org/html/2504.15026v2)已有信道后验软译码。两者是当前假设的直接对照，不能把泛化的“软译码”或“一致性训练”表述为首创。
+
+[On Calibration of Modern Neural Networks](https://proceedings.mlr.press/v70/guo17a.html)，Chuan Guo、Geoff Pleiss、Yu Sun、Kilian Q. Weinberger，ICML2017，PMLR70:1321–1330。题名、作者、会议信息及页码由官方PMLR记录核验；单参数温度缩放为已有校准技术。本项目的新实验只将其用作固定的语义置信度估计手段。
+
+本项目此前的分组内容似然已经包含共享语义变量边缘化；此次查询相关语义先验的价值必须通过相同分组、固定先验对照验证。不能以检索未返回同名方法作为新颖性证明。见[实验协议](../reports/shared_semantic_evidence_20261112/plan.md)。

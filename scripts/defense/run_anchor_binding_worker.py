@@ -52,10 +52,14 @@ def main():
         inversion,pipe=load_official(SimpleNamespace(**paths))
         spec=importlib.util.spec_from_file_location('gs_distortions',plan['distortion_source'])
         distort=importlib.util.module_from_spec(spec);spec.loader.exec_module(distort)
-        rows=[];references=[]
+        rows=[];references=[];captured={}
+        if plan.get('capture_semantic_logits',False):
+            masker.model.hash_head.register_forward_hook(lambda module,inputs,output: captured.update(logits=output.detach().cpu().numpy().reshape(-1)))
         def code(image,path):
             value=masker.code(image).cpu().numpy().astype(np.uint8)
-            np.savez_compressed(path,code=value)
+            extra={'logits':captured['logits']} if plan.get('capture_semantic_logits',False) else {}
+            if extra:assert np.array_equal((extra['logits']>0).astype(np.uint8),value)
+            np.savez_compressed(path,code=value,**extra)
             return value
         def invert_score(image,code_value,task,arm,jid,extra):
             torch.manual_seed(202611120000+task)
@@ -93,7 +97,8 @@ def main():
                         q=code(query,out/'codes'/(jid+'.npz'))
                         invert_score(query,q,task,arm,jid,dict(condition=condition['name'],image=str(imagepath.relative_to(run)),
                             image_sha256=sha(imagepath),semantic_mismatch=float((q!=enrollment).mean())))
-            assert len(rows)==80 and len(references)==8
+            count=sum(x['task']%3==args.shard for x in plan['sources'])*len(plan['arms'])
+            assert len(rows)==count*len(plan['conditions']) and len(references)==count
         else:
             attack=json.loads((run/'attack_protocol.json').read_text())
             for job in [j for n,j in enumerate(attack['jobs']) if n%3==args.shard]:
@@ -109,7 +114,7 @@ def main():
                     image=Image.open(imagepath).convert('RGB');q=code(image,out/'codes'/(jid+'.npz'))
                     invert_score(image,q,job['task'],job['method'],jid,dict(kind=item['kind'],update=item['update'],
                         image=str(imagepath),image_sha256=sha(imagepath),cover=str(run/job['cover'])))
-            assert len(rows)==72
+            assert len(rows)==18*sum(i%3==args.shard for i in range(len(attack['jobs'])))
         del pipe,masker;gc.collect();torch.cuda.empty_cache()
         sys.path.insert(0,plan['upstream'])
         import lpips

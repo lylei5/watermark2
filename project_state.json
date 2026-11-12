@@ -27,7 +27,7 @@
     "root": "/data0/liyanlei/watermark_research",
     "primary_python": "/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/bin/python"
   },
-  "latest_progress_report": "reports/conditional_quantile_pilot_20261112/report.md",
+  "latest_progress_report": "reports/shared_semantic_evidence_20261112/plan.md",
   "independent_progress": {
     "independent_images": 320,
     "source_prompts": 112,
@@ -186,7 +186,7 @@
     "python_package_index": "https://pypi.tuna.tsinghua.edu.cn/simple/",
     "automatic_aliyun_fallback": false
   },
-  "active_experiments_observation": "2026-11-12 13:49 CST: balanced quantile pilot complete; all240 records independently audited; failed frozen feasibility gates; GPUs7/5/4 idle.",
+  "active_experiments_observation": "Quantile failure decomposed; next shared-semantic-evidence method and full evaluation protocol frozen before launch.",
   "full_budget_findings": {
     "source_count_per_method": 4,
     "sem_reference_accepted": 4,
@@ -615,5 +615,26 @@
       }
     ],
     "advance_to_published_forgery": false
+  },
+  "shared_semantic_evidence": {
+    "status": "prepared",
+    "protocol": "protocols/shared_semantic_evidence_20261112.json",
+    "plan": "reports/shared_semantic_evidence_20261112/plan.md",
+    "server_root": "/data0/liyanlei/watermark_research/runs/shared_semantic_evidence_20261112",
+    "fit_sources": 6,
+    "calibration_sources": 6,
+    "test_sources": 12,
+    "development_extractions": 120,
+    "genuine_inversions": 120,
+    "imprint_jobs": 12,
+    "imprint_updates": 151,
+    "forgery_inversions": 216,
+    "gpu_indices": [
+      7,
+      5,
+      4
+    ],
+    "unit_checks_passed": true,
+    "superiority_established": false
   }
 }

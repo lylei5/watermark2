@@ -25,7 +25,7 @@ def audit(run,stage,plan):
     from scipy.fft import dctn
     from cryptography.hazmat.primitives.ciphers import Cipher,algorithms
     rows=[];refs=[];identities={}
-    for i in range(6):
+    for i in [x['task'] for x in plan['sources']]:
         s=json.loads((Path(plan['identity_root'])/f'{i:03}.json').read_text())
         key,nonce,msg,bkey=[bytes.fromhex(s[k]) for k in ['key','nonce','message','binding_key']]
         cipher=np.unpackbits(np.frombuffer(Cipher(algorithms.ChaCha20(key,nonce),mode=None).encryptor().update(msg*64),dtype=np.uint8))
@@ -40,9 +40,9 @@ def audit(run,stage,plan):
         assert done['status']=='complete' and done['protocol_sha256']==sha(run/'protocol.json')
         rows.extend(done['rows']);refs.extend(done['references'])
     if stage=='genuine':
-        expected={(i,a,c['name']) for i in range(6) for a in plan['arms'] for c in plan['conditions']}
-        assert len(rows)==240 and {(r['task'],r['arm'],r['condition']) for r in rows}==expected
-        assert len(refs)==24
+        expected={(i,a,c['name']) for i in [x['task'] for x in plan['sources']] for a in plan['arms'] for c in plan['conditions']}
+        assert len(rows)==len(expected) and {(r['task'],r['arm'],r['condition']) for r in rows}==expected
+        assert len(refs)==len(plan['sources'])*len(plan['arms'])
         import torch
         import lpips
         from PIL import Image
@@ -65,7 +65,7 @@ def audit(run,stage,plan):
         attack=json.loads((run/'attack_protocol.json').read_text())
         expected={j['id']+'_'+k for j in attack['jobs'] for k in ['reference','cover']}
         expected|={j['id']+f'_update_{u:03}' for j in attack['jobs'] for u in range(1,152,10)}
-        assert len(rows)==216 and {r['id'] for r in rows}==expected
+        assert len(rows)==len(expected) and {r['id'] for r in rows}==expected
     for r in rows:
         latent=run/r['latent'];codepath=run/r['code'];imagepath=run/r['image']
         assert sha(latent)==r['latent_sha256'] and sha(codepath)==r['code_sha256'] and sha(imagepath)==r['image_sha256']
@@ -95,15 +95,15 @@ def audit(run,stage,plan):
     if stage=='genuine':
         for arm in plan['arms']:
             g=[r for r in rows if r['arm']==arm];f=[r for r in refs if r['arm']==arm]
-            summary.append(dict(arm=arm,n=60,accepted=sum(r['accepted'] for r in g),mean_ba=float(np.mean([r['ba'] for r in g])),
+            summary.append(dict(arm=arm,n=len(g),accepted=sum(r['accepted'] for r in g),mean_ba=float(np.mean([r['ba'] for r in g])),
                 mean_binding_mismatch=float(np.mean([r['semantic_mismatch'] for r in f])),mean_reference_lpips=float(np.mean([r['lpips'] for r in f]))))
     else:
         for arm in plan['after_positive_gate']['arms']:
             for kind in ['reference','cover','candidate']:
                 g=[r for r in rows if r['arm']==arm and r['kind']==kind and (kind!='candidate' or r['update']==151)]
-                assert len(g)==6
-                summary.append(dict(arm=arm,kind=kind,n=6,accepted=sum(r['accepted'] for r in g),mean_ba=float(np.mean([r['ba'] for r in g]))))
-    result=dict(completed=True,audit_passed=True,rows=rows,references=refs,summary=summary,unique_sources=6,
+                assert len(g)==len(plan['sources'])
+                summary.append(dict(arm=arm,kind=kind,n=len(g),accepted=sum(r['accepted'] for r in g),mean_ba=float(np.mean([r['ba'] for r in g]))))
+    result=dict(completed=True,audit_passed=True,rows=rows,references=refs,summary=summary,unique_sources=len(plan['sources']),
                 protocol_sha256=sha(run/'protocol.json'),independent_paper_scale_confirmation=False)
     save(run/f'{stage}_verified.json',result)
     return result

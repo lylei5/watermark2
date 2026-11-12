@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "independent_score_comparisons": 48,
+  "maximum_difference": 3.756606137272911e-12,
+  "trials": 24,
+  "invariants": [
+    "Hard BA equals direct bit recovery",
+    "Zero semantic certainty supplies zero binding evidence",
+    "Sixteen consistent carrier observations remain bounded by one semantic-bit contribution",
+    "Opposite semantic evidence has negative log ratio",
+    "Per-bit evidence never exceeds log2"
+  ],
+  "scope": "Synthetic decoder algebra and numerical equivalence; no claim of image robustness or security",
+  "source_sha256": {
+    "semantic_evidence.py": "fd76553ffc300860add3a85c416819565b29ed8211eb6306f1aecd86e516302a",
+    "semantic_evidence_reference.py": "fbd9d377ecd81d7dc40aaa8822070ebf81f9a0325af458be24db032ad0137980",
+    "test_semantic_evidence.py": "dec0b6ab0a2a7fe9d3beec714c3005690edbb21ee9a97035c8d91e6c612632dc"
+  }
+}
