@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-12T16:53:54.484939+00:00",
-  "status": "baseline_equivalence_required",
+  "updated_at": "2026-11-12T17:35:51.721077+00:00",
+  "status": "phase1_baseline_and_trajectory_preparation",
   "active_experiments": 0,
   "queued_experiments": 0,
-  "latest_progress_report": "reports/continuous_geometry_screen_20261113/report.md",
+  "latest_progress_report": "reports/phase1_contract_20261113/report.md",
   "evidence_index": "reports/README.md",
-  "research_plan": "docs/RESEARCH_PLAN.md",
+  "research_plan": "docs/PHASE1_PROTOCOL.md",
   "native_sembind_reproduction_complete": false,
   "superiority_established": false,
   "baseline": {
@@ -57,7 +57,7 @@
   ],
   "max_concurrent_gpus": 3,
   "evaluation_policy": "Unchanged published top-venue attacks only; full budgets; no attack development; matched absolute genuine detection",
-  "current_decision": "Pause method expansion pending native baseline equivalence and matched detector working point",
+  "current_decision": "Execute phase1 baseline working-point audit and observational trajectory probe; no carrier or attack variants",
   "completed_evidence": [
     {
       "path": "reports/continuous_geometry_screen_20261113/report.md",
@@ -187,5 +187,13 @@
     "New independent sources",
     "Image quality and compute cost",
     "Defense benefit over simple controls at matched absolute genuine detection"
-  ]
+  ],
+  "phase1": {
+    "status": "contract_audit_complete",
+    "report": "reports/phase1_contract_20261113/report.md",
+    "model_experiments_started": 0,
+    "paper_gs_minimum_matching_bits": 167,
+    "original_gs_source_minimum_matching_bits": 166,
+    "empirical_fpr_established": false
+  }
 }

@@ -1,6 +1,6 @@
 # Research handoff: content-bound diffusion watermark defense
 
-Authoritative execution state: [project_state.json](project_state.json). Completed evidence: [reports/README.md](reports/README.md). Updated 2026-11-13 after all registered experiments completed; no active or queued experiment.
+Authoritative execution state: [project_state.json](project_state.json). Completed evidence: [reports/README.md](reports/README.md). Updated 2026-11-13. Phase1 contract audit is complete; model experiments are being prepared. Latest report: reports/phase1_contract_20261113/report.md.
 
 ## Baseline and implementation
 
@@ -18,7 +18,7 @@ Other completed negative results, calibration, diagnostics and published baselin
 
 ## Next research requirement
 
-Method expansion is on hold while native baseline equivalence is resolved. Audit the full official embedding and verification chain, secret material, preprocessing, inference settings and detection working point; freeze the comparison before new independent experiments. Do not describe released components or the project's GS adapter as a complete native reproduction.
+The active task follows docs/PHASE1_PROTOCOL.md: paper-specification baseline, detection working point, and observational trajectory semantics. Carrier variants remain on hold. Audit the full official embedding and verification chain, secret material, preprocessing, inference settings and detection working point; freeze the comparison before new independent experiments. Do not describe released components or the project's GS adapter as a complete native reproduction.
 
 ## Execution rules
 

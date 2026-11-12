@@ -1,0 +1,109 @@
+{
+  "status": "complete",
+  "time_utc": "2026-11-12T17:24:35.998084+00:00",
+  "host": "249",
+  "gpu_used": false,
+  "model_experiments": 0,
+  "sources": {
+    "sembind_icml2026.pdf": {
+      "url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/zhang26hj/zhang26hj.pdf",
+      "file": "sembind_icml2026.pdf",
+      "bytes": 16366869,
+      "sha256": "c170cfdcc8be99b041f87b128b96912b532bd6c4d3d3bd658b042b9d09f3362e"
+    },
+    "sembind_tree.json": {
+      "url": "https://api.github.com/repos/XinZhang1999/SemBind/git/trees/main?recursive=1",
+      "file": "sembind_tree.json",
+      "bytes": 4035,
+      "sha256": "e344d7a0a5d9bdf519e953a7ea765ceaad5e87f5c2cb1e61086de92b6eb9bcf4"
+    }
+  },
+  "source_errors": {
+    "gs_watermark.py": "TimeoutError('The read operation timed out')",
+    "gs_run.sh": "TimeoutError('The read operation timed out')",
+    "sdp_metadata.json": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  "available_modules": {
+    "pypdf": false,
+    "fitz": false,
+    "Crypto": false,
+    "pyarrow": false,
+    "requests": true
+  },
+  "theoretical_working_point": {
+    "assumption": "256 independent fair agreement bits, averaged over fresh uniform messages",
+    "target_fpr": 1e-06,
+    "minimum_matching_bits": 167,
+    "strict_ba_threshold": 0.6484375,
+    "inclusive_ba_threshold": 0.65234375,
+    "achieved_ideal_fpr": 6.222893350770624e-07,
+    "previous_minimum_matching_bits": 182,
+    "previous_ideal_fpr": 5.634806966794081e-12
+  },
+  "original_gs_comparator": {
+    "source": "gs_watermark.py",
+    "computed_index": 166,
+    "threshold": 0.6484375,
+    "comparison": ">=",
+    "actual_minimum_matching_bits": 166,
+    "ideal_fpr": 1.1760979985375116e-06,
+    "note": "The source selects i using P(K>i), then accepts K>=i; report both without changing upstream."
+  },
+  "majority_tie": {
+    "repetitions": 64,
+    "tie_probability": 0.09934675374796689,
+    "decoded_one_probability": 0.45032662312601657,
+    "fixed_message_examples": [
+      {
+        "message_ones": 0,
+        "expected_matching_bits": 140.71638447973976,
+        "fpr_at_ideal_minimum": 0.0005383067283556373,
+        "fpr_at_official_comparator": 0.0008416297336498403
+      },
+      {
+        "message_ones": 112,
+        "expected_matching_bits": 129.58954805996746,
+        "fpr_at_ideal_minimum": 1.4790162074118666e-06,
+        "fpr_at_official_comparator": 2.7446888896602313e-06
+      },
+      {
+        "message_ones": 120,
+        "expected_matching_bits": 128.79477402998373,
+        "fpr_at_ideal_minimum": 9.072389788744822e-07,
+        "fpr_at_official_comparator": 1.704145268390266e-06
+      },
+      {
+        "message_ones": 128,
+        "expected_matching_bits": 128.0,
+        "fpr_at_ideal_minimum": 5.516597140195214e-07,
+        "fpr_at_official_comparator": 1.0488364908932513e-06
+      },
+      {
+        "message_ones": 136,
+        "expected_matching_bits": 127.20522597001627,
+        "fpr_at_ideal_minimum": 3.325417465375103e-07,
+        "fpr_at_official_comparator": 6.399119561445852e-07
+      },
+      {
+        "message_ones": 144,
+        "expected_matching_bits": 126.41045194003254,
+        "fpr_at_ideal_minimum": 1.9873377510371692e-07,
+        "fpr_at_official_comparator": 3.8705107215855947e-07
+      },
+      {
+        "message_ones": 256,
+        "expected_matching_bits": 115.28361552026024,
+        "fpr_at_ideal_minimum": 6.16686748404685e-11,
+        "fpr_at_official_comparator": 1.4147683491973587e-10
+      }
+    ],
+    "scope": "Ideal null calculation, not empirical natural-image FPR; fresh-message averaging hides per-message bias."
+  },
+  "statistical_resolution": {
+    "zero_of_50_two_sided_cp_upper": 0.07112173646419764,
+    "zero_of_100_two_sided_cp_upper": 0.03621669264517641,
+    "iid_zero_event_trials_needed_for_one_sided_95_upper_1e6": 2995731,
+    "warning": "Repeated images/keys need clustering; pooled correlated pairs do not supply this number of independent trials."
+  },
+  "script_sha256": "e6fe748b4f136b3bb0d38fb20e0a0bb8b18276c3d8992eed9bac1b040e8b3871"
+}
