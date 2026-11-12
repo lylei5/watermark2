@@ -29,4 +29,6 @@
 
 [共享语义证据](../reports/shared_semantic_evidence_20261112/report.md)已完成120条合法查询与216条完整Imprint验证：默认BA为107/120合法接受、1/12最终伪造接受，主候选为85/120、0/12，未建立匹配合法检出率下的增益。[固定三轮语义反馈](../reports/semantic_feedback_pilot_20261112/report.md)完成180条合法查询，full/feedback/consensus分别58/60、56/60、57/60，未通过冻结门槛，条件扩展的Imprint未执行。两项完成记录及逐条结果均已归档。
 
-[解码区域最小反射](../reports/decision_region_pilot_20261112/report.md)完成240条合法查询，主候选44/60、full59/60，未通过门槛。[完整码字条件传输](../reports/semantic_transport_pilot_20261112/report.md)另完成240条：主候选55/60、full53/60、同符号重排57/60；保真改善但合法接受和绑定门槛未通过。两者均未启动条件Imprint分支，不能报告其伪造接受率为零。[连续语义区域筛选](../reports/continuous_geometry_screen_20261113/report.md)已完成24条干净图验证，四组均6/6；主候选绑定与BA门槛未通过，未执行攻击。完整原生SemBind复现和匹配工作点仍未完成，当前没有运行或排队实验。
+[解码区域最小反射](../reports/decision_region_pilot_20261112/report.md)完成240条合法查询，主候选44/60、full59/60，未通过门槛。[完整码字条件传输](../reports/semantic_transport_pilot_20261112/report.md)另完成240条：主候选55/60、full53/60、同符号重排57/60；保真改善但合法接受和绑定门槛未通过。两者均未启动条件Imprint分支，不能报告其伪造接受率为零。[连续语义区域筛选](../reports/continuous_geometry_screen_20261113/report.md)已完成24条干净图验证，四组均6/6；主候选绑定与BA门槛未通过，未执行攻击。完整原生SemBind复现和匹配工作点仍未完成。当前执行[第一阶段协议](PHASE1_PROTOCOL.md)，运行状态见[project_state.json](../project_state.json)。
+
+[第一阶段工作点核验](../reports/phase1_wrong_key_null_20261113/report.md)已完成300万次随机错误身份比较；167位门槛0次接受、双侧95%上界1.22963e-6，不等于固定用户自然图FPR。新的100提示词实验直接调用原GS空间重复编码/译码；与此前扁平重复载体区分。

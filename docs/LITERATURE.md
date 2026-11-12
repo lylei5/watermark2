@@ -52,7 +52,7 @@
 - [ShapeMark: Robust and Diversity-Preserving Watermarking for Diffusion Models](https://arxiv.org/html/2603.09454v1)，2603.09454。已核验原文题名与结构编码/块重排机制；此条仅引用预印本，不从模板关键词推断会议录用。
 - [Correlation-Aware and Gaussianity-Preserving Robust Latent Angular Watermarking for Diffusion Models](https://arxiv.org/html/2607.22386v1)，2607.22386。已核验题名与成对角度载体、幅值选择变体；边际正态性不能替代联合独立性论证。本文性能与安全主张尚未由本项目复现。
 
-本项目的[内容耦合分位实验](../reports/conditional_quantile_pilot_20261112/plan.md)属于待验证的防御假设。上述论文只用于方法查新，不引入其中任何新攻击。
+本项目的[内容耦合分位实验](../reports/conditional_quantile_pilot_20261112/report.md)已经完成，候选未通过冻结门槛。上述论文只用于方法查新，不引入其中任何新攻击。
 
 ## 共享语义证据的查新边界（2026-11-12）
 
@@ -67,7 +67,7 @@
 
 ## 登记一致性与生成耦合的进一步查新
 
-- Mathon、Cayre、Bas、Macq，*Optimal Transport for Secure Spread-Spectrum Watermarking of Still Images*，TIP23(4):1694–1705，2014，DOI10.1109/TIP.2014.2305873。[作者稿全文](https://scispace.com/pdf/optimal-transport-for-secure-spread-spectrum-watermarking-of-1831ieowih.pdf)式(17)–(22)已给出本项目条件高斯传输采用的同一个正态到指定半正态映射及最优性证明。其原始HAL标识为hal-00940754v2。当前试验属于扩散语义登记问题上的机制检验，不能将该公式作为新算法。
+- Mathon、Cayre、Bas、Macq，*Optimal Transport for Secure Spread-Spectrum Watermarking of Still Images*，TIP23(4):1694–1705，2014，DOI10.1109/TIP.2014.2305873。[出版记录](https://doi.org/10.1109/TIP.2014.2305873)确认最优传输水印已有先例；当前第一阶段审计未独立重验此前说明中的逐式对应，不能把公式等价或新的最优性证明当作已验证结论。当前试验属于扩散语义登记问题上的机制检验。
 - [NoisePrints: Distortion-Free Watermarks for Authorship in Private Diffusion Models](https://arxiv.org/html/2510.13793v2)，Nir Goren、Oren Katzir、Abhinav Nakarmi、Eyal Ronen、Mahmood Sharif、Or Patashnik；[ICLR2026论文](https://openreview.net/pdf?id=gwHCXvPDBd)。该方法直接利用生成种子与图像VAE潜变量的相关性进行归属验证，并讨论秘密种子的证明。说明无需辅助图、使用初始噪声作为来源证据已有直接先例。其验证协议、载荷与私有模型假设应分别比较，不能把来源登记直接当成同载荷SemBind替代。
 - [Guidance Watermarking for Diffusion Models](https://proceedings.iclr.cc/paper_files/paper/2026/hash/b9501301a7a0f99e57406cc901f4e3ce-Abstract-Conference.html)，Enoal Gesny、Eva Giboulot、Teddy Furon、Vivien Chappelier，ICLR2026。既有解码器梯度与图像增强被用于生成过程引导，无需重新训练解码器；因此单纯加入检测损失或增强后的梯度引导不能作为新贡献。
 
@@ -81,3 +81,7 @@
 - [Goemans作者论述](https://math.mit.edu/~goemans/PAPERS/icm98.pdf)明确随机超平面分离概率与夹角的关系。本轮高斯符号概率使用这一经典几何结论，不主张新的概率定理。
 
 当前具体研究的是平滑语义变化下扩散登记循环的解码区域，详见[机制与限制](../reports/continuous_geometry_screen_20261113/plan.md)。理想模型仅支持局部响应差异，不能推出全距离或真实防伪优势。SemBind正文与附录明确按提示词标签构造对比正例，因此改变同提示词图像的不变性目标会改变认证粒度，必须分别定义合法变化及错误绑定；不能把更敏感的特征直接视为更好的防御。
+
+## 轨迹语义绑定查新（2026-11-13）
+
+[专项审查](PHASE1_NOVELTY_REVIEW.md)记录ROBIN、AEON、Guidance Watermarking及IRIS的来源和范围。IRIS当前版本已撤回，仅用公开初稿识别思路重叠，不采信其数值作基线。第35步语义稳定性是必要条件，不能替代绑定后的防御验证。
