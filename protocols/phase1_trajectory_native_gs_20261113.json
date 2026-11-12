@@ -1,0 +1,1074 @@
+{
+  "frozen_at": "2026-11-12T17:46:26.325063+00:00",
+  "scope": "Fresh 50 COCO and50 SDP prompts; observational trajectory and paper-spec GS-S with original GS carrier, not complete SemBind replication",
+  "sources": [
+    {
+      "task": 0,
+      "dataset": "COCO",
+      "source_id": "480944",
+      "caption": "A traffic light sitting on the side of a road.",
+      "image_id": 480944,
+      "caption_id": 322692,
+      "aux_seed": 7605690208809140281,
+      "independent_seed": 4513445748092457651
+    },
+    {
+      "task": 1,
+      "dataset": "COCO",
+      "source_id": "521819",
+      "caption": "A group of kids play on a grassy area and lift their arms up as a Frisbee is just above their heads.",
+      "image_id": 521819,
+      "caption_id": 107551,
+      "aux_seed": 761158008750363281,
+      "independent_seed": 1652410628151690860
+    },
+    {
+      "task": 2,
+      "dataset": "COCO",
+      "source_id": "550691",
+      "caption": "A red double decker bus on a street.",
+      "image_id": 550691,
+      "caption_id": 234516,
+      "aux_seed": 518377459496290164,
+      "independent_seed": 6207714445307139485
+    },
+    {
+      "task": 3,
+      "dataset": "COCO",
+      "source_id": "203546",
+      "caption": "The bear is inside of the river stream. ",
+      "image_id": 203546,
+      "caption_id": 759809,
+      "aux_seed": 4802688557490037421,
+      "independent_seed": 3915035547748696807
+    },
+    {
+      "task": 4,
+      "dataset": "COCO",
+      "source_id": "243626",
+      "caption": "A plate holding seasoned meat, string beans and one fork.",
+      "image_id": 243626,
+      "caption_id": 59923,
+      "aux_seed": 1816208421367165839,
+      "independent_seed": 2820632179391385049
+    },
+    {
+      "task": 5,
+      "dataset": "COCO",
+      "source_id": "219440",
+      "caption": "a cow staring into a camera standing on a field ",
+      "image_id": 219440,
+      "caption_id": 614822,
+      "aux_seed": 3087612168797113715,
+      "independent_seed": 5606409630278935733
+    },
+    {
+      "task": 6,
+      "dataset": "COCO",
+      "source_id": "51008",
+      "caption": "A cat looking like it is using a laptop ",
+      "image_id": 51008,
+      "caption_id": 464819,
+      "aux_seed": 6800597164801416055,
+      "independent_seed": 2141541457188200320
+    },
+    {
+      "task": 7,
+      "dataset": "COCO",
+      "source_id": "160864",
+      "caption": "Baseball team holding batting practice on the field",
+      "image_id": 160864,
+      "caption_id": 425130,
+      "aux_seed": 1876957688897692908,
+      "independent_seed": 7462059770199234698
+    },
+    {
+      "task": 8,
+      "dataset": "COCO",
+      "source_id": "108495",
+      "caption": "Cute girl sitting on a skateboard in the driveway ",
+      "image_id": 108495,
+      "caption_id": 417244,
+      "aux_seed": 8950013692674750836,
+      "independent_seed": 8189710542565167118
+    },
+    {
+      "task": 9,
+      "dataset": "COCO",
+      "source_id": "25986",
+      "caption": "A bunch of items that are on a counter.",
+      "image_id": 25986,
+      "caption_id": 571761,
+      "aux_seed": 102458013988105588,
+      "independent_seed": 4651089213545944618
+    },
+    {
+      "task": 10,
+      "dataset": "COCO",
+      "source_id": "405279",
+      "caption": "Kites are flying in the sky over the water at a park.",
+      "image_id": 405279,
+      "caption_id": 211156,
+      "aux_seed": 4434986159651944248,
+      "independent_seed": 6212701514097992926
+    },
+    {
+      "task": 11,
+      "dataset": "COCO",
+      "source_id": "109798",
+      "caption": "three different donuts one is pink one is brown and one has white sprinkles",
+      "image_id": 109798,
+      "caption_id": 401752,
+      "aux_seed": 7297632105830430179,
+      "independent_seed": 8519805244127268907
+    },
+    {
+      "task": 12,
+      "dataset": "COCO",
+      "source_id": "88970",
+      "caption": "A man serving a tennis ball on top of a tennis court.",
+      "image_id": 88970,
+      "caption_id": 491766,
+      "aux_seed": 6300377165800514638,
+      "independent_seed": 821980846136351101
+    },
+    {
+      "task": 13,
+      "dataset": "COCO",
+      "source_id": "462576",
+      "caption": "a plate of breakfast food sits on a table",
+      "image_id": 462576,
+      "caption_id": 190268,
+      "aux_seed": 4331515810090408053,
+      "independent_seed": 2348948318953540457
+    },
+    {
+      "task": 14,
+      "dataset": "COCO",
+      "source_id": "565597",
+      "caption": "Slices of pizza upside down on a plate on a table.",
+      "image_id": 565597,
+      "caption_id": 791262,
+      "aux_seed": 8876253753955929696,
+      "independent_seed": 7342189821543164078
+    },
+    {
+      "task": 15,
+      "dataset": "COCO",
+      "source_id": "104666",
+      "caption": "A living room with hard wood floors and a book shelf.",
+      "image_id": 104666,
+      "caption_id": 615360,
+      "aux_seed": 4268430848940597036,
+      "independent_seed": 5050217923753562429
+    },
+    {
+      "task": 16,
+      "dataset": "COCO",
+      "source_id": "187990",
+      "caption": "A boy is riding a skateboard on a ramp.",
+      "image_id": 187990,
+      "caption_id": 681752,
+      "aux_seed": 5362077518964203028,
+      "independent_seed": 912684556878454419
+    },
+    {
+      "task": 17,
+      "dataset": "COCO",
+      "source_id": "57238",
+      "caption": "A white refrigerator freezer sitting inside of a kitchen.",
+      "image_id": 57238,
+      "caption_id": 507679,
+      "aux_seed": 6714174026810672197,
+      "independent_seed": 2154006908374065916
+    },
+    {
+      "task": 18,
+      "dataset": "COCO",
+      "source_id": "293245",
+      "caption": "A Yamaha motorcycle parked outside of a building.",
+      "image_id": 293245,
+      "caption_id": 466958,
+      "aux_seed": 2316192831991050178,
+      "independent_seed": 8728831315850125056
+    },
+    {
+      "task": 19,
+      "dataset": "COCO",
+      "source_id": "286708",
+      "caption": "a black and white cat wearing a little purple hat",
+      "image_id": 286708,
+      "caption_id": 720032,
+      "aux_seed": 1475012688814303383,
+      "independent_seed": 1092121156875157544
+    },
+    {
+      "task": 20,
+      "dataset": "COCO",
+      "source_id": "578922",
+      "caption": "A vase of red flowers sits on a bathroom countertop. ",
+      "image_id": 578922,
+      "caption_id": 29907,
+      "aux_seed": 4348697753715803203,
+      "independent_seed": 5712535516104733552
+    },
+    {
+      "task": 21,
+      "dataset": "COCO",
+      "source_id": "359937",
+      "caption": "A double decker bus is parked in the parking lot.",
+      "image_id": 359937,
+      "caption_id": 87171,
+      "aux_seed": 6696210668329683521,
+      "independent_seed": 7171668552324302240
+    },
+    {
+      "task": 22,
+      "dataset": "COCO",
+      "source_id": "386912",
+      "caption": "a person sitting at a desk with a keyboard and monitor ",
+      "image_id": 386912,
+      "caption_id": 784557,
+      "aux_seed": 6783592364657783377,
+      "independent_seed": 512514463366595231
+    },
+    {
+      "task": 23,
+      "dataset": "COCO",
+      "source_id": "330818",
+      "caption": "A young man is working behind a counter. ",
+      "image_id": 330818,
+      "caption_id": 597997,
+      "aux_seed": 4743620451867500758,
+      "independent_seed": 6997457718020287397
+    },
+    {
+      "task": 24,
+      "dataset": "COCO",
+      "source_id": "21879",
+      "caption": "there are many surfers that are in the water",
+      "image_id": 21879,
+      "caption_id": 706434,
+      "aux_seed": 6392470763051867195,
+      "independent_seed": 2167694117242527114
+    },
+    {
+      "task": 25,
+      "dataset": "COCO",
+      "source_id": "193162",
+      "caption": "a man on a three wheeler following behind a two dogs and a cow",
+      "image_id": 193162,
+      "caption_id": 495467,
+      "aux_seed": 2104743905949878785,
+      "independent_seed": 2563455078040358949
+    },
+    {
+      "task": 26,
+      "dataset": "COCO",
+      "source_id": "377486",
+      "caption": "A person riding a horse in the dirt near a wall.",
+      "image_id": 377486,
+      "caption_id": 774886,
+      "aux_seed": 4119451872305696901,
+      "independent_seed": 2266769492200634075
+    },
+    {
+      "task": 27,
+      "dataset": "COCO",
+      "source_id": "16249",
+      "caption": "A man sitting on top of a bench with a newspaper.",
+      "image_id": 16249,
+      "caption_id": 701091,
+      "aux_seed": 2644875256545762554,
+      "independent_seed": 7373183712852284867
+    },
+    {
+      "task": 28,
+      "dataset": "COCO",
+      "source_id": "158945",
+      "caption": "A PICTURE OF A ELEPHANT WITH A CART ON ITS BACK ",
+      "image_id": 158945,
+      "caption_id": 696326,
+      "aux_seed": 7935091849705091016,
+      "independent_seed": 4599094427642126334
+    },
+    {
+      "task": 29,
+      "dataset": "COCO",
+      "source_id": "65074",
+      "caption": "A view of a bedroom with the bed unmade.",
+      "image_id": 65074,
+      "caption_id": 689721,
+      "aux_seed": 2232951329466014214,
+      "independent_seed": 3865464755458709072
+    },
+    {
+      "task": 30,
+      "dataset": "COCO",
+      "source_id": "451144",
+      "caption": "a couple of people on skis sit on top of a snowy hill ",
+      "image_id": 451144,
+      "caption_id": 543524,
+      "aux_seed": 8911147643982229183,
+      "independent_seed": 4747161174117824927
+    },
+    {
+      "task": 31,
+      "dataset": "COCO",
+      "source_id": "109976",
+      "caption": "An all white kitchen with an electric stovetop. ",
+      "image_id": 109976,
+      "caption_id": 2734,
+      "aux_seed": 8078348328436083363,
+      "independent_seed": 5502066635429093992
+    },
+    {
+      "task": 32,
+      "dataset": "COCO",
+      "source_id": "410510",
+      "caption": "A boy playing tennis on a blue and green tennis court. ",
+      "image_id": 410510,
+      "caption_id": 477934,
+      "aux_seed": 3517560379915519939,
+      "independent_seed": 6112439799077151737
+    },
+    {
+      "task": 33,
+      "dataset": "COCO",
+      "source_id": "450686",
+      "caption": "A hand holding a smart phone with apps on a screen.",
+      "image_id": 450686,
+      "caption_id": 168172,
+      "aux_seed": 9020668424790179316,
+      "independent_seed": 9139292490736679723
+    },
+    {
+      "task": 34,
+      "dataset": "COCO",
+      "source_id": "505451",
+      "caption": "A person riding the waves on a surf board.",
+      "image_id": 505451,
+      "caption_id": 357847,
+      "aux_seed": 6014526761724108183,
+      "independent_seed": 7817052737173344904
+    },
+    {
+      "task": 35,
+      "dataset": "COCO",
+      "source_id": "27932",
+      "caption": "A catchers mitt sitting inside of a blue baseball hat.",
+      "image_id": 27932,
+      "caption_id": 153267,
+      "aux_seed": 8604146960028179916,
+      "independent_seed": 5263867927462288540
+    },
+    {
+      "task": 36,
+      "dataset": "COCO",
+      "source_id": "222455",
+      "caption": "A filtered image of a microwave available to use in a store. ",
+      "image_id": 222455,
+      "caption_id": 660439,
+      "aux_seed": 8611786014939352051,
+      "independent_seed": 6309482297906078138
+    },
+    {
+      "task": 37,
+      "dataset": "COCO",
+      "source_id": "251119",
+      "caption": "The lunchbox has a cold sandwich, strawberry yogurt and orange juice. ",
+      "image_id": 251119,
+      "caption_id": 354004,
+      "aux_seed": 5869930884002243520,
+      "independent_seed": 6336745769153284447
+    },
+    {
+      "task": 38,
+      "dataset": "COCO",
+      "source_id": "109441",
+      "caption": "A square reflective glass building sitting next to a street light.",
+      "image_id": 109441,
+      "caption_id": 588761,
+      "aux_seed": 2812894836999909368,
+      "independent_seed": 7912451327170983845
+    },
+    {
+      "task": 39,
+      "dataset": "COCO",
+      "source_id": "157390",
+      "caption": "White bowl full of chopped carrots and broccoli.",
+      "image_id": 157390,
+      "caption_id": 343101,
+      "aux_seed": 3955812079977258334,
+      "independent_seed": 1213021199498261718
+    },
+    {
+      "task": 40,
+      "dataset": "COCO",
+      "source_id": "24027",
+      "caption": "A kite flying over a city park on a windy day.",
+      "image_id": 24027,
+      "caption_id": 773969,
+      "aux_seed": 4844449143247584094,
+      "independent_seed": 6632510118898120652
+    },
+    {
+      "task": 41,
+      "dataset": "COCO",
+      "source_id": "12576",
+      "caption": "A woman sitting at a table topped with pizza.",
+      "image_id": 12576,
+      "caption_id": 169174,
+      "aux_seed": 1547073462640089354,
+      "independent_seed": 3205091891453322064
+    },
+    {
+      "task": 42,
+      "dataset": "COCO",
+      "source_id": "309484",
+      "caption": "A dog having his teeth brushed with a novelty electric toothbrush.",
+      "image_id": 309484,
+      "caption_id": 191986,
+      "aux_seed": 2821072280903229823,
+      "independent_seed": 530922003222354041
+    },
+    {
+      "task": 43,
+      "dataset": "COCO",
+      "source_id": "555050",
+      "caption": "A car driving in an intersection, past a furniture shop. ",
+      "image_id": 555050,
+      "caption_id": 32095,
+      "aux_seed": 7377660751750420267,
+      "independent_seed": 1012575811319720331
+    },
+    {
+      "task": 44,
+      "dataset": "COCO",
+      "source_id": "208208",
+      "caption": "a view of mountains from the window of a jet airplane",
+      "image_id": 208208,
+      "caption_id": 537586,
+      "aux_seed": 2485736518752108610,
+      "independent_seed": 849811495927395560
+    },
+    {
+      "task": 45,
+      "dataset": "COCO",
+      "source_id": "507042",
+      "caption": "Three giraffes stand near the fence of their enclosure.",
+      "image_id": 507042,
+      "caption_id": 691480,
+      "aux_seed": 7991408641916686664,
+      "independent_seed": 3084682755718122827
+    },
+    {
+      "task": 46,
+      "dataset": "COCO",
+      "source_id": "565778",
+      "caption": "A train going back to its coarse filled with people.",
+      "image_id": 565778,
+      "caption_id": 94048,
+      "aux_seed": 7341172142133854278,
+      "independent_seed": 1088279457358184446
+    },
+    {
+      "task": 47,
+      "dataset": "COCO",
+      "source_id": "271728",
+      "caption": "A fat orange cat on a couch beside a TV remote",
+      "image_id": 271728,
+      "caption_id": 754324,
+      "aux_seed": 3571712325739854461,
+      "independent_seed": 5646742082608409293
+    },
+    {
+      "task": 48,
+      "dataset": "COCO",
+      "source_id": "491464",
+      "caption": "Kid poses for a picture in a baseball uniform holding a bat",
+      "image_id": 491464,
+      "caption_id": 366405,
+      "aux_seed": 4630552553859045262,
+      "independent_seed": 7079773448025559474
+    },
+    {
+      "task": 49,
+      "dataset": "COCO",
+      "source_id": "197796",
+      "caption": "A white sink sitting under a bathroom window.",
+      "image_id": 197796,
+      "caption_id": 730872,
+      "aux_seed": 5299125689143530619,
+      "independent_seed": 6302645463265733714
+    },
+    {
+      "task": 50,
+      "dataset": "SDP",
+      "source_id": "6512",
+      "caption": "in the style of artgerm, loish, anthropomorphic alligator, red scales on his back, yellow scale on his belly and chest, male, waring a hawaiian shirt, in the style of zootopia",
+      "aux_seed": 3456875263720165635,
+      "independent_seed": 4372153630080260788
+    },
+    {
+      "task": 51,
+      "dataset": "SDP",
+      "source_id": "1269",
+      "caption": "chris hemsworth as aquaman, muscular, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "aux_seed": 6395685493344333105,
+      "independent_seed": 4866789295602691401
+    },
+    {
+      "task": 52,
+      "dataset": "SDP",
+      "source_id": "3322",
+      "caption": "Alice in Wonderland, falling down the rabbit hole, colorful, wide angle, super highly detailed, professional digital painting, artstation, concept art, smooth, sharp focus, no blur, no dof, extreme illustration, Unreal Engine 5, Photorealism, HD quality, 8k resolution, cinema 4d, 3D, beautiful, cinematic, art by artgerm and greg rutkowski and alphonse mucha and loish and WLOP",
+      "aux_seed": 9080399263596168004,
+      "independent_seed": 7067851439160662250
+    },
+    {
+      "task": 53,
+      "dataset": "SDP",
+      "source_id": "153",
+      "caption": "a portrait of the happy mask salesman, grinning, red hair, art by lois van baarle and loish and ross tran and rossdraws and sam yang and samdoesarts and artgerm and saruei and disney and wlop, digital art, highly detailed, intricate, sharp focus, trending on artstation hq, deviantart, unreal engine 5, 4 k uhd image",
+      "aux_seed": 6254860067524761471,
+      "independent_seed": 6970347849170293939
+    },
+    {
+      "task": 54,
+      "dataset": "SDP",
+      "source_id": "3248",
+      "caption": "side portrait of a beautiful female cleric, ethereal, dreamy, backlit, highly detailed, hyperrealistic, mystical, intricate, realistic lighting, realistic face, sharp focus, windswept, rule of thirds, symmetrical facial features, by artgerm, wlop, rossdraws, frank frazetta, andrei riabovitchev, trending on artstation, hd, 4 k, fantasy",
+      "aux_seed": 3285965492795818247,
+      "independent_seed": 3716308600829620829
+    },
+    {
+      "task": 55,
+      "dataset": "SDP",
+      "source_id": "1423",
+      "caption": "a gorgeous female photo, professionally retouched, soft lighting, realistic, smooth face, full body shot, torso, dress, perfect eyes, wide angle, sharp focus on eyes, 8 k high definition, insanely detailed, intricate, elegant, artgerm and jason chan and mark litvokin",
+      "aux_seed": 4077929722035021518,
+      "independent_seed": 6396802715435289431
+    },
+    {
+      "task": 56,
+      "dataset": "SDP",
+      "source_id": "6475",
+      "caption": "a lonely graveyard at night, the moon shine is falling on a specific grave with a sakura tree beneath it also there's the fall of super mad and with extrem anger lucifer, its raining and the atmosphere is oppressive dark with many shadows and dark red highlights, concept art by aleksandra waliszewska, cinematic atmosphere",
+      "aux_seed": 7502332568753186163,
+      "independent_seed": 542002383257918509
+    },
+    {
+      "task": 57,
+      "dataset": "SDP",
+      "source_id": "6839",
+      "caption": "A highly detailed matte painting of the huge haunted mansion at the top of the hill, by Studio Ghibli, Makoto Shinkai, by Artgerm, by WLOP, by Greg Rutkowski, volumetric lighting, octane render, 4K resolution, trending on artstation, masterpiece",
+      "aux_seed": 8237360756851160694,
+      "independent_seed": 7369778882916285040
+    },
+    {
+      "task": 58,
+      "dataset": "SDP",
+      "source_id": "3956",
+      "caption": "whimsical, a single beautiful playful woman, wearing professional makeup, standing in a lake, under the stars, with a binary black hole with a ring in the sky, by Lois van Baarle, by Greg Rutkowski, by artgerm, by ross tran, cinematic angle, face enhance, volumetric lighting, cinematic lighting, digital art, 4k resolution, octane render, trending on artstation, masterpiece",
+      "aux_seed": 4073271906446423239,
+      "independent_seed": 3632513715800921622
+    },
+    {
+      "task": 59,
+      "dataset": "SDP",
+      "source_id": "7788",
+      "caption": "a huge ivory throne with abominations kneeling in front of it, red tones, highly coherent, ultra realistic, concept art, intricate details, eerie, highly detailed, photorealistic, octane render, 8 k, unreal engine. art by artgerm and greg rutkowski and alphonse mucha",
+      "aux_seed": 2600463319150464887,
+      "independent_seed": 3064834533105481734
+    },
+    {
+      "task": 60,
+      "dataset": "SDP",
+      "source_id": "6951",
+      "caption": "full face shot of rimuru tempest, sky rgb 2 1 ece 6 blue straight hair, long bangs, with amber eyes, wearing a black jacket, high collar, ultra detailed, concept art, award winning photography, digital painting, cinematic, wlop artstation, closeup, pixiv, evil, yoshitaka amano, andy warhol, ilya kuvshinov,",
+      "aux_seed": 3619582228238640101,
+      "independent_seed": 6572562031466383057
+    },
+    {
+      "task": 61,
+      "dataset": "SDP",
+      "source_id": "2762",
+      "caption": "painting of the end, ultra realistic, concept art, intricate details, eerie, highly detailed, photorealistic, octane render, 8 k, unreal engine. art by artgerm and greg rutkowski and alphonse mucha",
+      "aux_seed": 7292486054513256806,
+      "independent_seed": 9151740531657924590
+    },
+    {
+      "task": 62,
+      "dataset": "SDP",
+      "source_id": "4757",
+      "caption": "portrait of Taylor Swift as Princess Fiona in Shrek 2001. HD, 4K. intricate abstract. intricate artwork. by wlop, beeple, dan mumford. trending on artstation, greg rutkowski very coherent symmetrical artwork. cinematic, hyper realism, high detail, octane render, 8k",
+      "aux_seed": 1828989126190422913,
+      "independent_seed": 4997261861279532903
+    },
+    {
+      "task": 63,
+      "dataset": "SDP",
+      "source_id": "2455",
+      "caption": "proud muscular female turkish dancer girl on haerm, portrait by Cedric Peyravernay, highly detailed, excellent composition, cinematic concept art, dramatic lighting, trending on ArtStation",
+      "aux_seed": 6965158604397255609,
+      "independent_seed": 8966592835470548859
+    },
+    {
+      "task": 64,
+      "dataset": "SDP",
+      "source_id": "6033",
+      "caption": "a cute anime girl tampering with evidence. Key Frame, Top rated on pixiv, Makoto Shinkai, Inc. , High detail",
+      "aux_seed": 2924208170370588282,
+      "independent_seed": 3449500388989968847
+    },
+    {
+      "task": 65,
+      "dataset": "SDP",
+      "source_id": "5990",
+      "caption": "a zombie laughing cute, Tristan Eaton, victo ngai, artgerm, RHADS, ross draws",
+      "aux_seed": 1191638873140800302,
+      "independent_seed": 8131718815175854666
+    },
+    {
+      "task": 66,
+      "dataset": "SDP",
+      "source_id": "5427",
+      "caption": "a beautiful digital illustration painting of a happy hippy girl with flowers in the rain by benoit b. mandelbrot, steven belledin, martin johnson heade, lee madgwick, caspar david friedrich, and david rios ferreira. 8 k resolution trending on artstation concept art digital illustration",
+      "aux_seed": 3574774084329269801,
+      "independent_seed": 5586386419454644641
+    },
+    {
+      "task": 67,
+      "dataset": "SDP",
+      "source_id": "4501",
+      "caption": "beautiful portrait commission of a cute female furry anthro Canadian Lynx fursona casual clothes in a futuristic mechanical laboratory. blonde hair. Green Eyes. character design by charlie bowater, ross tran, artgerm, and makoto shinkai, detailed, inked, western comic book art",
+      "aux_seed": 7471308233777296644,
+      "independent_seed": 246115292582458467
+    },
+    {
+      "task": 68,
+      "dataset": "SDP",
+      "source_id": "1241",
+      "caption": "Very very very very highly detailed epic photo of Robin Williams, intricate, dystopian, sci-fi, extremely detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, intimidating lighting, incredible art by Artgerm and Vincent di Fate",
+      "aux_seed": 5613276459559337083,
+      "independent_seed": 3688629562113867155
+    },
+    {
+      "task": 69,
+      "dataset": "SDP",
+      "source_id": "3297",
+      "caption": "gothic white mage blonde braided hair dove cameron wearing ethereal ivory carved bone armor looking down a well, green plants, intricate, elegant, highly detailed, digital painting, artstaion, concept art, smooth, sharp, focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "aux_seed": 3984794675804567164,
+      "independent_seed": 1871357627915672940
+    },
+    {
+      "task": 70,
+      "dataset": "SDP",
+      "source_id": "2529",
+      "caption": "a symmetrical portrait of a beautiful cybernetic villainess, cyberpunk concept art by pete mohrbacher and wlop and artgerm and josan gonzalez and syd mead, digital art, unreal engine 5, trending on artstation, deviantart, pinterest, rule of thirds, 4 k uhd image",
+      "aux_seed": 141195138829002380,
+      "independent_seed": 5342227598731420305
+    },
+    {
+      "task": 71,
+      "dataset": "SDP",
+      "source_id": "8113",
+      "caption": "mindblowing portrait of alexis ohanian as a wizard, blue wizard hat, deep focus, symmetrical face, d & d, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, matte, sharp, illustration, hearthstone, art by artgerm and greg rutkowski and alphonse mucha",
+      "aux_seed": 2575604974424050392,
+      "independent_seed": 6216127189894059907
+    },
+    {
+      "task": 72,
+      "dataset": "SDP",
+      "source_id": "5767",
+      "caption": "wind blowing hair meditation celestial being, dreaming and floating, bust portrait, dnd, face, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "aux_seed": 6647772261060908569,
+      "independent_seed": 3845851052401380601
+    },
+    {
+      "task": 73,
+      "dataset": "SDP",
+      "source_id": "4730",
+      "caption": "nekopara fantastically detailed shining eyes vn modern anime style art vibrant open wide mouth smile detailed cat ears cat girl nekomimi dress portrait  shinkai makoto Studio ghibli Sakimichan Kentaro Miura Stanley Artgerm Lau WLOP Rossdraws James Jean Marc Simonetti elegant highly detailed digital painting artstation Unreal Engine 4k 8k ultra HD pixiv",
+      "aux_seed": 4540040313356115848,
+      "independent_seed": 7933128478938070836
+    },
+    {
+      "task": 74,
+      "dataset": "SDP",
+      "source_id": "8068",
+      "caption": "symmetry!! portrait of yoda, sci - fi, tech wear, blue and yellow glowing lights!! intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "aux_seed": 1571927733972807353,
+      "independent_seed": 7148326863618271984
+    },
+    {
+      "task": 75,
+      "dataset": "SDP",
+      "source_id": "7116",
+      "caption": "symmetrical portrait bust of young woman with shoulder length light brown hair and hazel eyes dressed in a sharp dark teal military uniform and beret, anime, ilya kuvshinov, greg rutkowski, guweiz, ross tran, loish, svetlana tigai, artgerm, artstation trending, concept art, digital painting, painterly",
+      "aux_seed": 8677490914114360058,
+      "independent_seed": 1907155174607213466
+    },
+    {
+      "task": 76,
+      "dataset": "SDP",
+      "source_id": "6419",
+      "caption": "a beautiful portrait of august schellenberg taking tobacco snuff in the jungle, hyper realistic face, fantasy art, in the style of greg rutkowski, intricate, matte painting, hyper detailed, smooth",
+      "aux_seed": 1044906876881440081,
+      "independent_seed": 694209469328627317
+    },
+    {
+      "task": 77,
+      "dataset": "SDP",
+      "source_id": "527",
+      "caption": "a beautiful celestial sky with stars, planets and galaxies in the style of illuminated manuscript, circular abstract border with curly symmetrical designs, trending on artstation",
+      "aux_seed": 1735940173092826340,
+      "independent_seed": 5037083020047045505
+    },
+    {
+      "task": 78,
+      "dataset": "SDP",
+      "source_id": "3764",
+      "caption": "attack on titan, portrait of elmo from sesame street as a titan from attack on titan, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski",
+      "aux_seed": 6369707561767283790,
+      "independent_seed": 9220624640249210497
+    },
+    {
+      "task": 79,
+      "dataset": "SDP",
+      "source_id": "2570",
+      "caption": "ultra realistic illustration, a stunningly beautiful cara delevigne praying, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "aux_seed": 8737634830919904036,
+      "independent_seed": 7811515919777831413
+    },
+    {
+      "task": 80,
+      "dataset": "SDP",
+      "source_id": "5405",
+      "caption": "symmetry!! portrait of ancient pharaoh wearing traditional attire, sci - fi, tech wear, glowing lights!! intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "aux_seed": 40661814074175291,
+      "independent_seed": 6970465830420468542
+    },
+    {
+      "task": 81,
+      "dataset": "SDP",
+      "source_id": "7401",
+      "caption": "beautiful detailed picture of eva green, fully clothed, radiant light, art nouveau, intricate, elegant, highly detailed, symmetrical face, my rendition, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "aux_seed": 6418119674984346836,
+      "independent_seed": 2729071814186121858
+    },
+    {
+      "task": 82,
+      "dataset": "SDP",
+      "source_id": "6908",
+      "caption": "forest clearing landscape, bright colors, fantasy, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, wide angle, artbook, wallpaper, splash art, promo art, soul calibur, league of legends, art by artgerm and greg rutkowski and bo chen and jin xiaodi",
+      "aux_seed": 1794455560753389857,
+      "independent_seed": 5087466474562018985
+    },
+    {
+      "task": 83,
+      "dataset": "SDP",
+      "source_id": "2619",
+      "caption": "photo of a gorgeous nordic female in a dark forest in, realistic, sharp focus, 8 k high definition, insanely detailed, intricate, elegant, art by stanley lau and artgerm, luis royo, greg kutkowski",
+      "aux_seed": 5831485405478427419,
+      "independent_seed": 6910676144386105703
+    },
+    {
+      "task": 84,
+      "dataset": "SDP",
+      "source_id": "4153",
+      "caption": "portrait of henry cavill as chris redfield, resident evil, pistol, upper body, henry cavill!!!, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "aux_seed": 813547671626834112,
+      "independent_seed": 1110542925181713533
+    },
+    {
+      "task": 85,
+      "dataset": "SDP",
+      "source_id": "3852",
+      "caption": "a award winning half body porttrait of a beautiful woman in a croptop with ombre purple pink teal hairstyle with head in motion and hair flying, outrun, vaporware, shaded flat illustration, digital art, trending on artstation, highly detailed, fine detail, intricate",
+      "aux_seed": 5201930005316814652,
+      "independent_seed": 677117257297347708
+    },
+    {
+      "task": 86,
+      "dataset": "SDP",
+      "source_id": "1124",
+      "caption": "clear portrait of miner male, adorable appearance!!!, golden hour, happy apearance, cottagecore!!, background hyper detailed, character concept, full body, dynamic pose, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "aux_seed": 5095227659440866785,
+      "independent_seed": 9046857228566270095
+    },
+    {
+      "task": 87,
+      "dataset": "SDP",
+      "source_id": "5278",
+      "caption": "a young attractive Asian woman in the pilot's seat of a massive sci-fi mecha, both arms at her sides, dramatic pose, chrome, blue LEDs, highly detailed, photorealistic, volumetric lighting, digital art, octane render, in the style of Artgerm and Tom Bagshaw",
+      "aux_seed": 1126308484549892495,
+      "independent_seed": 2205726214415780857
+    },
+    {
+      "task": 88,
+      "dataset": "SDP",
+      "source_id": "5875",
+      "caption": "people in grey suits in an overcrowded tram, depressed mood, in the style of artgerm, gerald brom, atey ghailan and mike mignola, vibrant colors and hard shadows and strong rim light, plain background, comic cover art, trending on artstation",
+      "aux_seed": 6725818651809283872,
+      "independent_seed": 4934951953486525023
+    },
+    {
+      "task": 89,
+      "dataset": "SDP",
+      "source_id": "3676",
+      "caption": "sansa stark gold sunny lights, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha and william - adolphe bouguereau",
+      "aux_seed": 4119646567790834962,
+      "independent_seed": 834756390033169967
+    },
+    {
+      "task": 90,
+      "dataset": "SDP",
+      "source_id": "4977",
+      "caption": "high quality portrait of leonid kanevsky. art by makoto shinkai, crunchyroll, pixiv, danbooru, hd, headshot, cinematic still, detailed anime face, bokeh, digital art, cel shading, vivid colors, ambient lighting",
+      "aux_seed": 4302062215336354405,
+      "independent_seed": 1575032129548470428
+    },
+    {
+      "task": 91,
+      "dataset": "SDP",
+      "source_id": "3292",
+      "caption": "pink petals with a a wonderful aubrey plaza and christina ricci and sarah hyland and mila kunis and olivia newton john in a hooters shirt, intricate, elegant, highly detailed, wonderful eyes, sweet, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and concept art",
+      "aux_seed": 1997077278286713979,
+      "independent_seed": 885536151805719671
+    },
+    {
+      "task": 92,
+      "dataset": "SDP",
+      "source_id": "7963",
+      "caption": "red fox by charlie bowater and titian and artgerm, full - body portrait, intricate, face, forest, elegant, orange mist, beautiful, highly detailed, dramatic lighting, sharp focus, trending on artstation, artstationhd, artstationhq, unreal engine, 4 k, 8 k",
+      "aux_seed": 6698155151378154021,
+      "independent_seed": 6104348944070920005
+    },
+    {
+      "task": 93,
+      "dataset": "SDP",
+      "source_id": "5232",
+      "caption": "modern Angel standing in the front of a forest . Angel is wearing an armor. angel is draped with bones. Concept art. Anatomical details. Digital painting. Art station. Mood lighting. Skindness, highly detailed, concept art, intricate, sharp focus,  - h 1200",
+      "aux_seed": 6579648303756660797,
+      "independent_seed": 3197842189458917881
+    },
+    {
+      "task": 94,
+      "dataset": "SDP",
+      "source_id": "7104",
+      "caption": "a stunning vector portrait of a thicc and voluptuous yennefer of vengerberg dressed as a beautiful poison ivy with hair tied in a braid walking through a flowering garden, greenhouse in the background, intricate, elegant, highly detailed, digital painting, artstation, concept art, ultra sharp focus, illustration, art by greg rutkowski and alphonse mucha",
+      "aux_seed": 4917584126767331962,
+      "independent_seed": 4304592506572196228
+    },
+    {
+      "task": 95,
+      "dataset": "SDP",
+      "source_id": "5623",
+      "caption": "a wise monk meditates under a waterfallto pieces with glowing yelow visor as a realistic scifi cyberpunk, torso, art by james jean and greg rutkowski!!, realistic face, like anime, digital art, concept art, trending on artstation, 8 k",
+      "aux_seed": 1698137230216867648,
+      "independent_seed": 4028785473827777379
+    },
+    {
+      "task": 96,
+      "dataset": "SDP",
+      "source_id": "2110",
+      "caption": "attractive fairy goddness fly high in the night, d & d, fantasy, mist, full moon in background, trees, hyper detailed, art by artgerm and greg rutkowski and magali villeneuve, midium shot, 8 k realistic, cryengine, digital painting, trending on artstation, concept art, sharp focus, illustration,",
+      "aux_seed": 6495088807882243026,
+      "independent_seed": 2935377983874320964
+    },
+    {
+      "task": 97,
+      "dataset": "SDP",
+      "source_id": "4414",
+      "caption": "an illustration of a soccer player, elegant,",
+      "aux_seed": 7960264937179107098,
+      "independent_seed": 7781711801314291143
+    },
+    {
+      "task": 98,
+      "dataset": "SDP",
+      "source_id": "235",
+      "caption": "whirlwind of souls rushing inside the metaverse, half body, glowin eye, tiara, tattoo pharaoh, android, cyborg, cyberpunk face, by loish, d & d, fantasy, intricate, elegant, highly detailed, colorful, vivid color, digital painting, artstation, concept art, art by artgerm and greg rutkowski and alphonse mucha and ruan jia",
+      "aux_seed": 8730587743444743657,
+      "independent_seed": 3359577216686089232
+    },
+    {
+      "task": 99,
+      "dataset": "SDP",
+      "source_id": "4352",
+      "caption": "lofi biopunk Boris Johnson portrait Pixar style by Tristan Eaton Stanley Artgerm and Tom Bagshaw.",
+      "aux_seed": 3051978386596306432,
+      "independent_seed": 7797662358041754327
+    }
+  ],
+  "selection_sha256": "562898a8eb69365e4257b228b5b3f8d770b53e4f494a217638dae52c185365c2",
+  "prompt_review_sha256": "c42e5c04a861f8e3cf7b943313e943f73daa849a1fc964a0535ae8837603b882",
+  "paths": {
+    "root": "/data0/liyanlei/watermark_research/private_eval/sembind_chain_revalidation_20261111",
+    "output": "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/output",
+    "official": "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/official",
+    "scheduler": "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/scheduling_dpmsolver_multistep.py",
+    "model": "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c",
+    "semantic": "/data0/liyanlei/watermark_research/models/sembind",
+    "coverlock": "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111"
+  },
+  "hf_home": "/data0/liyanlei/watermark_research/cache/huggingface",
+  "extra_dependencies": "/data0/liyanlei/watermark_research/envs/phase1_extra",
+  "identity_root": "/data0/liyanlei/watermark_research/private_eval/phase1_trajectory_native_gs_20261113",
+  "private_seed_sha256": "d07857388067e504fc3cc42e933c70af32e664fb37099579819925801dd942a3",
+  "source_sha256": {
+    "prepare_phase1_probe.py": "b47cb2c42fe3ebee99cfe8e481cba93535640176bee115add72cc3a423300bf8",
+    "run_phase1_probe_worker.py": "df76d238d055ae404ea4d7637a96142def40f171fa769dffa2d3534547ed7d7d",
+    "run_phase1_probe.py": "6f786fd2c64bb22d6be6bfb9f619572def72a795d2d096007cb870491ac8f9d6",
+    "summarize_phase1_probe.py": "f92f3232ee1b2cf85a9f6f6ff5b76f6a0654d72612e784171cebcb96c7c6272b",
+    "sembind_official_audit.py": "568a415bec83152ca7fd0cb5fbbffdbf6b4b19d03371cc792468082db1bd6a9f",
+    "semantic_code.py": "be284b3198ef25eff71eec5ae2b043ce0823ffb6ad184fdf1c9aecafe0bfd710",
+    "codeword_binding.py": "f49aa1342031a1c54be17bb4153b79150e5f70903719275c37329bf093186c59",
+    "gs_watermark.py": "70ed2e4bb0d01baeaa228c0c6aef285b96726f9ae73dcdddd2fa90c54a6609b4"
+  },
+  "external_sha256": {
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/official/inversion.py": "dcf0dd6e9b5af1e64c24fe5c3c16473be54f1936c44da096f85b0437bf2fb14b",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/official/model.py": "ee22217258acd3c86899ce616cc5d7dbb6d14948208145a1daa7ace0c1943da3",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/official/src/optim_utils.py": "d96765a945a6d26514799bc6d8da0afc74f63a3482ff02e4ebd9391eb0dde344",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/official/src/modified_stable_diffusion.py": "fc4ac3795d51821c0a7a10fb57c28ecb414cc47e4af5629e6bfdaaccdc709ba2",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/official/src/inverse_stable_diffusion.py": "64027a1a974bb018d8569fa670802996e6ed0a87ba94f9151f574dd33326ef17",
+    "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/scheduling_dpmsolver_multistep.py": "c0902d1446e51c33be9b0deb5b9a9e2694e7930620a95d5ee8bef024607ed5ff",
+    "/data0/liyanlei/watermark_research/models/sembind/sembind_masker.pth": "85f98477bc5c3ae37d429b527d852384fefe70a4c69b25b483759635f3e9ebfd",
+    "/data0/liyanlei/watermark_research/models/sembind/dinov2-giant/config.json": "15d2e68b709674c0eb9bb5cc8b73e57ebe9a169a425bef224f46ae10053806a2",
+    "/data0/liyanlei/watermark_research/models/sembind/dinov2-giant/.gitattributes": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361",
+    "/data0/liyanlei/watermark_research/models/sembind/dinov2-giant/model.safetensors": "917d3c470db999d32a312f8542149be91c7cbac61ee8fb4b67ae3d82b79ce21f",
+    "/data0/liyanlei/watermark_research/models/sembind/dinov2-giant/preprocessor_config.json": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
+    "/data0/liyanlei/watermark_research/models/sembind/dinov2-giant/README.md": "129a5b66134a5739a3c35033483ca00427f497ce5052d8cf8e2446dac19eec1b",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/model_index.json": "518553e098fdaa4153d9a92139e344e44f53bb329c22f383293e3099c4f1bad2",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/scheduler/scheduler_config.json": "11ac5627d7df0fa344b875c4b5722b1767a8a2aa1684c2cf8b4d614300127234",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/vae/config.json": "424117cb534ce03497c41305ed868980123917b2b6abba4bbaa615e968772903",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/vae/diffusion_pytorch_model.safetensors": "a1d993488569e928462932c8c38a0760b874d166399b14414135bd9c42df5815",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/text_encoder/config.json": "7e33bfc475f6cf76e69b28b101993ca834d1f22ff4d35caefde32d63d4f42fba",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/text_encoder/model.safetensors": "cce6febb0b6d876ee5eb24af35e27e764eb4f9b1d0b7c026c8c3333d4cfc916c",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/tokenizer/merges.txt": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/tokenizer/tokenizer_config.json": "d562b18a0c6d32a168fce3d7a342fce64579ebacffb98fb71b0affc494fc32d8",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/tokenizer/special_tokens_map.json": "f118ab3a983206e4f32583448de6bd6aae4ee21869135cef1f5848a753cdaab6",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/tokenizer/vocab.json": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/feature_extractor/preprocessor_config.json": "2a1da83b5e1032aaeef397552ddb408dca0d8cd1dc58f61bf6abf38d6f33a0a2",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/unet/config.json": "ce0c6d379e3b1d3e1f79338de70c80a1e36f17a6372439a8249b6fb0dfa1b608",
+    "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c/unet/diffusion_pytorch_model.safetensors": "6dfae3e5f7d459b50f4b0850ead945972c75bb0e1897628933e169eb43974214"
+  },
+  "gpu_indices": [
+    7,
+    5,
+    4
+  ],
+  "generation": {
+    "steps": 50,
+    "cfg": 7.5,
+    "solver_order": 1,
+    "dtype": "float32",
+    "size": 512
+  },
+  "inversion": {
+    "steps": 50,
+    "cfg": 3.0,
+    "prompt": "",
+    "inv_order": 0,
+    "decoder_inv": true,
+    "decoder_optimization_steps": 100
+  },
+  "gs": {
+    "upstream_commit": "09c678fadc7545acf7be12647ddf2a5e66f6a9dc",
+    "carrier": "Gaussian_Shading default OTP",
+    "channel_copy": 1,
+    "hw_copy": 8,
+    "message_bits": 256,
+    "repetitions": 64,
+    "user_number": 1,
+    "fpr": 1e-06,
+    "sample_dtype": "Original FP16 truncSampling output cast to FP32 for released DPM pipeline"
+  },
+  "binding": {
+    "sigma": 1,
+    "expansion": "np.tile(code,16)",
+    "permutation": "HMAC-SHA256 sorted labels with private global binding key",
+    "permutation_domain": "sembind/permutation/",
+    "key_scope": "one private binding key; fresh OTP key/message per image"
+  },
+  "working_points": [
+    166,
+    167,
+    182
+  ],
+  "trajectory_steps": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50
+  ],
+  "trajectory_definition": "One-based UNet evaluation; scheduler.model_outputs[-1] after step is guided x0 prediction evaluated at pre-step latent",
+  "controls": [
+    "aux0 vs GS-S final",
+    "aux0 vs same prompt independent seed",
+    "aux0 vs within-dataset different prompt cyclic next",
+    "JPEG50 aux0 and GS-S"
+  ],
+  "primary_step": 35,
+  "gates": {
+    "p5_greater_than": 0.95,
+    "paired_mean_advantage_bootstrap_lower_greater_than": 0.0,
+    "require_each_dataset": true,
+    "required_controls": [
+      "aux_final",
+      "same_prompt"
+    ]
+  },
+  "statistics": {
+    "bootstrap_resamples": 10000,
+    "seed": 2026111301,
+    "cluster": "prompt",
+    "primary": "Step35 only; exploratory earlier steps do not select a deployment step"
+  },
+  "observational_only": true,
+  "attack_jobs": 0
+}

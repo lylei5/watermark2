@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-12T17:46:34.977199+00:00",
+  "updated_at": "2026-11-12T17:47:14.092581+00:00",
   "status": "phase1_baseline_and_trajectory_preparation",
   "active_experiments": 0,
   "queued_experiments": 0,
@@ -193,7 +193,7 @@
     "Defense benefit over simple controls at matched absolute genuine detection"
   ],
   "phase1": {
-    "status": "wrong_key_null_complete",
+    "status": "trajectory_native_gs_protocol_frozen",
     "report": "reports/phase1_contract_20261113/report.md",
     "model_experiments_started": 0,
     "paper_gs_minimum_matching_bits": 167,
@@ -204,6 +204,9 @@
       "accepted": 0,
       "cp95_upper": 1.2296257287143092e-06,
       "fixed_user_natural_fpr": false
-    }
+    },
+    "run": "phase1_trajectory_native_gs_20261113",
+    "protocol": "protocols/phase1_trajectory_native_gs_20261113.json",
+    "protocol_sha256": "bd09828a85d57cb8433b2c5c42c48dae0aea98d4929d98a91f07d6fe1def3633"
   }
 }
