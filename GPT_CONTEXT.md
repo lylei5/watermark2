@@ -2,6 +2,12 @@
 
 Updated 2026-11-12. Goal: a publishable defense with matched genuine detection, image quality, computation budgets and credible false-positive calibration. No superiority or SOTA claim is established.
 
+## Current experiment and next mechanism
+
+Shared semantic evidence has completed and independently audited all120 genuine records: defaultBA107, calibratedBA101, latent-soft95, coordinate-soft100, group-constant87, group-query85. All six rules0/1320 wrong identities; clean default12/12 versus candidate9/12. Published full Imprint endpoint is still running. Read reports/shared_semantic_evidence_20261112/report.md. Post-hoc oracle channel/temperature/both restores87/88/90, not enough to match107. Oracle diagnosis uses unavailable enrollment data and independent float64 checks; original frozen scores remain unchanged.
+
+Next frozen protocol: semantic_feedback_pilot_20261112. Six fresh sources, full/feedback/consensus arms, fixed third-round endpoint,180 genuine inversions and900 wrong-key pairs. Standalone generation costs2/4/4 calls;42 unique shared generations. Original hardBA threshold,50-step generation/inversion,100 decoder steps. All seven gates must pass before18 unchanged151-update Imprint jobs and324 verification records. Source hashes and private identities frozen on249. Coordinator waits for shared-semantic parentPID24027 via kernel process-exit event and validates complete120+216 audited records before GPU use. Read launch receipt for actual queue state. No convergence, Gaussian-distribution, novelty, or superiority claim.
+
 ## Fresh execution policy and revalidation
 
 The user requires fresh execution before critical inherited experimental claims support further research. Historical artifacts remain comparisons; arithmetic audit is not a fresh model experiment. The authorized first batch is protocols/defense_revalidation_20261111.json, with scope and limitations in reports/defense_revalidation_20261111/plan.md:100-source SemBind component measurements under clean plus9 unchanged published conditions, and all10 supplied PGID examples with151 updates and full defense computation. This reuses development inputs, not an independent confirmation set. Future pip installation uses Tsinghua exclusively by default. Execution state is recorded in project_state.json.

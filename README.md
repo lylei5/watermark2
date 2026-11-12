@@ -8,7 +8,7 @@
 
 ## 当前进展
 
-[新执行完整Imprint](reports/imprint_fresh_revalidation_20261112/report.md)已完成，144条记录独立复核：最终样本SemBind项目适配器接受0/4、GS接受4/4。[条件内容似然](reports/conditional_content_likelihood_20261112/report.md)没有增加拒绝收益，真实接受数30/40低于校准BA的39/40。[共享内容锚](reports/conditional_anchor_pilot_20261112/report.md)改善绑定差异与预览保真，但未通过冻结鲁棒性门槛，保留负结果。[内容耦合分位载体](reports/conditional_quantile_pilot_20261112/report.md)已完成240条完整验证及独立复核：候选真实接受48/60，低于同轮full的59/60及独立采样对照54/60，绑定差异也未改善，未进入伪造侧扩展。下一轮[共享语义证据实验](reports/shared_semantic_evidence_20261112/plan.md)已在249启动：6来源拟合、6来源校准、12个新来源测试，比较共享语义不确定性与直接软译码对照，并安排完整既有Imprint。尚未建立优于SemBind的结论。下列此前结果保留作历史研究记录，关键结论须经新执行验证。
+[新执行完整Imprint](reports/imprint_fresh_revalidation_20261112/report.md)已完成，144条记录独立复核：最终样本SemBind项目适配器接受0/4、GS接受4/4。[条件内容似然](reports/conditional_content_likelihood_20261112/report.md)没有增加拒绝收益，真实接受数30/40低于校准BA的39/40。[共享内容锚](reports/conditional_anchor_pilot_20261112/report.md)改善绑定差异与预览保真，但未通过冻结鲁棒性门槛，保留负结果。[内容耦合分位载体](reports/conditional_quantile_pilot_20261112/report.md)已完成240条完整验证及独立复核：候选真实接受48/60，低于同轮full的59/60及独立采样对照54/60，绑定差异也未改善，未进入伪造侧扩展。[共享语义证据实验](reports/shared_semantic_evidence_20261112/report.md)的120条真实端已独立复核：默认BA接受107/120，候选85/120，完整既有Imprint评估继续执行。下一轮[固定三轮语义反馈嵌入](reports/semantic_feedback_pilot_20261112/plan.md)已冻结六个新来源、三组对照和180次完整验证，按父实验完成事件接续；生成预算匹配的共识组用于检验反馈机制。尚未建立优于SemBind的结论。下列此前结果保留作历史研究记录，关键结论须经新执行验证。
 
 [完整预算 Imprint 评测](reports/full_imprint_20261111/report.md)已完成：8 个案例各151次更新，全部144张图完成验证。最终候选 SemBind 项目适配器接受0/4、GS接受4/4；五种冻结判定规则在全部图上完全一致，几何验证器没有额外防伪收益。
 

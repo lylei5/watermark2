@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "identities": 16,
+  "arm_roundtrips": 48,
+  "changed_semantic_bits": 137,
+  "changed_carrier_signs": 2192,
+  "scope": "Carrier algebra only; three-round semantic dynamics, image quality, and robustness require the queued full model experiment",
+  "source_sha256": {
+    "feedback_binding.py": "cd35f83798c590c9dde3bec8e04b66cc85b5d25a4f69c1390cb95d899bd66ef5",
+    "anchor_binding.py": "82d474e45273fdcb97d1805686ae0f6d8c8151c27feaafbdc7173040cff087b1",
+    "test_feedback_binding.py": "ee8e7e8789f3608d6e9ebbe10df9c7819791fe18295fcaaf0da96f8e16467a17"
+  }
+}

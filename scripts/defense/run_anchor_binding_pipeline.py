@@ -53,7 +53,9 @@ def audit(run,stage,plan):
         for ref in refs:
             directory=run/f"genuine_{ref['task']%3}"
             q=np.load(directory/'codes'/f"{ref['task']:03}_{ref['arm']}.npz")['code']
-            h=np.load(directory/'codes'/f"{ref['task']:03}_aux.npz")['code']
+            enrollment=run/ref['enrollment_code'] if 'enrollment_code' in ref else directory/'codes'/f"{ref['task']:03}_aux.npz"
+            if 'enrollment_code_sha256' in ref:assert sha(enrollment)==ref['enrollment_code_sha256']
+            h=np.load(enrollment)['code']
             assert float((q!=h).mean())==ref['semantic_mismatch']
             assert sha(run/ref['image'])==ref['image_sha256']
             with torch.no_grad():
@@ -70,7 +72,7 @@ def audit(run,stage,plan):
         latent=run/r['latent'];codepath=run/r['code'];imagepath=run/r['image']
         assert sha(latent)==r['latent_sha256'] and sha(codepath)==r['code_sha256'] and sha(imagepath)==r['image_sha256']
         z=np.load(latent);code=np.load(codepath)['code'];cipher,message,perms=identities[r['task']]
-        if r['arm']=='full':values=z.ravel()
+        if r['arm'] in ['full','feedback','consensus']:values=z.ravel()
         elif r['arm'] in ['quantile_coupled','quantile_independent']:
             # Independent implementation: recover the Gaussian bit plane directly.
             from scipy.stats import norm

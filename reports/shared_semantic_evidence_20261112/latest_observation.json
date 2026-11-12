@@ -1,0 +1,29 @@
+{
+  "time_utc": "2026-11-12T09:30:28.453987+00:00",
+  "pipeline": {
+    "status": "running",
+    "pid": 24027,
+    "time_utc": "2026-11-12T06:51:26.157285+00:00",
+    "stage": "published_full_imprint"
+  },
+  "imprint_jobs_completed": 12,
+  "imprint_jobs_total": 12,
+  "forgery_shards": [
+    {
+      "shard": 0,
+      "status": "running",
+      "verified": 33
+    },
+    {
+      "shard": 1,
+      "status": "running",
+      "verified": 36
+    },
+    {
+      "shard": 2,
+      "status": "running",
+      "verified": 22
+    }
+  ],
+  "genuine_verified": 120
+}

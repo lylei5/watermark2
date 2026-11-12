@@ -637,7 +637,7 @@
     "unit_checks_passed": true,
     "superiority_established": false,
     "coordinator_pid": 24027,
-    "stage": "heldout_full_genuine",
+    "stage": "published_full_imprint",
     "prelaunch_commit": "7a40f98fbbf8d34301338c9f703c31673636d60a",
     "worker_pids": [
       45285,
@@ -668,6 +668,67 @@
         ]
       },
       "completion_wait": "filesystem creation events, not polling"
+    },
+    "genuine_completed": true,
+    "genuine_audited": true,
+    "genuine_accepts": {
+      "default_ba": 107,
+      "ba": 101,
+      "latent_soft_ba": 95,
+      "coordinate_soft_ba": 100,
+      "group_constant": 87,
+      "group_query": 85
+    },
+    "wrong_identity_pairs": 1320,
+    "all_rules_wrong_accepts": 0,
+    "forgery_completed": false,
+    "latest_observation": {
+      "time_utc": "2026-11-12T09:30:28.453987+00:00",
+      "pipeline": {
+        "status": "running",
+        "pid": 24027,
+        "time_utc": "2026-11-12T06:51:26.157285+00:00",
+        "stage": "published_full_imprint"
+      },
+      "imprint_jobs_completed": 12,
+      "imprint_jobs_total": 12,
+      "forgery_shards": [
+        {
+          "shard": 0,
+          "status": "running",
+          "verified": 33
+        },
+        {
+          "shard": 1,
+          "status": "running",
+          "verified": 36
+        },
+        {
+          "shard": 2,
+          "status": "running",
+          "verified": 22
+        }
+      ],
+      "genuine_verified": 120
     }
+  },
+  "semantic_feedback_pilot": {
+    "status": "frozen_pending_launch",
+    "protocol": "protocols/semantic_feedback_pilot_20261112.json",
+    "plan": "reports/semantic_feedback_pilot_20261112/plan.md",
+    "server_root": "/data0/liyanlei/watermark_research/runs/semantic_feedback_pilot_20261112",
+    "genuine_records": 180,
+    "wrong_identity_pairs": 900,
+    "conditional_imprint_jobs": 18,
+    "conditional_forgery_records": 324,
+    "gpu_indices": [
+      7,
+      5,
+      4
+    ],
+    "parent_pid": 24027,
+    "unit_checks_passed": true,
+    "audit_regression_records": 240,
+    "superiority_established": false
   }
 }
