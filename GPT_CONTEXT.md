@@ -22,7 +22,7 @@ See docs/CONTENT_KEY_FEASIBILITY.md. Fuzzy extraction and a new instance encoder
 
 ## Next research requirement
 
-The active task follows docs/THREE_BASELINE_REPRODUCTION.md: complete native SemBind, PGID and SEAL defense baselines. Source and weight evidence is in reports/three_baselines_20261113/report.md. SEAL run seal_native_20261113_v2 waits on existing verification exit events; do not duplicate it. Carrier variants remain on hold. Audit the full official embedding and verification chain, secret material, preprocessing, inference settings and detection working point; freeze the comparison before new independent experiments. Do not describe released components or the project's GS adapter as a complete native reproduction.
+The active task follows docs/THREE_BASELINE_REPRODUCTION.md: complete native SemBind, PGID and SEAL defense baselines. Source and weight evidence is in reports/three_baselines_20261113/report.md. SEAL run seal_native_20261113_v3 waits on existing verification exit events; do not duplicate it. Carrier variants remain on hold. Audit the full official embedding and verification chain, secret material, preprocessing, inference settings and detection working point; freeze the comparison before new independent experiments. Do not describe released components or the project's GS adapter as a complete native reproduction.
 
 ## Execution rules
 

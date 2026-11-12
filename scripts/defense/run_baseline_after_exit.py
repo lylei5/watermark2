@@ -10,6 +10,8 @@ from pathlib import Path
 import select
 import subprocess
 import sys
+import threading
+import time
 
 
 def sha(path):
@@ -28,7 +30,8 @@ def main():
     assert plan['gpu_indices'] == [7, 5, 4]
     assert not (run / 'pipeline_state.json').exists()
     state = dict(status='queued', pid=os.getpid(), protocol_sha256=sha(run / 'protocol.json'),
-                 started_at=datetime.datetime.now(datetime.timezone.utc).isoformat(), events=[])
+                 started_at=datetime.datetime.now(datetime.timezone.utc).isoformat(), events=[], workers=[])
+    lock = threading.RLock()
 
     def save():
         tmp = run / 'pipeline_state.tmp'
@@ -55,11 +58,19 @@ def main():
                 select.select([descriptor], [], [])
             finally:
                 os.close(descriptor)
+        # Let the driver's utilization sampling window expire after context release.
+        # This is one fixed settling interval, not an experiment-progress poll.
+        time.sleep(3)
         with (run / f'native_{shard}.log').open('x') as log:
             child = subprocess.Popen([plan['python'], str(run / plan['worker']), '--run', str(run),
                                       '--shard', str(shard)], stdin=subprocess.DEVNULL,
                                      stdout=log, stderr=subprocess.STDOUT,
                                      env=dict(os.environ, OPENBLAS_NUM_THREADS='4'))
+            with lock:
+                state.update(status='running')
+                state['workers'].append(dict(shard=shard, pid=child.pid, gpu=plan['gpu_indices'][shard]))
+                save()
+                print(json.dumps(dict(event='worker_started', shard=shard, pid=child.pid)), flush=True)
             code = child.wait()
         return dict(shard=shard, pid=child.pid, exit_code=code,
                     completed_at=datetime.datetime.now(datetime.timezone.utc).isoformat())
@@ -70,8 +81,9 @@ def main():
             futures = [pool.submit(execute, shard) for shard in range(3)]
             for future in as_completed(futures):
                 event = future.result()
-                state['events'].append(event)
-                save()
+                with lock:
+                    state['events'].append(event)
+                    save()
                 print(json.dumps(event), flush=True)
         assert all(e['exit_code'] == 0 for e in state['events']), state['events']
         state['status'] = 'complete'

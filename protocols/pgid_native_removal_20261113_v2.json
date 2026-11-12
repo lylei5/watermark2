@@ -1,0 +1,96 @@
+{
+  "created_at": "2026-11-12T18:50:10.156297+00:00",
+  "scope": "Native PGID-R GS on10 official prompt cases; released full151 update Imprint removal, not paper-scale reproduction",
+  "python": "/data0/liyanlei/watermark_research/envs/pgid_revalidation_py310/bin/python",
+  "source": "/data0/liyanlei/watermark_research/third_party/frozen/PGID_dc4ad96",
+  "source_commit": "dc4ad963ffefcb4cf84340084db617472983d3e0",
+  "source_sha256": {
+    "run.py": "f65a8b7ab54b51dba653b0e6692674d69f26f374a8db9b3d9f5953eb815b1e61",
+    "README.md": "8b89bcd9ce5ad97b45a724b6a9f91339c849cbea47c350a47a83baa169d0ef34",
+    "imprint_attacks.py": "35cfac3b45d15a512d6d67a66664104adf40ed647a63f6738fa998609f97793b",
+    "requirements.txt": "52c16c8951e4be84595469dfadea6475cd50defa16a974192977b3e250af8e8f",
+    "prompts.py": "eb8504bbbbea4265a0eb13316bb7ab75b74db7e83bc99b82dac513e08e48f9c6",
+    "pgid_defense.py": "193acc73de4116acef661e09988b9adc275f781d46d9e20fd5d8bc0617e38472",
+    "utils.py": "a0a0bf97ab7aab4c9a031aeb113653e47c8edf50ed12851a261ce448927e8817",
+    "LICENSE.md": "a30ed803e84f2e729f0638756d59e9def938fa6cb4f1121bb7da7f6bdd680e45",
+    "pipe/image_utils.py": "c8423a6942c083e69719f27b0bb9f1210e837a559c8c01d468528d3936f7ea9b",
+    "pipe/pipe_utils.py": "08afb9da57e99b9bac307e8082b530350f23a2c59480ac686e875a22f013877e",
+    "pipe/PixArt_pipe.py": "0b975bad007f27db7340729e4fdc6c586e111c696396a947a8208f5cfb47ea95",
+    "pipe/base_pipe.py": "35fcffde506f9a0e0e691140ac164dcc4ac54dd24101a2cf06f8335f0080c90f",
+    "pipe/SD_pipe.py": "3370777e34ba36b3c009b5215993df3d47de0eb40933d93521df129f92885558",
+    "pipe/attack_pipe.py": "355688e62f4d1634a7278788b8ad2ea37af744947d28906fae99d2fcd657d327",
+    "pipe/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "watermarks/t2smark_watermark.py": "827cc85f87e37960219d8dcafe9ac734fec42a9bf9b51f56202776486c5411eb",
+    "watermarks/watermark_utils.py": "5323f51fe567e58b5f4c18f7cfaaa98760cec8fdfa72b88666ed8fccc4fb5577",
+    "watermarks/gs_watermark.py": "40760f61a2ea2015ccdfb1b812279402e9c992c5f3425f7b5de898eacca92c94",
+    "watermarks/prc_watermark.py": "3a98548d1fae339028778731c4877585c70419209b6316fa2845e65b0961b82c",
+    "watermarks/sem_watermark.py": "c5903b48108d121581b003701056dcadd26c63c65f3cd5affb39063322c911df",
+    "watermarks/nonces.py": "b8419f7c8627d7a594873bb1821bbbee8416fea0db6cf7c9b6d76135fcbeb796",
+    "watermarks/keys.py": "4607da9697b6dc680026968c493012e0db194cb4189a43990cca72759f6c45b5",
+    "watermarks/tr_watermark.py": "78266f7c54d1b411c826e9d899bf2381dcb222c8c88fcc63e88787b95a0e32ec",
+    "watermarks/messages.py": "cfda53782648bb897a920964e9508931eb8950f40f43693e6ddbddc1c8c5a9be",
+    "watermarks/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "carrier": "GS",
+  "attack_type": "removal",
+  "published_attack": "Imprint removal, CVPR2025, as released unchanged by PGID authors",
+  "model_id": "Manojb/stable-diffusion-2-1-base",
+  "model_revision": "0094d483a120f3f33dafbd187ea4aa60d10de75c",
+  "steps": 151,
+  "checkpoints": [
+    50,
+    100,
+    150
+  ],
+  "actual_updates": [
+    51,
+    101,
+    151
+  ],
+  "defense": {
+    "steps": 50,
+    "stopping_timestep": 10,
+    "num_skip_inversion": 1,
+    "guidance_strength": 0.045
+  },
+  "gpu_indices": [
+    7,
+    5,
+    4
+  ],
+  "predecessors": [
+    {
+      "pid": 43087,
+      "cmdline_sha256": "eafc516db90204943c38c5dcae5fad875b3d25e4039388f87511e09534c129e2"
+    },
+    {
+      "pid": 43087,
+      "cmdline_sha256": "eafc516db90204943c38c5dcae5fad875b3d25e4039388f87511e09534c129e2"
+    },
+    {
+      "pid": 43087,
+      "cmdline_sha256": "eafc516db90204943c38c5dcae5fad875b3d25e4039388f87511e09534c129e2"
+    }
+  ],
+  "shards": [
+    {
+      "start": 0,
+      "count": 4
+    },
+    {
+      "start": 4,
+      "count": 3
+    },
+    {
+      "start": 7,
+      "count": 3
+    }
+  ],
+  "watermark_identity": "Unchanged public official fixture keys/messages; no unseen-secret security claim",
+  "cohort": "Official first10 prompts already inspected and used in previous PGID-F reproduction",
+  "worker": "run_pgid_native.py",
+  "worker_sha256": "76f77b1b34b8cb755deb01579d1a191abcd34c5b664473bcadfd581b6870acc4",
+  "coordinator_sha256": "20ed595bde99f404d8858506228a6dd08ac669cc72e6659573ebb38e5c76d0d5",
+  "supersedes_unstarted_protocol_sha256": "727e8203a6625a0b7e8cf6557186f0beb9e274ce07ec589367da63ccfb11e9ab",
+  "queue_order": "NativeGS verification, SEAL100, PRC-S6, PGID-R10; numeric worker and all sample counts unchanged"
+}

@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-12T18:48:07.971865+00:00",
+  "updated_at": "2026-11-12T19:01:14.000463+00:00",
   "status": "three_native_baselines_reproduction",
   "active_experiments": 1,
-  "queued_experiments": 1,
+  "queued_experiments": 3,
   "latest_progress_report": "reports/phase1_trajectory_native_gs_20261113/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/THREE_BASELINE_REPRODUCTION.md",
@@ -273,22 +273,35 @@
       "weight_hashes_verified": true,
       "evidence": "reports/three_baselines_20261113/source_equivalence.json",
       "contract": "docs/SEAL_EVALUATION_CONTRACT.md",
-      "run": "seal_native_20261113_v2",
-      "protocol": "protocols/seal_native_20261113_v2.json",
-      "protocol_sha256": "a249befa285e8033358cc0b0c228c9c48cba6438ceaf04cb74e31f8ec6f1a490",
-      "coordinator_pid": 38807,
-      "status": "queued_after_existing_verification",
+      "run": "seal_native_20261113_v3",
+      "protocol": "protocols/seal_native_20261113_v3.json",
+      "protocol_sha256": "e55d8caba0c940c65e5d570fc25e1bbc56aa5207e8a1a69aa1b38c2b8426c73a",
+      "coordinator_pid": 43086,
+      "status": "queued",
       "official_sd21_snapshot_equivalence": false
     },
     "pgid": {
       "source_commit": "dc4ad963ffefcb4cf84340084db617472983d3e0",
       "previous_executable_ast_equal": true,
-      "paper_scale_reproduction_complete": false
+      "paper_scale_reproduction_complete": false,
+      "run": "pgid_native_removal_20261113_v2",
+      "protocol": "protocols/pgid_native_removal_20261113_v2.json",
+      "protocol_sha256": "e90f82182167bcb28574216998eed1ec81cd30a0aeb43a408f3c5909ae4788fe",
+      "coordinator_pid": 43088,
+      "status": "queued"
     },
     "sembind": {
       "source_commit": "337c9f90a150157ac1d410208ae20e6530ca8cdd",
       "released_generation_inversion_masker_source_equal": true,
-      "complete_author_embedding_code_released": false
+      "complete_author_embedding_code_released": false,
+      "run": "sembind_prc_native_20261113_v2",
+      "protocol": "protocols/sembind_prc_native_20261113_v2.json",
+      "protocol_sha256": "18fd9a38df01c64cd4574c1f0fa6467e04a3e78b5b6ec8702eaf56af3e1df47b",
+      "coordinator_pid": 43087,
+      "status": "queued",
+      "implementation_policy": "User approved completing unreleased parts from the paper and explicitly documenting differences",
+      "binding_checks": "reports/three_baselines_20261113/sembind_binding_checks.json",
+      "prc_carrier_roundtrips": 6
     }
   },
   "content_key_review": {
@@ -297,5 +310,11 @@
     "encoder_training_started": false,
     "overall_fpr_established": false,
     "priority": "Deferred until three native baseline validations complete"
-  }
+  },
+  "native_baseline_queue_order": [
+    "phase1_trajectory_native_gs_20261113",
+    "seal_native_20261113_v3",
+    "sembind_prc_native_20261113_v2",
+    "pgid_native_removal_20261113_v2"
+  ]
 }
