@@ -1,0 +1,16 @@
+{
+  "source": "/data0/liyanlei/watermark_research/runs/phase1_trajectory_native_gs_20261113/trajectory_summary.json",
+  "source_sha256": "3a3e91a464843cee48df49159b323bcdd0c024530769d08de04309bbdc5a9c8d",
+  "script_sha256": "08acba6ea551e8d80a453a7688e8acdd55c679f660b3cd2e01faa4b3673ee831",
+  "dimensions_inches": [
+    11.7,
+    3.45
+  ],
+  "png_dpi": 300,
+  "matplotlib": "3.9.2",
+  "uncertainty": "Pointwise95% percentile bootstrap intervals;10000 prompt resamples; not simultaneous bands",
+  "transformation": "No smoothing; arithmetic mean, empirical5th percentile and minimum of measured1024-bit agreements; fixed step35 paired contrasts",
+  "points": "Each point is one prompt; deterministic vertical spacing only",
+  "scope": "Provisional research figure; no publisher-specific compliance claim",
+  "alt_text": "COCO and SDP trajectory code agreement from evaluations5 to50 with mean,5th percentile,minimum and mean confidence band. Third panel shows per-prompt step35 advantage over auxiliary-final and same-prompt independent-seed controls."
+}

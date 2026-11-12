@@ -4,7 +4,7 @@
 
 ## 当前状态
 
-**SemBind 完整原生复现尚未完成。** 当前代码使用作者发布的语义网络与 DPM 生成/反演组件，载体、绑定和评测编排属于项目实现。当前执行[第一阶段协议](docs/PHASE1_PROTOCOL.md)：论文规格基线、工作点及正常去噪轨迹语义测量；载体变体暂停。
+**SemBind 完整原生复现尚未完成。** 当前代码使用作者发布的语义网络与 DPM 生成/反演组件，载体、绑定和评测编排属于项目实现。当前任务是完成[SemBind、PGID和SEAL三个原生防御基线](docs/THREE_BASELINE_REPRODUCTION.md)。[源码与资产证据](reports/three_baselines_20261113/report.md)已固定；新防御训练暂停。
 
 [第一阶段规格核验](reports/phase1_contract_20261113/report.md)及[300万次随机错误身份核验](reports/phase1_wrong_key_null_20261113/report.md)已完成。167位门槛误报0/300万，双侧95%上界1.22963e-6；这不是固定用户的自然图FPR。[100提示词生成与轨迹测量](reports/phase1_trajectory_native_gs_20261113/report.md)已完成，COCO/SDP第35步一致率P5为0.904639/0.892383，未通过预注册0.95门槛；原GS载体基线的完整反演验证仍在249运行，冻结[执行协议](protocols/phase1_trajectory_native_gs_20261113.json)。此前完成的[连续语义区域筛选](reports/continuous_geometry_screen_20261113/report.md)有 24 条干净图验证：四组均接受 6/6，但主候选未通过绑定偏差和比特准确率门槛，没有执行攻击评测。它不支持鲁棒性或防伪优势。
 

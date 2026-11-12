@@ -1,0 +1,1408 @@
+{
+  "status": "complete",
+  "protocol_sha256": "bd09828a85d57cb8433b2c5c42c48dae0aea98d4929d98a91f07d6fe1def3633",
+  "script_sha256": "195e0e63c2df8410012b8c79154c4d957015f387dfe77bd11a63c119ddc11e5a",
+  "clip_model": {
+    "root": "/data0/liyanlei/genstego_sota_assets/model_weights/mas_grdh/clip/clip-vit-large-patch14-local",
+    "files": {
+      "config.json": {
+        "bytes": 4519,
+        "sha256": "8a09b467700c58138c29d53c605b34ebc69beaadd13274a8a2af8ad2c2f4032a"
+      },
+      "model.safetensors": {
+        "bytes": 1710540580,
+        "sha256": "a2bf730a0c7debf160f7a6b50b3aaf3703e7e88ac73de7a314903141db026dcb"
+      },
+      "preprocessor_config.json": {
+        "bytes": 316,
+        "sha256": "910e70b3956ac9879ebc90b22fb3bc8a75b6a0677814500101a4c072bd7857bd"
+      },
+      "tokenizer.json": {
+        "bytes": 2224003,
+        "sha256": "a83e0809aa4c3af7208b2df632a7a69668c6d48775b3c3fe4e1b1199d1f8b8f4"
+      },
+      "tokenizer_config.json": {
+        "bytes": 905,
+        "sha256": "deef455e52fa5e8151e339add0582e4235f066009601360999d3a9cda83b1129"
+      },
+      "special_tokens_map.json": {
+        "bytes": 389,
+        "sha256": "f8c0d6c39aee3f8431078ef6646567b0aba7f2246e9c54b8b99d55c22b707cbf"
+      },
+      "vocab.json": {
+        "bytes": 961143,
+        "sha256": "3f0c4f7d2086b61b38487075278ea9ed04edb53a03cbb045b86c27190fa8fb69"
+      }
+    }
+  },
+  "clip_metric": "Cosine of normalized image/text embeddings, raw scale,77-token truncation",
+  "lpips": "AlexNet LPIPS CPU, images mapped to[-1,1]",
+  "rows": [
+    {
+      "task": 0,
+      "dataset": "COCO",
+      "clip_aux": 0.2278917282819748,
+      "clip_same": 0.24532416462898254,
+      "clip_gs": 0.22774186730384827,
+      "clip_bound": 0.22593975067138672,
+      "lpips_aux_bound": 0.791337251663208,
+      "lpips_aux_gs": 0.7763313055038452,
+      "lpips_aux_same": 0.9246940612792969,
+      "lpips_gs_bound": 0.9323509931564331
+    },
+    {
+      "task": 1,
+      "dataset": "COCO",
+      "clip_aux": 0.2674635350704193,
+      "clip_same": 0.2903042435646057,
+      "clip_gs": 0.24881181120872498,
+      "clip_bound": 0.22890304028987885,
+      "lpips_aux_bound": 0.6024463176727295,
+      "lpips_aux_gs": 0.6408355832099915,
+      "lpips_aux_same": 0.7021455764770508,
+      "lpips_gs_bound": 0.6658727526664734
+    },
+    {
+      "task": 2,
+      "dataset": "COCO",
+      "clip_aux": 0.25199320912361145,
+      "clip_same": 0.2531968057155609,
+      "clip_gs": 0.2512795329093933,
+      "clip_bound": 0.2445693016052246,
+      "lpips_aux_bound": 0.6676069498062134,
+      "lpips_aux_gs": 0.6484867334365845,
+      "lpips_aux_same": 0.6869599223136902,
+      "lpips_gs_bound": 0.6914173364639282
+    },
+    {
+      "task": 3,
+      "dataset": "COCO",
+      "clip_aux": 0.2542290985584259,
+      "clip_same": 0.26011985540390015,
+      "clip_gs": 0.2502414286136627,
+      "clip_bound": 0.24826860427856445,
+      "lpips_aux_bound": 0.6601256728172302,
+      "lpips_aux_gs": 0.6513067483901978,
+      "lpips_aux_same": 0.6390995383262634,
+      "lpips_gs_bound": 0.7551954984664917
+    },
+    {
+      "task": 4,
+      "dataset": "COCO",
+      "clip_aux": 0.27421289682388306,
+      "clip_same": 0.25739338994026184,
+      "clip_gs": 0.23808760941028595,
+      "clip_bound": 0.22989411652088165,
+      "lpips_aux_bound": 0.853022038936615,
+      "lpips_aux_gs": 0.8403102159500122,
+      "lpips_aux_same": 0.8805763125419617,
+      "lpips_gs_bound": 0.8142238855361938
+    },
+    {
+      "task": 5,
+      "dataset": "COCO",
+      "clip_aux": 0.23226921260356903,
+      "clip_same": 0.25361064076423645,
+      "clip_gs": 0.23295709490776062,
+      "clip_bound": 0.2487170696258545,
+      "lpips_aux_bound": 0.7496985197067261,
+      "lpips_aux_gs": 0.7572798132896423,
+      "lpips_aux_same": 0.7564700841903687,
+      "lpips_gs_bound": 0.777738630771637
+    },
+    {
+      "task": 6,
+      "dataset": "COCO",
+      "clip_aux": 0.25884467363357544,
+      "clip_same": 0.24981096386909485,
+      "clip_gs": 0.2492266148328781,
+      "clip_bound": 0.25422072410583496,
+      "lpips_aux_bound": 0.8095457553863525,
+      "lpips_aux_gs": 0.791267991065979,
+      "lpips_aux_same": 0.8339046239852905,
+      "lpips_gs_bound": 0.6932576298713684
+    },
+    {
+      "task": 7,
+      "dataset": "COCO",
+      "clip_aux": 0.24160976707935333,
+      "clip_same": 0.19601097702980042,
+      "clip_gs": 0.215879887342453,
+      "clip_bound": 0.20311345160007477,
+      "lpips_aux_bound": 0.7182966470718384,
+      "lpips_aux_gs": 0.6536657214164734,
+      "lpips_aux_same": 0.7336046695709229,
+      "lpips_gs_bound": 0.7038185596466064
+    },
+    {
+      "task": 8,
+      "dataset": "COCO",
+      "clip_aux": 0.29977476596832275,
+      "clip_same": 0.23584704101085663,
+      "clip_gs": 0.2590678632259369,
+      "clip_bound": 0.28238645195961,
+      "lpips_aux_bound": 0.7060180306434631,
+      "lpips_aux_gs": 0.7486995458602905,
+      "lpips_aux_same": 0.7708633542060852,
+      "lpips_gs_bound": 0.7419536709785461
+    },
+    {
+      "task": 9,
+      "dataset": "COCO",
+      "clip_aux": 0.22668765485286713,
+      "clip_same": 0.2530977427959442,
+      "clip_gs": 0.20702104270458221,
+      "clip_bound": 0.20704147219657898,
+      "lpips_aux_bound": 0.7724781632423401,
+      "lpips_aux_gs": 0.7374117374420166,
+      "lpips_aux_same": 0.7952930927276611,
+      "lpips_gs_bound": 0.7555660605430603
+    },
+    {
+      "task": 10,
+      "dataset": "COCO",
+      "clip_aux": 0.2410387545824051,
+      "clip_same": 0.2766627371311188,
+      "clip_gs": 0.23898248374462128,
+      "clip_bound": 0.25832927227020264,
+      "lpips_aux_bound": 0.8621354699134827,
+      "lpips_aux_gs": 0.8939350247383118,
+      "lpips_aux_same": 0.8077483177185059,
+      "lpips_gs_bound": 0.7936238646507263
+    },
+    {
+      "task": 11,
+      "dataset": "COCO",
+      "clip_aux": 0.2560087740421295,
+      "clip_same": 0.2341299206018448,
+      "clip_gs": 0.2615633010864258,
+      "clip_bound": 0.20821543037891388,
+      "lpips_aux_bound": 0.7557684183120728,
+      "lpips_aux_gs": 0.881260871887207,
+      "lpips_aux_same": 0.8044323325157166,
+      "lpips_gs_bound": 0.7777936458587646
+    },
+    {
+      "task": 12,
+      "dataset": "COCO",
+      "clip_aux": 0.2582363188266754,
+      "clip_same": 0.23213167488574982,
+      "clip_gs": 0.24705474078655243,
+      "clip_bound": 0.24748970568180084,
+      "lpips_aux_bound": 0.7880440950393677,
+      "lpips_aux_gs": 0.8033505082130432,
+      "lpips_aux_same": 0.8397266864776611,
+      "lpips_gs_bound": 0.743078887462616
+    },
+    {
+      "task": 13,
+      "dataset": "COCO",
+      "clip_aux": 0.23007261753082275,
+      "clip_same": 0.22452960908412933,
+      "clip_gs": 0.21255406737327576,
+      "clip_bound": 0.22761189937591553,
+      "lpips_aux_bound": 0.8194630742073059,
+      "lpips_aux_gs": 0.7786500453948975,
+      "lpips_aux_same": 0.6930899024009705,
+      "lpips_gs_bound": 0.8640996813774109
+    },
+    {
+      "task": 14,
+      "dataset": "COCO",
+      "clip_aux": 0.2301674634218216,
+      "clip_same": 0.22752836346626282,
+      "clip_gs": 0.24474923312664032,
+      "clip_bound": 0.2523958384990692,
+      "lpips_aux_bound": 0.851801872253418,
+      "lpips_aux_gs": 0.7496732473373413,
+      "lpips_aux_same": 0.7859225869178772,
+      "lpips_gs_bound": 0.8221139311790466
+    },
+    {
+      "task": 15,
+      "dataset": "COCO",
+      "clip_aux": 0.2948285639286041,
+      "clip_same": 0.2759123742580414,
+      "clip_gs": 0.25379303097724915,
+      "clip_bound": 0.29403507709503174,
+      "lpips_aux_bound": 0.6688804626464844,
+      "lpips_aux_gs": 0.5596177577972412,
+      "lpips_aux_same": 0.7001222372055054,
+      "lpips_gs_bound": 0.6848208904266357
+    },
+    {
+      "task": 16,
+      "dataset": "COCO",
+      "clip_aux": 0.2849594056606293,
+      "clip_same": 0.2855401039123535,
+      "clip_gs": 0.271773099899292,
+      "clip_bound": 0.2850914001464844,
+      "lpips_aux_bound": 0.7760870456695557,
+      "lpips_aux_gs": 0.8720497488975525,
+      "lpips_aux_same": 0.8111637830734253,
+      "lpips_gs_bound": 0.6590958833694458
+    },
+    {
+      "task": 17,
+      "dataset": "COCO",
+      "clip_aux": 0.25986555218696594,
+      "clip_same": 0.24295897781848907,
+      "clip_gs": 0.2639712989330292,
+      "clip_bound": 0.26423466205596924,
+      "lpips_aux_bound": 0.748012125492096,
+      "lpips_aux_gs": 0.656994104385376,
+      "lpips_aux_same": 0.7671358585357666,
+      "lpips_gs_bound": 0.7120428681373596
+    },
+    {
+      "task": 18,
+      "dataset": "COCO",
+      "clip_aux": 0.23903252184391022,
+      "clip_same": 0.2545156180858612,
+      "clip_gs": 0.29904016852378845,
+      "clip_bound": 0.2547140419483185,
+      "lpips_aux_bound": 0.7140334248542786,
+      "lpips_aux_gs": 0.8428270816802979,
+      "lpips_aux_same": 0.6900829076766968,
+      "lpips_gs_bound": 0.7370912432670593
+    },
+    {
+      "task": 19,
+      "dataset": "COCO",
+      "clip_aux": 0.31568339467048645,
+      "clip_same": 0.2580544054508209,
+      "clip_gs": 0.3128044307231903,
+      "clip_bound": 0.33056220412254333,
+      "lpips_aux_bound": 0.8325864672660828,
+      "lpips_aux_gs": 0.7605669498443604,
+      "lpips_aux_same": 0.7756245732307434,
+      "lpips_gs_bound": 0.7684770822525024
+    },
+    {
+      "task": 20,
+      "dataset": "COCO",
+      "clip_aux": 0.31193527579307556,
+      "clip_same": 0.33737000823020935,
+      "clip_gs": 0.2941707968711853,
+      "clip_bound": 0.2832557260990143,
+      "lpips_aux_bound": 0.7827597856521606,
+      "lpips_aux_gs": 0.8231050372123718,
+      "lpips_aux_same": 0.7437593340873718,
+      "lpips_gs_bound": 0.7651949524879456
+    },
+    {
+      "task": 21,
+      "dataset": "COCO",
+      "clip_aux": 0.2074488252401352,
+      "clip_same": 0.18943238258361816,
+      "clip_gs": 0.21263962984085083,
+      "clip_bound": 0.20762868225574493,
+      "lpips_aux_bound": 0.7138272523880005,
+      "lpips_aux_gs": 0.7834693789482117,
+      "lpips_aux_same": 0.7795189619064331,
+      "lpips_gs_bound": 0.756273627281189
+    },
+    {
+      "task": 22,
+      "dataset": "COCO",
+      "clip_aux": 0.21273359656333923,
+      "clip_same": 0.23261268436908722,
+      "clip_gs": 0.22508768737316132,
+      "clip_bound": 0.23764143884181976,
+      "lpips_aux_bound": 0.7915500998497009,
+      "lpips_aux_gs": 0.7883938550949097,
+      "lpips_aux_same": 0.815552294254303,
+      "lpips_gs_bound": 0.7803674340248108
+    },
+    {
+      "task": 23,
+      "dataset": "COCO",
+      "clip_aux": 0.24343372881412506,
+      "clip_same": 0.2491179257631302,
+      "clip_gs": 0.2429434359073639,
+      "clip_bound": 0.23908987641334534,
+      "lpips_aux_bound": 0.7504082918167114,
+      "lpips_aux_gs": 0.7559948563575745,
+      "lpips_aux_same": 0.7233426570892334,
+      "lpips_gs_bound": 0.699610710144043
+    },
+    {
+      "task": 24,
+      "dataset": "COCO",
+      "clip_aux": 0.24418488144874573,
+      "clip_same": 0.24191749095916748,
+      "clip_gs": 0.242972731590271,
+      "clip_bound": 0.2449701577425003,
+      "lpips_aux_bound": 0.7352717518806458,
+      "lpips_aux_gs": 0.8013417720794678,
+      "lpips_aux_same": 0.6351266503334045,
+      "lpips_gs_bound": 0.8151705861091614
+    },
+    {
+      "task": 25,
+      "dataset": "COCO",
+      "clip_aux": 0.2963874042034149,
+      "clip_same": 0.2372482419013977,
+      "clip_gs": 0.2794544994831085,
+      "clip_bound": 0.2687571346759796,
+      "lpips_aux_bound": 0.7201131582260132,
+      "lpips_aux_gs": 0.6885625123977661,
+      "lpips_aux_same": 0.7411075830459595,
+      "lpips_gs_bound": 0.699997067451477
+    },
+    {
+      "task": 26,
+      "dataset": "COCO",
+      "clip_aux": 0.27157074213027954,
+      "clip_same": 0.25805002450942993,
+      "clip_gs": 0.24067988991737366,
+      "clip_bound": 0.2497936189174652,
+      "lpips_aux_bound": 0.5225685238838196,
+      "lpips_aux_gs": 0.5800184607505798,
+      "lpips_aux_same": 0.5846260786056519,
+      "lpips_gs_bound": 0.5085245370864868
+    },
+    {
+      "task": 27,
+      "dataset": "COCO",
+      "clip_aux": 0.2907181978225708,
+      "clip_same": 0.262631893157959,
+      "clip_gs": 0.2770434319972992,
+      "clip_bound": 0.2949008047580719,
+      "lpips_aux_bound": 0.724075198173523,
+      "lpips_aux_gs": 0.7922682762145996,
+      "lpips_aux_same": 0.7514419555664062,
+      "lpips_gs_bound": 0.7636949419975281
+    },
+    {
+      "task": 28,
+      "dataset": "COCO",
+      "clip_aux": 0.20544788241386414,
+      "clip_same": 0.23382167518138885,
+      "clip_gs": 0.26632052659988403,
+      "clip_bound": 0.29333314299583435,
+      "lpips_aux_bound": 0.6805602312088013,
+      "lpips_aux_gs": 0.7438430786132812,
+      "lpips_aux_same": 0.7898793816566467,
+      "lpips_gs_bound": 0.7389081716537476
+    },
+    {
+      "task": 29,
+      "dataset": "COCO",
+      "clip_aux": 0.22212760150432587,
+      "clip_same": 0.22959285974502563,
+      "clip_gs": 0.2103283405303955,
+      "clip_bound": 0.2420647293329239,
+      "lpips_aux_bound": 0.7200208306312561,
+      "lpips_aux_gs": 0.6790271997451782,
+      "lpips_aux_same": 0.6793187260627747,
+      "lpips_gs_bound": 0.7340041995048523
+    },
+    {
+      "task": 30,
+      "dataset": "COCO",
+      "clip_aux": 0.2962496280670166,
+      "clip_same": 0.2691800892353058,
+      "clip_gs": 0.2721998691558838,
+      "clip_bound": 0.26723799109458923,
+      "lpips_aux_bound": 0.7285242676734924,
+      "lpips_aux_gs": 0.6640151739120483,
+      "lpips_aux_same": 0.6544272303581238,
+      "lpips_gs_bound": 0.7491620779037476
+    },
+    {
+      "task": 31,
+      "dataset": "COCO",
+      "clip_aux": 0.23527970910072327,
+      "clip_same": 0.23745878040790558,
+      "clip_gs": 0.2506698966026306,
+      "clip_bound": 0.2679761052131653,
+      "lpips_aux_bound": 0.7312525510787964,
+      "lpips_aux_gs": 0.7429078221321106,
+      "lpips_aux_same": 0.7279832363128662,
+      "lpips_gs_bound": 0.7089217305183411
+    },
+    {
+      "task": 32,
+      "dataset": "COCO",
+      "clip_aux": 0.27402612566947937,
+      "clip_same": 0.3172415494918823,
+      "clip_gs": 0.2747586667537689,
+      "clip_bound": 0.2687872648239136,
+      "lpips_aux_bound": 0.8151218295097351,
+      "lpips_aux_gs": 0.8487707376480103,
+      "lpips_aux_same": 0.892266035079956,
+      "lpips_gs_bound": 0.8692506551742554
+    },
+    {
+      "task": 33,
+      "dataset": "COCO",
+      "clip_aux": 0.23152337968349457,
+      "clip_same": 0.254827082157135,
+      "clip_gs": 0.19230912625789642,
+      "clip_bound": 0.22684738039970398,
+      "lpips_aux_bound": 0.7432307004928589,
+      "lpips_aux_gs": 0.6739596724510193,
+      "lpips_aux_same": 0.7336578369140625,
+      "lpips_gs_bound": 0.7429780960083008
+    },
+    {
+      "task": 34,
+      "dataset": "COCO",
+      "clip_aux": 0.26259320974349976,
+      "clip_same": 0.251903235912323,
+      "clip_gs": 0.24583083391189575,
+      "clip_bound": 0.24826580286026,
+      "lpips_aux_bound": 0.6581425666809082,
+      "lpips_aux_gs": 0.7156249284744263,
+      "lpips_aux_same": 0.7391889691352844,
+      "lpips_gs_bound": 0.6013590693473816
+    },
+    {
+      "task": 35,
+      "dataset": "COCO",
+      "clip_aux": 0.17436763644218445,
+      "clip_same": 0.19466780126094818,
+      "clip_gs": 0.2791783809661865,
+      "clip_bound": 0.17871993780136108,
+      "lpips_aux_bound": 0.7343584299087524,
+      "lpips_aux_gs": 0.8387543559074402,
+      "lpips_aux_same": 0.9415955543518066,
+      "lpips_gs_bound": 0.8102403879165649
+    },
+    {
+      "task": 36,
+      "dataset": "COCO",
+      "clip_aux": 0.268052875995636,
+      "clip_same": 0.26465797424316406,
+      "clip_gs": 0.30139341950416565,
+      "clip_bound": 0.2779881954193115,
+      "lpips_aux_bound": 0.8489102125167847,
+      "lpips_aux_gs": 0.7802188992500305,
+      "lpips_aux_same": 0.8265861868858337,
+      "lpips_gs_bound": 0.8627370595932007
+    },
+    {
+      "task": 37,
+      "dataset": "COCO",
+      "clip_aux": 0.2928338050842285,
+      "clip_same": 0.29189687967300415,
+      "clip_gs": 0.2983088791370392,
+      "clip_bound": 0.27508044242858887,
+      "lpips_aux_bound": 0.8729857206344604,
+      "lpips_aux_gs": 0.7722843885421753,
+      "lpips_aux_same": 0.8493568301200867,
+      "lpips_gs_bound": 0.8230225443840027
+    },
+    {
+      "task": 38,
+      "dataset": "COCO",
+      "clip_aux": 0.23617149889469147,
+      "clip_same": 0.21797950565814972,
+      "clip_gs": 0.23850487172603607,
+      "clip_bound": 0.26289641857147217,
+      "lpips_aux_bound": 0.6704059839248657,
+      "lpips_aux_gs": 0.6785735487937927,
+      "lpips_aux_same": 0.6994305849075317,
+      "lpips_gs_bound": 0.7373198866844177
+    },
+    {
+      "task": 39,
+      "dataset": "COCO",
+      "clip_aux": 0.27240487933158875,
+      "clip_same": 0.26689615845680237,
+      "clip_gs": 0.24787211418151855,
+      "clip_bound": 0.26237890124320984,
+      "lpips_aux_bound": 0.859900176525116,
+      "lpips_aux_gs": 0.8102469444274902,
+      "lpips_aux_same": 0.85833340883255,
+      "lpips_gs_bound": 0.8485092520713806
+    },
+    {
+      "task": 40,
+      "dataset": "COCO",
+      "clip_aux": 0.27431726455688477,
+      "clip_same": 0.28929635882377625,
+      "clip_gs": 0.2502124309539795,
+      "clip_bound": 0.2604721486568451,
+      "lpips_aux_bound": 0.8278726935386658,
+      "lpips_aux_gs": 0.7335272431373596,
+      "lpips_aux_same": 0.7230432033538818,
+      "lpips_gs_bound": 0.8779422044754028
+    },
+    {
+      "task": 41,
+      "dataset": "COCO",
+      "clip_aux": 0.260515034198761,
+      "clip_same": 0.25162020325660706,
+      "clip_gs": 0.2505161464214325,
+      "clip_bound": 0.2389012575149536,
+      "lpips_aux_bound": 0.6713541150093079,
+      "lpips_aux_gs": 0.7124816179275513,
+      "lpips_aux_same": 0.6994572281837463,
+      "lpips_gs_bound": 0.6533020734786987
+    },
+    {
+      "task": 42,
+      "dataset": "COCO",
+      "clip_aux": 0.24704281985759735,
+      "clip_same": 0.231319397687912,
+      "clip_gs": 0.2931705713272095,
+      "clip_bound": 0.3021990656852722,
+      "lpips_aux_bound": 0.7507212162017822,
+      "lpips_aux_gs": 0.8109301328659058,
+      "lpips_aux_same": 0.7823741436004639,
+      "lpips_gs_bound": 0.7658538222312927
+    },
+    {
+      "task": 43,
+      "dataset": "COCO",
+      "clip_aux": 0.27023303508758545,
+      "clip_same": 0.2426077127456665,
+      "clip_gs": 0.22840461134910583,
+      "clip_bound": 0.26002001762390137,
+      "lpips_aux_bound": 0.6439483165740967,
+      "lpips_aux_gs": 0.6798341274261475,
+      "lpips_aux_same": 0.7002935409545898,
+      "lpips_gs_bound": 0.6192370653152466
+    },
+    {
+      "task": 44,
+      "dataset": "COCO",
+      "clip_aux": 0.26965948939323425,
+      "clip_same": 0.2877279818058014,
+      "clip_gs": 0.2245948314666748,
+      "clip_bound": 0.292368620634079,
+      "lpips_aux_bound": 0.6543686985969543,
+      "lpips_aux_gs": 0.6117315292358398,
+      "lpips_aux_same": 0.7091553211212158,
+      "lpips_gs_bound": 0.6267282366752625
+    },
+    {
+      "task": 45,
+      "dataset": "COCO",
+      "clip_aux": 0.31747540831565857,
+      "clip_same": 0.29321375489234924,
+      "clip_gs": 0.3045048415660858,
+      "clip_bound": 0.32880160212516785,
+      "lpips_aux_bound": 0.8011592626571655,
+      "lpips_aux_gs": 0.6596390008926392,
+      "lpips_aux_same": 0.659884512424469,
+      "lpips_gs_bound": 0.813246488571167
+    },
+    {
+      "task": 46,
+      "dataset": "COCO",
+      "clip_aux": 0.24863696098327637,
+      "clip_same": 0.2507370412349701,
+      "clip_gs": 0.2592150866985321,
+      "clip_bound": 0.25532013177871704,
+      "lpips_aux_bound": 0.6205766797065735,
+      "lpips_aux_gs": 0.58485347032547,
+      "lpips_aux_same": 0.6727597713470459,
+      "lpips_gs_bound": 0.6227273344993591
+    },
+    {
+      "task": 47,
+      "dataset": "COCO",
+      "clip_aux": 0.27250704169273376,
+      "clip_same": 0.2654462456703186,
+      "clip_gs": 0.2857837975025177,
+      "clip_bound": 0.2501375079154968,
+      "lpips_aux_bound": 0.8303435444831848,
+      "lpips_aux_gs": 0.8568007946014404,
+      "lpips_aux_same": 0.8681749105453491,
+      "lpips_gs_bound": 0.8224999308586121
+    },
+    {
+      "task": 48,
+      "dataset": "COCO",
+      "clip_aux": 0.25397247076034546,
+      "clip_same": 0.26791784167289734,
+      "clip_gs": 0.2579199969768524,
+      "clip_bound": 0.26943185925483704,
+      "lpips_aux_bound": 0.8191913366317749,
+      "lpips_aux_gs": 0.9222118258476257,
+      "lpips_aux_same": 0.677246630191803,
+      "lpips_gs_bound": 0.8527417778968811
+    },
+    {
+      "task": 49,
+      "dataset": "COCO",
+      "clip_aux": 0.2728618085384369,
+      "clip_same": 0.2670733630657196,
+      "clip_gs": 0.26717206835746765,
+      "clip_bound": 0.2649490535259247,
+      "lpips_aux_bound": 0.7924586534500122,
+      "lpips_aux_gs": 0.7508524656295776,
+      "lpips_aux_same": 0.7243388891220093,
+      "lpips_gs_bound": 0.7366155982017517
+    },
+    {
+      "task": 50,
+      "dataset": "SDP",
+      "clip_aux": 0.32773667573928833,
+      "clip_same": 0.35538095235824585,
+      "clip_gs": 0.3116557002067566,
+      "clip_bound": 0.27134981751441956,
+      "lpips_aux_bound": 0.7379230260848999,
+      "lpips_aux_gs": 0.7512675523757935,
+      "lpips_aux_same": 0.7674931883811951,
+      "lpips_gs_bound": 0.7214117050170898
+    },
+    {
+      "task": 51,
+      "dataset": "SDP",
+      "clip_aux": 0.2496863454580307,
+      "clip_same": 0.26908642053604126,
+      "clip_gs": 0.28478434681892395,
+      "clip_bound": 0.31773221492767334,
+      "lpips_aux_bound": 0.8246715664863586,
+      "lpips_aux_gs": 0.7783620953559875,
+      "lpips_aux_same": 0.7156404256820679,
+      "lpips_gs_bound": 0.7838196754455566
+    },
+    {
+      "task": 52,
+      "dataset": "SDP",
+      "clip_aux": 0.27156955003738403,
+      "clip_same": 0.3053431808948517,
+      "clip_gs": 0.2857067584991455,
+      "clip_bound": 0.29251590371131897,
+      "lpips_aux_bound": 0.7316619157791138,
+      "lpips_aux_gs": 0.7415143847465515,
+      "lpips_aux_same": 0.7482511401176453,
+      "lpips_gs_bound": 0.7441689968109131
+    },
+    {
+      "task": 53,
+      "dataset": "SDP",
+      "clip_aux": 0.28767383098602295,
+      "clip_same": 0.28054094314575195,
+      "clip_gs": 0.33045321702957153,
+      "clip_bound": 0.3200015425682068,
+      "lpips_aux_bound": 0.7170934677124023,
+      "lpips_aux_gs": 0.7093092203140259,
+      "lpips_aux_same": 0.7071673274040222,
+      "lpips_gs_bound": 0.6369895339012146
+    },
+    {
+      "task": 54,
+      "dataset": "SDP",
+      "clip_aux": 0.2525128722190857,
+      "clip_same": 0.24743127822875977,
+      "clip_gs": 0.2716924548149109,
+      "clip_bound": 0.24893119931221008,
+      "lpips_aux_bound": 0.6279438734054565,
+      "lpips_aux_gs": 0.6173586845397949,
+      "lpips_aux_same": 0.6995392441749573,
+      "lpips_gs_bound": 0.6209293603897095
+    },
+    {
+      "task": 55,
+      "dataset": "SDP",
+      "clip_aux": 0.14954741299152374,
+      "clip_same": 0.13936913013458252,
+      "clip_gs": 0.20601420104503632,
+      "clip_bound": 0.15731045603752136,
+      "lpips_aux_bound": 0.6821563243865967,
+      "lpips_aux_gs": 0.7257896065711975,
+      "lpips_aux_same": 0.6780609488487244,
+      "lpips_gs_bound": 0.752149760723114
+    },
+    {
+      "task": 56,
+      "dataset": "SDP",
+      "clip_aux": 0.33306169509887695,
+      "clip_same": 0.37264639139175415,
+      "clip_gs": 0.29162511229515076,
+      "clip_bound": 0.3217434585094452,
+      "lpips_aux_bound": 0.8643683791160583,
+      "lpips_aux_gs": 0.9038665890693665,
+      "lpips_aux_same": 0.7951798439025879,
+      "lpips_gs_bound": 0.8525561094284058
+    },
+    {
+      "task": 57,
+      "dataset": "SDP",
+      "clip_aux": 0.3117612898349762,
+      "clip_same": 0.23912884294986725,
+      "clip_gs": 0.30520763993263245,
+      "clip_bound": 0.2950417697429657,
+      "lpips_aux_bound": 0.7478161454200745,
+      "lpips_aux_gs": 0.668218195438385,
+      "lpips_aux_same": 0.7824467420578003,
+      "lpips_gs_bound": 0.6899310350418091
+    },
+    {
+      "task": 58,
+      "dataset": "SDP",
+      "clip_aux": 0.2907281517982483,
+      "clip_same": 0.2830390930175781,
+      "clip_gs": 0.29038697481155396,
+      "clip_bound": 0.2715308964252472,
+      "lpips_aux_bound": 0.8067359924316406,
+      "lpips_aux_gs": 0.7837169766426086,
+      "lpips_aux_same": 0.7460344433784485,
+      "lpips_gs_bound": 0.691108226776123
+    },
+    {
+      "task": 59,
+      "dataset": "SDP",
+      "clip_aux": 0.30619484186172485,
+      "clip_same": 0.2874223589897156,
+      "clip_gs": 0.30656513571739197,
+      "clip_bound": 0.30839577317237854,
+      "lpips_aux_bound": 0.6951563954353333,
+      "lpips_aux_gs": 0.7078309059143066,
+      "lpips_aux_same": 0.6672642230987549,
+      "lpips_gs_bound": 0.6576544046401978
+    },
+    {
+      "task": 60,
+      "dataset": "SDP",
+      "clip_aux": 0.2766427993774414,
+      "clip_same": 0.26165762543678284,
+      "clip_gs": 0.264469176530838,
+      "clip_bound": 0.29156455397605896,
+      "lpips_aux_bound": 0.7199908494949341,
+      "lpips_aux_gs": 0.7562787532806396,
+      "lpips_aux_same": 0.8306848406791687,
+      "lpips_gs_bound": 0.6739556789398193
+    },
+    {
+      "task": 61,
+      "dataset": "SDP",
+      "clip_aux": 0.25981295108795166,
+      "clip_same": 0.24268081784248352,
+      "clip_gs": 0.20404990017414093,
+      "clip_bound": 0.25621482729911804,
+      "lpips_aux_bound": 0.6747147440910339,
+      "lpips_aux_gs": 0.7686299085617065,
+      "lpips_aux_same": 0.7023849487304688,
+      "lpips_gs_bound": 0.7072211503982544
+    },
+    {
+      "task": 62,
+      "dataset": "SDP",
+      "clip_aux": 0.28184714913368225,
+      "clip_same": 0.2988112270832062,
+      "clip_gs": 0.2734389901161194,
+      "clip_bound": 0.2941523492336273,
+      "lpips_aux_bound": 0.8150660395622253,
+      "lpips_aux_gs": 0.8355715274810791,
+      "lpips_aux_same": 0.8627166152000427,
+      "lpips_gs_bound": 0.8284739255905151
+    },
+    {
+      "task": 63,
+      "dataset": "SDP",
+      "clip_aux": 0.26624900102615356,
+      "clip_same": 0.2399470955133438,
+      "clip_gs": 0.23955856263637543,
+      "clip_bound": 0.26519203186035156,
+      "lpips_aux_bound": 0.7499275207519531,
+      "lpips_aux_gs": 0.7561033964157104,
+      "lpips_aux_same": 0.7725637555122375,
+      "lpips_gs_bound": 0.8098419904708862
+    },
+    {
+      "task": 64,
+      "dataset": "SDP",
+      "clip_aux": 0.24268008768558502,
+      "clip_same": 0.26222580671310425,
+      "clip_gs": 0.2540733516216278,
+      "clip_bound": 0.2437112033367157,
+      "lpips_aux_bound": 0.7305626273155212,
+      "lpips_aux_gs": 0.7083854675292969,
+      "lpips_aux_same": 0.7102788090705872,
+      "lpips_gs_bound": 0.713531494140625
+    },
+    {
+      "task": 65,
+      "dataset": "SDP",
+      "clip_aux": 0.29527726769447327,
+      "clip_same": 0.31180673837661743,
+      "clip_gs": 0.30284789204597473,
+      "clip_bound": 0.27622509002685547,
+      "lpips_aux_bound": 0.7344343662261963,
+      "lpips_aux_gs": 0.7116526365280151,
+      "lpips_aux_same": 0.753898024559021,
+      "lpips_gs_bound": 0.7153846621513367
+    },
+    {
+      "task": 66,
+      "dataset": "SDP",
+      "clip_aux": 0.3315305709838867,
+      "clip_same": 0.3212157189846039,
+      "clip_gs": 0.3448811173439026,
+      "clip_bound": 0.3173457980155945,
+      "lpips_aux_bound": 0.8996254801750183,
+      "lpips_aux_gs": 0.8642901182174683,
+      "lpips_aux_same": 0.818052351474762,
+      "lpips_gs_bound": 0.8191384673118591
+    },
+    {
+      "task": 67,
+      "dataset": "SDP",
+      "clip_aux": 0.31928592920303345,
+      "clip_same": 0.2906191945075989,
+      "clip_gs": 0.30234354734420776,
+      "clip_bound": 0.29475945234298706,
+      "lpips_aux_bound": 0.6615288853645325,
+      "lpips_aux_gs": 0.686119556427002,
+      "lpips_aux_same": 0.6645525097846985,
+      "lpips_gs_bound": 0.7143248915672302
+    },
+    {
+      "task": 68,
+      "dataset": "SDP",
+      "clip_aux": 0.2944832444190979,
+      "clip_same": 0.31092533469200134,
+      "clip_gs": 0.2788332998752594,
+      "clip_bound": 0.28338149189949036,
+      "lpips_aux_bound": 0.7796977758407593,
+      "lpips_aux_gs": 0.8818687200546265,
+      "lpips_aux_same": 0.7930793762207031,
+      "lpips_gs_bound": 0.8753223419189453
+    },
+    {
+      "task": 69,
+      "dataset": "SDP",
+      "clip_aux": 0.2533329129219055,
+      "clip_same": 0.2664482891559601,
+      "clip_gs": 0.24869036674499512,
+      "clip_bound": 0.2808494567871094,
+      "lpips_aux_bound": 0.6361748576164246,
+      "lpips_aux_gs": 0.7414082288742065,
+      "lpips_aux_same": 0.6136819124221802,
+      "lpips_gs_bound": 0.6729009747505188
+    },
+    {
+      "task": 70,
+      "dataset": "SDP",
+      "clip_aux": 0.3047806918621063,
+      "clip_same": 0.30903300642967224,
+      "clip_gs": 0.2929232716560364,
+      "clip_bound": 0.33675673604011536,
+      "lpips_aux_bound": 0.6281129121780396,
+      "lpips_aux_gs": 0.6693810820579529,
+      "lpips_aux_same": 0.6759755611419678,
+      "lpips_gs_bound": 0.6523914933204651
+    },
+    {
+      "task": 71,
+      "dataset": "SDP",
+      "clip_aux": 0.3044907748699188,
+      "clip_same": 0.25045686960220337,
+      "clip_gs": 0.25725018978118896,
+      "clip_bound": 0.29000726342201233,
+      "lpips_aux_bound": 0.6449683904647827,
+      "lpips_aux_gs": 0.6957501173019409,
+      "lpips_aux_same": 0.7374231219291687,
+      "lpips_gs_bound": 0.6524320840835571
+    },
+    {
+      "task": 72,
+      "dataset": "SDP",
+      "clip_aux": 0.2675382196903229,
+      "clip_same": 0.22973960638046265,
+      "clip_gs": 0.2291000485420227,
+      "clip_bound": 0.2392735630273819,
+      "lpips_aux_bound": 0.600744366645813,
+      "lpips_aux_gs": 0.6896350383758545,
+      "lpips_aux_same": 0.6383139491081238,
+      "lpips_gs_bound": 0.6451697945594788
+    },
+    {
+      "task": 73,
+      "dataset": "SDP",
+      "clip_aux": 0.27251139283180237,
+      "clip_same": 0.23653550446033478,
+      "clip_gs": 0.26535749435424805,
+      "clip_bound": 0.2779068648815155,
+      "lpips_aux_bound": 0.6110978126525879,
+      "lpips_aux_gs": 0.6294768452644348,
+      "lpips_aux_same": 0.6172873377799988,
+      "lpips_gs_bound": 0.6116223335266113
+    },
+    {
+      "task": 74,
+      "dataset": "SDP",
+      "clip_aux": 0.2723328769207001,
+      "clip_same": 0.2886015772819519,
+      "clip_gs": 0.22263994812965393,
+      "clip_bound": 0.251304566860199,
+      "lpips_aux_bound": 0.7401061058044434,
+      "lpips_aux_gs": 0.7098912000656128,
+      "lpips_aux_same": 0.7236664295196533,
+      "lpips_gs_bound": 0.7674610614776611
+    },
+    {
+      "task": 75,
+      "dataset": "SDP",
+      "clip_aux": 0.3337301015853882,
+      "clip_same": 0.3250541090965271,
+      "clip_gs": 0.31053340435028076,
+      "clip_bound": 0.333419531583786,
+      "lpips_aux_bound": 0.7364506721496582,
+      "lpips_aux_gs": 0.8568655848503113,
+      "lpips_aux_same": 0.8165870308876038,
+      "lpips_gs_bound": 0.8446890711784363
+    },
+    {
+      "task": 76,
+      "dataset": "SDP",
+      "clip_aux": 0.3447102904319763,
+      "clip_same": 0.3119460940361023,
+      "clip_gs": 0.32059645652770996,
+      "clip_bound": 0.2793976962566376,
+      "lpips_aux_bound": 0.688416063785553,
+      "lpips_aux_gs": 0.7130419611930847,
+      "lpips_aux_same": 0.7303730249404907,
+      "lpips_gs_bound": 0.6028718948364258
+    },
+    {
+      "task": 77,
+      "dataset": "SDP",
+      "clip_aux": 0.22848524153232574,
+      "clip_same": 0.2507663071155548,
+      "clip_gs": 0.27083656191825867,
+      "clip_bound": 0.27814164757728577,
+      "lpips_aux_bound": 0.64628666639328,
+      "lpips_aux_gs": 0.6697766184806824,
+      "lpips_aux_same": 0.7159274220466614,
+      "lpips_gs_bound": 0.5945795774459839
+    },
+    {
+      "task": 78,
+      "dataset": "SDP",
+      "clip_aux": 0.14646472036838531,
+      "clip_same": 0.17976528406143188,
+      "clip_gs": 0.21834541857242584,
+      "clip_bound": 0.1877785623073578,
+      "lpips_aux_bound": 0.7601239085197449,
+      "lpips_aux_gs": 0.7685472369194031,
+      "lpips_aux_same": 0.7653517127037048,
+      "lpips_gs_bound": 0.8017577528953552
+    },
+    {
+      "task": 79,
+      "dataset": "SDP",
+      "clip_aux": 0.3084304630756378,
+      "clip_same": 0.3075052499771118,
+      "clip_gs": 0.2657182514667511,
+      "clip_bound": 0.2852473855018616,
+      "lpips_aux_bound": 0.6443167328834534,
+      "lpips_aux_gs": 0.6707981824874878,
+      "lpips_aux_same": 0.6304634809494019,
+      "lpips_gs_bound": 0.7020523548126221
+    },
+    {
+      "task": 80,
+      "dataset": "SDP",
+      "clip_aux": 0.3022167384624481,
+      "clip_same": 0.28798821568489075,
+      "clip_gs": 0.26338475942611694,
+      "clip_bound": 0.23734956979751587,
+      "lpips_aux_bound": 0.6807958483695984,
+      "lpips_aux_gs": 0.7207158803939819,
+      "lpips_aux_same": 0.748193085193634,
+      "lpips_gs_bound": 0.6847562789916992
+    },
+    {
+      "task": 81,
+      "dataset": "SDP",
+      "clip_aux": 0.3030596971511841,
+      "clip_same": 0.2373768538236618,
+      "clip_gs": 0.27612894773483276,
+      "clip_bound": 0.2776273488998413,
+      "lpips_aux_bound": 0.6950539350509644,
+      "lpips_aux_gs": 0.7200868725776672,
+      "lpips_aux_same": 0.7155896425247192,
+      "lpips_gs_bound": 0.7060432434082031
+    },
+    {
+      "task": 82,
+      "dataset": "SDP",
+      "clip_aux": 0.23461759090423584,
+      "clip_same": 0.22584356367588043,
+      "clip_gs": 0.24343034625053406,
+      "clip_bound": 0.2175426036119461,
+      "lpips_aux_bound": 0.7285819053649902,
+      "lpips_aux_gs": 0.7003589868545532,
+      "lpips_aux_same": 0.6467313766479492,
+      "lpips_gs_bound": 0.7812623977661133
+    },
+    {
+      "task": 83,
+      "dataset": "SDP",
+      "clip_aux": 0.27763575315475464,
+      "clip_same": 0.28064894676208496,
+      "clip_gs": 0.27584099769592285,
+      "clip_bound": 0.26799818873405457,
+      "lpips_aux_bound": 0.6626513600349426,
+      "lpips_aux_gs": 0.6829999685287476,
+      "lpips_aux_same": 0.657663881778717,
+      "lpips_gs_bound": 0.6962700486183167
+    },
+    {
+      "task": 84,
+      "dataset": "SDP",
+      "clip_aux": 0.27073684334754944,
+      "clip_same": 0.3165234923362732,
+      "clip_gs": 0.262871652841568,
+      "clip_bound": 0.26869988441467285,
+      "lpips_aux_bound": 0.6840585470199585,
+      "lpips_aux_gs": 0.8301953077316284,
+      "lpips_aux_same": 0.670726478099823,
+      "lpips_gs_bound": 0.7782309651374817
+    },
+    {
+      "task": 85,
+      "dataset": "SDP",
+      "clip_aux": 0.2512069046497345,
+      "clip_same": 0.34084272384643555,
+      "clip_gs": 0.3218562602996826,
+      "clip_bound": 0.3094361424446106,
+      "lpips_aux_bound": 0.659070611000061,
+      "lpips_aux_gs": 0.6009438633918762,
+      "lpips_aux_same": 0.7419294118881226,
+      "lpips_gs_bound": 0.6163775324821472
+    },
+    {
+      "task": 86,
+      "dataset": "SDP",
+      "clip_aux": 0.27216291427612305,
+      "clip_same": 0.2366534024477005,
+      "clip_gs": 0.23678642511367798,
+      "clip_bound": 0.2864992618560791,
+      "lpips_aux_bound": 0.740868091583252,
+      "lpips_aux_gs": 0.6975224614143372,
+      "lpips_aux_same": 0.6258516311645508,
+      "lpips_gs_bound": 0.7193219661712646
+    },
+    {
+      "task": 87,
+      "dataset": "SDP",
+      "clip_aux": 0.2949245274066925,
+      "clip_same": 0.2861945331096649,
+      "clip_gs": 0.29899266362190247,
+      "clip_bound": 0.30465009808540344,
+      "lpips_aux_bound": 0.6535578966140747,
+      "lpips_aux_gs": 0.687604546546936,
+      "lpips_aux_same": 0.6864635944366455,
+      "lpips_gs_bound": 0.7224446535110474
+    },
+    {
+      "task": 88,
+      "dataset": "SDP",
+      "clip_aux": 0.368910551071167,
+      "clip_same": 0.3339642286300659,
+      "clip_gs": 0.31079694628715515,
+      "clip_bound": 0.3002540171146393,
+      "lpips_aux_bound": 0.654788613319397,
+      "lpips_aux_gs": 0.6505415439605713,
+      "lpips_aux_same": 0.6704579591751099,
+      "lpips_gs_bound": 0.6361885666847229
+    },
+    {
+      "task": 89,
+      "dataset": "SDP",
+      "clip_aux": 0.31912052631378174,
+      "clip_same": 0.28826430439949036,
+      "clip_gs": 0.2963397204875946,
+      "clip_bound": 0.29227104783058167,
+      "lpips_aux_bound": 0.7478016018867493,
+      "lpips_aux_gs": 0.7169384956359863,
+      "lpips_aux_same": 0.7299624085426331,
+      "lpips_gs_bound": 0.7113213539123535
+    },
+    {
+      "task": 90,
+      "dataset": "SDP",
+      "clip_aux": 0.262431800365448,
+      "clip_same": 0.2423405796289444,
+      "clip_gs": 0.26681116223335266,
+      "clip_bound": 0.2444431036710739,
+      "lpips_aux_bound": 0.678589940071106,
+      "lpips_aux_gs": 0.7135009765625,
+      "lpips_aux_same": 0.7416423559188843,
+      "lpips_gs_bound": 0.620229959487915
+    },
+    {
+      "task": 91,
+      "dataset": "SDP",
+      "clip_aux": 0.30836722254753113,
+      "clip_same": 0.3119448721408844,
+      "clip_gs": 0.30348241329193115,
+      "clip_bound": 0.33219340443611145,
+      "lpips_aux_bound": 0.7187017202377319,
+      "lpips_aux_gs": 0.6160944104194641,
+      "lpips_aux_same": 0.6992239952087402,
+      "lpips_gs_bound": 0.6594582200050354
+    },
+    {
+      "task": 92,
+      "dataset": "SDP",
+      "clip_aux": 0.3104921281337738,
+      "clip_same": 0.30113381147384644,
+      "clip_gs": 0.32133275270462036,
+      "clip_bound": 0.29508933424949646,
+      "lpips_aux_bound": 0.6990776658058167,
+      "lpips_aux_gs": 0.7939992547035217,
+      "lpips_aux_same": 0.8024582862854004,
+      "lpips_gs_bound": 0.6757873296737671
+    },
+    {
+      "task": 93,
+      "dataset": "SDP",
+      "clip_aux": 0.29933109879493713,
+      "clip_same": 0.32463884353637695,
+      "clip_gs": 0.32503217458724976,
+      "clip_bound": 0.3458797335624695,
+      "lpips_aux_bound": 0.7012277841567993,
+      "lpips_aux_gs": 0.6618471741676331,
+      "lpips_aux_same": 0.7408345937728882,
+      "lpips_gs_bound": 0.601864218711853
+    },
+    {
+      "task": 94,
+      "dataset": "SDP",
+      "clip_aux": 0.2828255295753479,
+      "clip_same": 0.3085552453994751,
+      "clip_gs": 0.3146235942840576,
+      "clip_bound": 0.2918698787689209,
+      "lpips_aux_bound": 0.6742833256721497,
+      "lpips_aux_gs": 0.6803877353668213,
+      "lpips_aux_same": 0.6845096349716187,
+      "lpips_gs_bound": 0.6099255681037903
+    },
+    {
+      "task": 95,
+      "dataset": "SDP",
+      "clip_aux": 0.23508693277835846,
+      "clip_same": 0.27223125100135803,
+      "clip_gs": 0.2867518365383148,
+      "clip_bound": 0.21697087585926056,
+      "lpips_aux_bound": 0.8375767469406128,
+      "lpips_aux_gs": 0.7901159524917603,
+      "lpips_aux_same": 0.7768325805664062,
+      "lpips_gs_bound": 0.7945408821105957
+    },
+    {
+      "task": 96,
+      "dataset": "SDP",
+      "clip_aux": 0.2504822611808777,
+      "clip_same": 0.24548645317554474,
+      "clip_gs": 0.30121511220932007,
+      "clip_bound": 0.2689577043056488,
+      "lpips_aux_bound": 0.6662607192993164,
+      "lpips_aux_gs": 0.6908227801322937,
+      "lpips_aux_same": 0.6329196095466614,
+      "lpips_gs_bound": 0.6868860125541687
+    },
+    {
+      "task": 97,
+      "dataset": "SDP",
+      "clip_aux": 0.24474717676639557,
+      "clip_same": 0.26579222083091736,
+      "clip_gs": 0.2751483619213104,
+      "clip_bound": 0.2108294814825058,
+      "lpips_aux_bound": 0.8746336698532104,
+      "lpips_aux_gs": 0.9861618876457214,
+      "lpips_aux_same": 0.9776558876037598,
+      "lpips_gs_bound": 0.938105046749115
+    },
+    {
+      "task": 98,
+      "dataset": "SDP",
+      "clip_aux": 0.2835904359817505,
+      "clip_same": 0.2742382884025574,
+      "clip_gs": 0.24789053201675415,
+      "clip_bound": 0.2551024556159973,
+      "lpips_aux_bound": 0.6444603204727173,
+      "lpips_aux_gs": 0.7027513980865479,
+      "lpips_aux_same": 0.6740182042121887,
+      "lpips_gs_bound": 0.7137124538421631
+    },
+    {
+      "task": 99,
+      "dataset": "SDP",
+      "clip_aux": 0.3522299826145172,
+      "clip_same": 0.30255481600761414,
+      "clip_gs": 0.3541242480278015,
+      "clip_bound": 0.26204973459243774,
+      "lpips_aux_bound": 0.6702737808227539,
+      "lpips_aux_gs": 0.6305503249168396,
+      "lpips_aux_same": 0.7541689872741699,
+      "lpips_gs_bound": 0.596341609954834
+    }
+  ],
+  "summary": [
+    {
+      "dataset": "COCO",
+      "metric": "clip_aux",
+      "n": 50,
+      "mean": 0.2576316425204277,
+      "ci95": [
+        0.24924642311036588,
+        0.26563134868443017
+      ]
+    },
+    {
+      "dataset": "COCO",
+      "metric": "clip_same",
+      "n": 50,
+      "mean": 0.25384287506341935,
+      "ci95": [
+        0.24603283875435591,
+        0.2617136296853423
+      ]
+    },
+    {
+      "dataset": "COCO",
+      "metric": "clip_gs",
+      "n": 50,
+      "mean": 0.25401524037122725,
+      "ci95": [
+        0.24641620748490095,
+        0.2615225668624043
+      ]
+    },
+    {
+      "dataset": "COCO",
+      "metric": "clip_bound",
+      "n": 50,
+      "mean": 0.2563189706206322,
+      "ci95": [
+        0.2480909289047122,
+        0.2646852568089962
+      ]
+    },
+    {
+      "dataset": "COCO",
+      "metric": "lpips_aux_bound",
+      "n": 50,
+      "mean": 0.7472673976421356,
+      "ci95": [
+        0.7259300665259362,
+        0.7679346772134304
+      ]
+    },
+    {
+      "dataset": "COCO",
+      "metric": "lpips_aux_gs",
+      "n": 50,
+      "mean": 0.746575276851654,
+      "ci95": [
+        0.722759698420763,
+        0.7697269939184188
+      ]
+    },
+    {
+      "dataset": "COCO",
+      "metric": "lpips_aux_same",
+      "n": 50,
+      "mean": 0.7556377613544464,
+      "ci95": [
+        0.7344335561394691,
+        0.7775502695143223
+      ]
+    },
+    {
+      "dataset": "COCO",
+      "metric": "lpips_gs_bound",
+      "n": 50,
+      "mean": 0.7499954903125763,
+      "ci95": [
+        0.7274128919243813,
+        0.7719200755357742
+      ]
+    },
+    {
+      "dataset": "SDP",
+      "metric": "clip_aux",
+      "n": 50,
+      "mean": 0.2821853193640709,
+      "ci95": [
+        0.2699893406257033,
+        0.2932846679016948
+      ]
+    },
+    {
+      "dataset": "SDP",
+      "metric": "clip_same",
+      "n": 50,
+      "mean": 0.2791669338941574,
+      "ci95": [
+        0.26752945689111945,
+        0.2902760897278786
+      ]
+    },
+    {
+      "dataset": "SDP",
+      "metric": "clip_gs",
+      "n": 50,
+      "mean": 0.2806683939695358,
+      "ci95": [
+        0.27145798989385367,
+        0.2900879651978612
+      ]
+    },
+    {
+      "dataset": "SDP",
+      "metric": "clip_bound",
+      "n": 50,
+      "mean": 0.2770579394698143,
+      "ci95": [
+        0.2663764431551099,
+        0.28696239963173864
+      ]
+    },
+    {
+      "dataset": "SDP",
+      "metric": "lpips_aux_bound",
+      "n": 50,
+      "mean": 0.7122037589550019,
+      "ci95": [
+        0.6939381331801414,
+        0.7316460437476635
+      ]
+    },
+    {
+      "dataset": "SDP",
+      "metric": "lpips_aux_gs",
+      "n": 50,
+      "mean": 0.7288969242572785,
+      "ci95": [
+        0.7083398157954216,
+        0.7512234708666802
+      ]
+    },
+    {
+      "dataset": "SDP",
+      "metric": "lpips_aux_same",
+      "n": 50,
+      "mean": 0.7251634669303894,
+      "ci95": [
+        0.7067413908541202,
+        0.7450106670260429
+      ]
+    },
+    {
+      "dataset": "SDP",
+      "metric": "lpips_gs_bound",
+      "n": 50,
+      "mean": 0.7100982022285461,
+      "ci95": [
+        0.6882266890108586,
+        0.7327437759041786
+      ]
+    }
+  ],
+  "uncertainty": "10000 percentile bootstrap resamples by prompt; seed2026111302",
+  "seconds": 374.0157584560802,
+  "gpu_used": false,
+  "scope": "Descriptive50 images per dataset per arm; FID5000 and paper1000-prompt/10-trial quality benchmark not reproduced"
+}

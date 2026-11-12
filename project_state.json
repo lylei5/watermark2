@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-12T18:24:12.945557+00:00",
-  "status": "phase1_trajectory_native_gs_running",
+  "updated_at": "2026-11-12T18:48:07.971865+00:00",
+  "status": "three_native_baselines_reproduction",
   "active_experiments": 1,
-  "queued_experiments": 0,
+  "queued_experiments": 1,
   "latest_progress_report": "reports/phase1_trajectory_native_gs_20261113/report.md",
   "evidence_index": "reports/README.md",
-  "research_plan": "docs/PHASE1_PROTOCOL.md",
+  "research_plan": "docs/THREE_BASELINE_REPRODUCTION.md",
   "native_sembind_reproduction_complete": false,
   "superiority_established": false,
   "baseline": {
@@ -57,8 +57,12 @@
   ],
   "max_concurrent_gpus": 3,
   "evaluation_policy": "Unchanged published top-venue attacks only; full budgets; no attack development; matched absolute genuine detection",
-  "current_decision": "Execute phase1 baseline working-point audit and observational trajectory probe; no carrier or attack variants",
+  "current_decision": "Complete SemBind, PGID and SEAL native baselines before new defense training",
   "completed_evidence": [
+    {
+      "path": "reports/three_baselines_20261113/report.md",
+      "scope": "固定源码、官方权重哈希及独立SEAL环境；完整三方法复现未完成"
+    },
     {
       "path": "reports/phase1_hamming_radius_20261113/report.md",
       "scope": "100提示词已观察码的半径重叠；非FE或攻击实验"
@@ -258,15 +262,33 @@
       "filtered_i2p_targets": 100,
       "attack_jobs": 0,
       "report": "reports/phase1_public_inputs_20261113/report.md"
-    }
+    },
+    "quality_complete": true,
+    "semantic_votes_complete": true
   },
   "baseline_comparisons": {
     "seal": {
       "end_to_end_reproduced": false,
       "weight_files_present": true,
-      "weight_hashes_verified": false,
-      "evidence": "reports/phase1_seal_status_20261113/assets.json",
-      "contract": "docs/SEAL_EVALUATION_CONTRACT.md"
+      "weight_hashes_verified": true,
+      "evidence": "reports/three_baselines_20261113/source_equivalence.json",
+      "contract": "docs/SEAL_EVALUATION_CONTRACT.md",
+      "run": "seal_native_20261113_v2",
+      "protocol": "protocols/seal_native_20261113_v2.json",
+      "protocol_sha256": "a249befa285e8033358cc0b0c228c9c48cba6438ceaf04cb74e31f8ec6f1a490",
+      "coordinator_pid": 38807,
+      "status": "queued_after_existing_verification",
+      "official_sd21_snapshot_equivalence": false
+    },
+    "pgid": {
+      "source_commit": "dc4ad963ffefcb4cf84340084db617472983d3e0",
+      "previous_executable_ast_equal": true,
+      "paper_scale_reproduction_complete": false
+    },
+    "sembind": {
+      "source_commit": "337c9f90a150157ac1d410208ae20e6530ca8cdd",
+      "released_generation_inversion_masker_source_equal": true,
+      "complete_author_embedding_code_released": false
     }
   },
   "content_key_review": {
@@ -274,6 +296,6 @@
     "extractor_implemented": false,
     "encoder_training_started": false,
     "overall_fpr_established": false,
-    "priority": "Resolve final-instance reference and generation order; test instance separation and added value over direct matching"
+    "priority": "Deferred until three native baseline validations complete"
   }
 }

@@ -36,3 +36,5 @@
 - [几何校准](geometry_calibration_20261111/completed/report.md)、[六条件确认](geometry_confirmation_20261111/report.md)、[官方九条件](gs_published_conditions_20261111/report.md)
 - [自然负例](unwatermarked_validation_20261111/report.md)
 - [仓库同步与源码核验](repository_sync_20261113/report.md)
+
+- [三个原生基线来源核验](three_baselines_20261113/report.md)：固定源码、SEAL环境和上游权重；完整链路状态见project_state.json。

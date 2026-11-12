@@ -1,0 +1,861 @@
+{
+  "created_at": "2026-11-12T18:44:36.759490+00:00",
+  "scope": "100-source development validation of released SEAL semantic generation and detection; not the paper full benchmark",
+  "execution_repair": "Use Linux pidfd syscall available on this host. Initial coordinator failed before any GPU worker started; its run remains frozen.",
+  "python": "/data0/liyanlei/watermark_research/envs/seal_reproduction_py310/bin/python",
+  "source": "/data0/liyanlei/watermark_research/third_party/frozen/SEAL_92d31b3",
+  "source_sha256": {
+    "image_transformations_exhaustive_roc_auc.py": "8134690b1019ebbdd9123115283f0f0c6c534367e0a59f5ec00b1671b9ee3da8",
+    "image_transformations_exhaustive_tpr.py": "87f6df30bf4a952007985a49e83b6090a1925238e109e97981434b0f5a3ba84e",
+    "captioning_embedding_ablation.py": "0095b5b53f9dbc8d17dfc3b2010bee9deddd97dddec70522a5c5a2f2cfde97b3",
+    "semantic.py": "8198a6ffdc6a68852cece64cd6e097b57860daa73d24bd8c5fc266889cf34dd5",
+    "image_transformations.py": "eb141f6481ff1376480ed2d94bcfc6da5ede505a080893be782ac71d668effe0",
+    "quality.py": "675ae7d93a2c35d5cf0805901aa654ebdfa92382c57d2243c76a76100d290eab",
+    "README.md": "a60bbb96b09080333680799e185b2490aa8543b2d1927981abb4404bc505770e",
+    "io_utils.py": "b773fa1e149b015c074364258d64eaf7c3cdc55b5b3e9fe43457387c578124a9",
+    "caption_pairs.py": "cd385d15e93006d0fd1a3da119fea496aad2e472cbc05e7969dc8b2e141c70e9",
+    "optim_utils.py": "40e177d65aebb26ffa852f4d22c26ec6450162faa38e60b7c9f1c3b38d4b03a3",
+    "modified_stable_diffusion.py": "ee973b11edb3f9fa11285c421167b2e60cb6b0f94d8f57760c9b10b95f7af0fb",
+    "regeneration.py": "e36033da88072ef5ecf33981544db258bd36792830ddf8372c18f5c338ab03c9",
+    "spatial_test.py": "7cf36e4b4626108175728c55dc7df6f028654d50cd66a5dbd22e6c8cd76a31c6",
+    "requirements.txt": "4f4ac168e0c90dd5ca74aeef5dc4be74eac5bef9892ffa91f5af80a43da01f53",
+    "embedding_finetune.py": "79d247711df2ca6fddba3b58d61befc2016929d6da03e307651ca1722b60208f",
+    "cat_attack_patch_search.py": "e039cda9d66e035646c1e9b08facd894defb02422a8543bbc6520599b99035c8",
+    "image_transformations_exhaustive.py": "e474b57c72bd6866e288c5f97a211a9971704e83fe3319b9dea876f80465b69b",
+    "SEAL.py": "d5b8386e1ab9ccd6ea582e55a21bfb55062ee843c792e56a39c4d480ae64efd7",
+    "inverse_stable_diffusion.py": "918eb53fc83b1c8c9ceb1188ef20c0dcc0e46d5138f5e0778a8f88633c1cdd04",
+    "utils.py": "aea4c34597398231819f970eb727d49cee1436d82c688929347ba16cedb2b23b",
+    "cat_attack.py": "a496a65c545341d895f33d6590e91983b4e1b4b0457a76831e815662a5286b8b",
+    "256x256_diffusion.json": "48384ce8bfe900f4e135c73689b99812bc45d82c5e386f3a591497c0e1ff5fed",
+    "open_clip/modified_resnet.py": "897534d25611fb83520f749cb19e000b7e19bc6d1946072c03e28dc37057d136",
+    "open_clip/generation_utils.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "open_clip/push_to_hf_hub.py": "b343d65a7b2b1b0d69b14f8ad264966c363f767793b3de85a3d1792b2dc55ba3",
+    "open_clip/hf_configs.py": "706c17fe0f02298a03a03f21c7ccf19b8d5408e6da4dd517f804090774c02100",
+    "open_clip/pretrained.py": "78433ace9a39401b0d94d9cfce75f63e25101f0ab802d266fe9f7bfeda2d93e2",
+    "open_clip/loss.py": "6257ee1ac8e53178f439387f8e6111ba2d10b362a47475e3b0511405d24e7d82",
+    "open_clip/coca_model.py": "63762d49bd7b67518d9c9fb0a96f69e3bd2f7cc536e514d9372683a61311d07b",
+    "open_clip/openai.py": "f96a14feff6f6af7625d7ca3ec12f095aeed657b0d7f3953512c1eaadeb999c2",
+    "open_clip/version.py": "c6ddb2615ac179aa2763e21289583c06f034cc8aa21d0fb405c9b02075ae123b",
+    "open_clip/utils.py": "459dd691e95325eb7100ae107f81f05a84d5e4fc50f7ef6044a700390dffdeb5",
+    "open_clip/hf_model.py": "a322c444d3fb614d45b2b30ef544290503b531d3b5f6d5d148601a54361c382f",
+    "open_clip/timm_model.py": "a8f57501c7552183a15badd4345c1e4f337a957f72abedbb339dbfcbc5d163f2",
+    "open_clip/model.py": "f8fd8c13fdd81d3fd5dc9196354bed375b28cb0291480c2845121e777c19cf44",
+    "open_clip/transformer.py": "c24774c35819c04ce0ea48bbfacadb812a3a333a92fb01480e9a893772690f55",
+    "open_clip/tokenizer.py": "5f55e9e2050feb3168a4fcef881bb13ef142f37a298d288d3da8cbf07f839a14",
+    "open_clip/constants.py": "4289fac298908e2fb814ff84b4594ff49094a7eab074fed1b2ca6429339e923b",
+    "open_clip/transform.py": "41c5cfee01c7e3e2f29c5a3934954298ed3ff3bc73f45a8998427283871c44ba",
+    "open_clip/__init__.py": "699a662afa012f3a4eef47ec6eb09e41236b71160da82a531696a7d6b6b2ac9a",
+    "open_clip/factory.py": "9cb95817aedec0cdc3ce5eddc375d039a54ca8379cbd92e6b165d132eb39e75b",
+    "open_clip/model_configs/ViT-B-16.json": "66d48767ab11591f4af2d2d1bf21845c3f2bea17ac70e0989991ff166a53ae52",
+    "open_clip/model_configs/coca_roberta-ViT-B-32.json": "3173bde2a095e7e67df86e5fcf698cee52663b2caf0fcdad91280b9cdf863c1e",
+    "open_clip/model_configs/ViT-M-32.json": "30b866c3c488a841903f0ce0892224cf6cd88924186a2f1bf5cca90fe3e529ef",
+    "open_clip/model_configs/ViT-L-16-320.json": "e4b766875aa5b1b303db804bb446d4c78213ed34bc089e79297b14287b952331",
+    "open_clip/model_configs/RN50x64.json": "c9547262af1b739ca64766246b12d9b5e51f33c354f2bb1d8fe871dbb2ded3de",
+    "open_clip/model_configs/ViT-S-16.json": "68a3b267da2d98daa52d6df7f9e7764dfe68b619e2ddcda0ab7a0074d5057beb",
+    "open_clip/model_configs/convnext_base_w.json": "3de1efb055e506c05952ef13faef6eedabcd68a001d0f7df2c595541f3c3f66a",
+    "open_clip/model_configs/ViT-B-16-plus-240.json": "09b2a65ea7bf757440b89b52e7a09ff85d556635f0e3a4ca76109e42aac6e351",
+    "open_clip/model_configs/xlm-roberta-base-ViT-B-32.json": "f2c3d4542cb4a772fecebeaa29aa4a981c29bf0337f08a50210cc6d4a537266b",
+    "open_clip/model_configs/ViT-L-14-336.json": "980d8da26bf11b651426addb113881f24f707589ebecc7b882269e3678b33e84",
+    "open_clip/model_configs/ViT-M-16.json": "22852ee6d1e4c977f99b79d837fe226c315f75c16a22f809a16df6a2c1792d49",
+    "open_clip/model_configs/ViT-M-16-alt.json": "a7888dab87466d26cdd7fe6b1df995c17028ca21b8e6848aa9ff549cd57fdf08",
+    "open_clip/model_configs/convnext_base.json": "aca749568baacbeed4d9e80259440f377023b42744ac26ab2f3a01a0eeea9b84",
+    "open_clip/model_configs/coca_base.json": "41ea88529c52700715eba5e90ac0e4edca4453346195d1c305cb71ab7d8c75e0",
+    "open_clip/model_configs/ViT-S-32.json": "f8eeef14759a63a27686abd7eba45ae45b69f0344c32fbff67c059c8f016da3b",
+    "open_clip/model_configs/coca_ViT-B-32.json": "5dc0a9a7803fefb45fadd78ae534839d2adc258efe4b732fdf9c370b49caeee5",
+    "open_clip/model_configs/ViT-H-14.json": "8b5bd11e1775f0fd79227ba05c07f3339b1c4da2e0f21f5426631774a84a6058",
+    "open_clip/model_configs/RN50.json": "a5b9845a44b5a052fb1697055b41b492171aa84868f1408e5fed7e6077d046d4",
+    "open_clip/model_configs/vit_medium_patch16_gap_256.json": "50426397fc6e28e205df55b9aadedc49c47e73904229ea588fcef29e0e65a07f",
+    "open_clip/model_configs/swin_base_patch4_window7_224.json": "1cb823b9fab9bd851d81ac0af751ccb7fa9ed1ebb31a16cea29e01ca8c3edd87",
+    "open_clip/model_configs/convnext_tiny.json": "c919729a818c48f95371c8b52030c96513cf2d38e28a94a098be78da3b345e89",
+    "open_clip/model_configs/ViT-B-32-quickgelu.json": "437dc6acc8455267c2646e84f880a026d91ac20828db9b100b18a5edba0e767a",
+    "open_clip/model_configs/convnext_xxlarge_320.json": "ab4f469f9ef8df163259e91f145f0a7b2fec21824fb1c2dfa863cc6ab01b52f4",
+    "open_clip/model_configs/coca_ViT-L-14.json": "709768239a6598fe13f19f1ccffd152d503c4c51847ea211f4aefec2158a91f8",
+    "open_clip/model_configs/convnext_large_d.json": "76a8d687335fb75dc02c10bac5de66f7f687e3ab8b23cf0f372ebf86fb0ce58a",
+    "open_clip/model_configs/ViT-B-16-plus.json": "8e0c645c9190b34c48c281cbc243e1ed7c3fd3c1ee5f2c5885fe9c17b11c327a",
+    "open_clip/model_configs/convnext_large.json": "571e78940760a9f389169da9eda00f32f584bb9814bc507fb79e5051c771c29b",
+    "open_clip/model_configs/roberta-ViT-B-32.json": "4a6d714252c97037c0f5194159882d1a399146f35483275581acc27c994abe11",
+    "open_clip/model_configs/convnext_xxlarge.json": "5017c8577bfe979ebcf227b0d651b783809717a12177905d7ce71254b363108e",
+    "open_clip/model_configs/mt5-xl-ViT-H-14.json": "356b65e1e31b0e4ee374b3d2f332631b13155b8d62f597a568999292e3e3d6ea",
+    "open_clip/model_configs/ViT-e-14.json": "27e8d32a1c7727ef84fb4ab2c337b69fcb7aae96243c8bcfb4b4bbaffd2a83d1",
+    "open_clip/model_configs/mt5-base-ViT-B-32.json": "dea1040f8fc5ce097a7ba38454e308b19d002df6f90a17556d48eed94c19a960",
+    "open_clip/model_configs/ViT-L-14-280.json": "848f42db24beda55ce044fb82cc4ffae34fa3a769184c2187a71e5074df209c1",
+    "open_clip/model_configs/convnext_large_d_320.json": "44c8dea391af808d38e16d4ff489e2f498bbfa35a974deb9f7273d8932c56679",
+    "open_clip/model_configs/ViT-S-16-alt.json": "377ff96ac3126125c2d59f71567542ab4563230b1cf94287614dd12df86e78ff",
+    "open_clip/model_configs/RN50x4.json": "aea39b4ec952ccfe1b7f9242a9c0d36e1abeb90f5c6fd4b2cfac6e402462df72",
+    "open_clip/model_configs/ViT-L-16.json": "eae893277137e6cd4f071265423d135663528018cc13bdbf50709feaa80284fa",
+    "open_clip/model_configs/ViT-B-32-plus-256.json": "fcb771914c59371ec222f05dd5af44a5da74c72855c1c686f3f9701c95d64732",
+    "open_clip/model_configs/vit_relpos_medium_patch16_cls_224.json": "b0539ae19daff98d4edfabfd711a808e01bc362e23414438dd158ec430dd7b28",
+    "open_clip/model_configs/RN101-quickgelu.json": "24dd435eec6871d7675bd6b02098e71e105a957aa6a3a59153b03181103756b5",
+    "open_clip/model_configs/convnext_small.json": "54c0d8b6168b6a7907e32ff8134ef096aa1b1e2100c815f366b728b7fcedd122",
+    "open_clip/model_configs/ViT-M-32-alt.json": "a1be2c52a813f752842683c60472712bbe6cf10a8adbeecff94cfe0c9f5ef310",
+    "open_clip/model_configs/convnext_base_w_320.json": "37b39ef036e6c949af1d5a2f404e469cc216e2ee73d290d0e3169e326f367e93",
+    "open_clip/model_configs/RN50x16.json": "971064787fdc0266bb51d924db6f7f5311763118733315b54f2a9e52bdb64d50",
+    "open_clip/model_configs/ViT-bigG-14.json": "6f5fc4e85739ca3546804e30178f5241b3be2becd8cf52c282b6e90c742a9f30",
+    "open_clip/model_configs/ViT-g-14.json": "463160a932f75774ded241d4217eebd172fe7c03c24646530a24b89b20148df5",
+    "open_clip/model_configs/xlm-roberta-large-ViT-H-14.json": "17fbddd3b56a453f14ed9dff1a2a48abe3425f60686d3cf0531940921f8a9bbe",
+    "open_clip/model_configs/ViT-B-32.json": "743f4fcee3aea1705c1865f89a3767d816513769f57eb483a9eea3e610ebe633",
+    "open_clip/model_configs/ViT-L-14.json": "616750a927ea8d8b0b8e4ec93179cab3df9e4f1531cb60cc5dd6882cb063888b",
+    "open_clip/model_configs/ViT-S-32-alt.json": "8e60da19a82ea42e7c97102ae551d31497da66dbb11793800875584fcb46c760",
+    "open_clip/model_configs/RN101.json": "0466aae72c1cd259a8655e25af3170d54acb4cbac95304cb9832d68e0716538b",
+    "open_clip/model_configs/convnext_xlarge.json": "320f6ee194db97b3b98511ccd9086f29d65ca69bfe1889686f0b4d3fda4334f2",
+    "open_clip/model_configs/RN50-quickgelu.json": "079e9c4f3d7808a767de08061ab417f98d9e8aaaecec6510949cad0c0c389a41",
+    "open_clip/model_configs/ViT-H-16.json": "45c950e8c98300b5e0085781e9f91cc6f12ff94b43d0ed0f9687ed993209e8ef",
+    "guided_diffusion/dist_util.py": "6464852e108f7b3426c3a95ac77708f814801d5b8fb18fe70eadb4058d888532",
+    "guided_diffusion/image_datasets.py": "220d6699f1c201989209f1bd64f5a7d3beef41e84098607aa521ab21cf6700d5",
+    "guided_diffusion/nn.py": "d9547fb22b421a16dc079cb82a9d98630100b5e1b2a710d343f4d3f90b8661f3",
+    "guided_diffusion/respace.py": "b9a509b28c10a52ca3ee8cc48f40205b1d70aecfc95356b540dc88415368c2de",
+    "guided_diffusion/logger.py": "615d9cb63dd2cfe017ac424bcc64340257c83eb9cb8e6b6913df4bd55831c1c0",
+    "guided_diffusion/unet.py": "ab3ad40d70a551069f3e2d14698f7c6712e5738d0be1365def6cad78ca15eeda",
+    "guided_diffusion/gaussian_diffusion.py": "c56f5cee67a5dc7a3fd6724d60aa46bfd1b06a4cb16928ba8a1b6e0fcd6ea393",
+    "guided_diffusion/train_util.py": "272e3b66baa081b2fdb2e4e6d792e575e713438bee9adf1e1fd8504c75925140",
+    "guided_diffusion/script_util.py": "d47bb38ea450bf6e7c57c494a43947f6664f45b58a487f6315f5ec83365b80b8",
+    "guided_diffusion/fp16_util.py": "31ce6b36be7a2a09606687a4935eca6b093f645c7ecd2111f43fca54aff3dc2a",
+    "guided_diffusion/__init__.py": "ec30483aa641d5c1b9cc8910554324949f2288eadd085310d4c312cdda294c73",
+    "guided_diffusion/resample.py": "13a06f67e655dc145833896389576b0f8e68b2f677dc9eed60ed8839aa6a9c62",
+    "guided_diffusion/losses.py": "0b0f5a5532910fbc7f16d30f2b891d8f1e20aa88881589ce4eacc2cc6ce06026"
+  },
+  "source_commit": "92d31b31b93a6e373fe88a584c640beafb68c6fa",
+  "source_manifest_sha256": "fc4b11c800ee031ae7ae1810c16f60f72697c406de46fa882e64c068065b0921",
+  "environment_assets_sha256": "709344f278094920082a749d215bde0875a870a3a0c44926d55461926e35e1b7",
+  "diffusion_model": "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c",
+  "model_provenance": "Cached Manojb SD2.1 mirror; exact stabilityai fp16 snapshot equivalence not yet certified",
+  "caption_model": "/data0/liyanlei/watermark_research/models/seal/blip2-flan-t5-xl",
+  "embedding_model": "/data0/liyanlei/watermark_research/models/seal/caption-embedding",
+  "expected_scheduler": "PNDMScheduler",
+  "inversion": "Official backward_ddim reversed on the loaded scheduler timesteps; empty prompt CFG1, requested50",
+  "generation": "Official pipeline defaults: requested50, CFG7.5, FP16",
+  "patches": 1024,
+  "bits_per_patch": 7,
+  "official_projection_seed": 42,
+  "tau": 2.3,
+  "minimum_matches": 12,
+  "decision_source": "ICCV2025 final Algorithm3 and Supplement9.1; d<2.3, count>=12",
+  "source_paper_gap": "Released key derivation does not expose the final paper secret salt",
+  "sources": [
+    {
+      "task": 0,
+      "dataset": "COCO",
+      "prompt": "A traffic light sitting on the side of a road.",
+      "null_prompt": "A group of kids play on a grassy area and lift their arms up as a Frisbee is just above their heads.",
+      "generation_seed": 202611130000
+    },
+    {
+      "task": 1,
+      "dataset": "COCO",
+      "prompt": "A group of kids play on a grassy area and lift their arms up as a Frisbee is just above their heads.",
+      "null_prompt": "A red double decker bus on a street.",
+      "generation_seed": 202611130001
+    },
+    {
+      "task": 2,
+      "dataset": "COCO",
+      "prompt": "A red double decker bus on a street.",
+      "null_prompt": "The bear is inside of the river stream. ",
+      "generation_seed": 202611130002
+    },
+    {
+      "task": 3,
+      "dataset": "COCO",
+      "prompt": "The bear is inside of the river stream. ",
+      "null_prompt": "A plate holding seasoned meat, string beans and one fork.",
+      "generation_seed": 202611130003
+    },
+    {
+      "task": 4,
+      "dataset": "COCO",
+      "prompt": "A plate holding seasoned meat, string beans and one fork.",
+      "null_prompt": "a cow staring into a camera standing on a field ",
+      "generation_seed": 202611130004
+    },
+    {
+      "task": 5,
+      "dataset": "COCO",
+      "prompt": "a cow staring into a camera standing on a field ",
+      "null_prompt": "A cat looking like it is using a laptop ",
+      "generation_seed": 202611130005
+    },
+    {
+      "task": 6,
+      "dataset": "COCO",
+      "prompt": "A cat looking like it is using a laptop ",
+      "null_prompt": "Baseball team holding batting practice on the field",
+      "generation_seed": 202611130006
+    },
+    {
+      "task": 7,
+      "dataset": "COCO",
+      "prompt": "Baseball team holding batting practice on the field",
+      "null_prompt": "Cute girl sitting on a skateboard in the driveway ",
+      "generation_seed": 202611130007
+    },
+    {
+      "task": 8,
+      "dataset": "COCO",
+      "prompt": "Cute girl sitting on a skateboard in the driveway ",
+      "null_prompt": "A bunch of items that are on a counter.",
+      "generation_seed": 202611130008
+    },
+    {
+      "task": 9,
+      "dataset": "COCO",
+      "prompt": "A bunch of items that are on a counter.",
+      "null_prompt": "Kites are flying in the sky over the water at a park.",
+      "generation_seed": 202611130009
+    },
+    {
+      "task": 10,
+      "dataset": "COCO",
+      "prompt": "Kites are flying in the sky over the water at a park.",
+      "null_prompt": "three different donuts one is pink one is brown and one has white sprinkles",
+      "generation_seed": 202611130010
+    },
+    {
+      "task": 11,
+      "dataset": "COCO",
+      "prompt": "three different donuts one is pink one is brown and one has white sprinkles",
+      "null_prompt": "A man serving a tennis ball on top of a tennis court.",
+      "generation_seed": 202611130011
+    },
+    {
+      "task": 12,
+      "dataset": "COCO",
+      "prompt": "A man serving a tennis ball on top of a tennis court.",
+      "null_prompt": "a plate of breakfast food sits on a table",
+      "generation_seed": 202611130012
+    },
+    {
+      "task": 13,
+      "dataset": "COCO",
+      "prompt": "a plate of breakfast food sits on a table",
+      "null_prompt": "Slices of pizza upside down on a plate on a table.",
+      "generation_seed": 202611130013
+    },
+    {
+      "task": 14,
+      "dataset": "COCO",
+      "prompt": "Slices of pizza upside down on a plate on a table.",
+      "null_prompt": "A living room with hard wood floors and a book shelf.",
+      "generation_seed": 202611130014
+    },
+    {
+      "task": 15,
+      "dataset": "COCO",
+      "prompt": "A living room with hard wood floors and a book shelf.",
+      "null_prompt": "A boy is riding a skateboard on a ramp.",
+      "generation_seed": 202611130015
+    },
+    {
+      "task": 16,
+      "dataset": "COCO",
+      "prompt": "A boy is riding a skateboard on a ramp.",
+      "null_prompt": "A white refrigerator freezer sitting inside of a kitchen.",
+      "generation_seed": 202611130016
+    },
+    {
+      "task": 17,
+      "dataset": "COCO",
+      "prompt": "A white refrigerator freezer sitting inside of a kitchen.",
+      "null_prompt": "A Yamaha motorcycle parked outside of a building.",
+      "generation_seed": 202611130017
+    },
+    {
+      "task": 18,
+      "dataset": "COCO",
+      "prompt": "A Yamaha motorcycle parked outside of a building.",
+      "null_prompt": "a black and white cat wearing a little purple hat",
+      "generation_seed": 202611130018
+    },
+    {
+      "task": 19,
+      "dataset": "COCO",
+      "prompt": "a black and white cat wearing a little purple hat",
+      "null_prompt": "A vase of red flowers sits on a bathroom countertop. ",
+      "generation_seed": 202611130019
+    },
+    {
+      "task": 20,
+      "dataset": "COCO",
+      "prompt": "A vase of red flowers sits on a bathroom countertop. ",
+      "null_prompt": "A double decker bus is parked in the parking lot.",
+      "generation_seed": 202611130020
+    },
+    {
+      "task": 21,
+      "dataset": "COCO",
+      "prompt": "A double decker bus is parked in the parking lot.",
+      "null_prompt": "a person sitting at a desk with a keyboard and monitor ",
+      "generation_seed": 202611130021
+    },
+    {
+      "task": 22,
+      "dataset": "COCO",
+      "prompt": "a person sitting at a desk with a keyboard and monitor ",
+      "null_prompt": "A young man is working behind a counter. ",
+      "generation_seed": 202611130022
+    },
+    {
+      "task": 23,
+      "dataset": "COCO",
+      "prompt": "A young man is working behind a counter. ",
+      "null_prompt": "there are many surfers that are in the water",
+      "generation_seed": 202611130023
+    },
+    {
+      "task": 24,
+      "dataset": "COCO",
+      "prompt": "there are many surfers that are in the water",
+      "null_prompt": "a man on a three wheeler following behind a two dogs and a cow",
+      "generation_seed": 202611130024
+    },
+    {
+      "task": 25,
+      "dataset": "COCO",
+      "prompt": "a man on a three wheeler following behind a two dogs and a cow",
+      "null_prompt": "A person riding a horse in the dirt near a wall.",
+      "generation_seed": 202611130025
+    },
+    {
+      "task": 26,
+      "dataset": "COCO",
+      "prompt": "A person riding a horse in the dirt near a wall.",
+      "null_prompt": "A man sitting on top of a bench with a newspaper.",
+      "generation_seed": 202611130026
+    },
+    {
+      "task": 27,
+      "dataset": "COCO",
+      "prompt": "A man sitting on top of a bench with a newspaper.",
+      "null_prompt": "A PICTURE OF A ELEPHANT WITH A CART ON ITS BACK ",
+      "generation_seed": 202611130027
+    },
+    {
+      "task": 28,
+      "dataset": "COCO",
+      "prompt": "A PICTURE OF A ELEPHANT WITH A CART ON ITS BACK ",
+      "null_prompt": "A view of a bedroom with the bed unmade.",
+      "generation_seed": 202611130028
+    },
+    {
+      "task": 29,
+      "dataset": "COCO",
+      "prompt": "A view of a bedroom with the bed unmade.",
+      "null_prompt": "a couple of people on skis sit on top of a snowy hill ",
+      "generation_seed": 202611130029
+    },
+    {
+      "task": 30,
+      "dataset": "COCO",
+      "prompt": "a couple of people on skis sit on top of a snowy hill ",
+      "null_prompt": "An all white kitchen with an electric stovetop. ",
+      "generation_seed": 202611130030
+    },
+    {
+      "task": 31,
+      "dataset": "COCO",
+      "prompt": "An all white kitchen with an electric stovetop. ",
+      "null_prompt": "A boy playing tennis on a blue and green tennis court. ",
+      "generation_seed": 202611130031
+    },
+    {
+      "task": 32,
+      "dataset": "COCO",
+      "prompt": "A boy playing tennis on a blue and green tennis court. ",
+      "null_prompt": "A hand holding a smart phone with apps on a screen.",
+      "generation_seed": 202611130032
+    },
+    {
+      "task": 33,
+      "dataset": "COCO",
+      "prompt": "A hand holding a smart phone with apps on a screen.",
+      "null_prompt": "A person riding the waves on a surf board.",
+      "generation_seed": 202611130033
+    },
+    {
+      "task": 34,
+      "dataset": "COCO",
+      "prompt": "A person riding the waves on a surf board.",
+      "null_prompt": "A catchers mitt sitting inside of a blue baseball hat.",
+      "generation_seed": 202611130034
+    },
+    {
+      "task": 35,
+      "dataset": "COCO",
+      "prompt": "A catchers mitt sitting inside of a blue baseball hat.",
+      "null_prompt": "A filtered image of a microwave available to use in a store. ",
+      "generation_seed": 202611130035
+    },
+    {
+      "task": 36,
+      "dataset": "COCO",
+      "prompt": "A filtered image of a microwave available to use in a store. ",
+      "null_prompt": "The lunchbox has a cold sandwich, strawberry yogurt and orange juice. ",
+      "generation_seed": 202611130036
+    },
+    {
+      "task": 37,
+      "dataset": "COCO",
+      "prompt": "The lunchbox has a cold sandwich, strawberry yogurt and orange juice. ",
+      "null_prompt": "A square reflective glass building sitting next to a street light.",
+      "generation_seed": 202611130037
+    },
+    {
+      "task": 38,
+      "dataset": "COCO",
+      "prompt": "A square reflective glass building sitting next to a street light.",
+      "null_prompt": "White bowl full of chopped carrots and broccoli.",
+      "generation_seed": 202611130038
+    },
+    {
+      "task": 39,
+      "dataset": "COCO",
+      "prompt": "White bowl full of chopped carrots and broccoli.",
+      "null_prompt": "A kite flying over a city park on a windy day.",
+      "generation_seed": 202611130039
+    },
+    {
+      "task": 40,
+      "dataset": "COCO",
+      "prompt": "A kite flying over a city park on a windy day.",
+      "null_prompt": "A woman sitting at a table topped with pizza.",
+      "generation_seed": 202611130040
+    },
+    {
+      "task": 41,
+      "dataset": "COCO",
+      "prompt": "A woman sitting at a table topped with pizza.",
+      "null_prompt": "A dog having his teeth brushed with a novelty electric toothbrush.",
+      "generation_seed": 202611130041
+    },
+    {
+      "task": 42,
+      "dataset": "COCO",
+      "prompt": "A dog having his teeth brushed with a novelty electric toothbrush.",
+      "null_prompt": "A car driving in an intersection, past a furniture shop. ",
+      "generation_seed": 202611130042
+    },
+    {
+      "task": 43,
+      "dataset": "COCO",
+      "prompt": "A car driving in an intersection, past a furniture shop. ",
+      "null_prompt": "a view of mountains from the window of a jet airplane",
+      "generation_seed": 202611130043
+    },
+    {
+      "task": 44,
+      "dataset": "COCO",
+      "prompt": "a view of mountains from the window of a jet airplane",
+      "null_prompt": "Three giraffes stand near the fence of their enclosure.",
+      "generation_seed": 202611130044
+    },
+    {
+      "task": 45,
+      "dataset": "COCO",
+      "prompt": "Three giraffes stand near the fence of their enclosure.",
+      "null_prompt": "A train going back to its coarse filled with people.",
+      "generation_seed": 202611130045
+    },
+    {
+      "task": 46,
+      "dataset": "COCO",
+      "prompt": "A train going back to its coarse filled with people.",
+      "null_prompt": "A fat orange cat on a couch beside a TV remote",
+      "generation_seed": 202611130046
+    },
+    {
+      "task": 47,
+      "dataset": "COCO",
+      "prompt": "A fat orange cat on a couch beside a TV remote",
+      "null_prompt": "Kid poses for a picture in a baseball uniform holding a bat",
+      "generation_seed": 202611130047
+    },
+    {
+      "task": 48,
+      "dataset": "COCO",
+      "prompt": "Kid poses for a picture in a baseball uniform holding a bat",
+      "null_prompt": "A white sink sitting under a bathroom window.",
+      "generation_seed": 202611130048
+    },
+    {
+      "task": 49,
+      "dataset": "COCO",
+      "prompt": "A white sink sitting under a bathroom window.",
+      "null_prompt": "A traffic light sitting on the side of a road.",
+      "generation_seed": 202611130049
+    },
+    {
+      "task": 50,
+      "dataset": "SDP",
+      "prompt": "in the style of artgerm, loish, anthropomorphic alligator, red scales on his back, yellow scale on his belly and chest, male, waring a hawaiian shirt, in the style of zootopia",
+      "null_prompt": "chris hemsworth as aquaman, muscular, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "generation_seed": 202611130050
+    },
+    {
+      "task": 51,
+      "dataset": "SDP",
+      "prompt": "chris hemsworth as aquaman, muscular, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "null_prompt": "Alice in Wonderland, falling down the rabbit hole, colorful, wide angle, super highly detailed, professional digital painting, artstation, concept art, smooth, sharp focus, no blur, no dof, extreme illustration, Unreal Engine 5, Photorealism, HD quality, 8k resolution, cinema 4d, 3D, beautiful, cinematic, art by artgerm and greg rutkowski and alphonse mucha and loish and WLOP",
+      "generation_seed": 202611130051
+    },
+    {
+      "task": 52,
+      "dataset": "SDP",
+      "prompt": "Alice in Wonderland, falling down the rabbit hole, colorful, wide angle, super highly detailed, professional digital painting, artstation, concept art, smooth, sharp focus, no blur, no dof, extreme illustration, Unreal Engine 5, Photorealism, HD quality, 8k resolution, cinema 4d, 3D, beautiful, cinematic, art by artgerm and greg rutkowski and alphonse mucha and loish and WLOP",
+      "null_prompt": "a portrait of the happy mask salesman, grinning, red hair, art by lois van baarle and loish and ross tran and rossdraws and sam yang and samdoesarts and artgerm and saruei and disney and wlop, digital art, highly detailed, intricate, sharp focus, trending on artstation hq, deviantart, unreal engine 5, 4 k uhd image",
+      "generation_seed": 202611130052
+    },
+    {
+      "task": 53,
+      "dataset": "SDP",
+      "prompt": "a portrait of the happy mask salesman, grinning, red hair, art by lois van baarle and loish and ross tran and rossdraws and sam yang and samdoesarts and artgerm and saruei and disney and wlop, digital art, highly detailed, intricate, sharp focus, trending on artstation hq, deviantart, unreal engine 5, 4 k uhd image",
+      "null_prompt": "side portrait of a beautiful female cleric, ethereal, dreamy, backlit, highly detailed, hyperrealistic, mystical, intricate, realistic lighting, realistic face, sharp focus, windswept, rule of thirds, symmetrical facial features, by artgerm, wlop, rossdraws, frank frazetta, andrei riabovitchev, trending on artstation, hd, 4 k, fantasy",
+      "generation_seed": 202611130053
+    },
+    {
+      "task": 54,
+      "dataset": "SDP",
+      "prompt": "side portrait of a beautiful female cleric, ethereal, dreamy, backlit, highly detailed, hyperrealistic, mystical, intricate, realistic lighting, realistic face, sharp focus, windswept, rule of thirds, symmetrical facial features, by artgerm, wlop, rossdraws, frank frazetta, andrei riabovitchev, trending on artstation, hd, 4 k, fantasy",
+      "null_prompt": "a gorgeous female photo, professionally retouched, soft lighting, realistic, smooth face, full body shot, torso, dress, perfect eyes, wide angle, sharp focus on eyes, 8 k high definition, insanely detailed, intricate, elegant, artgerm and jason chan and mark litvokin",
+      "generation_seed": 202611130054
+    },
+    {
+      "task": 55,
+      "dataset": "SDP",
+      "prompt": "a gorgeous female photo, professionally retouched, soft lighting, realistic, smooth face, full body shot, torso, dress, perfect eyes, wide angle, sharp focus on eyes, 8 k high definition, insanely detailed, intricate, elegant, artgerm and jason chan and mark litvokin",
+      "null_prompt": "a lonely graveyard at night, the moon shine is falling on a specific grave with a sakura tree beneath it also there's the fall of super mad and with extrem anger lucifer, its raining and the atmosphere is oppressive dark with many shadows and dark red highlights, concept art by aleksandra waliszewska, cinematic atmosphere",
+      "generation_seed": 202611130055
+    },
+    {
+      "task": 56,
+      "dataset": "SDP",
+      "prompt": "a lonely graveyard at night, the moon shine is falling on a specific grave with a sakura tree beneath it also there's the fall of super mad and with extrem anger lucifer, its raining and the atmosphere is oppressive dark with many shadows and dark red highlights, concept art by aleksandra waliszewska, cinematic atmosphere",
+      "null_prompt": "A highly detailed matte painting of the huge haunted mansion at the top of the hill, by Studio Ghibli, Makoto Shinkai, by Artgerm, by WLOP, by Greg Rutkowski, volumetric lighting, octane render, 4K resolution, trending on artstation, masterpiece",
+      "generation_seed": 202611130056
+    },
+    {
+      "task": 57,
+      "dataset": "SDP",
+      "prompt": "A highly detailed matte painting of the huge haunted mansion at the top of the hill, by Studio Ghibli, Makoto Shinkai, by Artgerm, by WLOP, by Greg Rutkowski, volumetric lighting, octane render, 4K resolution, trending on artstation, masterpiece",
+      "null_prompt": "whimsical, a single beautiful playful woman, wearing professional makeup, standing in a lake, under the stars, with a binary black hole with a ring in the sky, by Lois van Baarle, by Greg Rutkowski, by artgerm, by ross tran, cinematic angle, face enhance, volumetric lighting, cinematic lighting, digital art, 4k resolution, octane render, trending on artstation, masterpiece",
+      "generation_seed": 202611130057
+    },
+    {
+      "task": 58,
+      "dataset": "SDP",
+      "prompt": "whimsical, a single beautiful playful woman, wearing professional makeup, standing in a lake, under the stars, with a binary black hole with a ring in the sky, by Lois van Baarle, by Greg Rutkowski, by artgerm, by ross tran, cinematic angle, face enhance, volumetric lighting, cinematic lighting, digital art, 4k resolution, octane render, trending on artstation, masterpiece",
+      "null_prompt": "a huge ivory throne with abominations kneeling in front of it, red tones, highly coherent, ultra realistic, concept art, intricate details, eerie, highly detailed, photorealistic, octane render, 8 k, unreal engine. art by artgerm and greg rutkowski and alphonse mucha",
+      "generation_seed": 202611130058
+    },
+    {
+      "task": 59,
+      "dataset": "SDP",
+      "prompt": "a huge ivory throne with abominations kneeling in front of it, red tones, highly coherent, ultra realistic, concept art, intricate details, eerie, highly detailed, photorealistic, octane render, 8 k, unreal engine. art by artgerm and greg rutkowski and alphonse mucha",
+      "null_prompt": "full face shot of rimuru tempest, sky rgb 2 1 ece 6 blue straight hair, long bangs, with amber eyes, wearing a black jacket, high collar, ultra detailed, concept art, award winning photography, digital painting, cinematic, wlop artstation, closeup, pixiv, evil, yoshitaka amano, andy warhol, ilya kuvshinov,",
+      "generation_seed": 202611130059
+    },
+    {
+      "task": 60,
+      "dataset": "SDP",
+      "prompt": "full face shot of rimuru tempest, sky rgb 2 1 ece 6 blue straight hair, long bangs, with amber eyes, wearing a black jacket, high collar, ultra detailed, concept art, award winning photography, digital painting, cinematic, wlop artstation, closeup, pixiv, evil, yoshitaka amano, andy warhol, ilya kuvshinov,",
+      "null_prompt": "painting of the end, ultra realistic, concept art, intricate details, eerie, highly detailed, photorealistic, octane render, 8 k, unreal engine. art by artgerm and greg rutkowski and alphonse mucha",
+      "generation_seed": 202611130060
+    },
+    {
+      "task": 61,
+      "dataset": "SDP",
+      "prompt": "painting of the end, ultra realistic, concept art, intricate details, eerie, highly detailed, photorealistic, octane render, 8 k, unreal engine. art by artgerm and greg rutkowski and alphonse mucha",
+      "null_prompt": "portrait of Taylor Swift as Princess Fiona in Shrek 2001. HD, 4K. intricate abstract. intricate artwork. by wlop, beeple, dan mumford. trending on artstation, greg rutkowski very coherent symmetrical artwork. cinematic, hyper realism, high detail, octane render, 8k",
+      "generation_seed": 202611130061
+    },
+    {
+      "task": 62,
+      "dataset": "SDP",
+      "prompt": "portrait of Taylor Swift as Princess Fiona in Shrek 2001. HD, 4K. intricate abstract. intricate artwork. by wlop, beeple, dan mumford. trending on artstation, greg rutkowski very coherent symmetrical artwork. cinematic, hyper realism, high detail, octane render, 8k",
+      "null_prompt": "proud muscular female turkish dancer girl on haerm, portrait by Cedric Peyravernay, highly detailed, excellent composition, cinematic concept art, dramatic lighting, trending on ArtStation",
+      "generation_seed": 202611130062
+    },
+    {
+      "task": 63,
+      "dataset": "SDP",
+      "prompt": "proud muscular female turkish dancer girl on haerm, portrait by Cedric Peyravernay, highly detailed, excellent composition, cinematic concept art, dramatic lighting, trending on ArtStation",
+      "null_prompt": "a cute anime girl tampering with evidence. Key Frame, Top rated on pixiv, Makoto Shinkai, Inc. , High detail",
+      "generation_seed": 202611130063
+    },
+    {
+      "task": 64,
+      "dataset": "SDP",
+      "prompt": "a cute anime girl tampering with evidence. Key Frame, Top rated on pixiv, Makoto Shinkai, Inc. , High detail",
+      "null_prompt": "a zombie laughing cute, Tristan Eaton, victo ngai, artgerm, RHADS, ross draws",
+      "generation_seed": 202611130064
+    },
+    {
+      "task": 65,
+      "dataset": "SDP",
+      "prompt": "a zombie laughing cute, Tristan Eaton, victo ngai, artgerm, RHADS, ross draws",
+      "null_prompt": "a beautiful digital illustration painting of a happy hippy girl with flowers in the rain by benoit b. mandelbrot, steven belledin, martin johnson heade, lee madgwick, caspar david friedrich, and david rios ferreira. 8 k resolution trending on artstation concept art digital illustration",
+      "generation_seed": 202611130065
+    },
+    {
+      "task": 66,
+      "dataset": "SDP",
+      "prompt": "a beautiful digital illustration painting of a happy hippy girl with flowers in the rain by benoit b. mandelbrot, steven belledin, martin johnson heade, lee madgwick, caspar david friedrich, and david rios ferreira. 8 k resolution trending on artstation concept art digital illustration",
+      "null_prompt": "beautiful portrait commission of a cute female furry anthro Canadian Lynx fursona casual clothes in a futuristic mechanical laboratory. blonde hair. Green Eyes. character design by charlie bowater, ross tran, artgerm, and makoto shinkai, detailed, inked, western comic book art",
+      "generation_seed": 202611130066
+    },
+    {
+      "task": 67,
+      "dataset": "SDP",
+      "prompt": "beautiful portrait commission of a cute female furry anthro Canadian Lynx fursona casual clothes in a futuristic mechanical laboratory. blonde hair. Green Eyes. character design by charlie bowater, ross tran, artgerm, and makoto shinkai, detailed, inked, western comic book art",
+      "null_prompt": "Very very very very highly detailed epic photo of Robin Williams, intricate, dystopian, sci-fi, extremely detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, intimidating lighting, incredible art by Artgerm and Vincent di Fate",
+      "generation_seed": 202611130067
+    },
+    {
+      "task": 68,
+      "dataset": "SDP",
+      "prompt": "Very very very very highly detailed epic photo of Robin Williams, intricate, dystopian, sci-fi, extremely detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, intimidating lighting, incredible art by Artgerm and Vincent di Fate",
+      "null_prompt": "gothic white mage blonde braided hair dove cameron wearing ethereal ivory carved bone armor looking down a well, green plants, intricate, elegant, highly detailed, digital painting, artstaion, concept art, smooth, sharp, focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "generation_seed": 202611130068
+    },
+    {
+      "task": 69,
+      "dataset": "SDP",
+      "prompt": "gothic white mage blonde braided hair dove cameron wearing ethereal ivory carved bone armor looking down a well, green plants, intricate, elegant, highly detailed, digital painting, artstaion, concept art, smooth, sharp, focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "null_prompt": "a symmetrical portrait of a beautiful cybernetic villainess, cyberpunk concept art by pete mohrbacher and wlop and artgerm and josan gonzalez and syd mead, digital art, unreal engine 5, trending on artstation, deviantart, pinterest, rule of thirds, 4 k uhd image",
+      "generation_seed": 202611130069
+    },
+    {
+      "task": 70,
+      "dataset": "SDP",
+      "prompt": "a symmetrical portrait of a beautiful cybernetic villainess, cyberpunk concept art by pete mohrbacher and wlop and artgerm and josan gonzalez and syd mead, digital art, unreal engine 5, trending on artstation, deviantart, pinterest, rule of thirds, 4 k uhd image",
+      "null_prompt": "mindblowing portrait of alexis ohanian as a wizard, blue wizard hat, deep focus, symmetrical face, d & d, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, matte, sharp, illustration, hearthstone, art by artgerm and greg rutkowski and alphonse mucha",
+      "generation_seed": 202611130070
+    },
+    {
+      "task": 71,
+      "dataset": "SDP",
+      "prompt": "mindblowing portrait of alexis ohanian as a wizard, blue wizard hat, deep focus, symmetrical face, d & d, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, matte, sharp, illustration, hearthstone, art by artgerm and greg rutkowski and alphonse mucha",
+      "null_prompt": "wind blowing hair meditation celestial being, dreaming and floating, bust portrait, dnd, face, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "generation_seed": 202611130071
+    },
+    {
+      "task": 72,
+      "dataset": "SDP",
+      "prompt": "wind blowing hair meditation celestial being, dreaming and floating, bust portrait, dnd, face, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "null_prompt": "nekopara fantastically detailed shining eyes vn modern anime style art vibrant open wide mouth smile detailed cat ears cat girl nekomimi dress portrait  shinkai makoto Studio ghibli Sakimichan Kentaro Miura Stanley Artgerm Lau WLOP Rossdraws James Jean Marc Simonetti elegant highly detailed digital painting artstation Unreal Engine 4k 8k ultra HD pixiv",
+      "generation_seed": 202611130072
+    },
+    {
+      "task": 73,
+      "dataset": "SDP",
+      "prompt": "nekopara fantastically detailed shining eyes vn modern anime style art vibrant open wide mouth smile detailed cat ears cat girl nekomimi dress portrait  shinkai makoto Studio ghibli Sakimichan Kentaro Miura Stanley Artgerm Lau WLOP Rossdraws James Jean Marc Simonetti elegant highly detailed digital painting artstation Unreal Engine 4k 8k ultra HD pixiv",
+      "null_prompt": "symmetry!! portrait of yoda, sci - fi, tech wear, blue and yellow glowing lights!! intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "generation_seed": 202611130073
+    },
+    {
+      "task": 74,
+      "dataset": "SDP",
+      "prompt": "symmetry!! portrait of yoda, sci - fi, tech wear, blue and yellow glowing lights!! intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "null_prompt": "symmetrical portrait bust of young woman with shoulder length light brown hair and hazel eyes dressed in a sharp dark teal military uniform and beret, anime, ilya kuvshinov, greg rutkowski, guweiz, ross tran, loish, svetlana tigai, artgerm, artstation trending, concept art, digital painting, painterly",
+      "generation_seed": 202611130074
+    },
+    {
+      "task": 75,
+      "dataset": "SDP",
+      "prompt": "symmetrical portrait bust of young woman with shoulder length light brown hair and hazel eyes dressed in a sharp dark teal military uniform and beret, anime, ilya kuvshinov, greg rutkowski, guweiz, ross tran, loish, svetlana tigai, artgerm, artstation trending, concept art, digital painting, painterly",
+      "null_prompt": "a beautiful portrait of august schellenberg taking tobacco snuff in the jungle, hyper realistic face, fantasy art, in the style of greg rutkowski, intricate, matte painting, hyper detailed, smooth",
+      "generation_seed": 202611130075
+    },
+    {
+      "task": 76,
+      "dataset": "SDP",
+      "prompt": "a beautiful portrait of august schellenberg taking tobacco snuff in the jungle, hyper realistic face, fantasy art, in the style of greg rutkowski, intricate, matte painting, hyper detailed, smooth",
+      "null_prompt": "a beautiful celestial sky with stars, planets and galaxies in the style of illuminated manuscript, circular abstract border with curly symmetrical designs, trending on artstation",
+      "generation_seed": 202611130076
+    },
+    {
+      "task": 77,
+      "dataset": "SDP",
+      "prompt": "a beautiful celestial sky with stars, planets and galaxies in the style of illuminated manuscript, circular abstract border with curly symmetrical designs, trending on artstation",
+      "null_prompt": "attack on titan, portrait of elmo from sesame street as a titan from attack on titan, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski",
+      "generation_seed": 202611130077
+    },
+    {
+      "task": 78,
+      "dataset": "SDP",
+      "prompt": "attack on titan, portrait of elmo from sesame street as a titan from attack on titan, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski",
+      "null_prompt": "ultra realistic illustration, a stunningly beautiful cara delevigne praying, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "generation_seed": 202611130078
+    },
+    {
+      "task": 79,
+      "dataset": "SDP",
+      "prompt": "ultra realistic illustration, a stunningly beautiful cara delevigne praying, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "null_prompt": "symmetry!! portrait of ancient pharaoh wearing traditional attire, sci - fi, tech wear, glowing lights!! intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "generation_seed": 202611130079
+    },
+    {
+      "task": 80,
+      "dataset": "SDP",
+      "prompt": "symmetry!! portrait of ancient pharaoh wearing traditional attire, sci - fi, tech wear, glowing lights!! intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "null_prompt": "beautiful detailed picture of eva green, fully clothed, radiant light, art nouveau, intricate, elegant, highly detailed, symmetrical face, my rendition, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "generation_seed": 202611130080
+    },
+    {
+      "task": 81,
+      "dataset": "SDP",
+      "prompt": "beautiful detailed picture of eva green, fully clothed, radiant light, art nouveau, intricate, elegant, highly detailed, symmetrical face, my rendition, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "null_prompt": "forest clearing landscape, bright colors, fantasy, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, wide angle, artbook, wallpaper, splash art, promo art, soul calibur, league of legends, art by artgerm and greg rutkowski and bo chen and jin xiaodi",
+      "generation_seed": 202611130081
+    },
+    {
+      "task": 82,
+      "dataset": "SDP",
+      "prompt": "forest clearing landscape, bright colors, fantasy, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, wide angle, artbook, wallpaper, splash art, promo art, soul calibur, league of legends, art by artgerm and greg rutkowski and bo chen and jin xiaodi",
+      "null_prompt": "photo of a gorgeous nordic female in a dark forest in, realistic, sharp focus, 8 k high definition, insanely detailed, intricate, elegant, art by stanley lau and artgerm, luis royo, greg kutkowski",
+      "generation_seed": 202611130082
+    },
+    {
+      "task": 83,
+      "dataset": "SDP",
+      "prompt": "photo of a gorgeous nordic female in a dark forest in, realistic, sharp focus, 8 k high definition, insanely detailed, intricate, elegant, art by stanley lau and artgerm, luis royo, greg kutkowski",
+      "null_prompt": "portrait of henry cavill as chris redfield, resident evil, pistol, upper body, henry cavill!!!, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "generation_seed": 202611130083
+    },
+    {
+      "task": 84,
+      "dataset": "SDP",
+      "prompt": "portrait of henry cavill as chris redfield, resident evil, pistol, upper body, henry cavill!!!, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "null_prompt": "a award winning half body porttrait of a beautiful woman in a croptop with ombre purple pink teal hairstyle with head in motion and hair flying, outrun, vaporware, shaded flat illustration, digital art, trending on artstation, highly detailed, fine detail, intricate",
+      "generation_seed": 202611130084
+    },
+    {
+      "task": 85,
+      "dataset": "SDP",
+      "prompt": "a award winning half body porttrait of a beautiful woman in a croptop with ombre purple pink teal hairstyle with head in motion and hair flying, outrun, vaporware, shaded flat illustration, digital art, trending on artstation, highly detailed, fine detail, intricate",
+      "null_prompt": "clear portrait of miner male, adorable appearance!!!, golden hour, happy apearance, cottagecore!!, background hyper detailed, character concept, full body, dynamic pose, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "generation_seed": 202611130085
+    },
+    {
+      "task": 86,
+      "dataset": "SDP",
+      "prompt": "clear portrait of miner male, adorable appearance!!!, golden hour, happy apearance, cottagecore!!, background hyper detailed, character concept, full body, dynamic pose, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "null_prompt": "a young attractive Asian woman in the pilot's seat of a massive sci-fi mecha, both arms at her sides, dramatic pose, chrome, blue LEDs, highly detailed, photorealistic, volumetric lighting, digital art, octane render, in the style of Artgerm and Tom Bagshaw",
+      "generation_seed": 202611130086
+    },
+    {
+      "task": 87,
+      "dataset": "SDP",
+      "prompt": "a young attractive Asian woman in the pilot's seat of a massive sci-fi mecha, both arms at her sides, dramatic pose, chrome, blue LEDs, highly detailed, photorealistic, volumetric lighting, digital art, octane render, in the style of Artgerm and Tom Bagshaw",
+      "null_prompt": "people in grey suits in an overcrowded tram, depressed mood, in the style of artgerm, gerald brom, atey ghailan and mike mignola, vibrant colors and hard shadows and strong rim light, plain background, comic cover art, trending on artstation",
+      "generation_seed": 202611130087
+    },
+    {
+      "task": 88,
+      "dataset": "SDP",
+      "prompt": "people in grey suits in an overcrowded tram, depressed mood, in the style of artgerm, gerald brom, atey ghailan and mike mignola, vibrant colors and hard shadows and strong rim light, plain background, comic cover art, trending on artstation",
+      "null_prompt": "sansa stark gold sunny lights, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha and william - adolphe bouguereau",
+      "generation_seed": 202611130088
+    },
+    {
+      "task": 89,
+      "dataset": "SDP",
+      "prompt": "sansa stark gold sunny lights, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha and william - adolphe bouguereau",
+      "null_prompt": "high quality portrait of leonid kanevsky. art by makoto shinkai, crunchyroll, pixiv, danbooru, hd, headshot, cinematic still, detailed anime face, bokeh, digital art, cel shading, vivid colors, ambient lighting",
+      "generation_seed": 202611130089
+    },
+    {
+      "task": 90,
+      "dataset": "SDP",
+      "prompt": "high quality portrait of leonid kanevsky. art by makoto shinkai, crunchyroll, pixiv, danbooru, hd, headshot, cinematic still, detailed anime face, bokeh, digital art, cel shading, vivid colors, ambient lighting",
+      "null_prompt": "pink petals with a a wonderful aubrey plaza and christina ricci and sarah hyland and mila kunis and olivia newton john in a hooters shirt, intricate, elegant, highly detailed, wonderful eyes, sweet, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and concept art",
+      "generation_seed": 202611130090
+    },
+    {
+      "task": 91,
+      "dataset": "SDP",
+      "prompt": "pink petals with a a wonderful aubrey plaza and christina ricci and sarah hyland and mila kunis and olivia newton john in a hooters shirt, intricate, elegant, highly detailed, wonderful eyes, sweet, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and concept art",
+      "null_prompt": "red fox by charlie bowater and titian and artgerm, full - body portrait, intricate, face, forest, elegant, orange mist, beautiful, highly detailed, dramatic lighting, sharp focus, trending on artstation, artstationhd, artstationhq, unreal engine, 4 k, 8 k",
+      "generation_seed": 202611130091
+    },
+    {
+      "task": 92,
+      "dataset": "SDP",
+      "prompt": "red fox by charlie bowater and titian and artgerm, full - body portrait, intricate, face, forest, elegant, orange mist, beautiful, highly detailed, dramatic lighting, sharp focus, trending on artstation, artstationhd, artstationhq, unreal engine, 4 k, 8 k",
+      "null_prompt": "modern Angel standing in the front of a forest . Angel is wearing an armor. angel is draped with bones. Concept art. Anatomical details. Digital painting. Art station. Mood lighting. Skindness, highly detailed, concept art, intricate, sharp focus,  - h 1200",
+      "generation_seed": 202611130092
+    },
+    {
+      "task": 93,
+      "dataset": "SDP",
+      "prompt": "modern Angel standing in the front of a forest . Angel is wearing an armor. angel is draped with bones. Concept art. Anatomical details. Digital painting. Art station. Mood lighting. Skindness, highly detailed, concept art, intricate, sharp focus,  - h 1200",
+      "null_prompt": "a stunning vector portrait of a thicc and voluptuous yennefer of vengerberg dressed as a beautiful poison ivy with hair tied in a braid walking through a flowering garden, greenhouse in the background, intricate, elegant, highly detailed, digital painting, artstation, concept art, ultra sharp focus, illustration, art by greg rutkowski and alphonse mucha",
+      "generation_seed": 202611130093
+    },
+    {
+      "task": 94,
+      "dataset": "SDP",
+      "prompt": "a stunning vector portrait of a thicc and voluptuous yennefer of vengerberg dressed as a beautiful poison ivy with hair tied in a braid walking through a flowering garden, greenhouse in the background, intricate, elegant, highly detailed, digital painting, artstation, concept art, ultra sharp focus, illustration, art by greg rutkowski and alphonse mucha",
+      "null_prompt": "a wise monk meditates under a waterfallto pieces with glowing yelow visor as a realistic scifi cyberpunk, torso, art by james jean and greg rutkowski!!, realistic face, like anime, digital art, concept art, trending on artstation, 8 k",
+      "generation_seed": 202611130094
+    },
+    {
+      "task": 95,
+      "dataset": "SDP",
+      "prompt": "a wise monk meditates under a waterfallto pieces with glowing yelow visor as a realistic scifi cyberpunk, torso, art by james jean and greg rutkowski!!, realistic face, like anime, digital art, concept art, trending on artstation, 8 k",
+      "null_prompt": "attractive fairy goddness fly high in the night, d & d, fantasy, mist, full moon in background, trees, hyper detailed, art by artgerm and greg rutkowski and magali villeneuve, midium shot, 8 k realistic, cryengine, digital painting, trending on artstation, concept art, sharp focus, illustration,",
+      "generation_seed": 202611130095
+    },
+    {
+      "task": 96,
+      "dataset": "SDP",
+      "prompt": "attractive fairy goddness fly high in the night, d & d, fantasy, mist, full moon in background, trees, hyper detailed, art by artgerm and greg rutkowski and magali villeneuve, midium shot, 8 k realistic, cryengine, digital painting, trending on artstation, concept art, sharp focus, illustration,",
+      "null_prompt": "an illustration of a soccer player, elegant,",
+      "generation_seed": 202611130096
+    },
+    {
+      "task": 97,
+      "dataset": "SDP",
+      "prompt": "an illustration of a soccer player, elegant,",
+      "null_prompt": "whirlwind of souls rushing inside the metaverse, half body, glowin eye, tiara, tattoo pharaoh, android, cyborg, cyberpunk face, by loish, d & d, fantasy, intricate, elegant, highly detailed, colorful, vivid color, digital painting, artstation, concept art, art by artgerm and greg rutkowski and alphonse mucha and ruan jia",
+      "generation_seed": 202611130097
+    },
+    {
+      "task": 98,
+      "dataset": "SDP",
+      "prompt": "whirlwind of souls rushing inside the metaverse, half body, glowin eye, tiara, tattoo pharaoh, android, cyborg, cyberpunk face, by loish, d & d, fantasy, intricate, elegant, highly detailed, colorful, vivid color, digital painting, artstation, concept art, art by artgerm and greg rutkowski and alphonse mucha and ruan jia",
+      "null_prompt": "lofi biopunk Boris Johnson portrait Pixar style by Tristan Eaton Stanley Artgerm and Tom Bagshaw.",
+      "generation_seed": 202611130098
+    },
+    {
+      "task": 99,
+      "dataset": "SDP",
+      "prompt": "lofi biopunk Boris Johnson portrait Pixar style by Tristan Eaton Stanley Artgerm and Tom Bagshaw.",
+      "null_prompt": "in the style of artgerm, loish, anthropomorphic alligator, red scales on his back, yellow scale on his belly and chest, male, waring a hawaiian shirt, in the style of zootopia",
+      "generation_seed": 202611130099
+    }
+  ],
+  "cohort_protocol_sha256": "bd09828a85d57cb8433b2c5c42c48dae0aea98d4929d98a91f07d6fe1def3633",
+  "gpu_indices": [
+    7,
+    5,
+    4
+  ],
+  "predecessors": [
+    {
+      "pid": 28851,
+      "cmdline_sha256": "0a5674572817837d6367cf70803118200e9a0a5734650db9bb1c3b7fa348719b"
+    },
+    {
+      "pid": 28852,
+      "cmdline_sha256": "1435ad1599c780dfaafab373c9347d83f2e482dbb23233189f0861b8e38795cb"
+    },
+    {
+      "pid": 28853,
+      "cmdline_sha256": "9a7ad0b5a526fd426a97802f26e3dda76ef039a1ecebfb0f165242acc77493c0"
+    }
+  ],
+  "worker": "run_seal_native.py",
+  "worker_sha256": "9486cb6f2488102ca172bb473fda15b465ffd105e5a6cf377465c3589bb413d0",
+  "coordinator_sha256": "3a0f8e004737971f643b5790a68ff8c5a8c7b2c0ffccef910a66e32f5988d5bc",
+  "attacks": 0,
+  "distortions": 0
+}

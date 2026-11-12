@@ -1,0 +1,4873 @@
+{
+  "scope": "Noise-free original-GS decoder response to observed semantic-code differences; algebraic diagnostic only, not image forgery acceptance or defense success; no attack image, optimization, query feedback or new attack algorithm",
+  "protocol_sha256": "150375550afa41f16271b23566436ba31f0c064fbe75f3d407ab149a433bdbd8",
+  "rows": [
+    {
+      "task": 0,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.966796875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 0,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.966796875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 0,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.5380859375,
+      "ba": 0.71875,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 0,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.9892578125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 1,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.9814453125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 1,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.931640625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 1,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.48828125,
+      "ba": 0.41015625,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 1,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.98046875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 2,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.8701171875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 2,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.896484375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 2,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.498046875,
+      "ba": 0.4609375,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 2,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.95703125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 3,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.9873046875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 3,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.99609375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 3,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.517578125,
+      "ba": 0.5859375,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 3,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.990234375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 4,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.986328125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 4,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.9853515625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 4,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.4599609375,
+      "ba": 0.265625,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 4,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.9638671875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 5,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.92578125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 5,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.9345703125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 5,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.4951171875,
+      "ba": 0.46875,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 5,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.9951171875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 6,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.98046875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 6,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.982421875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 6,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.5048828125,
+      "ba": 0.51953125,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 6,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.9580078125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 7,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.7275390625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 7,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.9921875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 7,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.4794921875,
+      "ba": 0.36328125,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 7,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.9990234375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 8,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.90234375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 8,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.9541015625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 8,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.5244140625,
+      "ba": 0.63671875,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 8,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.990234375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 9,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.7802734375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 9,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.93359375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 9,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.494140625,
+      "ba": 0.46875,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 9,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.9326171875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 10,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.9384765625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 10,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.87890625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 10,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.4912109375,
+      "ba": 0.42578125,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 10,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.9169921875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 11,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.9931640625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 11,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.984375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 11,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.4970703125,
+      "ba": 0.453125,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 11,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.99609375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 12,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.994140625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 12,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.99609375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 12,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.494140625,
+      "ba": 0.44140625,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 12,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 1.0,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 13,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.951171875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 13,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.9365234375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 13,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.51171875,
+      "ba": 0.56640625,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 13,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.89453125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 14,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.9970703125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 14,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.998046875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 14,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.50390625,
+      "ba": 0.48828125,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 14,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.998046875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 15,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.966796875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 15,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.9150390625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 15,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.4970703125,
+      "ba": 0.5,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 15,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.9599609375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 16,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.9765625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 16,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.96484375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 16,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.48828125,
+      "ba": 0.44140625,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 16,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.9833984375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 17,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.970703125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 17,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.970703125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 17,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.4892578125,
+      "ba": 0.4609375,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 17,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.9873046875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 18,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.990234375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 18,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.9921875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 18,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.484375,
+      "ba": 0.40625,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 18,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.994140625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 19,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.98046875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 19,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.974609375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 19,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.51171875,
+      "ba": 0.578125,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 19,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.9892578125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 20,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.6787109375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 20,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.9140625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 20,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.517578125,
+      "ba": 0.60546875,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 20,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.978515625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 21,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.935546875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 21,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.9169921875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 21,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.4833984375,
+      "ba": 0.3984375,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 21,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.939453125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 22,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.7880859375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 22,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.796875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 22,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.5634765625,
+      "ba": 0.83984375,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 22,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.98046875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 23,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.9453125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 23,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.8857421875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 23,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.4853515625,
+      "ba": 0.4140625,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 23,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.9755859375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 24,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.9853515625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 24,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.9873046875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 24,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.462890625,
+      "ba": 0.30859375,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 24,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.9912109375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 25,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 25,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.8798828125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 25,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.6337890625,
+      "ba": 0.9921875,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 25,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.6015625,
+      "ba": 0.9609375,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 26,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.8720703125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 26,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.912109375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 26,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.51953125,
+      "ba": 0.61328125,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 26,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.9208984375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 27,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.9765625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 27,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.962890625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 27,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.50390625,
+      "ba": 0.515625,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 27,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.978515625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 28,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.986328125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 28,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.978515625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 28,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.4931640625,
+      "ba": 0.45703125,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 28,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.9951171875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 29,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.95703125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 29,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.9501953125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 29,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.48828125,
+      "ba": 0.41796875,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 29,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.9853515625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 30,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.97265625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 30,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.9814453125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 30,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.462890625,
+      "ba": 0.28515625,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 30,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.9921875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 31,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.8740234375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 31,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.9794921875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 31,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.501953125,
+      "ba": 0.5,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 31,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.9697265625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 32,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.99609375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 32,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.998046875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 32,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.466796875,
+      "ba": 0.30078125,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 32,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.99609375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 33,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.9765625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 33,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.935546875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 33,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.47265625,
+      "ba": 0.3203125,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 33,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.9931640625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 34,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.96484375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 34,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.9794921875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 34,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.4609375,
+      "ba": 0.23828125,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 34,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.98828125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 35,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.8525390625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 35,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.9755859375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 35,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.4931640625,
+      "ba": 0.46875,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 35,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.76171875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 36,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.98828125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 36,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.96875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 36,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.5341796875,
+      "ba": 0.70703125,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": false
+      }
+    },
+    {
+      "task": 36,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.99609375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 37,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.888671875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 37,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.9248046875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 37,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.45703125,
+      "ba": 0.21484375,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 37,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.92578125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 38,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.9462890625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 38,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.9697265625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 38,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.4814453125,
+      "ba": 0.35546875,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 38,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.9814453125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 39,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.9892578125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 39,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.984375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 39,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.4853515625,
+      "ba": 0.453125,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 39,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.9853515625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 40,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.9755859375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 40,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.97265625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 40,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.5078125,
+      "ba": 0.55859375,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 40,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.978515625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 41,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.9912109375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 41,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.9873046875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 41,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.4990234375,
+      "ba": 0.48828125,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 41,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.998046875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 42,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.9619140625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 42,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.9609375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 42,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.44921875,
+      "ba": 0.22265625,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 42,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.990234375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 43,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.9228515625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 43,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.958984375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 43,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.4541015625,
+      "ba": 0.23046875,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 43,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.9677734375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 44,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.947265625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 44,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.9599609375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 44,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.4873046875,
+      "ba": 0.421875,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 44,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.9755859375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 45,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.998046875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 45,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.99609375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 45,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.4970703125,
+      "ba": 0.453125,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 45,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.9970703125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 46,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.9599609375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 46,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.9580078125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 46,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.47265625,
+      "ba": 0.3828125,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 46,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.9833984375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 47,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.966796875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 47,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.990234375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 47,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.4853515625,
+      "ba": 0.42578125,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 47,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.982421875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 48,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.96875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 48,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.9716796875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 48,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.4951171875,
+      "ba": 0.4921875,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 48,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.9912109375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 49,
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "code_agreement": 0.904296875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 49,
+      "dataset": "COCO",
+      "control": "aux_final",
+      "code_agreement": 0.884765625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 49,
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "code_agreement": 0.4873046875,
+      "ba": 0.40234375,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 49,
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "code_agreement": 0.9755859375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 50,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.8583984375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 50,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.884765625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 50,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.6748046875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 50,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.94140625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 51,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.9423828125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 51,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.9091796875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 51,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.5302734375,
+      "ba": 0.66015625,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": false
+      }
+    },
+    {
+      "task": 51,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.9755859375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 52,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.767578125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 52,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.9287109375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 52,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.5947265625,
+      "ba": 0.9375,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 52,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.9287109375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 53,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.8388671875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 53,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.833984375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 53,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.61328125,
+      "ba": 0.96484375,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 53,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.9697265625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 54,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.9111328125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 54,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.9326171875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 54,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.640625,
+      "ba": 0.9921875,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 54,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.9677734375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 55,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.9375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 55,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.8291015625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 55,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.5400390625,
+      "ba": 0.73046875,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 55,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.93359375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 56,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.9326171875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 56,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.9677734375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 56,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.7958984375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 56,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.982421875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 57,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.89453125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 57,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.912109375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 57,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.5703125,
+      "ba": 0.84375,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 57,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.931640625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 58,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.9482421875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 58,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.923828125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 58,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.6171875,
+      "ba": 0.9609375,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 58,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.9833984375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 59,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.87109375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 59,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.8447265625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 59,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.5478515625,
+      "ba": 0.80859375,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 59,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.8818359375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 60,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.955078125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 60,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.970703125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 60,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.650390625,
+      "ba": 0.99609375,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 60,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.98828125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 61,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.8076171875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 61,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.87109375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 61,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.779296875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 61,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.9189453125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 62,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.791015625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 62,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.8642578125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 62,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.6689453125,
+      "ba": 0.99609375,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 62,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.955078125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 63,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.869140625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 63,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.83203125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 63,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.5517578125,
+      "ba": 0.76953125,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 63,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.9638671875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 64,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.9521484375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 64,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.970703125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 64,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.65625,
+      "ba": 0.99609375,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 64,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.9521484375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 65,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.9208984375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 65,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.921875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 65,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.5751953125,
+      "ba": 0.91015625,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 65,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.908203125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 66,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.9482421875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 66,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.9130859375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 66,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.638671875,
+      "ba": 0.984375,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 66,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.955078125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 67,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.9013671875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 67,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.9208984375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 67,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.4765625,
+      "ba": 0.34765625,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 67,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.9423828125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 68,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.916015625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 68,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.919921875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 68,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.5224609375,
+      "ba": 0.61328125,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 68,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.953125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 69,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.9111328125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 69,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.8876953125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 69,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.6923828125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 69,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.9736328125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 70,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.91796875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 70,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.87890625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 70,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.6337890625,
+      "ba": 0.97265625,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 70,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.83203125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 71,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.916015625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 71,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.9287109375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 71,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.611328125,
+      "ba": 0.95703125,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 71,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.953125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 72,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.87890625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 72,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.9501953125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 72,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.7509765625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 72,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.96484375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 73,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.9609375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 73,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.9697265625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 73,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.5205078125,
+      "ba": 0.6328125,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 73,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.98828125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 74,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.8701171875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 74,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.8896484375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 74,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.5322265625,
+      "ba": 0.6875,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": false
+      }
+    },
+    {
+      "task": 74,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.9697265625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 75,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.9375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 75,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.9228515625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 75,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.49609375,
+      "ba": 0.46484375,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 75,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.94921875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 76,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.630859375,
+      "ba": 0.984375,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 76,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.7119140625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 76,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.5361328125,
+      "ba": 0.73046875,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 76,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.9443359375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 77,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.9599609375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 77,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.9658203125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 77,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.6337890625,
+      "ba": 0.9921875,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 77,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.96484375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 78,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.8876953125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 78,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.8251953125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 78,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.505859375,
+      "ba": 0.53125,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 78,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.923828125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 79,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.8681640625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 79,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.9541015625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 79,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.5986328125,
+      "ba": 0.95703125,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 79,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.876953125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 80,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.76171875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 80,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.77734375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 80,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.568359375,
+      "ba": 0.85546875,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 80,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.9296875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 81,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.8857421875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 81,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.94140625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 81,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.5634765625,
+      "ba": 0.83203125,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 81,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.953125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 82,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.939453125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 82,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.9716796875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 82,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.689453125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 82,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.9697265625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 83,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.9423828125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 83,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.939453125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 83,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.5205078125,
+      "ba": 0.64453125,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 83,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.9052734375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 84,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.9560546875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 84,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.888671875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 84,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.5380859375,
+      "ba": 0.74609375,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 84,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.9521484375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 85,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.8642578125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 85,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.9169921875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 85,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.544921875,
+      "ba": 0.7578125,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 85,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.9716796875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 86,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.8076171875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 86,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.8193359375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 86,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.5849609375,
+      "ba": 0.890625,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 86,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.96484375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 87,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.8857421875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 87,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.8671875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 87,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.7080078125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 87,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.94140625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 88,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.6455078125,
+      "ba": 0.98828125,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 88,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.931640625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 88,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.513671875,
+      "ba": 0.58984375,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 88,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.9755859375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 89,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.9482421875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 89,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.9384765625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 89,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.5869140625,
+      "ba": 0.91796875,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 89,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.916015625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 90,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.9619140625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 90,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.8408203125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 90,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.6474609375,
+      "ba": 0.984375,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 90,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.98828125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 91,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.880859375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 91,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.83203125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 91,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.8408203125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 91,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.9833984375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 92,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.9189453125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 92,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.8623046875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 92,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.63671875,
+      "ba": 0.9921875,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 92,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.9609375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 93,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.90625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 93,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.9169921875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 93,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.5517578125,
+      "ba": 0.79296875,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 93,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.96484375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 94,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.9091796875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 94,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.8662109375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 94,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.6103515625,
+      "ba": 0.9609375,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 94,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.939453125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 95,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.751953125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 95,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.7001953125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 95,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.6884765625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 95,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.9423828125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 96,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.9365234375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 96,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.9404296875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 96,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.482421875,
+      "ba": 0.3828125,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 96,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.935546875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 97,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.990234375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 97,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.9140625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 97,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.494140625,
+      "ba": 0.453125,
+      "accepts": {
+        "166": false,
+        "167": false,
+        "182": false
+      }
+    },
+    {
+      "task": 97,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.9990234375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 98,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.9638671875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 98,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.951171875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 98,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.5673828125,
+      "ba": 0.85546875,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 98,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.9208984375,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 99,
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "code_agreement": 0.9228515625,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 99,
+      "dataset": "SDP",
+      "control": "aux_final",
+      "code_agreement": 0.892578125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 99,
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "code_agreement": 0.6875,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    },
+    {
+      "task": 99,
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "code_agreement": 0.953125,
+      "ba": 1.0,
+      "accepts": {
+        "166": true,
+        "167": true,
+        "182": true
+      }
+    }
+  ],
+  "summary": [
+    {
+      "dataset": "COCO",
+      "control": "same_prompt",
+      "n": 50,
+      "mean_code_agreement": 0.93826171875,
+      "mean_ba": 1.0,
+      "accepted_at167": 50
+    },
+    {
+      "dataset": "COCO",
+      "control": "aux_final",
+      "n": 50,
+      "mean_code_agreement": 0.954140625,
+      "mean_ba": 1.0,
+      "accepted_at167": 50
+    },
+    {
+      "dataset": "COCO",
+      "control": "different_prompt",
+      "n": 50,
+      "mean_code_agreement": 0.4954296875,
+      "mean_ba": 0.462890625,
+      "accepted_at167": 4
+    },
+    {
+      "dataset": "COCO",
+      "control": "trajectory35",
+      "n": 50,
+      "mean_code_agreement": 0.9650390625,
+      "mean_ba": 0.99921875,
+      "accepted_at167": 50
+    },
+    {
+      "dataset": "SDP",
+      "control": "same_prompt",
+      "n": 50,
+      "mean_code_agreement": 0.8896484375,
+      "mean_ba": 0.999453125,
+      "accepted_at167": 50
+    },
+    {
+      "dataset": "SDP",
+      "control": "aux_final",
+      "n": 50,
+      "mean_code_agreement": 0.89490234375,
+      "mean_ba": 1.0,
+      "accepted_at167": 50
+    },
+    {
+      "dataset": "SDP",
+      "control": "different_prompt",
+      "n": 50,
+      "mean_code_agreement": 0.6036328125,
+      "mean_ba": 0.841875,
+      "accepted_at167": 41
+    },
+    {
+      "dataset": "SDP",
+      "control": "trajectory35",
+      "n": 50,
+      "mean_code_agreement": 0.948828125,
+      "mean_ba": 1.0,
+      "accepted_at167": 50
+    }
+  ],
+  "attack_jobs": 0
+}
