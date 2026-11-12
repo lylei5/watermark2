@@ -1,0 +1,29 @@
+{
+  "script_sha256": "73cc74c16e5f42cf375547c5ee69e85fca560173be8bf7b704609cb56482250e",
+  "jobs": [
+    {
+      "run": "seal_native_20261113_v3",
+      "pid": 43086,
+      "method": "seal",
+      "cmdline_sha256": "829a2fea78693ada6548c5fc17db08a1c674729dc29342974000ae19ed1f9055"
+    },
+    {
+      "run": "sembind_prc_native_20261113_v2",
+      "pid": 43087,
+      "method": "prc_s",
+      "cmdline_sha256": "eafc516db90204943c38c5dcae5fad875b3d25e4039388f87511e09534c129e2"
+    },
+    {
+      "run": "seal_paper_native_20261113",
+      "pid": 46551,
+      "method": "seal",
+      "cmdline_sha256": "bfe6d99827a085645b458074ba8682af338bf209ffe987f8be8c7b8461bf638f"
+    },
+    {
+      "run": "pgid_native_removal_20261113_v3",
+      "pid": 46552,
+      "method": "pgid",
+      "cmdline_sha256": "240a8b1ac671a1d36f245a2c5e6a6280addf5d16320d917c9c3c7a69fd46de57"
+    }
+  ]
+}

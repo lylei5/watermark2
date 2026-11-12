@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-12T19:10:30.556335+00:00",
+  "updated_at": "2026-11-12T19:26:09.619996+00:00",
   "status": "three_native_baselines_reproduction",
   "active_experiments": 1,
   "queued_experiments": 4,
@@ -297,7 +297,15 @@
       "protocol": "protocols/pgid_native_removal_20261113_v3.json",
       "protocol_sha256": "d6c9f8770d612b231c08824fc1ca457172cdc4614292477c463e9ff8cb2cda56",
       "coordinator_pid": 46552,
-      "status": "queued"
+      "status": "queued",
+      "carrier_component_checks": {
+        "report": "reports/three_baselines_20261113/pgid_carrier_checks.json",
+        "GS": 2,
+        "TR": 2,
+        "PRC": 2,
+        "T2SMark": 2,
+        "image_inference": false
+      }
     },
     "sembind": {
       "source_commit": "337c9f90a150157ac1d410208ae20e6530ca8cdd",
@@ -326,5 +334,10 @@
     "sembind_prc_native_20261113_v2",
     "seal_paper_native_20261113",
     "pgid_native_removal_20261113_v3"
-  ]
+  ],
+  "native_postprocessing": {
+    "protocol": "reports/three_baselines_20261113/postprocess_protocol.json",
+    "mechanism": "kernel process-exit events",
+    "summary_script": "scripts/defense/summarize_native_baseline.py"
+  }
 }

@@ -1,4 +1,5 @@
 """Freeze published PGID-R GS validation using its unchanged released experiment."""
+import argparse
 import datetime
 import hashlib
 import json
@@ -11,15 +12,23 @@ def sha(path):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--run-name', required=True)
+    parser.add_argument('--after-run', required=True)
+    args = parser.parse_args()
     root = Path('/data0/liyanlei/watermark_research')
-    run = root / 'runs/pgid_native_removal_20261113'
+    run = (root / 'runs' / args.run_name).resolve()
+    assert run.parent == root / 'runs'
     run.mkdir(exist_ok=False)
     manifest = json.loads((root / 'runs/three_baselines_20261113/source_manifest.json').read_text())
     official = manifest['created_source_roots']['PGID']
-    prior = root / 'runs/seal_native_20261113_v2/pipeline_state.json'
+    parent = (root / 'runs' / args.after_run).resolve()
+    assert parent.parent == root / 'runs'
+    prior = parent / 'pipeline_state.json'
     pid = json.loads(prior.read_text())['pid']
-    command = Path(f'/proc/{pid}/cmdline').read_bytes()
-    assert b'seal_native_20261113_v2' in command
+    path = Path(f'/proc/{pid}/cmdline')
+    command = path.read_bytes() if path.exists() else b''
+    assert not command or str(parent).encode() in command
     previous = dict(pid=pid, cmdline_sha256=hashlib.sha256(command).hexdigest())
     for name in ['run_pgid_native.py', 'run_baseline_after_exit.py', 'prepare_pgid_native.py']:
         shutil.copy2(Path(__file__).parent / name, run / name)

@@ -1,4 +1,5 @@
 """Freeze six PRC/PRC-S image-chain checks with new private identities on249."""
+import argparse
 import datetime
 import hashlib
 import importlib.util
@@ -16,6 +17,10 @@ def sha(path):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--run-name', required=True)
+    parser.add_argument('--after-run', required=True)
+    args = parser.parse_args()
     root = Path('/data0/liyanlei/watermark_research')
     assert root.is_dir() and os.name == 'posix'
     os.environ.update(CUDA_VISIBLE_DEVICES='', OPENBLAS_NUM_THREADS='4', NUMBA_NUM_THREADS='4')
@@ -23,9 +28,10 @@ def main():
     import numpy as np
     import torch
     torch.set_num_threads(4)
-    run = root / 'runs/sembind_prc_native_20261113'
+    run = (root / 'runs' / args.run_name).resolve()
+    assert run.parent == root / 'runs'
     run.mkdir(exist_ok=False)
-    private = root / 'private_eval/sembind_prc_native_20261113'
+    private = root / 'private_eval' / run.name
     private.mkdir(mode=0o700, exist_ok=False)
     official = root / 'third_party/frozen/SemBind_337c9f9'
     modules = {}
@@ -64,10 +70,12 @@ def main():
              'sembind_binding.py', 'semantic_code.py', 'sembind_official_audit.py', 'codeword_binding.py']
     for name in names:
         shutil.copy2(Path(__file__).parent / name, run / name)
-    wait_run = root / 'runs/pgid_native_removal_20261113'
+    wait_run = (root / 'runs' / args.after_run).resolve()
+    assert wait_run.parent == root / 'runs'
     pid = json.loads((wait_run / 'pipeline_state.json').read_text())['pid']
-    command = Path(f'/proc/{pid}/cmdline').read_bytes()
-    assert b'pgid_native_removal_20261113' in command
+    path = Path(f'/proc/{pid}/cmdline')
+    command = path.read_bytes() if path.exists() else b''
+    assert not command or str(wait_run).encode() in command
     predecessor = dict(pid=pid, cmdline_sha256=hashlib.sha256(command).hexdigest())
     paths = dict(previous['paths'], official=str(official))
     plan = dict(created_at=datetime.datetime.now(datetime.timezone.utc).isoformat(),

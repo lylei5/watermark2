@@ -1,45 +1,40 @@
 # 扩散模型水印防御研究
 
-本仓库研究内容绑定扩散水印的防御机制。有效改进必须同时有合法检出率、误接受、图像质量和计算预算的可比证据。当前尚未建立优于原生 SemBind 的结果。
+本项目先建立可复核的SemBind、PGID、SEAL防御基线，再研究内容绑定防御。当前尚未完成三个方法的全部图像与攻击验收，也未建立优于它们的结果。[实时状态](project_state.json)记录唯一运行队列；[验收契约](docs/THREE_BASELINE_REPRODUCTION.md)规定实现和数值复现的边界。
 
-## 当前状态
+## 三个防御基线
 
-**SemBind 完整原生复现尚未完成。** 当前代码使用作者发布的语义网络与 DPM 生成/反演组件，载体、绑定和评测编排属于项目实现。当前任务是完成[SemBind、PGID和SEAL三个原生防御基线](docs/THREE_BASELINE_REPRODUCTION.md)。[源码与资产证据](reports/three_baselines_20261113/report.md)已固定；新防御训练暂停。
-
-[第一阶段规格核验](reports/phase1_contract_20261113/report.md)及[300万次随机错误身份核验](reports/phase1_wrong_key_null_20261113/report.md)已完成。167位门槛误报0/300万，双侧95%上界1.22963e-6；这不是固定用户的自然图FPR。[100提示词生成与轨迹测量](reports/phase1_trajectory_native_gs_20261113/report.md)已完成，COCO/SDP第35步一致率P5为0.904639/0.892383，未通过预注册0.95门槛；原GS载体基线的完整反演验证仍在249运行，冻结[执行协议](protocols/phase1_trajectory_native_gs_20261113.json)。此前完成的[连续语义区域筛选](reports/continuous_geometry_screen_20261113/report.md)有 24 条干净图验证：四组均接受 6/6，但主候选未通过绑定偏差和比特准确率门槛，没有执行攻击评测。它不支持鲁棒性或防伪优势。
-
-| 已完成研究 | 主要结果 | 结论范围 |
+| 基线 | 实现依据 | 验证与差异记录 |
 |---|---|---|
-| [共享语义证据](reports/shared_semantic_evidence_20261112/report.md) | 默认合法接受 107/120、最终 Imprint 接受 1/12；候选 85/120、0/12 | 未建立匹配合法检出率下的增益 |
-| [固定语义反馈](reports/semantic_feedback_pilot_20261112/report.md) | full / feedback / consensus 为 58 / 56 / 57，分母均为 60 | 未通过冻结门槛 |
-| [最小反射区域](reports/decision_region_pilot_20261112/report.md) | 主候选 44/60，full 59/60 | 未通过冻结门槛 |
-| [完整码字条件传输](reports/semantic_transport_pilot_20261112/report.md) | 主候选 55/60，full 53/60，同符号重排 57/60 | 保真改善，绑定和合法接受门槛未通过 |
-| [连续语义区域](reports/continuous_geometry_screen_20261113/report.md) | 主候选平均 BA 0.968750，量化对照 1.000000 | 仅六来源干净图筛选，未通过推进门槛 |
+| SemBind | 官方语义网络和DPM生成/精确反演；按最终论文补齐平铺、比例选择、秘密置换和符号绑定 | 原GS OTP空间重复的GS-S；PRC-S采用sigma0.5。作者未发布完整绑定入口，论文补齐部分明确标注。[规格](docs/THREE_BASELINE_REPRODUCTION.md) |
+| PGID | 固定作者`dc4ad96`，原生PGID-F/R及载体判定 | 已有GS/PGID-F10例完整预算；R链路另行验收。GS、TR、PRC、T2SMark原码CPU往返均通过。[结果与范围](docs/DEFENSE_BASELINE_INVENTORY.md) |
+| SEAL | 固定作者`92d31b3`及ICCV2025最终正文、补充材料 | 原公开seed42路径与论文secret-salt路径分别实现、分别验证；距离阈值2.3、匹配块数12。[契约](docs/SEAL_EVALUATION_CONTRACT.md) |
 
-各实验使用不同来源，表格只作证据导航，不能跨行比较方法排名。完整失败结果和冻结协议见[报告索引](reports/README.md)。
+源码版本、模型哈希、依赖和组件检查见[来源报告](reports/three_baselines_20261113/report.md)。模型导入、组件通过、正常图通过和完整论文数值复现分别判断，不用排队任务或少量样本替代后者。
 
-[内容密钥可行性评估](docs/CONTENT_KEY_FEASIBILITY.md)：当前码器在保留至少95%辅助图→最终图配对的半径下，同提示词不同实例落入比例为COCO 82%、SDP 90%。这是描述性诊断，不是攻击成功率；模糊提取器、实例码器训练及整体1e-6保证尚未实现。
+## 实现入口
 
-## 当前实现
-
-| 功能 | 代码与实际范围 |
+| 功能 | 入口 |
 |---|---|
-| 1024 位语义码提取 | [semantic_code.py](scripts/defense/semantic_code.py)，仅语义提取，无水印绑定接口 |
-| 官方生成与反演组件 | [sembind_official_audit.py](scripts/defense/sembind_official_audit.py) 的 `load_official()`，加载发布的 `inversion.exact_inversion` 与原始 diffusers 0.21.4 DPM scheduler |
-| 完整预算实验工作进程 | [run_anchor_binding_worker.py](scripts/defense/run_anchor_binding_worker.py)：生成/反演各 50 步，`inv_order=0`、`decoder_inv=True`，VAE decoder 优化 100 步 |
-| 项目 full 载体 | [anchor_binding.py](scripts/defense/anchor_binding.py)：私有 `binding_key` 派生 HMAC 置换、256 位消息、64 次重复 |
-| 既有攻击基线调用 | [run_published_imprint_full.py](scripts/defense/run_published_imprint_full.py)，固定上游实现，完整 151 次更新 |
+| SemBind语义码 | [semantic_code.py](scripts/defense/semantic_code.py) |
+| SemBind论文掩码 | [sembind_binding.py](scripts/defense/sembind_binding.py)，私有密钥；sigma为0至1 |
+| 原GS/GS-S图像闭环 | [run_phase1_probe_worker.py](scripts/defense/run_phase1_probe_worker.py)，冻结100提示词协议 |
+| PRC/PRC-S图像闭环 | [run_sembind_prc_native.py](scripts/defense/run_sembind_prc_native.py) |
+| SEAL完整语义链路 | [run_seal_native.py](scripts/defense/run_seal_native.py)；论文salt见[seal_paper_simhash.py](scripts/defense/seal_paper_simhash.py) |
+| 作者PGID完整预算入口 | [run_pgid_native.py](scripts/defense/run_pgid_native.py)，原样执行上游run.py |
+| 完成后逐条审计 | [summarize_native_baseline.py](scripts/defense/summarize_native_baseline.py) |
 
-`inv_order=0` 关闭扩散反演中的固定点校正；VAE decoder 优化是另一项操作。论文默认 inverse order 也为 0，但调用该组件本身不证明完整原生复现。[官方论文 §4.1](https://arxiv.org/html/2601.20310v1)的理论 FPR 工作点为 1e-6；本项目的 `BA > 181/256` 尚未与其对齐。
+每个运行在249的`runs/<run>/`保存冻结源码、协议哈希、逐样本产物和退出状态。当前代码可继续维护；重放既有结果使用该运行的冻结版本。工作进程拒绝覆盖已有结果。
 
-现行代码与已执行版本分别保存：已完成结果对应服务器 `runs/<run>/` 中冻结源码及协议哈希；复核这些结果应使用该冻结版本。当前源码清理不会改写既有实验的来源记录。
+SemBind生成和反演均为50步，inverse order0、VAE decoder优化100步。GS同时记录原源码166位、理想独立公平位下167位、历史182位三个工作点。理论阈值不是经验FPR保证；原生PGID、SemBind和SEAL的不同工作点不能直接用于方法排名。
 
-## 工作约束与入口
+## 证据和执行约束
 
-实验仅在 SSH 主机 `249` 的 `/data0/liyanlei/watermark_research` 执行。仅使用空闲 GPU 7、5、4，最多三张，始终排除 GPU 6；不持续轮询。模型、图像与私钥留在服务器。
+[完整报告索引](reports/README.md)保留已完成实验和失败结果。[100提示词轨迹测量](reports/phase1_trajectory_native_gs_20261113/report.md)未通过冻结门槛；[内容密钥评估](docs/CONTENT_KEY_FEASIBILITY.md)记录后续研究所需解决的生成时序和实例区分问题。新防御训练待基线验收后推进。
 
-防御评测只使用顶会顶刊已经发表的攻击基线及其既定实现和完整预算，不创造或改进攻击。所有论文主张需要新的独立确认，并报告实际合法检出率与误接受。
+所有模型推理和CPU评分仅在SSH主机249的`/data0/liyanlei/watermark_research`执行。只使用空闲GPU7、5、4，最多三张，始终排除GPU6；以进程退出事件接续任务，不持续轮询。模型、图像和私钥留在服务器，代码与可公开证据每完成一个单元就提交并推送main。
 
-- [机器可读状态](project_state.json)、[研究交接](GPT_CONTEXT.md)、[研究计划](docs/RESEARCH_PLAN.md)
-- [基线复现清单](docs/DEFENSE_BASELINE_INVENTORY.md)、[文献](docs/LITERATURE.md)、[第三方来源](THIRD_PARTY.md)
-- [仓库同步核验](reports/repository_sync_20261113/report.md)、[操作规则](AGENTS.md)
+防御评测只使用顶会顶刊已经发表的攻击及其既定实现、完整预算，不创造或改进攻击。报告真实合法检出率、错误身份/未加水印负例、伪造接受、图像质量和计算成本，保留失败的合法参考。
+
+- [机器状态](project_state.json)、[交接说明](GPT_CONTEXT.md)、[研究计划](docs/RESEARCH_PLAN.md)
+- [基线证据](docs/DEFENSE_BASELINE_INVENTORY.md)、[第三方来源](THIRD_PARTY.md)、[操作规则](AGENTS.md)

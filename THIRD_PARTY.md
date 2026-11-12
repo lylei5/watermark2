@@ -1,6 +1,18 @@
 # 第三方论文代码与本地证据
 
-核验日期：2026-11-11。下表记录Git子模块固定版本及249服务器实际目录状态；源码存在、权重可用、组件验证与完整方法复现分别判断。论文元数据见[文献记录](docs/LITERATURE.md)。
+目录历史核验日期：2026-11-11；新增干净源码核验日期：2026-11-13。下表记录Git子模块固定版本及249服务器实际目录状态；源码存在、权重可用、组件验证与完整方法复现分别判断。论文元数据见[文献记录](docs/LITERATURE.md)。
+
+## 当前原生基线的干净源码
+
+249的`third_party/frozen`中固定三个独立源码目录：
+
+| 目录 | 上游固定提交 |
+|---|---|
+| `SemBind_337c9f9` | XinZhang1999/SemBind `337c9f90a150157ac1d410208ae20e6530ca8cdd` |
+| `PGID_dc4ad96` | MinhQDuong/PGID `dc4ad963ffefcb4cf84340084db617472983d3e0` |
+| `SEAL_92d31b3` | Kasraarabi/SEAL `92d31b31b93a6e373fe88a584c640beafb68c6fa` |
+
+来源归档、逐文件哈希与新旧版本核验见[来源证据](reports/three_baselines_20261113/source_equivalence.json)及[清单](reports/three_baselines_20261113/source_manifest.json)。下列原目录检查保持其原始日期含义，不能代替上述新运行的冻结来源。
 
 ## 仓库子模块
 

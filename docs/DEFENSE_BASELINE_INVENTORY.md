@@ -1,34 +1,15 @@
-# 防御基线与复现证据清单
+# 三个防御基线的证据清单
 
-更新日期：2026-11-13。论文元数据见[文献记录](LITERATURE.md)。表中区分论文方法、公开源码审计、组件一致性和项目适配器；不把这些状态统称为完整复现。
+当前基线为SemBind、PGID、SEAL。[验收契约](THREE_BASELINE_REPRODUCTION.md)区分代码实现、正常图、完整既有攻击和论文数值复现；动态状态只维护于[project_state.json](../project_state.json)。
 
-| 方法 | 证据与当前实现范围 | 尚不能作出的结论 |
+| 基线 | 已执行证据 | 图像验收范围与限制 |
 |---|---|---|
-| SemBind | [本轮100图/1000条件组件重验](../reports/defense_revalidation_20261111/report.md)；[官方反演组件检查](../reports/sembind_official_audit_20261110/report.md)；[新执行项目适配器完整预算结果](../reports/imprint_fresh_revalidation_20261112/report.md) | 有限组件一致不等于完整原生方法复现；开发语义码相近不证明公开特征绕过或普遍碰撞 |
-| PGID | [本轮官方10例完整151次更新与正常图对照](../reports/defense_revalidation_20261111/report.md)：三个检查点均0/10伪造接受、正常图10/10保留、未加水印封面0/10；[新执行九条件](../reports/pgid_published_revalidation_20261112/report.md)标准90/90、PGID后61/90 | 小样本不证明总体零风险或完整论文规模复现；与SemBind的数据和反演流程不同，不能直接排名 |
-| Geometry | [公开评估契约](EVALUATION_CONTRACT.md)及[公式重实现诊断](../reports/repro_geometry_paper_task_20261103/report.md) | 未完整确定局部映射与拒绝规则；项目L-SPD结果不能充当作者原生组件失效证据 |
-| SEAL | [固定源码契约审计](SEAL_EVALUATION_CONTRACT.md)；2026-11-13核实语义权重文件存在，尚无端到端运行；区分语义与穷举判定 | 测试脚本存在不证明原生语义防伪评测完成；现有GS样本不能替代原生SEAL参考 |
-| PAI | [最终论文与固定源码契约](PAI_EVALUATION_CONTRACT.md)，普通验证明确、完整稳健验证仍有材料缺项 | 无法把GS参考图直接输入为PAI原生水印；源码审计不等于完整模型结果 |
-| ISTS | [CVPR2026 Findings论文](https://openaccess.thecvf.com/content/CVPR2026F/html/Zhu_Towards_Robust_Content_Watermarking_Against_Removal_and_Forgery_Attacks_CVPRF_2026_paper.html)与作者仓库已定位 | 尚未建立本项目同条件完整比较；参数空间大小本身不证明可被伪造 |
-| CoverLock | [官方组件与项目适配说明](../reports/content_verifier_20261110/report.md) | 辅助图GS适配不等于原生后处理防御 |
-| SLICE、Sign Clamping、PP-Mark、GS++ | 文献来源及状态见[LITERATURE.md](LITERATURE.md) | 尚未完成同条件原生复现，不据摘要进行数值排名或断言漏洞 |
+| SemBind | 发布的生成/反演/语义网络源码字节核验；[100图1000条件语义码一致性](../reports/defense_revalidation_20261111/report.md)差异0；[300次掩码解绑定](../reports/three_baselines_20261113/sembind_binding_checks.json)通过；PRC6条CPU原码往返通过 | 原GS空间重复的GS-S使用独立冻结100提示词闭环；PRC-S另行执行。旧扁平GS项目适配器的攻击成绩不转记为新原生GS-S结果。完整作者绑定源码未公开，按用户确认从论文补齐。 |
+| PGID | [10例PGID-F完整预算](../reports/defense_revalidation_20261111/report.md)：原GS各检查点10/10接受，PGID后0/10；合法图10/10、无水印封面0/10。新旧源码可执行AST一致；四载体CPU往返均2/2通过 | [九条件开发验证](../reports/pgid_published_revalidation_20261112/report.md)原始90/90、PGID后61/90。PGID-R有独立完整预算队列。小样本零伪造接受不证明总体零风险或完整论文规模复现。 |
+| SEAL | [固定源码、权重及配置](../reports/three_baselines_20261113/report.md)已核验；论文Algorithm2私有salt组件检查通过 | 原公开代码与论文salt路径各有100提示词协议。候选自身caption派生参考噪声；语义检测与无caption穷举检测分开。不能用GS参考图、组件检查或排队记录冒充SEAL图像结果。 |
 
-当前关键历史结论按[重验计划](../reports/defense_revalidation_20261111/plan.md)重新执行。PGID本轮10例、九条件、SemBind/GS配对链路及完整Imprint均已完成。报告须明确新执行证据与未重验的历史结果。
+三个原生路径保持各自载体、生成/反演器及检测规则；当前没有同工作点的横向排名。原GS的空间重复、PGID的扁平重复、SEAL的分块语义噪声属于不同生成协议。若做共同条件比较，需额外冻结数据、信息权限、合法检出率和预算。
 
-## 项目验证器
+每项结果保留逐来源分母、输入输出哈希、完整更新次数和失败记录。源码索引50/100/150对应PGID发布代码的实际51/101/151更新，不能混写成相同实际预算。理论1e-6不能替代经验自然图FPR，重复同一来源的多个检查点也不是独立样本。
 
-[六条件确认](../reports/geometry_confirmation_20261111/report.md)中全组几何恢复63张合法裁剪查询；[官方九条件](../reports/gs_published_conditions_20261111/report.md)中无新增恢复且损失2张默认接受图；[完整Imprint](../reports/full_imprint_20261111/report.md)中没有额外伪造拒绝收益。[自然负例](../reports/unwatermarked_validation_20261111/report.md)中默认与几何均零误接受。没有证据支持将当前原型写成全面超越上述防御的方法。
-
-## 公平比较要求
-
-生成端方法使用各自原生生成与验证流程，检测端方法记录其实际可见信息。统一数据分母、目标信息权限和已发表评测预算；保留失败的合法参考，不做条件分母筛选。分别报告实际合法检出率、伪造接受、错误身份和未加水印负例、图像质量及计算成本。零相关误报观察不是极低FPR保证。
-
-本项目只使用已发表顶会顶刊的既定攻击基线，不设计或改进攻击。已有小样本、短预算和数值模拟不能替代完整比较。
-
-最新防御候选：[条件内容似然](../reports/conditional_content_likelihood_20261112/report.md)无额外伪造拒绝且降低真实接受；[共享内容锚](../reports/conditional_anchor_pilot_20261112/report.md)未通过预设门槛。[内容耦合分位载体](../reports/conditional_quantile_pilot_20261112/report.md)已完成240条完整验证：候选48/60，full59/60，独立对照54/60；未通过冻结门槛，不扩大该载体。
-
-[共享语义证据](../reports/shared_semantic_evidence_20261112/report.md)已完成120条合法查询与216条完整Imprint验证：默认BA为107/120合法接受、1/12最终伪造接受，主候选为85/120、0/12，未建立匹配合法检出率下的增益。[固定三轮语义反馈](../reports/semantic_feedback_pilot_20261112/report.md)完成180条合法查询，full/feedback/consensus分别58/60、56/60、57/60，未通过冻结门槛，条件扩展的Imprint未执行。两项完成记录及逐条结果均已归档。
-
-[解码区域最小反射](../reports/decision_region_pilot_20261112/report.md)完成240条合法查询，主候选44/60、full59/60，未通过门槛。[完整码字条件传输](../reports/semantic_transport_pilot_20261112/report.md)另完成240条：主候选55/60、full53/60、同符号重排57/60；保真改善但合法接受和绑定门槛未通过。两者均未启动条件Imprint分支，不能报告其伪造接受率为零。[连续语义区域筛选](../reports/continuous_geometry_screen_20261113/report.md)已完成24条干净图验证，四组均6/6；主候选绑定与BA门槛未通过，未执行攻击。完整原生SemBind复现和匹配工作点仍未完成。当前执行[第一阶段协议](PHASE1_PROTOCOL.md)，运行状态见[project_state.json](../project_state.json)。
-
-[第一阶段工作点核验](../reports/phase1_wrong_key_null_20261113/report.md)已完成300万次随机错误身份比较；167位门槛0次接受、双侧95%上界1.22963e-6，不等于固定用户自然图FPR。新的100提示词实验直接调用原GS空间重复编码/译码；与此前扁平重复载体区分。
+其他已审查方法的出处与历史范围见[文献](LITERATURE.md)、[信息契约](EVALUATION_CONTRACT.md)和[完整报告索引](../reports/README.md)。它们不在本轮三个活动基线的完成清单中。已完成的失败实验保留，不作为新基线优越性的证据。

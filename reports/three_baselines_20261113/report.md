@@ -25,3 +25,9 @@ SEAL语义入口使用官方生成、caption、SimHash和反演函数；最终�
 [论文算法2组件检查](seal_paper_simhash_checks.json)通过确定性、密钥隔离和全局RNG不变检查。[独立100提示词图像协议](../../protocols/seal_paper_native_20261113.json)固定了32字节私有salt和公开的哈希/RNG约定，不能据此声称作者实现等价或图像防御通过。此分支插入PRC-S之后、PGID-R之前，新增[队列收据](paper_seal_queue.json)记录实际进程；PGID原数值worker、10来源和完整151更新均未改变。
 
 [预处理与分词配置核验](configuration_audit.json)显示所载配置均与上游Git blob匹配。作者embedding缺失的元数据配置在新固定目录补齐；[3条CPU编码比较](seal_embedding_config_check.json)逐值相同，最大差为0。实际GPU完整链路仍须独立验收。
+
+## PGID四载体组件验收
+
+[原码CPU检查](pgid_carrier_checks.json)对GS、TR、PRC、T2SMark分别执行两例编码与原生检测，共8/8通过。GS、PRC和T2SMark消息BA均为1；TR使用其原生p-value判定。PGID-F/R的k、skip、gamma由官方configure_PGID直接产生并记录。没有运行图像模型或攻击，不能据此宣称其他载体的图像复现完成。
+
+[完成后审计协议](postprocess_protocol.json)固定汇总脚本及等待对象。各链路正常退出后，在249校验产物SHA256、决策分母与判定；SEAL另从保存潜变量独立重建分块L2和匹配计数。没有完成的链路不产生成功率或零接受结论。

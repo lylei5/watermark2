@@ -6,7 +6,7 @@
 
 [完整结果索引](../reports/README.md)记录各轮失败及对照。共享语义评分降低了实际合法接受；生成端反馈、分位载体、最小反射、条件传输和连续语义区域均未通过各自冻结门槛。语义预测精度、预览 LPIPS 或潜变量距离的改善，不能单独作为认证改善的证据。
 
-最新载体研究的[连续区域筛选](../reports/continuous_geometry_screen_20261113/report.md)已完成，只有干净图结果。当前执行[第一阶段协议](PHASE1_PROTOCOL.md)：原GS载体基线、检测工作点与轨迹语义观测；运行状态见project_state.json。
+最新载体研究的[连续区域筛选](../reports/continuous_geometry_screen_20261113/report.md)已完成，只有干净图结果。当前执行[三个原生基线验收](THREE_BASELINE_REPRODUCTION.md)：SemBind、PGID、SEAL的实现、正常图、工作点和完整发表攻击分别闭合；运行状态见project_state.json。
 
 ## 下一阶段验收顺序
 

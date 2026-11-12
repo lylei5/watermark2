@@ -1,4 +1,5 @@
 """Freeze SEAL's released semantic pipeline and final-paper decision constants."""
+import argparse
 import datetime
 import hashlib
 import json
@@ -12,9 +13,14 @@ def sha(path):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--run-name', required=True)
+    parser.add_argument('--after-run', required=True)
+    args = parser.parse_args()
     root = Path('/data0/liyanlei/watermark_research')
     assert root.is_dir() and os.name == 'posix'
-    run = root / 'runs/seal_native_20261113_v2'
+    run = (root / 'runs' / args.run_name).resolve()
+    assert run.parent == root / 'runs'
     run.mkdir(exist_ok=False)
     source = root / 'runs/three_baselines_20261113/source_manifest.json'
     preflight = root / 'runs/three_baselines_20261113/seal_preflight.json'
@@ -29,12 +35,13 @@ def main():
         nxt = group[(group.index(item) + 1) % len(group)]
         sources.append(dict(task=item['task'], dataset=item['dataset'], prompt=item['caption'],
                             null_prompt=nxt['caption'], generation_seed=202611130000 + item['task']))
-    predecessors = []
-    for pid in [28851, 28852, 28853]:
-        path = Path(f'/proc/{pid}/cmdline')
-        command = path.read_bytes() if path.exists() else b''
-        assert not command or b'phase1_trajectory_native_gs_20261113' in command
-        predecessors.append(dict(pid=pid, cmdline_sha256=hashlib.sha256(command).hexdigest()))
+    parent = (root / 'runs' / args.after_run).resolve()
+    assert parent.parent == root / 'runs'
+    pid = json.loads((parent / 'pipeline_state.json').read_text())['pid']
+    path = Path(f'/proc/{pid}/cmdline')
+    command = path.read_bytes() if path.exists() else b''
+    assert not command or str(parent).encode() in command
+    predecessor = dict(pid=pid, cmdline_sha256=hashlib.sha256(command).hexdigest())
     for name in ['run_seal_native.py', 'run_baseline_after_exit.py', 'prepare_seal_native.py']:
         shutil.copy2(Path(__file__).parent / name, run / name)
     shutil.copy2(preflight, run / 'environment_assets.json')
@@ -43,7 +50,6 @@ def main():
     assert json.loads((model / 'scheduler/scheduler_config.json').read_text())['_class_name'] == 'PNDMScheduler'
     plan = dict(created_at=datetime.datetime.now(datetime.timezone.utc).isoformat(),
                 scope='100-source development validation of released SEAL semantic generation and detection; not the paper full benchmark',
-                execution_repair='Use Linux pidfd syscall available on this host. Initial coordinator failed before any GPU worker started; its run remains frozen.',
                 python=str(root / 'envs/seal_reproduction_py310/bin/python'),
                 source=official['path'], source_sha256=official['files'],
                 source_commit=official['commit'], source_manifest_sha256=sha(source),
@@ -60,7 +66,7 @@ def main():
                 decision_source='ICCV2025 final Algorithm3 and Supplement9.1; d<2.3, count>=12',
                 source_paper_gap='Released key derivation does not expose the final paper secret salt',
                 sources=sources, cohort_protocol_sha256=sha(old / 'protocol.json'),
-                gpu_indices=[7, 5, 4], predecessors=predecessors,
+                gpu_indices=[7, 5, 4], predecessors=[predecessor] * 3,
                 worker='run_seal_native.py', worker_sha256=sha(run / 'run_seal_native.py'),
                 coordinator_sha256=sha(run / 'run_baseline_after_exit.py'),
                 attacks=0, distortions=0)

@@ -1,0 +1,169 @@
+{
+  "rows": [
+    {
+      "carrier": "GS",
+      "task": 0,
+      "status": "complete",
+      "accepted": true,
+      "metrics": {
+        "bit_accuracy": 1.0,
+        "p_value": null,
+        "l1_norm_w": null
+      }
+    },
+    {
+      "carrier": "GS",
+      "task": 1,
+      "status": "complete",
+      "accepted": true,
+      "metrics": {
+        "bit_accuracy": 1.0,
+        "p_value": null,
+        "l1_norm_w": null
+      }
+    },
+    {
+      "carrier": "TR",
+      "task": 0,
+      "status": "complete",
+      "accepted": true,
+      "metrics": {
+        "bit_accuracy": null,
+        "p_value": 8.007530731823904e-71,
+        "l1_norm_w": null
+      }
+    },
+    {
+      "carrier": "TR",
+      "task": 1,
+      "status": "complete",
+      "accepted": true,
+      "metrics": {
+        "bit_accuracy": null,
+        "p_value": 3.4656047777664165e-74,
+        "l1_norm_w": null
+      }
+    },
+    {
+      "carrier": "PRC",
+      "task": 0,
+      "status": "complete",
+      "accepted": true,
+      "metrics": {
+        "bit_accuracy": 1.0,
+        "p_value": null,
+        "l1_norm_w": null
+      }
+    },
+    {
+      "carrier": "PRC",
+      "task": 1,
+      "status": "complete",
+      "accepted": true,
+      "metrics": {
+        "bit_accuracy": 1.0,
+        "p_value": null,
+        "l1_norm_w": null
+      }
+    },
+    {
+      "carrier": "T2SMark",
+      "task": 0,
+      "status": "complete",
+      "accepted": true,
+      "metrics": {
+        "bit_accuracy": 1.0,
+        "p_value": null,
+        "l1_norm_w": 2617.3046875
+      }
+    },
+    {
+      "carrier": "T2SMark",
+      "task": 1,
+      "status": "complete",
+      "accepted": true,
+      "metrics": {
+        "bit_accuracy": 1.0,
+        "p_value": null,
+        "l1_norm_w": 2591.627197265625
+      }
+    }
+  ],
+  "native_parameters": [
+    {
+      "carrier": "GS",
+      "variant": "forgery",
+      "steps": 50,
+      "k": 15,
+      "skip": 3,
+      "gamma": 0.001
+    },
+    {
+      "carrier": "GS",
+      "variant": "removal",
+      "steps": 50,
+      "k": 10,
+      "skip": 1,
+      "gamma": 0.045
+    },
+    {
+      "carrier": "TR",
+      "variant": "forgery",
+      "steps": 50,
+      "k": 15,
+      "skip": 3,
+      "gamma": 0.001
+    },
+    {
+      "carrier": "TR",
+      "variant": "removal",
+      "steps": 50,
+      "k": 10,
+      "skip": 1,
+      "gamma": 0.045
+    },
+    {
+      "carrier": "PRC",
+      "variant": "forgery",
+      "steps": 50,
+      "k": 7,
+      "skip": 3,
+      "gamma": 0.001
+    },
+    {
+      "carrier": "PRC",
+      "variant": "removal",
+      "steps": 50,
+      "k": 10,
+      "skip": 1,
+      "gamma": 0.045
+    },
+    {
+      "carrier": "T2SMark",
+      "variant": "forgery",
+      "steps": 50,
+      "k": 15,
+      "skip": 3,
+      "gamma": 0.001
+    },
+    {
+      "carrier": "T2SMark",
+      "variant": "removal",
+      "steps": 50,
+      "k": 10,
+      "skip": 1,
+      "gamma": 0.045
+    }
+  ],
+  "dependencies": {
+    "torch": "2.5.1",
+    "numpy": "2.2.6",
+    "galois": "0.4.10",
+    "ldpc": "2.4.1",
+    "diffusers": "0.31.0",
+    "transformers": "4.46.3"
+  },
+  "source_commit": "dc4ad963ffefcb4cf84340084db617472983d3e0",
+  "script_sha256": "e4470a87c70125daa7c40ace7c7eaf12d0d24b5d6f146ef49657e7e79a03e82b",
+  "scope": "CPU latent encode/validate and official parameter dispatch only; no image pipeline or attacks"
+}
