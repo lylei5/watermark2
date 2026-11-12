@@ -513,7 +513,7 @@
     "status": "prepared",
     "protocol": "protocols/conditional_quantile_pilot_20261112.json",
     "plan": "reports/conditional_quantile_pilot_20261112/plan.md",
-    "server_root": "/data0/liyanlei/watermark_research/runs/conditional_quantile_pilot_20261112",
+    "server_root": "/data0/liyanlei/watermark_research/runs/conditional_quantile_pilot_20261112_v2",
     "gpu_indices": [
       7,
       5,
@@ -529,6 +529,8 @@
     ],
     "unit_checks_passed": true,
     "completion_mode": "Process exit -> independent audit -> frozen feasibility gate -> unchanged full published baseline if feasible",
-    "superiority_established": false
+    "superiority_established": false,
+    "implementation_version": 2,
+    "repetitions_per_channel": 32
   }
 }

@@ -3,24 +3,26 @@
   "identities": 32,
   "roundtrips": 64,
   "raw_bit_errors": 0,
+  "magnitude_repetitions_per_bit": 32,
+  "sign_repetitions_per_bit": 32,
   "statistics": {
     "quantile_coupled": {
       "n": 524288,
-      "mean": -0.002367191067882221,
-      "variance": 1.0015048316282944,
-      "ks_statistic": 0.0018324046051143017
+      "mean": 0.0017682948732553442,
+      "variance": 1.0015656632704852,
+      "ks_statistic": 0.001556437162621549
     },
     "quantile_independent": {
       "n": 524288,
-      "mean": 0.0003246624026616608,
-      "variance": 1.002047106510751,
-      "ks_statistic": 0.0012677367368874037
+      "mean": 0.0008744493225780822,
+      "variance": 1.0022697967648646,
+      "ks_statistic": 0.0011279706381566168
     }
   },
   "scope": "Synthetic algebra and marginal sanity checks; not robustness, security, or joint-distribution proof",
   "source_sha256": {
-    "test_quantile_binding.py": "0488a349b93c57c4ca080fd529b338f28d4c26ab959c1e217352239f8867e403",
-    "quantile_binding.py": "bc9d5735228b2b971093bf8295f931c33840e0a0e2f49250d4bc6de48c434f8c",
+    "test_quantile_binding.py": "6e41a6ea9c87da3271f514e2adf17c2fa746eed9d07207c97f3a3a9ab1f626fc",
+    "quantile_binding.py": "11d313d5cd9c5961955d6cbc8bf341aa115c651b7dc8aefea6fef82fe4b71377",
     "anchor_binding.py": "82d474e45273fdcb97d1805686ae0f6d8c8151c27feaafbdc7173040cff087b1"
   }
 }

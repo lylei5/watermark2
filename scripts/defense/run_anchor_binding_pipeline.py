@@ -79,7 +79,8 @@ def audit(run,stage,plan):
             coordinates=dctn(z.astype(np.float64),axes=(-2,-1),norm='ortho').ravel()
             raw=(coordinates>0).astype(np.uint8)
             raw[anchor]=(np.abs(coordinates[anchor])>=norm.ppf(.75)).astype(np.uint8)
-            values=2*raw.astype(float)-1
+            payload_order=np.concatenate([anchor,np.setdiff1d(np.arange(16384),anchor)])
+            values=2*raw[payload_order].astype(float)-1
         else:
             if r['arm']=='anchor_random':a=np.sort(np.random.default_rng(2026111201).permutation(4096)[:2048])
             else:a=np.asarray(sorted(range(4096),key=lambda j:(j//64+j%64,j))[:2048])

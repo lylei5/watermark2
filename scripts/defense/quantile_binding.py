@@ -24,14 +24,17 @@ def embed(aux_latent, code, root, task, arm):
     else:
         base = np.random.default_rng(s['independent_anchor_seed']).standard_normal(16384)
     low, high = partition('anchor_low')
+    # The first32 full message copies use magnitude, the next32 use signs.
+    coordinate_bits = np.empty_like(bits)
+    coordinate_bits[np.concatenate([low, high])] = bits
     # Half-normal CDF; discard its first bit and preserve the residual rank.
     u = 2 * ndtr(np.abs(base[low])) - 1
     residual = np.mod(2 * u, 1)
-    target = (residual + bits[low]) / 2
+    target = (residual + coordinate_bits[low]) / 2
     probability = np.clip((target + 1) / 2, .5, np.nextafter(1., 0.))
     z = base.copy()
     z[low] = np.where(base[low] >= 0, 1., -1.) * ndtri(probability)
-    z[high] = np.abs(base[high]) * (2 * bits[high].astype(float) - 1)
+    z[high] = np.abs(base[high]) * (2 * coordinate_bits[high].astype(float) - 1)
     return idctn(z.reshape(1, 4, 64, 64), axes=(-2, -1), norm='ortho').astype(np.float32)
 
 
@@ -40,9 +43,10 @@ def decode(latent, code, root, task, arm):
         return anchor_decode(latent, code, root, task, arm)
     _, cipher, message, key = identity(root, task)
     z = dctn(np.asarray(latent, dtype=np.float64), axes=(-2, -1), norm='ortho').ravel()
-    low, _ = partition('anchor_low')
+    low, high = partition('anchor_low')
     observations = (z > 0).astype(np.uint8)
     observations[low] = (np.abs(z[low]) >= MEDIAN).astype(np.uint8)
+    observations = observations[np.concatenate([low, high])]
     mask = np.tile(np.asarray(code, dtype=np.uint8), 16)[order(key, 16384)]
     stream = cipher ^ np.tile(message, 64)
     votes = (observations ^ mask ^ stream).reshape(64, 256).sum(0)

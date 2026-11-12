@@ -1,0 +1,17 @@
+{
+  "status": "aborted_implementation_issue",
+  "time_utc": "2026-11-12T04:02:28.494012+00:00",
+  "verified_own_pids": [
+    36064,
+    39356,
+    39364,
+    39365
+  ],
+  "reason": "Unequal modulation-channel repetitions per identity bit discovered by deterministic encoding audit; replace with32 magnitude plus32 sign observations per bit before scoring results are inspected",
+  "image_scores_inspected": false,
+  "completed_benchmark": false,
+  "preserve_original_artifacts": true,
+  "replacement_run": "/data0/liyanlei/watermark_research/runs/conditional_quantile_pilot_20261112_v2",
+  "original_protocol_sha256": "09f1faa1884159a0fcb2541893dba1baed76438161a54e68c94a3b577627840c",
+  "replacement_protocol_sha256": "a44ae87b9004edc38967611f01efea301133a811fde1902d5aa71cde9271a426"
+}
