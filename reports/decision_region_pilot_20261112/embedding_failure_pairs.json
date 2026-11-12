@@ -1,0 +1,1046 @@
+{
+  "completed": true,
+  "runs": [
+    {
+      "run": "conditional_anchor_pilot_20261112",
+      "manifest_sha256": "50f63eb446a2275ddc5b60e927e1e7fd21fd85a792fdcb492cbda6c70980c413",
+      "protocol_sha256": "c5940d79324a6afff22608686f3a3a81777628884aa8ace59b603a264fdbc2cb",
+      "n_records": 240,
+      "summary": [
+        {
+          "arm": "full",
+          "n": 60,
+          "accepted": 53,
+          "mean_ba": 0.8822916666666667,
+          "mean_binding_mismatch": 0.09505208333333333,
+          "mean_reference_lpips": 0.7259464661280314
+        },
+        {
+          "arm": "anchor_low",
+          "n": 60,
+          "accepted": 53,
+          "mean_ba": 0.8734375,
+          "mean_binding_mismatch": 0.058756510416666664,
+          "mean_reference_lpips": 0.37081558257341385
+        },
+        {
+          "arm": "independent_low",
+          "n": 60,
+          "accepted": 54,
+          "mean_ba": 0.8633463541666667,
+          "mean_binding_mismatch": 0.08024088541666667,
+          "mean_reference_lpips": 0.7666466931502024
+        },
+        {
+          "arm": "anchor_random",
+          "n": 60,
+          "accepted": 49,
+          "mean_ba": 0.8731770833333333,
+          "mean_binding_mismatch": 0.06380208333333333,
+          "mean_reference_lpips": 0.6660532454649607
+        }
+      ],
+      "paired": [
+        {
+          "arm": "anchor_low",
+          "conditions": {
+            "brightness_factor": {
+              "n": 6,
+              "full": 5,
+              "candidate": 6,
+              "recovered": 1,
+              "lost": 0
+            },
+            "clean": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "gaussian_blur_r": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "gaussian_std": {
+              "n": 6,
+              "full": 5,
+              "candidate": 4,
+              "recovered": 0,
+              "lost": 1
+            },
+            "jpeg_ratio": {
+              "n": 6,
+              "full": 5,
+              "candidate": 6,
+              "recovered": 1,
+              "lost": 0
+            },
+            "median_blur_k": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "random_crop_ratio": {
+              "n": 6,
+              "full": 6,
+              "candidate": 5,
+              "recovered": 0,
+              "lost": 1
+            },
+            "random_drop_ratio": {
+              "n": 6,
+              "full": 4,
+              "candidate": 4,
+              "recovered": 1,
+              "lost": 1
+            },
+            "resize_ratio": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "sp_prob": {
+              "n": 6,
+              "full": 4,
+              "candidate": 4,
+              "recovered": 0,
+              "lost": 0
+            }
+          },
+          "sources": [
+            {
+              "task": 0,
+              "full": 10,
+              "candidate": 9,
+              "n": 10
+            },
+            {
+              "task": 1,
+              "full": 9,
+              "candidate": 7,
+              "n": 10
+            },
+            {
+              "task": 2,
+              "full": 8,
+              "candidate": 10,
+              "n": 10
+            },
+            {
+              "task": 3,
+              "full": 10,
+              "candidate": 10,
+              "n": 10
+            },
+            {
+              "task": 4,
+              "full": 10,
+              "candidate": 10,
+              "n": 10
+            },
+            {
+              "task": 5,
+              "full": 6,
+              "candidate": 7,
+              "n": 10
+            }
+          ],
+          "recovered": 3,
+          "lost": 3
+        },
+        {
+          "arm": "independent_low",
+          "conditions": {
+            "brightness_factor": {
+              "n": 6,
+              "full": 5,
+              "candidate": 5,
+              "recovered": 0,
+              "lost": 0
+            },
+            "clean": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "gaussian_blur_r": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "gaussian_std": {
+              "n": 6,
+              "full": 5,
+              "candidate": 5,
+              "recovered": 1,
+              "lost": 1
+            },
+            "jpeg_ratio": {
+              "n": 6,
+              "full": 5,
+              "candidate": 6,
+              "recovered": 1,
+              "lost": 0
+            },
+            "median_blur_k": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "random_crop_ratio": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "random_drop_ratio": {
+              "n": 6,
+              "full": 4,
+              "candidate": 3,
+              "recovered": 1,
+              "lost": 2
+            },
+            "resize_ratio": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "sp_prob": {
+              "n": 6,
+              "full": 4,
+              "candidate": 5,
+              "recovered": 1,
+              "lost": 0
+            }
+          },
+          "sources": [
+            {
+              "task": 0,
+              "full": 10,
+              "candidate": 10,
+              "n": 10
+            },
+            {
+              "task": 1,
+              "full": 9,
+              "candidate": 7,
+              "n": 10
+            },
+            {
+              "task": 2,
+              "full": 8,
+              "candidate": 9,
+              "n": 10
+            },
+            {
+              "task": 3,
+              "full": 10,
+              "candidate": 9,
+              "n": 10
+            },
+            {
+              "task": 4,
+              "full": 10,
+              "candidate": 10,
+              "n": 10
+            },
+            {
+              "task": 5,
+              "full": 6,
+              "candidate": 9,
+              "n": 10
+            }
+          ],
+          "recovered": 4,
+          "lost": 3
+        },
+        {
+          "arm": "anchor_random",
+          "conditions": {
+            "brightness_factor": {
+              "n": 6,
+              "full": 5,
+              "candidate": 3,
+              "recovered": 0,
+              "lost": 2
+            },
+            "clean": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "gaussian_blur_r": {
+              "n": 6,
+              "full": 6,
+              "candidate": 5,
+              "recovered": 0,
+              "lost": 1
+            },
+            "gaussian_std": {
+              "n": 6,
+              "full": 5,
+              "candidate": 5,
+              "recovered": 1,
+              "lost": 1
+            },
+            "jpeg_ratio": {
+              "n": 6,
+              "full": 5,
+              "candidate": 5,
+              "recovered": 1,
+              "lost": 1
+            },
+            "median_blur_k": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "random_crop_ratio": {
+              "n": 6,
+              "full": 6,
+              "candidate": 5,
+              "recovered": 0,
+              "lost": 1
+            },
+            "random_drop_ratio": {
+              "n": 6,
+              "full": 4,
+              "candidate": 4,
+              "recovered": 1,
+              "lost": 1
+            },
+            "resize_ratio": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "sp_prob": {
+              "n": 6,
+              "full": 4,
+              "candidate": 4,
+              "recovered": 1,
+              "lost": 1
+            }
+          },
+          "sources": [
+            {
+              "task": 0,
+              "full": 10,
+              "candidate": 10,
+              "n": 10
+            },
+            {
+              "task": 1,
+              "full": 9,
+              "candidate": 3,
+              "n": 10
+            },
+            {
+              "task": 2,
+              "full": 8,
+              "candidate": 8,
+              "n": 10
+            },
+            {
+              "task": 3,
+              "full": 10,
+              "candidate": 10,
+              "n": 10
+            },
+            {
+              "task": 4,
+              "full": 10,
+              "candidate": 10,
+              "n": 10
+            },
+            {
+              "task": 5,
+              "full": 6,
+              "candidate": 8,
+              "n": 10
+            }
+          ],
+          "recovered": 4,
+          "lost": 8
+        }
+      ]
+    },
+    {
+      "run": "conditional_quantile_pilot_20261112_v2",
+      "manifest_sha256": "cc122ff8315b32f5092104be5ea9385e0fbf4cf4678cbed50bcdc4cd583ce030",
+      "protocol_sha256": "a44ae87b9004edc38967611f01efea301133a811fde1902d5aa71cde9271a426",
+      "n_records": 240,
+      "summary": [
+        {
+          "arm": "full",
+          "n": 60,
+          "accepted": 59,
+          "mean_ba": 0.9372395833333333,
+          "mean_binding_mismatch": 0.072265625,
+          "mean_reference_lpips": 0.8281306624412537
+        },
+        {
+          "arm": "anchor_low",
+          "n": 60,
+          "accepted": 54,
+          "mean_ba": 0.8888020833333333,
+          "mean_binding_mismatch": 0.04638671875,
+          "mean_reference_lpips": 0.36732199788093567
+        },
+        {
+          "arm": "quantile_coupled",
+          "n": 60,
+          "accepted": 48,
+          "mean_ba": 0.8503255208333333,
+          "mean_binding_mismatch": 0.09651692708333333,
+          "mean_reference_lpips": 0.6438509374856949
+        },
+        {
+          "arm": "quantile_independent",
+          "n": 60,
+          "accepted": 54,
+          "mean_ba": 0.8695963541666667,
+          "mean_binding_mismatch": 0.061686197916666664,
+          "mean_reference_lpips": 0.8044129014015198
+        }
+      ],
+      "paired": [
+        {
+          "arm": "anchor_low",
+          "conditions": {
+            "brightness_factor": {
+              "n": 6,
+              "full": 6,
+              "candidate": 5,
+              "recovered": 0,
+              "lost": 1
+            },
+            "clean": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "gaussian_blur_r": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "gaussian_std": {
+              "n": 6,
+              "full": 6,
+              "candidate": 4,
+              "recovered": 0,
+              "lost": 2
+            },
+            "jpeg_ratio": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "median_blur_k": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "random_crop_ratio": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "random_drop_ratio": {
+              "n": 6,
+              "full": 5,
+              "candidate": 4,
+              "recovered": 0,
+              "lost": 1
+            },
+            "resize_ratio": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "sp_prob": {
+              "n": 6,
+              "full": 6,
+              "candidate": 5,
+              "recovered": 0,
+              "lost": 1
+            }
+          },
+          "sources": [
+            {
+              "task": 0,
+              "full": 10,
+              "candidate": 10,
+              "n": 10
+            },
+            {
+              "task": 1,
+              "full": 10,
+              "candidate": 10,
+              "n": 10
+            },
+            {
+              "task": 2,
+              "full": 10,
+              "candidate": 8,
+              "n": 10
+            },
+            {
+              "task": 3,
+              "full": 9,
+              "candidate": 9,
+              "n": 10
+            },
+            {
+              "task": 4,
+              "full": 10,
+              "candidate": 10,
+              "n": 10
+            },
+            {
+              "task": 5,
+              "full": 10,
+              "candidate": 7,
+              "n": 10
+            }
+          ],
+          "recovered": 0,
+          "lost": 5
+        },
+        {
+          "arm": "quantile_coupled",
+          "conditions": {
+            "brightness_factor": {
+              "n": 6,
+              "full": 6,
+              "candidate": 5,
+              "recovered": 0,
+              "lost": 1
+            },
+            "clean": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "gaussian_blur_r": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "gaussian_std": {
+              "n": 6,
+              "full": 6,
+              "candidate": 3,
+              "recovered": 0,
+              "lost": 3
+            },
+            "jpeg_ratio": {
+              "n": 6,
+              "full": 6,
+              "candidate": 5,
+              "recovered": 0,
+              "lost": 1
+            },
+            "median_blur_k": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "random_crop_ratio": {
+              "n": 6,
+              "full": 6,
+              "candidate": 4,
+              "recovered": 0,
+              "lost": 2
+            },
+            "random_drop_ratio": {
+              "n": 6,
+              "full": 5,
+              "candidate": 3,
+              "recovered": 0,
+              "lost": 2
+            },
+            "resize_ratio": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "sp_prob": {
+              "n": 6,
+              "full": 6,
+              "candidate": 4,
+              "recovered": 0,
+              "lost": 2
+            }
+          },
+          "sources": [
+            {
+              "task": 0,
+              "full": 10,
+              "candidate": 10,
+              "n": 10
+            },
+            {
+              "task": 1,
+              "full": 10,
+              "candidate": 8,
+              "n": 10
+            },
+            {
+              "task": 2,
+              "full": 10,
+              "candidate": 4,
+              "n": 10
+            },
+            {
+              "task": 3,
+              "full": 9,
+              "candidate": 9,
+              "n": 10
+            },
+            {
+              "task": 4,
+              "full": 10,
+              "candidate": 10,
+              "n": 10
+            },
+            {
+              "task": 5,
+              "full": 10,
+              "candidate": 7,
+              "n": 10
+            }
+          ],
+          "recovered": 0,
+          "lost": 11
+        },
+        {
+          "arm": "quantile_independent",
+          "conditions": {
+            "brightness_factor": {
+              "n": 6,
+              "full": 6,
+              "candidate": 4,
+              "recovered": 0,
+              "lost": 2
+            },
+            "clean": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "gaussian_blur_r": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "gaussian_std": {
+              "n": 6,
+              "full": 6,
+              "candidate": 5,
+              "recovered": 0,
+              "lost": 1
+            },
+            "jpeg_ratio": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "median_blur_k": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "random_crop_ratio": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "random_drop_ratio": {
+              "n": 6,
+              "full": 5,
+              "candidate": 4,
+              "recovered": 1,
+              "lost": 2
+            },
+            "resize_ratio": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "sp_prob": {
+              "n": 6,
+              "full": 6,
+              "candidate": 5,
+              "recovered": 0,
+              "lost": 1
+            }
+          },
+          "sources": [
+            {
+              "task": 0,
+              "full": 10,
+              "candidate": 10,
+              "n": 10
+            },
+            {
+              "task": 1,
+              "full": 10,
+              "candidate": 10,
+              "n": 10
+            },
+            {
+              "task": 2,
+              "full": 10,
+              "candidate": 8,
+              "n": 10
+            },
+            {
+              "task": 3,
+              "full": 9,
+              "candidate": 10,
+              "n": 10
+            },
+            {
+              "task": 4,
+              "full": 10,
+              "candidate": 10,
+              "n": 10
+            },
+            {
+              "task": 5,
+              "full": 10,
+              "candidate": 6,
+              "n": 10
+            }
+          ],
+          "recovered": 1,
+          "lost": 6
+        }
+      ]
+    },
+    {
+      "run": "semantic_feedback_pilot_20261112",
+      "manifest_sha256": "2633628c1bf6834d9837ab763ce97106aba31b43043327360557196c85505337",
+      "protocol_sha256": "4fe3da58970a62270b5a2192752415e107cdff80983b5e96e7947eed97ff38d0",
+      "n_records": 180,
+      "summary": [
+        {
+          "arm": "full",
+          "n": 60,
+          "accepted": 58,
+          "mean_ba": 0.9051432291666667,
+          "mean_binding_mismatch": 0.10546875,
+          "mean_reference_lpips": 0.7268839776515961
+        },
+        {
+          "arm": "feedback",
+          "n": 60,
+          "accepted": 56,
+          "mean_ba": 0.899609375,
+          "mean_binding_mismatch": 0.09391276041666667,
+          "mean_reference_lpips": 0.722011148929596
+        },
+        {
+          "arm": "consensus",
+          "n": 60,
+          "accepted": 57,
+          "mean_ba": 0.9063802083333333,
+          "mean_binding_mismatch": 0.11995442708333333,
+          "mean_reference_lpips": 0.7206004659334818
+        }
+      ],
+      "paired": [
+        {
+          "arm": "feedback",
+          "conditions": {
+            "brightness_factor": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "clean": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "gaussian_blur_r": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "gaussian_std": {
+              "n": 6,
+              "full": 6,
+              "candidate": 5,
+              "recovered": 0,
+              "lost": 1
+            },
+            "jpeg_ratio": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "median_blur_k": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "random_crop_ratio": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "random_drop_ratio": {
+              "n": 6,
+              "full": 4,
+              "candidate": 3,
+              "recovered": 0,
+              "lost": 1
+            },
+            "resize_ratio": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "sp_prob": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            }
+          },
+          "sources": [
+            {
+              "task": 0,
+              "full": 10,
+              "candidate": 10,
+              "n": 10
+            },
+            {
+              "task": 1,
+              "full": 10,
+              "candidate": 8,
+              "n": 10
+            },
+            {
+              "task": 2,
+              "full": 9,
+              "candidate": 9,
+              "n": 10
+            },
+            {
+              "task": 3,
+              "full": 10,
+              "candidate": 10,
+              "n": 10
+            },
+            {
+              "task": 4,
+              "full": 9,
+              "candidate": 9,
+              "n": 10
+            },
+            {
+              "task": 5,
+              "full": 10,
+              "candidate": 10,
+              "n": 10
+            }
+          ],
+          "recovered": 0,
+          "lost": 2
+        },
+        {
+          "arm": "consensus",
+          "conditions": {
+            "brightness_factor": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "clean": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "gaussian_blur_r": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "gaussian_std": {
+              "n": 6,
+              "full": 6,
+              "candidate": 5,
+              "recovered": 0,
+              "lost": 1
+            },
+            "jpeg_ratio": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "median_blur_k": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "random_crop_ratio": {
+              "n": 6,
+              "full": 6,
+              "candidate": 5,
+              "recovered": 0,
+              "lost": 1
+            },
+            "random_drop_ratio": {
+              "n": 6,
+              "full": 4,
+              "candidate": 5,
+              "recovered": 1,
+              "lost": 0
+            },
+            "resize_ratio": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            },
+            "sp_prob": {
+              "n": 6,
+              "full": 6,
+              "candidate": 6,
+              "recovered": 0,
+              "lost": 0
+            }
+          },
+          "sources": [
+            {
+              "task": 0,
+              "full": 10,
+              "candidate": 10,
+              "n": 10
+            },
+            {
+              "task": 1,
+              "full": 10,
+              "candidate": 9,
+              "n": 10
+            },
+            {
+              "task": 2,
+              "full": 9,
+              "candidate": 10,
+              "n": 10
+            },
+            {
+              "task": 3,
+              "full": 10,
+              "candidate": 10,
+              "n": 10
+            },
+            {
+              "task": 4,
+              "full": 9,
+              "candidate": 8,
+              "n": 10
+            },
+            {
+              "task": 5,
+              "full": 10,
+              "candidate": 10,
+              "n": 10
+            }
+          ],
+          "recovered": 1,
+          "lost": 2
+        }
+      ]
+    }
+  ],
+  "unique_model_records": 660,
+  "inference": "Within-run paired descriptive comparison only. Different source cohorts are not pooled or ranked across runs. No new model execution; consumed development data.",
+  "script_sha256": "65936297d1fdb9d3dfd6b61879ff29c891260a244af1817f88c8b241909530b2"
+}

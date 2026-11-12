@@ -12,6 +12,9 @@
 | [LAW，2026预印本](https://arxiv.org/abs/2607.22386) | 角度载体与按幅值选择稳定坐标 | 幅值影响几何稳定性已有明确讨论 |
 | [RAIN，2026预印本](https://arxiv.org/html/2609.14856v1) | 提取器以恢复正确GS决策区域为目标 | “无需精确恢复初始噪声”及决策区域视角已公开；本轮研究的是生成端的编码选择 |
 | [Latent Coordinate Sign Clamping，2026预印本](https://arxiv.org/abs/2610.40204) | 潜变量符号写入及内容认证 | 符号操作、内容认证和高幅值选择不构成单独新贡献 |
+| [Shallow Diffuse，NeurIPS2025](https://proceedings.neurips.cc/paper_files/paper/2025/hash/e23ea56888af722bfa601f7b47057dac-Abstract-Conference.html) | 利用生成过程的低维子空间分离图像生成与水印 | 降低生成与水印之间的干扰是已有目标；本轮约束对象是原始GS重复译码区域 |
+| [CSGuard，2026预印本](https://arxiv.org/html/2605.01479v1) | 以秘密测量矩阵约束中间生成与反演轨迹，使用最小扰动投影 | “秘密约束＋最小扰动投影”已有公开研究；本轮不改变生成或反演轨迹算法 |
+| [ISTS，CVPR2026 Findings](https://openaccess.thecvf.com/content/CVPR2026F/html/Zhu_Towards_Robust_Content_Watermarking_Against_Removal_and_Forgery_Attacks_CVPRF_2026_paper.html) | 按实例语义选择注入时刻与水印图样，并采用双侧检测 | 语义相关的时刻或图样分配并非新思路；明确区分Findings与主会 |
 
 本轮需要验证的具体命题是：在相同语义组件、身份载荷、载体坐标、生成预算和硬译码器下，利用重复码解码区域中的自由度，是否能减少水印对绑定对象的改变，并转化为实际合法接受及防伪收益。固定幅值反射的排序解和理想一次性密文下的联合高斯论证只是支撑这一命题的分析，不能单独证明论文创新性。
 
