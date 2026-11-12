@@ -26,3 +26,5 @@
 本项目只使用已发表顶会顶刊的既定攻击基线，不设计或改进攻击。已有小样本、短预算和数值模拟不能替代完整比较。
 
 最新防御候选：[条件内容似然](../reports/conditional_content_likelihood_20261112/report.md)无额外伪造拒绝且降低真实接受；[共享内容锚](../reports/conditional_anchor_pilot_20261112/report.md)未通过预设门槛。[内容耦合分位载体](../reports/conditional_quantile_pilot_20261112/report.md)已完成240条完整验证：候选48/60，full59/60，独立对照54/60；未通过冻结门槛，不扩大该载体。
+
+[共享语义证据](../reports/shared_semantic_evidence_20261112/report.md)已完成120条合法查询与216条完整Imprint验证：默认BA为107/120合法接受、1/12最终伪造接受，主候选为85/120、0/12，未建立匹配合法检出率下的增益。[固定三轮语义反馈](../reports/semantic_feedback_pilot_20261112/report.md)完成180条合法查询，full/feedback/consensus分别58/60、56/60、57/60，未通过冻结门槛，条件扩展的Imprint未执行。两项完成记录及逐条结果均已归档。

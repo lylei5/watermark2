@@ -1,0 +1,464 @@
+{
+  "audit_time_utc": "2026-11-12T12:25:28.857077+00:00",
+  "execution_host": "249",
+  "audit_script_sha256": "297e35da0cfa9df625fe5c2ee200e891d6d86e6aad9bebc8a43ac59745df56b9",
+  "scope": "Artifact and arithmetic audit; no new model execution",
+  "runs": {
+    "shared_semantic_evidence_20261112": {
+      "completion": {
+        "status": "complete",
+        "pid": 24027,
+        "time_utc": "2026-11-12T10:13:01.212718+00:00",
+        "stage": "all_endpoints_independently_audited",
+        "genuine_records": 120,
+        "forgery_records": 216
+      },
+      "protocol_sha256": "82cc5bdcdee60bb5ab1d78f8d3173ad5437d6fcf8a70bf339d26c6747c7de256",
+      "source_hashes_verified": true,
+      "external_hashes_verified": true,
+      "records": {
+        "genuine": {
+          "n": 120,
+          "wrong_identity_pairs": 1320,
+          "wrong_accepts": {
+            "default_ba": 0,
+            "ba": 0,
+            "latent_soft_ba": 0,
+            "coordinate_soft_ba": 0,
+            "group_constant": 0,
+            "group_query": 0
+          }
+        },
+        "forgery": {
+          "n": 216,
+          "wrong_identity_pairs": 0,
+          "wrong_accepts": {}
+        }
+      },
+      "artifacts": {
+        "genuine_defense_results.json": "43cc90eaa6bb5d223e6edbad1081a1105ad8cc71efa45d5bb800c613228a26ab",
+        "genuine_verified.json": "06ad346e44cf11b6b1f5de61c0ce6c28133792f67b3f96395dba51fccfa1bc3d",
+        "forgery_defense_results.json": "91175cb43e368e5fb956fc4748971d18c27126e4bd52b76166b578a364c937a0",
+        "forgery_verified.json": "63c9190064b077ba0ce7f9971f9869b7108b417c880e8192faadc2688452b43f",
+        "pipeline_state.json": "df3796070c46ffaca1b6fff6e0fa1b72cf1572d6f858e3c5f6424f51c532c6fc"
+      },
+      "conditions": {
+        "full": {
+          "clean": [
+            12,
+            12
+          ],
+          "random_crop_ratio": [
+            10,
+            12
+          ],
+          "random_drop_ratio": [
+            9,
+            12
+          ],
+          "brightness_factor": [
+            11,
+            12
+          ],
+          "jpeg_ratio": [
+            11,
+            12
+          ],
+          "gaussian_blur_r": [
+            11,
+            12
+          ],
+          "gaussian_std": [
+            10,
+            12
+          ],
+          "median_blur_k": [
+            11,
+            12
+          ],
+          "sp_prob": [
+            10,
+            12
+          ],
+          "resize_ratio": [
+            12,
+            12
+          ]
+        }
+      },
+      "sources": {
+        "full": {
+          "0": [
+            7,
+            10
+          ],
+          "3": [
+            10,
+            10
+          ],
+          "6": [
+            10,
+            10
+          ],
+          "9": [
+            10,
+            10
+          ],
+          "1": [
+            9,
+            10
+          ],
+          "4": [
+            10,
+            10
+          ],
+          "7": [
+            9,
+            10
+          ],
+          "10": [
+            10,
+            10
+          ],
+          "2": [
+            10,
+            10
+          ],
+          "5": [
+            9,
+            10
+          ],
+          "8": [
+            7,
+            10
+          ],
+          "11": [
+            6,
+            10
+          ]
+        }
+      },
+      "maximum_score_difference": 2.0589093097100886e-08,
+      "published_imprint": {
+        "jobs": 12,
+        "updates_per_job": 151,
+        "checkpoints_per_job": 16
+      },
+      "passed": true
+    },
+    "semantic_feedback_pilot_20261112": {
+      "completion": {
+        "status": "complete",
+        "pid": 20195,
+        "time_utc": "2026-11-12T11:09:13.756885+00:00",
+        "stage": "failed_frozen_feasibility_gate"
+      },
+      "protocol_sha256": "4fe3da58970a62270b5a2192752415e107cdff80983b5e96e7947eed97ff38d0",
+      "source_hashes_verified": true,
+      "external_hashes_verified": true,
+      "records": {
+        "genuine": {
+          "n": 180,
+          "wrong_identity_pairs": 900,
+          "wrong_accepts": {
+            "full": 0,
+            "feedback": 0,
+            "consensus": 0
+          }
+        }
+      },
+      "artifacts": {
+        "genuine_verified.json": "2633628c1bf6834d9837ab763ce97106aba31b43043327360557196c85505337",
+        "feedback_audit.json": "acc8235e65c41a823ce92ecb3aab17397e9eb9215869e8ef290023a245abfc5d",
+        "pilot_decision.json": "fb213953a2fd42a207f92d5b4fec329111106e3d61506e29583c319045137e79",
+        "pipeline_state.json": "3ec42934332ad3743aa8e35c3daa4e716a1d0570aeb036612af42acb3330b987"
+      },
+      "conditions": {
+        "full": {
+          "clean": [
+            6,
+            6
+          ],
+          "random_crop_ratio": [
+            6,
+            6
+          ],
+          "random_drop_ratio": [
+            4,
+            6
+          ],
+          "brightness_factor": [
+            6,
+            6
+          ],
+          "jpeg_ratio": [
+            6,
+            6
+          ],
+          "gaussian_blur_r": [
+            6,
+            6
+          ],
+          "gaussian_std": [
+            6,
+            6
+          ],
+          "median_blur_k": [
+            6,
+            6
+          ],
+          "sp_prob": [
+            6,
+            6
+          ],
+          "resize_ratio": [
+            6,
+            6
+          ]
+        },
+        "feedback": {
+          "clean": [
+            6,
+            6
+          ],
+          "random_crop_ratio": [
+            6,
+            6
+          ],
+          "random_drop_ratio": [
+            3,
+            6
+          ],
+          "brightness_factor": [
+            6,
+            6
+          ],
+          "jpeg_ratio": [
+            6,
+            6
+          ],
+          "gaussian_blur_r": [
+            6,
+            6
+          ],
+          "gaussian_std": [
+            5,
+            6
+          ],
+          "median_blur_k": [
+            6,
+            6
+          ],
+          "sp_prob": [
+            6,
+            6
+          ],
+          "resize_ratio": [
+            6,
+            6
+          ]
+        },
+        "consensus": {
+          "clean": [
+            6,
+            6
+          ],
+          "random_crop_ratio": [
+            5,
+            6
+          ],
+          "random_drop_ratio": [
+            5,
+            6
+          ],
+          "brightness_factor": [
+            6,
+            6
+          ],
+          "jpeg_ratio": [
+            6,
+            6
+          ],
+          "gaussian_blur_r": [
+            6,
+            6
+          ],
+          "gaussian_std": [
+            5,
+            6
+          ],
+          "median_blur_k": [
+            6,
+            6
+          ],
+          "sp_prob": [
+            6,
+            6
+          ],
+          "resize_ratio": [
+            6,
+            6
+          ]
+        }
+      },
+      "sources": {
+        "full": {
+          "0": [
+            10,
+            10
+          ],
+          "3": [
+            10,
+            10
+          ],
+          "1": [
+            10,
+            10
+          ],
+          "4": [
+            9,
+            10
+          ],
+          "2": [
+            9,
+            10
+          ],
+          "5": [
+            10,
+            10
+          ]
+        },
+        "feedback": {
+          "0": [
+            10,
+            10
+          ],
+          "3": [
+            10,
+            10
+          ],
+          "1": [
+            8,
+            10
+          ],
+          "4": [
+            9,
+            10
+          ],
+          "2": [
+            9,
+            10
+          ],
+          "5": [
+            10,
+            10
+          ]
+        },
+        "consensus": {
+          "0": [
+            10,
+            10
+          ],
+          "3": [
+            10,
+            10
+          ],
+          "1": [
+            9,
+            10
+          ],
+          "4": [
+            8,
+            10
+          ],
+          "2": [
+            10,
+            10
+          ],
+          "5": [
+            10,
+            10
+          ]
+        }
+      },
+      "maximum_score_difference": 0.0,
+      "decision": {
+        "advance": false,
+        "gates": {
+          "binding_vs_full": false,
+          "binding_vs_consensus": true,
+          "genuine_gain": false,
+          "clean_retention": true,
+          "source_consistency": false,
+          "preview_fidelity": true,
+          "wrong_identity": true
+        },
+        "scope": "Six-source feasibility screen, not statistical superiority"
+      },
+      "feedback_sources": [
+        {
+          "task": 0,
+          "round_mismatch": [
+            0.15234375,
+            0.1630859375,
+            0.1962890625
+          ],
+          "final_fixed_point": false,
+          "two_cycle": false
+        },
+        {
+          "task": 1,
+          "round_mismatch": [
+            0.0693359375,
+            0.3447265625,
+            0.1865234375
+          ],
+          "final_fixed_point": false,
+          "two_cycle": false
+        },
+        {
+          "task": 2,
+          "round_mismatch": [
+            0.029296875,
+            0.041015625,
+            0.0263671875
+          ],
+          "final_fixed_point": false,
+          "two_cycle": false
+        },
+        {
+          "task": 3,
+          "round_mismatch": [
+            0.0361328125,
+            0.0498046875,
+            0.060546875
+          ],
+          "final_fixed_point": false,
+          "two_cycle": false
+        },
+        {
+          "task": 4,
+          "round_mismatch": [
+            0.3076171875,
+            0.15234375,
+            0.087890625
+          ],
+          "final_fixed_point": false,
+          "two_cycle": false
+        },
+        {
+          "task": 5,
+          "round_mismatch": [
+            0.0380859375,
+            0.009765625,
+            0.005859375
+          ],
+          "final_fixed_point": false,
+          "two_cycle": false
+        }
+      ],
+      "passed": true
+    }
+  },
+  "passed": true
+}

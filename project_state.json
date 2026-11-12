@@ -27,7 +27,7 @@
     "root": "/data0/liyanlei/watermark_research",
     "primary_python": "/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/bin/python"
   },
-  "latest_progress_report": "reports/shared_semantic_evidence_20261112/report.md",
+  "latest_progress_report": "reports/semantic_feedback_pilot_20261112/report.md",
   "independent_progress": {
     "independent_images": 320,
     "source_prompts": 112,
@@ -44,7 +44,7 @@
   },
   "evaluation_policy": "Published standard baselines only; matched absolute genuine detection; no custom attack development",
   "requires_user_resume": false,
-  "active_experiments": 1,
+  "active_experiments": 0,
   "current_findings": {
     "sembind_genuine_non_crop": {
       "accepted": 144,
@@ -186,7 +186,7 @@
     "python_package_index": "https://pypi.tuna.tsinghua.edu.cn/simple/",
     "automatic_aliyun_fallback": false
   },
-  "active_experiments_observation": "Development extraction and source-separated calibration completed; all120 code checks passed. Frozen decoder now evaluating12 new full-budget source images, followed automatically by full unchanged Imprint and audit.",
+  "active_experiments_observation": "Both semantic pipelines completed: shared evidence 120 genuine and 216 forgery verification records; feedback 180 genuine records, frozen feasibility gate failed, no conditional forgery jobs executed.",
   "full_budget_findings": {
     "source_count_per_method": 4,
     "sem_reference_accepted": 4,
@@ -617,7 +617,7 @@
     "advance_to_published_forgery": false
   },
   "shared_semantic_evidence": {
-    "status": "running",
+    "status": "complete",
     "protocol": "protocols/shared_semantic_evidence_20261112.json",
     "plan": "reports/shared_semantic_evidence_20261112/plan.md",
     "server_root": "/data0/liyanlei/watermark_research/runs/shared_semantic_evidence_20261112",
@@ -637,7 +637,7 @@
     "unit_checks_passed": true,
     "superiority_established": false,
     "coordinator_pid": 24027,
-    "stage": "published_full_imprint",
+    "stage": "all_endpoints_independently_audited",
     "prelaunch_commit": "7a40f98fbbf8d34301338c9f703c31673636d60a",
     "worker_pids": [
       45285,
@@ -681,39 +681,143 @@
     },
     "wrong_identity_pairs": 1320,
     "all_rules_wrong_accepts": 0,
-    "forgery_completed": false,
+    "forgery_completed": true,
     "latest_observation": {
-      "time_utc": "2026-11-12T09:30:28.453987+00:00",
-      "pipeline": {
-        "status": "running",
-        "pid": 24027,
-        "time_utc": "2026-11-12T06:51:26.157285+00:00",
-        "stage": "published_full_imprint"
-      },
-      "imprint_jobs_completed": 12,
-      "imprint_jobs_total": 12,
-      "forgery_shards": [
-        {
-          "shard": 0,
-          "status": "running",
-          "verified": 33
+      "status": "complete",
+      "pid": 24027,
+      "time_utc": "2026-11-12T10:13:01.212718+00:00",
+      "stage": "all_endpoints_independently_audited",
+      "genuine_records": 120,
+      "forgery_records": 216
+    },
+    "forgery_audited": true,
+    "forgery_summary": [
+      {
+        "method": "default_ba",
+        "reference": {
+          "accepted": 12,
+          "n": 12
         },
-        {
-          "shard": 1,
-          "status": "running",
-          "verified": 36
+        "cover": {
+          "accepted": 0,
+          "n": 12
         },
-        {
-          "shard": 2,
-          "status": "running",
-          "verified": 22
+        "final_candidate": {
+          "accepted": 1,
+          "n": 12
+        },
+        "all_checkpoints": {
+          "accepted": 15,
+          "n": 192
         }
-      ],
-      "genuine_verified": 120
+      },
+      {
+        "method": "ba",
+        "reference": {
+          "accepted": 12,
+          "n": 12
+        },
+        "cover": {
+          "accepted": 0,
+          "n": 12
+        },
+        "final_candidate": {
+          "accepted": 1,
+          "n": 12
+        },
+        "all_checkpoints": {
+          "accepted": 15,
+          "n": 192
+        }
+      },
+      {
+        "method": "latent_soft_ba",
+        "reference": {
+          "accepted": 12,
+          "n": 12
+        },
+        "cover": {
+          "accepted": 0,
+          "n": 12
+        },
+        "final_candidate": {
+          "accepted": 1,
+          "n": 12
+        },
+        "all_checkpoints": {
+          "accepted": 15,
+          "n": 192
+        }
+      },
+      {
+        "method": "coordinate_soft_ba",
+        "reference": {
+          "accepted": 12,
+          "n": 12
+        },
+        "cover": {
+          "accepted": 0,
+          "n": 12
+        },
+        "final_candidate": {
+          "accepted": 1,
+          "n": 12
+        },
+        "all_checkpoints": {
+          "accepted": 15,
+          "n": 192
+        }
+      },
+      {
+        "method": "group_constant",
+        "reference": {
+          "accepted": 9,
+          "n": 12
+        },
+        "cover": {
+          "accepted": 0,
+          "n": 12
+        },
+        "final_candidate": {
+          "accepted": 0,
+          "n": 12
+        },
+        "all_checkpoints": {
+          "accepted": 3,
+          "n": 192
+        }
+      },
+      {
+        "method": "group_query",
+        "reference": {
+          "accepted": 9,
+          "n": 12
+        },
+        "cover": {
+          "accepted": 0,
+          "n": 12
+        },
+        "final_candidate": {
+          "accepted": 0,
+          "n": 12
+        },
+        "all_checkpoints": {
+          "accepted": 4,
+          "n": 192
+        }
+      }
+    ],
+    "completion": {
+      "status": "complete",
+      "pid": 24027,
+      "time_utc": "2026-11-12T10:13:01.212718+00:00",
+      "stage": "all_endpoints_independently_audited",
+      "genuine_records": 120,
+      "forgery_records": 216
     }
   },
   "semantic_feedback_pilot": {
-    "status": "queued",
+    "status": "complete",
     "protocol": "protocols/semantic_feedback_pilot_20261112.json",
     "plan": "reports/semantic_feedback_pilot_20261112/plan.md",
     "server_root": "/data0/liyanlei/watermark_research/runs/semantic_feedback_pilot_20261112",
@@ -745,7 +849,59 @@
       "parent_pidfd_open": true,
       "new_gpu_workers": 0
     },
-    "launch": "reports/semantic_feedback_pilot_20261112/launch.json"
+    "launch": "reports/semantic_feedback_pilot_20261112/launch.json",
+    "stage": "failed_frozen_feasibility_gate",
+    "report": "reports/semantic_feedback_pilot_20261112/report.md",
+    "summary": [
+      {
+        "arm": "full",
+        "n": 60,
+        "accepted": 58,
+        "mean_ba": 0.9051432291666667,
+        "mean_binding_mismatch": 0.10546875,
+        "mean_reference_lpips": 0.7268839776515961
+      },
+      {
+        "arm": "feedback",
+        "n": 60,
+        "accepted": 56,
+        "mean_ba": 0.899609375,
+        "mean_binding_mismatch": 0.09391276041666667,
+        "mean_reference_lpips": 0.722011148929596
+      },
+      {
+        "arm": "consensus",
+        "n": 60,
+        "accepted": 57,
+        "mean_ba": 0.9063802083333333,
+        "mean_binding_mismatch": 0.11995442708333333,
+        "mean_reference_lpips": 0.7206004659334818
+      }
+    ],
+    "decision": {
+      "advance": false,
+      "gates": {
+        "binding_vs_full": false,
+        "binding_vs_consensus": true,
+        "genuine_gain": false,
+        "clean_retention": true,
+        "source_consistency": false,
+        "preview_fidelity": true,
+        "wrong_identity": true
+      },
+      "scope": "Six-source feasibility screen, not statistical superiority"
+    },
+    "advance_to_published_forgery": false,
+    "actual_imprint_jobs": 0,
+    "actual_forgery_records": 0,
+    "genuine_audited": true,
+    "completion": {
+      "status": "complete",
+      "pid": 20195,
+      "time_utc": "2026-11-12T11:09:13.756885+00:00",
+      "stage": "failed_frozen_feasibility_gate"
+    }
   },
-  "queued_experiments": 1
+  "queued_experiments": 0,
+  "completion_audit": "reports/completion_audit_20261112/audit.json"
 }
