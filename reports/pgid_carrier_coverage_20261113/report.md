@@ -1,0 +1,7 @@
+# PGID的TR与PRC原生载体评测
+
+固定作者PGID源码dc4ad96，原样调用run.py，对TR和PRC分别运行10个作者提示词/封面案例。各例执行完整151次Imprint伪造更新，保留实际第51、101、151次更新的攻击图和PGID-F判定。[协议](../../protocols/pgid_carrier_coverage_20261113.json)记录输入/源码哈希和全部入口参数。
+
+TR使用作者DDIM路径；PRC使用作者DPM、CFG3和精确反演。PGID-F保留原设置：50步，s3，gamma0.001；TR的k15、PRC的k7。两条任务分别使用空闲GPU5、4，按UUID绑定。上游水印、防御和攻击算法均未修改。
+
+完成后逐行核查原生检测指标与布尔决策，并验证每个载体70条来源/阶段/检查点组合完整。TR按作者p-value阈值复算；PRC核对其原生布尔结果和记录一致性，这项CSV审计不独立重算PRC软译码。当前执行状态见project_state.json。

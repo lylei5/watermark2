@@ -1,0 +1,160 @@
+{
+  "created_at": "2026-11-13T03:05:48.277551+00:00",
+  "scope": "Native TR and PRC PGID-F on10 author prompt/cover pairs per carrier",
+  "source": {
+    "path": "/data0/liyanlei/watermark_research/third_party/frozen/PGID_dc4ad96",
+    "commit": "dc4ad963ffefcb4cf84340084db617472983d3e0",
+    "files": {
+      "run.py": "f65a8b7ab54b51dba653b0e6692674d69f26f374a8db9b3d9f5953eb815b1e61",
+      "README.md": "8b89bcd9ce5ad97b45a724b6a9f91339c849cbea47c350a47a83baa169d0ef34",
+      "imprint_attacks.py": "35cfac3b45d15a512d6d67a66664104adf40ed647a63f6738fa998609f97793b",
+      "requirements.txt": "52c16c8951e4be84595469dfadea6475cd50defa16a974192977b3e250af8e8f",
+      "prompts.py": "eb8504bbbbea4265a0eb13316bb7ab75b74db7e83bc99b82dac513e08e48f9c6",
+      "pgid_defense.py": "193acc73de4116acef661e09988b9adc275f781d46d9e20fd5d8bc0617e38472",
+      "utils.py": "a0a0bf97ab7aab4c9a031aeb113653e47c8edf50ed12851a261ce448927e8817",
+      "LICENSE.md": "a30ed803e84f2e729f0638756d59e9def938fa6cb4f1121bb7da7f6bdd680e45",
+      "pipe/image_utils.py": "c8423a6942c083e69719f27b0bb9f1210e837a559c8c01d468528d3936f7ea9b",
+      "pipe/pipe_utils.py": "08afb9da57e99b9bac307e8082b530350f23a2c59480ac686e875a22f013877e",
+      "pipe/PixArt_pipe.py": "0b975bad007f27db7340729e4fdc6c586e111c696396a947a8208f5cfb47ea95",
+      "pipe/base_pipe.py": "35fcffde506f9a0e0e691140ac164dcc4ac54dd24101a2cf06f8335f0080c90f",
+      "pipe/SD_pipe.py": "3370777e34ba36b3c009b5215993df3d47de0eb40933d93521df129f92885558",
+      "pipe/attack_pipe.py": "355688e62f4d1634a7278788b8ad2ea37af744947d28906fae99d2fcd657d327",
+      "pipe/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "watermarks/t2smark_watermark.py": "827cc85f87e37960219d8dcafe9ac734fec42a9bf9b51f56202776486c5411eb",
+      "watermarks/watermark_utils.py": "5323f51fe567e58b5f4c18f7cfaaa98760cec8fdfa72b88666ed8fccc4fb5577",
+      "watermarks/gs_watermark.py": "40760f61a2ea2015ccdfb1b812279402e9c992c5f3425f7b5de898eacca92c94",
+      "watermarks/prc_watermark.py": "3a98548d1fae339028778731c4877585c70419209b6316fa2845e65b0961b82c",
+      "watermarks/sem_watermark.py": "c5903b48108d121581b003701056dcadd26c63c65f3cd5affb39063322c911df",
+      "watermarks/nonces.py": "b8419f7c8627d7a594873bb1821bbbee8416fea0db6cf7c9b6d76135fcbeb796",
+      "watermarks/keys.py": "4607da9697b6dc680026968c493012e0db194cb4189a43990cca72759f6c45b5",
+      "watermarks/tr_watermark.py": "78266f7c54d1b411c826e9d899bf2381dcb222c8c88fcc63e88787b95a0e32ec",
+      "watermarks/messages.py": "cfda53782648bb897a920964e9508931eb8950f40f43693e6ddbddc1c8c5a9be",
+      "watermarks/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "inputs": [
+    {
+      "index": 0,
+      "prompt": "realistic car 3 d render sci - fi car and sci - fi robotic factory structure in the coronation of napoleon painting and digital billboard with point cloud in the middle, unreal engine 5, keyshot, octane, artstation trending, ultra high detail, ultra realistic, cinematic, 8 k, 1 6 k, in style of zaha hadid, in style of nanospace michael menzelincev, in style of lee souder, in plastic, dark atmosphere, tilt shift, depth of field,",
+      "cover": "PGID/cover_images/ms_coco/ms_coco_001.jpg",
+      "cover_sha256": "ffe0f0cec3b2e27aab1967229cdf0a0d7751dcdd5800322f0b8ac0dffb3b8a8d"
+    },
+    {
+      "index": 1,
+      "prompt": "a comic potrait of a female necromamcer with big and cute eyes, fine - face, realistic shaded perfect face, fine details. night setting. very anime style. realistic shaded lighting poster by ilya kuvshinov katsuhiro, magali villeneuve, artgerm, jeremy lipkin and michael garmash, rob rey and kentaro miura style, trending on art station",
+      "cover": "PGID/cover_images/ms_coco/ms_coco_002.jpg",
+      "cover_sha256": "f3a2974ce3686332609124c70e3e6a2e3aca43fccf1cd1bd7c5c03820977f57d"
+    },
+    {
+      "index": 2,
+      "prompt": "steampunk market interior, colorful, 3 d scene, greg rutkowski, zabrocki, karlkka, jayison devadas, trending on artstation, 8 k, ultra wide angle, zenith view, pincushion lens effect",
+      "cover": "PGID/cover_images/ms_coco/ms_coco_003.jpg",
+      "cover_sha256": "24bb77a31928404e45a0454b06f6a0bd54a8db103590c9d7917288a1e0269f05"
+    },
+    {
+      "index": 3,
+      "prompt": "\u201cA portrait of a cyborg in a golden suit, D&D sci-fi, artstation, concept art, highly detailed illustration.\u201d",
+      "cover": "PGID/cover_images/ms_coco/ms_coco_004.jpg",
+      "cover_sha256": "a4cd7f45ac1ce27eaafb254b23af7c0b18a064be08870ceaaf03b2147f2ce550"
+    },
+    {
+      "index": 4,
+      "prompt": "A full portrait of a beautiful post apocalyptic offworld nanotechnician, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by Krenz Cushart and Artem Demura and alphonse mucha",
+      "cover": "PGID/cover_images/ms_coco/ms_coco_005.jpg",
+      "cover_sha256": "5c0e559c75d3969c8e3e297b61f61063f78045c9d4802b526ba616361f3823fd"
+    },
+    {
+      "index": 5,
+      "prompt": "beautiful victorian raven digital painting, art by artgerm and greg rutkowski, alphonse mucha, cgsociety",
+      "cover": "PGID/cover_images/ms_coco/ms_coco_006.jpg",
+      "cover_sha256": "1dd31e9059c491992be2f562624eb4093e17aee08b4f7baf5ff9ea24543b0a33"
+    },
+    {
+      "index": 6,
+      "prompt": "ilya kuvshinov with long sky blue hair, gold eyes, professional digital painting, concept art, unreal engine 5, 8 k, cinematic, wlop, bubbles, tendrils in the background, art by greg rutkowski, pixiv art, junji ito, yoshitaka amano",
+      "cover": "PGID/cover_images/ms_coco/ms_coco_007.jpg",
+      "cover_sha256": "83981537a7baeafbeb9c8cb67b3484dc26433f574b3685d021fa537e277e4726"
+    },
+    {
+      "index": 7,
+      "prompt": "violet demonic card game decorative frame, violet decorative frame, card frame, card frame, card frame, card frame, card frame, card frame, card frame, card frame, card frame, card game artwork frame. 8 k, sharp high quality artwork in style of jose daniel cabrera pena and greg rutkowski, concept art, blizzard warcraft artwork, hearthstone artwork, blue sea theme",
+      "cover": "PGID/cover_images/ms_coco/ms_coco_008.jpg",
+      "cover_sha256": "d5b79e7fa716f85ca86f46e5f518da9b6c5e26414925624d76e6476861aec495"
+    },
+    {
+      "index": 8,
+      "prompt": "a black and white edward gorey illustration of a man in old fashioned clothes waits by the side of the mountain road with his suitcase, looking at a coach with 4 horses is in front of him, stormy night time in the mountains highly detailed in the style of edward gorey, artgerm, 8 k resolution - c 5",
+      "cover": "PGID/cover_images/ms_coco/ms_coco_009.jpg",
+      "cover_sha256": "c2aa138ee3a59b057a7ba6fc5a6a18e62af531aa7dab78a7bfd33c1cd7e55eb6"
+    },
+    {
+      "index": 9,
+      "prompt": "african hydropunk princess, science fiction, highly detailed, digital painting, beautiful eyes, symmetry, concept art, sharp focus, illustration, global illumination, radiant light, synthwave colors, detailed and intricate environment, art by artgerm and greg rutkowski and magali villeneuve and ilya kuvshinov!",
+      "cover": "PGID/cover_images/ms_coco/ms_coco_010.jpg",
+      "cover_sha256": "1c67b783f78b18ddb5dd20aaba4d4aacaf98e5277051688a96da096afa9cdf1f"
+    }
+  ],
+  "cover_images_dir": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/PGID/cover_images/ms_coco",
+  "jobs": [
+    {
+      "carrier": "TR",
+      "gpu": 5
+    },
+    {
+      "carrier": "PRC",
+      "gpu": 4
+    }
+  ],
+  "attack_type": "forgery",
+  "attack": "Unchanged released Imprint CVPR2025 implementation",
+  "attack_code_modified": false,
+  "actual_updates": 151,
+  "checkpoints": [
+    50,
+    100,
+    150
+  ],
+  "checkpoint_updates": [
+    51,
+    101,
+    151
+  ],
+  "target_steps": 50,
+  "attacker_steps": 50,
+  "lr": 0.01,
+  "seed": 1,
+  "start": 0,
+  "count": 10,
+  "attacker_scheduler": "DDIM",
+  "target_schedulers": {
+    "TR": "DDIM",
+    "PRC": "DPM"
+  },
+  "defense": {
+    "steps": 50,
+    "s": 3,
+    "gamma": 0.001,
+    "k": {
+      "TR": 15,
+      "PRC": 7
+    }
+  },
+  "model": "Manojb/stable-diffusion-2-1-base",
+  "revision": "0094d483a120f3f33dafbd187ea4aa60d10de75c",
+  "thresholds": {
+    "TR": {
+      "metric": "p_value",
+      "operator": "<",
+      "value": 0.053849971492007605
+    },
+    "PRC": {
+      "metric": "PRC_detection_results",
+      "operator": "native_boolean",
+      "value": null
+    }
+  },
+  "identity": "Native public fixture keys/messages; original entry-point access boundary",
+  "independent_confirmation": false,
+  "cohort": "Previously observed author10 prompt/cover development pairs",
+  "source_sha256": "ec8ec8760e704dfb0bd48377a67b3c8557f9efd614ec932bc6960d31307f6b1a"
+}

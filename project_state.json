@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-13T02:12:28.249158+00:00",
-  "status": "three_native_baselines_reproduction",
-  "active_experiments": 0,
-  "queued_experiments": 0,
+  "updated_at": "2026-11-13T03:10:37.9183757Z",
+  "status": "native_baselines_and_instance_diagnostic",
+  "active_experiments": 3,
+  "queued_experiments": 1,
   "latest_progress_report": "reports/three_baselines_20261113/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/THREE_BASELINE_REPRODUCTION.md",
@@ -58,7 +58,7 @@
   ],
   "max_concurrent_gpus": 3,
   "evaluation_policy": "Unchanged published top-venue attacks only; full budgets; no attack development; matched absolute genuine detection",
-  "current_decision": "Complete SemBind, PGID and SEAL native baselines before new defense training",
+  "current_decision": "Complete native baseline coverage and diagnose final-instance separability without new training",
   "completed_evidence": [
     {
       "path": "reports/three_baselines_20261113/report.md",
@@ -162,7 +162,7 @@
     },
     "exact_payloads": 6,
     "complete_pipeline_bitwise_repeatability_established": false,
-    "completed_at": "2026-11-13T02:06:43.985391+00:00",
+    "completed_at": "2026-11-13T10:06:43.985391+08:00",
     "paper_full_benchmark_reproduced": false
   },
   "provenance_policy": "Executed run source and protocol hashes remain frozen; use their exact versions for replay",
@@ -411,7 +411,7 @@
     "extractor_implemented": false,
     "encoder_training_started": false,
     "overall_fpr_established": false,
-    "priority": "Deferred until three native baseline validations complete"
+    "priority": "Untrained instance diagnostic alongside baseline validation; new training deferred"
   },
   "native_baseline_queue_order": [],
   "native_postprocessing": {
@@ -420,5 +420,39 @@
     "summary_script": "scripts/defense/summarize_native_baseline.py",
     "wait_script": "scripts/defense/audit_native_after_exit.py"
   },
-  "implementation_differences": "docs/BASELINE_IMPLEMENTATION_DIFFERENCES.md"
+  "implementation_differences": "docs/BASELINE_IMPLEMENTATION_DIFFERENCES.md",
+  "instance_representation": {
+    "run": "instance_representation_20261113_v2",
+    "protocol": "protocols/instance_representation_20261113_v2.json",
+    "status": "running",
+    "gpu": 7,
+    "pid": 21822,
+    "next": "SSCD extraction after DINO exit and official model download completion",
+    "training": false,
+    "attack_jobs": 0,
+    "independent_confirmation": false,
+    "report": "reports/instance_representation_20261113/report.md"
+  },
+  "pgid_carrier_coverage": {
+    "run": "pgid_carrier_coverage_20261113",
+    "protocol": "protocols/pgid_carrier_coverage_20261113.json",
+    "status": "running",
+    "jobs": [
+      {
+        "carrier": "TR",
+        "gpu": 5,
+        "pid": 42517,
+        "status": "running"
+      },
+      {
+        "carrier": "PRC",
+        "gpu": 4,
+        "pid": 42519,
+        "status": "running"
+      }
+    ],
+    "actual_updates": 151,
+    "source_count_per_carrier": 10,
+    "report": "reports/pgid_carrier_coverage_20261113/report.md"
+  }
 }

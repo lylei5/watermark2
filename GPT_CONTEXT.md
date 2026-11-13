@@ -1,6 +1,6 @@
 # Research handoff: three native defense baselines
 
-The active task is to implement and validate SemBind, PGID and SEAL as reliable defense baselines. The user confirmed that no extra SemBind author code is available and approved completing the unreleased parts from the paper, with explicit differences. New defense training is deferred. The single authoritative execution queue is [project_state.json](project_state.json); do not duplicate or restart its jobs.
+The active task is defense research with native SemBind, PGID and SEAL baseline validation. The user confirmed that no extra SemBind author code is available and approved completing the unreleased parts from the paper, with explicit differences. Untrained final-instance representation diagnostics accompany baseline coverage; new defense training remains deferred. Read docs/INSTANCE_BINDING_RESEARCH.md for the current hypothesis and related work. The single authoritative execution queue is [project_state.json](project_state.json); do not duplicate or restart its jobs.
 
 ## Implementation contract
 
