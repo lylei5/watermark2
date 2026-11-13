@@ -7,10 +7,12 @@
 | 基线 | 实现依据 | 验证与差异记录 |
 |---|---|---|
 | SemBind | 官方语义网络和DPM生成/精确反演；按最终论文补齐平铺、比例选择、秘密置换和符号绑定 | 原GS OTP空间重复的GS-S；PRC-S采用sigma0.5。作者未发布完整绑定入口，论文补齐部分明确标注。[规格](docs/THREE_BASELINE_REPRODUCTION.md) |
-| PGID | 固定作者`dc4ad96`，原生PGID-F/R及载体判定 | 已有GS/PGID-F10例完整预算；R链路另行验收。GS、TR、PRC、T2SMark原码CPU往返均通过。[结果与范围](docs/DEFENSE_BASELINE_INVENTORY.md) |
+| PGID | 固定作者`dc4ad96`，原生PGID-F/R及载体判定 | GS的F/R各10例完整151次更新已验收。GS、TR、PRC、T2SMark原码CPU往返均通过。[结果与范围](docs/DEFENSE_BASELINE_INVENTORY.md) |
 | SEAL | 固定作者`92d31b3`及ICCV2025最终正文、补充材料 | 原公开seed42路径与论文secret-salt路径分别实现、分别验证；距离阈值2.3、匹配块数12。[契约](docs/SEAL_EVALUATION_CONTRACT.md) |
 
 源码版本、模型哈希、依赖和组件检查见[来源报告](reports/three_baselines_20261113/report.md)。模型导入、组件通过、正常图通过和完整论文数值复现分别判断，不用排队任务或少量样本替代后者。
+
+已验收的正常图结果：GS-S为100/100；SEAL公开代码为83/100、论文私有salt实现为91/100，对应无水印对照均为0/100。这些是开发数据上的原生设置结果，不是同工作点排名或1e-6经验误报保证。
 
 ## 实现入口
 

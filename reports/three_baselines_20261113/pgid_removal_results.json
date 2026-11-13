@@ -1,0 +1,610 @@
+{
+  "status": "complete",
+  "method": "pgid",
+  "protocol_sha256": "d6c9f8770d612b231c08824fc1ca457172cdc4614292477c463e9ff8cb2cda56",
+  "source_files": {
+    "native_0/complete.json": "3e5c01b2a5d83b0d74e3015d5003208651cafcf7d83aafbbe4b3db490843aaec",
+    "native_1/complete.json": "a64f8752febf9972453fcad18352801f1d5a5af48c52f2f3b23399999cfb22bc",
+    "native_2/complete.json": "ac1acd7b66bf22676b254be7c1fd83806156e90c584c9d9353301191b0fc0fa5"
+  },
+  "artifact_checks": 43,
+  "rows": [
+    {
+      "task": 0,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 0,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "ba": 0.53125,
+      "accepted": false
+    },
+    {
+      "task": 0,
+      "stage": "defended",
+      "checkpoint": 50,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 0,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "ba": 0.0625,
+      "accepted": false
+    },
+    {
+      "task": 0,
+      "stage": "defended",
+      "checkpoint": 100,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 0,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "ba": 0.00390625,
+      "accepted": false
+    },
+    {
+      "task": 0,
+      "stage": "defended",
+      "checkpoint": 150,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 1,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 1,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "ba": 0.19921875,
+      "accepted": false
+    },
+    {
+      "task": 1,
+      "stage": "defended",
+      "checkpoint": 50,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 1,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "ba": 0.01953125,
+      "accepted": false
+    },
+    {
+      "task": 1,
+      "stage": "defended",
+      "checkpoint": 100,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 1,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "ba": 0.0078125,
+      "accepted": false
+    },
+    {
+      "task": 1,
+      "stage": "defended",
+      "checkpoint": 150,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 2,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 2,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "ba": 0.578125,
+      "accepted": false
+    },
+    {
+      "task": 2,
+      "stage": "defended",
+      "checkpoint": 50,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 2,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "ba": 0.0546875,
+      "accepted": false
+    },
+    {
+      "task": 2,
+      "stage": "defended",
+      "checkpoint": 100,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 2,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "ba": 0.0,
+      "accepted": false
+    },
+    {
+      "task": 2,
+      "stage": "defended",
+      "checkpoint": 150,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 3,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 3,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "ba": 0.20703125,
+      "accepted": false
+    },
+    {
+      "task": 3,
+      "stage": "defended",
+      "checkpoint": 50,
+      "ba": 0.99609375,
+      "accepted": true
+    },
+    {
+      "task": 3,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "ba": 0.0390625,
+      "accepted": false
+    },
+    {
+      "task": 3,
+      "stage": "defended",
+      "checkpoint": 100,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 3,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "ba": 0.00390625,
+      "accepted": false
+    },
+    {
+      "task": 3,
+      "stage": "defended",
+      "checkpoint": 150,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 4,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 4,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "ba": 0.23828125,
+      "accepted": false
+    },
+    {
+      "task": 4,
+      "stage": "defended",
+      "checkpoint": 50,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 4,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "ba": 0.00390625,
+      "accepted": false
+    },
+    {
+      "task": 4,
+      "stage": "defended",
+      "checkpoint": 100,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 4,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "ba": 0.0,
+      "accepted": false
+    },
+    {
+      "task": 4,
+      "stage": "defended",
+      "checkpoint": 150,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 5,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 5,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "ba": 0.13671875,
+      "accepted": false
+    },
+    {
+      "task": 5,
+      "stage": "defended",
+      "checkpoint": 50,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 5,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "ba": 0.01953125,
+      "accepted": false
+    },
+    {
+      "task": 5,
+      "stage": "defended",
+      "checkpoint": 100,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 5,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "ba": 0.0,
+      "accepted": false
+    },
+    {
+      "task": 5,
+      "stage": "defended",
+      "checkpoint": 150,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 6,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 6,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "ba": 0.14453125,
+      "accepted": false
+    },
+    {
+      "task": 6,
+      "stage": "defended",
+      "checkpoint": 50,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 6,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "ba": 0.0078125,
+      "accepted": false
+    },
+    {
+      "task": 6,
+      "stage": "defended",
+      "checkpoint": 100,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 6,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "ba": 0.00390625,
+      "accepted": false
+    },
+    {
+      "task": 6,
+      "stage": "defended",
+      "checkpoint": 150,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 7,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 7,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "ba": 0.36328125,
+      "accepted": false
+    },
+    {
+      "task": 7,
+      "stage": "defended",
+      "checkpoint": 50,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 7,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "ba": 0.0546875,
+      "accepted": false
+    },
+    {
+      "task": 7,
+      "stage": "defended",
+      "checkpoint": 100,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 7,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "ba": 0.00390625,
+      "accepted": false
+    },
+    {
+      "task": 7,
+      "stage": "defended",
+      "checkpoint": 150,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 8,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 8,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "ba": 0.42578125,
+      "accepted": false
+    },
+    {
+      "task": 8,
+      "stage": "defended",
+      "checkpoint": 50,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 8,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "ba": 0.0234375,
+      "accepted": false
+    },
+    {
+      "task": 8,
+      "stage": "defended",
+      "checkpoint": 100,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 8,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "ba": 0.0,
+      "accepted": false
+    },
+    {
+      "task": 8,
+      "stage": "defended",
+      "checkpoint": 150,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 9,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 9,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "ba": 0.05078125,
+      "accepted": false
+    },
+    {
+      "task": 9,
+      "stage": "defended",
+      "checkpoint": 50,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 9,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "ba": 0.0078125,
+      "accepted": false
+    },
+    {
+      "task": 9,
+      "stage": "defended",
+      "checkpoint": 100,
+      "ba": 1.0,
+      "accepted": true
+    },
+    {
+      "task": 9,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "ba": 0.0,
+      "accepted": false
+    },
+    {
+      "task": 9,
+      "stage": "defended",
+      "checkpoint": 150,
+      "ba": 1.0,
+      "accepted": true
+    }
+  ],
+  "summaries": [
+    {
+      "group": [
+        "attacked",
+        50
+      ],
+      "n": 10,
+      "accepted": 0,
+      "rate": 0.0,
+      "cp95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "mean_ba": 0.2875
+    },
+    {
+      "group": [
+        "attacked",
+        100
+      ],
+      "n": 10,
+      "accepted": 0,
+      "rate": 0.0,
+      "cp95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "mean_ba": 0.029296875
+    },
+    {
+      "group": [
+        "attacked",
+        150
+      ],
+      "n": 10,
+      "accepted": 0,
+      "rate": 0.0,
+      "cp95": [
+        0.0,
+        0.3084971078187608
+      ],
+      "mean_ba": 0.00234375
+    },
+    {
+      "group": [
+        "defended",
+        50
+      ],
+      "n": 10,
+      "accepted": 10,
+      "rate": 1.0,
+      "cp95": [
+        0.6915028921812392,
+        1.0
+      ],
+      "mean_ba": 0.999609375
+    },
+    {
+      "group": [
+        "defended",
+        100
+      ],
+      "n": 10,
+      "accepted": 10,
+      "rate": 1.0,
+      "cp95": [
+        0.6915028921812392,
+        1.0
+      ],
+      "mean_ba": 1.0
+    },
+    {
+      "group": [
+        "defended",
+        150
+      ],
+      "n": 10,
+      "accepted": 10,
+      "rate": 1.0,
+      "cp95": [
+        0.6915028921812392,
+        1.0
+      ],
+      "mean_ba": 1.0
+    },
+    {
+      "group": [
+        "watermarked",
+        -1
+      ],
+      "n": 10,
+      "accepted": 10,
+      "rate": 1.0,
+      "cp95": [
+        0.6915028921812392,
+        1.0
+      ],
+      "mean_ba": 1.0
+    }
+  ],
+  "independent_units": "Source images, not repeated checkpoints or detector rows",
+  "scope": "Native PGID-R GS on10 official prompt cases; released full151 update Imprint removal, not paper-scale reproduction",
+  "empirical_fpr_1e6_established": false,
+  "paper_full_benchmark_reproduced": false,
+  "seal_cpu_norm_max_difference": null,
+  "summary_worker_sha256": "73cc74c16e5f42cf375547c5ee69e85fca560173be8bf7b704609cb56482250e",
+  "completed_at": "2026-11-13T01:04:05.952398+00:00"
+}

@@ -1,0 +1,1706 @@
+{
+  "status": "complete",
+  "method": "seal",
+  "protocol_sha256": "80c6ed73c323a44b73aab45831b06c98a9fd07b3c82775beff3805433cde4e28",
+  "source_files": {
+    "native_0/complete.json": "8944df915a028a410718bb45fa62cd94a51188f89f5f533218db25e94beb7c34",
+    "native_1/complete.json": "775724edd4d529bfb830ecd8173b199134bcab63accc204eec1503dae2f0d62b",
+    "native_2/complete.json": "5c4b03ecd3765f5c14e15ace7b69d94b023422a53e3b559b2d9e2cde8b34c7ea"
+  },
+  "artifact_checks": 400,
+  "rows": [
+    {
+      "task": 0,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 463,
+      "preview_control_equal": true
+    },
+    {
+      "task": 0,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 1,
+      "preview_control_equal": true
+    },
+    {
+      "task": 3,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 80,
+      "preview_control_equal": true
+    },
+    {
+      "task": 3,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 6,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 83,
+      "preview_control_equal": true
+    },
+    {
+      "task": 6,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 9,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 43,
+      "preview_control_equal": true
+    },
+    {
+      "task": 9,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 12,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 70,
+      "preview_control_equal": true
+    },
+    {
+      "task": 12,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 15,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 18,
+      "preview_control_equal": true
+    },
+    {
+      "task": 15,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 18,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 333,
+      "preview_control_equal": true
+    },
+    {
+      "task": 18,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 21,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 58,
+      "preview_control_equal": true
+    },
+    {
+      "task": 21,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 24,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 58,
+      "preview_control_equal": true
+    },
+    {
+      "task": 24,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 27,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 995,
+      "preview_control_equal": true
+    },
+    {
+      "task": 27,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 30,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 54,
+      "preview_control_equal": true
+    },
+    {
+      "task": 30,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 33,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 93,
+      "preview_control_equal": true
+    },
+    {
+      "task": 33,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 36,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 26,
+      "preview_control_equal": true
+    },
+    {
+      "task": 36,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 39,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 964,
+      "preview_control_equal": true
+    },
+    {
+      "task": 39,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 42,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 79,
+      "preview_control_equal": true
+    },
+    {
+      "task": 42,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 45,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 171,
+      "preview_control_equal": true
+    },
+    {
+      "task": 45,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 48,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 769,
+      "preview_control_equal": true
+    },
+    {
+      "task": 48,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 51,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 19,
+      "preview_control_equal": true
+    },
+    {
+      "task": 51,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 54,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": false,
+      "matching_patches": 3,
+      "preview_control_equal": true
+    },
+    {
+      "task": 54,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 57,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 24,
+      "preview_control_equal": true
+    },
+    {
+      "task": 57,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 2,
+      "preview_control_equal": true
+    },
+    {
+      "task": 60,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 61,
+      "preview_control_equal": true
+    },
+    {
+      "task": 60,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 63,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": false,
+      "matching_patches": 8,
+      "preview_control_equal": true
+    },
+    {
+      "task": 63,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 66,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 219,
+      "preview_control_equal": true
+    },
+    {
+      "task": 66,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 69,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 15,
+      "preview_control_equal": true
+    },
+    {
+      "task": 69,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 72,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 14,
+      "preview_control_equal": true
+    },
+    {
+      "task": 72,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 75,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 69,
+      "preview_control_equal": true
+    },
+    {
+      "task": 75,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 78,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": false,
+      "matching_patches": 10,
+      "preview_control_equal": true
+    },
+    {
+      "task": 78,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 81,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 12,
+      "preview_control_equal": true
+    },
+    {
+      "task": 81,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 84,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 12,
+      "preview_control_equal": true
+    },
+    {
+      "task": 84,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 87,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 34,
+      "preview_control_equal": true
+    },
+    {
+      "task": 87,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 90,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 41,
+      "preview_control_equal": true
+    },
+    {
+      "task": 90,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 93,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 453,
+      "preview_control_equal": true
+    },
+    {
+      "task": 93,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 96,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 75,
+      "preview_control_equal": true
+    },
+    {
+      "task": 96,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 1,
+      "preview_control_equal": true
+    },
+    {
+      "task": 99,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 12,
+      "preview_control_equal": true
+    },
+    {
+      "task": 99,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 1,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 390,
+      "preview_control_equal": true
+    },
+    {
+      "task": 1,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 4,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 642,
+      "preview_control_equal": true
+    },
+    {
+      "task": 4,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 7,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 20,
+      "preview_control_equal": true
+    },
+    {
+      "task": 7,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 10,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 403,
+      "preview_control_equal": true
+    },
+    {
+      "task": 10,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 13,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 110,
+      "preview_control_equal": true
+    },
+    {
+      "task": 13,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 16,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 159,
+      "preview_control_equal": true
+    },
+    {
+      "task": 16,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 19,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 194,
+      "preview_control_equal": true
+    },
+    {
+      "task": 19,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 22,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 106,
+      "preview_control_equal": true
+    },
+    {
+      "task": 22,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 25,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 103,
+      "preview_control_equal": true
+    },
+    {
+      "task": 25,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 28,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 289,
+      "preview_control_equal": true
+    },
+    {
+      "task": 28,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 31,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 21,
+      "preview_control_equal": true
+    },
+    {
+      "task": 31,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 34,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 325,
+      "preview_control_equal": true
+    },
+    {
+      "task": 34,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 1,
+      "preview_control_equal": true
+    },
+    {
+      "task": 37,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 154,
+      "preview_control_equal": true
+    },
+    {
+      "task": 37,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 40,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 962,
+      "preview_control_equal": true
+    },
+    {
+      "task": 40,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 43,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 64,
+      "preview_control_equal": true
+    },
+    {
+      "task": 43,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 46,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 18,
+      "preview_control_equal": true
+    },
+    {
+      "task": 46,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 49,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 44,
+      "preview_control_equal": true
+    },
+    {
+      "task": 49,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 52,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 995,
+      "preview_control_equal": true
+    },
+    {
+      "task": 52,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 55,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 34,
+      "preview_control_equal": true
+    },
+    {
+      "task": 55,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 58,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 58,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 61,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": false,
+      "matching_patches": 5,
+      "preview_control_equal": true
+    },
+    {
+      "task": 61,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 64,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 133,
+      "preview_control_equal": true
+    },
+    {
+      "task": 64,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 67,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 678,
+      "preview_control_equal": true
+    },
+    {
+      "task": 67,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 70,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 147,
+      "preview_control_equal": true
+    },
+    {
+      "task": 70,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 73,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": false,
+      "matching_patches": 9,
+      "preview_control_equal": true
+    },
+    {
+      "task": 73,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 76,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 18,
+      "preview_control_equal": true
+    },
+    {
+      "task": 76,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 79,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": false,
+      "matching_patches": 3,
+      "preview_control_equal": true
+    },
+    {
+      "task": 79,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 82,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 60,
+      "preview_control_equal": true
+    },
+    {
+      "task": 82,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 85,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 42,
+      "preview_control_equal": true
+    },
+    {
+      "task": 85,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 88,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 61,
+      "preview_control_equal": true
+    },
+    {
+      "task": 88,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 91,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 31,
+      "preview_control_equal": true
+    },
+    {
+      "task": 91,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 94,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 45,
+      "preview_control_equal": true
+    },
+    {
+      "task": 94,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 97,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 25,
+      "preview_control_equal": true
+    },
+    {
+      "task": 97,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 2,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 146,
+      "preview_control_equal": true
+    },
+    {
+      "task": 2,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 5,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 355,
+      "preview_control_equal": true
+    },
+    {
+      "task": 5,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 8,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 224,
+      "preview_control_equal": true
+    },
+    {
+      "task": 8,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 11,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 128,
+      "preview_control_equal": true
+    },
+    {
+      "task": 11,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 14,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 257,
+      "preview_control_equal": true
+    },
+    {
+      "task": 14,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 17,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 14,
+      "preview_control_equal": true
+    },
+    {
+      "task": 17,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 20,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 133,
+      "preview_control_equal": true
+    },
+    {
+      "task": 20,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 23,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 51,
+      "preview_control_equal": true
+    },
+    {
+      "task": 23,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 26,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 276,
+      "preview_control_equal": true
+    },
+    {
+      "task": 26,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 29,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 113,
+      "preview_control_equal": true
+    },
+    {
+      "task": 29,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 32,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 74,
+      "preview_control_equal": true
+    },
+    {
+      "task": 32,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 35,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 310,
+      "preview_control_equal": true
+    },
+    {
+      "task": 35,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 38,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 88,
+      "preview_control_equal": true
+    },
+    {
+      "task": 38,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 41,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 982,
+      "preview_control_equal": true
+    },
+    {
+      "task": 41,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 44,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 35,
+      "preview_control_equal": true
+    },
+    {
+      "task": 44,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 47,
+      "dataset": "COCO",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 49,
+      "preview_control_equal": true
+    },
+    {
+      "task": 47,
+      "dataset": "COCO",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 50,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": false,
+      "matching_patches": 11,
+      "preview_control_equal": true
+    },
+    {
+      "task": 50,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 53,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 105,
+      "preview_control_equal": true
+    },
+    {
+      "task": 53,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 56,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 85,
+      "preview_control_equal": true
+    },
+    {
+      "task": 56,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 59,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 40,
+      "preview_control_equal": true
+    },
+    {
+      "task": 59,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 62,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 947,
+      "preview_control_equal": true
+    },
+    {
+      "task": 62,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 65,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 63,
+      "preview_control_equal": true
+    },
+    {
+      "task": 65,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 68,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 86,
+      "preview_control_equal": true
+    },
+    {
+      "task": 68,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 71,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 142,
+      "preview_control_equal": true
+    },
+    {
+      "task": 71,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 74,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 55,
+      "preview_control_equal": true
+    },
+    {
+      "task": 74,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 77,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 80,
+      "preview_control_equal": true
+    },
+    {
+      "task": 77,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 80,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 171,
+      "preview_control_equal": true
+    },
+    {
+      "task": 80,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 83,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 267,
+      "preview_control_equal": true
+    },
+    {
+      "task": 83,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 86,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 29,
+      "preview_control_equal": true
+    },
+    {
+      "task": 86,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 89,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": false,
+      "matching_patches": 10,
+      "preview_control_equal": true
+    },
+    {
+      "task": 89,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 92,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 152,
+      "preview_control_equal": true
+    },
+    {
+      "task": 92,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 95,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 25,
+      "preview_control_equal": true
+    },
+    {
+      "task": 95,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    },
+    {
+      "task": 98,
+      "dataset": "SDP",
+      "kind": "genuine",
+      "accepted": true,
+      "matching_patches": 19,
+      "preview_control_equal": true
+    },
+    {
+      "task": 98,
+      "dataset": "SDP",
+      "kind": "null",
+      "accepted": false,
+      "matching_patches": 0,
+      "preview_control_equal": true
+    }
+  ],
+  "summaries": [
+    {
+      "group": [
+        "ALL",
+        "genuine"
+      ],
+      "n": 100,
+      "accepted": 91,
+      "rate": 0.91,
+      "cp95": [
+        0.8360177449703647,
+        0.9580164043716077
+      ],
+      "mean_matching_patches": 172.5
+    },
+    {
+      "group": [
+        "ALL",
+        "null"
+      ],
+      "n": 100,
+      "accepted": 0,
+      "rate": 0.0,
+      "cp95": [
+        0.0,
+        0.03621669264517641
+      ],
+      "mean_matching_patches": 0.05
+    },
+    {
+      "group": [
+        "COCO",
+        "genuine"
+      ],
+      "n": 50,
+      "accepted": 50,
+      "rate": 1.0,
+      "cp95": [
+        0.9288782635358024,
+        1.0
+      ],
+      "mean_matching_patches": 231.92
+    },
+    {
+      "group": [
+        "COCO",
+        "null"
+      ],
+      "n": 50,
+      "accepted": 0,
+      "rate": 0.0,
+      "cp95": [
+        0.0,
+        0.07112173646419764
+      ],
+      "mean_matching_patches": 0.04
+    },
+    {
+      "group": [
+        "SDP",
+        "genuine"
+      ],
+      "n": 50,
+      "accepted": 41,
+      "rate": 0.82,
+      "cp95": [
+        0.6856305887143497,
+        0.9142379218903364
+      ],
+      "mean_matching_patches": 113.08
+    },
+    {
+      "group": [
+        "SDP",
+        "null"
+      ],
+      "n": 50,
+      "accepted": 0,
+      "rate": 0.0,
+      "cp95": [
+        0.0,
+        0.07112173646419764
+      ],
+      "mean_matching_patches": 0.06
+    }
+  ],
+  "independent_units": "Source images, not repeated checkpoints or detector rows",
+  "scope": "Paper-specified SEAL Algorithm2 private salt;100-source paired preview development chain, separate from released seed42 implementation",
+  "empirical_fpr_1e6_established": false,
+  "paper_full_benchmark_reproduced": false,
+  "seal_cpu_norm_max_difference": 0.00390625,
+  "summary_worker_sha256": "73cc74c16e5f42cf375547c5ee69e85fca560173be8bf7b704609cb56482250e",
+  "completed_at": "2026-11-13T01:04:04.283850+00:00"
+}

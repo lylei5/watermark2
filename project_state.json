@@ -1,17 +1,17 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-12T19:26:09.619996+00:00",
+  "updated_at": "2026-11-13T01:12:12.519483+00:00",
   "status": "three_native_baselines_reproduction",
-  "active_experiments": 1,
-  "queued_experiments": 4,
-  "latest_progress_report": "reports/phase1_trajectory_native_gs_20261113/report.md",
+  "active_experiments": 0,
+  "queued_experiments": 0,
+  "latest_progress_report": "reports/three_baselines_20261113/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/THREE_BASELINE_REPRODUCTION.md",
   "native_sembind_reproduction_complete": false,
   "superiority_established": false,
   "baseline": {
-    "scope": "Released semantic and DPM components with project GS carrier and binding",
+    "scope": "Released SemBind semantic/DPM components, original spatial-OTP GS carrier, and paper-completed private binding",
     "semantic_extractor": "scripts/defense/semantic_code.py",
     "inversion_loader": "scripts/defense/sembind_official_audit.py",
     "generation_steps": 50,
@@ -20,8 +20,9 @@
     "decoder_inv": true,
     "decoder_optimization_steps": 100,
     "binding": "Private HMAC permutation derived from binding_key",
-    "detector": "BA > 181/256",
-    "paper_fpr_working_point_aligned": false
+    "detector": "Historical BA>181/256 plus separately reported166/167 matching-bit points",
+    "paper_fpr_working_point_aligned": false,
+    "carrier": "Original GS spatial repeat and OTP"
   },
   "server_workspace": {
     "host": "172.18.185.249",
@@ -61,7 +62,7 @@
   "completed_evidence": [
     {
       "path": "reports/three_baselines_20261113/report.md",
-      "scope": "固定源码、官方权重哈希及独立SEAL环境；完整三方法复现未完成"
+      "scope": "SEAL公开83/100、论文salt91/100；PGID-R完整151更新10/10恢复；全论文矩阵未完成"
     },
     {
       "path": "reports/phase1_hamming_radius_20261113/report.md",
@@ -69,7 +70,7 @@
     },
     {
       "path": "reports/phase1_trajectory_native_gs_20261113/report.md",
-      "scope": "100/100生成与轨迹测量完成；第35步门槛未通过；反演验证仍运行"
+      "scope": "100提示词生成、300次DPM反演及400条决策完成；GS/GS-S各100/100；轨迹门槛失败"
     },
     {
       "path": "reports/phase1_public_inputs_20261113/report.md",
@@ -141,68 +142,28 @@
     }
   ],
   "latest_experiment": {
-    "run": "continuous_geometry_screen_20261113_v2",
+    "run": "pgid_native_removal_20261113_v3",
     "status": "complete",
-    "completed_at": "2026-11-12T16:41:17.775563+00:00",
-    "protocol": "protocols/continuous_geometry_screen_20261113_v2.json",
-    "protocol_sha256": "45787294dc25d21666d1378cbca0a4d5de25b0bea5f913f8dab07340cf587fc9",
-    "genuine_records": 24,
-    "wrong_identity_pairs": 120,
-    "attack_jobs": 0,
-    "advance": false,
-    "summary": [
-      {
-        "arm": "full",
-        "n": 6,
-        "accepted": 6,
-        "mean_ba": 1.0,
-        "mean_distance": 0.1404003246731302,
-        "mean_hamming": 0.036458333333333336,
-        "mean_lpips": 0.7563933233420054,
-        "mean_initial_mse": 1.9952476963573205,
-        "wrong_identity_accepts": 0
-      },
-      {
-        "arm": "quantized_geometry",
-        "n": 6,
-        "accepted": 6,
-        "mean_ba": 1.0,
-        "mean_distance": 0.27473186736035093,
-        "mean_hamming": 0.07861328125,
-        "mean_lpips": 0.6410908699035645,
-        "mean_initial_mse": 0.8328325923987251,
-        "wrong_identity_accepts": 0
-      },
-      {
-        "arm": "continuous_independent",
-        "n": 6,
-        "accepted": 6,
-        "mean_ba": 0.9694010416666666,
-        "mean_distance": 0.31209813633314526,
-        "mean_hamming": 0.09375,
-        "mean_lpips": 0.7312833170096079,
-        "mean_initial_mse": 1.9961585708615026,
-        "wrong_identity_accepts": 0
-      },
-      {
-        "arm": "continuous_transport",
-        "n": 6,
-        "accepted": 6,
-        "mean_ba": 0.96875,
-        "mean_distance": 0.32283884921550987,
-        "mean_hamming": 0.09635416666666667,
-        "mean_lpips": 0.6441192030906677,
-        "mean_initial_mse": 0.8367803137974733,
-        "wrong_identity_accepts": 0
-      }
+    "completed_at": "2026-11-12T21:50:42.482114+00:00",
+    "protocol": "protocols/pgid_native_removal_20261113_v3.json",
+    "protocol_sha256": "d6c9f8770d612b231c08824fc1ca457172cdc4614292477c463e9ff8cb2cda56",
+    "source_images": 10,
+    "actual_updates": [
+      51,
+      101,
+      151
     ],
-    "gates": {
-      "clean": true,
-      "binding": false,
-      "continuous_vs_quantized": false,
-      "fidelity": true,
-      "wrong_identity": true
-    }
+    "raw_accepts": [
+      0,
+      0,
+      0
+    ],
+    "defended_accepts": [
+      10,
+      10,
+      10
+    ],
+    "paper_full_benchmark_reproduced": false
   },
   "provenance_policy": "Executed run source and protocol hashes remain frozen; use their exact versions for replay",
   "required_validation": [
@@ -213,7 +174,7 @@
     "Defense benefit over simple controls at matched absolute genuine detection"
   ],
   "phase1": {
-    "status": "generation_complete_verification_running",
+    "status": "complete",
     "report": "reports/phase1_contract_20261113/report.md",
     "model_experiments_started": 1,
     "original_gs_source_minimum_matching_bits": 166,
@@ -264,7 +225,10 @@
       "report": "reports/phase1_public_inputs_20261113/report.md"
     },
     "quality_complete": true,
-    "semantic_votes_complete": true
+    "semantic_votes_complete": true,
+    "verification_complete": true,
+    "verification_inversions": 300,
+    "verification_decisions": 400
   },
   "baseline_comparisons": {
     "seal": {
@@ -277,16 +241,36 @@
       "protocol": "protocols/seal_native_20261113_v3.json",
       "protocol_sha256": "e55d8caba0c940c65e5d570fc25e1bbc56aa5207e8a1a69aa1b38c2b8426c73a",
       "coordinator_pid": 43086,
-      "status": "queued",
+      "status": "complete",
       "official_sd21_snapshot_equivalence": false,
       "paper_variant": {
         "run": "seal_paper_native_20261113",
         "protocol": "protocols/seal_paper_native_20261113.json",
         "protocol_sha256": "80c6ed73c323a44b73aab45831b06c98a9fd07b3c82775beff3805433cde4e28",
         "coordinator_pid": 46551,
-        "status": "queued",
+        "status": "complete",
         "component_checks": "reports/three_baselines_20261113/seal_paper_simhash_checks.json",
-        "author_implementation_equivalence": false
+        "author_implementation_equivalence": false,
+        "normal_image_chain_validated": true,
+        "result": "reports/three_baselines_20261113/seal_paper_results.json",
+        "genuine": {
+          "accepted": 91,
+          "n": 100
+        },
+        "unwatermarked": {
+          "accepted": 0,
+          "n": 100
+        }
+      },
+      "normal_image_chain_validated": true,
+      "result": "reports/three_baselines_20261113/seal_released_results.json",
+      "genuine": {
+        "accepted": 83,
+        "n": 100
+      },
+      "unwatermarked": {
+        "accepted": 0,
+        "n": 100
       }
     },
     "pgid": {
@@ -297,7 +281,7 @@
       "protocol": "protocols/pgid_native_removal_20261113_v3.json",
       "protocol_sha256": "d6c9f8770d612b231c08824fc1ca457172cdc4614292477c463e9ff8cb2cda56",
       "coordinator_pid": 46552,
-      "status": "queued",
+      "status": "complete",
       "carrier_component_checks": {
         "report": "reports/three_baselines_20261113/pgid_carrier_checks.json",
         "GS": 2,
@@ -305,20 +289,43 @@
         "PRC": 2,
         "T2SMark": 2,
         "image_inference": false
-      }
+      },
+      "result": "reports/three_baselines_20261113/pgid_removal_results.json",
+      "removal_full_budget_validated": true,
+      "removal_sources": 10
     },
     "sembind": {
       "source_commit": "337c9f90a150157ac1d410208ae20e6530ca8cdd",
       "released_generation_inversion_masker_source_equal": true,
       "complete_author_embedding_code_released": false,
-      "run": "sembind_prc_native_20261113_v2",
-      "protocol": "protocols/sembind_prc_native_20261113_v2.json",
-      "protocol_sha256": "18fd9a38df01c64cd4574c1f0fa6467e04a3e78b5b6ec8702eaf56af3e1df47b",
-      "coordinator_pid": 43087,
-      "status": "queued",
+      "run": "sembind_prc_native_20261113_v3",
+      "protocol": "protocols/sembind_prc_native_20261113_v3.json",
+      "protocol_sha256": "c80cb1fc950d231db23c75399aaf56cc6d133437a99075c227a411e64cb8fa9d",
+      "coordinator_pid": 39425,
+      "status": "complete",
       "implementation_policy": "User approved completing unreleased parts from the paper and explicitly documenting differences",
       "binding_checks": "reports/three_baselines_20261113/sembind_binding_checks.json",
-      "prc_carrier_roundtrips": 6
+      "prc_carrier_roundtrips": 6,
+      "gs_s_normal_image_chain_validated": true,
+      "gs_s_genuine": {
+        "accepted": 100,
+        "n": 100
+      },
+      "previous_run": {
+        "run": "sembind_prc_native_20261113_v2",
+        "status": "failed",
+        "failure": "GPU7 idle guard rejected1percent utilization before model load; other2shards completed; all6sources replayed unchanged"
+      },
+      "prc_s_normal_image_chain_validated": true,
+      "prc_s_result": "reports/three_baselines_20261113/sembind_prc_results.json",
+      "prc_s_genuine": {
+        "accepted": 6,
+        "n": 6
+      },
+      "prc_s_unwatermarked": {
+        "accepted": 0,
+        "n": 6
+      }
     }
   },
   "content_key_review": {
@@ -328,16 +335,11 @@
     "overall_fpr_established": false,
     "priority": "Deferred until three native baseline validations complete"
   },
-  "native_baseline_queue_order": [
-    "phase1_trajectory_native_gs_20261113",
-    "seal_native_20261113_v3",
-    "sembind_prc_native_20261113_v2",
-    "seal_paper_native_20261113",
-    "pgid_native_removal_20261113_v3"
-  ],
+  "native_baseline_queue_order": [],
   "native_postprocessing": {
     "protocol": "reports/three_baselines_20261113/postprocess_protocol.json",
-    "mechanism": "kernel process-exit events",
-    "summary_script": "scripts/defense/summarize_native_baseline.py"
+    "mechanism": "Kernel process-exit events with explicit audit recovery for completed runs",
+    "summary_script": "scripts/defense/summarize_native_baseline.py",
+    "wait_script": "scripts/defense/audit_native_after_exit.py"
   }
 }

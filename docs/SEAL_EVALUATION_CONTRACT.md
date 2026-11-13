@@ -30,6 +30,6 @@
 
 `seal_paper_simhash.py`逐项实现最终Algorithm2：用hash(i,j,salt)采样每个投影向量，再用hash(bits,i,salt)采样对应噪声块。盐为私有32字节，没有公开默认值。论文未指定序列化与具体Gaussian PRNG；这里明确使用带域前缀的SHA256、固定宽度整数编码、摘要前64位作为设备内私有PyTorch Generator的seed。这是论文规格实现，不能声明与作者未公开实现逐字节相同。
 
-[CPU组件检查](../reports/three_baselines_20261113/seal_paper_simhash_checks.json)已验证同盐同输入精确复现、独立对象重放、换盐改变投影与噪声、拒绝空盐、保持全局RNG状态。没有执行攻击或形成图像性能结论。[独立100提示词协议](../protocols/seal_paper_native_20261113.json)与公开代码对照使用同一批预览图，并在运行中核对预览PNG哈希；两条结果分别报告。
+[CPU组件检查](../reports/three_baselines_20261113/seal_paper_simhash_checks.json)已验证同盐同输入精确复现、独立对象重放、换盐改变投影与噪声、拒绝空盐、保持全局RNG状态。该组件检查不包含攻击。已完成图像正常链路：论文salt91/100、公开代码83/100，均为开发数据；不推断二者差异来自salt。[独立100提示词协议](../protocols/seal_paper_native_20261113.json)与公开代码对照使用同一批预览图，并在运行中核对预览PNG哈希；两条结果分别报告。
 
 作者embedding本地资产原缺少仅记载版本、空prompts和cosine设置的config_sentence_transformers.json。[完整配置对照](../reports/three_baselines_20261113/configuration_audit.json)已校验现有文件的上游Git blob。另建包含该原始配置的固定目录，未改变已冻结运行的资产；249上3个文本的768维CPU编码逐值一致，最大差0，见[验证](../reports/three_baselines_20261113/seal_embedding_config_check.json)。该检查不替代图像验证。

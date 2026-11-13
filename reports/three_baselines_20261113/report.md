@@ -1,33 +1,46 @@
-# 三个防御基线的来源和执行记录
+# 三个防御基线的实现与验收
 
-已固定SemBind `337c9f90a150157ac1d410208ae20e6530ca8cdd`、PGID `dc4ad963ffefcb4cf84340084db617472983d3e0`、SEAL `92d31b31b93a6e373fe88a584c640beafb68c6fa`。三个干净源码副本均位于249的`third_party/frozen`，不改动上游数值或攻击代码。验收定义见[执行契约](../../docs/THREE_BASELINE_REPRODUCTION.md)，动态状态见[project_state.json](../../project_state.json)。
+SemBind、PGID和SEAL已建立各自的原生入口，并保存源码、模型、协议和逐图产物哈希。以下是已完成的图像结果；各方法使用自己的载体与工作点，不构成同条件排名或全论文矩阵复现。执行状态只维护于[project_state.json](../../project_state.json)。
 
-[源码及权重对照](source_equivalence.json)验证PGID新旧22个Python文件的可执行AST一致，忽略注释和文档字符串；该检查是来源等价核验，不是新的模型实验。SemBind现用的inversion.py、model.py及src下三个生成/反演文件与官方归档逐字节一致。完整水印绑定入口仍未公开，论文补齐部分不能宣称是作者原码。
+| 已完成链路 | 合法图 | 无水印对照 | 完整既有攻击 |
+|---|---:|---:|---|
+| 原GS空间OTP | 100/100 | 0/100 | 本链路未执行 |
+| 论文补齐SemBind GS-S | 100/100 | 0/100 | 本链路未执行 |
+| 论文补齐SemBind PRC-S | 6/6；512位消息均精确解码 | 0/6 | 本链路未执行 |
+| SEAL公开代码 | 83/100；COCO48/50，SDP35/50 | 0/100 | 未执行 |
+| SEAL论文私有salt实现 | 91/100；COCO50/50，SDP41/50 | 0/100 | 未执行 |
+| PGID-R原生GS | 10/10 | 本轮无该对照 | Imprint去除后原检测0/10，防御后10/10；三个检查点一致 |
 
-[SEAL环境与资产](seal_preflight.json)已完成249上的CPU导入和全部本地权重文件哈希。BLIP2两片权重、spiece以及作者caption-embedding权重均与Hugging Face上游LFS哈希一致。扩散模型暂用固定Manojb SD2.1镜像；stabilityai原始fp16快照同一性未认证，公开元数据请求返回401。未将此限制写成已证实模型不同。
+GS两条路径的166、167、182位工作点结果一致，详见[400条决策](../phase1_trajectory_native_gs_20261113/baseline_summary.json)。负例按提示词生成新身份，不代表固定用户自然图FPR。SEAL结果分别见[公开路径](seal_released_results.json)、[论文路径](seal_paper_results.json)。每图保存的1024块距离及FP16潜变量通过独立CPU重算，两条路径各核验400个图像/潜变量文件，计数判定完全一致。论文路径100张预览图与公开路径PNG哈希逐张一致。
 
-SEAL语义入口使用官方生成、caption、SimHash和反演函数；最终布尔判定补自ICCV最终算法3和补充§9.1：1024块、每块7位、距离严格小于2.3、至少12块匹配。原入口使用所载模型的PNDM生成调度器，反演用作者DDIM代数及该调度器时间步；不擅自替换生成调度器。公开代码没有暴露论文secret salt，保留这个协议差异。
+[PGID-R结果](pgid_removal_results.json)来自原样调用官方run.py的10个案例，包含70条决策、40张图像和3份原始CSV的哈希检查。攻击执行完整151次更新，原源码索引50/100/150对应实际51/101/151次更新。三个检查点的原检测平均BA分别为0.2875、0.029296875、0.00234375，防御后分别为0.999609375、1、1。PGID-F的10例完整预算结果见[既有报告](../defense_revalidation_20261111/report.md)。公开fixture身份及已使用过的开发来源，不支持未知私钥安全或独立确认结论。
 
-100提示词（COCO/SDP各50）开发链路已冻结于[协议](../../protocols/seal_native_20261113_v3.json)，不是论文1000图实验或独立确认。协议SHA256 `e55d8caba0c940c65e5d570fc25e1bbc56aa5207e8a1a69aa1b38c2b8426c73a`。每例保存预览、合法图、无水印图、候选caption、反演潜变量、全部1024个距离和布尔判定。无攻击、无良性扰动结果，不能据此宣称完整防御性能。
+100例无水印零接受的双侧95% Clopper–Pearson上界约3.62%，不能写成经验FPR1e-6。SEAL两种派生方式对应不同水印图和密钥；91/100与83/100的差别不是私有salt改善性能的因果证据。
 
-初次协调器因服务器Python不提供os.pidfd_open，在任何GPU工作进程启动前退出。原运行与[原协议](../../protocols/seal_native_20261113.json)保持冻结；v2仅改为该主机支持的Linux pidfd系统调用等待退出事件，没有轮询进度、改变模型或改变参数。
+## 固定来源与实现差异
 
-## 绑定实现与完整预算入口
+| 方法 | 官方固定commit | 实现范围 |
+|---|---|---|
+| SemBind | 337c9f90a150157ac1d410208ae20e6530ca8cdd | 官方语义网络、DPM生成/精确反演；未发布的绑定由论文补齐 |
+| PGID | dc4ad963ffefcb4cf84340084db617472983d3e0 | 官方F/R、四载体与原样实验入口 |
+| SEAL | 92d31b31b93a6e373fe88a584c640beafb68c6fa | 官方生成/caption/SimHash/反演；最终布尔规则补自ICCV算法3 |
 
-[SemBind掩码检查](sembind_binding_checks.json)使用已冻结100个语义码和私有载体，sigma0、0.5、1共300次精确解绑定通过。PRC另在249生成新的私钥和6条512位消息，直接调用官方KeyGen/Encode/Decode，6条CPU往返通过。图像链路冻结于[PRC-S协议](../../protocols/sembind_prc_native_20261113_v2.json)，尚不能报告图像接受率。
+干净源码位于249的third_party/frozen。[来源核验](source_equivalence.json)显示PGID新旧22个Python文件可执行AST相同，SemBind使用的5个生成/反演/语义文件与官方归档字节一致。该检查不替代模型实验。
 
-[PGID-R协议](../../protocols/pgid_native_removal_20261113_v2.json)固定作者原样run.py及全部151次Imprint更新，对10个官方案例保存51/101/151次实际更新处的原判定和防御后判定。原生入口CPU导入/参数解析已通过，未改攻击函数。已有PGID-F10例结果和新旧源码可执行AST等价证据分别保留。
+SemBind按论文使用平铺、比例截断、秘密置换和符号乘法；私有HMAC置换的具体派生是项目明确约定，未声称作者字节等价。DPM50、CFG7.5生成；空提示词CFG3、inv_order0、VAE decoder优化100步反演。sigma为GS/TR1、PRC/GS++0.5。[300次掩码检查](sembind_binding_checks.json)及6条原PRC私钥消息CPU往返通过。[PRC图像完整重放](sembind_prc_results.json)完成18次DPM反演、24条决策与48项文件哈希核验。原PRC和PRC-S均6/6接受、6/6精确恢复512位消息；两者无水印均0/6。其样本量仅能验证集成链路。
 
-[队列启动收据](queue_launch.json)记录三个新协调器及协议哈希。旧等待队列在任何GPU工作进程启动前结束；新协调器增加固定3秒设备释放间隔和真实工作进程启动记录，所有数值worker、来源和样本数保持不变。执行顺序是原GS验证、SEAL100、PRC-S6、PGID-R10。旧协议留作溯源，不是重复实验结果。
+SEAL最终规则为1024块、每块7位、距离严格小于2.3、至少12块匹配。公开源码固定投影seed42，没有论文secret salt。论文路径由[专用实现](../../scripts/defense/seal_paper_simhash.py)补齐，明确SHA256序列化及设备内私有Gaussian RNG约定，不能声称作者实现等价。[私有salt组件检查](seal_paper_simhash_checks.json)验证确定性、密钥隔离和全局RNG不变。
 
-## SEAL论文私有salt链路
+[环境和权重](seal_preflight.json)、[配置](configuration_audit.json)验证BLIP2、作者caption embedding的上游LFS/Git blob哈希。补齐embedding原始元数据配置后，[3条CPU编码](seal_embedding_config_check.json)逐值相同。扩散模型为固定Manojb SD2.1镜像；与stabilityai原始fp16快照的同一性尚未认证，不能写成已经证实模型不同。
 
-[论文算法2组件检查](seal_paper_simhash_checks.json)通过确定性、密钥隔离和全局RNG不变检查。[独立100提示词图像协议](../../protocols/seal_paper_native_20261113.json)固定了32字节私有salt和公开的哈希/RNG约定，不能据此声称作者实现等价或图像防御通过。此分支插入PRC-S之后、PGID-R之前，新增[队列收据](paper_seal_queue.json)记录实际进程；PGID原数值worker、10来源和完整151更新均未改变。
+## 调度器和载体核验
 
-[预处理与分词配置核验](configuration_audit.json)显示所载配置均与上游Git blob匹配。作者embedding缺失的元数据配置在新固定目录补齐；[3条CPU编码比较](seal_embedding_config_check.json)逐值相同，最大差为0。实际GPU完整链路仍须独立验收。
+[SEAL实际调度网格](scheduler_seal.json)为PNDMScheduler，请求50步产生51个时间步；保留原代码逆序DDIM代数反演。[SemBind与PGID检查](scheduler_sembind_pgid.json)记录两者不同的DPM反演时间网格，以及PGID原码完整控制流：F的GS/TR/T2SMark调用298次预测器，F的PRC为138次，R为200次。此处使用CPU替身预测器，不是图像性能测试。
 
-## PGID四载体组件验收
+[PGID四载体CPU检查](pgid_carrier_checks.json)各2/2通过；GS、PRC和T2SMark消息BA均为1，TR采用原生p-value。其他载体图像链路仍须逐项验收。[验收契约](../../docs/THREE_BASELINE_REPRODUCTION.md)列明完整矩阵范围。
 
-[原码CPU检查](pgid_carrier_checks.json)对GS、TR、PRC、T2SMark分别执行两例编码与原生检测，共8/8通过。GS、PRC和T2SMark消息BA均为1；TR使用其原生p-value判定。PGID-F/R的k、skip、gamma由官方configure_PGID直接产生并记录。没有运行图像模型或攻击，不能据此宣称其他载体的图像复现完成。
+## 失败与重放记录
 
-[完成后审计协议](postprocess_protocol.json)固定汇总脚本及等待对象。各链路正常退出后，在249校验产物SHA256、决策分母与判定；SEAL另从保存潜变量独立重建分块L2和匹配计数。没有完成的链路不产生成功率或零接受结论。
+PRC-S v2的GPU7分片在模型载入前被空闲检查拒绝：显存1MiB、利用率1%，完成决策数0；GPU5/4两个分片正常完成。保留失败目录及原协议。[v3协议](../../protocols/sembind_prc_native_20261113_v3.json)重放全部6例，数值代码、私钥、辅助图、载体和参数完全相同，不按结果筛选样本，也不放宽占用检查。重放三个分片均成功退出，6例均完整纳入汇总。
+
+已完成产物用冻结summarize_native_baseline.py逐条审计。后台等待器仅留下首项SEAL自动审计记录；其余已完成链路在本次恢复后显式审计。缺失的自动事件不能冒充已经验收；所有原始结果和未通过的启动记录保留。

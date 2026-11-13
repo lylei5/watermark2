@@ -6,8 +6,9 @@
 
 | 研究 | 已完成证据与边界 |
 |---|---|
+| [三个原生防御基线](three_baselines_20261113/report.md) | GS-S正常图100/100；SEAL公开83/100、论文salt91/100；PGID-R完整151更新10/10恢复。逐方法范围与差异单独报告 |
 | [汉明恢复半径](phase1_hamming_radius_20261113/report.md) | 保留至少95%配对的描述性半径同时纳入82%/90%同提示词实例；非攻击/FE结果 |
-| [100提示词轨迹](phase1_trajectory_native_gs_20261113/report.md) | 生成阶段完成；第35步P5为0.904639/0.892383，未通过门槛；完整验证仍运行 |
+| [100提示词轨迹](phase1_trajectory_native_gs_20261113/report.md) | 生成、300次DPM反演及400条决策完成；第35步P5为0.904639/0.892383，未通过轨迹门槛 |
 | [固定公开输入](phase1_public_inputs_20261113/report.md) | 100张COCO图核验与100条过滤I2P提示词；无攻击运行 |
 | [PRC与模型资产](phase1_backend_audit_20261113/report.md) | PRC原码8/8 CPU往返；SD1.5/CLIP权重核验；未完成PRC-S图像实验 |
 | [随机错误身份工作点](phase1_wrong_key_null_20261113/report.md) | 300万次随机身份；167位0次误报，95%上界1.22963e-6；不代表固定用户自然图FPR |
