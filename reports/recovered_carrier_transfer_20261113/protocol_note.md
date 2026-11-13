@@ -13,3 +13,11 @@
 恢复工作进程经pidfd等到SSCD门控进程退出，在空闲GPU7上完成。两项合法图对照的补跑与读取修正见[执行记录](../pgid_carrier_genuine_20261113/execution.md)。版本化审计在它们退出后生成audited_scores_v3.json；后续描述性比较另存comparison_analysis.json。原始失败记录保留，不持续轮询。GPU6始终排除。
 
 入口：[恢复与原生检测](../../scripts/defense/recovered_carrier_transfer.py)、[退出后配对审计](../../scripts/defense/score_recovered_carrier_transfer.py)。冻结参数见[协议](../../protocols/recovered_carrier_transfer_20261113.json)，派发见[launch.json](launch.json)。
+
+## 配对不确定性与汇总图
+
+[来源级重采样](source_uncertainty.json)已完成。代码固定GS校准阈值，以来源为抽样单位，每个来源的10张合法查询一起抽取；10000次bootstrap只描述当前开发来源的不确定性。[分析入口](../../scripts/defense/audit_transfer_source_uncertainty.py)保存种子、原始来源差值和输入哈希。三组投影各自报告，不将其当成三倍独立样本。
+
+[汇总图入口](../../scripts/defense/plot_carrier_transfer.py)在完整配对审计与描述性比较进程退出后执行，派发记录见[figure_launch.json](figure_launch.json)。它从审计JSON生成同一数据表的PNG、PDF和CSV；合法图分母为100，完整Imprint终点分母为10。图中SSCD与恢复方法使用冻结GS90%校准点，原生检测和PGID使用作者设置。不可行的校准点显示文字，三组投影显示为三个观测点。
+
+图表用于内部研究比较。绘图流程参考scientific-visualization；软件出处见[相关工作中的工具记录](../paired_channel_recovery_20261113/related_work.md)。最终输出需完成可视检查后再作为交付图使用。

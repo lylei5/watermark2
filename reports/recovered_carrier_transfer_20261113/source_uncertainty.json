@@ -1,0 +1,1309 @@
+{
+  "status": "complete",
+  "source_sha256": "421e56bea7dc9af0de114cdcf6d2172ab1eb9546b28b4ba94c5d7469c9226110",
+  "protocol_sha256": "33d9bba5d84948f694434cd6e17729793d2fa629eb2bc776f72d1554055e4076",
+  "seed": 2026111401,
+  "resamples": 10000,
+  "source_count_per_carrier": 10,
+  "genuine_queries_per_source": 10,
+  "scope": "Descriptive source-paired intervals conditional on frozen calibration; development cohort, no multiplicity correction or independent confirmation",
+  "calibration_uncertainty_included": false,
+  "rows": [
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 0,
+      "target": 0.9,
+      "baseline": "sscd_single",
+      "delta_percentage_points": -3.0000000000000004,
+      "source_bootstrap_percentile95": [
+        -6.0,
+        0.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        0.0,
+        -0.1,
+        -0.1
+      ]
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 0,
+      "target": 0.9,
+      "baseline": "sscd_templates",
+      "delta_percentage_points": 2.0,
+      "source_bootstrap_percentile95": [
+        0.0,
+        5.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.0,
+        0.1,
+        0.0
+      ]
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 0,
+      "target": 0.9,
+      "baseline": "sscd_int8_templates",
+      "delta_percentage_points": 2.0,
+      "source_bootstrap_percentile95": [
+        0.0,
+        5.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        0.0,
+        0.1,
+        0.0
+      ]
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 0,
+      "target": 0.9,
+      "baseline": "sscd_single",
+      "delta_percentage_points": -5.0,
+      "source_bootstrap_percentile95": [
+        -8.0,
+        -2.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        -0.1,
+        -0.1,
+        0.0,
+        -0.1,
+        -0.1
+      ]
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 0,
+      "target": 0.9,
+      "baseline": "sscd_templates",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        -4.0,
+        4.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        -0.1,
+        0.1,
+        0.0,
+        0.1,
+        0.0
+      ]
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 0,
+      "target": 0.9,
+      "baseline": "sscd_int8_templates",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        -4.0,
+        4.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        -0.1,
+        0.1,
+        0.0,
+        0.1,
+        0.0
+      ]
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 0,
+      "target": 0.9,
+      "baseline": "sscd_single",
+      "delta_percentage_points": -4.0,
+      "source_bootstrap_percentile95": [
+        -7.000000000000001,
+        -1.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        -0.1,
+        0.0,
+        -0.1,
+        -0.1
+      ]
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 0,
+      "target": 0.9,
+      "baseline": "sscd_templates",
+      "delta_percentage_points": 1.0,
+      "source_bootstrap_percentile95": [
+        -2.0000000000000004,
+        4.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        0.1,
+        0.0,
+        0.1,
+        0.0
+      ]
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 0,
+      "target": 0.9,
+      "baseline": "sscd_int8_templates",
+      "delta_percentage_points": 1.0,
+      "source_bootstrap_percentile95": [
+        -2.0000000000000004,
+        4.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        0.1,
+        0.0,
+        0.1,
+        0.0
+      ]
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 1,
+      "target": 0.9,
+      "baseline": "sscd_single",
+      "delta_percentage_points": -6.0,
+      "source_bootstrap_percentile95": [
+        -10.0,
+        -2.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        0.0,
+        0.0,
+        -0.1,
+        -0.1,
+        -0.2,
+        -0.1
+      ]
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 1,
+      "target": 0.9,
+      "baseline": "sscd_templates",
+      "delta_percentage_points": -1.0,
+      "source_bootstrap_percentile95": [
+        -4.0,
+        2.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        0.0,
+        0.0,
+        0.1,
+        -0.1,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 1,
+      "target": 0.9,
+      "baseline": "sscd_int8_templates",
+      "delta_percentage_points": -1.0,
+      "source_bootstrap_percentile95": [
+        -4.0,
+        2.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        0.0,
+        0.0,
+        0.1,
+        -0.1,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 1,
+      "target": 0.9,
+      "baseline": "sscd_single",
+      "delta_percentage_points": -6.0,
+      "source_bootstrap_percentile95": [
+        -9.0,
+        -3.0000000000000004
+      ],
+      "per_source_delta": [
+        -0.1,
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        -0.1,
+        -0.1,
+        0.0,
+        -0.1,
+        -0.1
+      ]
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 1,
+      "target": 0.9,
+      "baseline": "sscd_templates",
+      "delta_percentage_points": -1.0,
+      "source_bootstrap_percentile95": [
+        -5.0,
+        3.0000000000000004
+      ],
+      "per_source_delta": [
+        -0.1,
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        -0.1,
+        0.1,
+        0.0,
+        0.1,
+        0.0
+      ]
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 1,
+      "target": 0.9,
+      "baseline": "sscd_int8_templates",
+      "delta_percentage_points": -1.0,
+      "source_bootstrap_percentile95": [
+        -5.0,
+        3.0000000000000004
+      ],
+      "per_source_delta": [
+        -0.1,
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        -0.1,
+        0.1,
+        0.0,
+        0.1,
+        0.0
+      ]
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 1,
+      "target": 0.9,
+      "baseline": "sscd_single",
+      "delta_percentage_points": -5.0,
+      "source_bootstrap_percentile95": [
+        -9.000000000000002,
+        -1.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        -0.2,
+        0.0,
+        -0.1,
+        -0.1
+      ]
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 1,
+      "target": 0.9,
+      "baseline": "sscd_templates",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        -3.0000000000000004,
+        3.0000000000000004
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        0.0,
+        0.0,
+        0.1,
+        0.0
+      ]
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 1,
+      "target": 0.9,
+      "baseline": "sscd_int8_templates",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        -3.0000000000000004,
+        3.0000000000000004
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        0.0,
+        0.0,
+        0.1,
+        0.0
+      ]
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 2,
+      "target": 0.9,
+      "baseline": "sscd_single",
+      "delta_percentage_points": -4.0,
+      "source_bootstrap_percentile95": [
+        -7.000000000000001,
+        -1.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        0.0,
+        0.0,
+        -0.1,
+        0.0,
+        -0.1,
+        -0.1
+      ]
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 2,
+      "target": 0.9,
+      "baseline": "sscd_templates",
+      "delta_percentage_points": 1.0,
+      "source_bootstrap_percentile95": [
+        -2.0,
+        4.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        0.0,
+        0.0,
+        0.1,
+        0.0,
+        0.1,
+        0.0
+      ]
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 2,
+      "target": 0.9,
+      "baseline": "sscd_int8_templates",
+      "delta_percentage_points": 1.0,
+      "source_bootstrap_percentile95": [
+        -2.0,
+        4.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        0.0,
+        0.0,
+        0.1,
+        0.0,
+        0.1,
+        0.0
+      ]
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 2,
+      "target": 0.9,
+      "baseline": "sscd_single",
+      "delta_percentage_points": -5.0,
+      "source_bootstrap_percentile95": [
+        -8.0,
+        -2.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        -0.1,
+        -0.1,
+        0.0,
+        -0.1,
+        -0.1
+      ]
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 2,
+      "target": 0.9,
+      "baseline": "sscd_templates",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        -4.0,
+        4.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        -0.1,
+        0.1,
+        0.0,
+        0.1,
+        0.0
+      ]
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 2,
+      "target": 0.9,
+      "baseline": "sscd_int8_templates",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        -4.0,
+        4.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.1,
+        -0.1,
+        0.1,
+        0.0,
+        0.1,
+        0.0
+      ]
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 2,
+      "target": 0.9,
+      "baseline": "sscd_single",
+      "delta_percentage_points": -6.0,
+      "source_bootstrap_percentile95": [
+        -9.0,
+        -3.0000000000000004
+      ],
+      "per_source_delta": [
+        -0.1,
+        0.0,
+        0.0,
+        -0.1,
+        0.0,
+        -0.1,
+        -0.1,
+        0.0,
+        -0.1,
+        -0.1
+      ]
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 2,
+      "target": 0.9,
+      "baseline": "sscd_templates",
+      "delta_percentage_points": -1.0,
+      "source_bootstrap_percentile95": [
+        -5.0,
+        3.0000000000000004
+      ],
+      "per_source_delta": [
+        -0.1,
+        0.0,
+        0.0,
+        -0.1,
+        0.0,
+        -0.1,
+        0.1,
+        0.0,
+        0.1,
+        0.0
+      ]
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 2,
+      "target": 0.9,
+      "baseline": "sscd_int8_templates",
+      "delta_percentage_points": -1.0,
+      "source_bootstrap_percentile95": [
+        -5.0,
+        3.0000000000000004
+      ],
+      "per_source_delta": [
+        -0.1,
+        0.0,
+        0.0,
+        -0.1,
+        0.0,
+        -0.1,
+        0.1,
+        0.0,
+        0.1,
+        0.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 0,
+      "target": 0.9,
+      "baseline": "sscd_single",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        0.0,
+        0.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 0,
+      "target": 0.9,
+      "baseline": "sscd_templates",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        0.0,
+        0.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 0,
+      "target": 0.9,
+      "baseline": "sscd_int8_templates",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        0.0,
+        0.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 0,
+      "target": 0.9,
+      "baseline": "sscd_single",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        0.0,
+        0.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 0,
+      "target": 0.9,
+      "baseline": "sscd_templates",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        0.0,
+        0.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 0,
+      "target": 0.9,
+      "baseline": "sscd_int8_templates",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        0.0,
+        0.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 0,
+      "target": 0.9,
+      "baseline": "sscd_single",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        0.0,
+        0.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 0,
+      "target": 0.9,
+      "baseline": "sscd_templates",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        0.0,
+        0.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 0,
+      "target": 0.9,
+      "baseline": "sscd_int8_templates",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        0.0,
+        0.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 1,
+      "target": 0.9,
+      "baseline": "sscd_single",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        0.0,
+        0.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 1,
+      "target": 0.9,
+      "baseline": "sscd_templates",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        0.0,
+        0.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 1,
+      "target": 0.9,
+      "baseline": "sscd_int8_templates",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        0.0,
+        0.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 1,
+      "target": 0.9,
+      "baseline": "sscd_single",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        0.0,
+        0.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 1,
+      "target": 0.9,
+      "baseline": "sscd_templates",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        0.0,
+        0.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 1,
+      "target": 0.9,
+      "baseline": "sscd_int8_templates",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        0.0,
+        0.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 1,
+      "target": 0.9,
+      "baseline": "sscd_single",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        0.0,
+        0.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 1,
+      "target": 0.9,
+      "baseline": "sscd_templates",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        0.0,
+        0.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 1,
+      "target": 0.9,
+      "baseline": "sscd_int8_templates",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        0.0,
+        0.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 2,
+      "target": 0.9,
+      "baseline": "sscd_single",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        0.0,
+        0.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 2,
+      "target": 0.9,
+      "baseline": "sscd_templates",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        0.0,
+        0.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 2,
+      "target": 0.9,
+      "baseline": "sscd_int8_templates",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        0.0,
+        0.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 2,
+      "target": 0.9,
+      "baseline": "sscd_single",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        0.0,
+        0.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 2,
+      "target": 0.9,
+      "baseline": "sscd_templates",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        0.0,
+        0.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 2,
+      "target": 0.9,
+      "baseline": "sscd_int8_templates",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        0.0,
+        0.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 2,
+      "target": 0.9,
+      "baseline": "sscd_single",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        0.0,
+        0.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 2,
+      "target": 0.9,
+      "baseline": "sscd_templates",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        0.0,
+        0.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 2,
+      "target": 0.9,
+      "baseline": "sscd_int8_templates",
+      "delta_percentage_points": 0.0,
+      "source_bootstrap_percentile95": [
+        0.0,
+        0.0
+      ],
+      "per_source_delta": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-13T16:07:51.584418+00:00",
+  "updated_at": "2026-11-13T16:27:21.9433482Z",
   "status": "native_baselines_and_instance_key_recovery",
   "active_experiments": 2,
   "queued_experiments": 0,
@@ -668,9 +668,15 @@
         "accepted": 64,
         "total": 100
       }
-    }
+    },
+    "figure_pid": 28818,
+    "figure_status": "waiting_for_comparison_exit",
+    "source_uncertainty": "reports/recovered_carrier_transfer_20261113/source_uncertainty.json",
+    "figure_launch": "reports/recovered_carrier_transfer_20261113/figure_launch.json",
+    "event_wait_session": 20662,
+    "last_observation": "Both genuine-control workers running; final audit, comparison and figure workers waiting on process-exit events."
   },
-  "last_queue_observation": "2026-11-13T16:03:30+00:00",
+  "last_queue_observation": "2026-11-13T16:22:00+00:00",
   "paired_channel_recovery": {
     "run": "paired_edit_registration_20261113",
     "status": "complete",
@@ -684,6 +690,7 @@
     "additional_clean_recovery_checks": 60,
     "record_authentication_checks": 20,
     "independent_confirmation": false,
-    "superiority_established": false
+    "superiority_established": false,
+    "related_work": "reports/paired_channel_recovery_20261113/related_work.md"
   }
 }
