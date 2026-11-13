@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "pid": 42755,
+  "protocol_sha256": "7b6d7ccb496ff852f857a8f589273833b7bd43dfcb83865e8dba1abfc4e7bbf3",
+  "gpu": 7,
+  "gpu_uuid": "GPU-9644fb82-cb6f-7311-8017-eaee41409bb7",
+  "started_at": 1794597683.5693018,
+  "rows": 520,
+  "fresh_vae_encodings": 500,
+  "new_generations": 10,
+  "new_inversions": 20,
+  "seconds": 482.3312072753906,
+  "artifacts": {
+    "features.npz": "b0b1003c7b72fba6a24f37cfa5d22b0740c4e65fd915b804c329db64eb1004ca",
+    "feature_rows.json": "1b4503047d03d2c134583597fae9752f5b03b4a3279bef60415eb296954b6528",
+    "sscd_templates.npz": "1588c61aad8bbc3cc5a765c2fdf43605a2f5dfd6c0b8c027c023df693b6ad1f1"
+  }
+}

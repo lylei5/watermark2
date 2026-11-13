@@ -36,7 +36,8 @@ def main():
     # native calibration query is accepted; enforce that condition explicitly.
     calibration=[r for r in controls if r['split']=='calibration'and r['kind']in ['clean',*plan['conditions']]]
     assert len(calibration)==30 and all(r['native_accepted']for r in calibration)
-    meta=read(run/'feature_rows.json');data=np.load(run/'features.npz')
+    meta=read(run/'feature_rows.json')
+    with np.load(run/'features.npz')as archive:data={k:archive[k]for k in archive.files}
     index={(r['id'],r['kind']):i for i,r in enumerate(meta)}
     individual=[]
     for i,r in enumerate(meta):

@@ -22,6 +22,7 @@ def main():
     assert not (run/'recovery_state.json').exists(); write(run/'recovery_state.json',state)
     try:
         done=read(run/'extract_complete.json'); assert done['status']=='complete'
+        assert done['protocol_sha256']==plan.get('extraction_protocol_sha256',sha(run/'protocol.json'))
         for name,digest in done['artifacts'].items(): assert sha(run/name)==digest
         for name,digest in plan['scripts'].items(): assert sha(run/name)==digest
         os.environ.update(CUDA_VISIBLE_DEVICES='',OMP_NUM_THREADS='4',OPENBLAS_NUM_THREADS='4',MKL_NUM_THREADS='4',NUMBA_NUM_THREADS='4')
@@ -38,8 +39,9 @@ def main():
         from watermarks.messages import MESSAGES
         torch.set_num_threads(4)
         mathematical=mathematical_checks()
-        meta=read(run/'feature_rows.json'); data=np.load(run/'features.npz')
-        template_data=np.load(run/'sscd_templates.npz')
+        meta=read(run/'feature_rows.json')
+        with np.load(run/'features.npz') as archive:data={k:archive[k] for k in archive.files}
+        with np.load(run/'sscd_templates.npz') as archive:template_data={k:archive[k] for k in archive.files}
         index={(r['id'],r['kind']):i for i,r in enumerate(meta)}
         assert len(index)==len(meta)==520 and plan['methods']==METHODS
         fit=[i for i,r in enumerate(meta) if r['carrier']=='GS' and r['task'] in plan['fit_sources'] and

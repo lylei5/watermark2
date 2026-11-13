@@ -27,7 +27,8 @@ def main():
     from shared_channel_features import describe,unit
     sys.path.insert(0,str(NATIVE/'PGID'))
     from watermarks.gs_watermark import GSWatermark
-    meta=read(run/'feature_rows.json');data=np.load(run/'features.npz')
+    meta=read(run/'feature_rows.json')
+    with np.load(run/'features.npz')as archive:data={k:archive[k]for k in archive.files}
     index={(r['id'],r['kind']):i for i,r in enumerate(meta)}
     groups=[plan[k]for k in ['fit_sources','calibration_sources','evaluation_sources']]
     pairing={task:group[(j+1)%len(group)]for group in groups for j,task in enumerate(group)}

@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-13T19:33:35.465078+00:00",
+  "updated_at": "2026-11-13T19:49:06.701521+00:00",
   "status": "native_baselines_and_instance_key_recovery",
   "active_experiments": 1,
   "queued_experiments": 0,
@@ -689,7 +689,8 @@
     "comparison_status": "complete",
     "native_replay_disagreements": 0,
     "descriptive_comparisons": 210,
-    "figure_visual_inspection": "PNG labels and missing points checked; PDF fonts embedded TrueType"
+    "figure_visual_inspection": "PNG labels and missing points checked; PDF fonts embedded TrueType",
+    "pgid_descriptive_threshold_comparison": "reports/recovered_carrier_transfer_20261113/pgid_working_points.json"
   },
   "last_queue_observation": "2026-11-13T19:04:14+00:00",
   "paired_channel_recovery": {
@@ -709,13 +710,13 @@
     "related_work": "reports/paired_channel_recovery_20261113/related_work.md"
   },
   "shared_channel_binding": {
-    "run": "shared_channel_binding_20261114",
-    "status": "running",
-    "coordinator_pid": 42703,
-    "exit_wait_session": 99281,
-    "gpu": 7,
-    "protocol": "protocols/shared_channel_binding_20261114.json",
-    "protocol_sha256": "7b6d7ccb496ff852f857a8f589273833b7bd43dfcb83865e8dba1abfc4e7bbf3",
+    "run": "shared_channel_binding_20261114_v2",
+    "status": "cpu_recovery_and_audit",
+    "coordinator_pid": 19264,
+    "exit_wait_session": 10441,
+    "gpu": null,
+    "protocol": "protocols/shared_channel_binding_20261114_v2.json",
+    "protocol_sha256": "204dbe256f2e0c23016e75db4355e962fd11aa8e08b60b113facd6eb633db19d",
     "design": "reports/shared_channel_binding_20261114/protocol_note.md",
     "preflight": "reports/shared_channel_binding_20261114/preflight.json",
     "planned_recoveries": 17040,
@@ -726,10 +727,21 @@
     "attack_generation": false,
     "independent_confirmation": false,
     "superiority_established": false,
-    "observation": "Detached sequential extraction and actual recovery pipeline launched; no repeated progress polling.",
-    "postprocessor_pid": 39302,
+    "observation": "Same numeric protocol and identical cached arrays; CPU-only recovery, audits and within-split control execute sequentially.",
+    "postprocessor_pid": null,
     "extra_control_recoveries": 690,
-    "pairing_control_protocol": "protocols/shared_pairing_control_20261114.json",
-    "postprocessor_scope": "Hash/region audit, real-edit cancellation statistics and within-split pairing control after main pipeline exit"
+    "pairing_control_protocol": "protocols/shared_pairing_control_20261114_v2.json",
+    "postprocessor_scope": "Hash/region audit, real-edit cancellation statistics and within-split pairing control after main pipeline exit",
+    "extraction_status": "complete",
+    "fresh_vae_encodings": 500,
+    "actual_new_generations": 10,
+    "actual_new_inversions": 20,
+    "extraction_gpu": 7,
+    "previous_attempt": {
+      "run": "shared_channel_binding_20261114",
+      "status": "interrupted_before_recovery",
+      "reason": "Repeated whole-array NPZ decompression; fixed by materializing identical arrays once",
+      "extraction_reused": true
+    }
   }
 }

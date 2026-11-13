@@ -1,0 +1,14 @@
+{
+  "at": "2026-11-13T19:43:24.486880+00:00",
+  "status": "interrupted_for_io_optimization",
+  "pid": 45530,
+  "cmdline_sha256": "72270fcc439135eac2d1e8278aadd67b874ba719e375d0c7484f9175702c499a",
+  "reason": "Materialize immutable NPZ arrays once instead of decompressing whole arrays inside query loops; numeric methods unchanged",
+  "previous_state": {
+    "status": "running",
+    "pid": 45530,
+    "protocol_sha256": "7b6d7ccb496ff852f857a8f589273833b7bd43dfcb83865e8dba1abfc4e7bbf3",
+    "started_at": 1794598921.0010822
+  },
+  "extraction_retained": true
+}
