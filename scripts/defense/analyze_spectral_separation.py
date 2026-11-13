@@ -1,5 +1,6 @@
 """Continuous separation during frozen key decoding; does not alter the experiment."""
 import argparse
+import json
 import math
 import os
 
@@ -9,12 +10,14 @@ from pathlib import Path
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--run',type=Path,required=True)
+    parser.add_argument('--output-name',default='continuous_separation.json')
     args=parser.parse_args();run=args.run.resolve();assert ROOT.is_dir()and run.parent==ROOT/'runs'
     os.environ.update(CUDA_VISIBLE_DEVICES='',OPENBLAS_NUM_THREADS='4',OMP_NUM_THREADS='4')
     import numpy as np
     plan=read(run/'protocol.json');done=read(run/'extract_complete.json');assert done['status']=='complete'
     for name,digest in done['artifacts'].items():assert sha(run/name)==digest
-    assert not(run/'continuous_separation.json').exists()
+    assert Path(args.output_name).name==args.output_name
+    output=run/args.output_name;assert not output.exists()
     meta=read(run/'feature_rows.json')
     with np.load(run/'descriptors.npz')as archive:features={k:archive[k]for k in archive.files}
     index={(r['id'],r['kind']):i for i,r in enumerate(meta)}
@@ -45,7 +48,7 @@ def main():
     result=dict(status='complete',source_sha256=sha(__file__),protocol_sha256=sha(run/'protocol.json'),
         descriptors_sha256=sha(run/'descriptors.npz'),scope='Content-only continuous separation; all frozen key decoding continues unchanged',
         summaries=summaries,rows=observations)
-    write(run/'continuous_separation.json',result)
+    write(output,result)
     print(json.dumps([r for r in summaries if r['target']==.95 and r['kind']in ['all_genuine','same_prompt']]),flush=True)
 
 
