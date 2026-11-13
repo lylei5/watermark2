@@ -16,6 +16,7 @@ def main():
     parser.add_argument('--source-run', required=True)
     parser.add_argument('--run-name', required=True)
     parser.add_argument('--after-run')
+    parser.add_argument('--deterministic-backend', action='store_true')
     args = parser.parse_args()
     root = Path('/data0/liyanlei/watermark_research/runs')
     source, target = [(root / name).resolve() for name in [args.source_run, args.run_name]]
@@ -35,10 +36,18 @@ def main():
     plan['coordinator_sha256'] = sha(target / coordinator.name)
     plan['local_sha256'][coordinator.name] = plan['coordinator_sha256']
     plan['local_sha256'][Path(__file__).name] = sha(target / Path(__file__).name)
+    if args.deterministic_backend:
+        worker = Path(__file__).parent / plan['worker']
+        shutil.copy2(worker, target / worker.name)
+        plan['worker_sha256'] = sha(target / worker.name)
+        plan['local_sha256'][worker.name] = plan['worker_sha256']
+        plan['deterministic_backend'] = True
     plan['created_at'] = datetime.datetime.now(datetime.timezone.utc).isoformat()
     plan['replay_of'] = dict(run=str(source), protocol_sha256=sha(source / 'protocol.json'),
                              state_sha256=sha(source / 'pipeline_state.json'),
-                             same_numeric_code_private_keys_inputs=True,
+                             same_official_numeric_code_private_keys_inputs=True,
+                             worker_bytes_unchanged=plan['worker_sha256'] == sha(source / plan['worker']),
+                             deterministic_backend_added=args.deterministic_backend,
                              complete_cohort_repeated=True)
     after = (root / args.after_run).resolve() if args.after_run else source
     assert after.parent == root

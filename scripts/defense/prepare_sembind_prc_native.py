@@ -91,6 +91,7 @@ def main():
                 sources=sources, parent_protocol_sha256=sha(parent / 'protocol.json'),
                 auxiliary_source='Previously generated original normal DPM image, hash checked and re-encoded with the released semantic network',
                 sigma=.5, mask='Tile1024bits16times; zero suffix after8192; private HMAC permutation; signs1-2m',
+                deterministic_backend=True,
                 prc=dict(n=16384, message_length=512, t=3, nominal_fpr=1e-6, posterior_variance=1.5,
                          acceptance='Original Detect OR non-None Decode; report each separately; union FPR not established'),
                 generation=dict(steps=50, cfg=7.5, dtype='float32', solver_order=1),

@@ -39,6 +39,8 @@ def main():
     root = Path('/data0/liyanlei/watermark_research')
     assert run.parent == root / 'runs'
     plan = json.loads((run / 'protocol.json').read_text())
+    assert Path(__file__).resolve() == run / plan['worker'], 'Execute the frozen run worker'
+    assert sha(__file__) == plan['worker_sha256']
     for name, digest in plan['local_sha256'].items():
         assert sha(run / name) == digest, name
     out = run / f'native_{args.shard}'
@@ -56,6 +58,8 @@ def main():
         os.environ.update(CUDA_VISIBLE_DEVICES=fields[1], HF_HOME=str(root / 'cache/huggingface'),
                           HF_HUB_OFFLINE='1', TRANSFORMERS_OFFLINE='1', OMP_NUM_THREADS='4',
                           NUMBA_NUM_THREADS='4', MKL_NUM_THREADS='4', TOKENIZERS_PARALLELISM='false')
+        if plan.get('deterministic_backend'):
+            os.environ['CUBLAS_WORKSPACE_CONFIG'] = ':4096:8'
         import numpy as np
         import torch
         from PIL import Image
@@ -65,6 +69,10 @@ def main():
         torch.set_num_threads(4)
         torch.backends.cuda.matmul.allow_tf32 = False
         torch.backends.cudnn.allow_tf32 = False
+        if plan.get('deterministic_backend'):
+            torch.backends.cudnn.benchmark = False
+            torch.backends.cudnn.deterministic = True
+            torch.use_deterministic_algorithms(True)
         paths = {k: Path(v) for k, v in plan['paths'].items()}
         for name, digest in plan['official_sha256'].items():
             assert sha(paths['official'] / name) == digest, name
@@ -79,7 +87,7 @@ def main():
         assert sha(plan['tree_ring_file']) == plan['tree_ring_sha256']
         tr = load('native_tree_ring', Path(plan['tree_ring_file']))
         parameters = SimpleNamespace(**plan['tr_parameters'])
-        state.update(status='running', gpu=gpu, gpu_uuid=fields[1])
+        state.update(status='running', gpu=gpu, gpu_uuid=fields[1], deterministic_backend=torch.are_deterministic_algorithms_enabled())
         save(out / 'state.json', state)
         (out / 'images').mkdir()
         (out / 'latents').mkdir()

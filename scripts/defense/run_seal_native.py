@@ -28,6 +28,7 @@ def main():
     run = args.run.resolve()
     assert str(run.parent) == '/data0/liyanlei/watermark_research/runs'
     plan = json.loads((run / 'protocol.json').read_text())
+    assert Path(__file__).resolve() == run / plan['worker'], 'Execute the frozen run worker'
     assert sha(__file__) == plan['worker_sha256']
     assert sha(run / 'environment_assets.json') == plan['environment_assets_sha256']
     assert sha(run / 'source_manifest.json') == plan['source_manifest_sha256']

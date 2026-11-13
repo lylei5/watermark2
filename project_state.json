@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-13T01:48:44.333290+00:00",
+  "updated_at": "2026-11-13T02:12:28.249158+00:00",
   "status": "three_native_baselines_reproduction",
-  "active_experiments": 1,
-  "queued_experiments": 1,
+  "active_experiments": 0,
+  "queued_experiments": 0,
   "latest_progress_report": "reports/three_baselines_20261113/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/THREE_BASELINE_REPRODUCTION.md",
@@ -62,7 +62,7 @@
   "completed_evidence": [
     {
       "path": "reports/three_baselines_20261113/report.md",
-      "scope": "SEAL公开83/100、论文salt91/100；PGID-R完整151更新10/10恢复；全论文矩阵未完成"
+      "scope": "GS-S100/100、PRC-S/TR-S各6/6；SEAL正常83/100与91/100及1400条良性判定；PGID-R完整10例；全论文矩阵未完成"
     },
     {
       "path": "reports/phase1_hamming_radius_20261113/report.md",
@@ -142,27 +142,27 @@
     }
   ],
   "latest_experiment": {
-    "run": "pgid_native_removal_20261113_v3",
+    "run": "sembind_prc_deterministic_20261113",
     "status": "complete",
-    "completed_at": "2026-11-12T21:50:42.482114+00:00",
-    "protocol": "protocols/pgid_native_removal_20261113_v3.json",
-    "protocol_sha256": "d6c9f8770d612b231c08824fc1ca457172cdc4614292477c463e9ff8cb2cda56",
-    "source_images": 10,
-    "actual_updates": [
-      51,
-      101,
-      151
-    ],
-    "raw_accepts": [
-      0,
-      0,
-      0
-    ],
-    "defended_accepts": [
-      10,
-      10,
-      10
-    ],
+    "coordinator_pid": 5948,
+    "protocol": "protocols/sembind_prc_deterministic_20261113.json",
+    "protocol_sha256": "6376f2a08175d4d4da44cc0f8904f8c4876183d4c0bfc8985446d755fe009d08",
+    "result": "reports/three_baselines_20261113/sembind_prc_deterministic_results.json",
+    "sources": 6,
+    "decisions": 24,
+    "artifact_checks": 48,
+    "deterministic_backend": true,
+    "genuine": {
+      "accepted": 6,
+      "n": 6
+    },
+    "unwatermarked": {
+      "accepted": 0,
+      "n": 6
+    },
+    "exact_payloads": 6,
+    "complete_pipeline_bitwise_repeatability_established": false,
+    "completed_at": "2026-11-13T02:06:43.985391+00:00",
     "paper_full_benchmark_reproduced": false
   },
   "provenance_policy": "Executed run source and protocol hashes remain frozen; use their exact versions for replay",
@@ -344,29 +344,65 @@
       },
       "tr_s": {
         "run": "sembind_tr_native_20261113_v2",
-        "status": "queued",
+        "status": "complete",
         "coordinator_pid": 3171,
         "protocol": "protocols/sembind_tr_native_20261113_v2.json",
         "protocol_sha256": "3bfd65844bee14aa4d8a37bece1c8e4d2a549ff1ff579c408d44080936eddf45",
         "sources": 6,
         "original_tree_ring_source": "3015283d9cf82e90b628f02ad2121bd37408ca9a",
         "cpu_carrier_roundtrips": 6,
-        "image_validation_complete": false,
+        "image_validation_complete": true,
         "previous_run": {
           "run": "sembind_tr_native_20261113",
           "status": "failed",
           "failure": "GPU4 idle guard rejected1percent utilization before model load; other2shards completed; full cohort replayed with15second resource settling"
+        },
+        "result": "reports/three_baselines_20261113/sembind_tr_results.json",
+        "genuine": {
+          "accepted": 6,
+          "n": 6
+        },
+        "unwatermarked": {
+          "accepted": 0,
+          "n": 6
         }
       },
       "determinism": {
         "run": "sembind_determinism_20261113",
-        "status": "running",
+        "status": "complete",
         "coordinator_pid": 2140,
         "protocol": "protocols/sembind_determinism_20261113.json",
         "protocol_sha256": "fae4efebbd1fb01324b1c25f49e5ee9c04a03b44409a8dc05082b6bed40478e3",
         "inputs": 3,
         "repeats": 4,
-        "purpose": "Diagnose observed inversion replay differences; no method or attack changes"
+        "purpose": "Diagnose observed inversion replay differences; no method or attack changes",
+        "result": "reports/three_baselines_20261113/sembind_determinism_results.json",
+        "default_exact_repeats": 0,
+        "strict_exact_repeats": 3,
+        "cases": 3,
+        "cross_device_equivalence_established": false
+      },
+      "strict_prc_replay": {
+        "run": "sembind_prc_deterministic_20261113",
+        "status": "complete",
+        "coordinator_pid": 5948,
+        "protocol": "protocols/sembind_prc_deterministic_20261113.json",
+        "protocol_sha256": "6376f2a08175d4d4da44cc0f8904f8c4876183d4c0bfc8985446d755fe009d08",
+        "result": "reports/three_baselines_20261113/sembind_prc_deterministic_results.json",
+        "sources": 6,
+        "decisions": 24,
+        "artifact_checks": 48,
+        "deterministic_backend": true,
+        "genuine": {
+          "accepted": 6,
+          "n": 6
+        },
+        "unwatermarked": {
+          "accepted": 0,
+          "n": 6
+        },
+        "exact_payloads": 6,
+        "complete_pipeline_bitwise_repeatability_established": false
       }
     }
   },
@@ -377,10 +413,7 @@
     "overall_fpr_established": false,
     "priority": "Deferred until three native baseline validations complete"
   },
-  "native_baseline_queue_order": [
-    "sembind_determinism_20261113",
-    "sembind_tr_native_20261113_v2"
-  ],
+  "native_baseline_queue_order": [],
   "native_postprocessing": {
     "protocol": "reports/three_baselines_20261113/postprocess_protocol.json",
     "mechanism": "Kernel process-exit events with explicit audit recovery for completed runs",

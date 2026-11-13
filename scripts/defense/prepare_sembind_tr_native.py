@@ -77,7 +77,7 @@ def main():
     plan={k:old[k] for k in ['python','paths','official_sha256','scheduler_sha256','source_commit','generation','inversion','auxiliary_source']}
     plan.update(created_at=datetime.datetime.now(datetime.timezone.utc).isoformat(),
         scope='6-source TR/TR-S normal-image integration using original Tree-Ring source and paper SemBind binding; not a full numerical reproduction',
-        sources=sources,private=str(private),binding_key_sha256=sha(private/'binding.json'),sigma=1,
+        sources=sources,private=str(private),binding_key_sha256=sha(private/'binding.json'),sigma=1,deterministic_backend=True,
         tree_ring_file=str(source/'optim_utils.py'),tree_ring_sha256=sha(source/'optim_utils.py'),tree_ring_manifest=manifest,
         tr_parameters=parameters,decision='Original noncentral-chi-square p-value <=1e-6; theoretical model, not empirically certified FPR',
         carrier_seed_policy='Private32-bit seed required by original NumPy seeding API; no cryptographic-strength claim for the carrier seed',

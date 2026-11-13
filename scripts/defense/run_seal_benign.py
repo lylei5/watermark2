@@ -29,6 +29,8 @@ def main():
     run = args.run.resolve()
     assert run.parent == root / 'runs'
     plan = json.loads((run / 'protocol.json').read_text())
+    assert Path(__file__).resolve() == run / plan['worker'], 'Execute the frozen run worker'
+    assert sha(__file__) == plan['worker_sha256']
     for name, digest in plan['local_sha256'].items():
         assert sha(run / name) == digest, name
     out = run / f'native_{args.shard}'

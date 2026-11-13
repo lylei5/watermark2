@@ -1,0 +1,105 @@
+{
+  "status": "complete",
+  "protocol_sha256": "fae4efebbd1fb01324b1c25f49e5ee9c04a03b44409a8dc05082b6bed40478e3",
+  "rows": [
+    {
+      "shard": 0,
+      "case": {
+        "task": 4,
+        "kind": "prc",
+        "image": "/data0/liyanlei/watermark_research/runs/sembind_prc_native_20261113_v3/native_1/images/004_prc.png",
+        "image_sha256": "4b0bb3562a7e79e0fb14694ad2e0c7f79fb92fed8b9297920043fc7750f99db7",
+        "seed": 202611130004
+      },
+      "mode": "default",
+      "status": "complete",
+      "exact_equal": false,
+      "max_abs_difference": 0.5034648180007935,
+      "sign_disagreements": 22
+    },
+    {
+      "shard": 0,
+      "case": {
+        "task": 4,
+        "kind": "prc",
+        "image": "/data0/liyanlei/watermark_research/runs/sembind_prc_native_20261113_v3/native_1/images/004_prc.png",
+        "image_sha256": "4b0bb3562a7e79e0fb14694ad2e0c7f79fb92fed8b9297920043fc7750f99db7",
+        "seed": 202611130004
+      },
+      "mode": "deterministic",
+      "status": "complete",
+      "exact_equal": true,
+      "max_abs_difference": 0.0,
+      "sign_disagreements": 0
+    },
+    {
+      "shard": 1,
+      "case": {
+        "task": 4,
+        "kind": "prc_s",
+        "image": "/data0/liyanlei/watermark_research/runs/sembind_prc_native_20261113_v3/native_1/images/004_prc_s.png",
+        "image_sha256": "8879291a1dfce4ce19a1256ac8fdb3022a3cd5eb3692ba1ccd1521167907c23f",
+        "seed": 202611130004
+      },
+      "mode": "default",
+      "status": "complete",
+      "exact_equal": false,
+      "max_abs_difference": 0.039908409118652344,
+      "sign_disagreements": 9
+    },
+    {
+      "shard": 1,
+      "case": {
+        "task": 4,
+        "kind": "prc_s",
+        "image": "/data0/liyanlei/watermark_research/runs/sembind_prc_native_20261113_v3/native_1/images/004_prc_s.png",
+        "image_sha256": "8879291a1dfce4ce19a1256ac8fdb3022a3cd5eb3692ba1ccd1521167907c23f",
+        "seed": 202611130004
+      },
+      "mode": "deterministic",
+      "status": "complete",
+      "exact_equal": true,
+      "max_abs_difference": 0.0,
+      "sign_disagreements": 0
+    },
+    {
+      "shard": 2,
+      "case": {
+        "task": 1,
+        "kind": "null",
+        "image": "/data0/liyanlei/watermark_research/runs/phase1_trajectory_native_gs_20261113/generate_1/images/001_aux.png",
+        "image_sha256": "055a592292770037d540a717749f0bd657e782a9b89a2ad408b84f6ea1f89794",
+        "seed": 202611130001
+      },
+      "mode": "default",
+      "status": "complete",
+      "exact_equal": false,
+      "max_abs_difference": 0.02643299102783203,
+      "sign_disagreements": 4
+    },
+    {
+      "shard": 2,
+      "case": {
+        "task": 1,
+        "kind": "null",
+        "image": "/data0/liyanlei/watermark_research/runs/phase1_trajectory_native_gs_20261113/generate_1/images/001_aux.png",
+        "image_sha256": "055a592292770037d540a717749f0bd657e782a9b89a2ad408b84f6ea1f89794",
+        "seed": 202611130001
+      },
+      "mode": "deterministic",
+      "status": "complete",
+      "exact_equal": true,
+      "max_abs_difference": 0.0,
+      "sign_disagreements": 0
+    }
+  ],
+  "source_files": {
+    "native_0/complete.json": "04a0b692fc9870254d57c13d59153400f14b6cdca1574f82ba9e79c5dc3a96d6",
+    "native_1/complete.json": "7404bef979d5d6b24d3bd4231f1160bb399742f3b9774cb6eae1ca5321492b0f",
+    "native_2/complete.json": "902d3a78930313250a77f533477a35737dd50951cf2ed032dce49e5960cb3918"
+  },
+  "all_deterministic_repeats_exact": true,
+  "scope": "3 selected diagnostic inputs; paired default/strict repeats withCUBLAS_WORKSPACE_CONFIG=:4096:8; no universal or author-environment equivalence claim",
+  "summary_worker_sha256": "19a1656275d5a6e2fd3756ba0c5880cda3f3bdbacd0df6fdd98361098c6beedd",
+  "completed_at": "2026-11-13T01:47:28.856537+00:00"
+}

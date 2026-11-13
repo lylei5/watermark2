@@ -36,4 +36,4 @@ SEAL公开源码使用投影seed42，论文算法2描述secret salt。两条路�
 
 SemBind专用掩码在`sembind_binding.py`，只有论文的平铺、截断、私有置换和符号乘法。sigma0/.5/1的300次精确解绑定检查已完成。GS-S的sigma1布局与冻结原GS链路保持一致。PRC私钥和512位消息只在249生成与保存，6条原码Encode/Decode往返通过；[图像验收](../reports/three_baselines_20261113/sembind_prc_results.json)也已完成：原PRC与PRC-S各6/6接受且精确恢复512位消息，无水印均0/6；该小样本不是论文规模确认。
 
-PGID的GS载体使用官方公开fixture密钥和扁平重复，原GS-S使用原GS默认OTP及空间重复。保留两条原生路径，并明确其不同；这轮结果不作同载体、同工作点排名。TR-S有[独立6例图像协议](../protocols/sembind_tr_native_20261113.json)；GS++-S及PGID其他载体的图像验收尚未覆盖，不能宣称全论文矩阵完成。
+PGID的GS载体使用官方公开fixture密钥和扁平重复，原GS-S使用原GS默认OTP及空间重复。保留两条原生路径，并明确其不同；这轮结果不作同载体、同工作点排名。TR-S已完成[独立6例图像验收](../reports/three_baselines_20261113/sembind_tr_results.json)，合法6/6、无水印0/6；GS++-S及PGID其他载体的图像验收尚未覆盖，不能宣称全论文矩阵完成。

@@ -1,0 +1,586 @@
+{
+  "status": "complete",
+  "method": "tr_s",
+  "protocol_sha256": "3bfd65844bee14aa4d8a37bece1c8e4d2a549ff1ff579c408d44080936eddf45",
+  "source_files": {
+    "native_0/complete.json": "67989eb0ac10053c7f337c775709983df63353a7a39185273689c15d9b31c37c",
+    "native_1/complete.json": "80d6406a575b468db565acd43680a08639059f27470950b6d0baf2088f4c6251",
+    "native_2/complete.json": "b3f289d460f17cdb9dbb38ec0ddd635fd07a281760a81ad3d7c662faa4add60c"
+  },
+  "artifact_checks": 48,
+  "rows": [
+    {
+      "task": 0,
+      "source_task": 0,
+      "dataset": "COCO",
+      "image_kind": "null",
+      "detector": "tr",
+      "p_value": 0.7235440819823664,
+      "l1_distance": 72.69754791259766,
+      "accepted": false,
+      "semantic_agreement": 1.0,
+      "image": "/data0/liyanlei/watermark_research/runs/phase1_trajectory_native_gs_20261113/generate_0/images/000_aux.png",
+      "image_sha256": "8a0970d6ae92d5a95c3eb7ce4170764be54d997cdbc5618770fd3579fa18b3ce",
+      "latent": "native_0/latents/000_null.npz",
+      "latent_sha256": "66f7fb1a75c00a5fb2458680e774f5517e1031fa6e5afdf73501f495fd2a96de"
+    },
+    {
+      "task": 0,
+      "source_task": 0,
+      "dataset": "COCO",
+      "image_kind": "null",
+      "detector": "tr_s",
+      "p_value": 0.18720864061076464,
+      "l1_distance": 71.05485534667969,
+      "accepted": false,
+      "semantic_agreement": 1.0,
+      "image": "/data0/liyanlei/watermark_research/runs/phase1_trajectory_native_gs_20261113/generate_0/images/000_aux.png",
+      "image_sha256": "8a0970d6ae92d5a95c3eb7ce4170764be54d997cdbc5618770fd3579fa18b3ce",
+      "latent": "native_0/latents/000_null.npz",
+      "latent_sha256": "66f7fb1a75c00a5fb2458680e774f5517e1031fa6e5afdf73501f495fd2a96de"
+    },
+    {
+      "task": 0,
+      "source_task": 0,
+      "dataset": "COCO",
+      "image_kind": "tr",
+      "detector": "tr",
+      "p_value": 8.194312384419117e-41,
+      "l1_distance": 42.12599563598633,
+      "accepted": true,
+      "semantic_agreement": 0.982421875,
+      "image": "/data0/liyanlei/watermark_research/runs/sembind_tr_native_20261113_v2/native_0/images/000_tr.png",
+      "image_sha256": "470e027faa552518f2c2258e242fa2208dc32312c6fc53ebf2afc561231a2eb8",
+      "latent": "native_0/latents/000_tr.npz",
+      "latent_sha256": "e843dedc3da4275e214897aebe1b015c829f589a330ee15bfb5181b7139e50f5"
+    },
+    {
+      "task": 0,
+      "source_task": 0,
+      "dataset": "COCO",
+      "image_kind": "tr_s",
+      "detector": "tr_s",
+      "p_value": 4.0496885123929275e-40,
+      "l1_distance": 42.51831817626953,
+      "accepted": true,
+      "semantic_agreement": 0.9833984375,
+      "image": "/data0/liyanlei/watermark_research/runs/sembind_tr_native_20261113_v2/native_0/images/000_tr_s.png",
+      "image_sha256": "3c914f7ee046a3be94070591ea0128ec14fda5d5e5976e443cf34b61a2ff8cca",
+      "latent": "native_0/latents/000_tr_s.npz",
+      "latent_sha256": "faa344cdda39c93f122ccd4a97e31b51e83d8480d442342ff4dcf67139f46d13"
+    },
+    {
+      "task": 3,
+      "source_task": 50,
+      "dataset": "SDP",
+      "image_kind": "null",
+      "detector": "tr",
+      "p_value": 0.5613730508031917,
+      "l1_distance": 74.4093017578125,
+      "accepted": false,
+      "semantic_agreement": 1.0,
+      "image": "/data0/liyanlei/watermark_research/runs/phase1_trajectory_native_gs_20261113/generate_2/images/050_aux.png",
+      "image_sha256": "b19ad60c5023346ca05c232a4c6730638f1f4ad215f42918098826b986e54012",
+      "latent": "native_0/latents/003_null.npz",
+      "latent_sha256": "14d1ef0d2ba0f29082a059343a26d74bc8cc80ed8573745ce82a43a66e46ead2"
+    },
+    {
+      "task": 3,
+      "source_task": 50,
+      "dataset": "SDP",
+      "image_kind": "null",
+      "detector": "tr_s",
+      "p_value": 0.4458813463903289,
+      "l1_distance": 69.2398452758789,
+      "accepted": false,
+      "semantic_agreement": 1.0,
+      "image": "/data0/liyanlei/watermark_research/runs/phase1_trajectory_native_gs_20261113/generate_2/images/050_aux.png",
+      "image_sha256": "b19ad60c5023346ca05c232a4c6730638f1f4ad215f42918098826b986e54012",
+      "latent": "native_0/latents/003_null.npz",
+      "latent_sha256": "14d1ef0d2ba0f29082a059343a26d74bc8cc80ed8573745ce82a43a66e46ead2"
+    },
+    {
+      "task": 3,
+      "source_task": 50,
+      "dataset": "SDP",
+      "image_kind": "tr",
+      "detector": "tr",
+      "p_value": 2.8059031260224682e-27,
+      "l1_distance": 45.64867401123047,
+      "accepted": true,
+      "semantic_agreement": 0.91015625,
+      "image": "/data0/liyanlei/watermark_research/runs/sembind_tr_native_20261113_v2/native_0/images/003_tr.png",
+      "image_sha256": "1cb0acc7fac474539217e60a4fe86064140ac73d75c6bcc018738f644595bab2",
+      "latent": "native_0/latents/003_tr.npz",
+      "latent_sha256": "4a4af193de4d56cbeb6333e4720ae79ef70105e344dc89c1446bc895bdcbf56c"
+    },
+    {
+      "task": 3,
+      "source_task": 50,
+      "dataset": "SDP",
+      "image_kind": "tr_s",
+      "detector": "tr_s",
+      "p_value": 5.214939342767118e-18,
+      "l1_distance": 50.25592041015625,
+      "accepted": true,
+      "semantic_agreement": 0.9072265625,
+      "image": "/data0/liyanlei/watermark_research/runs/sembind_tr_native_20261113_v2/native_0/images/003_tr_s.png",
+      "image_sha256": "81d4f7e9d81e4d94844b676b25c86e030ac9dcfe47298a6f41252e68c2a2cfbd",
+      "latent": "native_0/latents/003_tr_s.npz",
+      "latent_sha256": "7e73524751e811d05dfba72b8d7201d7ea4439302bf803af298bd67c5d13723d"
+    },
+    {
+      "task": 1,
+      "source_task": 1,
+      "dataset": "COCO",
+      "image_kind": "null",
+      "detector": "tr",
+      "p_value": 0.35111033280834786,
+      "l1_distance": 71.25967407226562,
+      "accepted": false,
+      "semantic_agreement": 1.0,
+      "image": "/data0/liyanlei/watermark_research/runs/phase1_trajectory_native_gs_20261113/generate_1/images/001_aux.png",
+      "image_sha256": "055a592292770037d540a717749f0bd657e782a9b89a2ad408b84f6ea1f89794",
+      "latent": "native_1/latents/001_null.npz",
+      "latent_sha256": "264c551ceb784d01944c0ee311010093651295a3322a9b3a18d22ab9f7d8b0a0"
+    },
+    {
+      "task": 1,
+      "source_task": 1,
+      "dataset": "COCO",
+      "image_kind": "null",
+      "detector": "tr_s",
+      "p_value": 0.46087554861816676,
+      "l1_distance": 72.58708953857422,
+      "accepted": false,
+      "semantic_agreement": 1.0,
+      "image": "/data0/liyanlei/watermark_research/runs/phase1_trajectory_native_gs_20261113/generate_1/images/001_aux.png",
+      "image_sha256": "055a592292770037d540a717749f0bd657e782a9b89a2ad408b84f6ea1f89794",
+      "latent": "native_1/latents/001_null.npz",
+      "latent_sha256": "264c551ceb784d01944c0ee311010093651295a3322a9b3a18d22ab9f7d8b0a0"
+    },
+    {
+      "task": 1,
+      "source_task": 1,
+      "dataset": "COCO",
+      "image_kind": "tr",
+      "detector": "tr",
+      "p_value": 1.1169096267269374e-43,
+      "l1_distance": 41.39586639404297,
+      "accepted": true,
+      "semantic_agreement": 0.9736328125,
+      "image": "/data0/liyanlei/watermark_research/runs/sembind_tr_native_20261113_v2/native_1/images/001_tr.png",
+      "image_sha256": "913fa72b6d26a341268e0018cef09e38323f90597462e36d551a451214254d94",
+      "latent": "native_1/latents/001_tr.npz",
+      "latent_sha256": "b9daa76f02961284b2b07b273a73ff2ab992cb0b97c54eb7aa659330d7c2a602"
+    },
+    {
+      "task": 1,
+      "source_task": 1,
+      "dataset": "COCO",
+      "image_kind": "tr_s",
+      "detector": "tr_s",
+      "p_value": 1.8133587242277753e-47,
+      "l1_distance": 41.252296447753906,
+      "accepted": true,
+      "semantic_agreement": 0.9755859375,
+      "image": "/data0/liyanlei/watermark_research/runs/sembind_tr_native_20261113_v2/native_1/images/001_tr_s.png",
+      "image_sha256": "8cd463e9e1d6411aa06ce6c29d4b6cd98685b29ca661918e0f747099228fdced",
+      "latent": "native_1/latents/001_tr_s.npz",
+      "latent_sha256": "e5ffe6fb2973fd625963d220373a402ab040c881f011e81c293064c87e1524df"
+    },
+    {
+      "task": 4,
+      "source_task": 51,
+      "dataset": "SDP",
+      "image_kind": "null",
+      "detector": "tr",
+      "p_value": 0.663794876229924,
+      "l1_distance": 71.7845458984375,
+      "accepted": false,
+      "semantic_agreement": 1.0,
+      "image": "/data0/liyanlei/watermark_research/runs/phase1_trajectory_native_gs_20261113/generate_0/images/051_aux.png",
+      "image_sha256": "2cf3c0556898a0adfc87f65f952abf3cecb1586f536cb69bcd0f6e362fa85226",
+      "latent": "native_1/latents/004_null.npz",
+      "latent_sha256": "983188f930ffc861e90d077f6f9cd9ff2551d1fba7b4b4358146fab313f56303"
+    },
+    {
+      "task": 4,
+      "source_task": 51,
+      "dataset": "SDP",
+      "image_kind": "null",
+      "detector": "tr_s",
+      "p_value": 0.8015622455555825,
+      "l1_distance": 68.97283935546875,
+      "accepted": false,
+      "semantic_agreement": 1.0,
+      "image": "/data0/liyanlei/watermark_research/runs/phase1_trajectory_native_gs_20261113/generate_0/images/051_aux.png",
+      "image_sha256": "2cf3c0556898a0adfc87f65f952abf3cecb1586f536cb69bcd0f6e362fa85226",
+      "latent": "native_1/latents/004_null.npz",
+      "latent_sha256": "983188f930ffc861e90d077f6f9cd9ff2551d1fba7b4b4358146fab313f56303"
+    },
+    {
+      "task": 4,
+      "source_task": 51,
+      "dataset": "SDP",
+      "image_kind": "tr",
+      "detector": "tr",
+      "p_value": 3.497087505407231e-23,
+      "l1_distance": 46.09992980957031,
+      "accepted": true,
+      "semantic_agreement": 0.9326171875,
+      "image": "/data0/liyanlei/watermark_research/runs/sembind_tr_native_20261113_v2/native_1/images/004_tr.png",
+      "image_sha256": "3b8acb368394f01093e1a6a4ef8e797d293920c841e1fb946c94d023494df910",
+      "latent": "native_1/latents/004_tr.npz",
+      "latent_sha256": "1bbccf3d898303ba5734122f7fd5cfa58bb9147831d1eea7e2958106c32fa093"
+    },
+    {
+      "task": 4,
+      "source_task": 51,
+      "dataset": "SDP",
+      "image_kind": "tr_s",
+      "detector": "tr_s",
+      "p_value": 2.0295562224933932e-27,
+      "l1_distance": 45.92832565307617,
+      "accepted": true,
+      "semantic_agreement": 0.9736328125,
+      "image": "/data0/liyanlei/watermark_research/runs/sembind_tr_native_20261113_v2/native_1/images/004_tr_s.png",
+      "image_sha256": "cf6d25877497096f8b9ae73bd7b4e184594bde5dcbd7f2dbc2edf96e599219a1",
+      "latent": "native_1/latents/004_tr_s.npz",
+      "latent_sha256": "229ba137de814cbdcf6d639e7ceff82d1a29aad9142c54e1afc9fd9ec3c3963a"
+    },
+    {
+      "task": 2,
+      "source_task": 2,
+      "dataset": "COCO",
+      "image_kind": "null",
+      "detector": "tr",
+      "p_value": 0.5927618465134348,
+      "l1_distance": 72.42657470703125,
+      "accepted": false,
+      "semantic_agreement": 1.0,
+      "image": "/data0/liyanlei/watermark_research/runs/phase1_trajectory_native_gs_20261113/generate_2/images/002_aux.png",
+      "image_sha256": "d2a413e387a46c9ccb40d1b8831eaef8fe6a72a4025ecd4fe6dd66a929bbfeaa",
+      "latent": "native_2/latents/002_null.npz",
+      "latent_sha256": "8a3f0433a72458d8f113c44e1f432480b8da674052e575f2f54cfbcfe9cfba99"
+    },
+    {
+      "task": 2,
+      "source_task": 2,
+      "dataset": "COCO",
+      "image_kind": "null",
+      "detector": "tr_s",
+      "p_value": 0.2881918186935111,
+      "l1_distance": 70.61393737792969,
+      "accepted": false,
+      "semantic_agreement": 1.0,
+      "image": "/data0/liyanlei/watermark_research/runs/phase1_trajectory_native_gs_20261113/generate_2/images/002_aux.png",
+      "image_sha256": "d2a413e387a46c9ccb40d1b8831eaef8fe6a72a4025ecd4fe6dd66a929bbfeaa",
+      "latent": "native_2/latents/002_null.npz",
+      "latent_sha256": "8a3f0433a72458d8f113c44e1f432480b8da674052e575f2f54cfbcfe9cfba99"
+    },
+    {
+      "task": 2,
+      "source_task": 2,
+      "dataset": "COCO",
+      "image_kind": "tr",
+      "detector": "tr",
+      "p_value": 2.89480107706976e-20,
+      "l1_distance": 49.36593246459961,
+      "accepted": true,
+      "semantic_agreement": 0.890625,
+      "image": "/data0/liyanlei/watermark_research/runs/sembind_tr_native_20261113_v2/native_2/images/002_tr.png",
+      "image_sha256": "b77ca978124fa6713ca761f5e80ac8aa374fd1bc75e154690c7fc5110ad9a9f7",
+      "latent": "native_2/latents/002_tr.npz",
+      "latent_sha256": "2afdee1524399e0aca1a52a1026436beacdeccbb8d4c524e9381263d8d0aaf4d"
+    },
+    {
+      "task": 2,
+      "source_task": 2,
+      "dataset": "COCO",
+      "image_kind": "tr_s",
+      "detector": "tr_s",
+      "p_value": 1.513390276983047e-14,
+      "l1_distance": 51.063568115234375,
+      "accepted": true,
+      "semantic_agreement": 0.890625,
+      "image": "/data0/liyanlei/watermark_research/runs/sembind_tr_native_20261113_v2/native_2/images/002_tr_s.png",
+      "image_sha256": "583b59a0a601755feff088c7dfbb048fc2c6526f2be6fe37e1a3ead94a19eb8a",
+      "latent": "native_2/latents/002_tr_s.npz",
+      "latent_sha256": "35e13f74567f245b7c6f13990c67f6c024165a964657495304d20ddcbbd36c79"
+    },
+    {
+      "task": 5,
+      "source_task": 52,
+      "dataset": "SDP",
+      "image_kind": "null",
+      "detector": "tr",
+      "p_value": 0.17379468238132884,
+      "l1_distance": 73.64502716064453,
+      "accepted": false,
+      "semantic_agreement": 1.0,
+      "image": "/data0/liyanlei/watermark_research/runs/phase1_trajectory_native_gs_20261113/generate_1/images/052_aux.png",
+      "image_sha256": "d4794cbe75d60ff26f9e00616e2ba61e0ef8119e5dbfabe29ba21907bf9285c6",
+      "latent": "native_2/latents/005_null.npz",
+      "latent_sha256": "c07c81194e6064d10a2f9e3a751552c46a1b589bf7240054bd4153c0857b0fbd"
+    },
+    {
+      "task": 5,
+      "source_task": 52,
+      "dataset": "SDP",
+      "image_kind": "null",
+      "detector": "tr_s",
+      "p_value": 0.9292371870991465,
+      "l1_distance": 69.09104919433594,
+      "accepted": false,
+      "semantic_agreement": 1.0,
+      "image": "/data0/liyanlei/watermark_research/runs/phase1_trajectory_native_gs_20261113/generate_1/images/052_aux.png",
+      "image_sha256": "d4794cbe75d60ff26f9e00616e2ba61e0ef8119e5dbfabe29ba21907bf9285c6",
+      "latent": "native_2/latents/005_null.npz",
+      "latent_sha256": "c07c81194e6064d10a2f9e3a751552c46a1b589bf7240054bd4153c0857b0fbd"
+    },
+    {
+      "task": 5,
+      "source_task": 52,
+      "dataset": "SDP",
+      "image_kind": "tr",
+      "detector": "tr",
+      "p_value": 1.7010530357582064e-41,
+      "l1_distance": 42.76014709472656,
+      "accepted": true,
+      "semantic_agreement": 0.8857421875,
+      "image": "/data0/liyanlei/watermark_research/runs/sembind_tr_native_20261113_v2/native_2/images/005_tr.png",
+      "image_sha256": "6cd92a113e547d3d1058d6010bb675c08c008e3e9994b27bf3ba6454950dcf66",
+      "latent": "native_2/latents/005_tr.npz",
+      "latent_sha256": "cbbf9a4f390ec3776a57af95c74b3d9a3596280c6a94ee8188d6d076be328a37"
+    },
+    {
+      "task": 5,
+      "source_task": 52,
+      "dataset": "SDP",
+      "image_kind": "tr_s",
+      "detector": "tr_s",
+      "p_value": 1.3717013703630536e-12,
+      "l1_distance": 54.68367004394531,
+      "accepted": true,
+      "semantic_agreement": 0.875,
+      "image": "/data0/liyanlei/watermark_research/runs/sembind_tr_native_20261113_v2/native_2/images/005_tr_s.png",
+      "image_sha256": "1a3bf0e1a0471ab8663f90aad51774649538393d92f25b33351cae15ff834c8d",
+      "latent": "native_2/latents/005_tr_s.npz",
+      "latent_sha256": "8fbe8d03f39490a7dfd21ee420d06dd3f0754d58c7201eaaeeb8fb0d5edd94a7"
+    }
+  ],
+  "summaries": [
+    {
+      "group": [
+        "ALL",
+        "null",
+        "tr"
+      ],
+      "n": 6,
+      "accepted": 0,
+      "rate": 0.0,
+      "cp95": [
+        0.0,
+        0.4592581264399005
+      ],
+      "mean_semantic_agreement": 1.0,
+      "mean_p_value": 0.5110631451197656,
+      "mean_l1_distance": 72.70377858479817
+    },
+    {
+      "group": [
+        "ALL",
+        "null",
+        "tr_s"
+      ],
+      "n": 6,
+      "accepted": 0,
+      "rate": 0.0,
+      "cp95": [
+        0.0,
+        0.4592581264399005
+      ],
+      "mean_semantic_agreement": 1.0,
+      "mean_p_value": 0.5188261311612501,
+      "mean_l1_distance": 70.2599360148112
+    },
+    {
+      "group": [
+        "ALL",
+        "tr",
+        "tr"
+      ],
+      "n": 6,
+      "accepted": 6,
+      "rate": 1.0,
+      "cp95": [
+        0.5407418735600995,
+        1.0
+      ],
+      "mean_semantic_agreement": 0.92919921875,
+      "mean_p_value": 4.830497408609133e-21,
+      "mean_l1_distance": 44.56609090169271
+    },
+    {
+      "group": [
+        "ALL",
+        "tr_s",
+        "tr_s"
+      ],
+      "n": 6,
+      "accepted": 6,
+      "rate": 1.0,
+      "cp95": [
+        0.5407418735600995,
+        1.0
+      ],
+      "mean_semantic_agreement": 0.9342447916666666,
+      "mean_p_value": 2.311400813453715e-13,
+      "mean_l1_distance": 47.61701647440592
+    },
+    {
+      "group": [
+        "COCO",
+        "null",
+        "tr"
+      ],
+      "n": 3,
+      "accepted": 0,
+      "rate": 0.0,
+      "cp95": [
+        0.0,
+        0.7075982261787133
+      ],
+      "mean_semantic_agreement": 1.0,
+      "mean_p_value": 0.5558054204347164,
+      "mean_l1_distance": 72.12793223063152
+    },
+    {
+      "group": [
+        "COCO",
+        "null",
+        "tr_s"
+      ],
+      "n": 3,
+      "accepted": 0,
+      "rate": 0.0,
+      "cp95": [
+        0.0,
+        0.7075982261787133
+      ],
+      "mean_semantic_agreement": 1.0,
+      "mean_p_value": 0.3120920026408142,
+      "mean_l1_distance": 71.4186274210612
+    },
+    {
+      "group": [
+        "COCO",
+        "tr",
+        "tr"
+      ],
+      "n": 3,
+      "accepted": 3,
+      "rate": 1.0,
+      "cp95": [
+        0.2924017738212866,
+        1.0
+      ],
+      "mean_semantic_agreement": 0.9488932291666666,
+      "mean_p_value": 9.649336923565866e-21,
+      "mean_l1_distance": 44.29593149820963
+    },
+    {
+      "group": [
+        "COCO",
+        "tr_s",
+        "tr_s"
+      ],
+      "n": 3,
+      "accepted": 3,
+      "rate": 1.0,
+      "cp95": [
+        0.2924017738212866,
+        1.0
+      ],
+      "mean_semantic_agreement": 0.9498697916666666,
+      "mean_p_value": 5.044634256610157e-15,
+      "mean_l1_distance": 44.9447275797526
+    },
+    {
+      "group": [
+        "SDP",
+        "null",
+        "tr"
+      ],
+      "n": 3,
+      "accepted": 0,
+      "rate": 0.0,
+      "cp95": [
+        0.0,
+        0.7075982261787133
+      ],
+      "mean_semantic_agreement": 1.0,
+      "mean_p_value": 0.46632086980481474,
+      "mean_l1_distance": 73.27962493896484
+    },
+    {
+      "group": [
+        "SDP",
+        "null",
+        "tr_s"
+      ],
+      "n": 3,
+      "accepted": 0,
+      "rate": 0.0,
+      "cp95": [
+        0.0,
+        0.7075982261787133
+      ],
+      "mean_semantic_agreement": 1.0,
+      "mean_p_value": 0.725560259681686,
+      "mean_l1_distance": 69.1012446085612
+    },
+    {
+      "group": [
+        "SDP",
+        "tr",
+        "tr"
+      ],
+      "n": 3,
+      "accepted": 3,
+      "rate": 1.0,
+      "cp95": [
+        0.2924017738212866,
+        1.0
+      ],
+      "mean_semantic_agreement": 0.9095052083333334,
+      "mean_p_value": 1.1657893652399445e-23,
+      "mean_l1_distance": 44.83625030517578
+    },
+    {
+      "group": [
+        "SDP",
+        "tr_s",
+        "tr_s"
+      ],
+      "n": 3,
+      "accepted": 3,
+      "rate": 1.0,
+      "cp95": [
+        0.2924017738212866,
+        1.0
+      ],
+      "mean_semantic_agreement": 0.9186197916666666,
+      "mean_p_value": 4.572355284341327e-13,
+      "mean_l1_distance": 50.28930536905924
+    }
+  ],
+  "independent_units": "Source images, not repeated checkpoints or detector rows",
+  "scope": "6-source TR/TR-S normal-image integration using original Tree-Ring source and paper SemBind binding; not a full numerical reproduction",
+  "empirical_fpr_1e6_established": false,
+  "paper_full_benchmark_reproduced": false,
+  "seal_cpu_norm_max_difference": null,
+  "summary_worker_sha256": "ad43aace087d83863dc8ef487f55915a0c8e454e1e88758a51522f5745dcd989",
+  "completed_at": "2026-11-13T01:52:52.743420+00:00"
+}
