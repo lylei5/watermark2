@@ -1,0 +1,28 @@
+{
+  "created_at": "2026-11-13T06:33:40.167335+00:00",
+  "sources": {
+    "evaluate_paired_channel_recovery.py": "b71b7533ee64e14f249a4672475f4f934af90488db7ceabbb787eb83a13e28ff",
+    "channel_conditioned_recovery.py": "aa4f2fc0cf8d33d448608799419d8d514b6802d141c490a957a3c900122d1695",
+    "instance_coset_recovery.py": "495f5d7f7749f39a253fd07d36d188b72927cd4150a6505c59452f60597ba2eb"
+  },
+  "private": "/data0/liyanlei/watermark_research/private_eval/paired_edit_registration_20261113",
+  "provider_sha256": "50661f05940da4b350882b281f00668dee76052344dece5d9c381d26ac9e0136",
+  "projection_sha256": [
+    "ae775ca270da02f0f596b28c088a22167d0a3d2fadf885d10d2b2ddcf45018af",
+    "654ab23dd169c649054492de79d85a00afbf13a7b4ecaf4d8eba1e37fb3a141a",
+    "84849db3a4bde1c4ec90ddaf2ecf328ce032c70b16f553fcbc3f5aa811cc5f7c"
+  ],
+  "recovery_decisions": 3960,
+  "queries": 220,
+  "query_groups": {
+    "genuine": 100,
+    "existing_imprint_checkpoints": 30,
+    "wrong_record_clean_pairs": 90
+  },
+  "wrong_record_scope": "Unchanged existing clean images queried against another registered record; no image manipulation or new attack",
+  "native_scope": "Existing130cached inversions and fresh recovered-material decoding;90wrong-record native controls also freshly decoded",
+  "new_inversions": "80registration queries from preceding worker",
+  "decoder": "BCH1023,133,d255;128-bit secret binding;provider authenticated record and native-material wrapping",
+  "isolation": "Function boundary in evaluation process; recovery sees no native fixture and no original reference feature except content_self_fit comparator",
+  "training": "No neural training; paired registration-only ridge parameters frozen before recovery outputs"
+}

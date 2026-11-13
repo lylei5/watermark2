@@ -1,0 +1,521 @@
+{
+  "status": "complete",
+  "source_sha256": "8421d0440ee6a7c108d6e3974579254ee4fddf9a94fbb22c1f5046d84cef996a",
+  "protocol_sha256": "b9ccabd0f74d8a07cb1154920182a10f38803e81a02156811ef350889d636531",
+  "execution_sha256": "9c5b9a858c157c6b8b12685633cfe7b61816dfa3e0b2967019f1da897cab9605",
+  "artifact_hashes": {
+    "recovery_rows.json": "40eec24a1efec0e6add7d0bb31520a0ee86aeeb46a670b463d2e7040a9b2c8d8",
+    "controls.json": "b6ea54936fcfc7a807347a8f300eeb4690f61248a4ca793699375dc8ae8b1ae0",
+    "enrollment.json": "957aec6ab6b6bdd0e366ea08114b8fac54467a2bff185da952e61e14dfcfd953",
+    "scores.json": "8adc9aa58855817e8d9bf36d3b7ec156246a7ac0f6b33f7ff74a24c74ab9b9b0"
+  },
+  "actual_recovery_decisions": 3960,
+  "exact_region_agreements": 3960,
+  "baseline_query_parity": 780,
+  "additional_clean_recovery_checks": 60,
+  "record_authentication_checks": 20,
+  "native_decoder_calls": 199,
+  "residual_analysis_scope": "Post-hoc explanation; no method or threshold changes",
+  "residual_analysis": [
+    {
+      "split": "calibration",
+      "method": "paired_channel",
+      "condition": "all_edits",
+      "total": 45,
+      "residual_energy_ratio": 0.7401068736914963,
+      "improved": 20
+    },
+    {
+      "split": "calibration",
+      "method": "paired_channel",
+      "condition": "random_crop_ratio",
+      "total": 5,
+      "residual_energy_ratio": 0.5810562857931426,
+      "improved": 5
+    },
+    {
+      "split": "calibration",
+      "method": "paired_channel",
+      "condition": "random_drop_ratio",
+      "total": 5,
+      "residual_energy_ratio": 0.2671996136600363,
+      "improved": 5
+    },
+    {
+      "split": "calibration",
+      "method": "paired_channel",
+      "condition": "brightness_factor",
+      "total": 5,
+      "residual_energy_ratio": 1.2835912588649887,
+      "improved": 0
+    },
+    {
+      "split": "calibration",
+      "method": "paired_channel",
+      "condition": "jpeg_ratio",
+      "total": 5,
+      "residual_energy_ratio": 1.283450259044783,
+      "improved": 0
+    },
+    {
+      "split": "calibration",
+      "method": "paired_channel",
+      "condition": "gaussian_blur_r",
+      "total": 5,
+      "residual_energy_ratio": 4.015408523565422,
+      "improved": 0
+    },
+    {
+      "split": "calibration",
+      "method": "paired_channel",
+      "condition": "gaussian_std",
+      "total": 5,
+      "residual_energy_ratio": 0.12410118085726615,
+      "improved": 5
+    },
+    {
+      "split": "calibration",
+      "method": "paired_channel",
+      "condition": "median_blur_k",
+      "total": 5,
+      "residual_energy_ratio": 1.395387437550121,
+      "improved": 0
+    },
+    {
+      "split": "calibration",
+      "method": "paired_channel",
+      "condition": "sp_prob",
+      "total": 5,
+      "residual_energy_ratio": 0.17390547946152404,
+      "improved": 5
+    },
+    {
+      "split": "calibration",
+      "method": "paired_channel",
+      "condition": "resize_ratio",
+      "total": 5,
+      "residual_energy_ratio": 4.3291851111000605,
+      "improved": 0
+    },
+    {
+      "split": "calibration",
+      "method": "permuted_channel",
+      "condition": "all_edits",
+      "total": 45,
+      "residual_energy_ratio": 1.0069248539780598,
+      "improved": 19
+    },
+    {
+      "split": "calibration",
+      "method": "permuted_channel",
+      "condition": "random_crop_ratio",
+      "total": 5,
+      "residual_energy_ratio": 0.6669668113368296,
+      "improved": 5
+    },
+    {
+      "split": "calibration",
+      "method": "permuted_channel",
+      "condition": "random_drop_ratio",
+      "total": 5,
+      "residual_energy_ratio": 0.6785444247396972,
+      "improved": 5
+    },
+    {
+      "split": "calibration",
+      "method": "permuted_channel",
+      "condition": "brightness_factor",
+      "total": 5,
+      "residual_energy_ratio": 1.2311737747307805,
+      "improved": 0
+    },
+    {
+      "split": "calibration",
+      "method": "permuted_channel",
+      "condition": "jpeg_ratio",
+      "total": 5,
+      "residual_energy_ratio": 1.4756416170568936,
+      "improved": 0
+    },
+    {
+      "split": "calibration",
+      "method": "permuted_channel",
+      "condition": "gaussian_blur_r",
+      "total": 5,
+      "residual_energy_ratio": 4.692214878849902,
+      "improved": 0
+    },
+    {
+      "split": "calibration",
+      "method": "permuted_channel",
+      "condition": "gaussian_std",
+      "total": 5,
+      "residual_energy_ratio": 0.6424723459431406,
+      "improved": 4
+    },
+    {
+      "split": "calibration",
+      "method": "permuted_channel",
+      "condition": "median_blur_k",
+      "total": 5,
+      "residual_energy_ratio": 1.5649318248587163,
+      "improved": 0
+    },
+    {
+      "split": "calibration",
+      "method": "permuted_channel",
+      "condition": "sp_prob",
+      "total": 5,
+      "residual_energy_ratio": 0.5150919862723432,
+      "improved": 5
+    },
+    {
+      "split": "calibration",
+      "method": "permuted_channel",
+      "condition": "resize_ratio",
+      "total": 5,
+      "residual_energy_ratio": 4.832404506647934,
+      "improved": 0
+    },
+    {
+      "split": "calibration",
+      "method": "content_self_fit",
+      "condition": "all_edits",
+      "total": 45,
+      "residual_energy_ratio": 0.36704325578835806,
+      "improved": 45
+    },
+    {
+      "split": "calibration",
+      "method": "content_self_fit",
+      "condition": "random_crop_ratio",
+      "total": 5,
+      "residual_energy_ratio": 0.40430743791789286,
+      "improved": 5
+    },
+    {
+      "split": "calibration",
+      "method": "content_self_fit",
+      "condition": "random_drop_ratio",
+      "total": 5,
+      "residual_energy_ratio": 0.2011583338012135,
+      "improved": 5
+    },
+    {
+      "split": "calibration",
+      "method": "content_self_fit",
+      "condition": "brightness_factor",
+      "total": 5,
+      "residual_energy_ratio": 0.6596861396701225,
+      "improved": 5
+    },
+    {
+      "split": "calibration",
+      "method": "content_self_fit",
+      "condition": "jpeg_ratio",
+      "total": 5,
+      "residual_energy_ratio": 0.7608980817587,
+      "improved": 5
+    },
+    {
+      "split": "calibration",
+      "method": "content_self_fit",
+      "condition": "gaussian_blur_r",
+      "total": 5,
+      "residual_energy_ratio": 0.7740490650003885,
+      "improved": 5
+    },
+    {
+      "split": "calibration",
+      "method": "content_self_fit",
+      "condition": "gaussian_std",
+      "total": 5,
+      "residual_energy_ratio": 0.06809805302744427,
+      "improved": 5
+    },
+    {
+      "split": "calibration",
+      "method": "content_self_fit",
+      "condition": "median_blur_k",
+      "total": 5,
+      "residual_energy_ratio": 0.9013233756036195,
+      "improved": 5
+    },
+    {
+      "split": "calibration",
+      "method": "content_self_fit",
+      "condition": "sp_prob",
+      "total": 5,
+      "residual_energy_ratio": 0.07613718435490982,
+      "improved": 5
+    },
+    {
+      "split": "calibration",
+      "method": "content_self_fit",
+      "condition": "resize_ratio",
+      "total": 5,
+      "residual_energy_ratio": 0.8827684517679769,
+      "improved": 5
+    },
+    {
+      "split": "evaluation",
+      "method": "paired_channel",
+      "condition": "all_edits",
+      "total": 45,
+      "residual_energy_ratio": 0.724748654130494,
+      "improved": 20
+    },
+    {
+      "split": "evaluation",
+      "method": "paired_channel",
+      "condition": "random_crop_ratio",
+      "total": 5,
+      "residual_energy_ratio": 0.3658562314214873,
+      "improved": 4
+    },
+    {
+      "split": "evaluation",
+      "method": "paired_channel",
+      "condition": "random_drop_ratio",
+      "total": 5,
+      "residual_energy_ratio": 0.3754137266531163,
+      "improved": 5
+    },
+    {
+      "split": "evaluation",
+      "method": "paired_channel",
+      "condition": "brightness_factor",
+      "total": 5,
+      "residual_energy_ratio": 1.2825284859505106,
+      "improved": 0
+    },
+    {
+      "split": "evaluation",
+      "method": "paired_channel",
+      "condition": "jpeg_ratio",
+      "total": 5,
+      "residual_energy_ratio": 1.3708322709908267,
+      "improved": 0
+    },
+    {
+      "split": "evaluation",
+      "method": "paired_channel",
+      "condition": "gaussian_blur_r",
+      "total": 5,
+      "residual_energy_ratio": 4.970760534649463,
+      "improved": 0
+    },
+    {
+      "split": "evaluation",
+      "method": "paired_channel",
+      "condition": "gaussian_std",
+      "total": 5,
+      "residual_energy_ratio": 0.12557625724175306,
+      "improved": 5
+    },
+    {
+      "split": "evaluation",
+      "method": "paired_channel",
+      "condition": "median_blur_k",
+      "total": 5,
+      "residual_energy_ratio": 1.6920862051915377,
+      "improved": 1
+    },
+    {
+      "split": "evaluation",
+      "method": "paired_channel",
+      "condition": "sp_prob",
+      "total": 5,
+      "residual_energy_ratio": 0.21174853120103687,
+      "improved": 5
+    },
+    {
+      "split": "evaluation",
+      "method": "paired_channel",
+      "condition": "resize_ratio",
+      "total": 5,
+      "residual_energy_ratio": 5.4851179188885055,
+      "improved": 0
+    },
+    {
+      "split": "evaluation",
+      "method": "permuted_channel",
+      "condition": "all_edits",
+      "total": 45,
+      "residual_energy_ratio": 1.0484646828587156,
+      "improved": 19
+    },
+    {
+      "split": "evaluation",
+      "method": "permuted_channel",
+      "condition": "random_crop_ratio",
+      "total": 5,
+      "residual_energy_ratio": 0.7903682250480405,
+      "improved": 4
+    },
+    {
+      "split": "evaluation",
+      "method": "permuted_channel",
+      "condition": "random_drop_ratio",
+      "total": 5,
+      "residual_energy_ratio": 0.7026072641162486,
+      "improved": 5
+    },
+    {
+      "split": "evaluation",
+      "method": "permuted_channel",
+      "condition": "brightness_factor",
+      "total": 5,
+      "residual_energy_ratio": 1.2677930599743845,
+      "improved": 0
+    },
+    {
+      "split": "evaluation",
+      "method": "permuted_channel",
+      "condition": "jpeg_ratio",
+      "total": 5,
+      "residual_energy_ratio": 1.4774005501430059,
+      "improved": 0
+    },
+    {
+      "split": "evaluation",
+      "method": "permuted_channel",
+      "condition": "gaussian_blur_r",
+      "total": 5,
+      "residual_energy_ratio": 5.883278902977218,
+      "improved": 0
+    },
+    {
+      "split": "evaluation",
+      "method": "permuted_channel",
+      "condition": "gaussian_std",
+      "total": 5,
+      "residual_energy_ratio": 0.5257656669608735,
+      "improved": 5
+    },
+    {
+      "split": "evaluation",
+      "method": "permuted_channel",
+      "condition": "median_blur_k",
+      "total": 5,
+      "residual_energy_ratio": 1.9811930169489451,
+      "improved": 0
+    },
+    {
+      "split": "evaluation",
+      "method": "permuted_channel",
+      "condition": "sp_prob",
+      "total": 5,
+      "residual_energy_ratio": 0.5786647376288604,
+      "improved": 5
+    },
+    {
+      "split": "evaluation",
+      "method": "permuted_channel",
+      "condition": "resize_ratio",
+      "total": 5,
+      "residual_energy_ratio": 6.622431162371851,
+      "improved": 0
+    },
+    {
+      "split": "evaluation",
+      "method": "content_self_fit",
+      "condition": "all_edits",
+      "total": 45,
+      "residual_energy_ratio": 0.3346439715732656,
+      "improved": 45
+    },
+    {
+      "split": "evaluation",
+      "method": "content_self_fit",
+      "condition": "random_crop_ratio",
+      "total": 5,
+      "residual_energy_ratio": 0.25376495760711343,
+      "improved": 5
+    },
+    {
+      "split": "evaluation",
+      "method": "content_self_fit",
+      "condition": "random_drop_ratio",
+      "total": 5,
+      "residual_energy_ratio": 0.26919392318527846,
+      "improved": 5
+    },
+    {
+      "split": "evaluation",
+      "method": "content_self_fit",
+      "condition": "brightness_factor",
+      "total": 5,
+      "residual_energy_ratio": 0.6802762246419373,
+      "improved": 5
+    },
+    {
+      "split": "evaluation",
+      "method": "content_self_fit",
+      "condition": "jpeg_ratio",
+      "total": 5,
+      "residual_energy_ratio": 0.7166303254055345,
+      "improved": 5
+    },
+    {
+      "split": "evaluation",
+      "method": "content_self_fit",
+      "condition": "gaussian_blur_r",
+      "total": 5,
+      "residual_energy_ratio": 0.8606366342401272,
+      "improved": 5
+    },
+    {
+      "split": "evaluation",
+      "method": "content_self_fit",
+      "condition": "gaussian_std",
+      "total": 5,
+      "residual_energy_ratio": 0.048040911326375245,
+      "improved": 5
+    },
+    {
+      "split": "evaluation",
+      "method": "content_self_fit",
+      "condition": "median_blur_k",
+      "total": 5,
+      "residual_energy_ratio": 0.9247782595282612,
+      "improved": 5
+    },
+    {
+      "split": "evaluation",
+      "method": "content_self_fit",
+      "condition": "sp_prob",
+      "total": 5,
+      "residual_energy_ratio": 0.0686507096708022,
+      "improved": 5
+    },
+    {
+      "split": "evaluation",
+      "method": "content_self_fit",
+      "condition": "resize_ratio",
+      "total": 5,
+      "residual_energy_ratio": 0.9337028401920198,
+      "improved": 5
+    }
+  ],
+  "helper_bytes": {
+    "clean_margin": [
+      2402
+    ],
+    "orbit_margin": [
+      2402
+    ],
+    "tangent8": [
+      13436
+    ],
+    "paired_channel": [
+      14394
+    ],
+    "permuted_channel": [
+      14396
+    ],
+    "content_self_fit": [
+      27199
+    ]
+  }
+}

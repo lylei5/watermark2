@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-13T05:57:51.603198+00:00",
+  "updated_at": "2026-11-13T15:45:25.097810+00:00",
   "status": "native_baselines_and_instance_key_recovery",
   "active_experiments": 2,
-  "queued_experiments": 4,
-  "latest_progress_report": "reports/instance_edit_quotient_20261113/report.md",
+  "queued_experiments": 0,
+  "latest_progress_report": "reports/paired_channel_recovery_20261113/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/INSTANCE_BINDING_RESEARCH.md",
   "native_sembind_reproduction_complete": false,
@@ -60,6 +60,10 @@
   "evaluation_policy": "Unchanged published top-venue attacks only; full budgets; no attack development; matched absolute genuine detection",
   "current_decision": "Complete native baseline coverage and diagnose final-instance separability without new training",
   "completed_evidence": [
+    {
+      "path": "reports/paired_channel_recovery_20261113/report.md",
+      "scope": "80 fresh enrollment inversions,3960 actual recoveries,199 nativeGS calls; paired channel45-46/50 vs multi-templateSSCD48/50 at95% calibration"
+    },
     {
       "path": "reports/instance_representation_20261113/report.md",
       "scope": "Fresh1300 images per extraction path; SSCD final428/450, wrong instance1/50; content-only development diagnostic"
@@ -454,19 +458,19 @@
   "pgid_carrier_coverage": {
     "run": "pgid_carrier_coverage_20261113",
     "protocol": "protocols/pgid_carrier_coverage_20261113.json",
-    "status": "running",
+    "status": "complete",
     "jobs": [
       {
         "carrier": "TR",
         "gpu": 5,
         "pid": 42517,
-        "status": "running"
+        "status": "complete"
       },
       {
         "carrier": "PRC",
         "gpu": 4,
         "pid": 42519,
-        "status": "running"
+        "status": "complete"
       }
     ],
     "actual_updates": 151,
@@ -483,7 +487,7 @@
   },
   "sscd_reference_gate": {
     "run": "sscd_pgid_reference_gate_20261113",
-    "status": "waiting_for_native_exit",
+    "status": "complete",
     "pid": 34090,
     "gpu_after_exit": 7,
     "protocol": "protocols/sscd_pgid_reference_gate_20261113.json",
@@ -516,27 +520,31 @@
     }
   },
   "pgid_carrier_genuine_controls": {
-    "run": "pgid_carrier_genuine_20261113",
-    "status": "waiting_for_native_exit",
+    "run": "pgid_carrier_genuine_20261113_v2",
+    "status": "running",
     "protocol": "protocols/pgid_carrier_genuine_20261113.json",
     "jobs": [
       {
         "carrier": "TR",
-        "pid": 4171,
-        "gpu": 5,
-        "parent_pid": 42517
+        "pid": 47899,
+        "gpu": 5
       },
       {
         "carrier": "PRC",
-        "pid": 7671,
-        "gpu": 4,
-        "parent_pid": 42519
+        "pid": 47900,
+        "gpu": 4
       }
     ],
     "queries": 220,
     "decisions": 440,
     "attack_generation": false,
-    "threshold_tuning": false
+    "threshold_tuning": false,
+    "failed_attempt": {
+      "run": "pgid_carrier_genuine_20261113",
+      "status": "failed",
+      "error": "BrokenPipeError before running state",
+      "protocol_unchanged": true
+    }
   },
   "instance_nuisance_geometry": {
     "run": "instance_nuisance_geometry_20261113",
@@ -609,7 +617,7 @@
   },
   "recovered_carrier_transfer": {
     "run": "recovered_carrier_transfer_20261113",
-    "status": "waiting_for_attack_and_sscd_exit",
+    "status": "recovery_complete_waiting_for_genuine_relaunch",
     "protocol": "protocols/recovered_carrier_transfer_20261113.json",
     "worker_pid": 39091,
     "auditor_pid": 39092,
@@ -626,7 +634,23 @@
       4171,
       7671
     ],
-    "protocol_note": "reports/recovered_carrier_transfer_20261113/protocol_note.md"
+    "protocol_note": "reports/recovered_carrier_transfer_20261113/protocol_note.md",
+    "audit_status": "Original audit failed because genuine completion artifacts were missing; versioned audit pending"
   },
-  "last_queue_observation": "2026-11-13T05:56:38.142691+00:00"
+  "last_queue_observation": "2026-11-13T15:44:23.407492+00:00",
+  "paired_channel_recovery": {
+    "run": "paired_edit_registration_20261113",
+    "status": "complete",
+    "report": "reports/paired_channel_recovery_20261113/report.md",
+    "protocol": "protocols/paired_edit_registration_20261113.json",
+    "execution_protocol": "protocols/paired_channel_recovery_20261113.json",
+    "new_inversions": 80,
+    "actual_recovery_decisions": 3960,
+    "native_decoder_calls": 199,
+    "baseline_query_parity": 780,
+    "additional_clean_recovery_checks": 60,
+    "record_authentication_checks": 20,
+    "independent_confirmation": false,
+    "superiority_established": false
+  }
 }

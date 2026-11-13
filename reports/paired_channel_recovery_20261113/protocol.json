@@ -1,0 +1,376 @@
+{
+  "created_at": "2026-11-13T06:29:26.437329+00:00",
+  "purpose": "Register paired content and independent inversion-channel changes for conditional key recovery",
+  "sources": [
+    {
+      "id": "G000",
+      "cohort": "PGID_GS",
+      "task": 0,
+      "reference": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/watermarked_images/image_000.png",
+      "reference_sha256": "b89c2dde3a0b6f4ff386c36d9aa47f22956d16cfe1456c9fe2f998157c8c54f6",
+      "attacks": [
+        {
+          "task": 0,
+          "kind": "imprint",
+          "checkpoint": 50,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/attacked_images_step_50/image_000.png",
+          "sha256": "9c18084aa0dc9e2d0e254559c6dc0e0940f6756f659535cb3a02915e4a2dc420"
+        },
+        {
+          "task": 0,
+          "kind": "imprint",
+          "checkpoint": 100,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/attacked_images_step_100/image_000.png",
+          "sha256": "7a26165301c64e74ab0079c7ce86ab84f95c77fe91f862b1e679cfd41ef53e25"
+        },
+        {
+          "task": 0,
+          "kind": "imprint",
+          "checkpoint": 150,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/attacked_images_step_150/image_000.png",
+          "sha256": "2016c6a66f13586808c91447a2f51c681feadcbe6fe5714307cedea4eb43790c"
+        }
+      ],
+      "split": "transfer"
+    },
+    {
+      "id": "G001",
+      "cohort": "PGID_GS",
+      "task": 1,
+      "reference": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/watermarked_images/image_001.png",
+      "reference_sha256": "94328f3c4e2f1261203f8f6e4ffcae9cb3b3a9fafb6b60287650eac859b40db6",
+      "attacks": [
+        {
+          "task": 1,
+          "kind": "imprint",
+          "checkpoint": 50,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/attacked_images_step_50/image_001.png",
+          "sha256": "3c11b9d8d1ee99dc0e3c93ea0e557f9a8944e1a6177ec467059c9420b11356b6"
+        },
+        {
+          "task": 1,
+          "kind": "imprint",
+          "checkpoint": 100,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/attacked_images_step_100/image_001.png",
+          "sha256": "f906be811121d6fadb4816bee7351876363fabb4d41a44e70c4a2d19cf2f1932"
+        },
+        {
+          "task": 1,
+          "kind": "imprint",
+          "checkpoint": 150,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/attacked_images_step_150/image_001.png",
+          "sha256": "ed95a1bf90cf131bcdc0517007ce736698a295f584c452b827a18ca10307a871"
+        }
+      ],
+      "split": "transfer"
+    },
+    {
+      "id": "G002",
+      "cohort": "PGID_GS",
+      "task": 2,
+      "reference": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/watermarked_images/image_002.png",
+      "reference_sha256": "d5fbac2bc3c6222544da0d480949ea7f07843735fdf3ebbd089a5c8afe027d8f",
+      "attacks": [
+        {
+          "task": 2,
+          "kind": "imprint",
+          "checkpoint": 50,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/attacked_images_step_50/image_002.png",
+          "sha256": "b5669824f341671caac0deefac3ee4692d045b209a492435e6576047cbd4365a"
+        },
+        {
+          "task": 2,
+          "kind": "imprint",
+          "checkpoint": 100,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/attacked_images_step_100/image_002.png",
+          "sha256": "827d28b07f401f65143c1a596eadd315f957fa46943f9712d21a36c801a2f7df"
+        },
+        {
+          "task": 2,
+          "kind": "imprint",
+          "checkpoint": 150,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/attacked_images_step_150/image_002.png",
+          "sha256": "e85d0c32dcb6b7eb1c69daaf42486c8228b86cdaea00354894409074cb6a01e3"
+        }
+      ],
+      "split": "transfer"
+    },
+    {
+      "id": "G003",
+      "cohort": "PGID_GS",
+      "task": 3,
+      "reference": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/watermarked_images/image_003.png",
+      "reference_sha256": "7d304e87186be51c72185621f7ce0d89db45dab17bbf3802d74691beefa4fb02",
+      "attacks": [
+        {
+          "task": 3,
+          "kind": "imprint",
+          "checkpoint": 50,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/attacked_images_step_50/image_003.png",
+          "sha256": "dfb48c645d4ea3d14a58ecab995ebbe767f2966e472cdc9fbf41f7bd1fcb51c9"
+        },
+        {
+          "task": 3,
+          "kind": "imprint",
+          "checkpoint": 100,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/attacked_images_step_100/image_003.png",
+          "sha256": "679f31cb383a32e590221583a3da494741eba390add64fafc5dcbdf0df655e30"
+        },
+        {
+          "task": 3,
+          "kind": "imprint",
+          "checkpoint": 150,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/attacked_images_step_150/image_003.png",
+          "sha256": "9f4b36ae5df0490901573f0480afc26e25f56be176d3af1a26f60f247e59e46e"
+        }
+      ],
+      "split": "transfer"
+    },
+    {
+      "id": "G004",
+      "cohort": "PGID_GS",
+      "task": 4,
+      "reference": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/watermarked_images/image_004.png",
+      "reference_sha256": "bdbbf997c102c21e489f1321f1fd00ca84e0a7d70aa794362803626f562cd427",
+      "attacks": [
+        {
+          "task": 4,
+          "kind": "imprint",
+          "checkpoint": 50,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/attacked_images_step_50/image_004.png",
+          "sha256": "90a0b9a61fdd92334b8fd48d32cdeebca1f5676cc85a260cbf105e11ee3dbf84"
+        },
+        {
+          "task": 4,
+          "kind": "imprint",
+          "checkpoint": 100,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/attacked_images_step_100/image_004.png",
+          "sha256": "63b075d1bbb7705e44a3532e7e0312dc55a99b68db66882d56fb4a007f57a6ab"
+        },
+        {
+          "task": 4,
+          "kind": "imprint",
+          "checkpoint": 150,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/attacked_images_step_150/image_004.png",
+          "sha256": "9c9b808e798502da387da8100ad38c004ad4d9442b85130c91cb9fddf2187705"
+        }
+      ],
+      "split": "transfer"
+    },
+    {
+      "id": "G005",
+      "cohort": "PGID_GS",
+      "task": 5,
+      "reference": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/watermarked_images/image_005.png",
+      "reference_sha256": "b213dd66cc5e019b7e0abc6d6eab303b8c6aad7c48a1a46d03ca58c2d44b1755",
+      "attacks": [
+        {
+          "task": 5,
+          "kind": "imprint",
+          "checkpoint": 50,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/attacked_images_step_50/image_005.png",
+          "sha256": "90cb95af5764d9c789747540065ee9e9cbac334e4bcb7e7e0a7db173c17ded98"
+        },
+        {
+          "task": 5,
+          "kind": "imprint",
+          "checkpoint": 100,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/attacked_images_step_100/image_005.png",
+          "sha256": "f3bc77783f3488084e3872dc0fa8bf32cb7a2e250e86cdad507edefe40c37eea"
+        },
+        {
+          "task": 5,
+          "kind": "imprint",
+          "checkpoint": 150,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/attacked_images_step_150/image_005.png",
+          "sha256": "a38aa8712a3cac4f0941e102489ae7795b0366f37b740a2bcf6925eb15bdd35a"
+        }
+      ],
+      "split": "transfer"
+    },
+    {
+      "id": "G006",
+      "cohort": "PGID_GS",
+      "task": 6,
+      "reference": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/watermarked_images/image_006.png",
+      "reference_sha256": "c957432d199a1129b3eec4a50b72d62335adcb301520cc18a7706075d59abbe8",
+      "attacks": [
+        {
+          "task": 6,
+          "kind": "imprint",
+          "checkpoint": 50,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/attacked_images_step_50/image_006.png",
+          "sha256": "a46b4f8e55fb0735d756729b0469a9c2d1ee2b6b61670c5b4d7ebc89dbcc941b"
+        },
+        {
+          "task": 6,
+          "kind": "imprint",
+          "checkpoint": 100,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/attacked_images_step_100/image_006.png",
+          "sha256": "36b6de945a3f3514d0f925f1ef93948e40ec020464b5dc5c5ecca1c9194cd931"
+        },
+        {
+          "task": 6,
+          "kind": "imprint",
+          "checkpoint": 150,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/attacked_images_step_150/image_006.png",
+          "sha256": "cd2a24465080a18e2625228f2c96c8e0b21632b7d9b7f96c747df05ef6ce6ce9"
+        }
+      ],
+      "split": "transfer"
+    },
+    {
+      "id": "G007",
+      "cohort": "PGID_GS",
+      "task": 7,
+      "reference": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/watermarked_images/image_007.png",
+      "reference_sha256": "d1ddfdba8afaec4bdee8ffda740235a3750dd8647efc928cf196adb7c04948b1",
+      "attacks": [
+        {
+          "task": 7,
+          "kind": "imprint",
+          "checkpoint": 50,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/attacked_images_step_50/image_007.png",
+          "sha256": "77f88a709a49c0da09e47ca720d1b5e11a38c9e63c7810b57e8b4ee5272af57f"
+        },
+        {
+          "task": 7,
+          "kind": "imprint",
+          "checkpoint": 100,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/attacked_images_step_100/image_007.png",
+          "sha256": "7644f6cf65b629c7ce5e01efcf1664252c465be29895c3307a0d0884d5bfd694"
+        },
+        {
+          "task": 7,
+          "kind": "imprint",
+          "checkpoint": 150,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/attacked_images_step_150/image_007.png",
+          "sha256": "099424f090c51265231f3316debeb96a5b3f4a8f98a958e5ef82151ed0257642"
+        }
+      ],
+      "split": "transfer"
+    },
+    {
+      "id": "G008",
+      "cohort": "PGID_GS",
+      "task": 8,
+      "reference": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/watermarked_images/image_008.png",
+      "reference_sha256": "451305b6b844d8e082cd6a3baabe1b134e170dff5898f65ff2d50dfd8cdd9604",
+      "attacks": [
+        {
+          "task": 8,
+          "kind": "imprint",
+          "checkpoint": 50,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/attacked_images_step_50/image_008.png",
+          "sha256": "9666432553f70a303d98f156f7caaa9b43654ee5801b5dc48e95160ad73674fd"
+        },
+        {
+          "task": 8,
+          "kind": "imprint",
+          "checkpoint": 100,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/attacked_images_step_100/image_008.png",
+          "sha256": "f98a2340dc531ca3b4968b30cfbfb791b7098e61963ac21f000c6882519e6475"
+        },
+        {
+          "task": 8,
+          "kind": "imprint",
+          "checkpoint": 150,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/attacked_images_step_150/image_008.png",
+          "sha256": "1f41aade72e20d7bc2ae45428f3981e8793dcc8a7641ac9e161c3630daff6284"
+        }
+      ],
+      "split": "transfer"
+    },
+    {
+      "id": "G009",
+      "cohort": "PGID_GS",
+      "task": 9,
+      "reference": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/watermarked_images/image_009.png",
+      "reference_sha256": "204fffeb08f2c2299a7c03c3d9435c15f77809936864a3c219ec783040aca231",
+      "attacks": [
+        {
+          "task": 9,
+          "kind": "imprint",
+          "checkpoint": 50,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/attacked_images_step_50/image_009.png",
+          "sha256": "529177469252041dc21395147f5a51294758e6e5af4910da9dffa5d848d2b6db"
+        },
+        {
+          "task": 9,
+          "kind": "imprint",
+          "checkpoint": 100,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/attacked_images_step_100/image_009.png",
+          "sha256": "5908210ed4df5f1e98cd079903efa0aa0bd27d11e11c436a87e051365ed06056"
+        },
+        {
+          "task": 9,
+          "kind": "imprint",
+          "checkpoint": 150,
+          "path": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/attacked_images_step_150/image_009.png",
+          "sha256": "ea55a7ec0ffaeea2aea3fa9d87e2c4fbaa04ed38fe3231b5b30dd9bb12c6808d"
+        }
+      ],
+      "split": "transfer"
+    }
+  ],
+  "base": "/data0/liyanlei/watermark_research/runs/instance_coset_recovery_20261113",
+  "base_protocol_sha256": "3da0aa4163bc8f49b029dd86336bfad7c3d7da9b2835f0a5cc1afa3e6bda428c",
+  "feature_rows_sha256": "43fd724f9c96b47312e14546f97dc44b8c62a3972166bf60b45e1a9de57c0161",
+  "features_sha256": "41948eb9e0c3bebea82339a88031e8fde2038b4813a22de27d7be6aa7078b2a7",
+  "channel": "/data0/liyanlei/watermark_research/runs/carrier_content_channel_20261113",
+  "channel_protocol_sha256": "ff8268c3b9d8f63abf7e267ab95963f38d2b51f94256b0dc7efea93c436cd378",
+  "channel_rows_sha256": "fc36c5f4a6399945eba96e611ba86e8ae8d2f814544e654c2d03e7f2fc0ba3c6",
+  "native_protocol_sha256": "da5e861164c6ebda532f017a62c506f6f55a0d71cf9010fbc1d810890f424ab6",
+  "distortion_file": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/gs_image_utils.py",
+  "distortion_sha256": "aa0dd86b4543bde39983e5b7ec8fd487fba476d7a435f83308891e187ee93fbb",
+  "conditions": {
+    "random_crop_ratio": 0.6,
+    "random_drop_ratio": 0.8,
+    "brightness_factor": 6,
+    "jpeg_ratio": 25,
+    "gaussian_blur_r": 4,
+    "gaussian_std": 0.05,
+    "median_blur_k": 7,
+    "sp_prob": 0.05,
+    "resize_ratio": 0.25
+  },
+  "model_revision": "0094d483a120f3f33dafbd187ea4aa60d10de75c",
+  "enrollment_queries": 80,
+  "new_inversions": 80,
+  "gpu": 7,
+  "readout": "32 key-free block means/RMS,4channels x2x2spatial blocks",
+  "calibration_sources": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "evaluation_sources": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "calibration_targets": [
+    0.9,
+    0.95
+  ],
+  "projection_repetitions": 3,
+  "methods": [
+    "clean_margin",
+    "orbit_margin",
+    "tangent8",
+    "paired_channel",
+    "permuted_channel",
+    "content_self_fit"
+  ],
+  "coefficient_model": "Registration-only ridge on eight independent channel-readout differences, lambda=.1*trace(Gram)/8; L1 coefficient norm clipped to2",
+  "registration_application": "Apply the same channel-conditioned correction to enrollment views and queries before reliable clean-margin1023-bit coding",
+  "control": "Cyclic shift by2 of eight content-response rows with channel rows fixed, same capacity and helper size",
+  "claim_scope": "Development mechanism and actual recovery; no independent confirmation",
+  "attack_scope": "Existing complete151-update Imprint outputs only; no new or modified attack",
+  "attack_generation": false,
+  "source_sha256": "2149d0c2b428275719f5da1c340e13a625523ce5a0f9a5683458f642ed3db0bd"
+}
