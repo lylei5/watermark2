@@ -1,0 +1,198 @@
+{
+  "python": "/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/bin/python",
+  "paths": {
+    "root": "/data0/liyanlei/watermark_research/private_eval/sembind_chain_revalidation_20261111",
+    "output": "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/output",
+    "official": "/data0/liyanlei/watermark_research/third_party/frozen/SemBind_337c9f9",
+    "scheduler": "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/scheduling_dpmsolver_multistep.py",
+    "model": "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c",
+    "semantic": "/data0/liyanlei/watermark_research/models/sembind",
+    "coverlock": "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111"
+  },
+  "official_sha256": {
+    "image_utils.py": "240710dda5d07b2003b62480dd9a56b631bad1c55a91ad3f5fa70dba3d25cbfd",
+    "inversion.py": "dcf0dd6e9b5af1e64c24fe5c3c16473be54f1936c44da096f85b0437bf2fb14b",
+    "utils.py": "6cabc4354d7950dbf66554e5bc8d61557180b4d4ff5a992523b04a1331fd0a37",
+    "model.py": "ee22217258acd3c86899ce616cc5d7dbb6d14948208145a1daa7ace0c1943da3",
+    "src/prc.py": "6e3743687fe01ce148fd44998c82e785b9b408548f22820c5f0defbcf3e67a5f",
+    "src/optim_utils.py": "d96765a945a6d26514799bc6d8da0afc74f63a3482ff02e4ebd9391eb0dde344",
+    "src/modified_stable_diffusion.py": "fc4ac3795d51821c0a7a10fb57c28ecb414cc47e4af5629e6bfdaaccdc709ba2",
+    "src/inverse_stable_diffusion.py": "64027a1a974bb018d8569fa670802996e6ed0a87ba94f9151f574dd33326ef17",
+    "src/pseudogaussians.py": "6cc92bd53afe9004a2d878c7db406454c04a36d4724db41410821dac7ad872f8",
+    "src/train_new.py": "4e79c5f68f668e8a93fa4a32eb79d5c20f997782d22e2b32c294f4487738df92"
+  },
+  "scheduler_sha256": "c0902d1446e51c33be9b0deb5b9a9e2694e7930620a95d5ee8bef024607ed5ff",
+  "source_commit": "337c9f90a150157ac1d410208ae20e6530ca8cdd",
+  "generation": {
+    "steps": 50,
+    "cfg": 7.5,
+    "dtype": "float32",
+    "solver_order": 1
+  },
+  "inversion": {
+    "steps": 50,
+    "prompt": "",
+    "cfg": 3,
+    "inv_order": 0,
+    "decoder_inv": true,
+    "decoder_steps": 100
+  },
+  "auxiliary_source": "Previously generated original normal DPM image, hash checked and re-encoded with the released semantic network",
+  "created_at": "2026-11-13T01:21:48.251179+00:00",
+  "scope": "6-source TR/TR-S normal-image integration using original Tree-Ring source and paper SemBind binding; not a full numerical reproduction",
+  "sources": [
+    {
+      "task": 0,
+      "source_task": 0,
+      "dataset": "COCO",
+      "prompt": "A traffic light sitting on the side of a road.",
+      "auxiliary": "/data0/liyanlei/watermark_research/runs/phase1_trajectory_native_gs_20261113/generate_0/images/000_aux.png",
+      "auxiliary_sha256": "8a0970d6ae92d5a95c3eb7ce4170764be54d997cdbc5618770fd3579fa18b3ce",
+      "private_carrier_sha256": "0d1fffc3dc7f5fc67d8b39db8e85f0081fd8e6e4d882d84090a3f28bb40c335c"
+    },
+    {
+      "task": 1,
+      "source_task": 1,
+      "dataset": "COCO",
+      "prompt": "A group of kids play on a grassy area and lift their arms up as a Frisbee is just above their heads.",
+      "auxiliary": "/data0/liyanlei/watermark_research/runs/phase1_trajectory_native_gs_20261113/generate_1/images/001_aux.png",
+      "auxiliary_sha256": "055a592292770037d540a717749f0bd657e782a9b89a2ad408b84f6ea1f89794",
+      "private_carrier_sha256": "68ba237f25b4e9f66b3705a7afef0e100334e4fb539cc57ccf8ff67fd48b6390"
+    },
+    {
+      "task": 2,
+      "source_task": 2,
+      "dataset": "COCO",
+      "prompt": "A red double decker bus on a street.",
+      "auxiliary": "/data0/liyanlei/watermark_research/runs/phase1_trajectory_native_gs_20261113/generate_2/images/002_aux.png",
+      "auxiliary_sha256": "d2a413e387a46c9ccb40d1b8831eaef8fe6a72a4025ecd4fe6dd66a929bbfeaa",
+      "private_carrier_sha256": "7b8a471db210a06c8c083aac59cbcac6961f67e1a82224bf34b782272775f64e"
+    },
+    {
+      "task": 3,
+      "source_task": 50,
+      "dataset": "SDP",
+      "prompt": "in the style of artgerm, loish, anthropomorphic alligator, red scales on his back, yellow scale on his belly and chest, male, waring a hawaiian shirt, in the style of zootopia",
+      "auxiliary": "/data0/liyanlei/watermark_research/runs/phase1_trajectory_native_gs_20261113/generate_2/images/050_aux.png",
+      "auxiliary_sha256": "b19ad60c5023346ca05c232a4c6730638f1f4ad215f42918098826b986e54012",
+      "private_carrier_sha256": "a5100f093b5e12d925c648d3466c9f2d760dd51984d106e315b09489ca6207bd"
+    },
+    {
+      "task": 4,
+      "source_task": 51,
+      "dataset": "SDP",
+      "prompt": "chris hemsworth as aquaman, muscular, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "auxiliary": "/data0/liyanlei/watermark_research/runs/phase1_trajectory_native_gs_20261113/generate_0/images/051_aux.png",
+      "auxiliary_sha256": "2cf3c0556898a0adfc87f65f952abf3cecb1586f536cb69bcd0f6e362fa85226",
+      "private_carrier_sha256": "0701e8835558b1636acd5e70e4a8b5edc5d7d5767fe0754475d5e72b63e1387b"
+    },
+    {
+      "task": 5,
+      "source_task": 52,
+      "dataset": "SDP",
+      "prompt": "Alice in Wonderland, falling down the rabbit hole, colorful, wide angle, super highly detailed, professional digital painting, artstation, concept art, smooth, sharp focus, no blur, no dof, extreme illustration, Unreal Engine 5, Photorealism, HD quality, 8k resolution, cinema 4d, 3D, beautiful, cinematic, art by artgerm and greg rutkowski and alphonse mucha and loish and WLOP",
+      "auxiliary": "/data0/liyanlei/watermark_research/runs/phase1_trajectory_native_gs_20261113/generate_1/images/052_aux.png",
+      "auxiliary_sha256": "d4794cbe75d60ff26f9e00616e2ba61e0ef8119e5dbfabe29ba21907bf9285c6",
+      "private_carrier_sha256": "d70292a6933b1719311c557dbe1fce5939f602730e34854745817f4b0102cfd3"
+    }
+  ],
+  "private": "/data0/liyanlei/watermark_research/private_eval/sembind_tr_native_20261113",
+  "binding_key_sha256": "6079581afa261c722da9148ba18b8b33076c6894c535e67e09d119082d07ab6d",
+  "sigma": 1,
+  "tree_ring_file": "/data0/liyanlei/watermark_research/third_party/frozen/TreeRing_3015283/optim_utils.py",
+  "tree_ring_sha256": "d0eba91c9461f83fddd9388fa1a7ce461f1b120437e05ddbee3c63bd10618aca",
+  "tree_ring_manifest": {
+    "repository": "YuxinWenRick/tree-ring-watermark",
+    "commit": "3015283d9cf82e90b628f02ad2121bd37408ca9a",
+    "files": {
+      "optim_utils.py": {
+        "git_blob": "bed5040af129f37375073160f6dec9753094cab5",
+        "sha256": "d0eba91c9461f83fddd9388fa1a7ce461f1b120437e05ddbee3c63bd10618aca"
+      },
+      "run_tree_ring_watermark.py": {
+        "git_blob": "f2d88b6bac18b67c0ef48c27133bb233a3027e20",
+        "sha256": "354b5a10328444c3d66bb1f1a944dfb515cf149c22c861b566f36da20aa180a7"
+      },
+      "README.md": {
+        "git_blob": "00b972c08f56a1c23ebcf607dd9eb873d9fa05a9",
+        "sha256": "c3bb9b4403a7583890c40f33ca635c84f7c327736f658a4444d9f31deca98a05"
+      }
+    }
+  },
+  "tr_parameters": {
+    "w_channel": 3,
+    "w_pattern": "ring",
+    "w_mask_shape": "circle",
+    "w_radius": 10,
+    "w_measurement": "l1_complex",
+    "w_injection": "complex",
+    "w_pattern_const": 0
+  },
+  "decision": "Original noncentral-chi-square p-value <=1e-6; theoretical model, not empirically certified FPR",
+  "carrier_seed_policy": "Private32-bit seed required by original NumPy seeding API; no cryptographic-strength claim for the carrier seed",
+  "binding_seed_policy": "Separate private256-bit HMAC permutation key",
+  "carrier_roundtrips": [
+    {
+      "task": 0,
+      "p_value": 4.244524855852025e-71,
+      "accepted": true
+    },
+    {
+      "task": 1,
+      "p_value": 1.9890896966428857e-73,
+      "accepted": true
+    },
+    {
+      "task": 2,
+      "p_value": 1.0175095042472035e-72,
+      "accepted": true
+    },
+    {
+      "task": 3,
+      "p_value": 1.7276899963225646e-69,
+      "accepted": true
+    },
+    {
+      "task": 4,
+      "p_value": 1.067278853652397e-72,
+      "accepted": true
+    },
+    {
+      "task": 5,
+      "p_value": 2.2696683771856958e-73,
+      "accepted": true
+    }
+  ],
+  "local_sha256": {
+    "run_sembind_tr_native.py": "b1f7bf56621228da5c0ed924042912e42a6345f799e88160b7d0caf28285b4c0",
+    "prepare_sembind_tr_native.py": "d01e019dd9874a3ef31f97469dbe3690aa9d35eeb0276ae1b2c3a9d00f102822",
+    "run_baseline_after_exit.py": "20ed595bde99f404d8858506228a6dd08ac669cc72e6659573ebb38e5c76d0d5",
+    "sembind_binding.py": "e8a255ca0691bcfedee34072e304ef5c11627b92edab15e80d8c8d1ccc89d30f",
+    "semantic_code.py": "be284b3198ef25eff71eec5ae2b043ce0823ffb6ad184fdf1c9aecafe0bfd710",
+    "sembind_official_audit.py": "568a415bec83152ca7fd0cb5fbbffdbf6b4b19d03371cc792468082db1bd6a9f",
+    "codeword_binding.py": "f49aa1342031a1c54be17bb4153b79150e5f70903719275c37329bf093186c59"
+  },
+  "worker": "run_sembind_tr_native.py",
+  "worker_sha256": "b1f7bf56621228da5c0ed924042912e42a6345f799e88160b7d0caf28285b4c0",
+  "coordinator_sha256": "20ed595bde99f404d8858506228a6dd08ac669cc72e6659573ebb38e5c76d0d5",
+  "gpu_indices": [
+    7,
+    5,
+    4
+  ],
+  "predecessors": [
+    {
+      "pid": 42944,
+      "cmdline_sha256": "00fd7dfcc074149e80b754f6e662dc31ead85c622743e67132a02c0b6861121e"
+    },
+    {
+      "pid": 42944,
+      "cmdline_sha256": "00fd7dfcc074149e80b754f6e662dc31ead85c622743e67132a02c0b6861121e"
+    },
+    {
+      "pid": 42944,
+      "cmdline_sha256": "00fd7dfcc074149e80b754f6e662dc31ead85c622743e67132a02c0b6861121e"
+    }
+  ],
+  "attack_jobs": 0
+}

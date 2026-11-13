@@ -1,0 +1,2216 @@
+{
+  "python": "/data0/liyanlei/watermark_research/envs/seal_reproduction_py310/bin/python",
+  "source": "/data0/liyanlei/watermark_research/third_party/frozen/SEAL_92d31b3",
+  "source_sha256": {
+    "image_transformations_exhaustive_roc_auc.py": "8134690b1019ebbdd9123115283f0f0c6c534367e0a59f5ec00b1671b9ee3da8",
+    "image_transformations_exhaustive_tpr.py": "87f6df30bf4a952007985a49e83b6090a1925238e109e97981434b0f5a3ba84e",
+    "captioning_embedding_ablation.py": "0095b5b53f9dbc8d17dfc3b2010bee9deddd97dddec70522a5c5a2f2cfde97b3",
+    "semantic.py": "8198a6ffdc6a68852cece64cd6e097b57860daa73d24bd8c5fc266889cf34dd5",
+    "image_transformations.py": "eb141f6481ff1376480ed2d94bcfc6da5ede505a080893be782ac71d668effe0",
+    "quality.py": "675ae7d93a2c35d5cf0805901aa654ebdfa92382c57d2243c76a76100d290eab",
+    "README.md": "a60bbb96b09080333680799e185b2490aa8543b2d1927981abb4404bc505770e",
+    "io_utils.py": "b773fa1e149b015c074364258d64eaf7c3cdc55b5b3e9fe43457387c578124a9",
+    "caption_pairs.py": "cd385d15e93006d0fd1a3da119fea496aad2e472cbc05e7969dc8b2e141c70e9",
+    "optim_utils.py": "40e177d65aebb26ffa852f4d22c26ec6450162faa38e60b7c9f1c3b38d4b03a3",
+    "modified_stable_diffusion.py": "ee973b11edb3f9fa11285c421167b2e60cb6b0f94d8f57760c9b10b95f7af0fb",
+    "regeneration.py": "e36033da88072ef5ecf33981544db258bd36792830ddf8372c18f5c338ab03c9",
+    "spatial_test.py": "7cf36e4b4626108175728c55dc7df6f028654d50cd66a5dbd22e6c8cd76a31c6",
+    "requirements.txt": "4f4ac168e0c90dd5ca74aeef5dc4be74eac5bef9892ffa91f5af80a43da01f53",
+    "embedding_finetune.py": "79d247711df2ca6fddba3b58d61befc2016929d6da03e307651ca1722b60208f",
+    "cat_attack_patch_search.py": "e039cda9d66e035646c1e9b08facd894defb02422a8543bbc6520599b99035c8",
+    "image_transformations_exhaustive.py": "e474b57c72bd6866e288c5f97a211a9971704e83fe3319b9dea876f80465b69b",
+    "SEAL.py": "d5b8386e1ab9ccd6ea582e55a21bfb55062ee843c792e56a39c4d480ae64efd7",
+    "inverse_stable_diffusion.py": "918eb53fc83b1c8c9ceb1188ef20c0dcc0e46d5138f5e0778a8f88633c1cdd04",
+    "utils.py": "aea4c34597398231819f970eb727d49cee1436d82c688929347ba16cedb2b23b",
+    "cat_attack.py": "a496a65c545341d895f33d6590e91983b4e1b4b0457a76831e815662a5286b8b",
+    "256x256_diffusion.json": "48384ce8bfe900f4e135c73689b99812bc45d82c5e386f3a591497c0e1ff5fed",
+    "open_clip/modified_resnet.py": "897534d25611fb83520f749cb19e000b7e19bc6d1946072c03e28dc37057d136",
+    "open_clip/generation_utils.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "open_clip/push_to_hf_hub.py": "b343d65a7b2b1b0d69b14f8ad264966c363f767793b3de85a3d1792b2dc55ba3",
+    "open_clip/hf_configs.py": "706c17fe0f02298a03a03f21c7ccf19b8d5408e6da4dd517f804090774c02100",
+    "open_clip/pretrained.py": "78433ace9a39401b0d94d9cfce75f63e25101f0ab802d266fe9f7bfeda2d93e2",
+    "open_clip/loss.py": "6257ee1ac8e53178f439387f8e6111ba2d10b362a47475e3b0511405d24e7d82",
+    "open_clip/coca_model.py": "63762d49bd7b67518d9c9fb0a96f69e3bd2f7cc536e514d9372683a61311d07b",
+    "open_clip/openai.py": "f96a14feff6f6af7625d7ca3ec12f095aeed657b0d7f3953512c1eaadeb999c2",
+    "open_clip/version.py": "c6ddb2615ac179aa2763e21289583c06f034cc8aa21d0fb405c9b02075ae123b",
+    "open_clip/utils.py": "459dd691e95325eb7100ae107f81f05a84d5e4fc50f7ef6044a700390dffdeb5",
+    "open_clip/hf_model.py": "a322c444d3fb614d45b2b30ef544290503b531d3b5f6d5d148601a54361c382f",
+    "open_clip/timm_model.py": "a8f57501c7552183a15badd4345c1e4f337a957f72abedbb339dbfcbc5d163f2",
+    "open_clip/model.py": "f8fd8c13fdd81d3fd5dc9196354bed375b28cb0291480c2845121e777c19cf44",
+    "open_clip/transformer.py": "c24774c35819c04ce0ea48bbfacadb812a3a333a92fb01480e9a893772690f55",
+    "open_clip/tokenizer.py": "5f55e9e2050feb3168a4fcef881bb13ef142f37a298d288d3da8cbf07f839a14",
+    "open_clip/constants.py": "4289fac298908e2fb814ff84b4594ff49094a7eab074fed1b2ca6429339e923b",
+    "open_clip/transform.py": "41c5cfee01c7e3e2f29c5a3934954298ed3ff3bc73f45a8998427283871c44ba",
+    "open_clip/__init__.py": "699a662afa012f3a4eef47ec6eb09e41236b71160da82a531696a7d6b6b2ac9a",
+    "open_clip/factory.py": "9cb95817aedec0cdc3ce5eddc375d039a54ca8379cbd92e6b165d132eb39e75b",
+    "open_clip/model_configs/ViT-B-16.json": "66d48767ab11591f4af2d2d1bf21845c3f2bea17ac70e0989991ff166a53ae52",
+    "open_clip/model_configs/coca_roberta-ViT-B-32.json": "3173bde2a095e7e67df86e5fcf698cee52663b2caf0fcdad91280b9cdf863c1e",
+    "open_clip/model_configs/ViT-M-32.json": "30b866c3c488a841903f0ce0892224cf6cd88924186a2f1bf5cca90fe3e529ef",
+    "open_clip/model_configs/ViT-L-16-320.json": "e4b766875aa5b1b303db804bb446d4c78213ed34bc089e79297b14287b952331",
+    "open_clip/model_configs/RN50x64.json": "c9547262af1b739ca64766246b12d9b5e51f33c354f2bb1d8fe871dbb2ded3de",
+    "open_clip/model_configs/ViT-S-16.json": "68a3b267da2d98daa52d6df7f9e7764dfe68b619e2ddcda0ab7a0074d5057beb",
+    "open_clip/model_configs/convnext_base_w.json": "3de1efb055e506c05952ef13faef6eedabcd68a001d0f7df2c595541f3c3f66a",
+    "open_clip/model_configs/ViT-B-16-plus-240.json": "09b2a65ea7bf757440b89b52e7a09ff85d556635f0e3a4ca76109e42aac6e351",
+    "open_clip/model_configs/xlm-roberta-base-ViT-B-32.json": "f2c3d4542cb4a772fecebeaa29aa4a981c29bf0337f08a50210cc6d4a537266b",
+    "open_clip/model_configs/ViT-L-14-336.json": "980d8da26bf11b651426addb113881f24f707589ebecc7b882269e3678b33e84",
+    "open_clip/model_configs/ViT-M-16.json": "22852ee6d1e4c977f99b79d837fe226c315f75c16a22f809a16df6a2c1792d49",
+    "open_clip/model_configs/ViT-M-16-alt.json": "a7888dab87466d26cdd7fe6b1df995c17028ca21b8e6848aa9ff549cd57fdf08",
+    "open_clip/model_configs/convnext_base.json": "aca749568baacbeed4d9e80259440f377023b42744ac26ab2f3a01a0eeea9b84",
+    "open_clip/model_configs/coca_base.json": "41ea88529c52700715eba5e90ac0e4edca4453346195d1c305cb71ab7d8c75e0",
+    "open_clip/model_configs/ViT-S-32.json": "f8eeef14759a63a27686abd7eba45ae45b69f0344c32fbff67c059c8f016da3b",
+    "open_clip/model_configs/coca_ViT-B-32.json": "5dc0a9a7803fefb45fadd78ae534839d2adc258efe4b732fdf9c370b49caeee5",
+    "open_clip/model_configs/ViT-H-14.json": "8b5bd11e1775f0fd79227ba05c07f3339b1c4da2e0f21f5426631774a84a6058",
+    "open_clip/model_configs/RN50.json": "a5b9845a44b5a052fb1697055b41b492171aa84868f1408e5fed7e6077d046d4",
+    "open_clip/model_configs/vit_medium_patch16_gap_256.json": "50426397fc6e28e205df55b9aadedc49c47e73904229ea588fcef29e0e65a07f",
+    "open_clip/model_configs/swin_base_patch4_window7_224.json": "1cb823b9fab9bd851d81ac0af751ccb7fa9ed1ebb31a16cea29e01ca8c3edd87",
+    "open_clip/model_configs/convnext_tiny.json": "c919729a818c48f95371c8b52030c96513cf2d38e28a94a098be78da3b345e89",
+    "open_clip/model_configs/ViT-B-32-quickgelu.json": "437dc6acc8455267c2646e84f880a026d91ac20828db9b100b18a5edba0e767a",
+    "open_clip/model_configs/convnext_xxlarge_320.json": "ab4f469f9ef8df163259e91f145f0a7b2fec21824fb1c2dfa863cc6ab01b52f4",
+    "open_clip/model_configs/coca_ViT-L-14.json": "709768239a6598fe13f19f1ccffd152d503c4c51847ea211f4aefec2158a91f8",
+    "open_clip/model_configs/convnext_large_d.json": "76a8d687335fb75dc02c10bac5de66f7f687e3ab8b23cf0f372ebf86fb0ce58a",
+    "open_clip/model_configs/ViT-B-16-plus.json": "8e0c645c9190b34c48c281cbc243e1ed7c3fd3c1ee5f2c5885fe9c17b11c327a",
+    "open_clip/model_configs/convnext_large.json": "571e78940760a9f389169da9eda00f32f584bb9814bc507fb79e5051c771c29b",
+    "open_clip/model_configs/roberta-ViT-B-32.json": "4a6d714252c97037c0f5194159882d1a399146f35483275581acc27c994abe11",
+    "open_clip/model_configs/convnext_xxlarge.json": "5017c8577bfe979ebcf227b0d651b783809717a12177905d7ce71254b363108e",
+    "open_clip/model_configs/mt5-xl-ViT-H-14.json": "356b65e1e31b0e4ee374b3d2f332631b13155b8d62f597a568999292e3e3d6ea",
+    "open_clip/model_configs/ViT-e-14.json": "27e8d32a1c7727ef84fb4ab2c337b69fcb7aae96243c8bcfb4b4bbaffd2a83d1",
+    "open_clip/model_configs/mt5-base-ViT-B-32.json": "dea1040f8fc5ce097a7ba38454e308b19d002df6f90a17556d48eed94c19a960",
+    "open_clip/model_configs/ViT-L-14-280.json": "848f42db24beda55ce044fb82cc4ffae34fa3a769184c2187a71e5074df209c1",
+    "open_clip/model_configs/convnext_large_d_320.json": "44c8dea391af808d38e16d4ff489e2f498bbfa35a974deb9f7273d8932c56679",
+    "open_clip/model_configs/ViT-S-16-alt.json": "377ff96ac3126125c2d59f71567542ab4563230b1cf94287614dd12df86e78ff",
+    "open_clip/model_configs/RN50x4.json": "aea39b4ec952ccfe1b7f9242a9c0d36e1abeb90f5c6fd4b2cfac6e402462df72",
+    "open_clip/model_configs/ViT-L-16.json": "eae893277137e6cd4f071265423d135663528018cc13bdbf50709feaa80284fa",
+    "open_clip/model_configs/ViT-B-32-plus-256.json": "fcb771914c59371ec222f05dd5af44a5da74c72855c1c686f3f9701c95d64732",
+    "open_clip/model_configs/vit_relpos_medium_patch16_cls_224.json": "b0539ae19daff98d4edfabfd711a808e01bc362e23414438dd158ec430dd7b28",
+    "open_clip/model_configs/RN101-quickgelu.json": "24dd435eec6871d7675bd6b02098e71e105a957aa6a3a59153b03181103756b5",
+    "open_clip/model_configs/convnext_small.json": "54c0d8b6168b6a7907e32ff8134ef096aa1b1e2100c815f366b728b7fcedd122",
+    "open_clip/model_configs/ViT-M-32-alt.json": "a1be2c52a813f752842683c60472712bbe6cf10a8adbeecff94cfe0c9f5ef310",
+    "open_clip/model_configs/convnext_base_w_320.json": "37b39ef036e6c949af1d5a2f404e469cc216e2ee73d290d0e3169e326f367e93",
+    "open_clip/model_configs/RN50x16.json": "971064787fdc0266bb51d924db6f7f5311763118733315b54f2a9e52bdb64d50",
+    "open_clip/model_configs/ViT-bigG-14.json": "6f5fc4e85739ca3546804e30178f5241b3be2becd8cf52c282b6e90c742a9f30",
+    "open_clip/model_configs/ViT-g-14.json": "463160a932f75774ded241d4217eebd172fe7c03c24646530a24b89b20148df5",
+    "open_clip/model_configs/xlm-roberta-large-ViT-H-14.json": "17fbddd3b56a453f14ed9dff1a2a48abe3425f60686d3cf0531940921f8a9bbe",
+    "open_clip/model_configs/ViT-B-32.json": "743f4fcee3aea1705c1865f89a3767d816513769f57eb483a9eea3e610ebe633",
+    "open_clip/model_configs/ViT-L-14.json": "616750a927ea8d8b0b8e4ec93179cab3df9e4f1531cb60cc5dd6882cb063888b",
+    "open_clip/model_configs/ViT-S-32-alt.json": "8e60da19a82ea42e7c97102ae551d31497da66dbb11793800875584fcb46c760",
+    "open_clip/model_configs/RN101.json": "0466aae72c1cd259a8655e25af3170d54acb4cbac95304cb9832d68e0716538b",
+    "open_clip/model_configs/convnext_xlarge.json": "320f6ee194db97b3b98511ccd9086f29d65ca69bfe1889686f0b4d3fda4334f2",
+    "open_clip/model_configs/RN50-quickgelu.json": "079e9c4f3d7808a767de08061ab417f98d9e8aaaecec6510949cad0c0c389a41",
+    "open_clip/model_configs/ViT-H-16.json": "45c950e8c98300b5e0085781e9f91cc6f12ff94b43d0ed0f9687ed993209e8ef",
+    "guided_diffusion/dist_util.py": "6464852e108f7b3426c3a95ac77708f814801d5b8fb18fe70eadb4058d888532",
+    "guided_diffusion/image_datasets.py": "220d6699f1c201989209f1bd64f5a7d3beef41e84098607aa521ab21cf6700d5",
+    "guided_diffusion/nn.py": "d9547fb22b421a16dc079cb82a9d98630100b5e1b2a710d343f4d3f90b8661f3",
+    "guided_diffusion/respace.py": "b9a509b28c10a52ca3ee8cc48f40205b1d70aecfc95356b540dc88415368c2de",
+    "guided_diffusion/logger.py": "615d9cb63dd2cfe017ac424bcc64340257c83eb9cb8e6b6913df4bd55831c1c0",
+    "guided_diffusion/unet.py": "ab3ad40d70a551069f3e2d14698f7c6712e5738d0be1365def6cad78ca15eeda",
+    "guided_diffusion/gaussian_diffusion.py": "c56f5cee67a5dc7a3fd6724d60aa46bfd1b06a4cb16928ba8a1b6e0fcd6ea393",
+    "guided_diffusion/train_util.py": "272e3b66baa081b2fdb2e4e6d792e575e713438bee9adf1e1fd8504c75925140",
+    "guided_diffusion/script_util.py": "d47bb38ea450bf6e7c57c494a43947f6664f45b58a487f6315f5ec83365b80b8",
+    "guided_diffusion/fp16_util.py": "31ce6b36be7a2a09606687a4935eca6b093f645c7ecd2111f43fca54aff3dc2a",
+    "guided_diffusion/__init__.py": "ec30483aa641d5c1b9cc8910554324949f2288eadd085310d4c312cdda294c73",
+    "guided_diffusion/resample.py": "13a06f67e655dc145833896389576b0f8e68b2f677dc9eed60ed8839aa6a9c62",
+    "guided_diffusion/losses.py": "0b0f5a5532910fbc7f16d30f2b891d8f1e20aa88881589ce4eacc2cc6ce06026"
+  },
+  "source_commit": "92d31b31b93a6e373fe88a584c640beafb68c6fa",
+  "diffusion_model": "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c",
+  "caption_model": "/data0/liyanlei/watermark_research/models/seal/blip2-flan-t5-xl",
+  "embedding_model": "/data0/liyanlei/watermark_research/models/seal/caption-embedding-pinned",
+  "private_salt_file": "/data0/liyanlei/watermark_research/private_eval/seal_paper_native_20261113/salt.json",
+  "private_salt_sha256": "9888fa2026669142d25ab452ac9e76597407ea39c54fefdc71fbfea33ad07f88",
+  "created_at": "2026-11-13T01:15:25.013445+00:00",
+  "scope": "All7 released SEAL benign conditions on100 sources for each released/paper variant; unconditional denominators, not1000-source paper replication",
+  "sources": [
+    {
+      "task": 0,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/000_genuine.png",
+      "image_sha256": "f7a2600717fc697e6e295f99546d1112d847949a61a388e4aa216bf6c2123e25",
+      "clean_caption": "a traffic light on a pole",
+      "clean_accepted": true,
+      "clean_matching_patches": 463
+    },
+    {
+      "task": 0,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/000_genuine.png",
+      "image_sha256": "a18b0964a7782dc5210d9293b85df79bcb460f405836c9533da642fa0cfe2d97",
+      "clean_caption": "traffic light with red lights on the side of the road",
+      "clean_accepted": true,
+      "clean_matching_patches": 82
+    },
+    {
+      "task": 1,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/001_genuine.png",
+      "image_sha256": "20585e9e0f63bd28ba63d4dead9412cc943b8124b7610dcc3999c7fac090a3fc",
+      "clean_caption": "children playing frisbee in the park",
+      "clean_accepted": true,
+      "clean_matching_patches": 390
+    },
+    {
+      "task": 1,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/001_genuine.png",
+      "image_sha256": "cf2715d776ccb1e1b765b3cae5910dc87dd31bd4290b58120296c2016e7fbfff",
+      "clean_caption": "children playing frisbee in a park",
+      "clean_accepted": true,
+      "clean_matching_patches": 378
+    },
+    {
+      "task": 2,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/002_genuine.png",
+      "image_sha256": "2a0c4c98d8df9d9b4183650832d9259afec317fea5f00c83618207c4f5d7027c",
+      "clean_caption": "a red double decker bus",
+      "clean_accepted": true,
+      "clean_matching_patches": 146
+    },
+    {
+      "task": 2,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/002_genuine.png",
+      "image_sha256": "a8ee29773e2483105fa49801f2c7d688456ffce1c1c82cab5421e767dde4e829",
+      "clean_caption": "a red double decker bus is driving down the street",
+      "clean_accepted": true,
+      "clean_matching_patches": 825
+    },
+    {
+      "task": 3,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/003_genuine.png",
+      "image_sha256": "55d8cc13bb3f6ae741bbcb555c20a99c2a1c861f3f37097db0fde9adb7d51227",
+      "clean_caption": "a brown bear standing on a rock near a river",
+      "clean_accepted": true,
+      "clean_matching_patches": 80
+    },
+    {
+      "task": 3,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/003_genuine.png",
+      "image_sha256": "ff068d24c105cbca26fa42de5e7a862976723480459be15398dafe2a3c65e2fb",
+      "clean_caption": "a brown bear is crossing a river in the forest",
+      "clean_accepted": true,
+      "clean_matching_patches": 484
+    },
+    {
+      "task": 4,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/004_genuine.png",
+      "image_sha256": "df5bc49aaab459a6570e4629b870a0521492c471dded481636926448f7b02bd2",
+      "clean_caption": "a plate with steak and green beans",
+      "clean_accepted": true,
+      "clean_matching_patches": 642
+    },
+    {
+      "task": 4,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/004_genuine.png",
+      "image_sha256": "25b49d8e1a101da96ef382a76c0f6bffb9faf49728378107339720988a74dd81",
+      "clean_caption": "a plate with a steak and green beans",
+      "clean_accepted": true,
+      "clean_matching_patches": 903
+    },
+    {
+      "task": 5,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/005_genuine.png",
+      "image_sha256": "551d0a72eb3e205c9d9115700ad573bc90b2a9f7f4d59dcae57591cc53a16e0d",
+      "clean_caption": "a cow in a field",
+      "clean_accepted": true,
+      "clean_matching_patches": 355
+    },
+    {
+      "task": 5,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/005_genuine.png",
+      "image_sha256": "9b1758b2d6ae4457d85014b5f1535eac3c4c9205382cb9c653afa7546cb64a43",
+      "clean_caption": "a cow standing in a field",
+      "clean_accepted": true,
+      "clean_matching_patches": 469
+    },
+    {
+      "task": 6,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/006_genuine.png",
+      "image_sha256": "e8ae72cacd7f1cf0e19eb072b29e12b740486d09877d03eb8797284b0c4fd812",
+      "clean_caption": "a cat laying on the grass next to a laptop",
+      "clean_accepted": true,
+      "clean_matching_patches": 83
+    },
+    {
+      "task": 6,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/006_genuine.png",
+      "image_sha256": "33dc755ce26a61a5983568d4d173fc72625b0ad10f1a4f1ec38fd418ac70e199",
+      "clean_caption": "a cat sitting on a laptop computer",
+      "clean_accepted": true,
+      "clean_matching_patches": 487
+    },
+    {
+      "task": 7,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/007_genuine.png",
+      "image_sha256": "1760764e0084918e6db779d3082bb51190064ace73ff8251b1377e02f1f038b7",
+      "clean_caption": "a baseball field with a fence",
+      "clean_accepted": true,
+      "clean_matching_patches": 20
+    },
+    {
+      "task": 7,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/007_genuine.png",
+      "image_sha256": "04fe17e8e454880ec511b0ef53d3cc7473b1ae5bab1806ab19c45f83c529711f",
+      "clean_caption": "a baseball field with a group of players",
+      "clean_accepted": true,
+      "clean_matching_patches": 79
+    },
+    {
+      "task": 8,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/008_genuine.png",
+      "image_sha256": "1418fb7672cc4934933566c052aea91e69a272cf6c794d2b47b8c43aea58f22e",
+      "clean_caption": "a little girl is sitting on a skateboard",
+      "clean_accepted": true,
+      "clean_matching_patches": 224
+    },
+    {
+      "task": 8,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/008_genuine.png",
+      "image_sha256": "4f971d17ccfbf46f227f84ba12d8decadfd3af0582976fb70f1f64c4bef4b282",
+      "clean_caption": "a girl is sitting on a skateboard",
+      "clean_accepted": true,
+      "clean_matching_patches": 954
+    },
+    {
+      "task": 9,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/009_genuine.png",
+      "image_sha256": "9e685317f85a66b4575fc7c8c1c59c1784190225555ff7547e017aedd43fb65b",
+      "clean_caption": "a table with various items including a green shirt, a bottle of juice, and ",
+      "clean_accepted": true,
+      "clean_matching_patches": 43
+    },
+    {
+      "task": 9,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/009_genuine.png",
+      "image_sha256": "620223a52dc900b8dbec485f700f4d60e6a8b90d7d94b1c2ec8d3303f8a17b30",
+      "clean_caption": "a box of various items including oranges, orange juice, and other items",
+      "clean_accepted": false,
+      "clean_matching_patches": 9
+    },
+    {
+      "task": 10,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/010_genuine.png",
+      "image_sha256": "a28234754b79a57b4ccfed89da9bc20645a2d11a3b4d462407aa9041322ed853",
+      "clean_caption": "kites flying over a lake with trees and grass",
+      "clean_accepted": true,
+      "clean_matching_patches": 403
+    },
+    {
+      "task": 10,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/010_genuine.png",
+      "image_sha256": "9fe34ef4b72f2bd4336304939c8d0cab9cbc1c43cc788b7469de370eaa7edfd0",
+      "clean_caption": "kiteboarding at lake taylor",
+      "clean_accepted": true,
+      "clean_matching_patches": 91
+    },
+    {
+      "task": 11,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/011_genuine.png",
+      "image_sha256": "a9566fa882e1eed41c2cedb38a0b5bb32c54109e57715b6bdd718b122edb61ab",
+      "clean_caption": "a group of donuts with different colors and sprinkles",
+      "clean_accepted": true,
+      "clean_matching_patches": 128
+    },
+    {
+      "task": 11,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/011_genuine.png",
+      "image_sha256": "b62e25527316c93ccbc2e7ea517fe41d69bfd97c993ce19f18423a39c60782f1",
+      "clean_caption": "colorful sprinkled donuts on a wooden table",
+      "clean_accepted": true,
+      "clean_matching_patches": 81
+    },
+    {
+      "task": 12,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/012_genuine.png",
+      "image_sha256": "4a35f68ee4e4ed85db84da7fcf11f94784fc2c1aea4e05f901b2ace2d22e9de7",
+      "clean_caption": "a man is playing tennis on a court",
+      "clean_accepted": true,
+      "clean_matching_patches": 70
+    },
+    {
+      "task": 12,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/012_genuine.png",
+      "image_sha256": "6c0437c7b9b5f37eeb362f8d2b5fef4b287cdd5630610d8d2cf17bea80790126",
+      "clean_caption": "a man is holding a tennis racket",
+      "clean_accepted": true,
+      "clean_matching_patches": 291
+    },
+    {
+      "task": 13,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/013_genuine.png",
+      "image_sha256": "256a0fcafdc1e565309a6a226cfbfa4cfd511b285caeb52eb6120c317f3bc97c",
+      "clean_caption": "a plate with a fried egg, tomatoes, and toast",
+      "clean_accepted": true,
+      "clean_matching_patches": 110
+    },
+    {
+      "task": 13,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/013_genuine.png",
+      "image_sha256": "b66a576d0a14bdbdc0227f637f31e9b1958610252bfd59375e8b3fe8a16da9f6",
+      "clean_caption": "a plate of food with eggs, toast, and fruit",
+      "clean_accepted": true,
+      "clean_matching_patches": 172
+    },
+    {
+      "task": 14,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/014_genuine.png",
+      "image_sha256": "508232a19242c5cc4d3f035cfa26ccc580a83f8704209523f703c54eccba1cb8",
+      "clean_caption": "a pizza with pepperoni and sausage on a plate",
+      "clean_accepted": true,
+      "clean_matching_patches": 257
+    },
+    {
+      "task": 14,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/014_genuine.png",
+      "image_sha256": "8a88c74568f80e8c9db3339d64cf8afe8c2807bd80524729cc4a4ddbb6e2149f",
+      "clean_caption": "a slice of pizza with pepperoni and basil on a dark background",
+      "clean_accepted": true,
+      "clean_matching_patches": 88
+    },
+    {
+      "task": 15,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/015_genuine.png",
+      "image_sha256": "a546c24f0139c10b70235a9c9d1172999111f1d387c0f46ed0bbfa5a68054aab",
+      "clean_caption": "a living room with a large bookcase and a couch",
+      "clean_accepted": true,
+      "clean_matching_patches": 18
+    },
+    {
+      "task": 15,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/015_genuine.png",
+      "image_sha256": "50e8571a172ca9ccc79e25e1dcb2427b7bf5c4657d8a86820166f7f58406259b",
+      "clean_caption": "a room with a large number of bookshelves",
+      "clean_accepted": false,
+      "clean_matching_patches": 8
+    },
+    {
+      "task": 16,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/016_genuine.png",
+      "image_sha256": "6697e31ed7cb292a70be48f4948770f342f477c812c64cac1a370a810294392c",
+      "clean_caption": "a boy is riding a skateboard on a ramp",
+      "clean_accepted": true,
+      "clean_matching_patches": 159
+    },
+    {
+      "task": 16,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/016_genuine.png",
+      "image_sha256": "6aaa6fd173057c606839ed440fe73800e0aba76a54b5f67f4e7f9a01f43bf92a",
+      "clean_caption": "a young boy riding a skateboard",
+      "clean_accepted": true,
+      "clean_matching_patches": 195
+    },
+    {
+      "task": 17,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/017_genuine.png",
+      "image_sha256": "7491ba370341235b9651a2d37b8920db516a9942e6638e2ff1c6b64e16681866",
+      "clean_caption": "a kitchen with a refrigerator and a microwave",
+      "clean_accepted": true,
+      "clean_matching_patches": 14
+    },
+    {
+      "task": 17,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/017_genuine.png",
+      "image_sha256": "a87fc70d9db45c773b5f20ab6af73b829ee6d43d757c96efe60a1af6f514a2ca",
+      "clean_caption": "a white refrigerator in a kitchen with wooden cabinets",
+      "clean_accepted": true,
+      "clean_matching_patches": 22
+    },
+    {
+      "task": 18,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/018_genuine.png",
+      "image_sha256": "f2e82725f728cfe9a30f4f0d105d2ab2a0a58525103b7e29f6a6be5f1cbca694",
+      "clean_caption": "a blue and black motorcycle parked in front of a building",
+      "clean_accepted": true,
+      "clean_matching_patches": 333
+    },
+    {
+      "task": 18,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/018_genuine.png",
+      "image_sha256": "7f95711cdc23a062ed9eadbf2a23740e2a7b2cedecc592b7adca7312ff9b5e68",
+      "clean_caption": "a blue and white motorcycle parked in front of a building",
+      "clean_accepted": true,
+      "clean_matching_patches": 274
+    },
+    {
+      "task": 19,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/019_genuine.png",
+      "image_sha256": "37cee31082a2c961243488152c5f5ef5ea67a2e769dedfba427b6f365f126212",
+      "clean_caption": "a cat wearing a hat",
+      "clean_accepted": true,
+      "clean_matching_patches": 194
+    },
+    {
+      "task": 19,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/019_genuine.png",
+      "image_sha256": "498ccc9f6716d6948d512e031edb2bd9193833519c6bfc67f0d704f0239637b7",
+      "clean_caption": "a cat wearing a purple hat",
+      "clean_accepted": true,
+      "clean_matching_patches": 887
+    },
+    {
+      "task": 20,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/020_genuine.png",
+      "image_sha256": "9a6bc776a48229da448af38b255393ef4d64a36b205ca9ca596ebdc0841c6239",
+      "clean_caption": "a bathroom with a vase of red flowers",
+      "clean_accepted": true,
+      "clean_matching_patches": 133
+    },
+    {
+      "task": 20,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/020_genuine.png",
+      "image_sha256": "e2cd6ea0c166ea33c4f1ba5e8f81c2aa6d3a6b37e84b5d9457a027b800ccb113",
+      "clean_caption": "a white vase with red flowers on a marble counter",
+      "clean_accepted": true,
+      "clean_matching_patches": 195
+    },
+    {
+      "task": 21,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/021_genuine.png",
+      "image_sha256": "584419aab72b0dee6d203a613d6623ff054d25c02bb9c968eae28eb324e3fab2",
+      "clean_caption": "a yellow double decker bus is driving down the street",
+      "clean_accepted": true,
+      "clean_matching_patches": 58
+    },
+    {
+      "task": 21,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/021_genuine.png",
+      "image_sha256": "7da3e318757975fb919fd18ebaab4f74272eff2b110f8f68f9c3d2ba2ce7df17",
+      "clean_caption": "a red double decker bus is parked in a parking lot",
+      "clean_accepted": true,
+      "clean_matching_patches": 74
+    },
+    {
+      "task": 22,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/022_genuine.png",
+      "image_sha256": "87b5a318f177ebb52cbcf44d21365951bce90a230d2e11c809ab5897bc66324d",
+      "clean_caption": "a man sitting at a desk using a tablet",
+      "clean_accepted": true,
+      "clean_matching_patches": 106
+    },
+    {
+      "task": 22,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/022_genuine.png",
+      "image_sha256": "21e2dba0ee74e803281becfc07a58cb79b9b69709b788c0a410183865899a0ae",
+      "clean_caption": "a man sitting at a desk with a computer",
+      "clean_accepted": true,
+      "clean_matching_patches": 247
+    },
+    {
+      "task": 23,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/023_genuine.png",
+      "image_sha256": "88bcf156814c52772cd34da68dbb8ca1a1c67656ac6bb45ee91bd3f1b1f045cd",
+      "clean_caption": "a man in a apron is standing at the counter",
+      "clean_accepted": true,
+      "clean_matching_patches": 51
+    },
+    {
+      "task": 23,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/023_genuine.png",
+      "image_sha256": "cceaae45feab7f5ba688787df35a7bc1a82b71c56e012c78001e5d338abd5e25",
+      "clean_caption": "a young man standing at the counter of a coffee shop",
+      "clean_accepted": true,
+      "clean_matching_patches": 202
+    },
+    {
+      "task": 24,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/024_genuine.png",
+      "image_sha256": "d6f9e56a827d5ac2c320d9bafbf9b458cee963feed6e69b748a5097919d1cf31",
+      "clean_caption": "a group of people riding surfboards in the ocean",
+      "clean_accepted": true,
+      "clean_matching_patches": 58
+    },
+    {
+      "task": 24,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/024_genuine.png",
+      "image_sha256": "e70305389dc09813b7d0142cfac3ad3f7ca1f84714a31029c8f6e491a0fa4496",
+      "clean_caption": "a group of people are surfing in the ocean",
+      "clean_accepted": true,
+      "clean_matching_patches": 67
+    },
+    {
+      "task": 25,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/025_genuine.png",
+      "image_sha256": "ae723d640998be71bd7eff7a91f759c5fa3513b256a5b5f0c312b9f3d9bf330e",
+      "clean_caption": "a man riding a cart",
+      "clean_accepted": true,
+      "clean_matching_patches": 103
+    },
+    {
+      "task": 25,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/025_genuine.png",
+      "image_sha256": "60b237df792187778af478cd703e8cc0d41e17bedcf5509788f93b74b10f5ee8",
+      "clean_caption": "a man driving a cart with two cows",
+      "clean_accepted": true,
+      "clean_matching_patches": 361
+    },
+    {
+      "task": 26,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/026_genuine.png",
+      "image_sha256": "0bcbf27553dbf5b308ba21f67d99626582bc2947d21a87f3ad324ae727a2bbf2",
+      "clean_caption": "a person riding a horse",
+      "clean_accepted": true,
+      "clean_matching_patches": 276
+    },
+    {
+      "task": 26,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/026_genuine.png",
+      "image_sha256": "fe1302c2645697769e5829bbe6853a3552c3f2147794336a3edaa8039cea1829",
+      "clean_caption": "a man riding a horse in a dirt field",
+      "clean_accepted": true,
+      "clean_matching_patches": 274
+    },
+    {
+      "task": 27,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/027_genuine.png",
+      "image_sha256": "971011d0da7bc5d7ccca7eaaacc5c121469565d66fab1d040d88a0692c1f0a05",
+      "clean_caption": "a man sitting on a bench reading a newspaper",
+      "clean_accepted": true,
+      "clean_matching_patches": 995
+    },
+    {
+      "task": 27,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/027_genuine.png",
+      "image_sha256": "746a6b2ffbbf29b1bc7b48c832cc7923f55eb4a15c378e55b2a83fba346a3564",
+      "clean_caption": "a man reading a newspaper on a park bench",
+      "clean_accepted": true,
+      "clean_matching_patches": 320
+    },
+    {
+      "task": 28,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/028_genuine.png",
+      "image_sha256": "28aadd1ae33fb53bbd9ded0bec0f279b58233229d08025857fe4693c62138595",
+      "clean_caption": "an elephant is pulling a cart with barrels on it",
+      "clean_accepted": true,
+      "clean_matching_patches": 289
+    },
+    {
+      "task": 28,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/028_genuine.png",
+      "image_sha256": "17190be8c3b13c44aa51d9d64df2a44f467b35199da248c38f3ec6a507720ce0",
+      "clean_caption": "an elephant is walking in a field",
+      "clean_accepted": true,
+      "clean_matching_patches": 34
+    },
+    {
+      "task": 29,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/029_genuine.png",
+      "image_sha256": "f18b1fb1b30d4031dfb5d55ea024c3345276d6f8e3e7f79c007ee99d5de3154c",
+      "clean_caption": "a bedroom with a bed and a window",
+      "clean_accepted": true,
+      "clean_matching_patches": 113
+    },
+    {
+      "task": 29,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/029_genuine.png",
+      "image_sha256": "48b8366753ff04d3eea4e65751b061ad93c28cb0cd93f6b87f280559ffac64da",
+      "clean_caption": "a bedroom with a bed and a dresser",
+      "clean_accepted": true,
+      "clean_matching_patches": 37
+    },
+    {
+      "task": 30,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/030_genuine.png",
+      "image_sha256": "62324f6d370409df38dc3b41fd349c3cc2cc64f20985054ef92ddc5dfa606cc8",
+      "clean_caption": "two people skiing down a snowy slope",
+      "clean_accepted": true,
+      "clean_matching_patches": 54
+    },
+    {
+      "task": 30,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/030_genuine.png",
+      "image_sha256": "e3a688e9ab2a55cdbc074e1aba46395c2ccfbda9d5971e5977e1e6fcfb241b12",
+      "clean_caption": "two people on skis",
+      "clean_accepted": true,
+      "clean_matching_patches": 106
+    },
+    {
+      "task": 31,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/031_genuine.png",
+      "image_sha256": "617b3b3e8bf97b621c5420fc44df77bdec1724f3f8ec31b258846ae4185f7d11",
+      "clean_caption": "a white kitchen with marble counter tops and a black hood",
+      "clean_accepted": true,
+      "clean_matching_patches": 21
+    },
+    {
+      "task": 31,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/031_genuine.png",
+      "image_sha256": "957b88dab8b1306cd9f83b8fb9f64557105cd3def34774a1c8e1d7bcdeb796c1",
+      "clean_caption": "a black and white kitchen with a stove and sink",
+      "clean_accepted": true,
+      "clean_matching_patches": 21
+    },
+    {
+      "task": 32,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/032_genuine.png",
+      "image_sha256": "d4adb81781ae18e1f9bb446ee6793f747e7e156c93376ff3fd7e95750bc4610a",
+      "clean_caption": "a boy is playing tennis",
+      "clean_accepted": true,
+      "clean_matching_patches": 74
+    },
+    {
+      "task": 32,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/032_genuine.png",
+      "image_sha256": "8ff7236c69d432e2f2f6aee7094c9f361da2e0f5775e9ddff6d1c7c018fce3c5",
+      "clean_caption": "a young boy is playing tennis on a court",
+      "clean_accepted": true,
+      "clean_matching_patches": 108
+    },
+    {
+      "task": 33,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/033_genuine.png",
+      "image_sha256": "ed174adda130cac24d9e8d8cab8a09214f5cf52601e96698cc895bd3060c2dc7",
+      "clean_caption": "a person holding a smartphone with a lot of icons on it",
+      "clean_accepted": true,
+      "clean_matching_patches": 93
+    },
+    {
+      "task": 33,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/033_genuine.png",
+      "image_sha256": "fc805256ef0a175a74151fa5ee5e25782b79094ec10842f547b52397d9eb535e",
+      "clean_caption": "a woman holding a smartphone with a map and icons on it",
+      "clean_accepted": true,
+      "clean_matching_patches": 95
+    },
+    {
+      "task": 34,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/034_genuine.png",
+      "image_sha256": "5718434f5f85b34f2d5cd684c05f93c1294ff8f11bb156427570580fb23fc1c3",
+      "clean_caption": "a surfer riding a wave on a surfboard",
+      "clean_accepted": true,
+      "clean_matching_patches": 325
+    },
+    {
+      "task": 34,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/034_genuine.png",
+      "image_sha256": "df69d119e640974e03d94c2c9f2c9ae9509642cb424acbabe191135059e27b97",
+      "clean_caption": "a man riding a wave on a surfboard",
+      "clean_accepted": true,
+      "clean_matching_patches": 498
+    },
+    {
+      "task": 35,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/035_genuine.png",
+      "image_sha256": "cffd00ab1faa12f544e2cc56f1deb3396f99a2ca682f6561bf9f1da1a7111e16",
+      "clean_caption": "a blue baseball cap on a wooden bench",
+      "clean_accepted": true,
+      "clean_matching_patches": 310
+    },
+    {
+      "task": 35,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/035_genuine.png",
+      "image_sha256": "d2a2c3b5f94d1567793d2f542917963b18ab0a2e860f76b6fe3291af7b5d240b",
+      "clean_caption": "a blue baseball cap on a brown background",
+      "clean_accepted": true,
+      "clean_matching_patches": 225
+    },
+    {
+      "task": 36,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/036_genuine.png",
+      "image_sha256": "bfc61709f2956ac8cb3dd777727d3e497bcea2bfbd842f0f86a8c85934bc3fbe",
+      "clean_caption": "a row of microwaves in a kitchen",
+      "clean_accepted": true,
+      "clean_matching_patches": 26
+    },
+    {
+      "task": 36,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/036_genuine.png",
+      "image_sha256": "63174e8ac7b4d3b53e8916989a5042905a376fe278104ceb7bb5d9944fe979a8",
+      "clean_caption": "a microwave oven",
+      "clean_accepted": true,
+      "clean_matching_patches": 181
+    },
+    {
+      "task": 37,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/037_genuine.png",
+      "image_sha256": "9d69e08dcbca721a16084a15132c98d867d3a6601935998abe8cb078fae12385",
+      "clean_caption": "a lunch box with a sandwich, orange juice and oranges",
+      "clean_accepted": true,
+      "clean_matching_patches": 154
+    },
+    {
+      "task": 37,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/037_genuine.png",
+      "image_sha256": "e206b7d416d5213ccb920cdc7a8d00d594bdd20626d8de47102d40d710b7d46d",
+      "clean_caption": "a plastic container with a fruit and juice",
+      "clean_accepted": true,
+      "clean_matching_patches": 95
+    },
+    {
+      "task": 38,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/038_genuine.png",
+      "image_sha256": "69c07ba6c07bf32b3958ee542499922f5481784483637fd4051fc70a19091ef5",
+      "clean_caption": "a building with a glass facade reflected in it",
+      "clean_accepted": true,
+      "clean_matching_patches": 88
+    },
+    {
+      "task": 38,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/038_genuine.png",
+      "image_sha256": "e05c76d04d2950c33ab726e5f7a73b226e1b68014e363152a077ecf3389b39d7",
+      "clean_caption": "a large glass building with a street sign in front of it",
+      "clean_accepted": true,
+      "clean_matching_patches": 37
+    },
+    {
+      "task": 39,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/039_genuine.png",
+      "image_sha256": "2e30466e651a308d0bd2fb9c20a161e4cf09b0da91f5bcd5a23ded1ebcc46066",
+      "clean_caption": "a bowl of carrots and broccoli in a white bowl",
+      "clean_accepted": true,
+      "clean_matching_patches": 964
+    },
+    {
+      "task": 39,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/039_genuine.png",
+      "image_sha256": "48fa2aab27544e26b6f4e574dc5ae21942e98ec459f2b42945ec79574e5fcac9",
+      "clean_caption": "a bowl of broccoli and carrots with a bowl of cream cheese",
+      "clean_accepted": true,
+      "clean_matching_patches": 126
+    },
+    {
+      "task": 40,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/040_genuine.png",
+      "image_sha256": "456ae0069ff4906c900c658ac3d7dd58da3edce186778080568a1505c0ed8351",
+      "clean_caption": "a kite flying in the sky",
+      "clean_accepted": true,
+      "clean_matching_patches": 962
+    },
+    {
+      "task": 40,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/040_genuine.png",
+      "image_sha256": "f7a87c27afd7313efccc324bf0cd85306dd5bd34adc21386cebe848d8cd5971f",
+      "clean_caption": "a kite flying in the sky",
+      "clean_accepted": true,
+      "clean_matching_patches": 1004
+    },
+    {
+      "task": 41,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/041_genuine.png",
+      "image_sha256": "33a92752369af0d78d74d366116e7adeac53532a63d5b3dc2e9e0b89cf0fba69",
+      "clean_caption": "a woman is sitting at a table with a pizza",
+      "clean_accepted": true,
+      "clean_matching_patches": 982
+    },
+    {
+      "task": 41,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/041_genuine.png",
+      "image_sha256": "b7b0f787593c8732ac027d705329cba68431e45b0250169c1d94593bdf9a5fd5",
+      "clean_caption": "a woman sitting at a table with a pizza",
+      "clean_accepted": true,
+      "clean_matching_patches": 639
+    },
+    {
+      "task": 42,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/042_genuine.png",
+      "image_sha256": "fb80244ad97e4212e31f000bb1ad70af0b6fdded6c14aef8908b43039561f414",
+      "clean_caption": "a dog is brushing his teeth",
+      "clean_accepted": true,
+      "clean_matching_patches": 79
+    },
+    {
+      "task": 42,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/042_genuine.png",
+      "image_sha256": "7d78e70c2502f113131dab6f28ebd62e0bf2241f74a7a1ace07999d0ac3d8861",
+      "clean_caption": "a dog is being brushed with a toothbrush",
+      "clean_accepted": true,
+      "clean_matching_patches": 155
+    },
+    {
+      "task": 43,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/043_genuine.png",
+      "image_sha256": "9a2d4036f2d7ca17116c62ba8de3b712d1b686b40f45d7e2142886f0a95be2ab",
+      "clean_caption": "red car driving on the street in front of a store",
+      "clean_accepted": true,
+      "clean_matching_patches": 64
+    },
+    {
+      "task": 43,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/043_genuine.png",
+      "image_sha256": "5c18735d705ab61d7b90fd935e8b1753dc3d94898edde2b1a4c4c23c23936148",
+      "clean_caption": "a blue car parked on the street",
+      "clean_accepted": true,
+      "clean_matching_patches": 96
+    },
+    {
+      "task": 44,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/044_genuine.png",
+      "image_sha256": "6c50e86a34f9d6e7f55f90e686679f792ed709d44ab4432916409cb12b2cbdea",
+      "clean_caption": "a view of the mountains from the window of an airplane",
+      "clean_accepted": true,
+      "clean_matching_patches": 35
+    },
+    {
+      "task": 44,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/044_genuine.png",
+      "image_sha256": "248e8b3fa61154a9a032bbd22106db9939854457b611503874cf59fe79be8f91",
+      "clean_caption": "a view of the mountains from an airplane window",
+      "clean_accepted": true,
+      "clean_matching_patches": 31
+    },
+    {
+      "task": 45,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/045_genuine.png",
+      "image_sha256": "5784619480dfb9655cd1b7b6fcfb09a2bd58599fd439a298a6df72b50c9ab38e",
+      "clean_caption": "a group of giraffes standing in a field",
+      "clean_accepted": true,
+      "clean_matching_patches": 171
+    },
+    {
+      "task": 45,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/045_genuine.png",
+      "image_sha256": "4dfa4177b526d1167052b9ad73b1411c7e3ac109aee748c42a20a66e7114f62b",
+      "clean_caption": "three giraffes standing in a field",
+      "clean_accepted": true,
+      "clean_matching_patches": 724
+    },
+    {
+      "task": 46,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/046_genuine.png",
+      "image_sha256": "54076623fbf3525ef62c844380905e8c1075a57ee50dd5beb98d7922e8336080",
+      "clean_caption": "a crowd of people waiting for a train",
+      "clean_accepted": true,
+      "clean_matching_patches": 18
+    },
+    {
+      "task": 46,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/046_genuine.png",
+      "image_sha256": "3c3f197b33f4752edeafeacf032eb5ad6ef1de3bd32550eda81acc185a44da02",
+      "clean_caption": "a train with people standing on the tracks",
+      "clean_accepted": true,
+      "clean_matching_patches": 52
+    },
+    {
+      "task": 47,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/047_genuine.png",
+      "image_sha256": "4ca0200843586613ee3b9f8df088e51fe13bb1fc62bec110ba817d3f658763c3",
+      "clean_caption": "a cat sitting on a couch",
+      "clean_accepted": true,
+      "clean_matching_patches": 49
+    },
+    {
+      "task": 47,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/047_genuine.png",
+      "image_sha256": "51698f8390c75058b01aa509067b787aec63009f537539cdc952e08799e53052",
+      "clean_caption": "a cat sitting on a couch with a tv in the background",
+      "clean_accepted": true,
+      "clean_matching_patches": 29
+    },
+    {
+      "task": 48,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/048_genuine.png",
+      "image_sha256": "58da4e15d29da5a760606b7cfc71b0354b43ab799b5a277990ecd8456c5d2a49",
+      "clean_caption": "a young boy holding a baseball bat",
+      "clean_accepted": true,
+      "clean_matching_patches": 769
+    },
+    {
+      "task": 48,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/048_genuine.png",
+      "image_sha256": "84c72583d9429eb38bc399f76ee6633cfd30e536c33bf9a729862c0354fe18b8",
+      "clean_caption": "a young boy holding a baseball bat on a field",
+      "clean_accepted": true,
+      "clean_matching_patches": 495
+    },
+    {
+      "task": 49,
+      "dataset": "COCO",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/049_genuine.png",
+      "image_sha256": "23c6290d3151cf40a471324917507517997acf0d0feed9be937e197ccd4eda3c",
+      "clean_caption": "a white sink with a plant in front of it",
+      "clean_accepted": true,
+      "clean_matching_patches": 44
+    },
+    {
+      "task": 49,
+      "dataset": "COCO",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/049_genuine.png",
+      "image_sha256": "ddcd00a3cc81799a027e4a35d283541c04c95f249d2be354faa97dd9dc5b8081",
+      "clean_caption": "a bathroom with a sink and a window",
+      "clean_accepted": true,
+      "clean_matching_patches": 136
+    },
+    {
+      "task": 50,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/050_genuine.png",
+      "image_sha256": "ba2d237545554f6f0b531c6bc3773b5baaa9540cdab6971bebf09c91fe9c0ba4",
+      "clean_caption": "a cartoon of a crocodile with his mouth open",
+      "clean_accepted": false,
+      "clean_matching_patches": 11
+    },
+    {
+      "task": 50,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/050_genuine.png",
+      "image_sha256": "ad0d5c45a659589822e949a5c7febd7b55259f708032aba549d93b553a0b55ce",
+      "clean_caption": "a woman with a crocodile head and a knife",
+      "clean_accepted": true,
+      "clean_matching_patches": 20
+    },
+    {
+      "task": 51,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/051_genuine.png",
+      "image_sha256": "3fd8fb8083f8791abd7969385eb8a1d23179428eadc416fe82024c79a0fc2f72",
+      "clean_caption": "thor - the avengers character with blue eyes",
+      "clean_accepted": true,
+      "clean_matching_patches": 19
+    },
+    {
+      "task": 51,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/051_genuine.png",
+      "image_sha256": "c92988143008c4d66bcf1461dcf7b6cfdf3ea37160d1d8aafe08e58026455467",
+      "clean_caption": "a man in a suit with a sword",
+      "clean_accepted": true,
+      "clean_matching_patches": 14
+    },
+    {
+      "task": 52,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/052_genuine.png",
+      "image_sha256": "a7f3acfd6a5d78b175b538519ec796514ae389678e98de20f88d6b5d35a44376",
+      "clean_caption": "alice in wonderland wallpaper",
+      "clean_accepted": true,
+      "clean_matching_patches": 995
+    },
+    {
+      "task": 52,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/052_genuine.png",
+      "image_sha256": "1db01f693d694d510e6359c43675e50ec162fffa5f742e8ce545f7148bd14e7a",
+      "clean_caption": "alice in wonderland wallpaper",
+      "clean_accepted": true,
+      "clean_matching_patches": 1006
+    },
+    {
+      "task": 53,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/053_genuine.png",
+      "image_sha256": "c1f6dc65f38c1c6d2ee170f57759aed210aa40409bc159824adeda8dd8902581",
+      "clean_caption": "a cartoon of a person with red hair and a tie",
+      "clean_accepted": true,
+      "clean_matching_patches": 105
+    },
+    {
+      "task": 53,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/053_genuine.png",
+      "image_sha256": "8b2489b1e8c505802115fa780f835bc6d1a21abdd3c34d757f47516a9c018601",
+      "clean_caption": "a man with red hair and a smile",
+      "clean_accepted": true,
+      "clean_matching_patches": 35
+    },
+    {
+      "task": 54,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/054_genuine.png",
+      "image_sha256": "1c86e536692b1e269bf53340b09878dcadf3c288b2a6f76341399e6f4895bd83",
+      "clean_caption": "a woman with long hair and a hood",
+      "clean_accepted": false,
+      "clean_matching_patches": 3
+    },
+    {
+      "task": 54,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/054_genuine.png",
+      "image_sha256": "c45c26013b06c4e371b8a05ce45d236d592a8f5238b5e7c216c562bfd0714bee",
+      "clean_caption": "a painting of a woman with long hair",
+      "clean_accepted": false,
+      "clean_matching_patches": 8
+    },
+    {
+      "task": 55,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/055_genuine.png",
+      "image_sha256": "d3bf03c451ff31c1ec5718d028ac320697898642caf803f1b7250e12ad1f8b60",
+      "clean_caption": "a woman in a blue dress posing for a photo",
+      "clean_accepted": true,
+      "clean_matching_patches": 34
+    },
+    {
+      "task": 55,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/055_genuine.png",
+      "image_sha256": "e811ad762d8d947cb66e7dd4fa9be0e3dd526db10893d7ba681a96363b9d3e33",
+      "clean_caption": "a woman in a blue dress sitting on rocks",
+      "clean_accepted": false,
+      "clean_matching_patches": 5
+    },
+    {
+      "task": 56,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/056_genuine.png",
+      "image_sha256": "649a1b7eaa9ce28c9888410600b94a286232cde9e6fa38ed6494464299ebf9ac",
+      "clean_caption": "a tree in the rain with a graveyard",
+      "clean_accepted": true,
+      "clean_matching_patches": 85
+    },
+    {
+      "task": 56,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/056_genuine.png",
+      "image_sha256": "962f0b8efcdd08776080282c3b2c020832060f9df5a0fdee8b418b152a751500",
+      "clean_caption": "a tree with flowers and a graveyard in the rain",
+      "clean_accepted": true,
+      "clean_matching_patches": 47
+    },
+    {
+      "task": 57,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/057_genuine.png",
+      "image_sha256": "a500f65677f7824782ecbc3fb759b1091aed296c3531b6f3553db8a2f50263c4",
+      "clean_caption": "a painting of a castle in the middle of the jungle",
+      "clean_accepted": true,
+      "clean_matching_patches": 24
+    },
+    {
+      "task": 57,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/057_genuine.png",
+      "image_sha256": "0abd5c7a65a753e99dcf1f104ba37cd54f8ef44e851803845dc2237dbf523eae",
+      "clean_caption": "a painting of a house in the woods",
+      "clean_accepted": false,
+      "clean_matching_patches": 7
+    },
+    {
+      "task": 58,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/058_genuine.png",
+      "image_sha256": "0738a8d351e76b61787f482a8009734158cd6e373a8157f45d034850e435cf30",
+      "clean_caption": "a woman with a starry sky and a halo",
+      "clean_accepted": false,
+      "clean_matching_patches": 0
+    },
+    {
+      "task": 58,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/058_genuine.png",
+      "image_sha256": "355ba81843462593293d0ab798fe4ebbc5b71c6c575513e17809117f880a6aea",
+      "clean_caption": "a woman in the water with stars in her eyes",
+      "clean_accepted": false,
+      "clean_matching_patches": 5
+    },
+    {
+      "task": 59,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/059_genuine.png",
+      "image_sha256": "8f774a7fdc09aad9e641eb4c873b19cf110b1256fc9f0f76f50005b4ef580a40",
+      "clean_caption": "a red throne with gold drapes in front of it",
+      "clean_accepted": true,
+      "clean_matching_patches": 40
+    },
+    {
+      "task": 59,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/059_genuine.png",
+      "image_sha256": "6ab6723839cc0be27f6d88a676e4e1123503a11839be80782e22348e9d26757d",
+      "clean_caption": "a throne with a king on it",
+      "clean_accepted": true,
+      "clean_matching_patches": 23
+    },
+    {
+      "task": 60,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/060_genuine.png",
+      "image_sha256": "6e672d0be4c8b47711478fae98f7f611f4c0fc9f94197267ecdfdf6ed40e2a31",
+      "clean_caption": "a girl with blue hair and blue eyes",
+      "clean_accepted": true,
+      "clean_matching_patches": 61
+    },
+    {
+      "task": 60,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/060_genuine.png",
+      "image_sha256": "3b7415f42d56107c714d778fabf586f82858c3ef16082e558463c8e24c7b5436",
+      "clean_caption": "a girl with blue hair and red eyes",
+      "clean_accepted": true,
+      "clean_matching_patches": 26
+    },
+    {
+      "task": 61,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/061_genuine.png",
+      "image_sha256": "f123c738727a0194aa51bd3a29473340922b5904f1413402c2f6dee037fdb3ef",
+      "clean_caption": "a fantasy scene with a large window and a large statue",
+      "clean_accepted": false,
+      "clean_matching_patches": 5
+    },
+    {
+      "task": 61,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/061_genuine.png",
+      "image_sha256": "fb41f06cd4a3f03641b8d1847e6b53d8e0086829d941653e1419555cccc24766",
+      "clean_caption": "a woman with a white head and red eyes",
+      "clean_accepted": false,
+      "clean_matching_patches": 11
+    },
+    {
+      "task": 62,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/062_genuine.png",
+      "image_sha256": "7ffc01e883eb9e101dc5624112f3191d25e59bef6452506b594ee3bdb4890dcb",
+      "clean_caption": "taylor swift - taylor swift - tay",
+      "clean_accepted": true,
+      "clean_matching_patches": 947
+    },
+    {
+      "task": 62,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/062_genuine.png",
+      "image_sha256": "1a4737c1704a9df7565fe18702565b84fd3fd814276d7b1adf3a1b423196e764",
+      "clean_caption": "taylor swift - taylor swift - tay",
+      "clean_accepted": true,
+      "clean_matching_patches": 866
+    },
+    {
+      "task": 63,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/063_genuine.png",
+      "image_sha256": "0f3e8c8a11457afe2a3f3147f4d1a8e2f191e1477243db1964c70ea72f1d6212",
+      "clean_caption": "a female indian dancer in a costume",
+      "clean_accepted": false,
+      "clean_matching_patches": 8
+    },
+    {
+      "task": 63,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/063_genuine.png",
+      "image_sha256": "95d57309f793c271f922de3e1e1085eb9eb4ae1f354afeee5e6d2e6d7d9fa9a2",
+      "clean_caption": "a woman with a tattered dress and a necklace",
+      "clean_accepted": true,
+      "clean_matching_patches": 33
+    },
+    {
+      "task": 64,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/064_genuine.png",
+      "image_sha256": "cb556532cae1f7cdf862714bf183e55f16ef562ddbcf05dc55c164b55da8f590",
+      "clean_caption": "a girl sitting on a desk with a book",
+      "clean_accepted": true,
+      "clean_matching_patches": 133
+    },
+    {
+      "task": 64,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/064_genuine.png",
+      "image_sha256": "2f3f2c14ccd5d75270679d949fdc8bf5312724cf5e3ea14024d81496029c4d9a",
+      "clean_caption": "a girl in a school uniform reading a book",
+      "clean_accepted": true,
+      "clean_matching_patches": 141
+    },
+    {
+      "task": 65,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/065_genuine.png",
+      "image_sha256": "4749b969d8b7c0ca9cddc37e8ebe4b5ff900b2d57173f70db0ae329b9914b990",
+      "clean_caption": "a zombie with red eyes and a blue eye",
+      "clean_accepted": true,
+      "clean_matching_patches": 63
+    },
+    {
+      "task": 65,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/065_genuine.png",
+      "image_sha256": "1d26ac12b015b3fa9926c225b8de13702f08a62570f8b97cc3054ad811f50059",
+      "clean_caption": "a woman with a mouth full of oranges and mushrooms",
+      "clean_accepted": false,
+      "clean_matching_patches": 8
+    },
+    {
+      "task": 66,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/066_genuine.png",
+      "image_sha256": "e40fad9c63fbf46b0755dd77b335a861572a28b9f7fe177f12e48ac64b60ec4e",
+      "clean_caption": "a girl in the rain holding flowers",
+      "clean_accepted": true,
+      "clean_matching_patches": 219
+    },
+    {
+      "task": 66,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/066_genuine.png",
+      "image_sha256": "2db8490f3cd558c8c0fdd3560f3fd174e5a88f89964e974937efbf2dd718b5f5",
+      "clean_caption": "a girl with long hair standing in the rain",
+      "clean_accepted": true,
+      "clean_matching_patches": 51
+    },
+    {
+      "task": 67,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/067_genuine.png",
+      "image_sha256": "eadf89a7492f22729c05b9c100c47f637d6ae96882322d08467dcdf585806f11",
+      "clean_caption": "a girl in a futuristic outfit with green eyes",
+      "clean_accepted": true,
+      "clean_matching_patches": 678
+    },
+    {
+      "task": 67,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/067_genuine.png",
+      "image_sha256": "b7c2d35c4319598608848954477a9383a7c4b53ef2110f05c904d87f8c1fbbcd",
+      "clean_caption": "a comic book cover of a girl with long blonde hair",
+      "clean_accepted": false,
+      "clean_matching_patches": 7
+    },
+    {
+      "task": 68,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/068_genuine.png",
+      "image_sha256": "7353be31c71f2173a3b22adf73a8071b46b836187a91f846e6524da52a11093c",
+      "clean_caption": "a portrait of a man with blue eyes",
+      "clean_accepted": true,
+      "clean_matching_patches": 86
+    },
+    {
+      "task": 68,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/068_genuine.png",
+      "image_sha256": "ea9becb9258359633d22633f9bba9cfd960546bb026d90d93dfba6409f5ef385",
+      "clean_caption": "robinson robinson by sassy sass",
+      "clean_accepted": true,
+      "clean_matching_patches": 13
+    },
+    {
+      "task": 69,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/069_genuine.png",
+      "image_sha256": "1bd17b19044a858d2c56e7aaa1001c1ebf700598bdf4e09cdc38834a2f893eb9",
+      "clean_caption": "a fairy with purple flowers and a white hair",
+      "clean_accepted": true,
+      "clean_matching_patches": 15
+    },
+    {
+      "task": 69,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/069_genuine.png",
+      "image_sha256": "db07db42eea01bdb679425f490ed7f334e544b81a86a72fb5dacd33081669581",
+      "clean_caption": "a white woman in a forest",
+      "clean_accepted": true,
+      "clean_matching_patches": 13
+    },
+    {
+      "task": 70,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/070_genuine.png",
+      "image_sha256": "f08c4b5eab29b967d62a9c1d429a13a05c82e68ac36323848c6c71a324bbd917",
+      "clean_caption": "a futuristic woman in a futuristic outfit",
+      "clean_accepted": true,
+      "clean_matching_patches": 147
+    },
+    {
+      "task": 70,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/070_genuine.png",
+      "image_sha256": "5443a6e1e10c466d067bf29c74d270517e8eb25d4eec06191896b667260f63d0",
+      "clean_caption": "a woman with neon lights in her face",
+      "clean_accepted": false,
+      "clean_matching_patches": 7
+    },
+    {
+      "task": 71,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/071_genuine.png",
+      "image_sha256": "c32c87a2abda5dc5cfab4964e794334e038476fc26f3ffbb5794e5c8cb915a38",
+      "clean_caption": "a man in a blue robe with a blue beard",
+      "clean_accepted": true,
+      "clean_matching_patches": 142
+    },
+    {
+      "task": 71,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/071_genuine.png",
+      "image_sha256": "de609853168f1fadd4c011910730f7ef7c75e8d27247573543a4f9f7d84e6bc5",
+      "clean_caption": "a man in a blue robe with his hands in his pockets",
+      "clean_accepted": true,
+      "clean_matching_patches": 108
+    },
+    {
+      "task": 72,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/072_genuine.png",
+      "image_sha256": "b8a2726d0a0b5fc87ed733b64dff15e69c638a15c689122152121262c873a088",
+      "clean_caption": "a woman with long hair and a blue background",
+      "clean_accepted": true,
+      "clean_matching_patches": 14
+    },
+    {
+      "task": 72,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/072_genuine.png",
+      "image_sha256": "0e904d2fbd13cca1036fa1a96d4f8aa49e3052c924e4eb6b68b6522ae8567f38",
+      "clean_caption": "a woman with long hair and eyes closed",
+      "clean_accepted": true,
+      "clean_matching_patches": 19
+    },
+    {
+      "task": 73,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/073_genuine.png",
+      "image_sha256": "81136fdefae3ca484a46c321de17d0dd8c6b7a48f72921147ffd064af5a6f2ae",
+      "clean_caption": "a girl with long black hair and pink eyes",
+      "clean_accepted": false,
+      "clean_matching_patches": 9
+    },
+    {
+      "task": 73,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/073_genuine.png",
+      "image_sha256": "d3b48fb5e438201888fec833174cc336bd38aa7fb5540d9317dfdcf2e6f01c5e",
+      "clean_caption": "a girl with long hair and blue eyes holding a cat",
+      "clean_accepted": false,
+      "clean_matching_patches": 9
+    },
+    {
+      "task": 74,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/074_genuine.png",
+      "image_sha256": "8f8e07b5d636d2909e411c3fb1a3e96540fb804783a6417624a04fb3010ef4a4",
+      "clean_caption": "yoda holding a lightsaber in his hands",
+      "clean_accepted": true,
+      "clean_matching_patches": 55
+    },
+    {
+      "task": 74,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/074_genuine.png",
+      "image_sha256": "8b6e9d8f37f3ba1e0b8c64fd205001495c2d046fee76c6bccaef97c6b308062d",
+      "clean_caption": "yoda in blue and black",
+      "clean_accepted": true,
+      "clean_matching_patches": 106
+    },
+    {
+      "task": 75,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/075_genuine.png",
+      "image_sha256": "01b45f0b9a704e42dd5daa75049c797aaa2bd3a9339d869b886656ac2d7f98ae",
+      "clean_caption": "a girl with long hair and a hat",
+      "clean_accepted": true,
+      "clean_matching_patches": 69
+    },
+    {
+      "task": 75,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/075_genuine.png",
+      "image_sha256": "0f3cfa7d2024d52ad01dec7e4909e899bbd7c396f8f13772204c5fa9f02317d2",
+      "clean_caption": "a girl in a blue uniform with green eyes",
+      "clean_accepted": true,
+      "clean_matching_patches": 64
+    },
+    {
+      "task": 76,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/076_genuine.png",
+      "image_sha256": "dfe82b1a16e2e031c00cec3a338e82734f1d848bde2e11e486d72e448805c168",
+      "clean_caption": "a painting of an old man smoking a cigarette",
+      "clean_accepted": true,
+      "clean_matching_patches": 18
+    },
+    {
+      "task": 76,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/076_genuine.png",
+      "image_sha256": "02891ebcb31084887d9ff64ea692b950374c38e62ad16419830427dcaf236e71",
+      "clean_caption": "a man in a jungle holding a cigarette",
+      "clean_accepted": true,
+      "clean_matching_patches": 208
+    },
+    {
+      "task": 77,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/077_genuine.png",
+      "image_sha256": "9166301ce74974e22366cfe745f3ef1805215a6171ef3a36edb7b1bdc6dbdd54",
+      "clean_caption": "a circular image of a blue and yellow circle",
+      "clean_accepted": true,
+      "clean_matching_patches": 80
+    },
+    {
+      "task": 77,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/077_genuine.png",
+      "image_sha256": "edb18368ced464c7d285ab3d1b4fbf33ba57c6c1d10c4109ae54b2eb379b1fd2",
+      "clean_caption": "a circular golden frame with a blue and gold design",
+      "clean_accepted": true,
+      "clean_matching_patches": 46
+    },
+    {
+      "task": 78,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/078_genuine.png",
+      "image_sha256": "83da0ff4c703e7f7a10b810b6fbe8dfd126c15164b3910f56b30e05e86322639",
+      "clean_caption": "a cartoon of a red bird with a tie",
+      "clean_accepted": false,
+      "clean_matching_patches": 10
+    },
+    {
+      "task": 78,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/078_genuine.png",
+      "image_sha256": "18d6b26a38fb34d073888ed986d496419cb163374e9d15360345b2f6955fd325",
+      "clean_caption": "a cartoon of a monster with a green mask",
+      "clean_accepted": true,
+      "clean_matching_patches": 32
+    },
+    {
+      "task": 79,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/079_genuine.png",
+      "image_sha256": "3c257f0bd555ba09fddb60f1b669911b1068f7c7c9bf812348bc2f000110e444",
+      "clean_caption": "a girl in a hat with nails on her face",
+      "clean_accepted": false,
+      "clean_matching_patches": 3
+    },
+    {
+      "task": 79,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/079_genuine.png",
+      "image_sha256": "ab934a60a9539bd2dc8d982d3a224844a4f474d6586a39a9a8a56db21462de4c",
+      "clean_caption": "a woman with long hair and a cross in her hands",
+      "clean_accepted": true,
+      "clean_matching_patches": 23
+    },
+    {
+      "task": 80,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/080_genuine.png",
+      "image_sha256": "7da53579834b3bfe59e5e3f3058f62423cb44aba6b6833c31f8e2a2de2d09e69",
+      "clean_caption": "a woman in an egyptian costume",
+      "clean_accepted": true,
+      "clean_matching_patches": 171
+    },
+    {
+      "task": 80,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/080_genuine.png",
+      "image_sha256": "e25549d9abfc7fbacfa83eedaf70a05e1587076ffa7ed411be673a556f67134d",
+      "clean_caption": "a woman with an egyptian headdress",
+      "clean_accepted": true,
+      "clean_matching_patches": 118
+    },
+    {
+      "task": 81,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/081_genuine.png",
+      "image_sha256": "66e308cf22dee32015b0fb05ace5154a88cec2dedd2fc39a2f246737e875521d",
+      "clean_caption": "a woman with a crown on her head",
+      "clean_accepted": true,
+      "clean_matching_patches": 12
+    },
+    {
+      "task": 81,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/081_genuine.png",
+      "image_sha256": "b07bf0a0db40f3cc994dc37612b6ea09773ba88b429463d6ea65f6f241ae8ad1",
+      "clean_caption": "a woman with green hair and wings",
+      "clean_accepted": false,
+      "clean_matching_patches": 3
+    },
+    {
+      "task": 82,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/082_genuine.png",
+      "image_sha256": "e995a4561b857da6dc00157443516317989e97aec30779abe79ce6e914771820",
+      "clean_caption": "a fantasy forest with trees and a waterfall",
+      "clean_accepted": true,
+      "clean_matching_patches": 60
+    },
+    {
+      "task": 82,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/082_genuine.png",
+      "image_sha256": "e17f84f4048e02e605a01d4ad726c905489ac0d12677486e158a8b908962c69f",
+      "clean_caption": "a painting of a forest with a stream and trees",
+      "clean_accepted": true,
+      "clean_matching_patches": 40
+    },
+    {
+      "task": 83,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/083_genuine.png",
+      "image_sha256": "f7612c91984e532b96746f28c82d8ca167df275f19c702911e343b9638fc1e85",
+      "clean_caption": "a woman in a dark forest with long hair",
+      "clean_accepted": true,
+      "clean_matching_patches": 267
+    },
+    {
+      "task": 83,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/083_genuine.png",
+      "image_sha256": "dfaf1d46174769af5d71dd38945575dc38b8ec8919501b97fc1eb168bc2d947a",
+      "clean_caption": "a woman with a hood and a mask in the woods",
+      "clean_accepted": true,
+      "clean_matching_patches": 26
+    },
+    {
+      "task": 84,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/084_genuine.png",
+      "image_sha256": "a9b7381f1e826db85cd94b3b55123fcbc376da18151434beb02fc7dde08b356c",
+      "clean_caption": "a man in green holding a gun",
+      "clean_accepted": true,
+      "clean_matching_patches": 12
+    },
+    {
+      "task": 84,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/084_genuine.png",
+      "image_sha256": "1b47e1fe931c5494af2229f8ee5f7b629298c92314dba414cfc4dc8d9fedfd48",
+      "clean_caption": "a man with green eyes is looking at the camera",
+      "clean_accepted": false,
+      "clean_matching_patches": 5
+    },
+    {
+      "task": 85,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/085_genuine.png",
+      "image_sha256": "432cc4d930eb794ba321fc25b14e57af52b85462284a0cc9aa859948ec12f7ac",
+      "clean_caption": "a woman with pink hair and green eyes",
+      "clean_accepted": true,
+      "clean_matching_patches": 42
+    },
+    {
+      "task": 85,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/085_genuine.png",
+      "image_sha256": "cf4b62464ab9aac9770d6eec001e839fc7cdc4021570e1ce43d309144207b820",
+      "clean_caption": "a woman with a pink top and purple shorts",
+      "clean_accepted": false,
+      "clean_matching_patches": 9
+    },
+    {
+      "task": 86,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/086_genuine.png",
+      "image_sha256": "f2a34009fa7af5071fd4363c3b4f6505a5ed2d4e50a3031cc68e70ca912ac04f",
+      "clean_caption": "a man with a beard and hat is wearing a hat",
+      "clean_accepted": true,
+      "clean_matching_patches": 29
+    },
+    {
+      "task": 86,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/086_genuine.png",
+      "image_sha256": "4f6c4d4c3783625bd97a5376551c35b4122a244b9bf0d2c8639abd9493f6057c",
+      "clean_caption": "a cartoon image of a man with a mustache and hard hat",
+      "clean_accepted": true,
+      "clean_matching_patches": 127
+    },
+    {
+      "task": 87,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/087_genuine.png",
+      "image_sha256": "26df1cb3363fb806b1edab52e8401040ed2f8880ddc639b13f3e7b5e0d8d3197",
+      "clean_caption": "a woman in a futuristic space suit",
+      "clean_accepted": true,
+      "clean_matching_patches": 34
+    },
+    {
+      "task": 87,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/087_genuine.png",
+      "image_sha256": "ae8f3c69d777b7c854a1695f94f4db40f02f1241baddb7e137913adb3a51e8a7",
+      "clean_caption": "a woman in a futuristic suit",
+      "clean_accepted": true,
+      "clean_matching_patches": 48
+    },
+    {
+      "task": 88,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/088_genuine.png",
+      "image_sha256": "af3703e3edf1a6f9f4032319b46b6bb032359e567feaad84077a9abd6d677149",
+      "clean_caption": "a group of men in suits on a train",
+      "clean_accepted": true,
+      "clean_matching_patches": 61
+    },
+    {
+      "task": 88,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/088_genuine.png",
+      "image_sha256": "6f4b85fac03a557da82ddb8e07c6fd7994556442d71ade9f63c5d9c8a8d9cb42",
+      "clean_caption": "a comic book cover with people sitting on a train",
+      "clean_accepted": true,
+      "clean_matching_patches": 17
+    },
+    {
+      "task": 89,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/089_genuine.png",
+      "image_sha256": "7c34d58024fd8415a0de74921e31df5326c74a3d66b345734b82302dc837e1cb",
+      "clean_caption": "a woman holding a candle in an ornate frame",
+      "clean_accepted": false,
+      "clean_matching_patches": 10
+    },
+    {
+      "task": 89,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/089_genuine.png",
+      "image_sha256": "b5a27788e3c13b6fadf3c2ec4c52e22fe1abfab8a59015ae2eaa84d626059096",
+      "clean_caption": "a woman in an elegant gown standing in front of a window",
+      "clean_accepted": false,
+      "clean_matching_patches": 0
+    },
+    {
+      "task": 90,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/090_genuine.png",
+      "image_sha256": "f0f5e5b8247984ed2a88da003ca69eb602fb8d7049de71fb3b9167b480343bdb",
+      "clean_caption": "a boy with red eyes in front of a sunset",
+      "clean_accepted": true,
+      "clean_matching_patches": 41
+    },
+    {
+      "task": 90,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/090_genuine.png",
+      "image_sha256": "476611d398a9158bc847901be06cb75831744abaab700758bd3d29f6ddb9f0a8",
+      "clean_caption": "a young man with dark hair and brown eyes",
+      "clean_accepted": true,
+      "clean_matching_patches": 68
+    },
+    {
+      "task": 91,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/091_genuine.png",
+      "image_sha256": "4c576a547d335ab29bc0b9e81e8cc7e6bb6a0c072d53954f9e174f0edafaa14e",
+      "clean_caption": "a painting of a group of girls with makeup on",
+      "clean_accepted": true,
+      "clean_matching_patches": 31
+    },
+    {
+      "task": 91,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/091_genuine.png",
+      "image_sha256": "19a2c06b37dcfdfadef7a1852cb49e0a50ec6d8582e7213632e0f83fc57ac360",
+      "clean_caption": "a poster for the movie 'the girls'",
+      "clean_accepted": false,
+      "clean_matching_patches": 8
+    },
+    {
+      "task": 92,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/092_genuine.png",
+      "image_sha256": "a2ec57b7f639892c9a312fec0472878ba399cb896462e4389b152c23ef73489b",
+      "clean_caption": "a red fox sitting in the sun",
+      "clean_accepted": true,
+      "clean_matching_patches": 152
+    },
+    {
+      "task": 92,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/092_genuine.png",
+      "image_sha256": "f6ab828208e8f2a4e75804c8ed2cc3c812d009fd5942d2b0a4654ce501aee9c5",
+      "clean_caption": "a fox head with yellow eyes",
+      "clean_accepted": true,
+      "clean_matching_patches": 93
+    },
+    {
+      "task": 93,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/093_genuine.png",
+      "image_sha256": "24065433770576162b49b5d8312a27e4d215333ecb2b2bd9e853476d25b20dcf",
+      "clean_caption": "a white angel standing in the woods",
+      "clean_accepted": true,
+      "clean_matching_patches": 453
+    },
+    {
+      "task": 93,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/093_genuine.png",
+      "image_sha256": "a2cf1a5de95db291d3d8fefaa736d4cd159d0045ab8fc3637d2c37f966247869",
+      "clean_caption": "a white angel standing in the woods",
+      "clean_accepted": true,
+      "clean_matching_patches": 460
+    },
+    {
+      "task": 94,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/094_genuine.png",
+      "image_sha256": "7a089c9fe9d6d52d494e6f58225e9ea357d1eac3770670aefdf93281e45aca2a",
+      "clean_caption": "a woman in green dress with black hair",
+      "clean_accepted": true,
+      "clean_matching_patches": 45
+    },
+    {
+      "task": 94,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/094_genuine.png",
+      "image_sha256": "c80d17e7a4049d53bef9b12c339c48d6b9c79b2bb766a388abb9002fcd4c36a6",
+      "clean_caption": "a woman in green dress standing in a garden",
+      "clean_accepted": true,
+      "clean_matching_patches": 584
+    },
+    {
+      "task": 95,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/095_genuine.png",
+      "image_sha256": "61d21f771a8837e75dda7463b411a873908722c8d0359950287e1641d2ab2300",
+      "clean_caption": "a man in a robe standing in front of a waterfall",
+      "clean_accepted": true,
+      "clean_matching_patches": 25
+    },
+    {
+      "task": 95,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/095_genuine.png",
+      "image_sha256": "5fc15086f1a6af8d8bcf852b34fd2cbc5b9188771acafc1866b78dadc47eb589",
+      "clean_caption": "a man standing in front of a waterfall",
+      "clean_accepted": true,
+      "clean_matching_patches": 15
+    },
+    {
+      "task": 96,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/096_genuine.png",
+      "image_sha256": "2338f3c987a774a8e84c372b0056ca87b23243f2ce8eb03f9e1def3411c84343",
+      "clean_caption": "a fairy with pink wings standing in the moonlight",
+      "clean_accepted": true,
+      "clean_matching_patches": 75
+    },
+    {
+      "task": 96,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/096_genuine.png",
+      "image_sha256": "22eb2bbc6162e929a57830b4ac99894f5d26f69fc9c0f63fc092676dd61d6c14",
+      "clean_caption": "a fairy with wings in the night sky",
+      "clean_accepted": true,
+      "clean_matching_patches": 241
+    },
+    {
+      "task": 97,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_1/images/097_genuine.png",
+      "image_sha256": "d1d1145207d5e65fa2f7c658788d9a04e3e05d060bcc0296fd044dfc5a0f6390",
+      "clean_caption": "silhouette of a soccer player kicking a ball",
+      "clean_accepted": true,
+      "clean_matching_patches": 25
+    },
+    {
+      "task": 97,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_1/images/097_genuine.png",
+      "image_sha256": "3255691ee0f35c5ffd29a9a50c6f19b999198c1b676ab6736c4fad0b54016cc1",
+      "clean_caption": "a soccer player kicking a ball on a grid background",
+      "clean_accepted": true,
+      "clean_matching_patches": 19
+    },
+    {
+      "task": 98,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_2/images/098_genuine.png",
+      "image_sha256": "45a5b3494e0762986d3fe8860252be534b06bd95facd5cb448ed0bb0edfe1e0c",
+      "clean_caption": "a woman with a blue and green headdress",
+      "clean_accepted": true,
+      "clean_matching_patches": 19
+    },
+    {
+      "task": 98,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_2/images/098_genuine.png",
+      "image_sha256": "c8fe3470e719c631bccbe52d2164d2044854b8fc0f2fe06bf4d4052d5fa2f71a",
+      "clean_caption": "a woman with a blue and purple dress and wings",
+      "clean_accepted": true,
+      "clean_matching_patches": 15
+    },
+    {
+      "task": 99,
+      "dataset": "SDP",
+      "variant": "paper",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113/native_0/images/099_genuine.png",
+      "image_sha256": "394d815d8d4ad4e2aba81ed0b105d906c5e43895662714c46076bfc6f66cc3a6",
+      "clean_caption": "a man with a blue tie and blue hair",
+      "clean_accepted": true,
+      "clean_matching_patches": 12
+    },
+    {
+      "task": 99,
+      "dataset": "SDP",
+      "variant": "released",
+      "image": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3/native_0/images/099_genuine.png",
+      "image_sha256": "69541baf5e57e6655e731beade9294fd267438c41a9dcc93846dd8e8730c338a",
+      "clean_caption": "a portrait of a man with colorful hair",
+      "clean_accepted": false,
+      "clean_matching_patches": 11
+    }
+  ],
+  "parents": [
+    {
+      "run": "/data0/liyanlei/watermark_research/runs/seal_native_20261113_v3",
+      "protocol_sha256": "e55d8caba0c940c65e5d570fc25e1bbc56aa5207e8a1a69aa1b38c2b8426c73a",
+      "result_sha256": "3b4de6f4edd9e8a39601c10c8553a0b6d7deeb22d91eadec9d22728ed7fe564a"
+    },
+    {
+      "run": "/data0/liyanlei/watermark_research/runs/seal_paper_native_20261113",
+      "protocol_sha256": "80c6ed73c323a44b73aab45831b06c98a9fd07b3c82775beff3805433cde4e28",
+      "result_sha256": "7fb13a6b41315100209a8c4f710e57ad9dc1964eb74a0a0994bb12b447915ef5"
+    }
+  ],
+  "conditions": [
+    {
+      "name": "Clean",
+      "params": {}
+    },
+    {
+      "name": "Rot75",
+      "params": {
+        "r_degree": 75
+      }
+    },
+    {
+      "name": "JPEG25",
+      "params": {
+        "jpeg_ratio": 25
+      }
+    },
+    {
+      "name": "CropScale75",
+      "params": {
+        "crop_scale": 0.75,
+        "crop_ratio": 0.75
+      }
+    },
+    {
+      "name": "Blur8",
+      "params": {
+        "gaussian_blur_r": 8
+      }
+    },
+    {
+      "name": "Noise0.1",
+      "params": {
+        "gaussian_std": 0.1
+      }
+    },
+    {
+      "name": "Brightness6",
+      "params": {
+        "brightness_factor": 6
+      }
+    }
+  ],
+  "conditions_source": "Unchanged AST literal from official image_transformations.py; unchanged utils.image_distortion",
+  "known_code_paper_gaps": [
+    "Noise uses np.array(None).shape and uint8 arithmetic in the released call, yielding a shared offset rather than independent Gaussian pixels",
+    "Blur8 is PIL GaussianBlur radius8, not a declared8x8 kernel",
+    "Brightness6 is ColorJitter brightness6, sampled in[0,7]"
+  ],
+  "local_sha256": {
+    "run_seal_benign.py": "a146d0f8063785a73ab1723a9c6d9ad908ca95d72851f0b26ec4a9cc1c9ff850",
+    "seal_paper_simhash.py": "f462b221a58aa4edeb3a2e3bb8d0928db10e3bf722477bf38bf8c95557637f78",
+    "run_baseline_after_exit.py": "20ed595bde99f404d8858506228a6dd08ac669cc72e6659573ebb38e5c76d0d5",
+    "prepare_seal_benign.py": "b506401ca7e88adba10bf9405ada8709f70e4e185524595835c7acf6d7098385"
+  },
+  "worker": "run_seal_benign.py",
+  "worker_sha256": "a146d0f8063785a73ab1723a9c6d9ad908ca95d72851f0b26ec4a9cc1c9ff850",
+  "coordinator_sha256": "20ed595bde99f404d8858506228a6dd08ac669cc72e6659573ebb38e5c76d0d5",
+  "gpu_indices": [
+    7,
+    5,
+    4
+  ],
+  "predecessors": [
+    {
+      "pid": 39425,
+      "cmdline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "pid": 39425,
+      "cmdline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "pid": 39425,
+      "cmdline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "attacks": 0,
+  "no_clean_success_filter": true,
+  "clean_replay_equality_required": true
+}

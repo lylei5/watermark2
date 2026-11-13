@@ -4,7 +4,7 @@ The active task is to implement and validate SemBind, PGID and SEAL as reliable 
 
 ## Implementation contract
 
-Read docs/THREE_BASELINE_REPRODUCTION.md and docs/SEAL_EVALUATION_CONTRACT.md. Released components, paper-completed code, image-chain validation, published-attack evaluation and full paper numerical reproduction are separate acceptance levels. No superiority claim is established.
+Read docs/THREE_BASELINE_REPRODUCTION.md, docs/SEAL_EVALUATION_CONTRACT.md and docs/BASELINE_IMPLEMENTATION_DIFFERENCES.md. Released components, paper-completed code, image-chain validation, published-attack evaluation and full paper numerical reproduction are separate acceptance levels. No superiority claim is established.
 
 SemBind source337c9f9: released masker and exact DPM components, original GS spatial OTP carrier, private HMAC permutation and paper masking. The100-prompt GS/GS-S run uses DPM50, generationCFG7.5, empty-prompt inversionCFG3, inv_order0, decoder_invTrue and100 decoder optimization steps. Preserve thresholds166/167/182 separately. PRC-S uses original PRC512-bit payload, t3, nominal1e-6, sigma0.5 and Detect OR Decode; this union is not an established1e-6 guarantee. The unreleased full binding entry is paper-completed, not author-byte-equivalent.
 
@@ -18,7 +18,7 @@ reports/three_baselines_20261113/report.md indexes source, configuration, depend
 
 The100-prompt trajectory generation,300 full inversions,400 decisions and CPU quality measurements are complete. The step35 P5 gate failed on both datasets. Existing diagnostics and failures are indexed in reports/README.md. Previous project flat-GS adapters do not stand in for the originalGS spatial carrier. PGID's native GS remains its published flat carrier; native results cannot be directly ranked as matched-carrier results.
 
-Next steps: follow real completion events, diagnose any runtime failure without altering frozen outputs, audit decisions and denominators, update reports and project_state.json, and commit/push each completed unit. Continue baseline coverage using only unchanged published attacks. Full TR-S/GS++-S and all PGID image backends are not yet verified. Never promote an untested cell to a completed paper reproduction.
+Next steps: follow real completion events, diagnose any runtime failure without altering frozen outputs, audit decisions and denominators, update reports and project_state.json, and commit/push each completed unit. Continue baseline coverage using only unchanged published attacks. TR-S has its own frozen6-source image protocol using original Tree-Ring3015283, sigma1 and private binding. SEAL has a frozen1400-decision benign suite, retaining all clean failures and documented released distortion semantics. GS++-S and all PGID image backends are not yet verified. Never promote an untested cell to a completed paper reproduction.
 
 ## Execution rules
 

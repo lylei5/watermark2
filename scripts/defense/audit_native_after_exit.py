@@ -12,7 +12,7 @@ import subprocess
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--run', type=Path, required=True)
-    parser.add_argument('--method', choices=['seal', 'prc_s', 'pgid'], required=True)
+    parser.add_argument('--method', choices=['seal', 'prc_s', 'tr_s', 'pgid', 'seal_benign'], required=True)
     parser.add_argument('--auditor', type=Path, required=True)
     args = parser.parse_args()
     root = Path('/data0/liyanlei/watermark_research')

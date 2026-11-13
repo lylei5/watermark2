@@ -15,7 +15,7 @@ def sha(path):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--run', type=Path, required=True)
-    parser.add_argument('--method', choices=['seal', 'prc_s', 'pgid'], required=True)
+    parser.add_argument('--method', choices=['seal', 'prc_s', 'tr_s', 'pgid'], required=True)
     args = parser.parse_args()
     run = args.run.resolve()
     assert run.parent == Path('/data0/liyanlei/watermark_research/runs')
@@ -72,19 +72,26 @@ def main():
                         groups[(dataset, decision['kind'])].append(row)
             assert sorted(x['kind'] for x in item['decisions']) == ['genuine', 'null']
         assert len(public_rows) == len(plan['sources']) * 2
-    elif args.method == 'prc_s':
+    elif args.method in ['prc_s', 'tr_s']:
+        carrier = 'prc' if args.method == 'prc_s' else 'tr'
         expected = {(x['task'], kind, detector) for x in plan['sources']
-                    for kind, detector in [('prc', 'prc'), ('prc_s', 'prc_s'), ('null', 'prc'), ('null', 'prc_s')]}
+                    for kind, detector in [(carrier, carrier), (args.method, args.method), ('null', carrier), ('null', args.method)]}
         assert len(rows) == len(expected) and {(x['task'], x['image_kind'], x['detector']) for x in rows} == expected
         for row in rows:
             check(row['image'], row['image_sha256'])
             check(run / row['latent'], row['latent_sha256'])
-            assert row['accepted'] == (row['detected'] or row['decodable'])
-            assert row['decodable'] == (row['message_ba'] is not None)
-            for field in ['codeword_ba', 'semantic_agreement']:
+            fields = ['semantic_agreement']
+            if args.method == 'prc_s':
+                assert row['accepted'] == (row['detected'] or row['decodable'])
+                assert row['decodable'] == (row['message_ba'] is not None)
+                fields.append('codeword_ba')
+                if row['message_ba'] is not None:
+                    assert 0 <= row['message_ba'] <= 1
+            else:
+                assert 0 <= row['p_value'] <= 1 and np.isfinite(row['l1_distance'])
+                assert row['accepted'] == (row['p_value'] <= 1e-6)
+            for field in fields:
                 assert 0 <= row[field] <= 1
-            if row['message_ba'] is not None:
-                assert 0 <= row['message_ba'] <= 1
             public_rows.append(row)
             for dataset in [row['dataset'], 'ALL']:
                 groups[(dataset, row['image_kind'], row['detector'])].append(row)
@@ -110,7 +117,7 @@ def main():
         lower = 0. if successes == 0 else float(beta.ppf(.025, successes, n-successes+1))
         upper = 1. if successes == n else float(beta.ppf(.975, successes+1, n-successes))
         item = dict(group=list(key), n=n, accepted=successes, rate=successes/n, cp95=[lower, upper])
-        for field in ['matching_patches', 'ba', 'codeword_ba', 'semantic_agreement']:
+        for field in ['matching_patches', 'ba', 'codeword_ba', 'semantic_agreement', 'p_value', 'l1_distance']:
             if field in subset[0]:
                 item['mean_' + field] = float(np.mean([r[field] for r in subset]))
         if args.method == 'prc_s':

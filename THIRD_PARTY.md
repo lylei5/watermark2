@@ -36,3 +36,7 @@
 | `PAI` | [QingyuLiu/PAI](https://github.com/QingyuLiu/PAI)；本次未见该目录 | 仓库保存的是[固定源码审计契约](docs/PAI_EVALUATION_CONTRACT.md)及小型来源证据；不声明服务器已部署完整模型 |
 
 HEAD相符不证明工作树未改、依赖相同或实验与论文等价。需要这些条件的实验应另存源码哈希与环境记录。已有短预算结果保留为历史诊断；后续评测使用已发表顶会顶刊基线的既定实现与完整预算。
+
+## Tree-Ring for SemBind carrier verification
+
+Original repository: https://github.com/YuxinWenRick/tree-ring-watermark/tree/3015283d9cf82e90b628f02ad2121bd37408ca9a . The original optim_utils.py carrier functions are loaded unchanged on249. Source Git-blob and SHA256 records: reports/three_baselines_20261113/tree_ring_source.json. Channel3/ring/radius10 follows the official README experiment command, rather than the script parser default rand/channel0. SemBind generation and inversion remain its own DPM configuration; private binding is the paper-completed project implementation.

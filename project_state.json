@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-13T01:12:12.519483+00:00",
+  "updated_at": "2026-11-13T01:28:14.059648+00:00",
   "status": "three_native_baselines_reproduction",
-  "active_experiments": 0,
-  "queued_experiments": 0,
+  "active_experiments": 1,
+  "queued_experiments": 1,
   "latest_progress_report": "reports/three_baselines_20261113/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/THREE_BASELINE_REPRODUCTION.md",
@@ -271,6 +271,18 @@
       "unwatermarked": {
         "accepted": 0,
         "n": 100
+      },
+      "benign": {
+        "run": "seal_benign_native_20261113",
+        "status": "running",
+        "coordinator_pid": 42944,
+        "protocol": "protocols/seal_benign_native_20261113.json",
+        "protocol_sha256": "e81ab73ca70f20e24f1222c471425e84f1c642704add38f2cfb34abc6fc59d19",
+        "variants": 2,
+        "sources_per_variant": 100,
+        "conditions": 7,
+        "clean_success_filter": false,
+        "code_paper_distortion_gaps_documented": true
       }
     },
     "pgid": {
@@ -325,6 +337,17 @@
       "prc_s_unwatermarked": {
         "accepted": 0,
         "n": 6
+      },
+      "tr_s": {
+        "run": "sembind_tr_native_20261113",
+        "status": "queued",
+        "coordinator_pid": 45204,
+        "protocol": "protocols/sembind_tr_native_20261113.json",
+        "protocol_sha256": "ec70921566e95eda28dcb2c1b4be1e69dedac235150165c329aaa1d6abfe2f69",
+        "sources": 6,
+        "original_tree_ring_source": "3015283d9cf82e90b628f02ad2121bd37408ca9a",
+        "cpu_carrier_roundtrips": 6,
+        "image_validation_complete": false
       }
     }
   },
@@ -335,11 +358,15 @@
     "overall_fpr_established": false,
     "priority": "Deferred until three native baseline validations complete"
   },
-  "native_baseline_queue_order": [],
+  "native_baseline_queue_order": [
+    "seal_benign_native_20261113",
+    "sembind_tr_native_20261113"
+  ],
   "native_postprocessing": {
     "protocol": "reports/three_baselines_20261113/postprocess_protocol.json",
     "mechanism": "Kernel process-exit events with explicit audit recovery for completed runs",
     "summary_script": "scripts/defense/summarize_native_baseline.py",
     "wait_script": "scripts/defense/audit_native_after_exit.py"
-  }
+  },
+  "implementation_differences": "docs/BASELINE_IMPLEMENTATION_DIFFERENCES.md"
 }

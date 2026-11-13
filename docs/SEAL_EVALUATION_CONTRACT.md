@@ -24,6 +24,8 @@
 
 无caption的穷举码字检测是另一条路径，不能替代上述语义检测。补充§9.2的空间篡改分数使用热图80百分位和连通块数量，AUC不等于一个已经校准的固定检测器。图像扰动入口中的旋转75度、JPEG25、裁剪0.75、模糊8、噪声0.1和亮度6可以按官方函数独立验证。
 
+官方image_transformations.py实际调用utils.image_distortion(None,image,...)。其中Noise0.1用np.array(None).shape采样标量，再作uint8算术；[249上的CPU检查](../reports/three_baselines_20261113/seal_clean_diagnosis.json)确认同一图所有像素具有相同模256偏移。Blur8为PIL GaussianBlur radius8，Brightness6为ColorJitter的[0,7]范围。这些原代码行为与论文文字有差异；[七条件协议](../protocols/seal_benign_native_20261113.json)原样保留，不以原代码结果冒充独立像素Gaussian噪声、8×8核或[0,6]亮度实验。
+
 [原生100提示词协议](../protocols/seal_native_20261113_v3.json)覆盖正常语义生成与无水印对照。模型导入、权重匹配、正常链路、良性鲁棒性、完整既有攻击及论文数值复现是分别验收的层次。阈值12/2.3不能直接称为FPR1e-6；也不能用原GS图、GS比特准确率或穷举通过率冒充SEAL语义结果。
 
 ## 最终论文的私有salt路径
