@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-13T01:28:14.059648+00:00",
+  "updated_at": "2026-11-13T01:48:44.333290+00:00",
   "status": "three_native_baselines_reproduction",
   "active_experiments": 1,
   "queued_experiments": 1,
@@ -274,7 +274,7 @@
       },
       "benign": {
         "run": "seal_benign_native_20261113",
-        "status": "running",
+        "status": "complete",
         "coordinator_pid": 42944,
         "protocol": "protocols/seal_benign_native_20261113.json",
         "protocol_sha256": "e81ab73ca70f20e24f1222c471425e84f1c642704add38f2cfb34abc6fc59d19",
@@ -282,7 +282,11 @@
         "sources_per_variant": 100,
         "conditions": 7,
         "clean_success_filter": false,
-        "code_paper_distortion_gaps_documented": true
+        "code_paper_distortion_gaps_documented": true,
+        "result": "reports/three_baselines_20261113/seal_benign_results.json",
+        "decisions": 1400,
+        "artifact_checks": 2800,
+        "clean_replay_equal": true
       }
     },
     "pgid": {
@@ -339,15 +343,30 @@
         "n": 6
       },
       "tr_s": {
-        "run": "sembind_tr_native_20261113",
+        "run": "sembind_tr_native_20261113_v2",
         "status": "queued",
-        "coordinator_pid": 45204,
-        "protocol": "protocols/sembind_tr_native_20261113.json",
-        "protocol_sha256": "ec70921566e95eda28dcb2c1b4be1e69dedac235150165c329aaa1d6abfe2f69",
+        "coordinator_pid": 3171,
+        "protocol": "protocols/sembind_tr_native_20261113_v2.json",
+        "protocol_sha256": "3bfd65844bee14aa4d8a37bece1c8e4d2a549ff1ff579c408d44080936eddf45",
         "sources": 6,
         "original_tree_ring_source": "3015283d9cf82e90b628f02ad2121bd37408ca9a",
         "cpu_carrier_roundtrips": 6,
-        "image_validation_complete": false
+        "image_validation_complete": false,
+        "previous_run": {
+          "run": "sembind_tr_native_20261113",
+          "status": "failed",
+          "failure": "GPU4 idle guard rejected1percent utilization before model load; other2shards completed; full cohort replayed with15second resource settling"
+        }
+      },
+      "determinism": {
+        "run": "sembind_determinism_20261113",
+        "status": "running",
+        "coordinator_pid": 2140,
+        "protocol": "protocols/sembind_determinism_20261113.json",
+        "protocol_sha256": "fae4efebbd1fb01324b1c25f49e5ee9c04a03b44409a8dc05082b6bed40478e3",
+        "inputs": 3,
+        "repeats": 4,
+        "purpose": "Diagnose observed inversion replay differences; no method or attack changes"
       }
     }
   },
@@ -359,8 +378,8 @@
     "priority": "Deferred until three native baseline validations complete"
   },
   "native_baseline_queue_order": [
-    "seal_benign_native_20261113",
-    "sembind_tr_native_20261113"
+    "sembind_determinism_20261113",
+    "sembind_tr_native_20261113_v2"
   ],
   "native_postprocessing": {
     "protocol": "reports/three_baselines_20261113/postprocess_protocol.json",

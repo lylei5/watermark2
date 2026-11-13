@@ -60,7 +60,7 @@ def main():
                 os.close(descriptor)
         # Let the driver's utilization sampling window expire after context release.
         # This is one fixed settling interval, not an experiment-progress poll.
-        time.sleep(3)
+        time.sleep(15)
         with (run / f'native_{shard}.log').open('x') as log:
             child = subprocess.Popen([plan['python'], str(run / plan['worker']), '--run', str(run),
                                       '--shard', str(shard)], stdin=subprocess.DEVNULL,

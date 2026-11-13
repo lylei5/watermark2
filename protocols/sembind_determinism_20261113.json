@@ -1,0 +1,88 @@
+{
+  "python": "/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/bin/python",
+  "paths": {
+    "root": "/data0/liyanlei/watermark_research/private_eval/sembind_chain_revalidation_20261111",
+    "output": "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/output",
+    "official": "/data0/liyanlei/watermark_research/third_party/frozen/SemBind_337c9f9",
+    "scheduler": "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111/scheduling_dpmsolver_multistep.py",
+    "model": "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c",
+    "semantic": "/data0/liyanlei/watermark_research/models/sembind",
+    "coverlock": "/data0/liyanlei/watermark_research/runs/sembind_chain_revalidation_20261111"
+  },
+  "official_sha256": {
+    "image_utils.py": "240710dda5d07b2003b62480dd9a56b631bad1c55a91ad3f5fa70dba3d25cbfd",
+    "inversion.py": "dcf0dd6e9b5af1e64c24fe5c3c16473be54f1936c44da096f85b0437bf2fb14b",
+    "utils.py": "6cabc4354d7950dbf66554e5bc8d61557180b4d4ff5a992523b04a1331fd0a37",
+    "model.py": "ee22217258acd3c86899ce616cc5d7dbb6d14948208145a1daa7ace0c1943da3",
+    "src/prc.py": "6e3743687fe01ce148fd44998c82e785b9b408548f22820c5f0defbcf3e67a5f",
+    "src/optim_utils.py": "d96765a945a6d26514799bc6d8da0afc74f63a3482ff02e4ebd9391eb0dde344",
+    "src/modified_stable_diffusion.py": "fc4ac3795d51821c0a7a10fb57c28ecb414cc47e4af5629e6bfdaaccdc709ba2",
+    "src/inverse_stable_diffusion.py": "64027a1a974bb018d8569fa670802996e6ed0a87ba94f9151f574dd33326ef17",
+    "src/pseudogaussians.py": "6cc92bd53afe9004a2d878c7db406454c04a36d4724db41410821dac7ad872f8",
+    "src/train_new.py": "4e79c5f68f668e8a93fa4a32eb79d5c20f997782d22e2b32c294f4487738df92"
+  },
+  "scheduler_sha256": "c0902d1446e51c33be9b0deb5b9a9e2694e7930620a95d5ee8bef024607ed5ff",
+  "created_at": "2026-11-13T01:41:33.849469+00:00",
+  "scope": "3 deliberately selected diagnostic inputs, each2 default and2 deterministic full50-step DPM/VAE100 inversions; no performance estimate",
+  "cases": [
+    {
+      "task": 4,
+      "kind": "prc",
+      "image": "/data0/liyanlei/watermark_research/runs/sembind_prc_native_20261113_v3/native_1/images/004_prc.png",
+      "image_sha256": "4b0bb3562a7e79e0fb14694ad2e0c7f79fb92fed8b9297920043fc7750f99db7",
+      "seed": 202611130004
+    },
+    {
+      "task": 4,
+      "kind": "prc_s",
+      "image": "/data0/liyanlei/watermark_research/runs/sembind_prc_native_20261113_v3/native_1/images/004_prc_s.png",
+      "image_sha256": "8879291a1dfce4ce19a1256ac8fdb3022a3cd5eb3692ba1ccd1521167907c23f",
+      "seed": 202611130004
+    },
+    {
+      "task": 1,
+      "kind": "null",
+      "image": "/data0/liyanlei/watermark_research/runs/phase1_trajectory_native_gs_20261113/generate_1/images/001_aux.png",
+      "image_sha256": "055a592292770037d540a717749f0bd657e782a9b89a2ad408b84f6ea1f89794",
+      "seed": 202611130001
+    }
+  ],
+  "backend_modes": [
+    "default",
+    "deterministic"
+  ],
+  "repeats_per_mode": 2,
+  "cublas_workspace_config": ":4096:8",
+  "numeric_algorithm_unchanged": true,
+  "source_protocol_sha256": "c80cb1fc950d231db23c75399aaf56cc6d133437a99075c227a411e64cb8fa9d",
+  "local_sha256": {
+    "run_sembind_determinism.py": "be95ca06aa33e3f3c312a237f474f756169dc39d54b44ca4eee6e00bcf8320dd",
+    "prepare_sembind_determinism.py": "54c1701d50fab69f7017ccd1957074ac444d0a341a3edf28abeda6fb63028fba",
+    "run_baseline_after_exit.py": "20ed595bde99f404d8858506228a6dd08ac669cc72e6659573ebb38e5c76d0d5",
+    "sembind_official_audit.py": "568a415bec83152ca7fd0cb5fbbffdbf6b4b19d03371cc792468082db1bd6a9f",
+    "codeword_binding.py": "f49aa1342031a1c54be17bb4153b79150e5f70903719275c37329bf093186c59"
+  },
+  "worker": "run_sembind_determinism.py",
+  "worker_sha256": "be95ca06aa33e3f3c312a237f474f756169dc39d54b44ca4eee6e00bcf8320dd",
+  "coordinator_sha256": "20ed595bde99f404d8858506228a6dd08ac669cc72e6659573ebb38e5c76d0d5",
+  "gpu_indices": [
+    7,
+    5,
+    4
+  ],
+  "predecessors": [
+    {
+      "pid": 45204,
+      "cmdline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "pid": 45204,
+      "cmdline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "pid": 45204,
+      "cmdline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "attack_jobs": 0
+}
