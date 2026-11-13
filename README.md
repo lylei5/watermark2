@@ -2,6 +2,8 @@
 
 本项目先建立可复核的SemBind、PGID、SEAL防御基线，再研究内容绑定防御。当前尚未完成三个方法的全部图像与攻击验收，也未建立优于它们的结果。[实时状态](project_state.json)记录唯一运行队列；[验收契约](docs/THREE_BASELINE_REPRODUCTION.md)规定实现和数值复现的边界。
 
+[2026-11-13研究汇报](presentations/defense_briefing_20261113/README.md)包含中山大学模板演示文稿、逐页讲稿和实验来源。
+
 ## 三个防御基线
 
 | 基线 | 实现依据 | 验证与差异记录 |

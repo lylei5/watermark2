@@ -1,0 +1,56 @@
+{
+  "as_of": "2026-11-13",
+  "scope": "Audited development evidence and proposed instance-binding defense, no superiority claim",
+  "slides": [
+    {
+      "title": "扩散模型语义水印防御",
+      "notes": "老师，上次讨论后，我把目标转到防御：希望在不明显损害合法图像检测和画质的条件下，减少水印伪造通过。这次汇报分两部分：一是把 SemBind、PGID、SEAL 的公开实现和论文规定逐项对齐，得到可追溯的基线结果；二是结合几轮失败实验，把创新问题收敛到最终发布实例的内容绑定。现在已有核心链路的验证证据，但还没有可以宣称超过先进防御的新方法结果。",
+      "sources": ["https://github.com/lylei5/watermark2/blob/main/reports/three_baselines_20261113/report.md", "https://github.com/lylei5/watermark2/blob/main/docs/CONTENT_KEY_FEASIBILITY.md"]
+    },
+    {
+      "title": "目录",
+      "notes": "首先说明防御任务和 SemBind 的机制。然后分别介绍三项基线已经验证到哪一步，避免把小样本链路测试当成完整论文复现。接下来讲失败实验揭示的同图漂移与实例混淆。最后给出内容密钥方向的机制、主要风险和判断是否值得继续的实验。全程关注的是防御收益，攻击只调用已有发表的原始基线。",
+      "sources": ["https://github.com/lylei5/watermark2/blob/main/docs/THREE_BASELINE_REPRODUCTION.md"]
+    },
+    {
+      "title": "研究目标：可靠识别发布图像及其合法编辑",
+      "notes": "传统载体首先回答候选图中是否能恢复某个水印。但研究防伪时，还要回答它是不是目标发布图及其允许的编辑。合法的 JPEG、亮度等操作应保留目标身份，而另一张图不能只因模仿了载体特征就被认成该来源。对比防御不能只看攻击接受率低：如果把合法图也大量拒绝，结论并不公平。所以主指标是在匹配绝对合法检出率时的伪造接受，同时报告画质、耗时和信息权限。这里另一张合法发布图只是不属于当前记录，并不是全局的伪造图。",
+      "sources": ["https://proceedings.mlr.press/v306/zhang26hj.html", "https://arxiv.org/abs/2605.09319", "https://github.com/lylei5/watermark2/blob/main/AGENTS.md"]
+    },
+    {
+      "title": "SemBind 的语义绑定与当前实现",
+      "notes": "SemBind 先生成辅助图，用 DINOv2 和发布的语义网络提取 1024 位码。然后将码平铺、按绑定比例截断，再用秘密置换形成符号掩码，调制载体噪声并生成水印图。验证时从候选图重新提码，用官方 DPM 反演入口恢复潜变量，解绑后调用原生载体检测器。当前 GS 和 TR 使用全坐标绑定，PRC 按论文用一半坐标。官方没有发布完整绑定入口，所以我们的定位是官方组件加按论文补齐，HMAC 置换的具体派生明确属于项目约定。DPM 设置为 50 步，反演 CFG 3，inv_order=0，VAE 优化 100 步。inv_order=0 不启用扩散固定点修正，函数名 exact_inversion 不等于数学上无误差。显存适配、库版本和模型镜像的边界均有记录。",
+      "sources": ["https://proceedings.mlr.press/v306/zhang26hj.html", "https://github.com/XinZhang1999/SemBind", "https://github.com/lylei5/watermark2/blob/main/docs/BASELINE_IMPLEMENTATION_DIFFERENCES.md", "https://github.com/lylei5/watermark2/blob/main/scripts/defense/sembind_binding.py"]
+    },
+    {
+      "title": "三项防御基线：已完成的图像验证",
+      "notes": "这里是各自原生设置的验收表，不是同条件排行榜。GS-S 的 100 个提示词中，正常水印图全部接受。PRC-S 和 TR-S 各 6 例正常图全部通过，PRC 的 512 位载荷也全部精确解码。这些 6 例只能验证集成链路。SEAL 公开路径为 83/100，补齐论文私有 salt 后为 91/100；不同密钥和水印图使这两个数字不能解释成 salt 带来因果提升。PGID 的正常图对照各为 10/10。语义组件在 100 图十条件共 1000 次逐位核对中与官方入口完全一致，但这不等于完整系统复现。严格确定性检查只说明所测三例重复反演逐值一致，不证明跨设备或作者环境一致。100 次负例零接受的双侧 95% Clopper–Pearson 上界约为 3.62%，远不能证明百万分之一误报。GS 166、167、182 位工作点分别记录，本轮结果相同；负例身份随来源变化，不是固定用户自然图 FPR。GS++、其他 PGID 图像载体和全论文规模仍待完成。",
+      "sources": ["https://github.com/lylei5/watermark2/blob/main/reports/three_baselines_20261113/report.md", "https://github.com/lylei5/watermark2/blob/main/reports/phase1_trajectory_native_gs_20261113/baseline_summary.json", "https://github.com/lylei5/watermark2/blob/main/reports/three_baselines_20261113/sembind_tr_results.json", "https://github.com/lylei5/watermark2/blob/main/reports/three_baselines_20261113/sembind_determinism_results.json", "https://github.com/lylei5/watermark2/blob/main/reports/defense_revalidation_20261111/report.md"]
+    },
+    {
+      "title": "PGID：完整预算下的伪造拒绝与去除恢复",
+      "notes": "PGID 是检测端的渐进引导反演与去噪。我们保持作者原始入口、公开 GS fixture 和完整 151 次攻击更新。源码保存索引 50、100、150，实际对应 51、101、151 次更新。伪造方向，原检测在三个检查点均接受 10/10，PGID-F 均拒绝全部 10 个候选，同时保留 10/10 正常图。去除方向，原检测均为 0/10，PGID-R 均恢复到 10/10。因此 PGID 是需要认真对待的强基线。三个检查点是同十个来源，不是三十个独立样本。这里采用作者公开 fixture 和开发数据，没有证明未知私钥场景安全，也没有与 SemBind 使用统一载体和统一数据排名。PGID 的会议状态依据作者 arXiv v5 注明 NeurIPS 2026 接收，本页不依赖尚未核对的正式论文集条目。",
+      "sources": ["https://arxiv.org/abs/2605.09319", "https://github.com/MinhQDuong/PGID", "https://github.com/lylei5/watermark2/blob/main/reports/defense_revalidation_20261111/report.md", "https://github.com/lylei5/watermark2/blob/main/reports/three_baselines_20261113/pgid_removal_results.json"]
+    },
+    {
+      "title": "SEAL：语义参考漂移影响正常检出与编辑鲁棒性",
+      "notes": "SEAL 通过图像描述、文本向量和 SimHash 生成语义关联的噪声。我们将公开代码和按论文补齐私有 salt 的路径分开，在各 100 个来源上测试七个条件，共 1400 条判定，所有分母包含正常图原本的漏检。固定语义规则要求 1024 块中至少 12 块距离严格小于 2.3。干净图误差分解发现，用生成时保存的噪声作为诊断参考，两组都能达到 100/100；实际漏检出现在从候选图重新提语义参考之后。这支持语义漂移是本批数据的瓶颈，但生成时参考对普通无数据库验证器不可用，不能当成新检测成绩。本表不是对论文 Figure 6 的复现或反驳：官方另有无需候选语义、逐块穷举 128 个码字并按负例 99 百分位定阈值的 TPR@1%FPR 入口。原代码 Noise0.1 实际为共享偏移及 uint8 运算，Brightness6 范围为 [0,7]，Blur8 是 PIL 半径。我们的固定样本及外层随机序列也与作者原队列不同，均明确记录。",
+      "sources": ["https://openaccess.thecvf.com/content/ICCV2025/papers/Arabi_SEAL_Semantic_Aware_Image_Watermarking_ICCV_2025_paper.pdf", "https://github.com/lylei5/watermark2/blob/main/reports/three_baselines_20261113/seal_benign_results.json", "https://github.com/lylei5/watermark2/blob/main/reports/three_baselines_20261113/seal_clean_diagnosis.json", "https://github.com/lylei5/watermark2/blob/main/docs/BASELINE_IMPLEMENTATION_DIFFERENCES.md"]
+    },
+    {
+      "title": "失败实验指出：容忍内容漂移，也会接纳不同实例",
+      "notes": "这一页是目前对方法选择最有价值的结果。为了让 95/100 个辅助图—最终图配对落在同一恢复区域内，需要 179 位半径。但相同半径也覆盖 88/100 个同提示词、不同 seed 的实例。半径是在同一开发批次上挑选的，这只是描述性重叠，不是独立覆盖保证，更不是实际 FE 密钥恢复或攻击成功率。它说明当前码器把提示词语义保持得较好，但难以支持实例级恢复边界。下面两项载体变体虽然减少了潜变量改动或提高辅助图相似度，却没有带来更好的合法接受和绑定表现；对照是当时的项目适配器，不能包装成完整原生 SemBind 比较。轨迹参考在两个数据集第 35 步的 P5 都未过预注册 0.95 门槛。当前证据支持先研究实例表征与生成时序，而不是继续增加载体模块。",
+      "sources": ["https://github.com/lylei5/watermark2/blob/main/reports/phase1_hamming_radius_20261113/report.md", "https://github.com/lylei5/watermark2/blob/main/reports/decision_region_pilot_20261112/report.md", "https://github.com/lylei5/watermark2/blob/main/reports/semantic_transport_pilot_20261112/report.md", "https://github.com/lylei5/watermark2/blob/main/reports/phase1_trajectory_native_gs_20261113/report.md"]
+    },
+    {
+      "title": "拟研究主线：最终发布实例的内容绑定",
+      "notes": "拟研究的机制是把允许编辑压在同一实例的恢复区域内，把其他实例排到区域外。模糊提取器可作为容错恢复工具，但先要解决两个问题。第一，辅助图派生密钥会改变载体噪声和最终生成实例，如果码器又要求区分不同 seed，就可能与生成流程冲突。候选路线是先按原生随机密钥生成，再针对最终发布图建立经认证的封装记录，这需要外部记录和提供者秘密，不是完全无状态。第二，标准 FE 通常保证半径内恢复，但不自动保证半径外拒绝；还要有距离检查、密钥确认、辅助数据认证，并分析内容在公开信息条件下的熵。内容公开可读，不能直接替代提供者秘密。这还只是候选设计，尚未训练或验证收益。最重要的对照是原生载体加同样实例指纹的直接门控。如果二者接受集合一样，那么创新应来自协议、存储或认证性质，而不能声称 FE 本身提高防伪。实例对比训练和容错认证都有先例，组合本身不构成创新证明。SemBind 的部分绑定可能影响纠错后残留，但目前没有 σ=0.5 与 1 的配对实验，不能把它写成已证实根因。",
+      "sources": ["https://github.com/lylei5/watermark2/blob/main/docs/CONTENT_KEY_FEASIBILITY.md", "https://www.cs.bu.edu/~reyzin/papers/fuzzy.pdf", "https://openaccess.thecvf.com/content/CVPR2022/html/Pizzi_A_Self-Supervised_Descriptor_for_Image_Copy_Detection_CVPR_2022_paper.html", "https://proceedings.mlr.press/v306/zhang26hj.html"]
+    },
+    {
+      "title": "下一步：以独立同条件实验决定是否形成论文",
+      "notes": "接下来按可证伪的顺序推进。先把三个基线尚缺的原生载体和完整攻击矩阵补齐，固定检测工作点和数据划分。然后围绕最终发布图训练或验证实例码器，先与原码器和直接距离门控比较合法编辑尾部和实例分离。如果分布仍无法分开，就不进入复杂密钥协议。只有这一必要条件成立，再评估经认证密钥恢复是否提供超出简单门控的独立收益。确认阶段只用已发表攻击的原始实现与完整预算，在相同合法检出率下比较，同时计入生成失败、画质、延迟和记录成本。目前可以向老师报告的是：基线核心链路已经建立证据，几轮实验帮助定位了问题；新防御尚待独立验证，不能提前宣称 SOTA 或达到论文发表标准。",
+      "sources": ["https://github.com/lylei5/watermark2/blob/main/docs/THREE_BASELINE_REPRODUCTION.md", "https://github.com/lylei5/watermark2/blob/main/docs/CONTENT_KEY_FEASIBILITY.md", "https://github.com/lylei5/watermark2/blob/main/AGENTS.md"]
+    }
+  ]
+}
