@@ -1,5 +1,6 @@
 """Execute real128-bit recovery, native-key unwrapping and paired controls on249."""
 import argparse
+import base64
 import ctypes
 import hashlib
 import hmac
@@ -86,7 +87,7 @@ def execute(run, repetition, parent_pid):
         from watermarks.keys import KEYS
         from watermarks.nonces import NONCES
         from watermarks.messages import MESSAGES
-        methods=[('clean_margin','fixed'),('orbit_margin','fixed'),('orbit_margin','templates'),('orbit_margin','coset')]
+        methods=[tuple(name.rsplit('_',1)) for name in plan['methods']]
         rows,controls,enrollment=[],[],[]
         state.update(status='running',started_at=time.time())
         write(out/'state.json',state)
@@ -117,7 +118,8 @@ def execute(run, repetition, parent_pid):
                 write(path,record)
                 enrollment.append(dict(id=identity,method=method,seconds=time.monotonic()-tick,
                     record_sha256=sha(path),json_record_bytes=len(canonical(record)),native_material_bytes=len(material),
-                    compact_helper_bits=8192+1023*(1+len(record['metadata']['edit_basis']))+256+256,
+                    compact_helper_bits=8192+1023*(1+len(record['metadata']['edit_basis']))+256+256+
+                        8*len(base64.b64decode(record['metadata'].get('feature_transform',{}).get('basis',''))),
                     distinct_offsets=sum(1 for _ in codec.offsets(record['metadata']))))
             templates=np.concatenate([reference[None,:],views])
             quantized=np.round(templates/np.max(np.abs(templates),axis=1,keepdims=True)*127).astype(np.int8).astype(np.float32)
@@ -125,9 +127,15 @@ def execute(run, repetition, parent_pid):
             queries=[r for r in metadata if r['id']==identity and not r['kind'].startswith('enroll_')]
             for meta in queries:
                 query=data[index[identity,meta['kind']]]
-                controls.append(dict(**meta,sscd_single=float(np.clip(1-reference@query,0,2)),
+                control=dict(**meta,sscd_single=float(np.clip(1-reference@query,0,2)),
                     sscd_templates=float(np.clip(1-np.max(templates@query),0,2)),
-                    sscd_int8_templates=float(np.clip(1-np.max(quantized@query),0,2))))
+                    sscd_int8_templates=float(np.clip(1-np.max(quantized@query),0,2)))
+                for method,record in records.items():
+                    transform=record['metadata'].get('feature_transform')
+                    if transform is not None:
+                        control[method+'_cosine']=float(np.clip(1-codec.transform_feature(reference,transform)@
+                            codec.transform_feature(query,transform),0,2))
+                controls.append(control)
                 for method,record in records.items():
                     tick=time.monotonic()
                     result,detail=codec.recover(record,query,provider)

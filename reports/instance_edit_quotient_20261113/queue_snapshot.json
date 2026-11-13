@@ -1,0 +1,53 @@
+{
+  "observed_at": "2026-11-13T05:56:38.142691+00:00",
+  "runs": {
+    "pgid_carrier_coverage_20261113": {
+      "TR/state.json": {
+        "status": "running",
+        "pid": 42517,
+        "carrier": "TR",
+        "gpu": 5,
+        "gpu_uuid": "GPU-e6f35928-0155-f121-e707-1eaf3c14965c",
+        "process_exists": true
+      },
+      "PRC/state.json": {
+        "status": "running",
+        "pid": 42519,
+        "carrier": "PRC",
+        "gpu": 4,
+        "gpu_uuid": "GPU-748b31fa-0510-6b56-f820-f3812266ed28",
+        "process_exists": true
+      },
+      "TR_final_checkpoint_images": 5,
+      "PRC_final_checkpoint_images": 5
+    },
+    "pgid_carrier_genuine_20261113": {
+      "TR/state.json": {
+        "status": "waiting_for_native_exit",
+        "pid": 4171,
+        "carrier": "TR",
+        "process_exists": true
+      },
+      "PRC/state.json": {
+        "status": "waiting_for_native_exit",
+        "pid": 7671,
+        "carrier": "PRC",
+        "process_exists": true
+      }
+    },
+    "sscd_pgid_reference_gate_20261113": {
+      "state.json": {
+        "status": "waiting_for_native_exit",
+        "pid": 34090,
+        "process_exists": true
+      }
+    },
+    "recovered_carrier_transfer_20261113": {
+      "state.json": {
+        "status": "waiting_for_attack_and_sscd_exit",
+        "pid": 39091,
+        "process_exists": true
+      }
+    }
+  }
+}

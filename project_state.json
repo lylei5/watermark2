@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-13T04:48:13.682597+00:00",
-  "status": "native_baselines_and_instance_diagnostic",
+  "updated_at": "2026-11-13T05:57:51.603198+00:00",
+  "status": "native_baselines_and_instance_key_recovery",
   "active_experiments": 2,
-  "queued_experiments": 3,
-  "latest_progress_report": "reports/instance_coset_recovery_20261113/report.md",
+  "queued_experiments": 4,
+  "latest_progress_report": "reports/instance_edit_quotient_20261113/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/INSTANCE_BINDING_RESEARCH.md",
   "native_sembind_reproduction_complete": false,
@@ -419,7 +419,7 @@
     "extractor_implemented": false,
     "encoder_training_started": false,
     "overall_fpr_established": false,
-    "priority": "Design instance-conditioned recovery regions and actual recovery; compare direct SSCD, global subspace correction and generic inversion-statistic conditioning. Await native TR/PRC full attack and genuine controls.",
+    "priority": "Complete frozen TR/PRC recovery transfer and paired genuine controls; evaluate instance recovery geometry against same-view int8 multi-template and identical-transform continuous SSCD. Actual recovery is implemented; stronger novelty and independent superiority remain research objectives.",
     "authenticated_key_binding_implemented": true,
     "actual_128bit_key_recovery": true,
     "entropy_certified_fuzzy_extractor": false
@@ -574,5 +574,59 @@
     "native_carrier_changed": false,
     "independent_confirmation": false,
     "result": "Edit-aware reliability improves recovery; extra template/coset offsets give no benefit in this configuration"
-  }
+  },
+  "instance_edit_code": {
+    "run": "instance_edit_code_20261113",
+    "status": "complete",
+    "protocol": "protocols/instance_edit_code_20261113.json",
+    "report": "reports/instance_edit_code_20261113/report.md",
+    "actual_key_bits": 128,
+    "actual_recovery_decisions": 14760,
+    "exact_region_agreements": 14760,
+    "private_projection_repetitions": 3,
+    "native_recovery_rechecks": 920,
+    "distinct_native_detector_calls": 195,
+    "native_scope": "Repetition0:100spatialGS clean +100PGID-GS genuine +30existing Imprint checkpoints; existing inversions, new original detector calls",
+    "encoder_training": false,
+    "native_carrier_changed": false,
+    "independent_confirmation": false
+  },
+  "instance_edit_quotient": {
+    "run": "instance_edit_quotient_20261113",
+    "status": "complete",
+    "protocol": "protocols/instance_edit_quotient_20261113.json",
+    "report": "reports/instance_edit_quotient_20261113/report.md",
+    "actual_key_bits": 128,
+    "actual_recovery_decisions": 14760,
+    "exact_region_agreements": 14760,
+    "private_projection_repetitions": 3,
+    "native_recovery_rechecks": 920,
+    "distinct_native_detector_calls": 196,
+    "native_scope": "Repetition0:100spatialGS clean +100PGID-GS genuine +30existing Imprint checkpoints; existing inversions, new original detector calls",
+    "encoder_training": false,
+    "native_carrier_changed": false,
+    "independent_confirmation": false
+  },
+  "recovered_carrier_transfer": {
+    "run": "recovered_carrier_transfer_20261113",
+    "status": "waiting_for_attack_and_sscd_exit",
+    "protocol": "protocols/recovered_carrier_transfer_20261113.json",
+    "worker_pid": 39091,
+    "auditor_pid": 39092,
+    "predecessor_pid": 34090,
+    "gpu_after_exit": 7,
+    "native_inversions": 280,
+    "actual_recovery_decisions": 3360,
+    "sources": 20,
+    "threshold_tuning": false,
+    "attack_generation": false,
+    "independent_confirmation": false,
+    "audit_waits_for": [
+      39091,
+      4171,
+      7671
+    ],
+    "protocol_note": "reports/recovered_carrier_transfer_20261113/protocol_note.md"
+  },
+  "last_queue_observation": "2026-11-13T05:56:38.142691+00:00"
 }

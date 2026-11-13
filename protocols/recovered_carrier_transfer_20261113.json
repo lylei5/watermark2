@@ -1,0 +1,357 @@
+{
+  "created_at": "2026-11-13T05:51:06.418248+00:00",
+  "parent_protocol_sha256": "eb8e6162be7617602cfa888bfdf7a73e55c695d263b0af6675280d23243e8177",
+  "gate_protocol_sha256": "d5c2c2ddbf5edfa0f986eab7be97adfcfbdbc11fb4920866067f2037df0e078a",
+  "genuine_protocol_sha256": "412d4d296bf4ea7dc6429ec82daa7b1864a3ab5e3c2fadabf692690bb8a918eb",
+  "development_scores_sha256": "601cc6e7ee4b9cb6307ad628834dcbf23c2f23e97cf98134ab90c888a9d43220",
+  "predecessor": {
+    "pid": 34090,
+    "cmdline_sha256": "e49fd5dcd7c97ad1c8aa9a765905183f8a7fa6ba2634459bd80dc2b9d23b1b5d"
+  },
+  "source": {
+    "path": "/data0/liyanlei/watermark_research/third_party/frozen/PGID_dc4ad96",
+    "commit": "dc4ad963ffefcb4cf84340084db617472983d3e0",
+    "files": {
+      "run.py": "f65a8b7ab54b51dba653b0e6692674d69f26f374a8db9b3d9f5953eb815b1e61",
+      "README.md": "8b89bcd9ce5ad97b45a724b6a9f91339c849cbea47c350a47a83baa169d0ef34",
+      "imprint_attacks.py": "35cfac3b45d15a512d6d67a66664104adf40ed647a63f6738fa998609f97793b",
+      "requirements.txt": "52c16c8951e4be84595469dfadea6475cd50defa16a974192977b3e250af8e8f",
+      "prompts.py": "eb8504bbbbea4265a0eb13316bb7ab75b74db7e83bc99b82dac513e08e48f9c6",
+      "pgid_defense.py": "193acc73de4116acef661e09988b9adc275f781d46d9e20fd5d8bc0617e38472",
+      "utils.py": "a0a0bf97ab7aab4c9a031aeb113653e47c8edf50ed12851a261ce448927e8817",
+      "LICENSE.md": "a30ed803e84f2e729f0638756d59e9def938fa6cb4f1121bb7da7f6bdd680e45",
+      "pipe/image_utils.py": "c8423a6942c083e69719f27b0bb9f1210e837a559c8c01d468528d3936f7ea9b",
+      "pipe/pipe_utils.py": "08afb9da57e99b9bac307e8082b530350f23a2c59480ac686e875a22f013877e",
+      "pipe/PixArt_pipe.py": "0b975bad007f27db7340729e4fdc6c586e111c696396a947a8208f5cfb47ea95",
+      "pipe/base_pipe.py": "35fcffde506f9a0e0e691140ac164dcc4ac54dd24101a2cf06f8335f0080c90f",
+      "pipe/SD_pipe.py": "3370777e34ba36b3c009b5215993df3d47de0eb40933d93521df129f92885558",
+      "pipe/attack_pipe.py": "355688e62f4d1634a7278788b8ad2ea37af744947d28906fae99d2fcd657d327",
+      "pipe/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "watermarks/t2smark_watermark.py": "827cc85f87e37960219d8dcafe9ac734fec42a9bf9b51f56202776486c5411eb",
+      "watermarks/watermark_utils.py": "5323f51fe567e58b5f4c18f7cfaaa98760cec8fdfa72b88666ed8fccc4fb5577",
+      "watermarks/gs_watermark.py": "40760f61a2ea2015ccdfb1b812279402e9c992c5f3425f7b5de898eacca92c94",
+      "watermarks/prc_watermark.py": "3a98548d1fae339028778731c4877585c70419209b6316fa2845e65b0961b82c",
+      "watermarks/sem_watermark.py": "c5903b48108d121581b003701056dcadd26c63c65f3cd5affb39063322c911df",
+      "watermarks/nonces.py": "b8419f7c8627d7a594873bb1821bbbee8416fea0db6cf7c9b6d76135fcbeb796",
+      "watermarks/keys.py": "4607da9697b6dc680026968c493012e0db194cb4189a43990cca72759f6c45b5",
+      "watermarks/tr_watermark.py": "78266f7c54d1b411c826e9d899bf2381dcb222c8c88fcc63e88787b95a0e32ec",
+      "watermarks/messages.py": "cfda53782648bb897a920964e9508931eb8950f40f43693e6ddbddc1c8c5a9be",
+      "watermarks/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "model": {
+    "path": "/data0/liyanlei/watermark_research/models/sscd/sscd_disc_mixup.torchscript.pt",
+    "sha256": "9f26bd4c848cc19b73d2ae92eea6e04886f61a7b764ceb7a13aeee62e6a6db56",
+    "url": "https://dl.fbaipublicfiles.com/sscd-copy-detection/sscd_disc_mixup.torchscript.pt"
+  },
+  "conditions": {
+    "random_crop_ratio": 0.6,
+    "random_drop_ratio": 0.8,
+    "brightness_factor": 6,
+    "jpeg_ratio": 25,
+    "gaussian_blur_r": 4,
+    "gaussian_std": 0.05,
+    "median_blur_k": 7,
+    "sp_prob": 0.05,
+    "resize_ratio": 0.25
+  },
+  "seed_base": 2026111310,
+  "distortion_file": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/gs_image_utils.py",
+  "distortion_sha256": "aa0dd86b4543bde39983e5b7ec8fd487fba476d7a435f83308891e187ee93fbb",
+  "enrollment_families": [
+    "random_crop_ratio",
+    "random_drop_ratio",
+    "gaussian_std",
+    "sp_prob"
+  ],
+  "enrollment_seed_base": 2026511300,
+  "methods": [
+    "orbit_margin_fixed",
+    "tangent4_margin_fixed",
+    "tangent8_margin_fixed",
+    "tangent4_orbit_fixed"
+  ],
+  "operating_points": [
+    {
+      "repetition": 0,
+      "method": "orbit_margin_fixed",
+      "target": 0.9,
+      "feasible": true,
+      "cutoff": 108
+    },
+    {
+      "repetition": 0,
+      "method": "orbit_margin_fixed",
+      "target": 0.95,
+      "feasible": false,
+      "cutoff": null
+    },
+    {
+      "repetition": 0,
+      "method": "tangent4_margin_fixed",
+      "target": 0.9,
+      "feasible": true,
+      "cutoff": 92
+    },
+    {
+      "repetition": 0,
+      "method": "tangent4_margin_fixed",
+      "target": 0.95,
+      "feasible": false,
+      "cutoff": null
+    },
+    {
+      "repetition": 0,
+      "method": "tangent8_margin_fixed",
+      "target": 0.9,
+      "feasible": true,
+      "cutoff": 83
+    },
+    {
+      "repetition": 0,
+      "method": "tangent8_margin_fixed",
+      "target": 0.95,
+      "feasible": false,
+      "cutoff": null
+    },
+    {
+      "repetition": 0,
+      "method": "tangent4_orbit_fixed",
+      "target": 0.9,
+      "feasible": false,
+      "cutoff": null
+    },
+    {
+      "repetition": 0,
+      "method": "tangent4_orbit_fixed",
+      "target": 0.95,
+      "feasible": false,
+      "cutoff": null
+    },
+    {
+      "repetition": null,
+      "method": "sscd_single",
+      "target": 0.9,
+      "feasible": true,
+      "cutoff": 0.5652488470077515
+    },
+    {
+      "repetition": null,
+      "method": "sscd_single",
+      "target": 0.95,
+      "feasible": true,
+      "cutoff": 0.6155818700790405
+    },
+    {
+      "repetition": null,
+      "method": "sscd_templates",
+      "target": 0.9,
+      "feasible": true,
+      "cutoff": 0.2992730140686035
+    },
+    {
+      "repetition": null,
+      "method": "sscd_templates",
+      "target": 0.95,
+      "feasible": true,
+      "cutoff": 0.4187425971031189
+    },
+    {
+      "repetition": null,
+      "method": "sscd_int8_templates",
+      "target": 0.9,
+      "feasible": true,
+      "cutoff": 0.29942816495895386
+    },
+    {
+      "repetition": null,
+      "method": "sscd_int8_templates",
+      "target": 0.95,
+      "feasible": true,
+      "cutoff": 0.41900283098220825
+    },
+    {
+      "repetition": null,
+      "method": "tangent4_margin_fixed_cosine",
+      "target": 0.9,
+      "feasible": true,
+      "cutoff": 0.4211849570274353
+    },
+    {
+      "repetition": null,
+      "method": "tangent4_margin_fixed_cosine",
+      "target": 0.95,
+      "feasible": true,
+      "cutoff": 0.5140866041183472
+    },
+    {
+      "repetition": null,
+      "method": "tangent8_margin_fixed_cosine",
+      "target": 0.9,
+      "feasible": true,
+      "cutoff": 0.4011920690536499
+    },
+    {
+      "repetition": null,
+      "method": "tangent8_margin_fixed_cosine",
+      "target": 0.95,
+      "feasible": true,
+      "cutoff": 0.5071109533309937
+    },
+    {
+      "repetition": null,
+      "method": "tangent4_orbit_fixed_cosine",
+      "target": 0.9,
+      "feasible": true,
+      "cutoff": 0.4211849570274353
+    },
+    {
+      "repetition": null,
+      "method": "tangent4_orbit_fixed_cosine",
+      "target": 0.95,
+      "feasible": true,
+      "cutoff": 0.5140866041183472
+    },
+    {
+      "repetition": 1,
+      "method": "orbit_margin_fixed",
+      "target": 0.9,
+      "feasible": true,
+      "cutoff": 102
+    },
+    {
+      "repetition": 1,
+      "method": "orbit_margin_fixed",
+      "target": 0.95,
+      "feasible": false,
+      "cutoff": null
+    },
+    {
+      "repetition": 1,
+      "method": "tangent4_margin_fixed",
+      "target": 0.9,
+      "feasible": true,
+      "cutoff": 92
+    },
+    {
+      "repetition": 1,
+      "method": "tangent4_margin_fixed",
+      "target": 0.95,
+      "feasible": false,
+      "cutoff": null
+    },
+    {
+      "repetition": 1,
+      "method": "tangent8_margin_fixed",
+      "target": 0.9,
+      "feasible": true,
+      "cutoff": 85
+    },
+    {
+      "repetition": 1,
+      "method": "tangent8_margin_fixed",
+      "target": 0.95,
+      "feasible": false,
+      "cutoff": null
+    },
+    {
+      "repetition": 1,
+      "method": "tangent4_orbit_fixed",
+      "target": 0.9,
+      "feasible": false,
+      "cutoff": null
+    },
+    {
+      "repetition": 1,
+      "method": "tangent4_orbit_fixed",
+      "target": 0.95,
+      "feasible": false,
+      "cutoff": null
+    },
+    {
+      "repetition": 2,
+      "method": "orbit_margin_fixed",
+      "target": 0.9,
+      "feasible": true,
+      "cutoff": 102
+    },
+    {
+      "repetition": 2,
+      "method": "orbit_margin_fixed",
+      "target": 0.95,
+      "feasible": false,
+      "cutoff": null
+    },
+    {
+      "repetition": 2,
+      "method": "tangent4_margin_fixed",
+      "target": 0.9,
+      "feasible": true,
+      "cutoff": 91
+    },
+    {
+      "repetition": 2,
+      "method": "tangent4_margin_fixed",
+      "target": 0.95,
+      "feasible": false,
+      "cutoff": null
+    },
+    {
+      "repetition": 2,
+      "method": "tangent8_margin_fixed",
+      "target": 0.9,
+      "feasible": true,
+      "cutoff": 78
+    },
+    {
+      "repetition": 2,
+      "method": "tangent8_margin_fixed",
+      "target": 0.95,
+      "feasible": false,
+      "cutoff": null
+    },
+    {
+      "repetition": 2,
+      "method": "tangent4_orbit_fixed",
+      "target": 0.9,
+      "feasible": false,
+      "cutoff": null
+    },
+    {
+      "repetition": 2,
+      "method": "tangent4_orbit_fixed",
+      "target": 0.95,
+      "feasible": false,
+      "cutoff": null
+    }
+  ],
+  "private": "/data0/liyanlei/watermark_research/private_eval/recovered_carrier_transfer_20261113",
+  "provider_sha256": "b60997a09fb909c9e6195dd8f96ad258ebc3f7883e4da2fcbe02d27f8fc5f0ec",
+  "projection_sha256": [
+    "ae775ca270da02f0f596b28c088a22167d0a3d2fadf885d10d2b2ddcf45018af",
+    "654ab23dd169c649054492de79d85a00afbf13a7b4ecaf4d8eba1e37fb3a141a",
+    "84849db3a4bde1c4ec90ddaf2ecf328ce032c70b16f553fcbc3f5aa811cc5f7c"
+  ],
+  "prc_key_path": "/data0/liyanlei/watermark_research/third_party/frozen/PGID_dc4ad96/watermarks/prc_key.pkl",
+  "prc_key_sha256": "c2dafeeb944deaa7f537f0383be52c6a13cd481e132b2de498c09197f237d1dc",
+  "source_sha256": {
+    "recovered_carrier_transfer.py": "68475ef3c3eda323b2f171852c5240a2de5752a629f44ab1cdea2e43496aba9f",
+    "instance_coset_recovery.py": "495f5d7f7749f39a253fd07d36d188b72927cd4150a6505c59452f60597ba2eb"
+  },
+  "gpu": 7,
+  "carriers": [
+    "TR",
+    "PRC"
+  ],
+  "sources_per_carrier": 10,
+  "queries_per_carrier": 140,
+  "native_inversions": 280,
+  "recovery_decisions": 3360,
+  "attack_generation": false,
+  "threshold_tuning": false,
+  "independent_confirmation": false,
+  "transfer_scope": "Frozen GS-development code and thresholds transferred to native TR/PRC sources",
+  "native_material": "Serialized full author verifier instance state, CPU tensors; authenticated before restore",
+  "isolation": "Function boundary, same process; recovered bytes are the only state supplied to restored detector",
+  "attack_scope": "Existing unchanged CVPR2025 Imprint checkpoints50/100/150 from full151-update runs"
+}

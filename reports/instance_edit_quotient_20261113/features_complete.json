@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "pid": 34167,
+  "protocol_sha256": "1f0436aadeb531d8ac6e1723ab2f380528e2e04027c64abb3b205eb1e2430628",
+  "gpu": 7,
+  "gpu_uuid": "GPU-9644fb82-cb6f-7311-8017-eaee41409bb7",
+  "started_at": 1794544715.6725433,
+  "rows": 2110,
+  "seconds": 88.04678153991699,
+  "artifacts": {
+    "features.npz": "41948eb9e0c3bebea82339a88031e8fde2038b4813a22de27d7be6aa7078b2a7",
+    "feature_rows.json": "43fd724f9c96b47312e14546f97dc44b8c62a3972166bf60b45e1a9de57c0161"
+  },
+  "origin": {
+    "run": "/data0/liyanlei/watermark_research/runs/instance_coset_recovery_20261113",
+    "completion_sha256": "6178074eea4595fffb940fa058adb4ca63d31f3fbadd7fc9bcf19e2ac7058827"
+  },
+  "fresh_model_execution": false
+}

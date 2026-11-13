@@ -1,0 +1,191 @@
+{
+  "status": "complete",
+  "bootstrap_seed": 2026111317,
+  "resamples": 10000,
+  "comparator": "SSCD int8 nine-template control at same calibration target",
+  "results": [
+    {
+      "target": 0.9,
+      "method": "orbit_margin_fixed",
+      "repetition": 0,
+      "difference": 0.011999999999999993,
+      "percentile95": [
+        -0.00600000000000001,
+        0.029999999999999992
+      ],
+      "source_count": 50,
+      "queries_per_source": 10
+    },
+    {
+      "target": 0.9,
+      "method": "tangent4_margin_fixed",
+      "repetition": 0,
+      "difference": 0.007999999999999993,
+      "percentile95": [
+        -0.014000000000000005,
+        0.028000000000000004
+      ],
+      "source_count": 50,
+      "queries_per_source": 10
+    },
+    {
+      "target": 0.9,
+      "method": "tangent8_margin_fixed",
+      "repetition": 0,
+      "difference": 0.013999999999999992,
+      "percentile95": [
+        -0.00600000000000001,
+        0.033999999999999996
+      ],
+      "source_count": 50,
+      "queries_per_source": 10
+    },
+    {
+      "target": 0.9,
+      "method": "tangent4_margin_fixed_cosine",
+      "repetition": null,
+      "difference": 0.015999999999999993,
+      "percentile95": [
+        -0.006000000000000014,
+        0.03799999999999999
+      ],
+      "source_count": 50,
+      "queries_per_source": 10
+    },
+    {
+      "target": 0.9,
+      "method": "tangent8_margin_fixed_cosine",
+      "repetition": null,
+      "difference": 0.007999999999999993,
+      "percentile95": [
+        -0.012000000000000009,
+        0.027999999999999997
+      ],
+      "source_count": 50,
+      "queries_per_source": 10
+    },
+    {
+      "target": 0.9,
+      "method": "tangent4_orbit_fixed_cosine",
+      "repetition": null,
+      "difference": 0.015999999999999993,
+      "percentile95": [
+        -0.006000000000000014,
+        0.03799999999999999
+      ],
+      "source_count": 50,
+      "queries_per_source": 10
+    },
+    {
+      "target": 0.9,
+      "method": "orbit_margin_fixed",
+      "repetition": 1,
+      "difference": -2.220446049250313e-18,
+      "percentile95": [
+        -0.018000000000000002,
+        0.017999999999999995
+      ],
+      "source_count": 50,
+      "queries_per_source": 10
+    },
+    {
+      "target": 0.9,
+      "method": "tangent4_margin_fixed",
+      "repetition": 1,
+      "difference": 0.015999999999999993,
+      "percentile95": [
+        -0.006000000000000005,
+        0.03799999999999999
+      ],
+      "source_count": 50,
+      "queries_per_source": 10
+    },
+    {
+      "target": 0.9,
+      "method": "tangent8_margin_fixed",
+      "repetition": 1,
+      "difference": 0.023999999999999994,
+      "percentile95": [
+        0.003999999999999995,
+        0.044
+      ],
+      "source_count": 50,
+      "queries_per_source": 10
+    },
+    {
+      "target": 0.9,
+      "method": "orbit_margin_fixed",
+      "repetition": 2,
+      "difference": -0.002000000000000004,
+      "percentile95": [
+        -0.02,
+        0.013999999999999999
+      ],
+      "source_count": 50,
+      "queries_per_source": 10
+    },
+    {
+      "target": 0.9,
+      "method": "tangent4_margin_fixed",
+      "repetition": 2,
+      "difference": 0.009999999999999993,
+      "percentile95": [
+        -0.012000000000000009,
+        0.031999999999999994
+      ],
+      "source_count": 50,
+      "queries_per_source": 10
+    },
+    {
+      "target": 0.9,
+      "method": "tangent8_margin_fixed",
+      "repetition": 2,
+      "difference": 0.017999999999999995,
+      "percentile95": [
+        -0.002000000000000004,
+        0.03799999999999999
+      ],
+      "source_count": 50,
+      "queries_per_source": 10
+    },
+    {
+      "target": 0.95,
+      "method": "tangent4_margin_fixed_cosine",
+      "repetition": null,
+      "difference": 0.003999999999999999,
+      "percentile95": [
+        -0.011999999999999997,
+        0.019999999999999997
+      ],
+      "source_count": 50,
+      "queries_per_source": 10
+    },
+    {
+      "target": 0.95,
+      "method": "tangent8_margin_fixed_cosine",
+      "repetition": null,
+      "difference": 0.007999999999999998,
+      "percentile95": [
+        -0.005999999999999998,
+        0.021999999999999992
+      ],
+      "source_count": 50,
+      "queries_per_source": 10
+    },
+    {
+      "target": 0.95,
+      "method": "tangent4_orbit_fixed_cosine",
+      "repetition": null,
+      "difference": 0.003999999999999999,
+      "percentile95": [
+        -0.011999999999999997,
+        0.019999999999999997
+      ],
+      "source_count": 50,
+      "queries_per_source": 10
+    }
+  ],
+  "scope": "Descriptive source-paired uncertainty on development evaluation split; no multiplicity correction or independent confirmation",
+  "source_sha256": "e44ab6c3f46abb85a9625edb0dbfa742c244651aa3e3fe8a0dc644001617af73",
+  "scores_sha256": "601cc6e7ee4b9cb6307ad628834dcbf23c2f23e97cf98134ab90c888a9d43220"
+}

@@ -1,4 +1,5 @@
 """Audit actual recovery and compare absolute genuine operating points on249."""
+import argparse
 import hashlib
 import json
 import math
@@ -18,12 +19,16 @@ def write(path,value):
 
 def main():
     assert ROOT.is_dir()
-    run=ROOT/'runs/instance_coset_recovery_20261113'
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--run',type=Path,default=ROOT/'runs/instance_coset_recovery_20261113')
+    run=parser.parse_args().run.resolve()
+    assert run.parent==ROOT/'runs'
     os.environ.update(CUDA_VISIBLE_DEVICES='',OPENBLAS_NUM_THREADS='4')
     import numpy as np
     plan=json.loads((run/'protocol.json').read_text())
     names=list(plan['conditions'])
     baseline_names=['sscd_single','sscd_templates','sscd_int8_templates']
+    baseline_names += [m+'_cosine' for m in plan['methods'] if m.startswith('tangent')]
     raw_summaries,operating,matched,costs=[],[],[],[]
     methods=plan['methods']
     completions={}

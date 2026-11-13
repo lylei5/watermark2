@@ -1,0 +1,20 @@
+{
+  "worker_pid": 39091,
+  "auditor_pid": 39092,
+  "protocol_sha256": "33d9bba5d84948f694434cd6e17729793d2fa629eb2bc776f72d1554055e4076",
+  "auditor_sha256": "b85deb767dd90cd6f01740e75ec4e1621519e1b02dfb2f35af05b6a67a17b85d",
+  "parents": [
+    {
+      "pid": 39091,
+      "cmdline_sha256": "6c5ffa322746bd32338208a268eb5d9452ee973f46ef5f9431d7c6b80366034b"
+    },
+    {
+      "pid": 4171,
+      "cmdline_sha256": "d36e9caf964130555ff54de7fb361d97af4d173cb9b86f4f15236d0526165dfb"
+    },
+    {
+      "pid": 7671,
+      "cmdline_sha256": "6788512c3c52b08be50246e43aca830820731182d6f9173793189f4af25eea9c"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-11-13T04:49:04.699718+00:00",
+  "runner_sha256": "02cd7778981fe46e2ca672019c55941179338b1c98c40d64bb4046a0e32f5b03",
+  "repetitions": 3,
+  "sources": 110,
+  "queries_per_repetition": 1230,
+  "recoveries_per_repetition": 4920,
+  "query_reference_available_to_recover_function": false,
+  "known_reference_used_only_after_recovery_for_control": true,
+  "namespace_isolation": "Function boundary in same evaluation process; no OS sandbox separation",
+  "native_material": "Original spatialGS packed16384-bit OTP and256-bit message, or publishedPGID-GS key/nonce/message",
+  "packages": {
+    "galois": "0.4.10",
+    "numpy": "2.2.6",
+    "numba": "0.68.1",
+    "cryptography": "43.0.3"
+  },
+  "feature_execution": "Reuse of verified2110 features"
+}

@@ -2,9 +2,9 @@
 
 本项目研究扩散水印的内容绑定防御，同时建立可复核的SemBind、PGID、SEAL原生基线。[实时状态](project_state.json)记录运行队列；[验收契约](docs/THREE_BASELINE_REPRODUCTION.md)规定实现和数值复现的范围。
 
-最新的[载体与内容配对测量](reports/carrier_content_channel_20261113/report.md)重新执行130张图的检测，全部原生BA重放一致。10个完整151更新Imprint输出均通过原生GS、均被最终图SSCD门控拒绝。载体错误统计可预测部分内容漂移；等维数通用潜变量统计的预测更准，已纳入方法对照。[处理误差方向实验](reports/instance_nuisance_geometry_20261113/report.md)进一步表明，全局处理方向跨实例迁移有限；研究继续围绕[最终实例的恢复区域](docs/INSTANCE_BINDING_RESEARCH.md)推进。TR/PRC完整攻击与配对合法图任务状态见project_state.json。
+最新的[实例编辑方向恢复实验](reports/instance_edit_quotient_20261113/report.md)已跑通128位密钥恢复、原生验证材料解封和原作者检测。八方向版本在三组投影下恢复473–477/500个合法查询，不同实例误恢复均0/50；相同登记信息的多模板SSCD是主要强对照。按共同90%校准目标，八方向实际恢复为455/460/457，多模板SSCD为448，分母均500；按来源统计的不确定性与存储成本一并报告。TR/PRC完整Imprint、合法图及实际恢复迁移的执行状态见[project_state.json](project_state.json)。
 
-[100提示词表征诊断](reports/instance_representation_20261113/report.md)比较三种表征与两种参考方式。评估侧SSCD最终图参考保留428/450张处理图，同提示词不同实例误匹配1/50；SemBind码对应420/450、42/50。[二值化实验](reports/sscd_binary_fe_20261113/report.md)将1024位码的95%校准恢复半径从385–390降到214–220位。普通子空间对照进一步达到187–208位；实际密钥恢复仍是后续方法工作。
+[完整方法说明](docs/INSTANCE_COSET_RECOVERY.md)给出最终图登记、实例恢复区域、BCH译码和提供方认证。三轮方法实验均保留，95%校准目标下的实际恢复能力仍待提高；多模板SSCD在该工作点为476/500、不同实例0/50。先前的[表征比较](reports/instance_representation_20261113/report.md)、[载体与内容配对测量](reports/carrier_content_channel_20261113/report.md)和[全局误差方向实验](reports/instance_nuisance_geometry_20261113/report.md)记录机制依据。
 
 [2026-11-13研究汇报](presentations/defense_briefing_20261113/README.md)包含中山大学模板演示文稿、逐页讲稿和实验来源。
 
@@ -32,6 +32,9 @@
 | PRC/PRC-S图像闭环 | [run_sembind_prc_native.py](scripts/defense/run_sembind_prc_native.py) |
 | SEAL完整语义链路 | [run_seal_native.py](scripts/defense/run_seal_native.py)；论文salt见[seal_paper_simhash.py](scripts/defense/seal_paper_simhash.py) |
 | 作者PGID完整预算入口 | [run_pgid_native.py](scripts/defense/run_pgid_native.py)，原样执行上游run.py |
+| 实例密钥登记与恢复 | [instance_coset_recovery.py](scripts/defense/instance_coset_recovery.py)，认证记录、实例方向、128位真实恢复 |
+| 恢复材料的原生检测 | [verify_recovered_native_keys.py](scripts/defense/verify_recovered_native_keys.py)，原作者检测器与哈希核验反演 |
+| TR/PRC恢复迁移 | [recovered_carrier_transfer.py](scripts/defense/recovered_carrier_transfer.py)，冻结阈值、完整来源分母 |
 | 完成后逐条审计 | [summarize_native_baseline.py](scripts/defense/summarize_native_baseline.py) |
 
 每个运行在249的`runs/<run>/`保存冻结源码、协议哈希、逐样本产物和退出状态。当前代码可继续维护；重放既有结果使用该运行的冻结版本。工作进程拒绝覆盖已有结果。
@@ -40,7 +43,7 @@ SemBind生成和反演均为50步，inverse order0、VAE decoder优化100步。G
 
 ## 证据和执行约束
 
-[完整报告索引](reports/README.md)保留已完成实验和失败结果。[100提示词轨迹测量](reports/phase1_trajectory_native_gs_20261113/report.md)未通过冻结门槛；[内容密钥评估](docs/CONTENT_KEY_FEASIBILITY.md)记录后续研究所需解决的生成时序和实例区分问题。新防御训练待基线验收后推进。
+[完整报告索引](reports/README.md)保留已完成实验和失败结果。[内容密钥评估](docs/CONTENT_KEY_FEASIBILITY.md)记录生成后登记的协议、实例区分及内容熵问题。当前实现使用冻结SSCD，已完成实际恢复；新的码器训练尚未执行。
 
 所有模型推理和CPU评分仅在SSH主机249的`/data0/liyanlei/watermark_research`执行。只使用空闲GPU7、5、4，最多三张，始终排除GPU6；以进程退出事件接续任务，不持续轮询。模型、图像和私钥留在服务器，代码与可公开证据每完成一个单元就提交并推送main。
 
