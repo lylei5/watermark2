@@ -1,0 +1,253 @@
+{
+  "scope": "Post-hoc controls after primary scores; development evidence only",
+  "source_sha256": "f337056997d652b1880795be1accf70efd1c22ff4db19e5da5d865bda1018aff",
+  "protocol_sha256": "ff8268c3b9d8f63abf7e267ab95963f38d2b51f94256b0dc7efea93c436cd378",
+  "rows_sha256": "fc36c5f4a6399945eba96e611ba86e8ae8d2f814544e654c2d03e7f2fc0ba3c6",
+  "artifact_latents_verified": 130,
+  "exact_native_ba_replays": 130,
+  "controls": [
+    {
+      "predictor": "coordinate_ber",
+      "intercept": -0.3700244768575993,
+      "slope": 1.8694224828791124,
+      "residual_threshold": 0.26719749656099556,
+      "source_held_out_r2": 0.4263471667367932,
+      "evaluation": [
+        {
+          "kind": "clean",
+          "total": 3,
+          "accepted": 3
+        },
+        {
+          "kind": "distortions",
+          "total": 27,
+          "accepted": 27
+        },
+        {
+          "kind": "imprint",
+          "total": 3,
+          "accepted": 0
+        }
+      ]
+    },
+    {
+      "predictor": "coordinate_ber_minus_clean",
+      "intercept": -0.1683467029196999,
+      "slope": 2.0485508972431083,
+      "residual_threshold": 0.26230375088325564,
+      "source_held_out_r2": 0.45334690680719214,
+      "evaluation": [
+        {
+          "kind": "clean",
+          "total": 3,
+          "accepted": 3
+        },
+        {
+          "kind": "distortions",
+          "total": 27,
+          "accepted": 24
+        },
+        {
+          "kind": "imprint",
+          "total": 3,
+          "accepted": 0
+        }
+      ]
+    },
+    {
+      "predictor": "clean_coordinate_ber_only",
+      "intercept": 0.08778565286714454,
+      "slope": 1.0768793219828179,
+      "residual_threshold": 0.46820684506099336,
+      "source_held_out_r2": -0.018306456903236734,
+      "evaluation": [
+        {
+          "kind": "clean",
+          "total": 3,
+          "accepted": 3
+        },
+        {
+          "kind": "distortions",
+          "total": 27,
+          "accepted": 27
+        },
+        {
+          "kind": "imprint",
+          "total": 3,
+          "accepted": 0
+        }
+      ]
+    },
+    {
+      "predictor": "postmajority_bit_error",
+      "intercept": 0.09089156556812142,
+      "slope": 2.5290408674469216,
+      "residual_threshold": 0.14864048775919747,
+      "source_held_out_r2": 0.6946817605138194,
+      "evaluation": [
+        {
+          "kind": "clean",
+          "total": 3,
+          "accepted": 3
+        },
+        {
+          "kind": "distortions",
+          "total": 27,
+          "accepted": 25
+        },
+        {
+          "kind": "imprint",
+          "total": 3,
+          "accepted": 0
+        }
+      ]
+    },
+    {
+      "predictor": "repetition_disagreement",
+      "intercept": -0.36565031164490236,
+      "slope": 1.882766400706976,
+      "residual_threshold": 0.2892698725030186,
+      "source_held_out_r2": 0.3753776882520039,
+      "evaluation": [
+        {
+          "kind": "clean",
+          "total": 3,
+          "accepted": 3
+        },
+        {
+          "kind": "distortions",
+          "total": 27,
+          "accepted": 27
+        },
+        {
+          "kind": "imprint",
+          "total": 3,
+          "accepted": 0
+        }
+      ]
+    },
+    {
+      "predictor": "spatial_error_std",
+      "intercept": -0.11878676245129322,
+      "slope": 5.053478165841861,
+      "residual_threshold": 0.43064692548603134,
+      "source_held_out_r2": 0.4144159294475315,
+      "evaluation": [
+        {
+          "kind": "clean",
+          "total": 3,
+          "accepted": 3
+        },
+        {
+          "kind": "distortions",
+          "total": 27,
+          "accepted": 26
+        },
+        {
+          "kind": "imprint",
+          "total": 3,
+          "accepted": 0
+        }
+      ]
+    },
+    {
+      "predictor": "latent_rms",
+      "intercept": 3.0669552587270594,
+      "slope": -3.0392403313764684,
+      "residual_threshold": 0.33310018039370126,
+      "source_held_out_r2": 0.4981235411111471,
+      "evaluation": [
+        {
+          "kind": "clean",
+          "total": 3,
+          "accepted": 3
+        },
+        {
+          "kind": "distortions",
+          "total": 27,
+          "accepted": 26
+        },
+        {
+          "kind": "imprint",
+          "total": 3,
+          "accepted": 0
+        }
+      ]
+    },
+    {
+      "predictor": "latent_rms_difference_from_clean",
+      "intercept": 0.07264125055264378,
+      "slope": 3.636328523283803,
+      "residual_threshold": 0.33345480429417623,
+      "source_held_out_r2": 0.586497899829846,
+      "evaluation": [
+        {
+          "kind": "clean",
+          "total": 3,
+          "accepted": 3
+        },
+        {
+          "kind": "distortions",
+          "total": 27,
+          "accepted": 26
+        },
+        {
+          "kind": "imprint",
+          "total": 3,
+          "accepted": 0
+        }
+      ]
+    }
+  ],
+  "bootstrap": {
+    "repetitions": 2000,
+    "unit": "source",
+    "source_held_out_r2_percentile95": [
+      0.3015087919268193,
+      0.5173752199453252
+    ],
+    "within_condition_correlation_percentile95": [
+      0.7563389726459371,
+      0.9173588677735511
+    ],
+    "note": "Held-out predictions fixed before resampling losses; exploratory interval on10 sources"
+  },
+  "leave_condition_out_sensitivity": [
+    {
+      "omitted": "random_crop_ratio",
+      "source_held_out_r2": 0.3982439115263102
+    },
+    {
+      "omitted": "random_drop_ratio",
+      "source_held_out_r2": 0.3980535746179483
+    },
+    {
+      "omitted": "brightness_factor",
+      "source_held_out_r2": 0.4008545812413342
+    },
+    {
+      "omitted": "jpeg_ratio",
+      "source_held_out_r2": 0.4146311681188989
+    },
+    {
+      "omitted": "gaussian_blur_r",
+      "source_held_out_r2": 0.5352808690920468
+    },
+    {
+      "omitted": "gaussian_std",
+      "source_held_out_r2": 0.42254741415429986
+    },
+    {
+      "omitted": "median_blur_k",
+      "source_held_out_r2": 0.4048798447533368
+    },
+    {
+      "omitted": "sp_prob",
+      "source_held_out_r2": 0.44821461295759457
+    },
+    {
+      "omitted": "resize_ratio",
+      "source_held_out_r2": 0.4255224666705517
+    }
+  ]
+}

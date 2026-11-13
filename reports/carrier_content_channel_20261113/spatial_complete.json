@@ -1,0 +1,200 @@
+{
+  "status": "complete",
+  "protocol_sha256": "17433026e96feb017c00ebdf4acd1af8efd4e63db0ec77558738e9c51f2701d7",
+  "readouts_sha256": "9baf43e254d6485a141ed7b11ffa774e6ad2f3d14aab5b5cef1d84f1df04b17f",
+  "coordinate_error_parity": 130,
+  "results": [
+    {
+      "readout": "carrier_error16",
+      "dimensions": 16,
+      "penalty": 0.1,
+      "source_held_out_r2": 0.5953988583487109,
+      "residual_threshold": 0.13436907124714542,
+      "evaluation": [
+        {
+          "kind": "clean",
+          "total": 3,
+          "accepted": 3
+        },
+        {
+          "kind": "distortions",
+          "total": 27,
+          "accepted": 23
+        },
+        {
+          "kind": "imprint",
+          "total": 3,
+          "accepted": 0
+        }
+      ]
+    },
+    {
+      "readout": "carrier_error16",
+      "dimensions": 16,
+      "penalty": 1.0,
+      "source_held_out_r2": 0.4891993549057375,
+      "residual_threshold": 0.2727166813018498,
+      "evaluation": [
+        {
+          "kind": "clean",
+          "total": 3,
+          "accepted": 3
+        },
+        {
+          "kind": "distortions",
+          "total": 27,
+          "accepted": 27
+        },
+        {
+          "kind": "imprint",
+          "total": 3,
+          "accepted": 0
+        }
+      ]
+    },
+    {
+      "readout": "latent_rms16",
+      "dimensions": 16,
+      "penalty": 0.1,
+      "source_held_out_r2": 0.6863451439622373,
+      "residual_threshold": 0.2138859982380797,
+      "evaluation": [
+        {
+          "kind": "clean",
+          "total": 3,
+          "accepted": 3
+        },
+        {
+          "kind": "distortions",
+          "total": 27,
+          "accepted": 25
+        },
+        {
+          "kind": "imprint",
+          "total": 3,
+          "accepted": 0
+        }
+      ]
+    },
+    {
+      "readout": "latent_rms16",
+      "dimensions": 16,
+      "penalty": 1.0,
+      "source_held_out_r2": 0.5693636496320671,
+      "residual_threshold": 0.2845224546552326,
+      "evaluation": [
+        {
+          "kind": "clean",
+          "total": 3,
+          "accepted": 3
+        },
+        {
+          "kind": "distortions",
+          "total": 27,
+          "accepted": 26
+        },
+        {
+          "kind": "imprint",
+          "total": 3,
+          "accepted": 0
+        }
+      ]
+    },
+    {
+      "readout": "latent_mean_and_rms32",
+      "dimensions": 32,
+      "penalty": 0.1,
+      "source_held_out_r2": 0.7936560815708,
+      "residual_threshold": 0.18113636399179078,
+      "evaluation": [
+        {
+          "kind": "clean",
+          "total": 3,
+          "accepted": 3
+        },
+        {
+          "kind": "distortions",
+          "total": 27,
+          "accepted": 26
+        },
+        {
+          "kind": "imprint",
+          "total": 3,
+          "accepted": 0
+        }
+      ]
+    },
+    {
+      "readout": "latent_mean_and_rms32",
+      "dimensions": 32,
+      "penalty": 1.0,
+      "source_held_out_r2": 0.7340671452911964,
+      "residual_threshold": 0.21284251511617308,
+      "evaluation": [
+        {
+          "kind": "clean",
+          "total": 3,
+          "accepted": 3
+        },
+        {
+          "kind": "distortions",
+          "total": 27,
+          "accepted": 26
+        },
+        {
+          "kind": "imprint",
+          "total": 3,
+          "accepted": 0
+        }
+      ]
+    },
+    {
+      "readout": "carrier_error_and_rms32",
+      "dimensions": 32,
+      "penalty": 0.1,
+      "source_held_out_r2": 0.7506645518099087,
+      "residual_threshold": 0.09700358206500814,
+      "evaluation": [
+        {
+          "kind": "clean",
+          "total": 3,
+          "accepted": 3
+        },
+        {
+          "kind": "distortions",
+          "total": 27,
+          "accepted": 23
+        },
+        {
+          "kind": "imprint",
+          "total": 3,
+          "accepted": 0
+        }
+      ]
+    },
+    {
+      "readout": "carrier_error_and_rms32",
+      "dimensions": 32,
+      "penalty": 1.0,
+      "source_held_out_r2": 0.6893192938692263,
+      "residual_threshold": 0.18798862591275423,
+      "evaluation": [
+        {
+          "kind": "clean",
+          "total": 3,
+          "accepted": 3
+        },
+        {
+          "kind": "distortions",
+          "total": 27,
+          "accepted": 25
+        },
+        {
+          "kind": "imprint",
+          "total": 3,
+          "accepted": 0
+        }
+      ]
+    }
+  ]
+}

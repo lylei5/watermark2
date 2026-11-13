@@ -2,7 +2,9 @@
 
 本项目研究扩散水印的内容绑定防御，同时建立可复核的SemBind、PGID、SEAL原生基线。[实时状态](project_state.json)记录运行队列；[验收契约](docs/THREE_BASELINE_REPRODUCTION.md)规定实现和数值复现的范围。
 
-最新的[发布实例诊断](reports/instance_representation_20261113/report.md)完成100提示词、三种表征与两种参考方式的比较。评估侧SSCD最终图参考保留428/450张处理图，同提示词不同实例误匹配1/50；SemBind码对应420/450、42/50。[二值化实验](reports/sscd_binary_fe_20261113/report.md)进一步将1024位码的95%校准恢复半径从385–390降到214–220位。这些结果指向[最终实例的恢复区域](docs/INSTANCE_BINDING_RESEARCH.md)；完整水印防御和密钥恢复另行验证。PGID的TR/PRC完整151更新评测正在补全。
+最新的[载体与内容配对测量](reports/carrier_content_channel_20261113/report.md)重新执行130张图的检测，全部原生BA重放一致。10个完整151更新Imprint输出均通过原生GS、均被最终图SSCD门控拒绝。载体错误统计可预测部分内容漂移；等维数通用潜变量统计的预测更准，已纳入方法对照。[处理误差方向实验](reports/instance_nuisance_geometry_20261113/report.md)进一步表明，全局处理方向跨实例迁移有限；研究继续围绕[最终实例的恢复区域](docs/INSTANCE_BINDING_RESEARCH.md)推进。TR/PRC完整攻击与配对合法图任务状态见project_state.json。
+
+[100提示词表征诊断](reports/instance_representation_20261113/report.md)比较三种表征与两种参考方式。评估侧SSCD最终图参考保留428/450张处理图，同提示词不同实例误匹配1/50；SemBind码对应420/450、42/50。[二值化实验](reports/sscd_binary_fe_20261113/report.md)将1024位码的95%校准恢复半径从385–390降到214–220位。普通子空间对照进一步达到187–208位；实际密钥恢复仍是后续方法工作。
 
 [2026-11-13研究汇报](presentations/defense_briefing_20261113/README.md)包含中山大学模板演示文稿、逐页讲稿和实验来源。
 

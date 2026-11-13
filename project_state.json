@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-13T04:14:59.307699+00:00",
+  "updated_at": "2026-11-13T04:24:53.038298+00:00",
   "status": "native_baselines_and_instance_diagnostic",
-  "active_experiments": 3,
+  "active_experiments": 2,
   "queued_experiments": 3,
-  "latest_progress_report": "reports/instance_representation_20261113/report.md",
+  "latest_progress_report": "reports/carrier_content_channel_20261113/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/INSTANCE_BINDING_RESEARCH.md",
   "native_sembind_reproduction_complete": false,
@@ -419,7 +419,7 @@
     "extractor_implemented": false,
     "encoder_training_started": false,
     "overall_fpr_established": false,
-    "priority": "Develop final-instance recovery geometry; validate frozen simple SSCD gate and native baselines before new encoder training"
+    "priority": "Design instance-conditioned recovery regions and actual recovery; compare direct SSCD, global subspace correction and generic inversion-statistic conditioning. Await native TR/PRC full attack and genuine controls."
   },
   "native_baseline_queue_order": [],
   "native_postprocessing": {
@@ -492,7 +492,7 @@
   },
   "carrier_content_channel": {
     "run": "carrier_content_channel_20261113",
-    "status": "running",
+    "status": "complete",
     "pid": 30080,
     "gpu": 7,
     "protocol": "protocols/carrier_content_channel_20261113.json",
@@ -502,7 +502,15 @@
     "encoder_training": false,
     "key_recovery": false,
     "postprocessing": "Frozen genuine-only source-separated scorer, kernel process-exit wait",
-    "research_question": "Does native carrier error predict final-instance content drift?"
+    "research_question": "Does native carrier error predict final-instance content drift?",
+    "report": "reports/carrier_content_channel_20261113/report.md",
+    "exact_ba_replays": 130,
+    "source_held_out_r2": 0.42634716673679307,
+    "evaluation_genuine": {
+      "conditioned": 27,
+      "sscd_calibrated": 26,
+      "total": 27
+    }
   },
   "pgid_carrier_genuine_controls": {
     "run": "pgid_carrier_genuine_20261113",
@@ -540,5 +548,14 @@
     ],
     "configurations": 16,
     "key_recovery": false
+  },
+  "carrier_spatial_information": {
+    "run": "carrier_spatial_information_20261113",
+    "status": "complete",
+    "protocol": "protocols/carrier_spatial_information_20261113.json",
+    "result": "reports/carrier_content_channel_20261113/spatial_complete.json",
+    "scope": "Post-hoc equal-dimensional readout controls; generic latent statistics predict content drift better",
+    "configurations": 8,
+    "coordinate_error_parity": 130
   }
 }

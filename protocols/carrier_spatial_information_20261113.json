@@ -1,0 +1,40 @@
+{
+  "created_at": "2026-11-13T04:20:52.312447+00:00",
+  "parent": "/data0/liyanlei/watermark_research/runs/carrier_content_channel_20261113",
+  "rows_sha256": "fc36c5f4a6399945eba96e611ba86e8ae8d2f814544e654c2d03e7f2fc0ba3c6",
+  "parent_protocol_sha256": "ff8268c3b9d8f63abf7e267ab95963f38d2b51f94256b0dc7efea93c436cd378",
+  "scope": "Post-hoc mechanism development; all configurations reported; no independent confirmation",
+  "readouts": [
+    "carrier_error16",
+    "latent_rms16",
+    "latent_mean_and_rms32",
+    "carrier_error_and_rms32"
+  ],
+  "partitions": "4 latent channels x2x2 spatial cells,32x32 pixels per cell",
+  "model": "Standardized ridge regression, mean squared loss plus lambda times squared coefficients",
+  "lambdas": [
+    0.1,
+    1.0
+  ],
+  "fit": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "calibration": [
+    4,
+    5,
+    6
+  ],
+  "evaluation": [
+    7,
+    8,
+    9
+  ],
+  "threshold": "Minimum residual threshold retaining26/27 calibration distortions",
+  "cross_validation": "Leave one source out over90 genuine transformations",
+  "attack_labels_used_for_fit": false,
+  "new_or_modified_attacks": false,
+  "source_sha256": "f102e92a0645921cdac706f657674171937ce3e69ca9028070ea6e4aaf465654"
+}
