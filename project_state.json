@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-13T03:25:33.025225+00:00",
+  "updated_at": "2026-11-13T04:05:42.436612+00:00",
   "status": "native_baselines_and_instance_diagnostic",
-  "active_experiments": 2,
+  "active_experiments": 3,
   "queued_experiments": 1,
   "latest_progress_report": "reports/instance_representation_20261113/report.md",
   "evidence_index": "reports/README.md",
@@ -489,5 +489,19 @@
     "predecessor_run": "pgid_carrier_coverage_20261113",
     "threshold": 0.6199655532836914,
     "attack_generation": false
+  },
+  "carrier_content_channel": {
+    "run": "carrier_content_channel_20261113",
+    "status": "running",
+    "pid": 30080,
+    "gpu": 7,
+    "protocol": "protocols/carrier_content_channel_20261113.json",
+    "sources": 10,
+    "images": 130,
+    "attack_generation": false,
+    "encoder_training": false,
+    "key_recovery": false,
+    "postprocessing": "Frozen genuine-only source-separated scorer, kernel process-exit wait",
+    "research_question": "Does native carrier error predict final-instance content drift?"
   }
 }
