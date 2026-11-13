@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-13T15:45:25.097810+00:00",
+  "updated_at": "2026-11-13T16:07:51.584418+00:00",
   "status": "native_baselines_and_instance_key_recovery",
   "active_experiments": 2,
   "queued_experiments": 0,
-  "latest_progress_report": "reports/paired_channel_recovery_20261113/report.md",
+  "latest_progress_report": "reports/recovered_carrier_transfer_20261113/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/INSTANCE_BINDING_RESEARCH.md",
   "native_sembind_reproduction_complete": false,
@@ -63,6 +63,14 @@
     {
       "path": "reports/paired_channel_recovery_20261113/report.md",
       "scope": "80 fresh enrollment inversions,3960 actual recoveries,199 nativeGS calls; paired channel45-46/50 vs multi-templateSSCD48/50 at95% calibration"
+    },
+    {
+      "path": "reports/recovered_carrier_transfer_20261113/report.md",
+      "scope": "280 fresh native inversions and3360actual recoveries completed;2179exact successful recovery events,190restored native calls. PGID genuine join pending."
+    },
+    {
+      "path": "reports/pgid_carrier_coverage_20261113/report.md",
+      "scope": "TR/PRC10 full151-update Imprint cases each;140 decisions,80 image hashes,25 source files verified; native10/10 and PGID0/10 at each checkpoint"
     },
     {
       "path": "reports/instance_representation_20261113/report.md",
@@ -520,19 +528,20 @@
     }
   },
   "pgid_carrier_genuine_controls": {
-    "run": "pgid_carrier_genuine_20261113_v2",
     "status": "running",
     "protocol": "protocols/pgid_carrier_genuine_20261113.json",
     "jobs": [
       {
         "carrier": "TR",
-        "pid": 47899,
-        "gpu": 5
+        "pid": 24859,
+        "gpu": 5,
+        "run": "pgid_carrier_genuine_20261113_v3"
       },
       {
         "carrier": "PRC",
         "pid": 47900,
-        "gpu": 4
+        "gpu": 4,
+        "run": "pgid_carrier_genuine_20261113_v2"
       }
     ],
     "queries": 220,
@@ -544,7 +553,14 @@
       "status": "failed",
       "error": "BrokenPipeError before running state",
       "protocol_unchanged": true
-    }
+    },
+    "runs": {
+      "TR": "pgid_carrier_genuine_20261113_v3",
+      "PRC": "pgid_carrier_genuine_20261113_v2"
+    },
+    "tr_protocol": "protocols/pgid_carrier_genuine_20261113_v3.json",
+    "tr_csv_fix": "TR has no message payload column; use None. PRC lookup and all upstream functions unchanged.",
+    "execution_record": "reports/pgid_carrier_genuine_20261113/execution.md"
   },
   "instance_nuisance_geometry": {
     "run": "instance_nuisance_geometry_20261113",
@@ -620,7 +636,7 @@
     "status": "recovery_complete_waiting_for_genuine_relaunch",
     "protocol": "protocols/recovered_carrier_transfer_20261113.json",
     "worker_pid": 39091,
-    "auditor_pid": 39092,
+    "auditor_pid": 36088,
     "predecessor_pid": 34090,
     "gpu_after_exit": 7,
     "native_inversions": 280,
@@ -630,14 +646,31 @@
     "attack_generation": false,
     "independent_confirmation": false,
     "audit_waits_for": [
-      39091,
-      4171,
-      7671
+      24859,
+      47900
     ],
     "protocol_note": "reports/recovered_carrier_transfer_20261113/protocol_note.md",
-    "audit_status": "Original audit failed because genuine completion artifacts were missing; versioned audit pending"
+    "audit_status": "waiting_for_TRv3_and_PRCv2_exit",
+    "comparison_pid": 21436,
+    "audit_version": 3,
+    "result_audit": "audited_scores_v3.json",
+    "comparison_output": "comparison_analysis.json",
+    "report": "reports/recovered_carrier_transfer_20261113/report.md",
+    "recovery_artifact_audit": "reports/recovered_carrier_transfer_20261113/recovery_artifact_audit.json",
+    "successful_recoveries": 2179,
+    "distinct_restored_native_calls": 190,
+    "native_genuine": {
+      "TR": {
+        "accepted": 100,
+        "total": 100
+      },
+      "PRC": {
+        "accepted": 64,
+        "total": 100
+      }
+    }
   },
-  "last_queue_observation": "2026-11-13T15:44:23.407492+00:00",
+  "last_queue_observation": "2026-11-13T16:03:30+00:00",
   "paired_channel_recovery": {
     "run": "paired_edit_registration_20261113",
     "status": "complete",

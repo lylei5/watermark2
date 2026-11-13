@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-11-13T15:44:23.407492+00:00",
+  "original_run": "/data0/liyanlei/watermark_research/runs/pgid_carrier_genuine_20261113",
+  "reason": "Both original workers failed with BrokenPipeError before running state; launch with detached stdin and persistent file stdout/stderr",
+  "same_numeric_source": true,
+  "protocol_sha256": "412d4d296bf4ea7dc6429ec82daa7b1864a3ab5e3c2fadabf692690bb8a918eb",
+  "jobs": [
+    {
+      "carrier": "TR",
+      "pid": 47899,
+      "gpu": 5
+    },
+    {
+      "carrier": "PRC",
+      "pid": 47900,
+      "gpu": 4
+    }
+  ]
+}

@@ -1,0 +1,626 @@
+{
+  "status": "complete",
+  "pid": 42519,
+  "carrier": "PRC",
+  "protocol_sha256": "eb8e6162be7617602cfa888bfdf7a73e55c695d263b0af6675280d23243e8177",
+  "gpu": 4,
+  "gpu_uuid": "GPU-748b31fa-0510-6b56-f820-f3812266ed28",
+  "command": [
+    "/data0/liyanlei/watermark_research/envs/pgid_revalidation_py310/bin/python",
+    "-u",
+    "/data0/liyanlei/watermark_research/third_party/frozen/PGID_dc4ad96/run.py",
+    "--wm_type",
+    "PRC",
+    "--attack_type",
+    "forgery",
+    "--num_images",
+    "10",
+    "--start_index",
+    "0",
+    "--out_dir",
+    "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/PRC",
+    "--modelid_target",
+    "Manojb/stable-diffusion-2-1-base",
+    "--modelid_attacker",
+    "Manojb/stable-diffusion-2-1-base",
+    "--scheduler_target",
+    "DPM",
+    "--scheduler_attacker",
+    "DDIM",
+    "--num_inference_steps_target",
+    "50",
+    "--num_inference_steps_attacker",
+    "50",
+    "--steps",
+    "151",
+    "--lr",
+    "0.01",
+    "--seed",
+    "1",
+    "--gpu",
+    "cuda:0",
+    "--cover_images_dir",
+    "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/PGID/cover_images/ms_coco"
+  ],
+  "started_at": "2026-11-13T03:05:56.411069+00:00",
+  "rows": [
+    {
+      "task": 0,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 0,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 0,
+      "stage": "defended",
+      "checkpoint": 50,
+      "metric": false,
+      "accepted": false
+    },
+    {
+      "task": 0,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 0,
+      "stage": "defended",
+      "checkpoint": 100,
+      "metric": false,
+      "accepted": false
+    },
+    {
+      "task": 0,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 0,
+      "stage": "defended",
+      "checkpoint": 150,
+      "metric": false,
+      "accepted": false
+    },
+    {
+      "task": 1,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 1,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 1,
+      "stage": "defended",
+      "checkpoint": 50,
+      "metric": false,
+      "accepted": false
+    },
+    {
+      "task": 1,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 1,
+      "stage": "defended",
+      "checkpoint": 100,
+      "metric": false,
+      "accepted": false
+    },
+    {
+      "task": 1,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 1,
+      "stage": "defended",
+      "checkpoint": 150,
+      "metric": false,
+      "accepted": false
+    },
+    {
+      "task": 2,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 2,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 2,
+      "stage": "defended",
+      "checkpoint": 50,
+      "metric": false,
+      "accepted": false
+    },
+    {
+      "task": 2,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 2,
+      "stage": "defended",
+      "checkpoint": 100,
+      "metric": false,
+      "accepted": false
+    },
+    {
+      "task": 2,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 2,
+      "stage": "defended",
+      "checkpoint": 150,
+      "metric": false,
+      "accepted": false
+    },
+    {
+      "task": 3,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 3,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 3,
+      "stage": "defended",
+      "checkpoint": 50,
+      "metric": false,
+      "accepted": false
+    },
+    {
+      "task": 3,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 3,
+      "stage": "defended",
+      "checkpoint": 100,
+      "metric": false,
+      "accepted": false
+    },
+    {
+      "task": 3,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 3,
+      "stage": "defended",
+      "checkpoint": 150,
+      "metric": false,
+      "accepted": false
+    },
+    {
+      "task": 4,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 4,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 4,
+      "stage": "defended",
+      "checkpoint": 50,
+      "metric": false,
+      "accepted": false
+    },
+    {
+      "task": 4,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 4,
+      "stage": "defended",
+      "checkpoint": 100,
+      "metric": false,
+      "accepted": false
+    },
+    {
+      "task": 4,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 4,
+      "stage": "defended",
+      "checkpoint": 150,
+      "metric": false,
+      "accepted": false
+    },
+    {
+      "task": 5,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 5,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 5,
+      "stage": "defended",
+      "checkpoint": 50,
+      "metric": false,
+      "accepted": false
+    },
+    {
+      "task": 5,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 5,
+      "stage": "defended",
+      "checkpoint": 100,
+      "metric": false,
+      "accepted": false
+    },
+    {
+      "task": 5,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 5,
+      "stage": "defended",
+      "checkpoint": 150,
+      "metric": false,
+      "accepted": false
+    },
+    {
+      "task": 6,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 6,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 6,
+      "stage": "defended",
+      "checkpoint": 50,
+      "metric": false,
+      "accepted": false
+    },
+    {
+      "task": 6,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 6,
+      "stage": "defended",
+      "checkpoint": 100,
+      "metric": false,
+      "accepted": false
+    },
+    {
+      "task": 6,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 6,
+      "stage": "defended",
+      "checkpoint": 150,
+      "metric": false,
+      "accepted": false
+    },
+    {
+      "task": 7,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 7,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 7,
+      "stage": "defended",
+      "checkpoint": 50,
+      "metric": false,
+      "accepted": false
+    },
+    {
+      "task": 7,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 7,
+      "stage": "defended",
+      "checkpoint": 100,
+      "metric": false,
+      "accepted": false
+    },
+    {
+      "task": 7,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 7,
+      "stage": "defended",
+      "checkpoint": 150,
+      "metric": false,
+      "accepted": false
+    },
+    {
+      "task": 8,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 8,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 8,
+      "stage": "defended",
+      "checkpoint": 50,
+      "metric": false,
+      "accepted": false
+    },
+    {
+      "task": 8,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 8,
+      "stage": "defended",
+      "checkpoint": 100,
+      "metric": false,
+      "accepted": false
+    },
+    {
+      "task": 8,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 8,
+      "stage": "defended",
+      "checkpoint": 150,
+      "metric": false,
+      "accepted": false
+    },
+    {
+      "task": 9,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 9,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 9,
+      "stage": "defended",
+      "checkpoint": 50,
+      "metric": false,
+      "accepted": false
+    },
+    {
+      "task": 9,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 9,
+      "stage": "defended",
+      "checkpoint": 100,
+      "metric": false,
+      "accepted": false
+    },
+    {
+      "task": 9,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "metric": true,
+      "accepted": true
+    },
+    {
+      "task": 9,
+      "stage": "defended",
+      "checkpoint": 150,
+      "metric": false,
+      "accepted": false
+    }
+  ],
+  "summary": [
+    {
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "accepted": 10,
+      "total": 10
+    },
+    {
+      "stage": "attacked",
+      "checkpoint": 50,
+      "accepted": 10,
+      "total": 10
+    },
+    {
+      "stage": "attacked",
+      "checkpoint": 100,
+      "accepted": 10,
+      "total": 10
+    },
+    {
+      "stage": "attacked",
+      "checkpoint": 150,
+      "accepted": 10,
+      "total": 10
+    },
+    {
+      "stage": "defended",
+      "checkpoint": 50,
+      "accepted": 0,
+      "total": 10
+    },
+    {
+      "stage": "defended",
+      "checkpoint": 100,
+      "accepted": 0,
+      "total": 10
+    },
+    {
+      "stage": "defended",
+      "checkpoint": 150,
+      "accepted": 0,
+      "total": 10
+    }
+  ],
+  "raw_sha256": "618b166f4c173e69d56f29e05383ae83ed8587385c0401560da9574972ff2d6b",
+  "image_sha256": {
+    "attack=forgery/attacked_images_step_150/image_008.png": "3f5fb05cf2a91a16813fc39301f4cf6c17afab97881700977120dbb002f8c944",
+    "attack=forgery/attacked_images_step_150/image_007.png": "3d108061151382258ba18c5c8f4326f8d5b0eb0bc16d734a4634274c51242eb1",
+    "attack=forgery/attacked_images_step_150/image_005.png": "8a749a68fa770c91d8d1b4f7da4a73649886edaa57983d48bb9bd68280129bc8",
+    "attack=forgery/attacked_images_step_150/image_009.png": "2682926653b29c9dbb42e9d1fbd36fdc06869199f2d93ad23b19296188dd80d3",
+    "attack=forgery/attacked_images_step_150/image_001.png": "613bae7ab5e1be8bd4bc778a53b22bee1cc7b9e0238f5875a1a26c7e003f485e",
+    "attack=forgery/attacked_images_step_150/image_006.png": "ee5a3ba1deee1da55d67ee4e61aaa1f3490e35aabec8400d16f27cba17e0d2fa",
+    "attack=forgery/attacked_images_step_150/image_004.png": "544b73ae71a7225b8f163d9569696bfeab133bfa15f2d5169f226d162145388f",
+    "attack=forgery/attacked_images_step_150/image_002.png": "83dcfb87b3c88fe9731d723ce82075419da9dcbe22a3ded25e31dc5979705c1d",
+    "attack=forgery/attacked_images_step_150/image_000.png": "95bb9d37ba6e54384f4c679160614bd38bc81e40335d76b6b4b4ddc35c171c8a",
+    "attack=forgery/attacked_images_step_150/image_003.png": "2df878f20491c969fd99547f32c80a83617c3ef36ad359a87c01e4448657d982",
+    "attack=forgery/attacked_images_step_50/image_008.png": "b6d12e4cfc31acd1d577195c5bed0574eb5f2e2eb4bb6bf93dd743cd91af2a48",
+    "attack=forgery/attacked_images_step_50/image_007.png": "35f630549745bd2b6e4d731ff5728ec98cf916526bdb924b705e359807b64a1b",
+    "attack=forgery/attacked_images_step_50/image_005.png": "69264498715937c463448372d8081f7b851d16191a20af16e26c7181d57c6809",
+    "attack=forgery/attacked_images_step_50/image_009.png": "e4a1f011d2f558ca60fa33235b21bf3f8b777c55f9f4eabf59a2d8301eb22668",
+    "attack=forgery/attacked_images_step_50/image_001.png": "cd6a63f5af04258b8ecaa43748beea353ccb09a4776e0cab7fc26e25c0e8892a",
+    "attack=forgery/attacked_images_step_50/image_006.png": "64a5909d7951f44bffdef387fecadb2cd9a119aea9c3cb69c7f9cf366e8ed791",
+    "attack=forgery/attacked_images_step_50/image_004.png": "fb18e56b32c19eaf7570a5c15b722f49dd3a6d7bb7a16b03ad694dedf651d72b",
+    "attack=forgery/attacked_images_step_50/image_002.png": "a9f1e3a71597481728263433559b44f6f0bee535fd1bad96936129095eedb56a",
+    "attack=forgery/attacked_images_step_50/image_000.png": "b004a470f3338fbddf78e000865b3967f6b9be7fa7ac1d357fb763a625a19a48",
+    "attack=forgery/attacked_images_step_50/image_003.png": "36d5199ff96e33d62679f1229906519e36563accfcdfdf15193968ad752a8fbf",
+    "attack=forgery/watermarked_images/image_008.png": "d88ebbdd71a929b7d32bb3609e4da16b498809fa4285ce1fb88c9401b7f6b2ec",
+    "attack=forgery/watermarked_images/image_007.png": "471be4e91265f28e648a86165546c8d4735346e4e615cb274277aad4cfef163e",
+    "attack=forgery/watermarked_images/image_005.png": "7646f5ae841d5ee123379f7f3effdb42476ee413ef7d5c98332560a236d520e0",
+    "attack=forgery/watermarked_images/image_009.png": "2ef037f6ad0b66cc84cc82eb3bf4696a0b86d6d84010011ddcc7e5308132ea74",
+    "attack=forgery/watermarked_images/image_001.png": "027f1d10e77f230243e6dc833f689d489938c6a82f041a0fa1c354973e200c9f",
+    "attack=forgery/watermarked_images/image_006.png": "00db20bcf5db61754f56174b5f590cbc3d3e02b72d9c56ce36b1bccbd4a8d883",
+    "attack=forgery/watermarked_images/image_004.png": "4726c306a779884236c433e7adbcdcc68277e900d021f501f9dbb7a61f70002d",
+    "attack=forgery/watermarked_images/image_002.png": "8385a11f4384cdf2e27da067d753fd6c7d13f27e874f3bfa597284a18df5bd37",
+    "attack=forgery/watermarked_images/image_000.png": "61ef717b6adeeb747fc82f0761bc927b63b3e7e5e44cfe86120cdbf34b15d28c",
+    "attack=forgery/watermarked_images/image_003.png": "626825cf36f53212aa53db0c5626b85d04ffcca1dec9c5f6523d2a027313185a",
+    "attack=forgery/attacked_images_step_100/image_008.png": "67f1c3e238d57f77ef1bcdc764679bef1afed6f062b6c538596a12862b1b855d",
+    "attack=forgery/attacked_images_step_100/image_007.png": "2f709524de0371bbe58e954dd8614db5ee3e424ae36b17f5be6cd10b6fefb99c",
+    "attack=forgery/attacked_images_step_100/image_005.png": "b2154d079ce15c2b1080fefb0e141eec7ee85fe6147a21624c2a7a2b8f2351d4",
+    "attack=forgery/attacked_images_step_100/image_009.png": "a49acb020f868c680739cea05ee66559ec1be432a30091f8e25dffcc2f4a4130",
+    "attack=forgery/attacked_images_step_100/image_001.png": "08ae4af191259eb96a1ce162e0d2fed7812b53f25febeab23973dc8aff1f9b0d",
+    "attack=forgery/attacked_images_step_100/image_006.png": "7c395a37b9299b85d90cf65217416079a80bddda17717b74b87d926ce1dc6373",
+    "attack=forgery/attacked_images_step_100/image_004.png": "7a7616e92247fafa75d3f509ff0f6d2efd6436fe49a6e0f176357ca343bb8b52",
+    "attack=forgery/attacked_images_step_100/image_002.png": "f2f975eb559bd81b9c9f7676de9f4fa17e87138a5d264d54c3f307f79455db8c",
+    "attack=forgery/attacked_images_step_100/image_000.png": "50e873715913cf7f4ecfce1905dbbc7a630159a7eba01318b2ac1f2167c7021d",
+    "attack=forgery/attacked_images_step_100/image_003.png": "cf97426e392b8c610a46dcd6f75cb2c8f686bf035406bf08cc6be8f2b7bf5a7d"
+  },
+  "completed_at": "2026-11-13T08:37:49.559422+00:00"
+}

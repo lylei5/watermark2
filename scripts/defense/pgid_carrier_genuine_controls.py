@@ -183,7 +183,7 @@ def execute(run, carrier, plan):
                 query = distort.image_distortion(clean.copy(), seed, options).convert('RGB')
                 queries.append((name, query))
             original = next(x for x in native if int(x['image_idx']) == idx and x['stage'] == 'watermarked')
-            initial = original['message_bits_str_initial'] or None
+            initial = (original['message_bits_str_initial'] or None) if carrier == 'PRC' else None
             if carrier == 'PRC':
                 assert initial == ''.join(format(b, '08b') for b in wm.message)
             for kind, query in queries:

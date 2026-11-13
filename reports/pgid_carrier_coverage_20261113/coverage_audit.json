@@ -1,0 +1,113 @@
+{
+  "status": "complete",
+  "source_sha256": "ceed744ec2ff9abefa80b87d676fe33ea67247fb7080b4b147e27d221b982f46",
+  "protocol_sha256": "eb8e6162be7617602cfa888bfdf7a73e55c695d263b0af6675280d23243e8177",
+  "carrier_rows": 140,
+  "validated_images": 80,
+  "source_files": 25,
+  "actual_updates_per_source": 151,
+  "sources_per_carrier": 10,
+  "summary": [
+    {
+      "carrier": "TR",
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "accepted": 10,
+      "total": 10
+    },
+    {
+      "carrier": "TR",
+      "stage": "attacked",
+      "checkpoint": 50,
+      "accepted": 10,
+      "total": 10
+    },
+    {
+      "carrier": "TR",
+      "stage": "attacked",
+      "checkpoint": 100,
+      "accepted": 10,
+      "total": 10
+    },
+    {
+      "carrier": "TR",
+      "stage": "attacked",
+      "checkpoint": 150,
+      "accepted": 10,
+      "total": 10
+    },
+    {
+      "carrier": "TR",
+      "stage": "defended",
+      "checkpoint": 50,
+      "accepted": 0,
+      "total": 10
+    },
+    {
+      "carrier": "TR",
+      "stage": "defended",
+      "checkpoint": 100,
+      "accepted": 0,
+      "total": 10
+    },
+    {
+      "carrier": "TR",
+      "stage": "defended",
+      "checkpoint": 150,
+      "accepted": 0,
+      "total": 10
+    },
+    {
+      "carrier": "PRC",
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "accepted": 10,
+      "total": 10
+    },
+    {
+      "carrier": "PRC",
+      "stage": "attacked",
+      "checkpoint": 50,
+      "accepted": 10,
+      "total": 10
+    },
+    {
+      "carrier": "PRC",
+      "stage": "attacked",
+      "checkpoint": 100,
+      "accepted": 10,
+      "total": 10
+    },
+    {
+      "carrier": "PRC",
+      "stage": "attacked",
+      "checkpoint": 150,
+      "accepted": 10,
+      "total": 10
+    },
+    {
+      "carrier": "PRC",
+      "stage": "defended",
+      "checkpoint": 50,
+      "accepted": 0,
+      "total": 10
+    },
+    {
+      "carrier": "PRC",
+      "stage": "defended",
+      "checkpoint": 100,
+      "accepted": 0,
+      "total": 10
+    },
+    {
+      "carrier": "PRC",
+      "stage": "defended",
+      "checkpoint": 150,
+      "accepted": 0,
+      "total": 10
+    }
+  ],
+  "sscd_rows": 260,
+  "sscd_complete_sha256": "af9e45cb228987e31c7154a37170cda2cd4604c1cb14c7e046de46238e7e19f7",
+  "scope": "Complete original Imprint budgets; genuine/PGID and actual recovery are reported separately"
+}

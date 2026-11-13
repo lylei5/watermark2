@@ -1,6 +1,6 @@
 # TR/PRC实际恢复的冻结迁移协议
 
-本目录保存已启动的执行协议与派发记录，数值结果待任务完成。当前队列统一见[project_state.json](../../project_state.json)。
+本目录保存已完成恢复迁移的执行协议、派发记录与[数值结果](report.md)。280次反演和3360次恢复已完成；合法图PGID配对汇总按版本化执行记录衔接。当前队列统一见[project_state.json](../../project_state.json)。
 
 采用[GS开发实验](../instance_edit_quotient_20261113/report.md)冻结的四种方法、三组投影与90%/95%校准阈值。TR、PRC各10个来源，查询含干净图、九类官方合法处理、自然cover和已有完整151更新Imprint的三个检查点，每载体140个查询。
 
@@ -10,6 +10,6 @@
 
 验证材料采用完整原作者对象状态的可信序列化，以验证恢复接口。CPU检查中TR状态149336字节，PRC状态10041440字节；本轮按实际记录开销报告。密钥、状态和辅助记录均留在249的private_eval，公开协议只包含哈希。
 
-工作进程先通过pidfd等待现有SSCD门控进程退出，再检查GPU7空闲并绑定UUID。CPU审计进程等待恢复任务及两项合法图任务退出后生成audited_scores.json，不持续轮询。GPU6始终排除。
+恢复工作进程经pidfd等到SSCD门控进程退出，在空闲GPU7上完成。两项合法图对照的补跑与读取修正见[执行记录](../pgid_carrier_genuine_20261113/execution.md)。版本化审计在它们退出后生成audited_scores_v3.json；后续描述性比较另存comparison_analysis.json。原始失败记录保留，不持续轮询。GPU6始终排除。
 
 入口：[恢复与原生检测](../../scripts/defense/recovered_carrier_transfer.py)、[退出后配对审计](../../scripts/defense/score_recovered_carrier_transfer.py)。冻结参数见[协议](../../protocols/recovered_carrier_transfer_20261113.json)，派发见[launch.json](launch.json)。

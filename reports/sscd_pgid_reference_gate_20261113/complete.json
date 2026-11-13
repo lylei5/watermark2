@@ -1,0 +1,280 @@
+{
+  "status": "complete",
+  "pid": 34090,
+  "protocol_sha256": "d5c2c2ddbf5edfa0f986eab7be97adfcfbdbc11fb4920866067f2037df0e078a",
+  "gpu": 7,
+  "gpu_uuid": "GPU-9644fb82-cb6f-7311-8017-eaee41409bb7",
+  "started_at": 1794559075.0675604,
+  "rows": 260,
+  "summary": [
+    {
+      "carrier": "TR",
+      "kind": "clean",
+      "checkpoint": -1,
+      "total": 10,
+      "content_gate": 10,
+      "raw_carrier": 10,
+      "native_and_gate": 10,
+      "pgid": null
+    },
+    {
+      "carrier": "TR",
+      "kind": "imprint",
+      "checkpoint": 50,
+      "total": 10,
+      "content_gate": 0,
+      "raw_carrier": 10,
+      "native_and_gate": 0,
+      "pgid": 0
+    },
+    {
+      "carrier": "TR",
+      "kind": "imprint",
+      "checkpoint": 100,
+      "total": 10,
+      "content_gate": 0,
+      "raw_carrier": 10,
+      "native_and_gate": 0,
+      "pgid": 0
+    },
+    {
+      "carrier": "TR",
+      "kind": "imprint",
+      "checkpoint": 150,
+      "total": 10,
+      "content_gate": 0,
+      "raw_carrier": 10,
+      "native_and_gate": 0,
+      "pgid": 0
+    },
+    {
+      "carrier": "TR",
+      "kind": "random_crop_ratio",
+      "checkpoint": -1,
+      "total": 10,
+      "content_gate": 10,
+      "raw_carrier": null,
+      "native_and_gate": null,
+      "pgid": null
+    },
+    {
+      "carrier": "TR",
+      "kind": "random_drop_ratio",
+      "checkpoint": -1,
+      "total": 10,
+      "content_gate": 9,
+      "raw_carrier": null,
+      "native_and_gate": null,
+      "pgid": null
+    },
+    {
+      "carrier": "TR",
+      "kind": "brightness_factor",
+      "checkpoint": -1,
+      "total": 10,
+      "content_gate": 8,
+      "raw_carrier": null,
+      "native_and_gate": null,
+      "pgid": null
+    },
+    {
+      "carrier": "TR",
+      "kind": "jpeg_ratio",
+      "checkpoint": -1,
+      "total": 10,
+      "content_gate": 10,
+      "raw_carrier": null,
+      "native_and_gate": null,
+      "pgid": null
+    },
+    {
+      "carrier": "TR",
+      "kind": "gaussian_blur_r",
+      "checkpoint": -1,
+      "total": 10,
+      "content_gate": 10,
+      "raw_carrier": null,
+      "native_and_gate": null,
+      "pgid": null
+    },
+    {
+      "carrier": "TR",
+      "kind": "gaussian_std",
+      "checkpoint": -1,
+      "total": 10,
+      "content_gate": 10,
+      "raw_carrier": null,
+      "native_and_gate": null,
+      "pgid": null
+    },
+    {
+      "carrier": "TR",
+      "kind": "median_blur_k",
+      "checkpoint": -1,
+      "total": 10,
+      "content_gate": 10,
+      "raw_carrier": null,
+      "native_and_gate": null,
+      "pgid": null
+    },
+    {
+      "carrier": "TR",
+      "kind": "sp_prob",
+      "checkpoint": -1,
+      "total": 10,
+      "content_gate": 10,
+      "raw_carrier": null,
+      "native_and_gate": null,
+      "pgid": null
+    },
+    {
+      "carrier": "TR",
+      "kind": "resize_ratio",
+      "checkpoint": -1,
+      "total": 10,
+      "content_gate": 10,
+      "raw_carrier": null,
+      "native_and_gate": null,
+      "pgid": null
+    },
+    {
+      "carrier": "PRC",
+      "kind": "clean",
+      "checkpoint": -1,
+      "total": 10,
+      "content_gate": 10,
+      "raw_carrier": 10,
+      "native_and_gate": 10,
+      "pgid": null
+    },
+    {
+      "carrier": "PRC",
+      "kind": "imprint",
+      "checkpoint": 50,
+      "total": 10,
+      "content_gate": 0,
+      "raw_carrier": 10,
+      "native_and_gate": 0,
+      "pgid": 0
+    },
+    {
+      "carrier": "PRC",
+      "kind": "imprint",
+      "checkpoint": 100,
+      "total": 10,
+      "content_gate": 0,
+      "raw_carrier": 10,
+      "native_and_gate": 0,
+      "pgid": 0
+    },
+    {
+      "carrier": "PRC",
+      "kind": "imprint",
+      "checkpoint": 150,
+      "total": 10,
+      "content_gate": 0,
+      "raw_carrier": 10,
+      "native_and_gate": 0,
+      "pgid": 0
+    },
+    {
+      "carrier": "PRC",
+      "kind": "random_crop_ratio",
+      "checkpoint": -1,
+      "total": 10,
+      "content_gate": 10,
+      "raw_carrier": null,
+      "native_and_gate": null,
+      "pgid": null
+    },
+    {
+      "carrier": "PRC",
+      "kind": "random_drop_ratio",
+      "checkpoint": -1,
+      "total": 10,
+      "content_gate": 6,
+      "raw_carrier": null,
+      "native_and_gate": null,
+      "pgid": null
+    },
+    {
+      "carrier": "PRC",
+      "kind": "brightness_factor",
+      "checkpoint": -1,
+      "total": 10,
+      "content_gate": 6,
+      "raw_carrier": null,
+      "native_and_gate": null,
+      "pgid": null
+    },
+    {
+      "carrier": "PRC",
+      "kind": "jpeg_ratio",
+      "checkpoint": -1,
+      "total": 10,
+      "content_gate": 10,
+      "raw_carrier": null,
+      "native_and_gate": null,
+      "pgid": null
+    },
+    {
+      "carrier": "PRC",
+      "kind": "gaussian_blur_r",
+      "checkpoint": -1,
+      "total": 10,
+      "content_gate": 10,
+      "raw_carrier": null,
+      "native_and_gate": null,
+      "pgid": null
+    },
+    {
+      "carrier": "PRC",
+      "kind": "gaussian_std",
+      "checkpoint": -1,
+      "total": 10,
+      "content_gate": 10,
+      "raw_carrier": null,
+      "native_and_gate": null,
+      "pgid": null
+    },
+    {
+      "carrier": "PRC",
+      "kind": "median_blur_k",
+      "checkpoint": -1,
+      "total": 10,
+      "content_gate": 10,
+      "raw_carrier": null,
+      "native_and_gate": null,
+      "pgid": null
+    },
+    {
+      "carrier": "PRC",
+      "kind": "sp_prob",
+      "checkpoint": -1,
+      "total": 10,
+      "content_gate": 10,
+      "raw_carrier": null,
+      "native_and_gate": null,
+      "pgid": null
+    },
+    {
+      "carrier": "PRC",
+      "kind": "resize_ratio",
+      "checkpoint": -1,
+      "total": 10,
+      "content_gate": 10,
+      "raw_carrier": null,
+      "native_and_gate": null,
+      "pgid": null
+    }
+  ],
+  "seconds": 20.547603130340576,
+  "native_complete_sha256": {
+    "TR": "94d41402f0f141dde0e33eae52474de9357b96408c3d91176267270dd949bc51",
+    "PRC": "dd745ef0d1df13e3bba340f6d0d85b3d0159b5a4311b53ded79fa6d2c2c2ce9c"
+  },
+  "artifacts": {
+    "rows.json": "455cb961310b7dde00bb347f3fbe327b04f1a0559980a5547e00d5ab75e4a4f7",
+    "features.npz": "5e4acb3fac8b346becdbcaaf7a749f5b99538c79e1d56d91e96daf61f9258dcc"
+  }
+}

@@ -1,0 +1,626 @@
+{
+  "status": "complete",
+  "pid": 42517,
+  "carrier": "TR",
+  "protocol_sha256": "eb8e6162be7617602cfa888bfdf7a73e55c695d263b0af6675280d23243e8177",
+  "gpu": 5,
+  "gpu_uuid": "GPU-e6f35928-0155-f121-e707-1eaf3c14965c",
+  "command": [
+    "/data0/liyanlei/watermark_research/envs/pgid_revalidation_py310/bin/python",
+    "-u",
+    "/data0/liyanlei/watermark_research/third_party/frozen/PGID_dc4ad96/run.py",
+    "--wm_type",
+    "TR",
+    "--attack_type",
+    "forgery",
+    "--num_images",
+    "10",
+    "--start_index",
+    "0",
+    "--out_dir",
+    "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/TR",
+    "--modelid_target",
+    "Manojb/stable-diffusion-2-1-base",
+    "--modelid_attacker",
+    "Manojb/stable-diffusion-2-1-base",
+    "--scheduler_target",
+    "DDIM",
+    "--scheduler_attacker",
+    "DDIM",
+    "--num_inference_steps_target",
+    "50",
+    "--num_inference_steps_attacker",
+    "50",
+    "--steps",
+    "151",
+    "--lr",
+    "0.01",
+    "--seed",
+    "1",
+    "--gpu",
+    "cuda:0",
+    "--cover_images_dir",
+    "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/PGID/cover_images/ms_coco"
+  ],
+  "started_at": "2026-11-13T03:05:56.407637+00:00",
+  "rows": [
+    {
+      "task": 0,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "metric": 7.055519826526483e-89,
+      "accepted": true
+    },
+    {
+      "task": 0,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "metric": 4.764516716922446e-33,
+      "accepted": true
+    },
+    {
+      "task": 0,
+      "stage": "defended",
+      "checkpoint": 50,
+      "metric": 0.6378187931838943,
+      "accepted": false
+    },
+    {
+      "task": 0,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "metric": 1.9945782916903522e-39,
+      "accepted": true
+    },
+    {
+      "task": 0,
+      "stage": "defended",
+      "checkpoint": 100,
+      "metric": 0.6636445884633909,
+      "accepted": false
+    },
+    {
+      "task": 0,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "metric": 6.3891258320880286e-43,
+      "accepted": true
+    },
+    {
+      "task": 0,
+      "stage": "defended",
+      "checkpoint": 150,
+      "metric": 0.5982334619605054,
+      "accepted": false
+    },
+    {
+      "task": 1,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "metric": 2.1033543089089313e-87,
+      "accepted": true
+    },
+    {
+      "task": 1,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "metric": 6.6568472714741e-29,
+      "accepted": true
+    },
+    {
+      "task": 1,
+      "stage": "defended",
+      "checkpoint": 50,
+      "metric": 0.3427922182845148,
+      "accepted": false
+    },
+    {
+      "task": 1,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "metric": 2.2805740788116873e-41,
+      "accepted": true
+    },
+    {
+      "task": 1,
+      "stage": "defended",
+      "checkpoint": 100,
+      "metric": 0.12271767672365144,
+      "accepted": false
+    },
+    {
+      "task": 1,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "metric": 1.3884175220051183e-51,
+      "accepted": true
+    },
+    {
+      "task": 1,
+      "stage": "defended",
+      "checkpoint": 150,
+      "metric": 0.1390517867110812,
+      "accepted": false
+    },
+    {
+      "task": 2,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "metric": 1.6207733777373686e-110,
+      "accepted": true
+    },
+    {
+      "task": 2,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "metric": 2.454178829099964e-35,
+      "accepted": true
+    },
+    {
+      "task": 2,
+      "stage": "defended",
+      "checkpoint": 50,
+      "metric": 0.28269640480192376,
+      "accepted": false
+    },
+    {
+      "task": 2,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "metric": 1.2085321277754033e-45,
+      "accepted": true
+    },
+    {
+      "task": 2,
+      "stage": "defended",
+      "checkpoint": 100,
+      "metric": 0.20849600403171412,
+      "accepted": false
+    },
+    {
+      "task": 2,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "metric": 2.0455937797039e-52,
+      "accepted": true
+    },
+    {
+      "task": 2,
+      "stage": "defended",
+      "checkpoint": 150,
+      "metric": 0.1476627999549355,
+      "accepted": false
+    },
+    {
+      "task": 3,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "metric": 2.1375493690585414e-50,
+      "accepted": true
+    },
+    {
+      "task": 3,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "metric": 3.962379893712762e-14,
+      "accepted": true
+    },
+    {
+      "task": 3,
+      "stage": "defended",
+      "checkpoint": 50,
+      "metric": 0.6939623547734511,
+      "accepted": false
+    },
+    {
+      "task": 3,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "metric": 1.5842626803615959e-19,
+      "accepted": true
+    },
+    {
+      "task": 3,
+      "stage": "defended",
+      "checkpoint": 100,
+      "metric": 0.6675171920633204,
+      "accepted": false
+    },
+    {
+      "task": 3,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "metric": 2.0037764381226483e-22,
+      "accepted": true
+    },
+    {
+      "task": 3,
+      "stage": "defended",
+      "checkpoint": 150,
+      "metric": 0.6521095673623815,
+      "accepted": false
+    },
+    {
+      "task": 4,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "metric": 9.180382168080706e-89,
+      "accepted": true
+    },
+    {
+      "task": 4,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "metric": 1.2192583077482851e-23,
+      "accepted": true
+    },
+    {
+      "task": 4,
+      "stage": "defended",
+      "checkpoint": 50,
+      "metric": 0.772386275591113,
+      "accepted": false
+    },
+    {
+      "task": 4,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "metric": 4.623941004216657e-36,
+      "accepted": true
+    },
+    {
+      "task": 4,
+      "stage": "defended",
+      "checkpoint": 100,
+      "metric": 0.6241026066568139,
+      "accepted": false
+    },
+    {
+      "task": 4,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "metric": 3.0663255224339006e-42,
+      "accepted": true
+    },
+    {
+      "task": 4,
+      "stage": "defended",
+      "checkpoint": 150,
+      "metric": 0.45614260072526774,
+      "accepted": false
+    },
+    {
+      "task": 5,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "metric": 1.1242801230123777e-114,
+      "accepted": true
+    },
+    {
+      "task": 5,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "metric": 2.097107113994391e-51,
+      "accepted": true
+    },
+    {
+      "task": 5,
+      "stage": "defended",
+      "checkpoint": 50,
+      "metric": 0.44098943800610446,
+      "accepted": false
+    },
+    {
+      "task": 5,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "metric": 8.280649754638128e-65,
+      "accepted": true
+    },
+    {
+      "task": 5,
+      "stage": "defended",
+      "checkpoint": 100,
+      "metric": 0.5348927833135665,
+      "accepted": false
+    },
+    {
+      "task": 5,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "metric": 1.8170235008560188e-72,
+      "accepted": true
+    },
+    {
+      "task": 5,
+      "stage": "defended",
+      "checkpoint": 150,
+      "metric": 0.5613542386516556,
+      "accepted": false
+    },
+    {
+      "task": 6,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "metric": 2.3018975879908707e-84,
+      "accepted": true
+    },
+    {
+      "task": 6,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "metric": 4.798201995684833e-38,
+      "accepted": true
+    },
+    {
+      "task": 6,
+      "stage": "defended",
+      "checkpoint": 50,
+      "metric": 0.7966854267893684,
+      "accepted": false
+    },
+    {
+      "task": 6,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "metric": 7.898512441523865e-45,
+      "accepted": true
+    },
+    {
+      "task": 6,
+      "stage": "defended",
+      "checkpoint": 100,
+      "metric": 0.7922095243715915,
+      "accepted": false
+    },
+    {
+      "task": 6,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "metric": 5.6807361264150844e-49,
+      "accepted": true
+    },
+    {
+      "task": 6,
+      "stage": "defended",
+      "checkpoint": 150,
+      "metric": 0.7433027102567373,
+      "accepted": false
+    },
+    {
+      "task": 7,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "metric": 4.008560729477945e-98,
+      "accepted": true
+    },
+    {
+      "task": 7,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "metric": 1.7769581760540777e-42,
+      "accepted": true
+    },
+    {
+      "task": 7,
+      "stage": "defended",
+      "checkpoint": 50,
+      "metric": 0.5309730645343367,
+      "accepted": false
+    },
+    {
+      "task": 7,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "metric": 1.5030338554717537e-56,
+      "accepted": true
+    },
+    {
+      "task": 7,
+      "stage": "defended",
+      "checkpoint": 100,
+      "metric": 0.48627141157101844,
+      "accepted": false
+    },
+    {
+      "task": 7,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "metric": 4.270041198771409e-61,
+      "accepted": true
+    },
+    {
+      "task": 7,
+      "stage": "defended",
+      "checkpoint": 150,
+      "metric": 0.4922857635418729,
+      "accepted": false
+    },
+    {
+      "task": 8,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "metric": 3.7957522511436754e-70,
+      "accepted": true
+    },
+    {
+      "task": 8,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "metric": 1.2694973824420817e-27,
+      "accepted": true
+    },
+    {
+      "task": 8,
+      "stage": "defended",
+      "checkpoint": 50,
+      "metric": 0.7474936723637032,
+      "accepted": false
+    },
+    {
+      "task": 8,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "metric": 5.615400159455591e-40,
+      "accepted": true
+    },
+    {
+      "task": 8,
+      "stage": "defended",
+      "checkpoint": 100,
+      "metric": 0.6039348431244647,
+      "accepted": false
+    },
+    {
+      "task": 8,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "metric": 1.2062711004153885e-47,
+      "accepted": true
+    },
+    {
+      "task": 8,
+      "stage": "defended",
+      "checkpoint": 150,
+      "metric": 0.5736732087809113,
+      "accepted": false
+    },
+    {
+      "task": 9,
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "metric": 7.040547469711993e-84,
+      "accepted": true
+    },
+    {
+      "task": 9,
+      "stage": "attacked",
+      "checkpoint": 50,
+      "metric": 1.247981179814408e-39,
+      "accepted": true
+    },
+    {
+      "task": 9,
+      "stage": "defended",
+      "checkpoint": 50,
+      "metric": 0.6122447305463905,
+      "accepted": false
+    },
+    {
+      "task": 9,
+      "stage": "attacked",
+      "checkpoint": 100,
+      "metric": 2.81302525290247e-50,
+      "accepted": true
+    },
+    {
+      "task": 9,
+      "stage": "defended",
+      "checkpoint": 100,
+      "metric": 0.5708495702269976,
+      "accepted": false
+    },
+    {
+      "task": 9,
+      "stage": "attacked",
+      "checkpoint": 150,
+      "metric": 2.6657494681066494e-56,
+      "accepted": true
+    },
+    {
+      "task": 9,
+      "stage": "defended",
+      "checkpoint": 150,
+      "metric": 0.33190114921825775,
+      "accepted": false
+    }
+  ],
+  "summary": [
+    {
+      "stage": "watermarked",
+      "checkpoint": -1,
+      "accepted": 10,
+      "total": 10
+    },
+    {
+      "stage": "attacked",
+      "checkpoint": 50,
+      "accepted": 10,
+      "total": 10
+    },
+    {
+      "stage": "attacked",
+      "checkpoint": 100,
+      "accepted": 10,
+      "total": 10
+    },
+    {
+      "stage": "attacked",
+      "checkpoint": 150,
+      "accepted": 10,
+      "total": 10
+    },
+    {
+      "stage": "defended",
+      "checkpoint": 50,
+      "accepted": 0,
+      "total": 10
+    },
+    {
+      "stage": "defended",
+      "checkpoint": 100,
+      "accepted": 0,
+      "total": 10
+    },
+    {
+      "stage": "defended",
+      "checkpoint": 150,
+      "accepted": 0,
+      "total": 10
+    }
+  ],
+  "raw_sha256": "09e9e209f10ee3bf7d7cd6e5ec4c54c1c6465f139940e2216e5e61e4ca620661",
+  "image_sha256": {
+    "attack=forgery/attacked_images_step_150/image_008.png": "6d61076b34f8737ad4c4718c0b4fee4661ee6ea1d5a8c1c3c901efd2f62c3c53",
+    "attack=forgery/attacked_images_step_150/image_007.png": "1486359b6f16711586aa0747fb3f183fa7e216eb04c37818dd9e8e22ce006f80",
+    "attack=forgery/attacked_images_step_150/image_005.png": "726efcf536d29350adf94f982160cfbfe498c5e1570318ee37191429ad1fc119",
+    "attack=forgery/attacked_images_step_150/image_009.png": "2980739bda9f152af473f94316bf4a75b018bbbe4690be352703bcc6d15bb227",
+    "attack=forgery/attacked_images_step_150/image_001.png": "00f7f35c26ea4bdc135afc7d7cb3161ca2d400b85b9ccc7309a2ad951f9fbe0d",
+    "attack=forgery/attacked_images_step_150/image_006.png": "3e11bd71f6da631cae1b831ae22150c7a0b3919af84489e676f770829e991475",
+    "attack=forgery/attacked_images_step_150/image_004.png": "48e8f9dafd65b8688ccac9181ddc2f3ac0a694c4997c89c23942d094576ad39f",
+    "attack=forgery/attacked_images_step_150/image_002.png": "e80f00fbdcf178296295727f8146adeb7b981a6d60057815df4826161ac3edd6",
+    "attack=forgery/attacked_images_step_150/image_000.png": "4ac48e61fba27563b29173d201c4272a28aa8f774b915e19a3341134378dc510",
+    "attack=forgery/attacked_images_step_150/image_003.png": "47a6e8a4bfba21207bd65552e9c95c91eed46b7409e446358a5d873aeb0b9f13",
+    "attack=forgery/attacked_images_step_50/image_008.png": "600326f43b4a5106028110e3bbc83fa22c750f0f040932044ab772e541a70e2c",
+    "attack=forgery/attacked_images_step_50/image_007.png": "e1cb6af8c72b358d29e014403115798b501914be6f63850b497988213450533a",
+    "attack=forgery/attacked_images_step_50/image_005.png": "1dd0489cf718ff51b9c43f50507466f3baebadfd93de8770a5acbb825450e642",
+    "attack=forgery/attacked_images_step_50/image_009.png": "f5758ca15b418731c235e8e7b0e97abdfc7761cf6150643b9bfc5a6f0ef96a66",
+    "attack=forgery/attacked_images_step_50/image_001.png": "9c97ca7646118d671040f3f37ffc0dd6ed8899775321756f0f45ae1a35cc4b96",
+    "attack=forgery/attacked_images_step_50/image_006.png": "b5e53b82c66c6545ed30be39219102abfe36f34da54aa1fd25b2cbabcae1b79f",
+    "attack=forgery/attacked_images_step_50/image_004.png": "6ff0fcd07eb96ee50afdd8da9046e8d10b81d42231ffd7294be4130f16310768",
+    "attack=forgery/attacked_images_step_50/image_002.png": "d1bce2cd8401cb7571592c22c88a2834a472009eb0cd27075d30e67b633ba85c",
+    "attack=forgery/attacked_images_step_50/image_000.png": "623fe65815fadf3b3f4bf5de914fa72fc7236fb430e2cee5616d397868eb7251",
+    "attack=forgery/attacked_images_step_50/image_003.png": "1c0681b71435d1def2b828d566e140a7f63e0a1bc490d724dbc508facb8a1f7f",
+    "attack=forgery/watermarked_images/image_008.png": "855d025a7d4e81d43eea3c57771199840b8bb0df58bb53c90e3ea5c3848bfb49",
+    "attack=forgery/watermarked_images/image_007.png": "dc01572a0bed044f420a9733a285e702c8ecb874afd8a45da72db6de2278295a",
+    "attack=forgery/watermarked_images/image_005.png": "0ffdf5388386a2146036de1fbca3499025e163c045cc18e46edb8eb18d7bd020",
+    "attack=forgery/watermarked_images/image_009.png": "9e0de1d79608915dc1138cca5087372d8d82ea4971018965f6cd0ffe169023c3",
+    "attack=forgery/watermarked_images/image_001.png": "fb41e331e27767f4de1966f3f2a6c94d4b14a68941979e9d6257edf1a1648ee2",
+    "attack=forgery/watermarked_images/image_006.png": "8d945650f647bd1ec38e0da0946e7fe542ca92bedae3eaf6ecfa46189094c1d9",
+    "attack=forgery/watermarked_images/image_004.png": "c702fa7930047b252eb7b1e757f5ae50ab1116abe9f91cfcabe28905221ea4b4",
+    "attack=forgery/watermarked_images/image_002.png": "69490721221645438ab07786a63210d090b8d4bd5ec20dcef21a06b6d392aea2",
+    "attack=forgery/watermarked_images/image_000.png": "1990e31f5d57d67abece30f7c2b7c474c4398523e0ef82eb83b9ea45df8cd005",
+    "attack=forgery/watermarked_images/image_003.png": "93aa72fb3e15b5c0cc0604605eb473cc626a57278844aca9074f23b58fe0ffd3",
+    "attack=forgery/attacked_images_step_100/image_008.png": "9b189ae919613422461ddc6130a82896fe45c9133ef5299d662ba40898052366",
+    "attack=forgery/attacked_images_step_100/image_007.png": "780f8826b8ad6cf8a7db9bddc62e42dac44348edbc7b7c39c31a512a0f73f2ea",
+    "attack=forgery/attacked_images_step_100/image_005.png": "2b05b58d6f5c3f346f6b84fc4ca31b9330a2316b96f830e21e185d56a6994f72",
+    "attack=forgery/attacked_images_step_100/image_009.png": "aa14def4592ed148f920806bdcad338e85764e4c777a78f5878da21e2672f527",
+    "attack=forgery/attacked_images_step_100/image_001.png": "99be8dd24c3b5d6a47281c1a9780b22fd2f5e5ac1c28cea58f9470daa85a9485",
+    "attack=forgery/attacked_images_step_100/image_006.png": "f86386fb29b52ae95e2ecaae25da057627b9c3befedc6de3934393f6b11eef29",
+    "attack=forgery/attacked_images_step_100/image_004.png": "7e6475d0bfe0a2405b989fbb0bdbf5eb6feae4512295ab2b4ce613155b7b0482",
+    "attack=forgery/attacked_images_step_100/image_002.png": "5d51241a5c215244d59dd30a0e99d7421c168fdec22322833f6ce40d2799fd2a",
+    "attack=forgery/attacked_images_step_100/image_000.png": "a8aad15788512663cf9d3b8ca9d7c0d68c2b4474540d4c6942d1514c84e8df7f",
+    "attack=forgery/attacked_images_step_100/image_003.png": "645ef257c7528467646ecebe8cd11af00ded207414261edaa04490b398e10c67"
+  },
+  "completed_at": "2026-11-13T08:14:49.182937+00:00"
+}

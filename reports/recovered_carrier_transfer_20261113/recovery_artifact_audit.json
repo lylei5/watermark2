@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "protocol_sha256": "33d9bba5d84948f694434cd6e17729793d2fa629eb2bc776f72d1554055e4076",
+  "source_hashes_checked": {
+    "recovered_carrier_transfer.py": "68475ef3c3eda323b2f171852c5240a2de5752a629f44ab1cdea2e43496aba9f",
+    "instance_coset_recovery.py": "495f5d7f7749f39a253fd07d36d188b72927cd4150a6505c59452f60597ba2eb"
+  },
+  "latent_artifacts_checked": 280,
+  "recovery_decisions": 3360,
+  "successful_recoveries": 2179,
+  "distinct_restored_native_calls": 190,
+  "all_attack_recovery_decisions": 720,
+  "attack_keys_recovered": 0,
+  "cover_recovery_decisions": 240,
+  "cover_keys_recovered": 0,
+  "scope": "Completed recovery outputs only; matched PGID genuine comparison is separate"
+}
