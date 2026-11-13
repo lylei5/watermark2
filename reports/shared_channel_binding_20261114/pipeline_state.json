@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "pid": 19264,
+  "started_at": 1794599057.3255708,
+  "stages": [
+    {
+      "stage": "evaluate_shared_channel.py",
+      "returncode": 0
+    },
+    {
+      "stage": "analyze_spectral_separation.py",
+      "returncode": 0
+    },
+    {
+      "stage": "audit_shared_channel.py",
+      "returncode": 0
+    },
+    {
+      "stage": "shared_pairing_control.py",
+      "returncode": 0
+    }
+  ],
+  "seconds": 3748.946808576584
+}

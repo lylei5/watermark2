@@ -39,3 +39,5 @@ SSCD单参考、九模板float32/int8以及每种新表示的连续距离均在�
 [GPU提取](extract_complete.json)已完成，耗时482.33秒：500次VAE编码、10张同提示词独立实例和20次原生反演，保存520条载体/查询观测。GS和TR对同一独立实例共享DDIM观测，PRC另用DPM；这些重复观测仍来自同一批10张图。
 
 CPU实现改为将约69.2MB的不可变数组一次载入内存，消除逐查询重复解压。原执行在恢复开始前终止，记录见[中断说明](io_interruption.json)。[逐字节检查](io_preflight.json)确认全部输入数组一致，源码差异只包含载入方式和提取协议来源断言。[v2执行协议](../../protocols/shared_channel_binding_20261114_v2.json)复用已完成GPU数据，数值配置与原协议一致；[复用清单](execution_reuse.json)和[CPU派发](launch_v2.json)保存对应哈希。
+
+CPU流水线已完成17040次恢复与710次原生检测，补充划分内部打乱完成690次恢复。[最终报告](report.md)汇总全部成功/失败、共同合法通过数比较、配对消融及存储成本。逐类编辑留出属于完成后的开发分析，表示、投影和已有解码结果保持冻结；[负例齐全的分析结果](heldout_edit_calibration_with_negatives.json)保留每个阈值及不可行点。

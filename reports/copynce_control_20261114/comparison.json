@@ -1,0 +1,5617 @@
+{
+  "status": "complete",
+  "source_sha256": "d73347c1da578938e0f611207022756e0a6b71ed60671e6f0e3d671be40693f7",
+  "inputs": {
+    "summary.json": "4178f8aff7f14defccca7c10affb7fcef0be42baaaa759dd5e416f77ca7c440c",
+    "rows.json": "27288ae035aa6527041c39022b457ce00b6cef9f1847ec262a428058bb139a1b",
+    "protocol.json": "f29de4ab378ba66cccd8025b3446772a0975bf00d4f34c9ea31537b423d231d8"
+  },
+  "calibrated": [
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "sscd",
+      "target": 0.9,
+      "threshold": 0.5407732725143433,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 27,
+          "joint": 27
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 14,
+          "joint": 14
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "sscd",
+      "target": 0.95,
+      "threshold": 0.6998699903488159,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 29,
+          "joint": 29
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 14,
+          "joint": 14
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 1,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "sscd_centered",
+      "target": 0.9,
+      "threshold": 0.47957944869995117,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 28,
+          "joint": 28
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 14,
+          "joint": 14
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "sscd_centered",
+      "target": 0.95,
+      "threshold": 0.628540575504303,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 30,
+          "joint": 30
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 15,
+          "joint": 15
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 1,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "sscd_templates",
+      "target": 0.9,
+      "threshold": 0.2349761724472046,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 25,
+          "joint": 25
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 13,
+          "joint": 13
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "sscd_templates",
+      "target": 0.95,
+      "threshold": 0.6998699903488159,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 29,
+          "joint": 29
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 14,
+          "joint": 14
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 1,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "sscd_int8_templates",
+      "target": 0.9,
+      "threshold": 0.23457777500152588,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 25,
+          "joint": 25
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 13,
+          "joint": 13
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "sscd_int8_templates",
+      "target": 0.95,
+      "threshold": 0.6996228694915771,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 29,
+          "joint": 29
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 14,
+          "joint": 14
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 1,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "copynce_descriptor",
+      "target": 0.9,
+      "threshold": 0.7611265182495117,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 28,
+          "joint": 28
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 14,
+          "joint": 14
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "copynce_descriptor",
+      "target": 0.95,
+      "threshold": 0.8893101215362549,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 30,
+          "joint": 30
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 15,
+          "joint": 15
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 1,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "copynce_matcher",
+      "target": 0.9,
+      "threshold": 0.006120920181274414,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 28,
+          "joint": 28
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 15,
+          "joint": 15
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "copynce_matcher",
+      "target": 0.95,
+      "threshold": 0.44189244508743286,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 29,
+          "joint": 29
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 15,
+          "joint": 15
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd",
+      "target": 0.9,
+      "threshold": 0.5407732725143433,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 92,
+          "joint": 92
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 47,
+          "joint": 47
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd",
+      "target": 0.95,
+      "threshold": 0.6998699903488159,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 98,
+          "joint": 98
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 48,
+          "joint": 48
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_centered",
+      "target": 0.9,
+      "threshold": 0.47957944869995117,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 88,
+          "joint": 88
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 47,
+          "joint": 47
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_centered",
+      "target": 0.95,
+      "threshold": 0.628540575504303,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 98,
+          "joint": 98
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 48,
+          "joint": 48
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_templates",
+      "target": 0.9,
+      "threshold": 0.2349761724472046,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 84,
+          "joint": 84
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 44,
+          "joint": 44
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_templates",
+      "target": 0.95,
+      "threshold": 0.6998699903488159,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 98,
+          "joint": 98
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 48,
+          "joint": 48
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_int8_templates",
+      "target": 0.9,
+      "threshold": 0.23457777500152588,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 84,
+          "joint": 84
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 44,
+          "joint": 44
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_int8_templates",
+      "target": 0.95,
+      "threshold": 0.6996228694915771,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 98,
+          "joint": 98
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 48,
+          "joint": 48
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "copynce_descriptor",
+      "target": 0.9,
+      "threshold": 0.7611265182495117,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 88,
+          "joint": 88
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 48,
+          "joint": 48
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "copynce_descriptor",
+      "target": 0.95,
+      "threshold": 0.8893101215362549,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 93,
+          "joint": 93
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 49,
+          "joint": 49
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 6,
+          "joint": 1
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 6,
+          "joint": 6
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 2,
+          "joint": 2
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "copynce_matcher",
+      "target": 0.9,
+      "threshold": 0.006120920181274414,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 91,
+          "joint": 91
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 48,
+          "joint": 48
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "copynce_matcher",
+      "target": 0.95,
+      "threshold": 0.44189244508743286,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 98,
+          "joint": 98
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 50,
+          "joint": 50
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "sscd",
+      "target": 0.9,
+      "threshold": 0.5407732725143433,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 86,
+          "joint": 64
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 45,
+          "joint": 38
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "sscd",
+      "target": 0.95,
+      "threshold": 0.6998699903488159,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 96,
+          "joint": 64
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 48,
+          "joint": 38
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "sscd_centered",
+      "target": 0.9,
+      "threshold": 0.47957944869995117,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 84,
+          "joint": 64
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 45,
+          "joint": 38
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "sscd_centered",
+      "target": 0.95,
+      "threshold": 0.628540575504303,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 95,
+          "joint": 64
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 48,
+          "joint": 38
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "sscd_templates",
+      "target": 0.9,
+      "threshold": 0.2349761724472046,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 83,
+          "joint": 63
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 44,
+          "joint": 37
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "sscd_templates",
+      "target": 0.95,
+      "threshold": 0.6998699903488159,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 98,
+          "joint": 64
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 48,
+          "joint": 38
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "sscd_int8_templates",
+      "target": 0.9,
+      "threshold": 0.23457777500152588,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 83,
+          "joint": 63
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 44,
+          "joint": 37
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "sscd_int8_templates",
+      "target": 0.95,
+      "threshold": 0.6996228694915771,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 98,
+          "joint": 64
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 48,
+          "joint": 38
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "copynce_descriptor",
+      "target": 0.9,
+      "threshold": 0.7611265182495117,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 91,
+          "joint": 64
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 48,
+          "joint": 38
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "copynce_descriptor",
+      "target": 0.95,
+      "threshold": 0.8893101215362549,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 96,
+          "joint": 64
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 49,
+          "joint": 38
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 5,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 12,
+          "joint": 12
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "copynce_matcher",
+      "target": 0.9,
+      "threshold": 0.006120920181274414,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 90,
+          "joint": 54
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 49,
+          "joint": 37
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "copynce_matcher",
+      "target": 0.95,
+      "threshold": 0.44189244508743286,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 95,
+          "joint": 59
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 50,
+          "joint": 38
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    }
+  ],
+  "evaluation_matched": [
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "sscd",
+      "target_joint_count": 27,
+      "threshold": 0.5022001266479492,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 27,
+          "joint": 27
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 14,
+          "joint": 14
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "sscd_centered",
+      "target_joint_count": 27,
+      "threshold": 0.4744267463684082,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 27,
+          "joint": 27
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 14,
+          "joint": 14
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "sscd_templates",
+      "target_joint_count": 27,
+      "threshold": 0.26744532585144043,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 27,
+          "joint": 27
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 14,
+          "joint": 14
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "sscd_int8_templates",
+      "target_joint_count": 27,
+      "threshold": 0.26772475242614746,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 27,
+          "joint": 27
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 14,
+          "joint": 14
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "copynce_descriptor",
+      "target_joint_count": 27,
+      "threshold": 0.7011699080467224,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 27,
+          "joint": 27
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 14,
+          "joint": 14
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "copynce_matcher",
+      "target_joint_count": 27,
+      "threshold": 0.0004169344902038574,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 27,
+          "joint": 27
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 14,
+          "joint": 14
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "sscd",
+      "target_joint_count": 28,
+      "threshold": 0.5479016304016113,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 28,
+          "joint": 28
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 14,
+          "joint": 14
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "sscd_centered",
+      "target_joint_count": 28,
+      "threshold": 0.47942280769348145,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 28,
+          "joint": 28
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 14,
+          "joint": 14
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "sscd_templates",
+      "target_joint_count": 28,
+      "threshold": 0.32205599546432495,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 28,
+          "joint": 28
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 14,
+          "joint": 14
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "sscd_int8_templates",
+      "target_joint_count": 28,
+      "threshold": 0.3218281865119934,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 28,
+          "joint": 28
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 14,
+          "joint": 14
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "copynce_descriptor",
+      "target_joint_count": 28,
+      "threshold": 0.7329709529876709,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 28,
+          "joint": 28
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 14,
+          "joint": 14
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "copynce_matcher",
+      "target_joint_count": 28,
+      "threshold": 0.0008409023284912109,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 28,
+          "joint": 28
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 15,
+          "joint": 15
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "sscd",
+      "target_joint_count": 29,
+      "threshold": 0.643623948097229,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 29,
+          "joint": 29
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 14,
+          "joint": 14
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "sscd_centered",
+      "target_joint_count": 29,
+      "threshold": 0.5769034624099731,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 29,
+          "joint": 29
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 14,
+          "joint": 14
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "sscd_templates",
+      "target_joint_count": 29,
+      "threshold": 0.3519819974899292,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 29,
+          "joint": 29
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 14,
+          "joint": 14
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "sscd_int8_templates",
+      "target_joint_count": 29,
+      "threshold": 0.35157155990600586,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 29,
+          "joint": 29
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 14,
+          "joint": 14
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "copynce_descriptor",
+      "target_joint_count": 29,
+      "threshold": 0.792454183101654,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 29,
+          "joint": 29
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 14,
+          "joint": 14
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 1,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "copynce_matcher",
+      "target_joint_count": 29,
+      "threshold": 0.3589736223220825,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 29,
+          "joint": 29
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 15,
+          "joint": 15
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "sscd",
+      "target_joint_count": 30,
+      "threshold": 0.7081869840621948,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 30,
+          "joint": 30
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 15,
+          "joint": 15
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 1,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "sscd_centered",
+      "target_joint_count": 30,
+      "threshold": 0.5873814821243286,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 30,
+          "joint": 30
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 15,
+          "joint": 15
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "sscd_templates",
+      "target_joint_count": 30,
+      "threshold": 0.7081869840621948,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 30,
+          "joint": 30
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 15,
+          "joint": 15
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 1,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "sscd_int8_templates",
+      "target_joint_count": 30,
+      "threshold": 0.7078020572662354,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 30,
+          "joint": 30
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 15,
+          "joint": 15
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 1,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "copynce_descriptor",
+      "target_joint_count": 30,
+      "threshold": 0.8678919076919556,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 30,
+          "joint": 30
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 15,
+          "joint": 15
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 1,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "split": "evaluation",
+      "method": "copynce_matcher",
+      "target_joint_count": 30,
+      "threshold": 0.7650324106216431,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 30,
+          "joint": 30
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 15,
+          "joint": 15
+        },
+        {
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd",
+      "target_joint_count": 60,
+      "threshold": 0.17360055446624756,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 60,
+          "joint": 60
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 43,
+          "joint": 43
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_centered",
+      "target_joint_count": 60,
+      "threshold": 0.16158020496368408,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 60,
+          "joint": 60
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 43,
+          "joint": 43
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_templates",
+      "target_joint_count": 60,
+      "threshold": 0.0695725679397583,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 60,
+          "joint": 60
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 28,
+          "joint": 28
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_int8_templates",
+      "target_joint_count": 60,
+      "threshold": 0.06962096691131592,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 60,
+          "joint": 60
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 28,
+          "joint": 28
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "copynce_descriptor",
+      "target_joint_count": 60,
+      "threshold": 0.15130388736724854,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 60,
+          "joint": 60
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 36,
+          "joint": 36
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "copynce_matcher",
+      "target_joint_count": 60,
+      "threshold": 3.552436828613281e-05,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 60,
+          "joint": 60
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 27,
+          "joint": 27
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd",
+      "target_joint_count": 89,
+      "threshold": 0.5170046091079712,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 89,
+          "joint": 89
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 47,
+          "joint": 47
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_centered",
+      "target_joint_count": 89,
+      "threshold": 0.4796900749206543,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 89,
+          "joint": 89
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 48,
+          "joint": 48
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_templates",
+      "target_joint_count": 89,
+      "threshold": 0.28209006786346436,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 89,
+          "joint": 89
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 44,
+          "joint": 44
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_int8_templates",
+      "target_joint_count": 89,
+      "threshold": 0.28196024894714355,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 89,
+          "joint": 89
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 44,
+          "joint": 44
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "copynce_descriptor",
+      "target_joint_count": 89,
+      "threshold": 0.7670507431030273,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 89,
+          "joint": 89
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 48,
+          "joint": 48
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "copynce_matcher",
+      "target_joint_count": 89,
+      "threshold": 0.0032954812049865723,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 89,
+          "joint": 89
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 47,
+          "joint": 47
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd",
+      "target_joint_count": 90,
+      "threshold": 0.524882435798645,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 90,
+          "joint": 90
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 47,
+          "joint": 47
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_centered",
+      "target_joint_count": 90,
+      "threshold": 0.4826465845108032,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 90,
+          "joint": 90
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 48,
+          "joint": 48
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_templates",
+      "target_joint_count": 90,
+      "threshold": 0.2925525903701782,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 90,
+          "joint": 90
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 44,
+          "joint": 44
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_int8_templates",
+      "target_joint_count": 90,
+      "threshold": 0.2931091785430908,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 90,
+          "joint": 90
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 44,
+          "joint": 44
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "copynce_descriptor",
+      "target_joint_count": 90,
+      "threshold": 0.7735278010368347,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 90,
+          "joint": 90
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 48,
+          "joint": 48
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "copynce_matcher",
+      "target_joint_count": 90,
+      "threshold": 0.0039481520652771,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 90,
+          "joint": 90
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 47,
+          "joint": 47
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd",
+      "target_joint_count": 91,
+      "threshold": 0.5283335447311401,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 91,
+          "joint": 91
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 47,
+          "joint": 47
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_centered",
+      "target_joint_count": 91,
+      "threshold": 0.4831721782684326,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 91,
+          "joint": 91
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 48,
+          "joint": 48
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_templates",
+      "target_joint_count": 91,
+      "threshold": 0.30559802055358887,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 91,
+          "joint": 91
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 45,
+          "joint": 45
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_int8_templates",
+      "target_joint_count": 91,
+      "threshold": 0.305324912071228,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 91,
+          "joint": 91
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 45,
+          "joint": 45
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "copynce_descriptor",
+      "target_joint_count": 91,
+      "threshold": 0.7865376472473145,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 91,
+          "joint": 91
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 49,
+          "joint": 49
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 2,
+          "joint": 2
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "copynce_matcher",
+      "target_joint_count": 91,
+      "threshold": 0.004691660404205322,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 91,
+          "joint": 91
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 48,
+          "joint": 48
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd",
+      "target_joint_count": 95,
+      "threshold": 0.5597622990608215,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 95,
+          "joint": 95
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 48,
+          "joint": 48
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_centered",
+      "target_joint_count": 95,
+      "threshold": 0.5263981223106384,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 95,
+          "joint": 95
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 48,
+          "joint": 48
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_templates",
+      "target_joint_count": 95,
+      "threshold": 0.4426614046096802,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 95,
+          "joint": 95
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 47,
+          "joint": 47
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_int8_templates",
+      "target_joint_count": 95,
+      "threshold": 0.44260597229003906,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 95,
+          "joint": 95
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 47,
+          "joint": 47
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "copynce_descriptor",
+      "target_joint_count": 95,
+      "threshold": 0.9242652058601379,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 95,
+          "joint": 95
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 50,
+          "joint": 50
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 7,
+          "joint": 1
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 32,
+          "joint": 32
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 2,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 2,
+          "joint": 2
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "copynce_matcher",
+      "target_joint_count": 95,
+      "threshold": 0.028094470500946045,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 95,
+          "joint": 95
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 49,
+          "joint": 49
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd",
+      "target_joint_count": 97,
+      "threshold": 0.6098544597625732,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 97,
+          "joint": 97
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 48,
+          "joint": 48
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_centered",
+      "target_joint_count": 97,
+      "threshold": 0.6086675524711609,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 97,
+          "joint": 97
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 48,
+          "joint": 48
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_templates",
+      "target_joint_count": 97,
+      "threshold": 0.4642951488494873,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 97,
+          "joint": 97
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 47,
+          "joint": 47
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_int8_templates",
+      "target_joint_count": 97,
+      "threshold": 0.46417951583862305,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 97,
+          "joint": 97
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 47,
+          "joint": 47
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "copynce_descriptor",
+      "target_joint_count": 97,
+      "threshold": 1.0124194622039795,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 97,
+          "joint": 97
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 50,
+          "joint": 50
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 10,
+          "joint": 1
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 84,
+          "joint": 84
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 8,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 9,
+          "joint": 9
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "copynce_matcher",
+      "target_joint_count": 97,
+      "threshold": 0.07329577207565308,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 97,
+          "joint": 97
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 50,
+          "joint": 50
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd",
+      "target_joint_count": 98,
+      "threshold": 0.6453601121902466,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 98,
+          "joint": 98
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 48,
+          "joint": 48
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_centered",
+      "target_joint_count": 98,
+      "threshold": 0.6239631175994873,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 98,
+          "joint": 98
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 48,
+          "joint": 48
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_templates",
+      "target_joint_count": 98,
+      "threshold": 0.5597623586654663,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 98,
+          "joint": 98
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 48,
+          "joint": 48
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_int8_templates",
+      "target_joint_count": 98,
+      "threshold": 0.5598902702331543,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 98,
+          "joint": 98
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 48,
+          "joint": 48
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "copynce_descriptor",
+      "target_joint_count": 98,
+      "threshold": 1.0261211395263672,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 98,
+          "joint": 98
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 50,
+          "joint": 50
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 10,
+          "joint": 1
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 86,
+          "joint": 86
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 8,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 9,
+          "joint": 9
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "copynce_matcher",
+      "target_joint_count": 98,
+      "threshold": 0.33699125051498413,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 98,
+          "joint": 98
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 50,
+          "joint": 50
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd",
+      "target_joint_count": 100,
+      "threshold": 0.9369298219680786,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 100,
+          "joint": 100
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 50,
+          "joint": 50
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 10,
+          "joint": 1
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 34,
+          "joint": 34
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 1,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 2,
+          "joint": 2
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_centered",
+      "target_joint_count": 100,
+      "threshold": 0.8136365413665771,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 100,
+          "joint": 100
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 50,
+          "joint": 50
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 10,
+          "joint": 1
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 22,
+          "joint": 22
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 2,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 2,
+          "joint": 2
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_templates",
+      "target_joint_count": 100,
+      "threshold": 0.883815348148346,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 100,
+          "joint": 100
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 50,
+          "joint": 50
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 10,
+          "joint": 1
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 25,
+          "joint": 25
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "sscd_int8_templates",
+      "target_joint_count": 100,
+      "threshold": 0.883644163608551,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 100,
+          "joint": 100
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 50,
+          "joint": 50
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 10,
+          "joint": 1
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 25,
+          "joint": 25
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "copynce_descriptor",
+      "target_joint_count": 100,
+      "threshold": 1.0958425998687744,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 100,
+          "joint": 100
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 50,
+          "joint": 50
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 10,
+          "joint": 1
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 90,
+          "joint": 90
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 10,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 10,
+          "joint": 10
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "split": "transfer",
+      "method": "copynce_matcher",
+      "target_joint_count": 100,
+      "threshold": 0.9092459604144096,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 100,
+          "joint": 100
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 50,
+          "joint": 50
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "sscd",
+      "target_joint_count": 29,
+      "threshold": 0.05177503824234009,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 31,
+          "joint": 29
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 20,
+          "joint": 18
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "sscd_centered",
+      "target_joint_count": 29,
+      "threshold": 0.045777976512908936,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 31,
+          "joint": 29
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 20,
+          "joint": 18
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "sscd_templates",
+      "target_joint_count": 29,
+      "threshold": 0.023491740226745605,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 32,
+          "joint": 29
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 7,
+          "joint": 7
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "sscd_int8_templates",
+      "target_joint_count": 29,
+      "threshold": 0.02356642484664917,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 32,
+          "joint": 29
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 7,
+          "joint": 7
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "copynce_descriptor",
+      "target_joint_count": 29,
+      "threshold": 0.019963502883911133,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 30,
+          "joint": 29
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 18,
+          "joint": 17
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "copynce_matcher",
+      "target_joint_count": 29,
+      "threshold": 3.7789344787597656e-05,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 49,
+          "joint": 29
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 26,
+          "joint": 19
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "sscd",
+      "target_joint_count": 60,
+      "threshold": 0.21175456047058105,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 67,
+          "joint": 60
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 44,
+          "joint": 37
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "sscd_centered",
+      "target_joint_count": 60,
+      "threshold": 0.1983788013458252,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 67,
+          "joint": 60
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 44,
+          "joint": 37
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "sscd_templates",
+      "target_joint_count": 60,
+      "threshold": 0.0954468846321106,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 71,
+          "joint": 60
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 39,
+          "joint": 34
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "sscd_int8_templates",
+      "target_joint_count": 60,
+      "threshold": 0.09538310766220093,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 71,
+          "joint": 60
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 39,
+          "joint": 34
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "copynce_descriptor",
+      "target_joint_count": 60,
+      "threshold": 0.20809149742126465,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 71,
+          "joint": 60
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 43,
+          "joint": 36
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "copynce_matcher",
+      "target_joint_count": 60,
+      "threshold": 0.4643988609313965,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 96,
+          "joint": 60
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 50,
+          "joint": 38
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "sscd",
+      "target_joint_count": 64,
+      "threshold": 0.28595298528671265,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 74,
+          "joint": 64
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 45,
+          "joint": 38
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "sscd_centered",
+      "target_joint_count": 64,
+      "threshold": 0.2705000638961792,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 75,
+          "joint": 64
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 45,
+          "joint": 38
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "sscd_templates",
+      "target_joint_count": 64,
+      "threshold": 0.28595292568206787,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 89,
+          "joint": 64
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 45,
+          "joint": 38
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "sscd_int8_templates",
+      "target_joint_count": 64,
+      "threshold": 0.2863991856575012,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 89,
+          "joint": 64
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 45,
+          "joint": 38
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "copynce_descriptor",
+      "target_joint_count": 64,
+      "threshold": 0.44881534576416016,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 76,
+          "joint": 64
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 45,
+          "joint": 38
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "split": "transfer",
+      "method": "copynce_matcher",
+      "target_joint_count": 64,
+      "threshold": 0.9213747382164001,
+      "summary": [
+        {
+          "kind": "all_genuine",
+          "total": 100,
+          "accepted": 100,
+          "joint": 64
+        },
+        {
+          "kind": "unknown_edits",
+          "total": 50,
+          "accepted": 50,
+          "joint": 38
+        },
+        {
+          "kind": "same_prompt",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "wrong_record",
+          "total": 90,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "cover",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "kind": "imprint_150",
+          "total": 10,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    }
+  ],
+  "source_bootstrap": [
+    {
+      "carrier": "GS",
+      "target": 0.9,
+      "condition": "all_genuine",
+      "sources": 3,
+      "queries": 30,
+      "difference_pp": 3.3333333333333335,
+      "interval95_pp": [
+        -10.000000000000002,
+        20.000000000000004
+      ]
+    },
+    {
+      "carrier": "GS",
+      "target": 0.9,
+      "condition": "unknown_edits",
+      "sources": 3,
+      "queries": 15,
+      "difference_pp": 6.666666666666667,
+      "interval95_pp": [
+        0.0,
+        20.000000000000004
+      ]
+    },
+    {
+      "carrier": "GS",
+      "target": 0.95,
+      "condition": "all_genuine",
+      "sources": 3,
+      "queries": 30,
+      "difference_pp": 0.0,
+      "interval95_pp": [
+        -10.000000000000002,
+        10.000000000000002
+      ]
+    },
+    {
+      "carrier": "GS",
+      "target": 0.95,
+      "condition": "unknown_edits",
+      "sources": 3,
+      "queries": 15,
+      "difference_pp": 6.666666666666667,
+      "interval95_pp": [
+        0.0,
+        20.000000000000004
+      ]
+    },
+    {
+      "carrier": "TR",
+      "target": 0.9,
+      "condition": "all_genuine",
+      "sources": 10,
+      "queries": 100,
+      "difference_pp": -1.0,
+      "interval95_pp": [
+        -8.0,
+        6.000000000000001
+      ]
+    },
+    {
+      "carrier": "TR",
+      "target": 0.9,
+      "condition": "unknown_edits",
+      "sources": 10,
+      "queries": 50,
+      "difference_pp": 2.0,
+      "interval95_pp": [
+        -6.000000000000001,
+        10.0
+      ]
+    },
+    {
+      "carrier": "TR",
+      "target": 0.95,
+      "condition": "all_genuine",
+      "sources": 10,
+      "queries": 100,
+      "difference_pp": 0.0,
+      "interval95_pp": [
+        -4.0,
+        4.0
+      ]
+    },
+    {
+      "carrier": "TR",
+      "target": 0.95,
+      "condition": "unknown_edits",
+      "sources": 10,
+      "queries": 50,
+      "difference_pp": 4.0,
+      "interval95_pp": [
+        0.0,
+        10.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "target": 0.9,
+      "condition": "all_genuine",
+      "sources": 10,
+      "queries": 100,
+      "difference_pp": -10.0,
+      "interval95_pp": [
+        -14.000000000000002,
+        -6.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "target": 0.9,
+      "condition": "unknown_edits",
+      "sources": 10,
+      "queries": 50,
+      "difference_pp": -2.0,
+      "interval95_pp": [
+        -6.000000000000001,
+        0.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "target": 0.95,
+      "condition": "all_genuine",
+      "sources": 10,
+      "queries": 100,
+      "difference_pp": -5.0,
+      "interval95_pp": [
+        -9.000000000000002,
+        -1.0
+      ]
+    },
+    {
+      "carrier": "PRC",
+      "target": 0.95,
+      "condition": "unknown_edits",
+      "sources": 10,
+      "queries": 50,
+      "difference_pp": 0.0,
+      "interval95_pp": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "matched_scope": "Evaluation-selected thresholds for descriptive equal absolute joint legitimate counts; ties may exceed requested counts",
+  "bootstrap_scope": "Paired source resampling with frozen thresholds on development data; conditional descriptive intervals",
+  "information_scope": "Matcher receives full reference image; descriptor and SSCD use stored vectors; no equal-storage superiority claim",
+  "independent_confirmation": false
+}

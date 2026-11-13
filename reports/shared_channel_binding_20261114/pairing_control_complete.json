@@ -1,0 +1,785 @@
+{
+  "status": "complete",
+  "source_sha256": "e50abbb96cf0ae137254d45d5e0ea97f9c66a5e24e1ab9c09d1937764037e3f2",
+  "protocol_sha256": "19849de977eb97cf7c6e26fd6e9f8af06437609ebc02a08d9a7d6a9adfd56071",
+  "pairing": {
+    "0": 1,
+    "1": 2,
+    "2": 3,
+    "3": 0,
+    "4": 5,
+    "5": 6,
+    "6": 4,
+    "7": 8,
+    "8": 9,
+    "9": 7
+  },
+  "actual_recoveries": 690,
+  "restored_native_calls": 14,
+  "enrollment": [
+    {
+      "id": "G000",
+      "repetition": 0,
+      "sha256": "b893c028a0914e6578335dadc04e33e4d2a52d1a14bdf4f62d605e499a94c70d"
+    },
+    {
+      "id": "G000",
+      "repetition": 1,
+      "sha256": "33de383794dba9847abcd9d92f16a599e2e7bdfd44f0a8747f349ad05e3bd137"
+    },
+    {
+      "id": "G000",
+      "repetition": 2,
+      "sha256": "caee8460071373be4f8b0693c7d3faec6a4a056965768f8eb5a6269adf75a273"
+    },
+    {
+      "id": "G001",
+      "repetition": 0,
+      "sha256": "38fda4839b782fec741e504b35bb60724be6888d1d373893db81b061d409479e"
+    },
+    {
+      "id": "G001",
+      "repetition": 1,
+      "sha256": "5088ba5b1fe049287aed915209f08609fb57581eb9c11d91e6cac83649cdfeec"
+    },
+    {
+      "id": "G001",
+      "repetition": 2,
+      "sha256": "039ea0b3ebfc1ce764f74407b6c7b6e648b15832de1a0e5030ee5cc2e75b3f15"
+    },
+    {
+      "id": "G002",
+      "repetition": 0,
+      "sha256": "a505243ca37b56f35af114f5b47d66c726db0cf1b0a498ccc3a7ac9e222bc6c9"
+    },
+    {
+      "id": "G002",
+      "repetition": 1,
+      "sha256": "02bb61001e29b814706e47162661995f3fbbc1ee9000a91ea05bc4ad095d15a3"
+    },
+    {
+      "id": "G002",
+      "repetition": 2,
+      "sha256": "e9b610e3b981b7668328e522b10e9463041f0021b2ba9ab07c09ade1f9e341b2"
+    },
+    {
+      "id": "G003",
+      "repetition": 0,
+      "sha256": "4676942a9738b5c711f6d0b0f85ab424af4ad56b1db39ad4b1c2987dc732ca69"
+    },
+    {
+      "id": "G003",
+      "repetition": 1,
+      "sha256": "d646710ea6bfaff8f424534a973dfb976b7e8be47d52debbd394b4457365745b"
+    },
+    {
+      "id": "G003",
+      "repetition": 2,
+      "sha256": "a2534880e2917b358a33fd22492ad13db191bc4dcf687497a57ce7b93e304be5"
+    },
+    {
+      "id": "G004",
+      "repetition": 0,
+      "sha256": "30381d0c544a787583845a50241afa61d9d28d9fd5136c75efb42fbf16e9f484"
+    },
+    {
+      "id": "G004",
+      "repetition": 1,
+      "sha256": "5d4a14ba7ccdb422a742c10e13931f4fdff5d41d51472a400d367f9675fe0743"
+    },
+    {
+      "id": "G004",
+      "repetition": 2,
+      "sha256": "f90f51c997ab0c0f3c29873d11916e54910dd1dda1c9fddb65c4738b23edf6e6"
+    },
+    {
+      "id": "G005",
+      "repetition": 0,
+      "sha256": "d601d8d2a49d99dc504b25b5d148680ff54d00c99c58e0402b2a81afeb091eed"
+    },
+    {
+      "id": "G005",
+      "repetition": 1,
+      "sha256": "e695f0e46fb56fd84f265fdfa6e73f4d7b8385f3bfe2f129e63b1bd762664261"
+    },
+    {
+      "id": "G005",
+      "repetition": 2,
+      "sha256": "c75f31dafad165f7345b6dbe41f471efa543e35ddc5a9e91df33d4bf08600000"
+    },
+    {
+      "id": "G006",
+      "repetition": 0,
+      "sha256": "fe8339faac72e01462334db0aa71f6418e10691ab71ddcb16f90f42436bb386d"
+    },
+    {
+      "id": "G006",
+      "repetition": 1,
+      "sha256": "5010aeffd3791ad78d41bffa098dd0dfbce95b817b0a6878584e7124662a2a08"
+    },
+    {
+      "id": "G006",
+      "repetition": 2,
+      "sha256": "59bff2f1422ddbb933e65932fcb2b6547220b06f271a9da4c6a8e15d79bba3d5"
+    },
+    {
+      "id": "G007",
+      "repetition": 0,
+      "sha256": "817034dc70ba78ad90208ccae3b1ca9b5ad2099f24361b03e4c1447a747fca5c"
+    },
+    {
+      "id": "G007",
+      "repetition": 1,
+      "sha256": "0c39eed9b92ae058eec91ddce2c92c6f138e8af8b160094bffc5bee87ff54b59"
+    },
+    {
+      "id": "G007",
+      "repetition": 2,
+      "sha256": "63ff9f9b2eb3f0491564a1c7ca9e290e32f7c1fc8b6c150dce72ef67a0f4c46d"
+    },
+    {
+      "id": "G008",
+      "repetition": 0,
+      "sha256": "2f6b254ae1bf96a8373ab6ccb3f09da5d4c1afa594bfca1f02e07addfef1e3c5"
+    },
+    {
+      "id": "G008",
+      "repetition": 1,
+      "sha256": "eae92516847aaa3f7b8bbb6a557de486f0d7ed877c6d153225af2dc3cc5c0410"
+    },
+    {
+      "id": "G008",
+      "repetition": 2,
+      "sha256": "9b645c6a560a627cf0ad837550016cdc5fa3b6481062a937205bbffb0854a755"
+    },
+    {
+      "id": "G009",
+      "repetition": 0,
+      "sha256": "4331e3df8a28ef10cdb1ceacba74c7061283c9c045d0367b9e1d5df770ed5a92"
+    },
+    {
+      "id": "G009",
+      "repetition": 1,
+      "sha256": "ad6d3524b5c1efdca64ecc334b3237d52a1a7ee84882dc2c1ac46ea55e97b40b"
+    },
+    {
+      "id": "G009",
+      "repetition": 2,
+      "sha256": "15053f2fc6d180366403f00763847605dca5a23a790853c013f73d7a54a7b30f"
+    }
+  ],
+  "scores": [
+    {
+      "repetition": 0,
+      "target": null,
+      "threshold": 127,
+      "feasible": true,
+      "summary": [
+        {
+          "split": "fit",
+          "kind": "all_genuine",
+          "total": 40,
+          "accepted": 6,
+          "joint": 6
+        },
+        {
+          "split": "fit",
+          "kind": "unknown_edits",
+          "total": 20,
+          "accepted": 2,
+          "joint": 2
+        },
+        {
+          "split": "fit",
+          "kind": "same_prompt",
+          "total": 4,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "fit",
+          "kind": "wrong_record",
+          "total": 36,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "fit",
+          "kind": "imprint_150",
+          "total": 4,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "calibration",
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 3,
+          "joint": 3
+        },
+        {
+          "split": "calibration",
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "calibration",
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "calibration",
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "calibration",
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "evaluation",
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 5,
+          "joint": 5
+        },
+        {
+          "split": "evaluation",
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 2,
+          "joint": 2
+        },
+        {
+          "split": "evaluation",
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "evaluation",
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "evaluation",
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "repetition": 0,
+      "target": 0.9,
+      "threshold": null,
+      "feasible": false,
+      "summary": null
+    },
+    {
+      "repetition": 0,
+      "target": 0.95,
+      "threshold": null,
+      "feasible": false,
+      "summary": null
+    },
+    {
+      "repetition": 1,
+      "target": null,
+      "threshold": 127,
+      "feasible": true,
+      "summary": [
+        {
+          "split": "fit",
+          "kind": "all_genuine",
+          "total": 40,
+          "accepted": 6,
+          "joint": 6
+        },
+        {
+          "split": "fit",
+          "kind": "unknown_edits",
+          "total": 20,
+          "accepted": 2,
+          "joint": 2
+        },
+        {
+          "split": "fit",
+          "kind": "same_prompt",
+          "total": 4,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "fit",
+          "kind": "wrong_record",
+          "total": 36,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "fit",
+          "kind": "imprint_150",
+          "total": 4,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "calibration",
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 3,
+          "joint": 3
+        },
+        {
+          "split": "calibration",
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "calibration",
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "calibration",
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "calibration",
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "evaluation",
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 4,
+          "joint": 4
+        },
+        {
+          "split": "evaluation",
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 1,
+          "joint": 1
+        },
+        {
+          "split": "evaluation",
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "evaluation",
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "evaluation",
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "repetition": 1,
+      "target": 0.9,
+      "threshold": null,
+      "feasible": false,
+      "summary": null
+    },
+    {
+      "repetition": 1,
+      "target": 0.95,
+      "threshold": null,
+      "feasible": false,
+      "summary": null
+    },
+    {
+      "repetition": 2,
+      "target": null,
+      "threshold": 127,
+      "feasible": true,
+      "summary": [
+        {
+          "split": "fit",
+          "kind": "all_genuine",
+          "total": 40,
+          "accepted": 6,
+          "joint": 6
+        },
+        {
+          "split": "fit",
+          "kind": "unknown_edits",
+          "total": 20,
+          "accepted": 2,
+          "joint": 2
+        },
+        {
+          "split": "fit",
+          "kind": "same_prompt",
+          "total": 4,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "fit",
+          "kind": "wrong_record",
+          "total": 36,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "fit",
+          "kind": "imprint_150",
+          "total": 4,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "calibration",
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 3,
+          "joint": 3
+        },
+        {
+          "split": "calibration",
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "calibration",
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "calibration",
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "calibration",
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "evaluation",
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 4,
+          "joint": 4
+        },
+        {
+          "split": "evaluation",
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 1,
+          "joint": 1
+        },
+        {
+          "split": "evaluation",
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "evaluation",
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "evaluation",
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        }
+      ]
+    },
+    {
+      "repetition": 2,
+      "target": 0.9,
+      "threshold": null,
+      "feasible": false,
+      "summary": null
+    },
+    {
+      "repetition": 2,
+      "target": 0.95,
+      "threshold": null,
+      "feasible": false,
+      "summary": null
+    },
+    {
+      "repetition": null,
+      "target": 0.9,
+      "threshold": 0.8586178421974182,
+      "feasible": true,
+      "summary": [
+        {
+          "split": "fit",
+          "kind": "all_genuine",
+          "total": 40,
+          "accepted": 31,
+          "joint": 31
+        },
+        {
+          "split": "fit",
+          "kind": "unknown_edits",
+          "total": 20,
+          "accepted": 17,
+          "joint": 17
+        },
+        {
+          "split": "fit",
+          "kind": "same_prompt",
+          "total": 4,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "fit",
+          "kind": "wrong_record",
+          "total": 36,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "fit",
+          "kind": "imprint_150",
+          "total": 4,
+          "accepted": 4,
+          "joint": 4
+        },
+        {
+          "split": "calibration",
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 27,
+          "joint": 27
+        },
+        {
+          "split": "calibration",
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 14,
+          "joint": 14
+        },
+        {
+          "split": "calibration",
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "calibration",
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "calibration",
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 3,
+          "joint": 3
+        },
+        {
+          "split": "evaluation",
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 28,
+          "joint": 28
+        },
+        {
+          "split": "evaluation",
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 13,
+          "joint": 13
+        },
+        {
+          "split": "evaluation",
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "evaluation",
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "evaluation",
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 3,
+          "joint": 3
+        }
+      ]
+    },
+    {
+      "repetition": null,
+      "target": 0.95,
+      "threshold": 0.8728673458099365,
+      "feasible": true,
+      "summary": [
+        {
+          "split": "fit",
+          "kind": "all_genuine",
+          "total": 40,
+          "accepted": 32,
+          "joint": 32
+        },
+        {
+          "split": "fit",
+          "kind": "unknown_edits",
+          "total": 20,
+          "accepted": 17,
+          "joint": 17
+        },
+        {
+          "split": "fit",
+          "kind": "same_prompt",
+          "total": 4,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "fit",
+          "kind": "wrong_record",
+          "total": 36,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "fit",
+          "kind": "imprint_150",
+          "total": 4,
+          "accepted": 4,
+          "joint": 4
+        },
+        {
+          "split": "calibration",
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 29,
+          "joint": 29
+        },
+        {
+          "split": "calibration",
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 14,
+          "joint": 14
+        },
+        {
+          "split": "calibration",
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "calibration",
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "calibration",
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 3,
+          "joint": 3
+        },
+        {
+          "split": "evaluation",
+          "kind": "all_genuine",
+          "total": 30,
+          "accepted": 28,
+          "joint": 28
+        },
+        {
+          "split": "evaluation",
+          "kind": "unknown_edits",
+          "total": 15,
+          "accepted": 13,
+          "joint": 13
+        },
+        {
+          "split": "evaluation",
+          "kind": "same_prompt",
+          "total": 3,
+          "accepted": 1,
+          "joint": 0
+        },
+        {
+          "split": "evaluation",
+          "kind": "wrong_record",
+          "total": 27,
+          "accepted": 0,
+          "joint": 0
+        },
+        {
+          "split": "evaluation",
+          "kind": "imprint_150",
+          "total": 3,
+          "accepted": 3,
+          "joint": 3
+        }
+      ]
+    }
+  ],
+  "artifacts": {
+    "pairing_control_rows.json": "1dd602bc4c59d57fddfc39afe7711f911f97b05b75c51bff67fd0791bf67f44d",
+    "pairing_control_continuous.json": "517a168640cef47c7b0f91048fa2dce7b0545b0d6d686990743554495f9721a4"
+  },
+  "scope": "Within-split mechanism control; global-shuffle arm retained separately"
+}

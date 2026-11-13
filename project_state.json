@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-13T20:37:27+00:00",
+  "updated_at": "2026-11-13T20:57:31+00:00",
   "status": "native_baselines_and_instance_key_recovery",
-  "active_experiments": 2,
+  "active_experiments": 0,
   "queued_experiments": 0,
-  "latest_progress_report": "reports/recovered_carrier_transfer_20261113/report.md",
+  "latest_progress_report": "reports/shared_channel_binding_20261114/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/INSTANCE_BINDING_RESEARCH.md",
   "native_sembind_reproduction_complete": false,
@@ -58,8 +58,16 @@
   ],
   "max_concurrent_gpus": 3,
   "evaluation_policy": "Unchanged published top-venue attacks only; full budgets; no attack development; matched absolute genuine detection",
-  "current_decision": "Complete native baseline coverage and diagnose final-instance separability without new training",
+  "current_decision": "Shared-spectrum recovery did not improve over same-codec SSCD or calibrated strong controls; next mechanism must preserve instance separation under held-out edits with explicit reference and recovery costs",
   "completed_evidence": [
+    {
+      "path": "reports/shared_channel_binding_20261114/report.md",
+      "scope": "17040actual recoveries+690within-split controls;4143successes exact;710native calls,415restored calls;288matched comparisons;shared-spectrum recovery failed calibrated coverage."
+    },
+    {
+      "path": "reports/copynce_control_20261114/report.md",
+      "scope": "Author CopyNCE base descriptor/matcher,440observations710pairs;frozenGS95 matcherjointTR98/100,PRC59/100;held-out edit calibration and paired source bootstrap complete."
+    },
     {
       "path": "reports/paired_channel_recovery_20261113/report.md",
       "scope": "80 fresh enrollment inversions,3960 actual recoveries,199 nativeGS calls; paired channel45-46/50 vs multi-templateSSCD48/50 at95% calibration"
@@ -162,28 +170,16 @@
     }
   ],
   "latest_experiment": {
-    "run": "sembind_prc_deterministic_20261113",
+    "run": "shared_channel_binding_20261114_v2",
     "status": "complete",
-    "coordinator_pid": 5948,
-    "protocol": "protocols/sembind_prc_deterministic_20261113.json",
-    "protocol_sha256": "6376f2a08175d4d4da44cc0f8904f8c4876183d4c0bfc8985446d755fe009d08",
-    "result": "reports/three_baselines_20261113/sembind_prc_deterministic_results.json",
-    "sources": 6,
-    "decisions": 24,
-    "artifact_checks": 48,
-    "deterministic_backend": true,
-    "genuine": {
-      "accepted": 6,
-      "n": 6
-    },
-    "unwatermarked": {
-      "accepted": 0,
-      "n": 6
-    },
-    "exact_payloads": 6,
-    "complete_pipeline_bitwise_repeatability_established": false,
-    "completed_at": "2026-11-13T10:06:43.985391+08:00",
-    "paper_full_benchmark_reproduced": false
+    "protocol": "protocols/shared_channel_binding_20261114_v2.json",
+    "protocol_sha256": "204dbe256f2e0c23016e75db4355e962fd11aa8e08b60b113facd6eb633db19d",
+    "report": "reports/shared_channel_binding_20261114/report.md",
+    "actual_recoveries": 17040,
+    "additional_control_recoveries": 690,
+    "native_carrier_changed": false,
+    "attack_generation": false,
+    "independent_confirmation": false
   },
   "provenance_policy": "Executed run source and protocol hashes remain frozen; use their exact versions for replay",
   "required_validation": [
@@ -711,9 +707,8 @@
   },
   "shared_channel_binding": {
     "run": "shared_channel_binding_20261114_v2",
-    "status": "cpu_recovery_and_audit",
+    "status": "complete",
     "coordinator_pid": 19264,
-    "exit_wait_session": 23873,
     "gpu": null,
     "protocol": "protocols/shared_channel_binding_20261114_v2.json",
     "protocol_sha256": "204dbe256f2e0c23016e75db4355e962fd11aa8e08b60b113facd6eb633db19d",
@@ -727,7 +722,7 @@
     "attack_generation": false,
     "independent_confirmation": false,
     "superiority_established": false,
-    "observation": "Continuous feature and full-spectrum information diagnostics complete; actual recovery, audits and within-split control continue. Shared-spectrum superiority not established.",
+    "observation": "17730 actual recovery decisions including within-split control; shared-phase TR maximum recovery19-21/100 versus SSCD83-84/100; no 90/95percent calibration feasibility for shared-spectrum candidates;288/288 descriptive matched comparisons weakly dominated by controls",
     "postprocessor_pid": 32580,
     "extra_control_recoveries": 690,
     "pairing_control_protocol": "protocols/shared_pairing_control_20261114_v2.json",
@@ -746,11 +741,23 @@
     "continuous_separation": "reports/shared_channel_binding_20261114/continuous_separation.json",
     "information_diagnostic": "reports/shared_channel_binding_20261114/spectral_information.json",
     "related_work": "reports/shared_channel_binding_20261114/related_work.md",
-    "information_figure": "reports/shared_channel_binding_20261114/information_figure/instance_and_forgery.png"
+    "information_figure": "reports/shared_channel_binding_20261114/information_figure/instance_and_forgery.png",
+    "actual_recoveries": 17040,
+    "successful_recoveries": 4103,
+    "additional_pairing_recoveries": 690,
+    "additional_pairing_successes": 40,
+    "native_calls": 710,
+    "restored_native_calls": 401,
+    "additional_pairing_native_calls": 14,
+    "native_acceptance_disagreements": 0,
+    "report": "reports/shared_channel_binding_20261114/report.md",
+    "review": "reports/shared_channel_binding_20261114/review_summary.json",
+    "heldout_calibration": "reports/shared_channel_binding_20261114/heldout_edit_calibration_with_negatives.json",
+    "completed_pipeline_seconds": 3748.946808576584
   },
   "copynce_control": {
     "run": "copynce_control_20261114",
-    "status": "native_join_pending",
+    "status": "complete",
     "coordinator_pid": 49025,
     "protocol": "protocols/copynce_control_20261114.json",
     "protocol_sha256": "f29de4ab378ba66cccd8025b3446772a0975bf00d4f34c9ea31537b423d231d8",
@@ -760,7 +767,6 @@
     "weights_downloaded_to_server": true,
     "planned_query_observations": 440,
     "planned_pairs": 710,
-    "parent_wait_pid": 19264,
     "attack_generation": false,
     "independent_confirmation": false,
     "scope": "Released base ViT-S224 descriptor and matcher; unchanged author models, project data/evaluation adapter",
@@ -771,6 +777,39 @@
     "extraction_gpu": 7,
     "extraction_seconds": 51.713,
     "comparison_postprocessor_pid": 8117,
-    "extract_result": "reports/copynce_control_20261114/extract_complete.json"
+    "extract_result": "reports/copynce_control_20261114/extract_complete.json",
+    "report": "reports/copynce_control_20261114/report.md",
+    "result": "reports/copynce_control_20261114/summary.json",
+    "comparison": "reports/copynce_control_20261114/comparison.json",
+    "matched_pair_checks": 710,
+    "gs95_matcher_joint": {
+      "GS": [
+        29,
+        30
+      ],
+      "TR": [
+        98,
+        100
+      ],
+      "PRC": [
+        59,
+        100
+      ]
+    },
+    "heldout95_matcher_content": {
+      "GS": [
+        15,
+        15
+      ],
+      "TR": [
+        50,
+        50
+      ],
+      "PRC": [
+        50,
+        50
+      ]
+    },
+    "superiority_established": false
   }
 }

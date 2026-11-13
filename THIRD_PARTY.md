@@ -40,3 +40,9 @@ HEAD相符不证明工作树未改、依赖相同或实验与论文等价。需�
 ## Tree-Ring for SemBind carrier verification
 
 Original repository: https://github.com/YuxinWenRick/tree-ring-watermark/tree/3015283d9cf82e90b628f02ad2121bd37408ca9a . The original optim_utils.py carrier functions are loaded unchanged on249. Source Git-blob and SHA256 records: reports/three_baselines_20261113/tree_ring_source.json. Channel3/ring/radius10 follows the official README experiment command, rather than the script parser default rand/channel0. SemBind generation and inversion remain its own DPM configuration; private binding is the paper-completed project implementation.
+
+## CopyNCE实例匹配强对照
+
+2026-11-14固定[作者仓库](https://github.com/eddielyc/CopyNCE/tree/c2223d18abf3289202666a0d2b9db1c3a7f1b483)版本`c2223d18abf3289202666a0d2b9db1c3a7f1b483`。对应ICCV2025论文Tracing Copied Pixels and Regularizing Patch Affinity in Copy Detection。源码在249的`third_party/CopyNCE-c2223d18abf3289202666a0d2b9db1c3a7f1b483`，两个作者公开基础检查点在`models/copynce/`；本仓库只保存调用适配、协议和可公开结果。
+
+使用224×224 ViT-S描述子与匹配器第30轮基础检查点。描述子SHA256为`829fdf4ae032bac24b4fcc60535cfc3b53026af083b33a0b8c71f1973f2166db`，匹配器为`dd8dea1c345039bbda303c42457aa3a0389d46fb37ea39506bfb1faddedda1df`。来源链接、逐文件哈希和模型配置见[冻结协议](protocols/copynce_control_20261114.json)，执行范围见[对照报告](reports/copynce_control_20261114/report.md)。
