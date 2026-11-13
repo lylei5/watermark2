@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-13T16:27:21.9433482Z",
+  "updated_at": "2026-11-13T19:33:35.465078+00:00",
   "status": "native_baselines_and_instance_key_recovery",
-  "active_experiments": 2,
+  "active_experiments": 1,
   "queued_experiments": 0,
   "latest_progress_report": "reports/recovered_carrier_transfer_20261113/report.md",
   "evidence_index": "reports/README.md",
@@ -66,7 +66,7 @@
     },
     {
       "path": "reports/recovered_carrier_transfer_20261113/report.md",
-      "scope": "280 fresh native inversions and3360actual recoveries completed;2179exact successful recovery events,190restored native calls. PGID genuine join pending."
+      "scope": "280native inversions,3360actual recoveries,440PGID genuine/cover decisions complete; PGID legitimateTR60/100,PRC29/100;210descriptive matched comparisons and figure complete."
     },
     {
       "path": "reports/pgid_carrier_coverage_20261113/report.md",
@@ -528,20 +528,22 @@
     }
   },
   "pgid_carrier_genuine_controls": {
-    "status": "running",
+    "status": "complete",
     "protocol": "protocols/pgid_carrier_genuine_20261113.json",
     "jobs": [
       {
         "carrier": "TR",
         "pid": 24859,
         "gpu": 5,
-        "run": "pgid_carrier_genuine_20261113_v3"
+        "run": "pgid_carrier_genuine_20261113_v3",
+        "status": "complete"
       },
       {
         "carrier": "PRC",
         "pid": 47900,
         "gpu": 4,
-        "run": "pgid_carrier_genuine_20261113_v2"
+        "run": "pgid_carrier_genuine_20261113_v2",
+        "status": "complete"
       }
     ],
     "queries": 220,
@@ -560,7 +562,20 @@
     },
     "tr_protocol": "protocols/pgid_carrier_genuine_20261113_v3.json",
     "tr_csv_fix": "TR has no message payload column; use None. PRC lookup and all upstream functions unchanged.",
-    "execution_record": "reports/pgid_carrier_genuine_20261113/execution.md"
+    "execution_record": "reports/pgid_carrier_genuine_20261113/execution.md",
+    "result": "reports/pgid_carrier_genuine_20261113/execution.md",
+    "genuine": {
+      "TR": {
+        "native": 100,
+        "PGID": 60,
+        "total": 100
+      },
+      "PRC": {
+        "native": 64,
+        "PGID": 29,
+        "total": 100
+      }
+    }
   },
   "instance_nuisance_geometry": {
     "run": "instance_nuisance_geometry_20261113",
@@ -633,7 +648,7 @@
   },
   "recovered_carrier_transfer": {
     "run": "recovered_carrier_transfer_20261113",
-    "status": "recovery_complete_waiting_for_genuine_relaunch",
+    "status": "complete",
     "protocol": "protocols/recovered_carrier_transfer_20261113.json",
     "worker_pid": 39091,
     "auditor_pid": 36088,
@@ -645,12 +660,9 @@
     "threshold_tuning": false,
     "attack_generation": false,
     "independent_confirmation": false,
-    "audit_waits_for": [
-      24859,
-      47900
-    ],
+    "audit_waits_for": [],
     "protocol_note": "reports/recovered_carrier_transfer_20261113/protocol_note.md",
-    "audit_status": "waiting_for_TRv3_and_PRCv2_exit",
+    "audit_status": "complete",
     "comparison_pid": 21436,
     "audit_version": 3,
     "result_audit": "audited_scores_v3.json",
@@ -670,13 +682,16 @@
       }
     },
     "figure_pid": 28818,
-    "figure_status": "waiting_for_comparison_exit",
+    "figure_status": "complete",
     "source_uncertainty": "reports/recovered_carrier_transfer_20261113/source_uncertainty.json",
     "figure_launch": "reports/recovered_carrier_transfer_20261113/figure_launch.json",
-    "event_wait_session": 20662,
-    "last_observation": "Both genuine-control workers running; final audit, comparison and figure workers waiting on process-exit events."
+    "last_observation": "Both genuine controls, audit, comparison and figure processes completed.",
+    "comparison_status": "complete",
+    "native_replay_disagreements": 0,
+    "descriptive_comparisons": 210,
+    "figure_visual_inspection": "PNG labels and missing points checked; PDF fonts embedded TrueType"
   },
-  "last_queue_observation": "2026-11-13T16:22:00+00:00",
+  "last_queue_observation": "2026-11-13T19:04:14+00:00",
   "paired_channel_recovery": {
     "run": "paired_edit_registration_20261113",
     "status": "complete",
@@ -692,5 +707,29 @@
     "independent_confirmation": false,
     "superiority_established": false,
     "related_work": "reports/paired_channel_recovery_20261113/related_work.md"
+  },
+  "shared_channel_binding": {
+    "run": "shared_channel_binding_20261114",
+    "status": "running",
+    "coordinator_pid": 42703,
+    "exit_wait_session": 99281,
+    "gpu": 7,
+    "protocol": "protocols/shared_channel_binding_20261114.json",
+    "protocol_sha256": "7b6d7ccb496ff852f857a8f589273833b7bd43dfcb83865e8dba1abfc4e7bbf3",
+    "design": "reports/shared_channel_binding_20261114/protocol_note.md",
+    "preflight": "reports/shared_channel_binding_20261114/preflight.json",
+    "planned_recoveries": 17040,
+    "planned_native_queries": 710,
+    "new_generations": 10,
+    "new_inversions": 20,
+    "native_carrier_changed": false,
+    "attack_generation": false,
+    "independent_confirmation": false,
+    "superiority_established": false,
+    "observation": "Detached sequential extraction and actual recovery pipeline launched; no repeated progress polling.",
+    "postprocessor_pid": 39302,
+    "extra_control_recoveries": 690,
+    "pairing_control_protocol": "protocols/shared_pairing_control_20261114.json",
+    "postprocessor_scope": "Hash/region audit, real-edit cancellation statistics and within-split pairing control after main pipeline exit"
   }
 }

@@ -47,7 +47,11 @@ class InstanceRecovery:
         assert selector in ['clean_margin', 'orbit_margin', 'quotient_margin',
                             'tangent4_margin', 'tangent8_margin', 'tangent4_orbit']
         assert mode in ['fixed', 'templates', 'coset']
-        assert len(views) == len(families) == 8 and len(set(families)) == 4
+        if len(views) == 0:
+            assert len(families) == 0 and selector == 'clean_margin' and mode == 'fixed'
+            views = np.empty((0, 512), dtype=np.float32)
+        else:
+            assert len(views) == len(families) == 8 and len(set(families)) == 4
         key = secrets.token_bytes(16) if key is None else key
         transform = None
         if selector.startswith('tangent'):
