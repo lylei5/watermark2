@@ -1,56 +1,297 @@
 {
   "as_of": "2026-11-13",
-  "scope": "Audited development evidence and proposed instance-binding defense, no superiority claim",
+  "scope": "Defense mechanisms, published comparisons and attack evaluations, current progress, and a proposed instance-binding method",
   "slides": [
     {
       "title": "扩散模型语义水印防御",
-      "notes": "老师，上次讨论后，我把目标转到防御：希望在不明显损害合法图像检测和画质的条件下，减少水印伪造通过。这次汇报分两部分：一是把 SemBind、PGID、SEAL 的公开实现和论文规定逐项对齐，得到可追溯的基线结果；二是结合几轮失败实验，把创新问题收敛到最终发布实例的内容绑定。现在已有核心链路的验证证据，但还没有可以宣称超过先进防御的新方法结果。",
-      "sources": ["https://github.com/lylei5/watermark2/blob/main/reports/three_baselines_20261113/report.md", "https://github.com/lylei5/watermark2/blob/main/docs/CONTENT_KEY_FEASIBILITY.md"]
+      "point": "从现有方法的机制和弱点出发，研究面向发布实例的内容绑定。",
+      "notes": "老师，上次您建议转向防御以后，我先把 SemBind、PGID 和 SEAL 作为主要基线，开始跑通它们的核心流程，并结合实验找改进方向。\n今天先讲清楚三件事：它们各自怎么防，主要防什么攻击，论文里跟谁比、测了什么。然后再讲我们已经做了什么，以及我准备把创新放在哪里。\n目前我想抓住的问题是：同一张图经过正常编辑应该继续被认出来，而另一张语义相似的图应该有自己的身份。后面的方案会围绕这件事展开。",
+      "questions": [
+        {
+          "q": "现在最主要的进展是什么？",
+          "a": "三个基线的核心流程已经跑通，PGID 已完成小样本的完整 Imprint 测试；我们还分析了正常编辑保留、语义参考漂移和同提示词不同实例的码距离。下一阶段是训练实例码器并验证新的绑定方案。"
+        },
+        {
+          "q": "已经有新方法的结果了吗？",
+          "a": "目前拿到的是基线结果和问题诊断。新方法已经形成方案，接下来先验证实例区分，再看能否转化成防伪收益。"
+        }
+      ],
+      "sources": [
+        "https://github.com/lylei5/watermark2/blob/main/reports/three_baselines_20261113/report.md",
+        "https://github.com/lylei5/watermark2/blob/main/docs/CONTENT_KEY_FEASIBILITY.md"
+      ]
     },
     {
-      "title": "目录",
-      "notes": "首先说明防御任务和 SemBind 的机制。然后分别介绍三项基线已经验证到哪一步，避免把小样本链路测试当成完整论文复现。接下来讲失败实验揭示的同图漂移与实例混淆。最后给出内容密钥方向的机制、主要风险和判断是否值得继续的实验。全程关注的是防御收益，攻击只调用已有发表的原始基线。",
-      "sources": ["https://github.com/lylei5/watermark2/blob/main/docs/THREE_BASELINE_REPRODUCTION.md"]
+      "title": "汇报安排",
+      "point": "先讲三篇论文，再讲当前进展和改进思路。",
+      "notes": "前半部分先把攻击目标和三篇论文讲明白。每篇都按同一个顺序：防什么、怎么防、和谁比较、测了哪些攻击。\n后半部分讲这些方法留下的空间，以及我们的实验为什么把研究方向推向了具体发布图的实例绑定。",
+      "questions": [
+        {
+          "q": "为什么选这三个方法？",
+          "a": "它们代表三个位置：SemBind 在生成时调制已有水印，PGID 在检测时修复反演，SEAL 则直接把语义写进噪声构造。一起分析，可以看清生成端、检测端和内容绑定各自能解决什么。"
+        }
+      ],
+      "sources": [
+        "https://proceedings.mlr.press/v306/zhang26hj.html",
+        "https://arxiv.org/html/2605.09319v5",
+        "https://openaccess.thecvf.com/content/ICCV2025/html/Arabi_SEAL_Semantic_Aware_Image_Watermarking_ICCV_2025_paper.html"
+      ]
     },
     {
-      "title": "研究目标：可靠识别发布图像及其合法编辑",
-      "notes": "传统载体首先回答候选图中是否能恢复某个水印。但研究防伪时，还要回答它是不是目标发布图及其允许的编辑。合法的 JPEG、亮度等操作应保留目标身份，而另一张图不能只因模仿了载体特征就被认成该来源。对比防御不能只看攻击接受率低：如果把合法图也大量拒绝，结论并不公平。所以主指标是在匹配绝对合法检出率时的伪造接受，同时报告画质、耗时和信息权限。这里另一张合法发布图只是不属于当前记录，并不是全局的伪造图。",
-      "sources": ["https://proceedings.mlr.press/v306/zhang26hj.html", "https://arxiv.org/abs/2605.09319", "https://github.com/lylei5/watermark2/blob/main/AGENTS.md"]
+      "title": "先明确防什么：去除、伪造和篡改",
+      "point": "正常编辑后保留身份，换图或改内容后识别身份不匹配。",
+      "notes": "水印攻击先分成两个目标。去除是让原本属于我的图查不出水印；伪造是让另一张图被查成属于我。\nImprint 有这两个方向：用扰动改变反演得到的水印判定。Reprompt 是复用估计出的水印噪声，换一个提示词生成另一张图。SEAL 还专门研究局部篡改，比如往图里贴一个对象，内容变了，但原来的水印可能还在。\n我们主要研究防伪，同时保住正常图经过压缩、缩放之后的检出能力。这就要求系统区分两种变化：允许的图像处理，以及身份或内容发生了实质变化。",
+      "questions": [
+        {
+          "q": "图像压缩和内容篡改怎么区分？",
+          "a": "压缩、缩放等可以预先定义成允许操作；替换对象、改变关键内容则按来源认证要求视为篡改。具体实验会固定这份规则，再分别测正常保留和内容替换的拒绝。"
+        },
+        {
+          "q": "同一句提示词生成的两张图为什么要分开？",
+          "a": "它们是两个发布实例。比如同样是海边的狗，两张图的姿态、构图和细节仍然不同。验证第一张的发布记录时，第二张应当匹配自己的记录。"
+        }
+      ],
+      "sources": [
+        "https://proceedings.mlr.press/v306/zhang26hj.html",
+        "https://arxiv.org/html/2605.09319v5",
+        "https://openaccess.thecvf.com/content/ICCV2025/html/Arabi_SEAL_Semantic_Aware_Image_Watermarking_ICCV_2025_paper.html"
+      ]
     },
     {
-      "title": "SemBind 的语义绑定与当前实现",
-      "notes": "SemBind 先生成辅助图，用 DINOv2 和发布的语义网络提取 1024 位码。然后将码平铺、按绑定比例截断，再用秘密置换形成符号掩码，调制载体噪声并生成水印图。验证时从候选图重新提码，用官方 DPM 反演入口恢复潜变量，解绑后调用原生载体检测器。当前 GS 和 TR 使用全坐标绑定，PRC 按论文用一半坐标。官方没有发布完整绑定入口，所以我们的定位是官方组件加按论文补齐，HMAC 置换的具体派生明确属于项目约定。DPM 设置为 50 步，反演 CFG 3，inv_order=0，VAE 优化 100 步。inv_order=0 不启用扩散固定点修正，函数名 exact_inversion 不等于数学上无误差。显存适配、库版本和模型镜像的边界均有记录。",
-      "sources": ["https://proceedings.mlr.press/v306/zhang26hj.html", "https://github.com/XinZhang1999/SemBind", "https://github.com/lylei5/watermark2/blob/main/docs/BASELINE_IMPLEMENTATION_DIFFERENCES.md", "https://github.com/lylei5/watermark2/blob/main/scripts/defense/sembind_binding.py"]
+      "title": "SemBind：用语义码给已有水印加绑定",
+      "point": "生成时用内容调制噪声，验证时再用候选图自己的内容解开。",
+      "notes": "SemBind 主要防把水印搬到另一张图上的黑盒伪造。它先生成一张辅助图，从图像特征得到语义码，再把这段码变成符号掩码，调制原有的水印噪声，生成最终图。\n检测时做两件事：反演候选图得到噪声，同时从这张图重新提取语义码。用它解开调制以后，再交给原来的水印检测器。如果图像内容变了，解开的码就容易不匹配，借来的水印也就难以通过。\n论文的主要比较是 Tree-Ring、GS、PRC 和 GS++ 各自在加绑定前后的表现。主要攻击是 Imprint 和 Reprompt，附录还测了 WMCopier 以及 CtrlRegen 去除，也检查常规图像处理后的保留。\n它的关键取舍在语义码：为了让辅助图和最终图一致，训练会拉近同提示词图像。我们关心的是，怎样进一步把语义相近的不同实例分开。",
+      "questions": [
+        {
+          "q": "它是不是新造了一套水印？",
+          "a": "它是加在已有潜空间水印上的绑定框架，底层仍可以用 Tree-Ring、GS、PRC 或 GS++。主要改动是用语义掩码调制噪声，并在检测前解除调制。"
+        },
+        {
+          "q": "SemBind 和 SEAL 的区别是什么？",
+          "a": "SemBind 先有底层水印，再用视觉语义码调制；SEAL 直接从描述语义构造一块块初始噪声。前者强调通用绑定，后者是独立的水印构造。"
+        },
+        {
+          "q": "SemBind 到底复现了没有？",
+          "a": "目前是官方语义网络和 DPM 组件，加上按论文补齐的绑定流程，三种载体的正常图链路已经跑通。作者公开仓库没有完整绑定入口，所以具体私有置换派生由我们明确实现并记录。完整的论文攻击矩阵还在后续计划中。"
+        }
+      ],
+      "sources": [
+        "https://proceedings.mlr.press/v306/zhang26hj.html",
+        "https://github.com/XinZhang1999/SemBind",
+        "https://github.com/lylei5/watermark2/blob/main/docs/BASELINE_IMPLEMENTATION_DIFFERENCES.md"
+      ],
+      "subtitle": "ICML 2026 · 面向 Imprint 与 Reprompt 黑盒伪造",
+      "steps": [
+        [
+          "取得内容码",
+          "辅助图 → 视觉特征\n语义网络输出二值码"
+        ],
+        [
+          "调制已有水印",
+          "语义码 → 符号掩码\n调制载体噪声后生成图像"
+        ],
+        [
+          "按候选内容解绑",
+          "图像反演 + 自身语义码\n解绑后用原检测器判断"
+        ]
+      ],
+      "mechanism": "防伪逻辑：换了内容，语义码就会变；解绑失配使借来的水印难以通过。",
+      "comparators": "Tree-Ring、Gaussian Shading、PRC、GS++\n分别比较原方法与加 SemBind 的版本。",
+      "attacks": "主实验：Imprint、Reprompt\n补充：WMCopier 伪造、CtrlRegen 去除\n常规处理：压缩、亮度、模糊、噪声、缩放等",
+      "reference": "论文 §4；附录 D、G。主要比较：原载体与加绑定后的载体。"
     },
     {
-      "title": "三项防御基线：已完成的图像验证",
-      "notes": "这里是各自原生设置的验收表，不是同条件排行榜。GS-S 的 100 个提示词中，正常水印图全部接受。PRC-S 和 TR-S 各 6 例正常图全部通过，PRC 的 512 位载荷也全部精确解码。这些 6 例只能验证集成链路。SEAL 公开路径为 83/100，补齐论文私有 salt 后为 91/100；不同密钥和水印图使这两个数字不能解释成 salt 带来因果提升。PGID 的正常图对照各为 10/10。语义组件在 100 图十条件共 1000 次逐位核对中与官方入口完全一致，但这不等于完整系统复现。严格确定性检查只说明所测三例重复反演逐值一致，不证明跨设备或作者环境一致。100 次负例零接受的双侧 95% Clopper–Pearson 上界约为 3.62%，远不能证明百万分之一误报。GS 166、167、182 位工作点分别记录，本轮结果相同；负例身份随来源变化，不是固定用户自然图 FPR。GS++、其他 PGID 图像载体和全论文规模仍待完成。",
-      "sources": ["https://github.com/lylei5/watermark2/blob/main/reports/three_baselines_20261113/report.md", "https://github.com/lylei5/watermark2/blob/main/reports/phase1_trajectory_native_gs_20261113/baseline_summary.json", "https://github.com/lylei5/watermark2/blob/main/reports/three_baselines_20261113/sembind_tr_results.json", "https://github.com/lylei5/watermark2/blob/main/reports/three_baselines_20261113/sembind_determinism_results.json", "https://github.com/lylei5/watermark2/blob/main/reports/defense_revalidation_20261111/report.md"]
+      "title": "PGID：在检测端修复被扰动的反演过程",
+      "point": "让被移出检测区域的真实水印回来，让被移入的伪造信号退出。",
+      "notes": "PGID 针对的是 Imprint 的伪造和去除。它认为这类攻击把图像的潜变量推到了错误的检测区域，所以着手修复反演过程。\n具体分三步。先做一次普通反演，记录待测图的轨迹；然后多轮反演、去噪，在反演阶段引导潜变量偏离受扰动的参考轨迹，而且每轮去噪比反演多走几步；最后再完整反演一次，交给原检测器。\n同一套流程用两组参数：PGID-F 用于检查伪造，让冒充的水印失效；PGID-R 用于恢复被去除的真实水印。它不用重新训练生成模型，成本主要在检测时多做了计算。\n论文在 Tree-Ring、GS、PRC、T2SMark 上比较普通反演和加 PGID 的效果。主测 Imprint 两个方向，附录补充 VAE-Forgery 和 Average-Removal。它的优势是修复扰动，进一步要看修复过程怎样保住正常编辑的图像。",
+      "questions": [
+        {
+          "q": "它怎么知道应该恢复水印还是去掉伪造？",
+          "a": "论文给的是两种使用场景：普通检测没通过、但怀疑图像来自自己时，用 PGID-R 检查；普通检测通过、但图像可疑时，用 PGID-F 复核。两种模式使用不同参数。"
+        },
+        {
+          "q": "只是多去噪几次吗？",
+          "a": "还包含预先计算的反演轨迹、偏离该轨迹的引导，以及反演与去噪步数不对称的循环。这几部分共同构成论文的修复机制。"
+        },
+        {
+          "q": "它对什么攻击最有针对性？",
+          "a": "主要是通过扰动改变反演结果的攻击。论文也指出，Rinse 等重新生成类去除不属于它当前擅长解决的范围。"
+        }
+      ],
+      "sources": [
+        "https://arxiv.org/html/2605.09319v5",
+        "https://github.com/MinhQDuong/PGID",
+        "https://github.com/lylei5/watermark2/blob/main/reports/pgid_published_revalidation_20261112/report.md"
+      ],
+      "subtitle": "检测端防御 · 面向 Imprint 伪造与去除，无需重新训练模型",
+      "steps": [
+        [
+          "先记录反演轨迹",
+          "从待测图普通反演\n保存中间潜变量"
+        ],
+        [
+          "反复修复潜变量",
+          "引导偏离受扰动轨迹\n每轮去噪步数多于反演"
+        ],
+        [
+          "重新反演与检测",
+          "得到修复后的初始噪声\n再用原水印检测器判断"
+        ]
+      ],
+      "mechanism": "PGID-F：压低伪造信号；PGID-R：恢复真实水印。两种模式采用不同参数。",
+      "comparators": "Tree-Ring、Gaussian Shading、PRC、T2SMark\n分别比较普通反演与加 PGID 的版本。",
+      "attacks": "主实验：Imprint Forgery / Removal\n补充：VAE-Forgery、Average-Removal\n另测同模型、跨模型及不同反演调度器",
+      "reference": "论文 §4–5；附录 D、E。主要比较：原检测流程与反演修复后的流程。"
     },
     {
-      "title": "PGID：完整预算下的伪造拒绝与去除恢复",
-      "notes": "PGID 是检测端的渐进引导反演与去噪。我们保持作者原始入口、公开 GS fixture 和完整 151 次攻击更新。源码保存索引 50、100、150，实际对应 51、101、151 次更新。伪造方向，原检测在三个检查点均接受 10/10，PGID-F 均拒绝全部 10 个候选，同时保留 10/10 正常图。去除方向，原检测均为 0/10，PGID-R 均恢复到 10/10。因此 PGID 是需要认真对待的强基线。三个检查点是同十个来源，不是三十个独立样本。这里采用作者公开 fixture 和开发数据，没有证明未知私钥场景安全，也没有与 SemBind 使用统一载体和统一数据排名。PGID 的会议状态依据作者 arXiv v5 注明 NeurIPS 2026 接收，本页不依赖尚未核对的正式论文集条目。",
-      "sources": ["https://arxiv.org/abs/2605.09319", "https://github.com/MinhQDuong/PGID", "https://github.com/lylei5/watermark2/blob/main/reports/defense_revalidation_20261111/report.md", "https://github.com/lylei5/watermark2/blob/main/reports/three_baselines_20261113/pgid_removal_results.json"]
+      "title": "SEAL：把图像描述写进分块噪声",
+      "point": "语义匹配负责检查内容，空间检查负责发现局部篡改。",
+      "notes": "SEAL 关注两类冒用：一类是复用一张图的噪声、换提示词生成另一张图；另一类是只改图里一部分内容，但继续带着原水印。\n它先生成辅助图，用图像描述模型把内容写成一句话，再把这句话编码成向量。SimHash 把向量映射成分块密钥，与私有 salt 一起生成初始噪声。最终图就是从这组噪声生成的。\n检测时，候选图自己生成描述，得到一组参考噪声；同时反演候选图得到实际噪声，两边按块比较。内容改动较大时，语义参考就容易对不上。对局部贴入对象，还会检查不匹配区域的空间分布，也就是论文里的 Spatial Test。\n主要对比方法是 WIND、Tree-Ring 和 GS。论文测了私有模型噪声复用伪造、Latent Forgery 和 Cat Attack，也测试再生成、隐写分析去除及常规编辑；再生成实验另比较了 HiDDeN、Stable Signature、TrustMark 和 WOUAF。",
+      "questions": [
+        {
+          "q": "Cat Attack 是什么，为什么还要空间检查？",
+          "a": "就是在水印图中贴入一个对象来改变内容。如果全局描述对局部变化不敏感，语义判定可能仍然通过。空间检查观察异常噪声块是否集中成片，帮助识别局部编辑。"
+        },
+        {
+          "q": "它和 Reprompt 有什么关系？",
+          "a": "SEAL 的私有模型伪造测试同样包含反演噪声后换提示词生成，但假设攻击者可以使用生成方的模型。PPT 按原论文名称写，便于保留各自的威胁设定。"
+        },
+        {
+          "q": "我们目前实现到哪一步？",
+          "a": "已完成公开代码与论文 salt 路径的正常图、候选描述判定和良性处理测试，并做了参考漂移诊断。空间篡改检测和论文完整伪造矩阵还在后续验证计划里。"
+        }
+      ],
+      "sources": [
+        "https://openaccess.thecvf.com/content/ICCV2025/html/Arabi_SEAL_Semantic_Aware_Image_Watermarking_ICCV_2025_paper.html",
+        "https://openaccess.thecvf.com/content/ICCV2025/supplemental/Arabi_SEAL_Semantic_Aware_ICCV_2025_supplemental.pdf",
+        "https://github.com/lylei5/watermark2/blob/main/reports/three_baselines_20261113/report.md"
+      ],
+      "subtitle": "ICCV 2025 · 面向噪声复用伪造与局部内容篡改",
+      "steps": [
+        [
+          "用描述表达内容",
+          "辅助图 → 图像描述\n描述编码为语义向量"
+        ],
+        [
+          "构造分块水印噪声",
+          "SimHash + 私有 salt\n分块采样噪声并生成图像"
+        ],
+        [
+          "语义与空间检查",
+          "描述参考与反演噪声匹配\n局部异常再做空间检查"
+        ]
+      ],
+      "mechanism": "防伪逻辑：内容变化使参考噪声失配；局部篡改会形成集中的异常块。",
+      "comparators": "主要：WIND、Tree-Ring、Gaussian Shading\n再生成补充：HiDDeN、Stable Signature、\nTrustMark、WOUAF",
+      "attacks": "伪造 / 篡改：私有模型噪声复用\nLatent Forgery、Cat Attack\n去除：再生成、隐写分析\n常规处理：旋转、压缩、裁剪、模糊等",
+      "reference": "论文 §3–4；补充 §9、11、13.3。Cat Attack 为原论文的局部对象插入测试。"
     },
     {
-      "title": "SEAL：语义参考漂移影响正常检出与编辑鲁棒性",
-      "notes": "SEAL 通过图像描述、文本向量和 SimHash 生成语义关联的噪声。我们将公开代码和按论文补齐私有 salt 的路径分开，在各 100 个来源上测试七个条件，共 1400 条判定，所有分母包含正常图原本的漏检。固定语义规则要求 1024 块中至少 12 块距离严格小于 2.3。干净图误差分解发现，用生成时保存的噪声作为诊断参考，两组都能达到 100/100；实际漏检出现在从候选图重新提语义参考之后。这支持语义漂移是本批数据的瓶颈，但生成时参考对普通无数据库验证器不可用，不能当成新检测成绩。本表不是对论文 Figure 6 的复现或反驳：官方另有无需候选语义、逐块穷举 128 个码字并按负例 99 百分位定阈值的 TPR@1%FPR 入口。原代码 Noise0.1 实际为共享偏移及 uint8 运算，Brightness6 范围为 [0,7]，Blur8 是 PIL 半径。我们的固定样本及外层随机序列也与作者原队列不同，均明确记录。",
-      "sources": ["https://openaccess.thecvf.com/content/ICCV2025/papers/Arabi_SEAL_Semantic_Aware_Image_Watermarking_ICCV_2025_paper.pdf", "https://github.com/lylei5/watermark2/blob/main/reports/three_baselines_20261113/seal_benign_results.json", "https://github.com/lylei5/watermark2/blob/main/reports/three_baselines_20261113/seal_clean_diagnosis.json", "https://github.com/lylei5/watermark2/blob/main/docs/BASELINE_IMPLEMENTATION_DIFFERENCES.md"]
+      "title": "三条防御路线，留下哪些改进空间",
+      "point": "语义一致、反演稳定和实例身份，需要同时对齐。",
+      "notes": "把三篇放在一起看，SemBind 的强项是给已有水印加语义约束，但它强调同提示词图像的一致性，具体实例还需要进一步区分。\nPGID 的强项是修复反演扰动；它关注把潜变量拉回正确区域，正常编辑的保留与跨载体参数选择还需要仔细处理。\nSEAL 能检查语义变化，还能结合空间信息发现局部编辑；代价是检测依赖重新生成的描述和分块对应，描述漂移与几何变化都会影响稳定性。\n因此我想把问题收拢到具体的发布图像：同一张图正常编辑后，还是同一个身份；同语义但不同的图，要分开。这个目标能把鲁棒性和防伪放到同一个实例表示里研究。",
+      "questions": [
+        {
+          "q": "这三个方法在原论文里互相比较过吗？",
+          "a": "这里整理的是各自论文的实际比较对象。SemBind 和 PGID 主要比较底层水印加防御前后，SEAL 主要和其他水印构造比较。把三者放在统一条件下评测，是我们后续要做的工作。"
+        },
+        {
+          "q": "SemBind 只绑定一半坐标是不是关键弱点？",
+          "a": "部分载体使用一半绑定是它对鲁棒性与防伪的取舍。我们会固定其他条件比较不同绑定比例。当前研究主线更关注内容码能否区分实例，这个问题在讨论绑定比例之前就已经存在。"
+        }
+      ],
+      "sources": [
+        "https://proceedings.mlr.press/v306/zhang26hj.html",
+        "https://arxiv.org/html/2605.09319v5",
+        "https://openaccess.thecvf.com/content/ICCV2025/html/Arabi_SEAL_Semantic_Aware_Image_Watermarking_ICCV_2025_paper.html",
+        "https://github.com/lylei5/watermark2/blob/main/docs/CONTENT_KEY_FEASIBILITY.md"
+      ]
     },
     {
-      "title": "失败实验指出：容忍内容漂移，也会接纳不同实例",
-      "notes": "这一页是目前对方法选择最有价值的结果。为了让 95/100 个辅助图—最终图配对落在同一恢复区域内，需要 179 位半径。但相同半径也覆盖 88/100 个同提示词、不同 seed 的实例。半径是在同一开发批次上挑选的，这只是描述性重叠，不是独立覆盖保证，更不是实际 FE 密钥恢复或攻击成功率。它说明当前码器把提示词语义保持得较好，但难以支持实例级恢复边界。下面两项载体变体虽然减少了潜变量改动或提高辅助图相似度，却没有带来更好的合法接受和绑定表现；对照是当时的项目适配器，不能包装成完整原生 SemBind 比较。轨迹参考在两个数据集第 35 步的 P5 都未过预注册 0.95 门槛。当前证据支持先研究实例表征与生成时序，而不是继续增加载体模块。",
-      "sources": ["https://github.com/lylei5/watermark2/blob/main/reports/phase1_hamming_radius_20261113/report.md", "https://github.com/lylei5/watermark2/blob/main/reports/decision_region_pilot_20261112/report.md", "https://github.com/lylei5/watermark2/blob/main/reports/semantic_transport_pilot_20261112/report.md", "https://github.com/lylei5/watermark2/blob/main/reports/phase1_trajectory_native_gs_20261113/report.md"]
+      "title": "当前进展：基线已跑通，问题已定位",
+      "point": "当前结果把研究重点指向实例表征和稳定绑定。",
+      "notes": "目前已经做了三类工作。第一，跑通三个基线的核心流程，明确生成、反演和检测分别使用哪一条实现。第二，PGID 已完成完整预算的小样本 Imprint 测试，表现出了防伪和恢复能力；继续测正常编辑时，也看到了合法图误拒。\n第三，我们对内容绑定做了诊断。SEAL 在重新生成描述时存在参考漂移；SemBind 的语义码中，辅助图到最终图的变化，与同提示词不同实例的差异有明显重叠。\n此前改变载体噪声和使用生成轨迹作参考的方案，也没有带来稳定收益。所以我准备保留成熟载体，把重点放到内容码：先让同图编辑稳定、不同实例分开，再验证密钥绑定的作用。",
+      "questions": [
+        {
+          "q": "SemBind 现在用什么反演？",
+          "a": "使用官方 DPM 组件和论文对应的生成、反演设置，绑定流程按论文补齐，置换由保存的私有密钥派生。具体差异和结果都在仓库记录。"
+        },
+        {
+          "q": "现在最关键的发现是什么？",
+          "a": "容忍辅助图到最终图的漂移时，同提示词的其他实例也很容易落入相同范围。这说明直接给现有码加纠错，仍然会面对实例混淆，需要先改善表征。"
+        },
+        {
+          "q": "有失败实验，接下来怎么避免继续盲试？",
+          "a": "先看同图编辑和不同实例的距离能否分开。这一步直接验证核心假设；表征有改善之后，再接绑定协议和完整防御测试。"
+        }
+      ],
+      "sources": [
+        "https://github.com/lylei5/watermark2/blob/main/reports/three_baselines_20261113/report.md",
+        "https://github.com/lylei5/watermark2/blob/main/reports/pgid_published_revalidation_20261112/report.md",
+        "https://github.com/lylei5/watermark2/blob/main/reports/phase1_hamming_radius_20261113/report.md",
+        "https://github.com/lylei5/watermark2/blob/main/docs/CONTENT_KEY_FEASIBILITY.md"
+      ]
     },
     {
-      "title": "拟研究主线：最终发布实例的内容绑定",
-      "notes": "拟研究的机制是把允许编辑压在同一实例的恢复区域内，把其他实例排到区域外。模糊提取器可作为容错恢复工具，但先要解决两个问题。第一，辅助图派生密钥会改变载体噪声和最终生成实例，如果码器又要求区分不同 seed，就可能与生成流程冲突。候选路线是先按原生随机密钥生成，再针对最终发布图建立经认证的封装记录，这需要外部记录和提供者秘密，不是完全无状态。第二，标准 FE 通常保证半径内恢复，但不自动保证半径外拒绝；还要有距离检查、密钥确认、辅助数据认证，并分析内容在公开信息条件下的熵。内容公开可读，不能直接替代提供者秘密。这还只是候选设计，尚未训练或验证收益。最重要的对照是原生载体加同样实例指纹的直接门控。如果二者接受集合一样，那么创新应来自协议、存储或认证性质，而不能声称 FE 本身提高防伪。实例对比训练和容错认证都有先例，组合本身不构成创新证明。SemBind 的部分绑定可能影响纠错后残留，但目前没有 σ=0.5 与 1 的配对实验，不能把它写成已证实根因。",
-      "sources": ["https://github.com/lylei5/watermark2/blob/main/docs/CONTENT_KEY_FEASIBILITY.md", "https://www.cs.bu.edu/~reyzin/papers/fuzzy.pdf", "https://openaccess.thecvf.com/content/CVPR2022/html/Pizzi_A_Self-Supervised_Descriptor_for_Image_Copy_Detection_CVPR_2022_paper.html", "https://proceedings.mlr.press/v306/zhang26hj.html"]
+      "title": "改进方案：围绕最终发布图绑定实例身份",
+      "notes": "我准备把绑定对象明确成最终发布的那张图。先用原生 GS 或 PRC 正常生成，图像确定以后，再提取它的实例码并登记恢复记录。这样，登记对象和实际发布对象就是同一张图。\n训练时，同一张图的 JPEG、缩放等允许编辑作为正例，同提示词生成的其他实例作为负例。目标是让允许编辑留在一个稳定的恢复范围里，让其他实例落在外面。\n验证时，候选图先通过内容恢复、距离检查和密钥确认，取回对应的载体密钥，再做原生水印检测。模糊提取器是候选的容错工具。\n准备验证的创新，是让这个恢复范围既有实例区分能力，又能保留正常编辑，并把它落实到完整身份验证中。我们会把同样实例码的直接距离门控作为主要对照。",
+      "sources": [
+        "https://github.com/lylei5/watermark2/blob/main/docs/CONTENT_KEY_FEASIBILITY.md",
+        "https://www.cs.bu.edu/~reyzin/papers/fuzzy.pdf",
+        "https://openaccess.thecvf.com/content/CVPR2022/html/Pizzi_A_Self-Supervised_Descriptor_for_Image_Copy_Detection_CVPR_2022_paper.html",
+        "https://proceedings.mlr.press/v306/zhang26hj.html"
+      ],
+      "point": "创新准备落在实例恢复范围的学习，以及它和载体身份验证的结合。",
+      "questions": [
+        {
+          "q": "创新到底在哪里？听起来就是加一个指纹。",
+          "a": "具体准备研究的是恢复范围怎么学：训练目标直接面向同图编辑的尾部变化，以及同提示词其他实例的最近距离。再研究这个范围如何控制载体身份恢复。现成指纹加阈值是必须比较的基线，效果差异要由实验给出来。"
+        },
+        {
+          "q": "模糊提取器能保证半径外全部失败吗？",
+          "a": "标准定义主要保证半径内能够恢复。我们拟采用的完整验证还包括距离检查和密钥确认，把内容匹配、错误恢复和密钥认证分别分析。半径外的整体拒绝性质需要在具体构造下验证。"
+        },
+        {
+          "q": "图像和码器都是公开的，内容密钥还安全吗？",
+          "a": "公开内容主要用于判断实例是否匹配。提供者的主密钥仍然要保密，恢复记录也要有认证。密钥封装会采用经过审查的构造，并明确哪些信息是公开的、哪些属于提供者。"
+        },
+        {
+          "q": "既然需要登记，和数据库查图有什么区别？",
+          "a": "逐图登记确实是这条路线的成本。直接查鲁棒指纹就是最重要的对照。我们会在同样的记录权限下，比较防伪能力、编辑保留、记录大小和检索成本，再决定密钥恢复这一步是否值得保留。"
+        }
+      ]
     },
     {
-      "title": "下一步：以独立同条件实验决定是否形成论文",
-      "notes": "接下来按可证伪的顺序推进。先把三个基线尚缺的原生载体和完整攻击矩阵补齐，固定检测工作点和数据划分。然后围绕最终发布图训练或验证实例码器，先与原码器和直接距离门控比较合法编辑尾部和实例分离。如果分布仍无法分开，就不进入复杂密钥协议。只有这一必要条件成立，再评估经认证密钥恢复是否提供超出简单门控的独立收益。确认阶段只用已发表攻击的原始实现与完整预算，在相同合法检出率下比较，同时计入生成失败、画质、延迟和记录成本。目前可以向老师报告的是：基线核心链路已经建立证据，几轮实验帮助定位了问题；新防御尚待独立验证，不能提前宣称 SOTA 或达到论文发表标准。",
-      "sources": ["https://github.com/lylei5/watermark2/blob/main/docs/THREE_BASELINE_REPRODUCTION.md", "https://github.com/lylei5/watermark2/blob/main/docs/CONTENT_KEY_FEASIBILITY.md", "https://github.com/lylei5/watermark2/blob/main/AGENTS.md"]
+      "title": "下一步：把实例区分变成防御收益",
+      "notes": "下一步我按两个阶段做。先围绕最终发布图验证实例码，看看允许编辑和同提示词其他实例的距离能否分开。这一步同时比较现有语义码、实例训练码器和直接距离门控。\n有了稳定的恢复范围，再接内容密钥方案，测恢复率、误匹配、记录大小和耗时。最后在独立来源上，与 SemBind、PGID 和 SEAL 做同条件比较，攻击沿用原论文实现与完整预算。\n这篇工作的主线，我想落在“水印身份对应到具体发布图，并在允许编辑后保持稳定”。接下来最先回答的就是：实例区分有没有改善，改善以后能否转化成正常图保留和伪造拒绝的实际收益。",
+      "sources": [
+        "https://github.com/lylei5/watermark2/blob/main/docs/THREE_BASELINE_REPRODUCTION.md",
+        "https://github.com/lylei5/watermark2/blob/main/docs/CONTENT_KEY_FEASIBILITY.md",
+        "https://github.com/lylei5/watermark2/blob/main/AGENTS.md"
+      ],
+      "point": "先验证实例分离，再比较内容恢复对完整防御的收益。",
+      "questions": [
+        {
+          "q": "下一次汇报你最应该拿出什么？",
+          "a": "先拿出独立开发批次上的两类距离分布，以及按编辑条件分组的恢复率。再给出同一实例码下，直接门控与密钥恢复的配对结果。这样可以判断核心表征是否有效，也能判断协议是否有额外价值。"
+        },
+        {
+          "q": "如果直接门控和 FE 效果一样怎么办？",
+          "a": "那就优先保留更简单的方案，把贡献集中到实例表征和稳定恢复范围上。密钥恢复只有在安全属性、存储性质或实际性能上提供清楚的收益时，才值得成为主方法。"
+        },
+        {
+          "q": "这个方向能不能发论文？",
+          "a": "现在有清楚的问题、基线和机制假设。能否形成论文，关键看独立实验里能否提高防伪能力或合法编辑保留，并解释收益来自哪里。投稿定位会根据这组结果和查新情况再定。"
+        }
+      ]
     }
-  ]
+  ],
+  "guide": {
+    "title": "语义水印防御逐页讲稿与问答",
+    "intro": "对应 2026 年 11 月 13 日的 10 页汇报。每页先给口头讲稿，再给导师可能追问的问题。主讲约 12 至 15 分钟，问答按现场需要展开。",
+    "opening": "老师，我先介绍三篇防御论文分别防什么、怎么做，以及它们实际比较的方法和测试的攻击。然后讲我们已经跑通的基线和发现的问题，最后介绍围绕最终发布图做实例绑定的改进方案。",
+    "progress": "已跑通三个基线的核心流程，完成 PGID 小样本完整 Imprint 测试，并做了正常编辑保留、语义参考漂移和实例码距离诊断。",
+    "innovation": "拟研究的核心是实例区分：同一发布图的允许编辑保持一致，同提示词的其他图像分开。再用稳定的实例码控制载体身份恢复。",
+    "decision": "先验证实例表征，再比较直接内容匹配和容错密钥恢复，最后用已发表攻击对比三项防御基线。"
+  }
 }
