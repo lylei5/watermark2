@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-13T04:24:53.038298+00:00",
+  "updated_at": "2026-11-13T04:48:13.682597+00:00",
   "status": "native_baselines_and_instance_diagnostic",
   "active_experiments": 2,
   "queued_experiments": 3,
-  "latest_progress_report": "reports/carrier_content_channel_20261113/report.md",
+  "latest_progress_report": "reports/instance_coset_recovery_20261113/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/INSTANCE_BINDING_RESEARCH.md",
   "native_sembind_reproduction_complete": false,
@@ -419,7 +419,10 @@
     "extractor_implemented": false,
     "encoder_training_started": false,
     "overall_fpr_established": false,
-    "priority": "Design instance-conditioned recovery regions and actual recovery; compare direct SSCD, global subspace correction and generic inversion-statistic conditioning. Await native TR/PRC full attack and genuine controls."
+    "priority": "Design instance-conditioned recovery regions and actual recovery; compare direct SSCD, global subspace correction and generic inversion-statistic conditioning. Await native TR/PRC full attack and genuine controls.",
+    "authenticated_key_binding_implemented": true,
+    "actual_128bit_key_recovery": true,
+    "entropy_certified_fuzzy_extractor": false
   },
   "native_baseline_queue_order": [],
   "native_postprocessing": {
@@ -557,5 +560,19 @@
     "scope": "Post-hoc equal-dimensional readout controls; generic latent statistics predict content drift better",
     "configurations": 8,
     "coordinate_error_parity": 130
+  },
+  "instance_key_recovery": {
+    "run": "instance_coset_recovery_20261113",
+    "status": "complete",
+    "protocol": "protocols/instance_coset_recovery_20261113.json",
+    "report": "reports/instance_coset_recovery_20261113/report.md",
+    "actual_key_bits": 128,
+    "actual_recovery_decisions": 14760,
+    "exact_region_agreements": 14760,
+    "private_projection_repetitions": 3,
+    "encoder_training": false,
+    "native_carrier_changed": false,
+    "independent_confirmation": false,
+    "result": "Edit-aware reliability improves recovery; extra template/coset offsets give no benefit in this configuration"
   }
 }
