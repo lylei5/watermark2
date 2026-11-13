@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "models": {
+    "descriptor": {
+      "epoch": 30,
+      "excluded_training_parameters": [
+        "infonce_log_scale"
+      ],
+      "strict_model_parameters": true,
+      "parameter_count": 21862528
+    },
+    "matching": {
+      "epoch": 30,
+      "excluded_training_parameters": [],
+      "strict_model_parameters": true,
+      "parameter_count": 21667969
+    }
+  },
+  "torch_version": "2.5.1+cu124",
+  "timm_version": "0.9.2",
+  "environment_difference": "Author requirements use Python3.8/PyTorch2.1; runtime uses Python3.10/PyTorch2.5.1"
+}
