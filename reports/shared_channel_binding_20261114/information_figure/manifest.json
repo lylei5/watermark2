@@ -1,0 +1,33 @@
+{
+  "source_sha256": "03bbe1b97b33322418677346866bd6b83a156f0e5cca86441c71023d8d53e680",
+  "inputs": {
+    "/data0/liyanlei/watermark_research/runs/shared_channel_binding_20261114_v2/spectral_information.json": "901f3935c5f72a4611d69979cf1aff2872096c655177a6133232745d5c9972e7",
+    "/data0/liyanlei/watermark_research/runs/shared_channel_binding_20261114_v2/descriptors.npz": "09878c3d1b9044279133711ff8aa38354cae6f8d1a5643e99b7ffb8c9a972abd",
+    "/data0/liyanlei/watermark_research/runs/copynce_control_20261114/raw_rows.json": "acf505c4ae119f1ead2f5e03293f8c527a78d7434f306b173eeed043e6fc84e4",
+    "/data0/liyanlei/watermark_research/runs/shared_channel_binding_20261114_v2/protocol.json": "204dbe256f2e0c23016e75db4355e962fd11aa8e08b60b113facd6eb633db19d"
+  },
+  "output_files": {
+    "instance_and_forgery.pdf": "2006bea702721a9381c10784532fab58f005e106de74c72504bb3d35291ba58e",
+    "instance_and_forgery.png": "f4ba960cf2c3d93d631998d0f5c694fbdf0a051eb7b2faae5e6f18480ebc364b",
+    "source_data.csv": "b265f203543ffac2c878cb81d04bd4b6b244b5309d67eda0bec1a3fbd0dbb9fe"
+  },
+  "metadata": {
+    "pixels": [
+      2232,
+      1350
+    ],
+    "mode": "RGBA",
+    "dpi": [
+      180.00979999999998,
+      180.00979999999998
+    ]
+  },
+  "dimensions_inches": [
+    12.4,
+    7.5
+  ],
+  "uncertainty": "Observed finite-cohort counts; no interval treating repeated record pairs as independent",
+  "target": "General research report; publisher-specific formatting not assessed",
+  "software_reference": "Scientific Agent Skills, https://arxiv.org/abs/2609.00065",
+  "alt_text": "At a frozen GS95 calibration target, retaining full relative phase removes ordinary wrong-record matches but still accepts most full Imprint outputs. SSCD and the released CopyNCE matcher provide stronger forgery rejection on these TR and PRC development images."
+}

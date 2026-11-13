@@ -1,0 +1,43 @@
+method,label,carrier,kind,threshold,accepted,total
+shared_phase_pooled,"Relative phase, 512D",TR,all_genuine,0.9806191921234131,91,100
+shared_phase_pooled,"Relative phase, 512D",TR,wrong_record,0.9806191921234131,54,90
+shared_phase_pooled,"Relative phase, 512D",TR,imprint_150,0.9806191921234131,8,10
+shared_phase_pooled,"Relative phase, 512D",PRC,all_genuine,0.9806191921234131,73,100
+shared_phase_pooled,"Relative phase, 512D",PRC,wrong_record,0.9806191921234131,62,90
+shared_phase_pooled,"Relative phase, 512D",PRC,imprint_150,0.9806191921234131,7,10
+shared_phase_full,"Relative phase, 16384D",TR,all_genuine,0.9180610775947571,95,100
+shared_phase_full,"Relative phase, 16384D",TR,wrong_record,0.9180610775947571,0,90
+shared_phase_full,"Relative phase, 16384D",TR,imprint_150,0.9180610775947571,9,10
+shared_phase_full,"Relative phase, 16384D",PRC,all_genuine,0.9180610775947571,80,100
+shared_phase_full,"Relative phase, 16384D",PRC,wrong_record,0.9180610775947571,0,90
+shared_phase_full,"Relative phase, 16384D",PRC,imprint_150,0.9180610775947571,8,10
+content_phase_full,"Content phase, 16384D",TR,all_genuine,0.6189870238304138,92,100
+content_phase_full,"Content phase, 16384D",TR,wrong_record,0.6189870238304138,0,90
+content_phase_full,"Content phase, 16384D",TR,imprint_150,0.6189870238304138,8,10
+content_phase_full,"Content phase, 16384D",PRC,all_genuine,0.6189870238304138,95,100
+content_phase_full,"Content phase, 16384D",PRC,wrong_record,0.6189870238304138,0,90
+content_phase_full,"Content phase, 16384D",PRC,imprint_150,0.6189870238304138,10,10
+noise_phase_full,"Noise phase, 16384D",TR,all_genuine,0.7388646602630615,96,100
+noise_phase_full,"Noise phase, 16384D",TR,wrong_record,0.7388646602630615,0,90
+noise_phase_full,"Noise phase, 16384D",TR,imprint_150,0.7388646602630615,10,10
+noise_phase_full,"Noise phase, 16384D",PRC,all_genuine,0.7388646602630615,97,100
+noise_phase_full,"Noise phase, 16384D",PRC,wrong_record,0.7388646602630615,0,90
+noise_phase_full,"Noise phase, 16384D",PRC,imprint_150,0.7388646602630615,10,10
+sscd,"SSCD, 512D",TR,all_genuine,0.6998699903488159,98,100
+sscd,"SSCD, 512D",TR,wrong_record,0.6998699903488159,0,90
+sscd,"SSCD, 512D",TR,imprint_150,0.6998699903488159,0,10
+sscd,"SSCD, 512D",PRC,all_genuine,0.6998699903488159,96,100
+sscd,"SSCD, 512D",PRC,wrong_record,0.6998699903488159,0,90
+sscd,"SSCD, 512D",PRC,imprint_150,0.6998699903488159,0,10
+copynce_descriptor,"CopyNCE descriptor, 512D",TR,all_genuine,0.8893101215362549,93,100
+copynce_descriptor,"CopyNCE descriptor, 512D",TR,wrong_record,0.8893101215362549,6,90
+copynce_descriptor,"CopyNCE descriptor, 512D",TR,imprint_150,0.8893101215362549,2,10
+copynce_descriptor,"CopyNCE descriptor, 512D",PRC,all_genuine,0.8893101215362549,96,100
+copynce_descriptor,"CopyNCE descriptor, 512D",PRC,wrong_record,0.8893101215362549,12,90
+copynce_descriptor,"CopyNCE descriptor, 512D",PRC,imprint_150,0.8893101215362549,0,10
+copynce_matcher,"CopyNCE matcher, reference image",TR,all_genuine,0.44189244508743286,98,100
+copynce_matcher,"CopyNCE matcher, reference image",TR,wrong_record,0.44189244508743286,0,90
+copynce_matcher,"CopyNCE matcher, reference image",TR,imprint_150,0.44189244508743286,0,10
+copynce_matcher,"CopyNCE matcher, reference image",PRC,all_genuine,0.44189244508743286,95,100
+copynce_matcher,"CopyNCE matcher, reference image",PRC,wrong_record,0.44189244508743286,0,90
+copynce_matcher,"CopyNCE matcher, reference image",PRC,imprint_150,0.44189244508743286,0,10

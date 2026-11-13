@@ -33,3 +33,10 @@
 核实版本为`c2223d18abf3289202666a0d2b9db1c3a7f1b483`。[该版本README](https://github.com/eddielyc/CopyNCE/blob/c2223d18abf3289202666a0d2b9db1c3a7f1b483/README.md)发布224×224 ViT-S描述子和匹配器两个基础检查点，并说明其他配置的权重受发布流程限制。基础检查点、经微调检查点、局部裁剪集成及分数归一化应分别标注；不能将基础检查点称为复现论文全部最高分配置。
 
 作者源码与两个基础检查点已在249保存并记录哈希。模型权重经Google Drive连接工具转存，未保存在本机。[CopyNCE对照协议](../copynce_control_20261114/protocol_note.md)使用同图同校准划分；SSCD单参考、九模板float32/int8及各候选连续门控继续保留。
+
+## 编辑估计与局部密钥恢复的直接先例
+
+- Lin、Varodayan、Girod，Distributed Source Coding Authentication of Images with Affine Warping，ICASSP 2009：[作者稿](https://web.stanford.edu/~bgirod/pdfs/Lin_ICASSP09.pdf)。本轮核对作者稿索引中的摘要和引言，完整PDF访问返回502。工作将EM仿射估计放入Slepian–Wolf译码，用少量认证数据处理合法编码变化与篡改。联合估计编辑和译码已有直接先例。
+- An alignment-free fingerprint cryptosystem based on fuzzy vault scheme，Journal of Network and Computer Applications 33(3):207–220，2010：[出版记录与摘要](https://doi.org/10.1016/j.jnca.2009.12.003)。摘要描述以局部细节点描述子和局部结构形成免全局配准的模糊金库。局部几何不变量解锁秘密同样已有先例；该生物特征设置与生成图像水印仍需分别实验。
+
+当前值得检验的开放问题是：在限定登记信息和查询预算下，是否能保留强配对匹配器的实例间隔，并直接恢复原生载体密钥。研究必须分别测量“表征是否可分”和“给定登记信息能否解码”；完整参考图带来的信息优势与恢复协议带来的收益分开报告。该问题尚无本项目的新机制实证，局部匹配接已有模糊金库本身不作为创新结论。
