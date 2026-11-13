@@ -1,0 +1,62 @@
+[
+  {
+    "method": "sembind_hamming",
+    "anchor": "bound",
+    "k": 42,
+    "n": 50,
+    "clopper_pearson_95": [
+      0.7088736934048891,
+      0.9282992328167138
+    ]
+  },
+  {
+    "method": "sembind_hamming",
+    "anchor": "aux",
+    "k": 48,
+    "n": 50,
+    "clopper_pearson_95": [
+      0.8628623743960326,
+      0.9951185665738356
+    ]
+  },
+  {
+    "method": "sscd_cosine",
+    "anchor": "bound",
+    "k": 1,
+    "n": 50,
+    "clopper_pearson_95": [
+      0.0005062279830408291,
+      0.1064695457114999
+    ]
+  },
+  {
+    "method": "sscd_cosine",
+    "anchor": "aux",
+    "k": 49,
+    "n": 50,
+    "clopper_pearson_95": [
+      0.8935304542885001,
+      0.9994937720169592
+    ]
+  },
+  {
+    "method": "dinov2_cosine",
+    "anchor": "bound",
+    "k": 32,
+    "n": 50,
+    "clopper_pearson_95": [
+      0.4919313522856012,
+      0.7708429331794127
+    ]
+  },
+  {
+    "method": "dinov2_cosine",
+    "anchor": "aux",
+    "k": 47,
+    "n": 50,
+    "clopper_pearson_95": [
+      0.8345180533962271,
+      0.9874514121646659
+    ]
+  }
+]

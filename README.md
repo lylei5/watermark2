@@ -1,6 +1,8 @@
 # 扩散模型水印防御研究
 
-本项目先建立可复核的SemBind、PGID、SEAL防御基线，再研究内容绑定防御。当前尚未完成三个方法的全部图像与攻击验收，也未建立优于它们的结果。[实时状态](project_state.json)记录唯一运行队列；[验收契约](docs/THREE_BASELINE_REPRODUCTION.md)规定实现和数值复现的边界。
+本项目研究扩散水印的内容绑定防御，同时建立可复核的SemBind、PGID、SEAL原生基线。[实时状态](project_state.json)记录运行队列；[验收契约](docs/THREE_BASELINE_REPRODUCTION.md)规定实现和数值复现的范围。
+
+最新的[发布实例诊断](reports/instance_representation_20261113/report.md)完成100提示词、三种表征与两种参考方式的比较。评估侧SSCD最终图参考保留428/450张处理图，同提示词不同实例误匹配1/50；SemBind码对应420/450、42/50。[二值化实验](reports/sscd_binary_fe_20261113/report.md)进一步将1024位码的95%校准恢复半径从385–390降到214–220位。这些结果指向[最终实例的恢复区域](docs/INSTANCE_BINDING_RESEARCH.md)；完整水印防御和密钥恢复另行验证。PGID的TR/PRC完整151更新评测正在补全。
 
 [2026-11-13研究汇报](presentations/defense_briefing_20261113/README.md)包含中山大学模板演示文稿、逐页讲稿和实验来源。
 

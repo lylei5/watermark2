@@ -1,0 +1,122 @@
+[
+  {
+    "repetition": 0,
+    "selector": "fixed",
+    "observed_bits": 256,
+    "bch_n": 255,
+    "t": 101,
+    "designed_distance": 203,
+    "dimension": 1,
+    "note": "Remove one observed bit: this upper-bounds remaining errors; code dimension only, decoder not executed"
+  },
+  {
+    "repetition": 0,
+    "selector": "enrollment_margin",
+    "observed_bits": 256,
+    "bch_n": 255,
+    "t": 39,
+    "designed_distance": 79,
+    "dimension": 47,
+    "note": "Remove one observed bit: this upper-bounds remaining errors; code dimension only, decoder not executed"
+  },
+  {
+    "repetition": 0,
+    "selector": "fixed",
+    "observed_bits": 1024,
+    "bch_n": 1023,
+    "t": 390,
+    "designed_distance": 781,
+    "dimension": 1,
+    "note": "Remove one observed bit: this upper-bounds remaining errors; code dimension only, decoder not executed"
+  },
+  {
+    "repetition": 0,
+    "selector": "enrollment_margin",
+    "observed_bits": 1024,
+    "bch_n": 1023,
+    "t": 217,
+    "designed_distance": 435,
+    "dimension": 46,
+    "note": "Remove one observed bit: this upper-bounds remaining errors; code dimension only, decoder not executed"
+  },
+  {
+    "repetition": 1,
+    "selector": "fixed",
+    "observed_bits": 256,
+    "bch_n": 255,
+    "t": 97,
+    "designed_distance": 195,
+    "dimension": 1,
+    "note": "Remove one observed bit: this upper-bounds remaining errors; code dimension only, decoder not executed"
+  },
+  {
+    "repetition": 1,
+    "selector": "enrollment_margin",
+    "observed_bits": 256,
+    "bch_n": 255,
+    "t": 38,
+    "designed_distance": 77,
+    "dimension": 47,
+    "note": "Remove one observed bit: this upper-bounds remaining errors; code dimension only, decoder not executed"
+  },
+  {
+    "repetition": 1,
+    "selector": "fixed",
+    "observed_bits": 1024,
+    "bch_n": 1023,
+    "t": 385,
+    "designed_distance": 771,
+    "dimension": 1,
+    "note": "Remove one observed bit: this upper-bounds remaining errors; code dimension only, decoder not executed"
+  },
+  {
+    "repetition": 1,
+    "selector": "enrollment_margin",
+    "observed_bits": 1024,
+    "bch_n": 1023,
+    "t": 220,
+    "designed_distance": 441,
+    "dimension": 36,
+    "note": "Remove one observed bit: this upper-bounds remaining errors; code dimension only, decoder not executed"
+  },
+  {
+    "repetition": 2,
+    "selector": "fixed",
+    "observed_bits": 256,
+    "bch_n": 255,
+    "t": 99,
+    "designed_distance": 199,
+    "dimension": 1,
+    "note": "Remove one observed bit: this upper-bounds remaining errors; code dimension only, decoder not executed"
+  },
+  {
+    "repetition": 2,
+    "selector": "enrollment_margin",
+    "observed_bits": 256,
+    "bch_n": 255,
+    "t": 41,
+    "designed_distance": 83,
+    "dimension": 47,
+    "note": "Remove one observed bit: this upper-bounds remaining errors; code dimension only, decoder not executed"
+  },
+  {
+    "repetition": 2,
+    "selector": "fixed",
+    "observed_bits": 1024,
+    "bch_n": 1023,
+    "t": 385,
+    "designed_distance": 771,
+    "dimension": 1,
+    "note": "Remove one observed bit: this upper-bounds remaining errors; code dimension only, decoder not executed"
+  },
+  {
+    "repetition": 2,
+    "selector": "enrollment_margin",
+    "observed_bits": 1024,
+    "bch_n": 1023,
+    "t": 214,
+    "designed_distance": 429,
+    "dimension": 46,
+    "note": "Remove one observed bit: this upper-bounds remaining errors; code dimension only, decoder not executed"
+  }
+]

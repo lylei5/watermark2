@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-13T03:10:37.9183757Z",
+  "updated_at": "2026-11-13T03:25:33.025225+00:00",
   "status": "native_baselines_and_instance_diagnostic",
-  "active_experiments": 3,
+  "active_experiments": 2,
   "queued_experiments": 1,
-  "latest_progress_report": "reports/three_baselines_20261113/report.md",
+  "latest_progress_report": "reports/instance_representation_20261113/report.md",
   "evidence_index": "reports/README.md",
-  "research_plan": "docs/THREE_BASELINE_REPRODUCTION.md",
+  "research_plan": "docs/INSTANCE_BINDING_RESEARCH.md",
   "native_sembind_reproduction_complete": false,
   "superiority_established": false,
   "baseline": {
@@ -60,6 +60,14 @@
   "evaluation_policy": "Unchanged published top-venue attacks only; full budgets; no attack development; matched absolute genuine detection",
   "current_decision": "Complete native baseline coverage and diagnose final-instance separability without new training",
   "completed_evidence": [
+    {
+      "path": "reports/instance_representation_20261113/report.md",
+      "scope": "Fresh1300 images per extraction path; SSCD final428/450, wrong instance1/50; content-only development diagnostic"
+    },
+    {
+      "path": "reports/sscd_binary_fe_20261113/report.md",
+      "scope": "All12 binary quantization configurations and BCH/Plotkin bounds; no FE implemented"
+    },
     {
       "path": "reports/three_baselines_20261113/report.md",
       "scope": "GS-S100/100、PRC-S/TR-S各6/6；SEAL正常83/100与91/100及1400条良性判定；PGID-R完整10例；全论文矩阵未完成"
@@ -411,7 +419,7 @@
     "extractor_implemented": false,
     "encoder_training_started": false,
     "overall_fpr_established": false,
-    "priority": "Untrained instance diagnostic alongside baseline validation; new training deferred"
+    "priority": "Develop final-instance recovery geometry; validate frozen simple SSCD gate and native baselines before new encoder training"
   },
   "native_baseline_queue_order": [],
   "native_postprocessing": {
@@ -424,14 +432,21 @@
   "instance_representation": {
     "run": "instance_representation_20261113_v2",
     "protocol": "protocols/instance_representation_20261113_v2.json",
-    "status": "running",
+    "status": "complete",
     "gpu": 7,
     "pid": 21822,
-    "next": "SSCD extraction after DINO exit and official model download completion",
+    "next": "Fixed SSCD native-detector control on fresh PGID outputs",
     "training": false,
     "attack_jobs": 0,
     "independent_confirmation": false,
-    "report": "reports/instance_representation_20261113/report.md"
+    "report": "reports/instance_representation_20261113/report.md",
+    "result": "reports/instance_representation_20261113/scores.json",
+    "sscd_final": {
+      "genuine": 428,
+      "genuine_total": 450,
+      "wrong_instance": 1,
+      "wrong_instance_total": 50
+    }
   },
   "pgid_carrier_coverage": {
     "run": "pgid_carrier_coverage_20261113",
@@ -454,5 +469,25 @@
     "actual_updates": 151,
     "source_count_per_carrier": 10,
     "report": "reports/pgid_carrier_coverage_20261113/report.md"
+  },
+  "binary_code_diagnostic": {
+    "run": "sscd_binary_fe_20261113",
+    "status": "complete",
+    "protocol": "protocols/sscd_binary_fe_20261113.json",
+    "report": "reports/sscd_binary_fe_20261113/report.md",
+    "training": false,
+    "fuzzy_extractor_implemented": false
+  },
+  "sscd_reference_gate": {
+    "run": "sscd_pgid_reference_gate_20261113",
+    "status": "waiting_for_native_exit",
+    "pid": 34090,
+    "gpu_after_exit": 7,
+    "protocol": "protocols/sscd_pgid_reference_gate_20261113.json",
+    "source_count": 20,
+    "images": 260,
+    "predecessor_run": "pgid_carrier_coverage_20261113",
+    "threshold": 0.6199655532836914,
+    "attack_generation": false
   }
 }

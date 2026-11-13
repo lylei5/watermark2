@@ -1,0 +1,5321 @@
+{
+  "protocol_sha256": "f0e1a653af13bda73aff9c37dc59cbea454396d5b570ba7d4e066ce504b1b4d5",
+  "results": [
+    {
+      "method": "sembind_hamming",
+      "anchor": "bound",
+      "threshold": 171.0,
+      "calibration_accepted": 428,
+      "calibration_total": 450,
+      "groups": {
+        "calibration/COCO": {
+          "bound": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              1.0,
+              3.0,
+              14.0,
+              133.39999999999998,
+              322.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 20,
+            "total": 25,
+            "distance_quantiles": [
+              5.0,
+              5.6000000000000005,
+              65.0,
+              400.59999999999957,
+              468.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              1.0,
+              1.4000000000000004,
+              15.0,
+              83.99999999999996,
+              90.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.0,
+              1.0,
+              7.0,
+              19.19999999999999,
+              23.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.0,
+              2.2,
+              12.0,
+              44.8,
+              67.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              3.0,
+              5.0,
+              16.0,
+              100.59999999999988,
+              148.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              1.0,
+              1.4000000000000004,
+              11.0,
+              59.99999999999994,
+              68.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              1.0,
+              1.2000000000000002,
+              8.0,
+              30.799999999999997,
+              60.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.0,
+              1.0,
+              8.0,
+              38.59999999999998,
+              42.0
+            ]
+          },
+          "same": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              1.0,
+              6.4,
+              30.0,
+              229.1999999999997,
+              281.0
+            ],
+            "source_bootstrap_95": [
+              0.8,
+              1.0
+            ]
+          },
+          "aux": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              2.0,
+              2.4000000000000004,
+              26.0,
+              67.8,
+              85.0
+            ]
+          },
+          "gs": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              3.0,
+              3.2,
+              25.0,
+              179.99999999999986,
+              358.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 219,
+            "total": 225,
+            "source_bootstrap_95": [
+              0.9511111111111111,
+              0.9911111111111112
+            ]
+          }
+        },
+        "calibration/SDP": {
+          "bound": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              9.0,
+              23.6,
+              70.0,
+              131.39999999999998,
+              219.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 13,
+            "total": 25,
+            "distance_quantiles": [
+              28.0,
+              60.4,
+              171.0,
+              375.5999999999999,
+              415.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              3.0,
+              3.4000000000000004,
+              58.0,
+              234.59999999999977,
+              252.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              7.0,
+              10.2,
+              17.0,
+              48.599999999999994,
+              54.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              20.0,
+              20.4,
+              49.0,
+              110.99999999999999,
+              149.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              13.0,
+              18.6,
+              50.0,
+              157.1999999999999,
+              416.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              23.0,
+              26.6,
+              48.0,
+              84.0,
+              113.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              11.0,
+              17.0,
+              43.0,
+              97.79999999999995,
+              138.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              10.0,
+              16.2,
+              30.0,
+              64.59999999999997,
+              84.0
+            ]
+          },
+          "same": {
+            "accepted": 21,
+            "total": 25,
+            "distance_quantiles": [
+              25.0,
+              36.2,
+              88.0,
+              212.59999999999997,
+              270.0
+            ],
+            "source_bootstrap_95": [
+              0.68,
+              0.96
+            ]
+          },
+          "aux": {
+            "accepted": 20,
+            "total": 25,
+            "distance_quantiles": [
+              30.0,
+              38.0,
+              93.0,
+              219.39999999999986,
+              295.0
+            ]
+          },
+          "gs": {
+            "accepted": 20,
+            "total": 25,
+            "distance_quantiles": [
+              24.0,
+              41.8,
+              96.0,
+              275.39999999999986,
+              303.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 209,
+            "total": 225,
+            "source_bootstrap_95": [
+              0.8977777777777778,
+              0.9555555555555556
+            ]
+          }
+        },
+        "calibration/all": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 48,
+            "total": 50,
+            "distance_quantiles": [
+              1.0,
+              3.0,
+              44.0,
+              133.55,
+              322.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 33,
+            "total": 50,
+            "distance_quantiles": [
+              5.0,
+              8.45,
+              120.5,
+              399.69999999999993,
+              468.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 48,
+            "total": 50,
+            "distance_quantiles": [
+              1.0,
+              3.0,
+              35.5,
+              166.75,
+              252.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.0,
+              1.9000000000000004,
+              12.0,
+              45.19999999999999,
+              54.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.0,
+              3.9000000000000004,
+              27.5,
+              100.69999999999996,
+              149.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 49,
+            "total": 50,
+            "distance_quantiles": [
+              3.0,
+              5.45,
+              37.0,
+              139.89999999999995,
+              416.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              1.0,
+              3.45,
+              36.0,
+              79.49999999999997,
+              113.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              1.0,
+              2.0,
+              27.5,
+              79.59999999999997,
+              138.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.0,
+              1.9000000000000004,
+              17.5,
+              55.0,
+              84.0
+            ]
+          },
+          "same": {
+            "accepted": 44,
+            "total": 50,
+            "distance_quantiles": [
+              1.0,
+              8.45,
+              64.0,
+              234.7999999999999,
+              281.0
+            ],
+            "source_bootstrap_95": [
+              0.78,
+              0.96
+            ]
+          },
+          "aux": {
+            "accepted": 45,
+            "total": 50,
+            "distance_quantiles": [
+              2.0,
+              4.0,
+              64.0,
+              182.29999999999998,
+              295.0
+            ]
+          },
+          "gs": {
+            "accepted": 43,
+            "total": 50,
+            "distance_quantiles": [
+              3.0,
+              5.800000000000001,
+              67.5,
+              264.64999999999986,
+              358.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 428,
+            "total": 450,
+            "source_bootstrap_95": [
+              0.9311111111111111,
+              0.9688888888888889
+            ]
+          }
+        },
+        "evaluation/COCO": {
+          "bound": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.0,
+              4.000000000000002,
+              39.0,
+              76.99999999999999,
+              134.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 19,
+            "total": 25,
+            "distance_quantiles": [
+              2.0,
+              10.2,
+              93.0,
+              398.7999999999996,
+              483.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              0.0,
+              0.20000000000000018,
+              16.0,
+              136.79999999999984,
+              222.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.0,
+              1.0,
+              13.0,
+              39.8,
+              53.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              1.0,
+              4.6000000000000005,
+              23.0,
+              116.79999999999994,
+              129.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              1.0,
+              3.6000000000000005,
+              24.0,
+              89.39999999999996,
+              238.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              3.0,
+              4.2,
+              12.0,
+              75.39999999999999,
+              78.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.0,
+              0.6000000000000005,
+              15.0,
+              56.0,
+              59.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              3.0,
+              5.2,
+              12.0,
+              65.19999999999997,
+              107.0
+            ]
+          },
+          "same": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              4.0,
+              6.4,
+              48.0,
+              171.39999999999984,
+              269.0
+            ],
+            "source_bootstrap_95": [
+              0.8,
+              1.0
+            ]
+          },
+          "aux": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              4.0,
+              10.600000000000001,
+              51.0,
+              123.8,
+              208.0
+            ]
+          },
+          "gs": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              3.0,
+              3.2,
+              38.0,
+              159.39999999999992,
+              205.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 217,
+            "total": 225,
+            "source_bootstrap_95": [
+              0.9377777777777778,
+              0.9866666666666667
+            ]
+          }
+        },
+        "evaluation/SDP": {
+          "bound": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              21.0,
+              25.8,
+              60.0,
+              146.19999999999993,
+              211.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 12,
+            "total": 25,
+            "distance_quantiles": [
+              30.0,
+              55.2,
+              175.0,
+              308.4,
+              428.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 21,
+            "total": 25,
+            "distance_quantiles": [
+              8.0,
+              10.2,
+              57.0,
+              287.2,
+              479.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              6.0,
+              10.8,
+              33.0,
+              83.7999999999999,
+              96.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              16.0,
+              21.2,
+              50.0,
+              115.59999999999991,
+              129.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              11.0,
+              16.400000000000002,
+              62.0,
+              168.19999999999993,
+              281.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              15.0,
+              15.4,
+              43.0,
+              127.19999999999985,
+              244.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              6.0,
+              12.8,
+              52.0,
+              129.2,
+              174.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              11.0,
+              11.2,
+              33.0,
+              55.599999999999994,
+              81.0
+            ]
+          },
+          "same": {
+            "accepted": 19,
+            "total": 25,
+            "distance_quantiles": [
+              33.0,
+              36.2,
+              128.0,
+              338.5999999999997,
+              387.0
+            ],
+            "source_bootstrap_95": [
+              0.6,
+              0.92
+            ]
+          },
+          "aux": {
+            "accepted": 22,
+            "total": 25,
+            "distance_quantiles": [
+              29.0,
+              30.2,
+              85.0,
+              174.39999999999998,
+              307.0
+            ]
+          },
+          "gs": {
+            "accepted": 19,
+            "total": 25,
+            "distance_quantiles": [
+              16.0,
+              27.6,
+              105.0,
+              197.39999999999998,
+              407.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 203,
+            "total": 225,
+            "source_bootstrap_95": [
+              0.8533333333333334,
+              0.9377777777777778
+            ]
+          }
+        },
+        "evaluation/all": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 49,
+            "total": 50,
+            "distance_quantiles": [
+              0.0,
+              12.0,
+              44.5,
+              129.04999999999995,
+              211.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 31,
+            "total": 50,
+            "distance_quantiles": [
+              2.0,
+              11.0,
+              113.5,
+              374.24999999999966,
+              483.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 45,
+            "total": 50,
+            "distance_quantiles": [
+              0.0,
+              1.0,
+              38.0,
+              256.0999999999998,
+              479.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.0,
+              1.4500000000000002,
+              22.0,
+              54.099999999999994,
+              96.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              1.0,
+              7.9,
+              45.0,
+              121.55,
+              129.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 47,
+            "total": 50,
+            "distance_quantiles": [
+              1.0,
+              6.45,
+              40.0,
+              163.44999999999993,
+              281.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 49,
+            "total": 50,
+            "distance_quantiles": [
+              3.0,
+              5.45,
+              29.5,
+              81.29999999999998,
+              244.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 49,
+            "total": 50,
+            "distance_quantiles": [
+              0.0,
+              3.9000000000000004,
+              38.0,
+              111.1499999999999,
+              174.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              3.0,
+              6.0,
+              23.0,
+              62.949999999999974,
+              107.0
+            ]
+          },
+          "same": {
+            "accepted": 42,
+            "total": 50,
+            "distance_quantiles": [
+              4.0,
+              8.45,
+              88.5,
+              263.59999999999997,
+              387.0
+            ],
+            "source_bootstrap_95": [
+              0.74,
+              0.94
+            ]
+          },
+          "aux": {
+            "accepted": 46,
+            "total": 50,
+            "distance_quantiles": [
+              4.0,
+              13.0,
+              71.5,
+              173.64999999999998,
+              307.0
+            ]
+          },
+          "gs": {
+            "accepted": 43,
+            "total": 50,
+            "distance_quantiles": [
+              3.0,
+              7.600000000000001,
+              73.5,
+              196.64999999999998,
+              407.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 420,
+            "total": 450,
+            "source_bootstrap_95": [
+              0.9044444444444445,
+              0.9555555555555556
+            ]
+          }
+        }
+      }
+    },
+    {
+      "method": "sembind_hamming",
+      "anchor": "aux",
+      "threshold": 261.0,
+      "calibration_accepted": 428,
+      "calibration_total": 450,
+      "groups": {
+        "calibration/COCO": {
+          "bound": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              2.0,
+              2.4000000000000004,
+              26.0,
+              67.8,
+              85.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              1.0,
+              3.4000000000000004,
+              28.0,
+              123.8,
+              339.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 22,
+            "total": 25,
+            "distance_quantiles": [
+              5.0,
+              5.800000000000001,
+              75.0,
+              405.79999999999956,
+              472.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              1.0,
+              5.0,
+              35.0,
+              85.99999999999999,
+              101.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              3.0,
+              4.2,
+              32.0,
+              76.0,
+              86.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              2.0,
+              4.2,
+              25.0,
+              76.39999999999995,
+              101.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              3.0,
+              5.0,
+              26.0,
+              102.59999999999988,
+              144.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              2.0,
+              3.0,
+              24.0,
+              83.8,
+              103.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              3.0,
+              5.2,
+              28.0,
+              68.79999999999997,
+              82.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              2.0,
+              3.4000000000000004,
+              26.0,
+              60.999999999999986,
+              81.0
+            ]
+          },
+          "same": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              3.0,
+              4.4,
+              28.0,
+              210.1999999999998,
+              279.0
+            ],
+            "source_bootstrap_95": [
+              0.88,
+              1.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 221,
+            "total": 225,
+            "source_bootstrap_95": [
+              0.9644444444444444,
+              0.9955555555555555
+            ]
+          }
+        },
+        "calibration/SDP": {
+          "bound": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              30.0,
+              38.0,
+              93.0,
+              219.39999999999986,
+              295.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              37.0,
+              51.0,
+              119.0,
+              255.1999999999998,
+              285.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 19,
+            "total": 25,
+            "distance_quantiles": [
+              18.0,
+              53.400000000000006,
+              212.0,
+              384.19999999999993,
+              477.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 22,
+            "total": 25,
+            "distance_quantiles": [
+              34.0,
+              49.400000000000006,
+              146.0,
+              271.4,
+              276.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              28.0,
+              34.6,
+              88.0,
+              225.39999999999992,
+              322.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              28.0,
+              40.2,
+              111.0,
+              241.39999999999992,
+              355.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              32.0,
+              43.0,
+              106.0,
+              319.39999999999975,
+              458.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              41.0,
+              46.8,
+              106.0,
+              241.59999999999985,
+              315.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              26.0,
+              51.6,
+              114.0,
+              237.39999999999992,
+              328.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              31.0,
+              34.400000000000006,
+              102.0,
+              231.39999999999986,
+              320.0
+            ]
+          },
+          "same": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              10.0,
+              37.8,
+              91.0,
+              234.59999999999985,
+              378.0
+            ],
+            "source_bootstrap_95": [
+              0.88,
+              1.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 207,
+            "total": 225,
+            "source_bootstrap_95": [
+              0.8311111111111111,
+              0.9777777777777777
+            ]
+          }
+        },
+        "calibration/all": {
+          "bound": {
+            "accepted": 49,
+            "total": 50,
+            "distance_quantiles": [
+              2.0,
+              4.0,
+              64.0,
+              182.29999999999998,
+              295.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 47,
+            "total": 50,
+            "distance_quantiles": [
+              1.0,
+              5.45,
+              70.5,
+              236.6999999999998,
+              339.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 41,
+            "total": 50,
+            "distance_quantiles": [
+              5.0,
+              9.9,
+              137.0,
+              413.9499999999999,
+              477.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 47,
+            "total": 50,
+            "distance_quantiles": [
+              1.0,
+              7.700000000000001,
+              66.0,
+              255.54999999999995,
+              276.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 49,
+            "total": 50,
+            "distance_quantiles": [
+              3.0,
+              5.45,
+              63.5,
+              199.84999999999997,
+              322.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 49,
+            "total": 50,
+            "distance_quantiles": [
+              2.0,
+              6.800000000000001,
+              61.5,
+              217.14999999999998,
+              355.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 48,
+            "total": 50,
+            "distance_quantiles": [
+              3.0,
+              7.250000000000001,
+              63.0,
+              238.19999999999993,
+              458.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 49,
+            "total": 50,
+            "distance_quantiles": [
+              2.0,
+              3.9000000000000004,
+              57.5,
+              193.64999999999992,
+              315.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 49,
+            "total": 50,
+            "distance_quantiles": [
+              3.0,
+              6.45,
+              56.0,
+              218.55,
+              328.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 49,
+            "total": 50,
+            "distance_quantiles": [
+              2.0,
+              5.45,
+              54.5,
+              185.39999999999998,
+              320.0
+            ]
+          },
+          "same": {
+            "accepted": 48,
+            "total": 50,
+            "distance_quantiles": [
+              3.0,
+              7.800000000000001,
+              61.5,
+              235.44999999999993,
+              378.0
+            ],
+            "source_bootstrap_95": [
+              0.9,
+              1.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 428,
+            "total": 450,
+            "source_bootstrap_95": [
+              0.9044444444444445,
+              0.9822222222222222
+            ]
+          }
+        },
+        "evaluation/COCO": {
+          "bound": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              4.0,
+              10.600000000000001,
+              51.0,
+              123.8,
+              208.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              6.0,
+              13.0,
+              53.0,
+              143.39999999999998,
+              197.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 22,
+            "total": 25,
+            "distance_quantiles": [
+              6.0,
+              9.4,
+              126.0,
+              386.1999999999997,
+              469.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              9.0,
+              11.600000000000001,
+              48.0,
+              214.19999999999982,
+              313.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              6.0,
+              8.8,
+              38.0,
+              136.99999999999997,
+              207.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              6.0,
+              14.4,
+              50.0,
+              161.39999999999998,
+              178.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              6.0,
+              8.400000000000002,
+              48.0,
+              187.9999999999999,
+              269.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              4.0,
+              12.0,
+              42.0,
+              143.39999999999995,
+              176.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              4.0,
+              10.600000000000001,
+              50.0,
+              149.0,
+              203.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              5.0,
+              10.0,
+              40.0,
+              132.0,
+              208.0
+            ]
+          },
+          "same": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              2.0,
+              7.4,
+              44.0,
+              200.19999999999976,
+              329.0
+            ],
+            "source_bootstrap_95": [
+              0.88,
+              1.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 220,
+            "total": 225,
+            "source_bootstrap_95": [
+              0.96,
+              0.9955555555555555
+            ]
+          }
+        },
+        "evaluation/SDP": {
+          "bound": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              29.0,
+              30.2,
+              85.0,
+              174.39999999999998,
+              307.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              26.0,
+              29.4,
+              105.0,
+              253.79999999999984,
+              304.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 18,
+            "total": 25,
+            "distance_quantiles": [
+              24.0,
+              45.60000000000001,
+              162.0,
+              345.7999999999999,
+              454.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 21,
+            "total": 25,
+            "distance_quantiles": [
+              20.0,
+              43.6,
+              110.0,
+              311.0,
+              500.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              28.0,
+              33.8,
+              84.0,
+              192.99999999999994,
+              302.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              28.0,
+              36.400000000000006,
+              105.0,
+              194.5999999999999,
+              304.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              29.0,
+              39.2,
+              96.0,
+              225.79999999999984,
+              306.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              20.0,
+              23.8,
+              102.0,
+              205.3999999999999,
+              300.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              32.0,
+              32.2,
+              90.0,
+              189.99999999999994,
+              302.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              27.0,
+              29.2,
+              94.0,
+              171.39999999999998,
+              305.0
+            ]
+          },
+          "same": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              39.0,
+              41.0,
+              96.0,
+              250.79999999999995,
+              363.0
+            ],
+            "source_bootstrap_95": [
+              0.88,
+              1.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 206,
+            "total": 225,
+            "source_bootstrap_95": [
+              0.8266666666666667,
+              0.9688888888888889
+            ]
+          }
+        },
+        "evaluation/all": {
+          "bound": {
+            "accepted": 49,
+            "total": 50,
+            "distance_quantiles": [
+              4.0,
+              13.0,
+              71.5,
+              173.64999999999998,
+              307.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 48,
+            "total": 50,
+            "distance_quantiles": [
+              6.0,
+              15.700000000000001,
+              74.5,
+              203.59999999999997,
+              304.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 40,
+            "total": 50,
+            "distance_quantiles": [
+              6.0,
+              15.950000000000003,
+              144.0,
+              383.24999999999983,
+              469.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 45,
+            "total": 50,
+            "distance_quantiles": [
+              9.0,
+              14.0,
+              77.5,
+              308.5,
+              500.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 49,
+            "total": 50,
+            "distance_quantiles": [
+              6.0,
+              12.9,
+              77.0,
+              186.74999999999994,
+              302.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 49,
+            "total": 50,
+            "distance_quantiles": [
+              6.0,
+              17.35,
+              78.0,
+              172.14999999999998,
+              304.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 48,
+            "total": 50,
+            "distance_quantiles": [
+              6.0,
+              16.700000000000003,
+              85.5,
+              217.5499999999999,
+              306.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 49,
+            "total": 50,
+            "distance_quantiles": [
+              4.0,
+              12.45,
+              81.0,
+              175.55,
+              300.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 49,
+            "total": 50,
+            "distance_quantiles": [
+              4.0,
+              13.0,
+              78.0,
+              186.24999999999994,
+              302.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 49,
+            "total": 50,
+            "distance_quantiles": [
+              5.0,
+              11.8,
+              66.0,
+              170.64999999999998,
+              305.0
+            ]
+          },
+          "same": {
+            "accepted": 48,
+            "total": 50,
+            "distance_quantiles": [
+              2.0,
+              9.9,
+              64.5,
+              246.79999999999995,
+              363.0
+            ],
+            "source_bootstrap_95": [
+              0.9,
+              1.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 426,
+            "total": 450,
+            "source_bootstrap_95": [
+              0.9,
+              0.9755555555555555
+            ]
+          }
+        }
+      }
+    },
+    {
+      "method": "sscd_cosine",
+      "anchor": "bound",
+      "threshold": 0.6199655532836914,
+      "calibration_accepted": 428,
+      "calibration_total": 450,
+      "groups": {
+        "calibration/COCO": {
+          "bound": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.1920928955078125e-07
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.23085451126098633,
+              0.3225348711013794,
+              0.47023338079452515,
+              0.5725045442581177,
+              0.6007381677627563
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 19,
+            "total": 25,
+            "distance_quantiles": [
+              0.4028586149215698,
+              0.43996095657348633,
+              0.5626605153083801,
+              0.6679968476295471,
+              0.7546864748001099
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              0.010102689266204834,
+              0.04144103527069094,
+              0.4339839220046997,
+              0.5952069401741027,
+              0.633695125579834
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.010886192321777344,
+              0.013551998138427735,
+              0.039751529693603516,
+              0.14360198974609373,
+              0.1531975269317627
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.035359978675842285,
+              0.03937278985977173,
+              0.05117678642272949,
+              0.09315921068191525,
+              0.13573241233825684
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.14434200525283813,
+              0.16840615272521975,
+              0.35887932777404785,
+              0.5031944274902344,
+              0.5195490717887878
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.04662787914276123,
+              0.04932222366333008,
+              0.07296770811080933,
+              0.14537168741226192,
+              0.1659069061279297
+            ]
+          },
+          "sp_prob": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.0699998140335083,
+              0.09052951335906982,
+              0.16860926151275635,
+              0.3045255899429321,
+              0.33402132987976074
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.019848644733428955,
+              0.02089409828186035,
+              0.03095102310180664,
+              0.05014250278472899,
+              0.06552457809448242
+            ]
+          },
+          "same": {
+            "accepted": 0,
+            "total": 25,
+            "distance_quantiles": [
+              0.6685724854469299,
+              0.7208019018173217,
+              0.773526668548584,
+              0.9330839157104492,
+              0.958513081073761
+            ],
+            "source_bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "aux": {
+            "accepted": 1,
+            "total": 25,
+            "distance_quantiles": [
+              0.6106754541397095,
+              0.668830668926239,
+              0.7813450694084167,
+              0.8539534568786621,
+              0.8589786291122437
+            ]
+          },
+          "gs": {
+            "accepted": 1,
+            "total": 25,
+            "distance_quantiles": [
+              0.5656912326812744,
+              0.6716139912605286,
+              0.7660117149353027,
+              0.9277641534805297,
+              0.9423564672470093
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 218,
+            "total": 225,
+            "source_bootstrap_95": [
+              0.9466666666666667,
+              0.9866666666666667
+            ]
+          }
+        },
+        "calibration/SDP": {
+          "bound": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              9.536743164062466e-08,
+              1.1920928955078125e-07
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.29802489280700684,
+              0.3512007236480713,
+              0.44978517293930054,
+              0.5418667793273925,
+              0.6036576628684998
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 16,
+            "total": 25,
+            "distance_quantiles": [
+              0.4479685425758362,
+              0.47343873977661133,
+              0.5756585597991943,
+              0.6499744653701782,
+              0.6946021914482117
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 19,
+            "total": 25,
+            "distance_quantiles": [
+              0.0014343857765197754,
+              0.0024219989776611333,
+              0.4199884533882141,
+              0.7454362273216247,
+              0.7741284370422363
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.010082066059112549,
+              0.01942410469055176,
+              0.054010093212127686,
+              0.17980735301971432,
+              0.24672889709472656
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.04212319850921631,
+              0.048473358154296875,
+              0.0651082992553711,
+              0.08844548463821411,
+              0.0908963680267334
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.02802717685699463,
+              0.10199072360992432,
+              0.23020660877227783,
+              0.41912139654159536,
+              0.45273488759994507
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.026627540588378906,
+              0.043334472179412845,
+              0.06324195861816406,
+              0.15063152313232414,
+              0.16901874542236328
+            ]
+          },
+          "sp_prob": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.04895859956741333,
+              0.11443684101104737,
+              0.20329821109771729,
+              0.3637512564659118,
+              0.38454902172088623
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.01878887414932251,
+              0.02236497402191162,
+              0.03178083896636963,
+              0.06037579774856567,
+              0.09513485431671143
+            ]
+          },
+          "same": {
+            "accepted": 0,
+            "total": 25,
+            "distance_quantiles": [
+              0.6646177768707275,
+              0.6756141424179077,
+              0.7736895680427551,
+              0.9361869812011718,
+              1.0143629312515259
+            ],
+            "source_bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "aux": {
+            "accepted": 0,
+            "total": 25,
+            "distance_quantiles": [
+              0.6299525499343872,
+              0.6670797348022461,
+              0.8075432777404785,
+              0.9180919289588928,
+              0.942688524723053
+            ]
+          },
+          "gs": {
+            "accepted": 0,
+            "total": 25,
+            "distance_quantiles": [
+              0.6323145031929016,
+              0.6719636678695678,
+              0.7534905672073364,
+              0.9086177349090576,
+              0.921169638633728
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 210,
+            "total": 225,
+            "source_bootstrap_95": [
+              0.9066666666666666,
+              0.96
+            ]
+          }
+        },
+        "calibration/all": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              6.556510925292935e-08,
+              1.1920928955078125e-07
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.23085451126098633,
+              0.32261736392974855,
+              0.4561668932437897,
+              0.5705122143030167,
+              0.6036576628684998
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 35,
+            "total": 50,
+            "distance_quantiles": [
+              0.4028586149215698,
+              0.44521739780902864,
+              0.5657232105731964,
+              0.6659668177366257,
+              0.7546864748001099
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 43,
+            "total": 50,
+            "distance_quantiles": [
+              0.0014343857765197754,
+              0.006914290785789491,
+              0.4269861876964569,
+              0.7347675144672394,
+              0.7741284370422363
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.010082066059112549,
+              0.0147483229637146,
+              0.04318833351135254,
+              0.15990857481956477,
+              0.24672889709472656
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.035359978675842285,
+              0.04245941340923309,
+              0.05746382474899292,
+              0.08994831442832946,
+              0.13573241233825684
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.02802717685699463,
+              0.14252181947231293,
+              0.30198216438293457,
+              0.47645545899867997,
+              0.5195490717887878
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.026627540588378906,
+              0.046174725890159606,
+              0.06838473677635193,
+              0.1522071301937103,
+              0.16901874542236328
+            ]
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.04895859956741333,
+              0.09263856410980224,
+              0.18444597721099854,
+              0.3409646421670913,
+              0.38454902172088623
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.01878887414932251,
+              0.021197226643562318,
+              0.03113982081413269,
+              0.06024241745471954,
+              0.09513485431671143
+            ]
+          },
+          "same": {
+            "accepted": 0,
+            "total": 50,
+            "distance_quantiles": [
+              0.6646177768707275,
+              0.6761321365833283,
+              0.7736081182956696,
+              0.9383683204650879,
+              1.0143629312515259
+            ],
+            "source_bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "aux": {
+            "accepted": 1,
+            "total": 50,
+            "distance_quantiles": [
+              0.6106754541397095,
+              0.6634490549564361,
+              0.7856683731079102,
+              0.8978700250387192,
+              0.942688524723053
+            ]
+          },
+          "gs": {
+            "accepted": 1,
+            "total": 50,
+            "distance_quantiles": [
+              0.5656912326812744,
+              0.6702947974205017,
+              0.7636598348617554,
+              0.9161513328552245,
+              0.9423564672470093
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 428,
+            "total": 450,
+            "source_bootstrap_95": [
+              0.9333333333333333,
+              0.9666666666666667
+            ]
+          }
+        },
+        "evaluation/COCO": {
+          "bound": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              1.0728836059570296e-07,
+              1.1920928955078125e-07
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.33363449573516846,
+              0.34862977266311646,
+              0.46372783184051514,
+              0.5438240885734558,
+              0.5588216781616211
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 17,
+            "total": 25,
+            "distance_quantiles": [
+              0.41346532106399536,
+              0.4438702464103699,
+              0.5846803784370422,
+              0.6618042707443237,
+              0.7943236827850342
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              0.003527998924255371,
+              0.0056056976318359375,
+              0.3177011013031006,
+              0.6896524310111996,
+              0.8130491971969604
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.008330047130584717,
+              0.018924212455749514,
+              0.053907811641693115,
+              0.12448968887329086,
+              0.230790376663208
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.03735530376434326,
+              0.04130522012710571,
+              0.05557906627655029,
+              0.08471282720565794,
+              0.08682280778884888
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.11527347564697266,
+              0.12576117515563964,
+              0.2988640069961548,
+              0.5130773067474363,
+              0.5705364942550659
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.03141188621520996,
+              0.03523091077804565,
+              0.052192091941833496,
+              0.10954079627990719,
+              0.18541240692138672
+            ]
+          },
+          "sp_prob": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.048102736473083496,
+              0.11607692241668702,
+              0.18451523780822754,
+              0.3131555557250976,
+              0.3926199674606323
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.017199337482452393,
+              0.020292174816131592,
+              0.02587980031967163,
+              0.04538871049880979,
+              0.04822123050689697
+            ]
+          },
+          "same": {
+            "accepted": 0,
+            "total": 25,
+            "distance_quantiles": [
+              0.6676446795463562,
+              0.6707012534141541,
+              0.8261860609054565,
+              0.9690029621124266,
+              1.0037174224853516
+            ],
+            "source_bootstrap_95": [
+              0.0,
+              0.0
+            ]
+          },
+          "aux": {
+            "accepted": 0,
+            "total": 25,
+            "distance_quantiles": [
+              0.6491965055465698,
+              0.6620056509971619,
+              0.791283130645752,
+              0.9458291172981261,
+              0.973774790763855
+            ]
+          },
+          "gs": {
+            "accepted": 2,
+            "total": 25,
+            "distance_quantiles": [
+              0.6131472587585449,
+              0.6279940843582154,
+              0.8098137974739075,
+              0.9707654356956482,
+              1.001739263534546
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 215,
+            "total": 225,
+            "source_bootstrap_95": [
+              0.9288888888888889,
+              0.9777777777777777
+            ]
+          }
+        },
+        "evaluation/SDP": {
+          "bound": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              1.0728836059570296e-07,
+              1.1920928955078125e-07
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.28557705879211426,
+              0.3208842515945435,
+              0.4592859148979187,
+              0.5565743923187254,
+              0.5707821846008301
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 17,
+            "total": 25,
+            "distance_quantiles": [
+              0.5083141922950745,
+              0.5148435711860657,
+              0.5781002044677734,
+              0.6666898488998413,
+              0.6908131241798401
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 21,
+            "total": 25,
+            "distance_quantiles": [
+              0.004972338676452637,
+              0.0103305459022522,
+              0.3489842414855957,
+              0.7817445755004879,
+              0.9876654148101807
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.021390199661254883,
+              0.03420376777648926,
+              0.05824124813079834,
+              0.21064864397048924,
+              0.253210186958313
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.0411185622215271,
+              0.045054304599761966,
+              0.06220972537994385,
+              0.10481662750244136,
+              0.11954843997955322
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.07971972227096558,
+              0.11176533699035644,
+              0.2987940311431885,
+              0.4828793287277221,
+              0.5187848210334778
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.02455425262451172,
+              0.03660588264465332,
+              0.05796515941619873,
+              0.10034548044204711,
+              0.274444580078125
+            ]
+          },
+          "sp_prob": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.14079535007476807,
+              0.1673180341720581,
+              0.24116885662078857,
+              0.4285274267196653,
+              0.45691239833831787
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.0198136568069458,
+              0.022186923027038574,
+              0.02941715717315674,
+              0.06763882637023923,
+              0.12165796756744385
+            ]
+          },
+          "same": {
+            "accepted": 1,
+            "total": 25,
+            "distance_quantiles": [
+              0.6028083562850952,
+              0.6508909702301026,
+              0.7924900054931641,
+              0.9208425879478453,
+              0.9377633929252625
+            ],
+            "source_bootstrap_95": [
+              0.0,
+              0.12
+            ]
+          },
+          "aux": {
+            "accepted": 1,
+            "total": 25,
+            "distance_quantiles": [
+              0.6076898574829102,
+              0.6722378730773926,
+              0.7890613675117493,
+              0.900282335281372,
+              0.9694979786872864
+            ]
+          },
+          "gs": {
+            "accepted": 1,
+            "total": 25,
+            "distance_quantiles": [
+              0.6039475798606873,
+              0.6744142413139343,
+              0.7600690722465515,
+              0.9319152593612671,
+              0.9514220952987671
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 213,
+            "total": 225,
+            "source_bootstrap_95": [
+              0.919888888888889,
+              0.9733333333333334
+            ]
+          }
+        },
+        "evaluation/all": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              1.1920928955078125e-07,
+              1.1920928955078125e-07
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.28557705879211426,
+              0.3289416074752808,
+              0.4615068733692169,
+              0.5521175771951675,
+              0.5707821846008301
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 34,
+            "total": 50,
+            "distance_quantiles": [
+              0.41346532106399536,
+              0.4584247976541519,
+              0.5813902914524078,
+              0.6670294761657715,
+              0.7943236827850342
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 44,
+            "total": 50,
+            "distance_quantiles": [
+              0.003527998924255371,
+              0.0056344568729400635,
+              0.3230780363082886,
+              0.7636970698833463,
+              0.9876654148101807
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.008330047130584717,
+              0.021007233858108522,
+              0.05758771300315857,
+              0.18741935789585087,
+              0.253210186958313
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.03735530376434326,
+              0.041936475038528445,
+              0.05911031365394592,
+              0.09262036979198456,
+              0.11954843997955322
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.07971972227096558,
+              0.11956608295440674,
+              0.29882901906967163,
+              0.5048506647348403,
+              0.5705364942550659
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.02455425262451172,
+              0.035314998030662535,
+              0.05591708421707153,
+              0.10698801577091215,
+              0.274444580078125
+            ]
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.048102736473083496,
+              0.12930387854576111,
+              0.21233442425727844,
+              0.38286209106445307,
+              0.45691239833831787
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.017199337482452393,
+              0.020329591631889344,
+              0.0288313627243042,
+              0.05488500297069548,
+              0.12165796756744385
+            ]
+          },
+          "same": {
+            "accepted": 1,
+            "total": 50,
+            "distance_quantiles": [
+              0.6028083562850952,
+              0.6677583247423172,
+              0.8136872053146362,
+              0.9341273099184036,
+              1.0037174224853516
+            ],
+            "source_bootstrap_95": [
+              0.0,
+              0.06
+            ]
+          },
+          "aux": {
+            "accepted": 1,
+            "total": 50,
+            "distance_quantiles": [
+              0.6076898574829102,
+              0.6623441964387894,
+              0.7891552448272705,
+              0.9346922427415847,
+              0.973774790763855
+            ]
+          },
+          "gs": {
+            "accepted": 3,
+            "total": 50,
+            "distance_quantiles": [
+              0.6039475798606873,
+              0.6419685661792756,
+              0.7776944041252136,
+              0.9635862320661545,
+              1.001739263534546
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 428,
+            "total": 450,
+            "source_bootstrap_95": [
+              0.9311111111111111,
+              0.9688888888888889
+            ]
+          }
+        }
+      }
+    },
+    {
+      "method": "sscd_cosine",
+      "anchor": "aux",
+      "threshold": 0.9454041123390198,
+      "calibration_accepted": 428,
+      "calibration_total": 450,
+      "groups": {
+        "calibration/COCO": {
+          "bound": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.6106754541397095,
+              0.668830668926239,
+              0.7813450694084167,
+              0.8539534568786621,
+              0.8589786291122437
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              0.6495309472084045,
+              0.7111415028572082,
+              0.8634740710258484,
+              0.9525030970573424,
+              0.9845472574234009
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              0.7442750930786133,
+              0.7634976744651795,
+              0.8554131388664246,
+              0.9312941908836365,
+              1.0144950151443481
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              0.695344865322113,
+              0.7399916648864746,
+              0.8499182462692261,
+              0.9413908958435059,
+              0.9546136856079102
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.6473049521446228,
+              0.678445827960968,
+              0.7870022058486938,
+              0.8871505737304687,
+              0.9102419018745422
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.644730269908905,
+              0.7065783500671386,
+              0.7817220091819763,
+              0.8675471186637878,
+              0.8869619965553284
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 19,
+            "total": 25,
+            "distance_quantiles": [
+              0.766098141670227,
+              0.7915823221206665,
+              0.8775064945220947,
+              0.9599838018417358,
+              0.972930908203125
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.6317830085754395,
+              0.6771888494491577,
+              0.7938075661659241,
+              0.8600485324859619,
+              0.8867400288581848
+            ]
+          },
+          "sp_prob": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.6895225644111633,
+              0.7098316669464111,
+              0.8458526134490967,
+              0.9386487245559693,
+              0.9450582265853882
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.6263831853866577,
+              0.6924658179283142,
+              0.7844476699829102,
+              0.8648746728897094,
+              0.8778867125511169
+            ]
+          },
+          "same": {
+            "accepted": 22,
+            "total": 25,
+            "distance_quantiles": [
+              0.6524786949157715,
+              0.7233879566192627,
+              0.8387608528137207,
+              0.9611235737800597,
+              0.979592502117157
+            ],
+            "source_bootstrap_95": [
+              0.76,
+              1.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 215,
+            "total": 225,
+            "source_bootstrap_95": [
+              0.9333333333333333,
+              0.9777777777777777
+            ]
+          }
+        },
+        "calibration/SDP": {
+          "bound": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.6299525499343872,
+              0.6670797348022461,
+              0.8075432777404785,
+              0.9180919289588928,
+              0.942688524723053
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.685559093952179,
+              0.7033982872962952,
+              0.8584507703781128,
+              0.9327524185180663,
+              0.9355427026748657
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 22,
+            "total": 25,
+            "distance_quantiles": [
+              0.7652943134307861,
+              0.7836374640464783,
+              0.8583269715309143,
+              0.9569493889808655,
+              0.9602713584899902
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              0.6676046252250671,
+              0.7374681949615478,
+              0.8778702616691589,
+              0.9423138976097107,
+              0.9630109667778015
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              0.6498871445655823,
+              0.6808691501617432,
+              0.8151403665542603,
+              0.9456604957580566,
+              0.9616169333457947
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              0.6334291100502014,
+              0.6655240297317505,
+              0.807692289352417,
+              0.9260349273681641,
+              0.9888858795166016
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              0.675973653793335,
+              0.7285389423370361,
+              0.8580710887908936,
+              0.9507922530174255,
+              0.966084361076355
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              0.6369971036911011,
+              0.6916398882865906,
+              0.8081140518188477,
+              0.9167202591896056,
+              0.9784533381462097
+            ]
+          },
+          "sp_prob": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              0.714459240436554,
+              0.7605067968368531,
+              0.8892604112625122,
+              0.9605085372924804,
+              1.0186859369277954
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.5904797911643982,
+              0.6756492257118225,
+              0.7986574172973633,
+              0.9380756497383117,
+              0.9454041123390198
+            ]
+          },
+          "same": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              0.6666625142097473,
+              0.6670848488807678,
+              0.7809292078018188,
+              0.8824233174324035,
+              0.98530513048172
+            ],
+            "source_bootstrap_95": [
+              0.88,
+              1.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 213,
+            "total": 225,
+            "source_bootstrap_95": [
+              0.88,
+              0.9955555555555555
+            ]
+          }
+        },
+        "calibration/all": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.6106754541397095,
+              0.6634490549564361,
+              0.7856683731079102,
+              0.8978700250387192,
+              0.942688524723053
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 48,
+            "total": 50,
+            "distance_quantiles": [
+              0.6495309472084045,
+              0.6997535496950149,
+              0.8609624207019806,
+              0.9348761469125748,
+              0.9845472574234009
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 46,
+            "total": 50,
+            "distance_quantiles": [
+              0.7442750930786133,
+              0.7696684330701828,
+              0.8577551245689392,
+              0.9547734171152115,
+              1.0144950151443481
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 48,
+            "total": 50,
+            "distance_quantiles": [
+              0.6676046252250671,
+              0.7347495317459106,
+              0.8678507208824158,
+              0.9431732654571533,
+              0.9630109667778015
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 48,
+            "total": 50,
+            "distance_quantiles": [
+              0.6473049521446228,
+              0.6736130774021148,
+              0.8039990961551666,
+              0.915376928448677,
+              0.9616169333457947
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 49,
+            "total": 50,
+            "distance_quantiles": [
+              0.6334291100502014,
+              0.6782091677188873,
+              0.7880108058452606,
+              0.9066059738397597,
+              0.9888858795166016
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 42,
+            "total": 50,
+            "distance_quantiles": [
+              0.675973653793335,
+              0.7724964439868927,
+              0.8634888529777527,
+              0.9587606847286224,
+              0.972930908203125
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 49,
+            "total": 50,
+            "distance_quantiles": [
+              0.6317830085754395,
+              0.6810121595859527,
+              0.7968101799488068,
+              0.910067155957222,
+              0.9784533381462097
+            ]
+          },
+          "sp_prob": {
+            "accepted": 48,
+            "total": 50,
+            "distance_quantiles": [
+              0.6895225644111633,
+              0.7298998326063156,
+              0.8607604801654816,
+              0.9448432743549346,
+              1.0186859369277954
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.5904797911643982,
+              0.6796578407287598,
+              0.7914386689662933,
+              0.9117692947387694,
+              0.9454041123390198
+            ]
+          },
+          "same": {
+            "accepted": 46,
+            "total": 50,
+            "distance_quantiles": [
+              0.6524786949157715,
+              0.6676070302724838,
+              0.8150018453598022,
+              0.9566832363605499,
+              0.98530513048172
+            ],
+            "source_bootstrap_95": [
+              0.84,
+              0.98
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 428,
+            "total": 450,
+            "source_bootstrap_95": [
+              0.9177222222222223,
+              0.9777777777777777
+            ]
+          }
+        },
+        "evaluation/COCO": {
+          "bound": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              0.6491965055465698,
+              0.6620056509971619,
+              0.791283130645752,
+              0.9458291172981261,
+              0.973774790763855
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 22,
+            "total": 25,
+            "distance_quantiles": [
+              0.6647050976753235,
+              0.7435747861862183,
+              0.8401238918304443,
+              1.010976994037628,
+              1.0914102792739868
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 21,
+            "total": 25,
+            "distance_quantiles": [
+              0.7145415544509888,
+              0.7431659936904907,
+              0.8628762364387512,
+              0.9626525998115539,
+              0.983701229095459
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 22,
+            "total": 25,
+            "distance_quantiles": [
+              0.6987417340278625,
+              0.7022793173789978,
+              0.8616729974746704,
+              0.9680158138275146,
+              1.0240542888641357
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              0.6557255983352661,
+              0.6705166339874268,
+              0.805345356464386,
+              0.9301368832588196,
+              0.9539790153503418
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              0.6633721590042114,
+              0.6821164488792419,
+              0.8022368550300598,
+              0.9423139452934264,
+              0.9560404419898987
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 21,
+            "total": 25,
+            "distance_quantiles": [
+              0.7386388182640076,
+              0.7609500646591186,
+              0.8686281442642212,
+              0.9819189667701721,
+              0.9856963157653809
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              0.6659530401229858,
+              0.6773323655128479,
+              0.8175843954086304,
+              0.9549042463302612,
+              0.9648474454879761
+            ]
+          },
+          "sp_prob": {
+            "accepted": 21,
+            "total": 25,
+            "distance_quantiles": [
+              0.7140821814537048,
+              0.7650882244110108,
+              0.8554149866104126,
+              0.9800559520721435,
+              0.9910027980804443
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              0.6681158542633057,
+              0.6767784833908081,
+              0.8150098323822021,
+              0.9472110509872435,
+              0.9595233798027039
+            ]
+          },
+          "same": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              0.562160849571228,
+              0.6395130515098572,
+              0.807888388633728,
+              0.8919859051704406,
+              0.9497206807136536
+            ],
+            "source_bootstrap_95": [
+              0.88,
+              1.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 200,
+            "total": 225,
+            "source_bootstrap_95": [
+              0.7866666666666666,
+              0.9688888888888889
+            ]
+          }
+        },
+        "evaluation/SDP": {
+          "bound": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              0.6076898574829102,
+              0.6722378730773926,
+              0.7890613675117493,
+              0.900282335281372,
+              0.9694979786872864
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              0.6812024712562561,
+              0.7227357029914856,
+              0.8367879390716553,
+              0.9774628877639768,
+              0.9957315325737
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              0.7437625527381897,
+              0.7831095933914185,
+              0.8645291924476624,
+              0.9412568807601929,
+              0.9468512535095215
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 21,
+            "total": 25,
+            "distance_quantiles": [
+              0.6846317648887634,
+              0.7052214622497559,
+              0.8095364570617676,
+              0.9637427806854247,
+              0.9758008122444153
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              0.6061424612998962,
+              0.733779764175415,
+              0.7984017729759216,
+              0.9019913911819458,
+              0.9510602355003357
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              0.6662856936454773,
+              0.683660912513733,
+              0.7921282052993774,
+              0.9026756644248962,
+              0.9772853851318359
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 20,
+            "total": 25,
+            "distance_quantiles": [
+              0.6538406610488892,
+              0.7532126784324646,
+              0.8620367050170898,
+              0.968798291683197,
+              0.9891398549079895
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              0.6567621827125549,
+              0.6946092844009399,
+              0.7872740030288696,
+              0.8975488901138305,
+              0.9614765644073486
+            ]
+          },
+          "sp_prob": {
+            "accepted": 22,
+            "total": 25,
+            "distance_quantiles": [
+              0.7026346921920776,
+              0.7930825710296631,
+              0.8737866282463074,
+              0.9515115022659302,
+              0.970011293888092
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              0.6789599061012268,
+              0.6888745307922364,
+              0.7937659025192261,
+              0.9059644818305969,
+              0.9729892015457153
+            ]
+          },
+          "same": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.5991343855857849,
+              0.6274149894714356,
+              0.7852616310119629,
+              0.8943224787712096,
+              0.9026140570640564
+            ],
+            "source_bootstrap_95": [
+              1.0,
+              1.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 206,
+            "total": 225,
+            "source_bootstrap_95": [
+              0.8311111111111111,
+              0.9777777777777777
+            ]
+          }
+        },
+        "evaluation/all": {
+          "bound": {
+            "accepted": 47,
+            "total": 50,
+            "distance_quantiles": [
+              0.6076898574829102,
+              0.6623441964387894,
+              0.7891552448272705,
+              0.9346922427415847,
+              0.973774790763855
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 45,
+            "total": 50,
+            "distance_quantiles": [
+              0.6647050976753235,
+              0.7250820904970169,
+              0.8395726084709167,
+              0.9939902693033218,
+              1.0914102792739868
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 45,
+            "total": 50,
+            "distance_quantiles": [
+              0.7145415544509888,
+              0.7504949241876602,
+              0.8637027144432068,
+              0.9488480061292648,
+              0.983701229095459
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 43,
+            "total": 50,
+            "distance_quantiles": [
+              0.6846317648887634,
+              0.7022348433732987,
+              0.8295957446098328,
+              0.9690294206142426,
+              1.0240542888641357
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 48,
+            "total": 50,
+            "distance_quantiles": [
+              0.6061424612998962,
+              0.6751126289367676,
+              0.8004224896430969,
+              0.9298969298601151,
+              0.9539790153503418
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 47,
+            "total": 50,
+            "distance_quantiles": [
+              0.6633721590042114,
+              0.6787459343671799,
+              0.7971825301647186,
+              0.9324043452739714,
+              0.9772853851318359
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 41,
+            "total": 50,
+            "distance_quantiles": [
+              0.6538406610488892,
+              0.7522750824689866,
+              0.8627657890319824,
+              0.9813256472349167,
+              0.9891398549079895
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 47,
+            "total": 50,
+            "distance_quantiles": [
+              0.6567621827125549,
+              0.681028425693512,
+              0.7984292507171631,
+              0.9434660136699675,
+              0.9648474454879761
+            ]
+          },
+          "sp_prob": {
+            "accepted": 43,
+            "total": 50,
+            "distance_quantiles": [
+              0.7026346921920776,
+              0.7651086688041687,
+              0.8682891726493835,
+              0.9653196543455124,
+              0.9910027980804443
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 47,
+            "total": 50,
+            "distance_quantiles": [
+              0.6681158542633057,
+              0.6833790332078934,
+              0.7968870997428894,
+              0.9365876168012618,
+              0.9729892015457153
+            ]
+          },
+          "same": {
+            "accepted": 49,
+            "total": 50,
+            "distance_quantiles": [
+              0.562160849571228,
+              0.6277967125177384,
+              0.7882250547409058,
+              0.8971326172351837,
+              0.9497206807136536
+            ],
+            "source_bootstrap_95": [
+              0.94,
+              1.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 406,
+            "total": 450,
+            "source_bootstrap_95": [
+              0.8377777777777777,
+              0.9555555555555556
+            ]
+          }
+        }
+      }
+    },
+    {
+      "method": "dinov2_cosine",
+      "anchor": "bound",
+      "threshold": 0.4107891917228699,
+      "calibration_accepted": 428,
+      "calibration_total": 450,
+      "groups": {
+        "calibration/COCO": {
+          "bound": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              1.1920928955078125e-07,
+              1.1920928955078125e-07
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              0.01882392168045044,
+              0.02595372200012207,
+              0.10338300466537476,
+              0.4008651256561274,
+              0.4627646207809448
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 17,
+            "total": 25,
+            "distance_quantiles": [
+              0.06391125917434692,
+              0.07441190481185914,
+              0.26163625717163086,
+              0.7260655164718627,
+              0.7910119295120239
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.0007135868072509766,
+              0.004990983009338381,
+              0.0587315559387207,
+              0.1735804557800292,
+              0.2215712070465088
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.0019452571868896484,
+              0.0028116226196289065,
+              0.007084369659423828,
+              0.03338415622711177,
+              0.08129507303237915
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.020534038543701172,
+              0.026109063625335695,
+              0.12820404767990112,
+              0.3250199675559997,
+              0.3940678834915161
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.018319785594940186,
+              0.019492220878601075,
+              0.05673396587371826,
+              0.19019716978073092,
+              0.255098819732666
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.005548715591430664,
+              0.008865630626678467,
+              0.027918457984924316,
+              0.1048128604888916,
+              0.13101863861083984
+            ]
+          },
+          "sp_prob": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.005015015602111816,
+              0.007011508941650391,
+              0.025913357734680176,
+              0.10321161746978756,
+              0.11621689796447754
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.004470527172088623,
+              0.0058196067810058595,
+              0.013902246952056885,
+              0.06181755065917967,
+              0.07085925340652466
+            ]
+          },
+          "same": {
+            "accepted": 22,
+            "total": 25,
+            "distance_quantiles": [
+              0.04854440689086914,
+              0.059603118896484376,
+              0.17440074682235718,
+              0.4438138484954833,
+              0.6098037362098694
+            ],
+            "source_bootstrap_95": [
+              0.72,
+              1.0
+            ]
+          },
+          "aux": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              0.0269281268119812,
+              0.04119739532470704,
+              0.18448156118392944,
+              0.41565566062927234,
+              0.4501720666885376
+            ]
+          },
+          "gs": {
+            "accepted": 22,
+            "total": 25,
+            "distance_quantiles": [
+              0.019452929496765137,
+              0.03580290079116821,
+              0.18896746635437012,
+              0.5596857547760005,
+              0.688126802444458
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 215,
+            "total": 225,
+            "source_bootstrap_95": [
+              0.9288888888888889,
+              0.9777777777777777
+            ]
+          }
+        },
+        "calibration/SDP": {
+          "bound": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              5.960464477539063e-08,
+              1.1920928955078125e-07
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.032555580139160156,
+              0.04945164918899537,
+              0.11056232452392578,
+              0.2321688175201415,
+              0.3822197914123535
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 13,
+            "total": 25,
+            "distance_quantiles": [
+              0.08928298950195312,
+              0.19689683914184572,
+              0.4107891917228699,
+              0.6960435628890991,
+              0.7230198979377747
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.00017637014389038086,
+              0.00033428668975830087,
+              0.10297209024429321,
+              0.28513867855072,
+              0.3142815828323364
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.012018561363220215,
+              0.012968075275421143,
+              0.025543928146362305,
+              0.08582127094268795,
+              0.09810537099838257
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.041869163513183594,
+              0.04799681901931763,
+              0.13322573900222778,
+              0.21343402862548827,
+              0.2659323215484619
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.032140910625457764,
+              0.03636689186096191,
+              0.09690606594085693,
+              0.14966436624526974,
+              0.1625996232032776
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.02046489715576172,
+              0.021472477912902833,
+              0.05022543668746948,
+              0.1456211805343627,
+              0.16462332010269165
+            ]
+          },
+          "sp_prob": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.0421791672706604,
+              0.06626195907592773,
+              0.1103142499923706,
+              0.22105787992477405,
+              0.23023349046707153
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.02039813995361328,
+              0.02107890844345093,
+              0.03890049457550049,
+              0.06905499696731562,
+              0.08562290668487549
+            ]
+          },
+          "same": {
+            "accepted": 16,
+            "total": 25,
+            "distance_quantiles": [
+              0.09168422222137451,
+              0.16962580680847167,
+              0.3783353567123413,
+              0.6366479873657225,
+              0.6548912525177002
+            ],
+            "source_bootstrap_95": [
+              0.44,
+              0.8
+            ]
+          },
+          "aux": {
+            "accepted": 21,
+            "total": 25,
+            "distance_quantiles": [
+              0.07016098499298096,
+              0.12493832111358644,
+              0.3318365812301636,
+              0.5420521974563597,
+              0.603236973285675
+            ]
+          },
+          "gs": {
+            "accepted": 17,
+            "total": 25,
+            "distance_quantiles": [
+              0.050789833068847656,
+              0.18191477060317995,
+              0.327730655670166,
+              0.5403902053833007,
+              0.5972354412078857
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 213,
+            "total": 225,
+            "source_bootstrap_95": [
+              0.9244444444444444,
+              0.9688888888888889
+            ]
+          }
+        },
+        "calibration/all": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              1.1920928955078125e-07,
+              1.1920928955078125e-07
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 48,
+            "total": 50,
+            "distance_quantiles": [
+              0.01882392168045044,
+              0.03257317543029785,
+              0.11032125353813171,
+              0.32929573059081996,
+              0.4627646207809448
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 30,
+            "total": 50,
+            "distance_quantiles": [
+              0.06391125917434692,
+              0.09985547959804536,
+              0.3621833622455597,
+              0.7116740733385085,
+              0.7910119295120239
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.00017637014389038086,
+              0.000789707899093628,
+              0.06761449575424194,
+              0.2273066461086273,
+              0.3142815828323364
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.0019452571868896484,
+              0.003528285026550293,
+              0.018711715936660767,
+              0.07809404432773588,
+              0.09810537099838257
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.020534038543701172,
+              0.03470273315906525,
+              0.13071489334106445,
+              0.30170846283435815,
+              0.3940678834915161
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.018319785594940186,
+              0.024075505137443543,
+              0.07527050375938416,
+              0.15794346928596495,
+              0.255098819732666
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.005548715591430664,
+              0.01116732954978943,
+              0.03583645820617676,
+              0.12579213976860043,
+              0.16462332010269165
+            ]
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.005015015602111816,
+              0.01001816987991333,
+              0.07536426186561584,
+              0.1833608418703079,
+              0.23023349046707153
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.004470527172088623,
+              0.007123684883117676,
+              0.031653016805648804,
+              0.06735655665397641,
+              0.08562290668487549
+            ]
+          },
+          "same": {
+            "accepted": 38,
+            "total": 50,
+            "distance_quantiles": [
+              0.04854440689086914,
+              0.07701675295829773,
+              0.2642108201980591,
+              0.5950800985097884,
+              0.6548912525177002
+            ],
+            "source_bootstrap_95": [
+              0.64,
+              0.88
+            ]
+          },
+          "aux": {
+            "accepted": 44,
+            "total": 50,
+            "distance_quantiles": [
+              0.0269281268119812,
+              0.0680950939655304,
+              0.30126750469207764,
+              0.46849476099014276,
+              0.603236973285675
+            ]
+          },
+          "gs": {
+            "accepted": 39,
+            "total": 50,
+            "distance_quantiles": [
+              0.019452929496765137,
+              0.04952262341976166,
+              0.28146469593048096,
+              0.5703856289386747,
+              0.688126802444458
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 428,
+            "total": 450,
+            "source_bootstrap_95": [
+              0.9333333333333333,
+              0.9666666666666667
+            ]
+          }
+        },
+        "evaluation/COCO": {
+          "bound": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              1.1920928955078125e-07,
+              1.1920928955078125e-07
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              0.013959169387817383,
+              0.01651768684387207,
+              0.07647651433944702,
+              0.2566586732864379,
+              0.7301996350288391
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 10,
+            "total": 25,
+            "distance_quantiles": [
+              0.10531997680664062,
+              0.13373665809631347,
+              0.4331398010253906,
+              0.6820560932159422,
+              0.7044205665588379
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              0.0001621246337890625,
+              0.0005218744277954103,
+              0.04688870906829834,
+              0.24075102806091306,
+              0.5539321303367615
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.0022295713424682617,
+              0.0027586221694946293,
+              0.01662445068359375,
+              0.05099225044250485,
+              0.09436535835266113
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              0.04225575923919678,
+              0.04481196403503418,
+              0.1762484312057495,
+              0.48080942630767787,
+              0.5200953483581543
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              0.014251947402954102,
+              0.024667346477508546,
+              0.07978183031082153,
+              0.36325404644012427,
+              0.4148353338241577
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              0.007779836654663086,
+              0.012170255184173584,
+              0.05678284168243408,
+              0.3892696619033808,
+              0.5322519540786743
+            ]
+          },
+          "sp_prob": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.008147895336151123,
+              0.010684037208557129,
+              0.046991944313049316,
+              0.14799690246582028,
+              0.15346866846084595
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.0041342973709106445,
+              0.0065777540206909185,
+              0.03421294689178467,
+              0.11774349212646484,
+              0.284124493598938
+            ]
+          },
+          "same": {
+            "accepted": 15,
+            "total": 25,
+            "distance_quantiles": [
+              0.03900587558746338,
+              0.04992048740386963,
+              0.3531046509742737,
+              0.6875661373138424,
+              0.862891435623169
+            ],
+            "source_bootstrap_95": [
+              0.4,
+              0.8
+            ]
+          },
+          "aux": {
+            "accepted": 12,
+            "total": 25,
+            "distance_quantiles": [
+              0.04538935422897339,
+              0.05849125385284424,
+              0.41967296600341797,
+              0.7006574511528015,
+              0.8612920641899109
+            ]
+          },
+          "gs": {
+            "accepted": 17,
+            "total": 25,
+            "distance_quantiles": [
+              0.027257442474365234,
+              0.03383020162582397,
+              0.2534584403038025,
+              0.7107030153274534,
+              0.7621374726295471
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 203,
+            "total": 225,
+            "source_bootstrap_95": [
+              0.8622222222222222,
+              0.9377777777777778
+            ]
+          }
+        },
+        "evaluation/SDP": {
+          "bound": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              5.960464477539063e-08,
+              1.1920928955078125e-07
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              0.026590943336486816,
+              0.03251268863677979,
+              0.12585091590881348,
+              0.303409671783447,
+              0.4942299723625183
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 12,
+            "total": 25,
+            "distance_quantiles": [
+              0.12034332752227783,
+              0.1340203046798706,
+              0.41234290599823,
+              0.5790992975234984,
+              0.6320292949676514
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              0.0008859634399414062,
+              0.0018109440803527836,
+              0.04682338237762451,
+              0.5014006614685049,
+              0.9779699444770813
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.009371936321258545,
+              0.016136431694030763,
+              0.03238415718078613,
+              0.08565177917480461,
+              0.1580493450164795
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.032588303089141846,
+              0.04673144817352295,
+              0.102805495262146,
+              0.23218216896057128,
+              0.24143898487091064
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.03592592477798462,
+              0.046238601207733154,
+              0.0902714729309082,
+              0.17469809055328364,
+              0.19408541917800903
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.007879972457885742,
+              0.008675765991210938,
+              0.033597588539123535,
+              0.07873938083648681,
+              0.0804477334022522
+            ]
+          },
+          "sp_prob": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.03697943687438965,
+              0.06171882152557373,
+              0.11521768569946289,
+              0.2197587251663208,
+              0.23019719123840332
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.01082468032836914,
+              0.013022053241729737,
+              0.03230684995651245,
+              0.059667432308196995,
+              0.08037090301513672
+            ]
+          },
+          "same": {
+            "accepted": 17,
+            "total": 25,
+            "distance_quantiles": [
+              0.1012033224105835,
+              0.1436444640159607,
+              0.3169814348220825,
+              0.6324026942253111,
+              0.647107720375061
+            ],
+            "source_bootstrap_95": [
+              0.48,
+              0.84
+            ]
+          },
+          "aux": {
+            "accepted": 20,
+            "total": 25,
+            "distance_quantiles": [
+              0.11557716131210327,
+              0.15708708763122559,
+              0.2712671756744385,
+              0.5896526336669917,
+              0.6726134419441223
+            ]
+          },
+          "gs": {
+            "accepted": 21,
+            "total": 25,
+            "distance_quantiles": [
+              0.09441304206848145,
+              0.16961004734039306,
+              0.31273967027664185,
+              0.47096223831176753,
+              0.6238938570022583
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 209,
+            "total": 225,
+            "source_bootstrap_95": [
+              0.9111111111111111,
+              0.9511111111111111
+            ]
+          }
+        },
+        "evaluation/all": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              1.1920928955078125e-07,
+              1.1920928955078125e-07
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 48,
+            "total": 50,
+            "distance_quantiles": [
+              0.013959169387817383,
+              0.022358518838882447,
+              0.1056760847568512,
+              0.2946251094341276,
+              0.7301996350288391
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 22,
+            "total": 50,
+            "distance_quantiles": [
+              0.10531997680664062,
+              0.12706557512283326,
+              0.417245090007782,
+              0.6291917324066162,
+              0.7044205665588379
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 47,
+            "total": 50,
+            "distance_quantiles": [
+              0.0001621246337890625,
+              0.0009909451007843017,
+              0.046856045722961426,
+              0.41858595907688056,
+              0.9779699444770813
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.0022295713424682617,
+              0.0049158215522766115,
+              0.025696158409118652,
+              0.0789081394672393,
+              0.1580493450164795
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 48,
+            "total": 50,
+            "distance_quantiles": [
+              0.032588303089141846,
+              0.04493594169616699,
+              0.13196146488189697,
+              0.3820979535579681,
+              0.5200953483581543
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 49,
+            "total": 50,
+            "distance_quantiles": [
+              0.014251947402954102,
+              0.026490026712417604,
+              0.08686798810958862,
+              0.2686045646667479,
+              0.4148353338241577
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 48,
+            "total": 50,
+            "distance_quantiles": [
+              0.007779836654663086,
+              0.008905482292175294,
+              0.04398840665817261,
+              0.23053241372108454,
+              0.5322519540786743
+            ]
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.008147895336151123,
+              0.01222580075263977,
+              0.08184182643890381,
+              0.2074538111686706,
+              0.23019719123840332
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.0041342973709106445,
+              0.007359331846237183,
+              0.032503753900527954,
+              0.10098316669464101,
+              0.284124493598938
+            ]
+          },
+          "same": {
+            "accepted": 32,
+            "total": 50,
+            "distance_quantiles": [
+              0.03900587558746338,
+              0.08094249963760376,
+              0.33981308341026306,
+              0.6435239136219024,
+              0.862891435623169
+            ],
+            "source_bootstrap_95": [
+              0.5,
+              0.76
+            ]
+          },
+          "aux": {
+            "accepted": 32,
+            "total": 50,
+            "distance_quantiles": [
+              0.04538935422897339,
+              0.06058070957660675,
+              0.2788301408290863,
+              0.6833962142467498,
+              0.8612920641899109
+            ]
+          },
+          "gs": {
+            "accepted": 38,
+            "total": 50,
+            "distance_quantiles": [
+              0.027257442474365234,
+              0.04684821963310242,
+              0.29862603545188904,
+              0.6427013397216796,
+              0.7621374726295471
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 412,
+            "total": 450,
+            "source_bootstrap_95": [
+              0.8933333333333333,
+              0.9355555555555556
+            ]
+          }
+        }
+      }
+    },
+    {
+      "method": "dinov2_cosine",
+      "anchor": "aux",
+      "threshold": 0.6423366665840149,
+      "calibration_accepted": 428,
+      "calibration_total": 450,
+      "groups": {
+        "calibration/COCO": {
+          "bound": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.0269281268119812,
+              0.04119739532470704,
+              0.18448156118392944,
+              0.41565566062927234,
+              0.4501720666885376
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              0.07290315628051758,
+              0.07917287349700929,
+              0.26680123805999756,
+              0.562868785858154,
+              0.675558865070343
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 21,
+            "total": 25,
+            "distance_quantiles": [
+              0.12513887882232666,
+              0.15232545137405396,
+              0.4245264530181885,
+              0.7775175094604491,
+              0.8005142211914062
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.030596494674682617,
+              0.04846415519714356,
+              0.22616910934448242,
+              0.41888937950134275,
+              0.46562135219573975
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.02574777603149414,
+              0.041674613952636726,
+              0.17860198020935059,
+              0.44600782394409166,
+              0.49420011043548584
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.06204628944396973,
+              0.08635797500610352,
+              0.30393004417419434,
+              0.49632024765014643,
+              0.5359159708023071
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.05041170120239258,
+              0.05791022777557374,
+              0.2766270637512207,
+              0.479935598373413,
+              0.5493467450141907
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.030011415481567383,
+              0.05166685581207276,
+              0.22440582513809204,
+              0.41200678348541253,
+              0.42706674337387085
+            ]
+          },
+          "sp_prob": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.030041038990020752,
+              0.04738585948944093,
+              0.19315659999847412,
+              0.4595575094223022,
+              0.5468283891677856
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.02432382106781006,
+              0.045180904865264895,
+              0.18401938676834106,
+              0.43528864383697496,
+              0.46324992179870605
+            ]
+          },
+          "same": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.037223875522613525,
+              0.046391773223876956,
+              0.181471586227417,
+              0.48585430383682243,
+              0.6008849143981934
+            ],
+            "source_bootstrap_95": [
+              1.0,
+              1.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 220,
+            "total": 225,
+            "source_bootstrap_95": [
+              0.9555555555555556,
+              0.9955555555555555
+            ]
+          }
+        },
+        "calibration/SDP": {
+          "bound": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.07016098499298096,
+              0.12493832111358644,
+              0.3318365812301636,
+              0.5420521974563597,
+              0.603236973285675
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              0.15781396627426147,
+              0.16954824924468995,
+              0.37507593631744385,
+              0.5884708285331723,
+              0.7219183444976807
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 14,
+            "total": 25,
+            "distance_quantiles": [
+              0.14772158861160278,
+              0.2862857222557068,
+              0.608547031879425,
+              0.8241676568984984,
+              0.8478518724441528
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              0.07033747434616089,
+              0.13480216264724734,
+              0.38122618198394775,
+              0.7057837724685665,
+              0.7586445808410645
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              0.07800090312957764,
+              0.17967448234558106,
+              0.359563946723938,
+              0.5611467599868774,
+              0.6724978685379028
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.10235261917114258,
+              0.16821500062942504,
+              0.4146064519882202,
+              0.6220059752464293,
+              0.6423366665840149
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              0.08530908823013306,
+              0.19678401947021484,
+              0.40018290281295776,
+              0.5676217436790465,
+              0.7050590515136719
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.08872687816619873,
+              0.13870315551757811,
+              0.3371046781539917,
+              0.5488365173339841,
+              0.6100645065307617
+            ]
+          },
+          "sp_prob": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              0.12200063467025757,
+              0.25693669319152834,
+              0.4486989378929138,
+              0.5700809955596923,
+              0.7145707011222839
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.08913540840148926,
+              0.16597888469696045,
+              0.3636491298675537,
+              0.5563092231750485,
+              0.634027361869812
+            ]
+          },
+          "same": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.10322451591491699,
+              0.14413809776306152,
+              0.301106333732605,
+              0.5243221044540405,
+              0.5314844846725464
+            ],
+            "source_bootstrap_95": [
+              1.0,
+              1.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 208,
+            "total": 225,
+            "source_bootstrap_95": [
+              0.8711111111111111,
+              0.9688888888888889
+            ]
+          }
+        },
+        "calibration/all": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.0269281268119812,
+              0.0680950939655304,
+              0.30126750469207764,
+              0.46849476099014276,
+              0.603236973285675
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 48,
+            "total": 50,
+            "distance_quantiles": [
+              0.07290315628051758,
+              0.09825347661972046,
+              0.3276936709880829,
+              0.5950926333665847,
+              0.7219183444976807
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 35,
+            "total": 50,
+            "distance_quantiles": [
+              0.12513887882232666,
+              0.17446718215942383,
+              0.49995553493499756,
+              0.7962974667549133,
+              0.8478518724441528
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 48,
+            "total": 50,
+            "distance_quantiles": [
+              0.030596494674682617,
+              0.07254163324832916,
+              0.3259027600288391,
+              0.5493145942687986,
+              0.7586445808410645
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 49,
+            "total": 50,
+            "distance_quantiles": [
+              0.02574777603149414,
+              0.07218630909919739,
+              0.31694862246513367,
+              0.511940848827362,
+              0.6724978685379028
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.06204628944396973,
+              0.10356132984161377,
+              0.37367427349090576,
+              0.5628787368535995,
+              0.6423366665840149
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 49,
+            "total": 50,
+            "distance_quantiles": [
+              0.05041170120239258,
+              0.08537981808185577,
+              0.35147032141685486,
+              0.5454842031002044,
+              0.7050590515136719
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.030011415481567383,
+              0.07381654977798462,
+              0.31166890263557434,
+              0.46912585496902465,
+              0.6100645065307617
+            ]
+          },
+          "sp_prob": {
+            "accepted": 49,
+            "total": 50,
+            "distance_quantiles": [
+              0.030041038990020752,
+              0.08135616481304168,
+              0.33673301339149475,
+              0.5482824265956878,
+              0.7145707011222839
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.02432382106781006,
+              0.0708975225687027,
+              0.3179694712162018,
+              0.46672369241714473,
+              0.634027361869812
+            ]
+          },
+          "same": {
+            "accepted": 50,
+            "total": 50,
+            "distance_quantiles": [
+              0.037223875522613525,
+              0.07044875025749207,
+              0.26630985736846924,
+              0.5240348994731903,
+              0.6008849143981934
+            ],
+            "source_bootstrap_95": [
+              1.0,
+              1.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 428,
+            "total": 450,
+            "source_bootstrap_95": [
+              0.92,
+              0.9755555555555555
+            ]
+          }
+        },
+        "evaluation/COCO": {
+          "bound": {
+            "accepted": 22,
+            "total": 25,
+            "distance_quantiles": [
+              0.04538935422897339,
+              0.05849125385284424,
+              0.41967296600341797,
+              0.7006574511528015,
+              0.8612920641899109
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 20,
+            "total": 25,
+            "distance_quantiles": [
+              0.04756319522857666,
+              0.06530107259750366,
+              0.41412442922592163,
+              0.7762383103370666,
+              0.8594242930412292
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 18,
+            "total": 25,
+            "distance_quantiles": [
+              0.18137961626052856,
+              0.1917672395706177,
+              0.558552086353302,
+              0.8273450970649718,
+              0.8623160123825073
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 21,
+            "total": 25,
+            "distance_quantiles": [
+              0.04521584510803223,
+              0.06339941024780274,
+              0.46247583627700806,
+              0.7073500275611877,
+              0.870468020439148
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 22,
+            "total": 25,
+            "distance_quantiles": [
+              0.04462766647338867,
+              0.06007101535797119,
+              0.4106103777885437,
+              0.7243674755096435,
+              0.8657374978065491
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 22,
+            "total": 25,
+            "distance_quantiles": [
+              0.06522363424301147,
+              0.0978813648223877,
+              0.5090665817260742,
+              0.7734373688697813,
+              0.8653862476348877
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              0.0666649341583252,
+              0.0696573257446289,
+              0.4447448253631592,
+              0.7216280937194821,
+              0.884188175201416
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 22,
+            "total": 25,
+            "distance_quantiles": [
+              0.05035287141799927,
+              0.0568452000617981,
+              0.4959421753883362,
+              0.7288431525230407,
+              0.8750200271606445
+            ]
+          },
+          "sp_prob": {
+            "accepted": 22,
+            "total": 25,
+            "distance_quantiles": [
+              0.045397162437438965,
+              0.06051938533782959,
+              0.41810667514801025,
+              0.7397504448890686,
+              0.8768352270126343
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 22,
+            "total": 25,
+            "distance_quantiles": [
+              0.04422581195831299,
+              0.06270532608032227,
+              0.37267589569091797,
+              0.7172250032424926,
+              0.8729845285415649
+            ]
+          },
+          "same": {
+            "accepted": 22,
+            "total": 25,
+            "distance_quantiles": [
+              0.0430065393447876,
+              0.04790552854537964,
+              0.36168718338012695,
+              0.7032850503921508,
+              0.7273638844490051
+            ],
+            "source_bootstrap_95": [
+              0.76,
+              1.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 192,
+            "total": 225,
+            "source_bootstrap_95": [
+              0.7244444444444444,
+              0.9644444444444444
+            ]
+          }
+        },
+        "evaluation/SDP": {
+          "bound": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              0.11557716131210327,
+              0.15708708763122559,
+              0.2712671756744385,
+              0.5896526336669917,
+              0.6726134419441223
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              0.16840511560440063,
+              0.1865594744682312,
+              0.31808578968048096,
+              0.6362385511398313,
+              0.7061516642570496
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 20,
+            "total": 25,
+            "distance_quantiles": [
+              0.33125871419906616,
+              0.35934784412384035,
+              0.4973163604736328,
+              0.7844813466072083,
+              0.8865581750869751
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              0.1612730622291565,
+              0.20839319229125977,
+              0.3178079128265381,
+              0.6320591211318969,
+              1.0211976766586304
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              0.135026216506958,
+              0.17498518228530885,
+              0.36446356773376465,
+              0.6461716294288632,
+              0.6938912272453308
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              0.12030631303787231,
+              0.1772834300994873,
+              0.3252350091934204,
+              0.6345095396041868,
+              0.677234947681427
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              0.17814981937408447,
+              0.20652682781219484,
+              0.3908911943435669,
+              0.6395288944244384,
+              0.7038635611534119
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.11053234338760376,
+              0.15326762199401855,
+              0.2969839572906494,
+              0.6039688110351559,
+              0.6321739554405212
+            ]
+          },
+          "sp_prob": {
+            "accepted": 23,
+            "total": 25,
+            "distance_quantiles": [
+              0.19081759452819824,
+              0.22369763851165772,
+              0.41093021631240845,
+              0.646309208869934,
+              0.6771706342697144
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 24,
+            "total": 25,
+            "distance_quantiles": [
+              0.10427117347717285,
+              0.17368569374084472,
+              0.28562742471694946,
+              0.6072822213172909,
+              0.6436004638671875
+            ]
+          },
+          "same": {
+            "accepted": 25,
+            "total": 25,
+            "distance_quantiles": [
+              0.11713570356369019,
+              0.12806181907653807,
+              0.29460155963897705,
+              0.48901034593582143,
+              0.4978618621826172
+            ],
+            "source_bootstrap_95": [
+              1.0,
+              1.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 208,
+            "total": 225,
+            "source_bootstrap_95": [
+              0.8444444444444444,
+              0.9822222222222222
+            ]
+          }
+        },
+        "evaluation/all": {
+          "bound": {
+            "accepted": 46,
+            "total": 50,
+            "distance_quantiles": [
+              0.04538935422897339,
+              0.06058070957660675,
+              0.2788301408290863,
+              0.6833962142467498,
+              0.8612920641899109
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 43,
+            "total": 50,
+            "distance_quantiles": [
+              0.04756319522857666,
+              0.08800809979438783,
+              0.36057931184768677,
+              0.7274177730083464,
+              0.8594242930412292
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 38,
+            "total": 50,
+            "distance_quantiles": [
+              0.18137961626052856,
+              0.22783200442790985,
+              0.5102644264698029,
+              0.823521414399147,
+              0.8865581750869751
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 45,
+            "total": 50,
+            "distance_quantiles": [
+              0.04521584510803223,
+              0.07663657367229462,
+              0.3602498173713684,
+              0.7016534775495529,
+              1.0211976766586304
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 45,
+            "total": 50,
+            "distance_quantiles": [
+              0.04462766647338867,
+              0.06465488076210021,
+              0.3674960136413574,
+              0.7038904637098312,
+              0.8657374978065491
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 45,
+            "total": 50,
+            "distance_quantiles": [
+              0.06522363424301147,
+              0.12341260612010956,
+              0.39700186252593994,
+              0.7012216806411742,
+              0.8653862476348877
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 46,
+            "total": 50,
+            "distance_quantiles": [
+              0.0666649341583252,
+              0.07679618000984192,
+              0.413718044757843,
+              0.6791732370853423,
+              0.884188175201416
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 47,
+            "total": 50,
+            "distance_quantiles": [
+              0.05035287141799927,
+              0.0896619200706482,
+              0.33511900901794434,
+              0.6762659668922422,
+              0.8750200271606445
+            ]
+          },
+          "sp_prob": {
+            "accepted": 45,
+            "total": 50,
+            "distance_quantiles": [
+              0.045397162437438965,
+              0.06749005615711212,
+              0.41252800822257996,
+              0.710312059521675,
+              0.8768352270126343
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 46,
+            "total": 50,
+            "distance_quantiles": [
+              0.04422581195831299,
+              0.08390153646469117,
+              0.3149482011795044,
+              0.6806880891323087,
+              0.8729845285415649
+            ]
+          },
+          "same": {
+            "accepted": 47,
+            "total": 50,
+            "distance_quantiles": [
+              0.0430065393447876,
+              0.05501796901226044,
+              0.3265814185142517,
+              0.6252814292907711,
+              0.7273638844490051
+            ],
+            "source_bootstrap_95": [
+              0.86,
+              1.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 400,
+            "total": 450,
+            "source_bootstrap_95": [
+              0.8133333333333334,
+              0.9533333333333334
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "clean_code_parity": {
+    "images": 400,
+    "total_differing_bits": 0,
+    "max_differing_bits": 0
+  },
+  "confidence_note": "Cluster bootstrap is descriptive; zero observed errors do not establish a zero population rate or1e-6 FPR"
+}

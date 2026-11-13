@@ -1,0 +1,50 @@
+{
+  "parent": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113",
+  "parent_protocol_sha256": "eb8e6162be7617602cfa888bfdf7a73e55c695d263b0af6675280d23243e8177",
+  "probe_protocol_sha256": "f0e1a653af13bda73aff9c37dc59cbea454396d5b570ba7d4e066ce504b1b4d5",
+  "threshold_source_sha256": "83747190081815975511ee9dfb7186de43da52042e7f342341ab8d024c607855",
+  "threshold": 0.6199655532836914,
+  "operator": "1-cosine <= threshold",
+  "model": {
+    "path": "/data0/liyanlei/watermark_research/models/sscd/sscd_disc_mixup.torchscript.pt",
+    "sha256": "9f26bd4c848cc19b73d2ae92eea6e04886f61a7b764ceb7a13aeee62e6a6db56",
+    "url": "https://dl.fbaipublicfiles.com/sscd-copy-detection/sscd_disc_mixup.torchscript.pt"
+  },
+  "distortion_file": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/gs_image_utils.py",
+  "distortion_sha256": "aa0dd86b4543bde39983e5b7ec8fd487fba476d7a435f83308891e187ee93fbb",
+  "conditions": {
+    "random_crop_ratio": 0.6,
+    "random_drop_ratio": 0.8,
+    "brightness_factor": 6,
+    "jpeg_ratio": 25,
+    "gaussian_blur_r": 4,
+    "gaussian_std": 0.05,
+    "median_blur_k": 7,
+    "sp_prob": 0.05,
+    "resize_ratio": 0.25
+  },
+  "seed_base": 2026111310,
+  "predecessors": [
+    {
+      "carrier": "TR",
+      "pid": 42517,
+      "cmdline_sha256": "dc7de32ca523593ed2dd2fea47cdebf17c5218aa90f6394f326c8e2a763a8be4"
+    },
+    {
+      "carrier": "PRC",
+      "pid": 42519,
+      "cmdline_sha256": "39544e744e424f0999a0ce83c65afc8a649b9eddd98c733209e6f13dd92d97bd"
+    }
+  ],
+  "gpu": 7,
+  "method": "Native detector AND SSCD distance to registered final image",
+  "scope": "Fresh author TR/PRC output images; current development transfer of fixed SSCD threshold",
+  "training": false,
+  "attacks_created": 0,
+  "new_or_modified_attacks": false,
+  "independent_confirmation": false,
+  "selection": "SSCD selected after representation development results",
+  "distortion_scope": "Content gate only; no native carrier or PGID distortion re-inversion in this control",
+  "clean_pgid_scope": "Native run validates clean raw carrier only; PGID clean control is pending",
+  "source_sha256": "ba57b6405495bd8588490d5b409159afa4a821c05e601b2bcdc5f9aaa9ab0de3"
+}

@@ -1,0 +1,3217 @@
+{
+  "status": "complete",
+  "protocol_sha256": "4476b1d7eab0f41e4e704a230a8fd36dbb337f2ddefc78f630f069b83a4c7bc1",
+  "results": [
+    {
+      "repetition": 0,
+      "length": 256,
+      "selector": "fixed",
+      "radius": 101,
+      "radius_fraction": 0.39453125,
+      "plotkin_max_codewords": 2,
+      "plotkin_max_message_bits": 1,
+      "calibration_accepted": 428,
+      "calibration_total": 450,
+      "groups": {
+        "calibration": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 48,
+            "total": 50,
+            "quantiles": [
+              45.0,
+              62.7,
+              82.0,
+              92.55,
+              105.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 37,
+            "total": 50,
+            "quantiles": [
+              73.0,
+              76.8,
+              92.5,
+              106.55,
+              115.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 43,
+            "total": 50,
+            "quantiles": [
+              4.0,
+              8.8,
+              79.0,
+              109.19999999999999,
+              115.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              8.0,
+              12.9,
+              26.0,
+              50.29999999999998,
+              67.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              18.0,
+              19.9,
+              30.5,
+              42.749999999999986,
+              48.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              27.0,
+              36.9,
+              64.0,
+              96.19999999999999,
+              100.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              20.0,
+              22.0,
+              31.0,
+              45.099999999999994,
+              48.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              29.0,
+              31.45,
+              50.0,
+              71.55,
+              78.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              11.0,
+              13.45,
+              21.0,
+              32.55,
+              41.0
+            ]
+          },
+          "same": {
+            "accepted": 10,
+            "total": 50,
+            "quantiles": [
+              89.0,
+              96.45,
+              112.0,
+              125.0,
+              131.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 428,
+            "total": 450
+          }
+        },
+        "evaluation": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              59.0,
+              62.45,
+              79.5,
+              95.55,
+              99.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 39,
+            "total": 50,
+            "quantiles": [
+              61.0,
+              73.7,
+              93.5,
+              110.55,
+              122.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 45,
+            "total": 50,
+            "quantiles": [
+              5.0,
+              10.0,
+              61.0,
+              109.64999999999999,
+              121.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              13.0,
+              16.9,
+              27.5,
+              43.19999999999999,
+              62.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              16.0,
+              21.0,
+              28.0,
+              39.55,
+              53.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              27.0,
+              38.9,
+              64.5,
+              87.55,
+              97.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              17.0,
+              19.45,
+              27.0,
+              43.099999999999994,
+              60.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              21.0,
+              37.8,
+              53.5,
+              75.64999999999999,
+              83.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              12.0,
+              14.45,
+              19.0,
+              31.0,
+              38.0
+            ]
+          },
+          "same": {
+            "accepted": 10,
+            "total": 50,
+            "quantiles": [
+              83.0,
+              96.45,
+              111.5,
+              127.55,
+              129.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 434,
+            "total": 450
+          }
+        }
+      }
+    },
+    {
+      "repetition": 0,
+      "length": 256,
+      "selector": "enrollment_margin",
+      "radius": 39,
+      "radius_fraction": 0.15234375,
+      "plotkin_max_codewords": null,
+      "plotkin_max_message_bits": null,
+      "calibration_accepted": 428,
+      "calibration_total": 450,
+      "groups": {
+        "calibration": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              1.0,
+              3.0,
+              14.0,
+              28.099999999999994,
+              36.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 36,
+            "total": 50,
+            "quantiles": [
+              6.0,
+              11.0,
+              30.0,
+              52.84999999999998,
+              83.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 42,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              11.0,
+              59.19999999999999,
+              66.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              1.5,
+              17.19999999999999,
+              23.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              4.549999999999997,
+              8.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "same": {
+            "accepted": 0,
+            "total": 50,
+            "quantiles": [
+              41.0,
+              49.0,
+              76.5,
+              120.94999999999997,
+              129.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 428,
+            "total": 450
+          }
+        },
+        "evaluation": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 49,
+            "total": 50,
+            "quantiles": [
+              1.0,
+              2.9000000000000004,
+              13.5,
+              30.099999999999994,
+              42.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 37,
+            "total": 50,
+            "quantiles": [
+              8.0,
+              13.9,
+              29.5,
+              50.55,
+              71.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 43,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              2.0,
+              63.69999999999996,
+              120.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              1.5,
+              21.64999999999999,
+              36.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              2.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              9.549999999999997,
+              18.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "same": {
+            "accepted": 2,
+            "total": 50,
+            "quantiles": [
+              35.0,
+              43.45,
+              79.5,
+              116.64999999999999,
+              126.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 429,
+            "total": 450
+          }
+        }
+      }
+    },
+    {
+      "repetition": 0,
+      "length": 1024,
+      "selector": "fixed",
+      "radius": 390,
+      "radius_fraction": 0.380859375,
+      "plotkin_max_codewords": 2,
+      "plotkin_max_message_bits": 1,
+      "calibration_accepted": 428,
+      "calibration_total": 450,
+      "groups": {
+        "calibration": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 49,
+            "total": 50,
+            "quantiles": [
+              222.0,
+              265.7,
+              328.0,
+              380.4,
+              407.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 35,
+            "total": 50,
+            "quantiles": [
+              307.0,
+              315.8,
+              366.0,
+              423.55,
+              433.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 44,
+            "total": 50,
+            "quantiles": [
+              18.0,
+              35.50000000000001,
+              312.0,
+              421.4,
+              441.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              46.0,
+              53.9,
+              100.5,
+              178.55,
+              247.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              81.0,
+              86.45,
+              114.0,
+              150.84999999999997,
+              187.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              79.0,
+              168.35,
+              258.5,
+              353.4,
+              378.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              79.0,
+              92.25,
+              122.0,
+              178.95,
+              209.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              107.0,
+              146.9,
+              198.0,
+              283.69999999999993,
+              291.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              56.0,
+              63.0,
+              80.0,
+              118.19999999999999,
+              131.0
+            ]
+          },
+          "same": {
+            "accepted": 2,
+            "total": 50,
+            "quantiles": [
+              378.0,
+              395.5,
+              442.0,
+              498.55,
+              539.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 428,
+            "total": 450
+          }
+        },
+        "evaluation": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              238.0,
+              276.7,
+              320.5,
+              354.65,
+              372.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 39,
+            "total": 50,
+            "quantiles": [
+              283.0,
+              311.4,
+              376.0,
+              410.2,
+              476.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 43,
+            "total": 50,
+            "quantiles": [
+              25.0,
+              34.0,
+              266.5,
+              446.2,
+              505.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              42.0,
+              70.35,
+              114.5,
+              194.0499999999999,
+              236.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              84.0,
+              86.9,
+              115.5,
+              144.29999999999998,
+              154.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              120.0,
+              156.15,
+              253.5,
+              349.84999999999997,
+              369.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              62.0,
+              77.35,
+              113.0,
+              154.79999999999995,
+              251.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              103.0,
+              160.25,
+              218.5,
+              303.69999999999993,
+              327.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              57.0,
+              59.45,
+              80.0,
+              110.19999999999999,
+              155.0
+            ]
+          },
+          "same": {
+            "accepted": 3,
+            "total": 50,
+            "quantiles": [
+              364.0,
+              391.25,
+              443.5,
+              501.2,
+              518.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 432,
+            "total": 450
+          }
+        }
+      }
+    },
+    {
+      "repetition": 0,
+      "length": 1024,
+      "selector": "enrollment_margin",
+      "radius": 217,
+      "radius_fraction": 0.2119140625,
+      "plotkin_max_codewords": null,
+      "plotkin_max_message_bits": null,
+      "calibration_accepted": 428,
+      "calibration_total": 450,
+      "groups": {
+        "calibration": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              12.0,
+              39.400000000000006,
+              111.0,
+              180.55,
+              203.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 36,
+            "total": 50,
+            "quantiles": [
+              83.0,
+              108.3,
+              186.0,
+              259.65,
+              330.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 42,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              98.0,
+              297.5,
+              314.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              2.0999999999999943,
+              12.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              2.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              32.5,
+              122.79999999999995,
+              157.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              3.549999999999997,
+              5.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              4.5,
+              48.099999999999994,
+              67.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "same": {
+            "accepted": 0,
+            "total": 50,
+            "quantiles": [
+              227.0,
+              242.75,
+              331.5,
+              460.55,
+              538.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 428,
+            "total": 450
+          }
+        },
+        "evaluation": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              30.0,
+              42.5,
+              107.0,
+              176.2,
+              189.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 33,
+            "total": 50,
+            "quantiles": [
+              90.0,
+              103.6,
+              188.5,
+              259.84999999999997,
+              336.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 43,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              38.5,
+              326.59999999999985,
+              510.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              8.149999999999963,
+              21.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              2.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              30.0,
+              148.59999999999997,
+              172.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              37.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.4500000000000002,
+              11.0,
+              71.24999999999996,
+              126.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              2.0
+            ]
+          },
+          "same": {
+            "accepted": 1,
+            "total": 50,
+            "quantiles": [
+              192.0,
+              246.5,
+              356.5,
+              460.75,
+              527.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 426,
+            "total": 450
+          }
+        }
+      }
+    },
+    {
+      "repetition": 1,
+      "length": 256,
+      "selector": "fixed",
+      "radius": 97,
+      "radius_fraction": 0.37890625,
+      "plotkin_max_codewords": 2,
+      "plotkin_max_message_bits": 1,
+      "calibration_accepted": 428,
+      "calibration_total": 450,
+      "groups": {
+        "calibration": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 47,
+            "total": 50,
+            "quantiles": [
+              57.0,
+              61.0,
+              81.0,
+              96.94999999999997,
+              113.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 34,
+            "total": 50,
+            "quantiles": [
+              62.0,
+              75.35,
+              93.5,
+              103.64999999999999,
+              106.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 47,
+            "total": 50,
+            "quantiles": [
+              4.0,
+              9.45,
+              79.5,
+              97.55,
+              110.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              12.0,
+              14.45,
+              25.0,
+              45.749999999999986,
+              66.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              13.0,
+              18.45,
+              29.5,
+              39.099999999999994,
+              48.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              24.0,
+              44.9,
+              62.5,
+              87.0,
+              91.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              17.0,
+              21.45,
+              32.5,
+              47.55,
+              51.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              27.0,
+              33.45,
+              49.0,
+              74.29999999999998,
+              93.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              10.0,
+              12.45,
+              19.0,
+              31.549999999999997,
+              33.0
+            ]
+          },
+          "same": {
+            "accepted": 7,
+            "total": 50,
+            "quantiles": [
+              89.0,
+              93.0,
+              107.0,
+              132.1,
+              141.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 428,
+            "total": 450
+          }
+        },
+        "evaluation": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 49,
+            "total": 50,
+            "quantiles": [
+              58.0,
+              63.9,
+              80.0,
+              94.0,
+              101.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 33,
+            "total": 50,
+            "quantiles": [
+              67.0,
+              76.35,
+              91.5,
+              108.0,
+              113.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 44,
+            "total": 50,
+            "quantiles": [
+              4.0,
+              9.0,
+              63.0,
+              114.94999999999997,
+              133.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              11.0,
+              14.9,
+              27.0,
+              51.49999999999997,
+              65.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              19.0,
+              20.45,
+              27.5,
+              40.55,
+              45.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              29.0,
+              40.45,
+              64.5,
+              87.55,
+              92.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              13.0,
+              17.0,
+              28.5,
+              48.19999999999999,
+              63.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              26.0,
+              33.45,
+              54.0,
+              76.0,
+              79.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              12.0,
+              12.45,
+              19.0,
+              32.64999999999999,
+              36.0
+            ]
+          },
+          "same": {
+            "accepted": 6,
+            "total": 50,
+            "quantiles": [
+              82.0,
+              91.9,
+              113.0,
+              131.64999999999998,
+              142.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 426,
+            "total": 450
+          }
+        }
+      }
+    },
+    {
+      "repetition": 1,
+      "length": 256,
+      "selector": "enrollment_margin",
+      "radius": 38,
+      "radius_fraction": 0.1484375,
+      "plotkin_max_codewords": null,
+      "plotkin_max_message_bits": null,
+      "calibration_accepted": 428,
+      "calibration_total": 450,
+      "groups": {
+        "calibration": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 49,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              2.0,
+              14.0,
+              35.0,
+              40.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 38,
+            "total": 50,
+            "quantiles": [
+              10.0,
+              13.45,
+              30.0,
+              49.099999999999994,
+              76.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 41,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              11.0,
+              62.55,
+              65.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              2.0,
+              19.549999999999997,
+              27.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              3.549999999999997,
+              8.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "same": {
+            "accepted": 0,
+            "total": 50,
+            "quantiles": [
+              47.0,
+              48.45,
+              70.5,
+              114.19999999999999,
+              136.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 428,
+            "total": 450
+          }
+        },
+        "evaluation": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              1.0,
+              3.45,
+              15.0,
+              29.64999999999999,
+              35.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 35,
+            "total": 50,
+            "quantiles": [
+              6.0,
+              11.350000000000001,
+              30.0,
+              54.0,
+              67.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 44,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              2.5,
+              67.94999999999992,
+              125.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              2.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              3.0,
+              18.0,
+              30.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              3.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              6.0,
+              18.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "same": {
+            "accepted": 1,
+            "total": 50,
+            "quantiles": [
+              37.0,
+              45.45,
+              78.0,
+              118.19999999999999,
+              137.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 429,
+            "total": 450
+          }
+        }
+      }
+    },
+    {
+      "repetition": 1,
+      "length": 1024,
+      "selector": "fixed",
+      "radius": 385,
+      "radius_fraction": 0.3759765625,
+      "plotkin_max_codewords": 2,
+      "plotkin_max_message_bits": 1,
+      "calibration_accepted": 428,
+      "calibration_total": 450,
+      "groups": {
+        "calibration": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 49,
+            "total": 50,
+            "quantiles": [
+              234.0,
+              273.45,
+              326.0,
+              369.95,
+              388.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 37,
+            "total": 50,
+            "quantiles": [
+              298.0,
+              312.15,
+              369.5,
+              403.75,
+              440.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 42,
+            "total": 50,
+            "quantiles": [
+              15.0,
+              38.25,
+              306.0,
+              416.1,
+              440.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              42.0,
+              53.300000000000004,
+              100.5,
+              172.2,
+              243.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              77.0,
+              85.9,
+              118.0,
+              143.2,
+              176.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              85.0,
+              170.8,
+              262.0,
+              347.29999999999995,
+              356.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              80.0,
+              97.9,
+              125.0,
+              180.14999999999998,
+              200.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              116.0,
+              140.05,
+              207.0,
+              271.75,
+              332.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              50.0,
+              55.9,
+              84.5,
+              112.49999999999997,
+              136.0
+            ]
+          },
+          "same": {
+            "accepted": 0,
+            "total": 50,
+            "quantiles": [
+              387.0,
+              401.9,
+              439.0,
+              505.79999999999995,
+              527.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 428,
+            "total": 450
+          }
+        },
+        "evaluation": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 49,
+            "total": 50,
+            "quantiles": [
+              261.0,
+              268.0,
+              321.5,
+              363.55,
+              386.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 37,
+            "total": 50,
+            "quantiles": [
+              299.0,
+              315.65,
+              364.5,
+              419.4,
+              424.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 44,
+            "total": 50,
+            "quantiles": [
+              23.0,
+              32.35,
+              275.0,
+              437.9999999999999,
+              537.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              39.0,
+              62.45,
+              112.5,
+              199.9999999999999,
+              235.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              82.0,
+              85.35,
+              114.5,
+              150.0,
+              158.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              131.0,
+              156.4,
+              253.5,
+              346.1,
+              382.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              69.0,
+              76.9,
+              112.0,
+              168.49999999999997,
+              245.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              95.0,
+              152.35,
+              222.5,
+              306.24999999999994,
+              341.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              55.0,
+              58.45,
+              75.5,
+              108.55,
+              151.0
+            ]
+          },
+          "same": {
+            "accepted": 3,
+            "total": 50,
+            "quantiles": [
+              355.0,
+              385.25,
+              451.0,
+              508.75,
+              521.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 430,
+            "total": 450
+          }
+        }
+      }
+    },
+    {
+      "repetition": 1,
+      "length": 1024,
+      "selector": "enrollment_margin",
+      "radius": 220,
+      "radius_fraction": 0.21484375,
+      "plotkin_max_codewords": null,
+      "plotkin_max_message_bits": null,
+      "calibration_accepted": 428,
+      "calibration_total": 450,
+      "groups": {
+        "calibration": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              14.0,
+              39.35,
+              108.5,
+              190.55,
+              195.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 36,
+            "total": 50,
+            "quantiles": [
+              77.0,
+              99.6,
+              177.5,
+              254.34999999999997,
+              340.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 42,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              91.0,
+              305.95,
+              339.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              2.0,
+              23.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.5499999999999972,
+              1.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              1.0,
+              34.0,
+              134.49999999999991,
+              161.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              3.549999999999997,
+              4.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              4.0,
+              55.19999999999999,
+              68.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "same": {
+            "accepted": 0,
+            "total": 50,
+            "quantiles": [
+              252.0,
+              262.45,
+              337.0,
+              463.65,
+              506.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 428,
+            "total": 450
+          }
+        },
+        "evaluation": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              26.0,
+              46.45,
+              115.5,
+              166.64999999999998,
+              199.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 39,
+            "total": 50,
+            "quantiles": [
+              74.0,
+              102.0,
+              188.0,
+              251.79999999999995,
+              322.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 45,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              39.0,
+              321.59999999999974,
+              488.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              6.399999999999977,
+              23.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              35.5,
+              134.84999999999997,
+              187.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.5499999999999972,
+              30.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.4500000000000002,
+              10.5,
+              69.09999999999994,
+              132.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "same": {
+            "accepted": 1,
+            "total": 50,
+            "quantiles": [
+              196.0,
+              251.8,
+              349.5,
+              468.59999999999997,
+              513.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 434,
+            "total": 450
+          }
+        }
+      }
+    },
+    {
+      "repetition": 2,
+      "length": 256,
+      "selector": "fixed",
+      "radius": 99,
+      "radius_fraction": 0.38671875,
+      "plotkin_max_codewords": 2,
+      "plotkin_max_message_bits": 1,
+      "calibration_accepted": 428,
+      "calibration_total": 450,
+      "groups": {
+        "calibration": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 48,
+            "total": 50,
+            "quantiles": [
+              56.0,
+              65.45,
+              80.0,
+              97.19999999999999,
+              102.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 36,
+            "total": 50,
+            "quantiles": [
+              71.0,
+              73.35,
+              89.5,
+              104.19999999999999,
+              110.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 45,
+            "total": 50,
+            "quantiles": [
+              3.0,
+              8.45,
+              76.5,
+              101.55,
+              108.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              9.0,
+              13.9,
+              25.0,
+              51.0,
+              57.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              16.0,
+              18.0,
+              28.0,
+              41.55,
+              47.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 49,
+            "total": 50,
+            "quantiles": [
+              19.0,
+              46.25,
+              66.0,
+              90.64999999999999,
+              104.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              17.0,
+              18.45,
+              29.0,
+              51.099999999999994,
+              60.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              27.0,
+              30.9,
+              54.5,
+              73.55,
+              85.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              10.0,
+              12.9,
+              21.0,
+              31.64999999999999,
+              34.0
+            ]
+          },
+          "same": {
+            "accepted": 6,
+            "total": 50,
+            "quantiles": [
+              90.0,
+              95.45,
+              113.5,
+              124.55,
+              130.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 428,
+            "total": 450
+          }
+        },
+        "evaluation": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 49,
+            "total": 50,
+            "quantiles": [
+              59.0,
+              64.0,
+              79.0,
+              95.1,
+              100.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 45,
+            "total": 50,
+            "quantiles": [
+              72.0,
+              77.45,
+              90.0,
+              101.1,
+              109.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 46,
+            "total": 50,
+            "quantiles": [
+              2.0,
+              8.9,
+              64.0,
+              103.1,
+              136.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              11.0,
+              15.25,
+              26.0,
+              54.099999999999994,
+              67.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              15.0,
+              19.0,
+              27.0,
+              39.55,
+              43.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              28.0,
+              36.45,
+              65.0,
+              88.19999999999999,
+              91.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              14.0,
+              17.45,
+              29.0,
+              42.19999999999999,
+              59.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              20.0,
+              34.45,
+              54.0,
+              71.19999999999999,
+              94.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              12.0,
+              12.45,
+              21.0,
+              30.0,
+              41.0
+            ]
+          },
+          "same": {
+            "accepted": 4,
+            "total": 50,
+            "quantiles": [
+              90.0,
+              95.0,
+              109.0,
+              124.0,
+              132.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 440,
+            "total": 450
+          }
+        }
+      }
+    },
+    {
+      "repetition": 2,
+      "length": 256,
+      "selector": "enrollment_margin",
+      "radius": 41,
+      "radius_fraction": 0.16015625,
+      "plotkin_max_codewords": null,
+      "plotkin_max_message_bits": null,
+      "calibration_accepted": 428,
+      "calibration_total": 450,
+      "groups": {
+        "calibration": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              2.45,
+              14.0,
+              32.749999999999986,
+              41.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 35,
+            "total": 50,
+            "quantiles": [
+              8.0,
+              11.0,
+              31.0,
+              54.19999999999999,
+              79.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 43,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              10.5,
+              62.04999999999997,
+              81.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              2.0,
+              16.0,
+              18.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              5.549999999999997,
+              9.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "same": {
+            "accepted": 0,
+            "total": 50,
+            "quantiles": [
+              44.0,
+              49.35,
+              73.0,
+              108.55,
+              130.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 428,
+            "total": 450
+          }
+        },
+        "evaluation": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              1.0,
+              2.45,
+              14.5,
+              27.549999999999997,
+              35.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 35,
+            "total": 50,
+            "quantiles": [
+              9.0,
+              14.350000000000001,
+              32.5,
+              51.55,
+              74.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 44,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              2.0,
+              70.09999999999994,
+              134.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              2.0,
+              17.099999999999994,
+              29.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              3.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              8.649999999999991,
+              13.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "same": {
+            "accepted": 2,
+            "total": 50,
+            "quantiles": [
+              39.0,
+              44.35,
+              79.5,
+              114.39999999999998,
+              127.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 429,
+            "total": 450
+          }
+        }
+      }
+    },
+    {
+      "repetition": 2,
+      "length": 1024,
+      "selector": "fixed",
+      "radius": 385,
+      "radius_fraction": 0.3759765625,
+      "plotkin_max_codewords": 2,
+      "plotkin_max_message_bits": 1,
+      "calibration_accepted": 430,
+      "calibration_total": 450,
+      "groups": {
+        "calibration": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 49,
+            "total": 50,
+            "quantiles": [
+              244.0,
+              272.45,
+              323.0,
+              368.84999999999997,
+              386.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 36,
+            "total": 50,
+            "quantiles": [
+              308.0,
+              324.35,
+              360.0,
+              427.65,
+              446.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 45,
+            "total": 50,
+            "quantiles": [
+              15.0,
+              32.85,
+              316.5,
+              432.74999999999994,
+              446.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              45.0,
+              51.25,
+              104.5,
+              181.89999999999995,
+              244.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              79.0,
+              85.8,
+              115.0,
+              141.2,
+              192.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              76.0,
+              164.25,
+              264.0,
+              330.75,
+              368.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              80.0,
+              88.9,
+              117.5,
+              185.2,
+              212.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              101.0,
+              136.25,
+              209.5,
+              270.0,
+              316.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              56.0,
+              63.9,
+              82.0,
+              115.84999999999998,
+              149.0
+            ]
+          },
+          "same": {
+            "accepted": 1,
+            "total": 50,
+            "quantiles": [
+              376.0,
+              394.45,
+              443.0,
+              489.55,
+              543.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 430,
+            "total": 450
+          }
+        },
+        "evaluation": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 49,
+            "total": 50,
+            "quantiles": [
+              248.0,
+              270.75,
+              322.5,
+              367.5,
+              387.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 35,
+            "total": 50,
+            "quantiles": [
+              308.0,
+              324.85,
+              366.5,
+              417.0,
+              432.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 44,
+            "total": 50,
+            "quantiles": [
+              23.0,
+              33.9,
+              265.5,
+              430.69999999999993,
+              522.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              45.0,
+              59.15,
+              109.5,
+              201.04999999999984,
+              238.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              81.0,
+              88.35,
+              112.0,
+              150.64999999999998,
+              164.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              135.0,
+              152.35,
+              255.0,
+              356.2,
+              374.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              62.0,
+              77.25,
+              110.0,
+              165.75,
+              239.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              87.0,
+              158.9,
+              220.0,
+              290.0999999999999,
+              330.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              57.0,
+              59.9,
+              79.0,
+              111.1,
+              166.0
+            ]
+          },
+          "same": {
+            "accepted": 1,
+            "total": 50,
+            "quantiles": [
+              373.0,
+              396.45,
+              450.5,
+              491.55,
+              516.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 428,
+            "total": 450
+          }
+        }
+      }
+    },
+    {
+      "repetition": 2,
+      "length": 1024,
+      "selector": "enrollment_margin",
+      "radius": 214,
+      "radius_fraction": 0.208984375,
+      "plotkin_max_codewords": null,
+      "plotkin_max_message_bits": null,
+      "calibration_accepted": 428,
+      "calibration_total": 450,
+      "groups": {
+        "calibration": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              20.0,
+              44.35,
+              109.5,
+              188.1,
+              208.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 36,
+            "total": 50,
+            "quantiles": [
+              75.0,
+              99.45,
+              188.0,
+              256.4,
+              315.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 42,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              83.0,
+              294.95,
+              337.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              3.0,
+              18.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.9000000000000004,
+              33.0,
+              131.0,
+              146.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              2.0,
+              5.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              5.5,
+              57.29999999999998,
+              67.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "same": {
+            "accepted": 0,
+            "total": 50,
+            "quantiles": [
+              246.0,
+              256.7,
+              334.5,
+              451.29999999999995,
+              522.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 428,
+            "total": 450
+          }
+        },
+        "evaluation": {
+          "bound": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "random_crop_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              36.0,
+              48.8,
+              114.5,
+              171.75,
+              187.0
+            ]
+          },
+          "random_drop_ratio": {
+            "accepted": 33,
+            "total": 50,
+            "quantiles": [
+              89.0,
+              110.8,
+              190.0,
+              253.1,
+              362.0
+            ]
+          },
+          "brightness_factor": {
+            "accepted": 44,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              38.0,
+              322.5999999999998,
+              514.0
+            ]
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              8.399999999999977,
+              23.0
+            ]
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.4500000000000002,
+              33.0,
+              132.34999999999997,
+              173.0
+            ]
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              34.0
+            ]
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              11.0,
+              68.69999999999996,
+              110.0
+            ]
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50,
+            "quantiles": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "same": {
+            "accepted": 1,
+            "total": 50,
+            "quantiles": [
+              213.0,
+              243.15,
+              350.5,
+              483.5,
+              493.0
+            ]
+          },
+          "pooled_distortions": {
+            "accepted": 427,
+            "total": 450
+          }
+        }
+      }
+    }
+  ],
+  "projection_sha256": [
+    "ca3f74893700a3dbd267a0e277baf1e8a0de4493ce60867746994d7887a6bcf0",
+    "4ba8a9ae52ec5b477e2c33a5b6b92847f966e85ba930def2ab2bb7057086916e",
+    "7b60f86b56aca62bd0ff60da665610b5be88815a11d3b0be3424867288457766"
+  ],
+  "rows_sha256": "cd54221473fe25e78fa4a5f5069096db46822e2d2be60fabd670515ed8cacdbe",
+  "caveat": "Code-offset worst-case unique-decoding bound; no conclusion about every FE construction, list decoding, random-error decoding or conditional cryptographic entropy"
+}
