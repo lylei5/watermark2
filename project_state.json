@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-13T04:05:42.436612+00:00",
+  "updated_at": "2026-11-13T04:14:59.307699+00:00",
   "status": "native_baselines_and_instance_diagnostic",
   "active_experiments": 3,
-  "queued_experiments": 1,
+  "queued_experiments": 3,
   "latest_progress_report": "reports/instance_representation_20261113/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/INSTANCE_BINDING_RESEARCH.md",
@@ -503,5 +503,42 @@
     "key_recovery": false,
     "postprocessing": "Frozen genuine-only source-separated scorer, kernel process-exit wait",
     "research_question": "Does native carrier error predict final-instance content drift?"
+  },
+  "pgid_carrier_genuine_controls": {
+    "run": "pgid_carrier_genuine_20261113",
+    "status": "waiting_for_native_exit",
+    "protocol": "protocols/pgid_carrier_genuine_20261113.json",
+    "jobs": [
+      {
+        "carrier": "TR",
+        "pid": 4171,
+        "gpu": 5,
+        "parent_pid": 42517
+      },
+      {
+        "carrier": "PRC",
+        "pid": 7671,
+        "gpu": 4,
+        "parent_pid": 42519
+      }
+    ],
+    "queries": 220,
+    "decisions": 440,
+    "attack_generation": false,
+    "threshold_tuning": false
+  },
+  "instance_nuisance_geometry": {
+    "run": "instance_nuisance_geometry_20261113",
+    "status": "complete",
+    "report": "reports/instance_nuisance_geometry_20261113/report.md",
+    "protocol": "protocols/instance_nuisance_geometry_20261113.json",
+    "scope": "Ordinary subspace-removal control; CPU scoring on249, no new model extraction",
+    "source_split": [
+      24,
+      26,
+      50
+    ],
+    "configurations": 16,
+    "key_recovery": false
   }
 }

@@ -1,0 +1,1752 @@
+{
+  "status": "complete",
+  "protocol_sha256": "11632b23c885f3f02aaa0ffb02823b0717afcaf7bbd052c025c8749638dd3153",
+  "basis_sha256": "81f638a8a0ed8f6693b36aa1d376c71a8dba12d0753d29916b7f291763817ae8",
+  "rows_sha256": "2768f50d3ab2652bedd0ab3556ee45766785546091589414a0d3ca24b2e9d08d",
+  "results": [
+    {
+      "rank": 0,
+      "metric": "cosine",
+      "repetition": null,
+      "threshold": 0.6157782982878339,
+      "fit_residual_energy_removed": 0.0,
+      "groups": {
+        "calibration": {
+          "bound": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_crop_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_drop_ratio": {
+            "accepted": 18,
+            "total": 26
+          },
+          "brightness_factor": {
+            "accepted": 23,
+            "total": 26
+          },
+          "jpeg_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_blur_r": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_std": {
+            "accepted": 26,
+            "total": 26
+          },
+          "median_blur_k": {
+            "accepted": 26,
+            "total": 26
+          },
+          "sp_prob": {
+            "accepted": 26,
+            "total": 26
+          },
+          "resize_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "same": {
+            "accepted": 0,
+            "total": 26
+          },
+          "pooled_distortions": {
+            "accepted": 223,
+            "total": 234
+          }
+        },
+        "evaluation": {
+          "bound": {
+            "accepted": 50,
+            "total": 50
+          },
+          "random_crop_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "random_drop_ratio": {
+            "accepted": 34,
+            "total": 50
+          },
+          "brightness_factor": {
+            "accepted": 44,
+            "total": 50
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "same": {
+            "accepted": 1,
+            "total": 50
+          },
+          "pooled_distortions": {
+            "accepted": 428,
+            "total": 450
+          }
+        }
+      }
+    },
+    {
+      "rank": 0,
+      "metric": "margin_hamming1024",
+      "repetition": 0,
+      "threshold": 210,
+      "fit_residual_energy_removed": 0.0,
+      "groups": {
+        "calibration": {
+          "bound": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_crop_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_drop_ratio": {
+            "accepted": 18,
+            "total": 26
+          },
+          "brightness_factor": {
+            "accepted": 23,
+            "total": 26
+          },
+          "jpeg_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_blur_r": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_std": {
+            "accepted": 26,
+            "total": 26
+          },
+          "median_blur_k": {
+            "accepted": 26,
+            "total": 26
+          },
+          "sp_prob": {
+            "accepted": 26,
+            "total": 26
+          },
+          "resize_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "same": {
+            "accepted": 0,
+            "total": 26
+          },
+          "pooled_distortions": {
+            "accepted": 223,
+            "total": 234
+          }
+        },
+        "evaluation": {
+          "bound": {
+            "accepted": 50,
+            "total": 50
+          },
+          "random_crop_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "random_drop_ratio": {
+            "accepted": 32,
+            "total": 50
+          },
+          "brightness_factor": {
+            "accepted": 43,
+            "total": 50
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "same": {
+            "accepted": 1,
+            "total": 50
+          },
+          "pooled_distortions": {
+            "accepted": 425,
+            "total": 450
+          }
+        }
+      }
+    },
+    {
+      "rank": 0,
+      "metric": "margin_hamming1024",
+      "repetition": 1,
+      "threshold": 216,
+      "fit_residual_energy_removed": 0.0,
+      "groups": {
+        "calibration": {
+          "bound": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_crop_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_drop_ratio": {
+            "accepted": 18,
+            "total": 26
+          },
+          "brightness_factor": {
+            "accepted": 23,
+            "total": 26
+          },
+          "jpeg_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_blur_r": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_std": {
+            "accepted": 26,
+            "total": 26
+          },
+          "median_blur_k": {
+            "accepted": 26,
+            "total": 26
+          },
+          "sp_prob": {
+            "accepted": 26,
+            "total": 26
+          },
+          "resize_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "same": {
+            "accepted": 0,
+            "total": 26
+          },
+          "pooled_distortions": {
+            "accepted": 223,
+            "total": 234
+          }
+        },
+        "evaluation": {
+          "bound": {
+            "accepted": 50,
+            "total": 50
+          },
+          "random_crop_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "random_drop_ratio": {
+            "accepted": 38,
+            "total": 50
+          },
+          "brightness_factor": {
+            "accepted": 44,
+            "total": 50
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "same": {
+            "accepted": 1,
+            "total": 50
+          },
+          "pooled_distortions": {
+            "accepted": 432,
+            "total": 450
+          }
+        }
+      }
+    },
+    {
+      "rank": 0,
+      "metric": "margin_hamming1024",
+      "repetition": 2,
+      "threshold": 208,
+      "fit_residual_energy_removed": 0.0,
+      "groups": {
+        "calibration": {
+          "bound": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_crop_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_drop_ratio": {
+            "accepted": 18,
+            "total": 26
+          },
+          "brightness_factor": {
+            "accepted": 23,
+            "total": 26
+          },
+          "jpeg_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_blur_r": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_std": {
+            "accepted": 26,
+            "total": 26
+          },
+          "median_blur_k": {
+            "accepted": 26,
+            "total": 26
+          },
+          "sp_prob": {
+            "accepted": 26,
+            "total": 26
+          },
+          "resize_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "same": {
+            "accepted": 0,
+            "total": 26
+          },
+          "pooled_distortions": {
+            "accepted": 223,
+            "total": 234
+          }
+        },
+        "evaluation": {
+          "bound": {
+            "accepted": 50,
+            "total": 50
+          },
+          "random_crop_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "random_drop_ratio": {
+            "accepted": 32,
+            "total": 50
+          },
+          "brightness_factor": {
+            "accepted": 43,
+            "total": 50
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "same": {
+            "accepted": 0,
+            "total": 50
+          },
+          "pooled_distortions": {
+            "accepted": 425,
+            "total": 450
+          }
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "metric": "cosine",
+      "repetition": null,
+      "threshold": 0.5870185056037873,
+      "fit_residual_energy_removed": 0.1686504099876975,
+      "groups": {
+        "calibration": {
+          "bound": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_crop_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_drop_ratio": {
+            "accepted": 18,
+            "total": 26
+          },
+          "brightness_factor": {
+            "accepted": 23,
+            "total": 26
+          },
+          "jpeg_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_blur_r": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_std": {
+            "accepted": 26,
+            "total": 26
+          },
+          "median_blur_k": {
+            "accepted": 26,
+            "total": 26
+          },
+          "sp_prob": {
+            "accepted": 26,
+            "total": 26
+          },
+          "resize_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "same": {
+            "accepted": 0,
+            "total": 26
+          },
+          "pooled_distortions": {
+            "accepted": 223,
+            "total": 234
+          }
+        },
+        "evaluation": {
+          "bound": {
+            "accepted": 50,
+            "total": 50
+          },
+          "random_crop_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "random_drop_ratio": {
+            "accepted": 33,
+            "total": 50
+          },
+          "brightness_factor": {
+            "accepted": 43,
+            "total": 50
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "same": {
+            "accepted": 0,
+            "total": 50
+          },
+          "pooled_distortions": {
+            "accepted": 426,
+            "total": 450
+          }
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "metric": "margin_hamming1024",
+      "repetition": 0,
+      "threshold": 195,
+      "fit_residual_energy_removed": 0.1686504099876975,
+      "groups": {
+        "calibration": {
+          "bound": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_crop_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_drop_ratio": {
+            "accepted": 18,
+            "total": 26
+          },
+          "brightness_factor": {
+            "accepted": 23,
+            "total": 26
+          },
+          "jpeg_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_blur_r": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_std": {
+            "accepted": 26,
+            "total": 26
+          },
+          "median_blur_k": {
+            "accepted": 26,
+            "total": 26
+          },
+          "sp_prob": {
+            "accepted": 26,
+            "total": 26
+          },
+          "resize_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "same": {
+            "accepted": 0,
+            "total": 26
+          },
+          "pooled_distortions": {
+            "accepted": 223,
+            "total": 234
+          }
+        },
+        "evaluation": {
+          "bound": {
+            "accepted": 50,
+            "total": 50
+          },
+          "random_crop_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "random_drop_ratio": {
+            "accepted": 29,
+            "total": 50
+          },
+          "brightness_factor": {
+            "accepted": 42,
+            "total": 50
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "same": {
+            "accepted": 0,
+            "total": 50
+          },
+          "pooled_distortions": {
+            "accepted": 421,
+            "total": 450
+          }
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "metric": "margin_hamming1024",
+      "repetition": 1,
+      "threshold": 191,
+      "fit_residual_energy_removed": 0.1686504099876975,
+      "groups": {
+        "calibration": {
+          "bound": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_crop_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_drop_ratio": {
+            "accepted": 18,
+            "total": 26
+          },
+          "brightness_factor": {
+            "accepted": 23,
+            "total": 26
+          },
+          "jpeg_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_blur_r": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_std": {
+            "accepted": 26,
+            "total": 26
+          },
+          "median_blur_k": {
+            "accepted": 26,
+            "total": 26
+          },
+          "sp_prob": {
+            "accepted": 26,
+            "total": 26
+          },
+          "resize_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "same": {
+            "accepted": 0,
+            "total": 26
+          },
+          "pooled_distortions": {
+            "accepted": 223,
+            "total": 234
+          }
+        },
+        "evaluation": {
+          "bound": {
+            "accepted": 50,
+            "total": 50
+          },
+          "random_crop_ratio": {
+            "accepted": 49,
+            "total": 50
+          },
+          "random_drop_ratio": {
+            "accepted": 32,
+            "total": 50
+          },
+          "brightness_factor": {
+            "accepted": 43,
+            "total": 50
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "same": {
+            "accepted": 0,
+            "total": 50
+          },
+          "pooled_distortions": {
+            "accepted": 424,
+            "total": 450
+          }
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "metric": "margin_hamming1024",
+      "repetition": 2,
+      "threshold": 198,
+      "fit_residual_energy_removed": 0.1686504099876975,
+      "groups": {
+        "calibration": {
+          "bound": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_crop_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_drop_ratio": {
+            "accepted": 18,
+            "total": 26
+          },
+          "brightness_factor": {
+            "accepted": 23,
+            "total": 26
+          },
+          "jpeg_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_blur_r": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_std": {
+            "accepted": 26,
+            "total": 26
+          },
+          "median_blur_k": {
+            "accepted": 26,
+            "total": 26
+          },
+          "sp_prob": {
+            "accepted": 26,
+            "total": 26
+          },
+          "resize_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "same": {
+            "accepted": 0,
+            "total": 26
+          },
+          "pooled_distortions": {
+            "accepted": 223,
+            "total": 234
+          }
+        },
+        "evaluation": {
+          "bound": {
+            "accepted": 50,
+            "total": 50
+          },
+          "random_crop_ratio": {
+            "accepted": 49,
+            "total": 50
+          },
+          "random_drop_ratio": {
+            "accepted": 36,
+            "total": 50
+          },
+          "brightness_factor": {
+            "accepted": 43,
+            "total": 50
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "same": {
+            "accepted": 0,
+            "total": 50
+          },
+          "pooled_distortions": {
+            "accepted": 428,
+            "total": 450
+          }
+        }
+      }
+    },
+    {
+      "rank": 16,
+      "metric": "cosine",
+      "repetition": null,
+      "threshold": 0.5934499072433927,
+      "fit_residual_energy_removed": 0.3930752593044755,
+      "groups": {
+        "calibration": {
+          "bound": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_crop_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_drop_ratio": {
+            "accepted": 18,
+            "total": 26
+          },
+          "brightness_factor": {
+            "accepted": 23,
+            "total": 26
+          },
+          "jpeg_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_blur_r": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_std": {
+            "accepted": 26,
+            "total": 26
+          },
+          "median_blur_k": {
+            "accepted": 26,
+            "total": 26
+          },
+          "sp_prob": {
+            "accepted": 26,
+            "total": 26
+          },
+          "resize_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "same": {
+            "accepted": 0,
+            "total": 26
+          },
+          "pooled_distortions": {
+            "accepted": 223,
+            "total": 234
+          }
+        },
+        "evaluation": {
+          "bound": {
+            "accepted": 50,
+            "total": 50
+          },
+          "random_crop_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "random_drop_ratio": {
+            "accepted": 38,
+            "total": 50
+          },
+          "brightness_factor": {
+            "accepted": 42,
+            "total": 50
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "same": {
+            "accepted": 0,
+            "total": 50
+          },
+          "pooled_distortions": {
+            "accepted": 430,
+            "total": 450
+          }
+        }
+      }
+    },
+    {
+      "rank": 16,
+      "metric": "margin_hamming1024",
+      "repetition": 0,
+      "threshold": 193,
+      "fit_residual_energy_removed": 0.3930752593044755,
+      "groups": {
+        "calibration": {
+          "bound": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_crop_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_drop_ratio": {
+            "accepted": 18,
+            "total": 26
+          },
+          "brightness_factor": {
+            "accepted": 23,
+            "total": 26
+          },
+          "jpeg_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_blur_r": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_std": {
+            "accepted": 26,
+            "total": 26
+          },
+          "median_blur_k": {
+            "accepted": 26,
+            "total": 26
+          },
+          "sp_prob": {
+            "accepted": 26,
+            "total": 26
+          },
+          "resize_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "same": {
+            "accepted": 0,
+            "total": 26
+          },
+          "pooled_distortions": {
+            "accepted": 223,
+            "total": 234
+          }
+        },
+        "evaluation": {
+          "bound": {
+            "accepted": 50,
+            "total": 50
+          },
+          "random_crop_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "random_drop_ratio": {
+            "accepted": 33,
+            "total": 50
+          },
+          "brightness_factor": {
+            "accepted": 42,
+            "total": 50
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "same": {
+            "accepted": 0,
+            "total": 50
+          },
+          "pooled_distortions": {
+            "accepted": 425,
+            "total": 450
+          }
+        }
+      }
+    },
+    {
+      "rank": 16,
+      "metric": "margin_hamming1024",
+      "repetition": 1,
+      "threshold": 187,
+      "fit_residual_energy_removed": 0.3930752593044755,
+      "groups": {
+        "calibration": {
+          "bound": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_crop_ratio": {
+            "accepted": 25,
+            "total": 26
+          },
+          "random_drop_ratio": {
+            "accepted": 19,
+            "total": 26
+          },
+          "brightness_factor": {
+            "accepted": 23,
+            "total": 26
+          },
+          "jpeg_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_blur_r": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_std": {
+            "accepted": 26,
+            "total": 26
+          },
+          "median_blur_k": {
+            "accepted": 26,
+            "total": 26
+          },
+          "sp_prob": {
+            "accepted": 26,
+            "total": 26
+          },
+          "resize_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "same": {
+            "accepted": 0,
+            "total": 26
+          },
+          "pooled_distortions": {
+            "accepted": 223,
+            "total": 234
+          }
+        },
+        "evaluation": {
+          "bound": {
+            "accepted": 50,
+            "total": 50
+          },
+          "random_crop_ratio": {
+            "accepted": 48,
+            "total": 50
+          },
+          "random_drop_ratio": {
+            "accepted": 33,
+            "total": 50
+          },
+          "brightness_factor": {
+            "accepted": 43,
+            "total": 50
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "same": {
+            "accepted": 0,
+            "total": 50
+          },
+          "pooled_distortions": {
+            "accepted": 424,
+            "total": 450
+          }
+        }
+      }
+    },
+    {
+      "rank": 16,
+      "metric": "margin_hamming1024",
+      "repetition": 2,
+      "threshold": 207,
+      "fit_residual_energy_removed": 0.3930752593044755,
+      "groups": {
+        "calibration": {
+          "bound": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_crop_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_drop_ratio": {
+            "accepted": 18,
+            "total": 26
+          },
+          "brightness_factor": {
+            "accepted": 23,
+            "total": 26
+          },
+          "jpeg_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_blur_r": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_std": {
+            "accepted": 26,
+            "total": 26
+          },
+          "median_blur_k": {
+            "accepted": 26,
+            "total": 26
+          },
+          "sp_prob": {
+            "accepted": 26,
+            "total": 26
+          },
+          "resize_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "same": {
+            "accepted": 0,
+            "total": 26
+          },
+          "pooled_distortions": {
+            "accepted": 223,
+            "total": 234
+          }
+        },
+        "evaluation": {
+          "bound": {
+            "accepted": 50,
+            "total": 50
+          },
+          "random_crop_ratio": {
+            "accepted": 49,
+            "total": 50
+          },
+          "random_drop_ratio": {
+            "accepted": 40,
+            "total": 50
+          },
+          "brightness_factor": {
+            "accepted": 43,
+            "total": 50
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "same": {
+            "accepted": 0,
+            "total": 50
+          },
+          "pooled_distortions": {
+            "accepted": 432,
+            "total": 450
+          }
+        }
+      }
+    },
+    {
+      "rank": 64,
+      "metric": "cosine",
+      "repetition": null,
+      "threshold": 0.5891335910812301,
+      "fit_residual_energy_removed": 0.8031940591174171,
+      "groups": {
+        "calibration": {
+          "bound": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_crop_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_drop_ratio": {
+            "accepted": 18,
+            "total": 26
+          },
+          "brightness_factor": {
+            "accepted": 23,
+            "total": 26
+          },
+          "jpeg_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_blur_r": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_std": {
+            "accepted": 26,
+            "total": 26
+          },
+          "median_blur_k": {
+            "accepted": 26,
+            "total": 26
+          },
+          "sp_prob": {
+            "accepted": 26,
+            "total": 26
+          },
+          "resize_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "same": {
+            "accepted": 0,
+            "total": 26
+          },
+          "pooled_distortions": {
+            "accepted": 223,
+            "total": 234
+          }
+        },
+        "evaluation": {
+          "bound": {
+            "accepted": 50,
+            "total": 50
+          },
+          "random_crop_ratio": {
+            "accepted": 49,
+            "total": 50
+          },
+          "random_drop_ratio": {
+            "accepted": 34,
+            "total": 50
+          },
+          "brightness_factor": {
+            "accepted": 43,
+            "total": 50
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "same": {
+            "accepted": 0,
+            "total": 50
+          },
+          "pooled_distortions": {
+            "accepted": 426,
+            "total": 450
+          }
+        }
+      }
+    },
+    {
+      "rank": 64,
+      "metric": "margin_hamming1024",
+      "repetition": 0,
+      "threshold": 194,
+      "fit_residual_energy_removed": 0.8031940591174171,
+      "groups": {
+        "calibration": {
+          "bound": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_crop_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_drop_ratio": {
+            "accepted": 19,
+            "total": 26
+          },
+          "brightness_factor": {
+            "accepted": 22,
+            "total": 26
+          },
+          "jpeg_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_blur_r": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_std": {
+            "accepted": 26,
+            "total": 26
+          },
+          "median_blur_k": {
+            "accepted": 26,
+            "total": 26
+          },
+          "sp_prob": {
+            "accepted": 26,
+            "total": 26
+          },
+          "resize_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "same": {
+            "accepted": 0,
+            "total": 26
+          },
+          "pooled_distortions": {
+            "accepted": 223,
+            "total": 234
+          }
+        },
+        "evaluation": {
+          "bound": {
+            "accepted": 50,
+            "total": 50
+          },
+          "random_crop_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "random_drop_ratio": {
+            "accepted": 34,
+            "total": 50
+          },
+          "brightness_factor": {
+            "accepted": 42,
+            "total": 50
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "same": {
+            "accepted": 0,
+            "total": 50
+          },
+          "pooled_distortions": {
+            "accepted": 426,
+            "total": 450
+          }
+        }
+      }
+    },
+    {
+      "rank": 64,
+      "metric": "margin_hamming1024",
+      "repetition": 1,
+      "threshold": 193,
+      "fit_residual_energy_removed": 0.8031940591174171,
+      "groups": {
+        "calibration": {
+          "bound": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_crop_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_drop_ratio": {
+            "accepted": 18,
+            "total": 26
+          },
+          "brightness_factor": {
+            "accepted": 23,
+            "total": 26
+          },
+          "jpeg_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_blur_r": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_std": {
+            "accepted": 26,
+            "total": 26
+          },
+          "median_blur_k": {
+            "accepted": 26,
+            "total": 26
+          },
+          "sp_prob": {
+            "accepted": 26,
+            "total": 26
+          },
+          "resize_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "same": {
+            "accepted": 0,
+            "total": 26
+          },
+          "pooled_distortions": {
+            "accepted": 223,
+            "total": 234
+          }
+        },
+        "evaluation": {
+          "bound": {
+            "accepted": 50,
+            "total": 50
+          },
+          "random_crop_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "random_drop_ratio": {
+            "accepted": 35,
+            "total": 50
+          },
+          "brightness_factor": {
+            "accepted": 44,
+            "total": 50
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "same": {
+            "accepted": 0,
+            "total": 50
+          },
+          "pooled_distortions": {
+            "accepted": 429,
+            "total": 450
+          }
+        }
+      }
+    },
+    {
+      "rank": 64,
+      "metric": "margin_hamming1024",
+      "repetition": 2,
+      "threshold": 208,
+      "fit_residual_energy_removed": 0.8031940591174171,
+      "groups": {
+        "calibration": {
+          "bound": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_crop_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "random_drop_ratio": {
+            "accepted": 18,
+            "total": 26
+          },
+          "brightness_factor": {
+            "accepted": 23,
+            "total": 26
+          },
+          "jpeg_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_blur_r": {
+            "accepted": 26,
+            "total": 26
+          },
+          "gaussian_std": {
+            "accepted": 26,
+            "total": 26
+          },
+          "median_blur_k": {
+            "accepted": 26,
+            "total": 26
+          },
+          "sp_prob": {
+            "accepted": 26,
+            "total": 26
+          },
+          "resize_ratio": {
+            "accepted": 26,
+            "total": 26
+          },
+          "same": {
+            "accepted": 0,
+            "total": 26
+          },
+          "pooled_distortions": {
+            "accepted": 223,
+            "total": 234
+          }
+        },
+        "evaluation": {
+          "bound": {
+            "accepted": 50,
+            "total": 50
+          },
+          "random_crop_ratio": {
+            "accepted": 49,
+            "total": 50
+          },
+          "random_drop_ratio": {
+            "accepted": 36,
+            "total": 50
+          },
+          "brightness_factor": {
+            "accepted": 43,
+            "total": 50
+          },
+          "jpeg_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_blur_r": {
+            "accepted": 50,
+            "total": 50
+          },
+          "gaussian_std": {
+            "accepted": 50,
+            "total": 50
+          },
+          "median_blur_k": {
+            "accepted": 50,
+            "total": 50
+          },
+          "sp_prob": {
+            "accepted": 50,
+            "total": 50
+          },
+          "resize_ratio": {
+            "accepted": 50,
+            "total": 50
+          },
+          "same": {
+            "accepted": 0,
+            "total": 50
+          },
+          "pooled_distortions": {
+            "accepted": 428,
+            "total": 450
+          }
+        }
+      }
+    }
+  ]
+}

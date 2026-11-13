@@ -1,0 +1,171 @@
+{
+  "source_sha256": "90729dc639d432bba8ef65476700331f8ad0ccc13d93a4ea1eeacbb1e2f3b03d",
+  "completed_sha256": "5cb2077d4e4ce382fbf328adbacc0967b03d814d49293002f3c0a221e2e864b4",
+  "all_splits_disjoint": true,
+  "rows": 13376,
+  "energy": [
+    {
+      "split": "fit",
+      "rank": 0,
+      "residual_energy_removed": 0.0
+    },
+    {
+      "split": "fit",
+      "rank": 4,
+      "residual_energy_removed": 0.16865040998769765
+    },
+    {
+      "split": "fit",
+      "rank": 16,
+      "residual_energy_removed": 0.39307525930447573
+    },
+    {
+      "split": "fit",
+      "rank": 64,
+      "residual_energy_removed": 0.8031940591174173
+    },
+    {
+      "split": "calibration",
+      "rank": 0,
+      "residual_energy_removed": 0.0
+    },
+    {
+      "split": "calibration",
+      "rank": 4,
+      "residual_energy_removed": 0.08094011643715886
+    },
+    {
+      "split": "calibration",
+      "rank": 16,
+      "residual_energy_removed": 0.11463409174296518
+    },
+    {
+      "split": "calibration",
+      "rank": 64,
+      "residual_energy_removed": 0.2219487480319219
+    },
+    {
+      "split": "evaluation",
+      "rank": 0,
+      "residual_energy_removed": 0.0
+    },
+    {
+      "split": "evaluation",
+      "rank": 4,
+      "residual_energy_removed": 0.09242349111333832
+    },
+    {
+      "split": "evaluation",
+      "rank": 16,
+      "residual_energy_removed": 0.12653186494205063
+    },
+    {
+      "split": "evaluation",
+      "rank": 64,
+      "residual_energy_removed": 0.23219598457311866
+    }
+  ],
+  "bch_dimensions": [
+    {
+      "rank": 0,
+      "repetition": 0,
+      "t": 210,
+      "n": 1023,
+      "designed_distance": 421,
+      "dimension": 46
+    },
+    {
+      "rank": 0,
+      "repetition": 1,
+      "t": 216,
+      "n": 1023,
+      "designed_distance": 433,
+      "dimension": 46
+    },
+    {
+      "rank": 0,
+      "repetition": 2,
+      "t": 208,
+      "n": 1023,
+      "designed_distance": 417,
+      "dimension": 46
+    },
+    {
+      "rank": 4,
+      "repetition": 0,
+      "t": 195,
+      "n": 1023,
+      "designed_distance": 391,
+      "dimension": 46
+    },
+    {
+      "rank": 4,
+      "repetition": 1,
+      "t": 191,
+      "n": 1023,
+      "designed_distance": 383,
+      "dimension": 56
+    },
+    {
+      "rank": 4,
+      "repetition": 2,
+      "t": 198,
+      "n": 1023,
+      "designed_distance": 397,
+      "dimension": 46
+    },
+    {
+      "rank": 16,
+      "repetition": 0,
+      "t": 193,
+      "n": 1023,
+      "designed_distance": 387,
+      "dimension": 46
+    },
+    {
+      "rank": 16,
+      "repetition": 1,
+      "t": 187,
+      "n": 1023,
+      "designed_distance": 375,
+      "dimension": 76
+    },
+    {
+      "rank": 16,
+      "repetition": 2,
+      "t": 207,
+      "n": 1023,
+      "designed_distance": 415,
+      "dimension": 46
+    },
+    {
+      "rank": 64,
+      "repetition": 0,
+      "t": 194,
+      "n": 1023,
+      "designed_distance": 389,
+      "dimension": 46
+    },
+    {
+      "rank": 64,
+      "repetition": 1,
+      "t": 193,
+      "n": 1023,
+      "designed_distance": 387,
+      "dimension": 46
+    },
+    {
+      "rank": 64,
+      "repetition": 2,
+      "t": 208,
+      "n": 1023,
+      "designed_distance": 417,
+      "dimension": 46
+    }
+  ],
+  "zero_of_50_clopper_pearson_95": [
+    0.0,
+    0.07112173646419764
+  ],
+  "caveat": "Descriptive development configurations; no independent FPR measurement, BCH decoder or key recovery"
+}
