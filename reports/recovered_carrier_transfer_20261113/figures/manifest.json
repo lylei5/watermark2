@@ -1,0 +1,32 @@
+{
+  "status": "complete",
+  "purpose": "Internal research comparison; publisher-specific requirements not selected",
+  "source_sha256": "4e832bd42e4fb0c90cc89e43f57e72237343d7d90102db9e3eadc64dfa23b230",
+  "audit_sha256": "2ab0a2903a733dd5ea2250d93977ae624aa921046fadd745a0e349d6a883d67a",
+  "matplotlib_version": "3.9.2",
+  "physical_size_inches": [
+    10.8,
+    5.4
+  ],
+  "png": {
+    "pixels": [
+      3240,
+      1620
+    ],
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "mode": "RGBA",
+    "fully_opaque": true
+  },
+  "aggregation": "Per-query accepted count; denominator100 across10sources, repeated queries retained",
+  "uncertainty": "All3projection repetitions shown separately; no confidence interval or populationFPR estimate",
+  "missing_values": "Infeasible GS90% calibration displayed as text; not plotted as zero",
+  "alt_text": "Two panels compare legitimate acceptance for TR and PRC across native, PGID, SSCD and actual key recovery. The PRC raw detector limits the joint acceptance of SSCD and recovery. All feasible defenses shown reject the final Imprint outputs in this cohort.",
+  "outputs": {
+    "carrier_comparison.pdf": "e46788b0da8f21c4c7b18d77d489231a45e50a09955f0cd92cb500ce03552223",
+    "carrier_comparison.png": "0ff76194d0a9b0e5190e92fb01f8ec09920b2730d8e78276c0f389d09fd89cde",
+    "source_data.csv": "3371af3e8e73e8c13677091a5edd330acfd4688cc658786db6fdc7100c5e2204"
+  }
+}

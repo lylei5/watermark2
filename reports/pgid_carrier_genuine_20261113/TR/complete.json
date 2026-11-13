@@ -1,0 +1,208 @@
+{
+  "status": "complete",
+  "pid": 24859,
+  "parent_pid": 42517,
+  "carrier": "TR",
+  "protocol_sha256": "9fa1426e51425ad9b06a44982a46442c0a298b037283d078acd620960edec671",
+  "gpu": 5,
+  "gpu_uuid": "GPU-e6f35928-0155-f121-e707-1eaf3c14965c",
+  "started_at": 1794584944.8423395,
+  "summary": [
+    {
+      "kind": "clean",
+      "defended": false,
+      "total": 10,
+      "accepted": 10,
+      "content_gate": 10,
+      "combined": 10
+    },
+    {
+      "kind": "clean",
+      "defended": true,
+      "total": 10,
+      "accepted": 8,
+      "content_gate": 10,
+      "combined": 8
+    },
+    {
+      "kind": "cover",
+      "defended": false,
+      "total": 10,
+      "accepted": 0,
+      "content_gate": 0,
+      "combined": 0
+    },
+    {
+      "kind": "cover",
+      "defended": true,
+      "total": 10,
+      "accepted": 0,
+      "content_gate": 0,
+      "combined": 0
+    },
+    {
+      "kind": "all_distortions",
+      "defended": false,
+      "total": 90,
+      "accepted": 90,
+      "content_gate": 87,
+      "combined": 87
+    },
+    {
+      "kind": "all_distortions",
+      "defended": true,
+      "total": 90,
+      "accepted": 52,
+      "content_gate": 87,
+      "combined": 49
+    },
+    {
+      "kind": "random_crop_ratio",
+      "defended": false,
+      "total": 10,
+      "accepted": 10,
+      "content_gate": 10,
+      "combined": 10
+    },
+    {
+      "kind": "random_crop_ratio",
+      "defended": true,
+      "total": 10,
+      "accepted": 0,
+      "content_gate": 10,
+      "combined": 0
+    },
+    {
+      "kind": "random_drop_ratio",
+      "defended": false,
+      "total": 10,
+      "accepted": 10,
+      "content_gate": 9,
+      "combined": 9
+    },
+    {
+      "kind": "random_drop_ratio",
+      "defended": true,
+      "total": 10,
+      "accepted": 8,
+      "content_gate": 9,
+      "combined": 7
+    },
+    {
+      "kind": "brightness_factor",
+      "defended": false,
+      "total": 10,
+      "accepted": 10,
+      "content_gate": 8,
+      "combined": 8
+    },
+    {
+      "kind": "brightness_factor",
+      "defended": true,
+      "total": 10,
+      "accepted": 7,
+      "content_gate": 8,
+      "combined": 5
+    },
+    {
+      "kind": "jpeg_ratio",
+      "defended": false,
+      "total": 10,
+      "accepted": 10,
+      "content_gate": 10,
+      "combined": 10
+    },
+    {
+      "kind": "jpeg_ratio",
+      "defended": true,
+      "total": 10,
+      "accepted": 9,
+      "content_gate": 10,
+      "combined": 9
+    },
+    {
+      "kind": "gaussian_blur_r",
+      "defended": false,
+      "total": 10,
+      "accepted": 10,
+      "content_gate": 10,
+      "combined": 10
+    },
+    {
+      "kind": "gaussian_blur_r",
+      "defended": true,
+      "total": 10,
+      "accepted": 6,
+      "content_gate": 10,
+      "combined": 6
+    },
+    {
+      "kind": "gaussian_std",
+      "defended": false,
+      "total": 10,
+      "accepted": 10,
+      "content_gate": 10,
+      "combined": 10
+    },
+    {
+      "kind": "gaussian_std",
+      "defended": true,
+      "total": 10,
+      "accepted": 5,
+      "content_gate": 10,
+      "combined": 5
+    },
+    {
+      "kind": "median_blur_k",
+      "defended": false,
+      "total": 10,
+      "accepted": 10,
+      "content_gate": 10,
+      "combined": 10
+    },
+    {
+      "kind": "median_blur_k",
+      "defended": true,
+      "total": 10,
+      "accepted": 6,
+      "content_gate": 10,
+      "combined": 6
+    },
+    {
+      "kind": "sp_prob",
+      "defended": false,
+      "total": 10,
+      "accepted": 10,
+      "content_gate": 10,
+      "combined": 10
+    },
+    {
+      "kind": "sp_prob",
+      "defended": true,
+      "total": 10,
+      "accepted": 4,
+      "content_gate": 10,
+      "combined": 4
+    },
+    {
+      "kind": "resize_ratio",
+      "defended": false,
+      "total": 10,
+      "accepted": 10,
+      "content_gate": 10,
+      "combined": 10
+    },
+    {
+      "kind": "resize_ratio",
+      "defended": true,
+      "total": 10,
+      "accepted": 7,
+      "content_gate": 10,
+      "combined": 7
+    }
+  ],
+  "rows": 220,
+  "rows_sha256": "9d410bd28329db4265bdbd2bbb576c71cc56fafd0fe90df63e14b24b7f9e0170",
+  "native_complete_sha256": "94d41402f0f141dde0e33eae52474de9357b96408c3d91176267270dd949bc51",
+  "seconds": 2820.094069004059
+}

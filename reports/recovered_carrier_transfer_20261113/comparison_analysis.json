@@ -1,0 +1,5266 @@
+{
+  "status": "complete",
+  "scope": "Descriptive evaluation-matched absolute genuine comparison; no held-out calibration claim",
+  "source_sha256": "24131d8b9ef4846454be100d35ba5fe9f17fffb478ec862bc2b046e4234270e4",
+  "audit_sha256": "2ab0a2903a733dd5ea2250d93977ae624aa921046fadd745a0e349d6a883d67a",
+  "protocol_sha256": "33d9bba5d84948f694434cd6e17729793d2fa629eb2bc776f72d1554055e4076",
+  "comparisons": [
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.5597623586654663,
+      "candidate": {
+        "genuine": 95,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 95,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.4426614046096802,
+      "candidate": {
+        "genuine": 95,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 95,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.44260597229003906,
+      "candidate": {
+        "genuine": 95,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 95,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.4702892303466797,
+      "candidate": {
+        "genuine": 95,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 95,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.46277523040771484,
+      "candidate": {
+        "genuine": 95,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 95,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 108,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.5380119681358337,
+      "candidate": {
+        "genuine": 92,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 92,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 108,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.37181735038757324,
+      "candidate": {
+        "genuine": 92,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 92,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 108,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.37183618545532227,
+      "candidate": {
+        "genuine": 92,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 92,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 108,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.4371800422668457,
+      "candidate": {
+        "genuine": 92,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 92,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 108,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.41800737380981445,
+      "candidate": {
+        "genuine": 92,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 92,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.5934942960739136,
+      "candidate": {
+        "genuine": 96,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 96,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.4506274461746216,
+      "candidate": {
+        "genuine": 96,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 96,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.45121800899505615,
+      "candidate": {
+        "genuine": 96,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 96,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.4825117588043213,
+      "candidate": {
+        "genuine": 96,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 96,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.466410756111145,
+      "candidate": {
+        "genuine": 96,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 96,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 92,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.524882435798645,
+      "candidate": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 92,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.2925525903701782,
+      "candidate": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 92,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.2931091785430908,
+      "candidate": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 92,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.4247220754623413,
+      "candidate": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 92,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.3986234664916992,
+      "candidate": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.6098544597625732,
+      "candidate": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.4642951488494873,
+      "candidate": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.46417951583862305,
+      "candidate": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.500282883644104,
+      "candidate": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.4893467426300049,
+      "candidate": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 83,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.5283335447311401,
+      "candidate": {
+        "genuine": 91,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 91,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 83,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.30559802055358887,
+      "candidate": {
+        "genuine": 91,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 91,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 83,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.305324912071228,
+      "candidate": {
+        "genuine": 91,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 91,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 83,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.42497843503952026,
+      "candidate": {
+        "genuine": 91,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 91,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 83,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.4048736095428467,
+      "candidate": {
+        "genuine": 91,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 91,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.5170045495033264,
+      "candidate": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.28209006786346436,
+      "candidate": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.28196024894714355,
+      "candidate": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.41919755935668945,
+      "candidate": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.3882805109024048,
+      "candidate": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.552992582321167,
+      "candidate": {
+        "genuine": 94,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 94,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.4129796624183655,
+      "candidate": {
+        "genuine": 94,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 94,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.4131995439529419,
+      "candidate": {
+        "genuine": 94,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 94,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.4676440954208374,
+      "candidate": {
+        "genuine": 94,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 94,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.4339866638183594,
+      "candidate": {
+        "genuine": 94,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 94,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 102,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.5170045495033264,
+      "candidate": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 102,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.28209006786346436,
+      "candidate": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 102,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.28196024894714355,
+      "candidate": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 102,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.41919755935668945,
+      "candidate": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 102,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.3882805109024048,
+      "candidate": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.552992582321167,
+      "candidate": {
+        "genuine": 94,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 94,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.4129796624183655,
+      "candidate": {
+        "genuine": 94,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 94,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.4131995439529419,
+      "candidate": {
+        "genuine": 94,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 94,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.4676440954208374,
+      "candidate": {
+        "genuine": 94,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 94,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.4339866638183594,
+      "candidate": {
+        "genuine": 94,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 94,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 92,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.5170045495033264,
+      "candidate": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 92,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.28209006786346436,
+      "candidate": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 92,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.28196024894714355,
+      "candidate": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 92,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.41919755935668945,
+      "candidate": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 92,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.3882805109024048,
+      "candidate": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.6098544597625732,
+      "candidate": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.4642951488494873,
+      "candidate": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.46417951583862305,
+      "candidate": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.500282883644104,
+      "candidate": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.4893467426300049,
+      "candidate": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 85,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.524882435798645,
+      "candidate": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 85,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.2925525903701782,
+      "candidate": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 85,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.2931091785430908,
+      "candidate": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 85,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.4247220754623413,
+      "candidate": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 85,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.3986234664916992,
+      "candidate": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.524882435798645,
+      "candidate": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.2925525903701782,
+      "candidate": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.2931091785430908,
+      "candidate": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.4247220754623413,
+      "candidate": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.3986234664916992,
+      "candidate": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.5450643301010132,
+      "candidate": {
+        "genuine": 93,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 93,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.4035789966583252,
+      "candidate": {
+        "genuine": 93,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 93,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.4034072160720825,
+      "candidate": {
+        "genuine": 93,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 93,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.44258248805999756,
+      "candidate": {
+        "genuine": 93,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 93,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.43107348680496216,
+      "candidate": {
+        "genuine": 93,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 93,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 102,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.5283335447311401,
+      "candidate": {
+        "genuine": 91,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 91,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 102,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.30559802055358887,
+      "candidate": {
+        "genuine": 91,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 91,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 102,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.305324912071228,
+      "candidate": {
+        "genuine": 91,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 91,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 102,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.42497843503952026,
+      "candidate": {
+        "genuine": 91,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 91,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 102,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.4048736095428467,
+      "candidate": {
+        "genuine": 91,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 91,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.6098544597625732,
+      "candidate": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.4642951488494873,
+      "candidate": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.46417951583862305,
+      "candidate": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.500282883644104,
+      "candidate": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.4893467426300049,
+      "candidate": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 91,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.524882435798645,
+      "candidate": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 91,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.2925525903701782,
+      "candidate": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 91,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.2931091785430908,
+      "candidate": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 91,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.4247220754623413,
+      "candidate": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 91,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.3986234664916992,
+      "candidate": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 90,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.6098544597625732,
+      "candidate": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.4642951488494873,
+      "candidate": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.46417951583862305,
+      "candidate": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.500282883644104,
+      "candidate": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.4893467426300049,
+      "candidate": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 97,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 78,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.5170045495033264,
+      "candidate": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 78,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.28209006786346436,
+      "candidate": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 78,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.28196024894714355,
+      "candidate": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 78,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.41919755935668945,
+      "candidate": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 78,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.3882805109024048,
+      "candidate": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.5170045495033264,
+      "candidate": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.28209006786346436,
+      "candidate": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.28196024894714355,
+      "candidate": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.41919755935668945,
+      "candidate": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.3882805109024048,
+      "candidate": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 89,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.28595298528671265,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.28595292568206787,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.2863991856575012,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.28198546171188354,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.28164875507354736,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 108,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.28595298528671265,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 108,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.28595292568206787,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 108,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.2863991856575012,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 108,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.28198546171188354,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 108,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.28164875507354736,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.28595298528671265,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.28595292568206787,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.2863991856575012,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.28198546171188354,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.28164875507354736,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 92,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.28595298528671265,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 92,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.28595292568206787,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 92,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.2863991856575012,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 92,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.28198546171188354,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 92,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.28164875507354736,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.28595298528671265,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.28595292568206787,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.2863991856575012,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.28198546171188354,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.28164875507354736,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 83,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.28595298528671265,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 83,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.28595292568206787,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 83,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.2863991856575012,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 83,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.28198546171188354,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 0,
+      "point": "frozen_GS_0.9",
+      "cutoff": 83,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.28164875507354736,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.28595298528671265,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.28595292568206787,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.2863991856575012,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.28198546171188354,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 0,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.28164875507354736,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.28595298528671265,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.28595292568206787,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.2863991856575012,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.28198546171188354,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.28164875507354736,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 102,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.28595298528671265,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 102,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.28595292568206787,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 102,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.2863991856575012,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 102,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.28198546171188354,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 102,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.28164875507354736,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.28595298528671265,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.28595292568206787,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.2863991856575012,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.28198546171188354,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.28164875507354736,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 92,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.28595298528671265,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 92,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.28595292568206787,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 92,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.2863991856575012,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 92,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.28198546171188354,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 92,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.28164875507354736,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.28595298528671265,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.28595292568206787,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.2863991856575012,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.28198546171188354,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.28164875507354736,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 85,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.28595298528671265,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 85,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.28595292568206787,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 85,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.2863991856575012,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 85,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.28198546171188354,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 1,
+      "point": "frozen_GS_0.9",
+      "cutoff": 85,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.28164875507354736,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.28595298528671265,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.28595292568206787,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.2863991856575012,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.28198546171188354,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 1,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.28164875507354736,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.28595298528671265,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.28595292568206787,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.2863991856575012,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.28198546171188354,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.28164875507354736,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 102,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.28595298528671265,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 102,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.28595292568206787,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 102,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.2863991856575012,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 102,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.28198546171188354,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 102,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.28164875507354736,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.28595298528671265,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.28595292568206787,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.2863991856575012,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.28198546171188354,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.28164875507354736,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 91,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.28595298528671265,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 91,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.28595292568206787,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 91,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.2863991856575012,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 91,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.28198546171188354,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 91,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.28164875507354736,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.28595298528671265,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.28595292568206787,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.2863991856575012,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.28198546171188354,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.28164875507354736,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 78,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.28595298528671265,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 78,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.28595292568206787,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 78,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.2863991856575012,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 78,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.28198546171188354,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 2,
+      "point": "frozen_GS_0.9",
+      "cutoff": 78,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.28164875507354736,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_single",
+      "baseline_threshold": 0.28595298528671265,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_templates",
+      "baseline_threshold": 0.28595292568206787,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "sscd_int8_templates",
+      "baseline_threshold": 0.2863991856575012,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent4_margin_fixed_cosine",
+      "baseline_threshold": 0.28198546171188354,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 2,
+      "point": "maximum_radius127",
+      "cutoff": 127,
+      "baseline": "tangent8_margin_fixed_cosine",
+      "baseline_threshold": 0.28164875507354736,
+      "candidate": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      },
+      "baseline_result": {
+        "genuine": 64,
+        "cover": 0,
+        "imprint_50": 0,
+        "imprint_100": 0,
+        "imprint_150": 0
+      }
+    }
+  ],
+  "bottlenecks": [
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 0,
+      "total": 100,
+      "key_False_native_False": 0,
+      "key_False_native_True": 5,
+      "key_True_native_False": 0,
+      "key_True_native_True": 95
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 0,
+      "total": 100,
+      "key_False_native_False": 0,
+      "key_False_native_True": 4,
+      "key_True_native_False": 0,
+      "key_True_native_True": 96
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 0,
+      "total": 100,
+      "key_False_native_False": 0,
+      "key_False_native_True": 3,
+      "key_True_native_False": 0,
+      "key_True_native_True": 97
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 0,
+      "total": 100,
+      "key_False_native_False": 0,
+      "key_False_native_True": 11,
+      "key_True_native_False": 0,
+      "key_True_native_True": 89
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 1,
+      "total": 100,
+      "key_False_native_False": 0,
+      "key_False_native_True": 6,
+      "key_True_native_False": 0,
+      "key_True_native_True": 94
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 1,
+      "total": 100,
+      "key_False_native_False": 0,
+      "key_False_native_True": 6,
+      "key_True_native_False": 0,
+      "key_True_native_True": 94
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 1,
+      "total": 100,
+      "key_False_native_False": 0,
+      "key_False_native_True": 3,
+      "key_True_native_False": 0,
+      "key_True_native_True": 97
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 1,
+      "total": 100,
+      "key_False_native_False": 0,
+      "key_False_native_True": 10,
+      "key_True_native_False": 0,
+      "key_True_native_True": 90
+    },
+    {
+      "carrier": "TR",
+      "method": "orbit_margin_fixed",
+      "repetition": 2,
+      "total": 100,
+      "key_False_native_False": 0,
+      "key_False_native_True": 7,
+      "key_True_native_False": 0,
+      "key_True_native_True": 93
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_margin_fixed",
+      "repetition": 2,
+      "total": 100,
+      "key_False_native_False": 0,
+      "key_False_native_True": 3,
+      "key_True_native_False": 0,
+      "key_True_native_True": 97
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent8_margin_fixed",
+      "repetition": 2,
+      "total": 100,
+      "key_False_native_False": 0,
+      "key_False_native_True": 3,
+      "key_True_native_False": 0,
+      "key_True_native_True": 97
+    },
+    {
+      "carrier": "TR",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 2,
+      "total": 100,
+      "key_False_native_False": 0,
+      "key_False_native_True": 11,
+      "key_True_native_False": 0,
+      "key_True_native_True": 89
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 0,
+      "total": 100,
+      "key_False_native_False": 12,
+      "key_False_native_True": 0,
+      "key_True_native_False": 24,
+      "key_True_native_True": 64
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 0,
+      "total": 100,
+      "key_False_native_False": 12,
+      "key_False_native_True": 0,
+      "key_True_native_False": 24,
+      "key_True_native_True": 64
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 0,
+      "total": 100,
+      "key_False_native_False": 11,
+      "key_False_native_True": 0,
+      "key_True_native_False": 25,
+      "key_True_native_True": 64
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 0,
+      "total": 100,
+      "key_False_native_False": 17,
+      "key_False_native_True": 0,
+      "key_True_native_False": 19,
+      "key_True_native_True": 64
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 1,
+      "total": 100,
+      "key_False_native_False": 11,
+      "key_False_native_True": 0,
+      "key_True_native_False": 25,
+      "key_True_native_True": 64
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 1,
+      "total": 100,
+      "key_False_native_False": 12,
+      "key_False_native_True": 0,
+      "key_True_native_False": 24,
+      "key_True_native_True": 64
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 1,
+      "total": 100,
+      "key_False_native_False": 10,
+      "key_False_native_True": 0,
+      "key_True_native_False": 26,
+      "key_True_native_True": 64
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 1,
+      "total": 100,
+      "key_False_native_False": 16,
+      "key_False_native_True": 0,
+      "key_True_native_False": 20,
+      "key_True_native_True": 64
+    },
+    {
+      "carrier": "PRC",
+      "method": "orbit_margin_fixed",
+      "repetition": 2,
+      "total": 100,
+      "key_False_native_False": 9,
+      "key_False_native_True": 0,
+      "key_True_native_False": 27,
+      "key_True_native_True": 64
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_margin_fixed",
+      "repetition": 2,
+      "total": 100,
+      "key_False_native_False": 12,
+      "key_False_native_True": 0,
+      "key_True_native_False": 24,
+      "key_True_native_True": 64
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent8_margin_fixed",
+      "repetition": 2,
+      "total": 100,
+      "key_False_native_False": 9,
+      "key_False_native_True": 0,
+      "key_True_native_False": 27,
+      "key_True_native_True": 64
+    },
+    {
+      "carrier": "PRC",
+      "method": "tangent4_orbit_fixed",
+      "repetition": 2,
+      "total": 100,
+      "key_False_native_False": 18,
+      "key_False_native_True": 0,
+      "key_True_native_False": 18,
+      "key_True_native_True": 64
+    }
+  ],
+  "native_by_condition": [
+    {
+      "carrier": "TR",
+      "kind": "all_genuine",
+      "total": 100,
+      "accepted": 100
+    },
+    {
+      "carrier": "TR",
+      "kind": "clean",
+      "total": 10,
+      "accepted": 10
+    },
+    {
+      "carrier": "TR",
+      "kind": "random_crop_ratio",
+      "total": 10,
+      "accepted": 10
+    },
+    {
+      "carrier": "TR",
+      "kind": "random_drop_ratio",
+      "total": 10,
+      "accepted": 10
+    },
+    {
+      "carrier": "TR",
+      "kind": "brightness_factor",
+      "total": 10,
+      "accepted": 10
+    },
+    {
+      "carrier": "TR",
+      "kind": "jpeg_ratio",
+      "total": 10,
+      "accepted": 10
+    },
+    {
+      "carrier": "TR",
+      "kind": "gaussian_blur_r",
+      "total": 10,
+      "accepted": 10
+    },
+    {
+      "carrier": "TR",
+      "kind": "gaussian_std",
+      "total": 10,
+      "accepted": 10
+    },
+    {
+      "carrier": "TR",
+      "kind": "median_blur_k",
+      "total": 10,
+      "accepted": 10
+    },
+    {
+      "carrier": "TR",
+      "kind": "sp_prob",
+      "total": 10,
+      "accepted": 10
+    },
+    {
+      "carrier": "TR",
+      "kind": "resize_ratio",
+      "total": 10,
+      "accepted": 10
+    },
+    {
+      "carrier": "TR",
+      "kind": "cover",
+      "total": 10,
+      "accepted": 0
+    },
+    {
+      "carrier": "TR",
+      "kind": "imprint_50",
+      "total": 10,
+      "accepted": 10
+    },
+    {
+      "carrier": "TR",
+      "kind": "imprint_100",
+      "total": 10,
+      "accepted": 10
+    },
+    {
+      "carrier": "TR",
+      "kind": "imprint_150",
+      "total": 10,
+      "accepted": 10
+    },
+    {
+      "carrier": "PRC",
+      "kind": "all_genuine",
+      "total": 100,
+      "accepted": 64
+    },
+    {
+      "carrier": "PRC",
+      "kind": "clean",
+      "total": 10,
+      "accepted": 10
+    },
+    {
+      "carrier": "PRC",
+      "kind": "random_crop_ratio",
+      "total": 10,
+      "accepted": 0
+    },
+    {
+      "carrier": "PRC",
+      "kind": "random_drop_ratio",
+      "total": 10,
+      "accepted": 0
+    },
+    {
+      "carrier": "PRC",
+      "kind": "brightness_factor",
+      "total": 10,
+      "accepted": 5
+    },
+    {
+      "carrier": "PRC",
+      "kind": "jpeg_ratio",
+      "total": 10,
+      "accepted": 9
+    },
+    {
+      "carrier": "PRC",
+      "kind": "gaussian_blur_r",
+      "total": 10,
+      "accepted": 5
+    },
+    {
+      "carrier": "PRC",
+      "kind": "gaussian_std",
+      "total": 10,
+      "accepted": 9
+    },
+    {
+      "carrier": "PRC",
+      "kind": "median_blur_k",
+      "total": 10,
+      "accepted": 10
+    },
+    {
+      "carrier": "PRC",
+      "kind": "sp_prob",
+      "total": 10,
+      "accepted": 7
+    },
+    {
+      "carrier": "PRC",
+      "kind": "resize_ratio",
+      "total": 10,
+      "accepted": 9
+    },
+    {
+      "carrier": "PRC",
+      "kind": "cover",
+      "total": 10,
+      "accepted": 0
+    },
+    {
+      "carrier": "PRC",
+      "kind": "imprint_50",
+      "total": 10,
+      "accepted": 10
+    },
+    {
+      "carrier": "PRC",
+      "kind": "imprint_100",
+      "total": 10,
+      "accepted": 10
+    },
+    {
+      "carrier": "PRC",
+      "kind": "imprint_150",
+      "total": 10,
+      "accepted": 10
+    }
+  ],
+  "comparison_count": 210,
+  "attack_generation": false,
+  "method_changed": false
+}

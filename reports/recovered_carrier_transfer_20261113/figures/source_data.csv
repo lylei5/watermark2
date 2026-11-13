@@ -1,0 +1,35 @@
+carrier,method,label,repetition,legitimate,final_imprint,working_point
+TR,native_fresh,Native carrier,,100,10,Author setting
+TR,PGID,PGID,,60,0,Author setting
+TR,sscd_single,SSCD: single,,95,0,Frozen GS90% calibration
+TR,sscd_templates,SSCD: 9 templates,,90,0,Frozen GS90% calibration
+TR,sscd_int8_templates,SSCD: 9 templates (int8),,90,0,Frozen GS90% calibration
+TR,orbit_margin_fixed,Edit-margin key,0,92,0,Frozen GS90% calibration
+TR,orbit_margin_fixed,Edit-margin key,1,89,0,Frozen GS90% calibration
+TR,orbit_margin_fixed,Edit-margin key,2,91,0,Frozen GS90% calibration
+TR,tangent4_margin_fixed,4-direction key,0,90,0,Frozen GS90% calibration
+TR,tangent4_margin_fixed,4-direction key,1,89,0,Frozen GS90% calibration
+TR,tangent4_margin_fixed,4-direction key,2,90,0,Frozen GS90% calibration
+TR,tangent8_margin_fixed,8-direction key,0,91,0,Frozen GS90% calibration
+TR,tangent8_margin_fixed,8-direction key,1,90,0,Frozen GS90% calibration
+TR,tangent8_margin_fixed,8-direction key,2,89,0,Frozen GS90% calibration
+TR,tangent4_orbit_fixed,4-direction + edit margin,0,,,Frozen GS90% calibration
+TR,tangent4_orbit_fixed,4-direction + edit margin,1,,,Frozen GS90% calibration
+TR,tangent4_orbit_fixed,4-direction + edit margin,2,,,Frozen GS90% calibration
+PRC,native_fresh,Native carrier,,64,10,Author setting
+PRC,PGID,PGID,,29,0,Author setting
+PRC,sscd_single,SSCD: single,,64,0,Frozen GS90% calibration
+PRC,sscd_templates,SSCD: 9 templates,,64,0,Frozen GS90% calibration
+PRC,sscd_int8_templates,SSCD: 9 templates (int8),,64,0,Frozen GS90% calibration
+PRC,orbit_margin_fixed,Edit-margin key,0,64,0,Frozen GS90% calibration
+PRC,orbit_margin_fixed,Edit-margin key,1,64,0,Frozen GS90% calibration
+PRC,orbit_margin_fixed,Edit-margin key,2,64,0,Frozen GS90% calibration
+PRC,tangent4_margin_fixed,4-direction key,0,64,0,Frozen GS90% calibration
+PRC,tangent4_margin_fixed,4-direction key,1,64,0,Frozen GS90% calibration
+PRC,tangent4_margin_fixed,4-direction key,2,64,0,Frozen GS90% calibration
+PRC,tangent8_margin_fixed,8-direction key,0,64,0,Frozen GS90% calibration
+PRC,tangent8_margin_fixed,8-direction key,1,64,0,Frozen GS90% calibration
+PRC,tangent8_margin_fixed,8-direction key,2,64,0,Frozen GS90% calibration
+PRC,tangent4_orbit_fixed,4-direction + edit margin,0,,,Frozen GS90% calibration
+PRC,tangent4_orbit_fixed,4-direction + edit margin,1,,,Frozen GS90% calibration
+PRC,tangent4_orbit_fixed,4-direction + edit margin,2,,,Frozen GS90% calibration
