@@ -1,0 +1,1162 @@
+{
+  "status": "complete",
+  "summary": [
+    {
+      "carrier": "GS",
+      "method": "identity",
+      "kind": "all_genuine",
+      "total": 30,
+      "recovered": 23,
+      "joint": 23
+    },
+    {
+      "carrier": "GS",
+      "method": "identity",
+      "kind": "non_enrollment_edits",
+      "total": 15,
+      "recovered": 14,
+      "joint": 14
+    },
+    {
+      "carrier": "GS",
+      "method": "identity",
+      "kind": "same_prompt",
+      "total": 3,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "GS",
+      "method": "identity",
+      "kind": "wrong_record",
+      "total": 27,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "GS",
+      "method": "identity",
+      "kind": "imprint_150",
+      "total": 3,
+      "recovered": 2,
+      "joint": 2
+    },
+    {
+      "carrier": "GS",
+      "method": "identity",
+      "kind": "reprompt_sd21",
+      "total": 3,
+      "recovered": 2,
+      "joint": 2
+    },
+    {
+      "carrier": "GS",
+      "method": "identity",
+      "kind": "reprompt_sd15",
+      "total": 3,
+      "recovered": 2,
+      "joint": 2
+    },
+    {
+      "carrier": "GS",
+      "method": "identity",
+      "kind": "random_crop_ratio",
+      "total": 3,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "GS",
+      "method": "identity",
+      "kind": "random_drop_ratio",
+      "total": 3,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "GS",
+      "method": "identity",
+      "kind": "brightness_factor",
+      "total": 3,
+      "recovered": 2,
+      "joint": 2
+    },
+    {
+      "carrier": "GS",
+      "method": "identity",
+      "kind": "jpeg_ratio",
+      "total": 3,
+      "recovered": 3,
+      "joint": 3
+    },
+    {
+      "carrier": "GS",
+      "method": "identity",
+      "kind": "gaussian_blur_r",
+      "total": 3,
+      "recovered": 3,
+      "joint": 3
+    },
+    {
+      "carrier": "GS",
+      "method": "identity",
+      "kind": "gaussian_std",
+      "total": 3,
+      "recovered": 3,
+      "joint": 3
+    },
+    {
+      "carrier": "GS",
+      "method": "identity",
+      "kind": "median_blur_k",
+      "total": 3,
+      "recovered": 3,
+      "joint": 3
+    },
+    {
+      "carrier": "GS",
+      "method": "identity",
+      "kind": "sp_prob",
+      "total": 3,
+      "recovered": 3,
+      "joint": 3
+    },
+    {
+      "carrier": "GS",
+      "method": "identity",
+      "kind": "resize_ratio",
+      "total": 3,
+      "recovered": 3,
+      "joint": 3
+    },
+    {
+      "carrier": "GS",
+      "method": "registered",
+      "kind": "all_genuine",
+      "total": 30,
+      "recovered": 23,
+      "joint": 23
+    },
+    {
+      "carrier": "GS",
+      "method": "registered",
+      "kind": "non_enrollment_edits",
+      "total": 15,
+      "recovered": 14,
+      "joint": 14
+    },
+    {
+      "carrier": "GS",
+      "method": "registered",
+      "kind": "same_prompt",
+      "total": 3,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "GS",
+      "method": "registered",
+      "kind": "wrong_record",
+      "total": 27,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "GS",
+      "method": "registered",
+      "kind": "imprint_150",
+      "total": 3,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "GS",
+      "method": "registered",
+      "kind": "reprompt_sd21",
+      "total": 3,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "GS",
+      "method": "registered",
+      "kind": "reprompt_sd15",
+      "total": 3,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "GS",
+      "method": "registered",
+      "kind": "random_crop_ratio",
+      "total": 3,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "GS",
+      "method": "registered",
+      "kind": "random_drop_ratio",
+      "total": 3,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "GS",
+      "method": "registered",
+      "kind": "brightness_factor",
+      "total": 3,
+      "recovered": 2,
+      "joint": 2
+    },
+    {
+      "carrier": "GS",
+      "method": "registered",
+      "kind": "jpeg_ratio",
+      "total": 3,
+      "recovered": 3,
+      "joint": 3
+    },
+    {
+      "carrier": "GS",
+      "method": "registered",
+      "kind": "gaussian_blur_r",
+      "total": 3,
+      "recovered": 3,
+      "joint": 3
+    },
+    {
+      "carrier": "GS",
+      "method": "registered",
+      "kind": "gaussian_std",
+      "total": 3,
+      "recovered": 3,
+      "joint": 3
+    },
+    {
+      "carrier": "GS",
+      "method": "registered",
+      "kind": "median_blur_k",
+      "total": 3,
+      "recovered": 3,
+      "joint": 3
+    },
+    {
+      "carrier": "GS",
+      "method": "registered",
+      "kind": "sp_prob",
+      "total": 3,
+      "recovered": 3,
+      "joint": 3
+    },
+    {
+      "carrier": "GS",
+      "method": "registered",
+      "kind": "resize_ratio",
+      "total": 3,
+      "recovered": 3,
+      "joint": 3
+    },
+    {
+      "carrier": "GS",
+      "method": "heldout",
+      "kind": "all_genuine",
+      "total": 30,
+      "recovered": 21,
+      "joint": 21
+    },
+    {
+      "carrier": "GS",
+      "method": "heldout",
+      "kind": "non_enrollment_edits",
+      "total": 15,
+      "recovered": 12,
+      "joint": 12
+    },
+    {
+      "carrier": "GS",
+      "method": "heldout",
+      "kind": "same_prompt",
+      "total": 3,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "GS",
+      "method": "heldout",
+      "kind": "wrong_record",
+      "total": 27,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "GS",
+      "method": "heldout",
+      "kind": "imprint_150",
+      "total": 3,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "GS",
+      "method": "heldout",
+      "kind": "reprompt_sd21",
+      "total": 3,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "GS",
+      "method": "heldout",
+      "kind": "reprompt_sd15",
+      "total": 3,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "GS",
+      "method": "heldout",
+      "kind": "random_crop_ratio",
+      "total": 3,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "GS",
+      "method": "heldout",
+      "kind": "random_drop_ratio",
+      "total": 3,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "GS",
+      "method": "heldout",
+      "kind": "brightness_factor",
+      "total": 3,
+      "recovered": 2,
+      "joint": 2
+    },
+    {
+      "carrier": "GS",
+      "method": "heldout",
+      "kind": "jpeg_ratio",
+      "total": 3,
+      "recovered": 3,
+      "joint": 3
+    },
+    {
+      "carrier": "GS",
+      "method": "heldout",
+      "kind": "gaussian_blur_r",
+      "total": 3,
+      "recovered": 1,
+      "joint": 1
+    },
+    {
+      "carrier": "GS",
+      "method": "heldout",
+      "kind": "gaussian_std",
+      "total": 3,
+      "recovered": 3,
+      "joint": 3
+    },
+    {
+      "carrier": "GS",
+      "method": "heldout",
+      "kind": "median_blur_k",
+      "total": 3,
+      "recovered": 3,
+      "joint": 3
+    },
+    {
+      "carrier": "GS",
+      "method": "heldout",
+      "kind": "sp_prob",
+      "total": 3,
+      "recovered": 3,
+      "joint": 3
+    },
+    {
+      "carrier": "GS",
+      "method": "heldout",
+      "kind": "resize_ratio",
+      "total": 3,
+      "recovered": 3,
+      "joint": 3
+    },
+    {
+      "carrier": "TR",
+      "method": "identity",
+      "kind": "all_genuine",
+      "total": 100,
+      "recovered": 82,
+      "joint": 82
+    },
+    {
+      "carrier": "TR",
+      "method": "identity",
+      "kind": "non_enrollment_edits",
+      "total": 50,
+      "recovered": 47,
+      "joint": 47
+    },
+    {
+      "carrier": "TR",
+      "method": "identity",
+      "kind": "same_prompt",
+      "total": 10,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "TR",
+      "method": "identity",
+      "kind": "wrong_record",
+      "total": 90,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "TR",
+      "method": "identity",
+      "kind": "imprint_150",
+      "total": 10,
+      "recovered": 2,
+      "joint": 2
+    },
+    {
+      "carrier": "TR",
+      "method": "identity",
+      "kind": "reprompt_sd21",
+      "total": 10,
+      "recovered": 8,
+      "joint": 8
+    },
+    {
+      "carrier": "TR",
+      "method": "identity",
+      "kind": "reprompt_sd15",
+      "total": 10,
+      "recovered": 8,
+      "joint": 8
+    },
+    {
+      "carrier": "TR",
+      "method": "identity",
+      "kind": "random_crop_ratio",
+      "total": 10,
+      "recovered": 5,
+      "joint": 5
+    },
+    {
+      "carrier": "TR",
+      "method": "identity",
+      "kind": "random_drop_ratio",
+      "total": 10,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "TR",
+      "method": "identity",
+      "kind": "brightness_factor",
+      "total": 10,
+      "recovered": 7,
+      "joint": 7
+    },
+    {
+      "carrier": "TR",
+      "method": "identity",
+      "kind": "jpeg_ratio",
+      "total": 10,
+      "recovered": 10,
+      "joint": 10
+    },
+    {
+      "carrier": "TR",
+      "method": "identity",
+      "kind": "gaussian_blur_r",
+      "total": 10,
+      "recovered": 10,
+      "joint": 10
+    },
+    {
+      "carrier": "TR",
+      "method": "identity",
+      "kind": "gaussian_std",
+      "total": 10,
+      "recovered": 10,
+      "joint": 10
+    },
+    {
+      "carrier": "TR",
+      "method": "identity",
+      "kind": "median_blur_k",
+      "total": 10,
+      "recovered": 10,
+      "joint": 10
+    },
+    {
+      "carrier": "TR",
+      "method": "identity",
+      "kind": "sp_prob",
+      "total": 10,
+      "recovered": 10,
+      "joint": 10
+    },
+    {
+      "carrier": "TR",
+      "method": "identity",
+      "kind": "resize_ratio",
+      "total": 10,
+      "recovered": 10,
+      "joint": 10
+    },
+    {
+      "carrier": "TR",
+      "method": "registered",
+      "kind": "all_genuine",
+      "total": 100,
+      "recovered": 81,
+      "joint": 81
+    },
+    {
+      "carrier": "TR",
+      "method": "registered",
+      "kind": "non_enrollment_edits",
+      "total": 50,
+      "recovered": 46,
+      "joint": 46
+    },
+    {
+      "carrier": "TR",
+      "method": "registered",
+      "kind": "same_prompt",
+      "total": 10,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "TR",
+      "method": "registered",
+      "kind": "wrong_record",
+      "total": 90,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "TR",
+      "method": "registered",
+      "kind": "imprint_150",
+      "total": 10,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "TR",
+      "method": "registered",
+      "kind": "reprompt_sd21",
+      "total": 10,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "TR",
+      "method": "registered",
+      "kind": "reprompt_sd15",
+      "total": 10,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "TR",
+      "method": "registered",
+      "kind": "random_crop_ratio",
+      "total": 10,
+      "recovered": 5,
+      "joint": 5
+    },
+    {
+      "carrier": "TR",
+      "method": "registered",
+      "kind": "random_drop_ratio",
+      "total": 10,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "TR",
+      "method": "registered",
+      "kind": "brightness_factor",
+      "total": 10,
+      "recovered": 7,
+      "joint": 7
+    },
+    {
+      "carrier": "TR",
+      "method": "registered",
+      "kind": "jpeg_ratio",
+      "total": 10,
+      "recovered": 10,
+      "joint": 10
+    },
+    {
+      "carrier": "TR",
+      "method": "registered",
+      "kind": "gaussian_blur_r",
+      "total": 10,
+      "recovered": 9,
+      "joint": 9
+    },
+    {
+      "carrier": "TR",
+      "method": "registered",
+      "kind": "gaussian_std",
+      "total": 10,
+      "recovered": 10,
+      "joint": 10
+    },
+    {
+      "carrier": "TR",
+      "method": "registered",
+      "kind": "median_blur_k",
+      "total": 10,
+      "recovered": 10,
+      "joint": 10
+    },
+    {
+      "carrier": "TR",
+      "method": "registered",
+      "kind": "sp_prob",
+      "total": 10,
+      "recovered": 10,
+      "joint": 10
+    },
+    {
+      "carrier": "TR",
+      "method": "registered",
+      "kind": "resize_ratio",
+      "total": 10,
+      "recovered": 10,
+      "joint": 10
+    },
+    {
+      "carrier": "TR",
+      "method": "heldout",
+      "kind": "all_genuine",
+      "total": 100,
+      "recovered": 68,
+      "joint": 68
+    },
+    {
+      "carrier": "TR",
+      "method": "heldout",
+      "kind": "non_enrollment_edits",
+      "total": 50,
+      "recovered": 34,
+      "joint": 34
+    },
+    {
+      "carrier": "TR",
+      "method": "heldout",
+      "kind": "same_prompt",
+      "total": 10,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "TR",
+      "method": "heldout",
+      "kind": "wrong_record",
+      "total": 90,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "TR",
+      "method": "heldout",
+      "kind": "imprint_150",
+      "total": 10,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "TR",
+      "method": "heldout",
+      "kind": "reprompt_sd21",
+      "total": 10,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "TR",
+      "method": "heldout",
+      "kind": "reprompt_sd15",
+      "total": 10,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "TR",
+      "method": "heldout",
+      "kind": "random_crop_ratio",
+      "total": 10,
+      "recovered": 4,
+      "joint": 4
+    },
+    {
+      "carrier": "TR",
+      "method": "heldout",
+      "kind": "random_drop_ratio",
+      "total": 10,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "TR",
+      "method": "heldout",
+      "kind": "brightness_factor",
+      "total": 10,
+      "recovered": 5,
+      "joint": 5
+    },
+    {
+      "carrier": "TR",
+      "method": "heldout",
+      "kind": "jpeg_ratio",
+      "total": 10,
+      "recovered": 10,
+      "joint": 10
+    },
+    {
+      "carrier": "TR",
+      "method": "heldout",
+      "kind": "gaussian_blur_r",
+      "total": 10,
+      "recovered": 2,
+      "joint": 2
+    },
+    {
+      "carrier": "TR",
+      "method": "heldout",
+      "kind": "gaussian_std",
+      "total": 10,
+      "recovered": 10,
+      "joint": 10
+    },
+    {
+      "carrier": "TR",
+      "method": "heldout",
+      "kind": "median_blur_k",
+      "total": 10,
+      "recovered": 9,
+      "joint": 9
+    },
+    {
+      "carrier": "TR",
+      "method": "heldout",
+      "kind": "sp_prob",
+      "total": 10,
+      "recovered": 10,
+      "joint": 10
+    },
+    {
+      "carrier": "TR",
+      "method": "heldout",
+      "kind": "resize_ratio",
+      "total": 10,
+      "recovered": 8,
+      "joint": 8
+    },
+    {
+      "carrier": "PRC",
+      "method": "identity",
+      "kind": "all_genuine",
+      "total": 100,
+      "recovered": 83,
+      "joint": 64
+    },
+    {
+      "carrier": "PRC",
+      "method": "identity",
+      "kind": "non_enrollment_edits",
+      "total": 50,
+      "recovered": 48,
+      "joint": 38
+    },
+    {
+      "carrier": "PRC",
+      "method": "identity",
+      "kind": "same_prompt",
+      "total": 10,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "PRC",
+      "method": "identity",
+      "kind": "wrong_record",
+      "total": 90,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "PRC",
+      "method": "identity",
+      "kind": "imprint_150",
+      "total": 10,
+      "recovered": 2,
+      "joint": 2
+    },
+    {
+      "carrier": "PRC",
+      "method": "identity",
+      "kind": "reprompt_sd21",
+      "total": 10,
+      "recovered": 8,
+      "joint": 8
+    },
+    {
+      "carrier": "PRC",
+      "method": "identity",
+      "kind": "reprompt_sd15",
+      "total": 10,
+      "recovered": 7,
+      "joint": 7
+    },
+    {
+      "carrier": "PRC",
+      "method": "identity",
+      "kind": "random_crop_ratio",
+      "total": 10,
+      "recovered": 5,
+      "joint": 0
+    },
+    {
+      "carrier": "PRC",
+      "method": "identity",
+      "kind": "random_drop_ratio",
+      "total": 10,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "PRC",
+      "method": "identity",
+      "kind": "brightness_factor",
+      "total": 10,
+      "recovered": 8,
+      "joint": 5
+    },
+    {
+      "carrier": "PRC",
+      "method": "identity",
+      "kind": "jpeg_ratio",
+      "total": 10,
+      "recovered": 10,
+      "joint": 9
+    },
+    {
+      "carrier": "PRC",
+      "method": "identity",
+      "kind": "gaussian_blur_r",
+      "total": 10,
+      "recovered": 10,
+      "joint": 5
+    },
+    {
+      "carrier": "PRC",
+      "method": "identity",
+      "kind": "gaussian_std",
+      "total": 10,
+      "recovered": 10,
+      "joint": 9
+    },
+    {
+      "carrier": "PRC",
+      "method": "identity",
+      "kind": "median_blur_k",
+      "total": 10,
+      "recovered": 10,
+      "joint": 10
+    },
+    {
+      "carrier": "PRC",
+      "method": "identity",
+      "kind": "sp_prob",
+      "total": 10,
+      "recovered": 10,
+      "joint": 7
+    },
+    {
+      "carrier": "PRC",
+      "method": "identity",
+      "kind": "resize_ratio",
+      "total": 10,
+      "recovered": 10,
+      "joint": 9
+    },
+    {
+      "carrier": "PRC",
+      "method": "registered",
+      "kind": "all_genuine",
+      "total": 100,
+      "recovered": 83,
+      "joint": 64
+    },
+    {
+      "carrier": "PRC",
+      "method": "registered",
+      "kind": "non_enrollment_edits",
+      "total": 50,
+      "recovered": 48,
+      "joint": 38
+    },
+    {
+      "carrier": "PRC",
+      "method": "registered",
+      "kind": "same_prompt",
+      "total": 10,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "PRC",
+      "method": "registered",
+      "kind": "wrong_record",
+      "total": 90,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "PRC",
+      "method": "registered",
+      "kind": "imprint_150",
+      "total": 10,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "PRC",
+      "method": "registered",
+      "kind": "reprompt_sd21",
+      "total": 10,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "PRC",
+      "method": "registered",
+      "kind": "reprompt_sd15",
+      "total": 10,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "PRC",
+      "method": "registered",
+      "kind": "random_crop_ratio",
+      "total": 10,
+      "recovered": 5,
+      "joint": 0
+    },
+    {
+      "carrier": "PRC",
+      "method": "registered",
+      "kind": "random_drop_ratio",
+      "total": 10,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "PRC",
+      "method": "registered",
+      "kind": "brightness_factor",
+      "total": 10,
+      "recovered": 8,
+      "joint": 5
+    },
+    {
+      "carrier": "PRC",
+      "method": "registered",
+      "kind": "jpeg_ratio",
+      "total": 10,
+      "recovered": 10,
+      "joint": 9
+    },
+    {
+      "carrier": "PRC",
+      "method": "registered",
+      "kind": "gaussian_blur_r",
+      "total": 10,
+      "recovered": 10,
+      "joint": 5
+    },
+    {
+      "carrier": "PRC",
+      "method": "registered",
+      "kind": "gaussian_std",
+      "total": 10,
+      "recovered": 10,
+      "joint": 9
+    },
+    {
+      "carrier": "PRC",
+      "method": "registered",
+      "kind": "median_blur_k",
+      "total": 10,
+      "recovered": 10,
+      "joint": 10
+    },
+    {
+      "carrier": "PRC",
+      "method": "registered",
+      "kind": "sp_prob",
+      "total": 10,
+      "recovered": 10,
+      "joint": 7
+    },
+    {
+      "carrier": "PRC",
+      "method": "registered",
+      "kind": "resize_ratio",
+      "total": 10,
+      "recovered": 10,
+      "joint": 9
+    },
+    {
+      "carrier": "PRC",
+      "method": "heldout",
+      "kind": "all_genuine",
+      "total": 100,
+      "recovered": 69,
+      "joint": 57
+    },
+    {
+      "carrier": "PRC",
+      "method": "heldout",
+      "kind": "non_enrollment_edits",
+      "total": 50,
+      "recovered": 35,
+      "joint": 31
+    },
+    {
+      "carrier": "PRC",
+      "method": "heldout",
+      "kind": "same_prompt",
+      "total": 10,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "PRC",
+      "method": "heldout",
+      "kind": "wrong_record",
+      "total": 90,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "PRC",
+      "method": "heldout",
+      "kind": "imprint_150",
+      "total": 10,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "PRC",
+      "method": "heldout",
+      "kind": "reprompt_sd21",
+      "total": 10,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "PRC",
+      "method": "heldout",
+      "kind": "reprompt_sd15",
+      "total": 10,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "PRC",
+      "method": "heldout",
+      "kind": "random_crop_ratio",
+      "total": 10,
+      "recovered": 4,
+      "joint": 0
+    },
+    {
+      "carrier": "PRC",
+      "method": "heldout",
+      "kind": "random_drop_ratio",
+      "total": 10,
+      "recovered": 0,
+      "joint": 0
+    },
+    {
+      "carrier": "PRC",
+      "method": "heldout",
+      "kind": "brightness_factor",
+      "total": 10,
+      "recovered": 6,
+      "joint": 5
+    },
+    {
+      "carrier": "PRC",
+      "method": "heldout",
+      "kind": "jpeg_ratio",
+      "total": 10,
+      "recovered": 10,
+      "joint": 9
+    },
+    {
+      "carrier": "PRC",
+      "method": "heldout",
+      "kind": "gaussian_blur_r",
+      "total": 10,
+      "recovered": 3,
+      "joint": 1
+    },
+    {
+      "carrier": "PRC",
+      "method": "heldout",
+      "kind": "gaussian_std",
+      "total": 10,
+      "recovered": 10,
+      "joint": 9
+    },
+    {
+      "carrier": "PRC",
+      "method": "heldout",
+      "kind": "median_blur_k",
+      "total": 10,
+      "recovered": 9,
+      "joint": 9
+    },
+    {
+      "carrier": "PRC",
+      "method": "heldout",
+      "kind": "sp_prob",
+      "total": 10,
+      "recovered": 10,
+      "joint": 7
+    },
+    {
+      "carrier": "PRC",
+      "method": "heldout",
+      "kind": "resize_ratio",
+      "total": 10,
+      "recovered": 7,
+      "joint": 7
+    }
+  ],
+  "restored_native_calls": 302,
+  "authentication_checks": 60,
+  "exact_key_payload_checks": 749,
+  "unique_pixels": 470,
+  "scope": "Frozen mechanism prototype on existing development data; novelty and security not established."
+}

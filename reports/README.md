@@ -6,6 +6,9 @@
 
 | 研究 | 已完成证据与边界 |
 |---|---|
+| [作者Reprompt与原生防御](author_reprompt_control_20261114/report.md) | 两代理、三载体、60张完整步骤候选；120条原生/PGID判定；六强对照及360次冻结SSCD真实恢复；全论文大样本矩阵与Reprompt+待完成 |
+| [空间证据恢复](spatial_witness_recovery_20261114/report.md) | 2310次实际恢复、749次准确返回、302次恢复材料原生调用；区域隔离TR合法68/100，270项同合法通过数比较无SSCD优势 |
+| [可见性恢复](visible_witness_recovery_20261114/report.md) | 1540次实际恢复、655次准确返回、361次恢复材料调用；TR合法99/100但Reprompt8/10、9/10；180项同合法通过数比较完成 |
 | [TR/PRC验证材料恢复](recovered_carrier_transfer_20261113/report.md) | 280次新反演、3360次实际恢复；2179次成功均准确；440条PGID合法图/封面对照完成，TR合法60/100、PRC29/100；SSCD单参考95/100、64/100；210组描述性共同合法通过数比较完成 |
 | [共同频谱实例恢复](shared_channel_binding_20261114/report.md) | 17040次真实恢复及690次划分内部配对消融；4143次成功全部准确；共同相位TR最大恢复19–21/100，SSCD83–84/100；288组描述性比较均未超过强对照 |
 | [CopyNCE作者模型对照](copynce_control_20261114/report.md) | 440条图像观测、710个记录配对；冻结GS95%匹配器联合TR98/100、PRC59/100；描述子/SSCD/int8模板、来源bootstrap与五类编辑留出校准完整比较 |

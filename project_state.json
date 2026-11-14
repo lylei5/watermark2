@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-14T05:14:44.640656+00:00",
-  "status": "native_baselines_and_instance_key_recovery",
-  "active_experiments": 2,
-  "queued_experiments": 1,
+  "updated_at": "2026-11-14T05:45:27.600488+00:00",
+  "status": "reprompt_controls_and_recoverable_binding",
+  "active_experiments": 0,
+  "queued_experiments": 0,
   "latest_progress_report": "reports/author_reprompt_control_20261114/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/INSTANCE_BINDING_RESEARCH.md",
@@ -58,8 +58,20 @@
   ],
   "max_concurrent_gpus": 3,
   "evaluation_policy": "Unchanged published top-venue attacks only; full budgets; no attack development; matched absolute genuine detection",
-  "current_decision": "Author Reprompt and120native/PGID decisions complete. Spatial and visibility witness key-recovery mechanisms running onCPU249; comparison follows completion events.",
+  "current_decision": "Paired author basic Reprompt, native/PGID verification, spatial/visibility recovery, and matched controls complete. Visibility improves legitimate recovery but accepts many Reprompt candidates; neither prototype establishes an advantage over SSCD. Paper-scale attack matrix and a validated new defense remain open.",
   "completed_evidence": [
+    {
+      "path": "reports/author_reprompt_control_20261114/report.md",
+      "scope": "60 author basic Reprompt candidates;120 native/PGID decisions;770 same-pixel control pairs;360 frozen SSCD key-recovery calls, all reject. Full paper-scale matrix and Reprompt+ incomplete."
+    },
+    {
+      "path": "reports/spatial_witness_recovery_20261114/report.md",
+      "scope": "2310 actual recovery decisions;749 exact successful returns;302 restored-material native calls;270 matched comparisons, no advantage over SSCD."
+    },
+    {
+      "path": "reports/visible_witness_recovery_20261114/report.md",
+      "scope": "1540 actual recovery decisions;655 exact successful returns;361 restored-material native calls;TR legitimate99/100, Reprompt8/10 and9/10;180 matched comparisons."
+    },
     {
       "path": "reports/shared_channel_binding_20261114/report.md",
       "scope": "17040actual recoveries+690within-split controls;4143successes exact;710native calls,415restored calls;288matched comparisons;shared-spectrum recovery failed calibrated coverage."
@@ -170,16 +182,18 @@
     }
   ],
   "latest_experiment": {
-    "run": "shared_channel_binding_20261114_v2",
+    "run": "visible_witness_recovery_20261114",
     "status": "complete",
-    "protocol": "protocols/shared_channel_binding_20261114_v2.json",
-    "protocol_sha256": "204dbe256f2e0c23016e75db4355e962fd11aa8e08b60b113facd6eb633db19d",
-    "report": "reports/shared_channel_binding_20261114/report.md",
-    "actual_recoveries": 17040,
-    "additional_control_recoveries": 690,
+    "protocol": "reports/visible_witness_recovery_20261114/protocol.json",
+    "protocol_sha256": "4adee4f8463f9efd4ffcb2e5460956a63ca75fb2e8d14cf836405112160a017e",
+    "report": "reports/visible_witness_recovery_20261114/report.md",
+    "actual_recoveries": 1540,
+    "successful_exact_returns": 655,
+    "restored_native_calls": 361,
     "native_carrier_changed": false,
     "attack_generation": false,
-    "independent_confirmation": false
+    "independent_confirmation": false,
+    "superiority_established": false
   },
   "provenance_policy": "Executed run source and protocol hashes remain frozen; use their exact versions for replay",
   "required_validation": [
@@ -688,7 +702,7 @@
     "figure_visual_inspection": "PNG labels and missing points checked; PDF fonts embedded TrueType",
     "pgid_descriptive_threshold_comparison": "reports/recovered_carrier_transfer_20261113/pgid_working_points.json"
   },
-  "last_queue_observation": "2026-11-13T19:04:14+00:00",
+  "last_queue_observation": "2026-11-14T05:45:27.600488+00:00",
   "paired_channel_recovery": {
     "run": "paired_edit_registration_20261113",
     "status": "complete",
@@ -812,24 +826,99 @@
     },
     "superiority_established": false
   },
-  "active_runs": [
-    {
-      "run": "spatial_witness_recovery_20261114_v2",
-      "pid": 7556,
-      "device": "CPU249"
+  "active_runs": [],
+  "queued_runs": [],
+  "author_reprompt_control": {
+    "run": "author_reprompt_control_20261114_v2",
+    "status": "complete",
+    "protocol_sha256": "a891f0d9f23ca1372e6d5c74d64020a76cad2796f608ebb21dd9592592f96190",
+    "report": "reports/author_reprompt_control_20261114/report.md",
+    "author_commit": "ca68950cd7b53b8438a49580f134b2a0db28d778",
+    "references": 30,
+    "candidates": 60,
+    "proxies": [
+      "sd21",
+      "sd15"
+    ],
+    "inverse_steps": 50,
+    "forward_steps": 50,
+    "candidates_per_reference_per_proxy": 1,
+    "attack_modified": false,
+    "paper_scale_matrix_complete": false,
+    "reprompt_plus_complete": false,
+    "target_prompt_success_annotated": false,
+    "evaluation_run": "author_reprompt_evaluation_20261114_v2",
+    "evaluation_status": "complete",
+    "native_and_pgid_decisions": 120,
+    "gpu_indices": [
+      7,
+      5,
+      4
+    ],
+    "baseline_comparison_run": "reprompt_comparison_20261114",
+    "comparison_status": "complete",
+    "additional_frozen_sscd_recoveries": 360,
+    "additional_frozen_sscd_successes": 0,
+    "artifact_audit": "reports/author_reprompt_control_20261114/comparison/artifact_audit.json"
+  },
+  "spatial_witness_recovery": {
+    "run": "spatial_witness_recovery_20261114_v2",
+    "status": "complete",
+    "protocol_sha256": "84b31ae5b1cb08af0138fddc7d055ea7e5ae80235135070188e2e19cc6cceaad",
+    "report": "reports/spatial_witness_recovery_20261114/report.md",
+    "actual_recoveries": 2310,
+    "successful_exact_returns": 749,
+    "restored_native_calls": 302,
+    "authentication_rejection_checks": 60,
+    "matched_comparisons": 270,
+    "matched_better": 2,
+    "matched_equal": 214,
+    "matched_worse": 54,
+    "superiority_established": false,
+    "independent_confirmation": false
+  },
+  "visible_witness_recovery": {
+    "run": "visible_witness_recovery_20261114",
+    "status": "complete",
+    "protocol": "reports/visible_witness_recovery_20261114/protocol.json",
+    "protocol_sha256": "4adee4f8463f9efd4ffcb2e5460956a63ca75fb2e8d14cf836405112160a017e",
+    "report": "reports/visible_witness_recovery_20261114/report.md",
+    "actual_recoveries": 1540,
+    "successful_exact_returns": 655,
+    "restored_native_calls": 361,
+    "native_carrier_changed": false,
+    "attack_generation": false,
+    "independent_confirmation": false,
+    "superiority_established": false,
+    "authentication_rejection_checks": 60,
+    "visible_certificate_checks": 361,
+    "matched_comparisons": 180,
+    "matched_better": 5,
+    "matched_equal": 71,
+    "matched_worse": 104,
+    "tr_genuine_key_recovery": [
+      99,
+      100
+    ],
+    "tr_reprompt_joint": {
+      "sd21": [
+        8,
+        10
+      ],
+      "sd15": [
+        9,
+        10
+      ]
     },
-    {
-      "run": "visible_witness_recovery_20261114",
-      "pid": 9630,
-      "device": "CPU249",
-      "protocol_sha256": "4adee4f8463f9efd4ffcb2e5460956a63ca75fb2e8d14cf836405112160a017e"
-    }
-  ],
-  "queued_runs": [
-    {
-      "run": "reprompt_comparison_20261114",
-      "depends_on": "spatial_witness_recovery_20261114_v2",
-      "includes": "360actual frozen SSCD helper decodes"
-    }
-  ]
+    "prc_genuine_key_recovery": [
+      99,
+      100
+    ],
+    "prc_genuine_joint": [
+      64,
+      100
+    ],
+    "protocol_clarification": "reports/visible_witness_recovery_20261114/protocol_clarification.json"
+  },
+  "research_hypothesis": "Edit-constrained evidence erasure with visible instance contradictions; not implemented or validated as a new method. Existing spatial/visibility prototypes remain negative controls."
 }

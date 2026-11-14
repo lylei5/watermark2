@@ -1,0 +1,50 @@
+[
+  {
+    "carrier": "TR",
+    "method": "sscd_distance",
+    "strict_cutoff": 0.6205343008041382,
+    "genuine_joint_below_cutoff": 97,
+    "genuine_total": 100,
+    "scope": "Descriptive zero-Reprompt threshold chosen using attacks; not a calibrated operating point"
+  },
+  {
+    "carrier": "TR",
+    "method": "descriptor_distance",
+    "strict_cutoff": 0.5213059782981873,
+    "genuine_joint_below_cutoff": 81,
+    "genuine_total": 100,
+    "scope": "Descriptive zero-Reprompt threshold chosen using attacks; not a calibrated operating point"
+  },
+  {
+    "carrier": "TR",
+    "method": "matcher_distance",
+    "strict_cutoff": 0.0007120966911315918,
+    "genuine_joint_below_cutoff": 85,
+    "genuine_total": 100,
+    "scope": "Descriptive zero-Reprompt threshold chosen using attacks; not a calibrated operating point"
+  },
+  {
+    "carrier": "PRC",
+    "method": "sscd_distance",
+    "strict_cutoff": 0.6884230375289917,
+    "genuine_joint_below_cutoff": 64,
+    "genuine_total": 100,
+    "scope": "Descriptive zero-Reprompt threshold chosen using attacks; not a calibrated operating point"
+  },
+  {
+    "carrier": "PRC",
+    "method": "descriptor_distance",
+    "strict_cutoff": 0.6561296582221985,
+    "genuine_joint_below_cutoff": 64,
+    "genuine_total": 100,
+    "scope": "Descriptive zero-Reprompt threshold chosen using attacks; not a calibrated operating point"
+  },
+  {
+    "carrier": "PRC",
+    "method": "matcher_distance",
+    "strict_cutoff": 0.11874240636825562,
+    "genuine_joint_below_cutoff": 57,
+    "genuine_total": 100,
+    "scope": "Descriptive zero-Reprompt threshold chosen using attacks; not a calibrated operating point"
+  }
+]
