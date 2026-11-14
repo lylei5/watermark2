@@ -1,0 +1,41 @@
+{
+  "created_at": 1794631891.9517245,
+  "attack": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2",
+  "attack_protocol_sha256": "a891f0d9f23ca1372e6d5c74d64020a76cad2796f608ebb21dd9592592f96190",
+  "local_sha256": {
+    "copynce_control.py": "7321ed9493777eb754cf3cd2bba6ac5389f7a7d74448319c74d3b173f7fdd243",
+    "evaluate_author_reprompt.py": "60fd467cf0110499648dbdcaca42eafa6f9fab533aedf2ab331cbeb6b52e8f6e"
+  },
+  "coverage_protocol_sha256": "eb8e6162be7617602cfa888bfdf7a73e55c695d263b0af6675280d23243e8177",
+  "copynce_protocol_sha256": "f29de4ab378ba66cccd8025b3446772a0975bf00d4f34c9ea31537b423d231d8",
+  "copynce_summary_sha256": "4178f8aff7f14defccca7c10affb7fcef0be42baaaa759dd5e416f77ca7c440c",
+  "shared_protocol_sha256": "204dbe256f2e0c23016e75db4355e962fd11aa8e08b60b113facd6eb633db19d",
+  "raw_inversion": "Same author validate dispatch:GS/TR DDIM; PRC exact DPM decode_inv=True.",
+  "defended_inversion": "Unchanged PGIDPipeline.run_defense; default per-carrier k,50steps,s3,gamma0.001.",
+  "attack_references": 30,
+  "attack_candidates": 60,
+  "native_decisions": 120,
+  "content_controls": [
+    "SSCD single/centered/9template float32/int8",
+    "CopyNCE descriptor",
+    "CopyNCE matcher"
+  ],
+  "calibration": "Reuse prior genuine-only frozen GS30 thresholds; no fitting on Reprompt.",
+  "private_inputs": "Only native verification subprocess reads carrier material. Content extraction has public images/model inputs.",
+  "attacks_changed": false,
+  "allowed_gpu_indices": [
+    7,
+    5,
+    4
+  ],
+  "reuse": {
+    "run": "/data0/liyanlei/watermark_research/runs/author_reprompt_evaluation_20261114",
+    "prc_pid": 30182,
+    "artifacts": {
+      "content_rows.json": "0ff13b3988d2db14c2882be8b154eb6d41dccf46b259f595347f12aca3119843",
+      "features.npz": "5b2eeb670f5174a5a56b6daeed7aef8300cb548985d3049bf9d1a7a60ad8ffcd",
+      "content_complete.json": "c3271e2619a50cb98269820e30567ac31da3a28565493f0da867d20b589c635c",
+      "GS/rows.json": "a0b452da89b64d0991b53733a42093cb74febdcc1dec055a6d686dbf8b3e0647"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "pid": 18201,
+  "model": "sd15",
+  "protocol_sha256": "a891f0d9f23ca1372e6d5c74d64020a76cad2796f608ebb21dd9592592f96190",
+  "gpu": 5,
+  "gpu_uuid": "GPU-e6f35928-0155-f121-e707-1eaf3c14965c",
+  "started_at": 1794630919.0885422,
+  "torch": "2.5.1+cu124",
+  "diffusers": "0.31.0",
+  "transformers": "4.46.3",
+  "forward_scheduler": "utils.pipe.schedulers.scheduling_ddim",
+  "inverse_scheduler": "utils.pipe.schedulers.scheduling_ddim_inverse",
+  "count": 30,
+  "seconds": 324.85686445236206,
+  "rows_sha256": "10a2103d95162faa4a4890123748dae6250f0c54b40031d3f8d9838f0fc27c85"
+}

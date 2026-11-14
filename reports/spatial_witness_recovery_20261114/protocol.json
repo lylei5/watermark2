@@ -1,0 +1,57 @@
+{
+  "created_at": 1794631894.8831406,
+  "scripts": {
+    "run_spatial_witness_recovery.py": "eb88403b10232c98084929bc59219b1b020b7c8beb07c1b09f34327e02908f0a",
+    "spatial_witness_recovery.py": "1039ddca2e5cd84816c6eb0862e7223ba4d7836dbdc16436b1fe6227d534a260"
+  },
+  "private": "/data0/liyanlei/watermark_research/private_eval/spatial_witness_recovery_20261114_v2",
+  "provider_sha256": "d0e6bc121dce92e70efa74d36bde7a39f60391c5a9ba7d1c274816ecf2693c0d",
+  "parent_protocol_sha256": "204dbe256f2e0c23016e75db4355e962fd11aa8e08b60b113facd6eb633db19d",
+  "parent_rows_sha256": "1b4503047d03d2c134583597fae9752f5b03b4a3279bef60415eb296954b6528",
+  "parent_controls_sha256": "ee32fff4a9a2191f5d9bc0707567781f7bb1ea93c1b780cf6018f3192088021d",
+  "evaluation_protocol_sha256": "6b4330bee59b434e08bf459a2283bf9bfab05a1804148d981851c8e09003c789",
+  "evaluation_pid": 6447,
+  "methods": [
+    "identity",
+    "registered",
+    "heldout"
+  ],
+  "payload_bits": 128,
+  "rs": [
+    255,
+    16,
+    239
+  ],
+  "witness_selection": "255right-region symbols,8reference-margin-selected local rank bits per symbol; Gaussian sigma2.",
+  "registration": "Unchanged OpenCV SIFT and RANSAC homography,ratio0.75,threshold3px,2000iterations,8inliers.",
+  "heldout_scope": "Reference anchors whose conservative6*size support ends beforex224; witnesses start atx300. Query descriptors use full image. No statistical independence guarantee.",
+  "decoding": "One RS error-erasure decode; exact key commitment;2errors+erasures<=239; AEAD unwrap of native carrier material.",
+  "exclusions": "Only out-of-view witness symbols erased; no witness-bit fitting, no prompt or attack labels in recovery.",
+  "calibration": "No fitted threshold; prescribed algebraic recovery region. Compare strong controls at same absolute genuine count separately.",
+  "source_split": {
+    "fit_sources": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "calibration_sources": [
+      4,
+      5,
+      6
+    ],
+    "evaluation_sources": [
+      7,
+      8,
+      9
+    ]
+  },
+  "scope": "Frozen mechanism prototype on existing development data; novelty and security not established.",
+  "dependency_versions": {
+    "opencv-python-headless": "4.10.0.84",
+    "reedsolo": "1.7.0"
+  },
+  "attacks_generated": false,
+  "experiment_host": "249",
+  "device": "CPU"
+}

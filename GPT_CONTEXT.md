@@ -2,6 +2,8 @@
 
 The user wants a publishable defense with a clear new mechanism, actual key recovery, fair strong controls, and unchanged published top-venue attacks. Author Reprompt controls are running onGPU7/5 under protocol a891f0d9f23ca1372e6d5c74d64020a76cad2796f608ebb21dd9592592f96190. Run author_reprompt_control_20261114_v2 contains60single-candidate outputs from30matched sources and two proxies. Use process-exit events; frozen shared-spectrum and CopyNCE evidence remains complete. The publication objective remains open: shared-spectrum recovery failed to improve on strong controls. Execution state is authoritative only in [project_state.json](project_state.json); evidence is indexed in [reports/README.md](reports/README.md). Do not restart completed jobs.
 
+Current round:60author Reprompt outputs are complete (author_reprompt_control_20261114_v2, SD2.1/SD1.5,30each). Native/PGID verification runs under author_reprompt_evaluation_20261114_v2; spatial_witness_recovery_20261114_v2 performs real key recovery after its exit event. Read project_state.json for PIDs. Paper-scale Reprompt matrix remains incomplete.
+
 ## Latest completed evidence
 
 [Shared-spectrum recovery](reports/shared_channel_binding_20261114/report.md), server run `shared_channel_binding_20261114_v2`, frozen protocol SHA256 `204dbe256f2e0c23016e75db4355e962fd11aa8e08b60b113facd6eb633db19d`:

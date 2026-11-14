@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "pid": 18200,
+  "model": "sd21",
+  "protocol_sha256": "a891f0d9f23ca1372e6d5c74d64020a76cad2796f608ebb21dd9592592f96190",
+  "gpu": 7,
+  "gpu_uuid": "GPU-9644fb82-cb6f-7311-8017-eaee41409bb7",
+  "started_at": 1794630897.5539963,
+  "torch": "2.5.1+cu124",
+  "diffusers": "0.31.0",
+  "transformers": "4.46.3",
+  "forward_scheduler": "utils.pipe.schedulers.scheduling_ddim",
+  "inverse_scheduler": "utils.pipe.schedulers.scheduling_ddim_inverse",
+  "count": 30,
+  "seconds": 299.72930884361267,
+  "rows_sha256": "2dcac07ede09dbab56bd2eab14cb84296ebeef3212f9a38fd004e512b2ab13a7"
+}
