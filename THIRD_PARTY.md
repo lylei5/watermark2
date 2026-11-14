@@ -46,3 +46,7 @@ Original repository: https://github.com/YuxinWenRick/tree-ring-watermark/tree/30
 2026-11-14固定[作者仓库](https://github.com/eddielyc/CopyNCE/tree/c2223d18abf3289202666a0d2b9db1c3a7f1b483)版本`c2223d18abf3289202666a0d2b9db1c3a7f1b483`。对应ICCV2025论文Tracing Copied Pixels and Regularizing Patch Affinity in Copy Detection。源码在249的`third_party/CopyNCE-c2223d18abf3289202666a0d2b9db1c3a7f1b483`，两个作者公开基础检查点在`models/copynce/`；本仓库只保存调用适配、协议和可公开结果。
 
 使用224×224 ViT-S描述子与匹配器第30轮基础检查点。描述子SHA256为`829fdf4ae032bac24b4fcc60535cfc3b53026af083b33a0b8c71f1973f2166db`，匹配器为`dd8dea1c345039bbda303c42457aa3a0389d46fb37ea39506bfb1faddedda1df`。来源链接、逐文件哈希和模型配置见[冻结协议](protocols/copynce_control_20261114.json)，执行范围见[对照报告](reports/copynce_control_20261114/report.md)。
+
+## 空间证据恢复依赖
+
+249的`tools/transport_recovery_dependencies`固定`opencv-python-headless==4.10.0.84`和`reedsolo==1.7.0`，通过清华PyPI镜像安装，未替换基础环境依赖。OpenCV提供原有SIFT、单应矩阵RANSAC和图像采样；reedsolo提供RS错误／擦除译码。项目代码负责helper构造、区域规则、密钥确认和原生材料封装。这些通用组件不作为项目原创算法。

@@ -1,0 +1,49 @@
+{
+  "status": "complete",
+  "source_sha256": "7003c426ded850eb473b687dc0ee3f240d38c785e2cc0a50ce1c317d528e6d2a",
+  "rows": [
+    {
+      "errors": 0,
+      "erasures": 0,
+      "inside_guaranteed_region": true,
+      "exact": true
+    },
+    {
+      "errors": 119,
+      "erasures": 0,
+      "inside_guaranteed_region": true,
+      "exact": true
+    },
+    {
+      "errors": 0,
+      "erasures": 239,
+      "inside_guaranteed_region": true,
+      "exact": true
+    },
+    {
+      "errors": 20,
+      "erasures": 199,
+      "inside_guaranteed_region": true,
+      "exact": true
+    },
+    {
+      "errors": 119,
+      "erasures": 1,
+      "inside_guaranteed_region": true,
+      "exact": true
+    },
+    {
+      "errors": 120,
+      "erasures": 0,
+      "inside_guaranteed_region": false,
+      "exact": false
+    },
+    {
+      "errors": 20,
+      "erasures": 200,
+      "inside_guaranteed_region": false,
+      "exact": false
+    }
+  ],
+  "scope": "Numerical code-channel checks, not image attacks or a visual FPR experiment."
+}
