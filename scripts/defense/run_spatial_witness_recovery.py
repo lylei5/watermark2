@@ -24,7 +24,7 @@ def write(p,d):
     t=p.with_suffix('.tmp');t.write_text(json.dumps(d,indent=2,allow_nan=False)+'\n');t.replace(p)
 
 
-def prepare(run):
+def prepare(run,variant='spatial'):
     run.mkdir(exist_ok=False)
     private=ROOT/'private_eval'/run.name;private.mkdir(mode=0o700,exist_ok=False)
     (private/'provider.bin').write_bytes(secrets.token_bytes(32))
@@ -35,7 +35,9 @@ def prepare(run):
         private=str(private),provider_sha256=sha(private/'provider.bin'),parent_protocol_sha256=sha(PARENT/'protocol.json'),
         parent_rows_sha256=sha(PARENT/'feature_rows.json'),parent_controls_sha256=sha(PARENT/'controls.json'),
         evaluation_protocol_sha256=sha(EVAL/'protocol.json'),evaluation_pid=read(EVAL/'launch.json')['pid'],
-        methods=['identity','registered','heldout'],payload_bits=128,rs=[255,16,239],
+        methods=['identity','registered','heldout'] if variant=='spatial' else ['identity','visible'],
+        variant=variant,layout='right' if variant=='spatial' else 'distributed',payload_bits=128,rs=[255,16,239],
+        visibility='For visibility variant:17x15jittered grid; erase footprints with sampled gray span<2; require>=64observed symbols. Same helper/key for fixed and visible decoding.',
         witness_selection='255right-region symbols,8reference-margin-selected local rank bits per symbol; Gaussian sigma2.',
         registration='Unchanged OpenCV SIFT and RANSAC homography,ratio0.75,threshold3px,2000iterations,8inliers.',
         heldout_scope='Reference anchors whose conservative6*size support ends beforex224; witnesses start atx300. Query descriptors use full image. No statistical independence guarantee.',
@@ -92,7 +94,7 @@ def execute(run):
                     opts=SimpleNamespace(**{k:None for k in parent['conditions']});setattr(opts,row['family'],parent['conditions'][row['family']])
                     distort.set_random_seed(row['seed']);im=distort.image_distortion(im.copy(),row['seed'],opts).convert('RGB')
                 assert hashlib.sha256(im.tobytes()).hexdigest()==digest
-                cache[digest]=(im,codec.anchors(im))
+                cache[digest]=(im,codec.anchors(im) if plan.get('variant','spatial')=='spatial' else None)
             return cache[digest]
         state['status']='extracting_public_evidence';write(run/'state.json',state)
         for row in metadata:
@@ -125,7 +127,7 @@ def execute(run):
             payload=result[1];fields=json.loads(payload)
             blob_path=old_private/f'{identity}_native.bin';blob=blob_path.read_bytes();assert sha(blob_path)==fields['blob_sha256']
             material=AESGCM(bytes.fromhex(fields['data_key'])).decrypt(blob[:12],blob[12:],canonical(dict(id=identity,carrier=carrier)))
-            record,key=codec.enroll(identity,pixels(source)[0],payload,provider)
+            record,key=codec.enroll(identity,pixels(source)[0],payload,provider,layout=plan.get('layout','right'))
             helper=private/f'{identity}.json';write(helper,record)
             enrolled.append(dict(id=identity,helper_sha256=sha(helper),helper_bytes=len(codec.canonical(record)),native_blob_bytes=len(blob),native_blob_sha256=sha(blob_path)))
             damaged=json.loads(json.dumps(record));damaged['metadata']['id']+='x'
@@ -165,7 +167,7 @@ def execute(run):
                         pixels_sha256=query['pixels_sha256'],method=mode,key_recovered=success,native_accepted=base['native_accepted'],
                         joint=bool(success and base['native_accepted']),seconds=elapsed,detail=detail))
             write(run/f'{identity}_complete.json',dict(rows=len(rows),restored_calls=restored_calls))
-        assert len(rows)==2310 and len(enrolled)==30
+        assert len(rows)==770*len(plan['methods']) and len(enrolled)==30
         write(run/'rows.json',rows);write(run/'enrollment.json',enrolled)
         summary=[]
         for carrier in ['GS','TR','PRC']:
@@ -185,6 +187,7 @@ def execute(run):
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('mode',choices=['prepare','execute']);p.add_argument('--run',type=Path,required=True);a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('mode',choices=['prepare','execute']);p.add_argument('--run',type=Path,required=True);p.add_argument('--variant',choices=['spatial','visibility'],default='spatial');a=p.parse_args()
     assert a.run.resolve().parent==ROOT/'runs'
-    globals()[a.mode](a.run)
+    if a.mode=='prepare':prepare(a.run,a.variant)
+    else:execute(a.run)

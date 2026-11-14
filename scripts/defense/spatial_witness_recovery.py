@@ -42,14 +42,19 @@ def anchors(image):
     return np.asarray([[*p.pt,p.size] for p in points],dtype=np.float32),desc
 
 
-def enroll(identity,image,payload,provider,key=None):
+def enroll(identity,image,payload,provider,key=None,layout='right'):
+    assert layout in ['right','distributed']
     key=secrets.token_bytes(16) if key is None else key
     assert len(key)==16
     rng=np.random.default_rng(int.from_bytes(secrets.token_bytes(16),'big'))
     g=cv2.GaussianBlur(gray(image).astype(np.float32),(0,0),2.)
     # Witnesses occupy the right-hand region. Reference registration anchors
     # for heldout mode have descriptor-support bounds entirely left of x224.
-    centers=np.stack([rng.integers(312,480,255),rng.integers(32,480,255)],axis=1)
+    if layout=='right':
+        centers=np.stack([rng.integers(312,480,255),rng.integers(32,480,255)],axis=1)
+    else:
+        xx,yy=np.meshgrid(np.linspace(28,484,17),np.linspace(28,484,15))
+        centers=np.round(np.stack([xx.ravel(),yy.ravel()],axis=1)).astype(int)+rng.integers(-4,5,(255,2))
     pairs=[];bits=[]
     for center in centers:
         pool=center[None,None,:]+rng.integers(-12,13,(512,2,2))
@@ -58,11 +63,11 @@ def enroll(identity,image,payload,provider,key=None):
         valid=np.linalg.norm(pool[:,0]-pool[:,1],axis=1)>=8
         chosen=np.argsort(-np.where(valid,np.abs(diff),-1),kind='stable')[:8]
         pairs.append(pool[chosen]);bits.append(diff[chosen]>=0)
-    points,desc=anchors(image)
+    points,desc=anchors(image) if layout=='right' else (np.empty((0,3),dtype=np.float32),np.empty((0,128),dtype=np.float32))
     symbols=np.packbits(np.asarray(bits,dtype=np.uint8),axis=1).reshape(-1)
     word=np.frombuffer(bytes(CODEC.encode(key)),dtype=np.uint8)
     assert len(word)==255
-    meta=dict(version=1,id=identity,codec='RS(255,16),GF256,239parity',
+    meta=dict(version=1,id=identity,layout=layout,codec='RS(255,16),GF256,239parity',
         pairs=pack(np.asarray(pairs,dtype='<u2')),anchors=pack(points.astype('<f4')),
         descriptors=pack(desc.astype('<f4')),offset=pack(symbols^word),
         confirmation=hashlib.sha256(b'witness/'+identity.encode()+key).hexdigest())
@@ -74,12 +79,12 @@ def enroll(identity,image,payload,provider,key=None):
 
 
 def recover(record,image,query_anchors,provider,mode):
-    assert mode in ['identity','registered','heldout']
+    assert mode in ['identity','registered','heldout','visible']
     checked={k:v for k,v in record.items() if k!='mac'}
     if not hmac.compare_digest(record['mac'],hmac.new(provider,canonical(checked),hashlib.sha256).hexdigest()):
         return None,dict(reason='record_authentication')
     meta=record['metadata']; h=np.eye(3);inliers=0;matches=0
-    if mode!='identity':
+    if mode not in ['identity','visible']:
         points,desc=unpack(meta['anchors']),unpack(meta['descriptors'])
         if mode=='heldout':
             valid=points[:,0]+np.maximum(16,6*points[:,2])<224
@@ -103,9 +108,15 @@ def recover(record,image,query_anchors,provider,mode):
     pairs=unpack(meta['pairs']).astype(np.int32)
     mapped=cv2.perspectiveTransform(pairs.reshape(-1,1,2).astype(np.float32),h).reshape(255,8,2,2)
     seen=((mapped>=8)&(mapped<=503)).all(axis=(1,2,3))
+    if mode=='visible':
+        # A visibility rule independent of the reference bits, key and decoder.
+        # A flat footprint carries no usable ordinal evidence at 8-bit precision.
+        samples=g[pairs[:,:,:,1],pairs[:,:,:,0]]
+        span=samples.max(axis=(1,2))-samples.min(axis=(1,2))
+        seen&=span>=2.
     erasures=np.flatnonzero(~seen).tolist()
     detail=dict(matches=matches,inliers=inliers,erasures=len(erasures),observed_symbols=int(seen.sum()))
-    if len(erasures)>239:
+    if len(erasures)>239 or (mode=='visible' and seen.sum()<64):
         return None,dict(detail,reason='insufficient_witnesses')
     observed=np.packbits((g[pairs[:,:,0,1],pairs[:,:,0,0]]>=g[pairs[:,:,1,1],pairs[:,:,1,0]]).astype(np.uint8),axis=1).reshape(-1)
     received=observed^unpack(meta['offset'])

@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-11-14T05:10:57.878367+00:00",
+  "protocol_sha256": "4adee4f8463f9efd4ffcb2e5460956a63ca75fb2e8d14cf836405112160a017e",
+  "kind": "description_clarification_no_computation_change",
+  "authoritative_fields": [
+    "variant",
+    "layout",
+    "methods",
+    "visibility"
+  ],
+  "clarifications": {
+    "witness_selection": "Distributed17x15jittered full-frame grid,8reference-margin-selected ordinal bits per symbol.",
+    "registration": "Both compared modes use identity coordinates; no SIFT/homography in this visibility experiment.",
+    "exclusions": "visible mode erases out-of-view footprints and query gray span<2 footprints; requires64observed symbols. identity mode erases only out-of-view footprints.",
+    "heldout_scope": "Not applicable to this visibility experiment. Applies to prior spatial prototype only."
+  }
+}
