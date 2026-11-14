@@ -1,0 +1,402 @@
+{
+  "created_at": "2026-11-14T04:34:41.732593+00:00",
+  "source_sha256": "c531d3e158feaf0dd26c55d4f2ba5772b3deaba6c7391bf8fc98141461af80ab",
+  "author_root": "/data0/liyanlei/watermark_research/third_party/semantic-forgery",
+  "author_commit": "ca68950cd7b53b8438a49580f134b2a0db28d778",
+  "author_source_sha256": {
+    "run_imprint_forgery.py": "636dd0cb86f8b5d494e2b5213a9fdcf5001b1f4ba9705caae89ca14e9d71d12f",
+    "run_imprint_removal.py": "031ca45fcd93f76604051a371f809a05122355548fc11b928615ddd2b4c7383b",
+    "run_reprompting.py": "7f79d612d76764613fc28ca47bf40937a582488f26f9f1234f5d00691a532007",
+    "utils/prompt_utils.py": "c118c1ffa2e91f61a1f7fb97021b3d47e3c111dec444c98c440a943f3860380b",
+    "utils/image_utils.py": "99095d47638908c6b104797ea5bd99e41d57e98dbe00f77861f5e20b74f2d628",
+    "utils/utils.py": "b730d37c456a9647f830cea458d3f1dfb84750078de37e2b6088c43b74a60bc9",
+    "utils/imprint_utils.py": "1c95450d48462cac0b1a631e97f83f5abeafd73452de9e46919a403d0641830b",
+    "utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "utils/wm/generate_secrets.py": "bae816e3783df4d423ab00fa67895b1218fca1b2075f8da5b758244646beeb47",
+    "utils/wm/wm_utils.py": "55db318376ca4bea2f1d2b73c6f90f2d4faa36f94bd7d1b6fd2a46be4e610a47",
+    "utils/wm/tr_provider.py": "ef0b75154a58afc14a690b9bd78d17dc79228f3fc2c5fe1034ded2a202dc8ef8",
+    "utils/wm/nonces.py": "8e3567e8b323c173d4ae290079497bb753ea6b3edf5ef8878a2287c3c725a0d8",
+    "utils/wm/keys.py": "46064115ffec069516560ba7e1b58d7ff74ea19386909e9c6993c182360d348b",
+    "utils/wm/gs_provider.py": "233ff05fa47d18d5875577d2cd920bd21d8ceea05149f5f100c1fab32c524d99",
+    "utils/wm/wm_provider.py": "b35b20cf63a0b6a39d443d8539bf40c7e0bfc079a5205f0dcf013b4534ceb93a",
+    "utils/wm/messages.py": "d1b6aef8be3401cc7960e21ed503c078973d2f6f323d3be7b7334f38347bbe0d",
+    "utils/wm/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "utils/pipe/SDXL_provider.py": "814cfbf2ef9d39782396e522d6b77100b2ad753eb500482cb611d96d8277ef3d",
+    "utils/pipe/Flux_provider.py": "cbf1e3629fa54948016122448d0fdbe1aa696bf364327538dd5dde47afed9c91",
+    "utils/pipe/pipe_utils.py": "85f1648dbfec0168ce5ecd697eb50d4b505efabb7f6b864953c58d6a5a2058bd",
+    "utils/pipe/SD_provider.py": "e9ebcbbafecbfa0041e386ac508cd94bd113466c9a0a2e2e07b44cefc6fa389c",
+    "utils/pipe/pipe_provider.py": "49c636c75f9523336230ebae30eaadb2cca873f5a304f40d4cd3c04af8ab8e4f",
+    "utils/pipe/PixArt_provider.py": "af55f9c859ed8deaa4a364967fe21f83bfba3b8b787b9f71534ce3043414faf5",
+    "utils/pipe/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "utils/pipe/schedulers/scheduling_ddim.py": "37d694c42315896fc9af10796e9ad62786e818f285d8b9bcdc62f2e0bb86b6fa",
+    "utils/pipe/schedulers/scheduling_ddim_inverse.py": "b21e18c3de89350ba139c309a1fbc889335231cfbfc85c8bb5fe9e01213f2ea8"
+  },
+  "parent_rows_sha256": "1b4503047d03d2c134583597fae9752f5b03b4a3279bef60415eb296954b6528",
+  "input_protocol_sha256": "213f16057ab5b6f5d68d713512cd989c1f2377fd34eed28049d0e363f74a5f3b",
+  "references": [
+    {
+      "id": "G000",
+      "carrier": "GS",
+      "task": 0,
+      "image": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/watermarked_images/image_000.png",
+      "image_sha256": "b89c2dde3a0b6f4ff386c36d9aa47f22956d16cfe1456c9fe2f998157c8c54f6",
+      "pixels_sha256": "36adbca19b04a7e42b8d09069e7df455d146d43143670e8feac455ad02e4dcce",
+      "target_prompt": "Hagrid in cute anime style, detailed realistic beautiful, lofi colors, smooth, artistic, mellow and soft, sharpen high quality, in style of Ghibli, Ilya Kuvshinov, Artgerm",
+      "target_source_index": 1804
+    },
+    {
+      "id": "G001",
+      "carrier": "GS",
+      "task": 1,
+      "image": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/watermarked_images/image_001.png",
+      "image_sha256": "94328f3c4e2f1261203f8f6e4ffcae9cb3b3a9fafb6b60287650eac859b40db6",
+      "pixels_sha256": "1d43a0eebc860a80827e71cd488b0144c5940dd0443633aebcb042ffb942a51a",
+      "target_prompt": "visual storytelling, concept art of scientists by jama jurabaev, extremely detailed, trending on artstation, high quality, brush stroke ",
+      "target_source_index": 3065
+    },
+    {
+      "id": "G002",
+      "carrier": "GS",
+      "task": 2,
+      "image": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/watermarked_images/image_002.png",
+      "image_sha256": "d5fbac2bc3c6222544da0d480949ea7f07843735fdf3ebbd089a5c8afe027d8f",
+      "pixels_sha256": "d418b0c8a7f8a5ac2f9101db45577639022e4caf66f5edc0b4102994252834a1",
+      "target_prompt": "Saran wrap tic tacs, photograph",
+      "target_source_index": 3398
+    },
+    {
+      "id": "G003",
+      "carrier": "GS",
+      "task": 3,
+      "image": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/watermarked_images/image_003.png",
+      "image_sha256": "7d304e87186be51c72185621f7ce0d89db45dab17bbf3802d74691beefa4fb02",
+      "pixels_sha256": "013c9fd31df16285318020de3d2a0ad55209c431ef1b0f12a4af2e31e2a02f15",
+      "target_prompt": "ufo at night shining a light on a car at an intersection",
+      "target_source_index": 2664
+    },
+    {
+      "id": "G004",
+      "carrier": "GS",
+      "task": 4,
+      "image": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/watermarked_images/image_004.png",
+      "image_sha256": "bdbbf997c102c21e489f1321f1fd00ca84e0a7d70aa794362803626f562cd427",
+      "pixels_sha256": "bf59fb8660f8db73a10f3d4a3db04c127f4e4f5d0dfe5110a43678814b3b6298",
+      "target_prompt": "young man in orange shirt and young woman in green dress with black hair hugging, by pierre - auguste cot ",
+      "target_source_index": 4443
+    },
+    {
+      "id": "G005",
+      "carrier": "GS",
+      "task": 5,
+      "image": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/watermarked_images/image_005.png",
+      "image_sha256": "b213dd66cc5e019b7e0abc6d6eab303b8c6aad7c48a1a46d03ca58c2d44b1755",
+      "pixels_sha256": "e369f51381033e5dbd064b1e0f1475fbd824af6cc5add741d11747efc9dfb126",
+      "target_prompt": "beautiful huggy-wuggy from poppy-playtime the video game, digital painting by Hiyao Miyazaki, Studio Ghibli, Yanjun Cheng, portrait, cinematic lighting, highly detailed, concept art, Atmosphere, illustration, smooth, sharp focus, editor's pickup, trending on artstation, trending on deviantart",
+      "target_source_index": 1873
+    },
+    {
+      "id": "G006",
+      "carrier": "GS",
+      "task": 6,
+      "image": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/watermarked_images/image_006.png",
+      "image_sha256": "c957432d199a1129b3eec4a50b72d62335adcb301520cc18a7706075d59abbe8",
+      "pixels_sha256": "10bea4d665a95ad3f4b4d93bc995995695d6476968ee72e3a9f4807e1bac3f5b",
+      "target_prompt": "fear and disgust, Keith haring, graffiti, 4K",
+      "target_source_index": 2227
+    },
+    {
+      "id": "G007",
+      "carrier": "GS",
+      "task": 7,
+      "image": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/watermarked_images/image_007.png",
+      "image_sha256": "d1ddfdba8afaec4bdee8ffda740235a3750dd8647efc928cf196adb7c04948b1",
+      "pixels_sha256": "e8cdfe5266f55ac4a08e5c629b809871e8576d45f43f6f4efc742ea41a84c1ed",
+      "target_prompt": "man wrestling with eel, counter strike screenshot ",
+      "target_source_index": 3996
+    },
+    {
+      "id": "G008",
+      "carrier": "GS",
+      "task": 8,
+      "image": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/watermarked_images/image_008.png",
+      "image_sha256": "451305b6b844d8e082cd6a3baabe1b134e170dff5898f65ff2d50dfd8cdd9604",
+      "pixels_sha256": "4744ec6883535f7ffeaa71126f2b03adbc47e960c26e127ec38496bb75f86829",
+      "target_prompt": "futuristic sad little robot girl with a robot teddy, digital art ",
+      "target_source_index": 1944
+    },
+    {
+      "id": "G009",
+      "carrier": "GS",
+      "task": 9,
+      "image": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/watermarked_images/image_009.png",
+      "image_sha256": "204fffeb08f2c2299a7c03c3d9435c15f77809936864a3c219ec783040aca231",
+      "pixels_sha256": "27bda95a46f55a1f78de270c6788b6d525520ec641a69ed4c51cab0504c4a92a",
+      "target_prompt": "A portraiture of Rebecca de Mornay as an alpine dairymaid sitting on a bench in the swiss alps surrounded by beautiful nature. Painted by Emil Rau.",
+      "target_source_index": 4433
+    },
+    {
+      "id": "TR_000",
+      "carrier": "TR",
+      "task": 0,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/TR/attack=forgery/watermarked_images/image_000.png",
+      "image_sha256": "1990e31f5d57d67abece30f7c2b7c474c4398523e0ef82eb83b9ea45df8cd005",
+      "pixels_sha256": "87222b029ca7eb0949da62aef8e08befee32fff2ddaab216f08394597e9e774a",
+      "target_prompt": "Hagrid in cute anime style, detailed realistic beautiful, lofi colors, smooth, artistic, mellow and soft, sharpen high quality, in style of Ghibli, Ilya Kuvshinov, Artgerm",
+      "target_source_index": 1804
+    },
+    {
+      "id": "TR_001",
+      "carrier": "TR",
+      "task": 1,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/TR/attack=forgery/watermarked_images/image_001.png",
+      "image_sha256": "fb41e331e27767f4de1966f3f2a6c94d4b14a68941979e9d6257edf1a1648ee2",
+      "pixels_sha256": "0a41be24ed1cad1896594ebae4077e89212b2d8034b44a1714d8cc004d870c22",
+      "target_prompt": "visual storytelling, concept art of scientists by jama jurabaev, extremely detailed, trending on artstation, high quality, brush stroke ",
+      "target_source_index": 3065
+    },
+    {
+      "id": "TR_002",
+      "carrier": "TR",
+      "task": 2,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/TR/attack=forgery/watermarked_images/image_002.png",
+      "image_sha256": "69490721221645438ab07786a63210d090b8d4bd5ec20dcef21a06b6d392aea2",
+      "pixels_sha256": "ad396121e5d1052499a53f1b8ee9d7caf309a908e6c80028f9d91ed0d1cca2bd",
+      "target_prompt": "Saran wrap tic tacs, photograph",
+      "target_source_index": 3398
+    },
+    {
+      "id": "TR_003",
+      "carrier": "TR",
+      "task": 3,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/TR/attack=forgery/watermarked_images/image_003.png",
+      "image_sha256": "93aa72fb3e15b5c0cc0604605eb473cc626a57278844aca9074f23b58fe0ffd3",
+      "pixels_sha256": "4ed195980664e7a88043cbf22ec97d00ccd67cc48abdfc9868740d98f7c3e517",
+      "target_prompt": "ufo at night shining a light on a car at an intersection",
+      "target_source_index": 2664
+    },
+    {
+      "id": "TR_004",
+      "carrier": "TR",
+      "task": 4,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/TR/attack=forgery/watermarked_images/image_004.png",
+      "image_sha256": "c702fa7930047b252eb7b1e757f5ae50ab1116abe9f91cfcabe28905221ea4b4",
+      "pixels_sha256": "ea5d0790d2af934a1fecae151b0a19f3eeb4a681596f735da9a9640161d8669b",
+      "target_prompt": "young man in orange shirt and young woman in green dress with black hair hugging, by pierre - auguste cot ",
+      "target_source_index": 4443
+    },
+    {
+      "id": "TR_005",
+      "carrier": "TR",
+      "task": 5,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/TR/attack=forgery/watermarked_images/image_005.png",
+      "image_sha256": "0ffdf5388386a2146036de1fbca3499025e163c045cc18e46edb8eb18d7bd020",
+      "pixels_sha256": "f801fd679f1e1f1c3dad60f7f7b1fd9a9b5e9e0d70a5a894828b1db87ff3acab",
+      "target_prompt": "beautiful huggy-wuggy from poppy-playtime the video game, digital painting by Hiyao Miyazaki, Studio Ghibli, Yanjun Cheng, portrait, cinematic lighting, highly detailed, concept art, Atmosphere, illustration, smooth, sharp focus, editor's pickup, trending on artstation, trending on deviantart",
+      "target_source_index": 1873
+    },
+    {
+      "id": "TR_006",
+      "carrier": "TR",
+      "task": 6,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/TR/attack=forgery/watermarked_images/image_006.png",
+      "image_sha256": "8d945650f647bd1ec38e0da0946e7fe542ca92bedae3eaf6ecfa46189094c1d9",
+      "pixels_sha256": "ce8c836d26c4a825511bfa8e3a5626824481f06e884af1faf080d73cabf25f91",
+      "target_prompt": "fear and disgust, Keith haring, graffiti, 4K",
+      "target_source_index": 2227
+    },
+    {
+      "id": "TR_007",
+      "carrier": "TR",
+      "task": 7,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/TR/attack=forgery/watermarked_images/image_007.png",
+      "image_sha256": "dc01572a0bed044f420a9733a285e702c8ecb874afd8a45da72db6de2278295a",
+      "pixels_sha256": "56530e95d4ea4dba213024dc310ef548fcc9406a7f70f14743362808f215513b",
+      "target_prompt": "man wrestling with eel, counter strike screenshot ",
+      "target_source_index": 3996
+    },
+    {
+      "id": "TR_008",
+      "carrier": "TR",
+      "task": 8,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/TR/attack=forgery/watermarked_images/image_008.png",
+      "image_sha256": "855d025a7d4e81d43eea3c57771199840b8bb0df58bb53c90e3ea5c3848bfb49",
+      "pixels_sha256": "823b361090fda3012cca92d17b9a5295e8b2fa20b73eafd0b52a443815ee7b95",
+      "target_prompt": "futuristic sad little robot girl with a robot teddy, digital art ",
+      "target_source_index": 1944
+    },
+    {
+      "id": "TR_009",
+      "carrier": "TR",
+      "task": 9,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/TR/attack=forgery/watermarked_images/image_009.png",
+      "image_sha256": "9e0de1d79608915dc1138cca5087372d8d82ea4971018965f6cd0ffe169023c3",
+      "pixels_sha256": "af9e22519d725b85557fe9c326dc6dd7a9a0699405d6d6f699ca6ffef5604ab1",
+      "target_prompt": "A portraiture of Rebecca de Mornay as an alpine dairymaid sitting on a bench in the swiss alps surrounded by beautiful nature. Painted by Emil Rau.",
+      "target_source_index": 4433
+    },
+    {
+      "id": "PRC_000",
+      "carrier": "PRC",
+      "task": 0,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/PRC/attack=forgery/watermarked_images/image_000.png",
+      "image_sha256": "61ef717b6adeeb747fc82f0761bc927b63b3e7e5e44cfe86120cdbf34b15d28c",
+      "pixels_sha256": "ccfddd802b598baa53dbdb1ec680907fd6c9b5e685b4210b499d5cace299740f",
+      "target_prompt": "Hagrid in cute anime style, detailed realistic beautiful, lofi colors, smooth, artistic, mellow and soft, sharpen high quality, in style of Ghibli, Ilya Kuvshinov, Artgerm",
+      "target_source_index": 1804
+    },
+    {
+      "id": "PRC_001",
+      "carrier": "PRC",
+      "task": 1,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/PRC/attack=forgery/watermarked_images/image_001.png",
+      "image_sha256": "027f1d10e77f230243e6dc833f689d489938c6a82f041a0fa1c354973e200c9f",
+      "pixels_sha256": "a37f7f26236e7e3ba66c436769d58e3091dfe059cf26b125c440f2d822b021e5",
+      "target_prompt": "visual storytelling, concept art of scientists by jama jurabaev, extremely detailed, trending on artstation, high quality, brush stroke ",
+      "target_source_index": 3065
+    },
+    {
+      "id": "PRC_002",
+      "carrier": "PRC",
+      "task": 2,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/PRC/attack=forgery/watermarked_images/image_002.png",
+      "image_sha256": "8385a11f4384cdf2e27da067d753fd6c7d13f27e874f3bfa597284a18df5bd37",
+      "pixels_sha256": "ce865198818eb03f726f3a1da1922ac5fd51f7ebcf6b1e26c2065f48e5343d51",
+      "target_prompt": "Saran wrap tic tacs, photograph",
+      "target_source_index": 3398
+    },
+    {
+      "id": "PRC_003",
+      "carrier": "PRC",
+      "task": 3,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/PRC/attack=forgery/watermarked_images/image_003.png",
+      "image_sha256": "626825cf36f53212aa53db0c5626b85d04ffcca1dec9c5f6523d2a027313185a",
+      "pixels_sha256": "1662db2b6ba3bbeb6057d1f6d323c9e29e465dcc6cd919a5628e8d938a8d2cc7",
+      "target_prompt": "ufo at night shining a light on a car at an intersection",
+      "target_source_index": 2664
+    },
+    {
+      "id": "PRC_004",
+      "carrier": "PRC",
+      "task": 4,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/PRC/attack=forgery/watermarked_images/image_004.png",
+      "image_sha256": "4726c306a779884236c433e7adbcdcc68277e900d021f501f9dbb7a61f70002d",
+      "pixels_sha256": "0264d528e279e8337d85595e0a8dbdceba15b049b6f4580bc14c5372baa5abb2",
+      "target_prompt": "young man in orange shirt and young woman in green dress with black hair hugging, by pierre - auguste cot ",
+      "target_source_index": 4443
+    },
+    {
+      "id": "PRC_005",
+      "carrier": "PRC",
+      "task": 5,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/PRC/attack=forgery/watermarked_images/image_005.png",
+      "image_sha256": "7646f5ae841d5ee123379f7f3effdb42476ee413ef7d5c98332560a236d520e0",
+      "pixels_sha256": "d8dd3637cc2733a16308dbf9e02d1e0782827fd08772708c24c4f95b9fb09b82",
+      "target_prompt": "beautiful huggy-wuggy from poppy-playtime the video game, digital painting by Hiyao Miyazaki, Studio Ghibli, Yanjun Cheng, portrait, cinematic lighting, highly detailed, concept art, Atmosphere, illustration, smooth, sharp focus, editor's pickup, trending on artstation, trending on deviantart",
+      "target_source_index": 1873
+    },
+    {
+      "id": "PRC_006",
+      "carrier": "PRC",
+      "task": 6,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/PRC/attack=forgery/watermarked_images/image_006.png",
+      "image_sha256": "00db20bcf5db61754f56174b5f590cbc3d3e02b72d9c56ce36b1bccbd4a8d883",
+      "pixels_sha256": "5f058eff4ca21a9da5474b2bcc03c520c54ed633e2924c70053adedd0cbb6b94",
+      "target_prompt": "fear and disgust, Keith haring, graffiti, 4K",
+      "target_source_index": 2227
+    },
+    {
+      "id": "PRC_007",
+      "carrier": "PRC",
+      "task": 7,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/PRC/attack=forgery/watermarked_images/image_007.png",
+      "image_sha256": "471be4e91265f28e648a86165546c8d4735346e4e615cb274277aad4cfef163e",
+      "pixels_sha256": "1a0efd4ad8d69f952cb1b099944e8d81cbc1bb8f09d09fe950fa726fa1b58c8d",
+      "target_prompt": "man wrestling with eel, counter strike screenshot ",
+      "target_source_index": 3996
+    },
+    {
+      "id": "PRC_008",
+      "carrier": "PRC",
+      "task": 8,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/PRC/attack=forgery/watermarked_images/image_008.png",
+      "image_sha256": "d88ebbdd71a929b7d32bb3609e4da16b498809fa4285ce1fb88c9401b7f6b2ec",
+      "pixels_sha256": "5a7d173ae2cf92c0444b7e2bb30e7edf41eb2bd14b2d6f3d3e0ad51527c6414d",
+      "target_prompt": "futuristic sad little robot girl with a robot teddy, digital art ",
+      "target_source_index": 1944
+    },
+    {
+      "id": "PRC_009",
+      "carrier": "PRC",
+      "task": 9,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/PRC/attack=forgery/watermarked_images/image_009.png",
+      "image_sha256": "2ef037f6ad0b66cc84cc82eb3bf4696a0b86d6d84010011ddcc7e5308132ea74",
+      "pixels_sha256": "79315d3b0dc9b6771c9a727eb769d5cbc1452eb620fd81b2566bf010bfce88b2",
+      "target_prompt": "A portraiture of Rebecca de Mornay as an alpine dairymaid sitting on a bench in the swiss alps surrounded by beautiful nature. Painted by Emil Rau.",
+      "target_source_index": 4433
+    }
+  ],
+  "models": {
+    "sd21": "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c",
+    "sd15": "/data0/liyanlei/huggingface/hub/models--runwayml--stable-diffusion-v1-5/snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14"
+  },
+  "model_configs": {
+    "sd21": {
+      "model_index.json": "518553e098fdaa4153d9a92139e344e44f53bb329c22f383293e3099c4f1bad2",
+      "scheduler/scheduler_config.json": "11ac5627d7df0fa344b875c4b5722b1767a8a2aa1684c2cf8b4d614300127234",
+      "vae/config.json": "424117cb534ce03497c41305ed868980123917b2b6abba4bbaa615e968772903",
+      "text_encoder/config.json": "7e33bfc475f6cf76e69b28b101993ca834d1f22ff4d35caefde32d63d4f42fba",
+      "tokenizer/tokenizer_config.json": "d562b18a0c6d32a168fce3d7a342fce64579ebacffb98fb71b0affc494fc32d8",
+      "tokenizer/special_tokens_map.json": "f118ab3a983206e4f32583448de6bd6aae4ee21869135cef1f5848a753cdaab6",
+      "tokenizer/vocab.json": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+      "feature_extractor/preprocessor_config.json": "2a1da83b5e1032aaeef397552ddb408dca0d8cd1dc58f61bf6abf38d6f33a0a2",
+      "unet/config.json": "ce0c6d379e3b1d3e1f79338de70c80a1e36f17a6372439a8249b6fb0dfa1b608"
+    },
+    "sd15": {
+      "model_index.json": "e2f6f22e274374010aec30c79eb2d6e53fff4a36ac0225523a92cb2d41a83347",
+      "scheduler/scheduler_config.json": "699cce92eb7c122e2eb7dfdea78e6187fda76a5ed4a8e42319b85610e620e091",
+      "vae/config.json": "786a7d21647ddea6a04b9675c03d3cb45e90a2f3c6da5fbda2c54ade040036de",
+      "safety_checker/config.json": "5dd77a06cbd9b155060bd58deb81ffd1aafc1c6d7970acac674c1128bd4edfe2",
+      "text_encoder/config.json": "845df614cb9327ae7bbea027316246fae917827407da6df13572e41b5f93b4cc",
+      "tokenizer/tokenizer_config.json": "00439066fcba73de57644cf41e4e3b9f2dbb09d7f3fc2005898ba52399045882",
+      "tokenizer/special_tokens_map.json": "c4864a9376a8401918425bed71fc14fc0e81f9b59ec45c1cf96cccb2df508eac",
+      "tokenizer/vocab.json": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+      "feature_extractor/preprocessor_config.json": "2a1da83b5e1032aaeef397552ddb408dca0d8cd1dc58f61bf6abf38d6f33a0a2",
+      "unet/config.json": "78f474de6bab3d893868f37be97b636ae65c0df3073ed3256ca458ff599b5f96"
+    }
+  },
+  "resolution": 512,
+  "inverse_steps": 50,
+  "forward_steps": 50,
+  "inverse_prompt": "",
+  "inverse_guidance": 1.0,
+  "forward_guidance": 7.5,
+  "dtype": "float32",
+  "seed": 1,
+  "resampling": false,
+  "candidates_per_reference": 1,
+  "author_functions": [
+    "SDPipeProvider.invert_images",
+    "SDPipeProvider.generate"
+  ],
+  "adaptation": "Public image input and local model path; instantiate author SDPipeProvider directly for SD1.5 alias.",
+  "private_inputs": false,
+  "isolation": "Logical input separation, shared Unix user; no OS sandbox claim.",
+  "cohort": "Paired development sources:10 each GS/TR/PRC, same as complete Imprint and genuine controls.",
+  "scope": "Complete 50-step basic Reprompt workflow, two proxy models,60 outputs; not the paper-scale matrix.",
+  "differences": [
+    "Filtered I2P targets from existing reviewed protocol rather than unrestricted I2P.",
+    "SD2.1 target carrier cohort; CVPR original main study uses other target models and1000 sources.",
+    "SemBind Table4 uses100COCO+100SDP per arm; current matched cohort has10 per carrier.",
+    "Reprompt+ best-of3 prompts and GS resampling is a separate published setting, not run here."
+  ],
+  "paper": "https://arxiv.org/html/2412.03283v3",
+  "defense_protocol": "https://arxiv.org/html/2601.20310#S4.SS3",
+  "allowed_gpu_indices": [
+    7,
+    5,
+    4
+  ],
+  "excluded_gpu_indices": [
+    6
+  ]
+}

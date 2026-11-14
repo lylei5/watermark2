@@ -1,0 +1,15 @@
+{
+  "jobs": [
+    {
+      "model": "sd21",
+      "gpu": 7,
+      "pid": 18200
+    },
+    {
+      "model": "sd15",
+      "gpu": 5,
+      "pid": 18201
+    }
+  ],
+  "protocol_sha256": "a891f0d9f23ca1372e6d5c74d64020a76cad2796f608ebb21dd9592592f96190"
+}

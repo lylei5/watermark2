@@ -1,6 +1,6 @@
 # Research handoff: instance binding and native defense baselines
 
-The user wants a publishable defense with a clear new mechanism, actual key recovery, fair strong controls, and unchanged published top-venue attacks. All experiments in the current queue are complete. The publication objective remains open: shared-spectrum recovery failed to improve on strong controls. Execution state is authoritative only in [project_state.json](project_state.json); evidence is indexed in [reports/README.md](reports/README.md). Do not restart completed jobs.
+The user wants a publishable defense with a clear new mechanism, actual key recovery, fair strong controls, and unchanged published top-venue attacks. Author Reprompt controls are running onGPU7/5 under protocol a891f0d9f23ca1372e6d5c74d64020a76cad2796f608ebb21dd9592592f96190. Run author_reprompt_control_20261114_v2 contains60single-candidate outputs from30matched sources and two proxies. Use process-exit events; frozen shared-spectrum and CopyNCE evidence remains complete. The publication objective remains open: shared-spectrum recovery failed to improve on strong controls. Execution state is authoritative only in [project_state.json](project_state.json); evidence is indexed in [reports/README.md](reports/README.md). Do not restart completed jobs.
 
 ## Latest completed evidence
 
