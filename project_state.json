@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-14T04:55:26.988712+00:00",
+  "updated_at": "2026-11-14T05:14:44.640656+00:00",
   "status": "native_baselines_and_instance_key_recovery",
   "active_experiments": 2,
-  "queued_experiments": 0,
-  "latest_progress_report": "reports/shared_channel_binding_20261114/report.md",
+  "queued_experiments": 1,
+  "latest_progress_report": "reports/author_reprompt_control_20261114/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/INSTANCE_BINDING_RESEARCH.md",
   "native_sembind_reproduction_complete": false,
@@ -58,7 +58,7 @@
   ],
   "max_concurrent_gpus": 3,
   "evaluation_policy": "Unchanged published top-venue attacks only; full budgets; no attack development; matched absolute genuine detection",
-  "current_decision": "60 author Reprompt candidates complete; native/PGID verification and spatial witness actual-key recovery running.",
+  "current_decision": "Author Reprompt and120native/PGID decisions complete. Spatial and visibility witness key-recovery mechanisms running onCPU249; comparison follows completion events.",
   "completed_evidence": [
     {
       "path": "reports/shared_channel_binding_20261114/report.md",
@@ -814,16 +814,22 @@
   },
   "active_runs": [
     {
-      "run": "author_reprompt_evaluation_20261114_v2",
-      "pid": 6447,
-      "protocol_sha256": "6b4330bee59b434e08bf459a2283bf9bfab05a1804148d981851c8e09003c789",
-      "scope": "120native/PGID decisions,60same-pixel strong controls;reuse completed content and20GSdecisions;PRC original worker30182 onGPU4"
-    },
-    {
       "run": "spatial_witness_recovery_20261114_v2",
       "pid": 7556,
-      "protocol_sha256": "84b31ae5b1cb08af0138fddc7d055ea7e5ae80235135070188e2e19cc6cceaad",
-      "scope": "2310actual128bit recovery attempts;CPU249;waits native completion event"
+      "device": "CPU249"
+    },
+    {
+      "run": "visible_witness_recovery_20261114",
+      "pid": 9630,
+      "device": "CPU249",
+      "protocol_sha256": "4adee4f8463f9efd4ffcb2e5460956a63ca75fb2e8d14cf836405112160a017e"
+    }
+  ],
+  "queued_runs": [
+    {
+      "run": "reprompt_comparison_20261114",
+      "depends_on": "spatial_witness_recovery_20261114_v2",
+      "includes": "360actual frozen SSCD helper decodes"
     }
   ]
 }
