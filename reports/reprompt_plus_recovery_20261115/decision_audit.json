@@ -1,0 +1,199 @@
+{
+  "status": "complete",
+  "source_sha256": "1eece408e1ff1b0e616b12bc96e08c82ba11e1a1ac7dd69c858658f1161ebd29",
+  "input_complete_sha256": "341b5cb35abd8a1142f657c10e33dd5554634fee04125e02aa806c5ea36a9a03",
+  "recovery_rows": 960,
+  "distinct_candidates": 240,
+  "source_proxy_budgets": 40,
+  "all_observable_decision_agreement": [
+    240,
+    240
+  ],
+  "repeated_certificate_checks": 1348,
+  "basic_tr_same_pixel_decision_checks": 80,
+  "matched_comparisons": {
+    "worse": 78,
+    "equal": 8,
+    "better": 10
+  },
+  "matched_exact_genuine_counts": 96,
+  "observable_vs_matched_sscd_source_pairs": [
+    {
+      "carrier": "GS",
+      "proxy": "sd21",
+      "genuine_joint": 30,
+      "counts": {
+        "00": 2,
+        "10": 1
+      },
+      "sources": [
+        {
+          "id": "G007",
+          "candidate": false,
+          "control": false
+        },
+        {
+          "id": "G008",
+          "candidate": true,
+          "control": false
+        },
+        {
+          "id": "G009",
+          "candidate": false,
+          "control": false
+        }
+      ]
+    },
+    {
+      "carrier": "GS",
+      "proxy": "sd15",
+      "genuine_joint": 30,
+      "counts": {
+        "10": 1,
+        "00": 2
+      },
+      "sources": [
+        {
+          "id": "G007",
+          "candidate": true,
+          "control": false
+        },
+        {
+          "id": "G008",
+          "candidate": false,
+          "control": false
+        },
+        {
+          "id": "G009",
+          "candidate": false,
+          "control": false
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "proxy": "sd21",
+      "genuine_joint": 95,
+      "counts": {
+        "10": 7,
+        "00": 2,
+        "11": 1
+      },
+      "sources": [
+        {
+          "id": "TR_000",
+          "candidate": true,
+          "control": false
+        },
+        {
+          "id": "TR_001",
+          "candidate": true,
+          "control": false
+        },
+        {
+          "id": "TR_002",
+          "candidate": true,
+          "control": false
+        },
+        {
+          "id": "TR_003",
+          "candidate": true,
+          "control": false
+        },
+        {
+          "id": "TR_004",
+          "candidate": false,
+          "control": false
+        },
+        {
+          "id": "TR_005",
+          "candidate": false,
+          "control": false
+        },
+        {
+          "id": "TR_006",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "id": "TR_007",
+          "candidate": true,
+          "control": false
+        },
+        {
+          "id": "TR_008",
+          "candidate": true,
+          "control": false
+        },
+        {
+          "id": "TR_009",
+          "candidate": true,
+          "control": false
+        }
+      ]
+    },
+    {
+      "carrier": "TR",
+      "proxy": "sd15",
+      "genuine_joint": 95,
+      "counts": {
+        "00": 3,
+        "10": 6,
+        "11": 1
+      },
+      "sources": [
+        {
+          "id": "TR_000",
+          "candidate": false,
+          "control": false
+        },
+        {
+          "id": "TR_001",
+          "candidate": true,
+          "control": false
+        },
+        {
+          "id": "TR_002",
+          "candidate": true,
+          "control": false
+        },
+        {
+          "id": "TR_003",
+          "candidate": false,
+          "control": false
+        },
+        {
+          "id": "TR_004",
+          "candidate": true,
+          "control": false
+        },
+        {
+          "id": "TR_005",
+          "candidate": true,
+          "control": false
+        },
+        {
+          "id": "TR_006",
+          "candidate": true,
+          "control": true
+        },
+        {
+          "id": "TR_007",
+          "candidate": false,
+          "control": false
+        },
+        {
+          "id": "TR_008",
+          "candidate": true,
+          "control": false
+        },
+        {
+          "id": "TR_009",
+          "candidate": true,
+          "control": false
+        }
+      ]
+    }
+  ],
+  "scope": "Post-completion audit of saved decisions; no new recovery, inversion or attack. Certificate checks reuse bands across rules. Counts10/01 are candidate-only/control-only source acceptance."
+}

@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-15T01:58:50.0468814Z",
-  "status": "reprompt_plus_key_recovery",
-  "active_experiments": 1,
+  "updated_at": "2026-11-15T02:15:36.4041360Z",
+  "status": "reprompt_plus_comparison_complete",
+  "active_experiments": 0,
   "queued_experiments": 0,
-  "latest_progress_report": "reports/observable_evidence_recovery_20261115/report.md",
+  "latest_progress_report": "reports/reprompt_plus_recovery_20261115/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/INSTANCE_BINDING_RESEARCH.md",
   "native_sembind_reproduction_complete": false,
@@ -58,11 +58,15 @@
   ],
   "max_concurrent_gpus": 3,
   "evaluation_policy": "Unchanged published top-venue attacks only; full budgets; no attack development; matched absolute genuine detection",
-  "current_decision": "Published Reprompt+ budget running onGPU7/5; original native/PGID verification waits on attack completion events. Observable-band recovery running onCPU249. All methods frozen before their outcomes; no novelty or superiority claim.",
+  "current_decision": "Reprompt+ full per-source budgets complete: 240 candidates,480 unique native/PGID decisions,960 actual recoveries. At TR95/100 genuine, observable recovery accepts8/10 and7/10 sources versus matchedSSCD1/10 each. All480 native replays agree. Current recovery rules have no SSCD advantage; publication objective remains open.",
   "completed_evidence": [
     {
+      "path": "reports/reprompt_plus_recovery_20261115/report.md",
+      "scope": "240 author Reprompt+ candidates;480 unique native/PGID decisions plus23 identical duplicate decisions;960 actual recovery decisions,473 exact returns,202 restored-native calls.96 exact genuine-count comparisons; all64 SSCD comparisons favorSSCD.480 independent detector replays agree."
+    },
+    {
       "path": "reports/author_reprompt_control_20261114/report.md",
-      "scope": "60 author basic Reprompt candidates;120 native/PGID decisions;770 same-pixel control pairs;360 frozen SSCD key-recovery calls, all reject. Full paper-scale matrix and Reprompt+ incomplete."
+      "scope": "60 author basic Reprompt candidates;120 native/PGID decisions;770 same-pixel control pairs;360 frozen SSCD key-recovery calls, all reject. Full paper-scale matrix incomplete; Reprompt+ results are separately indexed."
     },
     {
       "path": "reports/spatial_witness_recovery_20261114/report.md",
@@ -826,15 +830,7 @@
     },
     "superiority_established": false
   },
-  "active_runs": [
-    {
-      "pid": 2409,
-      "run": "reprompt_plus_recovery_20261115",
-      "coordinator_pid": 545,
-      "device": "CPU249",
-      "source_sha256": "afb2bf2f832a4fa913034f1834709a805e98637ef6b4ed8a1e95e72ed01bd241"
-    }
-  ],
+  "active_runs": [],
   "queued_runs": [],
   "author_reprompt_control": {
     "run": "author_reprompt_control_20261114_v2",
@@ -853,7 +849,6 @@
     "candidates_per_reference_per_proxy": 1,
     "attack_modified": false,
     "paper_scale_matrix_complete": false,
-    "reprompt_plus_complete": false,
     "target_prompt_success_annotated": false,
     "evaluation_run": "author_reprompt_evaluation_20261114_v2",
     "evaluation_status": "complete",
@@ -867,7 +862,8 @@
     "comparison_status": "complete",
     "additional_frozen_sscd_recoveries": 360,
     "additional_frozen_sscd_successes": 0,
-    "artifact_audit": "reports/author_reprompt_control_20261114/comparison/artifact_audit.json"
+    "artifact_audit": "reports/author_reprompt_control_20261114/comparison/artifact_audit.json",
+    "reprompt_plus_run": "author_reprompt_plus_20261115"
   },
   "spatial_witness_recovery": {
     "run": "spatial_witness_recovery_20261114_v2",
@@ -928,10 +924,10 @@
     ],
     "protocol_clarification": "reports/visible_witness_recovery_20261114/protocol_clarification.json"
   },
-  "research_hypothesis": "Multi-scale ordinal constraints improve discrimination over coarse order but observability adds no acceptance benefit. Seek evidence that separates legitimate information loss from regenerated instance changes; fixed strong controls and independent source/edit confirmation required.",
+  "research_hypothesis": "The magnitude-based observability rule matches fixed three-scale intersection on770previous pairs and240Reprompt+ candidates. Seek an identifiable evidence relation that tolerates genuine information loss while retaining visible instance differences; require matched strong controls and fresh-source/edit confirmation.",
   "author_reprompt_plus": {
     "run": "author_reprompt_plus_20261115",
-    "status": "generation_complete",
+    "status": "complete",
     "protocol": "reports/author_reprompt_plus_20261115/protocol.json",
     "protocol_sha256": "ea84b7b016b85ea1d7a350424cfa88048db30d87d1f830be0163e3787eaa4c6c",
     "planned_candidates": 240,
@@ -960,8 +956,9 @@
       8,
       8
     ],
-    "recovery_status": "running",
-    "recovery_run": "reprompt_plus_recovery_20261115"
+    "recovery_status": "complete",
+    "recovery_run": "reprompt_plus_recovery_20261115",
+    "recovery_report": "reports/reprompt_plus_recovery_20261115/report.md"
   },
   "observable_evidence_recovery": {
     "run": "observable_evidence_recovery_20261115",
@@ -995,11 +992,66 @@
     "budget_calibration": "reports/observable_evidence_recovery_20261115/budget_calibration.json"
   },
   "final_artifact_audit": {
-    "status": "queued",
+    "status": "complete",
     "protocol": "reports/reprompt_plus_evaluation_20261115_v2/final_audit/protocol.json",
-    "depends_on": "reprompt_plus_evaluation_20261115_v2",
-    "planned_native_replays": 480,
-    "pid": 29207
+    "completion": "reports/reprompt_plus_evaluation_20261115_v2/final_audit/complete.json",
+    "native_replays": 480,
+    "decision_disagreements": 0,
+    "attack_image_pixel_latent_checks": 240,
+    "material_records": 20,
+    "seconds": 443.69034576416016,
+    "report": "reports/reprompt_plus_evaluation_20261115_v2/native_replay_audit.json",
+    "figure_manifest": "reports/reprompt_plus_recovery_20261115/figure/manifest.json"
   },
-  "latest_related_work": "docs/RECOVERY_MECHANISM_PRIOR_ART.md"
+  "latest_related_work": "docs/RECOVERY_MECHANISM_PRIOR_ART.md",
+  "reprompt_plus_recovery": {
+    "run": "reprompt_plus_recovery_20261115",
+    "status": "complete",
+    "report": "reports/reprompt_plus_recovery_20261115/report.md",
+    "source_sha256": "afb2bf2f832a4fa913034f1834709a805e98637ef6b4ed8a1e95e72ed01bd241",
+    "actual_recoveries": 960,
+    "exact_successes": 473,
+    "restored_native_calls": 202,
+    "seconds": 168.51623630523682,
+    "same_candidate_checks": 240,
+    "matched_comparisons": 96,
+    "matched_better": 10,
+    "matched_equal": 8,
+    "matched_worse": 78,
+    "matched_exact_genuine_counts": 96,
+    "all_observable_decision_agreement": [
+      240,
+      240
+    ],
+    "tr_observable_genuine": [
+      95,
+      100
+    ],
+    "tr_observable_source_acceptance": {
+      "sd21": [
+        8,
+        10
+      ],
+      "sd15": [
+        7,
+        10
+      ]
+    },
+    "tr_matched_sscd_source_acceptance": {
+      "sd21": [
+        1,
+        10
+      ],
+      "sd15": [
+        1,
+        10
+      ]
+    },
+    "primary_gs_sources": 3,
+    "primary_tr_sources": 10,
+    "independent_confirmation": false,
+    "superiority_established": false,
+    "decision_audit": "reports/reprompt_plus_recovery_20261115/decision_audit.json",
+    "figure": "reports/reprompt_plus_recovery_20261115/figure/tr_reprompt_plus.pdf"
+  }
 }

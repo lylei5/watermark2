@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "pid": 2409,
+  "started_at": 1794707757.4280272,
+  "source_sha256": "afb2bf2f832a4fa913034f1834709a805e98637ef6b4ed8a1e95e72ed01bd241",
+  "seconds": 168.51623630523682,
+  "recovery_api_decisions": 960,
+  "exact_successes": 473,
+  "restored_native_calls": 202,
+  "same_candidate_checks": 240,
+  "matched_comparisons": 96,
+  "scope": "Paired development cohort; any-candidate watermark acceptance, no prompt-success annotation; full paper-scale matrix incomplete.",
+  "attack_protocol_sha256": "ea84b7b016b85ea1d7a350424cfa88048db30d87d1f830be0163e3787eaa4c6c",
+  "evaluation_complete_sha256": "54de5859fcbabac032b5a8c0c91bdad7c5e61f5720f783d4749ba121ed4e46bf",
+  "witness_complete_sha256": "41cff030b23e4d7dc1d9fbf6dd5e094284b3525acbb1e6b495276c98743fb735",
+  "artifacts": {
+    "rows.json": "dd8f2ec103d180098bab9e6be6ab2a4aa1a5b648b44f385da5bbf6ba3532eff9",
+    "controls.json": "1f9cf7434304726f2b702cce4037ae515cd8a1919f04ff9ecd15ab3dbe57ea02",
+    "aggregate.json": "97ffb0a7acc32c73096cfe19007c794f677aa7d5882bd2b68905fecd519ca855",
+    "matched.json": "4296f6c83930586824aed3ee4febf3116180e5d85ccfc7b73f1941958d0d8e09",
+    "native_summary.json": "a55e39f5665213862cfd9e206ad4981ae7946117e16c4a6a52e15304489cfcb6"
+  }
+}

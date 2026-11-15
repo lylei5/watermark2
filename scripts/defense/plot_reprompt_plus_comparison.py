@@ -1,5 +1,6 @@
 """Export descriptive fixed-calibration TR defense counts with source data."""
 import csv
+import argparse
 import hashlib
 import json
 import os
@@ -14,10 +15,11 @@ def read(p):return json.loads(p.read_text())
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 
 
-def main():
+def main(figure_directory='figure'):
     done=read(RUN/'complete.json');assert done['status']=='complete'
     for name,digest in done['artifacts'].items():assert sha(RUN/name)==digest
-    records=read(RUN/'aggregate.json');out=RUN/'figure';out.mkdir(exist_ok=False)
+    assert Path(figure_directory).name == figure_directory
+    records=read(RUN/'aggregate.json');out=RUN/figure_directory;out.mkdir(exist_ok=False)
     import matplotlib
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
@@ -39,8 +41,8 @@ def main():
     with (out/'source_data.csv').open('w',newline='') as f:
         w=csv.DictWriter(f,fieldnames=list(table[0]));w.writeheader();w.writerows(table)
     with plt.rc_context({'font.size':10,'font.family':'DejaVu Sans','pdf.fonttype':42,'ps.fonttype':42,'axes.spines.top':False,'axes.spines.right':False}):
-        fig,axes=plt.subplots(1,3,figsize=(11,6.1),sharey=True)
-        fig.subplots_adjust(left=.23,right=.97,top=.79,bottom=.17,wspace=.25)
+        fig,axes=plt.subplots(1,3,figsize=(11,7),sharey=True)
+        fig.subplots_adjust(left=.23,right=.97,top=.77,bottom=.24,wspace=.25)
         for ax,key,den,title,color in zip(axes,['genuine','sd21','sd15'],[100,10,10],
                 ['Legitimate joint acceptance\nHigher is better','Reprompt+ / SD2.1\nLower is better','Reprompt+ / SD1.5\nLower is better'],
                 ['#0072B2','#D55E00','#D55E00']):
@@ -54,9 +56,10 @@ def main():
             ax.axhline(5.5,color='#777777',linewidth=.7,linestyle='--')
         axes[0].set_yticks(range(len(table)),[r['label'] for r in table]);axes[0].invert_yaxis()
         fig.suptitle('Tree-Ring: legitimate coverage and fixed-budget Reprompt+ acceptance',fontsize=14,y=.97)
-        fig.text(.23,.87,'Same query pixels and original native detector; three candidates per source and proxy.',fontsize=10)
-        fig.text(.23,.07,'10 development sources; 100 legitimate images. A source is accepted if one candidate passes both checks.\n'
-            'Circles: frozen GS30 calibration at 95% target. Squares: frozen recovery rules. Descriptive counts, no confidence intervals.',fontsize=9)
+        fig.text(.23,.89,'Same query pixels and original native detector; three candidates per source and proxy.',fontsize=10)
+        fig.text(.23,.05,'10 development sources; 100 legitimate images. A source is accepted if one candidate passes both checks.\n'
+            'Circles: frozen GS30 calibration at 95% target. Squares: frozen recovery rules.\n'
+            'Descriptive counts; legitimate edits repeat within sources.',fontsize=9)
         fig.savefig(out/'tr_reprompt_plus.png',dpi=300)
         fig.savefig(out/'tr_reprompt_plus.pdf')
         plt.close(fig)
@@ -71,4 +74,7 @@ def main():
     (out/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n');print(json.dumps(manifest))
 
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--figure-directory',default='figure')
+    main(parser.parse_args().figure_directory)

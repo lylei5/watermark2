@@ -2,9 +2,9 @@
 
 本项目研究扩散水印的内容绑定防御，同时建立可复核的SemBind、PGID、SEAL原生基线。[实时状态](project_state.json)记录运行队列；[验收契约](docs/THREE_BASELINE_REPRODUCTION.md)规定实现和数值复现的范围。
 
-最新结果为[作者Reprompt+固定预算](reports/author_reprompt_plus_20261115/report.md)与[多尺度可观察证据恢复](reports/observable_evidence_recovery_20261115/report.md)。Reprompt+已生成240张候选，GS/TR分别保留原论文9/3次完整预算，两代理、各10来源；原生与PGID检测状态见[实时状态](project_state.json)。此前[basic Reprompt与强对照](reports/author_reprompt_control_20261114/report.md)已完成60张图和120条判定，PGID接受TR7/10、6/10，PRC3/10、1/10，对应合法通过60/100、29/100。原论文的大样本多目标矩阵仍待完成。
+最新结果为[Reprompt+完整预算与实际密钥恢复](reports/reprompt_plus_recovery_20261115/report.md)：240张候选、480条唯一原生/PGID判定、960次恢复，473次准确返回，202次恢复材料原生调用。GS/TR分别使用原作者9/3次候选预算、两代理、各10来源。TR上PGID接受8/10、8/10，对应合法通过60/100。此前[basic Reprompt与强对照](reports/author_reprompt_control_20261114/report.md)包含PRC两代理接受3/10、1/10、合法29/100的PGID结果。原论文的大样本多目标矩阵仍待完成。
 
-已实现128位密钥恢复、原生材料解封和作者检测器调用。多尺度实验完成3080次恢复判定、1394次准确返回和388次恢复材料原生调用。强制保留细节后，TR合法通过95/100，Reprompt接受4/10、6/10；同合法通过数的SSCD为0/10、0/10。可观察规则与固定三尺度交集在770个配对上完全相同。这一结果将下一步问题明确为：如何识别合法编辑真正破坏的证据，同时保留区分实例的细节。[方法说明](docs/OBSERVABLE_EVIDENCE_BINDING.md)列出机制、代数条件及直接先例，[研究说明](docs/INSTANCE_BINDING_RESEARCH.md)保留此前完整比较。
+已实现128位密钥恢复、原生材料解封和作者检测器调用。当前三尺度原型在TR合法通过95/100时，Reprompt+接受8/10、7/10；同合法通过数的SSCD为1/10、1/10。可观察规则与固定三尺度交集在此前770个配对及本批240张候选上均完全相同。实例混淆仍是主要瓶颈，新机制需要辨识合法编辑破坏的证据，同时保留可见的实例差异。[多尺度实验](reports/observable_evidence_recovery_20261115/report.md)、[方法说明](docs/OBSERVABLE_EVIDENCE_BINDING.md)与[文献边界](docs/RECOVERY_MECHANISM_PRIOR_ART.md)给出恢复条件、配对结果和直接先例。
 
 [2026-11-13研究汇报](presentations/defense_briefing_20261113/README.md)包含中山大学模板演示文稿、逐页讲稿和实验来源。
 
@@ -38,6 +38,7 @@
 | 共同频谱真实密钥恢复 | [evaluate_shared_channel.py](scripts/defense/evaluate_shared_channel.py)，两路/单路/拼接/SSCD配对比较 |
 | CopyNCE公开模型 | [copynce_control.py](scripts/defense/copynce_control.py)，作者描述子与配对匹配器 |
 | 作者Reprompt完整步骤 | [author_reprompt_control.py](scripts/defense/author_reprompt_control.py)，冻结两代理、50步反演与50步生成 |
+| Reprompt+恢复与强对照 | [evaluate_reprompt_plus_recovery.py](scripts/defense/evaluate_reprompt_plus_recovery.py)，完整候选预算、同图联合判定与同合法通过数比较 |
 | Reprompt原生与PGID验证 | [evaluate_author_reprompt.py](scripts/defense/evaluate_author_reprompt.py)，原生反演分别执行 |
 | 空间与可见性密钥恢复 | [spatial_witness_recovery.py](scripts/defense/spatial_witness_recovery.py)，实际RS错误/擦除译码及材料解封 |
 | 同像素强对照汇总 | [summarize_author_reprompt.py](scripts/defense/summarize_author_reprompt.py)、[compare_visible_witness.py](scripts/defense/compare_visible_witness.py)，绝对合法通过数匹配 |

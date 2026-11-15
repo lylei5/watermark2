@@ -34,4 +34,6 @@ TR 同来源合法图的原生检测为100/100，PGID为60/100，见[合法对�
 
 原生/PGID 与内容强对照在独立验证进程中执行。每张候选须同时通过内容与载体检测，再在同一来源的固定候选集合内取“任一成功”。内容方法的主要 GS 评估仅含3个来源，TR含10个来源；上表的GS全10来源结果另列，保留各自分母。
 
-检测产物见[逐来源汇总](../reprompt_plus_evaluation_20261115_v2/native_source_summary.json)、[合并审计](../reprompt_plus_evaluation_20261115_v2/merge_audit.json)和[公开产物哈希](../reprompt_plus_evaluation_20261115_v2/native_public_manifest.json)。原始TR启动在空闲检查阶段被拒绝，未执行检测；重启后完整执行120条。GS按预先固定的来源分片完成360条，已有候选与内容特征保持字节一致；跨分片重复决策检查后合并。权威检测运行目录为 `reprompt_plus_evaluation_20261115_v2`，密钥恢复联合比较状态见 [project_state.json](../../project_state.json)。
+检测产物见[逐来源汇总](../reprompt_plus_evaluation_20261115_v2/native_source_summary.json)、[合并审计](../reprompt_plus_evaluation_20261115_v2/merge_audit.json)和[公开产物哈希](../reprompt_plus_evaluation_20261115_v2/native_public_manifest.json)。原始TR启动在空闲检查阶段被拒绝，未执行检测；重启后完整执行120条。GS按预先固定的来源分片完成360条，已有候选与内容特征保持字节一致；23条重复已执行决策全部一致，合并后保留480条唯一判定，实际保存503条决策。权威检测运行目录为 `reprompt_plus_evaluation_20261115_v2`。
+
+[实际密钥恢复与强对照](../reprompt_plus_recovery_20261115/report.md)已完成960次恢复、473次准确返回和202次恢复材料原生调用。TR可观察恢复合法95/100，Reprompt+来源接受8/10、7/10；同合法通过数的SSCD为1/10、1/10。六个强对照、四种恢复规则、全部96项精确合法计数匹配及逐候选结果均在该报告中列明。
