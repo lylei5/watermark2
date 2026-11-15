@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-15T05:44:11.9996847Z",
-  "status": "transported_capsule_evaluation",
+  "updated_at": "2026-11-15T06:26:12.3954474Z",
+  "status": "capsule_source_transfer",
   "active_experiments": 1,
   "queued_experiments": 0,
-  "latest_progress_report": "reports/reprompt_plus_recovery_20261115/report.md",
+  "latest_progress_report": "reports/transported_capsule_observability_20261115/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/INSTANCE_BINDING_RESEARCH.md",
   "native_sembind_reproduction_complete": false,
@@ -832,14 +832,14 @@
   },
   "active_runs": [
     {
-      "pid": 41771,
       "allowed_gpus": [
         7,
         5,
         4
       ],
-      "protocol_sha256": "7a1693bb0d447c3cbba357063a38ed92a0eddb67a03b54106caa9406c6cb2af4",
-      "run": "capsule_source_transfer_20261115_v2"
+      "pid": 1670,
+      "run": "capsule_source_transfer_20261115_v3",
+      "protocol_sha256": "63d34ed59c07b25a6d498564c6d214d9d98b54589b58b36cd5824e63d5e4f00a"
     }
   ],
   "queued_runs": [],
@@ -1141,12 +1141,13 @@
   "capsule_source_transfer": {
     "status": "running",
     "attacks_generated": false,
-    "protocol": "reports/capsule_source_transfer_20261115_v2/protocol.json",
+    "protocol": "reports/capsule_source_transfer_20261115_v3/protocol.json",
     "independent_confirmation": false,
     "references": 100,
     "planned_decodes": 2600,
-    "run": "capsule_source_transfer_20261115_v2",
+    "run": "capsule_source_transfer_20261115_v3",
     "planned_pairs": 1300,
-    "preflight_failure": "reports/capsule_source_transfer_20261115/preflight_failure.json"
+    "preflight_failure": "reports/capsule_source_transfer_20261115/preflight_failure.json",
+    "parity_probe": "reports/capsule_source_transfer_20261115_v2/sscd_parity_probe.json"
   }
 }

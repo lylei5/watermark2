@@ -26,10 +26,13 @@ def write(p,v):
     q=p.with_suffix('.tmp');q.write_text(json.dumps(v,indent=2,allow_nan=False)+'\n');q.replace(p)
 
 
-def prepare(run):
+def prepare(run, reuse=None):
     assert run.parent==ROOT/'runs';run.mkdir(exist_ok=False)
     private=ROOT/'private_eval'/run.name;private.mkdir(mode=0o700,exist_ok=False)
-    (private/'provider.bin').write_bytes(secrets.token_bytes(32));os.chmod(private/'provider.bin',0o600)
+    if reuse is not None:
+        previous=read(reuse/'protocol.json');shutil.copy2(Path(previous['private'])/'provider.bin',private/'provider.bin')
+    else:(private/'provider.bin').write_bytes(secrets.token_bytes(32))
+    os.chmod(private/'provider.bin',0o600)
     shutil.copy2(__file__,run/Path(__file__).name)
     shutil.copy2(PARENT/'transported_key_capsule.py',run/'transported_key_capsule.py')
     shutil.copy2(COPY/'copynce_control.py',run/'copynce_control.py')
@@ -44,8 +47,11 @@ def prepare(run):
         scope='Fixed-threshold transfer to100previously generated SemBind-bound reference images, nine author distortions and three related-instance probes. These assets were used in earlier representation studies; not wholly unseen project data.',
         method_selection='Main and identity ablation selected after the prior30source development experiment; no tuning on this transfer cohort.',
         payload='Reference pixel hash and record identity, actually AEAD-unwrapped. This transfer measures content/key recovery only; no new native-watermark or attack decisions.',
-        model_execution='Fresh SSCD and released CopyNCE descriptor/matcher; same exact pixels as capsule, verify cachedSSCD parity.',
+        model_execution='Fresh SSCD at the original batch1 and released CopyNCE descriptor/matcher; same exact pixels as capsule, verify cachedSSCD parity.',
         attacks_generated=False,carrier_modified=False,allowed_gpus=[7,5,4],independent_confirmation=False)
+    if reuse is not None:
+        files=list(Path(previous['private']).glob('*.json'));assert len(files)==200
+        plan.update(reused_enrollment={str(p):sha(p) for p in files},reused_run=str(reuse),enrollment_verification_decodes=100)
     write(run/'protocol.json',plan);print(json.dumps(dict(run=str(run),protocol_sha256=sha(run/'protocol.json'))))
 
 
@@ -97,13 +103,22 @@ def execute(run):
             keys=list(images);hashes={k:hashlib.sha256(images[k].tobytes()).hexdigest() for k in keys}
             for k in keys:assert hashes[k]==metadata['image_hashes'][index[task,k]]
             overlap+=hashes['bound'] in old_refs;assert hashes['bound'] not in old_refs
-            identity=f'transfer_{task:03d}';key=secrets.token_bytes(16);payload=codec.canonical(dict(id=identity,reference_pixels_sha256=hashes['bound']))
+            identity=f'transfer_{task:03d}';payload=codec.canonical(dict(id=identity,reference_pixels_sha256=hashes['bound']))
+            reused={}
+            if 'reused_enrollment' in plan:
+                for method in METHODS:
+                    path=next(Path(n) for n in plan['reused_enrollment'] if Path(n).name==f'{identity}_{method}.json')
+                    assert sha(path)==plan['reused_enrollment'][str(path)];reused[method]=read(path)
+                key,_=codec.observe(reused[METHODS[0]],images['bound'],provider,'spread_order_identity');assert key is not None
+            else:key=secrets.token_bytes(16)
             records={}
             for method in METHODS:
-                mode=method.removesuffix('_a03');record,_=codec.enroll(identity,images['bound'],payload,provider,.3,key=key,mode=mode);records[method]=record
+                mode=method.removesuffix('_a03')
+                record=reused[method] if reused else codec.enroll(identity,images['bound'],payload,provider,.3,key=key,mode=mode)[0]
+                records[method]=record
                 hp=private/f'{identity}_{method}.json';write(hp,record);enrollment.append(dict(id=identity,method=method,helper_sha256=sha(hp),helper_bytes=hp.stat().st_size))
             with torch.no_grad():
-                pixels=torch.stack([st(images[k]) for k in keys]).to('cuda');sf=torch.nn.functional.normalize(sscd(pixels),dim=1).cpu().numpy()
+                sf=np.concatenate([torch.nn.functional.normalize(sscd(st(images[k])[None].to('cuda')),dim=1).cpu().numpy() for k in keys])
                 for i,k in enumerate(keys):parity=max(parity,float(np.max(np.abs(sf[i]-old[index[task,k]]))))
                 ct=torch.stack([ts['descriptor'](images[k]) for k in keys]);assert all(torch.equal(ct[i],ts['matching'](images[k])) for i,k in enumerate(keys))
                 ct=ct.to('cuda');df=torch.nn.functional.normalize(models['descriptor']({'images':ct})['feat'],dim=1).cpu().numpy();j=keys.index('bound')
@@ -120,8 +135,9 @@ def execute(run):
                     rows.append(dict(id=identity,task=task,dataset=source['dataset'],kind=kind,pixels_sha256=hashes[kind],method=method,
                         key_recovered=out is not None,returned=result is not None,score=score,detail=detail,seconds=time.perf_counter()-start,**scores,**controls))
             codec._basis_cache.clear()
-        assert len(rows)==2600 and parity<2e-5
         write(run/'rows.json',rows);write(run/'enrollment.json',enrollment)
+        write(run/'model_parity.json',dict(rows=len(rows),sscd_max_feature_difference=parity,sscd_batch_size=1,limit=2e-5))
+        assert len(rows)==2600 and parity<2e-5,(len(rows),parity)
         genuine=['bound',*data['conditions']];aggregate=[];matched=[]
         for dataset in ['all',*sorted({s['dataset'] for s in data['sources']})]:
             for method in METHODS:
@@ -141,13 +157,13 @@ def execute(run):
                     part=[r for r in rr if r['kind'] in genuine] if kind=='all_genuine' else [r for r in rr if r['kind'] in data['conditions']] if kind=='all_edits' else [r for r in rr if r['kind']==kind]
                     aggregate.append(dict(dataset=dataset,method=control,kind=kind,total=len(part),accepted=sum(r[control]<=plan['thresholds'][control] for r in part)))
         write(run/'aggregate.json',aggregate);write(run/'matched.json',matched)
-        state.update(status='complete',seconds=time.time()-state['started_at'],actual_decodes=len(rows),exact_keys=sum(r['key_recovered'] for r in rows),payload_returns=sum(r['returned'] for r in rows),
+        state.update(status='complete',seconds=time.time()-state['started_at'],actual_decodes=len(rows),enrollment_verification_decodes=plan.get('enrollment_verification_decodes',0),exact_keys=sum(r['key_recovered'] for r in rows),payload_returns=sum(r['returned'] for r in rows),
             reference_overlap=overlap,paired_pixel_checks=1300,sscd_max_feature_difference=parity,fresh_sscd_images=1300,fresh_copynce_images=1300,fresh_copynce_pairs=1300,
-            native_detector_calls=0,attacks_generated=False,artifacts={n:sha(run/n) for n in ['rows.json','enrollment.json','aggregate.json','matched.json']})
+            native_detector_calls=0,attacks_generated=False,artifacts={n:sha(run/n) for n in ['rows.json','enrollment.json','aggregate.json','matched.json','model_parity.json']})
         write(run/'complete.json',state);print(json.dumps(state))
     except BaseException as exc:state.update(status='failed',error=repr(exc));raise
     finally:write(run/'state.json',state)
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('action',choices=['prepare','execute']);p.add_argument('--run',type=Path,required=True);a=p.parse_args();(prepare if a.action=='prepare' else execute)(a.run)
+    p=argparse.ArgumentParser();p.add_argument('action',choices=['prepare','execute']);p.add_argument('--run',type=Path,required=True);p.add_argument('--reuse-enrollment',type=Path);a=p.parse_args();prepare(a.run,a.reuse_enrollment) if a.action=='prepare' else execute(a.run)
