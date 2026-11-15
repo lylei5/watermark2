@@ -1,6 +1,6 @@
 # 统一防御基线研究计划
 
-当前目标是建立 SemBind、PGID、SEAL 的统一比较主表与逐攻击失败分析。实例密钥恢复路线已冻结，见[一页负结果](../reports/instance_recovery_negative_results_20261115/report.md)与[附录](../reports/instance_recovery_negative_results_20261115/appendix.md)。不启动新机制。执行状态只记录于[project_state.json](../project_state.json)。
+当前目标是建立 SemBind、PGID、SEAL 的统一比较主表与逐攻击失败分析。实例密钥恢复路线已冻结，见[一页负结果](../reports/instance_recovery_negative_results_20261115/report.md)与[附录](../reports/instance_recovery_negative_results_20261115/appendix.md)。方法探索限于下文明确列出的用户授权筛查。执行状态只记录于[project_state.json](../project_state.json)。
 
 用户另行授权的有限方法判定为“公开128/256位SSCD二值参考、查询连续评分”，仅复用既有特征、拆分与攻击，使用249 CPU。[该判定已完成](../reports/sscd_public_binary_20261116/report.md)：128位达到两项误收上限，但评估合法保留94.4%；256位为95.8%、同提示词误收4/50，各Reprompt条件至多比连续SSCD多1来源。随图嵌入与认证未实现；这项例外不解冻实例密钥恢复，不启动新GPU或攻击实验。
 

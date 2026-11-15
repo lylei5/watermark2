@@ -5,7 +5,7 @@
   "status": "unified_benchmark_null_calibration",
   "active_experiments": 2,
   "queued_experiments": 0,
-  "latest_progress_report": "reports/sscd_public_binary_20261116/report.md",
+  "latest_progress_report": "reports/gs_fingerprint_fixedpoint_20261116/generation.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/RESEARCH_PLAN.md",
   "native_sembind_reproduction_complete": false,
@@ -270,7 +270,7 @@
     "randomized_identity_null_trials": 3000000,
     "randomized_identity_null_at167": {
       "accepted": 0,
-      "cp95_upper": 1.2296257287143092E-06,
+      "cp95_upper": 1.2296257287143092e-06,
       "fixed_user_natural_fpr": false
     },
     "run": "phase1_trajectory_native_gs_20261113",
@@ -1156,7 +1156,7 @@
     "independent_confirmation": false,
     "novelty_established": false,
     "actual_key_decodes": 3030,
-    "residual_reference_max_difference": 1.7384104377836925E-08,
+    "residual_reference_max_difference": 1.7384104377836925e-08,
     "restored_native_calls": 0,
     "seconds": 95.70323133468628,
     "exact_key_returns": 683,
@@ -1392,7 +1392,7 @@
     "audit": "reports/sscd_public_binary_20261116/independent_audit.json"
   },
   "gs_fingerprint_fixedpoint_probe": {
-    "status": "running",
+    "status": "legitimate_readback_evaluation",
     "run": "gs_fingerprint_fixedpoint_20261116_v3",
     "protocol": "protocols/gs_fingerprint_fixedpoint_20261116_v3.json",
     "gpu_index": 3,
@@ -1403,6 +1403,13 @@
     "new_attacks": 0,
     "stop_after_screen": true,
     "explicit_user_authorization": true,
-    "concurrency_exception": "Single idle GPU3 alongside existing SEAL GPUs7/5/4 for this bounded run only"
+    "concurrency_exception": "Single idle GPU3 alongside existing SEAL GPUs7/5/4 for this bounded run only",
+    "generation_complete": true,
+    "converged": {
+      "p01": 0,
+      "p03": 0,
+      "p06": 0
+    },
+    "generation_report": "reports/gs_fingerprint_fixedpoint_20261116/generation.md"
   }
 }

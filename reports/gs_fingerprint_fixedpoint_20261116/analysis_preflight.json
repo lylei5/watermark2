@@ -1,0 +1,48 @@
+{
+  "device": "CPU249",
+  "native_parity_checks": [
+    {
+      "noise_bit_error_probability": 0,
+      "author_ba": 1.0,
+      "independent_ba": 1.0
+    },
+    {
+      "noise_bit_error_probability": 0.01,
+      "author_ba": 1.0,
+      "independent_ba": 1.0
+    },
+    {
+      "noise_bit_error_probability": 0.06,
+      "author_ba": 1.0,
+      "independent_ba": 1.0
+    },
+    {
+      "noise_bit_error_probability": 0.2,
+      "author_ba": 1.0,
+      "independent_ba": 1.0
+    },
+    {
+      "noise_bit_error_probability": 0.4,
+      "author_ba": 0.953125,
+      "independent_ba": 0.953125
+    },
+    {
+      "noise_bit_error_probability": 0.5,
+      "author_ba": 0.58203125,
+      "independent_ba": 0.58203125
+    },
+    {
+      "noise_bit_error_probability": 0.6,
+      "author_ba": 0.0546875,
+      "independent_ba": 0.0546875
+    },
+    {
+      "noise_bit_error_probability": 1.0,
+      "author_ba": 0.0,
+      "independent_ba": 0.0
+    }
+  ],
+  "mismatches": 0,
+  "new_inferences": 0,
+  "analysis_sha256": "c508d64bc663e5d8de7fb7d896289822794d952f26b70d5db469457babc597dd"
+}
