@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-15T06:44:10.5481781Z",
-  "status": "forward_recovery_development_results",
-  "active_experiments": 0,
+  "updated_at": "2026-11-15T10:46:43.6942680Z",
+  "status": "order_constraint_development",
+  "active_experiments": 1,
   "queued_experiments": 0,
   "latest_progress_report": "reports/capsule_source_transfer_20261115_v3/report.md",
   "evidence_index": "reports/README.md",
@@ -58,7 +58,7 @@
   ],
   "max_concurrent_gpus": 3,
   "evaluation_policy": "Unchanged published top-venue attacks only; full budgets; no attack development; matched absolute genuine detection",
-  "current_decision": "Forward edit transport recovers real keys and reaches TR95/100 with both Reprompt+ proxies at0/10, tying nine-template SSCD and direct-reference fitting. Fixed-threshold100-source transfer retains894/1000 genuine images versus SSCD899/1000; both reject100same-prompt negatives. Study stochastic residuals and saturation within recovery feasibility, with explicit direct-reference controls. Novelty and unseen-edit generalization remain open.",
+  "current_decision": "Evaluate query-induced partial-order recovery after primary-source novelty search. Fixed alpha0.05, no residual acceptance gate; same-alpha forward decoder and direct order-distance controls. First10 prior sources form development probe; WAVES contrast/rotation/resizedcrop remain unexecuted confirmation types.",
   "completed_evidence": [
     {
       "path": "reports/reprompt_plus_recovery_20261115/report.md",
@@ -830,7 +830,9 @@
     },
     "superiority_established": false
   },
-  "active_runs": [],
+  "active_runs": [
+    "order_capsule_probe_20261115"
+  ],
   "queued_runs": [],
   "author_reprompt_control": {
     "run": "author_reprompt_control_20261114_v2",
