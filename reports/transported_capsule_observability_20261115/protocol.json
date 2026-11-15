@@ -1,0 +1,75 @@
+{
+  "created_at": 1794722322.172758,
+  "hypothesis": "Forward-transport helper and key basis; infer edit from uncoded pilots, solve key on disjoint coordinates, certify held-out prediction.",
+  "private": "/data0/liyanlei/watermark_research/private_eval/transported_capsule_observability_20261115",
+  "provider_sha256": "cf5716a24336e5761d31cf3a271dca0a98cb353dc9587809cda0542d599072e5",
+  "scripts": {
+    "run_transported_capsule.py": "3305218703b9c6cd9539a109a0036ee19fd1b9da626359fdb06d6153e9e8e782",
+    "transported_key_capsule.py": "d9fc968400f404b22c77283c3a7a3862d7cd0e4f0a96cd7a338dd1840010355d"
+  },
+  "inputs": {
+    "/data0/liyanlei/watermark_research/runs/shared_channel_binding_20261114_v2/protocol.json": "204dbe256f2e0c23016e75db4355e962fd11aa8e08b60b113facd6eb633db19d",
+    "/data0/liyanlei/watermark_research/runs/shared_channel_binding_20261114_v2/feature_rows.json": "1b4503047d03d2c134583597fae9752f5b03b4a3279bef60415eb296954b6528",
+    "/data0/liyanlei/watermark_research/runs/shared_channel_binding_20261114_v2/enrollment.json": "135f0a7d88315c5a40ec7dec42d4f8d0f59fdf012beca219d5d5844948c4b52d",
+    "/data0/liyanlei/watermark_research/runs/reprompt_comparison_20261114/content_rows.json": "2c2214920ded0ce0014aa315b40cfb2a138b3d812869ea4f3b3793b3e2dcca40",
+    "/data0/liyanlei/watermark_research/runs/author_reprompt_evaluation_20261114_v2/queries.json": "9541f999ca22523ceeee89f86369caf687d1f353ed5d9938aed4a27e4651a69b",
+    "/data0/liyanlei/watermark_research/runs/reprompt_plus_evaluation_20261115_v2/queries.json": "e18c19478bad6b5d11255abe4bdbe46aee15d6a75edc6d779db7f90e09d6aef5",
+    "/data0/liyanlei/watermark_research/runs/reprompt_plus_recovery_20261115/controls.json": "1f9cf7434304726f2b702cce4037ae515cd8a1919f04ff9ecd15ab3dbe57ea02"
+  },
+  "methods": [
+    [
+      "spread_area_a03",
+      0.3,
+      "spread_area"
+    ],
+    [
+      "spread_order_a03",
+      0.3,
+      "spread_order"
+    ],
+    [
+      "spread_order_all_a03",
+      0.3,
+      "spread_order_all"
+    ],
+    [
+      "spread_order_identity_a03",
+      0.3,
+      "spread_order_identity"
+    ],
+    [
+      "dct_order_a03",
+      0.3,
+      "dct_order"
+    ]
+  ],
+  "size": 64,
+  "key_bits": 128,
+  "variant": "observable",
+  "code": "Real-valued128-dimensional code; no BCH/RS or learned feature encoder",
+  "sigmas": [
+    0,
+    0.5,
+    1,
+    2
+  ],
+  "filter_support": 13,
+  "calibration_targets": [
+    0.9,
+    0.95
+  ],
+  "calibration": "GS tasks4,5,6 genuine only; finite coverage required, freeze before non-calibration observations.",
+  "primary_cohort": "GS tasks7,8,9; TR/PRC10sources each; existing development data.",
+  "constraints": "No attack generation or change; published Imprint/basicReprompt/Reprompt+ outputs reused with exact hashes. CPU249 only.",
+  "unknown_edit_scope": "Model-outside JPEG/noise/median/salt-pepper; existing crop/drop are coordinate-preserving masks; no crop-resize claim.",
+  "security": "Authenticated server-secret binding; no public-helper hiding or entropy guarantee.",
+  "anticipated_pairs": 1010,
+  "anticipated_key_decodes": 5050,
+  "independent_confirmation": false,
+  "novelty_established": false,
+  "parent_experiment": "/data0/liyanlei/watermark_research/runs/transported_capsule_20261115",
+  "mechanism_test": "Shared forward operator versus identity; distributed basis versus DCT; order statistic versus mean; identifiable channels versus requiring all channels.",
+  "frozen_design": "alpha0.3; spread basis is Gaussian0.75 smoothed independent random fields followed by QR. Lower median of8x8 cells commutes with monotone clipping. At least24pilots per used color,256decode and256check coordinates,rank128. No candidate-specific parameter search.",
+  "known_equivalence": "Exact-key residual is algebraically the direct forward-reference residual; not an independent evidence claim.",
+  "development_adaptation": true
+}

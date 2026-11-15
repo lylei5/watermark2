@@ -18,6 +18,9 @@ PLUS = ROOT / 'runs/reprompt_plus_evaluation_20261115_v2'
 CONTROLS = ROOT / 'runs/reprompt_comparison_20261114'
 PLUS_CONTROLS = ROOT / 'runs/reprompt_plus_recovery_20261115'
 METHODS = [('identity_a01', .1, 'identity'), ('transport_a01', .1, 'transport'), ('transport_a03', .3, 'transport')]
+OBSERVABLE_METHODS = [('spread_area_a03', .3, 'spread_area'), ('spread_order_a03', .3, 'spread_order'),
+                      ('spread_order_all_a03', .3, 'spread_order_all'), ('spread_order_identity_a03', .3, 'spread_order_identity'),
+                      ('dct_order_a03', .3, 'dct_order')]
 
 
 def read(p): return json.loads(Path(p).read_text())
@@ -36,7 +39,7 @@ def imports():
     return np, cv2, torch
 
 
-def prepare(run):
+def prepare(run, variant='original'):
     assert run.parent == ROOT / 'runs'; run.mkdir(exist_ok=False)
     private = ROOT / 'private_eval' / run.name; private.mkdir(mode=0o700, exist_ok=False)
     (private / 'provider.bin').write_bytes(secrets.token_bytes(32)); os.chmod(private / 'provider.bin', 0o600)
@@ -44,16 +47,23 @@ def prepare(run):
         shutil.copy2(Path(__file__).with_name(name), run / name)
     inputs = [PARENT/'protocol.json', PARENT/'feature_rows.json', PARENT/'enrollment.json', CONTROLS/'content_rows.json',
               BASIC/'queries.json', PLUS/'queries.json', PLUS_CONTROLS/'controls.json']
+    methods = METHODS if variant == 'original' else OBSERVABLE_METHODS
     plan = dict(created_at=time.time(), hypothesis='Forward-transport helper and key basis; infer edit from uncoded pilots, solve key on disjoint coordinates, certify held-out prediction.',
                 private=str(private), provider_sha256=sha(private/'provider.bin'), scripts={p.name:sha(p) for p in run.glob('*.py')},
-                inputs={str(p):sha(p) for p in inputs}, methods=METHODS, size=64, key_bits=128,
+                inputs={str(p):sha(p) for p in inputs}, methods=methods, size=64, key_bits=128, variant=variant,
                 code='Real-valued128-dimensional code; no BCH/RS or learned feature encoder', sigmas=[0,.5,1,2], filter_support=13,
                 calibration_targets=[.9,.95], calibration='GS tasks4,5,6 genuine only; finite coverage required, freeze before non-calibration observations.',
                 primary_cohort='GS tasks7,8,9; TR/PRC10sources each; existing development data.',
                 constraints='No attack generation or change; published Imprint/basicReprompt/Reprompt+ outputs reused with exact hashes. CPU249 only.',
                 unknown_edit_scope='Model-outside JPEG/noise/median/salt-pepper; existing crop/drop are coordinate-preserving masks; no crop-resize claim.',
                 security='Authenticated server-secret binding; no public-helper hiding or entropy guarantee.',
-                anticipated_pairs=1010, anticipated_key_decodes=3030, independent_confirmation=False, novelty_established=False)
+                anticipated_pairs=1010, anticipated_key_decodes=1010*len(methods), independent_confirmation=False, novelty_established=False)
+    if variant == 'observable':
+        plan.update(parent_experiment=str(ROOT/'runs/transported_capsule_20261115'),
+            mechanism_test='Shared forward operator versus identity; distributed basis versus DCT; order statistic versus mean; identifiable channels versus requiring all channels.',
+            frozen_design='alpha0.3; spread basis is Gaussian0.75 smoothed independent random fields followed by QR. Lower median of8x8 cells commutes with monotone clipping. At least24pilots per used color,256decode and256check coordinates,rank128. No candidate-specific parameter search.',
+            known_equivalence='Exact-key residual is algebraically the direct forward-reference residual; not an independent evidence claim.',
+            development_adaptation=True)
     write(run/'protocol.json', plan)
     print(json.dumps(dict(run=str(run), protocol_sha256=sha(run/'protocol.json'))), flush=True)
 
@@ -71,6 +81,7 @@ def execute(run):
     try:
         for name,digest in plan['scripts'].items(): assert sha(run/name)==digest
         for name,digest in plan['inputs'].items(): assert sha(name)==digest
+        methods=plan['methods']
         parent=read(PARENT/'protocol.json'); private=Path(plan['private']); provider=(private/'provider.bin').read_bytes(); assert sha(private/'provider.bin')==plan['provider_sha256']
         old_private=Path(parent['private']); old_provider=(old_private/'provider.bin').read_bytes(); assert sha(old_private/'provider.bin')==parent['provider_sha256']
         old_codec=InstanceRecovery(np.load(old_private/'projection_0.npy')); features=np.load(PARENT/'features.npz')['sscd']
@@ -119,11 +130,11 @@ def execute(run):
             payload=result[1];fields=json.loads(payload);blob_path=old_private/f'{identity}_native.bin';blob=blob_path.read_bytes();assert sha(blob_path)==fields['blob_sha256']
             materials[identity]=AESGCM(bytes.fromhex(fields['data_key'])).decrypt(blob[:12],blob[12:],canonical(dict(id=identity,carrier=ref['carrier'])))
             payloads[identity]=payload;key=secrets.token_bytes(16);secrets_by_id[identity]=key
-            for alpha in [.1,.3]:
-                record,_=codec.enroll(identity,pixels(ref),payload,provider,alpha,key=key);records[identity,alpha]=record
-                path=private/f'{identity}_{alpha}.json';write(path,record)
-                enrolled.append(dict(id=identity,alpha=alpha,helper_bytes=path.stat().st_size,helper_sha256=sha(path),native_blob_bytes=len(blob)))
-            record=records[identity,.1];damaged=json.loads(json.dumps(record));damaged['metadata']['id']+='bad'
+            for name,alpha,mode in methods:
+                record,_=codec.enroll(identity,pixels(ref),payload,provider,alpha,key=key,mode=mode);records[identity,name]=record
+                path=private/f'{identity}_{name}.json';write(path,record)
+                enrolled.append(dict(id=identity,method=name,alpha=alpha,helper_bytes=path.stat().st_size,helper_sha256=sha(path),native_blob_bytes=len(blob)))
+            record=records[identity,methods[0][0]];damaged=json.loads(json.dumps(record));damaged['metadata']['id']+='bad'
             assert codec.observe(damaged,pixels(ref),provider)[0] is None
             assert codec.observe(record,pixels(ref),secrets.token_bytes(32))[0] is None;auth_checks+=2
         write(run/'enrollment.json',enrolled)
@@ -133,16 +144,17 @@ def execute(run):
         observations={};rows=[]
         def observe_case(case):
             base=case['base'];identity=base['id'];im=pixels(case['query'])
-            for name,alpha,mode in METHODS:
-                start=time.perf_counter();key,detail=codec.observe(records[identity,alpha],im,provider,mode)
+            for name,alpha,mode in methods:
+                record=records[identity,name]
+                start=time.perf_counter();key,detail=codec.observe(record,im,provider,mode)
                 if key is not None: assert key==secrets_by_id[identity]
-                scores=codec.reference_scores(pixels(refs[identity]),im,detail)
+                scores=codec.reference_scores(pixels(refs[identity]),im,detail,observation=record['metadata'].get('observation','area'))
                 row=dict(base,method=name,key_recovered=key is not None,detail=detail,seconds=time.perf_counter()-start,**scores)
                 row['score']=detail['residual'] if key is not None else None
                 observations[base['case_id'],name]=(key,row);rows.append(row)
         for case in calibration:observe_case(case)
         thresholds=[]
-        for name,_,_ in METHODS:
+        for name,_,_ in methods:
             part=[r for r in rows if r['method']==name]
             for score_name in ['score','reference_residual','pixel_residual']:
                 finite=sorted(r[score_name] for r in part if r[score_name] is not None)
@@ -157,10 +169,10 @@ def execute(run):
         tr_threshold=read(ROOT/'runs/pgid_carrier_coverage_20261113/protocol.json')['thresholds']['TR']['value']
         case_lookup={c['base']['case_id']:c for c in cases}
         for row in rows:
-            identity=row['id'];name=row['method'];alpha=next(a for n,a,_ in METHODS if n==name);key=observations[row['case_id'],name][0]
+            identity=row['id'];name=row['method'];key=observations[row['case_id'],name][0]
             for target in [.9,.95]:
                 point=next(r for r in thresholds if r['method']==name and r['score_name']=='score' and r['target']==target)
-                payload=codec.unwrap(records[identity,alpha],key,provider,row['score'],point['threshold']) if key is not None else None
+                payload=codec.unwrap(records[identity,name],key,provider,row['score'],point['threshold']) if key is not None else None
                 if payload is not None:
                     assert payload==payloads[identity];payload_returns+=1;ck=(identity,row['pixels_sha256'])
                     if ck not in native_cache:
@@ -184,5 +196,5 @@ def execute(run):
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('action',choices=['prepare','execute']);p.add_argument('--run',type=Path,required=True);a=p.parse_args()
-    (prepare if a.action=='prepare' else execute)(a.run)
+    p=argparse.ArgumentParser();p.add_argument('action',choices=['prepare','execute']);p.add_argument('--run',type=Path,required=True);p.add_argument('--variant',choices=['original','observable'],default='original');a=p.parse_args()
+    prepare(a.run,a.variant) if a.action=='prepare' else execute(a.run)

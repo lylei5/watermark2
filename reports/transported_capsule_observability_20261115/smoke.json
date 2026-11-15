@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "clean_image_sha256": "b89c2dde3a0b6f4ff386c36d9aa47f22956d16cfe1456c9fe2f998157c8c54f6",
+  "checks": [
+    {
+      "method": "spread_area_a03",
+      "exact_key_and_payload": true,
+      "residual": 1.5427046166972337e-08
+    },
+    {
+      "method": "spread_order_a03",
+      "exact_key_and_payload": true,
+      "residual": 1.7919667420478617e-08
+    },
+    {
+      "method": "spread_order_all_a03",
+      "exact_key_and_payload": true,
+      "residual": 1.7919667420478617e-08
+    },
+    {
+      "method": "spread_order_identity_a03",
+      "exact_key_and_payload": true,
+      "residual": 1.5199363064145176e-08
+    },
+    {
+      "method": "dct_order_a03",
+      "exact_key_and_payload": true,
+      "residual": 1.834596336998378e-08
+    }
+  ],
+  "order_statistic_monotone_clipping_max_error": 0.0,
+  "scope": "Correctness only, no benchmark claim."
+}

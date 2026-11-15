@@ -19,9 +19,12 @@
 | 来源 | 已有内容 | 本轮需要单独验证的内容 |
 |---|---|---|
 | Lin、Varodayan、Girod，TIP2012，[Image Authentication Using Distributed Source Coding](https://web.stanford.edu/~bgirod/pdfs/LinTransIP2012.pdf) | 编辑参数估计与分布式信源译码联合认证，含亮度/对比度、仿射和信道状态 | 用同一前向算子处理封装与密钥基函数，是否改善非可逆处理下的实际恢复；编辑估计本身已有先例 |
-| Juels、Wattenberg，CCS1999，[A Fuzzy Commitment Scheme](https://doi.org/10.1145/319709.319714)；Dodis等，[Fuzzy Extractors](https://www.cs.bu.edu/~reyzin/papers/fuzzy.pdf) | 码偏移、密钥确认、噪声容错与熵条件 | 加性封装和确认已有基础，不能单独作为创新点 |
-| Gilkalaye、Rattani、Derakhshani，IWBF2019，[Euclidean-distance based fuzzy commitment scheme for biometric template security](https://doi.org/10.1109/IWBF.2019.8739177) | 欧氏空间、格与球打包的实值密钥绑定；本次核对题名与摘要，未获取完整作者实现 | 使用实值而不先二值化已有先例；本候选关注随查询变化的前向算子与可辨识性 |
+| Juels、Wattenberg，CCS1999，[出版记录](https://doi.org/10.1145/319709.319714)、[作者存档](https://www.arijuels.com/wp-content/uploads/2013/09/JW99.pdf)；Dodis等，[Fuzzy Extractors](https://www.cs.bu.edu/~reyzin/papers/fuzzy.pdf) | 码偏移、密钥确认、噪声容错与熵条件；作者存档封面日期与会议年份不同，分别保留 | 加性封装和确认已有基础，不能单独作为创新点 |
+| Li、Sutcu、Memon，ASIACRYPT2006，[Secure Sketch for Biometric Templates](https://www.iacr.org/archive/asiacrypt2006/42840099/42840099.pdf) | 连续域的secure sketch、噪声容错与熵损失分析 | 连续域恢复已有基础；改变数值域本身不构成新机制 |
 | Schlauweg、Müller，PCS2009，[Gaussian scale-space features for semi-fragile image authentication](https://www.int.uni-rostock.de/fileadmin/user_upload/publications/pcs09_schlauweg.pdf) | 尺度空间纹理特征用于处理鲁棒性与篡改区分 | 高斯尺度或纹理特征本身已有先例，本轮基函数承担密钥传输作用 |
+| Naveh、Tromer，IEEE S&P2016，[PhotoProof](https://cs-people.bu.edu/tromer/papers/photoproof-oakland16.pdf)，DOI10.1109/SP.2016.23 | 编辑链携带可更新的密码证明，证明每次处理属于许可操作集合 | 本项目只从最终图与登记记录推断编辑，没有编辑者提供的证明；两种协议的信息条件不同 |
+
+待全文核对条目：Gilkalaye、Rattani、Derakhshani，IWBF2019，[Euclidean-distance based fuzzy commitment scheme for biometric template security](https://doi.org/10.1109/IWBF.2019.8739177)。已定位题名与DOI，尚未取得一手全文及作者实现，具体技术比较暂不作为已核验结论。
 
 ## 冻结原型
 
@@ -38,3 +41,18 @@
 私有基函数由服务端秘密派生，辅助记录认证，解出的位串通过独立确认后用于AEAD解封原生材料。发布图与原生GS/TR/PRC载体均不修改。辅助记录并非已证明隐藏原图或具有128位内容熵的公开模糊提取器；其安全边界沿用服务端秘密与认证存储。给定真实发布图也能恢复该实例材料，这是绑定设计的预期行为。
 
 如果去掉前向算子、检查区域或使用普通像素残差后效果相同，则没有证据将相应部分作为机制贡献。若实际恢复弱于完整参考残差，应如实报告解码损失。只有与直接参考方法和强内容对照公平比较后，才能判断该路线是否值得形成论文主线。
+
+## 实际结果与可辨识性检验
+
+[首轮完整实验](../reports/transported_capsule_20261115/report.md)完成3030次解码。三个设置仅恢复GS校准图20/21/22张，分母均为30，未达到预定覆盖。裁剪、区域丢弃主要造成有效秩不足；强亮度使先导观测缺失。
+
+在正确密钥条件下，检查残差恰为`y−(Ax+b)`。683次返回的数值审计最大差1.74e-8。这一等价关系将机制评价分成两项：前向模型能否区分合法处理与实例替换；其条件下密钥封装能否以可控成本恢复。残差不是新增证据。
+
+第二轮固定五个设置，只检验观测和求解条件：
+
+- 在各空间位置分布随机平滑基函数，再正交化，检验局部区域保留时的可观察秩；与原DCT空间比较。
+- 采用8×8块的第32个顺序统计量。对单调函数g有`order(g(x))=g(order(x))`，可保持亮度截断关系；与区域均值比较。空间滤波和块内遮挡一般不满足此等式，仍是模型近似。
+- 仅使用至少24个先导观测且增益可辨识的颜色通道，同时要求128秩、256个译码坐标和256个检查坐标；与要求三个通道都可用比较。
+- 恒等算子作为前向估计消融。全部设置α固定0.3，与首轮相同128位密钥长度和校准规则。
+
+这些是恢复条件的实现与消融，均未单独登记为新颖性贡献。没有训练新特征、增加纠错外壳或改动发布图。第二轮在已有开发数据上完成后，只有达到可用工作点且具有强对照收益，才支持进一步独立来源确认。
