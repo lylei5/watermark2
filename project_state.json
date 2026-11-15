@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-15T16:10:09.2489621Z",
+  "updated_at": "2026-11-15T17:05:49.2274275Z",
   "status": "unified_benchmark_null_calibration",
   "active_experiments": 1,
   "queued_experiments": 0,
-  "latest_progress_report": "reports/unified_historical_denominators_20261116/report.md",
+  "latest_progress_report": "reports/sscd_public_binary_20261116/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/RESEARCH_PLAN.md",
   "native_sembind_reproduction_complete": false,
@@ -68,6 +68,11 @@
   "evaluation_policy": "Unchanged published top-venue author attacks only; full budgets; no adaptive or improved attacks; independent null calibration and evaluation; report achieved FPR and absolute TPR.",
   "current_decision": "Instance-key recovery frozen. Complete the unified SemBind/PGID/SEAL benchmark before new mechanisms; separate same-carrier and native-system comparisons, independently calibrate 1% and 0.1% FPR, preserve complete published attack budgets and all denominators.",
   "completed_evidence": [
+    {
+      "id": "sscd_public_binary_20261116",
+      "report": "reports/sscd_public_binary_20261116/report.md",
+      "summary": "CPU1820 pairs/9100 decisions; asymmetric128 retention425/450 and same5/50, asymmetric256 retention431/450 and same4/50; all Reprompt cells at most continuous+1; no new inference or attacks"
+    },
     {
       "id": "unified_historical_denominators_20261116",
       "report": "reports/unified_historical_denominators_20261116/report.md",
@@ -994,7 +999,7 @@
     ],
     "protocol_clarification": "reports/visible_witness_recovery_20261114/protocol_clarification.json"
   },
-  "research_hypothesis": "No new mechanism active. Determine defense tradeoffs and possible shared limitations empirically under the frozen unified benchmark.",
+  "research_hypothesis": "Fixed public binary SSCD reference with continuous query scoring has completed the user-authorized CPU screen;256-bit result motivates further investigation but no carried-code system is implemented. Unified benchmark remains active; instance recovery stays frozen.",
   "author_reprompt_plus": {
     "run": "author_reprompt_plus_20261115",
     "status": "complete",
@@ -1345,5 +1350,31 @@
       "legitimate_tpr_completed": false,
       "attacks_completed": false
     }
+  },
+  "public_sscd_binary_probe": {
+    "status": "complete",
+    "run": "sscd_public_binary_20261116",
+    "report": "reports/sscd_public_binary_20261116/report.md",
+    "protocol": "protocols/sscd_public_binary_20261116.json",
+    "device": "CPU249",
+    "gpu_jobs": 0,
+    "new_attacks": 0,
+    "new_inferences": 0,
+    "paired_observations": 1820,
+    "method_decisions": 9100,
+    "public_projection_seed": 20261116,
+    "lengths": [
+      128,
+      256
+    ],
+    "thresholds_frozen_on_existing_calibration": true,
+    "false_acceptance_criteria_128": true,
+    "heldout_95_retention_128": false,
+    "false_acceptance_criteria_256": true,
+    "heldout_95_retention_256": true,
+    "complete_carried_code_system": false,
+    "novelty_established": false,
+    "independent_confirmation": false,
+    "audit": "reports/sscd_public_binary_20261116/independent_audit.json"
   }
 }

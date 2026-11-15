@@ -11,6 +11,7 @@ These rules apply to this repository and `/data0/liyanlei/watermark_research` on
 
 - Current priority: complete the unified SemBind/PGID/SEAL benchmark at independently calibrated natural-image FPR targets of 1% and 0.1%, with legitimate detection, published full-budget attacks, image quality and compute/storage costs.
 - Instance-key recovery (including partial-order, capsule, spectrum and spatial/visible-evidence variants) is frozen. Preserve negative evidence and do not start new variants or new mechanisms before the benchmark.
+- The user explicitly authorized a bounded CPU-only probe of public128/256-bit SSCD sign codes with continuous-query scoring, using existing features, splits and attacks. This exception does not authorize GPU inference, new attacks or renewed instance-key recovery; see the completed public-code report and project_state.json.
 - Current execution state is maintained only in `project_state.json`; completed evidence is indexed in `reports/README.md`. Read `GPT_CONTEXT.md` for the current research handoff.
 - Complete native SemBind reproduction and matched detector calibration are required before claiming superiority. Preserve frozen run sources and negative evidence.
 

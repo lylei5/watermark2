@@ -1,0 +1,19 @@
+{
+  "protocol_sha256": "99e6ad4571df2161254ed755815efc735645c8442cba4bed953a32b125d93dfb",
+  "thresholds": {
+    "sscd": 0.38003440180045883,
+    "asymmetric128": 0.2994668281781711,
+    "asymmetric256": 0.29069975629559697,
+    "hamming128": 0.609375,
+    "hamming256": 0.61328125
+  },
+  "n": 450,
+  "source_count": 50,
+  "accepted": {
+    "sscd": 428,
+    "asymmetric128": 428,
+    "asymmetric256": 428,
+    "hamming128": 429,
+    "hamming256": 432
+  }
+}

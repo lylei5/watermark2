@@ -2,6 +2,8 @@
 
 当前目标是建立 SemBind、PGID、SEAL 的统一比较主表与逐攻击失败分析。实例密钥恢复路线已冻结，见[一页负结果](../reports/instance_recovery_negative_results_20261115/report.md)与[附录](../reports/instance_recovery_negative_results_20261115/appendix.md)。不启动新机制。执行状态只记录于[project_state.json](../project_state.json)。
 
+用户另行授权的有限方法判定为“公开128/256位SSCD二值参考、查询连续评分”，仅复用既有特征、拆分与攻击，使用249 CPU。[该判定已完成](../reports/sscd_public_binary_20261116/report.md)：128位达到两项误收上限，但评估合法保留94.4%；256位为95.8%、同提示词误收4/50，各Reprompt条件至多比连续SSCD多1来源。随图嵌入与认证未实现；这项例外不解冻实例密钥恢复，不启动新GPU或攻击实验。
+
 ## 比较单位
 
 主表分为同载体和完整系统两个部分。同载体部分覆盖 SemBind 与 PGID 共同支持且通过实现验收的 GS/TR/PRC；完整系统部分纳入 SEAL 自己的内容相关噪声方案。SemBind 的 GS++、PGID 的 T2SMark 分别记录，不能当作共同支持。N/A、缺少实现、待运行、执行失败分别标注。

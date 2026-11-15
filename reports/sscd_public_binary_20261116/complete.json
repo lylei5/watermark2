@@ -1,0 +1,28 @@
+{
+  "status": "complete",
+  "pid": 8348,
+  "protocol_sha256": "99e6ad4571df2161254ed755815efc735645c8442cba4bed953a32b125d93dfb",
+  "cuda_visible_devices": "",
+  "gpu_jobs": 0,
+  "seconds": 1.0847387560643256,
+  "paired_observations": 1820,
+  "method_decisions": 9100,
+  "checks": {
+    "registered_records": 130,
+    "packed256_bytes": 32,
+    "packed128_bytes": 16,
+    "reference_feature_max_difference": 0.0,
+    "stored_distance_max_difference": 6.133184071721587e-08,
+    "calibration_attack_reference_pixel_overlap": 0,
+    "new_images": 0,
+    "new_inferences": 0,
+    "new_attacks": 0
+  },
+  "artifacts": {
+    "rows.json": "f4daabdc3c70c973745d5f8d0cb4ae26f4b1c8399b5fd70eb376a1172e61eed4",
+    "results.json": "77e5ecd746cd1900f469953dbac70f2c1916c4c7433a3ecb489a33d4721044bb",
+    "thresholds.json": "16d2ef81f26d753506eac6fb88634f29ffd39b77639dc037b9b07c6fde8fd339",
+    "packed_codes.npz": "88164ddfb1b0d3d4bc68be2f8c79ad160194eb3fe7ef17357a4124034d6d45b8",
+    "public_projection.npy": "febc308f895631e53ffb7fc10717e6ddef2ab7f9642b1d9e5c3e96ada7c4ece6"
+  }
+}

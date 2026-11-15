@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "cpu_only": true,
+  "worker_sha256": "f13d7a915b5d2f0de20dc507ff7d78b3557b86934adcd2cea5236dc05650a938",
+  "run_complete_sha256": "691dadde444742b7fb048247f2c64731a00f352e1893b13ffb7f8e44edef7335",
+  "audited_query_pairs": 1820,
+  "asymmetric_scores_checked": 3640,
+  "asymmetric_max_absolute_difference": 4.440892098500626e-16,
+  "hamming_scores_checked": 3640,
+  "hamming_max_absolute_difference": 0.0,
+  "source_aggregation_checks": 220,
+  "decision_mismatches": 0,
+  "input": "Packed16/32-byte code, query feature and common public matrix; no reference vector used in compressed-score audit"
+}
