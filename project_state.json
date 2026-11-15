@@ -830,14 +830,7 @@
     },
     "superiority_established": false
   },
-  "active_runs": [
-    {
-      "run": "transported_capsule_20261115",
-      "pid": 44565,
-      "device": "CPU249",
-      "protocol_sha256": "1d11acf04f5e6fc8f7792704671d663ddb7f723391e329c3e6a7b5068943fe65"
-    }
-  ],
+  "active_runs": [],
   "queued_runs": [],
   "author_reprompt_control": {
     "run": "author_reprompt_control_20261114_v2",
@@ -1062,7 +1055,7 @@
     "figure": "reports/reprompt_plus_recovery_20261115/figure/tr_reprompt_plus.pdf"
   },
   "transported_capsule": {
-    "status": "running",
+    "status": "complete",
     "run": "transported_capsule_20261115",
     "design": "docs/TRANSPORTED_KEY_CAPSULE.md",
     "protocol": "reports/transported_capsule_20261115/protocol.json",
@@ -1072,6 +1065,14 @@
     "native_carrier_changed": false,
     "device": "CPU249",
     "independent_confirmation": false,
-    "novelty_established": false
+    "novelty_established": false,
+    "actual_key_decodes": 3030,
+    "residual_reference_max_difference": 1.7384104377836925E-08,
+    "restored_native_calls": 0,
+    "seconds": 95.70323133468628,
+    "exact_key_returns": 683,
+    "thresholded_payload_returns": 0,
+    "report": "reports/transported_capsule_20261115/report.md",
+    "feasible_operating_points": 0
   }
 }

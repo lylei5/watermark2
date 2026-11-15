@@ -1,0 +1,2088 @@
+[
+  {
+    "method": "identity_a01",
+    "carrier": "GS",
+    "kind": "all_genuine",
+    "total": 30,
+    "keys": 18,
+    "key_and_saved_native": 18,
+    "reasons": {
+      "key_recovered": 18,
+      "rank_failure": 6,
+      "key_confirmation_failure": 6
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "GS",
+    "kind": "brightness_factor",
+    "total": 3,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 3
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "GS",
+    "kind": "clean",
+    "total": 3,
+    "keys": 3,
+    "key_and_saved_native": 3,
+    "reasons": {
+      "key_recovered": 3
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "GS",
+    "kind": "gaussian_blur_r",
+    "total": 3,
+    "keys": 3,
+    "key_and_saved_native": 3,
+    "reasons": {
+      "key_recovered": 3
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "GS",
+    "kind": "gaussian_std",
+    "total": 3,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 3
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "GS",
+    "kind": "imprint_100",
+    "total": 3,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 3
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "GS",
+    "kind": "imprint_150",
+    "total": 3,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 3
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "GS",
+    "kind": "imprint_50",
+    "total": 3,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 3
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "GS",
+    "kind": "jpeg_ratio",
+    "total": 3,
+    "keys": 3,
+    "key_and_saved_native": 3,
+    "reasons": {
+      "key_recovered": 3
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "GS",
+    "kind": "median_blur_k",
+    "total": 3,
+    "keys": 3,
+    "key_and_saved_native": 3,
+    "reasons": {
+      "key_recovered": 3
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "GS",
+    "kind": "random_crop_ratio",
+    "total": 3,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "rank_failure": 3
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "GS",
+    "kind": "random_drop_ratio",
+    "total": 3,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "rank_failure": 3
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "GS",
+    "kind": "reprompt_plus_sd15",
+    "total": 27,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 27
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "GS",
+    "kind": "reprompt_plus_sd21",
+    "total": 27,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 27
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "GS",
+    "kind": "reprompt_sd15",
+    "total": 3,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 3
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "GS",
+    "kind": "reprompt_sd21",
+    "total": 3,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 3
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "GS",
+    "kind": "resize_ratio",
+    "total": 3,
+    "keys": 3,
+    "key_and_saved_native": 3,
+    "reasons": {
+      "key_recovered": 3
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "GS",
+    "kind": "same_prompt",
+    "total": 3,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 3
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "GS",
+    "kind": "sp_prob",
+    "total": 3,
+    "keys": 3,
+    "key_and_saved_native": 3,
+    "reasons": {
+      "key_recovered": 3
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "GS",
+    "kind": "wrong_record",
+    "total": 27,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 27
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "TR",
+    "kind": "all_genuine",
+    "total": 100,
+    "keys": 68,
+    "key_and_saved_native": 68,
+    "reasons": {
+      "key_recovered": 68,
+      "rank_failure": 22,
+      "key_confirmation_failure": 9,
+      "insufficient_coordinates": 1
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "TR",
+    "kind": "brightness_factor",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 7,
+      "rank_failure": 2,
+      "insufficient_coordinates": 1
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "TR",
+    "kind": "clean",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 10,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "TR",
+    "kind": "cover",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "TR",
+    "kind": "gaussian_blur_r",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 10,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "TR",
+    "kind": "gaussian_std",
+    "total": 10,
+    "keys": 8,
+    "key_and_saved_native": 8,
+    "reasons": {
+      "key_recovered": 8,
+      "key_confirmation_failure": 2
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "TR",
+    "kind": "imprint_100",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "TR",
+    "kind": "imprint_150",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "TR",
+    "kind": "imprint_50",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "TR",
+    "kind": "jpeg_ratio",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 10,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "TR",
+    "kind": "median_blur_k",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 10,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "TR",
+    "kind": "random_crop_ratio",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "rank_failure": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "TR",
+    "kind": "random_drop_ratio",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "rank_failure": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "TR",
+    "kind": "reprompt_plus_sd15",
+    "total": 30,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 30
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "TR",
+    "kind": "reprompt_plus_sd21",
+    "total": 30,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 30
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "TR",
+    "kind": "reprompt_sd15",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "TR",
+    "kind": "reprompt_sd21",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "TR",
+    "kind": "resize_ratio",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 10,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "TR",
+    "kind": "same_prompt",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "TR",
+    "kind": "sp_prob",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 10,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "TR",
+    "kind": "wrong_record",
+    "total": 90,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 90
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "PRC",
+    "kind": "all_genuine",
+    "total": 100,
+    "keys": 69,
+    "key_and_saved_native": 58,
+    "reasons": {
+      "key_recovered": 69,
+      "rank_failure": 20,
+      "key_confirmation_failure": 9,
+      "insufficient_coordinates": 2
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "PRC",
+    "kind": "brightness_factor",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 8,
+      "insufficient_coordinates": 2
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "PRC",
+    "kind": "clean",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 10,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "PRC",
+    "kind": "cover",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "PRC",
+    "kind": "gaussian_blur_r",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 5,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "PRC",
+    "kind": "gaussian_std",
+    "total": 10,
+    "keys": 9,
+    "key_and_saved_native": 8,
+    "reasons": {
+      "key_recovered": 9,
+      "key_confirmation_failure": 1
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "PRC",
+    "kind": "imprint_100",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "PRC",
+    "kind": "imprint_150",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "PRC",
+    "kind": "imprint_50",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "PRC",
+    "kind": "jpeg_ratio",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 9,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "PRC",
+    "kind": "median_blur_k",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 10,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "PRC",
+    "kind": "random_crop_ratio",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "rank_failure": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "PRC",
+    "kind": "random_drop_ratio",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "rank_failure": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "PRC",
+    "kind": "reprompt_sd15",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "PRC",
+    "kind": "reprompt_sd21",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "PRC",
+    "kind": "resize_ratio",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 9,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "PRC",
+    "kind": "same_prompt",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "PRC",
+    "kind": "sp_prob",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 7,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "identity_a01",
+    "carrier": "PRC",
+    "kind": "wrong_record",
+    "total": 90,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 90
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "GS",
+    "kind": "all_genuine",
+    "total": 30,
+    "keys": 19,
+    "key_and_saved_native": 19,
+    "reasons": {
+      "key_recovered": 19,
+      "rank_failure": 5,
+      "insufficient_pilots": 2,
+      "key_confirmation_failure": 4
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "GS",
+    "kind": "brightness_factor",
+    "total": 3,
+    "keys": 1,
+    "key_and_saved_native": 1,
+    "reasons": {
+      "key_recovered": 1,
+      "key_confirmation_failure": 1,
+      "insufficient_pilots": 1
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "GS",
+    "kind": "clean",
+    "total": 3,
+    "keys": 3,
+    "key_and_saved_native": 3,
+    "reasons": {
+      "key_recovered": 3
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "GS",
+    "kind": "gaussian_blur_r",
+    "total": 3,
+    "keys": 3,
+    "key_and_saved_native": 3,
+    "reasons": {
+      "key_recovered": 3
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "GS",
+    "kind": "gaussian_std",
+    "total": 3,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 3
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "GS",
+    "kind": "imprint_100",
+    "total": 3,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 1,
+      "unidentifiable_channel": 2
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "GS",
+    "kind": "imprint_150",
+    "total": 3,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 1,
+      "unidentifiable_channel": 2
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "GS",
+    "kind": "imprint_50",
+    "total": 3,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 1,
+      "unidentifiable_channel": 2
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "GS",
+    "kind": "jpeg_ratio",
+    "total": 3,
+    "keys": 3,
+    "key_and_saved_native": 3,
+    "reasons": {
+      "key_recovered": 3
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "GS",
+    "kind": "median_blur_k",
+    "total": 3,
+    "keys": 3,
+    "key_and_saved_native": 3,
+    "reasons": {
+      "key_recovered": 3
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "GS",
+    "kind": "random_crop_ratio",
+    "total": 3,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "rank_failure": 3
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "GS",
+    "kind": "random_drop_ratio",
+    "total": 3,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "insufficient_pilots": 1,
+      "rank_failure": 2
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "GS",
+    "kind": "reprompt_plus_sd15",
+    "total": 27,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 21,
+      "unidentifiable_channel": 6
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "GS",
+    "kind": "reprompt_plus_sd21",
+    "total": 27,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "unidentifiable_channel": 6,
+      "key_confirmation_failure": 21
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "GS",
+    "kind": "reprompt_sd15",
+    "total": 3,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 3
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "GS",
+    "kind": "reprompt_sd21",
+    "total": 3,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 3
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "GS",
+    "kind": "resize_ratio",
+    "total": 3,
+    "keys": 3,
+    "key_and_saved_native": 3,
+    "reasons": {
+      "key_recovered": 3
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "GS",
+    "kind": "same_prompt",
+    "total": 3,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "unidentifiable_channel": 2,
+      "key_confirmation_failure": 1
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "GS",
+    "kind": "sp_prob",
+    "total": 3,
+    "keys": 3,
+    "key_and_saved_native": 3,
+    "reasons": {
+      "key_recovered": 3
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "GS",
+    "kind": "wrong_record",
+    "total": 27,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "unidentifiable_channel": 19,
+      "key_confirmation_failure": 8
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "TR",
+    "kind": "all_genuine",
+    "total": 100,
+    "keys": 70,
+    "key_and_saved_native": 70,
+    "reasons": {
+      "key_recovered": 70,
+      "rank_failure": 20,
+      "key_confirmation_failure": 7,
+      "insufficient_pilots": 3
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "TR",
+    "kind": "brightness_factor",
+    "total": 10,
+    "keys": 3,
+    "key_and_saved_native": 3,
+    "reasons": {
+      "key_recovered": 3,
+      "key_confirmation_failure": 4,
+      "insufficient_pilots": 3
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "TR",
+    "kind": "clean",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 10,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "TR",
+    "kind": "cover",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "unidentifiable_channel": 9,
+      "key_confirmation_failure": 1
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "TR",
+    "kind": "gaussian_blur_r",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 10,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "TR",
+    "kind": "gaussian_std",
+    "total": 10,
+    "keys": 7,
+    "key_and_saved_native": 7,
+    "reasons": {
+      "key_recovered": 7,
+      "key_confirmation_failure": 3
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "TR",
+    "kind": "imprint_100",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "unidentifiable_channel": 9,
+      "key_confirmation_failure": 1
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "TR",
+    "kind": "imprint_150",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "unidentifiable_channel": 9,
+      "key_confirmation_failure": 1
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "TR",
+    "kind": "imprint_50",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "unidentifiable_channel": 9,
+      "key_confirmation_failure": 1
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "TR",
+    "kind": "jpeg_ratio",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 10,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "TR",
+    "kind": "median_blur_k",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 10,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "TR",
+    "kind": "random_crop_ratio",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "rank_failure": 10
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "TR",
+    "kind": "random_drop_ratio",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "rank_failure": 10
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "TR",
+    "kind": "reprompt_plus_sd15",
+    "total": 30,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 27,
+      "unidentifiable_channel": 3
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "TR",
+    "kind": "reprompt_plus_sd21",
+    "total": 30,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 27,
+      "unidentifiable_channel": 3
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "TR",
+    "kind": "reprompt_sd15",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 8,
+      "unidentifiable_channel": 2
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "TR",
+    "kind": "reprompt_sd21",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 8,
+      "unidentifiable_channel": 2
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "TR",
+    "kind": "resize_ratio",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 10,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "TR",
+    "kind": "same_prompt",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 3,
+      "unidentifiable_channel": 7
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "TR",
+    "kind": "sp_prob",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 10,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "TR",
+    "kind": "wrong_record",
+    "total": 90,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 22,
+      "unidentifiable_channel": 68
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "PRC",
+    "kind": "all_genuine",
+    "total": 100,
+    "keys": 74,
+    "key_and_saved_native": 63,
+    "reasons": {
+      "key_recovered": 74,
+      "rank_failure": 19,
+      "key_confirmation_failure": 2,
+      "insufficient_pilots": 4,
+      "unidentifiable_channel": 1
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "PRC",
+    "kind": "brightness_factor",
+    "total": 10,
+    "keys": 5,
+    "key_and_saved_native": 5,
+    "reasons": {
+      "key_confirmation_failure": 1,
+      "key_recovered": 5,
+      "insufficient_pilots": 4
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "PRC",
+    "kind": "clean",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 10,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "PRC",
+    "kind": "cover",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 5,
+      "unidentifiable_channel": 5
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "PRC",
+    "kind": "gaussian_blur_r",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 5,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "PRC",
+    "kind": "gaussian_std",
+    "total": 10,
+    "keys": 9,
+    "key_and_saved_native": 8,
+    "reasons": {
+      "key_recovered": 9,
+      "key_confirmation_failure": 1
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "PRC",
+    "kind": "imprint_100",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 5,
+      "unidentifiable_channel": 5
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "PRC",
+    "kind": "imprint_150",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 5,
+      "unidentifiable_channel": 5
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "PRC",
+    "kind": "imprint_50",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 5,
+      "unidentifiable_channel": 5
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "PRC",
+    "kind": "jpeg_ratio",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 9,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "PRC",
+    "kind": "median_blur_k",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 10,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "PRC",
+    "kind": "random_crop_ratio",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "rank_failure": 9,
+      "unidentifiable_channel": 1
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "PRC",
+    "kind": "random_drop_ratio",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "rank_failure": 10
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "PRC",
+    "kind": "reprompt_sd15",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 9,
+      "unidentifiable_channel": 1
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "PRC",
+    "kind": "reprompt_sd21",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 10
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "PRC",
+    "kind": "resize_ratio",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 9,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "PRC",
+    "kind": "same_prompt",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "unidentifiable_channel": 9,
+      "key_confirmation_failure": 1
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "PRC",
+    "kind": "sp_prob",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 7,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "transport_a01",
+    "carrier": "PRC",
+    "kind": "wrong_record",
+    "total": 90,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "unidentifiable_channel": 63,
+      "key_confirmation_failure": 27
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "GS",
+    "kind": "all_genuine",
+    "total": 30,
+    "keys": 22,
+    "key_and_saved_native": 22,
+    "reasons": {
+      "key_recovered": 22,
+      "rank_failure": 5,
+      "insufficient_pilots": 2,
+      "key_confirmation_failure": 1
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "GS",
+    "kind": "brightness_factor",
+    "total": 3,
+    "keys": 1,
+    "key_and_saved_native": 1,
+    "reasons": {
+      "key_recovered": 1,
+      "key_confirmation_failure": 1,
+      "insufficient_pilots": 1
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "GS",
+    "kind": "clean",
+    "total": 3,
+    "keys": 3,
+    "key_and_saved_native": 3,
+    "reasons": {
+      "key_recovered": 3
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "GS",
+    "kind": "gaussian_blur_r",
+    "total": 3,
+    "keys": 3,
+    "key_and_saved_native": 3,
+    "reasons": {
+      "key_recovered": 3
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "GS",
+    "kind": "gaussian_std",
+    "total": 3,
+    "keys": 3,
+    "key_and_saved_native": 3,
+    "reasons": {
+      "key_recovered": 3
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "GS",
+    "kind": "imprint_100",
+    "total": 3,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 1,
+      "unidentifiable_channel": 2
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "GS",
+    "kind": "imprint_150",
+    "total": 3,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 1,
+      "unidentifiable_channel": 2
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "GS",
+    "kind": "imprint_50",
+    "total": 3,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 1,
+      "unidentifiable_channel": 2
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "GS",
+    "kind": "jpeg_ratio",
+    "total": 3,
+    "keys": 3,
+    "key_and_saved_native": 3,
+    "reasons": {
+      "key_recovered": 3
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "GS",
+    "kind": "median_blur_k",
+    "total": 3,
+    "keys": 3,
+    "key_and_saved_native": 3,
+    "reasons": {
+      "key_recovered": 3
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "GS",
+    "kind": "random_crop_ratio",
+    "total": 3,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "rank_failure": 3
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "GS",
+    "kind": "random_drop_ratio",
+    "total": 3,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "insufficient_pilots": 1,
+      "rank_failure": 2
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "GS",
+    "kind": "reprompt_plus_sd15",
+    "total": 27,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 21,
+      "unidentifiable_channel": 6
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "GS",
+    "kind": "reprompt_plus_sd21",
+    "total": 27,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "unidentifiable_channel": 6,
+      "key_confirmation_failure": 21
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "GS",
+    "kind": "reprompt_sd15",
+    "total": 3,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 3
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "GS",
+    "kind": "reprompt_sd21",
+    "total": 3,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 3
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "GS",
+    "kind": "resize_ratio",
+    "total": 3,
+    "keys": 3,
+    "key_and_saved_native": 3,
+    "reasons": {
+      "key_recovered": 3
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "GS",
+    "kind": "same_prompt",
+    "total": 3,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "unidentifiable_channel": 2,
+      "key_confirmation_failure": 1
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "GS",
+    "kind": "sp_prob",
+    "total": 3,
+    "keys": 3,
+    "key_and_saved_native": 3,
+    "reasons": {
+      "key_recovered": 3
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "GS",
+    "kind": "wrong_record",
+    "total": 27,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "unidentifiable_channel": 19,
+      "key_confirmation_failure": 8
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "TR",
+    "kind": "all_genuine",
+    "total": 100,
+    "keys": 73,
+    "key_and_saved_native": 73,
+    "reasons": {
+      "key_recovered": 73,
+      "rank_failure": 20,
+      "key_confirmation_failure": 4,
+      "insufficient_pilots": 3
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "TR",
+    "kind": "brightness_factor",
+    "total": 10,
+    "keys": 3,
+    "key_and_saved_native": 3,
+    "reasons": {
+      "key_recovered": 3,
+      "key_confirmation_failure": 4,
+      "insufficient_pilots": 3
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "TR",
+    "kind": "clean",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 10,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "TR",
+    "kind": "cover",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "unidentifiable_channel": 9,
+      "key_confirmation_failure": 1
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "TR",
+    "kind": "gaussian_blur_r",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 10,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "TR",
+    "kind": "gaussian_std",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 10,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "TR",
+    "kind": "imprint_100",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "unidentifiable_channel": 9,
+      "key_confirmation_failure": 1
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "TR",
+    "kind": "imprint_150",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "unidentifiable_channel": 9,
+      "key_confirmation_failure": 1
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "TR",
+    "kind": "imprint_50",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "unidentifiable_channel": 9,
+      "key_confirmation_failure": 1
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "TR",
+    "kind": "jpeg_ratio",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 10,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "TR",
+    "kind": "median_blur_k",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 10,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "TR",
+    "kind": "random_crop_ratio",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "rank_failure": 10
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "TR",
+    "kind": "random_drop_ratio",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "rank_failure": 10
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "TR",
+    "kind": "reprompt_plus_sd15",
+    "total": 30,
+    "keys": 9,
+    "key_and_saved_native": 9,
+    "reasons": {
+      "key_confirmation_failure": 18,
+      "key_recovered": 9,
+      "unidentifiable_channel": 3
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "TR",
+    "kind": "reprompt_plus_sd21",
+    "total": 30,
+    "keys": 12,
+    "key_and_saved_native": 12,
+    "reasons": {
+      "key_confirmation_failure": 15,
+      "key_recovered": 12,
+      "unidentifiable_channel": 3
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "TR",
+    "kind": "reprompt_sd15",
+    "total": 10,
+    "keys": 3,
+    "key_and_saved_native": 3,
+    "reasons": {
+      "key_confirmation_failure": 5,
+      "key_recovered": 3,
+      "unidentifiable_channel": 2
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "TR",
+    "kind": "reprompt_sd21",
+    "total": 10,
+    "keys": 3,
+    "key_and_saved_native": 3,
+    "reasons": {
+      "key_confirmation_failure": 5,
+      "key_recovered": 3,
+      "unidentifiable_channel": 2
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "TR",
+    "kind": "resize_ratio",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 10,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "TR",
+    "kind": "same_prompt",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 3,
+      "unidentifiable_channel": 7
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "TR",
+    "kind": "sp_prob",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 10,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "TR",
+    "kind": "wrong_record",
+    "total": 90,
+    "keys": 2,
+    "key_and_saved_native": 2,
+    "reasons": {
+      "key_confirmation_failure": 20,
+      "unidentifiable_channel": 68,
+      "key_recovered": 2
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "PRC",
+    "kind": "all_genuine",
+    "total": 100,
+    "keys": 75,
+    "key_and_saved_native": 64,
+    "reasons": {
+      "key_recovered": 75,
+      "rank_failure": 19,
+      "key_confirmation_failure": 1,
+      "insufficient_pilots": 4,
+      "unidentifiable_channel": 1
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "PRC",
+    "kind": "brightness_factor",
+    "total": 10,
+    "keys": 5,
+    "key_and_saved_native": 5,
+    "reasons": {
+      "key_confirmation_failure": 1,
+      "key_recovered": 5,
+      "insufficient_pilots": 4
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "PRC",
+    "kind": "clean",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 10,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "PRC",
+    "kind": "cover",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 5,
+      "unidentifiable_channel": 5
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "PRC",
+    "kind": "gaussian_blur_r",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 5,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "PRC",
+    "kind": "gaussian_std",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 9,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "PRC",
+    "kind": "imprint_100",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 5,
+      "unidentifiable_channel": 5
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "PRC",
+    "kind": "imprint_150",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 5,
+      "unidentifiable_channel": 5
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "PRC",
+    "kind": "imprint_50",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "key_confirmation_failure": 5,
+      "unidentifiable_channel": 5
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "PRC",
+    "kind": "jpeg_ratio",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 9,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "PRC",
+    "kind": "median_blur_k",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 10,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "PRC",
+    "kind": "random_crop_ratio",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "rank_failure": 9,
+      "unidentifiable_channel": 1
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "PRC",
+    "kind": "random_drop_ratio",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "rank_failure": 10
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "PRC",
+    "kind": "reprompt_sd15",
+    "total": 10,
+    "keys": 2,
+    "key_and_saved_native": 2,
+    "reasons": {
+      "key_confirmation_failure": 7,
+      "key_recovered": 2,
+      "unidentifiable_channel": 1
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "PRC",
+    "kind": "reprompt_sd21",
+    "total": 10,
+    "keys": 2,
+    "key_and_saved_native": 2,
+    "reasons": {
+      "key_confirmation_failure": 8,
+      "key_recovered": 2
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "PRC",
+    "kind": "resize_ratio",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 9,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "PRC",
+    "kind": "same_prompt",
+    "total": 10,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "unidentifiable_channel": 9,
+      "key_confirmation_failure": 1
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "PRC",
+    "kind": "sp_prob",
+    "total": 10,
+    "keys": 10,
+    "key_and_saved_native": 7,
+    "reasons": {
+      "key_recovered": 10
+    }
+  },
+  {
+    "method": "transport_a03",
+    "carrier": "PRC",
+    "kind": "wrong_record",
+    "total": 90,
+    "keys": 0,
+    "key_and_saved_native": 0,
+    "reasons": {
+      "unidentifiable_channel": 63,
+      "key_confirmation_failure": 27
+    }
+  }
+]

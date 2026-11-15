@@ -1,0 +1,164 @@
+[
+  {
+    "method": "identity_a01",
+    "score_name": "score",
+    "target": 0.9,
+    "available": 20,
+    "total": 30,
+    "threshold": null,
+    "feasible": false
+  },
+  {
+    "method": "identity_a01",
+    "score_name": "score",
+    "target": 0.95,
+    "available": 20,
+    "total": 30,
+    "threshold": null,
+    "feasible": false
+  },
+  {
+    "method": "identity_a01",
+    "score_name": "reference_residual",
+    "target": 0.9,
+    "available": 30,
+    "total": 30,
+    "threshold": 0.17520502458798987,
+    "feasible": true
+  },
+  {
+    "method": "identity_a01",
+    "score_name": "reference_residual",
+    "target": 0.95,
+    "available": 30,
+    "total": 30,
+    "threshold": 0.5805357384200044,
+    "feasible": true
+  },
+  {
+    "method": "identity_a01",
+    "score_name": "pixel_residual",
+    "target": 0.9,
+    "available": 30,
+    "total": 30,
+    "threshold": 0.17520502458798987,
+    "feasible": true
+  },
+  {
+    "method": "identity_a01",
+    "score_name": "pixel_residual",
+    "target": 0.95,
+    "available": 30,
+    "total": 30,
+    "threshold": 0.5805357384200044,
+    "feasible": true
+  },
+  {
+    "method": "transport_a01",
+    "score_name": "score",
+    "target": 0.9,
+    "available": 21,
+    "total": 30,
+    "threshold": null,
+    "feasible": false
+  },
+  {
+    "method": "transport_a01",
+    "score_name": "score",
+    "target": 0.95,
+    "available": 21,
+    "total": 30,
+    "threshold": null,
+    "feasible": false
+  },
+  {
+    "method": "transport_a01",
+    "score_name": "reference_residual",
+    "target": 0.9,
+    "available": 27,
+    "total": 30,
+    "threshold": 0.10719063005446293,
+    "feasible": true
+  },
+  {
+    "method": "transport_a01",
+    "score_name": "reference_residual",
+    "target": 0.95,
+    "available": 27,
+    "total": 30,
+    "threshold": null,
+    "feasible": false
+  },
+  {
+    "method": "transport_a01",
+    "score_name": "pixel_residual",
+    "target": 0.9,
+    "available": 30,
+    "total": 30,
+    "threshold": 0.17520502458798987,
+    "feasible": true
+  },
+  {
+    "method": "transport_a01",
+    "score_name": "pixel_residual",
+    "target": 0.95,
+    "available": 30,
+    "total": 30,
+    "threshold": 0.5805357384200044,
+    "feasible": true
+  },
+  {
+    "method": "transport_a03",
+    "score_name": "score",
+    "target": 0.9,
+    "available": 22,
+    "total": 30,
+    "threshold": null,
+    "feasible": false
+  },
+  {
+    "method": "transport_a03",
+    "score_name": "score",
+    "target": 0.95,
+    "available": 22,
+    "total": 30,
+    "threshold": null,
+    "feasible": false
+  },
+  {
+    "method": "transport_a03",
+    "score_name": "reference_residual",
+    "target": 0.9,
+    "available": 27,
+    "total": 30,
+    "threshold": 0.10719063005446293,
+    "feasible": true
+  },
+  {
+    "method": "transport_a03",
+    "score_name": "reference_residual",
+    "target": 0.95,
+    "available": 27,
+    "total": 30,
+    "threshold": null,
+    "feasible": false
+  },
+  {
+    "method": "transport_a03",
+    "score_name": "pixel_residual",
+    "target": 0.9,
+    "available": 30,
+    "total": 30,
+    "threshold": 0.17520502458798987,
+    "feasible": true
+  },
+  {
+    "method": "transport_a03",
+    "score_name": "pixel_residual",
+    "target": 0.95,
+    "available": 30,
+    "total": 30,
+    "threshold": 0.5805357384200044,
+    "feasible": true
+  }
+]

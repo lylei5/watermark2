@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "pid": 44565,
+  "started_at": 1794721248.574115,
+  "protocol_sha256": "1d11acf04f5e6fc8f7792704671d663ddb7f723391e329c3e6a7b5068943fe65",
+  "calibration_sha256": "51e8f5e21292c0ba96bd7e014d5530c78de89fa6073e869670607fdfe90d55ce",
+  "seconds": 95.70323133468628,
+  "key_decode_calls": 3030,
+  "exact_key_returns": 683,
+  "thresholded_payload_returns": 0,
+  "restored_native_calls": 0,
+  "authentication_rejections": 60,
+  "record_query_pairs": 1010,
+  "distinct_pixels": 690,
+  "artifacts": {
+    "cases.json": "c7d28bb5d7c3db77792038c255ea81a3389f29f0968a08aaf73b2d19af2b3b7a",
+    "enrollment.json": "472aab4eaef3dabd32e73e8bfae4474969e2eae012c4380eabceaef991ee1207",
+    "calibration.json": "51e8f5e21292c0ba96bd7e014d5530c78de89fa6073e869670607fdfe90d55ce",
+    "rows.json": "88df25c4a3a1069432c4cf72d116425b8c75f61bb7a3e63f77f02ff7387622dc",
+    "decisions.json": "e921e890d02c52efe9b1b60e1fdf19494a6c2527c8c949dd84e82c6cd99a3fe1"
+  }
+}
