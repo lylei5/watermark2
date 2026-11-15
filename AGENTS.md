@@ -9,7 +9,8 @@ These rules apply to this repository and `/data0/liyanlei/watermark_research` on
 
 ## Objective and current state
 
-- Develop a publishable defense with benefits at matched absolute legitimate-image detection rates, documented image quality and computation budgets.
+- Current priority: complete the unified SemBind/PGID/SEAL benchmark at independently calibrated natural-image FPR targets of 1% and 0.1%, with legitimate detection, published full-budget attacks, image quality and compute/storage costs.
+- Instance-key recovery (including partial-order, capsule, spectrum and spatial/visible-evidence variants) is frozen. Preserve negative evidence and do not start new variants or new mechanisms before the benchmark.
 - Current execution state is maintained only in `project_state.json`; completed evidence is indexed in `reports/README.md`. Read `GPT_CONTEXT.md` for the current research handoff.
 - Complete native SemBind reproduction and matched detector calibration are required before claiming superiority. Preserve frozen run sources and negative evidence.
 
@@ -41,10 +42,10 @@ These rules apply to this repository and `/data0/liyanlei/watermark_research` on
 - Primary Python: `/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/bin/python`.
 - Use the Tsinghua mirror `https://pypi.tuna.tsinghua.edu.cn/simple/` for future Python dependency installation. Do not fall back to Aliyun automatically. Prefer existing local packages and caches.
 - Reuse local models and cache. Set `HF_HOME=/data0/liyanlei/watermark_research/cache/huggingface`, `HF_HUB_OFFLINE=1` and `TRANSFORMERS_OFFLINE=1` for offline runs.
-- Use at most three GPUs concurrently. Current user-selected server GPUs are 7, 5, and 4; use only these, in that order.
+- Use at most three GPUs concurrently. The current user authorization permits any idle GPU except index 6; prefer 7, 5, 4, then 3, 2, 1, 0. Bind by the current UUID.
 - Run the full published implementation and update schedule; do not truncate baselines to save time.
 - Check occupancy before launching a GPU job. Use only idle devices, bind by current UUID and always exclude GPU index 6.
-- Never terminate another user's process or use their occupied GPU. Under the current device selection, wait if GPUs 7, 5 and 4 are occupied; do not switch devices automatically.
+- Never terminate another user's process or use their occupied GPU. Wait when no authorized GPU is idle.
 - Do not modify unrelated directories under `/data0/liyanlei/`, including `ceramic_watermark`, `FontGuard_repro`, `genstego_sota_*`, `natural_image_512bit_watermark_poc`, `official_hidden_compare` and `trajectory_orth_20261103`.
 
 - Do not continuously poll experiment progress. Use process-exit completion events for frozen pipelines; continue independent research while they run.

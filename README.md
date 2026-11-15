@@ -1,5 +1,7 @@
 # 扩散模型水印防御研究
 
+当前主任务是 **SemBind、PGID、SEAL 的统一防御比较**：在独立负例校准的 1% 和 0.1% FPR 工作点上，报告合法检出、已发表完整预算攻击、质量与成本。载体内比较和 SEAL 完整系统比较分开；有状态拷贝检测作为强对照。实例密钥恢复路线已冻结，[一页负结果](reports/instance_recovery_negative_results_20261115/report.md)与[附录证据](reports/instance_recovery_negative_results_20261115/appendix.md)保存其结论和限制。
+
 本项目研究扩散水印的内容绑定防御，同时建立可复核的SemBind、PGID、SEAL原生基线。[实时状态](project_state.json)记录运行队列；[验收契约](docs/THREE_BASELINE_REPRODUCTION.md)规定实现和数值复现的范围。
 
 当前原型研究[部分序约束的密钥恢复](docs/ORDER_CONSTRAINED_RECOVERY.md)：查询提供位置之间的亮度关系，恢复器用这些关系求解128位随机密钥，确认并实际解封认证载荷。返回流程没有后置图像残差门槛；原生GS/TR/PRC载体保持原样。

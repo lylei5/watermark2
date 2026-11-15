@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-15T11:37:04.0178721Z",
-  "status": "order_recovery_confirmation_complete",
+  "updated_at": "2026-11-15T14:44:33.3193424Z",
+  "status": "unified_benchmark_preparation",
   "active_experiments": 0,
   "queued_experiments": 0,
-  "latest_progress_report": "reports/order_capsule_confirmation_20261115/report.md",
+  "latest_progress_report": "reports/instance_recovery_negative_results_20261115/report.md",
   "evidence_index": "reports/README.md",
-  "research_plan": "docs/INSTANCE_BINDING_RESEARCH.md",
+  "research_plan": "docs/RESEARCH_PLAN.md",
   "native_sembind_reproduction_complete": false,
   "superiority_established": false,
   "baseline": {
@@ -39,7 +39,11 @@
     "allowed_gpu_indices": [
       7,
       5,
-      4
+      4,
+      3,
+      2,
+      1,
+      0
     ],
     "max_concurrent_gpus": 3,
     "python_package_index": "https://pypi.tuna.tsinghua.edu.cn/simple/",
@@ -51,15 +55,23 @@
   "allowed_gpu_indices": [
     7,
     5,
-    4
+    4,
+    3,
+    2,
+    1,
+    0
   ],
   "excluded_gpu_indices": [
     6
   ],
   "max_concurrent_gpus": 3,
-  "evaluation_policy": "Unchanged published top-venue attacks only; full budgets; no attack development; matched absolute genuine detection",
-  "current_decision": "Partial-order recovery complete: known genuine993/1000, GSnoise95/100, brightness98/100. At matching993genuine, sameprompt0/100 ties direct-order-visible fitting; nine-templateSSCD18/100. Unseen contrast500/500, rotation3/500, resizedcrop18/500. Saturated-white deletion changes zero of200paired decisions. Spatial correspondence and independent protocol/resource benefit remain open.",
+  "evaluation_policy": "Unchanged published top-venue author attacks only; full budgets; no adaptive or improved attacks; independent null calibration and evaluation; report achieved FPR and absolute TPR.",
+  "current_decision": "Instance-key recovery frozen. Complete the unified SemBind/PGID/SEAL benchmark before new mechanisms; separate same-carrier and native-system comparisons, independently calibrate 1% and 0.1% FPR, preserve complete published attack budgets and all denominators.",
   "completed_evidence": [
+    {
+      "path": "reports/instance_recovery_negative_results_20261115/report.md",
+      "scope": "Historical evidence synthesis and appendix; no new experiment. Instance recovery frozen."
+    },
     {
       "path": "reports/order_capsule_confirmation_20261115/report.md",
       "scope": "11400partial-order decodes,7552exact key/payload returns;3800legacy replays and1300historical parities;4599freshSSCDimages; known993/1000 and unseencontrast500/500,rotation3/500,resizedcrop18/500; matched993genuine ties direct-order reference at0/100sameprompt versus nine-template18/100."
@@ -941,7 +953,7 @@
     ],
     "protocol_clarification": "reports/visible_witness_recovery_20261114/protocol_clarification.json"
   },
-  "research_hypothesis": "Query-induced partial order supports real128bit recovery under photometric edits but fails unseen geometry. Future mechanisms need key identifiability with uncertain spatial correspondence and an explicit independent resource or protocol benefit versus full-reference verification. Ordinal invariance, isotonic projection and list decoding are prior art.",
+  "research_hypothesis": "No new mechanism active. Determine defense tradeoffs and possible shared limitations empirically under the frozen unified benchmark.",
   "author_reprompt_plus": {
     "run": "author_reprompt_plus_20261115",
     "status": "complete",
@@ -1233,5 +1245,28 @@
     "full_reference_superiority_established": false,
     "secure_erasure_validated": false,
     "helper_privacy_proven": false
+  },
+  "instance_recovery_freeze": {
+    "status": "frozen",
+    "date": "2026-11-15",
+    "report": "reports/instance_recovery_negative_results_20261115/report.md",
+    "new_variants_allowed": false,
+    "historical_artifacts_preserved": true
+  },
+  "unified_defense_benchmark": {
+    "status": "preparation",
+    "target_fpr": [
+      0.01,
+      0.001
+    ],
+    "new_model_experiments_completed": 0,
+    "main_table_complete": false,
+    "protocol_frozen": false,
+    "main_table_panels": [
+      "same_carrier",
+      "native_system"
+    ],
+    "stateful_control": "native carrier plus per-image registered SSCD",
+    "current_block": "Negative-result consolidation and applicability/calibration audit"
   }
 }

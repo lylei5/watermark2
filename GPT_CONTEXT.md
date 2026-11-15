@@ -1,6 +1,8 @@
-# Research handoff: partial-order recovery and defense baselines
+# Research handoff: unified defense benchmark
 
-The current result is [partial-order key recovery with held-out edit families](reports/order_capsule_confirmation_20261115/report.md). Publication-quality independent value remains open. Only [project_state.json](project_state.json) records live execution; [reports/README.md](reports/README.md) indexes completed evidence. Do not restart completed jobs.
+The active objective is the unified SemBind/PGID/SEAL comparison under independently calibrated 1% and 0.1% natural-image FPR targets, with legitimate detection, unchanged published attacks at full budgets, image quality and compute/storage costs. Use separate same-carrier and native-system panels: SEAL has its own carrier; PGID-F/R are separate fixed configurations. Registered SSCD is a stateful control, not a theoretical upper bound. See [research plan](docs/RESEARCH_PLAN.md).
+
+Instance-key recovery is frozen. Do not start partial-order, capsule, spectrum or spatial/visible-evidence variants. [One-page negative results](reports/instance_recovery_negative_results_20261115/report.md) and [appendix evidence](reports/instance_recovery_negative_results_20261115/appendix.md) preserve the conclusions. No new mechanism before the comparison. Only [project_state.json](project_state.json) records live execution; [reports/README.md](reports/README.md) indexes completed evidence. Do not restart completed jobs.
 
 ## Completed experiment
 
@@ -24,7 +26,7 @@ All28brightness gains over samealpha forward decoding correspond to insufficient
 
 Recover(record, query, provider) returns the exact randomkey and authenticated payload without reference/truth arguments. The enclosing harness retains reference and keys for assertions; no OS isolation or secure erasure has been tested. A full-reference verifier with the same information can simulate the decoder. Helpers66184JSONbytes each; nine-templatefloat32 descriptors18432bytes; direct-order reference12288uint8bytes or49152float32bytes. No storage advantage or matched latency benchmark. Same perRGB B s exposes channel differences; knownB also exposes orthogonal components. No helper privacy proof, global binary uniqueness certificate, content entropy guarantee, or empiricalFPR1e-6.
 
-Next research question is uncertain spatial correspondence coupled with key identifiability under information loss, with an explicit resource/protocol objective against full-reference controls. Ordinal matching, isotonic regression, rank modulation, asymmetric fuzzy extractors, and edit estimation plus distributed-source authentication are prior art. Read [mechanism and primary literature](docs/ORDER_CONSTRAINED_RECOVERY.md) before proposing another wrapper or claiming novelty.
+This mechanism is retained as frozen negative evidence. Ordinal matching, isotonic regression, rank modulation, asymmetric fuzzy extractors, and edit estimation plus distributed-source authentication are prior art; the [mechanism and primary literature](docs/ORDER_CONSTRAINED_RECOVERY.md) remain the interpretation record.
 
 ## Existing full attacks and native baselines
 
@@ -36,6 +38,6 @@ SemBind uses released semantic/DPM components and user-authorized paper-complete
 
 ## Execution and repository rules
 
-All model and numerical research runs onSSH249, root `/data0/liyanlei/watermark_research`; recoveryPython `envs/pgid_revalidation_py310/bin/python`. Only idle GPUs7,5,4 in that order, maximumthree; neverGPU6. CPUresearch also stays on249. Local code/docs/file management are permitted; local experiments and model downloads are prohibited. Do not touch unrelated projects or terminate other users' processes. Use existing caches, offline model loading, and Tsinghua mirror for necessary installs.
+All model and numerical research runs on SSH249, root `/data0/liyanlei/watermark_research`. The user authorizes any idle GPU except index6; prefer7,5,4, then3,2,1,0, maximum three concurrently, with current UUID binding. CPU research also stays on249. Local code/docs/file management are permitted; local experiments and model downloads are prohibited. Do not touch unrelated projects or terminate other users' processes. Use existing caches, offline model loading, and Tsinghua mirror for necessary installs.
 
 Use frozen sources/protocols, same-pixel assertions and process-exit events. Do independent research while jobs run; no continuous polling. Maintainmain, commit/push completed code, reports and live state together. Private secrets, helpercontents, nativeblobs, images and modelweights stay outsideGit. Machine-administration records stay outside the scientific repository. No external messages to authors.
