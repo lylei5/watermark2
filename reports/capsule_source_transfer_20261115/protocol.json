@@ -1,0 +1,52 @@
+{
+  "created_at": 1794723235.316659,
+  "scripts": {
+    "validate_capsule_source_transfer.py": "4439441ac792fcc7ac355b890d76c7ed6741bf312cf413afdd4a23a05cd20b5b",
+    "copynce_control.py": "7321ed9493777eb754cf3cd2bba6ac5389f7a7d74448319c74d3b173f7fdd243",
+    "transported_key_capsule.py": "d9fc968400f404b22c77283c3a7a3862d7cd0e4f0a96cd7a338dd1840010355d"
+  },
+  "inputs": {
+    "/data0/liyanlei/watermark_research/runs/transported_capsule_observability_20261115/complete.json": "285c183701e4e7c1b025f895dd15b1c4dffbd377b74120b846da2f4692f1dbf5",
+    "/data0/liyanlei/watermark_research/runs/transported_capsule_observability_20261115/calibration.json": "f535662674c533de268186d8665bf71da1288e251e9e2a7996db65cd164d3da0",
+    "/data0/liyanlei/watermark_research/runs/transported_capsule_observability_20261115/fixed_controls.json": "f377d14339c9bce266b2b2330309f1102d9cd290bf6491418188953f15672621",
+    "/data0/liyanlei/watermark_research/runs/transported_capsule_observability_20261115/cases.json": "c7d28bb5d7c3db77792038c255ea81a3389f29f0968a08aaf73b2d19af2b3b7a",
+    "/data0/liyanlei/watermark_research/runs/instance_representation_20261113_v2/protocol.json": "f0e1a653af13bda73aff9c37dc59cbea454396d5b570ba7d4e066ce504b1b4d5",
+    "/data0/liyanlei/watermark_research/runs/instance_representation_20261113_v2/sscd/complete.json": "f90862022ffa07878cd7553b7d69abfcbf2ffb282681f2249af603477504573e",
+    "/data0/liyanlei/watermark_research/runs/instance_representation_20261113_v2/sscd/metadata.json": "b034ec4333c80b3323de6acbcc212fb8ac97306d456a51fddd3d0502ea71f050",
+    "/data0/liyanlei/watermark_research/runs/instance_representation_20261113_v2/sscd/features.npz": "18dd3795de17ca9ba5bead41da4b308548120ffca30de89fb66cddf463ccc281",
+    "/data0/liyanlei/watermark_research/runs/copynce_control_20261114/protocol.json": "f29de4ab378ba66cccd8025b3446772a0975bf00d4f34c9ea31537b423d231d8"
+  },
+  "methods": [
+    "spread_order_a03",
+    "spread_order_identity_a03"
+  ],
+  "controls": [
+    "sscd",
+    "copynce_descriptor",
+    "copynce_matcher"
+  ],
+  "thresholds": {
+    "spread_order_a03": 0.043359853354832764,
+    "spread_order_identity_a03": 0.17308973531848768,
+    "sscd": 0.5407732725143433,
+    "copynce_descriptor": 0.7611265182495117,
+    "copynce_matcher": 0.006120920181274414
+  },
+  "private": "/data0/liyanlei/watermark_research/private_eval/capsule_source_transfer_20261115",
+  "provider_sha256": "12fe11cef1ffd0899d1b11cec62f12335cbca52cdf9d2f78563484e3312534f4",
+  "source_count": 100,
+  "query_pairs": 1300,
+  "planned_decodes": 2600,
+  "scope": "Fixed-threshold transfer to100previously generated SemBind-bound reference images, nine author distortions and three related-instance probes. These assets were used in earlier representation studies; not wholly unseen project data.",
+  "method_selection": "Main and identity ablation selected after the prior30source development experiment; no tuning on this transfer cohort.",
+  "payload": "Reference pixel hash and record identity, actually AEAD-unwrapped. This transfer measures content/key recovery only; no new native-watermark or attack decisions.",
+  "model_execution": "Fresh SSCD and released CopyNCE descriptor/matcher; same exact pixels as capsule, verify cachedSSCD parity.",
+  "attacks_generated": false,
+  "carrier_modified": false,
+  "allowed_gpus": [
+    7,
+    5,
+    4
+  ],
+  "independent_confirmation": false
+}

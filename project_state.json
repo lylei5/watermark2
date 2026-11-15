@@ -830,7 +830,18 @@
     },
     "superiority_established": false
   },
-  "active_runs": [],
+  "active_runs": [
+    {
+      "allowed_gpus": [
+        7,
+        5,
+        4
+      ],
+      "pid": 38799,
+      "run": "capsule_source_transfer_20261115",
+      "protocol_sha256": "2599e5434a712801781e65a993c8de62559a59d916e0e369a74a086148ae49af"
+    }
+  ],
   "queued_runs": [],
   "author_reprompt_control": {
     "run": "author_reprompt_control_20261114_v2",
@@ -1126,5 +1137,15 @@
         10
       ]
     }
+  },
+  "capsule_source_transfer": {
+    "status": "running",
+    "attacks_generated": false,
+    "protocol": "reports/capsule_source_transfer_20261115/protocol.json",
+    "independent_confirmation": false,
+    "references": 100,
+    "planned_decodes": 2600,
+    "run": "capsule_source_transfer_20261115",
+    "planned_pairs": 1300
   }
 }
