@@ -1,0 +1,242 @@
+[
+  {
+    "method": "dct_order_a03",
+    "target": 0.9,
+    "carrier": "GS",
+    "feasible": false,
+    "genuine_joint": null,
+    "total": 30
+  },
+  {
+    "method": "dct_order_a03",
+    "target": 0.9,
+    "carrier": "TR",
+    "feasible": false,
+    "genuine_joint": null,
+    "total": 100
+  },
+  {
+    "method": "dct_order_a03",
+    "target": 0.9,
+    "carrier": "PRC",
+    "feasible": false,
+    "genuine_joint": null,
+    "total": 100
+  },
+  {
+    "method": "dct_order_a03",
+    "target": 0.95,
+    "carrier": "GS",
+    "feasible": false,
+    "genuine_joint": null,
+    "total": 30
+  },
+  {
+    "method": "dct_order_a03",
+    "target": 0.95,
+    "carrier": "TR",
+    "feasible": false,
+    "genuine_joint": null,
+    "total": 100
+  },
+  {
+    "method": "dct_order_a03",
+    "target": 0.95,
+    "carrier": "PRC",
+    "feasible": false,
+    "genuine_joint": null,
+    "total": 100
+  },
+  {
+    "method": "spread_area_a03",
+    "target": 0.9,
+    "carrier": "GS",
+    "feasible": true,
+    "genuine_joint": 25,
+    "total": 30
+  },
+  {
+    "method": "spread_area_a03",
+    "target": 0.9,
+    "carrier": "TR",
+    "feasible": true,
+    "genuine_joint": 91,
+    "total": 100
+  },
+  {
+    "method": "spread_area_a03",
+    "target": 0.9,
+    "carrier": "PRC",
+    "feasible": true,
+    "genuine_joint": 64,
+    "total": 100
+  },
+  {
+    "method": "spread_area_a03",
+    "target": 0.95,
+    "carrier": "GS",
+    "feasible": false,
+    "genuine_joint": null,
+    "total": 30
+  },
+  {
+    "method": "spread_area_a03",
+    "target": 0.95,
+    "carrier": "TR",
+    "feasible": false,
+    "genuine_joint": null,
+    "total": 100
+  },
+  {
+    "method": "spread_area_a03",
+    "target": 0.95,
+    "carrier": "PRC",
+    "feasible": false,
+    "genuine_joint": null,
+    "total": 100
+  },
+  {
+    "method": "spread_order_a03",
+    "target": 0.9,
+    "carrier": "GS",
+    "feasible": true,
+    "genuine_joint": 25,
+    "total": 30
+  },
+  {
+    "method": "spread_order_a03",
+    "target": 0.9,
+    "carrier": "TR",
+    "feasible": true,
+    "genuine_joint": 95,
+    "total": 100
+  },
+  {
+    "method": "spread_order_a03",
+    "target": 0.9,
+    "carrier": "PRC",
+    "feasible": true,
+    "genuine_joint": 63,
+    "total": 100
+  },
+  {
+    "method": "spread_order_a03",
+    "target": 0.95,
+    "carrier": "GS",
+    "feasible": false,
+    "genuine_joint": null,
+    "total": 30
+  },
+  {
+    "method": "spread_order_a03",
+    "target": 0.95,
+    "carrier": "TR",
+    "feasible": false,
+    "genuine_joint": null,
+    "total": 100
+  },
+  {
+    "method": "spread_order_a03",
+    "target": 0.95,
+    "carrier": "PRC",
+    "feasible": false,
+    "genuine_joint": null,
+    "total": 100
+  },
+  {
+    "method": "spread_order_all_a03",
+    "target": 0.9,
+    "carrier": "GS",
+    "feasible": true,
+    "genuine_joint": 28,
+    "total": 30
+  },
+  {
+    "method": "spread_order_all_a03",
+    "target": 0.9,
+    "carrier": "TR",
+    "feasible": true,
+    "genuine_joint": 96,
+    "total": 100
+  },
+  {
+    "method": "spread_order_all_a03",
+    "target": 0.9,
+    "carrier": "PRC",
+    "feasible": true,
+    "genuine_joint": 64,
+    "total": 100
+  },
+  {
+    "method": "spread_order_all_a03",
+    "target": 0.95,
+    "carrier": "GS",
+    "feasible": false,
+    "genuine_joint": null,
+    "total": 30
+  },
+  {
+    "method": "spread_order_all_a03",
+    "target": 0.95,
+    "carrier": "TR",
+    "feasible": false,
+    "genuine_joint": null,
+    "total": 100
+  },
+  {
+    "method": "spread_order_all_a03",
+    "target": 0.95,
+    "carrier": "PRC",
+    "feasible": false,
+    "genuine_joint": null,
+    "total": 100
+  },
+  {
+    "method": "spread_order_identity_a03",
+    "target": 0.9,
+    "carrier": "GS",
+    "feasible": true,
+    "genuine_joint": 27,
+    "total": 30
+  },
+  {
+    "method": "spread_order_identity_a03",
+    "target": 0.9,
+    "carrier": "TR",
+    "feasible": true,
+    "genuine_joint": 91,
+    "total": 100
+  },
+  {
+    "method": "spread_order_identity_a03",
+    "target": 0.9,
+    "carrier": "PRC",
+    "feasible": true,
+    "genuine_joint": 62,
+    "total": 100
+  },
+  {
+    "method": "spread_order_identity_a03",
+    "target": 0.95,
+    "carrier": "GS",
+    "feasible": false,
+    "genuine_joint": null,
+    "total": 30
+  },
+  {
+    "method": "spread_order_identity_a03",
+    "target": 0.95,
+    "carrier": "TR",
+    "feasible": false,
+    "genuine_joint": null,
+    "total": 100
+  },
+  {
+    "method": "spread_order_identity_a03",
+    "target": 0.95,
+    "carrier": "PRC",
+    "feasible": false,
+    "genuine_joint": null,
+    "total": 100
+  }
+]

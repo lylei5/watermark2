@@ -104,7 +104,25 @@ def main(run):
         residual_equivalence=equivalence,helper_bytes=[min(r['helper_bytes'] for r in enroll),max(r['helper_bytes'] for r in enroll)],
         matched_comparisons=dict(Counter('better' if r['candidate_sources']<r['control_sources'] else 'equal' if r['candidate_sources']==r['control_sources'] else 'worse' for r in matched)),
         source_scope='Previously examined development sources; GS3 evaluation sources, TR/PRC10 each; no FPR1e-6 or independent-confirmation claim.')
-    for name,value in [('audit',audit),('groups',detail),('operating_points',operating),('fixed_controls',frozen),('matched',matched)]:write(run/(name+'.json'),value)
+    # Recalibration stress test of saved observations, not new decode/native calls.
+    heldout=[]
+    for method in methods+CONTROLS:
+        data=[r for r in rows if r['method']==method] if method in methods else canonical
+        score='score' if method in methods else method
+        for family in GENUINE[1:]:
+            cal=[r for r in data if r['carrier']=='GS' and r['split']=='calibration' and r['kind'] in GENUINE and r['kind']!=family]
+            assert len(cal)==27
+            finite=sorted(r[score] for r in cal if r[score] is not None)
+            for target in [.9,.95]:
+                needed=math.ceil(target*len(cal));cutoff=finite[needed-1] if len(finite)>=needed else None
+                for carrier in ['GS','TR','PRC']:
+                    part=[r for r in data if r['carrier']==carrier and r['split'] in ['evaluation','transfer'] and r['kind']==family]
+                    heldout.append(dict(method=method,family=family,target=target,carrier=carrier,calibration_total=len(cal),
+                        threshold=cutoff,feasible=cutoff is not None,total=len(part),
+                        content=sum(r[score] is not None and r[score]<=cutoff for r in part) if cutoff is not None else None,
+                        joint=sum(r['native_accepted'] and r[score] is not None and r[score]<=cutoff for r in part) if cutoff is not None else None))
+    heldout_result=dict(scope='Post-hoc exclusion of one edit family from threshold calibration; existing development sources and frozen observations. No claim of unseen development transformations or fresh payload/native calls.',rows=heldout)
+    for name,value in [('audit',audit),('groups',detail),('operating_points',operating),('fixed_controls',frozen),('matched',matched),('heldout_calibration',heldout_result)]:write(run/(name+'.json'),value)
     print(json.dumps(audit)); print(json.dumps([r for r in detail if r['kind']=='all_genuine']))
 
 

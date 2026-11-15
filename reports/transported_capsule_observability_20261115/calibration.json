@@ -1,0 +1,272 @@
+[
+  {
+    "method": "spread_area_a03",
+    "score_name": "score",
+    "target": 0.9,
+    "available": 28,
+    "total": 30,
+    "threshold": 0.10719063068402589,
+    "feasible": true
+  },
+  {
+    "method": "spread_area_a03",
+    "score_name": "score",
+    "target": 0.95,
+    "available": 28,
+    "total": 30,
+    "threshold": null,
+    "feasible": false
+  },
+  {
+    "method": "spread_area_a03",
+    "score_name": "reference_residual",
+    "target": 0.9,
+    "available": 30,
+    "total": 30,
+    "threshold": 0.10719063005446293,
+    "feasible": true
+  },
+  {
+    "method": "spread_area_a03",
+    "score_name": "reference_residual",
+    "target": 0.95,
+    "available": 30,
+    "total": 30,
+    "threshold": 0.23872480258270304,
+    "feasible": true
+  },
+  {
+    "method": "spread_area_a03",
+    "score_name": "pixel_residual",
+    "target": 0.9,
+    "available": 30,
+    "total": 30,
+    "threshold": 0.17520502458798987,
+    "feasible": true
+  },
+  {
+    "method": "spread_area_a03",
+    "score_name": "pixel_residual",
+    "target": 0.95,
+    "available": 30,
+    "total": 30,
+    "threshold": 0.5805357384200044,
+    "feasible": true
+  },
+  {
+    "method": "spread_order_a03",
+    "score_name": "score",
+    "target": 0.9,
+    "available": 28,
+    "total": 30,
+    "threshold": 0.043359853354832764,
+    "feasible": true
+  },
+  {
+    "method": "spread_order_a03",
+    "score_name": "score",
+    "target": 0.95,
+    "available": 28,
+    "total": 30,
+    "threshold": null,
+    "feasible": false
+  },
+  {
+    "method": "spread_order_a03",
+    "score_name": "reference_residual",
+    "target": 0.9,
+    "available": 29,
+    "total": 30,
+    "threshold": 0.03593582671085393,
+    "feasible": true
+  },
+  {
+    "method": "spread_order_a03",
+    "score_name": "reference_residual",
+    "target": 0.95,
+    "available": 29,
+    "total": 30,
+    "threshold": 0.14311697799345025,
+    "feasible": true
+  },
+  {
+    "method": "spread_order_a03",
+    "score_name": "pixel_residual",
+    "target": 0.9,
+    "available": 30,
+    "total": 30,
+    "threshold": 0.17308973519136597,
+    "feasible": true
+  },
+  {
+    "method": "spread_order_a03",
+    "score_name": "pixel_residual",
+    "target": 0.95,
+    "available": 30,
+    "total": 30,
+    "threshold": 0.5632326032338278,
+    "feasible": true
+  },
+  {
+    "method": "spread_order_all_a03",
+    "score_name": "score",
+    "target": 0.9,
+    "available": 27,
+    "total": 30,
+    "threshold": 0.14311697820841557,
+    "feasible": true
+  },
+  {
+    "method": "spread_order_all_a03",
+    "score_name": "score",
+    "target": 0.95,
+    "available": 27,
+    "total": 30,
+    "threshold": null,
+    "feasible": false
+  },
+  {
+    "method": "spread_order_all_a03",
+    "score_name": "reference_residual",
+    "target": 0.9,
+    "available": 27,
+    "total": 30,
+    "threshold": 0.14311697799345025,
+    "feasible": true
+  },
+  {
+    "method": "spread_order_all_a03",
+    "score_name": "reference_residual",
+    "target": 0.95,
+    "available": 27,
+    "total": 30,
+    "threshold": null,
+    "feasible": false
+  },
+  {
+    "method": "spread_order_all_a03",
+    "score_name": "pixel_residual",
+    "target": 0.9,
+    "available": 30,
+    "total": 30,
+    "threshold": 0.17308973519136597,
+    "feasible": true
+  },
+  {
+    "method": "spread_order_all_a03",
+    "score_name": "pixel_residual",
+    "target": 0.95,
+    "available": 30,
+    "total": 30,
+    "threshold": 0.5632326032338278,
+    "feasible": true
+  },
+  {
+    "method": "spread_order_identity_a03",
+    "score_name": "score",
+    "target": 0.9,
+    "available": 27,
+    "total": 30,
+    "threshold": 0.17308973531848768,
+    "feasible": true
+  },
+  {
+    "method": "spread_order_identity_a03",
+    "score_name": "score",
+    "target": 0.95,
+    "available": 27,
+    "total": 30,
+    "threshold": null,
+    "feasible": false
+  },
+  {
+    "method": "spread_order_identity_a03",
+    "score_name": "reference_residual",
+    "target": 0.9,
+    "available": 30,
+    "total": 30,
+    "threshold": 0.17308973519136597,
+    "feasible": true
+  },
+  {
+    "method": "spread_order_identity_a03",
+    "score_name": "reference_residual",
+    "target": 0.95,
+    "available": 30,
+    "total": 30,
+    "threshold": 0.5632326032338278,
+    "feasible": true
+  },
+  {
+    "method": "spread_order_identity_a03",
+    "score_name": "pixel_residual",
+    "target": 0.9,
+    "available": 30,
+    "total": 30,
+    "threshold": 0.17308973519136597,
+    "feasible": true
+  },
+  {
+    "method": "spread_order_identity_a03",
+    "score_name": "pixel_residual",
+    "target": 0.95,
+    "available": 30,
+    "total": 30,
+    "threshold": 0.5632326032338278,
+    "feasible": true
+  },
+  {
+    "method": "dct_order_a03",
+    "score_name": "score",
+    "target": 0.9,
+    "available": 22,
+    "total": 30,
+    "threshold": null,
+    "feasible": false
+  },
+  {
+    "method": "dct_order_a03",
+    "score_name": "score",
+    "target": 0.95,
+    "available": 22,
+    "total": 30,
+    "threshold": null,
+    "feasible": false
+  },
+  {
+    "method": "dct_order_a03",
+    "score_name": "reference_residual",
+    "target": 0.9,
+    "available": 29,
+    "total": 30,
+    "threshold": 0.03593582671085393,
+    "feasible": true
+  },
+  {
+    "method": "dct_order_a03",
+    "score_name": "reference_residual",
+    "target": 0.95,
+    "available": 29,
+    "total": 30,
+    "threshold": 0.14311697799345025,
+    "feasible": true
+  },
+  {
+    "method": "dct_order_a03",
+    "score_name": "pixel_residual",
+    "target": 0.9,
+    "available": 30,
+    "total": 30,
+    "threshold": 0.17308973519136597,
+    "feasible": true
+  },
+  {
+    "method": "dct_order_a03",
+    "score_name": "pixel_residual",
+    "target": 0.95,
+    "available": 30,
+    "total": 30,
+    "threshold": 0.5632326032338278,
+    "feasible": true
+  }
+]

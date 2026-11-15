@@ -6,6 +6,7 @@
 
 | 研究 | 已完成证据与边界 |
 |---|---|
+| [可观察前向恢复](transported_capsule_observability_20261115/report.md) | 5050次解码、2026次准确密钥、317次原生检测；TR95/100时Reprompt+两代理0/10，与九模板SSCD相同 |
 | [前向密钥封装](transported_capsule_20261115/report.md) | 3030次实际解码、683次准确密钥；全部预设工作点合法覆盖不足；残差与直接参考预测误差等价 |
 | [Reprompt+实际恢复与强对照](reprompt_plus_recovery_20261115/report.md) | 960次恢复、473次准确返回、202次恢复材料原生调用；TR合法95/100、Reprompt+接受8/10与7/10，同合法SSCD各1/10；96项精确合法计数匹配完成 |
 | [作者Reprompt+固定预算](author_reprompt_plus_20261115/report.md) | 两代理、GS/TR各10来源；GS9/TR3候选预算完整生成240张；480条唯一原生/PGID判定，PGID来源接受GS各10/10、TR各8/10；TR首提示词20/20像素一致 |

@@ -830,14 +830,7 @@
     },
     "superiority_established": false
   },
-  "active_runs": [
-    {
-      "run": "transported_capsule_observability_20261115",
-      "protocol_sha256": "651083fedc011035873c4a0c408d8769d671e578df493917d28fe5d624bd7fc7",
-      "device": "CPU249",
-      "pid": 19477
-    }
-  ],
+  "active_runs": [],
   "queued_runs": [],
   "author_reprompt_control": {
     "run": "author_reprompt_control_20261114_v2",
@@ -1085,12 +1078,53 @@
   "transported_capsule_observability": {
     "novelty_established": false,
     "planned_pairs": 1010,
-    "status": "running",
+    "status": "complete",
     "attack_generation": false,
     "planned_key_decodes": 5050,
     "protocol": "reports/transported_capsule_observability_20261115/protocol.json",
     "device": "CPU249",
     "run": "transported_capsule_observability_20261115",
-    "independent_confirmation": false
+    "independent_confirmation": false,
+    "feasible_calibration_points": 4,
+    "exact_key_returns": 2026,
+    "actual_key_decodes": 5050,
+    "report": "reports/transported_capsule_observability_20261115/report.md",
+    "tr_reprompt_plus": {
+      "sd21": [
+        0,
+        10
+      ],
+      "sd15": [
+        0,
+        10
+      ]
+    },
+    "tr_main_genuine": [
+      95,
+      100
+    ],
+    "thresholded_payload_returns": 1158,
+    "superiority_established": false,
+    "restored_native_calls": 317,
+    "tr_matched_sscd_templates": {
+      "sd21": [
+        0,
+        10
+      ],
+      "sd15": [
+        0,
+        10
+      ]
+    },
+    "tr_matched_sscd": {
+      "sd21": [
+        1,
+        10
+      ],
+      "sd15": [
+        1,
+        10
+      ]
+    }
   }
 }

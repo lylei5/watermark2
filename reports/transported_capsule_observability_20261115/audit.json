@@ -1,0 +1,25 @@
+{
+  "status": "complete",
+  "source_sha256": "ff43b160e986b9991a42559083d0fb242c4e325d8fc860330b4c302a4f3871c8",
+  "complete_sha256": "285c183701e4e7c1b025f895dd15b1c4dffbd377b74120b846da2f4692f1dbf5",
+  "cases": 1010,
+  "same_pixel_checks": 5050,
+  "key_confirmations": 2026,
+  "feasible_calibration_points": 4,
+  "residual_equivalence": {
+    "pairs": 2026,
+    "max_absolute_difference": 1.7531806303829208e-08,
+    "identity": "For an exact decoded s, alpha*A*B*s-(A*h+b-y)=y-(A*x+b). Rounding of stored float32 h explains small differences.",
+    "implication": "Certificate is a direct forward-reference residual, not an independent image-discrimination mechanism."
+  },
+  "helper_bytes": [
+    66224,
+    66230
+  ],
+  "matched_comparisons": {
+    "equal": 440,
+    "better": 74,
+    "worse": 94
+  },
+  "source_scope": "Previously examined development sources; GS3 evaluation sources, TR/PRC10 each; no FPR1e-6 or independent-confirmation claim."
+}
