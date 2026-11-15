@@ -1,4 +1,4 @@
-"""Measure full detector extraction on development images; never estimate FPR here."""
+"""Extract full detector features under frozen inputs and original inference budgets."""
 import argparse
 import datetime
 import hashlib
@@ -57,7 +57,7 @@ def prepare(run):
 
 
 def execute(run, method):
-    assert run.parent == ROOT / 'runs'
+    assert run.is_relative_to(ROOT / 'runs')
     assert Path(__file__).resolve() == run / 'unified_runtime_probe.py'
     plan = json.loads((run / 'protocol.json').read_text())
     assert sha(__file__) == plan['worker_sha256']
@@ -67,9 +67,19 @@ def execute(run, method):
     for name, digest in plan['source_sha256'][method].items():
         assert sha(source / name) == digest, name
     output = run / method
-    output.mkdir(exist_ok=False)
+    output.mkdir(exist_ok=True)
     state = dict(status='preflight', pid=os.getpid(), method=method, protocol_sha256=sha(run / 'protocol.json'))
     rows = []
+    completed = set()
+    if (output / 'progress.json').exists():
+        rows = json.loads((output / 'progress.json').read_text())['rows']
+        for row in rows:
+            assert sha(output / row['artifact']) == row['artifact_sha256']
+            assert row['input_sha256'] == plan['inputs'][row['source']]['sha256']
+            assert row.get('protocol_sha256') == sha(run / 'protocol.json')
+            pair = (row['source'], row['arm'])
+            assert pair not in completed
+            completed.add(pair)
     started = time.monotonic()
     save(output / 'state.json', state)
     try:
@@ -110,12 +120,7 @@ def execute(run, method):
             provider = pipe_utils.create_diffusion_pipe(
                 pretrained_model_name_or_path='Manojb/stable-diffusion-2-1-base', resolution=512,
                 device='cuda:0', scheduler_name='DDIM', scheduler_inverse_name='DDIM', eager_loading=True)
-            # Count at the provider boundary: one call equals one UNet evaluation.
-            original = provider.predict_noise_with_null
-            def counted_prediction(*args, **kwargs):
-                nfe[0] += 1
-                return original(*args, **kwargs)
-            provider.predict_noise_with_null = counted_prediction
+            count_forward(provider.pipe.unet)
             defenses = {name: PGIDPipeline(pipe=provider, scheduler_config=provider.scheduler.config,
                         num_inference_steps=50, stopping_timestep=budget['k'], num_skip_inversion=budget['s'],
                         guidance_strength=budget['gamma'])
@@ -176,8 +181,16 @@ def execute(run, method):
         save(output / 'state.json', state)
         for index, item in enumerate(plan['inputs']):
             assert sha(item['path']) == item['sha256']
-            image = Image.open(item['path']).convert('RGB')
+            with Image.open(item['path']) as source_image:
+                if plan.get('preprocessing') == 'common_natural_512':
+                    from prepare_coco_nulls import common_image
+                    image = common_image(source_image)
+                    assert hashlib.sha256(image.tobytes()).hexdigest() == item['pixel_sha256']
+                else:
+                    image = source_image.convert('RGB')
             for arm in arms:
+                if (index, arm) in completed:
+                    continue
                 torch.manual_seed(202611150000 + index)
                 torch.cuda.reset_peak_memory_stats()
                 nfe[0] = 0
@@ -187,10 +200,14 @@ def execute(run, method):
                 torch.cuda.synchronize()
                 elapsed = time.monotonic() - tick
                 assert recovered.shape == (1, 4, 64, 64) and torch.isfinite(recovered).all()
+                if 'expected_unet_calls' in plan:
+                    assert nfe[0] == plan['expected_unet_calls'][arm], (arm, nfe[0])
                 destination = output / f'{index:03}_{arm}.npz'
                 np.savez_compressed(destination, recovered=recovered.detach().cpu().numpy(), **auxiliary)
                 rows.append(dict(source=index, arm=arm, input_sha256=item['sha256'], seconds=elapsed,
-                                 unet_calls=nfe[0] if arm != 'pgid_default' else None,
+                                 global_source=item.get('index', index), split=item.get('split', 'development'),
+                                 protocol_sha256=sha(run / 'protocol.json'),
+                                 input_pixel_sha256=item.get('pixel_sha256'), unet_calls=nfe[0],
                                  peak_allocated_bytes=torch.cuda.max_memory_allocated(),
                                  peak_reserved_bytes=torch.cuda.max_memory_reserved(),
                                  artifact=destination.name, artifact_sha256=sha(destination), artifact_bytes=destination.stat().st_size))

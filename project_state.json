@@ -5,7 +5,7 @@
   "status": "unified_benchmark_null_calibration",
   "active_experiments": 1,
   "queued_experiments": 0,
-  "latest_progress_report": "reports/unified_main_sources_20261116/report.md",
+  "latest_progress_report": "reports/unified_null_features_20261116/preparation.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/RESEARCH_PLAN.md",
   "native_sembind_reproduction_complete": false,
@@ -920,6 +920,15 @@
       "protocol": "protocols/unified_seal_clean_20261116.json",
       "completion": "/data0/liyanlei/watermark_research/runs/unified_seal_clean_20261116/clean_results.json",
       "mechanism": "pidfd process-exit wait; require calibration success; no GPU until then"
+    },
+    {
+      "run": "unified_null_features_20261116",
+      "status": "waiting_for_seal_clean_exit",
+      "coordinator_pid": 37800,
+      "predecessor_pid": 20143,
+      "protocol": "protocols/unified_null_features_20261116.json",
+      "completion": "/data0/liyanlei/watermark_research/runs/unified_null_features_20261116/feature_extraction_complete.json",
+      "mechanism": "pidfd process-exit wait; require successful SEAL clean evaluation; development parity gate before all40000 natural inputs; max3 idle nonGPU6 devices"
     }
   ],
   "author_reprompt_control": {
@@ -1328,7 +1337,7 @@
       "native_system"
     ],
     "stateful_control": "native carrier plus per-image registered SSCD",
-    "current_block": "SEAL40000 natural extraction remains active; shared500-source evaluation cohort frozen and audited; preparing detector protocols and main-table score interfaces.",
+    "current_block": "SEAL40000 calibration active; shared500 evaluation sources frozen; process-exit queues prepared for SEAL clean evaluation then full SemBind/PGID GS/TR natural extraction. Common carrier and PRC-specific PGID configuration, distortions and attack execution still pending.",
     "runtime_probe": {
       "status": "complete",
       "run": "unified_runtime_probe_20261115",
@@ -1394,6 +1403,19 @@
       "coordinator_pid": 20143,
       "report": "reports/unified_seal_clean_20261116/preparation.md",
       "accuracy_results_available": false
+    },
+    "full_natural_feature_extraction": {
+      "status": "queued_after_seal_clean",
+      "run": "unified_null_features_20261116",
+      "protocol_sha256": "e0ebe9aad974a310eac591a915b946a4eab997ffa4883d2a80bf463a7b078d22",
+      "coordinator_pid": 37800,
+      "sources": 40000,
+      "method_batches": 800,
+      "planned_artifacts": 160000,
+      "report": "reports/unified_null_features_20261116/preparation.md",
+      "gpu_parity_gate_completed": false,
+      "prc_specific_pgid_covered": false,
+      "natural_thresholds_calibrated": false
     }
   },
   "public_sscd_binary_probe": {
