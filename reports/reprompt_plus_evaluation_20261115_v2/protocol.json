@@ -1,0 +1,55 @@
+{
+  "created_at": 1794705819.198755,
+  "attack": "/data0/liyanlei/watermark_research/runs/author_reprompt_plus_20261115",
+  "attack_protocol_sha256": "ea84b7b016b85ea1d7a350424cfa88048db30d87d1f830be0163e3787eaa4c6c",
+  "scripts": {
+    "copynce_control.py": "7321ed9493777eb754cf3cd2bba6ac5389f7a7d74448319c74d3b173f7fdd243",
+    "evaluate_author_reprompt.py": "2553adf116eade6841ae93867aa876ae05eac906e282c99e532b845a93548e9a",
+    "evaluate_reprompt_plus.py": "cabba0051ef1be7b4fd57f06a3e0bd88d331b8241d446f458d01858c81121e31"
+  },
+  "native_decisions": 480,
+  "content_candidates": 240,
+  "inversion": "Unchanged author native GS/TR DDIM50 and PGID-F50, published per-carrier parameters.",
+  "thresholds": "OriginalGS BA>181/256; originalTR p threshold; content uses frozenGS30 calibration thresholds.",
+  "aggregation": "Same candidate must pass both content recovery and native detection; then any candidate within fixed budget.",
+  "full_reference_denominator": true,
+  "attack_modified": false,
+  "allowed_gpu_indices": [
+    7,
+    5,
+    4
+  ],
+  "excluded_gpu_indices": [
+    6
+  ],
+  "scope": "10sources perGS/TR and two proxies, complete9/3candidate budget; noPRCextension or paper-scale claim.",
+  "predecessor": "/data0/liyanlei/watermark_research/runs/reprompt_plus_evaluation_20261115",
+  "predecessor_protocol_sha256": "4937c5d9cfb0d3a644e8f5408bad7786e7d78e256e3a2147a2d4366d53eeaa65",
+  "recovery_reason": "TR idle guard rejected GPU5 utilization51 before model loading; retry unchanged on idle GPU5.",
+  "tr_failure_log_sha256": "5338d6ab2d54ed5ab5a961a3ec4b8184a21a0b9f2cc34c34d24aad29b1f5ea68",
+  "gs_shards": {
+    "original_tasks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "assist_tasks": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "original_pid": 26006,
+    "assist_gpu": 4,
+    "carrier_material": "Author fixed key/nonce/message indexed by source offset; each query reseeds inversion."
+  },
+  "coordinator_sha256": "97e44fcf9317a65aa46639c150d6fc43d2c85e92204ad8a4c35cce62c70ad7db",
+  "recovery_source_sha256": "afb2bf2f832a4fa913034f1834709a805e98637ef6b4ed8a1e95e72ed01bd241",
+  "reuse_content_sha256": "2796eed8ded3f59b7010ad393e1c5757e4fc26c6d661cdb32a1307029d3d1347",
+  "selection": "Fixed source indices, independent of acceptance. Verify duplicate decisions and complete trial coverage before merge.",
+  "preflight_correction": "Path normalization in coordinator SHA helper; original process exited before any worker start.",
+  "initial_protocol_sha256": "1b2fcbf273e17279681b235ce6a208c497c0f7f4f05498af15116306c346145f"
+}

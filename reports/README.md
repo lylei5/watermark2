@@ -6,7 +6,9 @@
 
 | 研究 | 已完成证据与边界 |
 |---|---|
-| [作者Reprompt与原生防御](author_reprompt_control_20261114/report.md) | 两代理、三载体、60张完整步骤候选；120条原生/PGID判定；六强对照及360次冻结SSCD真实恢复；全论文大样本矩阵与Reprompt+待完成 |
+| [作者Reprompt+固定预算](author_reprompt_plus_20261115/report.md) | 两代理、GS/TR各10来源；GS9/TR3候选预算完整生成240张；图像/像素/latent哈希及TR首提示词20/20一致性核验完成，检测状态见实时状态 |
+| [多尺度可观察证据恢复](observable_evidence_recovery_20261115/report.md) | 3080次真实恢复、1394次准确返回、388次恢复材料原生调用；可观察规则与固定交集770/770相同；360项同合法通过数比较无SSCD优势 |
+| [作者Reprompt与原生防御](author_reprompt_control_20261114/report.md) | 两代理、三载体、60张完整步骤候选；120条原生/PGID判定；六强对照及360次冻结SSCD真实恢复；全论文大样本矩阵待完成 |
 | [空间证据恢复](spatial_witness_recovery_20261114/report.md) | 2310次实际恢复、749次准确返回、302次恢复材料原生调用；区域隔离TR合法68/100，270项同合法通过数比较无SSCD优势 |
 | [可见性恢复](visible_witness_recovery_20261114/report.md) | 1540次实际恢复、655次准确返回、361次恢复材料调用；TR合法99/100但Reprompt8/10、9/10；180项同合法通过数比较完成 |
 | [TR/PRC验证材料恢复](recovered_carrier_transfer_20261113/report.md) | 280次新反演、3360次实际恢复；2179次成功均准确；440条PGID合法图/封面对照完成，TR合法60/100、PRC29/100；SSCD单参考95/100、64/100；210组描述性共同合法通过数比较完成 |

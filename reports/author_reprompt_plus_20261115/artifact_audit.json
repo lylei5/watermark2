@@ -1,0 +1,109 @@
+{
+  "status": "complete",
+  "author_source_files": 26,
+  "author_worktree_clean": true,
+  "candidate_image_pixel_and_latent_hash_checks": 240,
+  "tr_basic_prompt_pixel_parity": [
+    {
+      "id": "TR_000",
+      "proxy": "sd21",
+      "identical_pixels": true
+    },
+    {
+      "id": "TR_001",
+      "proxy": "sd21",
+      "identical_pixels": true
+    },
+    {
+      "id": "TR_002",
+      "proxy": "sd21",
+      "identical_pixels": true
+    },
+    {
+      "id": "TR_003",
+      "proxy": "sd21",
+      "identical_pixels": true
+    },
+    {
+      "id": "TR_004",
+      "proxy": "sd21",
+      "identical_pixels": true
+    },
+    {
+      "id": "TR_005",
+      "proxy": "sd21",
+      "identical_pixels": true
+    },
+    {
+      "id": "TR_006",
+      "proxy": "sd21",
+      "identical_pixels": true
+    },
+    {
+      "id": "TR_007",
+      "proxy": "sd21",
+      "identical_pixels": true
+    },
+    {
+      "id": "TR_008",
+      "proxy": "sd21",
+      "identical_pixels": true
+    },
+    {
+      "id": "TR_009",
+      "proxy": "sd21",
+      "identical_pixels": true
+    },
+    {
+      "id": "TR_000",
+      "proxy": "sd15",
+      "identical_pixels": true
+    },
+    {
+      "id": "TR_001",
+      "proxy": "sd15",
+      "identical_pixels": true
+    },
+    {
+      "id": "TR_002",
+      "proxy": "sd15",
+      "identical_pixels": true
+    },
+    {
+      "id": "TR_003",
+      "proxy": "sd15",
+      "identical_pixels": true
+    },
+    {
+      "id": "TR_004",
+      "proxy": "sd15",
+      "identical_pixels": true
+    },
+    {
+      "id": "TR_005",
+      "proxy": "sd15",
+      "identical_pixels": true
+    },
+    {
+      "id": "TR_006",
+      "proxy": "sd15",
+      "identical_pixels": true
+    },
+    {
+      "id": "TR_007",
+      "proxy": "sd15",
+      "identical_pixels": true
+    },
+    {
+      "id": "TR_008",
+      "proxy": "sd15",
+      "identical_pixels": true
+    },
+    {
+      "id": "TR_009",
+      "proxy": "sd15",
+      "identical_pixels": true
+    }
+  ],
+  "scope": "Byte/source checks on completed candidates; no additional attacks or model runs."
+}

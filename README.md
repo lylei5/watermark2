@@ -2,9 +2,9 @@
 
 本项目研究扩散水印的内容绑定防御，同时建立可复核的SemBind、PGID、SEAL原生基线。[实时状态](project_state.json)记录运行队列；[验收契约](docs/THREE_BASELINE_REPRODUCTION.md)规定实现和数值复现的范围。
 
-最新结果为[作者Reprompt与强对照](reports/author_reprompt_control_20261114/report.md)、[空间证据恢复](reports/spatial_witness_recovery_20261114/report.md)和[可见性恢复](reports/visible_witness_recovery_20261114/report.md)。60张作者完整50步反演/50步生成的Reprompt图与120条原生/PGID判定已完成；两代理下PGID接受TR7/10、6/10，PRC3/10、1/10。对应合法图通过为TR60/100、PRC29/100。原论文的大样本多目标矩阵及Reprompt+仍待完成。
+最新结果为[作者Reprompt+固定预算](reports/author_reprompt_plus_20261115/report.md)与[多尺度可观察证据恢复](reports/observable_evidence_recovery_20261115/report.md)。Reprompt+已生成240张候选，GS/TR分别保留原论文9/3次完整预算，两代理、各10来源；原生与PGID检测状态见[实时状态](project_state.json)。此前[basic Reprompt与强对照](reports/author_reprompt_control_20261114/report.md)已完成60张图和120条判定，PGID接受TR7/10、6/10，PRC3/10、1/10，对应合法通过60/100、29/100。原论文的大样本多目标矩阵仍待完成。
 
-已实现128位密钥恢复、原生材料解封和作者检测器调用。最新两项原型共3850次真实恢复，另有360次冻结SSCD恢复对照。可见性译码把TR合法密钥恢复从78/100提高到99/100，但Reprompt仍接受8/10、9/10；同合法99/100的SSCD为0/10、1/10。区域隔离版本拒绝本次攻击，但合法覆盖更低。当前证据尚未建立新方法优势；研究重点转向恢复证据如何区分编辑造成的信息缺失与重新生成造成的实例变化。[方法说明](docs/SPATIAL_WITNESS_RECOVERY.md)给出实现和代数条件，[研究说明](docs/INSTANCE_BINDING_RESEARCH.md)记录完整比较与机制判断。
+已实现128位密钥恢复、原生材料解封和作者检测器调用。多尺度实验完成3080次恢复判定、1394次准确返回和388次恢复材料原生调用。强制保留细节后，TR合法通过95/100，Reprompt接受4/10、6/10；同合法通过数的SSCD为0/10、0/10。可观察规则与固定三尺度交集在770个配对上完全相同。这一结果将下一步问题明确为：如何识别合法编辑真正破坏的证据，同时保留区分实例的细节。[方法说明](docs/OBSERVABLE_EVIDENCE_BINDING.md)列出机制、代数条件及直接先例，[研究说明](docs/INSTANCE_BINDING_RESEARCH.md)保留此前完整比较。
 
 [2026-11-13研究汇报](presentations/defense_briefing_20261113/README.md)包含中山大学模板演示文稿、逐页讲稿和实验来源。
 

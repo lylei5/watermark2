@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-15T01:05:09.160196+00:00",
-  "status": "reprompt_plus_and_observable_evidence",
-  "active_experiments": 2,
+  "updated_at": "2026-11-15T01:29:08.4298324Z",
+  "status": "reprompt_plus_native_evaluation",
+  "active_experiments": 1,
   "queued_experiments": 1,
-  "latest_progress_report": "reports/author_reprompt_control_20261114/report.md",
+  "latest_progress_report": "reports/observable_evidence_recovery_20261115/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/INSTANCE_BINDING_RESEARCH.md",
   "native_sembind_reproduction_complete": false,
@@ -212,7 +212,7 @@
     "randomized_identity_null_trials": 3000000,
     "randomized_identity_null_at167": {
       "accepted": 0,
-      "cp95_upper": 1.2296257287143092e-06,
+      "cp95_upper": 1.2296257287143092E-06,
       "fixed_user_natural_fpr": false
     },
     "run": "phase1_trajectory_native_gs_20261113",
@@ -702,7 +702,7 @@
     "figure_visual_inspection": "PNG labels and missing points checked; PDF fonts embedded TrueType",
     "pgid_descriptive_threshold_comparison": "reports/recovered_carrier_transfer_20261113/pgid_working_points.json"
   },
-  "last_queue_observation": "2026-11-14T05:45:27.600488+00:00",
+  "last_queue_observation": "2026-11-14T13:45:27.600488+08:00",
   "paired_channel_recovery": {
     "run": "paired_edit_registration_20261113",
     "status": "complete",
@@ -828,27 +828,24 @@
   },
   "active_runs": [
     {
-      "run": "author_reprompt_plus_20261115",
-      "pids": [
-        9852,
-        9853
+      "run": "reprompt_plus_evaluation_20261115_v2",
+      "protocol_sha256": "585151a4ced9b5d2a2320d9f54b8230698a3159478b0335eb79a82203db6f428",
+      "worker_pids": [
+        26006,
+        546,
+        547
       ],
-      "device": "GPU7/5",
-      "protocol_sha256": "ea84b7b016b85ea1d7a350424cfa88048db30d87d1f830be0163e3787eaa4c6c"
-    },
-    {
-      "run": "observable_evidence_recovery_20261115",
-      "pid": 16876,
-      "device": "CPU249",
-      "protocol_sha256": "0ee40e8cde2319c1c62b28e8791eee70155c4acc650f6bbc150b6ac3a3df1954"
+      "device": "GPU7/5/4",
+      "pid": 545
     }
   ],
   "queued_runs": [
     {
-      "run": "reprompt_plus_evaluation_20261115",
-      "pid": 16874,
-      "depends_on": "author_reprompt_plus_20261115",
-      "protocol_sha256": "4937c5d9cfb0d3a644e8f5408bad7786e7d78e256e3a2147a2d4366d53eeaa65"
+      "run": "reprompt_plus_recovery_20261115",
+      "coordinator_pid": 545,
+      "depends_on": "reprompt_plus_evaluation_20261115_v2",
+      "planned_recovery_api_decisions": 960,
+      "device": "CPU249"
     }
   ],
   "author_reprompt_control": {
@@ -943,10 +940,10 @@
     ],
     "protocol_clarification": "reports/visible_witness_recovery_20261114/protocol_clarification.json"
   },
-  "research_hypothesis": "Every observable detail band must support the same instance key; missing bands may be omitted by a frozen unsigned observability rule. Layered authentication has direct prior art; utility and novelty require results.",
+  "research_hypothesis": "Multi-scale ordinal constraints improve discrimination over coarse order but observability adds no acceptance benefit. Seek evidence that separates legitimate information loss from regenerated instance changes; fixed strong controls and independent source/edit confirmation required.",
   "author_reprompt_plus": {
     "run": "author_reprompt_plus_20261115",
-    "status": "running",
+    "status": "generation_complete",
     "protocol": "reports/author_reprompt_plus_20261115/protocol.json",
     "protocol_sha256": "ea84b7b016b85ea1d7a350424cfa88048db30d87d1f830be0163e3787eaa4c6c",
     "planned_candidates": 240,
@@ -959,11 +956,16 @@
     "proxies": [
       "sd21",
       "sd15"
-    ]
+    ],
+    "actual_candidates": 240,
+    "report": "reports/author_reprompt_plus_20261115/report.md",
+    "artifact_audit": "reports/author_reprompt_plus_20261115/artifact_audit.json",
+    "evaluation_run": "reprompt_plus_evaluation_20261115_v2",
+    "evaluation_status": "running"
   },
   "observable_evidence_recovery": {
     "run": "observable_evidence_recovery_20261115",
-    "status": "running",
+    "status": "complete",
     "protocol": "reports/observable_evidence_recovery_20261115/protocol.json",
     "protocol_sha256": "0ee40e8cde2319c1c62b28e8791eee70155c4acc650f6bbc150b6ac3a3df1954",
     "planned_recovery_api_decisions": 3080,
@@ -976,6 +978,19 @@
     ],
     "independent_confirmation": false,
     "superiority_established": false,
-    "design": "docs/OBSERVABLE_EVIDENCE_BINDING.md"
+    "design": "docs/OBSERVABLE_EVIDENCE_BINDING.md",
+    "actual_recoveries": 3080,
+    "exact_successes": 1394,
+    "restored_native_calls": 388,
+    "authentication_checks": 60,
+    "matched_comparisons": 360,
+    "matched_better": 16,
+    "matched_equal": 174,
+    "matched_worse": 170,
+    "observable_all_decision_agreement": [
+      770,
+      770
+    ],
+    "report": "reports/observable_evidence_recovery_20261115/report.md"
   }
 }

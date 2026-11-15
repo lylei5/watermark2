@@ -31,12 +31,14 @@ def prepare(run):
 
 def wait_attacks():
     for job in read(ATTACK/'launch.json')['jobs']:
-        if not (ATTACK/job['model']/'complete.json').exists():
-            libc=ctypes.CDLL(None,use_errno=True);fd=libc.syscall(434,job['pid'],0)
-            if fd>=0:
-                assert str(ATTACK).encode() in Path(f"/proc/{job['pid']}/cmdline").read_bytes()
-                select.select([fd],[],[]);os.close(fd)
-            else:assert ctypes.get_errno()==3
+        # A written completion file can precede CUDA process teardown.
+        libc=ctypes.CDLL(None,use_errno=True);fd=libc.syscall(434,job['pid'],0)
+        if fd>=0:
+            command=Path(f"/proc/{job['pid']}/cmdline").read_bytes()
+            if command:
+                assert str(ATTACK).encode() in command
+            select.select([fd],[],[]);os.close(fd)
+        else:assert ctypes.get_errno()==3
     queries=[]
     for model in ['sd21','sd15']:
         done=read(ATTACK/model/'complete.json');assert done['status']=='complete' and done['count']==120

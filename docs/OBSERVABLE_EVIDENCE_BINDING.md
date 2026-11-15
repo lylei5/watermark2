@@ -46,4 +46,6 @@
 
 主来源：[分层认证作者稿](https://dsp-group.mit.edu/wp-content/uploads/2024/11/AuthenticationwithDistort.pdf)、[2005作者公开版本](https://arxiv.org/abs/cs/0503027)、[Piper与Safavi-Naini最终论文](https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/iet-ifs.2010.0059)、[TIP2012作者全文](https://web.stanford.edu/~bgirod/pdfs/LinTransIP2012.pdf)、[可变特征集合分析](https://arxiv.org/abs/2506.22347)。本轮阅读了前三项机制相关正文/公开全文及最后一项摘要，不把搜索摘要中的性能数字当作复现结果。
 
-当前实现是机制实验。是否形成论文贡献，取决于普通RGB中的可观察性判定是否带来现有强对照未覆盖的恢复区域或协议收益，以及它对新来源、新编辑是否成立。
+## 完成结果
+
+[3080次实际恢复结果](../reports/observable_evidence_recovery_20261115/report.md)已完成。全部770个配对上，observable_scales与all_scales判定相同；TR合法95/100时，Reprompt仍接受4/10、6/10，对应SSCD为0/10、0/10。360项同合法通过数比较没有SSCD优势。当前实验支持“附加细节能收紧粗结构的接受区域”，可观察性选择的额外作用为零。继续研究需要先找到能真实区分合法证据丢失与实例替换的观测量，并在新来源、新编辑上冻结确认。
