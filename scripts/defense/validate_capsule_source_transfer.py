@@ -37,7 +37,7 @@ def prepare(run):
     thresholds={m:next(r['threshold'] for r in cal if r['method']==m and r['score_name']=='score' and r['target']==.9) for m in METHODS}
     thresholds.update({m:next(r['threshold'] for r in controls if r['method']==m and r['target']==.9) for m in CONTROLS})
     assert all(v is not None for v in thresholds.values())
-    inputs=[PARENT/'complete.json',PARENT/'calibration.json',PARENT/'fixed_controls.json',PARENT/'cases.json',DATA/'protocol.json',DATA/'sscd/complete.json',DATA/'sscd/metadata.json',DATA/'sscd/features.npz',COPY/'protocol.json']
+    inputs=[PARENT/'complete.json',PARENT/'calibration.json',PARENT/'fixed_controls.json',PARENT/'cases.json',DATA/'protocol.json',DATA/'sscd/complete.json',DATA/'sscd/metadata.json',DATA/'sscd/features.npz',DATA/'sscd/model_manifest.json',COPY/'protocol.json']
     plan=dict(created_at=time.time(),scripts={p.name:sha(p) for p in run.glob('*.py')},inputs={str(p):sha(p) for p in inputs},
         methods=METHODS,controls=CONTROLS,thresholds=thresholds,private=str(private),provider_sha256=sha(private/'provider.bin'),
         source_count=100,query_pairs=1300,planned_decodes=2600,
@@ -58,6 +58,7 @@ def execute(run):
         parsed={int(v[0]):v for v in [line.split(', ') for line in devices.strip().splitlines()]}
         free=[parsed[i] for i in [7,5,4] if int(parsed[i][2])<100 and int(parsed[i][3])==0];assert free,'No allowed idleGPU'
         gpu=free[0];os.environ.update(CUDA_VISIBLE_DEVICES=gpu[1],OMP_NUM_THREADS='4',OPENBLAS_NUM_THREADS='4',MKL_NUM_THREADS='4',HF_HUB_OFFLINE='1',TRANSFORMERS_OFFLINE='1')
+        state.update(gpu=int(gpu[0]),gpu_uuid=gpu[1]);write(run/'state.json',state)
         sys.path.insert(0,str(ROOT/'tools/transport_recovery_dependencies'))
         import numpy as np
         import cv2
@@ -74,7 +75,8 @@ def execute(run):
         for kind in cc.WEIGHTS:
             m,cfg,_=cc.load_model(kind,torch,config,builders);models[kind]=m.to('cuda')
             ts[kind]=transforms.Compose([transforms.Resize((cfg.input.img_size,cfg.input.img_size),interpolation=InterpolationMode[cfg.input.augmentation.interpolation.upper()]),transforms.ToTensor(),transforms.Normalize(cfg.input.augmentation.post_process.normalize.mean,cfg.input.augmentation.post_process.normalize.std)])
-        data=read(DATA/'protocol.json');sscd_path=Path(data['sscd']['path']);assert sha(sscd_path)==data['sscd']['sha256']
+        data=read(DATA/'protocol.json');sscd_path=Path(data['sscd']['path']);manifest=read(DATA/'sscd/model_manifest.json')
+        assert str(sscd_path)==manifest['path'] and sha(sscd_path)==manifest['sha256']
         sscd=torch.jit.load(str(sscd_path),map_location='cuda').eval()
         st=transforms.Compose([transforms.Resize([320,320]),transforms.ToTensor(),transforms.Normalize([.485,.456,.406],[.229,.224,.225])])
         metadata=read(DATA/'sscd/metadata.json');old=np.load(DATA/'sscd/features.npz')['features'];index={tuple(k):i for i,k in enumerate(metadata['keys'])}

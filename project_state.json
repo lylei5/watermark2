@@ -832,14 +832,14 @@
   },
   "active_runs": [
     {
+      "pid": 41771,
       "allowed_gpus": [
         7,
         5,
         4
       ],
-      "pid": 38799,
-      "run": "capsule_source_transfer_20261115",
-      "protocol_sha256": "2599e5434a712801781e65a993c8de62559a59d916e0e369a74a086148ae49af"
+      "protocol_sha256": "7a1693bb0d447c3cbba357063a38ed92a0eddb67a03b54106caa9406c6cb2af4",
+      "run": "capsule_source_transfer_20261115_v2"
     }
   ],
   "queued_runs": [],
@@ -1141,11 +1141,12 @@
   "capsule_source_transfer": {
     "status": "running",
     "attacks_generated": false,
-    "protocol": "reports/capsule_source_transfer_20261115/protocol.json",
+    "protocol": "reports/capsule_source_transfer_20261115_v2/protocol.json",
     "independent_confirmation": false,
     "references": 100,
     "planned_decodes": 2600,
-    "run": "capsule_source_transfer_20261115",
-    "planned_pairs": 1300
+    "run": "capsule_source_transfer_20261115_v2",
+    "planned_pairs": 1300,
+    "preflight_failure": "reports/capsule_source_transfer_20261115/preflight_failure.json"
   }
 }
