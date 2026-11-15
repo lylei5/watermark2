@@ -1,0 +1,2782 @@
+[
+  {
+    "task": 0,
+    "kind": "bound",
+    "key_recovered": true,
+    "detail": {
+      "reason": "key_recovered",
+      "key_confirmed": true,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 12,
+      "objective_calls": 13,
+      "relaxed_objective": 6.277510066818576e-07,
+      "decoded_order_residual": 3.878959614448864e-18,
+      "coefficient_error_rms": 0.013086065646436393,
+      "unique_query_levels": [
+        240,
+        231,
+        223
+      ]
+    },
+    "forward_key": true,
+    "forward_detail": {
+      "reason": "key_recovered",
+      "pilot_counts": [
+        103,
+        124,
+        98
+      ],
+      "decode_coordinates": 2559,
+      "check_coordinates": 2577,
+      "weights": [
+        [
+          0.9999999850081124,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.9999999877246574,
+          0.0,
+          0.0,
+          4.592181442816929e-09
+        ],
+        [
+          0.999999986132582,
+          0.0,
+          0.0,
+          8.84317089342577e-09
+        ]
+      ],
+      "offsets": [
+        -3.773344581237126e-09,
+        -4.6380769780363096e-09,
+        -2.7311987116362957e-09
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.053322508383372276,
+      "max_eigenvalue": 0.13140679577317602,
+      "residual": 1.3026846512249602e-08,
+      "coefficient_error_rms": 7.641720142826774e-08,
+      "key_confirmed": true
+    },
+    "order_reference": 8.771002434413103e-17,
+    "image_sha256": "ca57603d8604ac5725bcb1f1e99e63d3e47896889c8a59346d674a81b78ab4a1",
+    "seconds": 0.08457136154174805
+  },
+  {
+    "task": 0,
+    "kind": "gaussian_std",
+    "key_recovered": false,
+    "detail": {
+      "reason": "key_confirmation_failure",
+      "key_confirmed": false,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 6,
+      "objective_calls": 7,
+      "relaxed_objective": 117.94459479248331,
+      "decoded_order_residual": 0.13932844402781583,
+      "coefficient_error_rms": 0.30397968759042254,
+      "unique_query_levels": [
+        235,
+        228,
+        214
+      ]
+    },
+    "forward_key": false,
+    "forward_detail": {
+      "reason": "key_confirmation_failure",
+      "pilot_counts": [
+        128,
+        128,
+        128
+      ],
+      "decode_coordinates": 3072,
+      "check_coordinates": 3072,
+      "weights": [
+        [
+          0.641369744282676,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.6050449296263248,
+          0.0,
+          0.0,
+          0.38775541761324556
+        ],
+        [
+          0.812238098324659,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "offsets": [
+        0.1269675087823992,
+        -0.010624695685333363,
+        0.12150774720310109
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.04892595921075916,
+      "max_eigenvalue": 0.07259899019964607,
+      "residual": 0.12808672463247536,
+      "coefficient_error_rms": 0.7034458347791347,
+      "key_confirmed": false
+    },
+    "order_reference": 0.13953384483639003,
+    "image_sha256": "7f73f761c767ba3e7e59ffa494101ab48960a31405602e801f3919c299dcc104",
+    "seconds": 0.07527852058410645
+  },
+  {
+    "task": 0,
+    "kind": "brightness_factor",
+    "key_recovered": true,
+    "detail": {
+      "reason": "key_recovered",
+      "key_confirmed": true,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 12,
+      "objective_calls": 13,
+      "relaxed_objective": 6.24326569669053e-07,
+      "decoded_order_residual": 3.878959614448864e-18,
+      "coefficient_error_rms": 0.015464388761631465,
+      "unique_query_levels": [
+        139,
+        135,
+        131
+      ]
+    },
+    "forward_key": true,
+    "forward_detail": {
+      "reason": "key_recovered",
+      "pilot_counts": [
+        118,
+        117,
+        85
+      ],
+      "decode_coordinates": 2446,
+      "check_coordinates": 2459,
+      "weights": [
+        [
+          0.561681707494266,
+          0.0,
+          0.0,
+          0.0018581770340616313
+        ],
+        [
+          0.5545564148008705,
+          0.0077459114857470765,
+          0.00022126001754685376,
+          0.0
+        ],
+        [
+          0.5597777569641778,
+          0.0010712975798501424,
+          0.0,
+          0.0
+        ]
+      ],
+      "offsets": [
+        -0.002695335358376183,
+        -0.0024350129007639776,
+        -0.0016068364283877146
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.01742686323500315,
+      "max_eigenvalue": 0.039700983281462494,
+      "residual": 0.0011528526225168482,
+      "coefficient_error_rms": 0.006619693625251273,
+      "key_confirmed": true
+    },
+    "order_reference": 8.771002434413103e-17,
+    "image_sha256": "32a6da6c19d2ad5a487789c2042044c125af6bc588420e5b23d4e429dd6c69c4",
+    "seconds": 0.0887300968170166
+  },
+  {
+    "task": 0,
+    "kind": "same",
+    "key_recovered": false,
+    "detail": {
+      "reason": "key_confirmation_failure",
+      "key_confirmed": false,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 5,
+      "objective_calls": 6,
+      "relaxed_objective": 452.0092188472737,
+      "decoded_order_residual": 0.27182516768504883,
+      "coefficient_error_rms": 0.3592048608481768,
+      "unique_query_levels": [
+        184,
+        179,
+        164
+      ]
+    },
+    "forward_key": false,
+    "forward_detail": {
+      "reason": "key_confirmation_failure",
+      "pilot_counts": [
+        127,
+        128,
+        123
+      ],
+      "decode_coordinates": 1959,
+      "check_coordinates": 1965,
+      "weights": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.03621275135639212,
+          0.0,
+          0.21248649773733325
+        ],
+        [
+          0.06740412752215313,
+          0.02163863596947536,
+          0.0,
+          0.0
+        ]
+      ],
+      "offsets": [
+        0.0,
+        0.41081355233396016,
+        0.5292552744767234
+      ],
+      "active_channels": [
+        false,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.0002561780016576664,
+      "max_eigenvalue": 0.0015500979055060467,
+      "residual": 0.1183316284955874,
+      "coefficient_error_rms": 8.990042579657615,
+      "key_confirmed": false
+    },
+    "order_reference": 0.27696902105928,
+    "image_sha256": "3157213f76af98f4d7a177d4609505c2859d042481f55185bc71054a84e10631",
+    "seconds": 0.07234549522399902
+  },
+  {
+    "task": 1,
+    "kind": "bound",
+    "key_recovered": true,
+    "detail": {
+      "reason": "key_recovered",
+      "key_confirmed": true,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 12,
+      "objective_calls": 13,
+      "relaxed_objective": 6.250366980725395e-07,
+      "decoded_order_residual": 0.0,
+      "coefficient_error_rms": 0.013246882953638042,
+      "unique_query_levels": [
+        241,
+        236,
+        235
+      ]
+    },
+    "forward_key": true,
+    "forward_detail": {
+      "reason": "key_recovered",
+      "pilot_counts": [
+        128,
+        128,
+        128
+      ],
+      "decode_coordinates": 3059,
+      "check_coordinates": 3058,
+      "weights": [
+        [
+          0.9999999786948658,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.9999999823610118,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.9999999807351965,
+          2.7905413687192203e-09,
+          0.0,
+          0.0
+        ]
+      ],
+      "offsets": [
+        -3.844275120457041e-09,
+        -5.020187821003219e-09,
+        -3.175396390275864e-09
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.0984238883423647,
+      "max_eigenvalue": 0.14222701824114584,
+      "residual": 1.5926032968702725e-08,
+      "coefficient_error_rms": 9.930372793141069e-08,
+      "key_confirmed": true
+    },
+    "order_reference": 1.1560815024558907e-16,
+    "image_sha256": "8af44e75ce92f3af4e5aeda8797b6120a39c5a07c359f41b68cd56542404316f",
+    "seconds": 0.08710885047912598
+  },
+  {
+    "task": 1,
+    "kind": "gaussian_std",
+    "key_recovered": true,
+    "detail": {
+      "reason": "key_recovered",
+      "key_confirmed": true,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 7,
+      "objective_calls": 8,
+      "relaxed_objective": 1.1096209855476764,
+      "decoded_order_residual": 0.013519145691544889,
+      "coefficient_error_rms": 0.03243481632414125,
+      "unique_query_levels": [
+        228,
+        229,
+        222
+      ]
+    },
+    "forward_key": true,
+    "forward_detail": {
+      "reason": "key_recovered",
+      "pilot_counts": [
+        128,
+        128,
+        128
+      ],
+      "decode_coordinates": 3072,
+      "check_coordinates": 3072,
+      "weights": [
+        [
+          0.936641596246296,
+          0.0,
+          0.009756037375444908,
+          0.055160701339652674
+        ],
+        [
+          0.9812120245014457,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.9284906356998324,
+          0.04118679471581022,
+          0.0,
+          0.0
+        ]
+      ],
+      "offsets": [
+        -0.0015392118006206656,
+        0.011479241823620479,
+        0.012850182177835678
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.09231929584468997,
+      "max_eigenvalue": 0.1322206270568261,
+      "residual": 0.015765645499778946,
+      "coefficient_error_rms": 0.058666849541520426,
+      "key_confirmed": true
+    },
+    "order_reference": 0.013519145792665783,
+    "image_sha256": "065e69fc9f044d843b536101c7e694ee742adb804e56a9587cce962128b42dc5",
+    "seconds": 0.08149242401123047
+  },
+  {
+    "task": 1,
+    "kind": "brightness_factor",
+    "key_recovered": true,
+    "detail": {
+      "reason": "key_recovered",
+      "key_confirmed": true,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 11,
+      "objective_calls": 12,
+      "relaxed_objective": 6.293026656789871e-07,
+      "decoded_order_residual": 0.0,
+      "coefficient_error_rms": 0.012641317469497195,
+      "unique_query_levels": [
+        127,
+        125,
+        122
+      ]
+    },
+    "forward_key": true,
+    "forward_detail": {
+      "reason": "key_recovered",
+      "pilot_counts": [
+        44,
+        46,
+        109
+      ],
+      "decode_coordinates": 2304,
+      "check_coordinates": 2310,
+      "weights": [
+        [
+          1.9859352734241993,
+          0.0,
+          0.0,
+          0.0003498031350578544
+        ],
+        [
+          1.979812373271945,
+          0.0,
+          0.0038510201865683603,
+          0.0
+        ],
+        [
+          1.9795759143331895,
+          0.0021570994235657723,
+          0.0,
+          0.006358484059299396
+        ]
+      ],
+      "offsets": [
+        -0.0017725661511202029,
+        -0.0006731543665343676,
+        -0.0027146463033015378
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.2076095711944141,
+      "max_eigenvalue": 0.48428855579843766,
+      "residual": 0.0012276701656633434,
+      "coefficient_error_rms": 0.002381992500715061,
+      "key_confirmed": true
+    },
+    "order_reference": 1.1560815024558907e-16,
+    "image_sha256": "bb439935b077d51d9b0d0a2d8c378e85bfd2336393bf8357dc3438165ed3d414",
+    "seconds": 0.08390235900878906
+  },
+  {
+    "task": 1,
+    "kind": "same",
+    "key_recovered": false,
+    "detail": {
+      "reason": "key_confirmation_failure",
+      "key_confirmed": false,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 5,
+      "objective_calls": 6,
+      "relaxed_objective": 256.3220330960576,
+      "decoded_order_residual": 0.20507997461389482,
+      "coefficient_error_rms": 0.36902063575606087,
+      "unique_query_levels": [
+        254,
+        238,
+        252
+      ]
+    },
+    "forward_key": false,
+    "forward_detail": {
+      "reason": "key_confirmation_failure",
+      "pilot_counts": [
+        124,
+        128,
+        119
+      ],
+      "decode_coordinates": 1991,
+      "check_coordinates": 1996,
+      "weights": [
+        [
+          0.14297068636424412,
+          0.1974235193846747,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.5961587251593442
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "offsets": [
+        0.3530257981949323,
+        0.20214236648727751,
+        0.0
+      ],
+      "active_channels": [
+        true,
+        true,
+        false
+      ],
+      "min_eigenvalue": 0.002778767784798597,
+      "max_eigenvalue": 0.01081219092383182,
+      "residual": 0.23116344688122434,
+      "coefficient_error_rms": 5.791974632595724,
+      "key_confirmed": false
+    },
+    "order_reference": 0.20808339276687432,
+    "image_sha256": "cb7ac6384ac1fb3c0676480711fdfe651e5f951d7cdb7163abb7ae20b81cac94",
+    "seconds": 0.07523703575134277
+  },
+  {
+    "task": 2,
+    "kind": "bound",
+    "key_recovered": true,
+    "detail": {
+      "reason": "key_recovered",
+      "key_confirmed": true,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 12,
+      "objective_calls": 13,
+      "relaxed_objective": 6.271106346528785e-07,
+      "decoded_order_residual": 0.0,
+      "coefficient_error_rms": 0.013520278546205224,
+      "unique_query_levels": [
+        256,
+        248,
+        249
+      ]
+    },
+    "forward_key": true,
+    "forward_detail": {
+      "reason": "key_recovered",
+      "pilot_counts": [
+        114,
+        100,
+        91
+      ],
+      "decode_coordinates": 2460,
+      "check_coordinates": 2450,
+      "weights": [
+        [
+          0.9999999875031332,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.9999999822158683,
+          0.0,
+          6.829073507561969e-10,
+          0.0
+        ],
+        [
+          0.9999999718918741,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "offsets": [
+        -7.604540330774512e-09,
+        -6.399888285990585e-09,
+        -2.8468382096136224e-09
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.057742339794778656,
+      "max_eigenvalue": 0.12420322735107689,
+      "residual": 2.0713815927009467e-08,
+      "coefficient_error_rms": 1.5120359589666365e-07,
+      "key_confirmed": true
+    },
+    "order_reference": 3.1943443699303705e-16,
+    "image_sha256": "e19b225c6d0fdc307641165caa6651abc57b805146c1694c9b4e3e5ef5bd4552",
+    "seconds": 0.08666372299194336
+  },
+  {
+    "task": 2,
+    "kind": "gaussian_std",
+    "key_recovered": false,
+    "detail": {
+      "reason": "key_confirmation_failure",
+      "key_confirmed": false,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 6,
+      "objective_calls": 7,
+      "relaxed_objective": 104.65068493450653,
+      "decoded_order_residual": 0.1315300385642469,
+      "coefficient_error_rms": 0.3376339545656089,
+      "unique_query_levels": [
+        232,
+        237,
+        235
+      ]
+    },
+    "forward_key": false,
+    "forward_detail": {
+      "reason": "key_confirmation_failure",
+      "pilot_counts": [
+        128,
+        128,
+        128
+      ],
+      "decode_coordinates": 3072,
+      "check_coordinates": 3072,
+      "weights": [
+        [
+          0.8651768850434998,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.8436388724941396,
+          0.017914233610015446,
+          0.0,
+          0.0
+        ],
+        [
+          0.833100981425618,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "offsets": [
+        0.07149771280624373,
+        0.08920169207176148,
+        0.07052932878739271
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.07075435684392602,
+      "max_eigenvalue": 0.10209096493651054,
+      "residual": 0.13521970332376185,
+      "coefficient_error_rms": 0.5385100282423372,
+      "key_confirmed": false
+    },
+    "order_reference": 0.13171392397282328,
+    "image_sha256": "54a30a0f137ffe154c6543c20f4fd93edf899dcb1808af4bf570af98828afb70",
+    "seconds": 0.07641768455505371
+  },
+  {
+    "task": 2,
+    "kind": "brightness_factor",
+    "key_recovered": true,
+    "detail": {
+      "reason": "key_recovered",
+      "key_confirmed": true,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 12,
+      "objective_calls": 13,
+      "relaxed_objective": 6.290961283720538e-07,
+      "decoded_order_residual": 0.0,
+      "coefficient_error_rms": 0.013807783431619322,
+      "unique_query_levels": [
+        182,
+        182,
+        181
+      ]
+    },
+    "forward_key": true,
+    "forward_detail": {
+      "reason": "key_recovered",
+      "pilot_counts": [
+        90,
+        69,
+        82
+      ],
+      "decode_coordinates": 2120,
+      "check_coordinates": 2123,
+      "weights": [
+        [
+          1.4098177236113352,
+          0.0,
+          0.0,
+          0.0025453722596676842
+        ],
+        [
+          1.4111025854311101,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.4106628696766295,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "offsets": [
+        -0.0028670025653106945,
+        -0.0021645553108676774,
+        -0.0021432302770819645
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.08797643324460959,
+      "max_eigenvalue": 0.23048104296838565,
+      "residual": 0.0011660722728152077,
+      "coefficient_error_rms": 0.002915575862378019,
+      "key_confirmed": true
+    },
+    "order_reference": 3.1943443699303705e-16,
+    "image_sha256": "b752198ae9efe1f3a7f623662a924b24d8ccd8bbed150b517a71574982c15a6e",
+    "seconds": 0.08448934555053711
+  },
+  {
+    "task": 2,
+    "kind": "same",
+    "key_recovered": false,
+    "detail": {
+      "reason": "key_confirmation_failure",
+      "key_confirmed": false,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 6,
+      "objective_calls": 7,
+      "relaxed_objective": 390.8434949141222,
+      "decoded_order_residual": 0.2526740263028527,
+      "coefficient_error_rms": 0.30854859803156126,
+      "unique_query_levels": [
+        255,
+        252,
+        252
+      ]
+    },
+    "forward_key": false,
+    "forward_detail": {
+      "reason": "key_confirmation_failure",
+      "pilot_counts": [
+        128,
+        114,
+        121
+      ],
+      "decode_coordinates": 2815,
+      "check_coordinates": 2829,
+      "weights": [
+        [
+          0.17350246153727414,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.1986495328893818,
+          0.018040757794836854,
+          0.0,
+          0.24254403733488322
+        ],
+        [
+          0.0,
+          0.31916788505271465,
+          0.0,
+          0.06326412331292416
+        ]
+      ],
+      "offsets": [
+        0.42643319355744574,
+        0.19746121434533803,
+        0.23754168672709114
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.003757266663892069,
+      "max_eigenvalue": 0.010518571314645765,
+      "residual": 0.1974624254888676,
+      "coefficient_error_rms": 4.457893222398685,
+      "key_confirmed": false
+    },
+    "order_reference": 0.25640278474698214,
+    "image_sha256": "46d7f56ac13e198355439dab3467d9f0b04ca1527b86d47385183c1975955a42",
+    "seconds": 0.07302570343017578
+  },
+  {
+    "task": 3,
+    "kind": "bound",
+    "key_recovered": true,
+    "detail": {
+      "reason": "key_recovered",
+      "key_confirmed": true,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 12,
+      "objective_calls": 13,
+      "relaxed_objective": 6.243606877244708e-07,
+      "decoded_order_residual": 0.0,
+      "coefficient_error_rms": 0.013629440911263765,
+      "unique_query_levels": [
+        251,
+        253,
+        248
+      ]
+    },
+    "forward_key": true,
+    "forward_detail": {
+      "reason": "key_recovered",
+      "pilot_counts": [
+        125,
+        124,
+        116
+      ],
+      "decode_coordinates": 2840,
+      "check_coordinates": 2830,
+      "weights": [
+        [
+          0.9999999021679887,
+          6.940347891862664e-08,
+          0.0,
+          0.0
+        ],
+        [
+          0.9999999608720636,
+          0.0,
+          0.0,
+          2.6503681360238816e-09
+        ],
+        [
+          0.9999999707429964,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "offsets": [
+        -2.620525463292722e-10,
+        2.9960205427670417e-09,
+        -6.859464107833446e-10
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.07130756454337316,
+      "max_eigenvalue": 0.13564918059803396,
+      "residual": 2.1137049418857665e-08,
+      "coefficient_error_rms": 1.435607593262783e-07,
+      "key_confirmed": true
+    },
+    "order_reference": 9.431295860729623e-17,
+    "image_sha256": "189b9b3dae242fd94c6c56afb6da6e5cd386a709781a656f350790ca09ff6f71",
+    "seconds": 0.08913564682006836
+  },
+  {
+    "task": 3,
+    "kind": "gaussian_std",
+    "key_recovered": true,
+    "detail": {
+      "reason": "key_recovered",
+      "key_confirmed": true,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 6,
+      "objective_calls": 7,
+      "relaxed_objective": 20.44710999035825,
+      "decoded_order_residual": 0.05837037904448741,
+      "coefficient_error_rms": 0.1892381453920338,
+      "unique_query_levels": [
+        237,
+        232,
+        232
+      ]
+    },
+    "forward_key": true,
+    "forward_detail": {
+      "reason": "key_recovered",
+      "pilot_counts": [
+        128,
+        128,
+        128
+      ],
+      "decode_coordinates": 3072,
+      "check_coordinates": 3072,
+      "weights": [
+        [
+          0.9126809660464587,
+          0.0,
+          0.0343872139592571,
+          0.0
+        ],
+        [
+          0.9183324454786388,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.9085643137821214,
+          0.0,
+          0.02114579234735834,
+          0.0
+        ]
+      ],
+      "offsets": [
+        0.023080900275921357,
+        0.04009755301492518,
+        0.04193471188196091
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.08277811878364581,
+      "max_eigenvalue": 0.12008482725293437,
+      "residual": 0.061688284995756286,
+      "coefficient_error_rms": 0.2696376859383438,
+      "key_confirmed": true
+    },
+    "order_reference": 0.058370378928101777,
+    "image_sha256": "17bd2d8761c572134089c99e88066844c4f4818a55c8f4d477bdfe9c9ba3e140",
+    "seconds": 0.0744485855102539
+  },
+  {
+    "task": 3,
+    "kind": "brightness_factor",
+    "key_recovered": true,
+    "detail": {
+      "reason": "key_recovered",
+      "key_confirmed": true,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 13,
+      "objective_calls": 14,
+      "relaxed_objective": 6.23884724675072e-07,
+      "decoded_order_residual": 0.0,
+      "coefficient_error_rms": 0.020913500869425176,
+      "unique_query_levels": [
+        41,
+        41,
+        41
+      ]
+    },
+    "forward_key": true,
+    "forward_detail": {
+      "reason": "key_recovered",
+      "pilot_counts": [
+        32,
+        19,
+        55
+      ],
+      "decode_coordinates": 585,
+      "check_coordinates": 595,
+      "weights": [
+        [
+          6.514059884129314,
+          0.00546021039876341,
+          0.0,
+          0.00320128051282087
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          6.522794357946634,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "offsets": [
+        -0.0022758799237047045,
+        0.0,
+        -0.0016617127298034218
+      ],
+      "active_channels": [
+        true,
+        false,
+        true
+      ],
+      "min_eigenvalue": 0.14531325795277705,
+      "max_eigenvalue": 2.2727185933260916,
+      "residual": 0.0011394997761359786,
+      "coefficient_error_rms": 0.0015853821756035094,
+      "key_confirmed": true
+    },
+    "order_reference": 9.431295860729623e-17,
+    "image_sha256": "f050523a62eaab55c72f8f56a261d14da900431c8e313f9353e584055a783ef4",
+    "seconds": 0.08186674118041992
+  },
+  {
+    "task": 3,
+    "kind": "same",
+    "key_recovered": false,
+    "detail": {
+      "reason": "key_confirmation_failure",
+      "key_confirmed": false,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 6,
+      "objective_calls": 7,
+      "relaxed_objective": 392.3268694752458,
+      "decoded_order_residual": 0.25315254145596505,
+      "coefficient_error_rms": 0.3052386749383485,
+      "unique_query_levels": [
+        244,
+        246,
+        250
+      ]
+    },
+    "forward_key": false,
+    "forward_detail": {
+      "reason": "key_confirmation_failure",
+      "pilot_counts": [
+        128,
+        128,
+        128
+      ],
+      "decode_coordinates": 3042,
+      "check_coordinates": 3046,
+      "weights": [
+        [
+          0.001416070419008328,
+          0.0,
+          0.22949733809297568,
+          0.19008767116996717
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.3099195876808078
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.8518070715153059
+        ]
+      ],
+      "offsets": [
+        0.3250090966607766,
+        0.3600724104959151,
+        0.16640946811826118
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.00041666074622463114,
+      "max_eigenvalue": 0.01863833926150662,
+      "residual": 0.2510526008005256,
+      "coefficient_error_rms": 13.947607159945067,
+      "key_confirmed": false
+    },
+    "order_reference": 0.26155436469095417,
+    "image_sha256": "527f31cb85ee7f82a8842084178dce774ce5d34890270fff0be9bcfb903e8c20",
+    "seconds": 0.07581448554992676
+  },
+  {
+    "task": 4,
+    "kind": "bound",
+    "key_recovered": true,
+    "detail": {
+      "reason": "key_recovered",
+      "key_confirmed": true,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 12,
+      "objective_calls": 13,
+      "relaxed_objective": 6.262083238268852e-07,
+      "decoded_order_residual": 0.0,
+      "coefficient_error_rms": 0.01382830986917006,
+      "unique_query_levels": [
+        245,
+        252,
+        244
+      ]
+    },
+    "forward_key": true,
+    "forward_detail": {
+      "reason": "key_recovered",
+      "pilot_counts": [
+        121,
+        127,
+        102
+      ],
+      "decode_coordinates": 2794,
+      "check_coordinates": 2791,
+      "weights": [
+        [
+          0.9999999925306291,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.9999999814095076,
+          0.0,
+          1.4289836068945709e-08,
+          0.0
+        ],
+        [
+          0.99999998678846,
+          0.0,
+          7.614120039797351e-09,
+          0.0
+        ]
+      ],
+      "offsets": [
+        -4.28234125937621e-09,
+        -7.713987337787387e-09,
+        -6.2789620169922955e-09
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.07390633631355534,
+      "max_eigenvalue": 0.13312438120818423,
+      "residual": 1.8040037782005976e-08,
+      "coefficient_error_rms": 1.0418415334196029e-07,
+      "key_confirmed": true
+    },
+    "order_reference": 1.6984302687199142e-16,
+    "image_sha256": "28a6bf32d2997952e993f15215c87d3c82d4556a39be66660559cc9dbcb3256a",
+    "seconds": 0.0895681381225586
+  },
+  {
+    "task": 4,
+    "kind": "gaussian_std",
+    "key_recovered": true,
+    "detail": {
+      "reason": "key_recovered",
+      "key_confirmed": true,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 6,
+      "objective_calls": 7,
+      "relaxed_objective": 41.109786829495775,
+      "decoded_order_residual": 0.08262564150692144,
+      "coefficient_error_rms": 0.24639321937302952,
+      "unique_query_levels": [
+        232,
+        232,
+        234
+      ]
+    },
+    "forward_key": true,
+    "forward_detail": {
+      "reason": "key_recovered",
+      "pilot_counts": [
+        128,
+        128,
+        128
+      ],
+      "decode_coordinates": 3072,
+      "check_coordinates": 3072,
+      "weights": [
+        [
+          0.9143185503515947,
+          0.019435637773921058,
+          0.0,
+          0.0
+        ],
+        [
+          0.7318000395485363,
+          0.06306627504679797,
+          0.0,
+          0.1844000300809986
+        ],
+        [
+          0.7789839944293876,
+          0.0,
+          0.030689672176059314,
+          0.0
+        ]
+      ],
+      "offsets": [
+        0.0476500331509232,
+        0.00964613499398681,
+        0.13189454121801686
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.06985425327657065,
+      "max_eigenvalue": 0.10018758279757516,
+      "residual": 0.09194465488973612,
+      "coefficient_error_rms": 0.3544212774947172,
+      "key_confirmed": true
+    },
+    "order_reference": 0.08262564109452293,
+    "image_sha256": "861a9aa805d044aea9c23f1b298b11fe0ce7ea65a7bdc10e404cff29aaf06d62",
+    "seconds": 0.07621097564697266
+  },
+  {
+    "task": 4,
+    "kind": "brightness_factor",
+    "key_recovered": true,
+    "detail": {
+      "reason": "key_recovered",
+      "key_confirmed": true,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 12,
+      "objective_calls": 13,
+      "relaxed_objective": 6.24853904258908e-07,
+      "decoded_order_residual": 0.0,
+      "coefficient_error_rms": 0.021493107138183098,
+      "unique_query_levels": [
+        39,
+        39,
+        39
+      ]
+    },
+    "forward_key": false,
+    "forward_detail": {
+      "reason": "insufficient_coordinates",
+      "pilot_counts": [
+        20,
+        14,
+        19
+      ],
+      "decode_coordinates": 0,
+      "check_coordinates": 0,
+      "weights": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "active_channels": [
+        false,
+        false,
+        false
+      ]
+    },
+    "order_reference": 1.6984302687199142e-16,
+    "image_sha256": "a3d196a3948e9cc0659230d6e2425119022402712d72f385d5f6a27364b0c90a",
+    "seconds": 0.07754659652709961
+  },
+  {
+    "task": 4,
+    "kind": "same",
+    "key_recovered": false,
+    "detail": {
+      "reason": "key_confirmation_failure",
+      "key_confirmed": false,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 5,
+      "objective_calls": 6,
+      "relaxed_objective": 531.5590352345553,
+      "decoded_order_residual": 0.2946326508710295,
+      "coefficient_error_rms": 0.34586270725940177,
+      "unique_query_levels": [
+        252,
+        254,
+        229
+      ]
+    },
+    "forward_key": false,
+    "forward_detail": {
+      "reason": "key_confirmation_failure",
+      "pilot_counts": [
+        119,
+        124,
+        82
+      ],
+      "decode_coordinates": 1564,
+      "check_coordinates": 1560,
+      "weights": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.3415691101883623
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.23551460240308136
+        ]
+      ],
+      "offsets": [
+        0.0,
+        0.20823798212227537,
+        0.16848840077277438
+      ],
+      "active_channels": [
+        false,
+        true,
+        true
+      ],
+      "min_eigenvalue": 1.6903030871455773e-05,
+      "max_eigenvalue": 0.0030044709776678854,
+      "residual": 0.26122049982407,
+      "coefficient_error_rms": 40.83738883833506,
+      "key_confirmed": false
+    },
+    "order_reference": 0.3027528031792474,
+    "image_sha256": "28b645f80b344c5d8f611f97714da8e3faa6937a15754d25a416e2ce43b5cb86",
+    "seconds": 0.07239651679992676
+  },
+  {
+    "task": 5,
+    "kind": "bound",
+    "key_recovered": true,
+    "detail": {
+      "reason": "key_recovered",
+      "key_confirmed": true,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 12,
+      "objective_calls": 13,
+      "relaxed_objective": 6.255332865445873e-07,
+      "decoded_order_residual": 0.0,
+      "coefficient_error_rms": 0.013502347716840524,
+      "unique_query_levels": [
+        247,
+        247,
+        222
+      ]
+    },
+    "forward_key": true,
+    "forward_detail": {
+      "reason": "key_recovered",
+      "pilot_counts": [
+        122,
+        117,
+        116
+      ],
+      "decode_coordinates": 2688,
+      "check_coordinates": 2684,
+      "weights": [
+        [
+          0.9999999959423935,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.9999999970635922,
+          2.4558548684818725e-10,
+          0.0,
+          0.0
+        ],
+        [
+          0.9999999886514049,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "offsets": [
+        -1.1193500570882975e-08,
+        -1.2420209971608642e-08,
+        -2.6043968093247827e-09
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.05863970720830701,
+      "max_eigenvalue": 0.13345811857253048,
+      "residual": 2.028050273278933e-08,
+      "coefficient_error_rms": 1.2034773135883833e-07,
+      "key_confirmed": true
+    },
+    "order_reference": 1.7184615050750777e-16,
+    "image_sha256": "c7b533e3323114a04b97ab5eb520dc16f66cc50ae575a5983a6cab0069d8d9c8",
+    "seconds": 0.09290957450866699
+  },
+  {
+    "task": 5,
+    "kind": "gaussian_std",
+    "key_recovered": false,
+    "detail": {
+      "reason": "key_confirmation_failure",
+      "key_confirmed": false,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 6,
+      "objective_calls": 7,
+      "relaxed_objective": 43.28430330083573,
+      "decoded_order_residual": 0.0850385780421589,
+      "coefficient_error_rms": 0.28657822040181286,
+      "unique_query_levels": [
+        232,
+        232,
+        210
+      ]
+    },
+    "forward_key": false,
+    "forward_detail": {
+      "reason": "key_confirmation_failure",
+      "pilot_counts": [
+        128,
+        128,
+        128
+      ],
+      "decode_coordinates": 3072,
+      "check_coordinates": 3072,
+      "weights": [
+        [
+          0.6165577616754769,
+          0.18173528521862423,
+          0.13998044726847914,
+          0.0
+        ],
+        [
+          0.389447062721947,
+          0.4408853081445978,
+          0.0,
+          0.0
+        ],
+        [
+          0.6042809019426381,
+          0.08892012781438527,
+          0.0,
+          0.18367578927595596
+        ]
+      ],
+      "offsets": [
+        0.05340533079439003,
+        0.13227435329342174,
+        0.10935850144584908
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.056403770940865204,
+      "max_eigenvalue": 0.08311575767845078,
+      "residual": 0.08850547307499791,
+      "coefficient_error_rms": 0.4655490451321328,
+      "key_confirmed": false
+    },
+    "order_reference": 0.08514967508940942,
+    "image_sha256": "1196922ab7f1e1af042f8c9c19f4dac7f058fcf0ac6787e8993e4b11ec69ace4",
+    "seconds": 0.0749661922454834
+  },
+  {
+    "task": 5,
+    "kind": "brightness_factor",
+    "key_recovered": true,
+    "detail": {
+      "reason": "key_recovered",
+      "key_confirmed": true,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 11,
+      "objective_calls": 12,
+      "relaxed_objective": 6.241780866138627e-07,
+      "decoded_order_residual": 0.0,
+      "coefficient_error_rms": 0.019486049781547665,
+      "unique_query_levels": [
+        124,
+        124,
+        118
+      ]
+    },
+    "forward_key": true,
+    "forward_detail": {
+      "reason": "key_recovered",
+      "pilot_counts": [
+        18,
+        12,
+        36
+      ],
+      "decode_coordinates": 332,
+      "check_coordinates": 336,
+      "weights": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.9486573561641047,
+          0.0,
+          0.0,
+          3.928120859877935e-05
+        ]
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        -0.0026184847293189706
+      ],
+      "active_channels": [
+        false,
+        false,
+        true
+      ],
+      "min_eigenvalue": 0.00560458465384104,
+      "max_eigenvalue": 0.11217657126400601,
+      "residual": 0.001170567939871961,
+      "coefficient_error_rms": 0.006678528896780803,
+      "key_confirmed": true
+    },
+    "order_reference": 1.7184615050750777e-16,
+    "image_sha256": "3ab4b7770be7b68495332f0c56859178e792f7550924ca49c14f1f41121e8843",
+    "seconds": 0.07821416854858398
+  },
+  {
+    "task": 5,
+    "kind": "same",
+    "key_recovered": false,
+    "detail": {
+      "reason": "key_confirmation_failure",
+      "key_confirmed": false,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 6,
+      "objective_calls": 7,
+      "relaxed_objective": 425.8013575426763,
+      "decoded_order_residual": 0.2638461431555287,
+      "coefficient_error_rms": 0.3593020408252398,
+      "unique_query_levels": [
+        247,
+        252,
+        240
+      ]
+    },
+    "forward_key": false,
+    "forward_detail": {
+      "reason": "key_confirmation_failure",
+      "pilot_counts": [
+        120,
+        123,
+        120
+      ],
+      "decode_coordinates": 2617,
+      "check_coordinates": 2622,
+      "weights": [
+        [
+          0.0,
+          0.20685113684511797,
+          0.13036536902175383,
+          0.0
+        ],
+        [
+          0.12565594360951474,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.5602111650412178,
+          0.13402445034123583,
+          0.0
+        ]
+      ],
+      "offsets": [
+        0.31587981285648553,
+        0.5197121092098669,
+        0.1905540055326564
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.006129494901793447,
+      "max_eigenvalue": 0.018255766648181328,
+      "residual": 0.27188015413145517,
+      "coefficient_error_rms": 4.96466268487865,
+      "key_confirmed": false
+    },
+    "order_reference": 0.27020586949688064,
+    "image_sha256": "c1ad1b0879f11b6e6510d8ea5e377fcb262ae9e76c6e005119a30ad5a4bfc881",
+    "seconds": 0.07634782791137695
+  },
+  {
+    "task": 6,
+    "kind": "bound",
+    "key_recovered": true,
+    "detail": {
+      "reason": "key_recovered",
+      "key_confirmed": true,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 12,
+      "objective_calls": 13,
+      "relaxed_objective": 6.253888975824333e-07,
+      "decoded_order_residual": 0.0,
+      "coefficient_error_rms": 0.01399536531331846,
+      "unique_query_levels": [
+        254,
+        253,
+        253
+      ]
+    },
+    "forward_key": true,
+    "forward_detail": {
+      "reason": "key_recovered",
+      "pilot_counts": [
+        114,
+        114,
+        115
+      ],
+      "decode_coordinates": 2918,
+      "check_coordinates": 2915,
+      "weights": [
+        [
+          0.9999999809310413,
+          1.3063089250069389e-09,
+          0.0,
+          4.565212430307497e-09
+        ],
+        [
+          0.9999999647685887,
+          3.135717977072223e-08,
+          0.0,
+          0.0
+        ],
+        [
+          0.9999999569596886,
+          4.028063304222773e-08,
+          0.0,
+          0.0
+        ]
+      ],
+      "offsets": [
+        -2.3926989278777455e-09,
+        -4.444794310387579e-09,
+        -5.582584228225329e-09
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.073958496342667,
+      "max_eigenvalue": 0.13714360050241925,
+      "residual": 1.3748334428023315e-08,
+      "coefficient_error_rms": 7.552343530492192e-08,
+      "key_confirmed": true
+    },
+    "order_reference": 8.074660735093557e-17,
+    "image_sha256": "cad68ae74ce76eef2edb617148b930dd12509973794e3d5eec7f773399ef4a94",
+    "seconds": 0.08600044250488281
+  },
+  {
+    "task": 6,
+    "kind": "gaussian_std",
+    "key_recovered": false,
+    "detail": {
+      "reason": "key_confirmation_failure",
+      "key_confirmed": false,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 7,
+      "objective_calls": 8,
+      "relaxed_objective": 22.314368576586023,
+      "decoded_order_residual": 0.06110616600320957,
+      "coefficient_error_rms": 0.21403950601724275,
+      "unique_query_levels": [
+        237,
+        236,
+        235
+      ]
+    },
+    "forward_key": false,
+    "forward_detail": {
+      "reason": "key_confirmation_failure",
+      "pilot_counts": [
+        128,
+        128,
+        128
+      ],
+      "decode_coordinates": 3072,
+      "check_coordinates": 3072,
+      "weights": [
+        [
+          0.9001548616556226,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.8795347169301956,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.9303928191698156,
+          0.0,
+          0.0,
+          0.0019758216486745615
+        ]
+      ],
+      "offsets": [
+        0.040538480480354744,
+        0.040798500879616784,
+        0.021036423720916353
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.0802553284847263,
+      "max_eigenvalue": 0.11478390949593566,
+      "residual": 0.05975089026098082,
+      "coefficient_error_rms": 0.29847869964209434,
+      "key_confirmed": false
+    },
+    "order_reference": 0.061219151689685086,
+    "image_sha256": "656a159908a1ddea8160d1eab8993702a6a5697bb1ad0a6a32912b7e24987315",
+    "seconds": 0.07540678977966309
+  },
+  {
+    "task": 6,
+    "kind": "brightness_factor",
+    "key_recovered": true,
+    "detail": {
+      "reason": "key_recovered",
+      "key_confirmed": true,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 12,
+      "objective_calls": 13,
+      "relaxed_objective": 6.246195319094663e-07,
+      "decoded_order_residual": 0.0,
+      "coefficient_error_rms": 0.014608466709361457,
+      "unique_query_levels": [
+        166,
+        166,
+        166
+      ]
+    },
+    "forward_key": true,
+    "forward_detail": {
+      "reason": "key_recovered",
+      "pilot_counts": [
+        124,
+        125,
+        127
+      ],
+      "decode_coordinates": 2957,
+      "check_coordinates": 2948,
+      "weights": [
+        [
+          0.650361011569874,
+          0.0,
+          0.0,
+          0.001087119292185856
+        ],
+        [
+          0.6461803329680985,
+          0.005290922502622551,
+          0.0,
+          0.0
+        ],
+        [
+          0.6489005797714361,
+          0.0,
+          0.0,
+          0.002402363597688344
+        ]
+      ],
+      "offsets": [
+        -0.0020428141897367302,
+        -0.002091701564478632,
+        -0.0020884608879436217
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.03708927619340727,
+      "max_eigenvalue": 0.058451250472542515,
+      "residual": 0.0011288317879437166,
+      "coefficient_error_rms": 0.0056192287635213455,
+      "key_confirmed": true
+    },
+    "order_reference": 8.074660735093557e-17,
+    "image_sha256": "e1ca2fc2b72d571b7d0d97cbc0329f2c2e63f7a79de75903944392d42d1e6570",
+    "seconds": 0.08775758743286133
+  },
+  {
+    "task": 6,
+    "kind": "same",
+    "key_recovered": false,
+    "detail": {
+      "reason": "key_confirmation_failure",
+      "key_confirmed": false,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 6,
+      "objective_calls": 7,
+      "relaxed_objective": 414.4537633037036,
+      "decoded_order_residual": 0.26018354353752454,
+      "coefficient_error_rms": 0.3157914416567816,
+      "unique_query_levels": [
+        254,
+        256,
+        256
+      ]
+    },
+    "forward_key": false,
+    "forward_detail": {
+      "reason": "key_confirmation_failure",
+      "pilot_counts": [
+        111,
+        111,
+        112
+      ],
+      "decode_coordinates": 2603,
+      "check_coordinates": 2609,
+      "weights": [
+        [
+          0.0,
+          0.26674140188528833,
+          0.10375844281793233,
+          0.0
+        ],
+        [
+          0.1615784631935616,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.08149444021839615,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "offsets": [
+        0.3864537347216971,
+        0.5050262516580903,
+        0.48616087960030724
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.0021872799976129704,
+      "max_eigenvalue": 0.005379174178528989,
+      "residual": 0.25857424048780686,
+      "coefficient_error_rms": 8.47038239825257,
+      "key_confirmed": false
+    },
+    "order_reference": 0.26676094297999303,
+    "image_sha256": "d8f6be38572cfe3d23c5a051101fb9c40ef431f74b427b56aeaeea9baeff13a5",
+    "seconds": 0.07363295555114746
+  },
+  {
+    "task": 7,
+    "kind": "bound",
+    "key_recovered": true,
+    "detail": {
+      "reason": "key_recovered",
+      "key_confirmed": true,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 12,
+      "objective_calls": 13,
+      "relaxed_objective": 6.262423548001646e-07,
+      "decoded_order_residual": 3.167157262754228e-18,
+      "coefficient_error_rms": 0.013456918436328789,
+      "unique_query_levels": [
+        233,
+        235,
+        230
+      ]
+    },
+    "forward_key": true,
+    "forward_detail": {
+      "reason": "key_recovered",
+      "pilot_counts": [
+        128,
+        128,
+        128
+      ],
+      "decode_coordinates": 3066,
+      "check_coordinates": 3067,
+      "weights": [
+        [
+          0.999999974741729,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.9999999759772755,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.9999999730504238,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "offsets": [
+        -7.9468875924249e-10,
+        -2.382001151879365e-09,
+        6.53953724505385e-10
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.09850007574750573,
+      "max_eigenvalue": 0.141889909880675,
+      "residual": 1.9303835030713688e-08,
+      "coefficient_error_rms": 1.2219038448464247e-07,
+      "key_confirmed": true
+    },
+    "order_reference": 1.58996939389918e-16,
+    "image_sha256": "dc40451425b02a2554209abbd0f83ee668a2618890dd3ae5549e1d97c479875b",
+    "seconds": 0.09166431427001953
+  },
+  {
+    "task": 7,
+    "kind": "gaussian_std",
+    "key_recovered": true,
+    "detail": {
+      "reason": "key_recovered",
+      "key_confirmed": true,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 6,
+      "objective_calls": 7,
+      "relaxed_objective": 9.368817920710093,
+      "decoded_order_residual": 0.03953398789278355,
+      "coefficient_error_rms": 0.13089867395953464,
+      "unique_query_levels": [
+        218,
+        221,
+        221
+      ]
+    },
+    "forward_key": true,
+    "forward_detail": {
+      "reason": "key_recovered",
+      "pilot_counts": [
+        128,
+        128,
+        128
+      ],
+      "decode_coordinates": 3072,
+      "check_coordinates": 3072,
+      "weights": [
+        [
+          0.7801495985115905,
+          0.11405646301560075,
+          0.0,
+          0.08203356272988926
+        ],
+        [
+          0.7538769275294178,
+          0.1387985375688058,
+          0.0,
+          0.03942214829991275
+        ],
+        [
+          0.7964750240801459,
+          0.0915816990943701,
+          0.0,
+          0.04293536980882162
+        ]
+      ],
+      "offsets": [
+        0.012825562408113278,
+        0.03312658250253214,
+        0.03456700845700972
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.07621547967477167,
+      "max_eigenvalue": 0.10822375032466526,
+      "residual": 0.04079693573948496,
+      "coefficient_error_rms": 0.17010202693243665,
+      "key_confirmed": true
+    },
+    "order_reference": 0.03953398764097149,
+    "image_sha256": "7c2262dde5a12473be73e56ff69bc92d18e90b4f561fefa14ea34cd6f42fb4fd",
+    "seconds": 0.07533049583435059
+  },
+  {
+    "task": 7,
+    "kind": "brightness_factor",
+    "key_recovered": true,
+    "detail": {
+      "reason": "key_recovered",
+      "key_confirmed": true,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 13,
+      "objective_calls": 14,
+      "relaxed_objective": 6.22165546840386e-07,
+      "decoded_order_residual": 3.167157262754228e-18,
+      "coefficient_error_rms": 0.021667808014372836,
+      "unique_query_levels": [
+        88,
+        88,
+        89
+      ]
+    },
+    "forward_key": true,
+    "forward_detail": {
+      "reason": "key_recovered",
+      "pilot_counts": [
+        24,
+        24,
+        24
+      ],
+      "decode_coordinates": 848,
+      "check_coordinates": 868,
+      "weights": [
+        [
+          2.763424052243267,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          2.764737729423653,
+          0.0,
+          0.00023023837987524922,
+          0.0015832358218946796
+        ],
+        [
+          2.7579476296651575,
+          0.0,
+          0.002762787655143012,
+          0.0
+        ]
+      ],
+      "offsets": [
+        -0.002094428447624308,
+        -0.0030019933349875183,
+        -0.0020103859809192937
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.029623532147381913,
+      "max_eigenvalue": 0.6171075098462989,
+      "residual": 0.0011871908863670376,
+      "coefficient_error_rms": 0.003021125821871748,
+      "key_confirmed": true
+    },
+    "order_reference": 1.58996939389918e-16,
+    "image_sha256": "cd6c34cbc009e9d225c75025b1552344f32adb2252edab6c0e452f65d177095f",
+    "seconds": 0.0884101390838623
+  },
+  {
+    "task": 7,
+    "kind": "same",
+    "key_recovered": false,
+    "detail": {
+      "reason": "key_confirmation_failure",
+      "key_confirmed": false,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 6,
+      "objective_calls": 7,
+      "relaxed_objective": 289.77572155649216,
+      "decoded_order_residual": 0.21799917377715994,
+      "coefficient_error_rms": 0.38665870891211074,
+      "unique_query_levels": [
+        239,
+        241,
+        244
+      ]
+    },
+    "forward_key": false,
+    "forward_detail": {
+      "reason": "key_confirmation_failure",
+      "pilot_counts": [
+        117,
+        124,
+        126
+      ],
+      "decode_coordinates": 2764,
+      "check_coordinates": 2756,
+      "weights": [
+        [
+          0.0,
+          0.0,
+          0.0335191916364717,
+          1.332676140233666
+        ],
+        [
+          0.0,
+          0.0,
+          0.05812775359457265,
+          1.019849188558628
+        ],
+        [
+          0.0,
+          0.0,
+          0.6845109990277092,
+          0.7827698867533647
+        ]
+      ],
+      "offsets": [
+        -0.27448967198701035,
+        -0.203648425936861,
+        -0.35062780353650863
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.003028808696311394,
+      "max_eigenvalue": 0.09673326433440038,
+      "residual": 0.3029881277223495,
+      "coefficient_error_rms": 6.813259206709883,
+      "key_confirmed": false
+    },
+    "order_reference": 0.2248443493518678,
+    "image_sha256": "76e50792a678b739cfc150eced898c5f849624ef7154999e4ed9a286feb13415",
+    "seconds": 0.07624983787536621
+  },
+  {
+    "task": 8,
+    "kind": "bound",
+    "key_recovered": true,
+    "detail": {
+      "reason": "key_recovered",
+      "key_confirmed": true,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 11,
+      "objective_calls": 12,
+      "relaxed_objective": 6.255228051759602e-07,
+      "decoded_order_residual": 0.0,
+      "coefficient_error_rms": 0.013708152013350655,
+      "unique_query_levels": [
+        252,
+        226,
+        240
+      ]
+    },
+    "forward_key": true,
+    "forward_detail": {
+      "reason": "key_recovered",
+      "pilot_counts": [
+        128,
+        128,
+        128
+      ],
+      "decode_coordinates": 3027,
+      "check_coordinates": 3024,
+      "weights": [
+        [
+          0.9999999688801322,
+          0.0,
+          0.0,
+          3.46030585024789e-08
+        ],
+        [
+          0.999999963709839,
+          0.0,
+          0.0,
+          6.612147787678257e-09
+        ],
+        [
+          0.9999999729286524,
+          0.0,
+          0.0,
+          1.5848590711507557e-08
+        ]
+      ],
+      "offsets": [
+        -1.921787262659791e-08,
+        3.9775860383173267e-10,
+        -5.637233846389478e-09
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.09245202091621445,
+      "max_eigenvalue": 0.14192728666373144,
+      "residual": 2.0760227556503497e-08,
+      "coefficient_error_rms": 1.149032024316194e-07,
+      "key_confirmed": true
+    },
+    "order_reference": 2.0591149182577397e-16,
+    "image_sha256": "844a67d52da6cfb05bc5e5e306e0cc2fa765b42f2acd4c44daf46483ef8189b0",
+    "seconds": 0.08395099639892578
+  },
+  {
+    "task": 8,
+    "kind": "gaussian_std",
+    "key_recovered": true,
+    "detail": {
+      "reason": "key_recovered",
+      "key_confirmed": true,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 6,
+      "objective_calls": 7,
+      "relaxed_objective": 2.6444729405020513,
+      "decoded_order_residual": 0.021122653216482223,
+      "coefficient_error_rms": 0.08684099845478278,
+      "unique_query_levels": [
+        233,
+        210,
+        223
+      ]
+    },
+    "forward_key": true,
+    "forward_detail": {
+      "reason": "key_recovered",
+      "pilot_counts": [
+        128,
+        128,
+        128
+      ],
+      "decode_coordinates": 3072,
+      "check_coordinates": 3072,
+      "weights": [
+        [
+          0.07416479596668296,
+          0.9082356412183217,
+          0.0,
+          0.01306492893307043
+        ],
+        [
+          0.7517211955135562,
+          0.20622652979756864,
+          0.0,
+          0.03994674029376899
+        ],
+        [
+          0.85425429746997,
+          0.13262561082578533,
+          0.0,
+          0.013760716246693283
+        ]
+      ],
+      "offsets": [
+        -0.002675783095788309,
+        0.0002934946082761014,
+        -0.001553708750539562
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.07840082879123748,
+      "max_eigenvalue": 0.11455594661059909,
+      "residual": 0.029895685644932578,
+      "coefficient_error_rms": 0.1254622376860195,
+      "key_confirmed": true
+    },
+    "order_reference": 0.021122653021899924,
+    "image_sha256": "c7e9adbcd0b658c047f20da83a86a77fdcb51239bdbd79a9a1c28d8df1ce5a7d",
+    "seconds": 0.07572484016418457
+  },
+  {
+    "task": 8,
+    "kind": "brightness_factor",
+    "key_recovered": true,
+    "detail": {
+      "reason": "key_recovered",
+      "key_confirmed": true,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 17,
+      "objective_calls": 18,
+      "relaxed_objective": 6.147960210591758e-07,
+      "decoded_order_residual": 0.0,
+      "coefficient_error_rms": 0.03713833386569109,
+      "unique_query_levels": [
+        47,
+        47,
+        48
+      ]
+    },
+    "forward_key": false,
+    "forward_detail": {
+      "reason": "insufficient_coordinates",
+      "pilot_counts": [
+        0,
+        1,
+        3
+      ],
+      "decode_coordinates": 0,
+      "check_coordinates": 0,
+      "weights": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "active_channels": [
+        false,
+        false,
+        false
+      ]
+    },
+    "order_reference": 2.0591149182577397e-16,
+    "image_sha256": "c498160d865666bea97de6851cda0c48c40058224389cb7c4c73b57749124f2c",
+    "seconds": 0.09170866012573242
+  },
+  {
+    "task": 8,
+    "kind": "same",
+    "key_recovered": false,
+    "detail": {
+      "reason": "key_confirmation_failure",
+      "key_confirmed": false,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 5,
+      "objective_calls": 6,
+      "relaxed_objective": 248.49213290209437,
+      "decoded_order_residual": 0.20201038972764201,
+      "coefficient_error_rms": 0.38223797774228435,
+      "unique_query_levels": [
+        256,
+        252,
+        253
+      ]
+    },
+    "forward_key": false,
+    "forward_detail": {
+      "reason": "insufficient_coordinates",
+      "pilot_counts": [
+        121,
+        126,
+        111
+      ],
+      "decode_coordinates": 0,
+      "check_coordinates": 0,
+      "weights": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "active_channels": [
+        false,
+        false,
+        false
+      ]
+    },
+    "order_reference": 0.20671234684046663,
+    "image_sha256": "02f7c6c27c2e6d0c722b670cdff84f85b948f10ff2d635488a931cf7065a5864",
+    "seconds": 0.06735563278198242
+  },
+  {
+    "task": 9,
+    "kind": "bound",
+    "key_recovered": true,
+    "detail": {
+      "reason": "key_recovered",
+      "key_confirmed": true,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 12,
+      "objective_calls": 13,
+      "relaxed_objective": 6.24689812275721e-07,
+      "decoded_order_residual": 0.0,
+      "coefficient_error_rms": 0.014337423256413068,
+      "unique_query_levels": [
+        254,
+        252,
+        252
+      ]
+    },
+    "forward_key": true,
+    "forward_detail": {
+      "reason": "key_recovered",
+      "pilot_counts": [
+        98,
+        106,
+        106
+      ],
+      "decode_coordinates": 2928,
+      "check_coordinates": 2933,
+      "weights": [
+        [
+          0.9999999903956281,
+          0.0,
+          0.0,
+          1.684958741077731e-08
+        ],
+        [
+          0.9999999844733719,
+          0.0,
+          0.0,
+          2.537517974302207e-08
+        ],
+        [
+          0.999999963254253,
+          0.0,
+          0.0,
+          4.347067870471497e-08
+        ]
+      ],
+      "offsets": [
+        -1.199833865594968e-08,
+        -1.4951988092093416e-08,
+        -1.2547856309552685e-08
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.08859279150587414,
+      "max_eigenvalue": 0.13776237166578714,
+      "residual": 1.7202059170648224e-08,
+      "coefficient_error_rms": 9.993495409465866e-08,
+      "key_confirmed": true
+    },
+    "order_reference": 2.7896885442794764e-16,
+    "image_sha256": "59d74f953f6b1500e41a7c5b667852f5886c1b4cf782833539e49581762afb74",
+    "seconds": 0.08893513679504395
+  },
+  {
+    "task": 9,
+    "kind": "gaussian_std",
+    "key_recovered": true,
+    "detail": {
+      "reason": "key_recovered",
+      "key_confirmed": true,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 7,
+      "objective_calls": 8,
+      "relaxed_objective": 14.701211109762326,
+      "decoded_order_residual": 0.04944176246643081,
+      "coefficient_error_rms": 0.15447226157488622,
+      "unique_query_levels": [
+        235,
+        232,
+        235
+      ]
+    },
+    "forward_key": true,
+    "forward_detail": {
+      "reason": "key_recovered",
+      "pilot_counts": [
+        128,
+        128,
+        128
+      ],
+      "decode_coordinates": 3072,
+      "check_coordinates": 3072,
+      "weights": [
+        [
+          0.8679044884257786,
+          0.0,
+          0.032937861999619386,
+          0.0
+        ],
+        [
+          0.825275032632776,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.8151797801283385,
+          0.0,
+          0.0,
+          0.07022911121756059
+        ]
+      ],
+      "offsets": [
+        0.05214089669325517,
+        0.10479405543228187,
+        0.0586224619206947
+      ],
+      "active_channels": [
+        true,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.07076853833359942,
+      "max_eigenvalue": 0.10107607018027931,
+      "residual": 0.05263863904245511,
+      "coefficient_error_rms": 0.2809354331676521,
+      "key_confirmed": true
+    },
+    "order_reference": 0.04944176233610304,
+    "image_sha256": "bac40c5db79804560c9fdf2f51402a12eb53323207d1c28a3ea3c646bb6e5139",
+    "seconds": 0.08527421951293945
+  },
+  {
+    "task": 9,
+    "kind": "brightness_factor",
+    "key_recovered": true,
+    "detail": {
+      "reason": "key_recovered",
+      "key_confirmed": true,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 14,
+      "objective_calls": 15,
+      "relaxed_objective": 6.214382364389568e-07,
+      "decoded_order_residual": 0.0,
+      "coefficient_error_rms": 0.026417751143236586,
+      "unique_query_levels": [
+        43,
+        43,
+        43
+      ]
+    },
+    "forward_key": false,
+    "forward_detail": {
+      "reason": "insufficient_coordinates",
+      "pilot_counts": [
+        19,
+        11,
+        30
+      ],
+      "decode_coordinates": 205,
+      "check_coordinates": 209,
+      "weights": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          6.0810822386945675,
+          0.006980734118964022,
+          0.0,
+          0.0
+        ]
+      ],
+      "offsets": [
+        0.0,
+        0.0,
+        -0.0008046353103113302
+      ],
+      "active_channels": [
+        false,
+        false,
+        true
+      ]
+    },
+    "order_reference": 2.7896885442794764e-16,
+    "image_sha256": "bdd2eb53662c981f12683f18a32f8f6cd9a65273be2c5ce9cfe1906978ac8319",
+    "seconds": 0.0854494571685791
+  },
+  {
+    "task": 9,
+    "kind": "same",
+    "key_recovered": false,
+    "detail": {
+      "reason": "key_confirmation_failure",
+      "key_confirmed": false,
+      "optimizer_success": true,
+      "optimizer_status": 0,
+      "iterations": 5,
+      "objective_calls": 6,
+      "relaxed_objective": 409.84623803897136,
+      "decoded_order_residual": 0.2590895932254686,
+      "coefficient_error_rms": 0.41433221619142463,
+      "unique_query_levels": [
+        249,
+        250,
+        249
+      ]
+    },
+    "forward_key": false,
+    "forward_detail": {
+      "reason": "key_confirmation_failure",
+      "pilot_counts": [
+        120,
+        128,
+        117
+      ],
+      "decode_coordinates": 1949,
+      "check_coordinates": 1944,
+      "weights": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.09399298689565642,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.014095902401975639,
+          0.2750755949926911,
+          0.0
+        ]
+      ],
+      "offsets": [
+        0.0,
+        0.5020594869157169,
+        0.3949592043529046
+      ],
+      "active_channels": [
+        false,
+        true,
+        true
+      ],
+      "min_eigenvalue": 0.000614914887519544,
+      "max_eigenvalue": 0.0024243950225911635,
+      "residual": 0.268035545379385,
+      "coefficient_error_rms": 14.6166023791583,
+      "key_confirmed": false
+    },
+    "order_reference": 0.2646605208885824,
+    "image_sha256": "06f1e53172063aeb5db54a6f89ce5b5d93ac54263efef53557ec0d5744b6e749",
+    "seconds": 0.08464479446411133
+  }
+]

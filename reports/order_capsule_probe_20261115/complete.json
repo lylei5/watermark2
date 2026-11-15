@@ -1,0 +1,34 @@
+{
+  "status": "complete",
+  "pid": 28665,
+  "protocol_sha256": "bbea058424ff5214331c0d21414107e9b7d6ef87a3fd828fd11deb857ea144fe",
+  "seconds": 5.5381247997283936,
+  "observations": 40,
+  "aggregate": {
+    "bound": {
+      "total": 10,
+      "order": 10,
+      "forward": 10
+    },
+    "gaussian_std": {
+      "total": 10,
+      "order": 6,
+      "forward": 6
+    },
+    "brightness_factor": {
+      "total": 10,
+      "order": 10,
+      "forward": 7
+    },
+    "same": {
+      "total": 10,
+      "order": 0,
+      "forward": 0
+    }
+  },
+  "artifacts": {
+    "rows.json": "df570cec9f5dfbe8015e786e9abfed8f212f6985833c1875fc8fd94e5f0b8173",
+    "aggregate.json": "617cbbf6e16b198ccd984803a40d3c9f59e523cf505d1b233b921ed34de04362",
+    "projection_checks.json": "ed709ff8c0e43173c7115880015204d007e12d0747e0678d3e1b43a7d99934d7"
+  }
+}

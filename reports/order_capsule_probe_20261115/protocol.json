@@ -1,0 +1,37 @@
+{
+  "created_at": 1794739517.986698,
+  "tasks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "alpha": 0.05,
+  "conditions": [
+    "bound",
+    "gaussian_std",
+    "brightness_factor",
+    "same"
+  ],
+  "scripts": {
+    "probe_order_capsule.py": "22a49f61d420fe889d84ec72951201e6ed2ed1e8c256e0e18631bd2bc4dc892b",
+    "order_constrained_capsule.py": "6aab073571ebc50e8667368bedb9c0abd2546bba5046e52ea58aaa913d517add",
+    "transported_key_capsule.py": "d9fc968400f404b22c77283c3a7a3862d7cd0e4f0a96cd7a338dd1840010355d"
+  },
+  "data_sha256": "f0e1a653af13bda73aff9c37dc59cbea454396d5b570ba7d4e066ce504b1b4d5",
+  "provider_sha256": "52afa481e0d7d8894a2df7c95d95548cb2edcb1fe1a5bd599d1429abf223081d",
+  "scope": "Development-only fixed first10previous sources; all outputs preserved. No unseen edits here.",
+  "mechanism": "Exact key from query-induced order cone; no residual acceptance threshold.",
+  "controls": [
+    "same-alpha original forward decoder",
+    "direct reference order residual"
+  ],
+  "private": "/data0/liyanlei/watermark_research/private_eval/order_capsule_probe_20261115",
+  "attacks_generated": false
+}

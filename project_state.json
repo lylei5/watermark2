@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-15T10:46:43.6942680Z",
+  "updated_at": "2026-11-15T10:55:50.5653334Z",
   "status": "order_constraint_development",
   "active_experiments": 1,
   "queued_experiments": 0,
@@ -58,7 +58,7 @@
   ],
   "max_concurrent_gpus": 3,
   "evaluation_policy": "Unchanged published top-venue attacks only; full budgets; no attack development; matched absolute genuine detection",
-  "current_decision": "Evaluate query-induced partial-order recovery after primary-source novelty search. Fixed alpha0.05, no residual acceptance gate; same-alpha forward decoder and direct order-distance controls. First10 prior sources form development probe; WAVES contrast/rotation/resizedcrop remain unexecuted confirmation types.",
+  "current_decision": "Complete development test of three prespecified partial-order settings, actual64-candidate key lists, same-alpha forward ablations, fresh single/nine-template SSCD and direct order/forward references. First10source probe completed; confirmation edit outputs remain unexecuted.",
   "completed_evidence": [
     {
       "path": "reports/reprompt_plus_recovery_20261115/report.md",
@@ -831,7 +831,7 @@
     "superiority_established": false
   },
   "active_runs": [
-    "order_capsule_probe_20261115"
+    "order_capsule_development_20261115"
   ],
   "queued_runs": [],
   "author_reprompt_control": {

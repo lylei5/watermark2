@@ -1,0 +1,70 @@
+{
+  "stage": "development",
+  "created_at": 1794740014.6957421,
+  "scripts": {
+    "run_order_recovery.py": "3732ce52af3c47c2474341c2c56229430189259b12e82007d296ddc92ccc3c32",
+    "order_recovery_data.py": "22de8af992457bb4c707b0b88a145e1621bd6b298d7a56ea2d491bcd9554db68",
+    "order_constrained_capsule.py": "d13c21ecc7eeb137ea6c3b24cd8ae0e84e578862619bf3376a8b0117d6d8fd1c",
+    "transported_key_capsule.py": "d9fc968400f404b22c77283c3a7a3862d7cd0e4f0a96cd7a338dd1840010355d"
+  },
+  "inputs": {
+    "/data0/liyanlei/watermark_research/runs/transported_capsule_observability_20261115/cases.json": "c7d28bb5d7c3db77792038c255ea81a3389f29f0968a08aaf73b2d19af2b3b7a",
+    "/data0/liyanlei/watermark_research/runs/transported_capsule_observability_20261115/calibration.json": "f535662674c533de268186d8665bf71da1288e251e9e2a7996db65cd164d3da0",
+    "/data0/liyanlei/watermark_research/runs/shared_channel_binding_20261114_v2/protocol.json": "204dbe256f2e0c23016e75db4355e962fd11aa8e08b60b113facd6eb633db19d",
+    "/data0/liyanlei/watermark_research/runs/shared_channel_binding_20261114_v2/feature_rows.json": "1b4503047d03d2c134583597fae9752f5b03b4a3279bef60415eb296954b6528",
+    "/data0/liyanlei/watermark_research/runs/instance_representation_20261113_v2/protocol.json": "f0e1a653af13bda73aff9c37dc59cbea454396d5b570ba7d4e066ce504b1b4d5",
+    "/data0/liyanlei/watermark_research/runs/instance_representation_20261113_v2/sscd/model_manifest.json": "f1e0d293b1d619c2a961f16fd2f02e8d726e974a408794c92d89f154ede8ca20"
+  },
+  "methods": [
+    {
+      "name": "order_a005_all",
+      "alpha": 0.05,
+      "drop_black": false
+    },
+    {
+      "name": "order_a005_visible",
+      "alpha": 0.05,
+      "drop_black": true
+    },
+    {
+      "name": "order_a010_visible",
+      "alpha": 0.1,
+      "drop_black": true
+    }
+  ],
+  "list_bits": 6,
+  "private": "/data0/liyanlei/watermark_research/private_eval/order_capsule_development_20261115",
+  "provider_sha256": "6537f0e92288107bce74c598844a299952cc3e907c815ae784c5ab52b284b8df",
+  "expected_pairs": 1010,
+  "controls": [
+    "sscd",
+    "sscd_templates",
+    "reference_forward",
+    "reference_order_all",
+    "reference_order_visible"
+  ],
+  "development": null,
+  "calibration": "GS tasks4,5,6 genuine30;90% and95% thresholds for direct scores. Candidate exact key+AEAD acceptance, no score cutoff.",
+  "methods_selection": "All three prespecified methods retained; confirmation does not select a winner or change parameters.",
+  "evaluation": "Content/key binding only; same pixels for all controls. Historical native acceptance joined separately in development; no new diffusion inversions.",
+  "unseen_types": [],
+  "unseen_scope": "Types absent from earlier execution protocols, no transformed output inspected before freeze. Source images previously used; not unseen sources.",
+  "waves_commit": "1477635d306d6f8c77a588e6441bd4ba301a1f7a",
+  "waves_files": {
+    "/data0/liyanlei/watermark_research/third_party/WAVES_1477635_source/distortions/distortions.py": "73c6f0b8ada259aa416179a880f9d9bba510f0b60403ee9e5b0b976372e78bc4",
+    "/data0/liyanlei/watermark_research/third_party/WAVES_1477635_source/utils/image_utils.py": "5e17282d993190c398e4779205dc75ebcb3b0215080583d269d5a2d716421f54",
+    "/data0/liyanlei/watermark_research/third_party/WAVES_1477635_source/utils/exp_utils.py": "ca1caf3f233bd62076f64cdd2302ebb8e187d91b4efbf3fd7e36692767230131"
+  },
+  "author_baselines_only": true,
+  "allowed_gpus": [
+    7,
+    5,
+    4
+  ],
+  "excluded_gpus": [
+    6
+  ],
+  "key_bits": 128,
+  "payload": "Authenticated record identity and reference pixel hash; exact bytes checked.",
+  "novelty_established": false
+}
