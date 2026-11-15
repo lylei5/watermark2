@@ -2,11 +2,13 @@
 
 本项目研究扩散水印的内容绑定防御，同时建立可复核的SemBind、PGID、SEAL原生基线。[实时状态](project_state.json)记录运行队列；[验收契约](docs/THREE_BASELINE_REPRODUCTION.md)规定实现和数值复现的范围。
 
-当前原型研究[随编辑前向变换的密钥恢复](docs/TRANSPORTED_KEY_CAPSULE.md)：用查询中的共享编辑关系同时约束辅助记录与密钥基函数，在剩余可用信息中恢复128位密钥。原生GS/TR/PRC载体保持原样。[成立条件](docs/FORWARD_RECOVERY_CONDITIONS.md)与[查新](docs/RECOVERY_MECHANISM_PRIOR_ART.md)分别说明数学范围和直接先例。
+当前原型研究[部分序约束的密钥恢复](docs/ORDER_CONSTRAINED_RECOVERY.md)：查询提供位置之间的亮度关系，恢复器用这些关系求解128位随机密钥，确认并实际解封认证载荷。返回流程没有后置图像残差门槛；原生GS/TR/PRC载体保持原样。
 
-[完整开发攻击实验](reports/transported_capsule_observability_20261115/report.md)完成5050次解码、1158次材料解封及317次原生检测。主设置在TR合法95/100时，两代理Reprompt+均0/10；同通过数的单参考SSCD各1/10，九模板SSCD各0/10。直接参考图前向拟合也达到0/10，当前判别收益主要来自编辑关系。
+[100实例与未见编辑验证](reports/order_capsule_confirmation_20261115/report.md)完成11400次部分序解码及4599次SSCD图像推理。已知条件合法图实际返回993/1000，噪声95/100、六倍亮度98/100；旧流程最终为894/1000、45/100、70/100。旧噪声密钥本已100/100正确，因此噪声最终通过的改善需与移除残差门槛的效果分开理解。同合法993/1000时，九模板SSCD误收同提示词其他实例18/100，部分序恢复和直接部分序参考拟合均为0/100。
 
-[100实例来源迁移](reports/capsule_source_transfer_20261115_v3/report.md)完成2600次查询解码、100次登记核验，并重新执行1300图的SSCD和CopyNCE。固定阈值下，主设置合法894/1000、同提示词不同实例0/100；单参考SSCD为899/1000、0/100。主设置准确密钥覆盖963/1000，噪声组100/100可恢复但残差后仅45/100通过。跨来源合法覆盖、未见编辑和密钥层的独立贡献仍是研究重点。更早的失败和完整逐样本证据保留在[报告索引](reports/README.md)。
+此前未执行的WAVES对比度、旋转、裁剪后缩放各五档强度，部分序恢复分别500/500、3/500、18/500；九模板SSCD均500/500。来源图曾用于项目，留出的是编辑类型。[饱和坐标消融](reports/order_saturation_ablation_20261115/report.md)实际完成400次解码，删除纯白坐标没有改变任何配对判定；亮度收益对应对固定区域亮度拟合限制的绕过。空间对应和恢复层相对直接参考的独立价值仍是研究重点。
+
+[完整开发攻击实验](reports/order_capsule_development_20261115/report.md)保留原作者Imprint、basic Reprompt、Reprompt+输出。主设置TR合法99/100，Reprompt+两代理接受0/10、1/10来源；同合法九模板SSCD为2/10、3/10，直接参考拟合为0/10、0/10。本轮新编辑只验证内容绑定与密钥载荷，未新增原生水印检测。完整失败证据保留在[报告索引](reports/README.md)。
 
 已发表攻击覆盖包括[原作者Reprompt+](reports/reprompt_plus_recovery_20261115/report.md)的GS/TR两代理、各10来源、9/3候选预算，共240张图与480条唯一原生/PGID判定。TR的PGID合法60/100，Reprompt+各接受8/10来源；[basic Reprompt](reports/author_reprompt_control_20261114/report.md)另含PRC。原论文大样本多目标矩阵与三个防御的完整共同工作点比较继续单独验收。
 
@@ -30,6 +32,9 @@
 
 | 功能 | 入口 |
 |---|---|
+| 部分序密钥恢复 | [order_constrained_capsule.py](scripts/defense/order_constrained_capsule.py)，真实128位求解、确认和认证解封 |
+| 未见编辑与强对照 | [run_order_recovery.py](scripts/defense/run_order_recovery.py)、[审计](scripts/defense/audit_order_confirmation.py)，WAVES原码、SSCD九模板、两类直接参考拟合 |
+| 饱和贡献与恢复机制核验 | [audit_order_saturation.py](scripts/defense/audit_order_saturation.py)、[机制汇总](scripts/defense/summarize_order_mechanism.py)，同记录配对、失败标签、存储与全强度 |
 | 前向密钥封装与恢复 | [transported_key_capsule.py](scripts/defense/transported_key_capsule.py)，同编辑传输、可用坐标求解、认证解封 |
 | 完整攻击与强对照 | [run_transported_capsule.py](scripts/defense/run_transported_capsule.py)、[汇总](scripts/defense/summarize_transported_capsule.py)，冻结校准与同通过数比较 |
 | 来源迁移与新模型推理 | [validate_capsule_source_transfer.py](scripts/defense/validate_capsule_source_transfer.py)，固定阈值、原登记复用、同像素SSCD/CopyNCE |

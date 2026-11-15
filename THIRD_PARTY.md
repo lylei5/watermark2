@@ -4,6 +4,8 @@
 
 ## 当前原生基线的干净源码
 
+新增未见编辑验证使用[ICML2024 WAVES](https://proceedings.mlr.press/v235/an24a.html)的[作者代码](https://github.com/umd-huang-lab/WAVES)，commit`1477635d306d6f8c77a588e6441bd4ba301a1f7a`。249源码目录为`third_party/WAVES_1477635_source`；原distortions及image_utils/exp_utils逐文件哈希见[冻结协议](reports/order_capsule_confirmation_20261115/protocol.json)。仅适配依赖导入，处理函数与五档强度保持原样；验证不需要WAVES仓库附带的模型权重。
+
 249的`third_party/frozen`中固定三个独立源码目录：
 
 | 目录 | 上游固定提交 |

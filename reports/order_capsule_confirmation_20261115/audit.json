@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "input_complete_sha256": "1b3ace26235db553593f241b7bb879844742f8a9a357bab39c260313d6462f95",
+  "source_sha256": "0c5339986131c13291b4fbdb6585a1e5886eb24043b9c9616ef415594be33561",
+  "rows": 11400,
+  "paired_queries": 3800,
+  "methods": [
+    "order_a005_all",
+    "order_a005_visible",
+    "order_a010_visible"
+  ],
+  "exact_key_returns": 7552,
+  "source_instances": 100,
+  "exact_count_comparisons": 135,
+  "matched_comparisons": 135,
+  "native_calls": 0,
+  "gpu": 7,
+  "fresh_model_images": 4599,
+  "stage": "confirmation",
+  "artifacts": {
+    "aggregate.json": "8ee9d98a90beb2671b607d5a6b89f073f27bc569e3f6b86dcddb707f7852316a",
+    "matched.json": "26ce34a86d9397fb930427c2ac8065e5d076caec67b37b0a23534327c813f453"
+  }
+}

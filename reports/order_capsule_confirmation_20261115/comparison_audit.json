@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "source_sha256": "85d70a2f6827435b34ad24220a9fb9b4537251d00487dadbc37b2473d9134756",
+  "analysis_plan_sha256": "eeab10607862ad3cc322278ec419cf4ec4a395ac8acb64e20dc67af007601eb5",
+  "main_complete_sha256": "1b3ace26235db553593f241b7bb879844742f8a9a357bab39c260313d6462f95",
+  "legacy_complete_sha256": "a8c18fbd979a0048eacfd512d60bfe32cf73059a72cb75e321045322ceabfe96",
+  "same_pixel_joins": 11400,
+  "distinct_pairs": 3800,
+  "methods": 3,
+  "legacy_original_matches": 1300,
+  "optimizer_status": {
+    "0": 11400
+  },
+  "primary_optimizer_failures": 0,
+  "primary_successful_keys_with_optimizer_failure": 0,
+  "list_rescues": 21,
+  "artifacts": {
+    "comparison95.json": "b2426267d54208c7b60ee646a495969220b9262a116330e072eda89bd831a465",
+    "family_matched.json": "ec0fa60473f85df96a513bfb110a3a105c370f08db593aef54d4364af1ce2dac"
+  }
+}

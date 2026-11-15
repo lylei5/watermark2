@@ -1,0 +1,37 @@
+{
+  "status": "complete",
+  "seconds": 47.92100119590759,
+  "actual_decodes": 400,
+  "enrollment_verification_decodes": 100,
+  "original_pixel_decision_matches": 200,
+  "aggregate": [
+    {
+      "kind": "brightness_factor",
+      "drop_white": false,
+      "total": 100,
+      "accepted": 98
+    },
+    {
+      "kind": "brightness_factor",
+      "drop_white": true,
+      "total": 100,
+      "accepted": 98
+    },
+    {
+      "kind": "gaussian_std",
+      "drop_white": false,
+      "total": 100,
+      "accepted": 95
+    },
+    {
+      "kind": "gaussian_std",
+      "drop_white": true,
+      "total": 100,
+      "accepted": 95
+    }
+  ],
+  "artifacts": {
+    "rows.json": "78a7aebbe0990b44e9295bb0f9c89b66d9f4e6ba06059b3955bc85657e292517",
+    "aggregate.json": "4ab653d91ef6d8d6a8bf527ef73578e16a10791ba9ff5336aebf57cf9d5887df"
+  }
+}

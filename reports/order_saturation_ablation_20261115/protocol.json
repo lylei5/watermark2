@@ -1,0 +1,15 @@
+{
+  "created_at": 1794741706.717823,
+  "parent_complete_sha256": "1b3ace26235db553593f241b7bb879844742f8a9a357bab39c260313d6462f95",
+  "scripts": {
+    "audit_order_saturation.py": "646c3abf1f64c691b0ccf9a69ad6facf994436bb5773c71241064c4c8fb0c01b",
+    "order_recovery_data.py": "22de8af992457bb4c707b0b88a145e1621bd6b298d7a56ea2d491bcd9554db68",
+    "order_constrained_capsule.py": "8ed067230d5c6671bed01486c5321f9044716c020e737f4369caef1bf32e35c0",
+    "transported_key_capsule.py": "d9fc968400f404b22c77283c3a7a3862d7cd0e4f0a96cd7a338dd1840010355d"
+  },
+  "scope": "Post-confirmation diagnostic, no new edit families or parameter selection. Reuse exact alpha0.05 records; same two known author brightness/noise conditions. Compare retaining high-saturation order constraints against deleting them.",
+  "queries": 200,
+  "actual_decodes": 400,
+  "enrollment_verification_decodes": 100,
+  "attacks_generated": false
+}

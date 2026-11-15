@@ -27,16 +27,17 @@ def project_order(values, query):
     return result
 
 
-def order_residual(reference, query, drop_black=False):
+def order_residual(reference, query, drop_black=False, drop_white=False):
     residuals = []
     for c in range(3):
         valid = query[:, c] > 0 if drop_black else np.ones(len(query), dtype=bool)
+        if drop_white:valid &= query[:, c] < 1
         if valid.any():
             residuals.extend((reference[valid, c] - project_order(reference[valid, c], query[valid, c])).tolist())
     return float(np.sqrt(np.mean(np.square(residuals)))) if residuals else None
 
 
-def decode(record, image, provider, list_bits=6, drop_black=False):
+def decode(record, image, provider, list_bits=6, drop_black=False, drop_white=False):
     checked = {k: v for k, v in record.items() if k != 'mac'}
     expected = hmac.new(provider, capsule.canonical(checked), hashlib.sha256).hexdigest()
     if not hmac.compare_digest(record['mac'], expected):
@@ -47,6 +48,7 @@ def decode(record, image, provider, list_bits=6, drop_black=False):
     basis, _ = capsule.basis(provider, meta['id'], 'spread')
     design = meta['alpha'] * basis.reshape(-1, capsule.BITS)
     valid = y > 0 if drop_black else np.ones(y.shape, dtype=bool)
+    if drop_white:valid &= y < 1
     if valid.sum() < 256:
         return None, dict(reason='insufficient_coordinates', observable_coordinates=int(valid.sum()))
     calls = 0
@@ -91,16 +93,16 @@ def decode(record, image, provider, list_bits=6, drop_black=False):
                   key_confirmed=confirmed, optimizer_success=bool(result.success),
                   optimizer_status=int(result.status), iterations=int(result.nit), objective_calls=calls,
                   relaxed_objective=float(result.fun),
-                  decoded_order_residual=order_residual(h - (design @ signs)[:, None], y, drop_black),
+                  decoded_order_residual=order_residual(h - (design @ signs)[:, None], y, drop_black, drop_white),
                   coefficient_error_rms=float(np.sqrt(np.mean((result.x - signs) ** 2))),
                   unique_query_levels=[int(len(np.unique(y[:, c]))) for c in range(3)],
                   list_bits=list_bits, tested_keys=tested, rounded_key_confirmed=confirmed and tested == 1,
-                  drop_black=drop_black, observable_coordinates=int(valid.sum()))
+                  drop_black=drop_black, drop_white=drop_white, observable_coordinates=int(valid.sum()))
     return (key if confirmed else None), detail
 
 
-def recover(record, image, provider, list_bits=6, drop_black=False):
-    key, detail = decode(record, image, provider, list_bits, drop_black)
+def recover(record, image, provider, list_bits=6, drop_black=False, drop_white=False):
+    key, detail = decode(record, image, provider, list_bits, drop_black, drop_white)
     if key is None:
         return None, detail
     # Acceptance is exact registered-key confirmation and authenticated unwrap;
