@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-15T10:55:50.5653334Z",
-  "status": "order_constraint_development",
+  "updated_at": "2026-11-15T11:03:37.4342011Z",
+  "status": "order_constraint_unseen_edit_validation",
   "active_experiments": 1,
   "queued_experiments": 0,
   "latest_progress_report": "reports/capsule_source_transfer_20261115_v3/report.md",
@@ -58,7 +58,7 @@
   ],
   "max_concurrent_gpus": 3,
   "evaluation_policy": "Unchanged published top-venue attacks only; full budgets; no attack development; matched absolute genuine detection",
-  "current_decision": "Complete development test of three prespecified partial-order settings, actual64-candidate key lists, same-alpha forward ablations, fresh single/nine-template SSCD and direct order/forward references. First10source probe completed; confirmation edit outputs remain unexecuted.",
+  "current_decision": "Partial-order development completed3030decodes,934exact key/payload returns. AtTR99/100, alpha0.05 visible recovers all10noise and9/10brightness; Reprompt+SD21/SD15 accepts0/10,1/10 versus matchednine-templateSSCD2/10,3/10 and forwardreference0/10both. Allthree settings frozen for100source WAVESconfirmation; no threshold or decoder updates from confirmation outputs.",
   "completed_evidence": [
     {
       "path": "reports/reprompt_plus_recovery_20261115/report.md",
@@ -831,7 +831,7 @@
     "superiority_established": false
   },
   "active_runs": [
-    "order_capsule_development_20261115"
+    "order_capsule_confirmation_20261115"
   ],
   "queued_runs": [],
   "author_reprompt_control": {
@@ -1176,5 +1176,14 @@
     "payload_returns": 1803,
     "reference_overlap": 0,
     "sscd_feature_max_difference": 0.0
+  },
+  "order_constraint_recovery": {
+    "development_run": "order_capsule_development_20261115",
+    "development_status": "complete",
+    "confirmation_run": "order_capsule_confirmation_20261115",
+    "confirmation_status": "running",
+    "confirmation_protocol": "reports/order_capsule_confirmation_20261115/protocol.json",
+    "novelty_established": false,
+    "full_reference_superiority_established": false
   }
 }

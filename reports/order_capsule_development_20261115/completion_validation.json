@@ -1,0 +1,12 @@
+{
+  "numerical_outputs_complete": true,
+  "complete_sha256": "b70c2dd6054b61583d9266b2c3465ee7a084de50a61ec6551eb9f109f1dad1a0",
+  "audit_sha256": "a060c5bcddfe75e3c08558d5445a431960b87becc3b49fc7287280d8e7f93ce0",
+  "transport_error": {
+    "status": "failed",
+    "pid": 39342,
+    "protocol_sha256": "7ca44fab376945b2310a5c70dc95c444915abe5ac23124e5736445bf50831ba5",
+    "error": "BrokenPipeError(32, 'Broken pipe')"
+  },
+  "explanation": "All3030rows, enrollment and calibration were saved before final stdout write raised BrokenPipeError after SSH reset. Independent summary validated artifacts and all exact counts. Frozen state preserved; no rerun or replacement of enrollment."
+}

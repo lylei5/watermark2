@@ -1,0 +1,76 @@
+{
+  "stage": "confirmation",
+  "created_at": 1794740428.8518736,
+  "scripts": {
+    "run_order_recovery.py": "3732ce52af3c47c2474341c2c56229430189259b12e82007d296ddc92ccc3c32",
+    "order_recovery_data.py": "22de8af992457bb4c707b0b88a145e1621bd6b298d7a56ea2d491bcd9554db68",
+    "order_constrained_capsule.py": "d13c21ecc7eeb137ea6c3b24cd8ae0e84e578862619bf3376a8b0117d6d8fd1c",
+    "transported_key_capsule.py": "d9fc968400f404b22c77283c3a7a3862d7cd0e4f0a96cd7a338dd1840010355d"
+  },
+  "inputs": {
+    "/data0/liyanlei/watermark_research/runs/transported_capsule_observability_20261115/cases.json": "c7d28bb5d7c3db77792038c255ea81a3389f29f0968a08aaf73b2d19af2b3b7a",
+    "/data0/liyanlei/watermark_research/runs/transported_capsule_observability_20261115/calibration.json": "f535662674c533de268186d8665bf71da1288e251e9e2a7996db65cd164d3da0",
+    "/data0/liyanlei/watermark_research/runs/shared_channel_binding_20261114_v2/protocol.json": "204dbe256f2e0c23016e75db4355e962fd11aa8e08b60b113facd6eb633db19d",
+    "/data0/liyanlei/watermark_research/runs/shared_channel_binding_20261114_v2/feature_rows.json": "1b4503047d03d2c134583597fae9752f5b03b4a3279bef60415eb296954b6528",
+    "/data0/liyanlei/watermark_research/runs/instance_representation_20261113_v2/protocol.json": "f0e1a653af13bda73aff9c37dc59cbea454396d5b570ba7d4e066ce504b1b4d5",
+    "/data0/liyanlei/watermark_research/runs/instance_representation_20261113_v2/sscd/model_manifest.json": "f1e0d293b1d619c2a961f16fd2f02e8d726e974a408794c92d89f154ede8ca20",
+    "/data0/liyanlei/watermark_research/runs/order_capsule_development_20261115/complete.json": "b70c2dd6054b61583d9266b2c3465ee7a084de50a61ec6551eb9f109f1dad1a0",
+    "/data0/liyanlei/watermark_research/runs/order_capsule_development_20261115/calibration.json": "db9c247dea675a474e09647fe90eda502d52895a755aade8071a9d07e6c55d18"
+  },
+  "methods": [
+    {
+      "name": "order_a005_all",
+      "alpha": 0.05,
+      "drop_black": false
+    },
+    {
+      "name": "order_a005_visible",
+      "alpha": 0.05,
+      "drop_black": true
+    },
+    {
+      "name": "order_a010_visible",
+      "alpha": 0.1,
+      "drop_black": true
+    }
+  ],
+  "list_bits": 6,
+  "private": "/data0/liyanlei/watermark_research/private_eval/order_capsule_confirmation_20261115",
+  "provider_sha256": "d7ebde1ddceb107827b3eb73275942053849fa3187218ee49bec6033780a3284",
+  "expected_pairs": 3800,
+  "controls": [
+    "sscd",
+    "sscd_templates",
+    "reference_forward",
+    "reference_order_all",
+    "reference_order_visible"
+  ],
+  "development": "/data0/liyanlei/watermark_research/runs/order_capsule_development_20261115",
+  "calibration": "GS tasks4,5,6 genuine30;90% and95% thresholds for direct scores. Candidate exact key+AEAD acceptance, no score cutoff.",
+  "methods_selection": "All three prespecified methods retained; confirmation does not select a winner or change parameters.",
+  "evaluation": "Content/key binding only; same pixels for all controls. Historical native acceptance joined separately in development; no new diffusion inversions.",
+  "unseen_types": [
+    "contrast",
+    "rotation",
+    "resizedcrop"
+  ],
+  "unseen_scope": "Types absent from earlier execution protocols, no transformed output inspected before freeze. Source images previously used; not unseen sources.",
+  "waves_commit": "1477635d306d6f8c77a588e6441bd4ba301a1f7a",
+  "waves_files": {
+    "/data0/liyanlei/watermark_research/third_party/WAVES_1477635_source/distortions/distortions.py": "73c6f0b8ada259aa416179a880f9d9bba510f0b60403ee9e5b0b976372e78bc4",
+    "/data0/liyanlei/watermark_research/third_party/WAVES_1477635_source/utils/image_utils.py": "5e17282d993190c398e4779205dc75ebcb3b0215080583d269d5a2d716421f54",
+    "/data0/liyanlei/watermark_research/third_party/WAVES_1477635_source/utils/exp_utils.py": "ca1caf3f233bd62076f64cdd2302ebb8e187d91b4efbf3fd7e36692767230131"
+  },
+  "author_baselines_only": true,
+  "allowed_gpus": [
+    7,
+    5,
+    4
+  ],
+  "excluded_gpus": [
+    6
+  ],
+  "key_bits": 128,
+  "payload": "Authenticated record identity and reference pixel hash; exact bytes checked.",
+  "novelty_established": false
+}

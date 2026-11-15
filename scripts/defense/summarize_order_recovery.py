@@ -24,7 +24,7 @@ def main(run):
         assert r['pixels_sha256']==paired[r['case_id']]['pixels_sha256']
         assert all(r[n]==paired[r['case_id']][n] for n in ['sscd','sscd_templates'])
         if r['returned']:assert r['detail']['key_confirmed'] and 1<=r['detail']['tested_keys']<=64
-    cohorts=['GS','TR','PRC'] if plan['stage']=='development' else ['all','COCO','SDP']
+    cohorts=['GS','TR','PRC'] if plan['stage']=='development' else ['all',*sorted({r['dataset'] for r in rows})]
     for cohort in cohorts:
         if plan['stage']=='development':
             part=[r for r in rows if r['carrier']==cohort and (cohort!='GS' or r['task']>=7)]

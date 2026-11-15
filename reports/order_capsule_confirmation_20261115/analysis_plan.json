@@ -1,0 +1,14 @@
+{
+  "scope": "Analysis priorities fixed after development and before viewing confirmation decisions; all protocol methods and both calibration targets remain reported.",
+  "primary_candidate": "order_a005_visible",
+  "selection_basis": "Development GS calibration29/30 and TR99/100; alpha0.1 has the same TR genuine count but substantially more published attack accepts.",
+  "primary_control_calibration_target": 0.95,
+  "secondary_control_calibration_target": 0.9,
+  "primary_unseen_families": ["contrast", "rotation", "resizedcrop"],
+  "strengths": [0.2, 0.4, 0.6, 0.8, 1.0],
+  "report_each_family_and_strength": true,
+  "same_genuine_count_comparison": "Overall and per unseen family; retain ties and actual attained count; negatives are the same fixed100same-prompt sources, not new independent negatives per operating point.",
+  "known_problem_retests": ["gaussian_std", "brightness_factor", "waves_noise", "waves_brightness"],
+  "independent_value_comparator": "Both existing forward reference residual and direct partial-order reference residual with the same pure-black exclusion.",
+  "no_decoder_or_threshold_updates_from_confirmation": true
+}
