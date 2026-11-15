@@ -911,7 +911,17 @@
       "mechanism": "Detached coordinator; child process-exit waits; per-record hash-checked resume"
     }
   ],
-  "queued_runs": [],
+  "queued_runs": [
+    {
+      "run": "unified_seal_clean_20261116",
+      "status": "waiting_for_calibration_exit",
+      "coordinator_pid": 20143,
+      "predecessor_pid": 26667,
+      "protocol": "protocols/unified_seal_clean_20261116.json",
+      "completion": "/data0/liyanlei/watermark_research/runs/unified_seal_clean_20261116/clean_results.json",
+      "mechanism": "pidfd process-exit wait; require calibration success; no GPU until then"
+    }
+  ],
   "author_reprompt_control": {
     "run": "author_reprompt_control_20261114_v2",
     "status": "complete",
@@ -1372,6 +1382,18 @@
       "pairwise_text_checks": 312750,
       "overlap_violations": 0,
       "model_inferences": 0
+    },
+    "failure_analysis_contract": "docs/UNIFIED_FAILURE_ANALYSIS.md",
+    "seal_clean_evaluation": {
+      "status": "queued_after_full_calibration",
+      "run": "unified_seal_clean_20261116",
+      "protocol_sha256": "14d0ac04f12803865ae614ad7697200ed0f5bbd2a4c86c31ad68b4e0d25c4475",
+      "sources": 500,
+      "planned_generations": 1000,
+      "planned_inversions": 1000,
+      "coordinator_pid": 20143,
+      "report": "reports/unified_seal_clean_20261116/preparation.md",
+      "accuracy_results_available": false
     }
   },
   "public_sscd_binary_probe": {

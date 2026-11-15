@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "device": "CPU249",
+  "worker_sha256": "e338d1b405266e76c77009dedd4a906d96619f245862adef74a550d2b3ef6a31",
+  "compile_pass": true,
+  "pndm_steps": 50,
+  "pndm_timesteps": 51,
+  "author_generation_defaults_match": true,
+  "cohort_tokenizer_matches": 500,
+  "historical_distance_replays": 200,
+  "cpu_fp32_vs_gpu_fp16_max_distance_difference": 0.0059528350830078125,
+  "decision_parity_claimed": false,
+  "model_inferences": 0,
+  "cuda_initialized": false
+}
