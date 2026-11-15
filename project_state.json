@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-15T17:39:53.6028211Z",
+  "updated_at": "2026-11-15T19:12:44.278937+00:00",
   "status": "unified_benchmark_null_calibration",
-  "active_experiments": 2,
+  "active_experiments": 1,
   "queued_experiments": 0,
-  "latest_progress_report": "reports/gs_fingerprint_fixedpoint_20261116/generation.md",
+  "latest_progress_report": "reports/gs_fingerprint_fixedpoint_20261116/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/RESEARCH_PLAN.md",
   "native_sembind_reproduction_complete": false,
@@ -66,8 +66,13 @@
   ],
   "max_concurrent_gpus": 3,
   "evaluation_policy": "Unchanged published top-venue author attacks only; full budgets; no adaptive or improved attacks; independent null calibration and evaluation; report achieved FPR and absolute TPR.",
-  "current_decision": "Instance-key recovery frozen. Complete the unified SemBind/PGID/SEAL benchmark before new mechanisms; separate same-carrier and native-system comparisons, independently calibrate 1% and 0.1% FPR, preserve complete published attack budgets and all denominators.",
+  "current_decision": "Instance-key recovery frozen. The authorized256-bit GS fingerprint fixed-point screen completed and failed; stop this mechanism with no added rounds, variants or attacks. Continue the unified SemBind/PGID/SEAL benchmark with full published budgets and calibrated FPR.",
   "completed_evidence": [
+    {
+      "id": "gs_fingerprint_fixedpoint_20261116",
+      "report": "reports/gs_fingerprint_fixedpoint_20261116/report.md",
+      "summary": "50 prompts; all1/3/6% fractions0/50 exact convergence; clean joint43/50,37/50,30/50; nine-edit joint32/450,39/450,66/450;500 generations and2000 full inversions;1.398 GPU hours; failed and stopped, no attack runs"
+    },
     {
       "id": "sscd_public_binary_20261116",
       "report": "reports/sscd_public_binary_20261116/report.md",
@@ -904,20 +909,6 @@
       "startup_validation": "reports/unified_natural_cohort_20261115/seal_startup_validation.json",
       "completion": "/data0/liyanlei/watermark_research/runs/unified_seal_nulls_20261115/calibration_results.json",
       "mechanism": "Detached coordinator; child process-exit waits; per-record hash-checked resume"
-    },
-    {
-      "run": "gs_fingerprint_fixedpoint_20261116_v3",
-      "status": "running",
-      "coordinator_pid": 11990,
-      "gpu_indices": [
-        3
-      ],
-      "protocol": "protocols/gs_fingerprint_fixedpoint_20261116_v3.json",
-      "protocol_sha256": "c46dfc434096ab7cda5e25306e1ee3ed22d9e00c5cd07b183b471de7d6d1e29e",
-      "gpu_hours_limit": 3,
-      "prior_launch_seconds": 13.570787823060527,
-      "attacks": 0,
-      "completion": "/data0/liyanlei/watermark_research/runs/gs_fingerprint_fixedpoint_20261116_v3/supervisor_complete.json"
     }
   ],
   "queued_runs": [],
@@ -1389,10 +1380,12 @@
     "complete_carried_code_system": false,
     "novelty_established": false,
     "independent_confirmation": false,
-    "audit": "reports/sscd_public_binary_20261116/independent_audit.json"
+    "audit": "reports/sscd_public_binary_20261116/independent_audit.json",
+    "selected_length": 256,
+    "selected_by_user": true
   },
   "gs_fingerprint_fixedpoint_probe": {
-    "status": "legitimate_readback_evaluation",
+    "status": "complete_failed_screen",
     "run": "gs_fingerprint_fixedpoint_20261116_v3",
     "protocol": "protocols/gs_fingerprint_fixedpoint_20261116_v3.json",
     "gpu_index": 3,
@@ -1411,6 +1404,35 @@
       "p06": 0
     },
     "generation_report": "reports/gs_fingerprint_fixedpoint_20261116/generation.md",
-    "minimal_codec_explicitly_approved": true
+    "minimal_codec_explicitly_approved": true,
+    "report": "reports/gs_fingerprint_fixedpoint_20261116/report.md",
+    "passed": false,
+    "actual_generation_calls": 500,
+    "actual_inversions": 2000,
+    "unet_calls": 125000,
+    "cumulative_gpu_hours_upper_bound": 1.397975727063054,
+    "gpu_released": true,
+    "concurrency_exception_active": false,
+    "further_variants_allowed": false,
+    "further_probe_gpu_jobs_allowed": false,
+    "independent_audit": "reports/gs_fingerprint_fixedpoint_20261116/independent_audit.json",
+    "lineage_audit": "reports/gs_fingerprint_fixedpoint_20261116/lineage_audit.json",
+    "resource_release": "reports/gs_fingerprint_fixedpoint_20261116/resource_release.json",
+    "clean_joint": {
+      "p01": 43,
+      "p03": 37,
+      "p06": 30
+    },
+    "nine_edit_joint": {
+      "p01": 32,
+      "p03": 39,
+      "p06": 66
+    },
+    "nine_edit_gs": {
+      "p01": 448,
+      "p03": 449,
+      "p06": 449
+    },
+    "baseline_nine_edit_gs": 449
   }
 }

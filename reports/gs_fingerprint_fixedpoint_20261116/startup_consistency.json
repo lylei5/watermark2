@@ -1,0 +1,26 @@
+{
+  "same_provider_key_and_watermark": true,
+  "same_mechanism_fields": [
+    "sources",
+    "ratios",
+    "conditions",
+    "generation",
+    "inversion",
+    "model_path",
+    "similarity_threshold",
+    "drift_limit",
+    "rounds",
+    "fingerprint",
+    "encryption",
+    "locations",
+    "coding",
+    "pass_rule"
+  ],
+  "failed_launches_before_any_image": true,
+  "private_values_exported": false,
+  "attempts": [
+    "gs_fingerprint_fixedpoint_20261116",
+    "gs_fingerprint_fixedpoint_20261116_v2",
+    "gs_fingerprint_fixedpoint_20261116_v3"
+  ]
+}

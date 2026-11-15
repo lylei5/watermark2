@@ -1,11 +1,46 @@
 """Render the audited bounded GS mechanism evidence into a Chinese research report."""
 import argparse
+import hashlib
 import json
+import os
 from pathlib import Path
+
+os.environ.update(CUDA_VISIBLE_DEVICES='', OMP_NUM_THREADS='4', MKL_NUM_THREADS='4', OPENBLAS_NUM_THREADS='4')
 
 
 def read(path):
     return json.loads(Path(path).read_text())
+
+
+def audit_lineage(run):
+    import numpy as np
+    from PIL import Image
+    rounds = {(r['task'],r['ratio'],r['iteration']):r for r in read(run/'rounds.json')}
+    checked, identical_features, largest_error, final_checks = 0, 0, 0., 0
+    for row in read(run/'finals.json'):
+        if row['ratio']=='baseline':
+            source=run/'images'/str(row['task'])/'baseline.png'
+            data=source.with_suffix('.npz')
+        else:
+            source=Path(row['image'])
+            data=Path(row['latent'])
+            original=rounds[(row['task'],row['ratio'],row['rounds'])]
+            for field in ['converged','flips','drift','strict_drift_pass','image_sha256']:
+                assert row[field]==original[field]
+            final_checks+=1
+        query=run/'queries'/str(row['task'])/row['ratio']/'clean.png'
+        assert np.array_equal(np.array(Image.open(source).convert('RGB')),np.array(Image.open(query).convert('RGB')))
+        a=np.load(data)['feature']; b=np.load(query.with_suffix('.npz'))['feature']
+        error=float(np.max(np.abs(a-b)))
+        assert error<=1e-6
+        largest_error=max(largest_error,error)
+        identical_features+=int(np.array_equal(a,b))
+        checked+=1
+    value=dict(device='CPU249',same_pixel_pairs=checked,bitwise_identical_feature_pairs=identical_features,
+        max_feature_absolute_difference=largest_error,final_round_link_checks=final_checks,mismatches=0,
+        script_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest())
+    (run/'lineage_audit.json').write_text(json.dumps(value,indent=2)+'\n')
+    return value
 
 
 def main(run):
@@ -14,6 +49,7 @@ def main(run):
     complete = read(run/'analysis_complete.json')
     noise = read(run/'noise_channel_audit.json')
     assert complete['status']=='complete'
+    lineage=audit_lineage(run)
     gpu = read(run/'gpu_complete.json')
     names = [('p01','1%'),('p03','3%'),('p06','6%')]
     labels = dict(clean='未处理原图',random_crop_ratio='保留区域0.6',random_drop_ratio='抹除区域0.8',
@@ -37,7 +73,7 @@ def main(run):
         lines.append(f"| {label} | {by['1']}/{by['2']}/{by['3']} | {d['first_round_flips']['mean']:.2f} | {r['final_flips']['mean']:.2f} | {r['final_drift']['mean']:.4f} | {r['baseline_sscd_distance']['mean']:.4f} |")
     lines += ['',f"匹配分数阈值固定为{plan['similarity_threshold']:.10f}；合法距离阈值的三分之一为{plan['drift_limit']:.10f}。二值码与连续查询比较即使是自身也有量化距离，所以上表的非对称距离不等于纯粹新增的图像变化；连续SSCD距离和位翻转数同时保留。",'',
         '这一步的问题是：写入的是上一张图的指纹，而写入动作又会改变下一张图。小比例的噪声位置不意味着小比例的图像变化。三轮的平均翻转位数虽有下降，但没有提示词达到逐位一致；1%从67.42降至61.20、56.78位，3%从78.68降至71.82、70.58位，6%从95.56降至88.44、85.66位。现有证据支持“这套实现不能在三轮内完成自洽写入”，不支持关于任意实现或无限轮迭代的结论。','',
-        '写入噪声的450轮中，原生GS水印在生成前均为256/256位正确。独立重算没有差异，说明原有GS冗余仍然成立。相对L2噪声改变量分别为'+ '、'.join(f"{100*noise['summary'][name]['relative_l2_change_mean']:.1f}%" for name,_ in names)+'；位置比例虽小，数值扰动仍足以改变生成实例。详见[噪声通道复核](noise_channel_audit.json)。','',
+        '写入噪声的450轮中，原生GS水印在生成前均为256/256位正确。独立重算没有差异，说明原有GS重复编码在初始噪声中仍可解码。相对L2噪声改变量分别为'+ '、'.join(f"{100*noise['summary'][name]['relative_l2_change_mean']:.1f}%" for name,_ in names)+'；位置比例虽小，数值扰动仍足以改变生成实例。详见[噪声通道复核](noise_channel_audit.json)。','',
         '## 读回与联合合法率','',
         '| 处理 | 原生GS | 1% GS | 3% GS | 6% GS | 1% 联合 | 3% 联合 | 6% 联合 |',
         '|---|---:|---:|---:|---:|---:|---:|---:|']
@@ -51,6 +87,9 @@ def main(run):
         values=[f"{100*result['ratios'][name]['conditions'][c]['ber']['mean']:.2f}%" for name,_ in names]
         lines.append('| '+labels[c]+' | '+' | '.join(values)+' |')
     lines += ['', '误码率以实际写入的256位明文码为真值。它和“生成后指纹已经改变了多少”是两个独立问题。全部条件使用同一提示词的相同处理种子。常规处理保持已有GS作者函数的原始行为，包括亮度随机采样和高斯噪声uint8运算；没有改成另一种同名操作。', '',
+        '原图的读码误码率均值为17.73%、14.10%、5.55%；九类处理后升至37.76%、34.03%、26.51%。原生GS每位有64次空间重复，新指纹平均只有约1.27、1.92、3.84个原始位槽。增加写入比例确实改善了读回，但同时加重了生成端指纹漂移；本次三个配置都无法同时满足两项要求。', '',
+        'GS自身在未处理图上均为50/50；九类处理中原生基准449/450，1%为448/450（椒盐处理少1张），3%和6%均为449/450。保留区域和抹除区域两项中，GS检测仍各为50/50，但三个比例的联合通过都为0/50。上述数字直接定位了新增指纹链路的失败；没有把它归咎于原生GS检测整体失效。', '',
+        '全部输出均纳入诊断分母。由于没有一个提示词逐位收敛，若发布规则要求先达到不动点再发布，本次每个比例的可发布数量均为0/50。', '',
         '## 画面变化','', '| 比例 | PSNR均值（dB） | LPIPS均值 | LPIPS中位数 | LPIPS最大值 |', '|---|---:|---:|---:|---:|']
     for name,label in names:
         q=result['ratios'][name]['quality']
@@ -67,13 +106,16 @@ def main(run):
         r=result['ratios'][name]; c=r['conditions']['clean']; e=r['nine_edits']
         lines.append(f"| {label} | {interval(r['converged']/50,r['converged_wilson95'])} | {interval(c['joint']/50,c['joint_wilson95'])} | {interval(e['joint']/450,e['joint_cluster95'])} |")
     lines += ['', '九类处理共450次查询，但只有50个独立提示词；区间按提示词成组重采样5000次。这里是既有拆分上的机制筛查，不是独立确认或普遍安全性保证。','',
+        '![收敛和联合通过率](figures/feasibility.png)','',
+        '虚线为90%目标。收敛与原图联合的误差棒是50个提示词的Wilson95%区间；九类合计是按提示词成组重采样的95%区间。','',
         '## 资源与复核','',
-        f"只使用249的GPU3；累计GPU分配时间上界{result['gpu']['cumulative_gpu_hours_upper_bound']:.4f}小时，包含两次启动失败约13.57秒。完成{gpu['generation_calls']}次生成、{gpu['queries']}次反演，每次完整50步，记录{gpu['unet_calls']}次UNet调用。无攻击。SEAL的GPU7/5/4未被迁移或终止。LPIPS、统计、图表和独立复核均使用249 CPU，没有额外GPU任务。",'',
+        f"只使用249的GPU3；累计GPU分配时间上界{result['gpu']['cumulative_gpu_hours_upper_bound']:.4f}小时，包含两次启动失败约13.57秒。完成{gpu['generation_calls']}次生成、{gpu['queries']}次反演，每次完整50步，记录{gpu['unet_calls']}次UNet调用。除规定九类常规处理外，没有运行攻击实验。SEAL的GPU7/5/4未被迁移或终止。LPIPS、统计、图表和独立复核均使用249 CPU，没有额外GPU任务。",'',
         f"独立复核重新计算了{result['audit']['gs_replays']}条GS判定、{result['audit']['payload_replays']}次读码、{result['audit']['score_replays']}个指纹分数，以及{result['audit']['round_replays']}轮的指纹变化。判定差异为0。详细记录见[results.json](results.json)和[independent_audit.json](independent_audit.json)。",'',
+        f"[输入关联复核](lineage_audit.json)确认{lineage['same_pixel_pairs']}对最终生成图与未处理查询逐像素相同，连续SSCD特征最大绝对差为{lineage['max_feature_absolute_difference']:.3g}；{lineage['final_round_link_checks']}条停止轮记录与对应生成轮记录一致。",'',
         '## 实现范围与结论边界','',
         '三个写入比例分别占163、491、983个噪声位置。1%只有163个位置，单靠正负号装不下256位，因此使用每位置两位的高斯四区间；3%/6%使用符号位及循环重复。它们不是仅改变比例的纯消融。使用固定GS密钥派生的异或掩码，不加认证和额外纠错；验证端只用供应方密钥、图中读回的码、查询图特征和公开投影，不使用逐图登记的参考。保存的完整参考和明文码仅用于实验误码/漂移审计。', '',
         '50个提示词来自既有评估拆分，COCO/SDP各25个。3个超长提示词由原管线按77-token上限截断，各比例一致。模型SD2.1，生成CFG7.5、反演空提示词CFG1，均为50步DDIM；未使用PGID防御或VAE优化。GS固定历史阈值BA>181/256，未宣称已经完成统一自然图FPR校准。', '',
-        '此次结论只针对这套冻结实现和预算。不会据此启动新变体，也没有验证任何攻击；统一SemBind/PGID/SEAL对比仍是主线。', '',
+        '此次结论只针对这套冻结实现和预算，未评估伪造攻击下的防御能力。机制筛查已结束，不追加变体或攻击；统一SemBind/PGID/SEAL对比仍是主线。', '',
         f"协议SHA256：`{result['protocol_sha256']}`。服务器资产：`{run}`。代码：[执行脚本](../../scripts/defense/gs_fingerprint_fixedpoint.py)、[独立分析](../../scripts/defense/analyze_gs_fingerprint_fixedpoint.py)、[协议说明](../../docs/GS_FINGERPRINT_FIXEDPOINT_PROTOCOL.md)。",'']
     (run/'report.md').write_text('\n'.join(lines),encoding='utf-8')
     print(json.dumps({'report':str(run/'report.md'),'passed':result['passed']}))

@@ -1,0 +1,27 @@
+{
+  "source_sha256": "b2738aacf8cf5f5c9b48ca855ffd8e3c1844c581f59224eb56afee30bd4c2c21",
+  "script_sha256": "c508d64bc663e5d8de7fb7d896289822794d952f26b70d5db469457babc597dd",
+  "audience": "Research mechanism-screen report; no journal format claimed",
+  "image_adjustments": "None; original RGB pixels, equal display sizes, nearest display interpolation",
+  "preselected_tasks": [
+    1,
+    2,
+    6,
+    52,
+    53,
+    55
+  ],
+  "largest_lpips_tasks": [
+    47,
+    95,
+    55
+  ],
+  "largest_lpips_selection": "Post hoc descriptive illustration",
+  "intervals": "Wilson95% for n50 prompt proportions; prompt-cluster percentile bootstrap5000 for450 edits",
+  "artifacts": {
+    "feasibility.png": "fd253d1bb17da0e442a9ad4fdad54a247cca88e8553a30ba09c4748f5510941d",
+    "feasibility.pdf": "28d68f3ae114e24953fffb18a383f2e8c380b5de8f8e4e5d6771e8f1cd79ea4b",
+    "largest_lpips_comparison.png": "6a4dacf149a9ac675c0b9912d9f37f53b0144932ab2c8e1c8f3595ec499b1226",
+    "preselected_comparison.png": "bee9598939fdf5f824ff55e47410b427164173e4c7be23adc952a62f13f8f010"
+  }
+}
