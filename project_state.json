@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-15T01:45:40.4165945Z",
-  "status": "reprompt_plus_native_evaluation",
+  "updated_at": "2026-11-15T01:58:50.0468814Z",
+  "status": "reprompt_plus_key_recovery",
   "active_experiments": 1,
-  "queued_experiments": 1,
+  "queued_experiments": 0,
   "latest_progress_report": "reports/observable_evidence_recovery_20261115/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/INSTANCE_BINDING_RESEARCH.md",
@@ -828,27 +828,14 @@
   },
   "active_runs": [
     {
-      "run": "reprompt_plus_evaluation_20261115_v2",
-      "protocol_sha256": "585151a4ced9b5d2a2320d9f54b8230698a3159478b0335eb79a82203db6f428",
-      "worker_pids": [
-        26006,
-        546,
-        547
-      ],
-      "device": "GPU7/5/4",
-      "pid": 545,
-      "prefix_completion_event_pid": 13732
-    }
-  ],
-  "queued_runs": [
-    {
+      "pid": 2409,
       "run": "reprompt_plus_recovery_20261115",
       "coordinator_pid": 545,
-      "depends_on": "reprompt_plus_evaluation_20261115_v2",
-      "planned_recovery_api_decisions": 960,
-      "device": "CPU249"
+      "device": "CPU249",
+      "source_sha256": "afb2bf2f832a4fa913034f1834709a805e98637ef6b4ed8a1e95e72ed01bd241"
     }
   ],
+  "queued_runs": [],
   "author_reprompt_control": {
     "run": "author_reprompt_control_20261114_v2",
     "status": "complete",
@@ -962,7 +949,19 @@
     "report": "reports/author_reprompt_plus_20261115/report.md",
     "artifact_audit": "reports/author_reprompt_plus_20261115/artifact_audit.json",
     "evaluation_run": "reprompt_plus_evaluation_20261115_v2",
-    "evaluation_status": "running"
+    "evaluation_status": "complete",
+    "native_pgid_unique_decisions": 480,
+    "native_duplicate_decisions": 23,
+    "gs_pgid_source_acceptance": [
+      10,
+      10
+    ],
+    "tr_pgid_source_acceptance": [
+      8,
+      8
+    ],
+    "recovery_status": "running",
+    "recovery_run": "reprompt_plus_recovery_20261115"
   },
   "observable_evidence_recovery": {
     "run": "observable_evidence_recovery_20261115",
@@ -992,7 +991,8 @@
       770,
       770
     ],
-    "report": "reports/observable_evidence_recovery_20261115/report.md"
+    "report": "reports/observable_evidence_recovery_20261115/report.md",
+    "budget_calibration": "reports/observable_evidence_recovery_20261115/budget_calibration.json"
   },
   "final_artifact_audit": {
     "status": "queued",

@@ -1,0 +1,142 @@
+{
+  "status": "complete",
+  "gpu": null,
+  "gpu_uuid": "GPU-748b31fa-0510-6b56-f820-f3812266ed28",
+  "rows": 360,
+  "rows_sha256": "932fac4be1de1ff4c38a275615cabcd2f3ff601aa150b1539484323087d003a3",
+  "seconds": 1865.8923745410284,
+  "author_threshold": 0.70703125,
+  "used_threshold": 0.70703125,
+  "pgid": {
+    "steps": 50,
+    "k": 15,
+    "s": 3,
+    "gamma": 0.001
+  },
+  "gpu_uuids": [
+    "GPU-9644fb82-cb6f-7311-8017-eaee41409bb7",
+    "GPU-748b31fa-0510-6b56-f820-f3812266ed28"
+  ],
+  "shards": [
+    "/data0/liyanlei/watermark_research/runs/reprompt_plus_evaluation_20261115/GS",
+    "/data0/liyanlei/watermark_research/runs/reprompt_plus_native_assist_20261115/GS"
+  ],
+  "duplicate_checks": [
+    {
+      "trial": "G006_sd21_p0_r0",
+      "defended": false,
+      "metric_difference": 0.0
+    },
+    {
+      "trial": "G006_sd21_p0_r0",
+      "defended": true,
+      "metric_difference": 0.0
+    },
+    {
+      "trial": "G006_sd21_p0_r1",
+      "defended": false,
+      "metric_difference": 0.0
+    },
+    {
+      "trial": "G006_sd21_p0_r1",
+      "defended": true,
+      "metric_difference": 0.0
+    },
+    {
+      "trial": "G006_sd21_p0_r2",
+      "defended": false,
+      "metric_difference": 0.0
+    },
+    {
+      "trial": "G006_sd21_p0_r2",
+      "defended": true,
+      "metric_difference": 0.0
+    },
+    {
+      "trial": "G006_sd21_p1_r0",
+      "defended": false,
+      "metric_difference": 0.0
+    },
+    {
+      "trial": "G006_sd21_p1_r0",
+      "defended": true,
+      "metric_difference": 0.0
+    },
+    {
+      "trial": "G006_sd21_p1_r1",
+      "defended": false,
+      "metric_difference": 0.0
+    },
+    {
+      "trial": "G006_sd21_p1_r1",
+      "defended": true,
+      "metric_difference": 0.0
+    },
+    {
+      "trial": "G006_sd21_p1_r2",
+      "defended": false,
+      "metric_difference": 0.0
+    },
+    {
+      "trial": "G006_sd21_p1_r2",
+      "defended": true,
+      "metric_difference": 0.0
+    },
+    {
+      "trial": "G006_sd21_p2_r0",
+      "defended": false,
+      "metric_difference": 0.0
+    },
+    {
+      "trial": "G006_sd21_p2_r0",
+      "defended": true,
+      "metric_difference": 0.0
+    },
+    {
+      "trial": "G006_sd21_p2_r1",
+      "defended": false,
+      "metric_difference": 0.0
+    },
+    {
+      "trial": "G006_sd21_p2_r1",
+      "defended": true,
+      "metric_difference": 0.0
+    },
+    {
+      "trial": "G006_sd21_p2_r2",
+      "defended": false,
+      "metric_difference": 0.0
+    },
+    {
+      "trial": "G006_sd21_p2_r2",
+      "defended": true,
+      "metric_difference": 0.0
+    },
+    {
+      "trial": "G006_sd15_p0_r0",
+      "defended": false,
+      "metric_difference": 0.0
+    },
+    {
+      "trial": "G006_sd15_p0_r0",
+      "defended": true,
+      "metric_difference": 0.0
+    },
+    {
+      "trial": "G006_sd15_p0_r1",
+      "defended": false,
+      "metric_difference": 0.0
+    },
+    {
+      "trial": "G006_sd15_p0_r1",
+      "defended": true,
+      "metric_difference": 0.0
+    },
+    {
+      "trial": "G006_sd15_p0_r2",
+      "defended": false,
+      "metric_difference": 0.0
+    }
+  ],
+  "timing_scope": "seconds inherited from assist shard only; coordinator reports elapsed completion time"
+}
