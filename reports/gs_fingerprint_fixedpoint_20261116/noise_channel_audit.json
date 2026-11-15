@@ -1,0 +1,4085 @@
+{
+  "device": "CPU249",
+  "independent_gs_noise_replays": 450,
+  "mismatches": 0,
+  "summary": {
+    "p01": {
+      "rounds": 150,
+      "native_gs_ba_min": 1.0,
+      "native_gs_ba_max": 1.0,
+      "changed_coordinates_mean": 121.52,
+      "changed_signs_mean": 78.22666666666667,
+      "relative_l2_change_mean": 0.13925590029256749
+    },
+    "p03": {
+      "rounds": 150,
+      "native_gs_ba_min": 1.0,
+      "native_gs_ba_max": 1.0,
+      "changed_coordinates_mean": 245.45333333333335,
+      "changed_signs_mean": 245.45333333333335,
+      "relative_l2_change_mean": 0.2450037123646758
+    },
+    "p06": {
+      "rounds": 150,
+      "native_gs_ba_min": 1.0,
+      "native_gs_ba_max": 1.0,
+      "changed_coordinates_mean": 492.72,
+      "changed_signs_mean": 492.72,
+      "relative_l2_change_mean": 0.3457382325514334
+    }
+  },
+  "rows": [
+    {
+      "task": 1,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 126,
+      "changed_signs": 83,
+      "relative_l2_change": 0.13317575435405138
+    },
+    {
+      "task": 1,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 118,
+      "changed_signs": 83,
+      "relative_l2_change": 0.1344956533324265
+    },
+    {
+      "task": 1,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 121,
+      "changed_signs": 79,
+      "relative_l2_change": 0.1297549307261076
+    },
+    {
+      "task": 1,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 243,
+      "changed_signs": 243,
+      "relative_l2_change": 0.23144308110090178
+    },
+    {
+      "task": 1,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 245,
+      "changed_signs": 245,
+      "relative_l2_change": 0.23970698564690096
+    },
+    {
+      "task": 1,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 245,
+      "changed_signs": 245,
+      "relative_l2_change": 0.22470589189398227
+    },
+    {
+      "task": 1,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 478,
+      "changed_signs": 478,
+      "relative_l2_change": 0.330563762907181
+    },
+    {
+      "task": 1,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 499,
+      "changed_signs": 499,
+      "relative_l2_change": 0.3396579822697002
+    },
+    {
+      "task": 1,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 508,
+      "changed_signs": 508,
+      "relative_l2_change": 0.34854295336337804
+    },
+    {
+      "task": 2,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 114,
+      "changed_signs": 76,
+      "relative_l2_change": 0.15098143170558084
+    },
+    {
+      "task": 2,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 118,
+      "changed_signs": 81,
+      "relative_l2_change": 0.15036462850701804
+    },
+    {
+      "task": 2,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 114,
+      "changed_signs": 82,
+      "relative_l2_change": 0.15695477276561542
+    },
+    {
+      "task": 2,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 251,
+      "changed_signs": 251,
+      "relative_l2_change": 0.24732310146874772
+    },
+    {
+      "task": 2,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 249,
+      "changed_signs": 249,
+      "relative_l2_change": 0.24971594983946185
+    },
+    {
+      "task": 2,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 248,
+      "changed_signs": 248,
+      "relative_l2_change": 0.238076628646722
+    },
+    {
+      "task": 2,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 481,
+      "changed_signs": 481,
+      "relative_l2_change": 0.3317839673797382
+    },
+    {
+      "task": 2,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 501,
+      "changed_signs": 501,
+      "relative_l2_change": 0.35069845973467056
+    },
+    {
+      "task": 2,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 495,
+      "changed_signs": 495,
+      "relative_l2_change": 0.34792630132028896
+    },
+    {
+      "task": 6,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 125,
+      "changed_signs": 85,
+      "relative_l2_change": 0.13233643671139414
+    },
+    {
+      "task": 6,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 117,
+      "changed_signs": 83,
+      "relative_l2_change": 0.13821668836171866
+    },
+    {
+      "task": 6,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 122,
+      "changed_signs": 84,
+      "relative_l2_change": 0.14283840675740025
+    },
+    {
+      "task": 6,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 240,
+      "changed_signs": 240,
+      "relative_l2_change": 0.2484882557355984
+    },
+    {
+      "task": 6,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 211,
+      "changed_signs": 211,
+      "relative_l2_change": 0.2211326765060629
+    },
+    {
+      "task": 6,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 222,
+      "changed_signs": 222,
+      "relative_l2_change": 0.22181648593699105
+    },
+    {
+      "task": 6,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 470,
+      "changed_signs": 470,
+      "relative_l2_change": 0.3426376346710317
+    },
+    {
+      "task": 6,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 488,
+      "changed_signs": 488,
+      "relative_l2_change": 0.34650191096280625
+    },
+    {
+      "task": 6,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 496,
+      "changed_signs": 496,
+      "relative_l2_change": 0.3377325309257563
+    },
+    {
+      "task": 10,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 112,
+      "changed_signs": 76,
+      "relative_l2_change": 0.13150547196596762
+    },
+    {
+      "task": 10,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 115,
+      "changed_signs": 72,
+      "relative_l2_change": 0.13625686684525193
+    },
+    {
+      "task": 10,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 119,
+      "changed_signs": 73,
+      "relative_l2_change": 0.13288792017677176
+    },
+    {
+      "task": 10,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 261,
+      "changed_signs": 261,
+      "relative_l2_change": 0.2719665832096063
+    },
+    {
+      "task": 10,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 261,
+      "changed_signs": 261,
+      "relative_l2_change": 0.2630723457140996
+    },
+    {
+      "task": 10,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 264,
+      "changed_signs": 264,
+      "relative_l2_change": 0.25799331578213586
+    },
+    {
+      "task": 10,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 511,
+      "changed_signs": 511,
+      "relative_l2_change": 0.3586762774863959
+    },
+    {
+      "task": 10,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 492,
+      "changed_signs": 492,
+      "relative_l2_change": 0.3470833010865411
+    },
+    {
+      "task": 10,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 508,
+      "changed_signs": 508,
+      "relative_l2_change": 0.3462712270970323
+    },
+    {
+      "task": 11,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 120,
+      "changed_signs": 75,
+      "relative_l2_change": 0.15569522807173905
+    },
+    {
+      "task": 11,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 127,
+      "changed_signs": 84,
+      "relative_l2_change": 0.13914308892617694
+    },
+    {
+      "task": 11,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 125,
+      "changed_signs": 80,
+      "relative_l2_change": 0.13785112150335052
+    },
+    {
+      "task": 11,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 240,
+      "changed_signs": 240,
+      "relative_l2_change": 0.250904750241258
+    },
+    {
+      "task": 11,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 247,
+      "changed_signs": 247,
+      "relative_l2_change": 0.23987538202317127
+    },
+    {
+      "task": 11,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 229,
+      "changed_signs": 229,
+      "relative_l2_change": 0.23644693839539463
+    },
+    {
+      "task": 11,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 506,
+      "changed_signs": 506,
+      "relative_l2_change": 0.35416105166803713
+    },
+    {
+      "task": 11,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 485,
+      "changed_signs": 485,
+      "relative_l2_change": 0.35366771038667777
+    },
+    {
+      "task": 11,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 486,
+      "changed_signs": 486,
+      "relative_l2_change": 0.35915437933984773
+    },
+    {
+      "task": 13,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 130,
+      "changed_signs": 85,
+      "relative_l2_change": 0.1427767337512804
+    },
+    {
+      "task": 13,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 124,
+      "changed_signs": 72,
+      "relative_l2_change": 0.1346462952774295
+    },
+    {
+      "task": 13,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 126,
+      "changed_signs": 75,
+      "relative_l2_change": 0.13522126139829999
+    },
+    {
+      "task": 13,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 250,
+      "changed_signs": 250,
+      "relative_l2_change": 0.25184024998856364
+    },
+    {
+      "task": 13,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 250,
+      "changed_signs": 250,
+      "relative_l2_change": 0.2473294628324589
+    },
+    {
+      "task": 13,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 221,
+      "changed_signs": 221,
+      "relative_l2_change": 0.22711991792341676
+    },
+    {
+      "task": 13,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 510,
+      "changed_signs": 510,
+      "relative_l2_change": 0.3442421415973445
+    },
+    {
+      "task": 13,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 507,
+      "changed_signs": 507,
+      "relative_l2_change": 0.34691524673489094
+    },
+    {
+      "task": 13,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 527,
+      "changed_signs": 527,
+      "relative_l2_change": 0.3583329877944019
+    },
+    {
+      "task": 15,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 118,
+      "changed_signs": 76,
+      "relative_l2_change": 0.12315239161241835
+    },
+    {
+      "task": 15,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 116,
+      "changed_signs": 69,
+      "relative_l2_change": 0.12378033812599261
+    },
+    {
+      "task": 15,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 127,
+      "changed_signs": 84,
+      "relative_l2_change": 0.13151577352054006
+    },
+    {
+      "task": 15,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 264,
+      "changed_signs": 264,
+      "relative_l2_change": 0.25700955010376975
+    },
+    {
+      "task": 15,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 258,
+      "changed_signs": 258,
+      "relative_l2_change": 0.2531015581362343
+    },
+    {
+      "task": 15,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 264,
+      "changed_signs": 264,
+      "relative_l2_change": 0.2517042313414693
+    },
+    {
+      "task": 15,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 504,
+      "changed_signs": 504,
+      "relative_l2_change": 0.3517024652392952
+    },
+    {
+      "task": 15,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 506,
+      "changed_signs": 506,
+      "relative_l2_change": 0.35817735414698315
+    },
+    {
+      "task": 15,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 503,
+      "changed_signs": 503,
+      "relative_l2_change": 0.35174214411235066
+    },
+    {
+      "task": 17,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 111,
+      "changed_signs": 63,
+      "relative_l2_change": 0.12574445774740797
+    },
+    {
+      "task": 17,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 126,
+      "changed_signs": 76,
+      "relative_l2_change": 0.1256530644173146
+    },
+    {
+      "task": 17,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 112,
+      "changed_signs": 72,
+      "relative_l2_change": 0.12711914303691424
+    },
+    {
+      "task": 17,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 256,
+      "changed_signs": 256,
+      "relative_l2_change": 0.23692970664055416
+    },
+    {
+      "task": 17,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 258,
+      "changed_signs": 258,
+      "relative_l2_change": 0.24099814607975054
+    },
+    {
+      "task": 17,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 253,
+      "changed_signs": 253,
+      "relative_l2_change": 0.24302811834245905
+    },
+    {
+      "task": 17,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 511,
+      "changed_signs": 511,
+      "relative_l2_change": 0.33291871709875864
+    },
+    {
+      "task": 17,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 478,
+      "changed_signs": 478,
+      "relative_l2_change": 0.326199475788313
+    },
+    {
+      "task": 17,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 488,
+      "changed_signs": 488,
+      "relative_l2_change": 0.33889031576286255
+    },
+    {
+      "task": 20,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 122,
+      "changed_signs": 82,
+      "relative_l2_change": 0.1406274653937326
+    },
+    {
+      "task": 20,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 123,
+      "changed_signs": 85,
+      "relative_l2_change": 0.15563501671405977
+    },
+    {
+      "task": 20,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 120,
+      "changed_signs": 82,
+      "relative_l2_change": 0.14994556297783376
+    },
+    {
+      "task": 20,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 247,
+      "changed_signs": 247,
+      "relative_l2_change": 0.2437310446827086
+    },
+    {
+      "task": 20,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 241,
+      "changed_signs": 241,
+      "relative_l2_change": 0.23710795671247514
+    },
+    {
+      "task": 20,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 234,
+      "changed_signs": 234,
+      "relative_l2_change": 0.2372871961494331
+    },
+    {
+      "task": 20,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 491,
+      "changed_signs": 491,
+      "relative_l2_change": 0.32966764417285976
+    },
+    {
+      "task": 20,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 469,
+      "changed_signs": 469,
+      "relative_l2_change": 0.3277057739992824
+    },
+    {
+      "task": 20,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 518,
+      "changed_signs": 518,
+      "relative_l2_change": 0.3412894760264826
+    },
+    {
+      "task": 22,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 126,
+      "changed_signs": 85,
+      "relative_l2_change": 0.13168698067422172
+    },
+    {
+      "task": 22,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 126,
+      "changed_signs": 74,
+      "relative_l2_change": 0.12886614647679442
+    },
+    {
+      "task": 22,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 119,
+      "changed_signs": 80,
+      "relative_l2_change": 0.12298393164274542
+    },
+    {
+      "task": 22,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 239,
+      "changed_signs": 239,
+      "relative_l2_change": 0.24037677172966462
+    },
+    {
+      "task": 22,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 233,
+      "changed_signs": 233,
+      "relative_l2_change": 0.23658594669244293
+    },
+    {
+      "task": 22,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 235,
+      "changed_signs": 235,
+      "relative_l2_change": 0.25038734393226136
+    },
+    {
+      "task": 22,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 470,
+      "changed_signs": 470,
+      "relative_l2_change": 0.330773108008329
+    },
+    {
+      "task": 22,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 508,
+      "changed_signs": 508,
+      "relative_l2_change": 0.3540778718235632
+    },
+    {
+      "task": 22,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 516,
+      "changed_signs": 516,
+      "relative_l2_change": 0.3580063113416306
+    },
+    {
+      "task": 23,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 123,
+      "changed_signs": 82,
+      "relative_l2_change": 0.12325728463500461
+    },
+    {
+      "task": 23,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 126,
+      "changed_signs": 77,
+      "relative_l2_change": 0.12921721559432656
+    },
+    {
+      "task": 23,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 126,
+      "changed_signs": 76,
+      "relative_l2_change": 0.12956650524230764
+    },
+    {
+      "task": 23,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 250,
+      "changed_signs": 250,
+      "relative_l2_change": 0.2467695541535921
+    },
+    {
+      "task": 23,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 234,
+      "changed_signs": 234,
+      "relative_l2_change": 0.2354952564232675
+    },
+    {
+      "task": 23,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 250,
+      "changed_signs": 250,
+      "relative_l2_change": 0.24357213306607503
+    },
+    {
+      "task": 23,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 489,
+      "changed_signs": 489,
+      "relative_l2_change": 0.3345992422361084
+    },
+    {
+      "task": 23,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 507,
+      "changed_signs": 507,
+      "relative_l2_change": 0.34034210980843477
+    },
+    {
+      "task": 23,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 503,
+      "changed_signs": 503,
+      "relative_l2_change": 0.34767845181513646
+    },
+    {
+      "task": 24,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 126,
+      "changed_signs": 88,
+      "relative_l2_change": 0.12069480983131538
+    },
+    {
+      "task": 24,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 126,
+      "changed_signs": 82,
+      "relative_l2_change": 0.12530896654591703
+    },
+    {
+      "task": 24,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 134,
+      "changed_signs": 85,
+      "relative_l2_change": 0.1404821348215819
+    },
+    {
+      "task": 24,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 247,
+      "changed_signs": 247,
+      "relative_l2_change": 0.24032394307227797
+    },
+    {
+      "task": 24,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 224,
+      "changed_signs": 224,
+      "relative_l2_change": 0.21924887932023887
+    },
+    {
+      "task": 24,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 217,
+      "changed_signs": 217,
+      "relative_l2_change": 0.22364260100578026
+    },
+    {
+      "task": 24,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 473,
+      "changed_signs": 473,
+      "relative_l2_change": 0.3410439198127287
+    },
+    {
+      "task": 24,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 478,
+      "changed_signs": 478,
+      "relative_l2_change": 0.34606779505686946
+    },
+    {
+      "task": 24,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 466,
+      "changed_signs": 466,
+      "relative_l2_change": 0.33374849808312135
+    },
+    {
+      "task": 25,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 122,
+      "changed_signs": 78,
+      "relative_l2_change": 0.14259830471397092
+    },
+    {
+      "task": 25,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 122,
+      "changed_signs": 78,
+      "relative_l2_change": 0.14364070042814053
+    },
+    {
+      "task": 25,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 119,
+      "changed_signs": 79,
+      "relative_l2_change": 0.13714865584674454
+    },
+    {
+      "task": 25,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 263,
+      "changed_signs": 263,
+      "relative_l2_change": 0.2633022349390541
+    },
+    {
+      "task": 25,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 239,
+      "changed_signs": 239,
+      "relative_l2_change": 0.26076679774116107
+    },
+    {
+      "task": 25,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 260,
+      "changed_signs": 260,
+      "relative_l2_change": 0.2714404529775663
+    },
+    {
+      "task": 25,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 502,
+      "changed_signs": 502,
+      "relative_l2_change": 0.36468754143803167
+    },
+    {
+      "task": 25,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 506,
+      "changed_signs": 506,
+      "relative_l2_change": 0.3648848806596103
+    },
+    {
+      "task": 25,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 524,
+      "changed_signs": 524,
+      "relative_l2_change": 0.3729571844437558
+    },
+    {
+      "task": 26,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 118,
+      "changed_signs": 79,
+      "relative_l2_change": 0.14277041138901522
+    },
+    {
+      "task": 26,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 130,
+      "changed_signs": 80,
+      "relative_l2_change": 0.14414531434878783
+    },
+    {
+      "task": 26,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 127,
+      "changed_signs": 84,
+      "relative_l2_change": 0.1342034881949433
+    },
+    {
+      "task": 26,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 244,
+      "changed_signs": 244,
+      "relative_l2_change": 0.24685676755316696
+    },
+    {
+      "task": 26,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 244,
+      "changed_signs": 244,
+      "relative_l2_change": 0.24744382665942816
+    },
+    {
+      "task": 26,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 241,
+      "changed_signs": 241,
+      "relative_l2_change": 0.23697345345157622
+    },
+    {
+      "task": 26,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 496,
+      "changed_signs": 496,
+      "relative_l2_change": 0.3518648839103105
+    },
+    {
+      "task": 26,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 515,
+      "changed_signs": 515,
+      "relative_l2_change": 0.35799193935041906
+    },
+    {
+      "task": 26,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 487,
+      "changed_signs": 487,
+      "relative_l2_change": 0.33818484098044027
+    },
+    {
+      "task": 29,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 112,
+      "changed_signs": 72,
+      "relative_l2_change": 0.13075079477635798
+    },
+    {
+      "task": 29,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 121,
+      "changed_signs": 87,
+      "relative_l2_change": 0.14647474208170475
+    },
+    {
+      "task": 29,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 117,
+      "changed_signs": 79,
+      "relative_l2_change": 0.1513400747238338
+    },
+    {
+      "task": 29,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 242,
+      "changed_signs": 242,
+      "relative_l2_change": 0.23877735570711253
+    },
+    {
+      "task": 29,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 234,
+      "changed_signs": 234,
+      "relative_l2_change": 0.23734624319035905
+    },
+    {
+      "task": 29,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 239,
+      "changed_signs": 239,
+      "relative_l2_change": 0.2272024729132192
+    },
+    {
+      "task": 29,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 499,
+      "changed_signs": 499,
+      "relative_l2_change": 0.3394704650036662
+    },
+    {
+      "task": 29,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 491,
+      "changed_signs": 491,
+      "relative_l2_change": 0.3263360777886824
+    },
+    {
+      "task": 29,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 494,
+      "changed_signs": 494,
+      "relative_l2_change": 0.3233668053163995
+    },
+    {
+      "task": 37,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 123,
+      "changed_signs": 72,
+      "relative_l2_change": 0.12839887853651022
+    },
+    {
+      "task": 37,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 124,
+      "changed_signs": 85,
+      "relative_l2_change": 0.14402211366658654
+    },
+    {
+      "task": 37,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 125,
+      "changed_signs": 91,
+      "relative_l2_change": 0.15367832619236418
+    },
+    {
+      "task": 37,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 260,
+      "changed_signs": 260,
+      "relative_l2_change": 0.2520479094537762
+    },
+    {
+      "task": 37,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 241,
+      "changed_signs": 241,
+      "relative_l2_change": 0.2420658493905642
+    },
+    {
+      "task": 37,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 248,
+      "changed_signs": 248,
+      "relative_l2_change": 0.23848455344601102
+    },
+    {
+      "task": 37,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 502,
+      "changed_signs": 502,
+      "relative_l2_change": 0.35905302154506336
+    },
+    {
+      "task": 37,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 469,
+      "changed_signs": 469,
+      "relative_l2_change": 0.3512160111220001
+    },
+    {
+      "task": 37,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 485,
+      "changed_signs": 485,
+      "relative_l2_change": 0.35987056156289554
+    },
+    {
+      "task": 38,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 118,
+      "changed_signs": 73,
+      "relative_l2_change": 0.13950794493909238
+    },
+    {
+      "task": 38,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 117,
+      "changed_signs": 65,
+      "relative_l2_change": 0.131451654215432
+    },
+    {
+      "task": 38,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 112,
+      "changed_signs": 83,
+      "relative_l2_change": 0.14586121952219525
+    },
+    {
+      "task": 38,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 252,
+      "changed_signs": 252,
+      "relative_l2_change": 0.2630450721950446
+    },
+    {
+      "task": 38,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 247,
+      "changed_signs": 247,
+      "relative_l2_change": 0.2551824707669693
+    },
+    {
+      "task": 38,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 239,
+      "changed_signs": 239,
+      "relative_l2_change": 0.24906459242713622
+    },
+    {
+      "task": 38,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 491,
+      "changed_signs": 491,
+      "relative_l2_change": 0.35309796525196585
+    },
+    {
+      "task": 38,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 519,
+      "changed_signs": 519,
+      "relative_l2_change": 0.3591225432082342
+    },
+    {
+      "task": 38,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 504,
+      "changed_signs": 504,
+      "relative_l2_change": 0.3530629757235318
+    },
+    {
+      "task": 39,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 113,
+      "changed_signs": 71,
+      "relative_l2_change": 0.12640809946508855
+    },
+    {
+      "task": 39,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 110,
+      "changed_signs": 71,
+      "relative_l2_change": 0.12167763383332533
+    },
+    {
+      "task": 39,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 112,
+      "changed_signs": 73,
+      "relative_l2_change": 0.12092644782138436
+    },
+    {
+      "task": 39,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 247,
+      "changed_signs": 247,
+      "relative_l2_change": 0.23625545641609372
+    },
+    {
+      "task": 39,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 249,
+      "changed_signs": 249,
+      "relative_l2_change": 0.24236565697945653
+    },
+    {
+      "task": 39,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 251,
+      "changed_signs": 251,
+      "relative_l2_change": 0.24859340095838175
+    },
+    {
+      "task": 39,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 490,
+      "changed_signs": 490,
+      "relative_l2_change": 0.3541298154709763
+    },
+    {
+      "task": 39,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 492,
+      "changed_signs": 492,
+      "relative_l2_change": 0.3483802339984899
+    },
+    {
+      "task": 39,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 508,
+      "changed_signs": 508,
+      "relative_l2_change": 0.3599961515785542
+    },
+    {
+      "task": 40,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 110,
+      "changed_signs": 75,
+      "relative_l2_change": 0.14456971506801647
+    },
+    {
+      "task": 40,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 116,
+      "changed_signs": 80,
+      "relative_l2_change": 0.13970234442341456
+    },
+    {
+      "task": 40,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 118,
+      "changed_signs": 80,
+      "relative_l2_change": 0.14586643855325426
+    },
+    {
+      "task": 40,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 265,
+      "changed_signs": 265,
+      "relative_l2_change": 0.26945421044890855
+    },
+    {
+      "task": 40,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 257,
+      "changed_signs": 257,
+      "relative_l2_change": 0.25715175015993297
+    },
+    {
+      "task": 40,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 255,
+      "changed_signs": 255,
+      "relative_l2_change": 0.26143424848140856
+    },
+    {
+      "task": 40,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 491,
+      "changed_signs": 491,
+      "relative_l2_change": 0.3515114615987617
+    },
+    {
+      "task": 40,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 529,
+      "changed_signs": 529,
+      "relative_l2_change": 0.35533364730431183
+    },
+    {
+      "task": 40,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 512,
+      "changed_signs": 512,
+      "relative_l2_change": 0.34072223571226956
+    },
+    {
+      "task": 41,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 122,
+      "changed_signs": 82,
+      "relative_l2_change": 0.14498190491737767
+    },
+    {
+      "task": 41,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 128,
+      "changed_signs": 79,
+      "relative_l2_change": 0.13896572665540094
+    },
+    {
+      "task": 41,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 125,
+      "changed_signs": 85,
+      "relative_l2_change": 0.14957737336785168
+    },
+    {
+      "task": 41,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 233,
+      "changed_signs": 233,
+      "relative_l2_change": 0.22841692049106607
+    },
+    {
+      "task": 41,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 238,
+      "changed_signs": 238,
+      "relative_l2_change": 0.24113114940561872
+    },
+    {
+      "task": 41,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 249,
+      "changed_signs": 249,
+      "relative_l2_change": 0.22882331850554163
+    },
+    {
+      "task": 41,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 487,
+      "changed_signs": 487,
+      "relative_l2_change": 0.3270118986940079
+    },
+    {
+      "task": 41,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 487,
+      "changed_signs": 487,
+      "relative_l2_change": 0.3375759604935735
+    },
+    {
+      "task": 41,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 465,
+      "changed_signs": 465,
+      "relative_l2_change": 0.32014645657155544
+    },
+    {
+      "task": 42,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 112,
+      "changed_signs": 74,
+      "relative_l2_change": 0.1350921867292408
+    },
+    {
+      "task": 42,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 118,
+      "changed_signs": 77,
+      "relative_l2_change": 0.14756250442784752
+    },
+    {
+      "task": 42,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 121,
+      "changed_signs": 80,
+      "relative_l2_change": 0.13522061272518962
+    },
+    {
+      "task": 42,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 239,
+      "changed_signs": 239,
+      "relative_l2_change": 0.2560222400165178
+    },
+    {
+      "task": 42,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 222,
+      "changed_signs": 222,
+      "relative_l2_change": 0.24424369267216434
+    },
+    {
+      "task": 42,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 219,
+      "changed_signs": 219,
+      "relative_l2_change": 0.2549735440273198
+    },
+    {
+      "task": 42,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 456,
+      "changed_signs": 456,
+      "relative_l2_change": 0.3411773914633609
+    },
+    {
+      "task": 42,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 471,
+      "changed_signs": 471,
+      "relative_l2_change": 0.3415635659626826
+    },
+    {
+      "task": 42,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 475,
+      "changed_signs": 475,
+      "relative_l2_change": 0.35022852916833547
+    },
+    {
+      "task": 44,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 127,
+      "changed_signs": 88,
+      "relative_l2_change": 0.14568058558683222
+    },
+    {
+      "task": 44,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 125,
+      "changed_signs": 85,
+      "relative_l2_change": 0.1399906425078249
+    },
+    {
+      "task": 44,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 130,
+      "changed_signs": 93,
+      "relative_l2_change": 0.14810276892501686
+    },
+    {
+      "task": 44,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 250,
+      "changed_signs": 250,
+      "relative_l2_change": 0.2575942562389768
+    },
+    {
+      "task": 44,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 242,
+      "changed_signs": 242,
+      "relative_l2_change": 0.26354626201803366
+    },
+    {
+      "task": 44,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 238,
+      "changed_signs": 238,
+      "relative_l2_change": 0.2614492165756382
+    },
+    {
+      "task": 44,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 490,
+      "changed_signs": 490,
+      "relative_l2_change": 0.3519866378008854
+    },
+    {
+      "task": 44,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 491,
+      "changed_signs": 491,
+      "relative_l2_change": 0.35279818042649436
+    },
+    {
+      "task": 44,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 494,
+      "changed_signs": 494,
+      "relative_l2_change": 0.35571814565198323
+    },
+    {
+      "task": 45,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 131,
+      "changed_signs": 86,
+      "relative_l2_change": 0.1577294972193886
+    },
+    {
+      "task": 45,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 121,
+      "changed_signs": 78,
+      "relative_l2_change": 0.15002238885875416
+    },
+    {
+      "task": 45,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 120,
+      "changed_signs": 84,
+      "relative_l2_change": 0.14386346864292102
+    },
+    {
+      "task": 45,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 249,
+      "changed_signs": 249,
+      "relative_l2_change": 0.24585019931431665
+    },
+    {
+      "task": 45,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 256,
+      "changed_signs": 256,
+      "relative_l2_change": 0.2427155908930705
+    },
+    {
+      "task": 45,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 261,
+      "changed_signs": 261,
+      "relative_l2_change": 0.24448251974491667
+    },
+    {
+      "task": 45,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 484,
+      "changed_signs": 484,
+      "relative_l2_change": 0.3408486986390656
+    },
+    {
+      "task": 45,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 499,
+      "changed_signs": 499,
+      "relative_l2_change": 0.33851762160686366
+    },
+    {
+      "task": 45,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 486,
+      "changed_signs": 486,
+      "relative_l2_change": 0.33927150818699936
+    },
+    {
+      "task": 47,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 119,
+      "changed_signs": 76,
+      "relative_l2_change": 0.12961959259161462
+    },
+    {
+      "task": 47,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 128,
+      "changed_signs": 85,
+      "relative_l2_change": 0.13903889148324636
+    },
+    {
+      "task": 47,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 129,
+      "changed_signs": 81,
+      "relative_l2_change": 0.1359256660583277
+    },
+    {
+      "task": 47,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 247,
+      "changed_signs": 247,
+      "relative_l2_change": 0.24496864690165737
+    },
+    {
+      "task": 47,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 236,
+      "changed_signs": 236,
+      "relative_l2_change": 0.23248063396879678
+    },
+    {
+      "task": 47,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 249,
+      "changed_signs": 249,
+      "relative_l2_change": 0.24234654449750817
+    },
+    {
+      "task": 47,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 488,
+      "changed_signs": 488,
+      "relative_l2_change": 0.3446020051041174
+    },
+    {
+      "task": 47,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 496,
+      "changed_signs": 496,
+      "relative_l2_change": 0.3287459119305523
+    },
+    {
+      "task": 47,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 502,
+      "changed_signs": 502,
+      "relative_l2_change": 0.3554301473547988
+    },
+    {
+      "task": 49,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 118,
+      "changed_signs": 82,
+      "relative_l2_change": 0.16765736386966104
+    },
+    {
+      "task": 49,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 127,
+      "changed_signs": 89,
+      "relative_l2_change": 0.16351748837864652
+    },
+    {
+      "task": 49,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 128,
+      "changed_signs": 92,
+      "relative_l2_change": 0.16802243070836834
+    },
+    {
+      "task": 49,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 245,
+      "changed_signs": 245,
+      "relative_l2_change": 0.2647352467328021
+    },
+    {
+      "task": 49,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 237,
+      "changed_signs": 237,
+      "relative_l2_change": 0.250932027587012
+    },
+    {
+      "task": 49,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 248,
+      "changed_signs": 248,
+      "relative_l2_change": 0.27374269246980926
+    },
+    {
+      "task": 49,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 487,
+      "changed_signs": 487,
+      "relative_l2_change": 0.35219271497711097
+    },
+    {
+      "task": 49,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 475,
+      "changed_signs": 475,
+      "relative_l2_change": 0.3475972609845851
+    },
+    {
+      "task": 49,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 512,
+      "changed_signs": 512,
+      "relative_l2_change": 0.3591528544277955
+    },
+    {
+      "task": 52,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 124,
+      "changed_signs": 75,
+      "relative_l2_change": 0.1463836431222927
+    },
+    {
+      "task": 52,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 121,
+      "changed_signs": 78,
+      "relative_l2_change": 0.1394328391091407
+    },
+    {
+      "task": 52,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 123,
+      "changed_signs": 82,
+      "relative_l2_change": 0.14502235186779722
+    },
+    {
+      "task": 52,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 234,
+      "changed_signs": 234,
+      "relative_l2_change": 0.26027793242223024
+    },
+    {
+      "task": 52,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 248,
+      "changed_signs": 248,
+      "relative_l2_change": 0.256184581367037
+    },
+    {
+      "task": 52,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 264,
+      "changed_signs": 264,
+      "relative_l2_change": 0.2734670637280049
+    },
+    {
+      "task": 52,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 490,
+      "changed_signs": 490,
+      "relative_l2_change": 0.36722330913640816
+    },
+    {
+      "task": 52,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 504,
+      "changed_signs": 504,
+      "relative_l2_change": 0.37427933612966574
+    },
+    {
+      "task": 52,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 491,
+      "changed_signs": 491,
+      "relative_l2_change": 0.3674103163974316
+    },
+    {
+      "task": 53,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 123,
+      "changed_signs": 83,
+      "relative_l2_change": 0.14452807595057904
+    },
+    {
+      "task": 53,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 123,
+      "changed_signs": 80,
+      "relative_l2_change": 0.1492319099435876
+    },
+    {
+      "task": 53,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 128,
+      "changed_signs": 82,
+      "relative_l2_change": 0.1461576047315905
+    },
+    {
+      "task": 53,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 250,
+      "changed_signs": 250,
+      "relative_l2_change": 0.2208137175958599
+    },
+    {
+      "task": 53,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 261,
+      "changed_signs": 261,
+      "relative_l2_change": 0.23918854083570856
+    },
+    {
+      "task": 53,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 238,
+      "changed_signs": 238,
+      "relative_l2_change": 0.22596543141943043
+    },
+    {
+      "task": 53,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 499,
+      "changed_signs": 499,
+      "relative_l2_change": 0.31783283723641437
+    },
+    {
+      "task": 53,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 488,
+      "changed_signs": 488,
+      "relative_l2_change": 0.3307613471715814
+    },
+    {
+      "task": 53,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 482,
+      "changed_signs": 482,
+      "relative_l2_change": 0.3225634366546332
+    },
+    {
+      "task": 55,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 123,
+      "changed_signs": 77,
+      "relative_l2_change": 0.13528782580185625
+    },
+    {
+      "task": 55,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 121,
+      "changed_signs": 67,
+      "relative_l2_change": 0.1246123019231523
+    },
+    {
+      "task": 55,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 118,
+      "changed_signs": 69,
+      "relative_l2_change": 0.13718138082608403
+    },
+    {
+      "task": 55,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 253,
+      "changed_signs": 253,
+      "relative_l2_change": 0.24065507079131596
+    },
+    {
+      "task": 55,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 262,
+      "changed_signs": 262,
+      "relative_l2_change": 0.2433028109715393
+    },
+    {
+      "task": 55,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 245,
+      "changed_signs": 245,
+      "relative_l2_change": 0.24977874330682603
+    },
+    {
+      "task": 55,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 507,
+      "changed_signs": 507,
+      "relative_l2_change": 0.3527429340220355
+    },
+    {
+      "task": 55,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 472,
+      "changed_signs": 472,
+      "relative_l2_change": 0.3504876656981486
+    },
+    {
+      "task": 55,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 501,
+      "changed_signs": 501,
+      "relative_l2_change": 0.34494235644272864
+    },
+    {
+      "task": 56,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 123,
+      "changed_signs": 78,
+      "relative_l2_change": 0.1476284759663846
+    },
+    {
+      "task": 56,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 124,
+      "changed_signs": 81,
+      "relative_l2_change": 0.1419383881806926
+    },
+    {
+      "task": 56,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 125,
+      "changed_signs": 77,
+      "relative_l2_change": 0.1471499207499768
+    },
+    {
+      "task": 56,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 230,
+      "changed_signs": 230,
+      "relative_l2_change": 0.25037951575261874
+    },
+    {
+      "task": 56,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 251,
+      "changed_signs": 251,
+      "relative_l2_change": 0.24403609387764447
+    },
+    {
+      "task": 56,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 245,
+      "changed_signs": 245,
+      "relative_l2_change": 0.23651216266867897
+    },
+    {
+      "task": 56,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 481,
+      "changed_signs": 481,
+      "relative_l2_change": 0.3577625555408545
+    },
+    {
+      "task": 56,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 509,
+      "changed_signs": 509,
+      "relative_l2_change": 0.3566875255146565
+    },
+    {
+      "task": 56,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 512,
+      "changed_signs": 512,
+      "relative_l2_change": 0.3676862564755623
+    },
+    {
+      "task": 57,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 120,
+      "changed_signs": 85,
+      "relative_l2_change": 0.13647602920560076
+    },
+    {
+      "task": 57,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 122,
+      "changed_signs": 76,
+      "relative_l2_change": 0.13927496721893448
+    },
+    {
+      "task": 57,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 128,
+      "changed_signs": 81,
+      "relative_l2_change": 0.1424685375201517
+    },
+    {
+      "task": 57,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 243,
+      "changed_signs": 243,
+      "relative_l2_change": 0.24963754193692886
+    },
+    {
+      "task": 57,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 248,
+      "changed_signs": 248,
+      "relative_l2_change": 0.24506520872080126
+    },
+    {
+      "task": 57,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 268,
+      "changed_signs": 268,
+      "relative_l2_change": 0.26617467714338244
+    },
+    {
+      "task": 57,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 477,
+      "changed_signs": 477,
+      "relative_l2_change": 0.333422344967522
+    },
+    {
+      "task": 57,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 499,
+      "changed_signs": 499,
+      "relative_l2_change": 0.34882036787628967
+    },
+    {
+      "task": 57,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 509,
+      "changed_signs": 509,
+      "relative_l2_change": 0.34790497924439556
+    },
+    {
+      "task": 60,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 120,
+      "changed_signs": 79,
+      "relative_l2_change": 0.14193209058855383
+    },
+    {
+      "task": 60,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 116,
+      "changed_signs": 80,
+      "relative_l2_change": 0.14024041309340352
+    },
+    {
+      "task": 60,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 119,
+      "changed_signs": 75,
+      "relative_l2_change": 0.1349072382648504
+    },
+    {
+      "task": 60,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 235,
+      "changed_signs": 235,
+      "relative_l2_change": 0.2354193956528392
+    },
+    {
+      "task": 60,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 230,
+      "changed_signs": 230,
+      "relative_l2_change": 0.2290386437301336
+    },
+    {
+      "task": 60,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 237,
+      "changed_signs": 237,
+      "relative_l2_change": 0.23067871940328633
+    },
+    {
+      "task": 60,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 469,
+      "changed_signs": 469,
+      "relative_l2_change": 0.3407022508986659
+    },
+    {
+      "task": 60,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 475,
+      "changed_signs": 475,
+      "relative_l2_change": 0.33631099460146396
+    },
+    {
+      "task": 60,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 472,
+      "changed_signs": 472,
+      "relative_l2_change": 0.33883295308268674
+    },
+    {
+      "task": 62,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 124,
+      "changed_signs": 77,
+      "relative_l2_change": 0.1403847543788175
+    },
+    {
+      "task": 62,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 127,
+      "changed_signs": 78,
+      "relative_l2_change": 0.1403426153567403
+    },
+    {
+      "task": 62,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 121,
+      "changed_signs": 75,
+      "relative_l2_change": 0.14717320684841462
+    },
+    {
+      "task": 62,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 252,
+      "changed_signs": 252,
+      "relative_l2_change": 0.258436369519687
+    },
+    {
+      "task": 62,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 241,
+      "changed_signs": 241,
+      "relative_l2_change": 0.249883353162372
+    },
+    {
+      "task": 62,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 228,
+      "changed_signs": 228,
+      "relative_l2_change": 0.2501042659921711
+    },
+    {
+      "task": 62,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 491,
+      "changed_signs": 491,
+      "relative_l2_change": 0.344406007324027
+    },
+    {
+      "task": 62,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 502,
+      "changed_signs": 502,
+      "relative_l2_change": 0.34155690606613337
+    },
+    {
+      "task": 62,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 511,
+      "changed_signs": 511,
+      "relative_l2_change": 0.3456370963936199
+    },
+    {
+      "task": 71,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 117,
+      "changed_signs": 76,
+      "relative_l2_change": 0.1219961782608422
+    },
+    {
+      "task": 71,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 125,
+      "changed_signs": 79,
+      "relative_l2_change": 0.12253994457153408
+    },
+    {
+      "task": 71,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 119,
+      "changed_signs": 83,
+      "relative_l2_change": 0.12839761340369854
+    },
+    {
+      "task": 71,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 255,
+      "changed_signs": 255,
+      "relative_l2_change": 0.2422224183474581
+    },
+    {
+      "task": 71,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 245,
+      "changed_signs": 245,
+      "relative_l2_change": 0.2289855782816832
+    },
+    {
+      "task": 71,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 259,
+      "changed_signs": 259,
+      "relative_l2_change": 0.24404701254428868
+    },
+    {
+      "task": 71,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 510,
+      "changed_signs": 510,
+      "relative_l2_change": 0.352895543413304
+    },
+    {
+      "task": 71,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 484,
+      "changed_signs": 484,
+      "relative_l2_change": 0.34318054996046937
+    },
+    {
+      "task": 71,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 492,
+      "changed_signs": 492,
+      "relative_l2_change": 0.33579935700962776
+    },
+    {
+      "task": 72,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 117,
+      "changed_signs": 65,
+      "relative_l2_change": 0.15115139354847806
+    },
+    {
+      "task": 72,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 126,
+      "changed_signs": 83,
+      "relative_l2_change": 0.14305901262583143
+    },
+    {
+      "task": 72,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 116,
+      "changed_signs": 70,
+      "relative_l2_change": 0.13927136064948317
+    },
+    {
+      "task": 72,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 252,
+      "changed_signs": 252,
+      "relative_l2_change": 0.2580081752734537
+    },
+    {
+      "task": 72,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 253,
+      "changed_signs": 253,
+      "relative_l2_change": 0.24898925971960745
+    },
+    {
+      "task": 72,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 240,
+      "changed_signs": 240,
+      "relative_l2_change": 0.24379069333227268
+    },
+    {
+      "task": 72,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 490,
+      "changed_signs": 490,
+      "relative_l2_change": 0.35253442337209845
+    },
+    {
+      "task": 72,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 490,
+      "changed_signs": 490,
+      "relative_l2_change": 0.34884556618140733
+    },
+    {
+      "task": 72,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 496,
+      "changed_signs": 496,
+      "relative_l2_change": 0.3406862317588624
+    },
+    {
+      "task": 73,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 119,
+      "changed_signs": 80,
+      "relative_l2_change": 0.12894522975139405
+    },
+    {
+      "task": 73,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 125,
+      "changed_signs": 69,
+      "relative_l2_change": 0.12078069586218712
+    },
+    {
+      "task": 73,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 129,
+      "changed_signs": 83,
+      "relative_l2_change": 0.13936027736053028
+    },
+    {
+      "task": 73,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 253,
+      "changed_signs": 253,
+      "relative_l2_change": 0.24294729953813174
+    },
+    {
+      "task": 73,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 254,
+      "changed_signs": 254,
+      "relative_l2_change": 0.24893244281408378
+    },
+    {
+      "task": 73,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 257,
+      "changed_signs": 257,
+      "relative_l2_change": 0.2547566674349042
+    },
+    {
+      "task": 73,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 495,
+      "changed_signs": 495,
+      "relative_l2_change": 0.34272144826346623
+    },
+    {
+      "task": 73,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 458,
+      "changed_signs": 458,
+      "relative_l2_change": 0.323780440037212
+    },
+    {
+      "task": 73,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 463,
+      "changed_signs": 463,
+      "relative_l2_change": 0.3289154541376168
+    },
+    {
+      "task": 74,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 133,
+      "changed_signs": 85,
+      "relative_l2_change": 0.16034657620501072
+    },
+    {
+      "task": 74,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 123,
+      "changed_signs": 81,
+      "relative_l2_change": 0.14580016202805823
+    },
+    {
+      "task": 74,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 121,
+      "changed_signs": 78,
+      "relative_l2_change": 0.14014000470238305
+    },
+    {
+      "task": 74,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 253,
+      "changed_signs": 253,
+      "relative_l2_change": 0.26103888033202216
+    },
+    {
+      "task": 74,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 246,
+      "changed_signs": 246,
+      "relative_l2_change": 0.24245945788828266
+    },
+    {
+      "task": 74,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 228,
+      "changed_signs": 228,
+      "relative_l2_change": 0.24050239644479135
+    },
+    {
+      "task": 74,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 484,
+      "changed_signs": 484,
+      "relative_l2_change": 0.3577022725657015
+    },
+    {
+      "task": 74,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 463,
+      "changed_signs": 463,
+      "relative_l2_change": 0.3493784847289188
+    },
+    {
+      "task": 74,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 465,
+      "changed_signs": 465,
+      "relative_l2_change": 0.3525881050310643
+    },
+    {
+      "task": 79,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 123,
+      "changed_signs": 81,
+      "relative_l2_change": 0.14030399308120345
+    },
+    {
+      "task": 79,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 119,
+      "changed_signs": 78,
+      "relative_l2_change": 0.13660364046652793
+    },
+    {
+      "task": 79,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 119,
+      "changed_signs": 78,
+      "relative_l2_change": 0.1415276217047579
+    },
+    {
+      "task": 79,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 223,
+      "changed_signs": 223,
+      "relative_l2_change": 0.2533285962803174
+    },
+    {
+      "task": 79,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 220,
+      "changed_signs": 220,
+      "relative_l2_change": 0.23439471635467657
+    },
+    {
+      "task": 79,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 217,
+      "changed_signs": 217,
+      "relative_l2_change": 0.23588697458771535
+    },
+    {
+      "task": 79,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 448,
+      "changed_signs": 448,
+      "relative_l2_change": 0.3468496901437699
+    },
+    {
+      "task": 79,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 471,
+      "changed_signs": 471,
+      "relative_l2_change": 0.34853863026116966
+    },
+    {
+      "task": 79,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 482,
+      "changed_signs": 482,
+      "relative_l2_change": 0.34969814749406725
+    },
+    {
+      "task": 81,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 126,
+      "changed_signs": 78,
+      "relative_l2_change": 0.1418240729253153
+    },
+    {
+      "task": 81,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 123,
+      "changed_signs": 72,
+      "relative_l2_change": 0.13214621049610312
+    },
+    {
+      "task": 81,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 125,
+      "changed_signs": 71,
+      "relative_l2_change": 0.1276058121116792
+    },
+    {
+      "task": 81,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 226,
+      "changed_signs": 226,
+      "relative_l2_change": 0.22365066312171994
+    },
+    {
+      "task": 81,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 240,
+      "changed_signs": 240,
+      "relative_l2_change": 0.23473702390361081
+    },
+    {
+      "task": 81,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 236,
+      "changed_signs": 236,
+      "relative_l2_change": 0.22979586589631784
+    },
+    {
+      "task": 81,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 462,
+      "changed_signs": 462,
+      "relative_l2_change": 0.31383058227813226
+    },
+    {
+      "task": 81,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 443,
+      "changed_signs": 443,
+      "relative_l2_change": 0.3059188386123673
+    },
+    {
+      "task": 81,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 472,
+      "changed_signs": 472,
+      "relative_l2_change": 0.3078808359030527
+    },
+    {
+      "task": 82,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 128,
+      "changed_signs": 81,
+      "relative_l2_change": 0.14038968484727038
+    },
+    {
+      "task": 82,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 128,
+      "changed_signs": 79,
+      "relative_l2_change": 0.13668534812306654
+    },
+    {
+      "task": 82,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 130,
+      "changed_signs": 79,
+      "relative_l2_change": 0.13697139403693595
+    },
+    {
+      "task": 82,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 257,
+      "changed_signs": 257,
+      "relative_l2_change": 0.25170668685482067
+    },
+    {
+      "task": 82,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 252,
+      "changed_signs": 252,
+      "relative_l2_change": 0.248120503042059
+    },
+    {
+      "task": 82,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 254,
+      "changed_signs": 254,
+      "relative_l2_change": 0.2585513495820225
+    },
+    {
+      "task": 82,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 509,
+      "changed_signs": 509,
+      "relative_l2_change": 0.3511183194030451
+    },
+    {
+      "task": 82,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 499,
+      "changed_signs": 499,
+      "relative_l2_change": 0.3422020448836143
+    },
+    {
+      "task": 82,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 497,
+      "changed_signs": 497,
+      "relative_l2_change": 0.3447446193427014
+    },
+    {
+      "task": 84,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 120,
+      "changed_signs": 78,
+      "relative_l2_change": 0.13284965444091584
+    },
+    {
+      "task": 84,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 119,
+      "changed_signs": 77,
+      "relative_l2_change": 0.13496807660664648
+    },
+    {
+      "task": 84,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 120,
+      "changed_signs": 83,
+      "relative_l2_change": 0.1329127469032844
+    },
+    {
+      "task": 84,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 257,
+      "changed_signs": 257,
+      "relative_l2_change": 0.2565154509539134
+    },
+    {
+      "task": 84,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 264,
+      "changed_signs": 264,
+      "relative_l2_change": 0.2618504130202221
+    },
+    {
+      "task": 84,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 246,
+      "changed_signs": 246,
+      "relative_l2_change": 0.24460926195000618
+    },
+    {
+      "task": 84,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 502,
+      "changed_signs": 502,
+      "relative_l2_change": 0.3483998059713713
+    },
+    {
+      "task": 84,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 484,
+      "changed_signs": 484,
+      "relative_l2_change": 0.3423253904935468
+    },
+    {
+      "task": 84,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 480,
+      "changed_signs": 480,
+      "relative_l2_change": 0.336695873545458
+    },
+    {
+      "task": 85,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 128,
+      "changed_signs": 79,
+      "relative_l2_change": 0.13336805249978892
+    },
+    {
+      "task": 85,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 124,
+      "changed_signs": 76,
+      "relative_l2_change": 0.13145738574718815
+    },
+    {
+      "task": 85,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 126,
+      "changed_signs": 77,
+      "relative_l2_change": 0.13596928242104755
+    },
+    {
+      "task": 85,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 241,
+      "changed_signs": 241,
+      "relative_l2_change": 0.24683619169612217
+    },
+    {
+      "task": 85,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 238,
+      "changed_signs": 238,
+      "relative_l2_change": 0.23939739889889983
+    },
+    {
+      "task": 85,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 258,
+      "changed_signs": 258,
+      "relative_l2_change": 0.23742145856533908
+    },
+    {
+      "task": 85,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 474,
+      "changed_signs": 474,
+      "relative_l2_change": 0.3566230799064779
+    },
+    {
+      "task": 85,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 494,
+      "changed_signs": 494,
+      "relative_l2_change": 0.34576343434048457
+    },
+    {
+      "task": 85,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 526,
+      "changed_signs": 526,
+      "relative_l2_change": 0.3609637284319388
+    },
+    {
+      "task": 88,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 115,
+      "changed_signs": 78,
+      "relative_l2_change": 0.14062308315841648
+    },
+    {
+      "task": 88,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 117,
+      "changed_signs": 78,
+      "relative_l2_change": 0.14858170791978823
+    },
+    {
+      "task": 88,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 123,
+      "changed_signs": 76,
+      "relative_l2_change": 0.1447574286902529
+    },
+    {
+      "task": 88,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 248,
+      "changed_signs": 248,
+      "relative_l2_change": 0.24121845536667622
+    },
+    {
+      "task": 88,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 246,
+      "changed_signs": 246,
+      "relative_l2_change": 0.24729506147559896
+    },
+    {
+      "task": 88,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 247,
+      "changed_signs": 247,
+      "relative_l2_change": 0.2399128428433265
+    },
+    {
+      "task": 88,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 503,
+      "changed_signs": 503,
+      "relative_l2_change": 0.3463781556093719
+    },
+    {
+      "task": 88,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 528,
+      "changed_signs": 528,
+      "relative_l2_change": 0.3398609789258067
+    },
+    {
+      "task": 88,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 505,
+      "changed_signs": 505,
+      "relative_l2_change": 0.35253361058899596
+    },
+    {
+      "task": 89,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 120,
+      "changed_signs": 74,
+      "relative_l2_change": 0.1477505675310019
+    },
+    {
+      "task": 89,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 123,
+      "changed_signs": 71,
+      "relative_l2_change": 0.142459430177647
+    },
+    {
+      "task": 89,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 123,
+      "changed_signs": 73,
+      "relative_l2_change": 0.14290292481099537
+    },
+    {
+      "task": 89,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 254,
+      "changed_signs": 254,
+      "relative_l2_change": 0.24133082363107158
+    },
+    {
+      "task": 89,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 235,
+      "changed_signs": 235,
+      "relative_l2_change": 0.24321463587053768
+    },
+    {
+      "task": 89,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 260,
+      "changed_signs": 260,
+      "relative_l2_change": 0.25786479138535207
+    },
+    {
+      "task": 89,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 493,
+      "changed_signs": 493,
+      "relative_l2_change": 0.3350371580247152
+    },
+    {
+      "task": 89,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 503,
+      "changed_signs": 503,
+      "relative_l2_change": 0.3454251102844442
+    },
+    {
+      "task": 89,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 501,
+      "changed_signs": 501,
+      "relative_l2_change": 0.3500212688468405
+    },
+    {
+      "task": 90,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 117,
+      "changed_signs": 76,
+      "relative_l2_change": 0.1454517653142537
+    },
+    {
+      "task": 90,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 117,
+      "changed_signs": 70,
+      "relative_l2_change": 0.13784131855513193
+    },
+    {
+      "task": 90,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 121,
+      "changed_signs": 83,
+      "relative_l2_change": 0.14518863520950975
+    },
+    {
+      "task": 90,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 267,
+      "changed_signs": 267,
+      "relative_l2_change": 0.2512368118304814
+    },
+    {
+      "task": 90,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 263,
+      "changed_signs": 263,
+      "relative_l2_change": 0.2457100947981815
+    },
+    {
+      "task": 90,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 247,
+      "changed_signs": 247,
+      "relative_l2_change": 0.23929922253778937
+    },
+    {
+      "task": 90,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 488,
+      "changed_signs": 488,
+      "relative_l2_change": 0.33933602351728376
+    },
+    {
+      "task": 90,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 521,
+      "changed_signs": 521,
+      "relative_l2_change": 0.35304697188020395
+    },
+    {
+      "task": 90,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 525,
+      "changed_signs": 525,
+      "relative_l2_change": 0.35076666694105857
+    },
+    {
+      "task": 91,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 126,
+      "changed_signs": 79,
+      "relative_l2_change": 0.14720551155678052
+    },
+    {
+      "task": 91,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 117,
+      "changed_signs": 64,
+      "relative_l2_change": 0.12829605165001026
+    },
+    {
+      "task": 91,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 112,
+      "changed_signs": 65,
+      "relative_l2_change": 0.12974160053071565
+    },
+    {
+      "task": 91,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 227,
+      "changed_signs": 227,
+      "relative_l2_change": 0.22808343296284467
+    },
+    {
+      "task": 91,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 254,
+      "changed_signs": 254,
+      "relative_l2_change": 0.22841609441677296
+    },
+    {
+      "task": 91,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 248,
+      "changed_signs": 248,
+      "relative_l2_change": 0.22685647088259198
+    },
+    {
+      "task": 91,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 473,
+      "changed_signs": 473,
+      "relative_l2_change": 0.3350828936024174
+    },
+    {
+      "task": 91,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 500,
+      "changed_signs": 500,
+      "relative_l2_change": 0.3350557560843508
+    },
+    {
+      "task": 91,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 481,
+      "changed_signs": 481,
+      "relative_l2_change": 0.32995409181229524
+    },
+    {
+      "task": 92,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 108,
+      "changed_signs": 67,
+      "relative_l2_change": 0.13737661881501775
+    },
+    {
+      "task": 92,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 120,
+      "changed_signs": 75,
+      "relative_l2_change": 0.1471448942011037
+    },
+    {
+      "task": 92,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 116,
+      "changed_signs": 77,
+      "relative_l2_change": 0.13674524539654637
+    },
+    {
+      "task": 92,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 247,
+      "changed_signs": 247,
+      "relative_l2_change": 0.23804746960196937
+    },
+    {
+      "task": 92,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 254,
+      "changed_signs": 254,
+      "relative_l2_change": 0.24524620215546036
+    },
+    {
+      "task": 92,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 250,
+      "changed_signs": 250,
+      "relative_l2_change": 0.24910008094862446
+    },
+    {
+      "task": 92,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 502,
+      "changed_signs": 502,
+      "relative_l2_change": 0.3454622190907274
+    },
+    {
+      "task": 92,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 486,
+      "changed_signs": 486,
+      "relative_l2_change": 0.35006090934986905
+    },
+    {
+      "task": 92,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 479,
+      "changed_signs": 479,
+      "relative_l2_change": 0.34799949626117493
+    },
+    {
+      "task": 93,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 120,
+      "changed_signs": 84,
+      "relative_l2_change": 0.13935955127539015
+    },
+    {
+      "task": 93,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 116,
+      "changed_signs": 70,
+      "relative_l2_change": 0.13270767276312828
+    },
+    {
+      "task": 93,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 118,
+      "changed_signs": 70,
+      "relative_l2_change": 0.1419966178297356
+    },
+    {
+      "task": 93,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 250,
+      "changed_signs": 250,
+      "relative_l2_change": 0.22644791780773443
+    },
+    {
+      "task": 93,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 256,
+      "changed_signs": 256,
+      "relative_l2_change": 0.24056584512272589
+    },
+    {
+      "task": 93,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 253,
+      "changed_signs": 253,
+      "relative_l2_change": 0.23939149258057532
+    },
+    {
+      "task": 93,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 515,
+      "changed_signs": 515,
+      "relative_l2_change": 0.3419560598526207
+    },
+    {
+      "task": 93,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 500,
+      "changed_signs": 500,
+      "relative_l2_change": 0.3536905593193517
+    },
+    {
+      "task": 93,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 498,
+      "changed_signs": 498,
+      "relative_l2_change": 0.35413949042191023
+    },
+    {
+      "task": 95,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 135,
+      "changed_signs": 80,
+      "relative_l2_change": 0.1362906377820486
+    },
+    {
+      "task": 95,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 121,
+      "changed_signs": 77,
+      "relative_l2_change": 0.14399087419000176
+    },
+    {
+      "task": 95,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 130,
+      "changed_signs": 79,
+      "relative_l2_change": 0.14429420603977686
+    },
+    {
+      "task": 95,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 260,
+      "changed_signs": 260,
+      "relative_l2_change": 0.2456332810529336
+    },
+    {
+      "task": 95,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 235,
+      "changed_signs": 235,
+      "relative_l2_change": 0.23589354522254985
+    },
+    {
+      "task": 95,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 241,
+      "changed_signs": 241,
+      "relative_l2_change": 0.23736484010662748
+    },
+    {
+      "task": 95,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 514,
+      "changed_signs": 514,
+      "relative_l2_change": 0.350981937860675
+    },
+    {
+      "task": 95,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 477,
+      "changed_signs": 477,
+      "relative_l2_change": 0.3488857511586372
+    },
+    {
+      "task": 95,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 506,
+      "changed_signs": 506,
+      "relative_l2_change": 0.36708462395658586
+    },
+    {
+      "task": 96,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 123,
+      "changed_signs": 74,
+      "relative_l2_change": 0.15177241944731445
+    },
+    {
+      "task": 96,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 127,
+      "changed_signs": 81,
+      "relative_l2_change": 0.14656150486892433
+    },
+    {
+      "task": 96,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 119,
+      "changed_signs": 76,
+      "relative_l2_change": 0.13809188992730573
+    },
+    {
+      "task": 96,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 248,
+      "changed_signs": 248,
+      "relative_l2_change": 0.2528342220100015
+    },
+    {
+      "task": 96,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 236,
+      "changed_signs": 236,
+      "relative_l2_change": 0.2460705765975236
+    },
+    {
+      "task": 96,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 238,
+      "changed_signs": 238,
+      "relative_l2_change": 0.23229604006010848
+    },
+    {
+      "task": 96,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 516,
+      "changed_signs": 516,
+      "relative_l2_change": 0.35788458258585965
+    },
+    {
+      "task": 96,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 484,
+      "changed_signs": 484,
+      "relative_l2_change": 0.3408947138033118
+    },
+    {
+      "task": 96,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 496,
+      "changed_signs": 496,
+      "relative_l2_change": 0.34271141089474255
+    },
+    {
+      "task": 99,
+      "ratio": "p01",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 113,
+      "changed_signs": 75,
+      "relative_l2_change": 0.1437692733313466
+    },
+    {
+      "task": 99,
+      "ratio": "p01",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 113,
+      "changed_signs": 69,
+      "relative_l2_change": 0.13178028500237893
+    },
+    {
+      "task": 99,
+      "ratio": "p01",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 122,
+      "changed_signs": 82,
+      "relative_l2_change": 0.14452305533915577
+    },
+    {
+      "task": 99,
+      "ratio": "p03",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 230,
+      "changed_signs": 230,
+      "relative_l2_change": 0.24578446381194077
+    },
+    {
+      "task": 99,
+      "ratio": "p03",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 246,
+      "changed_signs": 246,
+      "relative_l2_change": 0.27182933566042206
+    },
+    {
+      "task": 99,
+      "ratio": "p03",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 235,
+      "changed_signs": 235,
+      "relative_l2_change": 0.25516270851669187
+    },
+    {
+      "task": 99,
+      "ratio": "p06",
+      "iteration": 1,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 476,
+      "changed_signs": 476,
+      "relative_l2_change": 0.3458838438411064
+    },
+    {
+      "task": 99,
+      "ratio": "p06",
+      "iteration": 2,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 494,
+      "changed_signs": 494,
+      "relative_l2_change": 0.361839722130185
+    },
+    {
+      "task": 99,
+      "ratio": "p06",
+      "iteration": 3,
+      "native_gs_ba": 1.0,
+      "changed_coordinates": 493,
+      "changed_signs": 493,
+      "relative_l2_change": 0.3612189682526277
+    }
+  ],
+  "script_sha256": "31802c7116fb7c6746c02b7be231422d3f9be4c2fd6f425d082325b2d5bfb26c",
+  "protocol_sha256": "c46dfc434096ab7cda5e25306e1ee3ed22d9e00c5cd07b183b471de7d6d1e29e"
+}

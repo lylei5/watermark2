@@ -12,6 +12,7 @@ def main(run):
     result = read(run/'results.json')
     plan = read(run/'protocol.json')
     complete = read(run/'analysis_complete.json')
+    noise = read(run/'noise_channel_audit.json')
     assert complete['status']=='complete'
     gpu = read(run/'gpu_complete.json')
     names = [('p01','1%'),('p03','3%'),('p06','6%')]
@@ -35,6 +36,8 @@ def main(run):
         r=result['ratios'][name]; d=r['mechanism_diagnostics']; by=r['convergence_by_round']
         lines.append(f"| {label} | {by['1']}/{by['2']}/{by['3']} | {d['first_round_flips']['mean']:.2f} | {r['final_flips']['mean']:.2f} | {r['final_drift']['mean']:.4f} | {r['baseline_sscd_distance']['mean']:.4f} |")
     lines += ['',f"匹配分数阈值固定为{plan['similarity_threshold']:.10f}；合法距离阈值的三分之一为{plan['drift_limit']:.10f}。二值码与连续查询比较即使是自身也有量化距离，所以上表的非对称距离不等于纯粹新增的图像变化；连续SSCD距离和位翻转数同时保留。",'',
+        '这一步的问题是：写入的是上一张图的指纹，而写入动作又会改变下一张图。小比例的噪声位置不意味着小比例的图像变化。三轮的平均翻转位数虽有下降，但没有提示词达到逐位一致；1%从67.42降至61.20、56.78位，3%从78.68降至71.82、70.58位，6%从95.56降至88.44、85.66位。现有证据支持“这套实现不能在三轮内完成自洽写入”，不支持关于任意实现或无限轮迭代的结论。','',
+        '写入噪声的450轮中，原生GS水印在生成前均为256/256位正确。独立重算没有差异，说明原有GS冗余仍然成立。相对L2噪声改变量分别为'+ '、'.join(f"{100*noise['summary'][name]['relative_l2_change_mean']:.1f}%" for name,_ in names)+'；位置比例虽小，数值扰动仍足以改变生成实例。详见[噪声通道复核](noise_channel_audit.json)。','',
         '## 读回与联合合法率','',
         '| 处理 | 原生GS | 1% GS | 3% GS | 6% GS | 1% 联合 | 3% 联合 | 6% 联合 |',
         '|---|---:|---:|---:|---:|---:|---:|---:|']
@@ -52,7 +55,7 @@ def main(run):
     for name,label in names:
         q=result['ratios'][name]['quality']
         lines.append(f"| {label} | {q['psnr']['mean']:.2f} | {q['lpips']['mean']:.4f} | {q['lpips']['median']:.4f} | {q['lpips']['max']:.4f} |")
-    lines += ['', '这些指标衡量与同提示词、同初始噪声原生GS图的差异，不是绝对画质评价，也不是FID。', '',
+    lines += ['', '这些指标衡量与同提示词、同初始噪声原生GS图的差异，不是绝对画质评价，也不是FID。预先选定的六组对照已逐图查看：变化肉眼可见，包括任务1中人物的姿势和朝向、任务2中巴士的比例与街景、任务6中猫和电脑的外观与摆放，以及任务53中脸部造型和眼镜。1%也能改变实例细节，3%/6%的部分样本出现更明显的构图变化。这是描述性目测，没有进行画质偏好的人工盲评。', '',
         '![预先选定的六个提示词对照](figures/preselected_comparison.png)', '',
         '图中每行从左到右为原生GS、1%、3%、6%。展示任务在看结果前固定为1、2、6、52、53、55；原图不调色，统一显示尺寸。另提供[LPIPS变化最大的三个提示词](figures/largest_lpips_comparison.png)，这张补充图按结果事后选择。','',
         '## 样本量与不确定性','',
@@ -65,7 +68,7 @@ def main(run):
         lines.append(f"| {label} | {interval(r['converged']/50,r['converged_wilson95'])} | {interval(c['joint']/50,c['joint_wilson95'])} | {interval(e['joint']/450,e['joint_cluster95'])} |")
     lines += ['', '九类处理共450次查询，但只有50个独立提示词；区间按提示词成组重采样5000次。这里是既有拆分上的机制筛查，不是独立确认或普遍安全性保证。','',
         '## 资源与复核','',
-        f"只使用249的GPU3；累计GPU分配时间上界{result['gpu']['cumulative_gpu_hours_upper_bound']:.4f}小时，包含两次启动失败约13.57秒。完成{gpu['generation_calls']}次生成、{gpu['queries']}次反演，每次完整50步，记录{gpu['unet_calls']}次UNet调用。无攻击。SEAL的GPU7/5/4未被迁移或终止。LPIPS、统计、图表和独立复核均在GPU退出后使用249 CPU。",'',
+        f"只使用249的GPU3；累计GPU分配时间上界{result['gpu']['cumulative_gpu_hours_upper_bound']:.4f}小时，包含两次启动失败约13.57秒。完成{gpu['generation_calls']}次生成、{gpu['queries']}次反演，每次完整50步，记录{gpu['unet_calls']}次UNet调用。无攻击。SEAL的GPU7/5/4未被迁移或终止。LPIPS、统计、图表和独立复核均使用249 CPU，没有额外GPU任务。",'',
         f"独立复核重新计算了{result['audit']['gs_replays']}条GS判定、{result['audit']['payload_replays']}次读码、{result['audit']['score_replays']}个指纹分数，以及{result['audit']['round_replays']}轮的指纹变化。判定差异为0。详细记录见[results.json](results.json)和[independent_audit.json](independent_audit.json)。",'',
         '## 实现范围与结论边界','',
         '三个写入比例分别占163、491、983个噪声位置。1%只有163个位置，单靠正负号装不下256位，因此使用每位置两位的高斯四区间；3%/6%使用符号位及循环重复。它们不是仅改变比例的纯消融。使用固定GS密钥派生的异或掩码，不加认证和额外纠错；验证端只用供应方密钥、图中读回的码、查询图特征和公开投影，不使用逐图登记的参考。保存的完整参考和明文码仅用于实验误码/漂移审计。', '',
