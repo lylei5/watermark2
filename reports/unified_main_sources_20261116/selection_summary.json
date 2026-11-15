@@ -1,0 +1,25 @@
+{
+  "sources": 500,
+  "datasets": {
+    "COCO": 250,
+    "SDP": 250
+  },
+  "selection_sha256": "baa8b1e1733a4c83593d71903cd79f3076e93157ee4af596c35d3d6200129d37",
+  "scanned_history_files": 121,
+  "skipped_history_files": [],
+  "historical_prompts": 376,
+  "historical_coco_ids": 40368,
+  "rejected": {
+    "COCO": {
+      "recorded_coco_id_overlap": 19,
+      "normalized_prompt_overlap": 1
+    },
+    "SDP": {
+      "content_filter": 9,
+      "effective_token_5gram_jaccard_ge_0.8": 3,
+      "normalized_prompt_overlap": 2
+    }
+  },
+  "prompts_exceeding75_tokens": 30,
+  "null_source_id_overlap": 0
+}

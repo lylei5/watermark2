@@ -16,6 +16,8 @@ Reprompt/Reprompt+ count any candidate per source using full original1/9/3 budge
 
 ## Completed unified benchmark preflight
 
+[Common500-source cohort](reports/unified_main_sources_20261116/report.md) is frozen:250COCO/250SDP, all original strings and actualCLIP truncated inputs verified on249 CPU.121history metadata files,376texts,40368COCOIDs;312750pair checks,0specified overlap violations.30prompts exceed75text tokens. Source protocol SHA256 `58cdf0f60db1fe6a6d1b2c45f94846b5f4f01eeb55fb75a40bd960d03118ed18`; server `runs/unified_main_sources_20261116`. No model inference or attacks. All500 remain in applicable denominators, no outcome filtering or source reuse for tuning. Source freeze is separate from complete detector/attack protocol freeze.
+
 [Historical PGID denominator audit](reports/unified_historical_denominators_20261116/report.md) rechecked440 decision records and220 same-pixel pairs on249. TR100→60/100 and PRC64→29/100 are clean-plus-nine-edit totals from only10 sources per carrier. Clean-only is TR10→8/10 and PRC10→10/10. Do not present those pooled counts as100 independent clean images; this is an artifact recount, not fresh inference or calibrated FPR.
 
 [40000-image natural-null cohort](reports/unified_natural_cohort_20261115/report.md) is frozen: official COCO test2017,40670 valid images;40642 candidate clusters after duplicate/development screening;20000 calibration plus20000 validation. Manifest SHA256 `13c09dd26845ccad25d9e553888b60fb2e3283de6fd89aaee00e9508b96917a6`. Images, archive and features stay on249. Public split IDs and integrity receipts are committed. The data pipeline completed normally; do not redownload or rerun the audit.

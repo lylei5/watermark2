@@ -5,7 +5,7 @@
   "status": "unified_benchmark_null_calibration",
   "active_experiments": 1,
   "queued_experiments": 0,
-  "latest_progress_report": "reports/gs_fingerprint_fixedpoint_20261116/report.md",
+  "latest_progress_report": "reports/unified_main_sources_20261116/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/RESEARCH_PLAN.md",
   "native_sembind_reproduction_complete": false,
@@ -66,7 +66,7 @@
   ],
   "max_concurrent_gpus": 3,
   "evaluation_policy": "Unchanged published top-venue author attacks only; full budgets; no adaptive or improved attacks; independent null calibration and evaluation; report achieved FPR and absolute TPR.",
-  "current_decision": "Instance-key recovery frozen. The authorized256-bit GS fingerprint fixed-point screen completed and failed; stop this mechanism with no added rounds, variants or attacks. Continue the unified SemBind/PGID/SEAL benchmark with full published budgets and calibrated FPR.",
+  "current_decision": "Instance-key recovery and GS fingerprint fixed-point writeback are frozen. Complete the unified SemBind/PGID/SEAL benchmark with independently calibrated FPR, legitimate detection and unchanged published full-budget attacks.",
   "completed_evidence": [
     {
       "id": "gs_fingerprint_fixedpoint_20261116",
@@ -1004,7 +1004,7 @@
     ],
     "protocol_clarification": "reports/visible_witness_recovery_20261114/protocol_clarification.json"
   },
-  "research_hypothesis": "Fixed public binary SSCD reference with continuous query scoring has completed the user-authorized CPU screen;256-bit result motivates further investigation but no carried-code system is implemented. Unified benchmark remains active; instance recovery stays frozen.",
+  "research_hypothesis": "No active method exploration. Both instance-key recovery and fingerprint fixed-point writeback are frozen; unified benchmark is the active objective.",
   "author_reprompt_plus": {
     "run": "author_reprompt_plus_20261115",
     "status": "complete",
@@ -1318,7 +1318,7 @@
       "native_system"
     ],
     "stateful_control": "native carrier plus per-image registered SSCD",
-    "current_block": "40000 common natural nulls frozen and audited; full SEAL extraction started on three idle permitted GPUs; common-carrier/other detector interfaces still pending",
+    "current_block": "SEAL40000 natural extraction remains active; shared500-source evaluation cohort frozen and audited; preparing detector protocols and main-table score interfaces.",
     "runtime_probe": {
       "status": "complete",
       "run": "unified_runtime_probe_20261115",
@@ -1353,7 +1353,25 @@
       "full_extraction_completed": false,
       "empirical_fpr_validated": false,
       "legitimate_tpr_completed": false,
-      "attacks_completed": false
+      "attacks_completed": false,
+      "latest_progress_snapshot": "reports/unified_seal_progress_20261116/snapshot.json",
+      "snapshot_completed_records": 20152,
+      "snapshot_utc": "2026-11-15T19:57:17.860124+00:00"
+    },
+    "evaluation_sources": {
+      "status": "frozen",
+      "run": "unified_main_sources_20261116",
+      "sources": 500,
+      "strata": {
+        "COCO": 250,
+        "SDP": 250
+      },
+      "protocol_sha256": "58cdf0f60db1fe6a6d1b2c45f94846b5f4f01eeb55fb75a40bd960d03118ed18",
+      "report": "reports/unified_main_sources_20261116/report.md",
+      "historical_metadata_files": 121,
+      "pairwise_text_checks": 312750,
+      "overlap_violations": 0,
+      "model_inferences": 0
     }
   },
   "public_sscd_binary_probe": {
@@ -1385,7 +1403,7 @@
     "selected_by_user": true
   },
   "gs_fingerprint_fixedpoint_probe": {
-    "status": "complete_failed_screen",
+    "status": "frozen",
     "run": "gs_fingerprint_fixedpoint_20261116_v3",
     "protocol": "protocols/gs_fingerprint_fixedpoint_20261116_v3.json",
     "gpu_index": 3,
@@ -1433,6 +1451,10 @@
       "p03": 449,
       "p06": 449
     },
-    "baseline_nine_edit_gs": 449
+    "baseline_nine_edit_gs": 449,
+    "screen_status": "complete_failed_screen",
+    "frozen_by_user": true,
+    "freeze_date": "2026-11-16",
+    "additional_rounds_allowed": false
   }
 }
