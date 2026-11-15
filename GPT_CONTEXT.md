@@ -4,7 +4,11 @@ The active objective is the unified SemBind/PGID/SEAL comparison under independe
 
 Instance-key recovery is frozen. Do not start partial-order, capsule, spectrum or spatial/visible-evidence variants. [One-page negative results](reports/instance_recovery_negative_results_20261115/report.md) and [appendix evidence](reports/instance_recovery_negative_results_20261115/appendix.md) preserve the conclusions. No new mechanism before the comparison. Only [project_state.json](project_state.json) records live execution; [reports/README.md](reports/README.md) indexes completed evidence. Do not restart completed jobs.
 
-## Completed experiment
+## Completed unified benchmark preflight
+
+[Runtime preflight](reports/unified_benchmark_preflight_20261115/report.md) completed on249: eight common development natural images,40 full extraction artifacts, all hashes/shapes/finite values verified. Mean seconds/image: defaultDDIM3.70, PGID-F21.27, PGID-R14.34, SemBind44.59, SEAL2.45. GPU7/5/4, all exited successfully. Full budgets preserved; no attacks or calibrated FPR/TPR claims in this run. [Applicability and author implementation audit](docs/UNIFIED_BENCHMARK_APPLICABILITY.md) includes final SemBind AppendixG WMCopier, distinguishes SEAL private-model forgery from regeneration removal, records Reprompt+ author-recipe orchestration and unpublished LFA eligibility gap. Natural-null asset acquisition and common-carrier/score interfaces still precede final protocol freeze. Do not rerun this completed probe as a substitute for the main benchmark.
+
+## Historical completed recovery experiment
 
 Frozen server run: `/data0/liyanlei/watermark_research/runs/order_capsule_confirmation_20261115`. Protocol SHA256 `5ce5af7f333c062f7fb86005902594d6f2f6c6f2965e298749d63dded7c904cf`. Main exit0. 3800 same-pixel queries, three prespecified methods, 11400 partial-order decodes, 7552 exact keys and authenticated payload returns. SSCD single/nine-template controls freshly inferred4599 images on idleGPU7, batch1, TF32off;1230 more fresh images in development. No new diffusion inversion or native carrier detection in this experiment. Payload is authenticated reference identity/pixel hash.
 

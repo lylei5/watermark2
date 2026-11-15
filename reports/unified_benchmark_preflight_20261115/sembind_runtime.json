@@ -1,0 +1,115 @@
+{
+  "status": "complete",
+  "pid": 1711,
+  "method": "sembind",
+  "protocol_sha256": "d7bc96272883063c66509614d28c6bc29874827baf4209f89cd5ab8f0c33ce29",
+  "gpu": 5,
+  "gpu_uuid": "GPU-e6f35928-0155-f121-e707-1eaf3c14965c",
+  "gpu_name": "NVIDIA GeForce RTX 3090",
+  "versions": {
+    "torch": "2.5.1+cu124",
+    "diffusers": "0.31.0",
+    "transformers": "4.46.3"
+  },
+  "loading_seconds": 65.98575447895564,
+  "rows": 8,
+  "total_seconds": 422.8325585669372,
+  "measurements": [
+    {
+      "source": 0,
+      "arm": "sembind",
+      "input_sha256": "838f85e266205ef8eb1719806259d7b4e21531b115db5414a7d33daf27ca8999",
+      "seconds": 46.36602805403527,
+      "unet_calls": 50,
+      "peak_allocated_bytes": 10665131008,
+      "peak_reserved_bytes": 10854858752,
+      "artifact": "000_sembind.npz",
+      "artifact_sha256": "13b5acc32c7f6ec6e72b32b0312a536631f3807bc8cef82ffe7f313b6dbd3056",
+      "artifact_bytes": 61385
+    },
+    {
+      "source": 1,
+      "arm": "sembind",
+      "input_sha256": "0f366ee46307b476ec10d6c2aef3475adc41cc5c54aabb019bf5d79776cc6740",
+      "seconds": 44.808986820979044,
+      "unet_calls": 50,
+      "peak_allocated_bytes": 10649079296,
+      "peak_reserved_bytes": 10863247360,
+      "artifact": "001_sembind.npz",
+      "artifact_sha256": "968e54b8f45e6b8726cb0549fb67b983665c60931ffa8519c76d2ad9693ecdf7",
+      "artifact_bytes": 61411
+    },
+    {
+      "source": 2,
+      "arm": "sembind",
+      "input_sha256": "bc24ab8dd5ae34f38310cf33f5a2da689d4f3386ab1968a3c33c9cdeeaa468c9",
+      "seconds": 43.736639000009745,
+      "unet_calls": 50,
+      "peak_allocated_bytes": 10649079296,
+      "peak_reserved_bytes": 10863247360,
+      "artifact": "002_sembind.npz",
+      "artifact_sha256": "3a2f79ffb49cce090946513c158fb30b177a266121e379f46d71af59cddcc734",
+      "artifact_bytes": 61382
+    },
+    {
+      "source": 3,
+      "arm": "sembind",
+      "input_sha256": "b7d947b106144fae348709b3f90c04193a41b7e6a6749db05290a83600cb0832",
+      "seconds": 44.92212611599825,
+      "unet_calls": 50,
+      "peak_allocated_bytes": 10649079296,
+      "peak_reserved_bytes": 10863247360,
+      "artifact": "003_sembind.npz",
+      "artifact_sha256": "29bc73356bc011b00e8aa5ee66f9784bb0fd345134605cefc621e61d8947b37b",
+      "artifact_bytes": 61432
+    },
+    {
+      "source": 4,
+      "arm": "sembind",
+      "input_sha256": "fe583144ada84f34c24508f69c90d14d99e43484db132616cf56058fc34b9c3e",
+      "seconds": 44.735762287979014,
+      "unet_calls": 50,
+      "peak_allocated_bytes": 10649079296,
+      "peak_reserved_bytes": 10863247360,
+      "artifact": "004_sembind.npz",
+      "artifact_sha256": "c9e08524467549c949653fee5031a828a25d326fa444fc35219928c3b6119bfa",
+      "artifact_bytes": 61393
+    },
+    {
+      "source": 5,
+      "arm": "sembind",
+      "input_sha256": "d7807588d400c44a3944a69fdc64a1c440b8b79408b293f9229d29d9d7f8746a",
+      "seconds": 44.549285758053884,
+      "unet_calls": 50,
+      "peak_allocated_bytes": 10649079296,
+      "peak_reserved_bytes": 10863247360,
+      "artifact": "005_sembind.npz",
+      "artifact_sha256": "73b32617719dae4fb47402f650748878624c409b31073f5e07c06cbe7d4d6776",
+      "artifact_bytes": 61423
+    },
+    {
+      "source": 6,
+      "arm": "sembind",
+      "input_sha256": "e03024e289e8656ab1900d7a70741c7e697d53da65b6b03a06d30e1ada43adbb",
+      "seconds": 43.83231427997816,
+      "unet_calls": 50,
+      "peak_allocated_bytes": 10649079296,
+      "peak_reserved_bytes": 10863247360,
+      "artifact": "006_sembind.npz",
+      "artifact_sha256": "cb74ebb64ec1e3ca102971648962c303c224a73e0d54912935a5084a1b1329f0",
+      "artifact_bytes": 61395
+    },
+    {
+      "source": 7,
+      "arm": "sembind",
+      "input_sha256": "ae717f627044d3f27e6093aa95001630d9421e90a38056ed2122b9486b7dc96f",
+      "seconds": 43.73815244704019,
+      "unet_calls": 50,
+      "peak_allocated_bytes": 10649079296,
+      "peak_reserved_bytes": 10863247360,
+      "artifact": "007_sembind.npz",
+      "artifact_sha256": "1d6a915b6a68982819d4509a49613711e124c45c546388e8ecf4ffdb6e8637aa",
+      "artifact_bytes": 61406
+    }
+  ]
+}

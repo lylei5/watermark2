@@ -1,0 +1,114 @@
+{
+  "scope": "eight development inputs; extraction timing only; no calibrated detection result",
+  "status": "complete",
+  "protocol_sha256": "d7bc96272883063c66509614d28c6bc29874827baf4209f89cd5ab8f0c33ce29",
+  "artifact_checks": 40,
+  "source_manifests": {
+    "pgid": {
+      "sha256": "f177d36370bd1da1995dd506afa4e9a4017857abbcbe1acf70eff6f59d8e6a7c",
+      "gpu": 7,
+      "gpu_uuid": "GPU-9644fb82-cb6f-7311-8017-eaee41409bb7",
+      "loading_seconds": 6.62512683798559,
+      "versions": {
+        "torch": "2.5.1+cu124",
+        "diffusers": "0.31.0",
+        "transformers": "4.46.3"
+      }
+    },
+    "sembind": {
+      "sha256": "6aed035c076f119156fb110e61a7cdfffb06db09fe1e686625a0bbd913c91642",
+      "gpu": 5,
+      "gpu_uuid": "GPU-e6f35928-0155-f121-e707-1eaf3c14965c",
+      "loading_seconds": 65.98575447895564,
+      "versions": {
+        "torch": "2.5.1+cu124",
+        "diffusers": "0.31.0",
+        "transformers": "4.46.3"
+      }
+    },
+    "seal": {
+      "sha256": "a49aa4dde7adda756c83c82d4a48deac48206557227a5a2e1ddc6258a90bced8",
+      "gpu": 4,
+      "gpu_uuid": "GPU-748b31fa-0510-6b56-f820-f3812266ed28",
+      "loading_seconds": 109.55616555607412,
+      "versions": {
+        "torch": "2.5.1+cu124",
+        "diffusers": "0.20.2",
+        "transformers": "4.47.1"
+      }
+    }
+  },
+  "summary": [
+    {
+      "arm": "pgid_default",
+      "n": 8,
+      "mean_seconds": 3.6965899477509083,
+      "median_seconds": 3.6631784924538806,
+      "min_seconds": 3.5955657430458814,
+      "max_seconds": 3.9790239409776405,
+      "unet_calls": [
+        null
+      ],
+      "max_peak_allocated_gib": 5.465696334838867,
+      "output_bytes": 487465,
+      "projected_40000_gpu_hours": 41.07322164167676
+    },
+    {
+      "arm": "pgid_f",
+      "n": 8,
+      "mean_seconds": 21.274021366771194,
+      "median_seconds": 21.363127003540285,
+      "min_seconds": 20.76222550799139,
+      "max_seconds": 21.502051662071608,
+      "unet_calls": [
+        298
+      ],
+      "max_peak_allocated_gib": 5.465696334838867,
+      "output_bytes": 489734,
+      "projected_40000_gpu_hours": 236.3780151863466
+    },
+    {
+      "arm": "pgid_r",
+      "n": 8,
+      "mean_seconds": 14.337539511630894,
+      "median_seconds": 14.376581918506417,
+      "min_seconds": 14.056430513039231,
+      "max_seconds": 14.466958073084243,
+      "unet_calls": [
+        200
+      ],
+      "max_peak_allocated_gib": 5.465696334838867,
+      "output_bytes": 487728,
+      "projected_40000_gpu_hours": 159.3059945736766
+    },
+    {
+      "arm": "seal",
+      "n": 8,
+      "mean_seconds": 2.4461369417695096,
+      "median_seconds": 2.1182821035035886,
+      "min_seconds": 2.008019197965041,
+      "max_seconds": 4.7426101280143484,
+      "unet_calls": [
+        51
+      ],
+      "max_peak_allocated_gib": 11.554759979248047,
+      "output_bytes": 265132,
+      "projected_40000_gpu_hours": 27.17929935299455
+    },
+    {
+      "arm": "sembind",
+      "n": 8,
+      "mean_seconds": 44.586161845509196,
+      "median_seconds": 44.64252402301645,
+      "min_seconds": 43.736639000009745,
+      "max_seconds": 46.36602805403527,
+      "unet_calls": [
+        50
+      ],
+      "max_peak_allocated_gib": 9.932677268981934,
+      "output_bytes": 491227,
+      "projected_40000_gpu_hours": 495.4017982834355
+    }
+  ],
+  "projection_limitations": "Single-image serial execution, same 3090 class, three jobs concurrently. Excludes loading, decoding, final score adapters, failures and attack costs. Projection is not a measured large-run runtime."
+}

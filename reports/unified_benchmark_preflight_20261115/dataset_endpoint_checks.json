@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://images.cocodataset.org/zips/test2017.zip",
+    "returncode": 28,
+    "error": "curl: (28) Operation timed out after 25000 milliseconds with 0 out of 0 bytes received\n",
+    "bytes": 0
+  },
+  {
+    "url": "https://s3.amazonaws.com/images.cocodataset.org/zips/test2017.zip",
+    "returncode": 35,
+    "error": "curl: (35) OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to s3.amazonaws.com:443 \n",
+    "bytes": 0
+  },
+  {
+    "url": "http://images.cocodataset.org/val2017/000000397133.jpg",
+    "returncode": 28,
+    "error": "curl: (28) Operation timed out after 25000 milliseconds with 0 bytes received\n",
+    "bytes": 0
+  }
+]

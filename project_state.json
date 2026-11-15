@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-15T14:44:33.3193424Z",
+  "updated_at": "2026-11-15T15:15:50.1533247Z",
   "status": "unified_benchmark_preparation",
   "active_experiments": 0,
   "queued_experiments": 0,
-  "latest_progress_report": "reports/instance_recovery_negative_results_20261115/report.md",
+  "latest_progress_report": "reports/unified_benchmark_preflight_20261115/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/RESEARCH_PLAN.md",
   "native_sembind_reproduction_complete": false,
@@ -68,6 +68,11 @@
   "evaluation_policy": "Unchanged published top-venue author attacks only; full budgets; no adaptive or improved attacks; independent null calibration and evaluation; report achieved FPR and absolute TPR.",
   "current_decision": "Instance-key recovery frozen. Complete the unified SemBind/PGID/SEAL benchmark before new mechanisms; separate same-carrier and native-system comparisons, independently calibrate 1% and 0.1% FPR, preserve complete published attack budgets and all denominators.",
   "completed_evidence": [
+    {
+      "id": "unified_benchmark_preflight_20261115",
+      "report": "reports/unified_benchmark_preflight_20261115/report.md",
+      "summary": "8 common development natural images, 40 complete extraction artifacts verified on server249; formal-paper attack union audited; no main-table FPR/TPR result"
+    },
     {
       "path": "reports/instance_recovery_negative_results_20261115/report.md",
       "scope": "Historical evidence synthesis and appendix; no new experiment. Instance recovery frozen."
@@ -1267,6 +1272,14 @@
       "native_system"
     ],
     "stateful_control": "native carrier plus per-image registered SSCD",
-    "current_block": "Negative-result consolidation and applicability/calibration audit"
+    "current_block": "Source/applicability audit and 8-image full-runtime probe completed; natural-null acquisition and matched-carrier/score validation pending",
+    "runtime_probe": {
+      "status": "complete",
+      "run": "unified_runtime_probe_20261115",
+      "independent_development_sources": 8,
+      "extraction_artifacts": 40,
+      "report": "reports/unified_benchmark_preflight_20261115/report.md"
+    },
+    "applicability_audit": "docs/UNIFIED_BENCHMARK_APPLICABILITY.md"
   }
 }

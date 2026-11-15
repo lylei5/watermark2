@@ -1,0 +1,115 @@
+{
+  "status": "complete",
+  "pid": 1712,
+  "method": "seal",
+  "protocol_sha256": "d7bc96272883063c66509614d28c6bc29874827baf4209f89cd5ab8f0c33ce29",
+  "gpu": 4,
+  "gpu_uuid": "GPU-748b31fa-0510-6b56-f820-f3812266ed28",
+  "gpu_name": "NVIDIA GeForce RTX 3090",
+  "versions": {
+    "torch": "2.5.1+cu124",
+    "diffusers": "0.20.2",
+    "transformers": "4.47.1"
+  },
+  "loading_seconds": 109.55616555607412,
+  "rows": 8,
+  "total_seconds": 129.2549598190235,
+  "measurements": [
+    {
+      "source": 0,
+      "arm": "seal",
+      "input_sha256": "838f85e266205ef8eb1719806259d7b4e21531b115db5414a7d33daf27ca8999",
+      "seconds": 4.7426101280143484,
+      "unet_calls": 51,
+      "peak_allocated_bytes": 12406796288,
+      "peak_reserved_bytes": 13233029120,
+      "artifact": "000_seal.npz",
+      "artifact_sha256": "6465fe41f565ce6df04829a35046db5b3cab4ae352f2d4e27c2162defb3bf475",
+      "artifact_bytes": 33147
+    },
+    {
+      "source": 1,
+      "arm": "seal",
+      "input_sha256": "0f366ee46307b476ec10d6c2aef3475adc41cc5c54aabb019bf5d79776cc6740",
+      "seconds": 2.042580389068462,
+      "unet_calls": 51,
+      "peak_allocated_bytes": 12406829056,
+      "peak_reserved_bytes": 13233029120,
+      "artifact": "001_seal.npz",
+      "artifact_sha256": "5796ee7003e22873d4891b3602cb7f97f1facff16201ee18f16a6f4706e22dda",
+      "artifact_bytes": 33121
+    },
+    {
+      "source": 2,
+      "arm": "seal",
+      "input_sha256": "bc24ab8dd5ae34f38310cf33f5a2da689d4f3386ab1968a3c33c9cdeeaa468c9",
+      "seconds": 2.11429371801205,
+      "unet_calls": 51,
+      "peak_allocated_bytes": 12406829056,
+      "peak_reserved_bytes": 13233029120,
+      "artifact": "002_seal.npz",
+      "artifact_sha256": "fc97816b9dadf9a1eabcea8ad99e8ab1a28d4ffadbbaf3fb7a35d831d1d6b70d",
+      "artifact_bytes": 33154
+    },
+    {
+      "source": 3,
+      "arm": "seal",
+      "input_sha256": "b7d947b106144fae348709b3f90c04193a41b7e6a6749db05290a83600cb0832",
+      "seconds": 2.008019197965041,
+      "unet_calls": 51,
+      "peak_allocated_bytes": 12406829056,
+      "peak_reserved_bytes": 13233029120,
+      "artifact": "003_seal.npz",
+      "artifact_sha256": "6c209691328a940394934bb3c828dde14b2ff7e9a4284f7c43f4452aabc1c0d2",
+      "artifact_bytes": 33142
+    },
+    {
+      "source": 4,
+      "arm": "seal",
+      "input_sha256": "fe583144ada84f34c24508f69c90d14d99e43484db132616cf56058fc34b9c3e",
+      "seconds": 2.0205858410336077,
+      "unet_calls": 51,
+      "peak_allocated_bytes": 12406829056,
+      "peak_reserved_bytes": 13233029120,
+      "artifact": "004_seal.npz",
+      "artifact_sha256": "072c7db3df597ca1b3b833438d02de32670e7f4ef05768b86f72b69cdbe0586e",
+      "artifact_bytes": 33169
+    },
+    {
+      "source": 5,
+      "arm": "seal",
+      "input_sha256": "d7807588d400c44a3944a69fdc64a1c440b8b79408b293f9229d29d9d7f8746a",
+      "seconds": 2.3392662450205535,
+      "unet_calls": 51,
+      "peak_allocated_bytes": 12406829056,
+      "peak_reserved_bytes": 13233029120,
+      "artifact": "005_seal.npz",
+      "artifact_sha256": "83137f272e79a4690e8b08705bb4d5f889d3094557702539f5bfc4c29580e4b7",
+      "artifact_bytes": 33139
+    },
+    {
+      "source": 6,
+      "arm": "seal",
+      "input_sha256": "e03024e289e8656ab1900d7a70741c7e697d53da65b6b03a06d30e1ada43adbb",
+      "seconds": 2.1222704889951274,
+      "unet_calls": 51,
+      "peak_allocated_bytes": 12406829056,
+      "peak_reserved_bytes": 13233029120,
+      "artifact": "006_seal.npz",
+      "artifact_sha256": "b778e2c41cf76020267d43df5f06f89b87e63774c08e7c82ee51fb1e17096ca0",
+      "artifact_bytes": 33120
+    },
+    {
+      "source": 7,
+      "arm": "seal",
+      "input_sha256": "ae717f627044d3f27e6093aa95001630d9421e90a38056ed2122b9486b7dc96f",
+      "seconds": 2.179469526046887,
+      "unet_calls": 51,
+      "peak_allocated_bytes": 12406829056,
+      "peak_reserved_bytes": 13233029120,
+      "artifact": "007_seal.npz",
+      "artifact_sha256": "7bbab8dcfc1b4e9baa15a66ceff4b4a863e0e70106a12fe18b9429c42a517bf9",
+      "artifact_bytes": 33140
+    }
+  ]
+}
