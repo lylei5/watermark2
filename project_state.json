@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-15T16:03:55.5705505Z",
+  "updated_at": "2026-11-15T16:10:09.2489621Z",
   "status": "unified_benchmark_null_calibration",
   "active_experiments": 1,
   "queued_experiments": 0,
-  "latest_progress_report": "reports/unified_natural_cohort_20261115/report.md",
+  "latest_progress_report": "reports/unified_historical_denominators_20261116/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/RESEARCH_PLAN.md",
   "native_sembind_reproduction_complete": false,
@@ -68,6 +68,11 @@
   "evaluation_policy": "Unchanged published top-venue author attacks only; full budgets; no adaptive or improved attacks; independent null calibration and evaluation; report achieved FPR and absolute TPR.",
   "current_decision": "Instance-key recovery frozen. Complete the unified SemBind/PGID/SEAL benchmark before new mechanisms; separate same-carrier and native-system comparisons, independently calibrate 1% and 0.1% FPR, preserve complete published attack budgets and all denominators.",
   "completed_evidence": [
+    {
+      "id": "unified_historical_denominators_20261116",
+      "report": "reports/unified_historical_denominators_20261116/report.md",
+      "summary": "Recounted440 historical PGID/native decisions and220 same-pixel pairs; pooled100-query counts have only10 sources per carrier; no new model inference"
+    },
     {
       "id": "unified_natural_cohort_20261115",
       "report": "reports/unified_natural_cohort_20261115/report.md",

@@ -1,0 +1,423 @@
+{
+  "status": "complete",
+  "worker_sha256": "86a7346838a8925e15a0bedd2b96eaa322e45d81f16e90dda4828f2eb8c9e5cc",
+  "scope": "Historical artifact/denominator recount only; no model re-execution, new attack or calibrated FPR",
+  "decision_records": 440,
+  "paired_pixel_queries": 220,
+  "reused_development_sources_per_carrier": 10,
+  "results": {
+    "TR": {
+      "run": "/data0/liyanlei/watermark_research/runs/pgid_carrier_genuine_20261113_v3",
+      "protocol_sha256": "9fa1426e51425ad9b06a44982a46442c0a298b037283d078acd620960edec671",
+      "rows_sha256": "9d410bd28329db4265bdbd2bbb576c71cc56fafd0fe90df63e14b24b7f9e0170",
+      "complete_sha256": "640ac5e4e7d1b2d028ccb2075c2cbf0892aed6fa9398117a017d9939201be70e",
+      "decision_records": 220,
+      "paired_pixel_queries": 110,
+      "independent_source_count": 10,
+      "per_source_genuine_queries": 10,
+      "scheduler": "DDIM",
+      "pgid": {
+        "k": 15,
+        "s": 3,
+        "gamma": 0.001,
+        "steps": 50
+      },
+      "published_threshold": {
+        "metric": "p_value",
+        "operator": "<",
+        "value": 0.053849971492007605
+      },
+      "conditions": [
+        {
+          "condition": "clean",
+          "detector": "native",
+          "accepted": 10,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "clean",
+          "detector": "PGID-F",
+          "accepted": 8,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "random_crop_ratio",
+          "detector": "native",
+          "accepted": 10,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "random_crop_ratio",
+          "detector": "PGID-F",
+          "accepted": 0,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "random_drop_ratio",
+          "detector": "native",
+          "accepted": 10,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "random_drop_ratio",
+          "detector": "PGID-F",
+          "accepted": 8,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "brightness_factor",
+          "detector": "native",
+          "accepted": 10,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "brightness_factor",
+          "detector": "PGID-F",
+          "accepted": 7,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "jpeg_ratio",
+          "detector": "native",
+          "accepted": 10,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "jpeg_ratio",
+          "detector": "PGID-F",
+          "accepted": 9,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "gaussian_blur_r",
+          "detector": "native",
+          "accepted": 10,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "gaussian_blur_r",
+          "detector": "PGID-F",
+          "accepted": 6,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "gaussian_std",
+          "detector": "native",
+          "accepted": 10,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "gaussian_std",
+          "detector": "PGID-F",
+          "accepted": 5,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "median_blur_k",
+          "detector": "native",
+          "accepted": 10,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "median_blur_k",
+          "detector": "PGID-F",
+          "accepted": 6,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "sp_prob",
+          "detector": "native",
+          "accepted": 10,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "sp_prob",
+          "detector": "PGID-F",
+          "accepted": 4,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "resize_ratio",
+          "detector": "native",
+          "accepted": 10,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "resize_ratio",
+          "detector": "PGID-F",
+          "accepted": 7,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "cover",
+          "detector": "native",
+          "accepted": 0,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "cover",
+          "detector": "PGID-F",
+          "accepted": 0,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "all_edits",
+          "detector": "native",
+          "accepted": 90,
+          "query_count": 90,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "all_edits",
+          "detector": "PGID-F",
+          "accepted": 52,
+          "query_count": 90,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "clean_plus_edits",
+          "detector": "native",
+          "accepted": 100,
+          "query_count": 100,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "clean_plus_edits",
+          "detector": "PGID-F",
+          "accepted": 60,
+          "query_count": 100,
+          "distinct_sources": 10
+        }
+      ]
+    },
+    "PRC": {
+      "run": "/data0/liyanlei/watermark_research/runs/pgid_carrier_genuine_20261113_v2",
+      "protocol_sha256": "412d4d296bf4ea7dc6429ec82daa7b1864a3ab5e3c2fadabf692690bb8a918eb",
+      "rows_sha256": "d22699d873e95b53e742437edcf3daee47006f950f9af61eeb3c7571a8006fcd",
+      "complete_sha256": "f371b8676998dc80d954bb9884840ed12d94f4ba1e26a6ecce870f0f9afef0a1",
+      "decision_records": 220,
+      "paired_pixel_queries": 110,
+      "independent_source_count": 10,
+      "per_source_genuine_queries": 10,
+      "scheduler": "DPM",
+      "pgid": {
+        "k": 7,
+        "s": 3,
+        "gamma": 0.001,
+        "steps": 50
+      },
+      "published_threshold": {
+        "metric": "PRC_detection_results",
+        "operator": "native_boolean",
+        "value": null
+      },
+      "conditions": [
+        {
+          "condition": "clean",
+          "detector": "native",
+          "accepted": 10,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "clean",
+          "detector": "PGID-F",
+          "accepted": 10,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "random_crop_ratio",
+          "detector": "native",
+          "accepted": 0,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "random_crop_ratio",
+          "detector": "PGID-F",
+          "accepted": 0,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "random_drop_ratio",
+          "detector": "native",
+          "accepted": 0,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "random_drop_ratio",
+          "detector": "PGID-F",
+          "accepted": 0,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "brightness_factor",
+          "detector": "native",
+          "accepted": 5,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "brightness_factor",
+          "detector": "PGID-F",
+          "accepted": 5,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "jpeg_ratio",
+          "detector": "native",
+          "accepted": 9,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "jpeg_ratio",
+          "detector": "PGID-F",
+          "accepted": 7,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "gaussian_blur_r",
+          "detector": "native",
+          "accepted": 5,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "gaussian_blur_r",
+          "detector": "PGID-F",
+          "accepted": 0,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "gaussian_std",
+          "detector": "native",
+          "accepted": 9,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "gaussian_std",
+          "detector": "PGID-F",
+          "accepted": 3,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "median_blur_k",
+          "detector": "native",
+          "accepted": 10,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "median_blur_k",
+          "detector": "PGID-F",
+          "accepted": 2,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "sp_prob",
+          "detector": "native",
+          "accepted": 7,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "sp_prob",
+          "detector": "PGID-F",
+          "accepted": 0,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "resize_ratio",
+          "detector": "native",
+          "accepted": 9,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "resize_ratio",
+          "detector": "PGID-F",
+          "accepted": 2,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "cover",
+          "detector": "native",
+          "accepted": 0,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "cover",
+          "detector": "PGID-F",
+          "accepted": 0,
+          "query_count": 10,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "all_edits",
+          "detector": "native",
+          "accepted": 54,
+          "query_count": 90,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "all_edits",
+          "detector": "PGID-F",
+          "accepted": 19,
+          "query_count": 90,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "clean_plus_edits",
+          "detector": "native",
+          "accepted": 64,
+          "query_count": 100,
+          "distinct_sources": 10
+        },
+        {
+          "condition": "clean_plus_edits",
+          "detector": "PGID-F",
+          "accepted": 29,
+          "query_count": 100,
+          "distinct_sources": 10
+        }
+      ]
+    }
+  },
+  "inference_limit": "Pooled clean-plus-edit queries share source images; do not use a binomial interval with n=100 as if independent"
+}

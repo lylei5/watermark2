@@ -6,6 +6,8 @@ Instance-key recovery is frozen. Do not start partial-order, capsule, spectrum o
 
 ## Completed unified benchmark preflight
 
+[Historical PGID denominator audit](reports/unified_historical_denominators_20261116/report.md) rechecked440 decision records and220 same-pixel pairs on249. TR100→60/100 and PRC64→29/100 are clean-plus-nine-edit totals from only10 sources per carrier. Clean-only is TR10→8/10 and PRC10→10/10. Do not present those pooled counts as100 independent clean images; this is an artifact recount, not fresh inference or calibrated FPR.
+
 [40000-image natural-null cohort](reports/unified_natural_cohort_20261115/report.md) is frozen: official COCO test2017,40670 valid images;40642 candidate clusters after duplicate/development screening;20000 calibration plus20000 validation. Manifest SHA256 `13c09dd26845ccad25d9e553888b60fb2e3283de6fd89aaee00e9508b96917a6`. Images, archive and features stay on249. Public split IDs and integrity receipts are committed. The data pipeline completed normally; do not redownload or rerun the audit.
 
 [SEAL full-null protocol](protocols/unified_seal_nulls_20261115.json) SHA256 `1a3283f12074a95cbfede7a2bb64095dfa7cb812c65c00cceb363ca34d2de20a` is frozen in server run `unified_seal_nulls_20261115`. First complete image in each of three shards passed artifact/hash/shape/finite and51-UNet-call checks. Live status/PIDs are only in project_state.json; this startup check is not a completed FPR result. Coordinator waits on child exits and computes both frozen calibration targets plus held-out CP intervals after all40000 records. Worker supports hash-checked per-record resume. No other GPU work may start while all three slots are occupied. No separate completion automation has been created.
