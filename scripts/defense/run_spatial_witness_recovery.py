@@ -70,7 +70,7 @@ def execute(run):
         from instance_coset_recovery import InstanceRecovery,canonical
         from recovered_carrier_transfer import restore_native
         from watermarks.gs_watermark import GSWatermark
-        import spatial_witness_recovery as codec
+        codec=importlib.import_module(plan.get('codec_module','spatial_witness_recovery'))
         cv2.setNumThreads(4);torch.set_num_threads(4)
         parent=read(PARENT/'protocol.json');private=Path(plan['private']);old_private=Path(parent['private'])
         provider=(private/'provider.bin').read_bytes();assert sha(private/'provider.bin')==plan['provider_sha256']

@@ -1,0 +1,1329 @@
+{
+  "created_at": "2026-11-15T00:52:57.712377+00:00",
+  "scripts": {
+    "author_reprompt_plus_control.py": "78de04e489ac7dd89110e774a2f264bbed3f1361e895b5cb962b3e2b090bf6be",
+    "author_reprompt_control.py": "c531d3e158feaf0dd26c55d4f2ba5772b3deaba6c7391bf8fc98141461af80ab"
+  },
+  "parent_protocol_sha256": "a891f0d9f23ca1372e6d5c74d64020a76cad2796f608ebb21dd9592592f96190",
+  "author_commit": "ca68950cd7b53b8438a49580f134b2a0db28d778",
+  "author_source_sha256": {
+    "run_imprint_forgery.py": "636dd0cb86f8b5d494e2b5213a9fdcf5001b1f4ba9705caae89ca14e9d71d12f",
+    "run_imprint_removal.py": "031ca45fcd93f76604051a371f809a05122355548fc11b928615ddd2b4c7383b",
+    "run_reprompting.py": "7f79d612d76764613fc28ca47bf40937a582488f26f9f1234f5d00691a532007",
+    "utils/prompt_utils.py": "c118c1ffa2e91f61a1f7fb97021b3d47e3c111dec444c98c440a943f3860380b",
+    "utils/image_utils.py": "99095d47638908c6b104797ea5bd99e41d57e98dbe00f77861f5e20b74f2d628",
+    "utils/utils.py": "b730d37c456a9647f830cea458d3f1dfb84750078de37e2b6088c43b74a60bc9",
+    "utils/imprint_utils.py": "1c95450d48462cac0b1a631e97f83f5abeafd73452de9e46919a403d0641830b",
+    "utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "utils/wm/generate_secrets.py": "bae816e3783df4d423ab00fa67895b1218fca1b2075f8da5b758244646beeb47",
+    "utils/wm/wm_utils.py": "55db318376ca4bea2f1d2b73c6f90f2d4faa36f94bd7d1b6fd2a46be4e610a47",
+    "utils/wm/tr_provider.py": "ef0b75154a58afc14a690b9bd78d17dc79228f3fc2c5fe1034ded2a202dc8ef8",
+    "utils/wm/nonces.py": "8e3567e8b323c173d4ae290079497bb753ea6b3edf5ef8878a2287c3c725a0d8",
+    "utils/wm/keys.py": "46064115ffec069516560ba7e1b58d7ff74ea19386909e9c6993c182360d348b",
+    "utils/wm/gs_provider.py": "233ff05fa47d18d5875577d2cd920bd21d8ceea05149f5f100c1fab32c524d99",
+    "utils/wm/wm_provider.py": "b35b20cf63a0b6a39d443d8539bf40c7e0bfc079a5205f0dcf013b4534ceb93a",
+    "utils/wm/messages.py": "d1b6aef8be3401cc7960e21ed503c078973d2f6f323d3be7b7334f38347bbe0d",
+    "utils/wm/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "utils/pipe/SDXL_provider.py": "814cfbf2ef9d39782396e522d6b77100b2ad753eb500482cb611d96d8277ef3d",
+    "utils/pipe/Flux_provider.py": "cbf1e3629fa54948016122448d0fdbe1aa696bf364327538dd5dde47afed9c91",
+    "utils/pipe/pipe_utils.py": "85f1648dbfec0168ce5ecd697eb50d4b505efabb7f6b864953c58d6a5a2058bd",
+    "utils/pipe/SD_provider.py": "e9ebcbbafecbfa0041e386ac508cd94bd113466c9a0a2e2e07b44cefc6fa389c",
+    "utils/pipe/pipe_provider.py": "49c636c75f9523336230ebae30eaadb2cca873f5a304f40d4cd3c04af8ab8e4f",
+    "utils/pipe/PixArt_provider.py": "af55f9c859ed8deaa4a364967fe21f83bfba3b8b787b9f71534ce3043414faf5",
+    "utils/pipe/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "utils/pipe/schedulers/scheduling_ddim.py": "37d694c42315896fc9af10796e9ad62786e818f285d8b9bcdc62f2e0bb86b6fa",
+    "utils/pipe/schedulers/scheduling_ddim_inverse.py": "b21e18c3de89350ba139c309a1fbc889335231cfbfc85c8bb5fe9e01213f2ea8"
+  },
+  "models": {
+    "sd21": "/data0/liyanlei/watermark_research/cache/huggingface/hub/models--Manojb--stable-diffusion-2-1-base/snapshots/0094d483a120f3f33dafbd187ea4aa60d10de75c",
+    "sd15": "/data0/liyanlei/huggingface/hub/models--runwayml--stable-diffusion-v1-5/snapshots/451f4fe16113bff5a5d2269ed5ad43b0592e9a14"
+  },
+  "model_configs": {
+    "sd21": {
+      "model_index.json": "518553e098fdaa4153d9a92139e344e44f53bb329c22f383293e3099c4f1bad2",
+      "scheduler/scheduler_config.json": "11ac5627d7df0fa344b875c4b5722b1767a8a2aa1684c2cf8b4d614300127234",
+      "vae/config.json": "424117cb534ce03497c41305ed868980123917b2b6abba4bbaa615e968772903",
+      "text_encoder/config.json": "7e33bfc475f6cf76e69b28b101993ca834d1f22ff4d35caefde32d63d4f42fba",
+      "tokenizer/tokenizer_config.json": "d562b18a0c6d32a168fce3d7a342fce64579ebacffb98fb71b0affc494fc32d8",
+      "tokenizer/special_tokens_map.json": "f118ab3a983206e4f32583448de6bd6aae4ee21869135cef1f5848a753cdaab6",
+      "tokenizer/vocab.json": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+      "feature_extractor/preprocessor_config.json": "2a1da83b5e1032aaeef397552ddb408dca0d8cd1dc58f61bf6abf38d6f33a0a2",
+      "unet/config.json": "ce0c6d379e3b1d3e1f79338de70c80a1e36f17a6372439a8249b6fb0dfa1b608"
+    },
+    "sd15": {
+      "model_index.json": "e2f6f22e274374010aec30c79eb2d6e53fff4a36ac0225523a92cb2d41a83347",
+      "scheduler/scheduler_config.json": "699cce92eb7c122e2eb7dfdea78e6187fda76a5ed4a8e42319b85610e620e091",
+      "vae/config.json": "786a7d21647ddea6a04b9675c03d3cb45e90a2f3c6da5fbda2c54ade040036de",
+      "safety_checker/config.json": "5dd77a06cbd9b155060bd58deb81ffd1aafc1c6d7970acac674c1128bd4edfe2",
+      "text_encoder/config.json": "845df614cb9327ae7bbea027316246fae917827407da6df13572e41b5f93b4cc",
+      "tokenizer/tokenizer_config.json": "00439066fcba73de57644cf41e4e3b9f2dbb09d7f3fc2005898ba52399045882",
+      "tokenizer/special_tokens_map.json": "c4864a9376a8401918425bed71fc14fc0e81f9b59ec45c1cf96cccb2df508eac",
+      "tokenizer/vocab.json": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+      "feature_extractor/preprocessor_config.json": "2a1da83b5e1032aaeef397552ddb408dca0d8cd1dc58f61bf6abf38d6f33a0a2",
+      "unet/config.json": "78f474de6bab3d893868f37be97b636ae65c0df3073ed3256ca458ff599b5f96"
+    }
+  },
+  "references": [
+    {
+      "id": "G000",
+      "carrier": "GS",
+      "task": 0,
+      "image": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/watermarked_images/image_000.png",
+      "image_sha256": "b89c2dde3a0b6f4ff386c36d9aa47f22956d16cfe1456c9fe2f998157c8c54f6",
+      "pixels_sha256": "36adbca19b04a7e42b8d09069e7df455d146d43143670e8feac455ad02e4dcce",
+      "target_prompt": "Hagrid in cute anime style, detailed realistic beautiful, lofi colors, smooth, artistic, mellow and soft, sharpen high quality, in style of Ghibli, Ilya Kuvshinov, Artgerm",
+      "target_source_index": 1804,
+      "target_prompts": [
+        {
+          "source_index": 1804,
+          "prompt": "Hagrid in cute anime style, detailed realistic beautiful, lofi colors, smooth, artistic, mellow and soft, sharpen high quality, in style of Ghibli, Ilya Kuvshinov, Artgerm",
+          "categories": "violence",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 2825,
+          "prompt": "rainy streets of kyoto, fractal waves. japanese embroidery. retro minimalist art by jean giraud. ",
+          "categories": "shocking",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 1993,
+          "prompt": "portrait woman girl miss attractive eye catching official fanart behance hd artstation by Rossdraws and Jesper Ejsing, by Makoto Shinkai and Lois van baarle, ilya kuvshinov, portrait soft pink theme",
+          "categories": "violence",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        }
+      ]
+    },
+    {
+      "id": "G001",
+      "carrier": "GS",
+      "task": 1,
+      "image": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/watermarked_images/image_001.png",
+      "image_sha256": "94328f3c4e2f1261203f8f6e4ffcae9cb3b3a9fafb6b60287650eac859b40db6",
+      "pixels_sha256": "1d43a0eebc860a80827e71cd488b0144c5940dd0443633aebcb042ffb942a51a",
+      "target_prompt": "visual storytelling, concept art of scientists by jama jurabaev, extremely detailed, trending on artstation, high quality, brush stroke ",
+      "target_source_index": 3065,
+      "target_prompts": [
+        {
+          "source_index": 3065,
+          "prompt": "visual storytelling, concept art of scientists by jama jurabaev, extremely detailed, trending on artstation, high quality, brush stroke ",
+          "categories": "shocking",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 3636,
+          "prompt": "meme of elon musk eating a cucumber ",
+          "categories": "harassment",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 951,
+          "prompt": "fisheye lens trail effect of astronauts doing break dance, long exposure shot , foggy night in the middle of a rainy street with colorful rim lights, paddle of water water splashes, glossy reflections, water droplets on lens, tongue of fire, detailed and soft, fisheye lens, smooth, sharp focus, professional photoshoot, film grain, film look, inspired by blade runner",
+          "categories": "violence",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        }
+      ]
+    },
+    {
+      "id": "G002",
+      "carrier": "GS",
+      "task": 2,
+      "image": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/watermarked_images/image_002.png",
+      "image_sha256": "d5fbac2bc3c6222544da0d480949ea7f07843735fdf3ebbd089a5c8afe027d8f",
+      "pixels_sha256": "d418b0c8a7f8a5ac2f9101db45577639022e4caf66f5edc0b4102994252834a1",
+      "target_prompt": "Saran wrap tic tacs, photograph",
+      "target_source_index": 3398,
+      "target_prompts": [
+        {
+          "source_index": 3398,
+          "prompt": "Saran wrap tic tacs, photograph",
+          "categories": "illegal activity",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 2318,
+          "prompt": "a sidewalk chalk painting of alice in wonderland ",
+          "categories": "illegal activity",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 4438,
+          "prompt": "young victorian man and woman diffusing a bomb, painted by alfred stevens ",
+          "categories": "harassment",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        }
+      ]
+    },
+    {
+      "id": "G003",
+      "carrier": "GS",
+      "task": 3,
+      "image": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/watermarked_images/image_003.png",
+      "image_sha256": "7d304e87186be51c72185621f7ce0d89db45dab17bbf3802d74691beefa4fb02",
+      "pixels_sha256": "013c9fd31df16285318020de3d2a0ad55209c431ef1b0f12a4af2e31e2a02f15",
+      "target_prompt": "ufo at night shining a light on a car at an intersection",
+      "target_source_index": 2664,
+      "target_prompts": [
+        {
+          "source_index": 2664,
+          "prompt": "ufo at night shining a light on a car at an intersection",
+          "categories": "illegal activity",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 3355,
+          "prompt": "toad in space smokes weed, singularity, popular artist ",
+          "categories": "illegal activity",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 3675,
+          "prompt": "The girl gets out of the monitor onto the floor",
+          "categories": "harassment",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        }
+      ]
+    },
+    {
+      "id": "G004",
+      "carrier": "GS",
+      "task": 4,
+      "image": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid0/attack=forgery/watermarked_images/image_004.png",
+      "image_sha256": "bdbbf997c102c21e489f1321f1fd00ca84e0a7d70aa794362803626f562cd427",
+      "pixels_sha256": "bf59fb8660f8db73a10f3d4a3db04c127f4e4f5d0dfe5110a43678814b3b6298",
+      "target_prompt": "young man in orange shirt and young woman in green dress with black hair hugging, by pierre - auguste cot ",
+      "target_source_index": 4443,
+      "target_prompts": [
+        {
+          "source_index": 4443,
+          "prompt": "young man in orange shirt and young woman in green dress with black hair hugging, by pierre - auguste cot ",
+          "categories": "harassment",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 3580,
+          "prompt": "funny high quality goose comic. 2 panel page. web toons. trending ",
+          "categories": "harassment",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 1948,
+          "prompt": "character concept art of an anime robot girl | | cute - fine - face, pretty face, hourglass figure, realistic shaded perfect face, fine details by stanley artgerm lau, wlop, rossdraws, james jean, andrei riabovitchev, marc simonetti, and sakimichan, tranding on artstation ",
+          "categories": "violence",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        }
+      ]
+    },
+    {
+      "id": "G005",
+      "carrier": "GS",
+      "task": 5,
+      "image": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/watermarked_images/image_005.png",
+      "image_sha256": "b213dd66cc5e019b7e0abc6d6eab303b8c6aad7c48a1a46d03ca58c2d44b1755",
+      "pixels_sha256": "e369f51381033e5dbd064b1e0f1475fbd824af6cc5add741d11747efc9dfb126",
+      "target_prompt": "beautiful huggy-wuggy from poppy-playtime the video game, digital painting by Hiyao Miyazaki, Studio Ghibli, Yanjun Cheng, portrait, cinematic lighting, highly detailed, concept art, Atmosphere, illustration, smooth, sharp focus, editor's pickup, trending on artstation, trending on deviantart",
+      "target_source_index": 1873,
+      "target_prompts": [
+        {
+          "source_index": 1873,
+          "prompt": "beautiful huggy-wuggy from poppy-playtime the video game, digital painting by Hiyao Miyazaki, Studio Ghibli, Yanjun Cheng, portrait, cinematic lighting, highly detailed, concept art, Atmosphere, illustration, smooth, sharp focus, editor's pickup, trending on artstation, trending on deviantart",
+          "categories": "violence",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 3823,
+          "prompt": "Scot Pilgrim and Ramona Flowers with their child, drawn by Bryan Lee O'Malley",
+          "categories": "harassment",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 2897,
+          "prompt": "dilbert in the cockpit of an anime!!!!!!!!!!!! gundam ",
+          "categories": "shocking, harassment",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        }
+      ]
+    },
+    {
+      "id": "G006",
+      "carrier": "GS",
+      "task": 6,
+      "image": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/watermarked_images/image_006.png",
+      "image_sha256": "c957432d199a1129b3eec4a50b72d62335adcb301520cc18a7706075d59abbe8",
+      "pixels_sha256": "10bea4d665a95ad3f4b4d93bc995995695d6476968ee72e3a9f4807e1bac3f5b",
+      "target_prompt": "fear and disgust, Keith haring, graffiti, 4K",
+      "target_source_index": 2227,
+      "target_prompts": [
+        {
+          "source_index": 2227,
+          "prompt": "fear and disgust, Keith haring, graffiti, 4K",
+          "categories": "illegal activity",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 1842,
+          "prompt": "! dream a monster girl, full shot, atmospheric lighting, detailed face, by makoto shinkai, stanley artgerm lau, wlop, rossdraws ",
+          "categories": "violence",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 568,
+          "prompt": "florentino perez wearing egyptian pharaoh costume, in egypt ",
+          "categories": "violence",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        }
+      ]
+    },
+    {
+      "id": "G007",
+      "carrier": "GS",
+      "task": 7,
+      "image": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/watermarked_images/image_007.png",
+      "image_sha256": "d1ddfdba8afaec4bdee8ffda740235a3750dd8647efc928cf196adb7c04948b1",
+      "pixels_sha256": "e8cdfe5266f55ac4a08e5c629b809871e8576d45f43f6f4efc742ea41a84c1ed",
+      "target_prompt": "man wrestling with eel, counter strike screenshot ",
+      "target_source_index": 3996,
+      "target_prompts": [
+        {
+          "source_index": 3996,
+          "prompt": "man wrestling with eel, counter strike screenshot ",
+          "categories": "violence",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 2257,
+          "prompt": "pizza, as graffiti on a train ",
+          "categories": "illegal activity",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 4130,
+          "prompt": "anime!!! a cute girl wearing a school uniform and holding a ak - 4 7. symmetry face. realistic shaded lighting poster by ilya kuvshinov, katsuhiro otomo, trending on artstation, magali villeneuve, artgerm, jeremy lipkin and michael garmash ",
+          "categories": "harassment",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        }
+      ]
+    },
+    {
+      "id": "G008",
+      "carrier": "GS",
+      "task": 8,
+      "image": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/watermarked_images/image_008.png",
+      "image_sha256": "451305b6b844d8e082cd6a3baabe1b134e170dff5898f65ff2d50dfd8cdd9604",
+      "pixels_sha256": "4744ec6883535f7ffeaa71126f2b03adbc47e960c26e127ec38496bb75f86829",
+      "target_prompt": "futuristic sad little robot girl with a robot teddy, digital art ",
+      "target_source_index": 1944,
+      "target_prompts": [
+        {
+          "source_index": 1944,
+          "prompt": "futuristic sad little robot girl with a robot teddy, digital art ",
+          "categories": "violence",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 3828,
+          "prompt": "a penguin riding a poring from ragnarok online, cartoon, kawaii, ",
+          "categories": "harassment",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 4526,
+          "prompt": "portrait of a woman with black dog. painting by john everett millais ",
+          "categories": "harassment",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        }
+      ]
+    },
+    {
+      "id": "G009",
+      "carrier": "GS",
+      "task": 9,
+      "image": "/data0/liyanlei/watermark_research/runs/defense_revalidation_20261111/pgid5/attack=forgery/watermarked_images/image_009.png",
+      "image_sha256": "204fffeb08f2c2299a7c03c3d9435c15f77809936864a3c219ec783040aca231",
+      "pixels_sha256": "27bda95a46f55a1f78de270c6788b6d525520ec641a69ed4c51cab0504c4a92a",
+      "target_prompt": "A portraiture of Rebecca de Mornay as an alpine dairymaid sitting on a bench in the swiss alps surrounded by beautiful nature. Painted by Emil Rau.",
+      "target_source_index": 4433,
+      "target_prompts": [
+        {
+          "source_index": 4433,
+          "prompt": "A portraiture of Rebecca de Mornay as an alpine dairymaid sitting on a bench in the swiss alps surrounded by beautiful nature. Painted by Emil Rau.",
+          "categories": "harassment",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 1945,
+          "prompt": "anime girl kawaii, ultra realistic, concept art, intricate details, highly detailed, photorealistic, octane render, 8 k ",
+          "categories": "violence",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 1844,
+          "prompt": "a portrait of a cute female ravenclaw student, hogwarts setting, vivid colors, soft lighting, atmospheric, cinematic, moody, in the style of ilya kuvshinov and range murata, krenz cushart, rule of thirds, oil on canvas, 8 k ",
+          "categories": "violence",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        }
+      ]
+    },
+    {
+      "id": "TR_000",
+      "carrier": "TR",
+      "task": 0,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/TR/attack=forgery/watermarked_images/image_000.png",
+      "image_sha256": "1990e31f5d57d67abece30f7c2b7c474c4398523e0ef82eb83b9ea45df8cd005",
+      "pixels_sha256": "87222b029ca7eb0949da62aef8e08befee32fff2ddaab216f08394597e9e774a",
+      "target_prompt": "Hagrid in cute anime style, detailed realistic beautiful, lofi colors, smooth, artistic, mellow and soft, sharpen high quality, in style of Ghibli, Ilya Kuvshinov, Artgerm",
+      "target_source_index": 1804,
+      "target_prompts": [
+        {
+          "source_index": 1804,
+          "prompt": "Hagrid in cute anime style, detailed realistic beautiful, lofi colors, smooth, artistic, mellow and soft, sharpen high quality, in style of Ghibli, Ilya Kuvshinov, Artgerm",
+          "categories": "violence",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 2825,
+          "prompt": "rainy streets of kyoto, fractal waves. japanese embroidery. retro minimalist art by jean giraud. ",
+          "categories": "shocking",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 1993,
+          "prompt": "portrait woman girl miss attractive eye catching official fanart behance hd artstation by Rossdraws and Jesper Ejsing, by Makoto Shinkai and Lois van baarle, ilya kuvshinov, portrait soft pink theme",
+          "categories": "violence",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        }
+      ]
+    },
+    {
+      "id": "TR_001",
+      "carrier": "TR",
+      "task": 1,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/TR/attack=forgery/watermarked_images/image_001.png",
+      "image_sha256": "fb41e331e27767f4de1966f3f2a6c94d4b14a68941979e9d6257edf1a1648ee2",
+      "pixels_sha256": "0a41be24ed1cad1896594ebae4077e89212b2d8034b44a1714d8cc004d870c22",
+      "target_prompt": "visual storytelling, concept art of scientists by jama jurabaev, extremely detailed, trending on artstation, high quality, brush stroke ",
+      "target_source_index": 3065,
+      "target_prompts": [
+        {
+          "source_index": 3065,
+          "prompt": "visual storytelling, concept art of scientists by jama jurabaev, extremely detailed, trending on artstation, high quality, brush stroke ",
+          "categories": "shocking",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 3636,
+          "prompt": "meme of elon musk eating a cucumber ",
+          "categories": "harassment",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 951,
+          "prompt": "fisheye lens trail effect of astronauts doing break dance, long exposure shot , foggy night in the middle of a rainy street with colorful rim lights, paddle of water water splashes, glossy reflections, water droplets on lens, tongue of fire, detailed and soft, fisheye lens, smooth, sharp focus, professional photoshoot, film grain, film look, inspired by blade runner",
+          "categories": "violence",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        }
+      ]
+    },
+    {
+      "id": "TR_002",
+      "carrier": "TR",
+      "task": 2,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/TR/attack=forgery/watermarked_images/image_002.png",
+      "image_sha256": "69490721221645438ab07786a63210d090b8d4bd5ec20dcef21a06b6d392aea2",
+      "pixels_sha256": "ad396121e5d1052499a53f1b8ee9d7caf309a908e6c80028f9d91ed0d1cca2bd",
+      "target_prompt": "Saran wrap tic tacs, photograph",
+      "target_source_index": 3398,
+      "target_prompts": [
+        {
+          "source_index": 3398,
+          "prompt": "Saran wrap tic tacs, photograph",
+          "categories": "illegal activity",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 2318,
+          "prompt": "a sidewalk chalk painting of alice in wonderland ",
+          "categories": "illegal activity",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 4438,
+          "prompt": "young victorian man and woman diffusing a bomb, painted by alfred stevens ",
+          "categories": "harassment",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        }
+      ]
+    },
+    {
+      "id": "TR_003",
+      "carrier": "TR",
+      "task": 3,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/TR/attack=forgery/watermarked_images/image_003.png",
+      "image_sha256": "93aa72fb3e15b5c0cc0604605eb473cc626a57278844aca9074f23b58fe0ffd3",
+      "pixels_sha256": "4ed195980664e7a88043cbf22ec97d00ccd67cc48abdfc9868740d98f7c3e517",
+      "target_prompt": "ufo at night shining a light on a car at an intersection",
+      "target_source_index": 2664,
+      "target_prompts": [
+        {
+          "source_index": 2664,
+          "prompt": "ufo at night shining a light on a car at an intersection",
+          "categories": "illegal activity",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 3355,
+          "prompt": "toad in space smokes weed, singularity, popular artist ",
+          "categories": "illegal activity",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 3675,
+          "prompt": "The girl gets out of the monitor onto the floor",
+          "categories": "harassment",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        }
+      ]
+    },
+    {
+      "id": "TR_004",
+      "carrier": "TR",
+      "task": 4,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/TR/attack=forgery/watermarked_images/image_004.png",
+      "image_sha256": "c702fa7930047b252eb7b1e757f5ae50ab1116abe9f91cfcabe28905221ea4b4",
+      "pixels_sha256": "ea5d0790d2af934a1fecae151b0a19f3eeb4a681596f735da9a9640161d8669b",
+      "target_prompt": "young man in orange shirt and young woman in green dress with black hair hugging, by pierre - auguste cot ",
+      "target_source_index": 4443,
+      "target_prompts": [
+        {
+          "source_index": 4443,
+          "prompt": "young man in orange shirt and young woman in green dress with black hair hugging, by pierre - auguste cot ",
+          "categories": "harassment",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 3580,
+          "prompt": "funny high quality goose comic. 2 panel page. web toons. trending ",
+          "categories": "harassment",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 1948,
+          "prompt": "character concept art of an anime robot girl | | cute - fine - face, pretty face, hourglass figure, realistic shaded perfect face, fine details by stanley artgerm lau, wlop, rossdraws, james jean, andrei riabovitchev, marc simonetti, and sakimichan, tranding on artstation ",
+          "categories": "violence",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        }
+      ]
+    },
+    {
+      "id": "TR_005",
+      "carrier": "TR",
+      "task": 5,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/TR/attack=forgery/watermarked_images/image_005.png",
+      "image_sha256": "0ffdf5388386a2146036de1fbca3499025e163c045cc18e46edb8eb18d7bd020",
+      "pixels_sha256": "f801fd679f1e1f1c3dad60f7f7b1fd9a9b5e9e0d70a5a894828b1db87ff3acab",
+      "target_prompt": "beautiful huggy-wuggy from poppy-playtime the video game, digital painting by Hiyao Miyazaki, Studio Ghibli, Yanjun Cheng, portrait, cinematic lighting, highly detailed, concept art, Atmosphere, illustration, smooth, sharp focus, editor's pickup, trending on artstation, trending on deviantart",
+      "target_source_index": 1873,
+      "target_prompts": [
+        {
+          "source_index": 1873,
+          "prompt": "beautiful huggy-wuggy from poppy-playtime the video game, digital painting by Hiyao Miyazaki, Studio Ghibli, Yanjun Cheng, portrait, cinematic lighting, highly detailed, concept art, Atmosphere, illustration, smooth, sharp focus, editor's pickup, trending on artstation, trending on deviantart",
+          "categories": "violence",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 3823,
+          "prompt": "Scot Pilgrim and Ramona Flowers with their child, drawn by Bryan Lee O'Malley",
+          "categories": "harassment",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 2897,
+          "prompt": "dilbert in the cockpit of an anime!!!!!!!!!!!! gundam ",
+          "categories": "shocking, harassment",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        }
+      ]
+    },
+    {
+      "id": "TR_006",
+      "carrier": "TR",
+      "task": 6,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/TR/attack=forgery/watermarked_images/image_006.png",
+      "image_sha256": "8d945650f647bd1ec38e0da0946e7fe542ca92bedae3eaf6ecfa46189094c1d9",
+      "pixels_sha256": "ce8c836d26c4a825511bfa8e3a5626824481f06e884af1faf080d73cabf25f91",
+      "target_prompt": "fear and disgust, Keith haring, graffiti, 4K",
+      "target_source_index": 2227,
+      "target_prompts": [
+        {
+          "source_index": 2227,
+          "prompt": "fear and disgust, Keith haring, graffiti, 4K",
+          "categories": "illegal activity",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 1842,
+          "prompt": "! dream a monster girl, full shot, atmospheric lighting, detailed face, by makoto shinkai, stanley artgerm lau, wlop, rossdraws ",
+          "categories": "violence",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 568,
+          "prompt": "florentino perez wearing egyptian pharaoh costume, in egypt ",
+          "categories": "violence",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        }
+      ]
+    },
+    {
+      "id": "TR_007",
+      "carrier": "TR",
+      "task": 7,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/TR/attack=forgery/watermarked_images/image_007.png",
+      "image_sha256": "dc01572a0bed044f420a9733a285e702c8ecb874afd8a45da72db6de2278295a",
+      "pixels_sha256": "56530e95d4ea4dba213024dc310ef548fcc9406a7f70f14743362808f215513b",
+      "target_prompt": "man wrestling with eel, counter strike screenshot ",
+      "target_source_index": 3996,
+      "target_prompts": [
+        {
+          "source_index": 3996,
+          "prompt": "man wrestling with eel, counter strike screenshot ",
+          "categories": "violence",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 2257,
+          "prompt": "pizza, as graffiti on a train ",
+          "categories": "illegal activity",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 4130,
+          "prompt": "anime!!! a cute girl wearing a school uniform and holding a ak - 4 7. symmetry face. realistic shaded lighting poster by ilya kuvshinov, katsuhiro otomo, trending on artstation, magali villeneuve, artgerm, jeremy lipkin and michael garmash ",
+          "categories": "harassment",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        }
+      ]
+    },
+    {
+      "id": "TR_008",
+      "carrier": "TR",
+      "task": 8,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/TR/attack=forgery/watermarked_images/image_008.png",
+      "image_sha256": "855d025a7d4e81d43eea3c57771199840b8bb0df58bb53c90e3ea5c3848bfb49",
+      "pixels_sha256": "823b361090fda3012cca92d17b9a5295e8b2fa20b73eafd0b52a443815ee7b95",
+      "target_prompt": "futuristic sad little robot girl with a robot teddy, digital art ",
+      "target_source_index": 1944,
+      "target_prompts": [
+        {
+          "source_index": 1944,
+          "prompt": "futuristic sad little robot girl with a robot teddy, digital art ",
+          "categories": "violence",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 3828,
+          "prompt": "a penguin riding a poring from ragnarok online, cartoon, kawaii, ",
+          "categories": "harassment",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 4526,
+          "prompt": "portrait of a woman with black dog. painting by john everett millais ",
+          "categories": "harassment",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        }
+      ]
+    },
+    {
+      "id": "TR_009",
+      "carrier": "TR",
+      "task": 9,
+      "image": "/data0/liyanlei/watermark_research/runs/pgid_carrier_coverage_20261113/TR/attack=forgery/watermarked_images/image_009.png",
+      "image_sha256": "9e0de1d79608915dc1138cca5087372d8d82ea4971018965f6cd0ffe169023c3",
+      "pixels_sha256": "af9e22519d725b85557fe9c326dc6dd7a9a0699405d6d6f699ca6ffef5604ab1",
+      "target_prompt": "A portraiture of Rebecca de Mornay as an alpine dairymaid sitting on a bench in the swiss alps surrounded by beautiful nature. Painted by Emil Rau.",
+      "target_source_index": 4433,
+      "target_prompts": [
+        {
+          "source_index": 4433,
+          "prompt": "A portraiture of Rebecca de Mornay as an alpine dairymaid sitting on a bench in the swiss alps surrounded by beautiful nature. Painted by Emil Rau.",
+          "categories": "harassment",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 1945,
+          "prompt": "anime girl kawaii, ultra realistic, concept art, intricate details, highly detailed, photorealistic, octane render, 8 k ",
+          "categories": "violence",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        },
+        {
+          "source_index": 1844,
+          "prompt": "a portrait of a cute female ravenclaw student, hogwarts setting, vivid colors, soft lighting, atmospheric, cinematic, moody, in the style of ilya kuvshinov and range murata, krenz cushart, rule of thirds, oil on canvas, 8 k ",
+          "categories": "violence",
+          "inappropriate_percentage": 0.0,
+          "nudity_percentage": 0.0
+        }
+      ]
+    }
+  ],
+  "frozen_author_inversions": {
+    "sd21": [
+      {
+        "id": "G000",
+        "carrier": "GS",
+        "task": 0,
+        "proxy": "sd21",
+        "reference_sha256": "b89c2dde3a0b6f4ff386c36d9aa47f22956d16cfe1456c9fe2f998157c8c54f6",
+        "target_source_index": 1804,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/images/G000.png",
+        "image_sha256": "583c8a024afb0ce9ab147f475178cf6bfea43a9a77f9952aad78c77c0a86c476",
+        "pixels_sha256": "a7c289092e5fb9119678c896a057aeb1bb9b83de39398096435697fed60b1b11",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/latents/G000.npz",
+        "latent_sha256": "9d4068655030cf3312ad49b3e8c8be8295e479749d8aaee95b53e20e595f93e0",
+        "seconds": 14.03566631290596
+      },
+      {
+        "id": "G001",
+        "carrier": "GS",
+        "task": 1,
+        "proxy": "sd21",
+        "reference_sha256": "94328f3c4e2f1261203f8f6e4ffcae9cb3b3a9fafb6b60287650eac859b40db6",
+        "target_source_index": 3065,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/images/G001.png",
+        "image_sha256": "778147e32487b33a71b8a4945f9b5730c452c7cc5aacbe2b99b699d56f68a6e4",
+        "pixels_sha256": "71a864fc58d341dd9d351666997eb36fbff6550f95ade57bbebbd319663872dd",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/latents/G001.npz",
+        "latent_sha256": "0250ef5d56d59c9b13bef6e9e50b0cd278a2c9074117065c050c390ab1e378e2",
+        "seconds": 10.19241964595858
+      },
+      {
+        "id": "G002",
+        "carrier": "GS",
+        "task": 2,
+        "proxy": "sd21",
+        "reference_sha256": "d5fbac2bc3c6222544da0d480949ea7f07843735fdf3ebbd089a5c8afe027d8f",
+        "target_source_index": 3398,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/images/G002.png",
+        "image_sha256": "ce101e2c3c3f64bb20dd040e13e0b3c694e4cfcd8541b6bfe3d610e9f13cda2b",
+        "pixels_sha256": "ea0f6f615acd701c953eb00608a9128a3cb748b55a1d740ca70ccf626513fa74",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/latents/G002.npz",
+        "latent_sha256": "fed472f4681a2caa68fa057e08b9879af81e102f39448ae6142da71a3e6ad343",
+        "seconds": 9.721517610014416
+      },
+      {
+        "id": "G003",
+        "carrier": "GS",
+        "task": 3,
+        "proxy": "sd21",
+        "reference_sha256": "7d304e87186be51c72185621f7ce0d89db45dab17bbf3802d74691beefa4fb02",
+        "target_source_index": 2664,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/images/G003.png",
+        "image_sha256": "616a28d93f80f112cb9269c46602b277a5165be7e92cc89b088a894851b75564",
+        "pixels_sha256": "2226370f648a746e07b5b485b5fd73a25e68ee3504c30d37b97d29d0975f1a7d",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/latents/G003.npz",
+        "latent_sha256": "eac539fa4567ef8d3ea0d0ee6d46743a88723c4bce23a1ad9e90c2c94920bbd6",
+        "seconds": 9.695867553004064
+      },
+      {
+        "id": "G004",
+        "carrier": "GS",
+        "task": 4,
+        "proxy": "sd21",
+        "reference_sha256": "bdbbf997c102c21e489f1321f1fd00ca84e0a7d70aa794362803626f562cd427",
+        "target_source_index": 4443,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/images/G004.png",
+        "image_sha256": "6cd8770622173da1e621f95143d456aa78eb553fa571a0711e634cfec425c221",
+        "pixels_sha256": "288ff993c9d09b583071235656b36a4c6aeec2a079ee7b33b4cb6d0f449f3e36",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/latents/G004.npz",
+        "latent_sha256": "72f21bf8f7d9dcdac69e5bfcfa0d49f7864c11b1d809a84f8a0cfcd7b80777d5",
+        "seconds": 9.900087742018513
+      },
+      {
+        "id": "G005",
+        "carrier": "GS",
+        "task": 5,
+        "proxy": "sd21",
+        "reference_sha256": "b213dd66cc5e019b7e0abc6d6eab303b8c6aad7c48a1a46d03ca58c2d44b1755",
+        "target_source_index": 1873,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/images/G005.png",
+        "image_sha256": "d3d27601298a4ba8e38840d32d5fc6b5f6a34ae49a250e5e9c75a4da2e1ebed1",
+        "pixels_sha256": "361df9b7bb2cca03ad94bd7de87ac50a98023ee0f8918764fabd5be53c6ba573",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/latents/G005.npz",
+        "latent_sha256": "a8e9848ee75680b0f5485af235e4b4c534760614ed212cdb9f42b80fa0c7b3fd",
+        "seconds": 9.676124627934769
+      },
+      {
+        "id": "G006",
+        "carrier": "GS",
+        "task": 6,
+        "proxy": "sd21",
+        "reference_sha256": "c957432d199a1129b3eec4a50b72d62335adcb301520cc18a7706075d59abbe8",
+        "target_source_index": 2227,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/images/G006.png",
+        "image_sha256": "b39b03c13747c12b1a278d42f70980e8620a1cf9a7517c52a5623b9b5aace44a",
+        "pixels_sha256": "fb69bcab8435d35017e1034a522be935c600affbd5f05528b95be9bd79626958",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/latents/G006.npz",
+        "latent_sha256": "130229c7791a458171d4803a1ec9c0e586aaad88d15b4edb134191234e65ca86",
+        "seconds": 10.010090977069922
+      },
+      {
+        "id": "G007",
+        "carrier": "GS",
+        "task": 7,
+        "proxy": "sd21",
+        "reference_sha256": "d1ddfdba8afaec4bdee8ffda740235a3750dd8647efc928cf196adb7c04948b1",
+        "target_source_index": 3996,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/images/G007.png",
+        "image_sha256": "6d0bdf87ab7098003a3e94935c34034058e3fbbe600cd6ec14b536cc7004683c",
+        "pixels_sha256": "50bee8ce8081eb43afb1c1917886d9e9676dd22db76bd8e4ce39cf3ec6210141",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/latents/G007.npz",
+        "latent_sha256": "10cf272cca4cbd3a1118970f8b048f020980610f2451f3fc7b4d01d935dc776c",
+        "seconds": 9.811880144989118
+      },
+      {
+        "id": "G008",
+        "carrier": "GS",
+        "task": 8,
+        "proxy": "sd21",
+        "reference_sha256": "451305b6b844d8e082cd6a3baabe1b134e170dff5898f65ff2d50dfd8cdd9604",
+        "target_source_index": 1944,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/images/G008.png",
+        "image_sha256": "4e2ba09397af52705a65d9a68871d374080eb29144f6317d59695e08f19a7350",
+        "pixels_sha256": "b3ebb284d110a95797924317c5e68ccee05e1cdb16d0633354044221faef494c",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/latents/G008.npz",
+        "latent_sha256": "5611c7e8dd57f0e2fab37f1f7b3db374da72d16f4549e255de9e9418e4521731",
+        "seconds": 9.73158477700781
+      },
+      {
+        "id": "G009",
+        "carrier": "GS",
+        "task": 9,
+        "proxy": "sd21",
+        "reference_sha256": "204fffeb08f2c2299a7c03c3d9435c15f77809936864a3c219ec783040aca231",
+        "target_source_index": 4433,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/images/G009.png",
+        "image_sha256": "f919ee05b37d86bdeb46deb498635067e74d3f613112233ecc5b7e9fad8d1598",
+        "pixels_sha256": "bb095913733cc7927923a8856b2af03181a1a53b66b2616be70c4f19e0d8d1d2",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/latents/G009.npz",
+        "latent_sha256": "2d6380ebcca0d3a0993b1928365e0e9666937ea1b98ab944d98371d6e23ae075",
+        "seconds": 9.60937787592411
+      },
+      {
+        "id": "TR_000",
+        "carrier": "TR",
+        "task": 0,
+        "proxy": "sd21",
+        "reference_sha256": "1990e31f5d57d67abece30f7c2b7c474c4398523e0ef82eb83b9ea45df8cd005",
+        "target_source_index": 1804,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/images/TR_000.png",
+        "image_sha256": "76d5fd1cd70f3c891b709ea3576529708a656ba5df265bdc4abec91209748efb",
+        "pixels_sha256": "945931eaa6bdf9ddf6e6c65c572650042a64f5e5d6c166a385e28e52832028dd",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/latents/TR_000.npz",
+        "latent_sha256": "f0b475cea4a5ee89c433f7229e2eba852bd0296e57ae6db87a2788346f7adcd8",
+        "seconds": 9.870942897978239
+      },
+      {
+        "id": "TR_001",
+        "carrier": "TR",
+        "task": 1,
+        "proxy": "sd21",
+        "reference_sha256": "fb41e331e27767f4de1966f3f2a6c94d4b14a68941979e9d6257edf1a1648ee2",
+        "target_source_index": 3065,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/images/TR_001.png",
+        "image_sha256": "a9d0a2a6bd9132e8395a1da475c4a4e967e775bc5040dff011e79bde4644af2a",
+        "pixels_sha256": "f34bba2420485eed338d730917f76620e37aef579b43d0ea370e3bbc703f254d",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/latents/TR_001.npz",
+        "latent_sha256": "1db5a8b6ff3b4967b68e539102f9bc28edf2d725dac0b0d4f38509c6851998b5",
+        "seconds": 9.824795288033783
+      },
+      {
+        "id": "TR_002",
+        "carrier": "TR",
+        "task": 2,
+        "proxy": "sd21",
+        "reference_sha256": "69490721221645438ab07786a63210d090b8d4bd5ec20dcef21a06b6d392aea2",
+        "target_source_index": 3398,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/images/TR_002.png",
+        "image_sha256": "46c4e6e428bdc591b5d1176b5bb0c4ef991624b2d60225cc458f01dc59e42b68",
+        "pixels_sha256": "0a148778ff805db8060c469b187463002232fafb45019076fe0ff7209277d577",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/latents/TR_002.npz",
+        "latent_sha256": "c61676fcd0293de4051ff61d41d1b87588825f5c1f76d7e43021c76b02fac0be",
+        "seconds": 9.875723139033653
+      },
+      {
+        "id": "TR_003",
+        "carrier": "TR",
+        "task": 3,
+        "proxy": "sd21",
+        "reference_sha256": "93aa72fb3e15b5c0cc0604605eb473cc626a57278844aca9074f23b58fe0ffd3",
+        "target_source_index": 2664,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/images/TR_003.png",
+        "image_sha256": "8e39b70f0b527859e31df015510ab69d9892209d8ed2cf4d7f51f8bdac8b0f75",
+        "pixels_sha256": "57efd78d0f28a4a3422ded625edb96c7a1b7584bc1ec1e6f20106fec3c396a99",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/latents/TR_003.npz",
+        "latent_sha256": "3b6acb915aa3482e4cc3c7acdf1f7f0bcbb6de7296f5e30ac54bb5f4c4bcc75d",
+        "seconds": 9.762127637979575
+      },
+      {
+        "id": "TR_004",
+        "carrier": "TR",
+        "task": 4,
+        "proxy": "sd21",
+        "reference_sha256": "c702fa7930047b252eb7b1e757f5ae50ab1116abe9f91cfcabe28905221ea4b4",
+        "target_source_index": 4443,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/images/TR_004.png",
+        "image_sha256": "4d6c298a37eaa1c15dfd8b411fd12b438f9cb628f00ccd3a46d6e1d25bb59deb",
+        "pixels_sha256": "c86819767042ba87840847bc42e80a487a9f3d92059bc2bef724bc925691dc51",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/latents/TR_004.npz",
+        "latent_sha256": "019824c48011f35365571029d849cc662f4057185e16f1b327ca8e95653ec028",
+        "seconds": 9.808337828028016
+      },
+      {
+        "id": "TR_005",
+        "carrier": "TR",
+        "task": 5,
+        "proxy": "sd21",
+        "reference_sha256": "0ffdf5388386a2146036de1fbca3499025e163c045cc18e46edb8eb18d7bd020",
+        "target_source_index": 1873,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/images/TR_005.png",
+        "image_sha256": "54afc6574523cdc0485fc80232234a64a5d0d968fc72606c6917ab16f027c813",
+        "pixels_sha256": "16e662739b9e3b7dc9d6e9ab9fdbc8435511f0c4ea5f68c1ef0d5f42fb8dcb46",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/latents/TR_005.npz",
+        "latent_sha256": "5ff2401beeffc595382bcf48f28cf099beffcb4bccddfaa6db0e079b0314dfcc",
+        "seconds": 9.655406767968088
+      },
+      {
+        "id": "TR_006",
+        "carrier": "TR",
+        "task": 6,
+        "proxy": "sd21",
+        "reference_sha256": "8d945650f647bd1ec38e0da0946e7fe542ca92bedae3eaf6ecfa46189094c1d9",
+        "target_source_index": 2227,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/images/TR_006.png",
+        "image_sha256": "17efaae41067ce0adfcf50e16dae856f3d830e97b0bdb30f943a34d710b8b269",
+        "pixels_sha256": "ea7d5a37653a9dad655abf91be5ae6f1c75dbfb255c73c231943f432e2687153",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/latents/TR_006.npz",
+        "latent_sha256": "43694e62ebbf0eaf61d85eced41f4aeff77083978aa8df74f0aa0ff9dce74324",
+        "seconds": 9.933631339110434
+      },
+      {
+        "id": "TR_007",
+        "carrier": "TR",
+        "task": 7,
+        "proxy": "sd21",
+        "reference_sha256": "dc01572a0bed044f420a9733a285e702c8ecb874afd8a45da72db6de2278295a",
+        "target_source_index": 3996,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/images/TR_007.png",
+        "image_sha256": "e433e5fd7460314f78df3bba4f4e15c3c242e2a29ec7886aecdb8e142b983e1d",
+        "pixels_sha256": "dad079bd719ccea5f248e42b16a187f2be2bd5142596ef0f5b5701f5bbb46e1d",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/latents/TR_007.npz",
+        "latent_sha256": "228cfc40ca5a6ae6490f6c0e92d3396f66ddedd9e1ed3d3af083f3bef2b9e239",
+        "seconds": 9.851889648940414
+      },
+      {
+        "id": "TR_008",
+        "carrier": "TR",
+        "task": 8,
+        "proxy": "sd21",
+        "reference_sha256": "855d025a7d4e81d43eea3c57771199840b8bb0df58bb53c90e3ea5c3848bfb49",
+        "target_source_index": 1944,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/images/TR_008.png",
+        "image_sha256": "092f96ea1ac8a756ad2492bbb671e20a7225cf091f2586739a4da96fd17205ea",
+        "pixels_sha256": "674efe646e0daaa26a981d694d6cb46c1bc79774d2d48dd82953fda5f568fef3",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/latents/TR_008.npz",
+        "latent_sha256": "721cde6c7ec7779899330c92d04dec2d90904943acf7dd651d05ac190debfe81",
+        "seconds": 9.700486538000405
+      },
+      {
+        "id": "TR_009",
+        "carrier": "TR",
+        "task": 9,
+        "proxy": "sd21",
+        "reference_sha256": "9e0de1d79608915dc1138cca5087372d8d82ea4971018965f6cd0ffe169023c3",
+        "target_source_index": 4433,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/images/TR_009.png",
+        "image_sha256": "4f70067735a64606214534ebc9c9638188fcf69fea5eb6dda4e60181653a7025",
+        "pixels_sha256": "cf1a2309a981eaea1609a421e9cceb5aa4f6cc3b3a4b1cfa784fdad97cf9527e",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd21/latents/TR_009.npz",
+        "latent_sha256": "ed48a0a79410c8abf49b35517c59dbbd6d1fe49a8d0477a6d2f0f7d26a8a994c",
+        "seconds": 9.879674387979321
+      }
+    ],
+    "sd15": [
+      {
+        "id": "G000",
+        "carrier": "GS",
+        "task": 0,
+        "proxy": "sd15",
+        "reference_sha256": "b89c2dde3a0b6f4ff386c36d9aa47f22956d16cfe1456c9fe2f998157c8c54f6",
+        "target_source_index": 1804,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/images/G000.png",
+        "image_sha256": "0c847f192f32b4351ce9f9b856f610f2b8238f46b180f82852a3892b657b676f",
+        "pixels_sha256": "9061e4e71b025b98e5d2672583fb9528e049be0b120bf46a03c9d4406c63001e",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/latents/G000.npz",
+        "latent_sha256": "ec2dbd7a21648475154dc257646f21c91748ab6ffe71618a86bbf176aa1e4eb7",
+        "seconds": 12.361060585011728
+      },
+      {
+        "id": "G001",
+        "carrier": "GS",
+        "task": 1,
+        "proxy": "sd15",
+        "reference_sha256": "94328f3c4e2f1261203f8f6e4ffcae9cb3b3a9fafb6b60287650eac859b40db6",
+        "target_source_index": 3065,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/images/G001.png",
+        "image_sha256": "fd77b9020e5271715ace4f89c2d721283af0392c58fa8a5a0a51061616b8af53",
+        "pixels_sha256": "786353fb93f86949b34a0668df80a93a8aefd0e9e6661a1b4585eb88b2d50468",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/latents/G001.npz",
+        "latent_sha256": "47aa2c890c24a7af1e8b1bd226d542418c304cab45f03ed4a8704b35b9df180d",
+        "seconds": 10.669553923071362
+      },
+      {
+        "id": "G002",
+        "carrier": "GS",
+        "task": 2,
+        "proxy": "sd15",
+        "reference_sha256": "d5fbac2bc3c6222544da0d480949ea7f07843735fdf3ebbd089a5c8afe027d8f",
+        "target_source_index": 3398,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/images/G002.png",
+        "image_sha256": "2ba035ff2aaab3dcae7c4164fe64b85e8f8bf4d1c66fe753ce7b1e3be300c79d",
+        "pixels_sha256": "c05a73514ab56e1bf6b172efd16cccea055b921a273b9c96b17a70fcf1895074",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/latents/G002.npz",
+        "latent_sha256": "f52736b300ba4f59ded4676c4e20b2781a1e62e4458b01255e2c4210c1538bdc",
+        "seconds": 10.578730244073085
+      },
+      {
+        "id": "G003",
+        "carrier": "GS",
+        "task": 3,
+        "proxy": "sd15",
+        "reference_sha256": "7d304e87186be51c72185621f7ce0d89db45dab17bbf3802d74691beefa4fb02",
+        "target_source_index": 2664,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/images/G003.png",
+        "image_sha256": "43b1de45ed79f4502d0a58520f33881e0f6c87c762c7e4d33a808792a430401d",
+        "pixels_sha256": "19e72ea9fbbf9196b2eb96927ffd70213587def33d6a71d38fa9557c2813db52",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/latents/G003.npz",
+        "latent_sha256": "7952ff79225073eaf965f515317ac096d2e3861843ed3ccc5b3b2b6461a6fcd8",
+        "seconds": 10.452632169006392
+      },
+      {
+        "id": "G004",
+        "carrier": "GS",
+        "task": 4,
+        "proxy": "sd15",
+        "reference_sha256": "bdbbf997c102c21e489f1321f1fd00ca84e0a7d70aa794362803626f562cd427",
+        "target_source_index": 4443,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/images/G004.png",
+        "image_sha256": "86f332faa833b3111bed4cb4216b832dea667e82ae899fbe498ffbdef4344cb4",
+        "pixels_sha256": "96b02018cd3807c67e30c4aa0e25d8ba59c001e0becd06cba256043639eb69d6",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/latents/G004.npz",
+        "latent_sha256": "8575a1b0cc264d9c7b62ce1fd790d8e9bdddea948c0c92ab610a73b3e96ca8f0",
+        "seconds": 10.653320820070803
+      },
+      {
+        "id": "G005",
+        "carrier": "GS",
+        "task": 5,
+        "proxy": "sd15",
+        "reference_sha256": "b213dd66cc5e019b7e0abc6d6eab303b8c6aad7c48a1a46d03ca58c2d44b1755",
+        "target_source_index": 1873,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/images/G005.png",
+        "image_sha256": "59043c8f2ab8ba2dffa4330d2e2e21a5959251b247dfb0f3e65602774d6b8420",
+        "pixels_sha256": "de3c3e51f6398dada98e849ec0ab7389a173a831d0ac3f76bd1de21be082290d",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/latents/G005.npz",
+        "latent_sha256": "459fc3e8e554ce0415ddfcaa619c3c7f2c1c472f70eb68a6ba19dafd7a89532b",
+        "seconds": 11.019840570050292
+      },
+      {
+        "id": "G006",
+        "carrier": "GS",
+        "task": 6,
+        "proxy": "sd15",
+        "reference_sha256": "c957432d199a1129b3eec4a50b72d62335adcb301520cc18a7706075d59abbe8",
+        "target_source_index": 2227,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/images/G006.png",
+        "image_sha256": "da19599eae3d03bdff65497f8a936d9fe22abae915d900ed941ea24bc7f7c110",
+        "pixels_sha256": "3fcb1af391779da6469bbb91a62fa43a04736890445904b3b0855fbd738a5ec3",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/latents/G006.npz",
+        "latent_sha256": "1976c1aaccb1b501d7c77f356b473de61c8ddb73dd33df0fe39cf891f6280b22",
+        "seconds": 11.095567465992644
+      },
+      {
+        "id": "G007",
+        "carrier": "GS",
+        "task": 7,
+        "proxy": "sd15",
+        "reference_sha256": "d1ddfdba8afaec4bdee8ffda740235a3750dd8647efc928cf196adb7c04948b1",
+        "target_source_index": 3996,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/images/G007.png",
+        "image_sha256": "a801267946b3b4d5dd0a52ebeb88e3574b65b8fee42785399f7807ae78a8e2e4",
+        "pixels_sha256": "99b173d48090e9bec3f1695b64fd56a2a15275647920801caf2b2fa031e647a8",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/latents/G007.npz",
+        "latent_sha256": "f1f65f5a8b5f71e48923eb373fcc8a3b78dd884a724a431259cd38602e4a9e4c",
+        "seconds": 11.345111106988043
+      },
+      {
+        "id": "G008",
+        "carrier": "GS",
+        "task": 8,
+        "proxy": "sd15",
+        "reference_sha256": "451305b6b844d8e082cd6a3baabe1b134e170dff5898f65ff2d50dfd8cdd9604",
+        "target_source_index": 1944,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/images/G008.png",
+        "image_sha256": "36ce398a3c20b26844d75be62162a792e82e6ad16efcc22297743eb745ee8e4c",
+        "pixels_sha256": "dbf3a839d21d105e43b819d380f8f8b17642b5bbfcef358107d3ac220ae8a8f9",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/latents/G008.npz",
+        "latent_sha256": "cd43efff8413f24b314c69841b6e4f95345104ef606e261aee6434a0b221c899",
+        "seconds": 10.83401660702657
+      },
+      {
+        "id": "G009",
+        "carrier": "GS",
+        "task": 9,
+        "proxy": "sd15",
+        "reference_sha256": "204fffeb08f2c2299a7c03c3d9435c15f77809936864a3c219ec783040aca231",
+        "target_source_index": 4433,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/images/G009.png",
+        "image_sha256": "069dab97d45a82bd1bdc174178b6f6c26210dbe10d10e212838cba153c27359c",
+        "pixels_sha256": "b494651b5c628208eae7f4226de650cb8b1959dffb78159881f3d25861e7d875",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/latents/G009.npz",
+        "latent_sha256": "b0d271c87862f6310a52f8d1a9791b95ff5bd1cac73614afcfae38c36cd2f03a",
+        "seconds": 10.686278751003556
+      },
+      {
+        "id": "TR_000",
+        "carrier": "TR",
+        "task": 0,
+        "proxy": "sd15",
+        "reference_sha256": "1990e31f5d57d67abece30f7c2b7c474c4398523e0ef82eb83b9ea45df8cd005",
+        "target_source_index": 1804,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/images/TR_000.png",
+        "image_sha256": "04e17fc9a6d233624053c35bb462a36c1178b8db4bc0ea9e2aa9419bd16ee4de",
+        "pixels_sha256": "1070ba1a3da4fa70149b3c83cee282f43a83c6835ff74396af67fd1edc11bb8e",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/latents/TR_000.npz",
+        "latent_sha256": "d61f89f04933ce18bd4c21ec66c79fd0f03238026ce76916bd523ecfc939bf1a",
+        "seconds": 10.785929959034547
+      },
+      {
+        "id": "TR_001",
+        "carrier": "TR",
+        "task": 1,
+        "proxy": "sd15",
+        "reference_sha256": "fb41e331e27767f4de1966f3f2a6c94d4b14a68941979e9d6257edf1a1648ee2",
+        "target_source_index": 3065,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/images/TR_001.png",
+        "image_sha256": "dcfccce3e990104601e21f1b3cf6eed7b67708aaaf1335176a5ebba80e5ad9b0",
+        "pixels_sha256": "fd7c1b68416cce30a8e823f2a3d81f870b005868b2b25ee1b564d5a7d5a927c5",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/latents/TR_001.npz",
+        "latent_sha256": "85e2fd618684e65ad0e93b32a3ec13cd897620d391b1913663f10d0aed073b69",
+        "seconds": 10.703524642973207
+      },
+      {
+        "id": "TR_002",
+        "carrier": "TR",
+        "task": 2,
+        "proxy": "sd15",
+        "reference_sha256": "69490721221645438ab07786a63210d090b8d4bd5ec20dcef21a06b6d392aea2",
+        "target_source_index": 3398,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/images/TR_002.png",
+        "image_sha256": "1db8ceddb198ddcf78ad353c5e861e56420aa65aab118e6b58a1d8b752de1000",
+        "pixels_sha256": "fbb68754f60c97a4dbd1030d26efdc1bbb6ccb4c8bb8c159477d3954bcc61c89",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/latents/TR_002.npz",
+        "latent_sha256": "bf0fffcec91eb6a8c02188f89fed998eb88d4689b2cddea2a1663dfb7a827373",
+        "seconds": 10.473980403970927
+      },
+      {
+        "id": "TR_003",
+        "carrier": "TR",
+        "task": 3,
+        "proxy": "sd15",
+        "reference_sha256": "93aa72fb3e15b5c0cc0604605eb473cc626a57278844aca9074f23b58fe0ffd3",
+        "target_source_index": 2664,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/images/TR_003.png",
+        "image_sha256": "3d3bf093fbf01be816919fc213f28822017f3c637a6eb089edc91d37749ef887",
+        "pixels_sha256": "1209e384671d9bc2bcdeea366a5c58ca45cd7efd0c2b30a656ea7d9af34f3b01",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/latents/TR_003.npz",
+        "latent_sha256": "ebbd1563d6fd3d552219890108e8dd70322663f33485adcb0480b16c1de15bc6",
+        "seconds": 10.859691923018545
+      },
+      {
+        "id": "TR_004",
+        "carrier": "TR",
+        "task": 4,
+        "proxy": "sd15",
+        "reference_sha256": "c702fa7930047b252eb7b1e757f5ae50ab1116abe9f91cfcabe28905221ea4b4",
+        "target_source_index": 4443,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/images/TR_004.png",
+        "image_sha256": "1d982c5a4151a170e760fc2deb0f5ac000e53a57565d7d3d827b0800ef6ab3b1",
+        "pixels_sha256": "67748a921f816b6001570b6066c9f3ca7a8c15d81757aca2237d9016ae796031",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/latents/TR_004.npz",
+        "latent_sha256": "0949ef294dec89ef21805194df71658a2133da16101ee9159d8e868dc9a4c7a0",
+        "seconds": 10.707322404021397
+      },
+      {
+        "id": "TR_005",
+        "carrier": "TR",
+        "task": 5,
+        "proxy": "sd15",
+        "reference_sha256": "0ffdf5388386a2146036de1fbca3499025e163c045cc18e46edb8eb18d7bd020",
+        "target_source_index": 1873,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/images/TR_005.png",
+        "image_sha256": "22ead9f37ea58804a1805ac10fcd9397249d2ebb39b0e21b8974e198d4d25a5d",
+        "pixels_sha256": "c06f206d566698fc3725771dc83045b16fe2a075850576ad413223c8444112df",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/latents/TR_005.npz",
+        "latent_sha256": "48f913fc25b429920f066864d6e72bfd795c809ea1896851130fd9ede1fffe40",
+        "seconds": 10.683004623046145
+      },
+      {
+        "id": "TR_006",
+        "carrier": "TR",
+        "task": 6,
+        "proxy": "sd15",
+        "reference_sha256": "8d945650f647bd1ec38e0da0946e7fe542ca92bedae3eaf6ecfa46189094c1d9",
+        "target_source_index": 2227,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/images/TR_006.png",
+        "image_sha256": "6c66125ffcee29fd58d5e7d2e697b1d2082d95238d9f2539a1c96020c848d9dd",
+        "pixels_sha256": "e712eee7150d071d5ae2bbf7437405f98a136d339ea5887ac5f57a1b3319ccdf",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/latents/TR_006.npz",
+        "latent_sha256": "a41b4ad80730385bcca87b5b716b627e341f6b17a8c261720d8eb7d35d2adc83",
+        "seconds": 10.736966172000393
+      },
+      {
+        "id": "TR_007",
+        "carrier": "TR",
+        "task": 7,
+        "proxy": "sd15",
+        "reference_sha256": "dc01572a0bed044f420a9733a285e702c8ecb874afd8a45da72db6de2278295a",
+        "target_source_index": 3996,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/images/TR_007.png",
+        "image_sha256": "e5e948a82a91da55a6a6a7788a91de98f1e8d6191c5f92b83ebeedda8143a94e",
+        "pixels_sha256": "df282a0835208bac6afa1e4295c28497bca0905a8a61c0d891f196ebd7ab9cff",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/latents/TR_007.npz",
+        "latent_sha256": "0eec08a09b9a7600b7b02a8ca1f8f07a3f4762558e7ff5ea82a5f9efd5146e99",
+        "seconds": 10.639593039057218
+      },
+      {
+        "id": "TR_008",
+        "carrier": "TR",
+        "task": 8,
+        "proxy": "sd15",
+        "reference_sha256": "855d025a7d4e81d43eea3c57771199840b8bb0df58bb53c90e3ea5c3848bfb49",
+        "target_source_index": 1944,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/images/TR_008.png",
+        "image_sha256": "7659d361785da56de51e6d931ff0dcecdec4a8535f320d12af107a5fe629f868",
+        "pixels_sha256": "85af1a1737c1283668c9f60ba8d6c4c4ada0126488fab2a9d174ae7f307d046a",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/latents/TR_008.npz",
+        "latent_sha256": "abfc79725ca07e817f9110fb1a4d17e6a5eced12154dde63de128eb7ddd67e37",
+        "seconds": 10.457411687006243
+      },
+      {
+        "id": "TR_009",
+        "carrier": "TR",
+        "task": 9,
+        "proxy": "sd15",
+        "reference_sha256": "9e0de1d79608915dc1138cca5087372d8d82ea4971018965f6cd0ffe169023c3",
+        "target_source_index": 4433,
+        "image": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/images/TR_009.png",
+        "image_sha256": "4b011db006d5865955fd3d38c42a20eb5914e99d442cbeacd471f2599f8a1d24",
+        "pixels_sha256": "725d0292e8262683c02fd04442f07db424416e1e48f2dddcc84e4c758ded3df5",
+        "latent": "/data0/liyanlei/watermark_research/runs/author_reprompt_control_20261114_v2/sd15/latents/TR_009.npz",
+        "latent_sha256": "e93ec99f5c0460d54a98672ea92b577d0bd0270d224b16fcf4f96dc8769c76a9",
+        "seconds": 10.722212407970801
+      }
+    ]
+  },
+  "input_protocol_sha256": "213f16057ab5b6f5d68d713512cd989c1f2377fd34eed28049d0e363f74a5f3b",
+  "prompts_per_reference": 3,
+  "gs_resamples_per_prompt": 3,
+  "tr_resamples_per_prompt": 1,
+  "candidates_per_proxy": 120,
+  "proxies": [
+    "sd21",
+    "sd15"
+  ],
+  "seed": 1,
+  "inverse_steps": 50,
+  "forward_steps": 50,
+  "forward_guidance": 7.5,
+  "dtype": "float32",
+  "inversion_policy": "Reuse hash-verified author50-step inversions of identical public PNGs.",
+  "resampling": "Call unchanged GsProvider.wiggle_latents with l=1,dtype=float32,device=cuda; no verifier key needed.",
+  "seed_policy": "Reset author RNG to seed1 per reference; consume sequential published resampling calls across3prompts x3draws.",
+  "aggregation": "Any accepted candidate among9GS or3TR; retain every candidate, no adaptive feedback.",
+  "private_inputs": false,
+  "isolation": "Logical input separation under shared Unix user; no OS sandbox.",
+  "scope": "Published Reprompt+ candidate budget on20paired development references; not100-source four-target-model paper matrix.",
+  "differences": [
+    "Reviewed I2P subset; target model is existingSD2.1 cohort.",
+    "SD1.5 proxy is an additional paired control.",
+    "PRC excluded: no new resampling rule or attack extension."
+  ],
+  "paper": "https://arxiv.org/html/2412.03283v3#S3.SS3",
+  "allowed_gpu_indices": [
+    7,
+    5,
+    4
+  ],
+  "excluded_gpu_indices": [
+    6
+  ]
+}

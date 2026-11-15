@@ -1,0 +1,67 @@
+{
+  "created_at": 1794704336.530132,
+  "scripts": {
+    "run_spatial_witness_recovery.py": "37da7a2b63d4ac3840e32a5fd3ac061795f92b7d9f18ccfc21aaabc803e937b4",
+    "run_observable_evidence.py": "84979bd62115f1b62253647dd9be0793c384b7981408f408249d41f673bf8f42",
+    "observable_evidence_recovery.py": "da76bba59c66cd673f0d07a97b8bdd1980ea314b3d46cee2e43e530e2c9309fb",
+    "spatial_witness_recovery.py": "33a9c296ec260dc8b32214bc4c5abac801d42d3c128edb3739d4f7285849d18d"
+  },
+  "private": "/data0/liyanlei/watermark_research/private_eval/observable_evidence_recovery_20261115",
+  "provider_sha256": "a05eaf441d9279492c50874cc150e1fd92601b5a9ad01e7bd30f795053f816e9",
+  "parent_protocol_sha256": "204dbe256f2e0c23016e75db4355e962fd11aa8e08b60b113facd6eb633db19d",
+  "parent_rows_sha256": "1b4503047d03d2c134583597fae9752f5b03b4a3279bef60415eb296954b6528",
+  "parent_controls_sha256": "ee32fff4a9a2191f5d9bc0707567781f7bb1ea93c1b780cf6018f3192088021d",
+  "evaluation_protocol_sha256": "6b4330bee59b434e08bf459a2283bf9bfab05a1804148d981851c8e09003c789",
+  "evaluation_pid": 6447,
+  "methods": [
+    "coarse",
+    "any_scale",
+    "all_scales",
+    "observable_scales"
+  ],
+  "variant": "observability",
+  "layout": "multiscale",
+  "payload_bits": 128,
+  "rs": [
+    255,
+    16,
+    239
+  ],
+  "visibility": "Perband median absolute selected-pair difference >=max(0.5,0.1*reference median margin);64observed symbols activate band.",
+  "witness_selection": "Three255symbol ordinal codewords on common17x15jittered grid:Gaussian8,Gaussian4-minus8,Gaussian2-minus4;8reference-margin-selected bits per symbol.",
+  "registration": "Fixed coordinates in all four methods; no SIFT,SSCD,CopyNCE,edit-label or attack-label input.",
+  "heldout_scope": "Same helper/key and evidence across four logical access rules; prospective method freeze on previously observed development images.",
+  "decoding": "Three actualRS(255,16)decodes with shared128bit key and exact confirmation. observable_scales requires coarse and every observable detail band.",
+  "exclusions": "Inactive detail bands may be omitted only by frozen unsigned margin rule. Active decoding failures cannot be relabeled erasures.",
+  "calibration": "No attack-based fitting; prescribed absolute/relative observability floors. Genuine-only existing strong-control thresholds and descriptive matched absoluteTPR.",
+  "source_split": {
+    "fit_sources": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "calibration_sources": [
+      4,
+      5,
+      6
+    ],
+    "evaluation_sources": [
+      7,
+      8,
+      9
+    ]
+  },
+  "scope": "Paired existing770record-query development cases including fullImprint and basicReprompt;3080actual recovery calls. Reprompt+ scored separately after its native evaluation.",
+  "dependency_versions": {
+    "opencv-python-headless": "4.10.0.84",
+    "reedsolo": "1.7.0"
+  },
+  "attacks_generated": false,
+  "experiment_host": "249",
+  "device": "CPU",
+  "codec_module": "observable_evidence_recovery",
+  "decoding_reuse": "Four access rules reuse the same three band candidates for each authenticated record/query; report3080APIdecisions and2310band observations separately, not9240independent decodes.",
+  "contribution_status": "Mechanism test. Layered authentication and multiscale error/erasure coding are prior art; new utility/novelty not established.",
+  "unknown_edit_scope": "Five non-enrollment families already in development data; no claim of independent unseen-edit confirmation."
+}

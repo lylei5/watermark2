@@ -110,6 +110,7 @@ def content(run, gpu):
         assert sha(control.AUTHOR/name) == digest
     refs = read(ATTACK / 'protocol.json')['references']
     queries = read(run / 'queries.json')
+    reference_count = len(refs)
     meta = refs + queries
     images = []
     for row in meta:
@@ -132,7 +133,7 @@ def content(run, gpu):
         indices={r['id']:i for i,r in enumerate(refs)}
         for i in range(0,len(queries),8):
             q=queries[i:i+8]
-            out=matcher({'queries':tensors[30+i:30+i+len(q)].cuda(), 'references':tensors[[indices[r['id']] for r in q]].cuda()})['preds']
+            out=matcher({'queries':tensors[reference_count+i:reference_count+i+len(q)].cuda(), 'references':tensors[[indices[r['id']] for r in q]].cuda()})['preds']
             matches.extend(out.cpu().numpy().reshape(-1).tolist())
     model = torch.jit.load(str(ROOT/'models/sscd/sscd_disc_mixup.torchscript.pt'),map_location='cuda').eval()
     tr = transforms.Compose([transforms.Resize([320,320]),transforms.ToTensor(),transforms.Normalize([.485,.456,.406],[.229,.224,.225])])
@@ -144,12 +145,12 @@ def content(run, gpu):
     rows=[]
     for i,row in enumerate(queries):
         r=indices[row['id']]
-        rows.append(dict(row,descriptor_distance=float(np.clip(1-ds[r]@ds[30+i],0,2)),matcher_distance=1-matches[i],
-            sscd_distance=float(np.clip(1-features[r]@features[30+i],0,2))))
+        rows.append(dict(row,descriptor_distance=float(np.clip(1-ds[r]@ds[reference_count+i],0,2)),matcher_distance=1-matches[i],
+            sscd_distance=float(np.clip(1-features[r]@features[reference_count+i],0,2))))
     write(run/'content_rows.json',rows)
     np.savez_compressed(run/'features.npz',sscd=features,descriptor=ds)
     write(run/'content_complete.json',dict(status='complete',gpu=gpu,gpu_uuid=uuid,seconds=time.monotonic()-begin,
-        rows=60,images=90,artifacts={n:sha(run/n) for n in ['content_rows.json','features.npz']}))
+        rows=len(queries),images=len(images),artifacts={n:sha(run/n) for n in ['content_rows.json','features.npz']}))
 
 
 def native(run, carrier, gpu):
@@ -187,13 +188,13 @@ def native(run, carrier, gpu):
     queries=read(run/'queries.json')
     csv_paths=([ROOT/f'runs/defense_revalidation_20261111/pgid{k}/attack=forgery/all_results.csv' for k in [0,5]] if carrier=='GS' else [COVERAGE/carrier/'attack=forgery/all_results.csv'])
     originals=[r for path in csv_paths for r in csv.DictReader(path.open())]
-    reuse=read(run/'protocol.json')['reuse']
-    rows=read(Path(reuse['run'])/'GS/rows.json') if carrier=='GS' else []
-    if carrier=='GS':
+    reuse=read(run/'protocol.json').get('reuse')
+    rows=read(Path(reuse['run'])/'GS/rows.json') if carrier=='GS' and reuse else []
+    if carrier=='GS' and reuse:
         assert sha(Path(reuse['run'])/'GS/rows.json')==reuse['artifacts']['GS/rows.json']
         assert len(rows)==20
         for row in rows:assert sha(row['latent'])==row['latent_sha256']
-    completed={(r['id'],r['proxy'],r['defended']) for r in rows}
+    completed={(r.get('trial') or r['id'],r['proxy'],r['defended']) for r in rows}
     for wm,idx in SemanticWatermarks[carrier].value.generate_watermark_signals(total_num_signals=10,latent_shape=provider.get_latent_shape(),
             batch_size=1,target_start_index=0,target_end_index=10,w_seed=parent['seed'],**kwargs):
         original=next(r for r in originals if int(r['image_idx'])==idx and r['stage']=='watermarked')
@@ -204,7 +205,7 @@ def native(run, carrier, gpu):
             assert sha(query['image'])==query['image_sha256']
             image=Image.open(query['image']).convert('RGB')
             for defended in [False,True]:
-                if (query['id'],query['proxy'],defended) in completed:
+                if (query.get('trial') or query['id'],query['proxy'],defended) in completed:
                     continue
                 set_random_seed(parent['seed'])
                 if defended:
@@ -217,13 +218,14 @@ def native(run, carrier, gpu):
                 result=validate(image,wm,provider,50,initial,provided_zT=z)
                 metric=float(result['bit_accuracy']) if carrier=='GS' else float(result['p_value']) if carrier=='TR' else bool(result['PRC_detection_results'])
                 accepted=metric>181/256 if carrier=='GS' else metric<threshold if carrier=='TR' else metric
-                latent=out/'latents'/f"{query['id']}_{query['proxy']}_{int(defended)}.npz"
+                trial=query.get('trial') or f"{query['id']}_{query['proxy']}"
+                latent=out/'latents'/f"{trial}_{int(defended)}.npz"
                 np.savez_compressed(latent,z=z.detach().cpu().numpy())
-                rows.append(dict(id=query['id'],carrier=carrier,task=idx,proxy=query['proxy'],defended=defended,
+                rows.append(dict(id=query['id'],trial=query.get('trial'),carrier=carrier,task=idx,proxy=query['proxy'],defended=defended,
                     pixels_sha256=query['pixels_sha256'],metric=metric,accepted=accepted,latent=str(latent),latent_sha256=sha(latent)))
                 write(out/'rows.json',rows)
-    assert len(rows)==40
-    write(out/'complete.json',dict(status='complete',gpu=gpu,gpu_uuid=uuid,rows=40,rows_sha256=sha(out/'rows.json'),
+    assert len(rows)==2*sum(q['carrier']==carrier for q in queries)
+    write(out/'complete.json',dict(status='complete',gpu=gpu,gpu_uuid=uuid,rows=len(rows),rows_sha256=sha(out/'rows.json'),
         seconds=time.monotonic()-begin,author_threshold=threshold,used_threshold=181/256 if carrier=='GS' else threshold,
         pgid=dict(steps=cfg.num_defense_steps,k=cfg.stopping_timestep,s=cfg.num_skip_inversion,gamma=cfg.guidance_strength)))
 

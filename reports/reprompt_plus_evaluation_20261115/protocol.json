@@ -1,0 +1,26 @@
+{
+  "created_at": 1794704336.4659662,
+  "attack": "/data0/liyanlei/watermark_research/runs/author_reprompt_plus_20261115",
+  "attack_protocol_sha256": "ea84b7b016b85ea1d7a350424cfa88048db30d87d1f830be0163e3787eaa4c6c",
+  "scripts": {
+    "copynce_control.py": "7321ed9493777eb754cf3cd2bba6ac5389f7a7d74448319c74d3b173f7fdd243",
+    "evaluate_author_reprompt.py": "2553adf116eade6841ae93867aa876ae05eac906e282c99e532b845a93548e9a",
+    "evaluate_reprompt_plus.py": "cabba0051ef1be7b4fd57f06a3e0bd88d331b8241d446f458d01858c81121e31"
+  },
+  "native_decisions": 480,
+  "content_candidates": 240,
+  "inversion": "Unchanged author native GS/TR DDIM50 and PGID-F50, published per-carrier parameters.",
+  "thresholds": "OriginalGS BA>181/256; originalTR p threshold; content uses frozenGS30 calibration thresholds.",
+  "aggregation": "Same candidate must pass both content recovery and native detection; then any candidate within fixed budget.",
+  "full_reference_denominator": true,
+  "attack_modified": false,
+  "allowed_gpu_indices": [
+    7,
+    5,
+    4
+  ],
+  "excluded_gpu_indices": [
+    6
+  ],
+  "scope": "10sources perGS/TR and two proxies, complete9/3candidate budget; noPRCextension or paper-scale claim."
+}

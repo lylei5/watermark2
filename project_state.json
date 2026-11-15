@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-14T05:45:27.600488+00:00",
-  "status": "reprompt_controls_and_recoverable_binding",
-  "active_experiments": 0,
-  "queued_experiments": 0,
+  "updated_at": "2026-11-15T01:05:09.160196+00:00",
+  "status": "reprompt_plus_and_observable_evidence",
+  "active_experiments": 2,
+  "queued_experiments": 1,
   "latest_progress_report": "reports/author_reprompt_control_20261114/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/INSTANCE_BINDING_RESEARCH.md",
@@ -58,7 +58,7 @@
   ],
   "max_concurrent_gpus": 3,
   "evaluation_policy": "Unchanged published top-venue attacks only; full budgets; no attack development; matched absolute genuine detection",
-  "current_decision": "Paired author basic Reprompt, native/PGID verification, spatial/visibility recovery, and matched controls complete. Visibility improves legitimate recovery but accepts many Reprompt candidates; neither prototype establishes an advantage over SSCD. Paper-scale attack matrix and a validated new defense remain open.",
+  "current_decision": "Published Reprompt+ budget running onGPU7/5; original native/PGID verification waits on attack completion events. Observable-band recovery running onCPU249. All methods frozen before their outcomes; no novelty or superiority claim.",
   "completed_evidence": [
     {
       "path": "reports/author_reprompt_control_20261114/report.md",
@@ -826,8 +826,31 @@
     },
     "superiority_established": false
   },
-  "active_runs": [],
-  "queued_runs": [],
+  "active_runs": [
+    {
+      "run": "author_reprompt_plus_20261115",
+      "pids": [
+        9852,
+        9853
+      ],
+      "device": "GPU7/5",
+      "protocol_sha256": "ea84b7b016b85ea1d7a350424cfa88048db30d87d1f830be0163e3787eaa4c6c"
+    },
+    {
+      "run": "observable_evidence_recovery_20261115",
+      "pid": 16876,
+      "device": "CPU249",
+      "protocol_sha256": "0ee40e8cde2319c1c62b28e8791eee70155c4acc650f6bbc150b6ac3a3df1954"
+    }
+  ],
+  "queued_runs": [
+    {
+      "run": "reprompt_plus_evaluation_20261115",
+      "pid": 16874,
+      "depends_on": "author_reprompt_plus_20261115",
+      "protocol_sha256": "4937c5d9cfb0d3a644e8f5408bad7786e7d78e256e3a2147a2d4366d53eeaa65"
+    }
+  ],
   "author_reprompt_control": {
     "run": "author_reprompt_control_20261114_v2",
     "status": "complete",
@@ -920,5 +943,39 @@
     ],
     "protocol_clarification": "reports/visible_witness_recovery_20261114/protocol_clarification.json"
   },
-  "research_hypothesis": "Edit-constrained evidence erasure with visible instance contradictions; not implemented or validated as a new method. Existing spatial/visibility prototypes remain negative controls."
+  "research_hypothesis": "Every observable detail band must support the same instance key; missing bands may be omitted by a frozen unsigned observability rule. Layered authentication has direct prior art; utility and novelty require results.",
+  "author_reprompt_plus": {
+    "run": "author_reprompt_plus_20261115",
+    "status": "running",
+    "protocol": "reports/author_reprompt_plus_20261115/protocol.json",
+    "protocol_sha256": "ea84b7b016b85ea1d7a350424cfa88048db30d87d1f830be0163e3787eaa4c6c",
+    "planned_candidates": 240,
+    "references": 20,
+    "gs_candidates_per_reference_per_proxy": 9,
+    "tr_candidates_per_reference_per_proxy": 3,
+    "attack_modified": false,
+    "paper_scale_matrix_complete": false,
+    "prc_extension": false,
+    "proxies": [
+      "sd21",
+      "sd15"
+    ]
+  },
+  "observable_evidence_recovery": {
+    "run": "observable_evidence_recovery_20261115",
+    "status": "running",
+    "protocol": "reports/observable_evidence_recovery_20261115/protocol.json",
+    "protocol_sha256": "0ee40e8cde2319c1c62b28e8791eee70155c4acc650f6bbc150b6ac3a3df1954",
+    "planned_recovery_api_decisions": 3080,
+    "record_query_pairs": 770,
+    "methods": [
+      "coarse",
+      "any_scale",
+      "all_scales",
+      "observable_scales"
+    ],
+    "independent_confirmation": false,
+    "superiority_established": false,
+    "design": "docs/OBSERVABLE_EVIDENCE_BINDING.md"
+  }
 }
