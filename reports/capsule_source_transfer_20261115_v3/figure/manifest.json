@@ -1,0 +1,27 @@
+{
+  "source_sha256": "b251598f6741628b2be30b4f4bd7774801864e2113318a6879768bd856727ae1",
+  "inputs": {
+    "/data0/liyanlei/watermark_research/runs/transported_capsule_observability_20261115/matched.json": "d21295555195eb99568ee58b8fa8d3f3b995e854352480d095f4b052d033f972",
+    "/data0/liyanlei/watermark_research/runs/capsule_source_transfer_20261115_v3/aggregate.json": "7b6b17df9908d54441dc077de14b1a1ecc5d483b1d8b087275d60164f568dfc8"
+  },
+  "outputs": {
+    "capsule_comparison.png": "5b30e7e935849a28009873e29cfd5dd15b0694684aef5e08ee23c83deae527ce",
+    "capsule_comparison.pdf": "3aa4c657e4d88fe343b61ab6928601d31b8061b020b480381945577e7fdefaf2",
+    "source_data.csv": "a3dcb5af4f1ce6bb0bb61de115c4ecb245e4bae3c262af79912bd38f220f912e"
+  },
+  "pixels": [
+    3600,
+    2700
+  ],
+  "figure_inches": [
+    12,
+    9
+  ],
+  "dpi": 300,
+  "matplotlib": "3.9.2",
+  "destination": "General research report, publisher-specific requirements not selected.",
+  "aggregation": "A:any candidate accepted per source/proxy at95/100genuine. B/C: observed counts from frozen transfer; genuine repeats share a source.",
+  "uncertainty": "Observed cohort counts, no population inference or significance claim.",
+  "missing": "No absent values plotted as zero.",
+  "text_bounds_passed": true
+}

@@ -6,6 +6,7 @@
 
 | 研究 | 已完成证据与边界 |
 |---|---|
+| [100实例前向恢复迁移](capsule_source_transfer_20261115_v3/report.md) | 2600次查询解码及100次登记核验；SSCD/CopyNCE1300图重新推理；主设置合法894/1000、同提示词不同实例0/100，SSCD899/1000、0/100 |
 | [可观察前向恢复](transported_capsule_observability_20261115/report.md) | 5050次解码、2026次准确密钥、317次原生检测；TR95/100时Reprompt+两代理0/10，与九模板SSCD相同 |
 | [前向密钥封装](transported_capsule_20261115/report.md) | 3030次实际解码、683次准确密钥；全部预设工作点合法覆盖不足；残差与直接参考预测误差等价 |
 | [Reprompt+实际恢复与强对照](reprompt_plus_recovery_20261115/report.md) | 960次恢复、473次准确返回、202次恢复材料原生调用；TR合法95/100、Reprompt+接受8/10与7/10，同合法SSCD各1/10；96项精确合法计数匹配完成 |

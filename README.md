@@ -2,15 +2,15 @@
 
 本项目研究扩散水印的内容绑定防御，同时建立可复核的SemBind、PGID、SEAL原生基线。[实时状态](project_state.json)记录运行队列；[验收契约](docs/THREE_BASELINE_REPRODUCTION.md)规定实现和数值复现的范围。
 
-最新结果为[Reprompt+完整预算与实际密钥恢复](reports/reprompt_plus_recovery_20261115/report.md)：240张候选、480条唯一原生/PGID判定、960次恢复，473次准确返回，202次恢复材料原生调用。GS/TR分别使用原作者9/3次候选预算、两代理、各10来源。TR上PGID接受8/10、8/10，对应合法通过60/100。此前[basic Reprompt与强对照](reports/author_reprompt_control_20261114/report.md)包含PRC两代理接受3/10、1/10、合法29/100的PGID结果。原论文的大样本多目标矩阵仍待完成。
+当前原型研究[随编辑前向变换的密钥恢复](docs/TRANSPORTED_KEY_CAPSULE.md)：用查询中的共享编辑关系同时约束辅助记录与密钥基函数，在剩余可用信息中恢复128位密钥。原生GS/TR/PRC载体保持原样。[成立条件](docs/FORWARD_RECOVERY_CONDITIONS.md)与[查新](docs/RECOVERY_MECHANISM_PRIOR_ART.md)分别说明数学范围和直接先例。
 
-已实现128位密钥恢复、原生材料解封和作者检测器调用。当前三尺度原型在TR合法通过95/100时，Reprompt+接受8/10、7/10；同合法通过数的SSCD为1/10、1/10。可观察规则与固定三尺度交集在此前770个配对及本批240张候选上均完全相同。实例混淆仍是主要瓶颈，新机制需要辨识合法编辑破坏的证据，同时保留可见的实例差异。[多尺度实验](reports/observable_evidence_recovery_20261115/report.md)、[方法说明](docs/OBSERVABLE_EVIDENCE_BINDING.md)与[文献边界](docs/RECOVERY_MECHANISM_PRIOR_ART.md)给出恢复条件、配对结果和直接先例。
+[完整开发攻击实验](reports/transported_capsule_observability_20261115/report.md)完成5050次解码、1158次材料解封及317次原生检测。主设置在TR合法95/100时，两代理Reprompt+均0/10；同通过数的单参考SSCD各1/10，九模板SSCD各0/10。直接参考图前向拟合也达到0/10，当前判别收益主要来自编辑关系。
 
-[2026-11-13研究汇报](presentations/defense_briefing_20261113/README.md)包含中山大学模板演示文稿、逐页讲稿和实验来源。
+[100实例来源迁移](reports/capsule_source_transfer_20261115_v3/report.md)完成2600次查询解码、100次登记核验，并重新执行1300图的SSCD和CopyNCE。固定阈值下，主设置合法894/1000、同提示词不同实例0/100；单参考SSCD为899/1000、0/100。主设置准确密钥覆盖963/1000，噪声组100/100可恢复但残差后仅45/100通过。跨来源合法覆盖、未见编辑和密钥层的独立贡献仍是研究重点。更早的失败和完整逐样本证据保留在[报告索引](reports/README.md)。
 
-[前向密钥封装实验](reports/transported_capsule_20261115/report.md)完成3030次实际解码，683次准确返回。三个设置的合法覆盖均未达到预定工作点；残差证书与直接参考图预测误差在代数和逐样本审计中等价。可观察秩与饱和处理是后续机制检验的明确问题。
+已发表攻击覆盖包括[原作者Reprompt+](reports/reprompt_plus_recovery_20261115/report.md)的GS/TR两代理、各10来源、9/3候选预算，共240张图与480条唯一原生/PGID判定。TR的PGID合法60/100，Reprompt+各接受8/10来源；[basic Reprompt](reports/author_reprompt_control_20261114/report.md)另含PRC。原论文大样本多目标矩阵与三个防御的完整共同工作点比较继续单独验收。
 
-[可观察前向恢复](reports/transported_capsule_observability_20261115/report.md)完成5050次解码、1158次材料解封及317次原生检测。主设置在TR合法95/100时，两代理Reprompt+均0/10；同通过数的单参考SSCD各1/10，九模板SSCD各0/10。前向参考图拟合也达到0/10，当前判别收益来自编辑关系，封装独立贡献与未知编辑泛化继续验证。
+[2026-11-13研究汇报](presentations/defense_briefing_20261113/README.md)保存当时的演示文稿与讲稿，当前研究结果以上述报告为准。
 
 ## 三个防御基线
 
@@ -30,6 +30,9 @@
 
 | 功能 | 入口 |
 |---|---|
+| 前向密钥封装与恢复 | [transported_key_capsule.py](scripts/defense/transported_key_capsule.py)，同编辑传输、可用坐标求解、认证解封 |
+| 完整攻击与强对照 | [run_transported_capsule.py](scripts/defense/run_transported_capsule.py)、[汇总](scripts/defense/summarize_transported_capsule.py)，冻结校准与同通过数比较 |
+| 来源迁移与新模型推理 | [validate_capsule_source_transfer.py](scripts/defense/validate_capsule_source_transfer.py)，固定阈值、原登记复用、同像素SSCD/CopyNCE |
 | SemBind语义码 | [semantic_code.py](scripts/defense/semantic_code.py) |
 | SemBind论文掩码 | [sembind_binding.py](scripts/defense/sembind_binding.py)，私有密钥；sigma为0至1 |
 | 原GS/GS-S图像闭环 | [run_phase1_probe_worker.py](scripts/defense/run_phase1_probe_worker.py)，冻结100提示词协议 |

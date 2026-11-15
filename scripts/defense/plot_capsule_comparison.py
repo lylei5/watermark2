@@ -22,7 +22,7 @@ def main():
     from PIL import Image
     from matplotlib.text import Text
     assert read(RUN/'complete.json')['status']==read(TRANSFER/'complete.json')['status']=='complete'
-    out=TRANSFER/'figure';out.mkdir(exist_ok=False)
+    out=TRANSFER/'figure_v2';out.mkdir(exist_ok=False)
     matches=read(RUN/'matched.json');aggregate=read(TRANSFER/'aggregate.json');data=[]
     names=[('candidate','Forward key recovery'),('sscd','SSCD single reference'),('sscd_centered','Centered SSCD'),
         ('sscd_templates','SSCD nine templates'),('sscd_int8_templates','SSCD int8 nine templates'),
@@ -43,7 +43,7 @@ def main():
                 data.append(dict(panel='A',method=method,condition=proxy,accepted=count,total=10))
             a.scatter(values,np.arange(len(names))+offset,label='SD2.1 proxy' if proxy=='sd21' else 'SD1.5 proxy',color=color,marker=marker,s=44,zorder=3)
         a.set(yticks=np.arange(len(names)),yticklabels=[v for _,v in names],xlim=(-.3,10.5),xticks=range(0,11,2),xlabel='Accepted Reprompt+ sources / 10 (lower is better)')
-        a.invert_yaxis();a.grid(axis='x',alpha=.20);a.legend(loc='lower right',frameon=False)
+        a.invert_yaxis();a.grid(axis='x',alpha=.20);a.legend(loc='center',bbox_to_anchor=(.65,.44),frameon=False)
         a.set_title('A  TR: all methods accept 95 / 100 genuine images',loc='left',fontweight='bold',pad=10)
         labels=[('spread_order_a03','Forward recovery'),('spread_order_identity_a03','Identity ablation'),('sscd','SSCD single'),('copynce_descriptor','CopyNCE descriptor'),('copynce_matcher','CopyNCE matcher')]
         for ax,kind,panel,title in [(b,'all_genuine','B','Genuine images'),(c,'same','C','Same-prompt different instances')]:
@@ -56,10 +56,12 @@ def main():
             for y,(v,n,d) in enumerate(zip(values,counts,totals)):ax.text(v+1.4,y,f'{n}/{d}',va='center',fontsize=9)
             ax.set(yticks=np.arange(len(labels)),yticklabels=[v for _,v in labels],xlim=(0,119),xticks=[0,25,50,75,100],xlabel='Observed acceptance (%)')
             ax.invert_yaxis();ax.grid(axis='x',alpha=.16);ax.set_axisbelow(True);ax.set_title(panel+'  '+title,loc='left',fontweight='bold',pad=10)
-        fig.subplots_adjust(left=.23,right=.97,top=.92,bottom=.14)
+        fig.subplots_adjust(left=.23,right=.97,top=.92,bottom=.23)
         fig.suptitle('Forward key recovery: development attacks and source transfer',x=.23,y=.975,ha='left',fontsize=14,fontweight='bold')
-        fig.text(.23,.06,'A: descriptive equal-genuine-count thresholds; three candidates per source and proxy.\nB–C: unchanged GS-development thresholds; 100 reference images, 10 genuine observations each.\nSource-transfer assets were used in earlier representation studies. Counts describe these cohorts; no population CI.',fontsize=9,ha='left',va='bottom')
+        note=fig.text(.23,.06,'A: descriptive equal-genuine-count thresholds; three candidates per source and proxy.\nB–C: unchanged GS-development thresholds; 100 reference images, 10 genuine observations each.\nSource-transfer assets were used in earlier representation studies. Counts describe these cohorts; no population CI.',fontsize=9,ha='left',va='bottom')
         fig.canvas.draw();renderer=fig.canvas.get_renderer();outside=[]
+        assert not note.get_window_extent(renderer).overlaps(b.xaxis.label.get_window_extent(renderer))
+        assert not note.get_window_extent(renderer).overlaps(c.xaxis.label.get_window_extent(renderer))
         for artist in fig.findobj(Text):
             if not artist.get_visible() or not artist.get_text():continue
             box=artist.get_window_extent(renderer)

@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "source_sha256": "c56dce3317b0f92a9534c184a75c2b5d5c360a9ad0e6d66624497def5eb36021",
+  "gpu": 7,
+  "pairs": [
+    {
+      "task": 0,
+      "single_pred": 0.35630279779434204,
+      "dense13_pred": 0.3563103675842285,
+      "run_pred": 0.3563103675842285,
+      "max_difference": 7.569789886474609e-06
+    },
+    {
+      "task": 1,
+      "single_pred": 0.8988007307052612,
+      "dense13_pred": 0.8987979292869568,
+      "run_pred": 0.8987979292869568,
+      "max_difference": 2.8014183044433594e-06
+    },
+    {
+      "task": 50,
+      "single_pred": 0.23787079751491547,
+      "dense13_pred": 0.23787587881088257,
+      "run_pred": 0.23787587881088257,
+      "max_difference": 5.081295967102051e-06
+    }
+  ],
+  "scope": "Three exact-reference pairs, released matcher, fixed weights; no score or threshold changes.",
+  "max_difference": 7.569789886474609e-06
+}

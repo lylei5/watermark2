@@ -1,0 +1,28 @@
+{
+  "status": "complete",
+  "pid": 1670,
+  "started_at": 1794723791.2323613,
+  "protocol_sha256": "63d34ed59c07b25a6d498564c6d214d9d98b54589b58b36cd5824e63d5e4f00a",
+  "gpu": 7,
+  "gpu_uuid": "GPU-9644fb82-cb6f-7311-8017-eaee41409bb7",
+  "seconds": 210.9613287448883,
+  "actual_decodes": 2600,
+  "enrollment_verification_decodes": 100,
+  "exact_keys": 2042,
+  "payload_returns": 1803,
+  "reference_overlap": 0,
+  "paired_pixel_checks": 1300,
+  "sscd_max_feature_difference": 0.0,
+  "fresh_sscd_images": 1300,
+  "fresh_copynce_images": 1300,
+  "fresh_copynce_pairs": 1300,
+  "native_detector_calls": 0,
+  "attacks_generated": false,
+  "artifacts": {
+    "rows.json": "400995a86b2c83de4a9e035bf9d27b07fd6141e3e86beb960229158c62663ff6",
+    "enrollment.json": "0f734a08f7cfdec1bc5ad81b2dea77cf5641e8e54c51624ba5d02fa6e3c80abc",
+    "aggregate.json": "7b6b17df9908d54441dc077de14b1a1ecc5d483b1d8b087275d60164f568dfc8",
+    "matched.json": "b08d899964d7400fa015efafbf1e76c7ac243163c2eabad535dbf74492cc6f4c",
+    "model_parity.json": "f7cfc7bcabd96a5ad91804ba6bca2925cbe5f7bda5a4b97e275c7cdf0ccaaad0"
+  }
+}

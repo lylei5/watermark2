@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "source_sha256": "9e0857c5aaee89faf6f2165a55809a8baedbba12cece0748f9ec458052492331",
+  "input_complete_sha256": "a468c02c74de9c087dd2feba30eb50136630ed3cfbaeb8e78c3c956dd78da42c",
+  "observations": 2600,
+  "paired_queries": 1300,
+  "reference_ids": 100,
+  "distinct_reference_pixels": 100,
+  "distinct_query_pixels": 1300,
+  "exact_keys": 2042,
+  "payload_returns": 1803,
+  "enrollment_verification_decodes": 100,
+  "matched_points": 90,
+  "exact_genuine_count_matches": 90,
+  "matched_outcomes": {
+    "equal": 74,
+    "better": 16
+  },
+  "gpu": 7,
+  "gpu_uuid": "GPU-9644fb82-cb6f-7311-8017-eaee41409bb7",
+  "native_calls": 0,
+  "attack_generation": false,
+  "sscd_feature_parity": {
+    "rows": 2600,
+    "sscd_max_feature_difference": 0.0,
+    "sscd_batch_size": 1,
+    "limit": 2e-05
+  }
+}

@@ -1,0 +1,1667 @@
+[
+  {
+    "dataset": "all",
+    "method": "spread_order_a03",
+    "kind": "all_genuine",
+    "total": 1000,
+    "keys": 963,
+    "accepted": 894
+  },
+  {
+    "dataset": "all",
+    "method": "spread_order_a03",
+    "kind": "all_edits",
+    "total": 900,
+    "keys": 863,
+    "accepted": 794
+  },
+  {
+    "dataset": "all",
+    "method": "spread_order_a03",
+    "kind": "aux",
+    "total": 100,
+    "keys": 1,
+    "accepted": 0
+  },
+  {
+    "dataset": "all",
+    "method": "spread_order_a03",
+    "kind": "same",
+    "total": 100,
+    "keys": 1,
+    "accepted": 0
+  },
+  {
+    "dataset": "all",
+    "method": "spread_order_a03",
+    "kind": "gs",
+    "total": 100,
+    "keys": 1,
+    "accepted": 0
+  },
+  {
+    "dataset": "all",
+    "method": "spread_order_a03",
+    "kind": "bound",
+    "total": 100,
+    "keys": 100,
+    "accepted": 100
+  },
+  {
+    "dataset": "all",
+    "method": "spread_order_a03",
+    "kind": "random_crop_ratio",
+    "total": 100,
+    "keys": 100,
+    "accepted": 98
+  },
+  {
+    "dataset": "all",
+    "method": "spread_order_a03",
+    "kind": "random_drop_ratio",
+    "total": 100,
+    "keys": 93,
+    "accepted": 91
+  },
+  {
+    "dataset": "all",
+    "method": "spread_order_a03",
+    "kind": "brightness_factor",
+    "total": 100,
+    "keys": 70,
+    "accepted": 70
+  },
+  {
+    "dataset": "all",
+    "method": "spread_order_a03",
+    "kind": "jpeg_ratio",
+    "total": 100,
+    "keys": 100,
+    "accepted": 100
+  },
+  {
+    "dataset": "all",
+    "method": "spread_order_a03",
+    "kind": "gaussian_blur_r",
+    "total": 100,
+    "keys": 100,
+    "accepted": 96
+  },
+  {
+    "dataset": "all",
+    "method": "spread_order_a03",
+    "kind": "gaussian_std",
+    "total": 100,
+    "keys": 100,
+    "accepted": 45
+  },
+  {
+    "dataset": "all",
+    "method": "spread_order_a03",
+    "kind": "median_blur_k",
+    "total": 100,
+    "keys": 100,
+    "accepted": 100
+  },
+  {
+    "dataset": "all",
+    "method": "spread_order_a03",
+    "kind": "sp_prob",
+    "total": 100,
+    "keys": 100,
+    "accepted": 100
+  },
+  {
+    "dataset": "all",
+    "method": "spread_order_a03",
+    "kind": "resize_ratio",
+    "total": 100,
+    "keys": 100,
+    "accepted": 94
+  },
+  {
+    "dataset": "all",
+    "method": "spread_order_identity_a03",
+    "kind": "all_genuine",
+    "total": 1000,
+    "keys": 924,
+    "accepted": 909
+  },
+  {
+    "dataset": "all",
+    "method": "spread_order_identity_a03",
+    "kind": "all_edits",
+    "total": 900,
+    "keys": 824,
+    "accepted": 809
+  },
+  {
+    "dataset": "all",
+    "method": "spread_order_identity_a03",
+    "kind": "aux",
+    "total": 100,
+    "keys": 53,
+    "accepted": 0
+  },
+  {
+    "dataset": "all",
+    "method": "spread_order_identity_a03",
+    "kind": "same",
+    "total": 100,
+    "keys": 48,
+    "accepted": 0
+  },
+  {
+    "dataset": "all",
+    "method": "spread_order_identity_a03",
+    "kind": "gs",
+    "total": 100,
+    "keys": 51,
+    "accepted": 0
+  },
+  {
+    "dataset": "all",
+    "method": "spread_order_identity_a03",
+    "kind": "bound",
+    "total": 100,
+    "keys": 100,
+    "accepted": 100
+  },
+  {
+    "dataset": "all",
+    "method": "spread_order_identity_a03",
+    "kind": "random_crop_ratio",
+    "total": 100,
+    "keys": 100,
+    "accepted": 100
+  },
+  {
+    "dataset": "all",
+    "method": "spread_order_identity_a03",
+    "kind": "random_drop_ratio",
+    "total": 100,
+    "keys": 100,
+    "accepted": 100
+  },
+  {
+    "dataset": "all",
+    "method": "spread_order_identity_a03",
+    "kind": "brightness_factor",
+    "total": 100,
+    "keys": 24,
+    "accepted": 10
+  },
+  {
+    "dataset": "all",
+    "method": "spread_order_identity_a03",
+    "kind": "jpeg_ratio",
+    "total": 100,
+    "keys": 100,
+    "accepted": 100
+  },
+  {
+    "dataset": "all",
+    "method": "spread_order_identity_a03",
+    "kind": "gaussian_blur_r",
+    "total": 100,
+    "keys": 100,
+    "accepted": 100
+  },
+  {
+    "dataset": "all",
+    "method": "spread_order_identity_a03",
+    "kind": "gaussian_std",
+    "total": 100,
+    "keys": 100,
+    "accepted": 99
+  },
+  {
+    "dataset": "all",
+    "method": "spread_order_identity_a03",
+    "kind": "median_blur_k",
+    "total": 100,
+    "keys": 100,
+    "accepted": 100
+  },
+  {
+    "dataset": "all",
+    "method": "spread_order_identity_a03",
+    "kind": "sp_prob",
+    "total": 100,
+    "keys": 100,
+    "accepted": 100
+  },
+  {
+    "dataset": "all",
+    "method": "spread_order_identity_a03",
+    "kind": "resize_ratio",
+    "total": 100,
+    "keys": 100,
+    "accepted": 100
+  },
+  {
+    "dataset": "all",
+    "method": "sscd",
+    "kind": "all_genuine",
+    "total": 1000,
+    "accepted": 899
+  },
+  {
+    "dataset": "all",
+    "method": "sscd",
+    "kind": "all_edits",
+    "total": 900,
+    "accepted": 799
+  },
+  {
+    "dataset": "all",
+    "method": "sscd",
+    "kind": "aux",
+    "total": 100,
+    "accepted": 0
+  },
+  {
+    "dataset": "all",
+    "method": "sscd",
+    "kind": "same",
+    "total": 100,
+    "accepted": 0
+  },
+  {
+    "dataset": "all",
+    "method": "sscd",
+    "kind": "gs",
+    "total": 100,
+    "accepted": 0
+  },
+  {
+    "dataset": "all",
+    "method": "sscd",
+    "kind": "bound",
+    "total": 100,
+    "accepted": 100
+  },
+  {
+    "dataset": "all",
+    "method": "sscd",
+    "kind": "random_crop_ratio",
+    "total": 100,
+    "accepted": 88
+  },
+  {
+    "dataset": "all",
+    "method": "sscd",
+    "kind": "random_drop_ratio",
+    "total": 100,
+    "accepted": 33
+  },
+  {
+    "dataset": "all",
+    "method": "sscd",
+    "kind": "brightness_factor",
+    "total": 100,
+    "accepted": 79
+  },
+  {
+    "dataset": "all",
+    "method": "sscd",
+    "kind": "jpeg_ratio",
+    "total": 100,
+    "accepted": 100
+  },
+  {
+    "dataset": "all",
+    "method": "sscd",
+    "kind": "gaussian_blur_r",
+    "total": 100,
+    "accepted": 100
+  },
+  {
+    "dataset": "all",
+    "method": "sscd",
+    "kind": "gaussian_std",
+    "total": 100,
+    "accepted": 99
+  },
+  {
+    "dataset": "all",
+    "method": "sscd",
+    "kind": "median_blur_k",
+    "total": 100,
+    "accepted": 100
+  },
+  {
+    "dataset": "all",
+    "method": "sscd",
+    "kind": "sp_prob",
+    "total": 100,
+    "accepted": 100
+  },
+  {
+    "dataset": "all",
+    "method": "sscd",
+    "kind": "resize_ratio",
+    "total": 100,
+    "accepted": 100
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_descriptor",
+    "kind": "all_genuine",
+    "total": 1000,
+    "accepted": 912
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_descriptor",
+    "kind": "all_edits",
+    "total": 900,
+    "accepted": 812
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_descriptor",
+    "kind": "aux",
+    "total": 100,
+    "accepted": 6
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_descriptor",
+    "kind": "same",
+    "total": 100,
+    "accepted": 8
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_descriptor",
+    "kind": "gs",
+    "total": 100,
+    "accepted": 12
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_descriptor",
+    "kind": "bound",
+    "total": 100,
+    "accepted": 100
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_descriptor",
+    "kind": "random_crop_ratio",
+    "total": 100,
+    "accepted": 100
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_descriptor",
+    "kind": "random_drop_ratio",
+    "total": 100,
+    "accepted": 19
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_descriptor",
+    "kind": "brightness_factor",
+    "total": 100,
+    "accepted": 93
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_descriptor",
+    "kind": "jpeg_ratio",
+    "total": 100,
+    "accepted": 100
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_descriptor",
+    "kind": "gaussian_blur_r",
+    "total": 100,
+    "accepted": 100
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_descriptor",
+    "kind": "gaussian_std",
+    "total": 100,
+    "accepted": 100
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_descriptor",
+    "kind": "median_blur_k",
+    "total": 100,
+    "accepted": 100
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_descriptor",
+    "kind": "sp_prob",
+    "total": 100,
+    "accepted": 100
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_descriptor",
+    "kind": "resize_ratio",
+    "total": 100,
+    "accepted": 100
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_matcher",
+    "kind": "all_genuine",
+    "total": 1000,
+    "accepted": 867
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_matcher",
+    "kind": "all_edits",
+    "total": 900,
+    "accepted": 854
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_matcher",
+    "kind": "aux",
+    "total": 100,
+    "accepted": 0
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_matcher",
+    "kind": "same",
+    "total": 100,
+    "accepted": 0
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_matcher",
+    "kind": "gs",
+    "total": 100,
+    "accepted": 0
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_matcher",
+    "kind": "bound",
+    "total": 100,
+    "accepted": 13
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_matcher",
+    "kind": "random_crop_ratio",
+    "total": 100,
+    "accepted": 100
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_matcher",
+    "kind": "random_drop_ratio",
+    "total": 100,
+    "accepted": 94
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_matcher",
+    "kind": "brightness_factor",
+    "total": 100,
+    "accepted": 99
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_matcher",
+    "kind": "jpeg_ratio",
+    "total": 100,
+    "accepted": 79
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_matcher",
+    "kind": "gaussian_blur_r",
+    "total": 100,
+    "accepted": 100
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_matcher",
+    "kind": "gaussian_std",
+    "total": 100,
+    "accepted": 98
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_matcher",
+    "kind": "median_blur_k",
+    "total": 100,
+    "accepted": 88
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_matcher",
+    "kind": "sp_prob",
+    "total": 100,
+    "accepted": 98
+  },
+  {
+    "dataset": "all",
+    "method": "copynce_matcher",
+    "kind": "resize_ratio",
+    "total": 100,
+    "accepted": 98
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_a03",
+    "kind": "all_genuine",
+    "total": 500,
+    "keys": 477,
+    "accepted": 431
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_a03",
+    "kind": "all_edits",
+    "total": 450,
+    "keys": 427,
+    "accepted": 381
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_a03",
+    "kind": "aux",
+    "total": 50,
+    "keys": 1,
+    "accepted": 0
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_a03",
+    "kind": "same",
+    "total": 50,
+    "keys": 1,
+    "accepted": 0
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_a03",
+    "kind": "gs",
+    "total": 50,
+    "keys": 1,
+    "accepted": 0
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_a03",
+    "kind": "bound",
+    "total": 50,
+    "keys": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_a03",
+    "kind": "random_crop_ratio",
+    "total": 50,
+    "keys": 50,
+    "accepted": 48
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_a03",
+    "kind": "random_drop_ratio",
+    "total": 50,
+    "keys": 44,
+    "accepted": 42
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_a03",
+    "kind": "brightness_factor",
+    "total": 50,
+    "keys": 33,
+    "accepted": 33
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_a03",
+    "kind": "jpeg_ratio",
+    "total": 50,
+    "keys": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_a03",
+    "kind": "gaussian_blur_r",
+    "total": 50,
+    "keys": 50,
+    "accepted": 47
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_a03",
+    "kind": "gaussian_std",
+    "total": 50,
+    "keys": 50,
+    "accepted": 16
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_a03",
+    "kind": "median_blur_k",
+    "total": 50,
+    "keys": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_a03",
+    "kind": "sp_prob",
+    "total": 50,
+    "keys": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_a03",
+    "kind": "resize_ratio",
+    "total": 50,
+    "keys": 50,
+    "accepted": 45
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_identity_a03",
+    "kind": "all_genuine",
+    "total": 500,
+    "keys": 461,
+    "accepted": 453
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_identity_a03",
+    "kind": "all_edits",
+    "total": 450,
+    "keys": 411,
+    "accepted": 403
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_identity_a03",
+    "kind": "aux",
+    "total": 50,
+    "keys": 21,
+    "accepted": 0
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_identity_a03",
+    "kind": "same",
+    "total": 50,
+    "keys": 20,
+    "accepted": 0
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_identity_a03",
+    "kind": "gs",
+    "total": 50,
+    "keys": 22,
+    "accepted": 0
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_identity_a03",
+    "kind": "bound",
+    "total": 50,
+    "keys": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_identity_a03",
+    "kind": "random_crop_ratio",
+    "total": 50,
+    "keys": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_identity_a03",
+    "kind": "random_drop_ratio",
+    "total": 50,
+    "keys": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_identity_a03",
+    "kind": "brightness_factor",
+    "total": 50,
+    "keys": 11,
+    "accepted": 3
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_identity_a03",
+    "kind": "jpeg_ratio",
+    "total": 50,
+    "keys": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_identity_a03",
+    "kind": "gaussian_blur_r",
+    "total": 50,
+    "keys": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_identity_a03",
+    "kind": "gaussian_std",
+    "total": 50,
+    "keys": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_identity_a03",
+    "kind": "median_blur_k",
+    "total": 50,
+    "keys": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_identity_a03",
+    "kind": "sp_prob",
+    "total": 50,
+    "keys": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "spread_order_identity_a03",
+    "kind": "resize_ratio",
+    "total": 50,
+    "keys": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "sscd",
+    "kind": "all_genuine",
+    "total": 500,
+    "accepted": 450
+  },
+  {
+    "dataset": "COCO",
+    "method": "sscd",
+    "kind": "all_edits",
+    "total": 450,
+    "accepted": 400
+  },
+  {
+    "dataset": "COCO",
+    "method": "sscd",
+    "kind": "aux",
+    "total": 50,
+    "accepted": 0
+  },
+  {
+    "dataset": "COCO",
+    "method": "sscd",
+    "kind": "same",
+    "total": 50,
+    "accepted": 0
+  },
+  {
+    "dataset": "COCO",
+    "method": "sscd",
+    "kind": "gs",
+    "total": 50,
+    "accepted": 0
+  },
+  {
+    "dataset": "COCO",
+    "method": "sscd",
+    "kind": "bound",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "sscd",
+    "kind": "random_crop_ratio",
+    "total": 50,
+    "accepted": 42
+  },
+  {
+    "dataset": "COCO",
+    "method": "sscd",
+    "kind": "random_drop_ratio",
+    "total": 50,
+    "accepted": 17
+  },
+  {
+    "dataset": "COCO",
+    "method": "sscd",
+    "kind": "brightness_factor",
+    "total": 50,
+    "accepted": 42
+  },
+  {
+    "dataset": "COCO",
+    "method": "sscd",
+    "kind": "jpeg_ratio",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "sscd",
+    "kind": "gaussian_blur_r",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "sscd",
+    "kind": "gaussian_std",
+    "total": 50,
+    "accepted": 49
+  },
+  {
+    "dataset": "COCO",
+    "method": "sscd",
+    "kind": "median_blur_k",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "sscd",
+    "kind": "sp_prob",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "sscd",
+    "kind": "resize_ratio",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_descriptor",
+    "kind": "all_genuine",
+    "total": 500,
+    "accepted": 460
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_descriptor",
+    "kind": "all_edits",
+    "total": 450,
+    "accepted": 410
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_descriptor",
+    "kind": "aux",
+    "total": 50,
+    "accepted": 5
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_descriptor",
+    "kind": "same",
+    "total": 50,
+    "accepted": 5
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_descriptor",
+    "kind": "gs",
+    "total": 50,
+    "accepted": 11
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_descriptor",
+    "kind": "bound",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_descriptor",
+    "kind": "random_crop_ratio",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_descriptor",
+    "kind": "random_drop_ratio",
+    "total": 50,
+    "accepted": 11
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_descriptor",
+    "kind": "brightness_factor",
+    "total": 50,
+    "accepted": 49
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_descriptor",
+    "kind": "jpeg_ratio",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_descriptor",
+    "kind": "gaussian_blur_r",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_descriptor",
+    "kind": "gaussian_std",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_descriptor",
+    "kind": "median_blur_k",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_descriptor",
+    "kind": "sp_prob",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_descriptor",
+    "kind": "resize_ratio",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_matcher",
+    "kind": "all_genuine",
+    "total": 500,
+    "accepted": 447
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_matcher",
+    "kind": "all_edits",
+    "total": 450,
+    "accepted": 438
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_matcher",
+    "kind": "aux",
+    "total": 50,
+    "accepted": 0
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_matcher",
+    "kind": "same",
+    "total": 50,
+    "accepted": 0
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_matcher",
+    "kind": "gs",
+    "total": 50,
+    "accepted": 0
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_matcher",
+    "kind": "bound",
+    "total": 50,
+    "accepted": 9
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_matcher",
+    "kind": "random_crop_ratio",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_matcher",
+    "kind": "random_drop_ratio",
+    "total": 50,
+    "accepted": 47
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_matcher",
+    "kind": "brightness_factor",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_matcher",
+    "kind": "jpeg_ratio",
+    "total": 50,
+    "accepted": 45
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_matcher",
+    "kind": "gaussian_blur_r",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_matcher",
+    "kind": "gaussian_std",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_matcher",
+    "kind": "median_blur_k",
+    "total": 50,
+    "accepted": 48
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_matcher",
+    "kind": "sp_prob",
+    "total": 50,
+    "accepted": 49
+  },
+  {
+    "dataset": "COCO",
+    "method": "copynce_matcher",
+    "kind": "resize_ratio",
+    "total": 50,
+    "accepted": 49
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_a03",
+    "kind": "all_genuine",
+    "total": 500,
+    "keys": 486,
+    "accepted": 463
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_a03",
+    "kind": "all_edits",
+    "total": 450,
+    "keys": 436,
+    "accepted": 413
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_a03",
+    "kind": "aux",
+    "total": 50,
+    "keys": 0,
+    "accepted": 0
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_a03",
+    "kind": "same",
+    "total": 50,
+    "keys": 0,
+    "accepted": 0
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_a03",
+    "kind": "gs",
+    "total": 50,
+    "keys": 0,
+    "accepted": 0
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_a03",
+    "kind": "bound",
+    "total": 50,
+    "keys": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_a03",
+    "kind": "random_crop_ratio",
+    "total": 50,
+    "keys": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_a03",
+    "kind": "random_drop_ratio",
+    "total": 50,
+    "keys": 49,
+    "accepted": 49
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_a03",
+    "kind": "brightness_factor",
+    "total": 50,
+    "keys": 37,
+    "accepted": 37
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_a03",
+    "kind": "jpeg_ratio",
+    "total": 50,
+    "keys": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_a03",
+    "kind": "gaussian_blur_r",
+    "total": 50,
+    "keys": 50,
+    "accepted": 49
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_a03",
+    "kind": "gaussian_std",
+    "total": 50,
+    "keys": 50,
+    "accepted": 29
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_a03",
+    "kind": "median_blur_k",
+    "total": 50,
+    "keys": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_a03",
+    "kind": "sp_prob",
+    "total": 50,
+    "keys": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_a03",
+    "kind": "resize_ratio",
+    "total": 50,
+    "keys": 50,
+    "accepted": 49
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_identity_a03",
+    "kind": "all_genuine",
+    "total": 500,
+    "keys": 463,
+    "accepted": 456
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_identity_a03",
+    "kind": "all_edits",
+    "total": 450,
+    "keys": 413,
+    "accepted": 406
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_identity_a03",
+    "kind": "aux",
+    "total": 50,
+    "keys": 32,
+    "accepted": 0
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_identity_a03",
+    "kind": "same",
+    "total": 50,
+    "keys": 28,
+    "accepted": 0
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_identity_a03",
+    "kind": "gs",
+    "total": 50,
+    "keys": 29,
+    "accepted": 0
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_identity_a03",
+    "kind": "bound",
+    "total": 50,
+    "keys": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_identity_a03",
+    "kind": "random_crop_ratio",
+    "total": 50,
+    "keys": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_identity_a03",
+    "kind": "random_drop_ratio",
+    "total": 50,
+    "keys": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_identity_a03",
+    "kind": "brightness_factor",
+    "total": 50,
+    "keys": 13,
+    "accepted": 7
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_identity_a03",
+    "kind": "jpeg_ratio",
+    "total": 50,
+    "keys": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_identity_a03",
+    "kind": "gaussian_blur_r",
+    "total": 50,
+    "keys": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_identity_a03",
+    "kind": "gaussian_std",
+    "total": 50,
+    "keys": 50,
+    "accepted": 49
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_identity_a03",
+    "kind": "median_blur_k",
+    "total": 50,
+    "keys": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_identity_a03",
+    "kind": "sp_prob",
+    "total": 50,
+    "keys": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "spread_order_identity_a03",
+    "kind": "resize_ratio",
+    "total": 50,
+    "keys": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "sscd",
+    "kind": "all_genuine",
+    "total": 500,
+    "accepted": 449
+  },
+  {
+    "dataset": "SDP",
+    "method": "sscd",
+    "kind": "all_edits",
+    "total": 450,
+    "accepted": 399
+  },
+  {
+    "dataset": "SDP",
+    "method": "sscd",
+    "kind": "aux",
+    "total": 50,
+    "accepted": 0
+  },
+  {
+    "dataset": "SDP",
+    "method": "sscd",
+    "kind": "same",
+    "total": 50,
+    "accepted": 0
+  },
+  {
+    "dataset": "SDP",
+    "method": "sscd",
+    "kind": "gs",
+    "total": 50,
+    "accepted": 0
+  },
+  {
+    "dataset": "SDP",
+    "method": "sscd",
+    "kind": "bound",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "sscd",
+    "kind": "random_crop_ratio",
+    "total": 50,
+    "accepted": 46
+  },
+  {
+    "dataset": "SDP",
+    "method": "sscd",
+    "kind": "random_drop_ratio",
+    "total": 50,
+    "accepted": 16
+  },
+  {
+    "dataset": "SDP",
+    "method": "sscd",
+    "kind": "brightness_factor",
+    "total": 50,
+    "accepted": 37
+  },
+  {
+    "dataset": "SDP",
+    "method": "sscd",
+    "kind": "jpeg_ratio",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "sscd",
+    "kind": "gaussian_blur_r",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "sscd",
+    "kind": "gaussian_std",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "sscd",
+    "kind": "median_blur_k",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "sscd",
+    "kind": "sp_prob",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "sscd",
+    "kind": "resize_ratio",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_descriptor",
+    "kind": "all_genuine",
+    "total": 500,
+    "accepted": 452
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_descriptor",
+    "kind": "all_edits",
+    "total": 450,
+    "accepted": 402
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_descriptor",
+    "kind": "aux",
+    "total": 50,
+    "accepted": 1
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_descriptor",
+    "kind": "same",
+    "total": 50,
+    "accepted": 3
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_descriptor",
+    "kind": "gs",
+    "total": 50,
+    "accepted": 1
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_descriptor",
+    "kind": "bound",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_descriptor",
+    "kind": "random_crop_ratio",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_descriptor",
+    "kind": "random_drop_ratio",
+    "total": 50,
+    "accepted": 8
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_descriptor",
+    "kind": "brightness_factor",
+    "total": 50,
+    "accepted": 44
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_descriptor",
+    "kind": "jpeg_ratio",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_descriptor",
+    "kind": "gaussian_blur_r",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_descriptor",
+    "kind": "gaussian_std",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_descriptor",
+    "kind": "median_blur_k",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_descriptor",
+    "kind": "sp_prob",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_descriptor",
+    "kind": "resize_ratio",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_matcher",
+    "kind": "all_genuine",
+    "total": 500,
+    "accepted": 420
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_matcher",
+    "kind": "all_edits",
+    "total": 450,
+    "accepted": 416
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_matcher",
+    "kind": "aux",
+    "total": 50,
+    "accepted": 0
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_matcher",
+    "kind": "same",
+    "total": 50,
+    "accepted": 0
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_matcher",
+    "kind": "gs",
+    "total": 50,
+    "accepted": 0
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_matcher",
+    "kind": "bound",
+    "total": 50,
+    "accepted": 4
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_matcher",
+    "kind": "random_crop_ratio",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_matcher",
+    "kind": "random_drop_ratio",
+    "total": 50,
+    "accepted": 47
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_matcher",
+    "kind": "brightness_factor",
+    "total": 50,
+    "accepted": 49
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_matcher",
+    "kind": "jpeg_ratio",
+    "total": 50,
+    "accepted": 34
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_matcher",
+    "kind": "gaussian_blur_r",
+    "total": 50,
+    "accepted": 50
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_matcher",
+    "kind": "gaussian_std",
+    "total": 50,
+    "accepted": 48
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_matcher",
+    "kind": "median_blur_k",
+    "total": 50,
+    "accepted": 40
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_matcher",
+    "kind": "sp_prob",
+    "total": 50,
+    "accepted": 49
+  },
+  {
+    "dataset": "SDP",
+    "method": "copynce_matcher",
+    "kind": "resize_ratio",
+    "total": 50,
+    "accepted": 49
+  }
+]
