@@ -1,0 +1,46 @@
+{
+  "snapshot_utc": "2026-11-15T19:57:17.860124+00:00",
+  "protocol_sha256": "1a3283f12074a95cbfede7a2bb64095dfa7cb812c65c00cceb363ca34d2de20a",
+  "total_expected": 40000,
+  "completed_records": 20152,
+  "shards": [
+    {
+      "shard": 0,
+      "gpu": 7,
+      "pid": 26690,
+      "state": "running",
+      "completed_records": 6908,
+      "expected": 13334,
+      "last_index": 20721,
+      "last_record_unix": 1794772636.4130876,
+      "last_record_seconds": 1.9634234400000423,
+      "latest_artifact_hash_shape_finite_nfe_valid": true
+    },
+    {
+      "shard": 1,
+      "gpu": 5,
+      "pid": 26691,
+      "state": "running",
+      "completed_records": 6897,
+      "expected": 13333,
+      "last_index": 20689,
+      "last_record_unix": 1794772637.5970874,
+      "last_record_seconds": 1.926173590007238,
+      "latest_artifact_hash_shape_finite_nfe_valid": true
+    },
+    {
+      "shard": 2,
+      "gpu": 4,
+      "pid": 26692,
+      "state": "running",
+      "completed_records": 6347,
+      "expected": 13333,
+      "last_index": 19040,
+      "last_record_unix": 1794772635.8090875,
+      "last_record_seconds": 1.9691318760160357,
+      "latest_artifact_hash_shape_finite_nfe_valid": true
+    }
+  ],
+  "calibration_complete": false,
+  "scores_examined_for_threshold_selection": false
+}
