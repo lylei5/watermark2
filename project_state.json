@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-15T11:03:37.4342011Z",
+  "updated_at": "2026-11-15T11:11:50.6518289Z",
   "status": "order_constraint_unseen_edit_validation",
-  "active_experiments": 1,
+  "active_experiments": 2,
   "queued_experiments": 0,
   "latest_progress_report": "reports/capsule_source_transfer_20261115_v3/report.md",
   "evidence_index": "reports/README.md",
@@ -831,7 +831,8 @@
     "superiority_established": false
   },
   "active_runs": [
-    "order_capsule_confirmation_20261115"
+    "order_capsule_confirmation_20261115",
+    "order_capsule_confirmation_20261115/legacy_replay"
   ],
   "queued_runs": [],
   "author_reprompt_control": {
