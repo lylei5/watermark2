@@ -1,0 +1,115 @@
+{
+  "status": "complete",
+  "scope": "Content-only gate, frozenGS95thresholds. Native joint decisions are separate; no native acceptance assumed.",
+  "content_complete_sha256": "2796eed8ded3f59b7010ad393e1c5757e4fc26c6d661cdb32a1307029d3d1347",
+  "summary": [
+    {
+      "carrier": "GS",
+      "proxy": "sd21",
+      "method": "sscd",
+      "threshold": 0.6998699903488159,
+      "references": 3,
+      "content_accepted_references": 0,
+      "candidate_count": 27
+    },
+    {
+      "carrier": "GS",
+      "proxy": "sd21",
+      "method": "copynce_descriptor",
+      "threshold": 0.8893101215362549,
+      "references": 3,
+      "content_accepted_references": 3,
+      "candidate_count": 27
+    },
+    {
+      "carrier": "GS",
+      "proxy": "sd21",
+      "method": "copynce_matcher",
+      "threshold": 0.44189244508743286,
+      "references": 3,
+      "content_accepted_references": 0,
+      "candidate_count": 27
+    },
+    {
+      "carrier": "GS",
+      "proxy": "sd15",
+      "method": "sscd",
+      "threshold": 0.6998699903488159,
+      "references": 3,
+      "content_accepted_references": 0,
+      "candidate_count": 27
+    },
+    {
+      "carrier": "GS",
+      "proxy": "sd15",
+      "method": "copynce_descriptor",
+      "threshold": 0.8893101215362549,
+      "references": 3,
+      "content_accepted_references": 3,
+      "candidate_count": 27
+    },
+    {
+      "carrier": "GS",
+      "proxy": "sd15",
+      "method": "copynce_matcher",
+      "threshold": 0.44189244508743286,
+      "references": 3,
+      "content_accepted_references": 2,
+      "candidate_count": 27
+    },
+    {
+      "carrier": "TR",
+      "proxy": "sd21",
+      "method": "sscd",
+      "threshold": 0.6998699903488159,
+      "references": 10,
+      "content_accepted_references": 2,
+      "candidate_count": 30
+    },
+    {
+      "carrier": "TR",
+      "proxy": "sd21",
+      "method": "copynce_descriptor",
+      "threshold": 0.8893101215362549,
+      "references": 10,
+      "content_accepted_references": 10,
+      "candidate_count": 30
+    },
+    {
+      "carrier": "TR",
+      "proxy": "sd21",
+      "method": "copynce_matcher",
+      "threshold": 0.44189244508743286,
+      "references": 10,
+      "content_accepted_references": 4,
+      "candidate_count": 30
+    },
+    {
+      "carrier": "TR",
+      "proxy": "sd15",
+      "method": "sscd",
+      "threshold": 0.6998699903488159,
+      "references": 10,
+      "content_accepted_references": 2,
+      "candidate_count": 30
+    },
+    {
+      "carrier": "TR",
+      "proxy": "sd15",
+      "method": "copynce_descriptor",
+      "threshold": 0.8893101215362549,
+      "references": 10,
+      "content_accepted_references": 10,
+      "candidate_count": 30
+    },
+    {
+      "carrier": "TR",
+      "proxy": "sd15",
+      "method": "copynce_matcher",
+      "threshold": 0.44189244508743286,
+      "references": 10,
+      "content_accepted_references": 6,
+      "candidate_count": 30
+    }
+  ]
+}

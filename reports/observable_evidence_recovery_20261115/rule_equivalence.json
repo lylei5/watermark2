@@ -1,0 +1,5404 @@
+{
+  "status": "complete",
+  "rows_sha256": "73b5765ce4e8e337912ca72a9653517ab81f33e9e1fb9ca51ed20d789e19e092",
+  "checked_pairs": 770,
+  "same_key_decisions": 770,
+  "same_joint_decisions": 770,
+  "exact_genuine_count_matches": 360,
+  "matched_total": 360,
+  "all_better_controls": [
+    "copynce_descriptor"
+  ],
+  "checks": [
+    {
+      "id": "G000",
+      "query_id": "G000",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G000",
+      "query_id": "G000",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G000",
+      "query_id": "G000",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G000",
+      "query_id": "G000",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G000",
+      "query_id": "G000",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G000",
+      "query_id": "G000",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G000",
+      "query_id": "G000",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G000",
+      "query_id": "G000",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G000",
+      "query_id": "G000",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G000",
+      "query_id": "G000",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G000",
+      "query_id": "G000",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G000",
+      "query_id": "G000",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G000",
+      "query_id": "G000",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G000",
+      "query_id": "G000",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G000",
+      "query_id": "G001",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G000",
+      "query_id": "G002",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G000",
+      "query_id": "G003",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G000",
+      "query_id": "G004",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G000",
+      "query_id": "G005",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G000",
+      "query_id": "G006",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G000",
+      "query_id": "G007",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G000",
+      "query_id": "G008",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G000",
+      "query_id": "G009",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G000",
+      "query_id": "G000",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G000",
+      "query_id": "G000",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G001",
+      "query_id": "G001",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G001",
+      "query_id": "G001",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G001",
+      "query_id": "G001",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G001",
+      "query_id": "G001",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G001",
+      "query_id": "G001",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G001",
+      "query_id": "G001",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G001",
+      "query_id": "G001",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G001",
+      "query_id": "G001",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G001",
+      "query_id": "G001",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G001",
+      "query_id": "G001",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G001",
+      "query_id": "G001",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G001",
+      "query_id": "G001",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G001",
+      "query_id": "G001",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G001",
+      "query_id": "G001",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G001",
+      "query_id": "G000",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G001",
+      "query_id": "G002",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G001",
+      "query_id": "G003",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G001",
+      "query_id": "G004",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G001",
+      "query_id": "G005",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G001",
+      "query_id": "G006",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G001",
+      "query_id": "G007",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G001",
+      "query_id": "G008",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G001",
+      "query_id": "G009",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G001",
+      "query_id": "G001",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G001",
+      "query_id": "G001",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G002",
+      "query_id": "G002",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G002",
+      "query_id": "G002",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G002",
+      "query_id": "G002",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G002",
+      "query_id": "G002",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G002",
+      "query_id": "G002",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G002",
+      "query_id": "G002",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G002",
+      "query_id": "G002",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G002",
+      "query_id": "G002",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G002",
+      "query_id": "G002",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G002",
+      "query_id": "G002",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G002",
+      "query_id": "G002",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G002",
+      "query_id": "G002",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G002",
+      "query_id": "G002",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G002",
+      "query_id": "G002",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G002",
+      "query_id": "G000",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G002",
+      "query_id": "G001",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G002",
+      "query_id": "G003",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G002",
+      "query_id": "G004",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G002",
+      "query_id": "G005",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G002",
+      "query_id": "G006",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G002",
+      "query_id": "G007",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G002",
+      "query_id": "G008",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G002",
+      "query_id": "G009",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G002",
+      "query_id": "G002",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G002",
+      "query_id": "G002",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G003",
+      "query_id": "G003",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G003",
+      "query_id": "G003",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G003",
+      "query_id": "G003",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G003",
+      "query_id": "G003",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G003",
+      "query_id": "G003",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G003",
+      "query_id": "G003",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G003",
+      "query_id": "G003",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G003",
+      "query_id": "G003",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G003",
+      "query_id": "G003",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G003",
+      "query_id": "G003",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G003",
+      "query_id": "G003",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G003",
+      "query_id": "G003",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G003",
+      "query_id": "G003",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G003",
+      "query_id": "G003",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G003",
+      "query_id": "G000",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G003",
+      "query_id": "G001",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G003",
+      "query_id": "G002",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G003",
+      "query_id": "G004",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G003",
+      "query_id": "G005",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G003",
+      "query_id": "G006",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G003",
+      "query_id": "G007",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G003",
+      "query_id": "G008",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G003",
+      "query_id": "G009",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G003",
+      "query_id": "G003",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G003",
+      "query_id": "G003",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G004",
+      "query_id": "G004",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G004",
+      "query_id": "G004",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G004",
+      "query_id": "G004",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G004",
+      "query_id": "G004",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G004",
+      "query_id": "G004",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G004",
+      "query_id": "G004",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G004",
+      "query_id": "G004",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G004",
+      "query_id": "G004",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G004",
+      "query_id": "G004",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G004",
+      "query_id": "G004",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G004",
+      "query_id": "G004",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G004",
+      "query_id": "G004",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G004",
+      "query_id": "G004",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G004",
+      "query_id": "G004",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G004",
+      "query_id": "G000",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G004",
+      "query_id": "G001",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G004",
+      "query_id": "G002",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G004",
+      "query_id": "G003",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G004",
+      "query_id": "G005",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G004",
+      "query_id": "G006",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G004",
+      "query_id": "G007",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G004",
+      "query_id": "G008",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G004",
+      "query_id": "G009",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G004",
+      "query_id": "G004",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G004",
+      "query_id": "G004",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G005",
+      "query_id": "G005",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G005",
+      "query_id": "G005",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G005",
+      "query_id": "G005",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G005",
+      "query_id": "G005",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G005",
+      "query_id": "G005",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G005",
+      "query_id": "G005",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G005",
+      "query_id": "G005",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G005",
+      "query_id": "G005",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G005",
+      "query_id": "G005",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G005",
+      "query_id": "G005",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G005",
+      "query_id": "G005",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G005",
+      "query_id": "G005",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G005",
+      "query_id": "G005",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G005",
+      "query_id": "G005",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G005",
+      "query_id": "G000",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G005",
+      "query_id": "G001",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G005",
+      "query_id": "G002",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G005",
+      "query_id": "G003",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G005",
+      "query_id": "G004",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G005",
+      "query_id": "G006",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G005",
+      "query_id": "G007",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G005",
+      "query_id": "G008",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G005",
+      "query_id": "G009",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G005",
+      "query_id": "G005",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G005",
+      "query_id": "G005",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G006",
+      "query_id": "G006",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G006",
+      "query_id": "G006",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G006",
+      "query_id": "G006",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G006",
+      "query_id": "G006",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G006",
+      "query_id": "G006",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G006",
+      "query_id": "G006",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G006",
+      "query_id": "G006",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G006",
+      "query_id": "G006",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G006",
+      "query_id": "G006",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G006",
+      "query_id": "G006",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G006",
+      "query_id": "G006",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G006",
+      "query_id": "G006",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G006",
+      "query_id": "G006",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G006",
+      "query_id": "G006",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G006",
+      "query_id": "G000",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G006",
+      "query_id": "G001",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G006",
+      "query_id": "G002",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G006",
+      "query_id": "G003",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G006",
+      "query_id": "G004",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G006",
+      "query_id": "G005",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G006",
+      "query_id": "G007",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G006",
+      "query_id": "G008",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G006",
+      "query_id": "G009",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G006",
+      "query_id": "G006",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G006",
+      "query_id": "G006",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G007",
+      "query_id": "G007",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G007",
+      "query_id": "G007",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G007",
+      "query_id": "G007",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G007",
+      "query_id": "G007",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G007",
+      "query_id": "G007",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G007",
+      "query_id": "G007",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G007",
+      "query_id": "G007",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G007",
+      "query_id": "G007",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G007",
+      "query_id": "G007",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G007",
+      "query_id": "G007",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G007",
+      "query_id": "G007",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G007",
+      "query_id": "G007",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G007",
+      "query_id": "G007",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G007",
+      "query_id": "G007",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G007",
+      "query_id": "G000",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G007",
+      "query_id": "G001",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G007",
+      "query_id": "G002",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G007",
+      "query_id": "G003",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G007",
+      "query_id": "G004",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G007",
+      "query_id": "G005",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G007",
+      "query_id": "G006",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G007",
+      "query_id": "G008",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G007",
+      "query_id": "G009",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G007",
+      "query_id": "G007",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G007",
+      "query_id": "G007",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G008",
+      "query_id": "G008",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G008",
+      "query_id": "G008",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G008",
+      "query_id": "G008",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G008",
+      "query_id": "G008",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G008",
+      "query_id": "G008",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G008",
+      "query_id": "G008",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G008",
+      "query_id": "G008",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G008",
+      "query_id": "G008",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G008",
+      "query_id": "G008",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G008",
+      "query_id": "G008",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G008",
+      "query_id": "G008",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G008",
+      "query_id": "G008",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G008",
+      "query_id": "G008",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G008",
+      "query_id": "G008",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G008",
+      "query_id": "G000",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G008",
+      "query_id": "G001",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G008",
+      "query_id": "G002",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G008",
+      "query_id": "G003",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G008",
+      "query_id": "G004",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G008",
+      "query_id": "G005",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G008",
+      "query_id": "G006",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G008",
+      "query_id": "G007",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G008",
+      "query_id": "G009",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G008",
+      "query_id": "G008",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G008",
+      "query_id": "G008",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G009",
+      "query_id": "G009",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G009",
+      "query_id": "G009",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G009",
+      "query_id": "G009",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G009",
+      "query_id": "G009",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G009",
+      "query_id": "G009",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G009",
+      "query_id": "G009",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G009",
+      "query_id": "G009",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G009",
+      "query_id": "G009",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G009",
+      "query_id": "G009",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G009",
+      "query_id": "G009",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G009",
+      "query_id": "G009",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G009",
+      "query_id": "G009",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G009",
+      "query_id": "G009",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G009",
+      "query_id": "G009",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G009",
+      "query_id": "G000",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G009",
+      "query_id": "G001",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G009",
+      "query_id": "G002",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G009",
+      "query_id": "G003",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G009",
+      "query_id": "G004",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G009",
+      "query_id": "G005",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G009",
+      "query_id": "G006",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G009",
+      "query_id": "G007",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G009",
+      "query_id": "G008",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G009",
+      "query_id": "G009",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "G009",
+      "query_id": "G009",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_000",
+      "query_id": "PRC_000",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_000",
+      "query_id": "PRC_000",
+      "kind": "cover",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_000",
+      "query_id": "PRC_000",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_000",
+      "query_id": "PRC_000",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_000",
+      "query_id": "PRC_000",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_000",
+      "query_id": "PRC_000",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_000",
+      "query_id": "PRC_000",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_000",
+      "query_id": "PRC_000",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_000",
+      "query_id": "PRC_000",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_000",
+      "query_id": "PRC_000",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_000",
+      "query_id": "PRC_000",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_000",
+      "query_id": "PRC_000",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_000",
+      "query_id": "PRC_000",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_000",
+      "query_id": "PRC_000",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_000",
+      "query_id": "PRC_000",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_000",
+      "query_id": "PRC_001",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_000",
+      "query_id": "PRC_002",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_000",
+      "query_id": "PRC_003",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_000",
+      "query_id": "PRC_004",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_000",
+      "query_id": "PRC_005",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_000",
+      "query_id": "PRC_006",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_000",
+      "query_id": "PRC_007",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_000",
+      "query_id": "PRC_008",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_000",
+      "query_id": "PRC_009",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_000",
+      "query_id": "PRC_000",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_000",
+      "query_id": "PRC_000",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_001",
+      "query_id": "PRC_001",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_001",
+      "query_id": "PRC_001",
+      "kind": "cover",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_001",
+      "query_id": "PRC_001",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_001",
+      "query_id": "PRC_001",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_001",
+      "query_id": "PRC_001",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_001",
+      "query_id": "PRC_001",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_001",
+      "query_id": "PRC_001",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_001",
+      "query_id": "PRC_001",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_001",
+      "query_id": "PRC_001",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_001",
+      "query_id": "PRC_001",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_001",
+      "query_id": "PRC_001",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_001",
+      "query_id": "PRC_001",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_001",
+      "query_id": "PRC_001",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_001",
+      "query_id": "PRC_001",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_001",
+      "query_id": "PRC_001",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_001",
+      "query_id": "PRC_000",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_001",
+      "query_id": "PRC_002",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_001",
+      "query_id": "PRC_003",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_001",
+      "query_id": "PRC_004",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_001",
+      "query_id": "PRC_005",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_001",
+      "query_id": "PRC_006",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_001",
+      "query_id": "PRC_007",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_001",
+      "query_id": "PRC_008",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_001",
+      "query_id": "PRC_009",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_001",
+      "query_id": "PRC_001",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_001",
+      "query_id": "PRC_001",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_002",
+      "query_id": "PRC_002",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_002",
+      "query_id": "PRC_002",
+      "kind": "cover",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_002",
+      "query_id": "PRC_002",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_002",
+      "query_id": "PRC_002",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_002",
+      "query_id": "PRC_002",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_002",
+      "query_id": "PRC_002",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_002",
+      "query_id": "PRC_002",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_002",
+      "query_id": "PRC_002",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_002",
+      "query_id": "PRC_002",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_002",
+      "query_id": "PRC_002",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_002",
+      "query_id": "PRC_002",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_002",
+      "query_id": "PRC_002",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_002",
+      "query_id": "PRC_002",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_002",
+      "query_id": "PRC_002",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_002",
+      "query_id": "PRC_002",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_002",
+      "query_id": "PRC_000",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_002",
+      "query_id": "PRC_001",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_002",
+      "query_id": "PRC_003",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_002",
+      "query_id": "PRC_004",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_002",
+      "query_id": "PRC_005",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_002",
+      "query_id": "PRC_006",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_002",
+      "query_id": "PRC_007",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_002",
+      "query_id": "PRC_008",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_002",
+      "query_id": "PRC_009",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_002",
+      "query_id": "PRC_002",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_002",
+      "query_id": "PRC_002",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_003",
+      "query_id": "PRC_003",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_003",
+      "query_id": "PRC_003",
+      "kind": "cover",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_003",
+      "query_id": "PRC_003",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_003",
+      "query_id": "PRC_003",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_003",
+      "query_id": "PRC_003",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_003",
+      "query_id": "PRC_003",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_003",
+      "query_id": "PRC_003",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_003",
+      "query_id": "PRC_003",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_003",
+      "query_id": "PRC_003",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_003",
+      "query_id": "PRC_003",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_003",
+      "query_id": "PRC_003",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_003",
+      "query_id": "PRC_003",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_003",
+      "query_id": "PRC_003",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_003",
+      "query_id": "PRC_003",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_003",
+      "query_id": "PRC_003",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_003",
+      "query_id": "PRC_000",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_003",
+      "query_id": "PRC_001",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_003",
+      "query_id": "PRC_002",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_003",
+      "query_id": "PRC_004",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_003",
+      "query_id": "PRC_005",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_003",
+      "query_id": "PRC_006",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_003",
+      "query_id": "PRC_007",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_003",
+      "query_id": "PRC_008",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_003",
+      "query_id": "PRC_009",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_003",
+      "query_id": "PRC_003",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_003",
+      "query_id": "PRC_003",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_004",
+      "query_id": "PRC_004",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_004",
+      "query_id": "PRC_004",
+      "kind": "cover",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_004",
+      "query_id": "PRC_004",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_004",
+      "query_id": "PRC_004",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_004",
+      "query_id": "PRC_004",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_004",
+      "query_id": "PRC_004",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_004",
+      "query_id": "PRC_004",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_004",
+      "query_id": "PRC_004",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_004",
+      "query_id": "PRC_004",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_004",
+      "query_id": "PRC_004",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_004",
+      "query_id": "PRC_004",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_004",
+      "query_id": "PRC_004",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_004",
+      "query_id": "PRC_004",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_004",
+      "query_id": "PRC_004",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_004",
+      "query_id": "PRC_004",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_004",
+      "query_id": "PRC_000",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_004",
+      "query_id": "PRC_001",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_004",
+      "query_id": "PRC_002",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_004",
+      "query_id": "PRC_003",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_004",
+      "query_id": "PRC_005",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_004",
+      "query_id": "PRC_006",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_004",
+      "query_id": "PRC_007",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_004",
+      "query_id": "PRC_008",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_004",
+      "query_id": "PRC_009",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_004",
+      "query_id": "PRC_004",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_004",
+      "query_id": "PRC_004",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_005",
+      "query_id": "PRC_005",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_005",
+      "query_id": "PRC_005",
+      "kind": "cover",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_005",
+      "query_id": "PRC_005",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_005",
+      "query_id": "PRC_005",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_005",
+      "query_id": "PRC_005",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_005",
+      "query_id": "PRC_005",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_005",
+      "query_id": "PRC_005",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_005",
+      "query_id": "PRC_005",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_005",
+      "query_id": "PRC_005",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_005",
+      "query_id": "PRC_005",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_005",
+      "query_id": "PRC_005",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_005",
+      "query_id": "PRC_005",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_005",
+      "query_id": "PRC_005",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_005",
+      "query_id": "PRC_005",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_005",
+      "query_id": "PRC_005",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_005",
+      "query_id": "PRC_000",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_005",
+      "query_id": "PRC_001",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_005",
+      "query_id": "PRC_002",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_005",
+      "query_id": "PRC_003",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_005",
+      "query_id": "PRC_004",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_005",
+      "query_id": "PRC_006",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_005",
+      "query_id": "PRC_007",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_005",
+      "query_id": "PRC_008",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_005",
+      "query_id": "PRC_009",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_005",
+      "query_id": "PRC_005",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_005",
+      "query_id": "PRC_005",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_006",
+      "query_id": "PRC_006",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_006",
+      "query_id": "PRC_006",
+      "kind": "cover",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_006",
+      "query_id": "PRC_006",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_006",
+      "query_id": "PRC_006",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_006",
+      "query_id": "PRC_006",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_006",
+      "query_id": "PRC_006",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_006",
+      "query_id": "PRC_006",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_006",
+      "query_id": "PRC_006",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_006",
+      "query_id": "PRC_006",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_006",
+      "query_id": "PRC_006",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_006",
+      "query_id": "PRC_006",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_006",
+      "query_id": "PRC_006",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_006",
+      "query_id": "PRC_006",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_006",
+      "query_id": "PRC_006",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_006",
+      "query_id": "PRC_006",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_006",
+      "query_id": "PRC_000",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_006",
+      "query_id": "PRC_001",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_006",
+      "query_id": "PRC_002",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_006",
+      "query_id": "PRC_003",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_006",
+      "query_id": "PRC_004",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_006",
+      "query_id": "PRC_005",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_006",
+      "query_id": "PRC_007",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_006",
+      "query_id": "PRC_008",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_006",
+      "query_id": "PRC_009",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_006",
+      "query_id": "PRC_006",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_006",
+      "query_id": "PRC_006",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_007",
+      "query_id": "PRC_007",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_007",
+      "query_id": "PRC_007",
+      "kind": "cover",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_007",
+      "query_id": "PRC_007",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_007",
+      "query_id": "PRC_007",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_007",
+      "query_id": "PRC_007",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_007",
+      "query_id": "PRC_007",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_007",
+      "query_id": "PRC_007",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_007",
+      "query_id": "PRC_007",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_007",
+      "query_id": "PRC_007",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_007",
+      "query_id": "PRC_007",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_007",
+      "query_id": "PRC_007",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_007",
+      "query_id": "PRC_007",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_007",
+      "query_id": "PRC_007",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_007",
+      "query_id": "PRC_007",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_007",
+      "query_id": "PRC_007",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_007",
+      "query_id": "PRC_000",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_007",
+      "query_id": "PRC_001",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_007",
+      "query_id": "PRC_002",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_007",
+      "query_id": "PRC_003",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_007",
+      "query_id": "PRC_004",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_007",
+      "query_id": "PRC_005",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_007",
+      "query_id": "PRC_006",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_007",
+      "query_id": "PRC_008",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_007",
+      "query_id": "PRC_009",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_007",
+      "query_id": "PRC_007",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_007",
+      "query_id": "PRC_007",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_008",
+      "query_id": "PRC_008",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_008",
+      "query_id": "PRC_008",
+      "kind": "cover",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_008",
+      "query_id": "PRC_008",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_008",
+      "query_id": "PRC_008",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_008",
+      "query_id": "PRC_008",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_008",
+      "query_id": "PRC_008",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_008",
+      "query_id": "PRC_008",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_008",
+      "query_id": "PRC_008",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_008",
+      "query_id": "PRC_008",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_008",
+      "query_id": "PRC_008",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_008",
+      "query_id": "PRC_008",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_008",
+      "query_id": "PRC_008",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_008",
+      "query_id": "PRC_008",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_008",
+      "query_id": "PRC_008",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_008",
+      "query_id": "PRC_008",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_008",
+      "query_id": "PRC_000",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_008",
+      "query_id": "PRC_001",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_008",
+      "query_id": "PRC_002",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_008",
+      "query_id": "PRC_003",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_008",
+      "query_id": "PRC_004",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_008",
+      "query_id": "PRC_005",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_008",
+      "query_id": "PRC_006",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_008",
+      "query_id": "PRC_007",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_008",
+      "query_id": "PRC_009",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_008",
+      "query_id": "PRC_008",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_008",
+      "query_id": "PRC_008",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_009",
+      "query_id": "PRC_009",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_009",
+      "query_id": "PRC_009",
+      "kind": "cover",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_009",
+      "query_id": "PRC_009",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_009",
+      "query_id": "PRC_009",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_009",
+      "query_id": "PRC_009",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_009",
+      "query_id": "PRC_009",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_009",
+      "query_id": "PRC_009",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_009",
+      "query_id": "PRC_009",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_009",
+      "query_id": "PRC_009",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_009",
+      "query_id": "PRC_009",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_009",
+      "query_id": "PRC_009",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_009",
+      "query_id": "PRC_009",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_009",
+      "query_id": "PRC_009",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_009",
+      "query_id": "PRC_009",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_009",
+      "query_id": "PRC_009",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_009",
+      "query_id": "PRC_000",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_009",
+      "query_id": "PRC_001",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_009",
+      "query_id": "PRC_002",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_009",
+      "query_id": "PRC_003",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_009",
+      "query_id": "PRC_004",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_009",
+      "query_id": "PRC_005",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_009",
+      "query_id": "PRC_006",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_009",
+      "query_id": "PRC_007",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_009",
+      "query_id": "PRC_008",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_009",
+      "query_id": "PRC_009",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "PRC_009",
+      "query_id": "PRC_009",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_000",
+      "query_id": "TR_000",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_000",
+      "query_id": "TR_000",
+      "kind": "cover",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_000",
+      "query_id": "TR_000",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_000",
+      "query_id": "TR_000",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_000",
+      "query_id": "TR_000",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_000",
+      "query_id": "TR_000",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_000",
+      "query_id": "TR_000",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_000",
+      "query_id": "TR_000",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_000",
+      "query_id": "TR_000",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_000",
+      "query_id": "TR_000",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_000",
+      "query_id": "TR_000",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_000",
+      "query_id": "TR_000",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_000",
+      "query_id": "TR_000",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_000",
+      "query_id": "TR_000",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_000",
+      "query_id": "TR_000",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_000",
+      "query_id": "TR_001",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_000",
+      "query_id": "TR_002",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_000",
+      "query_id": "TR_003",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_000",
+      "query_id": "TR_004",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_000",
+      "query_id": "TR_005",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_000",
+      "query_id": "TR_006",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_000",
+      "query_id": "TR_007",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_000",
+      "query_id": "TR_008",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_000",
+      "query_id": "TR_009",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_000",
+      "query_id": "TR_000",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_000",
+      "query_id": "TR_000",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_001",
+      "query_id": "TR_001",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_001",
+      "query_id": "TR_001",
+      "kind": "cover",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_001",
+      "query_id": "TR_001",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_001",
+      "query_id": "TR_001",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_001",
+      "query_id": "TR_001",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_001",
+      "query_id": "TR_001",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_001",
+      "query_id": "TR_001",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_001",
+      "query_id": "TR_001",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_001",
+      "query_id": "TR_001",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_001",
+      "query_id": "TR_001",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_001",
+      "query_id": "TR_001",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_001",
+      "query_id": "TR_001",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_001",
+      "query_id": "TR_001",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_001",
+      "query_id": "TR_001",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_001",
+      "query_id": "TR_001",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_001",
+      "query_id": "TR_000",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_001",
+      "query_id": "TR_002",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_001",
+      "query_id": "TR_003",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_001",
+      "query_id": "TR_004",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_001",
+      "query_id": "TR_005",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_001",
+      "query_id": "TR_006",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_001",
+      "query_id": "TR_007",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_001",
+      "query_id": "TR_008",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_001",
+      "query_id": "TR_009",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_001",
+      "query_id": "TR_001",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_001",
+      "query_id": "TR_001",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_002",
+      "query_id": "TR_002",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_002",
+      "query_id": "TR_002",
+      "kind": "cover",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_002",
+      "query_id": "TR_002",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_002",
+      "query_id": "TR_002",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_002",
+      "query_id": "TR_002",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_002",
+      "query_id": "TR_002",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_002",
+      "query_id": "TR_002",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_002",
+      "query_id": "TR_002",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_002",
+      "query_id": "TR_002",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_002",
+      "query_id": "TR_002",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_002",
+      "query_id": "TR_002",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_002",
+      "query_id": "TR_002",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_002",
+      "query_id": "TR_002",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_002",
+      "query_id": "TR_002",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_002",
+      "query_id": "TR_002",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_002",
+      "query_id": "TR_000",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_002",
+      "query_id": "TR_001",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_002",
+      "query_id": "TR_003",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_002",
+      "query_id": "TR_004",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_002",
+      "query_id": "TR_005",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_002",
+      "query_id": "TR_006",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_002",
+      "query_id": "TR_007",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_002",
+      "query_id": "TR_008",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_002",
+      "query_id": "TR_009",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_002",
+      "query_id": "TR_002",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_002",
+      "query_id": "TR_002",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_003",
+      "query_id": "TR_003",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_003",
+      "query_id": "TR_003",
+      "kind": "cover",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_003",
+      "query_id": "TR_003",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_003",
+      "query_id": "TR_003",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_003",
+      "query_id": "TR_003",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_003",
+      "query_id": "TR_003",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_003",
+      "query_id": "TR_003",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_003",
+      "query_id": "TR_003",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_003",
+      "query_id": "TR_003",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_003",
+      "query_id": "TR_003",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_003",
+      "query_id": "TR_003",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_003",
+      "query_id": "TR_003",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_003",
+      "query_id": "TR_003",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_003",
+      "query_id": "TR_003",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_003",
+      "query_id": "TR_003",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_003",
+      "query_id": "TR_000",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_003",
+      "query_id": "TR_001",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_003",
+      "query_id": "TR_002",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_003",
+      "query_id": "TR_004",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_003",
+      "query_id": "TR_005",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_003",
+      "query_id": "TR_006",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_003",
+      "query_id": "TR_007",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_003",
+      "query_id": "TR_008",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_003",
+      "query_id": "TR_009",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_003",
+      "query_id": "TR_003",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_003",
+      "query_id": "TR_003",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_004",
+      "query_id": "TR_004",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_004",
+      "query_id": "TR_004",
+      "kind": "cover",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_004",
+      "query_id": "TR_004",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_004",
+      "query_id": "TR_004",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_004",
+      "query_id": "TR_004",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_004",
+      "query_id": "TR_004",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_004",
+      "query_id": "TR_004",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_004",
+      "query_id": "TR_004",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_004",
+      "query_id": "TR_004",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_004",
+      "query_id": "TR_004",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_004",
+      "query_id": "TR_004",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_004",
+      "query_id": "TR_004",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_004",
+      "query_id": "TR_004",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_004",
+      "query_id": "TR_004",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_004",
+      "query_id": "TR_004",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_004",
+      "query_id": "TR_000",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_004",
+      "query_id": "TR_001",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_004",
+      "query_id": "TR_002",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_004",
+      "query_id": "TR_003",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_004",
+      "query_id": "TR_005",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_004",
+      "query_id": "TR_006",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_004",
+      "query_id": "TR_007",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_004",
+      "query_id": "TR_008",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_004",
+      "query_id": "TR_009",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_004",
+      "query_id": "TR_004",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_004",
+      "query_id": "TR_004",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_005",
+      "query_id": "TR_005",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_005",
+      "query_id": "TR_005",
+      "kind": "cover",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_005",
+      "query_id": "TR_005",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_005",
+      "query_id": "TR_005",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_005",
+      "query_id": "TR_005",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_005",
+      "query_id": "TR_005",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_005",
+      "query_id": "TR_005",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_005",
+      "query_id": "TR_005",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_005",
+      "query_id": "TR_005",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_005",
+      "query_id": "TR_005",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_005",
+      "query_id": "TR_005",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_005",
+      "query_id": "TR_005",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_005",
+      "query_id": "TR_005",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_005",
+      "query_id": "TR_005",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_005",
+      "query_id": "TR_005",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_005",
+      "query_id": "TR_000",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_005",
+      "query_id": "TR_001",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_005",
+      "query_id": "TR_002",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_005",
+      "query_id": "TR_003",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_005",
+      "query_id": "TR_004",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_005",
+      "query_id": "TR_006",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_005",
+      "query_id": "TR_007",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_005",
+      "query_id": "TR_008",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_005",
+      "query_id": "TR_009",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_005",
+      "query_id": "TR_005",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_005",
+      "query_id": "TR_005",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_006",
+      "query_id": "TR_006",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_006",
+      "query_id": "TR_006",
+      "kind": "cover",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_006",
+      "query_id": "TR_006",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_006",
+      "query_id": "TR_006",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_006",
+      "query_id": "TR_006",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_006",
+      "query_id": "TR_006",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_006",
+      "query_id": "TR_006",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_006",
+      "query_id": "TR_006",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_006",
+      "query_id": "TR_006",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_006",
+      "query_id": "TR_006",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_006",
+      "query_id": "TR_006",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_006",
+      "query_id": "TR_006",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_006",
+      "query_id": "TR_006",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_006",
+      "query_id": "TR_006",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_006",
+      "query_id": "TR_006",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_006",
+      "query_id": "TR_000",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_006",
+      "query_id": "TR_001",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_006",
+      "query_id": "TR_002",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_006",
+      "query_id": "TR_003",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_006",
+      "query_id": "TR_004",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_006",
+      "query_id": "TR_005",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_006",
+      "query_id": "TR_007",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_006",
+      "query_id": "TR_008",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_006",
+      "query_id": "TR_009",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_006",
+      "query_id": "TR_006",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_006",
+      "query_id": "TR_006",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_007",
+      "query_id": "TR_007",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_007",
+      "query_id": "TR_007",
+      "kind": "cover",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_007",
+      "query_id": "TR_007",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_007",
+      "query_id": "TR_007",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_007",
+      "query_id": "TR_007",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_007",
+      "query_id": "TR_007",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_007",
+      "query_id": "TR_007",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_007",
+      "query_id": "TR_007",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_007",
+      "query_id": "TR_007",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_007",
+      "query_id": "TR_007",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_007",
+      "query_id": "TR_007",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_007",
+      "query_id": "TR_007",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_007",
+      "query_id": "TR_007",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_007",
+      "query_id": "TR_007",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_007",
+      "query_id": "TR_007",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_007",
+      "query_id": "TR_000",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_007",
+      "query_id": "TR_001",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_007",
+      "query_id": "TR_002",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_007",
+      "query_id": "TR_003",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_007",
+      "query_id": "TR_004",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_007",
+      "query_id": "TR_005",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_007",
+      "query_id": "TR_006",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_007",
+      "query_id": "TR_008",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_007",
+      "query_id": "TR_009",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_007",
+      "query_id": "TR_007",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_007",
+      "query_id": "TR_007",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_008",
+      "query_id": "TR_008",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_008",
+      "query_id": "TR_008",
+      "kind": "cover",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_008",
+      "query_id": "TR_008",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_008",
+      "query_id": "TR_008",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_008",
+      "query_id": "TR_008",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_008",
+      "query_id": "TR_008",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_008",
+      "query_id": "TR_008",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_008",
+      "query_id": "TR_008",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_008",
+      "query_id": "TR_008",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_008",
+      "query_id": "TR_008",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_008",
+      "query_id": "TR_008",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_008",
+      "query_id": "TR_008",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_008",
+      "query_id": "TR_008",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_008",
+      "query_id": "TR_008",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_008",
+      "query_id": "TR_008",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_008",
+      "query_id": "TR_000",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_008",
+      "query_id": "TR_001",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_008",
+      "query_id": "TR_002",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_008",
+      "query_id": "TR_003",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_008",
+      "query_id": "TR_004",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_008",
+      "query_id": "TR_005",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_008",
+      "query_id": "TR_006",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_008",
+      "query_id": "TR_007",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_008",
+      "query_id": "TR_009",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_008",
+      "query_id": "TR_008",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_008",
+      "query_id": "TR_008",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_009",
+      "query_id": "TR_009",
+      "kind": "clean",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_009",
+      "query_id": "TR_009",
+      "kind": "cover",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_009",
+      "query_id": "TR_009",
+      "kind": "random_crop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_009",
+      "query_id": "TR_009",
+      "kind": "random_drop_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_009",
+      "query_id": "TR_009",
+      "kind": "brightness_factor",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_009",
+      "query_id": "TR_009",
+      "kind": "jpeg_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_009",
+      "query_id": "TR_009",
+      "kind": "gaussian_blur_r",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_009",
+      "query_id": "TR_009",
+      "kind": "gaussian_std",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_009",
+      "query_id": "TR_009",
+      "kind": "median_blur_k",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_009",
+      "query_id": "TR_009",
+      "kind": "sp_prob",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_009",
+      "query_id": "TR_009",
+      "kind": "resize_ratio",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_009",
+      "query_id": "TR_009",
+      "kind": "imprint_50",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_009",
+      "query_id": "TR_009",
+      "kind": "imprint_100",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_009",
+      "query_id": "TR_009",
+      "kind": "imprint_150",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_009",
+      "query_id": "TR_009",
+      "kind": "same_prompt",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_009",
+      "query_id": "TR_000",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_009",
+      "query_id": "TR_001",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_009",
+      "query_id": "TR_002",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_009",
+      "query_id": "TR_003",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_009",
+      "query_id": "TR_004",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_009",
+      "query_id": "TR_005",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_009",
+      "query_id": "TR_006",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_009",
+      "query_id": "TR_007",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_009",
+      "query_id": "TR_008",
+      "kind": "wrong_record",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_009",
+      "query_id": "TR_009",
+      "kind": "reprompt_sd21",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    },
+    {
+      "id": "TR_009",
+      "query_id": "TR_009",
+      "kind": "reprompt_sd15",
+      "same_key_decision": true,
+      "same_joint_decision": true
+    }
+  ]
+}

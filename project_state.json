@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-15T01:29:08.4298324Z",
+  "updated_at": "2026-11-15T01:45:40.4165945Z",
   "status": "reprompt_plus_native_evaluation",
   "active_experiments": 1,
   "queued_experiments": 1,
@@ -836,7 +836,8 @@
         547
       ],
       "device": "GPU7/5/4",
-      "pid": 545
+      "pid": 545,
+      "prefix_completion_event_pid": 13732
     }
   ],
   "queued_runs": [
@@ -992,5 +993,13 @@
       770
     ],
     "report": "reports/observable_evidence_recovery_20261115/report.md"
-  }
+  },
+  "final_artifact_audit": {
+    "status": "queued",
+    "protocol": "reports/reprompt_plus_evaluation_20261115_v2/final_audit/protocol.json",
+    "depends_on": "reprompt_plus_evaluation_20261115_v2",
+    "planned_native_replays": 480,
+    "pid": 29207
+  },
+  "latest_related_work": "docs/RECOVERY_MECHANISM_PRIOR_ART.md"
 }

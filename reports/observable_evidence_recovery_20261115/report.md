@@ -49,6 +49,6 @@ PRC 四条规则的合法密钥恢复分别为 97、98、97、97/100；联合通
 - helper 为 71530–71533 字节，另有 GS 222、TR 149364、PRC 10041468 字节的原生材料加密块。
 - CPU249 完成，主恢复耗时约 459 秒。未改变载体，未生成或改进攻击。
 
-[comparison.json](comparison.json) 给出同像素检查、译码预算、激活情况及全部匹配比较；[complete.json](complete.json) 和 [public_manifest.json](public_manifest.json) 给出产物哈希。方法定义及分层认证、分布式信源认证的直接先例见 [方法说明](../../docs/OBSERVABLE_EVIDENCE_BINDING.md)。
+[comparison.json](comparison.json) 给出同像素检查、译码预算、激活情况及全部匹配比较；[rule_equivalence.json](rule_equivalence.json) 逐对验证770个恢复/联合判定完全相同，以及360项合法通过数精确匹配。[complete.json](complete.json) 和 [public_manifest.json](public_manifest.json) 给出主实验产物哈希。方法定义及分层认证、分布式信源认证的直接先例见 [方法说明](../../docs/OBSERVABLE_EVIDENCE_BINDING.md)。
 
 本队列已用于方法开发。既有 crop/drop 是保持 512×512 坐标的置黑处理；真正的裁剪后缩放、新来源和未观察过的编辑尚需独立确认。原论文 Reprompt+ 固定候选预算另行评测。
