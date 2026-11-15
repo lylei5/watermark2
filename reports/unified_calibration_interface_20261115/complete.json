@@ -1,0 +1,1483 @@
+{
+  "status": "complete",
+  "scope": "CPU development interface validation, not empirical FPR calibration",
+  "worker_sha256": "0f5805544a2949920fdab6bf98f23c4d13ddede5784cc986382da89a3ba0a672",
+  "adapter_sha256": "57d17d303b939d52676fd98686e90039185c32456e0b65ab43fffb2e145ce0e8",
+  "native_source_sha256": "6e3743687fe01ce148fd44998c82e785b9b408548f22820c5f0defbcf3e67a5f",
+  "input_protocol_sha256": "d7bc96272883063c66509614d28c6bc29874827baf4209f89cd5ab8f0c33ce29",
+  "posterior_cases": 47,
+  "native_boolean_comparisons": 235,
+  "mismatches": 0,
+  "random_tie_cases": 9,
+  "immutable_branch_test": {
+    "status": "unattainable",
+    "n": 4,
+    "target_fpr": 0.25,
+    "immutable_accepts": 2,
+    "allowed_accepts": 1,
+    "threshold": null
+  },
+  "illustrative_zero_of_100_95ci": [
+    0.0,
+    0.03621669264517641
+  ],
+  "rows": [
+    {
+      "input": "pgid/000_pgid_default.npz",
+      "score": 0.4985425110887661,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "pgid/000_pgid_f.npz",
+      "score": 0.622790304980947,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "pgid/000_pgid_r.npz",
+      "score": 0.5961755233446744,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "pgid/001_pgid_default.npz",
+      "score": 0.6055461215201174,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "pgid/001_pgid_f.npz",
+      "score": -0.3436266087802139,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "pgid/001_pgid_r.npz",
+      "score": 0.4480722478618401,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "pgid/002_pgid_default.npz",
+      "score": -0.149355026785593,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "pgid/002_pgid_f.npz",
+      "score": 0.1677347787021294,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "pgid/002_pgid_r.npz",
+      "score": 0.2848302654287934,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "pgid/003_pgid_default.npz",
+      "score": -0.5493415085553784,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "pgid/003_pgid_f.npz",
+      "score": -0.45675987285252706,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "pgid/003_pgid_r.npz",
+      "score": -0.2696658079442185,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "pgid/004_pgid_default.npz",
+      "score": -0.7704263776426553,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "pgid/004_pgid_f.npz",
+      "score": -0.4532185634000512,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "pgid/004_pgid_r.npz",
+      "score": 0.8751313726159929,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "pgid/005_pgid_default.npz",
+      "score": 0.6018566487938717,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "pgid/005_pgid_f.npz",
+      "score": 0.8929661202847872,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "pgid/005_pgid_r.npz",
+      "score": -1.5715983062440984,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "pgid/006_pgid_default.npz",
+      "score": 0.16269876107092368,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "pgid/006_pgid_f.npz",
+      "score": -0.43752158357773757,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "pgid/006_pgid_r.npz",
+      "score": -0.1860133738208614,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "pgid/007_pgid_default.npz",
+      "score": -1.5850907124551723,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "pgid/007_pgid_f.npz",
+      "score": -1.0200092457707264,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "pgid/007_pgid_r.npz",
+      "score": 0.8374482138545278,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "sembind/000_sembind.npz",
+      "score": 0.4460821612041449,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "sembind/001_sembind.npz",
+      "score": -0.030374388719379475,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "sembind/002_sembind.npz",
+      "score": -0.3629525140919253,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "sembind/003_sembind.npz",
+      "score": -0.3733948389932508,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "sembind/004_sembind.npz",
+      "score": -0.5313472576066912,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "sembind/005_sembind.npz",
+      "score": -0.19113347714805531,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "sembind/006_sembind.npz",
+      "score": 0.3079724108407058,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "sembind/007_sembind.npz",
+      "score": -0.48533110369250015,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "seal/000_seal.npz",
+      "score": 0.545777889701307,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "seal/001_seal.npz",
+      "score": 0.6066188466008456,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "seal/002_seal.npz",
+      "score": -0.15517191110982947,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "seal/003_seal.npz",
+      "score": -0.546334755698847,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "seal/004_seal.npz",
+      "score": -0.7820259881256295,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "seal/005_seal.npz",
+      "score": 0.5981708855609686,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "seal/006_seal.npz",
+      "score": 0.16996798446843236,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "seal/007_seal.npz",
+      "score": -1.5975891191662561,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": false,
+          "exported": false
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": false,
+          "exported": false
+        }
+      ]
+    },
+    {
+      "input": "native_positive_latent/0",
+      "score": 44.99700204396312,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": true,
+          "exported": true
+        }
+      ]
+    },
+    {
+      "input": "native_positive_latent/1",
+      "score": 44.1148625008345,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": true,
+          "exported": true
+        }
+      ]
+    },
+    {
+      "input": "native_positive_latent/2",
+      "score": 44.529531028784085,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": true,
+          "exported": true
+        }
+      ]
+    },
+    {
+      "input": "native_positive_latent/3",
+      "score": 43.9508423984435,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": true,
+          "exported": true
+        }
+      ]
+    },
+    {
+      "input": "native_positive_latent/4",
+      "score": 44.86972327926329,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": true,
+          "exported": true
+        }
+      ]
+    },
+    {
+      "input": "native_positive_latent/5",
+      "score": 44.18873389351104,
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": true,
+          "exported": true
+        }
+      ]
+    },
+    {
+      "input": "zero_posterior_edge",
+      "score": "inf",
+      "parity": [
+        {
+          "nominal_fpr": 0.9,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.5,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.01,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 0.001,
+          "native": true,
+          "exported": true
+        },
+        {
+          "nominal_fpr": 1e-06,
+          "native": true,
+          "exported": true
+        }
+      ]
+    }
+  ]
+}

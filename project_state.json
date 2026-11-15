@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-15T15:15:50.1533247Z",
+  "updated_at": "2026-11-15T15:36:52.5123429Z",
   "status": "unified_benchmark_preparation",
   "active_experiments": 0,
   "queued_experiments": 0,
-  "latest_progress_report": "reports/unified_benchmark_preflight_20261115/report.md",
+  "latest_progress_report": "reports/unified_calibration_interface_20261115/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/RESEARCH_PLAN.md",
   "native_sembind_reproduction_complete": false,
@@ -68,6 +68,11 @@
   "evaluation_policy": "Unchanged published top-venue author attacks only; full budgets; no adaptive or improved attacks; independent null calibration and evaluation; report achieved FPR and absolute TPR.",
   "current_decision": "Instance-key recovery frozen. Complete the unified SemBind/PGID/SEAL benchmark before new mechanisms; separate same-carrier and native-system comparisons, independently calibrate 1% and 0.1% FPR, preserve complete published attack budgets and all denominators.",
   "completed_evidence": [
+    {
+      "id": "unified_calibration_interface_20261115",
+      "report": "reports/unified_calibration_interface_20261115/report.md",
+      "summary": "235 PRC score/author Detect comparisons on249, zero differences; tie and immutable-branch calibration checks passed; not empirical natural-image FPR"
+    },
     {
       "id": "unified_benchmark_preflight_20261115",
       "report": "reports/unified_benchmark_preflight_20261115/report.md",
@@ -1280,6 +1285,20 @@
       "extraction_artifacts": 40,
       "report": "reports/unified_benchmark_preflight_20261115/report.md"
     },
-    "applicability_audit": "docs/UNIFIED_BENCHMARK_APPLICABILITY.md"
+    "applicability_audit": "docs/UNIFIED_BENCHMARK_APPLICABILITY.md",
+    "calibration_interface": {
+      "status": "partial",
+      "prc_detect_boolean_comparisons": 235,
+      "prc_detect_mismatches": 0,
+      "report": "reports/unified_calibration_interface_20261115/report.md",
+      "natural_fpr_calibrated": false
+    },
+    "natural_null_assets": {
+      "status": "downloading",
+      "dataset": "COCO test2017",
+      "expected_archive_bytes": 6646970404,
+      "transport": "loopback SSH streaming relay from official S3; archive only on249",
+      "next_step": "ETag/CRC verification, image validation and near-duplicate screening"
+    }
   }
 }
