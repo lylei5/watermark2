@@ -1,0 +1,37 @@
+{
+  "status": "startup_validated",
+  "scope": "First complete image in each shard only; no FPR/TPR result",
+  "protocol_sha256": "1a3283f12074a95cbfede7a2bb64095dfa7cb812c65c00cceb363ca34d2de20a",
+  "checks": [
+    {
+      "shard": 0,
+      "source_index": 0,
+      "gpu": 7,
+      "gpu_uuid": "GPU-9644fb82-cb6f-7311-8017-eaee41409bb7",
+      "unet_calls": 51,
+      "artifact_sha256": "28a3450109b66e10e10a1b7d0ee0ff3414653c40589b69ad05b99421d11320fc",
+      "input_file_sha256": "07e06abd824a9715c471514150fb70e3271aa5307db62cca69a7abff627de910",
+      "record_sha256": "33955e44dce92174f734cc1b9e85635a5e4d96be2fbbbc7564cb16dcfe5b9135"
+    },
+    {
+      "shard": 1,
+      "source_index": 1,
+      "gpu": 5,
+      "gpu_uuid": "GPU-e6f35928-0155-f121-e707-1eaf3c14965c",
+      "unet_calls": 51,
+      "artifact_sha256": "2d6e5530585effc0af7401e16c89cdefc10616692c4ce69ad61dbe386851266c",
+      "input_file_sha256": "2c01a2744ab45688d33ee77c8157cb7d6fe12905821d59b10c66fff91b86d259",
+      "record_sha256": "cadac7534428bd233473cbccd7b56bcab20587fc61152ec4abdcb399b42e4447"
+    },
+    {
+      "shard": 2,
+      "source_index": 2,
+      "gpu": 4,
+      "gpu_uuid": "GPU-748b31fa-0510-6b56-f820-f3812266ed28",
+      "unet_calls": 51,
+      "artifact_sha256": "f31bee5b9239135b1b8b111a2810d369b4fff1b20d095776223331ad89f38f04",
+      "input_file_sha256": "7040231f9678cdb97a0096d195da82de173325d0043a8eff5633db5aa424d5c3",
+      "record_sha256": "9995cc0f9ecdb11b15d84f6eb424ad8364bb405ca02b10d31be5fba2bed18c0d"
+    }
+  ]
+}

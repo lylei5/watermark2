@@ -6,6 +6,7 @@
 
 | 研究 | 已完成证据与边界 |
 |---|---|
+| [40000图共同自然负例队列](unified_natural_cohort_20261115/report.md) | 官方40670图完整获取且全部可解码；去重/开发关联排除后40642簇，冻结20000校准+20000独立验证；SEAL协议已冻结，准确率和主表尚未完成 |
 | [PRC连续分数与校准接口](unified_calibration_interface_20261115/report.md) | 47组输入、5个名义水平，235次判定与原Detect完全一致；并列值和不可达FPR分支检查完成，尚非自然图FPR校准 |
 | [统一对比来源核验与完整成本](unified_benchmark_preflight_20261115/report.md) | 8张共同开发图、40份完整反演产物全部核验；普通DDIM/PGID-F/PGID-R/SemBind/SEAL为3.70/21.27/14.34/44.59/2.45秒每图；论文攻击并集及实现缺项已列明，非统一FPR结果 |
 | [实例恢复负结果与附录](instance_recovery_negative_results_20261115/report.md) | 当前研究线冻结；汇总真实恢复、强对照、几何泛化、完整候选预算及存储证据，不新增实验或宣称总体不可能性 |

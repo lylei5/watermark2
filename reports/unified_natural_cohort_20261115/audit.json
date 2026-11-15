@@ -1,0 +1,26 @@
+{
+  "scope": "Natural-image calibration/validation, independent of generated and attacked images",
+  "worker_sha256": "86147c23e7bd25860beca077c10ffa66ea2c27dd75f3a06d26cce348ae82dc60",
+  "archive_receipt_sha256": "82ab69f007450944b56547a186b62d6b3984bd1c3b6989cb037031c7f22cf2b9",
+  "archive_sha256": "c7908c3c9f94ba2f3340ebbeec58c25db6be8774f18d68c2f15d0e369d95baba",
+  "preprocessing": "PIL RGB then ImageOps.fit 512x512, BICUBIC, centering(.5,.5), no EXIF transpose",
+  "duplicate_policy": "Exact RGB512 hashes and transitive 64-bit DCT pHash Hamming<=4; one image per cluster; clusters touching external development excluded",
+  "duplicate_limit": "Perceptual screening is a heuristic, not a guarantee that all related photographs are detected",
+  "ordering": "SHA256(watermark2-null-20261115/ + COCO source ID)",
+  "original_test_images": 40670,
+  "external_development_images": 5008,
+  "invalid_images": [],
+  "near_duplicate_edges": 38,
+  "excluded_due_to_external": 3,
+  "independent_candidate_clusters": 40642,
+  "metadata_exclusion_sha256": "afe3b30e403dd7f228e2373023abbd60042a6e10ec6874d3652df034d289ebb9",
+  "split_counts": {
+    "calibration": 20000,
+    "validation": 20000
+  },
+  "elapsed_seconds": 283.5906911859056,
+  "status": "complete",
+  "manifest_sha256": "13c09dd26845ccad25d9e553888b60fb2e3283de6fd89aaee00e9508b96917a6",
+  "all_features_sha256": "684f68680a9aecb7ed878d24202d38bb174c3dab0098a40c70a01b5d7802679f",
+  "unused_clusters": 642
+}

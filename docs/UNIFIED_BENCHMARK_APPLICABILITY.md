@@ -33,6 +33,14 @@
 
 SEAL 引用的早期题名 “Steganalysis on Digital Watermarking” 与 NeurIPS2024 的 “Can Simple Averaging Defeat Modern Watermarks?” 可由作者仓库关联到同一 arXiv 编号2406.09026。Regeneration removal 的正式会议年份为2024，不能照抄 SEAL 参考文献中的2025年份。
 
+### WMCopier 的可执行配置缺口
+
+2026-11-15 进一步核查作者公开文件：[训练入口](https://github.com/holdrain/WMCopier/blob/main/scripts/train.sh)（Git blob `f5759b6222359463b644ba115a139648cab1b8a3`）使用5000张辅助图、20000训练步、256像素、每设备batch12、4进程、梯度累积6；这与 SemBind 附录的1000张/10000步是两个已公布设置，必须分别标注预算，不能混称同一次复现。
+
+[攻击入口](https://github.com/holdrain/WMCopier/blob/main/scripts/attack.sh)（blob `8874934da7b3d104e364f2c0ce7e13a5620f70f3`）与[调用文件](https://github.com/holdrain/WMCopier/blob/main/src/inverseforge_t.py)（blob `312239787b41853b0d8a051803d44bfc25ade3f0`）尚不能直接匹配：脚本使用未定义的 `--refinement`，缺少必填 `--attacker_ckp`，Python 日志分支引用未定义的 `args.result_file`。公开载体配置主要面向六种后处理水印，尚未取得 SemBind 的 GS/TR 扩展配置。原函数默认采样100步、end_step40、refinement预算L100、beta100、eta1e-4；这些默认值不等于已核实的 SemBind 完整实验配置。
+
+当前将这一格标为“原作者配置待验收”，保留在待执行清单。不会修改采样/优化规则、猜测 GS/TR 配置或以短训练代替完整训练；若最终不能按原作者实现执行，则公开列为复现缺项。
+
 ## 共同失真和原生失真
 
 共同条件使用 [ICML2024 WAVES](https://proceedings.mlr.press/v235/an24a.html) 原函数，固定 commit `1477635d306d6f8c77a588e6441bd4ba301a1f7a` 和公布强度，不按结果搜索强度。覆盖旋转、裁剪缩放、擦除、亮度、对比度、模糊、噪声和压缩。主条件及各强度在运行前冻结。
@@ -51,6 +59,6 @@ SemBind 原文还含 JPEG70、亮度factor1、GaussianBlur radius3、噪声sigma
 | SEAL spatial | 原空间热图、百分位和连通块分数 | 与语义验真区分；空间检测的 AUC 不能充当语义检测器的固定 FPR 结果。 |
 | 原生载体 AND 登记SSCD | 原生分数与逐图登记相似度的完整联合规则 | 需要逐图存储，定义记录已知或全库检索；不得在攻击集上择阈值，也不称理论上限。 |
 
-自然负例规划为两个各20000图的来源隔离集合；COCO官方test2017作为当前候选资产，必须先完成下载、解压校验、图像有效性及重复审计。开发耗时的8张旧自然图不进入这些集合。主表500个来源的队列还需与全部历史开发来源核查重叠。未满足这些条件时，工作点保持“未校准”。
+[共同自然负例](../reports/unified_natural_cohort_20261115/report.md)已冻结为两个各20000图的来源隔离集合：官方COCO test2017的40670张全部有效，去重及开发关联排除后40642个候选簇。开发耗时的8张旧自然图及其近重复不进入这些集合。主表500个来源的队列还需与全部历史开发来源核查重叠；完成各检测器提取、阈值冻结及独立自然图验证前，工作点保持“未校准”。
 
 [PRC分数接口验收](../reports/unified_calibration_interface_20261115/report.md)已在249完成：47组输入、5个名义水平，共235次原Detect/导出分数判定差异0。通用经验校准工具保留并列值与固定接受分支，目标误报预算不可达时显式返回不可达。此验收不替代自然图校准，也没有认证全部载体的最终接口。

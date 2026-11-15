@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-15T15:36:52.5123429Z",
-  "status": "unified_benchmark_preparation",
-  "active_experiments": 0,
+  "updated_at": "2026-11-15T16:03:55.5705505Z",
+  "status": "unified_benchmark_null_calibration",
+  "active_experiments": 1,
   "queued_experiments": 0,
-  "latest_progress_report": "reports/unified_calibration_interface_20261115/report.md",
+  "latest_progress_report": "reports/unified_natural_cohort_20261115/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/RESEARCH_PLAN.md",
   "native_sembind_reproduction_complete": false,
@@ -68,6 +68,11 @@
   "evaluation_policy": "Unchanged published top-venue author attacks only; full budgets; no adaptive or improved attacks; independent null calibration and evaluation; report achieved FPR and absolute TPR.",
   "current_decision": "Instance-key recovery frozen. Complete the unified SemBind/PGID/SEAL benchmark before new mechanisms; separate same-carrier and native-system comparisons, independently calibrate 1% and 0.1% FPR, preserve complete published attack budgets and all denominators.",
   "completed_evidence": [
+    {
+      "id": "unified_natural_cohort_20261115",
+      "report": "reports/unified_natural_cohort_20261115/report.md",
+      "summary": "Official40670-image archive verified;40642 eligible clusters;20000 calibration plus20000 independent validation frozen; SEAL startup validation only"
+    },
     {
       "id": "unified_calibration_interface_20261115",
       "report": "reports/unified_calibration_interface_20261115/report.md",
@@ -869,7 +874,28 @@
     },
     "superiority_established": false
   },
-  "active_runs": [],
+  "active_runs": [
+    {
+      "run": "unified_seal_nulls_20261115",
+      "status": "running",
+      "coordinator_pid": 26667,
+      "worker_pids": [
+        26690,
+        26691,
+        26692
+      ],
+      "gpu_indices": [
+        7,
+        5,
+        4
+      ],
+      "expected_images": 40000,
+      "protocol": "protocols/unified_seal_nulls_20261115.json",
+      "startup_validation": "reports/unified_natural_cohort_20261115/seal_startup_validation.json",
+      "completion": "/data0/liyanlei/watermark_research/runs/unified_seal_nulls_20261115/calibration_results.json",
+      "mechanism": "Detached coordinator; child process-exit waits; per-record hash-checked resume"
+    }
+  ],
   "queued_runs": [],
   "author_reprompt_control": {
     "run": "author_reprompt_control_20261114_v2",
@@ -1264,7 +1290,7 @@
     "historical_artifacts_preserved": true
   },
   "unified_defense_benchmark": {
-    "status": "preparation",
+    "status": "natural_null_extraction",
     "target_fpr": [
       0.01,
       0.001
@@ -1277,7 +1303,7 @@
       "native_system"
     ],
     "stateful_control": "native carrier plus per-image registered SSCD",
-    "current_block": "Source/applicability audit and 8-image full-runtime probe completed; natural-null acquisition and matched-carrier/score validation pending",
+    "current_block": "40000 common natural nulls frozen and audited; full SEAL extraction started on three idle permitted GPUs; common-carrier/other detector interfaces still pending",
     "runtime_probe": {
       "status": "complete",
       "run": "unified_runtime_probe_20261115",
@@ -1294,11 +1320,25 @@
       "natural_fpr_calibrated": false
     },
     "natural_null_assets": {
-      "status": "downloading",
+      "status": "complete",
       "dataset": "COCO test2017",
-      "expected_archive_bytes": 6646970404,
-      "transport": "loopback SSH streaming relay from official S3; archive only on249",
-      "next_step": "ETag/CRC verification, image validation and near-duplicate screening"
+      "original_images": 40670,
+      "valid_candidate_clusters": 40642,
+      "calibration_images": 20000,
+      "validation_images": 20000,
+      "manifest_sha256": "13c09dd26845ccad25d9e553888b60fb2e3283de6fd89aaee00e9508b96917a6",
+      "report": "reports/unified_natural_cohort_20261115/report.md",
+      "run": "unified_data_pipeline_20261115",
+      "cpu_audit_seconds": 283.5906911859056
+    },
+    "seal_natural_calibration": {
+      "status": "running",
+      "run": "unified_seal_nulls_20261115",
+      "protocol_sha256": "1a3283f12074a95cbfede7a2bb64095dfa7cb812c65c00cceb363ca34d2de20a",
+      "full_extraction_completed": false,
+      "empirical_fpr_validated": false,
+      "legitimate_tpr_completed": false,
+      "attacks_completed": false
     }
   }
 }

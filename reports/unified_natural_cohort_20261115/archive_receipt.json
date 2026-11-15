@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "pid": 12294,
+  "bytes_expected": 6646970404,
+  "official_url": "http://images.cocodataset.org/zips/test2017.zip",
+  "transport_url": "https://s3.amazonaws.com/images.cocodataset.org/zips/test2017.zip",
+  "transport": "loopback-only SSH reverse relay; no archive persisted on the PC",
+  "expected_etag": "1d4d2301bdee781394c21718428764d2-793",
+  "chunk_bytes": 8388608,
+  "started_at": "2026-11-15T15:48:34.018550+00:00",
+  "archive_sha256": "c7908c3c9f94ba2f3340ebbeec58c25db6be8774f18d68c2f15d0e369d95baba",
+  "actual_etag": "1d4d2301bdee781394c21718428764d2-793",
+  "extracted_images": 40670,
+  "completed_at": "2026-11-15T15:53:34.942061+00:00"
+}
