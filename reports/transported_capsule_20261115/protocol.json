@@ -1,0 +1,59 @@
+{
+  "created_at": 1794721244.2339182,
+  "hypothesis": "Forward-transport helper and key basis; infer edit from uncoded pilots, solve key on disjoint coordinates, certify held-out prediction.",
+  "private": "/data0/liyanlei/watermark_research/private_eval/transported_capsule_20261115",
+  "provider_sha256": "cd52a4fe5f4478d69f4807249f2202c26ba5749366d72b01c9eea3f125a00d24",
+  "scripts": {
+    "run_transported_capsule.py": "3acf4df56f952d5981e4e3c4f6ffecf36bd412339c9dec8c92688dc5b019acfa",
+    "transported_key_capsule.py": "35238f0e594930410e345d03b0ede8daf62eae00fb4b71760888635310c623de"
+  },
+  "inputs": {
+    "/data0/liyanlei/watermark_research/runs/shared_channel_binding_20261114_v2/protocol.json": "204dbe256f2e0c23016e75db4355e962fd11aa8e08b60b113facd6eb633db19d",
+    "/data0/liyanlei/watermark_research/runs/shared_channel_binding_20261114_v2/feature_rows.json": "1b4503047d03d2c134583597fae9752f5b03b4a3279bef60415eb296954b6528",
+    "/data0/liyanlei/watermark_research/runs/shared_channel_binding_20261114_v2/enrollment.json": "135f0a7d88315c5a40ec7dec42d4f8d0f59fdf012beca219d5d5844948c4b52d",
+    "/data0/liyanlei/watermark_research/runs/reprompt_comparison_20261114/content_rows.json": "2c2214920ded0ce0014aa315b40cfb2a138b3d812869ea4f3b3793b3e2dcca40",
+    "/data0/liyanlei/watermark_research/runs/author_reprompt_evaluation_20261114_v2/queries.json": "9541f999ca22523ceeee89f86369caf687d1f353ed5d9938aed4a27e4651a69b",
+    "/data0/liyanlei/watermark_research/runs/reprompt_plus_evaluation_20261115_v2/queries.json": "e18c19478bad6b5d11255abe4bdbe46aee15d6a75edc6d779db7f90e09d6aef5",
+    "/data0/liyanlei/watermark_research/runs/reprompt_plus_recovery_20261115/controls.json": "1f9cf7434304726f2b702cce4037ae515cd8a1919f04ff9ecd15ab3dbe57ea02"
+  },
+  "methods": [
+    [
+      "identity_a01",
+      0.1,
+      "identity"
+    ],
+    [
+      "transport_a01",
+      0.1,
+      "transport"
+    ],
+    [
+      "transport_a03",
+      0.3,
+      "transport"
+    ]
+  ],
+  "size": 64,
+  "key_bits": 128,
+  "code": "Real-valued128-dimensional code; no BCH/RS or learned feature encoder",
+  "sigmas": [
+    0,
+    0.5,
+    1,
+    2
+  ],
+  "filter_support": 13,
+  "calibration_targets": [
+    0.9,
+    0.95
+  ],
+  "calibration": "GS tasks4,5,6 genuine only; finite coverage required, freeze before non-calibration observations.",
+  "primary_cohort": "GS tasks7,8,9; TR/PRC10sources each; existing development data.",
+  "constraints": "No attack generation or change; published Imprint/basicReprompt/Reprompt+ outputs reused with exact hashes. CPU249 only.",
+  "unknown_edit_scope": "Model-outside JPEG/noise/median/salt-pepper; existing crop/drop are coordinate-preserving masks; no crop-resize claim.",
+  "security": "Authenticated server-secret binding; no public-helper hiding or entropy guarantee.",
+  "anticipated_pairs": 1010,
+  "anticipated_key_decodes": 3030,
+  "independent_confirmation": false,
+  "novelty_established": false
+}

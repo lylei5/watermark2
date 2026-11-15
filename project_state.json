@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-15T02:15:36.4041360Z",
-  "status": "reprompt_plus_comparison_complete",
-  "active_experiments": 0,
+  "updated_at": "2026-11-15T05:44:11.9996847Z",
+  "status": "transported_capsule_evaluation",
+  "active_experiments": 1,
   "queued_experiments": 0,
   "latest_progress_report": "reports/reprompt_plus_recovery_20261115/report.md",
   "evidence_index": "reports/README.md",
@@ -58,7 +58,7 @@
   ],
   "max_concurrent_gpus": 3,
   "evaluation_policy": "Unchanged published top-venue attacks only; full budgets; no attack development; matched absolute genuine detection",
-  "current_decision": "Reprompt+ full per-source budgets complete: 240 candidates,480 unique native/PGID decisions,960 actual recoveries. At TR95/100 genuine, observable recovery accepts8/10 and7/10 sources versus matchedSSCD1/10 each. All480 native replays agree. Current recovery rules have no SSCD advantage; publication objective remains open.",
+  "current_decision": "Evaluate forward-transported real-valued key capsules using shared edit operators inferred from uncoded pilots. Frozen1010pairs,3030key decodes; no new attacks. Separate direct reference/pixel controls and six strong controls. Novelty and superiority unestablished.",
   "completed_evidence": [
     {
       "path": "reports/reprompt_plus_recovery_20261115/report.md",
@@ -830,7 +830,14 @@
     },
     "superiority_established": false
   },
-  "active_runs": [],
+  "active_runs": [
+    {
+      "run": "transported_capsule_20261115",
+      "pid": 44565,
+      "device": "CPU249",
+      "protocol_sha256": "1d11acf04f5e6fc8f7792704671d663ddb7f723391e329c3e6a7b5068943fe65"
+    }
+  ],
   "queued_runs": [],
   "author_reprompt_control": {
     "run": "author_reprompt_control_20261114_v2",
@@ -1053,5 +1060,18 @@
     "superiority_established": false,
     "decision_audit": "reports/reprompt_plus_recovery_20261115/decision_audit.json",
     "figure": "reports/reprompt_plus_recovery_20261115/figure/tr_reprompt_plus.pdf"
+  },
+  "transported_capsule": {
+    "status": "running",
+    "run": "transported_capsule_20261115",
+    "design": "docs/TRANSPORTED_KEY_CAPSULE.md",
+    "protocol": "reports/transported_capsule_20261115/protocol.json",
+    "planned_pairs": 1010,
+    "planned_key_decodes": 3030,
+    "attack_generation": false,
+    "native_carrier_changed": false,
+    "device": "CPU249",
+    "independent_confirmation": false,
+    "novelty_established": false
   }
 }
