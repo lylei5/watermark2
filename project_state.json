@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-16T09:12:27.889142+00:00",
-  "status": "unified_benchmark_seal_complete_natural_extraction_preflight",
-  "active_experiments": 1,
+  "updated_at": "2026-11-16T12:50:58.778134+00:00",
+  "status": "experimental_execution_stopped_by_user",
+  "active_experiments": 0,
   "queued_experiments": 0,
-  "latest_progress_report": "reports/unified_extraction_reproducibility_20261116/report.md",
+  "latest_progress_report": "reports/unified_null_stop_20261116/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/RESEARCH_PLAN.md",
   "native_sembind_reproduction_complete": false,
@@ -66,7 +66,7 @@
   ],
   "max_concurrent_gpus": 3,
   "evaluation_policy": "Unchanged published top-venue author attacks only; full budgets; no adaptive or improved attacks; independent null calibration and evaluation; report achieved FPR and absolute TPR.",
-  "current_decision": "Instance-key recovery and GS fingerprint fixed-point writeback are frozen. Complete the unified SemBind/PGID/SEAL benchmark with independently calibrated FPR, legitimate detection and unchanged published full-budget attacks.",
+  "current_decision": "User stopped experimental execution because runtime is too long. Preserve completed and partial evidence. Do not restart the long queue or launch replacement experiments without a new user instruction. Instance recovery and fixed-point writeback remain frozen.",
   "completed_evidence": [
     {
       "id": "unified_extraction_reproducibility_20261116",
@@ -894,29 +894,7 @@
     },
     "superiority_established": false
   },
-  "active_runs": [
-    {
-      "run": "unified_null_features_20261116_v2",
-      "status": "development_parity_gate",
-      "coordinator_pid": 36378,
-      "worker_pids": [
-        4418,
-        4454
-      ],
-      "gpu_indices": [
-        7,
-        5
-      ],
-      "assigned_gpu_indices": [
-        7,
-        5,
-        4
-      ],
-      "scope": "Complete40000 natural inputs; eight-development-source numerical gate before160000 formal artifacts; no attacks",
-      "observed_at": "2026-11-16T09:12:27.889142+00:00",
-      "snapshot": "reports/unified_extraction_reproducibility_20261116/queue_snapshot.json"
-    }
-  ],
+  "active_runs": [],
   "queued_runs": [],
   "author_reprompt_control": {
     "run": "author_reprompt_control_20261114_v2",
@@ -1311,7 +1289,7 @@
     "historical_artifacts_preserved": true
   },
   "unified_defense_benchmark": {
-    "status": "seal_calibration_and_clean_complete",
+    "status": "stopped_by_user",
     "target_fpr": [
       0.01,
       0.001
@@ -1324,7 +1302,7 @@
       "native_system"
     ],
     "stateful_control": "native carrier plus per-image registered SSCD",
-    "current_block": "SEAL40000 calibration and clean500 independently audited and exported. SemBind strict-backend legacy/current check passed24artifacts and16exact comparisons. New full natural extraction coordinator is executing its development parity gate; formal natural batches and remaining main-table rows are not complete.",
+    "current_block": "SEAL calibration and clean500 remain complete. SemBind/PGID full natural extraction stopped by user;2complete method batches and830saved formal feature records remain. No active or queued GPU jobs; main table and attack analysis remain incomplete.",
     "runtime_probe": {
       "status": "complete",
       "run": "unified_runtime_probe_20261115",
@@ -1421,26 +1399,38 @@
       "audit": "reports/unified_seal_results_20261116/audit.json"
     },
     "full_natural_feature_extraction": {
-      "status": "development_parity_gate",
+      "status": "stopped_by_user",
       "run": "unified_null_features_20261116_v2",
       "protocol_sha256": "3dfcd16fd29b09725717978e3bcd761ba81a32fa44202bf238ec089ae1c994c7",
       "coordinator_pid": 36378,
       "sources": 40000,
       "method_batches": 800,
       "planned_artifacts": 160000,
-      "report": "reports/unified_extraction_reproducibility_20261116/report.md",
-      "gpu_parity_gate_completed": false,
+      "report": "reports/unified_null_stop_20261116/report.md",
+      "gpu_parity_gate_completed": true,
       "prc_specific_pgid_covered": false,
       "natural_thresholds_calibrated": false,
-      "completed_method_batches": 0,
-      "formal_artifacts": 0,
-      "snapshot": "reports/unified_extraction_reproducibility_20261116/queue_snapshot.json",
-      "observed_at": "2026-11-16T09:12:27.889142+00:00",
+      "completed_method_batches": 2,
+      "formal_artifacts": 830,
+      "snapshot": "reports/unified_null_stop_20261116/inventory.json",
+      "observed_at": "2026-11-16T12:50:58.778134+00:00",
       "previous_failed_run": "unified_null_features_20261116",
       "deterministic_backend_methods": [
         "sembind"
       ],
-      "cost_estimate": "reports/unified_extraction_reproducibility_20261116/cost_estimate.json"
+      "cost_estimate": "reports/unified_extraction_reproducibility_20261116/cost_estimate.json",
+      "formal_artifact_count_source": "Saved progress rows and NPZ file counts; no numerical or hash audit at shutdown",
+      "formal_saved_rows_by_arm": {
+        "pgid_default": 200,
+        "pgid_f": 200,
+        "pgid_r": 200,
+        "sembind": 230
+      },
+      "full_extraction_completed": false,
+      "stopped_at": "2026-11-16T12:50:00.685854+00:00",
+      "automatic_restart": false,
+      "restart_authorized": false,
+      "stop_receipt": "reports/unified_null_stop_20261116/stop_receipt.json"
     },
     "seal_result_exports": [
       "reports/unified_seal_results_20261116/main_table_seal.csv",
@@ -1457,7 +1447,8 @@
       "report": "reports/unified_extraction_reproducibility_20261116/report.md",
       "audit": "reports/unified_extraction_reproducibility_20261116/audit.json",
       "general_hardware_guarantee": false
-    }
+    },
+    "automatic_restart": false
   },
   "public_sscd_binary_probe": {
     "status": "complete",
@@ -1574,5 +1565,14 @@
   "direction_a": {
     "status": "analysis_only_retained",
     "experiments_authorized": false
-  }
+  },
+  "stopped_runs": [
+    {
+      "run": "unified_null_features_20261116_v2",
+      "status": "stopped_by_user",
+      "stopped_at": "2026-11-16T12:50:00.685854+00:00",
+      "remaining_processes": 0,
+      "report": "reports/unified_null_stop_20261116/report.md"
+    }
+  ]
 }

@@ -1,0 +1,111 @@
+{
+  "observed_at": "2026-11-16T12:50:58.778134+00:00",
+  "status": "stopped_by_user",
+  "completed_method_batches": 2,
+  "formal_saved_progress_rows": 830,
+  "formal_saved_rows_by_arm": {
+    "pgid_default": 200,
+    "pgid_f": 200,
+    "pgid_r": 200,
+    "sembind": 230
+  },
+  "chunks": [
+    {
+      "name": "pgid_00000",
+      "complete_receipt_exists": true,
+      "saved_progress_rows": 300,
+      "npz_files": 300,
+      "arm_counts": {
+        "pgid_default": 100,
+        "pgid_f": 100,
+        "pgid_r": 100
+      }
+    },
+    {
+      "name": "pgid_00100",
+      "complete_receipt_exists": true,
+      "saved_progress_rows": 300,
+      "npz_files": 300,
+      "arm_counts": {
+        "pgid_default": 100,
+        "pgid_f": 100,
+        "pgid_r": 100
+      }
+    },
+    {
+      "name": "sembind_00000",
+      "complete_receipt_exists": false,
+      "saved_progress_rows": 98,
+      "npz_files": 98,
+      "arm_counts": {
+        "sembind": 98
+      }
+    },
+    {
+      "name": "sembind_00100",
+      "complete_receipt_exists": false,
+      "saved_progress_rows": 98,
+      "npz_files": 98,
+      "arm_counts": {
+        "sembind": 98
+      }
+    },
+    {
+      "name": "sembind_00200",
+      "complete_receipt_exists": false,
+      "saved_progress_rows": 34,
+      "npz_files": 34,
+      "arm_counts": {
+        "sembind": 34
+      }
+    }
+  ],
+  "development_parity": {
+    "development_pgid": {
+      "passed": true,
+      "artifacts": 24,
+      "max_absolute_difference": 0.0,
+      "tolerance": {
+        "sources": 8,
+        "reference_runs": {
+          "sembind": "/data0/liyanlei/watermark_research/runs/unified_sembind_reproducibility_20261116_legacy",
+          "pgid": "/data0/liyanlei/watermark_research/runs/unified_runtime_probe_20261115"
+        },
+        "reference_protocol_sha256": {
+          "sembind": "2ed15526e5ad2a72b01f651249c40e9f62ba5f5707d64877c6b3a0e3dbe4d13d",
+          "pgid": "d7bc96272883063c66509614d28c6bc29874827baf4209f89cd5ab8f0c33ce29"
+        },
+        "raw_latent_atol": 1e-05,
+        "raw_latent_rtol": 1e-05,
+        "semantic_code_exact": true,
+        "stop_before_natural_extraction_on_failure": true
+      },
+      "reference_protocol_sha256": "d7bc96272883063c66509614d28c6bc29874827baf4209f89cd5ab8f0c33ce29"
+    },
+    "development_sembind": {
+      "passed": true,
+      "artifacts": 8,
+      "max_absolute_difference": 0.0,
+      "tolerance": {
+        "sources": 8,
+        "reference_runs": {
+          "sembind": "/data0/liyanlei/watermark_research/runs/unified_sembind_reproducibility_20261116_legacy",
+          "pgid": "/data0/liyanlei/watermark_research/runs/unified_runtime_probe_20261115"
+        },
+        "reference_protocol_sha256": {
+          "sembind": "2ed15526e5ad2a72b01f651249c40e9f62ba5f5707d64877c6b3a0e3dbe4d13d",
+          "pgid": "d7bc96272883063c66509614d28c6bc29874827baf4209f89cd5ab8f0c33ce29"
+        },
+        "raw_latent_atol": 1e-05,
+        "raw_latent_rtol": 1e-05,
+        "semantic_code_exact": true,
+        "stop_before_natural_extraction_on_failure": true
+      },
+      "reference_protocol_sha256": "2ed15526e5ad2a72b01f651249c40e9f62ba5f5707d64877c6b3a0e3dbe4d13d"
+    }
+  },
+  "numerical_audit_performed": false,
+  "scope": "Read-only metadata inventory of already-saved progress; incomplete run is not a completed calibration or benchmark.",
+  "gpu_processes": "",
+  "gpu_inventory": "0, 1, 0\n1, 1, 0\n2, 1, 0\n3, 1, 0\n4, 1, 0\n5, 1, 0\n6, 1, 0\n7, 1, 0"
+}

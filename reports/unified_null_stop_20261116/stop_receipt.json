@@ -1,0 +1,133 @@
+{
+  "requested_at": "2026-11-16T12:49:59.224487+00:00",
+  "reason": "User requested stopping because runtime is too long",
+  "run": "/data0/liyanlei/watermark_research/runs/unified_null_features_20261116_v2",
+  "pipeline_before": {
+    "status": "extracting_full_natural_cohort",
+    "pid": 36378,
+    "protocol_sha256": "3dfcd16fd29b09725717978e3bcd761ba81a32fa44202bf238ec089ae1c994c7",
+    "completed_jobs": 2,
+    "active": [
+      {
+        "job": "sembind_00000",
+        "gpu": 7,
+        "pid": 4970
+      },
+      {
+        "job": "sembind_00100",
+        "gpu": 4,
+        "pid": 4989
+      },
+      {
+        "job": "sembind_00200",
+        "gpu": 5,
+        "pid": 14739
+      }
+    ]
+  },
+  "actions": [
+    {
+      "pid": 36378,
+      "command_sha256": "f1bf479c9365f41838d7c24a5616de99933fc962bb8063e0d2e172811778d23c",
+      "signals": [
+        "SIGTERM"
+      ],
+      "exit_verified": true
+    },
+    {
+      "pid": 4970,
+      "command_sha256": "bdef373e48e1a3f44df4cba187c05a012db1a3785de9a8d89787fd0e8b45bd28",
+      "signals": [
+        "SIGTERM"
+      ],
+      "exit_verified": true
+    },
+    {
+      "pid": 4989,
+      "command_sha256": "dbb0572ea8eb277097c54218ea045d80779df15085bab076604912f0be1e50ef",
+      "signals": [
+        "SIGTERM"
+      ],
+      "exit_verified": true
+    },
+    {
+      "pid": 14739,
+      "command_sha256": "47511fdbe2e2277297ae50c4ad6415b42fa7b424514872cb49dbedbb6b1f07c2",
+      "signals": [
+        "SIGTERM"
+      ],
+      "exit_verified": true
+    }
+  ],
+  "restart_authorized": false,
+  "status": "stopped_by_user",
+  "stopped_at": "2026-11-16T12:50:00.685854+00:00",
+  "remaining_run_processes": [],
+  "gpu_processes_after": "",
+  "gpu_inventory_after": "0, 1, 0\n1, 1, 0\n2, 1, 0\n3, 1, 0\n4, 1, 0\n5, 1, 92\n6, 1, 0\n7, 1, 0",
+  "worker_states_before": {
+    "sembind_00000": {
+      "status": "running",
+      "pid": 4970,
+      "method": "sembind",
+      "protocol_sha256": "0005252c6a73e123b1b16cab299bcdb08b4fa9fbb85ba66e45546ed79fe4d943",
+      "deterministic_backend": {
+        "enabled": true,
+        "cudnn_deterministic": true,
+        "cudnn_benchmark": false,
+        "cublas_workspace": ":4096:8"
+      },
+      "gpu": 7,
+      "gpu_uuid": "GPU-9644fb82-cb6f-7311-8017-eaee41409bb7",
+      "gpu_name": "NVIDIA GeForce RTX 3090",
+      "versions": {
+        "torch": "2.5.1+cu124",
+        "diffusers": "0.31.0",
+        "transformers": "4.46.3"
+      },
+      "loading_seconds": 27.703588590025902
+    },
+    "sembind_00100": {
+      "status": "running",
+      "pid": 4989,
+      "method": "sembind",
+      "protocol_sha256": "082c523ea005b5e10161b6a6d1a0114043046bdd5a9a8f14da38b4e936ab0ce2",
+      "deterministic_backend": {
+        "enabled": true,
+        "cudnn_deterministic": true,
+        "cudnn_benchmark": false,
+        "cublas_workspace": ":4096:8"
+      },
+      "gpu": 4,
+      "gpu_uuid": "GPU-748b31fa-0510-6b56-f820-f3812266ed28",
+      "gpu_name": "NVIDIA GeForce RTX 3090",
+      "versions": {
+        "torch": "2.5.1+cu124",
+        "diffusers": "0.31.0",
+        "transformers": "4.46.3"
+      },
+      "loading_seconds": 27.52861669799313
+    },
+    "sembind_00200": {
+      "status": "running",
+      "pid": 14739,
+      "method": "sembind",
+      "protocol_sha256": "e5307670162a427fe0d0558c711adaee063784214d21e6a1691cd78be74d70e4",
+      "deterministic_backend": {
+        "enabled": true,
+        "cudnn_deterministic": true,
+        "cudnn_benchmark": false,
+        "cublas_workspace": ":4096:8"
+      },
+      "gpu": 5,
+      "gpu_uuid": "GPU-e6f35928-0155-f121-e707-1eaf3c14965c",
+      "gpu_name": "NVIDIA GeForce RTX 3090",
+      "versions": {
+        "torch": "2.5.1+cu124",
+        "diffusers": "0.31.0",
+        "transformers": "4.46.3"
+      },
+      "loading_seconds": 13.04767582193017
+    }
+  }
+}
