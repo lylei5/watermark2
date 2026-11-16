@@ -1,0 +1,280 @@
+{
+  "status": "complete",
+  "completed_at": "2026-11-16T09:09:16.619461+00:00",
+  "protocol_sha256": "8db6f6381fe0eb407579072acf6ac188688ce50c0f61ab9a9f91e0a5040f8027",
+  "parity_sha256": "c124ab7d320ea9ece6e669404cee852f5931528d4783dcc2e4c9fd8a47678e58",
+  "script_sha256": "4c42a7cd4f3ec185e325fcfdf78959cd16c9073c5d33647ad56fb193dabe75c6",
+  "strict_artifacts_verified": 24,
+  "strict_comparisons": [
+    {
+      "source": 0,
+      "candidate": "current_a",
+      "semantic_equal": true,
+      "maximum": 0.0,
+      "mean": 0.0,
+      "sign_changes": 0,
+      "exact": true,
+      "allclose": true
+    },
+    {
+      "source": 0,
+      "candidate": "current_c",
+      "semantic_equal": true,
+      "maximum": 0.0,
+      "mean": 0.0,
+      "sign_changes": 0,
+      "exact": true,
+      "allclose": true
+    },
+    {
+      "source": 1,
+      "candidate": "current_a",
+      "semantic_equal": true,
+      "maximum": 0.0,
+      "mean": 0.0,
+      "sign_changes": 0,
+      "exact": true,
+      "allclose": true
+    },
+    {
+      "source": 1,
+      "candidate": "current_c",
+      "semantic_equal": true,
+      "maximum": 0.0,
+      "mean": 0.0,
+      "sign_changes": 0,
+      "exact": true,
+      "allclose": true
+    },
+    {
+      "source": 2,
+      "candidate": "current_a",
+      "semantic_equal": true,
+      "maximum": 0.0,
+      "mean": 0.0,
+      "sign_changes": 0,
+      "exact": true,
+      "allclose": true
+    },
+    {
+      "source": 2,
+      "candidate": "current_c",
+      "semantic_equal": true,
+      "maximum": 0.0,
+      "mean": 0.0,
+      "sign_changes": 0,
+      "exact": true,
+      "allclose": true
+    },
+    {
+      "source": 3,
+      "candidate": "current_a",
+      "semantic_equal": true,
+      "maximum": 0.0,
+      "mean": 0.0,
+      "sign_changes": 0,
+      "exact": true,
+      "allclose": true
+    },
+    {
+      "source": 3,
+      "candidate": "current_c",
+      "semantic_equal": true,
+      "maximum": 0.0,
+      "mean": 0.0,
+      "sign_changes": 0,
+      "exact": true,
+      "allclose": true
+    },
+    {
+      "source": 4,
+      "candidate": "current_a",
+      "semantic_equal": true,
+      "maximum": 0.0,
+      "mean": 0.0,
+      "sign_changes": 0,
+      "exact": true,
+      "allclose": true
+    },
+    {
+      "source": 4,
+      "candidate": "current_c",
+      "semantic_equal": true,
+      "maximum": 0.0,
+      "mean": 0.0,
+      "sign_changes": 0,
+      "exact": true,
+      "allclose": true
+    },
+    {
+      "source": 5,
+      "candidate": "current_a",
+      "semantic_equal": true,
+      "maximum": 0.0,
+      "mean": 0.0,
+      "sign_changes": 0,
+      "exact": true,
+      "allclose": true
+    },
+    {
+      "source": 5,
+      "candidate": "current_c",
+      "semantic_equal": true,
+      "maximum": 0.0,
+      "mean": 0.0,
+      "sign_changes": 0,
+      "exact": true,
+      "allclose": true
+    },
+    {
+      "source": 6,
+      "candidate": "current_a",
+      "semantic_equal": true,
+      "maximum": 0.0,
+      "mean": 0.0,
+      "sign_changes": 0,
+      "exact": true,
+      "allclose": true
+    },
+    {
+      "source": 6,
+      "candidate": "current_c",
+      "semantic_equal": true,
+      "maximum": 0.0,
+      "mean": 0.0,
+      "sign_changes": 0,
+      "exact": true,
+      "allclose": true
+    },
+    {
+      "source": 7,
+      "candidate": "current_a",
+      "semantic_equal": true,
+      "maximum": 0.0,
+      "mean": 0.0,
+      "sign_changes": 0,
+      "exact": true,
+      "allclose": true
+    },
+    {
+      "source": 7,
+      "candidate": "current_c",
+      "semantic_equal": true,
+      "maximum": 0.0,
+      "mean": 0.0,
+      "sign_changes": 0,
+      "exact": true,
+      "allclose": true
+    }
+  ],
+  "default_comparisons": [
+    {
+      "source": 0,
+      "semantic_equal": true,
+      "maximum": 0.3129076361656189,
+      "mean": 0.005563571928644873,
+      "sign_changes": 42,
+      "exact": false,
+      "allclose": false
+    },
+    {
+      "source": 1,
+      "semantic_equal": true,
+      "maximum": 0.7131912112236023,
+      "mean": 0.02606607024005969,
+      "sign_changes": 174,
+      "exact": false,
+      "allclose": false
+    },
+    {
+      "source": 2,
+      "semantic_equal": true,
+      "maximum": 1.4506867825984955,
+      "mean": 0.07145921259801269,
+      "sign_changes": 478,
+      "exact": false,
+      "allclose": false
+    },
+    {
+      "source": 3,
+      "semantic_equal": true,
+      "maximum": 1.134884774684906,
+      "mean": 0.03576939005397828,
+      "sign_changes": 246,
+      "exact": false,
+      "allclose": false
+    },
+    {
+      "source": 4,
+      "semantic_equal": true,
+      "maximum": 0.45296788215637207,
+      "mean": 0.004265089854775028,
+      "sign_changes": 35,
+      "exact": false,
+      "allclose": false
+    },
+    {
+      "source": 5,
+      "semantic_equal": true,
+      "maximum": 1.4515762329101562,
+      "mean": 0.02171847840386351,
+      "sign_changes": 147,
+      "exact": false,
+      "allclose": false
+    },
+    {
+      "source": 6,
+      "semantic_equal": true,
+      "maximum": 0.36054128408432007,
+      "mean": 0.0038715911644342516,
+      "sign_changes": 14,
+      "exact": false,
+      "allclose": false
+    },
+    {
+      "source": 7,
+      "semantic_equal": true,
+      "maximum": 0.9105816408991814,
+      "mean": 0.008970257669560111,
+      "sign_changes": 58,
+      "exact": false,
+      "allclose": false
+    }
+  ],
+  "strict_costs": {
+    "legacy": {
+      "images": 8,
+      "mean_seconds": 136.5700176856044,
+      "summed_image_seconds": 1092.5601414848352,
+      "gpu": 7,
+      "full_unet_calls": 400
+    },
+    "current_a": {
+      "images": 8,
+      "mean_seconds": 132.3254058886232,
+      "summed_image_seconds": 1058.6032471089857,
+      "gpu": 5,
+      "full_unet_calls": 400
+    },
+    "current_c": {
+      "images": 8,
+      "mean_seconds": 132.4099569869868,
+      "summed_image_seconds": 1059.2796558958944,
+      "gpu": 4,
+      "full_unet_calls": 400
+    }
+  },
+  "pgid_existing_artifacts": 24,
+  "pgid_existing_maximum_difference": 0,
+  "gpu_inferences_in_this_audit": 0,
+  "formal_natural_sources": 0,
+  "attacks": 0,
+  "scope": "Eight development inputs; same50 DPM steps,100 VAE updates, fixed seeds and unchanged tolerances. Not a detector FPR/TPR result.",
+  "preserved_interruption": {
+    "pid": 13025,
+    "linux_exit_status": 9,
+    "signal": "SIGKILL",
+    "cause": "not established",
+    "completed_images": 0
+  }
+}

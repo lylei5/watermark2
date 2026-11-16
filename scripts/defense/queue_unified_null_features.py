@@ -37,13 +37,30 @@ def save(path, value):
     temporary.replace(path)
 
 
-def prepare(run):
+def prepare(run, sembind_reference=None):
     assert not run.exists()
     original = json.loads((PROBE/'protocol.json').read_text())
     assert sha(DATA) == '13c09dd26845ccad25d9e553888b60fb2e3283de6fd89aaee00e9508b96917a6'
     prior = json.loads((PRIOR/'pipeline_state.json').read_text())
-    command = Path(f"/proc/{prior['pid']}/cmdline").read_bytes()
-    assert str(PRIOR).encode() in command and b'--coordinate' in command
+    predecessor = dict(run=str(PRIOR), protocol_sha256=sha(PRIOR/'protocol.json'))
+    if prior['status'] == 'complete':
+        assert json.loads((PRIOR/'clean_results.json').read_text())['status'] == 'complete'
+        predecessor.update(pid=None, cmdline_sha256=None, completed_results_sha256=sha(PRIOR/'clean_results.json'))
+    else:
+        command = Path(f"/proc/{prior['pid']}/cmdline").read_bytes()
+        assert str(PRIOR).encode() in command and b'--coordinate' in command
+        predecessor.update(pid=prior['pid'], cmdline_sha256=hashlib.sha256(command).hexdigest())
+    reference_runs = dict(sembind=str(PROBE), pgid=str(PROBE))
+    reproducibility = None
+    if sembind_reference is not None:
+        sembind_reference = sembind_reference.resolve()
+        assert sembind_reference.parent == ROOT/'runs'
+        assert json.loads((sembind_reference/'pipeline_state.json').read_text())['status'] == 'complete'
+        parity = json.loads((sembind_reference/'parity.json').read_text())
+        assert parity['passed'] and len(parity['comparisons']) == 16
+        references = json.loads((sembind_reference/'protocol.json').read_text())
+        reference_runs['sembind'] = next(p['run'] for p in references['plans'] if p['label'] == 'legacy')
+        reproducibility = dict(run=str(sembind_reference), parity_sha256=sha(sembind_reference/'parity.json'))
     run.mkdir()
     shutil.copy2(__file__, run/Path(__file__).name)
     shutil.copy2(Path(__file__).parent/'unified_runtime_probe.py', run/'unified_runtime_probe.py')
@@ -72,16 +89,20 @@ def prepare(run):
         scope='Full40000 common natural inputs: native SemBind raw inverse+semantic code; original PGID default/F/R for GS/TR; no PRC-specific PGID claim',
         calibration_rows=20000, validation_rows=20000, inputs_sha256=sha(run/'inputs.json'),
         data_manifest_sha256=sha(DATA), jobs=jobs, total_jobs=800, expected_feature_artifacts=160000,
-        predecessor=dict(run=str(PRIOR), protocol_sha256=sha(PRIOR/'protocol.json'), pid=prior['pid'], cmdline_sha256=hashlib.sha256(command).hexdigest()),
+        predecessor=predecessor,
         source_sha256={p.name:sha(p) for p in run.iterdir() if p.is_file()},
         python=str(ROOT/'envs/semantic_forgery_py310/bin/python'),
         expected_unet_calls=dict(pgid_default=50, pgid_f=298, pgid_r=200, sembind=50),
         budgets=original['budgets'],
-        development_preflight=dict(sources=8, reference_run=str(PROBE), raw_latent_atol=1e-5, raw_latent_rtol=1e-5, semantic_code_exact=True,
+        deterministic_backend_methods=['sembind'] if reproducibility else [],
+        reproducibility=reproducibility,
+        development_preflight=dict(sources=8, reference_runs=reference_runs,
+                                   reference_protocol_sha256={method:sha(Path(path)/'protocol.json') for method,path in reference_runs.items()},
+                                   raw_latent_atol=1e-5, raw_latent_rtol=1e-5, semantic_code_exact=True,
                                    stop_before_natural_extraction_on_failure=True),
         frozen_seed_policy='Preserve runtime-worker per-local-index seed; same100-index schedule for both methods; no outcome-driven changes',
         calibration_policy='Extract only; do not tune thresholds or view score distributions here. Scores require frozen carrier/identity interfaces later.',
-        cost_note='SemBind alone approximately495GPUhours from8-image runtime; complete original50step/100VAE-update budget retained',
+        cost_note='Complete original50step/100VAE-update budget retained. Strict-backend development timing is132-137seconds/image; historical non-deterministic495GPUhour estimate is superseded. See reproducibility cost_estimate.json for scope and exclusions.',
         gpu_cap=3, excluded_gpu=6, attacks=0)
     save(run/'protocol.json', plan)
     print(json.dumps(dict(run=str(run), protocol_sha256=sha(run/'protocol.json'), jobs=800, expected_feature_artifacts=160000)))
@@ -102,23 +123,31 @@ def coordinate(run):
     try:
         previous = plan['predecessor']
         libc = ctypes.CDLL(None, use_errno=True)
-        descriptor = libc.syscall(434, previous['pid'], 0)
-        if descriptor < 0:
-            if ctypes.get_errno() != 3:
-                raise OSError(ctypes.get_errno(), 'pidfd_open')
-        else:
-            try:
-                path = Path(f"/proc/{previous['pid']}/cmdline")
-                if path.exists():
-                    command = path.read_bytes()
-                    assert not command or hashlib.sha256(command).hexdigest() == previous['cmdline_sha256']
-                select.select([descriptor], [], [])
-            finally:
-                os.close(descriptor)
+        if previous['pid'] is not None:
+            descriptor = libc.syscall(434, previous['pid'], 0)
+            if descriptor < 0:
+                if ctypes.get_errno() != 3:
+                    raise OSError(ctypes.get_errno(), 'pidfd_open')
+            else:
+                try:
+                    path = Path(f"/proc/{previous['pid']}/cmdline")
+                    if path.exists():
+                        command = path.read_bytes()
+                        assert not command or hashlib.sha256(command).hexdigest() == previous['cmdline_sha256']
+                    select.select([descriptor], [], [])
+                finally:
+                    os.close(descriptor)
         prior_run = Path(previous['run'])
         assert sha(prior_run/'protocol.json') == previous['protocol_sha256']
         assert json.loads((prior_run/'pipeline_state.json').read_text())['status'] == 'complete'
         assert json.loads((prior_run/'clean_results.json').read_text())['status'] == 'complete'
+        if previous.get('completed_results_sha256'):
+            assert sha(prior_run/'clean_results.json') == previous['completed_results_sha256']
+        for method, path in plan['development_preflight']['reference_runs'].items():
+            assert sha(Path(path)/'protocol.json') == plan['development_preflight']['reference_protocol_sha256'][method]
+        if plan['reproducibility']:
+            check = plan['reproducibility']
+            assert sha(Path(check['run'])/'parity.json') == check['parity_sha256']
         assert sha(DATA) == plan['data_manifest_sha256']
         pins = json.loads((run/'model_files.json').read_text())
         for path, digest in pins.items():
@@ -148,6 +177,7 @@ def coordinate(run):
                        helper_sha256={p.name:sha(p) for p in target.glob('*.py') if p.name != 'unified_runtime_probe.py'},
                        gpu_indices=dict(pgid=gpu, sembind=gpu, seal=gpu),
                        expected_unet_calls=plan['expected_unet_calls'], parent_protocol_sha256=sha(run/'protocol.json'))
+            cfg['deterministic_backend'] = job['method'] in plan['deterministic_backend_methods']
             if not development:
                 cfg['preprocessing'] = 'common_natural_512'
             save(target/'protocol.json', cfg)
@@ -171,9 +201,13 @@ def coordinate(run):
             if development:
                 import numpy as np
                 maximum = 0.
+                reference_run = Path(plan['development_preflight']['reference_runs'][job['method']])
+                reference_rows = json.loads((reference_run/job['method']/'complete.json').read_text())['measurements']
+                reference_artifacts = {row['artifact']:row['artifact_sha256'] for row in reference_rows}
                 for row in result['measurements']:
+                    assert sha(reference_run/job['method']/row['artifact']) == reference_artifacts[row['artifact']]
                     actual = np.load(target/job['method']/row['artifact'])
-                    original = np.load(PROBE/job['method']/row['artifact'])
+                    original = np.load(reference_run/job['method']/row['artifact'])
                     assert set(actual.files) == set(original.files)
                     for key in original.files:
                         if key == 'semantic_code':
@@ -182,7 +216,7 @@ def coordinate(run):
                             maximum = max(maximum,float(np.max(np.abs(actual[key]-original[key]))))
                             assert np.allclose(actual[key],original[key],atol=1e-5,rtol=1e-5), (row['artifact'],key)
                 save(target/'parity.json',dict(passed=True,artifacts=len(result['measurements']),max_absolute_difference=maximum,
-                    tolerance=plan['development_preflight'],reference_protocol_sha256=sha(PROBE/'protocol.json')))
+                    tolerance=plan['development_preflight'],reference_protocol_sha256=sha(reference_run/'protocol.json')))
             return target
 
         state['status'] = 'development_parity_gate'
@@ -253,7 +287,8 @@ if __name__ == '__main__':
     parser=argparse.ArgumentParser()
     parser.add_argument('--run',type=Path,required=True)
     parser.add_argument('--prepare',action='store_true')
+    parser.add_argument('--sembind-reference',type=Path)
     args=parser.parse_args()
     run=args.run.resolve()
     assert run.parent == ROOT/'runs'
-    prepare(run) if args.prepare else coordinate(run)
+    prepare(run,args.sembind_reference) if args.prepare else coordinate(run)

@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "artifacts": 24,
+  "max_absolute_difference": 0.0,
+  "tolerance": {
+    "sources": 8,
+    "reference_run": "/data0/liyanlei/watermark_research/runs/unified_runtime_probe_20261115",
+    "raw_latent_atol": 1e-05,
+    "raw_latent_rtol": 1e-05,
+    "semantic_code_exact": true,
+    "stop_before_natural_extraction_on_failure": true
+  },
+  "reference_protocol_sha256": "d7bc96272883063c66509614d28c6bc29874827baf4209f89cd5ab8f0c33ce29"
+}

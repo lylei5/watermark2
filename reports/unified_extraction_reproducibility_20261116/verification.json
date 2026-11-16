@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "checked_at": "2026-11-16T09:15:49.200133+00:00",
+  "server": "249",
+  "checks": [
+    {
+      "path": "/data0/liyanlei/watermark_research/scripts/defense/queue_unified_null_features.py",
+      "sha256": "1b7e1621cf323f2a6ccf7471962c2c6d2a63fd5405f7e680e13f01a25ed7e784",
+      "compile_passed": true
+    },
+    {
+      "path": "/data0/liyanlei/watermark_research/scripts/defense/unified_runtime_probe.py",
+      "sha256": "3613c54ed31a06f2da392cf626ba414c8805ee1062a84e3e052e34e69fd62c31",
+      "compile_passed": true
+    },
+    {
+      "path": "/data0/liyanlei/watermark_research/scripts/defense/check_unified_reproducibility.py",
+      "sha256": "8b0dc28dd0616c5062196cd698054d62dae7a57b4b1ca45f80c7677883043a0c",
+      "compile_passed": true
+    },
+    {
+      "path": "/data0/liyanlei/watermark_research/scripts/defense/summarize_unified_reproducibility.py",
+      "sha256": "4c42a7cd4f3ec185e325fcfdf78959cd16c9073c5d33647ad56fb193dabe75c6",
+      "compile_passed": true
+    }
+  ],
+  "gpu_inferences": 0,
+  "note": "Syntax checks supplement the24artifact/16comparison execution audit. Active queue uses its own frozen source copies; future coordinator cost note is updated."
+}

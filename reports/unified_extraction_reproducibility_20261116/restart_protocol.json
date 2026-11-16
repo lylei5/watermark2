@@ -1,0 +1,11 @@
+{
+  "reference": "/data0/liyanlei/watermark_research/runs/unified_sembind_reproducibility_20261116_v2",
+  "reference_pid": 48152,
+  "reference_cmdline_sha256": "a7c751893de394735a6eda420ea038a8b5eda5ad6390c33b10b93b29dffa6dc3",
+  "source_sha256": {
+    "/data0/liyanlei/watermark_research/scripts/defense/queue_unified_null_features.py": "8f4a040193db3b13bf85376e19eb46b056018fa6881fed93e437f7a5abd9d7a9",
+    "/data0/liyanlei/watermark_research/scripts/defense/unified_runtime_probe.py": "3613c54ed31a06f2da392cf626ba414c8805ee1062a84e3e052e34e69fd62c31"
+  },
+  "target": "/data0/liyanlei/watermark_research/runs/unified_null_features_20261116_v2",
+  "scope": "Process-exit launch only after deterministic legacy/current parity succeeds; full40000 inputs, unchanged inference budgets; no attacks"
+}

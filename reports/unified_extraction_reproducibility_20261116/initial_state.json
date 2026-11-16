@@ -1,0 +1,16 @@
+{
+  "status": "failed",
+  "pid": 13019,
+  "protocol_sha256": "ec28204deb45bf84c035aa7b323b9a9f0d4c0a4e51a6de63e233387c02fc2e32",
+  "children": [
+    13023,
+    13024,
+    13025
+  ],
+  "exit_codes": [
+    0,
+    0,
+    -9
+  ],
+  "error": "AssertionError([0, 0, -9])"
+}

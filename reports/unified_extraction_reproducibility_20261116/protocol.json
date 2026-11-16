@@ -1,0 +1,47 @@
+{
+  "created_at": "2026-11-16T08:40:12.032524+00:00",
+  "sources": 8,
+  "plans": [
+    {
+      "label": "legacy",
+      "run": "/data0/liyanlei/watermark_research/runs/unified_sembind_reproducibility_20261116_legacy",
+      "gpu": 7,
+      "gpu_uuid": "GPU-9644fb82-cb6f-7311-8017-eaee41409bb7",
+      "protocol_sha256": "2ed15526e5ad2a72b01f651249c40e9f62ba5f5707d64877c6b3a0e3dbe4d13d",
+      "entry_sha256": "4a9df5a2265a36f39e871af7866deead2873e649370cbd32c54c74f9060db699"
+    },
+    {
+      "label": "current_a",
+      "run": "/data0/liyanlei/watermark_research/runs/unified_sembind_reproducibility_20261116_current_a",
+      "gpu": 5,
+      "gpu_uuid": "GPU-e6f35928-0155-f121-e707-1eaf3c14965c",
+      "protocol_sha256": "da66356f1dcef095a2058a20d74990c976ba01bffa6b8c3bea5151c2cc0f8861",
+      "entry_sha256": "4a9df5a2265a36f39e871af7866deead2873e649370cbd32c54c74f9060db699"
+    },
+    {
+      "label": "current_c",
+      "run": "/data0/liyanlei/watermark_research/runs/unified_sembind_reproducibility_20261116_current_c",
+      "gpu": 4,
+      "gpu_uuid": "GPU-748b31fa-0510-6b56-f820-f3812266ed28",
+      "protocol_sha256": "4d705aec944884120c69d89ebb8118442777099b80f916b533408dda4d311378",
+      "entry_sha256": "4a9df5a2265a36f39e871af7866deead2873e649370cbd32c54c74f9060db699"
+    }
+  ],
+  "script_sha256": "8b0dc28dd0616c5062196cd698054d62dae7a57b4b1ca45f80c7677883043a0c",
+  "reference_protocol_sha256": "d7bc96272883063c66509614d28c6bc29874827baf4209f89cd5ab8f0c33ce29",
+  "tolerance": {
+    "atol": 1e-05,
+    "rtol": 1e-05,
+    "semantic_exact": true
+  },
+  "attacks": 0,
+  "gpu_cap": 3,
+  "recovery_from": "/data0/liyanlei/watermark_research/runs/unified_sembind_reproducibility_20261116",
+  "preserved_interruption": {
+    "pid": 13025,
+    "linux_exit_status": 9,
+    "signal": "SIGKILL",
+    "cause": "not established",
+    "completed_images": 0
+  }
+}

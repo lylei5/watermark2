@@ -1,0 +1,20 @@
+{
+  "status": "estimate_from_development_inputs",
+  "sources": 40000,
+  "strict_sembind_seconds_per_image_min": 132.3254058886232,
+  "strict_sembind_seconds_per_image_max": 136.5700176856044,
+  "pgid_three_paths_seconds_per_image": 39.308150826152996,
+  "estimated_gpu_hours_min": 1907.039519053069,
+  "estimated_gpu_hours_max": 1954.20187235286,
+  "ideal_three_gpu_days_min": 26.48665998684818,
+  "ideal_three_gpu_days_max": 27.141692671567498,
+  "excludes": [
+    "load",
+    "I/O",
+    "waiting",
+    "further carrier-specific pipelines",
+    "legitimate cohorts",
+    "attacks"
+  ],
+  "note": "Small eight-source development extrapolation, not a completion promise; frozen queue cost_note retains superseded non-deterministic historical timing."
+}

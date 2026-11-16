@@ -91,6 +91,8 @@ def execute(run, method):
         os.environ.update(CUDA_VISIBLE_DEVICES=info[1], HF_HOME=str(ROOT / 'cache/huggingface'),
                           HF_HUB_OFFLINE='1', TRANSFORMERS_OFFLINE='1', OMP_NUM_THREADS='4', MKL_NUM_THREADS='4',
                           TOKENIZERS_PARALLELISM='false', WANDB_MODE='disabled')
+        if plan.get('deterministic_backend', False):
+            os.environ['CUBLAS_WORKSPACE_CONFIG'] = ':4096:8'
         sys.path.insert(0, str(source))
         import numpy as np
         import torch
@@ -102,6 +104,15 @@ def execute(run, method):
         np.random.seed(20261115)
         torch.backends.cuda.matmul.allow_tf32 = False
         torch.backends.cudnn.allow_tf32 = False
+        if plan.get('deterministic_backend', False):
+            torch.use_deterministic_algorithms(True)
+            torch.backends.cudnn.deterministic = True
+            torch.backends.cudnn.benchmark = False
+        state['deterministic_backend'] = dict(
+            enabled=torch.are_deterministic_algorithms_enabled(),
+            cudnn_deterministic=torch.backends.cudnn.deterministic,
+            cudnn_benchmark=torch.backends.cudnn.benchmark,
+            cublas_workspace=os.environ.get('CUBLAS_WORKSPACE_CONFIG'))
         state.update(status='loading', gpu=gpu, gpu_uuid=info[1], gpu_name=info[2],
                      versions={'torch': torch.__version__, 'diffusers': diffusers.__version__, 'transformers': transformers.__version__})
         save(output / 'state.json', state)

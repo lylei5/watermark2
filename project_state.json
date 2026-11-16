@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-16T08:45:51.390212+00:00",
-  "status": "unified_benchmark_seal_complete_extraction_reproducibility_check",
+  "updated_at": "2026-11-16T09:12:27.889142+00:00",
+  "status": "unified_benchmark_seal_complete_natural_extraction_preflight",
   "active_experiments": 1,
   "queued_experiments": 0,
-  "latest_progress_report": "reports/unified_seal_results_20261116/report.md",
+  "latest_progress_report": "reports/unified_extraction_reproducibility_20261116/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/RESEARCH_PLAN.md",
   "native_sembind_reproduction_complete": false,
@@ -68,6 +68,11 @@
   "evaluation_policy": "Unchanged published top-venue author attacks only; full budgets; no adaptive or improved attacks; independent null calibration and evaluation; report achieved FPR and absolute TPR.",
   "current_decision": "Instance-key recovery and GS fingerprint fixed-point writeback are frozen. Complete the unified SemBind/PGID/SEAL benchmark with independently calibrated FPR, legitimate detection and unchanged published full-budget attacks.",
   "completed_evidence": [
+    {
+      "id": "unified_extraction_reproducibility_20261116",
+      "report": "reports/unified_extraction_reproducibility_20261116/report.md",
+      "summary": "Eight development inputs across3GPUs;24complete SemBind artifacts and16legacy/current comparisons exactly equal; original PGID24artifacts maxdifference0; strict backends retain full50-step/100VAE budget"
+    },
     {
       "id": "gs_fingerprint_fixedpoint_20261116",
       "report": "reports/gs_fingerprint_fixedpoint_20261116/report.md",
@@ -891,20 +896,25 @@
   },
   "active_runs": [
     {
-      "run": "unified_sembind_reproducibility_20261116",
-      "status": "running",
-      "coordinator_pid": 13019,
+      "run": "unified_null_features_20261116_v2",
+      "status": "development_parity_gate",
+      "coordinator_pid": 36378,
       "worker_pids": [
-        13023,
-        13024,
-        13025
+        4418,
+        4454
       ],
-      "scope": "Eight existing development sources per frozen legacy/current arm; deterministic numerical reproducibility check; no attacks or natural nulls",
       "gpu_indices": [
+        7,
+        5
+      ],
+      "assigned_gpu_indices": [
+        7,
         5,
-        3,
-        2
-      ]
+        4
+      ],
+      "scope": "Complete40000 natural inputs; eight-development-source numerical gate before160000 formal artifacts; no attacks",
+      "observed_at": "2026-11-16T09:12:27.889142+00:00",
+      "snapshot": "reports/unified_extraction_reproducibility_20261116/queue_snapshot.json"
     }
   ],
   "queued_runs": [],
@@ -1314,7 +1324,7 @@
       "native_system"
     ],
     "stateful_control": "native carrier plus per-image registered SSCD",
-    "current_block": "SEAL calibration and clean500 results independently audited and exported. Full SemBind/PGID natural extraction stopped before formal inputs at SemBind development parity; numerical reproducibility correction under verification. Shared500 sources remain frozen; attack and distortion rows pending.",
+    "current_block": "SEAL40000 calibration and clean500 independently audited and exported. SemBind strict-backend legacy/current check passed24artifacts and16exact comparisons. New full natural extraction coordinator is executing its development parity gate; formal natural batches and remaining main-table rows are not complete.",
     "runtime_probe": {
       "status": "complete",
       "run": "unified_runtime_probe_20261115",
@@ -1411,25 +1421,43 @@
       "audit": "reports/unified_seal_results_20261116/audit.json"
     },
     "full_natural_feature_extraction": {
-      "status": "failed_before_formal_extraction",
-      "run": "unified_null_features_20261116",
-      "protocol_sha256": "e0ebe9aad974a310eac591a915b946a4eab997ffa4883d2a80bf463a7b078d22",
-      "coordinator_pid": 37800,
+      "status": "development_parity_gate",
+      "run": "unified_null_features_20261116_v2",
+      "protocol_sha256": "3dfcd16fd29b09725717978e3bcd761ba81a32fa44202bf238ec089ae1c994c7",
+      "coordinator_pid": 36378,
       "sources": 40000,
       "method_batches": 800,
       "planned_artifacts": 160000,
-      "report": "reports/unified_null_features_20261116/preparation.md",
+      "report": "reports/unified_extraction_reproducibility_20261116/report.md",
       "gpu_parity_gate_completed": false,
       "prc_specific_pgid_covered": false,
       "natural_thresholds_calibrated": false,
       "completed_method_batches": 0,
       "formal_artifacts": 0,
-      "reason": "SemBind legacy implementation is not repeatable under previous nondeterministic backend; original-vs-current deterministic parity being checked"
+      "snapshot": "reports/unified_extraction_reproducibility_20261116/queue_snapshot.json",
+      "observed_at": "2026-11-16T09:12:27.889142+00:00",
+      "previous_failed_run": "unified_null_features_20261116",
+      "deterministic_backend_methods": [
+        "sembind"
+      ],
+      "cost_estimate": "reports/unified_extraction_reproducibility_20261116/cost_estimate.json"
     },
     "seal_result_exports": [
       "reports/unified_seal_results_20261116/main_table_seal.csv",
       "reports/unified_seal_results_20261116/main_table_seal.tex"
-    ]
+    ],
+    "extraction_reproducibility": {
+      "status": "complete",
+      "run": "unified_sembind_reproducibility_20261116_v2",
+      "protocol_sha256": "8db6f6381fe0eb407579072acf6ac188688ce50c0f61ab9a9f91e0a5040f8027",
+      "development_sources": 8,
+      "complete_artifacts": 24,
+      "comparisons": 16,
+      "all_exact": true,
+      "report": "reports/unified_extraction_reproducibility_20261116/report.md",
+      "audit": "reports/unified_extraction_reproducibility_20261116/audit.json",
+      "general_hardware_guarantee": false
+    }
   },
   "public_sscd_binary_probe": {
     "status": "complete",
@@ -1523,7 +1551,24 @@
       "error": "AssertionError(('000_sembind.npz', 'recovered'))",
       "pgid_parity_artifacts": 24,
       "pgid_maximum_difference": 0,
-      "scope": "Frozen failed run retained; no partial natural extraction"
+      "scope": "Frozen failed run retained; no partial natural extraction",
+      "protocol_sha256": "e0ebe9aad974a310eac591a915b946a4eab997ffa4883d2a80bf463a7b078d22",
+      "coordinator_pid": 37800,
+      "report": "reports/unified_null_features_20261116/preparation.md"
+    },
+    {
+      "run": "unified_sembind_reproducibility_20261116",
+      "status": "failed_worker_sigkill",
+      "exit_codes": [
+        0,
+        0,
+        -9
+      ],
+      "interrupted_worker_pid": 13025,
+      "interrupted_completed_images": 0,
+      "cause": "not established",
+      "recovery_run": "unified_sembind_reproducibility_20261116_v2",
+      "report": "reports/unified_extraction_reproducibility_20261116/report.md"
     }
   ],
   "direction_a": {

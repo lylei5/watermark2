@@ -1,0 +1,89 @@
+{
+  "observed_at": "2026-11-16T09:12:27.889142+00:00",
+  "pipeline": {
+    "status": "development_parity_gate",
+    "pid": 36378,
+    "protocol_sha256": "3dfcd16fd29b09725717978e3bcd761ba81a32fa44202bf238ec089ae1c994c7",
+    "completed_jobs": 0,
+    "active": [
+      {
+        "job": "development_sembind",
+        "gpu": 7,
+        "pid": 4418
+      },
+      {
+        "job": "development_pgid",
+        "gpu": 5,
+        "pid": 4454
+      }
+    ]
+  },
+  "gpu_assignment": {
+    "gpu_indices": [
+      7,
+      5,
+      4
+    ],
+    "gpu_uuids": [
+      "GPU-9644fb82-cb6f-7311-8017-eaee41409bb7",
+      "GPU-e6f35928-0155-f121-e707-1eaf3c14965c",
+      "GPU-748b31fa-0510-6b56-f820-f3812266ed28"
+    ]
+  },
+  "workers": [
+    {
+      "job": "development_sembind",
+      "gpu": 7,
+      "pid": 4418,
+      "state": {
+        "status": "running",
+        "pid": 4418,
+        "method": "sembind",
+        "protocol_sha256": "4d0de6481515b326daf6c13150004273ba268280d6cfd53ff013855ef366fe7e",
+        "deterministic_backend": {
+          "enabled": true,
+          "cudnn_deterministic": true,
+          "cudnn_benchmark": false,
+          "cublas_workspace": ":4096:8"
+        },
+        "gpu": 7,
+        "gpu_uuid": "GPU-9644fb82-cb6f-7311-8017-eaee41409bb7",
+        "gpu_name": "NVIDIA GeForce RTX 3090",
+        "versions": {
+          "torch": "2.5.1+cu124",
+          "diffusers": "0.31.0",
+          "transformers": "4.46.3"
+        },
+        "loading_seconds": 31.934540054993704
+      }
+    },
+    {
+      "job": "development_pgid",
+      "gpu": 5,
+      "pid": 4454,
+      "state": {
+        "status": "running",
+        "pid": 4454,
+        "method": "pgid",
+        "protocol_sha256": "66f87c4c750184a313926e8218cbc7373f5dbc48331b13a8c510383a41d92ec6",
+        "deterministic_backend": {
+          "enabled": false,
+          "cudnn_deterministic": false,
+          "cudnn_benchmark": false,
+          "cublas_workspace": null
+        },
+        "gpu": 5,
+        "gpu_uuid": "GPU-e6f35928-0155-f121-e707-1eaf3c14965c",
+        "gpu_name": "NVIDIA GeForce RTX 3090",
+        "versions": {
+          "torch": "2.5.1+cu124",
+          "diffusers": "0.31.0",
+          "transformers": "4.46.3"
+        },
+        "loading_seconds": 17.019602988963015
+      }
+    }
+  ],
+  "coordinator_process_verified": true,
+  "formal_feature_extraction_complete": false
+}

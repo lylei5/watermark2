@@ -1,0 +1,23 @@
+[
+  {
+    "comparison": "legacy5_vs_historical",
+    "maximum": 0.355518639087677,
+    "mean": 0.007181226628248716,
+    "sign_changes": 47,
+    "allclose": false
+  },
+  {
+    "comparison": "current3_vs_historical",
+    "maximum": 0.2728474736213684,
+    "mean": 0.006146384302894603,
+    "sign_changes": 47,
+    "allclose": false
+  },
+  {
+    "comparison": "current3_vs_legacy5",
+    "maximum": 0.3577890396118164,
+    "mean": 0.006978264792350863,
+    "sign_changes": 50,
+    "allclose": false
+  }
+]
