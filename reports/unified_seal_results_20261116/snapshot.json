@@ -1,0 +1,103 @@
+{
+  "observed_at": "2026-11-16T08:40:13.514741+00:00",
+  "runs": {
+    "unified_seal_nulls_20261115": {
+      "pipeline_state": {
+        "status": "complete",
+        "pid": 26667,
+        "protocol_sha256": "1a3283f12074a95cbfede7a2bb64095dfa7cb812c65c00cceb363ca34d2de20a",
+        "children": [
+          26690,
+          26691,
+          26692
+        ],
+        "exit_codes": [
+          0,
+          0,
+          0
+        ]
+      },
+      "processes": [
+        {
+          "pid": 26667,
+          "process_present": false,
+          "run_in_command": false
+        },
+        {
+          "pid": 26690,
+          "process_present": false,
+          "run_in_command": false
+        },
+        {
+          "pid": 26691,
+          "process_present": false,
+          "run_in_command": false
+        },
+        {
+          "pid": 26692,
+          "process_present": false,
+          "run_in_command": false
+        }
+      ],
+      "saved_records": 40000
+    },
+    "unified_seal_clean_20261116": {
+      "pipeline_state": {
+        "status": "complete",
+        "pid": 20143,
+        "protocol_sha256": "14d0ac04f12803865ae614ad7697200ed0f5bbd2a4c86c31ad68b4e0d25c4475",
+        "children": [
+          34680,
+          34681,
+          34682
+        ],
+        "exit_codes": [
+          0,
+          0,
+          0
+        ]
+      },
+      "processes": [
+        {
+          "pid": 20143,
+          "process_present": false,
+          "run_in_command": false
+        },
+        {
+          "pid": 34680,
+          "process_present": false,
+          "run_in_command": false
+        },
+        {
+          "pid": 34681,
+          "process_present": false,
+          "run_in_command": false
+        },
+        {
+          "pid": 34682,
+          "process_present": false,
+          "run_in_command": false
+        }
+      ],
+      "saved_records": 500
+    },
+    "unified_null_features_20261116": {
+      "pipeline_state": {
+        "status": "failed",
+        "pid": 37800,
+        "protocol_sha256": "e0ebe9aad974a310eac591a915b946a4eab997ffa4883d2a80bf463a7b078d22",
+        "completed_jobs": 0,
+        "active": [],
+        "error": "AssertionError(('000_sembind.npz', 'recovered'))"
+      },
+      "processes": [
+        {
+          "pid": 37800,
+          "process_present": false,
+          "run_in_command": false
+        }
+      ],
+      "saved_records": 0
+    }
+  }
+}

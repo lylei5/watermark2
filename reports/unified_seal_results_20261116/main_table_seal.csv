@@ -1,0 +1,3 @@
+target_fpr,threshold,natural_false_accepts,natural_sources,natural_fpr,natural_lower95,natural_upper95,legitimate_status,legitimate_accepts,legitimate_sources,legitimate_tpr,legitimate_lower95,legitimate_upper95,attack_status
+0.01,2,169,20000,0.00845,0.007228280004005648,0.009817656797429764,verified,500,500,1.0,0.9926493899480923,1.0,not_run
+0.001,4,10,20000,0.0005,0.0002397946432909746,0.0009193249298326013,verified,496,500,0.992,0.979644367406256,0.9978160918916578,not_run

@@ -1,0 +1,312 @@
+{
+  "status": "audit_complete",
+  "script_sha256": "481d1c846c8c56577126e482e351d7674ef51e3371bac716af93fac3494cd34f",
+  "observed_at": "2026-11-16T08:40:13.514726+00:00",
+  "inference_calls": 0,
+  "attacks": 0,
+  "protocol_pins": {
+    "unified_seal_nulls_20261115": "1a3283f12074a95cbfede7a2bb64095dfa7cb812c65c00cceb363ca34d2de20a",
+    "unified_seal_clean_20261116": "14d0ac04f12803865ae614ad7697200ed0f5bbd2a4c86c31ad68b4e0d25c4475",
+    "unified_null_features_20261116": "e0ebe9aad974a310eac591a915b946a4eab997ffa4883d2a80bf463a7b078d22"
+  },
+  "calibration": {
+    "status": "verified",
+    "records": 40000,
+    "working_points": [
+      {
+        "target_fpr": 0.01,
+        "threshold": 2,
+        "calibration_accepted": 168,
+        "calibration_n": 20000,
+        "accepted": 169,
+        "sources": 20000,
+        "rate": 0.00845,
+        "lower95": 0.007228280004005648,
+        "upper95": 0.009817656797429764
+      },
+      {
+        "target_fpr": 0.001,
+        "threshold": 4,
+        "calibration_accepted": 8,
+        "calibration_n": 20000,
+        "accepted": 10,
+        "sources": 20000,
+        "rate": 0.0005,
+        "lower95": 0.0002397946432909746,
+        "upper95": 0.0009193249298326013
+      }
+    ],
+    "paper_working_point": {
+      "threshold": 12,
+      "accepted": 0,
+      "sources": 20000,
+      "rate": 0.0,
+      "lower95": 0.0,
+      "upper95": 0.0001844269639618992
+    },
+    "total_unet_calls": 2040000,
+    "summed_image_seconds": 83785.17956750456,
+    "calibration_results_sha256": "0578810580f2722cd34929d44284b06683598b357eebbd12627fe807c69ca6bf"
+  },
+  "clean": {
+    "status": "verified",
+    "sources": 500,
+    "rows": [
+      {
+        "system": "SEAL paper-salt native",
+        "dataset": "all",
+        "kind": "genuine",
+        "working_point": "natural_fpr_0.01",
+        "threshold": 2,
+        "accepted": 500,
+        "sources": 500,
+        "rate": 1.0,
+        "lower95": 0.9926493899480923,
+        "upper95": 1.0
+      },
+      {
+        "system": "SEAL paper-salt native",
+        "dataset": "all",
+        "kind": "preview_null",
+        "working_point": "natural_fpr_0.01",
+        "threshold": 2,
+        "accepted": 4,
+        "sources": 500,
+        "rate": 0.008,
+        "lower95": 0.002183908108342184,
+        "upper95": 0.020355632593743928
+      },
+      {
+        "system": "SEAL paper-salt native",
+        "dataset": "COCO",
+        "kind": "genuine",
+        "working_point": "natural_fpr_0.01",
+        "threshold": 2,
+        "accepted": 250,
+        "sources": 250,
+        "rate": 1.0,
+        "lower95": 0.9853528113643196,
+        "upper95": 1.0
+      },
+      {
+        "system": "SEAL paper-salt native",
+        "dataset": "COCO",
+        "kind": "preview_null",
+        "working_point": "natural_fpr_0.01",
+        "threshold": 2,
+        "accepted": 2,
+        "sources": 250,
+        "rate": 0.008,
+        "lower95": 0.0009703097230388872,
+        "upper95": 0.028598347244961176
+      },
+      {
+        "system": "SEAL paper-salt native",
+        "dataset": "SDP",
+        "kind": "genuine",
+        "working_point": "natural_fpr_0.01",
+        "threshold": 2,
+        "accepted": 250,
+        "sources": 250,
+        "rate": 1.0,
+        "lower95": 0.9853528113643196,
+        "upper95": 1.0
+      },
+      {
+        "system": "SEAL paper-salt native",
+        "dataset": "SDP",
+        "kind": "preview_null",
+        "working_point": "natural_fpr_0.01",
+        "threshold": 2,
+        "accepted": 2,
+        "sources": 250,
+        "rate": 0.008,
+        "lower95": 0.0009703097230388872,
+        "upper95": 0.028598347244961176
+      },
+      {
+        "system": "SEAL paper-salt native",
+        "dataset": "all",
+        "kind": "genuine",
+        "working_point": "natural_fpr_0.001",
+        "threshold": 4,
+        "accepted": 496,
+        "sources": 500,
+        "rate": 0.992,
+        "lower95": 0.979644367406256,
+        "upper95": 0.9978160918916578
+      },
+      {
+        "system": "SEAL paper-salt native",
+        "dataset": "all",
+        "kind": "preview_null",
+        "working_point": "natural_fpr_0.001",
+        "threshold": 4,
+        "accepted": 0,
+        "sources": 500,
+        "rate": 0.0,
+        "lower95": 0.0,
+        "upper95": 0.007350610051907784
+      },
+      {
+        "system": "SEAL paper-salt native",
+        "dataset": "COCO",
+        "kind": "genuine",
+        "working_point": "natural_fpr_0.001",
+        "threshold": 4,
+        "accepted": 249,
+        "sources": 250,
+        "rate": 0.996,
+        "lower95": 0.9779161349993668,
+        "upper95": 0.999898733895821
+      },
+      {
+        "system": "SEAL paper-salt native",
+        "dataset": "COCO",
+        "kind": "preview_null",
+        "working_point": "natural_fpr_0.001",
+        "threshold": 4,
+        "accepted": 0,
+        "sources": 250,
+        "rate": 0.0,
+        "lower95": 0.0,
+        "upper95": 0.014647188635680361
+      },
+      {
+        "system": "SEAL paper-salt native",
+        "dataset": "SDP",
+        "kind": "genuine",
+        "working_point": "natural_fpr_0.001",
+        "threshold": 4,
+        "accepted": 247,
+        "sources": 250,
+        "rate": 0.988,
+        "lower95": 0.965333385425256,
+        "upper95": 0.9975184417452969
+      },
+      {
+        "system": "SEAL paper-salt native",
+        "dataset": "SDP",
+        "kind": "preview_null",
+        "working_point": "natural_fpr_0.001",
+        "threshold": 4,
+        "accepted": 0,
+        "sources": 250,
+        "rate": 0.0,
+        "lower95": 0.0,
+        "upper95": 0.014647188635680361
+      },
+      {
+        "system": "SEAL paper-salt native",
+        "dataset": "all",
+        "kind": "genuine",
+        "working_point": "paper_threshold12",
+        "threshold": 12,
+        "accepted": 453,
+        "sources": 500,
+        "rate": 0.906,
+        "lower95": 0.8769623921104394,
+        "upper95": 0.9301137660812189
+      },
+      {
+        "system": "SEAL paper-salt native",
+        "dataset": "all",
+        "kind": "preview_null",
+        "working_point": "paper_threshold12",
+        "threshold": 12,
+        "accepted": 0,
+        "sources": 500,
+        "rate": 0.0,
+        "lower95": 0.0,
+        "upper95": 0.007350610051907784
+      },
+      {
+        "system": "SEAL paper-salt native",
+        "dataset": "COCO",
+        "kind": "genuine",
+        "working_point": "paper_threshold12",
+        "threshold": 12,
+        "accepted": 244,
+        "sources": 250,
+        "rate": 0.976,
+        "lower95": 0.9484967388946921,
+        "upper95": 0.9911426387228863
+      },
+      {
+        "system": "SEAL paper-salt native",
+        "dataset": "COCO",
+        "kind": "preview_null",
+        "working_point": "paper_threshold12",
+        "threshold": 12,
+        "accepted": 0,
+        "sources": 250,
+        "rate": 0.0,
+        "lower95": 0.0,
+        "upper95": 0.014647188635680361
+      },
+      {
+        "system": "SEAL paper-salt native",
+        "dataset": "SDP",
+        "kind": "genuine",
+        "working_point": "paper_threshold12",
+        "threshold": 12,
+        "accepted": 209,
+        "sources": 250,
+        "rate": 0.836,
+        "lower95": 0.784163752051331,
+        "upper95": 0.879666736075553
+      },
+      {
+        "system": "SEAL paper-salt native",
+        "dataset": "SDP",
+        "kind": "preview_null",
+        "working_point": "paper_threshold12",
+        "threshold": 12,
+        "accepted": 0,
+        "sources": 250,
+        "rate": 0.0,
+        "lower95": 0.0,
+        "upper95": 0.014647188635680361
+      }
+    ],
+    "diagnostics": [
+      {
+        "target_fpr": 0.01,
+        "failed_sources": 0,
+        "original_reference_pass": 0,
+        "original_reference_fail": 0
+      },
+      {
+        "target_fpr": 0.001,
+        "failed_sources": 4,
+        "original_reference_pass": 4,
+        "original_reference_fail": 0
+      }
+    ],
+    "costs": {
+      "issuance": {
+        "mean_seconds": 5.035530713842949,
+        "median_seconds": 5.022725840040948,
+        "p95_seconds": 5.22373087638407,
+        "peak_allocated_bytes": 12640613376
+      },
+      "verification": {
+        "mean_seconds": 2.026600974363042,
+        "median_seconds": 1.9966057739802636,
+        "p95_seconds": 2.351909449335653,
+        "peak_allocated_bytes": 12404925952
+      }
+    },
+    "total_unet_calls": 102000,
+    "metadata_discrepancies": [
+      {
+        "field": "expected_total_unet_calls",
+        "recorded": 204000,
+        "corrected": 102000,
+        "evidence": "All per-stage counts verified: two generations and two inversions per source,51 calls each"
+      }
+    ],
+    "clean_results_sha256": "cc20fd92b89ffe062b74ec6ae94660c0fa8dd3848431300c3a7c4fd16dd7942b"
+  },
+  "finished_at": "2026-11-16T08:42:11.869057+00:00"
+}

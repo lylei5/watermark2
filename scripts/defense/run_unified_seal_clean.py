@@ -275,7 +275,7 @@ def summarize(run):
                 interpretation='Descriptive decomposition only; initial-noise reference is unavailable to the deployed stateless detector'))
     save(run/'clean_results.json', dict(status='complete', protocol_sha256=sha(run/'protocol.json'),
          working_points_sha256=sha(run/'frozen_working_points.json'), rows=rows, diagnostics=diagnostics,
-         full_budget_generations=1000, full_budget_inversions=1000, expected_total_unet_calls=204000,
+         full_budget_generations=1000, full_budget_inversions=1000, expected_total_unet_calls=len(records)*4*51,
          actual_total_unet_calls=sum(c['unet_calls'] for r in records for c in r['costs'].values()), attacks=0))
     with (run/'clean_table.csv').open('w', newline='') as stream:
         writer = csv.DictWriter(stream, fieldnames=list(rows[0]))

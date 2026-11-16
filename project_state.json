@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-15T19:12:44.278937+00:00",
-  "status": "unified_benchmark_null_calibration",
+  "updated_at": "2026-11-16T08:45:51.390212+00:00",
+  "status": "unified_benchmark_seal_complete_extraction_reproducibility_check",
   "active_experiments": 1,
   "queued_experiments": 0,
-  "latest_progress_report": "reports/unified_null_features_20261116/preparation.md",
+  "latest_progress_report": "reports/unified_seal_results_20261116/report.md",
   "evidence_index": "reports/README.md",
   "research_plan": "docs/RESEARCH_PLAN.md",
   "native_sembind_reproduction_complete": false,
@@ -891,46 +891,23 @@
   },
   "active_runs": [
     {
-      "run": "unified_seal_nulls_20261115",
+      "run": "unified_sembind_reproducibility_20261116",
       "status": "running",
-      "coordinator_pid": 26667,
+      "coordinator_pid": 13019,
       "worker_pids": [
-        26690,
-        26691,
-        26692
+        13023,
+        13024,
+        13025
       ],
+      "scope": "Eight existing development sources per frozen legacy/current arm; deterministic numerical reproducibility check; no attacks or natural nulls",
       "gpu_indices": [
-        7,
         5,
-        4
-      ],
-      "expected_images": 40000,
-      "protocol": "protocols/unified_seal_nulls_20261115.json",
-      "startup_validation": "reports/unified_natural_cohort_20261115/seal_startup_validation.json",
-      "completion": "/data0/liyanlei/watermark_research/runs/unified_seal_nulls_20261115/calibration_results.json",
-      "mechanism": "Detached coordinator; child process-exit waits; per-record hash-checked resume"
+        3,
+        2
+      ]
     }
   ],
-  "queued_runs": [
-    {
-      "run": "unified_seal_clean_20261116",
-      "status": "waiting_for_calibration_exit",
-      "coordinator_pid": 20143,
-      "predecessor_pid": 26667,
-      "protocol": "protocols/unified_seal_clean_20261116.json",
-      "completion": "/data0/liyanlei/watermark_research/runs/unified_seal_clean_20261116/clean_results.json",
-      "mechanism": "pidfd process-exit wait; require calibration success; no GPU until then"
-    },
-    {
-      "run": "unified_null_features_20261116",
-      "status": "waiting_for_seal_clean_exit",
-      "coordinator_pid": 37800,
-      "predecessor_pid": 20143,
-      "protocol": "protocols/unified_null_features_20261116.json",
-      "completion": "/data0/liyanlei/watermark_research/runs/unified_null_features_20261116/feature_extraction_complete.json",
-      "mechanism": "pidfd process-exit wait; require successful SEAL clean evaluation; development parity gate before all40000 natural inputs; max3 idle nonGPU6 devices"
-    }
-  ],
+  "queued_runs": [],
   "author_reprompt_control": {
     "run": "author_reprompt_control_20261114_v2",
     "status": "complete",
@@ -1324,12 +1301,12 @@
     "historical_artifacts_preserved": true
   },
   "unified_defense_benchmark": {
-    "status": "natural_null_extraction",
+    "status": "seal_calibration_and_clean_complete",
     "target_fpr": [
       0.01,
       0.001
     ],
-    "new_model_experiments_completed": 0,
+    "new_model_experiments_completed": 2,
     "main_table_complete": false,
     "protocol_frozen": false,
     "main_table_panels": [
@@ -1337,7 +1314,7 @@
       "native_system"
     ],
     "stateful_control": "native carrier plus per-image registered SSCD",
-    "current_block": "SEAL40000 calibration active; shared500 evaluation sources frozen; process-exit queues prepared for SEAL clean evaluation then full SemBind/PGID GS/TR natural extraction. Common carrier and PRC-specific PGID configuration, distortions and attack execution still pending.",
+    "current_block": "SEAL calibration and clean500 results independently audited and exported. Full SemBind/PGID natural extraction stopped before formal inputs at SemBind development parity; numerical reproducibility correction under verification. Shared500 sources remain frozen; attack and distortion rows pending.",
     "runtime_probe": {
       "status": "complete",
       "run": "unified_runtime_probe_20261115",
@@ -1366,16 +1343,41 @@
       "cpu_audit_seconds": 283.5906911859056
     },
     "seal_natural_calibration": {
-      "status": "running",
+      "status": "complete",
       "run": "unified_seal_nulls_20261115",
       "protocol_sha256": "1a3283f12074a95cbfede7a2bb64095dfa7cb812c65c00cceb363ca34d2de20a",
-      "full_extraction_completed": false,
-      "empirical_fpr_validated": false,
-      "legitimate_tpr_completed": false,
+      "full_extraction_completed": true,
+      "empirical_fpr_validated": true,
+      "legitimate_tpr_completed": true,
       "attacks_completed": false,
-      "latest_progress_snapshot": "reports/unified_seal_progress_20261116/snapshot.json",
-      "snapshot_completed_records": 20152,
-      "snapshot_utc": "2026-11-15T19:57:17.860124+00:00"
+      "latest_progress_snapshot": "reports/unified_seal_results_20261116/snapshot.json",
+      "snapshot_completed_records": 40000,
+      "snapshot_utc": "2026-11-16T08:40:13.514726+00:00",
+      "working_points": [
+        {
+          "target_fpr": 0.01,
+          "threshold": 2,
+          "calibration_accepted": 168,
+          "calibration_n": 20000,
+          "accepted": 169,
+          "sources": 20000,
+          "rate": 0.00845,
+          "lower95": 0.007228280004005648,
+          "upper95": 0.009817656797429764
+        },
+        {
+          "target_fpr": 0.001,
+          "threshold": 4,
+          "calibration_accepted": 8,
+          "calibration_n": 20000,
+          "accepted": 10,
+          "sources": 20000,
+          "rate": 0.0005,
+          "lower95": 0.0002397946432909746,
+          "upper95": 0.0009193249298326013
+        }
+      ],
+      "report": "reports/unified_seal_results_20261116/report.md"
     },
     "evaluation_sources": {
       "status": "frozen",
@@ -1394,18 +1396,22 @@
     },
     "failure_analysis_contract": "docs/UNIFIED_FAILURE_ANALYSIS.md",
     "seal_clean_evaluation": {
-      "status": "queued_after_full_calibration",
+      "status": "complete",
       "run": "unified_seal_clean_20261116",
       "protocol_sha256": "14d0ac04f12803865ae614ad7697200ed0f5bbd2a4c86c31ad68b4e0d25c4475",
       "sources": 500,
       "planned_generations": 1000,
       "planned_inversions": 1000,
       "coordinator_pid": 20143,
-      "report": "reports/unified_seal_clean_20261116/preparation.md",
-      "accuracy_results_available": false
+      "report": "reports/unified_seal_results_20261116/report.md",
+      "accuracy_results_available": true,
+      "actual_total_unet_calls": 102000,
+      "original_expected_total_unet_calls": 204000,
+      "metadata_error_corrected_in_audit": true,
+      "audit": "reports/unified_seal_results_20261116/audit.json"
     },
     "full_natural_feature_extraction": {
-      "status": "queued_after_seal_clean",
+      "status": "failed_before_formal_extraction",
       "run": "unified_null_features_20261116",
       "protocol_sha256": "e0ebe9aad974a310eac591a915b946a4eab997ffa4883d2a80bf463a7b078d22",
       "coordinator_pid": 37800,
@@ -1415,8 +1421,15 @@
       "report": "reports/unified_null_features_20261116/preparation.md",
       "gpu_parity_gate_completed": false,
       "prc_specific_pgid_covered": false,
-      "natural_thresholds_calibrated": false
-    }
+      "natural_thresholds_calibrated": false,
+      "completed_method_batches": 0,
+      "formal_artifacts": 0,
+      "reason": "SemBind legacy implementation is not repeatable under previous nondeterministic backend; original-vs-current deterministic parity being checked"
+    },
+    "seal_result_exports": [
+      "reports/unified_seal_results_20261116/main_table_seal.csv",
+      "reports/unified_seal_results_20261116/main_table_seal.tex"
+    ]
   },
   "public_sscd_binary_probe": {
     "status": "complete",
@@ -1500,5 +1513,21 @@
     "frozen_by_user": true,
     "freeze_date": "2026-11-16",
     "additional_rounds_allowed": false
+  },
+  "failed_runs": [
+    {
+      "run": "unified_null_features_20261116",
+      "status": "failed_development_parity_gate",
+      "completed_method_batches": 0,
+      "formal_natural_artifacts": 0,
+      "error": "AssertionError(('000_sembind.npz', 'recovered'))",
+      "pgid_parity_artifacts": 24,
+      "pgid_maximum_difference": 0,
+      "scope": "Frozen failed run retained; no partial natural extraction"
+    }
+  ],
+  "direction_a": {
+    "status": "analysis_only_retained",
+    "experiments_authorized": false
   }
 }

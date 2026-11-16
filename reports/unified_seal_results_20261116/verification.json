@@ -1,0 +1,14 @@
+{
+  "execution_host": "249",
+  "command": "python -m unittest -v test_unified_seal_audit",
+  "tests": 10,
+  "failures": 0,
+  "test_seconds": 0.557,
+  "test_script_sha256": "cc0131541ec717b0e0a9f2aca9eccfc652525e44a0050efb9ad96116d0751e8b",
+  "evidence": "Captured unittest output before successful full-artifact audit in the same SSH invocation",
+  "calibration_records": 40000,
+  "clean_records": 500,
+  "clean_images": 1000,
+  "full_artifact_audit": "audit.json",
+  "new_model_inferences": 0
+}

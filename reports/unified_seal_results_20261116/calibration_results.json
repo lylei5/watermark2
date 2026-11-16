@@ -1,0 +1,62 @@
+{
+  "status": "complete",
+  "protocol_sha256": "1a3283f12074a95cbfede7a2bb64095dfa7cb812c65c00cceb363ca34d2de20a",
+  "scope": "SEAL semantic natural-image FPR only; no legitimate TPR or attacks yet",
+  "working_points": [
+    {
+      "target_fpr": 0.01,
+      "threshold": 2,
+      "comparator": ">=",
+      "calibration": {
+        "status": "calibrated",
+        "threshold": 1.0000000000000002,
+        "comparator": ">=",
+        "n": 20000,
+        "accepted": 168,
+        "empirical_fpr": 0.0084,
+        "target_fpr": 0.01,
+        "allowed_accepts": 200,
+        "immutable_accepts": 0
+      },
+      "validation_accepted": 169,
+      "validation_n": 20000,
+      "validation_fpr": 0.00845,
+      "validation_95ci": [
+        0.007228280004005648,
+        0.009817656797429764
+      ]
+    },
+    {
+      "target_fpr": 0.001,
+      "threshold": 4,
+      "comparator": ">=",
+      "calibration": {
+        "status": "calibrated",
+        "threshold": 3.0000000000000004,
+        "comparator": ">=",
+        "n": 20000,
+        "accepted": 8,
+        "empirical_fpr": 0.0004,
+        "target_fpr": 0.001,
+        "allowed_accepts": 20,
+        "immutable_accepts": 0
+      },
+      "validation_accepted": 10,
+      "validation_n": 20000,
+      "validation_fpr": 0.0005,
+      "validation_95ci": [
+        0.00023979464329097462,
+        0.0009193249298326013
+      ]
+    }
+  ],
+  "paper_working_point": {
+    "threshold": 12,
+    "accepted": 0,
+    "n": 20000,
+    "confidence_interval": [
+      0.0,
+      0.0001844269639618992
+    ]
+  }
+}

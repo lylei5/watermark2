@@ -1,0 +1,302 @@
+{
+  "status": "complete",
+  "protocol_sha256": "14d0ac04f12803865ae614ad7697200ed0f5bbd2a4c86c31ad68b4e0d25c4475",
+  "working_points_sha256": "d5b12f4efb3f4c88a3f1e4f99ffdd71d20396da01ab98912e2a7831857bc6362",
+  "rows": [
+    {
+      "system": "SEAL paper-salt native",
+      "dataset": "all",
+      "kind": "genuine",
+      "working_point": "natural_fpr_0.01",
+      "threshold": 2,
+      "accepted": 500,
+      "sources": 500,
+      "rate": 1.0,
+      "lower95": 0.9926493899480923,
+      "upper95": 1.0
+    },
+    {
+      "system": "SEAL paper-salt native",
+      "dataset": "all",
+      "kind": "preview_null",
+      "working_point": "natural_fpr_0.01",
+      "threshold": 2,
+      "accepted": 4,
+      "sources": 500,
+      "rate": 0.008,
+      "lower95": 0.002183908108342184,
+      "upper95": 0.020355632593743928
+    },
+    {
+      "system": "SEAL paper-salt native",
+      "dataset": "COCO",
+      "kind": "genuine",
+      "working_point": "natural_fpr_0.01",
+      "threshold": 2,
+      "accepted": 250,
+      "sources": 250,
+      "rate": 1.0,
+      "lower95": 0.9853528113643196,
+      "upper95": 1.0
+    },
+    {
+      "system": "SEAL paper-salt native",
+      "dataset": "COCO",
+      "kind": "preview_null",
+      "working_point": "natural_fpr_0.01",
+      "threshold": 2,
+      "accepted": 2,
+      "sources": 250,
+      "rate": 0.008,
+      "lower95": 0.0009703097230388872,
+      "upper95": 0.028598347244961176
+    },
+    {
+      "system": "SEAL paper-salt native",
+      "dataset": "SDP",
+      "kind": "genuine",
+      "working_point": "natural_fpr_0.01",
+      "threshold": 2,
+      "accepted": 250,
+      "sources": 250,
+      "rate": 1.0,
+      "lower95": 0.9853528113643196,
+      "upper95": 1.0
+    },
+    {
+      "system": "SEAL paper-salt native",
+      "dataset": "SDP",
+      "kind": "preview_null",
+      "working_point": "natural_fpr_0.01",
+      "threshold": 2,
+      "accepted": 2,
+      "sources": 250,
+      "rate": 0.008,
+      "lower95": 0.0009703097230388872,
+      "upper95": 0.028598347244961176
+    },
+    {
+      "system": "SEAL paper-salt native",
+      "dataset": "all",
+      "kind": "genuine",
+      "working_point": "natural_fpr_0.001",
+      "threshold": 4,
+      "accepted": 496,
+      "sources": 500,
+      "rate": 0.992,
+      "lower95": 0.979644367406256,
+      "upper95": 0.9978160918916578
+    },
+    {
+      "system": "SEAL paper-salt native",
+      "dataset": "all",
+      "kind": "preview_null",
+      "working_point": "natural_fpr_0.001",
+      "threshold": 4,
+      "accepted": 0,
+      "sources": 500,
+      "rate": 0.0,
+      "lower95": 0.0,
+      "upper95": 0.007350610051907784
+    },
+    {
+      "system": "SEAL paper-salt native",
+      "dataset": "COCO",
+      "kind": "genuine",
+      "working_point": "natural_fpr_0.001",
+      "threshold": 4,
+      "accepted": 249,
+      "sources": 250,
+      "rate": 0.996,
+      "lower95": 0.9779161349993668,
+      "upper95": 0.999898733895821
+    },
+    {
+      "system": "SEAL paper-salt native",
+      "dataset": "COCO",
+      "kind": "preview_null",
+      "working_point": "natural_fpr_0.001",
+      "threshold": 4,
+      "accepted": 0,
+      "sources": 250,
+      "rate": 0.0,
+      "lower95": 0.0,
+      "upper95": 0.014647188635680361
+    },
+    {
+      "system": "SEAL paper-salt native",
+      "dataset": "SDP",
+      "kind": "genuine",
+      "working_point": "natural_fpr_0.001",
+      "threshold": 4,
+      "accepted": 247,
+      "sources": 250,
+      "rate": 0.988,
+      "lower95": 0.965333385425256,
+      "upper95": 0.9975184417452969
+    },
+    {
+      "system": "SEAL paper-salt native",
+      "dataset": "SDP",
+      "kind": "preview_null",
+      "working_point": "natural_fpr_0.001",
+      "threshold": 4,
+      "accepted": 0,
+      "sources": 250,
+      "rate": 0.0,
+      "lower95": 0.0,
+      "upper95": 0.014647188635680361
+    },
+    {
+      "system": "SEAL paper-salt native",
+      "dataset": "all",
+      "kind": "genuine",
+      "working_point": "paper_threshold12",
+      "threshold": 12,
+      "accepted": 453,
+      "sources": 500,
+      "rate": 0.906,
+      "lower95": 0.8769623921104394,
+      "upper95": 0.9301137660812189
+    },
+    {
+      "system": "SEAL paper-salt native",
+      "dataset": "all",
+      "kind": "preview_null",
+      "working_point": "paper_threshold12",
+      "threshold": 12,
+      "accepted": 0,
+      "sources": 500,
+      "rate": 0.0,
+      "lower95": 0.0,
+      "upper95": 0.007350610051907784
+    },
+    {
+      "system": "SEAL paper-salt native",
+      "dataset": "COCO",
+      "kind": "genuine",
+      "working_point": "paper_threshold12",
+      "threshold": 12,
+      "accepted": 244,
+      "sources": 250,
+      "rate": 0.976,
+      "lower95": 0.9484967388946921,
+      "upper95": 0.9911426387228863
+    },
+    {
+      "system": "SEAL paper-salt native",
+      "dataset": "COCO",
+      "kind": "preview_null",
+      "working_point": "paper_threshold12",
+      "threshold": 12,
+      "accepted": 0,
+      "sources": 250,
+      "rate": 0.0,
+      "lower95": 0.0,
+      "upper95": 0.014647188635680361
+    },
+    {
+      "system": "SEAL paper-salt native",
+      "dataset": "SDP",
+      "kind": "genuine",
+      "working_point": "paper_threshold12",
+      "threshold": 12,
+      "accepted": 209,
+      "sources": 250,
+      "rate": 0.836,
+      "lower95": 0.784163752051331,
+      "upper95": 0.879666736075553
+    },
+    {
+      "system": "SEAL paper-salt native",
+      "dataset": "SDP",
+      "kind": "preview_null",
+      "working_point": "paper_threshold12",
+      "threshold": 12,
+      "accepted": 0,
+      "sources": 250,
+      "rate": 0.0,
+      "lower95": 0.0,
+      "upper95": 0.014647188635680361
+    }
+  ],
+  "diagnostics": [
+    {
+      "working_point": "natural_fpr_0.01",
+      "dataset": "all",
+      "genuine_failures": 0,
+      "failure_with_original_noise_pass": 0,
+      "failure_with_original_noise_fail": 0,
+      "interpretation": "Descriptive decomposition only; initial-noise reference is unavailable to the deployed stateless detector"
+    },
+    {
+      "working_point": "natural_fpr_0.01",
+      "dataset": "COCO",
+      "genuine_failures": 0,
+      "failure_with_original_noise_pass": 0,
+      "failure_with_original_noise_fail": 0,
+      "interpretation": "Descriptive decomposition only; initial-noise reference is unavailable to the deployed stateless detector"
+    },
+    {
+      "working_point": "natural_fpr_0.01",
+      "dataset": "SDP",
+      "genuine_failures": 0,
+      "failure_with_original_noise_pass": 0,
+      "failure_with_original_noise_fail": 0,
+      "interpretation": "Descriptive decomposition only; initial-noise reference is unavailable to the deployed stateless detector"
+    },
+    {
+      "working_point": "natural_fpr_0.001",
+      "dataset": "all",
+      "genuine_failures": 4,
+      "failure_with_original_noise_pass": 4,
+      "failure_with_original_noise_fail": 0,
+      "interpretation": "Descriptive decomposition only; initial-noise reference is unavailable to the deployed stateless detector"
+    },
+    {
+      "working_point": "natural_fpr_0.001",
+      "dataset": "COCO",
+      "genuine_failures": 1,
+      "failure_with_original_noise_pass": 1,
+      "failure_with_original_noise_fail": 0,
+      "interpretation": "Descriptive decomposition only; initial-noise reference is unavailable to the deployed stateless detector"
+    },
+    {
+      "working_point": "natural_fpr_0.001",
+      "dataset": "SDP",
+      "genuine_failures": 3,
+      "failure_with_original_noise_pass": 3,
+      "failure_with_original_noise_fail": 0,
+      "interpretation": "Descriptive decomposition only; initial-noise reference is unavailable to the deployed stateless detector"
+    },
+    {
+      "working_point": "paper_threshold12",
+      "dataset": "all",
+      "genuine_failures": 47,
+      "failure_with_original_noise_pass": 47,
+      "failure_with_original_noise_fail": 0,
+      "interpretation": "Descriptive decomposition only; initial-noise reference is unavailable to the deployed stateless detector"
+    },
+    {
+      "working_point": "paper_threshold12",
+      "dataset": "COCO",
+      "genuine_failures": 6,
+      "failure_with_original_noise_pass": 6,
+      "failure_with_original_noise_fail": 0,
+      "interpretation": "Descriptive decomposition only; initial-noise reference is unavailable to the deployed stateless detector"
+    },
+    {
+      "working_point": "paper_threshold12",
+      "dataset": "SDP",
+      "genuine_failures": 41,
+      "failure_with_original_noise_pass": 41,
+      "failure_with_original_noise_fail": 0,
+      "interpretation": "Descriptive decomposition only; initial-noise reference is unavailable to the deployed stateless detector"
+    }
+  ],
+  "full_budget_generations": 1000,
+  "full_budget_inversions": 1000,
+  "expected_total_unet_calls": 204000,
+  "actual_total_unet_calls": 102000,
+  "attacks": 0
+}

@@ -1,0 +1,53 @@
+{
+  "status": "failed",
+  "script_sha256": "f3d0c5c9439148692a64a7ffd55f298747de5a4aef284da83bebffc5379be46a",
+  "observed_at": "2026-11-16T08:33:42.280505+00:00",
+  "inference_calls": 0,
+  "attacks": 0,
+  "protocol_pins": {
+    "unified_seal_nulls_20261115": "1a3283f12074a95cbfede7a2bb64095dfa7cb812c65c00cceb363ca34d2de20a",
+    "unified_seal_clean_20261116": "14d0ac04f12803865ae614ad7697200ed0f5bbd2a4c86c31ad68b4e0d25c4475",
+    "unified_null_features_20261116": "e0ebe9aad974a310eac591a915b946a4eab997ffa4883d2a80bf463a7b078d22"
+  },
+  "calibration": {
+    "status": "verified",
+    "records": 40000,
+    "working_points": [
+      {
+        "target_fpr": 0.01,
+        "threshold": 2,
+        "calibration_accepted": 168,
+        "calibration_n": 20000,
+        "accepted": 169,
+        "sources": 20000,
+        "rate": 0.00845,
+        "lower95": 0.007228280004005648,
+        "upper95": 0.009817656797429764
+      },
+      {
+        "target_fpr": 0.001,
+        "threshold": 4,
+        "calibration_accepted": 8,
+        "calibration_n": 20000,
+        "accepted": 10,
+        "sources": 20000,
+        "rate": 0.0005,
+        "lower95": 0.0002397946432909746,
+        "upper95": 0.0009193249298326013
+      }
+    ],
+    "paper_working_point": {
+      "threshold": 12,
+      "accepted": 0,
+      "sources": 20000,
+      "rate": 0.0,
+      "lower95": 0.0,
+      "upper95": 0.0001844269639618992
+    },
+    "total_unet_calls": 2040000,
+    "summed_image_seconds": 83785.17956750456,
+    "calibration_results_sha256": "0578810580f2722cd34929d44284b06683598b357eebbd12627fe807c69ca6bf"
+  },
+  "error": "ValueError('Wrong total NFE')",
+  "finished_at": "2026-11-16T08:37:06.215377+00:00"
+}
