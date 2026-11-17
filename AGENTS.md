@@ -7,17 +7,12 @@ These rules apply to this repository and `/data0/liyanlei/watermark_research` on
 - Maintain `main` as the canonical research branch. Commit and push routine updates to `main`, updating the corresponding code, reports and project-state files together.
 - Create an additional branch only when the user explicitly requests one.
 
-## Objective and current state
+## Research scope
 
-- The user abandoned the full-scale unified comparison plan on2026-11-18 because the approximately27-day extraction cost is too long. Its coordinator and workers were stopped on2026-11-16. Preserve completed/partial outputs. Do not resume this plan or launch replacement experiments without a new user instruction. Earlier execution authorizations below are historical and do not reactivate this plan.
-- Preserve the completed SemBind/PGID/SEAL reproduction evidence, SEAL calibrated results, source manifests and partial feature artifacts. The full unified main table remains incomplete and is no longer scheduled.
-- Instance-key recovery (including partial-order, capsule, spectrum and spatial/visible-evidence variants) is frozen. Preserve negative evidence and do not start new variants. Any bounded method probe before the benchmark requires the user's specific authorization, as recorded below.
-- The user explicitly authorized a bounded CPU-only probe of public128/256-bit SSCD sign codes with continuous-query scoring, using existing features, splits and attacks. This exception does not authorize GPU inference, new attacks or renewed instance-key recovery; see the completed public-code report and project_state.json.
-- The subsequent explicit authorization permits one bounded 256-bit GS fingerprint fixed-point feasibility run on 50 existing prompts, 1%/3%/6% coordinates, at most three rounds and three cumulative GPU hours. Use one idle permitted GPU without displacing SEAL. This narrow exception permits GPU3 alongside the three existing SEAL workers; it does not change the general three-GPU cap for other work. Test legitimate images and the existing nine author transformations only. Stop after reporting the screen, regardless of success; no attacks or new variants are authorized by this exception.
-- That bounded screen is now complete and failed: all three fractions converged on0/50 prompts; joint nine-edit acceptance32/450,39/450,66/450. The run used1.398 GPU hours and released GPU3. The temporary concurrency exception has ended. Preserve [the evidence](reports/gs_fingerprint_fixedpoint_20261116/report.md); do not rerun, expand, add rounds or run attacks for this mechanism without a new user instruction. The completed screen remains archived.
-- The user's2026-11-16 instruction explicitly freezes the fingerprint fixed-point writeback route: no additional rounds or variants. The associated full-scale comparison execution plan was abandoned on2026-11-18. Direction A is retained for analysis only; no experiments are authorized for that direction. SEAL natural calibration and clean500 evaluation are complete; current allocation and subsequent queue state are maintained in project_state.json.
-- Current execution state is maintained only in `project_state.json`; completed evidence is indexed in `reports/README.md`. Read `GPT_CONTEXT.md` for the current research handoff.
-- Complete native SemBind reproduction and matched detector calibration are required before claiming superiority. Preserve frozen run sources and negative evidence.
+- The current task is repository maintenance, literature review and method design. Experiment execution is paused, including CPU scoring, inference and attack benchmarks.
+- Use `project_state.json` for current status, `docs/RESEARCH_PLAN.md` for the method proposal and `reports/README.md` for historical evidence.
+- Preserve baseline reproductions, negative findings and partial outputs. The former unified extraction queue, instance-key recovery, trajectory direction A and fingerprint fixed-point routes are archived.
+- Native baseline reproduction and matched operating points are prerequisites for superiority claims.
 
 ## Evaluation scope
 
@@ -47,7 +42,7 @@ These rules apply to this repository and `/data0/liyanlei/watermark_research` on
 - Primary Python: `/data0/liyanlei/watermark_research/envs/semantic_forgery_py310/bin/python`.
 - Use the Tsinghua mirror `https://pypi.tuna.tsinghua.edu.cn/simple/` for future Python dependency installation. Do not fall back to Aliyun automatically. Prefer existing local packages and caches.
 - Reuse local models and cache. Set `HF_HOME=/data0/liyanlei/watermark_research/cache/huggingface`, `HF_HUB_OFFLINE=1` and `TRANSFORMERS_OFFLINE=1` for offline runs.
-- Use at most three GPUs concurrently. The current user authorization permits any idle GPU except index 6; prefer 7, 5, 4, then 3, 2, 1, 0. Bind by the current UUID.
+- When experimental work is authorized, use only idle physical GPUs 4, 5 or 7, at most three concurrently. Bind by current UUID.
 - Run the full published implementation and update schedule; do not truncate baselines to save time.
 - Check occupancy before launching a GPU job. Use only idle devices, bind by current UUID and always exclude GPU index 6.
 - Never terminate another user's process or use their occupied GPU. Wait when no authorized GPU is idle.

@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-18",
+  "status": "stopped",
+  "server_run": "/data0/liyanlei/watermark_research/runs/semantic_readback_20261118",
+  "scope": "Verifier-only semantic readback on existing SEAL issuance, with an incomplete published regeneration evaluation.",
+  "natural_score_rows": 40000,
+  "clean_and_preview_score_rows": 1000,
+  "clean_and_edit_score_rows": 700,
+  "regeneration_candidate_files": 92,
+  "regeneration_verifier_records": 0,
+  "regeneration_acceptance_rate": null,
+  "active_processes": 0,
+  "gpus_released": [
+    4,
+    5,
+    7
+  ],
+  "archive_sha256": {
+    "semantic_readback.py": "b9c395452c73b33dff9498a82918188766319fbca7a907c06e6b638a9ff300a9",
+    "evaluate_seal_readback_benchmark.py": "1277b28b219597e088d350c79ec213c7fa97f7351e80bec56598337ce4ef1e32",
+    "summarize_semantic_readback.py": "2d64520ebe1af4218b9e5af4985b75032407ac48e0745879e8d135bb9fc799bc",
+    "semantic_readback_20261118.json": "b3edafc1cd7af9d52796675aa743c0c5eeee17e588ee418c8faedc0502f0b0c0",
+    "clean.csv": "7a13071593e6af7d1b1ed371b383a8b4f03c5bc581991ad1612958ffd26850d8",
+    "edits.csv": "3b7d93572924b678efdd82d9899400cfd3dfaf5d54f452122c7f3d44a7bcd5c9",
+    "natural.csv": "8f44dd59d77ab662fd7444f6f6fe7e170817f91c423998c4cf09c07be9d5f01f",
+    "working_points.json": "9ab0115bb8cfdc36a2b94430c0cfbb1886cce53511ed1c698e6f95203024c14c"
+  }
+}
