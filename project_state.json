@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "project_name": "watermark2",
-  "updated_at": "2026-11-16T12:50:58.778134+00:00",
-  "status": "experimental_execution_stopped_by_user",
+  "updated_at": "2026-11-18",
+  "status": "full_scale_unified_benchmark_abandoned_by_user",
   "active_experiments": 0,
   "queued_experiments": 0,
   "latest_progress_report": "reports/unified_null_stop_20261116/report.md",
@@ -66,7 +66,7 @@
   ],
   "max_concurrent_gpus": 3,
   "evaluation_policy": "Unchanged published top-venue author attacks only; full budgets; no adaptive or improved attacks; independent null calibration and evaluation; report achieved FPR and absolute TPR.",
-  "current_decision": "User stopped experimental execution because runtime is too long. Preserve completed and partial evidence. Do not restart the long queue or launch replacement experiments without a new user instruction. Instance recovery and fixed-point writeback remain frozen.",
+  "current_decision": "The user abandoned the full-scale unified comparison plan on2026-11-18 because its approximately27-day extraction cost is too long. The queue was stopped on2026-11-16. Preserve existing evidence; do not resume this plan or launch replacement experiments without a new user instruction.",
   "completed_evidence": [
     {
       "id": "unified_extraction_reproducibility_20261116",
@@ -1289,7 +1289,7 @@
     "historical_artifacts_preserved": true
   },
   "unified_defense_benchmark": {
-    "status": "stopped_by_user",
+    "status": "abandoned_by_user",
     "target_fpr": [
       0.01,
       0.001
@@ -1302,7 +1302,7 @@
       "native_system"
     ],
     "stateful_control": "native carrier plus per-image registered SSCD",
-    "current_block": "SEAL calibration and clean500 remain complete. SemBind/PGID full natural extraction stopped by user;2complete method batches and830saved formal feature records remain. No active or queued GPU jobs; main table and attack analysis remain incomplete.",
+    "current_block": "Full-scale unified comparison plan abandoned. SEAL calibration and clean500 results remain complete; the stopped SemBind/PGID extraction retains830saved records. The full main table and attack analysis are incomplete and no longer scheduled.",
     "runtime_probe": {
       "status": "complete",
       "run": "unified_runtime_probe_20261115",
@@ -1430,7 +1430,9 @@
       "stopped_at": "2026-11-16T12:50:00.685854+00:00",
       "automatic_restart": false,
       "restart_authorized": false,
-      "stop_receipt": "reports/unified_null_stop_20261116/stop_receipt.json"
+      "stop_receipt": "reports/unified_null_stop_20261116/stop_receipt.json",
+      "plan_status": "abandoned_by_user",
+      "plan_decision_date": "2026-11-18"
     },
     "seal_result_exports": [
       "reports/unified_seal_results_20261116/main_table_seal.csv",
@@ -1448,7 +1450,9 @@
       "audit": "reports/unified_extraction_reproducibility_20261116/audit.json",
       "general_hardware_guarantee": false
     },
-    "automatic_restart": false
+    "automatic_restart": false,
+    "decision_date": "2026-11-18",
+    "decision_reason": "Runtime too long"
   },
   "public_sscd_binary_probe": {
     "status": "complete",

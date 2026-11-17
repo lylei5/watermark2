@@ -1,8 +1,8 @@
 # 统一防御基线研究计划
 
-**执行状态：用户已于2026-11-16因耗时过长停止实验。** 协调器及三个GPU工作进程均已退出，无后续排队；保留全部已完成和部分产物，未收到新指令前不恢复该队列或启动替代实验。见[停止记录](../reports/unified_null_stop_20261116/report.md)。下文保留研究范围与既定比较要求。
+**方案状态：用户已于2026-11-18因耗时过长放弃这套全量统一对比执行方案。** 对应队列已于2026-11-16停止，现有SEAL结果、830条部分特征记录及日志保留。该方案不再推进；未收到新指令前不恢复队列或启动替代实验。见[停止记录](../reports/unified_null_stop_20261116/report.md)。下文保留原方案的研究范围与比较要求。
 
-当前目标是建立 SemBind、PGID、SEAL 的统一比较主表与逐攻击失败分析。实例密钥恢复路线已冻结，见[一页负结果](../reports/instance_recovery_negative_results_20261115/report.md)与[附录](../reports/instance_recovery_negative_results_20261115/appendix.md)。方法探索限于下文明确列出的用户授权筛查。执行状态只记录于[project_state.json](../project_state.json)。
+原方案目标是建立 SemBind、PGID、SEAL 的统一比较主表与逐攻击失败分析。实例密钥恢复路线已冻结，见[一页负结果](../reports/instance_recovery_negative_results_20261115/report.md)与[附录](../reports/instance_recovery_negative_results_20261115/appendix.md)。方法探索限于下文明确列出的用户授权筛查。执行状态只记录于[project_state.json](../project_state.json)。
 
 用户另行授权的有限方法判定为“公开128/256位SSCD二值参考、查询连续评分”，仅复用既有特征、拆分与攻击，使用249 CPU。[该判定已完成](../reports/sscd_public_binary_20261116/report.md)：128位达到两项误收上限，但评估合法保留94.4%；256位为95.8%、同提示词误收4/50，各Reprompt条件至多比连续SSCD多1来源。随图嵌入与认证未实现；这项例外不解冻实例密钥恢复，不启动新GPU或攻击实验。
 
@@ -10,9 +10,9 @@
 
 用户追加授权一次256位随图指纹机制筛查：50个既有提示词、约1%/3%/6%噪声位置、最多三轮不动点迭代、九类原作者常规处理，累计不超过3 GPU小时。使用不影响SEAL的单张空闲GPU；这次特定授权允许GPU3与既有SEAL三卡并行。协议见[冻结协议](../protocols/gs_fingerprint_fixedpoint_20261116_v3.json)。无论结果如何，报告后停止，不运行攻击，不扩展机制。统一主表与实例密钥恢复冻结决定保持有效。
 
-[该机制筛查已完成并停止](../reports/gs_fingerprint_fixedpoint_20261116/report.md)：三个比例收敛均0/50；九类处理联合通过32/450、39/450、66/450。原生GS检出基本保留，但新增指纹链路同时存在生成漂移和读回误码。总计1.398 GPU小时，500次生成、2000次完整反演；GPU3已释放，临时并发例外结束，不追加轮次、变体或攻击。接续工作回到统一对比。
+[该机制筛查已完成并停止](../reports/gs_fingerprint_fixedpoint_20261116/report.md)：三个比例收敛均0/50；九类处理联合通过32/450、39/450、66/450。原生GS检出基本保留，但新增指纹链路同时存在生成漂移和读回误码。总计1.398 GPU小时，500次生成、2000次完整反演；GPU3已释放，临时并发例外结束，不追加轮次、变体或攻击。对应结果保留归档。
 
-[SEAL共同自然图校准与500来源干净图部分](../reports/unified_seal_results_20261116/report.md)已完成并复核；目标1%/0.1%的独立自然误报为169/20000、10/20000，合法检出500/500、496/500。[SemBind提取一致性验证](../reports/unified_extraction_reproducibility_20261116/report.md)完成24份产物和16组逐值一致比较，完整SemBind/PGID自然图提取队列已恢复；攻击、共同失真、质量与其余载体主表仍需完成。
+[SEAL共同自然图校准与500来源干净图部分](../reports/unified_seal_results_20261116/report.md)已完成并复核；目标1%/0.1%的独立自然误报为169/20000、10/20000，合法检出500/500、496/500。[SemBind提取一致性验证](../reports/unified_extraction_reproducibility_20261116/report.md)完成24份产物和16组逐值一致比较，完整SemBind/PGID自然图提取队列已停止，其全量执行方案已放弃；攻击、共同失真、质量与其余载体主表保持未完成状态。
 
 主表分为同载体和完整系统两个部分。同载体部分覆盖 SemBind 与 PGID 共同支持且通过实现验收的 GS/TR/PRC；完整系统部分纳入 SEAL 自己的内容相关噪声方案。SemBind 的 GS++、PGID 的 T2SMark 分别记录，不能当作共同支持。N/A、缺少实现、待运行、执行失败分别标注。
 
