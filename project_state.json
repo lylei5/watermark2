@@ -2,14 +2,14 @@
   "schema_version": 3,
   "project_name": "watermark2",
   "updated_at": "2026-11-19",
-  "status": "authorized_image_identity_confirmation",
-  "active_experiments": 1,
+  "status": "image_identity_confirmation_complete",
+  "active_experiments": 0,
   "queued_experiments": 0,
-  "active_runs": ["color_joint_20261119"],
+  "active_runs": [],
   "queued_runs": [],
   "research_plan": "docs/RESEARCH_PLAN.md",
   "evidence_index": "reports/README.md",
-  "latest_progress_report": "reports/color_budget_20261119/report.md",
+  "latest_progress_report": "reports/color_joint_20261119/report.md",
   "native_sembind_reproduction_complete": false,
   "superiority_established": false,
   "server_workspace": {
@@ -46,7 +46,6 @@
   ],
   "max_concurrent_gpus": 3,
   "evaluation_policy": "Unchanged published top-venue author attacks only; full budgets; no adaptive or improved attacks; independent null calibration and evaluation; report achieved FPR and absolute TPR.",
-  "execution_authorized": true,
-  "execution_scope": "Offline 288-byte image identity confirmation on new prompts on 249.",
+  "execution_authorized": false,
   "previous_state": "https://github.com/lylei5/watermark2/blob/ac09574711f9ea2b056b5782e683d51e5eb2f87e/project_state.json"
 }
