@@ -1,0 +1,22 @@
+{
+  "unique_png_hashes": 200,
+  "unique_scores": 17000,
+  "methods": [
+    "global144",
+    "fixed3x48",
+    "rank3x48",
+    "hybrid96_48",
+    "space16x9"
+  ],
+  "calibration_references": 80,
+  "test_references": 120,
+  "bytes_per_reference": 288,
+  "verified": [
+    "receipts and PNG hashes",
+    "completed run file hashes",
+    "score keys and prompt splits",
+    "reference lengths and masses",
+    "pooled and contrast calibration thresholds",
+    "held-out genuine and sibling counts, retrieval and descriptive 95% ROC"
+  ]
+}

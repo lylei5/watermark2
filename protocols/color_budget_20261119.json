@@ -1,0 +1,12 @@
+{
+  "cohort": "New COCO and SDP prompts (50 each), sampled by hash, excluding prior color cohort and earlier unified source cohort by normalized text, source ID and CLIP overlap. Two independent seeds per prompt, plain SD2.1-base DDIM 50 steps CFG 7.5 512x512. First 20 accepted per dataset calibrate; remaining 30 test.",
+  "reference_budget": "144 little-endian uint16 values = 288 bytes per enrolled image for each primary method; largest-remainder rounding to a total of 65535. Registry identifiers are common. Fixed global color quantizers are shared and deterministic. Query descriptors are quantized identically.",
+  "color": "RGB chromaticity simplex; 144, 96 or 48 nested centers by farthest-point sampling, starting at nearest lattice point to neutral on a 1/63 RGB simplex. Quantize lookup r and g to a 1/255 grid, then assign nearest center in three channel proportions. Black is neutral.",
+  "methods": ["global144", "fixed3x48", "rank3x48", "hybrid96_48", "space16x9"],
+  "multidimensional": "Hybrid uses equal mass for a 96-bin global chromaticity histogram and a 4x4 grid of relative-luminance thirds (48 bins). Structure-only budget control uses 4x4 grid by nine rank bands. No per-edit thresholds or fitted fusion weights.",
+  "edits": "Frozen WAVES author functions at relative strengths 0.4 and 0.8: compression, resizedcrop, rotation, brightness, contrast, blurring, noise, erasing. Same edit seed for the two images in a pair. Strong contrast = 1.8x.",
+  "metrics": "Primary 95% genuine-pass target calibrated across 16 equally weighted edited conditions; test genuine and same-prompt impostor acceptance overall and at strong contrast, and clean sibling acceptance. Supplement: threshold calibrated to 5% sibling accept, gallery top-1 and within-pair rank. Report a separate strong-contrast-only 95% calibration and an explicitly descriptive held-out 95%-TPR ROC point.",
+  "statistics": "Bootstrap 5000 paired prompt-cluster samples stratified by dataset, with fixed thresholds and gallery. Do not treat 1920 test queries as independent. No generation loss, watermark or attack.",
+  "families": ["compression", "resizedcrop", "rotation", "brightness", "contrast", "blurring", "noise", "erasing"],
+  "strengths": [0.4, 0.8]
+}
