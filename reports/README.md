@@ -2,6 +2,10 @@
 
 运行状态见[机器状态](../project_state.json)。本页保存历史实验的实现范围、分母、工作点与逐样本证据。2026-11-18 的[语义读回研究记录](semantic_readback_20261118/receipt.json)列明已完成的评分文件和中止位置。旧统一基准的[部分产物清单](unified_null_stop_20261116/report.md)及[当时项目快照](https://github.com/lylei5/watermark2/blob/ac09574711f9ea2b056b5782e683d51e5eb2f87e/project_state.json)可用于回查。
 
+## 生成图的颜色指纹
+
+[亮度分区与同提示词种子区分](color_identity_20261119/report.md)收录 100 对原图的校准和留出评测，分别报告图库检索、身份验证、逐编辑结果与配对区间。
+
 ## DPM 组件研究与基线重验
 
 | 研究 | 已完成证据与边界 |

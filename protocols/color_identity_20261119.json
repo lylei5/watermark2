@@ -1,0 +1,15 @@
+{
+  "sources": "Existing SD2.1 phase1_trajectory_native_gs_20261113 aux and same, ordinary generations of each prompt with independent seeds. Check source image hashes, distinct pixels and seeds.",
+  "source_protocol_sha256": "bd09828a85d57cb8433b2c5c42c48dae0aea98d4929d98a91f07d6fe1def3633",
+  "split": "Within each dataset sort unique prompts by SHA256 of color-id-v1/ followed by the exact caption. First 20 prompts calibrate, remaining 30 evaluate; keep both seeds and all edits together.",
+  "edit_families": ["compression", "resizedcrop", "rotation", "brightness", "contrast", "blurring", "noise", "erasing"],
+  "strengths": [0.4, 0.8],
+  "waves": "Unmodified WAVES single-image distortions via the project's frozen loader. Same edit RNG for both seeds within a prompt/condition. No fake images or new generations.",
+  "conditions": "All 16 edited conditions equally weighted; unedited self comparisons are audit checks only. Different-seed negative is the identical edited query against the other original.",
+  "features": ["RGB shares of total channel intensity", "3 marginal sRGB histograms, 32 bins/channel", "global chromaticity histogram (12x12 r,g)", "joint chromaticity and three absolute luma bands", "joint chromaticity and three relative luma thirds (fractional split of equal-luma ties)"],
+  "distance": "Hellinger on unit-mass distributions, single original template per image; equal mass per channel for marginal RGB. All pixels used; exact black has neutral chromaticity.",
+  "threshold": "Primary: largest attainable calibration acceptance at or below 5% different-seed false accepts using a single threshold per feature, equal weight across edit types, inclusive <=; put boundary just below first excluded order statistic. Secondary: smallest distance threshold accepting >=95% genuine calibration queries. Calibration finishes before test scoring.",
+  "identification": "Nearest original among the two siblings, and top-1 among all 120 test originals. Exact distance ties receive fractional credit. Also report hard impostor acceptance for clean unedited siblings separately.",
+  "uncertainty": "Paired stratified prompt-cluster percentile bootstrap (COCO/SDP, 5000 replicates, PCG64 seed 20261119), frozen thresholds and gallery; no individual edit treated as independent.",
+  "execution": "249 CPU only. No model inference or optimization."
+}

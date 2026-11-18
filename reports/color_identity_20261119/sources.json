@@ -1,0 +1,1906 @@
+{
+  "calibration": [
+    {
+      "task": 7,
+      "dataset": "COCO",
+      "prompt_sha256": "9d7b782ef3c19dd026f7043decd46351602bb32bde38e3eaff0d7508b3fb26a0",
+      "images": [
+        {
+          "path": "generate_1/images/007_aux.png",
+          "sha256": "f27787a4aec7c6163cba116326bf2862287155dcccf6aeb25410cdc0f4332782"
+        },
+        {
+          "path": "generate_1/images/007_same.png",
+          "sha256": "1353f7ab206351235b9c903943161aaee5e51286e76aa4ae3b9f7ecc8c08a257"
+        }
+      ],
+      "seeds": [
+        1876957688897692908,
+        7462059770199234698
+      ]
+    },
+    {
+      "task": 21,
+      "dataset": "COCO",
+      "prompt_sha256": "ce650b75471a0040a202ad4a12a6e4b0524edeec61b7db2e8a26253c22f3d1cb",
+      "images": [
+        {
+          "path": "generate_0/images/021_aux.png",
+          "sha256": "dd18864149ab6d64aa9cd7d0afa7234fb4fb3ac3439b655edc583f8db60f1c5d"
+        },
+        {
+          "path": "generate_0/images/021_same.png",
+          "sha256": "a7056a110b12d1ba459ef47c23a3aa9f8c6697dad1295f8b417b9545e198db6a"
+        }
+      ],
+      "seeds": [
+        6696210668329683521,
+        7171668552324302240
+      ]
+    },
+    {
+      "task": 29,
+      "dataset": "COCO",
+      "prompt_sha256": "2869b65cd19a4c7bcceae7c70078e69b42e762b5b35abd626d9757e3842ac5c0",
+      "images": [
+        {
+          "path": "generate_2/images/029_aux.png",
+          "sha256": "8694794140f303a449e0a1fa6a8861b3adb60cdc8333eb36481752bf7968de5f"
+        },
+        {
+          "path": "generate_2/images/029_same.png",
+          "sha256": "4ac4c280d3720a70636e38b2c7f9765b8c58394bc7e2e5251499d56955fc2368"
+        }
+      ],
+      "seeds": [
+        2232951329466014214,
+        3865464755458709072
+      ]
+    },
+    {
+      "task": 25,
+      "dataset": "COCO",
+      "prompt_sha256": "42a92c577d9c1f5f139fd5da6e2b9d63458d88b8d3608ff416cecbc67067a1c1",
+      "images": [
+        {
+          "path": "generate_1/images/025_aux.png",
+          "sha256": "554d3e11e946240ad8acd7aa65da38c53e22f880bf16ea21ce2360d53515381b"
+        },
+        {
+          "path": "generate_1/images/025_same.png",
+          "sha256": "cd9eeb7a6725c95b7e5216519ed2a79a5a76a71ef9b367e172524cecd6d47af5"
+        }
+      ],
+      "seeds": [
+        2104743905949878785,
+        2563455078040358949
+      ]
+    },
+    {
+      "task": 24,
+      "dataset": "COCO",
+      "prompt_sha256": "87c91add82bbf83a27a31d64a0031b57d8c03d3cf57bdc634e1c1d49e293992e",
+      "images": [
+        {
+          "path": "generate_0/images/024_aux.png",
+          "sha256": "758d40614265bba8a916e724d31d4b37dd03f84e31fb515b3ffb3b37c24cd13d"
+        },
+        {
+          "path": "generate_0/images/024_same.png",
+          "sha256": "0d45ccc02b1e729de6e6fb791946fd2bcc80b6f4a39d645bfd62a87ef5bf1dd0"
+        }
+      ],
+      "seeds": [
+        6392470763051867195,
+        2167694117242527114
+      ]
+    },
+    {
+      "task": 2,
+      "dataset": "COCO",
+      "prompt_sha256": "3693be71f519361d75fff6333d67e704a9868ed03066c2e007b12fa6b9268505",
+      "images": [
+        {
+          "path": "generate_2/images/002_aux.png",
+          "sha256": "d2a413e387a46c9ccb40d1b8831eaef8fe6a72a4025ecd4fe6dd66a929bbfeaa"
+        },
+        {
+          "path": "generate_2/images/002_same.png",
+          "sha256": "98232c835a8c108370e982d84c9f600c7cea5d996fdd3ff4b7fac6267c63a160"
+        }
+      ],
+      "seeds": [
+        518377459496290164,
+        6207714445307139485
+      ]
+    },
+    {
+      "task": 32,
+      "dataset": "COCO",
+      "prompt_sha256": "bdab09f65a706d4d0f7bba8e1cb5c27ce082a87cb5f769bd4a68760e6d758223",
+      "images": [
+        {
+          "path": "generate_2/images/032_aux.png",
+          "sha256": "60bc4b0e99a3dd0684e1199f64ebcbd9cc898cca1ebaaea31148c6785e4c76dd"
+        },
+        {
+          "path": "generate_2/images/032_same.png",
+          "sha256": "7028ebe9d13f4801c409cdd629c2b298dcbcd0137ac725f1c4e37a3d0c99c9a3"
+        }
+      ],
+      "seeds": [
+        3517560379915519939,
+        6112439799077151737
+      ]
+    },
+    {
+      "task": 5,
+      "dataset": "COCO",
+      "prompt_sha256": "6057ef3f6f878ad8625005d6c88ca5b61ec07203a6d032313fd21b4e053b2c41",
+      "images": [
+        {
+          "path": "generate_2/images/005_aux.png",
+          "sha256": "c8194331a79957e8aa1957715c7c690ef707daebae5c2356e6d6f230ee4881f6"
+        },
+        {
+          "path": "generate_2/images/005_same.png",
+          "sha256": "5b9ffa1e8acef14f52ae628d8b11bcfacc030e8c7ac3420b8e89d176331a8c58"
+        }
+      ],
+      "seeds": [
+        3087612168797113715,
+        5606409630278935733
+      ]
+    },
+    {
+      "task": 33,
+      "dataset": "COCO",
+      "prompt_sha256": "a6ea78961cbea1b917027eaecdba077862f39bd1db12d72bbe280432c9e0ad83",
+      "images": [
+        {
+          "path": "generate_0/images/033_aux.png",
+          "sha256": "01ef0ed41be2f436ff982c75c7dbe83af0281bf9ab10f437daf8185fb0f20e86"
+        },
+        {
+          "path": "generate_0/images/033_same.png",
+          "sha256": "b66c9a3faf4936ab87aeef45a70081f417181ee8d9c4ae139a8cf3e80a23a8f2"
+        }
+      ],
+      "seeds": [
+        9020668424790179316,
+        9139292490736679723
+      ]
+    },
+    {
+      "task": 35,
+      "dataset": "COCO",
+      "prompt_sha256": "6f1ae662357bb14eb38bd6e70b9abe39b1a32686d7557c562916d79f2c0ee9d3",
+      "images": [
+        {
+          "path": "generate_2/images/035_aux.png",
+          "sha256": "cce9397141944341ed40ccbedecb73d77d806289073cf57a0c5382bd7ecd5680"
+        },
+        {
+          "path": "generate_2/images/035_same.png",
+          "sha256": "4b8af4647f7a70ff61c972fefdef9637a307ab4232cb6c1de6f0efe0cf09f3f3"
+        }
+      ],
+      "seeds": [
+        8604146960028179916,
+        5263867927462288540
+      ]
+    },
+    {
+      "task": 22,
+      "dataset": "COCO",
+      "prompt_sha256": "076911c6ca24758afaa3b35185e4bb4a2205d7f590f6e022b58c0ca64420d900",
+      "images": [
+        {
+          "path": "generate_1/images/022_aux.png",
+          "sha256": "015a82085b23f1870664e414e4ec8a835423bb9f853bda14fd772146aab0efb0"
+        },
+        {
+          "path": "generate_1/images/022_same.png",
+          "sha256": "17dab34aedf99a6f54a6c2c9db8d0eb71cf198f6aba5030c924176a942d194b8"
+        }
+      ],
+      "seeds": [
+        6783592364657783377,
+        512514463366595231
+      ]
+    },
+    {
+      "task": 40,
+      "dataset": "COCO",
+      "prompt_sha256": "c5a42f742a3f29590d4cf096458969fbafed54dd730d26975eddb0914372f10b",
+      "images": [
+        {
+          "path": "generate_1/images/040_aux.png",
+          "sha256": "f120aca3a4ab2a490a47ece688272cb6dc44570341219e12f89ec2fc803ed9d9"
+        },
+        {
+          "path": "generate_1/images/040_same.png",
+          "sha256": "75a8b35ed70f159f496b5ad08e1d57ab1a9f9b5d408a61fabed647712cda3c11"
+        }
+      ],
+      "seeds": [
+        4844449143247584094,
+        6632510118898120652
+      ]
+    },
+    {
+      "task": 20,
+      "dataset": "COCO",
+      "prompt_sha256": "916443e09db99806831dd7a2263a3c06d9fe4c6c504fee9c319a6d35d708c0d8",
+      "images": [
+        {
+          "path": "generate_2/images/020_aux.png",
+          "sha256": "c116ce7e30c066dd143bcaceff9f4dcd1ebb2e4f46789a9f72aed55a3f686040"
+        },
+        {
+          "path": "generate_2/images/020_same.png",
+          "sha256": "c412abb22aa0aa40d04de19fcbb00b9f247fac8ae0e7e56f9c08c4a2965c262d"
+        }
+      ],
+      "seeds": [
+        4348697753715803203,
+        5712535516104733552
+      ]
+    },
+    {
+      "task": 14,
+      "dataset": "COCO",
+      "prompt_sha256": "45b3ebd912f444990dfc3667a7af09bef0a98049b94fc966a0df318bf59ce9c6",
+      "images": [
+        {
+          "path": "generate_2/images/014_aux.png",
+          "sha256": "1e4913a65d9b51e9a2711d8fc64808e0e78fab57b015f14a627e5093aea3fc88"
+        },
+        {
+          "path": "generate_2/images/014_same.png",
+          "sha256": "6dd0d5d16c880f9ba1640a53cc15e34d5712db4f59411ef1c9e0c1c93aabc99e"
+        }
+      ],
+      "seeds": [
+        8876253753955929696,
+        7342189821543164078
+      ]
+    },
+    {
+      "task": 18,
+      "dataset": "COCO",
+      "prompt_sha256": "1f339f7910f1c98b3a55b602440b4e0de9e07e33b936e5d5ec1704444c385d64",
+      "images": [
+        {
+          "path": "generate_0/images/018_aux.png",
+          "sha256": "0c70cc447ced01d6bebbdc59076cb89c6d6f33f0854a43f79dab98fd95b06d08"
+        },
+        {
+          "path": "generate_0/images/018_same.png",
+          "sha256": "d856edd2c3a86eef5eebb4a0db2169bb157f5c17fd07e5eb0e122fc0c9ee3585"
+        }
+      ],
+      "seeds": [
+        2316192831991050178,
+        8728831315850125056
+      ]
+    },
+    {
+      "task": 31,
+      "dataset": "COCO",
+      "prompt_sha256": "5f70ab050ffa1572f20896d803fe07d796c598193efef51bcdc20e07ffd5f10e",
+      "images": [
+        {
+          "path": "generate_1/images/031_aux.png",
+          "sha256": "9afc31e030809829c557ac3c5eac9b15b8a577a0681163aa7a09ee93e5739881"
+        },
+        {
+          "path": "generate_1/images/031_same.png",
+          "sha256": "400dbeabfc6bed96f542453a653a9d3777129f257b66ff25acbd8c8eed6ffec6"
+        }
+      ],
+      "seeds": [
+        8078348328436083363,
+        5502066635429093992
+      ]
+    },
+    {
+      "task": 3,
+      "dataset": "COCO",
+      "prompt_sha256": "1bf82ce8dc7efce4c46c447c46278bb7fdf22cb016e0b4ed41f5a91f6f222434",
+      "images": [
+        {
+          "path": "generate_0/images/003_aux.png",
+          "sha256": "e2f3cde270eef193eec6641b02e801820eeecc673309234fab73cde40a9e24d8"
+        },
+        {
+          "path": "generate_0/images/003_same.png",
+          "sha256": "3e976aab194600894093721f9a9e9cb61812c129803d429a7cffe967d5772922"
+        }
+      ],
+      "seeds": [
+        4802688557490037421,
+        3915035547748696807
+      ]
+    },
+    {
+      "task": 15,
+      "dataset": "COCO",
+      "prompt_sha256": "5adda835cfcbab9046f0434eacabe9d67d974bb5f51978dc41426217df77feeb",
+      "images": [
+        {
+          "path": "generate_0/images/015_aux.png",
+          "sha256": "32a3b26a395274f230c789035a0222a83c5fce361e9781a1e1795a06b364a6d1"
+        },
+        {
+          "path": "generate_0/images/015_same.png",
+          "sha256": "c1ced6521c6ed8109c986432f536d129301847541240deb1a4a6663d9a9b5319"
+        }
+      ],
+      "seeds": [
+        4268430848940597036,
+        5050217923753562429
+      ]
+    },
+    {
+      "task": 12,
+      "dataset": "COCO",
+      "prompt_sha256": "1d41c2f5056818429ab031c82033fb920d81d62b40855143649d2058b537fb81",
+      "images": [
+        {
+          "path": "generate_0/images/012_aux.png",
+          "sha256": "f189efc91107ad593d6dbda54cc2a3c4b0ef14cb1a89b6b42fbb9f5fcbb931ff"
+        },
+        {
+          "path": "generate_0/images/012_same.png",
+          "sha256": "9f5eba9f94a3c297c79e75650e1cb9292950a1f177aca2a37039cf09e507f146"
+        }
+      ],
+      "seeds": [
+        6300377165800514638,
+        821980846136351101
+      ]
+    },
+    {
+      "task": 38,
+      "dataset": "COCO",
+      "prompt_sha256": "d487b9619f78107ca0a7115dfc488cc8a7760a71f76323b4ca6c5212a61a86b8",
+      "images": [
+        {
+          "path": "generate_2/images/038_aux.png",
+          "sha256": "3f9a36b20f2aadfaf16ca2a852103b1d93ef584b14a7f83c6e0102e82a866919"
+        },
+        {
+          "path": "generate_2/images/038_same.png",
+          "sha256": "aeb3f432681c11d1615700f618c01dd52edc884653a1d366f81293faf2259bd7"
+        }
+      ],
+      "seeds": [
+        2812894836999909368,
+        7912451327170983845
+      ]
+    },
+    {
+      "task": 63,
+      "dataset": "SDP",
+      "prompt_sha256": "b02377302d2ee52eec2c7dd9194bd7fe4b1bb69867db83c575b046088b667458",
+      "images": [
+        {
+          "path": "generate_0/images/063_aux.png",
+          "sha256": "bacdb728eeaed24df9b42012abef7a8dd4cd3eb5586bb0ec26c79d8ff47f372d"
+        },
+        {
+          "path": "generate_0/images/063_same.png",
+          "sha256": "383318bb490c698c141b823698fb2b795e3ca0060c3b2deedc72e4a68a4cebb1"
+        }
+      ],
+      "seeds": [
+        6965158604397255609,
+        8966592835470548859
+      ]
+    },
+    {
+      "task": 69,
+      "dataset": "SDP",
+      "prompt_sha256": "aa6cf48a2a8c8f71665ea504830fea1955e715aaa8fc404ddc0878700b65eafa",
+      "images": [
+        {
+          "path": "generate_0/images/069_aux.png",
+          "sha256": "920b0b2a38ac4baeee4c6901b9f7494904f6d35a326faa936e816d70e6db9a8e"
+        },
+        {
+          "path": "generate_0/images/069_same.png",
+          "sha256": "34a27a104c9d77bb5302679e6b51896ab663120c5452de34b9fa3eed1a510143"
+        }
+      ],
+      "seeds": [
+        3984794675804567164,
+        1871357627915672940
+      ]
+    },
+    {
+      "task": 74,
+      "dataset": "SDP",
+      "prompt_sha256": "97c54916a670a984f776e25e758d520e08bf19b374fbbf3c3db7f496650e3c88",
+      "images": [
+        {
+          "path": "generate_2/images/074_aux.png",
+          "sha256": "9eee60b4437899e4cdbde5daadbb66623633838a8de9c1230b5074442d54f0e2"
+        },
+        {
+          "path": "generate_2/images/074_same.png",
+          "sha256": "0cdce06e1291c71084374e65bb6da97bcb03468a5bfc0a273bc10aded625b7d8"
+        }
+      ],
+      "seeds": [
+        1571927733972807353,
+        7148326863618271984
+      ]
+    },
+    {
+      "task": 78,
+      "dataset": "SDP",
+      "prompt_sha256": "1e01b0c27f2c5fa2b759b89964e2cf2840ce185ab092927136be05217c80fd19",
+      "images": [
+        {
+          "path": "generate_0/images/078_aux.png",
+          "sha256": "1734011d4deb5d4256e521208e960fbb182096359655c1343f5ef557e72392f3"
+        },
+        {
+          "path": "generate_0/images/078_same.png",
+          "sha256": "3dd9104211a7955c7899ddab5a1559b5b9d413b1f50290793bc6b88584b7c702"
+        }
+      ],
+      "seeds": [
+        6369707561767283790,
+        9220624640249210497
+      ]
+    },
+    {
+      "task": 86,
+      "dataset": "SDP",
+      "prompt_sha256": "ba297cdb019971c1d73688cb963db29d163d615062b19b8975049dccd2a1fe34",
+      "images": [
+        {
+          "path": "generate_2/images/086_aux.png",
+          "sha256": "dd80bf7d9dc45977f88157c3cf46b3a38165e5f5f5ef9a4e95c14db08748b931"
+        },
+        {
+          "path": "generate_2/images/086_same.png",
+          "sha256": "7874e2df45960b23869622bbb6d30c634ba675332b971747a64d9a8bf51747ea"
+        }
+      ],
+      "seeds": [
+        5095227659440866785,
+        9046857228566270095
+      ]
+    },
+    {
+      "task": 96,
+      "dataset": "SDP",
+      "prompt_sha256": "a8c918b17860fbace6171f5425c057bd262b2af4a34c0b630b45a7407f8d8fd2",
+      "images": [
+        {
+          "path": "generate_0/images/096_aux.png",
+          "sha256": "3159dffe461dde9030d22a3f24aa4f1cca6a882b2012ad5d4b8a8691c83d3f5f"
+        },
+        {
+          "path": "generate_0/images/096_same.png",
+          "sha256": "a495ba787d1a6f3268e63a9535c1f2b88f510996e4604c22306afd5a31a601a9"
+        }
+      ],
+      "seeds": [
+        6495088807882243026,
+        2935377983874320964
+      ]
+    },
+    {
+      "task": 95,
+      "dataset": "SDP",
+      "prompt_sha256": "c1189238cafcda76e4e51e3ac12b6e7d90d9f66938eaaf38376f74fed9d2e265",
+      "images": [
+        {
+          "path": "generate_2/images/095_aux.png",
+          "sha256": "ca86bd470dec8cb09d7a0f54d1cbaf330a9899de6c72c0a22131fa36cacd7091"
+        },
+        {
+          "path": "generate_2/images/095_same.png",
+          "sha256": "04095f95317e3bcb2202ac1b8d82cd097c9aed8feeaaf96ac5c8d48eee152933"
+        }
+      ],
+      "seeds": [
+        1698137230216867648,
+        4028785473827777379
+      ]
+    },
+    {
+      "task": 87,
+      "dataset": "SDP",
+      "prompt_sha256": "a2621b61c85511e3b8d8858457dcfe053dcd9f56ca01c4274fcefbc8441c97e1",
+      "images": [
+        {
+          "path": "generate_0/images/087_aux.png",
+          "sha256": "cd24e32a53ba6256a710dd00631fd5b71ca185ac200629d8a2aeda19cddc6a74"
+        },
+        {
+          "path": "generate_0/images/087_same.png",
+          "sha256": "d6578b8cc1fe7c4eb16f0c3a4740e0a686cbb779fe72f771339a275c995ea36b"
+        }
+      ],
+      "seeds": [
+        1126308484549892495,
+        2205726214415780857
+      ]
+    },
+    {
+      "task": 88,
+      "dataset": "SDP",
+      "prompt_sha256": "1cff8a5328d13acbd1a7a70d25b3359b9caf4c9bfa13faa1bc8812360e08a7d7",
+      "images": [
+        {
+          "path": "generate_1/images/088_aux.png",
+          "sha256": "dcd7a3573a90c82f70baa64f2dc3615061eba0433a5de6ed0329ed7d6d315fe0"
+        },
+        {
+          "path": "generate_1/images/088_same.png",
+          "sha256": "ad5a83642b218bea55ae4d47ccf51b12fdde89304d2b550e8a43271f296870cc"
+        }
+      ],
+      "seeds": [
+        6725818651809283872,
+        4934951953486525023
+      ]
+    },
+    {
+      "task": 61,
+      "dataset": "SDP",
+      "prompt_sha256": "6240b8dd8804230362ca923d9b9bc8601e1a902a471cce6eb734725f89304b94",
+      "images": [
+        {
+          "path": "generate_1/images/061_aux.png",
+          "sha256": "4e38a39db2ba5e183df7c7e79e4691fe1f772e880514a053448825b5dfdf7366"
+        },
+        {
+          "path": "generate_1/images/061_same.png",
+          "sha256": "7274d11c316a813e3fe5d8cc5d2fb99c739080553baed9f968a469e711e41f17"
+        }
+      ],
+      "seeds": [
+        7292486054513256806,
+        9151740531657924590
+      ]
+    },
+    {
+      "task": 55,
+      "dataset": "SDP",
+      "prompt_sha256": "2e377f10e67a01bc1cf18ebe4d8e48b7151b875170cf36cf6c2080b49f9d5377",
+      "images": [
+        {
+          "path": "generate_1/images/055_aux.png",
+          "sha256": "2f5eb51137ee34f3fdd385d0b068c0ba49ae15b6435739421fc13bc8cad11fe0"
+        },
+        {
+          "path": "generate_1/images/055_same.png",
+          "sha256": "06f62871589cafd9e63206b05373c7daed86a35b1e0c0e2991da0acaef2a252e"
+        }
+      ],
+      "seeds": [
+        4077929722035021518,
+        6396802715435289431
+      ]
+    },
+    {
+      "task": 51,
+      "dataset": "SDP",
+      "prompt_sha256": "4018b9aad3e959b551ba23a6f72e0d7223c56161beaf4694975cc95a4938c2f6",
+      "images": [
+        {
+          "path": "generate_0/images/051_aux.png",
+          "sha256": "2cf3c0556898a0adfc87f65f952abf3cecb1586f536cb69bcd0f6e362fa85226"
+        },
+        {
+          "path": "generate_0/images/051_same.png",
+          "sha256": "0903a20a6560671c18d81fefc3414d71eac1c6731065240e8cbd85797d282bf2"
+        }
+      ],
+      "seeds": [
+        6395685493344333105,
+        4866789295602691401
+      ]
+    },
+    {
+      "task": 62,
+      "dataset": "SDP",
+      "prompt_sha256": "96ec5d649dae3324eb48f5ed606d305719cb26e5943a20724ab680168935c4bd",
+      "images": [
+        {
+          "path": "generate_2/images/062_aux.png",
+          "sha256": "93469d89e75239d7ecc5b0b4ceb15ac54a5d47093a260359bce3d2a864797e5e"
+        },
+        {
+          "path": "generate_2/images/062_same.png",
+          "sha256": "e0932a111b33288672f140eb7fe6fd875f7af1362ed54173b1e4e25b7b3dbb84"
+        }
+      ],
+      "seeds": [
+        1828989126190422913,
+        4997261861279532903
+      ]
+    },
+    {
+      "task": 60,
+      "dataset": "SDP",
+      "prompt_sha256": "4cf063390c0c745b4d0bd4efe218e20700cbc9f0400b7e101f6e25d8fd93b5a4",
+      "images": [
+        {
+          "path": "generate_0/images/060_aux.png",
+          "sha256": "bd1e969ee866bd35d23dc5e0a0e49545e2002ff6a16ce62ce282aed4f03adb83"
+        },
+        {
+          "path": "generate_0/images/060_same.png",
+          "sha256": "93a3326d0e9c53e605c673e18bab33efcd7eb131399299c20cf020c11dff2562"
+        }
+      ],
+      "seeds": [
+        3619582228238640101,
+        6572562031466383057
+      ]
+    },
+    {
+      "task": 76,
+      "dataset": "SDP",
+      "prompt_sha256": "0dfe56a492434cba555c7f59c950b5e3033d9f8aabf849bb86060d2e22c1d6bd",
+      "images": [
+        {
+          "path": "generate_1/images/076_aux.png",
+          "sha256": "2e69c5a2d1865a16b39a69781c5327d5adf93e7af1ae9fa701d530621b9bc358"
+        },
+        {
+          "path": "generate_1/images/076_same.png",
+          "sha256": "5690f22bf4d1e5c5736ca02e0dc1ec6fa80594caf1546b9bccde5beb1fa1f454"
+        }
+      ],
+      "seeds": [
+        1044906876881440081,
+        694209469328627317
+      ]
+    },
+    {
+      "task": 58,
+      "dataset": "SDP",
+      "prompt_sha256": "1209c5052eebf3177b18725df129d8a5154b4b1a027f43713084a9a025b926a8",
+      "images": [
+        {
+          "path": "generate_1/images/058_aux.png",
+          "sha256": "cc881cdcc00e685af6d2917e058f84ea1596c3a857c7b28c13fc33780715656a"
+        },
+        {
+          "path": "generate_1/images/058_same.png",
+          "sha256": "5268aa0a5f286009ae43cc903fe8f215b269cab87c510172b3aea14ae6c300c4"
+        }
+      ],
+      "seeds": [
+        4073271906446423239,
+        3632513715800921622
+      ]
+    },
+    {
+      "task": 73,
+      "dataset": "SDP",
+      "prompt_sha256": "8a2f567dae09ad44710449fddc46916df1d645a5519db7275085f4cb17d72b64",
+      "images": [
+        {
+          "path": "generate_1/images/073_aux.png",
+          "sha256": "7a5f3a077653f0eb1b42aee6343c992232cc12a7e28e755dd8bd6230f2748348"
+        },
+        {
+          "path": "generate_1/images/073_same.png",
+          "sha256": "9119c944f4a573d99f63e7dd3dc964bfa3af649b24dbdb6f7197e7702b1b8e80"
+        }
+      ],
+      "seeds": [
+        4540040313356115848,
+        7933128478938070836
+      ]
+    },
+    {
+      "task": 82,
+      "dataset": "SDP",
+      "prompt_sha256": "b102eea40327f4b5efa9d0ec39223fde300515ff1ad8cd5ccaa7841036e519bb",
+      "images": [
+        {
+          "path": "generate_1/images/082_aux.png",
+          "sha256": "7406357bf2e5b01e0db26d30afe1cb31f358bc41800a8071d5353ee487f13847"
+        },
+        {
+          "path": "generate_1/images/082_same.png",
+          "sha256": "91275baa38d7de015c811eb554055c140ead48f63a9ff19028d7a8dbdf1ddee8"
+        }
+      ],
+      "seeds": [
+        1794455560753389857,
+        5087466474562018985
+      ]
+    },
+    {
+      "task": 98,
+      "dataset": "SDP",
+      "prompt_sha256": "66223617bec19e5e4cca8d1abd93f74705282dc3e3255816f186e6cff36bc698",
+      "images": [
+        {
+          "path": "generate_2/images/098_aux.png",
+          "sha256": "5e52e85b6326b297a1f0ab54f80389cbd571e30905e1d13ab72529dfbfd76a3a"
+        },
+        {
+          "path": "generate_2/images/098_same.png",
+          "sha256": "3cacb818abb84dbf021c21bb9391974948b7129b1b57960c1e7271999724546b"
+        }
+      ],
+      "seeds": [
+        8730587743444743657,
+        3359577216686089232
+      ]
+    },
+    {
+      "task": 59,
+      "dataset": "SDP",
+      "prompt_sha256": "8fb561f282b331694697a87de0b95d7186b2b97b07d812fe098e9ae15c413cdb",
+      "images": [
+        {
+          "path": "generate_2/images/059_aux.png",
+          "sha256": "48acb3b048518e13a3ae91ca1875ee30046bb97787a7227afa8012b2d3ad81b5"
+        },
+        {
+          "path": "generate_2/images/059_same.png",
+          "sha256": "9be9874c278612fa5f186257ccb166955edc4b46b5c652c93e4b36d59c828e7a"
+        }
+      ],
+      "seeds": [
+        2600463319150464887,
+        3064834533105481734
+      ]
+    }
+  ],
+  "test": [
+    {
+      "task": 37,
+      "dataset": "COCO",
+      "prompt_sha256": "1f25ed33db7dc99f9f44b0163898edc32215c7ef48bb4089d830210372098d0c",
+      "images": [
+        {
+          "path": "generate_1/images/037_aux.png",
+          "sha256": "d78182144e27eab7caa566b6b7afbaa7eb00c87fa002b47e99b1ee197a4320f4"
+        },
+        {
+          "path": "generate_1/images/037_same.png",
+          "sha256": "842749c37c6a6174431ea37ab1785f126459d99dc732665746b612635ad6a918"
+        }
+      ],
+      "seeds": [
+        5869930884002243520,
+        6336745769153284447
+      ]
+    },
+    {
+      "task": 6,
+      "dataset": "COCO",
+      "prompt_sha256": "7e1a0ba10e4ebf6e538c0e02e090c3201e654f2e7fe1192698d85beb4cf3969f",
+      "images": [
+        {
+          "path": "generate_0/images/006_aux.png",
+          "sha256": "e4355984ff4502828294ac22d2048a31395bca78f07f92d6d1683a9bf1ee0f5f"
+        },
+        {
+          "path": "generate_0/images/006_same.png",
+          "sha256": "de1e160dfc20f2496ebedaabda399232a036e1a383db34f01616a04b9339ea88"
+        }
+      ],
+      "seeds": [
+        6800597164801416055,
+        2141541457188200320
+      ]
+    },
+    {
+      "task": 30,
+      "dataset": "COCO",
+      "prompt_sha256": "9c61bae8375f19cae8950324d0d0ed34d6fb0306354c8f024d0505588f33c2a8",
+      "images": [
+        {
+          "path": "generate_0/images/030_aux.png",
+          "sha256": "3d1e4b758f2ef0689e20358c635287c1fa181c2743f7ac666c37b28a2cff3368"
+        },
+        {
+          "path": "generate_0/images/030_same.png",
+          "sha256": "988295e8a1f62e4ea4eba1b16dbc8d1f6dcd996fb4b85a698b9cd11f93ec87b7"
+        }
+      ],
+      "seeds": [
+        8911147643982229183,
+        4747161174117824927
+      ]
+    },
+    {
+      "task": 0,
+      "dataset": "COCO",
+      "prompt_sha256": "01757749f093cddf508eef90b0c9c028d1cf8406736cc34db3865b5b83dfb8d4",
+      "images": [
+        {
+          "path": "generate_0/images/000_aux.png",
+          "sha256": "8a0970d6ae92d5a95c3eb7ce4170764be54d997cdbc5618770fd3579fa18b3ce"
+        },
+        {
+          "path": "generate_0/images/000_same.png",
+          "sha256": "e3ed603cc5cf554f43f3381dcc2e35da356b410c63cf321377c7d00aea30ebe3"
+        }
+      ],
+      "seeds": [
+        7605690208809140281,
+        4513445748092457651
+      ]
+    },
+    {
+      "task": 34,
+      "dataset": "COCO",
+      "prompt_sha256": "f9f70839127a290a1e1748851bcdeb6f0d5b3dafe5b4d68c6b845088facf9cd9",
+      "images": [
+        {
+          "path": "generate_1/images/034_aux.png",
+          "sha256": "6f33e91b12f016d3d72f465d21517fda62551a110299ebf3473823f450a835de"
+        },
+        {
+          "path": "generate_1/images/034_same.png",
+          "sha256": "52ab9c359dee763d0a653bbff42975e3815cf75f765dde43e4b8e222f0e1ffcf"
+        }
+      ],
+      "seeds": [
+        6014526761724108183,
+        7817052737173344904
+      ]
+    },
+    {
+      "task": 16,
+      "dataset": "COCO",
+      "prompt_sha256": "bdc8d3312bd249a942699982cb3114c08657cb8d81faff9bd9e67d17659002bf",
+      "images": [
+        {
+          "path": "generate_1/images/016_aux.png",
+          "sha256": "8c30895d95bcc95f3a805e1e81d9cb78bddb517b4cdb81e05fb46ac3378f81c2"
+        },
+        {
+          "path": "generate_1/images/016_same.png",
+          "sha256": "481264f61395e98e8dac7931e6514dacc3cff1957513981e402c8fe72e47dd7c"
+        }
+      ],
+      "seeds": [
+        5362077518964203028,
+        912684556878454419
+      ]
+    },
+    {
+      "task": 46,
+      "dataset": "COCO",
+      "prompt_sha256": "b4a65dd4e440b4f5ddff4de0f1ea8d9219f3d323d6d04368c0fccb65d7d32471",
+      "images": [
+        {
+          "path": "generate_1/images/046_aux.png",
+          "sha256": "ec58471f9e5a79924d973ff3038e71667f68bdd59721528c7fec0f3ae1013969"
+        },
+        {
+          "path": "generate_1/images/046_same.png",
+          "sha256": "e9addfc31376389c7bce8ce335e08932da5df114153c12552017a8506210bb1b"
+        }
+      ],
+      "seeds": [
+        7341172142133854278,
+        1088279457358184446
+      ]
+    },
+    {
+      "task": 19,
+      "dataset": "COCO",
+      "prompt_sha256": "fdb1a3a39d51772f39e8f9538db3dbb0b3070cc96494490e74b5b09daafb4273",
+      "images": [
+        {
+          "path": "generate_1/images/019_aux.png",
+          "sha256": "627ce49564895b29d44d437a137c788dceecd0644a7f798dac0aeb20d500b3f4"
+        },
+        {
+          "path": "generate_1/images/019_same.png",
+          "sha256": "af7c07a95f9f996e505f16012a8f69c261308d01b8450a399132456b632a83b3"
+        }
+      ],
+      "seeds": [
+        1475012688814303383,
+        1092121156875157544
+      ]
+    },
+    {
+      "task": 47,
+      "dataset": "COCO",
+      "prompt_sha256": "d946734071c819efda44b1f541836a73b65352a1d8c29de4537ad4a8085a6ebe",
+      "images": [
+        {
+          "path": "generate_2/images/047_aux.png",
+          "sha256": "3eeb9c033e73fbdfad181a4f389390be5fc1c7722bc718f7a531313a50d1df54"
+        },
+        {
+          "path": "generate_2/images/047_same.png",
+          "sha256": "02851458baae05d13381dd659479b6f5e06172544711f99cec8ae954d0ea1d44"
+        }
+      ],
+      "seeds": [
+        3571712325739854461,
+        5646742082608409293
+      ]
+    },
+    {
+      "task": 39,
+      "dataset": "COCO",
+      "prompt_sha256": "95560bab8c167f5c7fc0a3b8ba130a14aae984d4232de820b330aaa0f0981e9b",
+      "images": [
+        {
+          "path": "generate_0/images/039_aux.png",
+          "sha256": "30628467fcfd7bb7885543924790b2f302d321cfb2e3c2e929c70a66163dd67f"
+        },
+        {
+          "path": "generate_0/images/039_same.png",
+          "sha256": "1f3c0e7c4d36a4b5202d7bb0228ad5dbaaeacb33796aa9ecb111c7c0510f67fc"
+        }
+      ],
+      "seeds": [
+        3955812079977258334,
+        1213021199498261718
+      ]
+    },
+    {
+      "task": 23,
+      "dataset": "COCO",
+      "prompt_sha256": "10b6e00c140f5987e1a4be4ce6f698b987396c8e75ee50d8cfc37c364298cb59",
+      "images": [
+        {
+          "path": "generate_2/images/023_aux.png",
+          "sha256": "6b1acd54a30e996ffd3d3cf70bfa5d0def3617656b0138ca7da460dc3a038a99"
+        },
+        {
+          "path": "generate_2/images/023_same.png",
+          "sha256": "390327d7b0cf0d58b501ab190f1ceb7bf60f4cfa8ded35b3dd09bb407d425f60"
+        }
+      ],
+      "seeds": [
+        4743620451867500758,
+        6997457718020287397
+      ]
+    },
+    {
+      "task": 49,
+      "dataset": "COCO",
+      "prompt_sha256": "38dd0b0ac2752aeb275fb1e8c2ac76790be4caf6855dbfca8e6fcd04533a6f6d",
+      "images": [
+        {
+          "path": "generate_1/images/049_aux.png",
+          "sha256": "4ac7e54cbaea287ccca6bf34c6975bacc43f97527d164f529f83a2bfbb314925"
+        },
+        {
+          "path": "generate_1/images/049_same.png",
+          "sha256": "8d6b562853f62c26f07acc001b82d751666ee9a07b0c4ea63b7eb646cf19a323"
+        }
+      ],
+      "seeds": [
+        5299125689143530619,
+        6302645463265733714
+      ]
+    },
+    {
+      "task": 28,
+      "dataset": "COCO",
+      "prompt_sha256": "f4dfa009512a6c0c9475df97df4f0baaf8848d588e0db41e7fdbc2d7f8cf962e",
+      "images": [
+        {
+          "path": "generate_1/images/028_aux.png",
+          "sha256": "a0e7363b3a6b74c4d0b488f17db0c5a850e65dcdc791b78deee25989c03b6903"
+        },
+        {
+          "path": "generate_1/images/028_same.png",
+          "sha256": "e8df0451ae1c1221c9686586c9b9a12a1af3fac1182326abfdb7589577da011c"
+        }
+      ],
+      "seeds": [
+        7935091849705091016,
+        4599094427642126334
+      ]
+    },
+    {
+      "task": 11,
+      "dataset": "COCO",
+      "prompt_sha256": "8339c0a697aea25d757bf7093741b24431de8fec7c54b170525f92773ed7d514",
+      "images": [
+        {
+          "path": "generate_2/images/011_aux.png",
+          "sha256": "6f1fc57e7c3eb19a9da9ab694187ccedfe8c93628b0a9d7446fc7f6d676c8bac"
+        },
+        {
+          "path": "generate_2/images/011_same.png",
+          "sha256": "f2db2af4ca8490f1218aee0784967a52c8cdfe50c39932191abfdcfeefc47482"
+        }
+      ],
+      "seeds": [
+        7297632105830430179,
+        8519805244127268907
+      ]
+    },
+    {
+      "task": 1,
+      "dataset": "COCO",
+      "prompt_sha256": "c04c83f95ecb7e738f6f4a5ec09ce70aa366fed7462f4ad908a2d447cd61d481",
+      "images": [
+        {
+          "path": "generate_1/images/001_aux.png",
+          "sha256": "055a592292770037d540a717749f0bd657e782a9b89a2ad408b84f6ea1f89794"
+        },
+        {
+          "path": "generate_1/images/001_same.png",
+          "sha256": "132a9e40b2cc66f6704b7843929698a392ee368a5c807680ff5dca2b0319a247"
+        }
+      ],
+      "seeds": [
+        761158008750363281,
+        1652410628151690860
+      ]
+    },
+    {
+      "task": 44,
+      "dataset": "COCO",
+      "prompt_sha256": "2b22e897b4de2aa9054461afd22be85f06417394588a0f9fc6b9f72b9210b3fc",
+      "images": [
+        {
+          "path": "generate_2/images/044_aux.png",
+          "sha256": "b0cc2d61bcf84f78ff7f78a7f5080e46b207d5d02d2bf54f89ed7a2658ec26a6"
+        },
+        {
+          "path": "generate_2/images/044_same.png",
+          "sha256": "451a86e7c0d58271df110e7fb6d56ae5166b3789ce8dac98e40655b666b9f0fc"
+        }
+      ],
+      "seeds": [
+        2485736518752108610,
+        849811495927395560
+      ]
+    },
+    {
+      "task": 13,
+      "dataset": "COCO",
+      "prompt_sha256": "1612b4ebc49c5a76903ed063e7a3a2cf00ff876f3451e66200d24fb6a82c8a99",
+      "images": [
+        {
+          "path": "generate_1/images/013_aux.png",
+          "sha256": "a9812bd0a2b81ee9e3ba1e46cede9982e168abaefac8f1d19628780f76b74811"
+        },
+        {
+          "path": "generate_1/images/013_same.png",
+          "sha256": "f47fffad2e85cbf96387ac8020dc4f3e3a6658234bf54d32821c5adf33bdcca7"
+        }
+      ],
+      "seeds": [
+        4331515810090408053,
+        2348948318953540457
+      ]
+    },
+    {
+      "task": 4,
+      "dataset": "COCO",
+      "prompt_sha256": "4f74f5679c4022386ea5e648830afd7be3026096bb230367d0acb7df558e5cf9",
+      "images": [
+        {
+          "path": "generate_1/images/004_aux.png",
+          "sha256": "bd421092b95e5c051ac122ec9c13974888b2dc0c39b47261d285514b7bed1f1b"
+        },
+        {
+          "path": "generate_1/images/004_same.png",
+          "sha256": "a29f6cd0ddc2e785e3c35019ee348c012eb617610412ed1eea8fdc816a3cf433"
+        }
+      ],
+      "seeds": [
+        1816208421367165839,
+        2820632179391385049
+      ]
+    },
+    {
+      "task": 43,
+      "dataset": "COCO",
+      "prompt_sha256": "3d8473523f13af4a0d9911124116c775d30e271f3ef91482095f32278ea9ff31",
+      "images": [
+        {
+          "path": "generate_1/images/043_aux.png",
+          "sha256": "b50f05b126b043a617e9682eab31102cf220432c41af1deee70004a12e3b1570"
+        },
+        {
+          "path": "generate_1/images/043_same.png",
+          "sha256": "79c0fbeadd19f8faee8185c205a0cf5826b670a5d4fb203919081d86dbf9f4f5"
+        }
+      ],
+      "seeds": [
+        7377660751750420267,
+        1012575811319720331
+      ]
+    },
+    {
+      "task": 41,
+      "dataset": "COCO",
+      "prompt_sha256": "c3f7721277bf60f61ee49518a23e3ed44744f33e4024c37244c99de4bbb1c005",
+      "images": [
+        {
+          "path": "generate_2/images/041_aux.png",
+          "sha256": "29e80346effecde62e992fd137323e4b2b4732d36d8f814dc94ceb66fc39d3de"
+        },
+        {
+          "path": "generate_2/images/041_same.png",
+          "sha256": "e60fe2a4a55ae61618fa96d03eab330ee626d9ea1b26fd7bc846ed9499f318a2"
+        }
+      ],
+      "seeds": [
+        1547073462640089354,
+        3205091891453322064
+      ]
+    },
+    {
+      "task": 48,
+      "dataset": "COCO",
+      "prompt_sha256": "db265322660add63b55a95972ee19eece38dad2e2aeb8a652abbe7f407b9325f",
+      "images": [
+        {
+          "path": "generate_0/images/048_aux.png",
+          "sha256": "55dd4aab18967a8c6b867cbb93d917c8fce2ece86d3891db2c44a465875713ef"
+        },
+        {
+          "path": "generate_0/images/048_same.png",
+          "sha256": "81d39994fb2d9f2a9eac84c03a6a5764b4646483a290ca705cd22cc9e60b3507"
+        }
+      ],
+      "seeds": [
+        4630552553859045262,
+        7079773448025559474
+      ]
+    },
+    {
+      "task": 9,
+      "dataset": "COCO",
+      "prompt_sha256": "344aee19294cba0820475fb9949cc3795e5cd69b14f7e392d04f55266e5e25e6",
+      "images": [
+        {
+          "path": "generate_0/images/009_aux.png",
+          "sha256": "6858028abc5d80cb69c221fd6e05ad78768a5e65f3e84efbc8648f5f0f07653e"
+        },
+        {
+          "path": "generate_0/images/009_same.png",
+          "sha256": "833c4668cdf6715f44c7216e474f1d21f88c25942c9ecb7cd22c72938462c47b"
+        }
+      ],
+      "seeds": [
+        102458013988105588,
+        4651089213545944618
+      ]
+    },
+    {
+      "task": 36,
+      "dataset": "COCO",
+      "prompt_sha256": "25f7e6f2e353bc5a547dc77f4a59545b393a0ea4d9afdc57bd38ca94539fad07",
+      "images": [
+        {
+          "path": "generate_0/images/036_aux.png",
+          "sha256": "ceb3c4a4ff8a83e211a0efe1396b71e010deb32e99a06dd58ef96d33e17676e9"
+        },
+        {
+          "path": "generate_0/images/036_same.png",
+          "sha256": "89a45212117e3a193cd78f82315c930c87c1a42fb15cf2c793e17e414ce4c8df"
+        }
+      ],
+      "seeds": [
+        8611786014939352051,
+        6309482297906078138
+      ]
+    },
+    {
+      "task": 10,
+      "dataset": "COCO",
+      "prompt_sha256": "bfcf278ea9d9e65f44a97948e87ee6c8a1fe1edb3cfba109bb5decd814989d11",
+      "images": [
+        {
+          "path": "generate_1/images/010_aux.png",
+          "sha256": "557380642c5a64253c19cb8e8aac48a607c6b8690370a0c79ab0146abcaaefe1"
+        },
+        {
+          "path": "generate_1/images/010_same.png",
+          "sha256": "01adc61b3265e98cb3de8a4d9e6e5cc533ff86a397924c4df511d68fe886a23f"
+        }
+      ],
+      "seeds": [
+        4434986159651944248,
+        6212701514097992926
+      ]
+    },
+    {
+      "task": 27,
+      "dataset": "COCO",
+      "prompt_sha256": "cdf5bee289beffd0ba467980bf3b4de31b23bd3e01bbf67a718a6cd354cf2571",
+      "images": [
+        {
+          "path": "generate_0/images/027_aux.png",
+          "sha256": "3341b24d1ca9bfac5c488361dec25e44a1f23671046596110a3cc938dd1cc507"
+        },
+        {
+          "path": "generate_0/images/027_same.png",
+          "sha256": "b32b947767f24de9db04c5d48d884941f9a1e5adc16da4de7b79d95aa088f024"
+        }
+      ],
+      "seeds": [
+        2644875256545762554,
+        7373183712852284867
+      ]
+    },
+    {
+      "task": 8,
+      "dataset": "COCO",
+      "prompt_sha256": "ed742ad96b97939ae09c059c18c35eda014382ff46f80ad452f1cca962b54b98",
+      "images": [
+        {
+          "path": "generate_2/images/008_aux.png",
+          "sha256": "79faac364a963df317198d48b57ccd304c7432caf0419b3ab1cd4571c99fd133"
+        },
+        {
+          "path": "generate_2/images/008_same.png",
+          "sha256": "cc783335ad0ef692ea5d06bad01c6b7381834678336620cb2f336f4fe337bdc5"
+        }
+      ],
+      "seeds": [
+        8950013692674750836,
+        8189710542565167118
+      ]
+    },
+    {
+      "task": 42,
+      "dataset": "COCO",
+      "prompt_sha256": "8106ee3b8990820a194c2fb40aa065e03b8f76c498ace8fbb61e295b917fb3b5",
+      "images": [
+        {
+          "path": "generate_0/images/042_aux.png",
+          "sha256": "36e5275852e1ea1edc31ca886d234a97bc0bd3052b07f5446cb54675763da748"
+        },
+        {
+          "path": "generate_0/images/042_same.png",
+          "sha256": "a278a80dafd7e4719a27f52ea9499a2e8db5783dc954faef43a9b55e465de5f7"
+        }
+      ],
+      "seeds": [
+        2821072280903229823,
+        530922003222354041
+      ]
+    },
+    {
+      "task": 45,
+      "dataset": "COCO",
+      "prompt_sha256": "d3f1dc20c0911391667f89e93fad230206cbcbfbebd1594aecdf8150735d4571",
+      "images": [
+        {
+          "path": "generate_0/images/045_aux.png",
+          "sha256": "a3d48629701ba7b417a4c42ecb3162317d5c93f10ed0b02142ce8e2919e9a22c"
+        },
+        {
+          "path": "generate_0/images/045_same.png",
+          "sha256": "832fbc3f3d9e5d8a27bbf632d6ec9f5dc8dca4648a968c4c0bcadff946781e84"
+        }
+      ],
+      "seeds": [
+        7991408641916686664,
+        3084682755718122827
+      ]
+    },
+    {
+      "task": 17,
+      "dataset": "COCO",
+      "prompt_sha256": "884e9babfbd1e01973bafcbadbe1894fa802139050d659318a91fd7609b395b3",
+      "images": [
+        {
+          "path": "generate_2/images/017_aux.png",
+          "sha256": "1b631dc11d763afa022a36cb18f4f7ffe34910cd2555d637a5b6293eefa302f2"
+        },
+        {
+          "path": "generate_2/images/017_same.png",
+          "sha256": "27cdc90df79c79bdc082491f43bc64e99ff630ff9c47bfecf1875dc8cc1bcdc5"
+        }
+      ],
+      "seeds": [
+        6714174026810672197,
+        2154006908374065916
+      ]
+    },
+    {
+      "task": 26,
+      "dataset": "COCO",
+      "prompt_sha256": "227706dec0fa58686b4d28061fa3ffb17c6c99bc6f2d7ec8ae60834c3f9436f1",
+      "images": [
+        {
+          "path": "generate_2/images/026_aux.png",
+          "sha256": "a6a414b310a456c09424e24016474c93e213760c4349213cada8420aa4141b35"
+        },
+        {
+          "path": "generate_2/images/026_same.png",
+          "sha256": "f2558c1474fc4b459ffb23066a6b6d43a54d1184c628e534790726372409926a"
+        }
+      ],
+      "seeds": [
+        4119451872305696901,
+        2266769492200634075
+      ]
+    },
+    {
+      "task": 67,
+      "dataset": "SDP",
+      "prompt_sha256": "7b14155bf6e02de0a1132bac161f68cc4707781c5968fd2a0be705a0f7f7c168",
+      "images": [
+        {
+          "path": "generate_1/images/067_aux.png",
+          "sha256": "e1dedb7380bd21451175bfd57975011020f80562132d88ec87ec39cde95b015b"
+        },
+        {
+          "path": "generate_1/images/067_same.png",
+          "sha256": "3c37ded13e185a54f0c36b8a5f6820bbfcf3edccca2e0fbbecce282df26b740a"
+        }
+      ],
+      "seeds": [
+        7471308233777296644,
+        246115292582458467
+      ]
+    },
+    {
+      "task": 77,
+      "dataset": "SDP",
+      "prompt_sha256": "deb672545bc65160d5e8ee03ac8ca0b0bba55351d7241f798e2ee5383b4e4774",
+      "images": [
+        {
+          "path": "generate_2/images/077_aux.png",
+          "sha256": "55e7936b941ee69888466dcd4a3440ed5833d89df5462f2e318c9d988198c1fc"
+        },
+        {
+          "path": "generate_2/images/077_same.png",
+          "sha256": "dd09121e0af725401aaa341f24d073b1f16115dad02bf6bd595badedb9cd1c5c"
+        }
+      ],
+      "seeds": [
+        1735940173092826340,
+        5037083020047045505
+      ]
+    },
+    {
+      "task": 71,
+      "dataset": "SDP",
+      "prompt_sha256": "2750f24111a768c9743315bfba4ac4aa4aaf292ffe5349ab26dc4502b40f404f",
+      "images": [
+        {
+          "path": "generate_2/images/071_aux.png",
+          "sha256": "12b86c7ca9aa62696e19dffa306e8d1747076911276c04bf06b55a3b7113f464"
+        },
+        {
+          "path": "generate_2/images/071_same.png",
+          "sha256": "cfebd9fd3b3bdabeb40f9a1562ffc758e78b966592bd9fa9c82cbd8025c583b8"
+        }
+      ],
+      "seeds": [
+        2575604974424050392,
+        6216127189894059907
+      ]
+    },
+    {
+      "task": 57,
+      "dataset": "SDP",
+      "prompt_sha256": "0586cf91938c64c8786278c5d3fcb99930ccdecf3baf9b54ff1e4f81139b666f",
+      "images": [
+        {
+          "path": "generate_0/images/057_aux.png",
+          "sha256": "5455793d1ef6d3b27d22cb8bf4770b15b74f98b50536e91f654fee9e26d97ee5"
+        },
+        {
+          "path": "generate_0/images/057_same.png",
+          "sha256": "dcd111b478058e2c7c796511659b05d5a6e5f79b3a472240e2828b26355ff823"
+        }
+      ],
+      "seeds": [
+        8237360756851160694,
+        7369778882916285040
+      ]
+    },
+    {
+      "task": 91,
+      "dataset": "SDP",
+      "prompt_sha256": "809f5e041a908f51baa036235e63122020d914832bef8ac473ad98a59df4bf9b",
+      "images": [
+        {
+          "path": "generate_1/images/091_aux.png",
+          "sha256": "abe1ab24e829344cd93f5af95789d98dcd21e1c937ae7505e080c08286876810"
+        },
+        {
+          "path": "generate_1/images/091_same.png",
+          "sha256": "e08d46a62289bfef50812e963853947da6f2659af142b2f7f6b60bd40934eba7"
+        }
+      ],
+      "seeds": [
+        1997077278286713979,
+        885536151805719671
+      ]
+    },
+    {
+      "task": 56,
+      "dataset": "SDP",
+      "prompt_sha256": "2fe033a34d2412f35b2cca7be6fa67164eea54712ed5d935a0e224154612e431",
+      "images": [
+        {
+          "path": "generate_2/images/056_aux.png",
+          "sha256": "c9cbdafd4965621836f70bb8a2a83ff056667fcf97473b2a2c998b4d8bf0be60"
+        },
+        {
+          "path": "generate_2/images/056_same.png",
+          "sha256": "45bbb2d5c6177e16fc5011627f9b4dd6a3cb751a02b08deeb4503ea8108020ca"
+        }
+      ],
+      "seeds": [
+        7502332568753186163,
+        542002383257918509
+      ]
+    },
+    {
+      "task": 66,
+      "dataset": "SDP",
+      "prompt_sha256": "5f013d9e5f422e4affc49bafeac7e90e36c9cf3a6919aad1ebef3851ee48602b",
+      "images": [
+        {
+          "path": "generate_0/images/066_aux.png",
+          "sha256": "cfb37b56337861ccf0695665571de309510c27354ca69be451761b9bea88c145"
+        },
+        {
+          "path": "generate_0/images/066_same.png",
+          "sha256": "7700f1f8124b54214da3e04ae4cc1134dc889df935ef17696a47a9c31d0ca5c8"
+        }
+      ],
+      "seeds": [
+        3574774084329269801,
+        5586386419454644641
+      ]
+    },
+    {
+      "task": 68,
+      "dataset": "SDP",
+      "prompt_sha256": "7d78fdc4e8e03c6dbaacc120d8b2f0ba34cfe29e5d710d85767898179b8fd861",
+      "images": [
+        {
+          "path": "generate_2/images/068_aux.png",
+          "sha256": "957b8f47fc4ef718faa2fc84b103f07ddfa5dddeacc2483698e06c5e93b06409"
+        },
+        {
+          "path": "generate_2/images/068_same.png",
+          "sha256": "587974a0bf79d44b21ed7292f788b2002cf1cb4a94801e26ae1e9f1701667741"
+        }
+      ],
+      "seeds": [
+        5613276459559337083,
+        3688629562113867155
+      ]
+    },
+    {
+      "task": 72,
+      "dataset": "SDP",
+      "prompt_sha256": "fa05a055f4d782225d87df1230b2729bce05f532331599fd8669fd8913f83d33",
+      "images": [
+        {
+          "path": "generate_0/images/072_aux.png",
+          "sha256": "385101ff443b09f44aa3010cdf4646f2e84e6cc6c80b1cff5abf75bf332b0a20"
+        },
+        {
+          "path": "generate_0/images/072_same.png",
+          "sha256": "1c3f71a73516f9c4ce4704525a78074a5bc098672600311ee150d90d0a0a094f"
+        }
+      ],
+      "seeds": [
+        6647772261060908569,
+        3845851052401380601
+      ]
+    },
+    {
+      "task": 83,
+      "dataset": "SDP",
+      "prompt_sha256": "8865606dfb529477071fb076deaca204e3fe67e0ab6afcc64a0cbcbf6c8e4b55",
+      "images": [
+        {
+          "path": "generate_2/images/083_aux.png",
+          "sha256": "7da0ba4c5a2db10cbbcd13763c3c72f0c87a181b103f6a7d64f6aa9af70a1fed"
+        },
+        {
+          "path": "generate_2/images/083_same.png",
+          "sha256": "4eda0320394cf9229cc7698fe3214128838211c672bd8641885d2736c226ac3d"
+        }
+      ],
+      "seeds": [
+        5831485405478427419,
+        6910676144386105703
+      ]
+    },
+    {
+      "task": 75,
+      "dataset": "SDP",
+      "prompt_sha256": "676a19b926976cfd201f9721d49e3886816b5353d2ea34f2527bd43808b9d22f",
+      "images": [
+        {
+          "path": "generate_0/images/075_aux.png",
+          "sha256": "78f0414d42892daa0f0300ef8cb12948bd28e8369649215251a6e5df7fe6c875"
+        },
+        {
+          "path": "generate_0/images/075_same.png",
+          "sha256": "18f2221cb7ba2a5858320767656c7f28a8dd649e0a8ca06a2f1dc8b308e8d16e"
+        }
+      ],
+      "seeds": [
+        8677490914114360058,
+        1907155174607213466
+      ]
+    },
+    {
+      "task": 52,
+      "dataset": "SDP",
+      "prompt_sha256": "8803ae8afceb6fbd681a8e293237d9da0cb704f71238dc8277a38865224eeecc",
+      "images": [
+        {
+          "path": "generate_1/images/052_aux.png",
+          "sha256": "d4794cbe75d60ff26f9e00616e2ba61e0ef8119e5dbfabe29ba21907bf9285c6"
+        },
+        {
+          "path": "generate_1/images/052_same.png",
+          "sha256": "077e60c3168e8ddca5bfc7e25198b463778e63a51d9e4697d1e64467fcb01427"
+        }
+      ],
+      "seeds": [
+        9080399263596168004,
+        7067851439160662250
+      ]
+    },
+    {
+      "task": 84,
+      "dataset": "SDP",
+      "prompt_sha256": "e6c5d39685357feef0a80879643fe018e512cce1475881918a9297f156b060ba",
+      "images": [
+        {
+          "path": "generate_0/images/084_aux.png",
+          "sha256": "5204fdfdda0a8c466733d80f9e1902daa0c9575c50b9bd9988bea5e1953b2ce9"
+        },
+        {
+          "path": "generate_0/images/084_same.png",
+          "sha256": "be3d3c79b87e95aac4628cd1e754302bf6fcd69052b9b241612db4122358c40b"
+        }
+      ],
+      "seeds": [
+        813547671626834112,
+        1110542925181713533
+      ]
+    },
+    {
+      "task": 94,
+      "dataset": "SDP",
+      "prompt_sha256": "dabfc03ccaf211714709c7ed242f616e16259ec1bc81090411b0b2021a1272c5",
+      "images": [
+        {
+          "path": "generate_1/images/094_aux.png",
+          "sha256": "410ad9ef8cde5a263017c62fd7ae74771ae7b13a4569b6e787960e2d07b18d51"
+        },
+        {
+          "path": "generate_1/images/094_same.png",
+          "sha256": "9ab0025c4bb91d6f3acba58bb2631d4ccaa13a1a2950969011727c888e73cd9b"
+        }
+      ],
+      "seeds": [
+        4917584126767331962,
+        4304592506572196228
+      ]
+    },
+    {
+      "task": 70,
+      "dataset": "SDP",
+      "prompt_sha256": "28dd6c4358a8c8336ecc46bd196b5c3d1e1cb4971d30e1df674770123d8fd5c5",
+      "images": [
+        {
+          "path": "generate_1/images/070_aux.png",
+          "sha256": "6c03afefac7e2dcb883292b7cbf4aec68e80463c8f3ec45fdf1e288948aed61a"
+        },
+        {
+          "path": "generate_1/images/070_same.png",
+          "sha256": "c4b6dc6f250f25ba6263f6a4e3d1d4a2577135e764e03c1964182bd933653771"
+        }
+      ],
+      "seeds": [
+        141195138829002380,
+        5342227598731420305
+      ]
+    },
+    {
+      "task": 89,
+      "dataset": "SDP",
+      "prompt_sha256": "c4cff589f603323e042aba507f38bb785acc5242f04d8eb1ad05c69a1fa80383",
+      "images": [
+        {
+          "path": "generate_2/images/089_aux.png",
+          "sha256": "7a33753f9dbdcff49c1872915ecd705e203f7dbfd3063baee162ff1176bc8fc5"
+        },
+        {
+          "path": "generate_2/images/089_same.png",
+          "sha256": "e6ff65e9d620b5c21df5ebd4924aa3352d82e162a75eed26b61b3c900fb5e8a5"
+        }
+      ],
+      "seeds": [
+        4119646567790834962,
+        834756390033169967
+      ]
+    },
+    {
+      "task": 97,
+      "dataset": "SDP",
+      "prompt_sha256": "1d808f241996fb6fe234857e7659945cdc10722e58657ba458a0e2f9fdf7cfb4",
+      "images": [
+        {
+          "path": "generate_1/images/097_aux.png",
+          "sha256": "4f0d5764d04b3532d79f87a0984c0bbc425813014e653f753ef36da78e70f510"
+        },
+        {
+          "path": "generate_1/images/097_same.png",
+          "sha256": "a8008bdcd993fb18673c27a90388f53747048de1c698c0a7a461961098cc7d21"
+        }
+      ],
+      "seeds": [
+        7960264937179107098,
+        7781711801314291143
+      ]
+    },
+    {
+      "task": 90,
+      "dataset": "SDP",
+      "prompt_sha256": "f3d8a21cb6fbf5a8342f620ef95b3788c6417a89c7e04206e9a3ef02027ef812",
+      "images": [
+        {
+          "path": "generate_0/images/090_aux.png",
+          "sha256": "440e97e6800e51c5389e0122b732b226e8d7acd6f3496e8c6f3cdf8a675923f5"
+        },
+        {
+          "path": "generate_0/images/090_same.png",
+          "sha256": "ab4626c2eb5c6291479f0766de3b6ce6de7295fa6e409b92e6e8f05021304bb7"
+        }
+      ],
+      "seeds": [
+        4302062215336354405,
+        1575032129548470428
+      ]
+    },
+    {
+      "task": 80,
+      "dataset": "SDP",
+      "prompt_sha256": "3313956928807711508182786a7affb0df461ab57c2a6493eff6736a5de18a6b",
+      "images": [
+        {
+          "path": "generate_2/images/080_aux.png",
+          "sha256": "2de8fda7271a4e81e7a3a15e497bc95290a3588201e574d1046de940ee3618a6"
+        },
+        {
+          "path": "generate_2/images/080_same.png",
+          "sha256": "715c726be56d0517cc4e1d565c8942ac3e87357144d40d864f89fb5e09b5931c"
+        }
+      ],
+      "seeds": [
+        40661814074175291,
+        6970465830420468542
+      ]
+    },
+    {
+      "task": 81,
+      "dataset": "SDP",
+      "prompt_sha256": "f7969ea9f972b521dedabacd04ff7072433a5be3bb757eb1bf04b149c884425d",
+      "images": [
+        {
+          "path": "generate_0/images/081_aux.png",
+          "sha256": "7513b0b573f8cf6358b0f5d6c562873eeb23099d5d06f3afbeee95736f6c8eba"
+        },
+        {
+          "path": "generate_0/images/081_same.png",
+          "sha256": "7ad809634b591c3bee2e20051a383750d52b933015e6b897daf1ddf75f6965aa"
+        }
+      ],
+      "seeds": [
+        6418119674984346836,
+        2729071814186121858
+      ]
+    },
+    {
+      "task": 65,
+      "dataset": "SDP",
+      "prompt_sha256": "0e3ac4b02d90ce424188e40e4361ada3e8939e6c26669b9d073d7c4d74b83d57",
+      "images": [
+        {
+          "path": "generate_2/images/065_aux.png",
+          "sha256": "885b668c1236ea70544072832338ca8ef36bf8aecaa4f38516b0f539108b24e5"
+        },
+        {
+          "path": "generate_2/images/065_same.png",
+          "sha256": "a3d0c566a20af089175aa333609e1dfcb419ac13da52167a048dc2a133a7a96e"
+        }
+      ],
+      "seeds": [
+        1191638873140800302,
+        8131718815175854666
+      ]
+    },
+    {
+      "task": 53,
+      "dataset": "SDP",
+      "prompt_sha256": "4dfd76cc4443982e860cd3f506121ec95d020ac3d6bee609cbd4bdd7ec3cdaab",
+      "images": [
+        {
+          "path": "generate_2/images/053_aux.png",
+          "sha256": "ae120cce458feff14f12e036ea3cf2b3186406642e7134c7c8d7d6930492c49a"
+        },
+        {
+          "path": "generate_2/images/053_same.png",
+          "sha256": "48c7064b276f1ae88a4f171156cbc2fc02b38ab1834628526a9e3bbf324e2817"
+        }
+      ],
+      "seeds": [
+        6254860067524761471,
+        6970347849170293939
+      ]
+    },
+    {
+      "task": 85,
+      "dataset": "SDP",
+      "prompt_sha256": "23685f2590ebb37c67e04a4e1e3e5a9393478b8982096dabf2aa99f5b4b171e4",
+      "images": [
+        {
+          "path": "generate_1/images/085_aux.png",
+          "sha256": "0c835cce05308731dcf8e5fa0f9fe69dfb4ccf1dd1df980ceece00ada128f400"
+        },
+        {
+          "path": "generate_1/images/085_same.png",
+          "sha256": "863ab0249080f1c7d27680945be2ba0c3f7003f66599415ded114d171a7bab28"
+        }
+      ],
+      "seeds": [
+        5201930005316814652,
+        677117257297347708
+      ]
+    },
+    {
+      "task": 64,
+      "dataset": "SDP",
+      "prompt_sha256": "e79f80d0d00b183cca7de26eb5ec3396a97d5db7e2fdee985e31877810fcd1af",
+      "images": [
+        {
+          "path": "generate_1/images/064_aux.png",
+          "sha256": "ca3aa1a733c163ba6b24e0534242d57d809efe3080c50e300c5376e29f0ed94b"
+        },
+        {
+          "path": "generate_1/images/064_same.png",
+          "sha256": "0424101a1a319b01e0f8353d892d24c5315d990b64c436eb9f040044c4c9371c"
+        }
+      ],
+      "seeds": [
+        2924208170370588282,
+        3449500388989968847
+      ]
+    },
+    {
+      "task": 79,
+      "dataset": "SDP",
+      "prompt_sha256": "3c4b12e708fa41ff8c7b47d8ea2c9ae382dac48606cb17f3080d28aef130f56d",
+      "images": [
+        {
+          "path": "generate_1/images/079_aux.png",
+          "sha256": "97acd65501d5c1a4481a0f08469082a587138366c864a83565dc8e781da8abd2"
+        },
+        {
+          "path": "generate_1/images/079_same.png",
+          "sha256": "5006ffb0dfb00848c03c503089a701a541e9dc97bd9f27c10ad5fafac16cb4f2"
+        }
+      ],
+      "seeds": [
+        8737634830919904036,
+        7811515919777831413
+      ]
+    },
+    {
+      "task": 54,
+      "dataset": "SDP",
+      "prompt_sha256": "be2a7dac8824d75902ca904b0817f0b6a7139ed9be3d0e4ffd909336ad1af1e8",
+      "images": [
+        {
+          "path": "generate_0/images/054_aux.png",
+          "sha256": "6980e10698e71ba44fa3c104c61d719b09101a5e77ec302d5e25eee3400a0603"
+        },
+        {
+          "path": "generate_0/images/054_same.png",
+          "sha256": "22208fd6894a7279f3b584fe2ae672cf78d75d9ead4d81afef7c5f08f25b4bfc"
+        }
+      ],
+      "seeds": [
+        3285965492795818247,
+        3716308600829620829
+      ]
+    },
+    {
+      "task": 93,
+      "dataset": "SDP",
+      "prompt_sha256": "b5fdf2bf4b2c449c2b7b8d340a8392c24ffdfcac39562ec308d7972fa4cc41cc",
+      "images": [
+        {
+          "path": "generate_0/images/093_aux.png",
+          "sha256": "a9bab1d0a09cbf354b086ddde5788f75d4dea16dcc38df851934412dc9129c02"
+        },
+        {
+          "path": "generate_0/images/093_same.png",
+          "sha256": "7a51d78ed31b0b401eb48705fff04eb2cd777015ab4c60fb495c64ab578f72a6"
+        }
+      ],
+      "seeds": [
+        6579648303756660797,
+        3197842189458917881
+      ]
+    },
+    {
+      "task": 50,
+      "dataset": "SDP",
+      "prompt_sha256": "a4db974a52a6fb47dd438d61c56f9d9de36652cbe84870198efe1e3fa7867801",
+      "images": [
+        {
+          "path": "generate_2/images/050_aux.png",
+          "sha256": "b19ad60c5023346ca05c232a4c6730638f1f4ad215f42918098826b986e54012"
+        },
+        {
+          "path": "generate_2/images/050_same.png",
+          "sha256": "101aed5ec8c8996de988b112dc88776c09448dac15146ce4b6b26b295717ddb1"
+        }
+      ],
+      "seeds": [
+        3456875263720165635,
+        4372153630080260788
+      ]
+    },
+    {
+      "task": 92,
+      "dataset": "SDP",
+      "prompt_sha256": "6c91973a9d0070c81d6a00d9eb8dd2c6a5be4391bb7b5ac0726d8af15e1959ca",
+      "images": [
+        {
+          "path": "generate_2/images/092_aux.png",
+          "sha256": "d8de83ac61c25dfc60986c8c563cbaef895ab23385759f718400b1f952dd350e"
+        },
+        {
+          "path": "generate_2/images/092_same.png",
+          "sha256": "c7330e5bcc6633c3da867bdc5b7eedf396899102fc6b61f0b465850aa14d0c4b"
+        }
+      ],
+      "seeds": [
+        6698155151378154021,
+        6104348944070920005
+      ]
+    },
+    {
+      "task": 99,
+      "dataset": "SDP",
+      "prompt_sha256": "f78c4074fd326ead33bc2a94820105c4d2b57c2acad96814b77a011aa0bdf5b1",
+      "images": [
+        {
+          "path": "generate_0/images/099_aux.png",
+          "sha256": "a5c9e49401ce4084ba3be4f3e5435a0df5b8a4f519ece44e1416e3f77286e5f0"
+        },
+        {
+          "path": "generate_0/images/099_same.png",
+          "sha256": "4d8e426b8232cee8e019bbe57a363d5eeee45b1e3145cc319d92403699b63ec0"
+        }
+      ],
+      "seeds": [
+        3051978386596306432,
+        7797662358041754327
+      ]
+    }
+  ]
+}

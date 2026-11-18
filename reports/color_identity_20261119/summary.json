@@ -1,0 +1,1057 @@
+{
+  "aggregate": {
+    "rgb_share": {
+      "true_accept": 0.5015625,
+      "sibling_accept": 0.003125,
+      "pair_top1": 0.95625,
+      "gallery_top1": 0.6671875,
+      "true_at95": 0.9567708333333333,
+      "sibling_at95": 0.428125,
+      "clean_sibling_accept": 0.0
+    },
+    "rgb_hist": {
+      "true_accept": 0.5640625,
+      "sibling_accept": 0.05364583333333333,
+      "pair_top1": 0.9005208333333333,
+      "gallery_top1": 0.640625,
+      "true_at95": 0.94375,
+      "sibling_at95": 0.8338541666666667,
+      "clean_sibling_accept": 0.11666666666666667
+    },
+    "chroma": {
+      "true_accept": 0.6640625,
+      "sibling_accept": 0.021354166666666667,
+      "pair_top1": 0.9630208333333333,
+      "gallery_top1": 0.8270833333333333,
+      "true_at95": 0.9427083333333334,
+      "sibling_at95": 0.4666666666666667,
+      "clean_sibling_accept": 0.03333333333333333
+    },
+    "absolute_luma_chroma": {
+      "true_accept": 0.7734375,
+      "sibling_accept": 0.058854166666666666,
+      "pair_top1": 0.9697916666666667,
+      "gallery_top1": 0.8744791666666667,
+      "true_at95": 0.940625,
+      "sibling_at95": 0.44375,
+      "clean_sibling_accept": 0.1
+    },
+    "rank_luma_chroma": {
+      "true_accept": 0.7114583333333333,
+      "sibling_accept": 0.0390625,
+      "pair_top1": 0.9770833333333333,
+      "gallery_top1": 0.8692708333333333,
+      "true_at95": 0.9473958333333333,
+      "sibling_at95": 0.45208333333333334,
+      "clean_sibling_accept": 0.06666666666666667
+    }
+  },
+  "by_condition": {
+    "rgb_share": {
+      "blurring/0.4": {
+        "true_accept": 1.0,
+        "sibling_accept": 0.0,
+        "pair_top1": 1.0,
+        "gallery_top1": 1.0,
+        "true_at95": 1.0,
+        "sibling_at95": 0.43333333333333335
+      },
+      "blurring/0.8": {
+        "true_accept": 1.0,
+        "sibling_accept": 0.0,
+        "pair_top1": 1.0,
+        "gallery_top1": 1.0,
+        "true_at95": 1.0,
+        "sibling_at95": 0.43333333333333335
+      },
+      "brightness/0.4": {
+        "true_accept": 0.16666666666666666,
+        "sibling_accept": 0.008333333333333333,
+        "pair_top1": 0.9333333333333333,
+        "gallery_top1": 0.44166666666666665,
+        "true_at95": 0.9916666666666667,
+        "sibling_at95": 0.44166666666666665
+      },
+      "brightness/0.8": {
+        "true_accept": 0.058333333333333334,
+        "sibling_accept": 0.008333333333333333,
+        "pair_top1": 0.825,
+        "gallery_top1": 0.16666666666666666,
+        "true_at95": 0.8333333333333334,
+        "sibling_at95": 0.44166666666666665
+      },
+      "compression/0.4": {
+        "true_accept": 0.9666666666666667,
+        "sibling_accept": 0.0,
+        "pair_top1": 1.0,
+        "gallery_top1": 0.9833333333333333,
+        "true_at95": 1.0,
+        "sibling_at95": 0.425
+      },
+      "compression/0.8": {
+        "true_accept": 0.9416666666666667,
+        "sibling_accept": 0.0,
+        "pair_top1": 1.0,
+        "gallery_top1": 0.9666666666666667,
+        "true_at95": 1.0,
+        "sibling_at95": 0.43333333333333335
+      },
+      "contrast/0.4": {
+        "true_accept": 0.075,
+        "sibling_accept": 0.0,
+        "pair_top1": 0.9416666666666667,
+        "gallery_top1": 0.35833333333333334,
+        "true_at95": 0.9083333333333333,
+        "sibling_at95": 0.39166666666666666
+      },
+      "contrast/0.8": {
+        "true_accept": 0.05,
+        "sibling_accept": 0.0,
+        "pair_top1": 0.9083333333333333,
+        "gallery_top1": 0.24166666666666667,
+        "true_at95": 0.7666666666666667,
+        "sibling_at95": 0.35
+      },
+      "erasing/0.4": {
+        "true_accept": 0.4583333333333333,
+        "sibling_accept": 0.0,
+        "pair_top1": 0.9916666666666667,
+        "gallery_top1": 0.775,
+        "true_at95": 1.0,
+        "sibling_at95": 0.43333333333333335
+      },
+      "erasing/0.8": {
+        "true_accept": 0.25,
+        "sibling_accept": 0.0,
+        "pair_top1": 0.9666666666666667,
+        "gallery_top1": 0.5583333333333333,
+        "true_at95": 0.9833333333333333,
+        "sibling_at95": 0.4166666666666667
+      },
+      "noise/0.4": {
+        "true_accept": 0.975,
+        "sibling_accept": 0.0,
+        "pair_top1": 1.0,
+        "gallery_top1": 1.0,
+        "true_at95": 1.0,
+        "sibling_at95": 0.43333333333333335
+      },
+      "noise/0.8": {
+        "true_accept": 0.8833333333333333,
+        "sibling_accept": 0.0,
+        "pair_top1": 1.0,
+        "gallery_top1": 0.9416666666666667,
+        "true_at95": 1.0,
+        "sibling_at95": 0.43333333333333335
+      },
+      "resizedcrop/0.4": {
+        "true_accept": 0.26666666666666666,
+        "sibling_accept": 0.0,
+        "pair_top1": 0.9583333333333334,
+        "gallery_top1": 0.5666666666666667,
+        "true_at95": 0.9833333333333333,
+        "sibling_at95": 0.44166666666666665
+      },
+      "resizedcrop/0.8": {
+        "true_accept": 0.14166666666666666,
+        "sibling_accept": 0.008333333333333333,
+        "pair_top1": 0.8416666666666667,
+        "gallery_top1": 0.325,
+        "true_at95": 0.8666666666666667,
+        "sibling_at95": 0.4666666666666667
+      },
+      "rotation/0.4": {
+        "true_accept": 0.4666666666666667,
+        "sibling_accept": 0.008333333333333333,
+        "pair_top1": 0.9833333333333333,
+        "gallery_top1": 0.7333333333333333,
+        "true_at95": 0.9916666666666667,
+        "sibling_at95": 0.44166666666666665
+      },
+      "rotation/0.8": {
+        "true_accept": 0.325,
+        "sibling_accept": 0.016666666666666666,
+        "pair_top1": 0.95,
+        "gallery_top1": 0.6166666666666667,
+        "true_at95": 0.9833333333333333,
+        "sibling_at95": 0.43333333333333335
+      }
+    },
+    "rgb_hist": {
+      "blurring/0.4": {
+        "true_accept": 0.7666666666666667,
+        "sibling_accept": 0.041666666666666664,
+        "pair_top1": 0.9666666666666667,
+        "gallery_top1": 0.7833333333333333,
+        "true_at95": 1.0,
+        "sibling_at95": 0.8833333333333333
+      },
+      "blurring/0.8": {
+        "true_accept": 0.18333333333333332,
+        "sibling_accept": 0.025,
+        "pair_top1": 0.85,
+        "gallery_top1": 0.4166666666666667,
+        "true_at95": 0.9916666666666667,
+        "sibling_at95": 0.8166666666666667
+      },
+      "brightness/0.4": {
+        "true_accept": 0.03333333333333333,
+        "sibling_accept": 0.008333333333333333,
+        "pair_top1": 0.7,
+        "gallery_top1": 0.1,
+        "true_at95": 0.8416666666666667,
+        "sibling_at95": 0.75
+      },
+      "brightness/0.8": {
+        "true_accept": 0.0,
+        "sibling_accept": 0.008333333333333333,
+        "pair_top1": 0.55,
+        "gallery_top1": 0.03333333333333333,
+        "true_at95": 0.5416666666666666,
+        "sibling_at95": 0.4666666666666667
+      },
+      "compression/0.4": {
+        "true_accept": 1.0,
+        "sibling_accept": 0.11666666666666667,
+        "pair_top1": 1.0,
+        "gallery_top1": 1.0,
+        "true_at95": 1.0,
+        "sibling_at95": 0.9166666666666666
+      },
+      "compression/0.8": {
+        "true_accept": 1.0,
+        "sibling_accept": 0.11666666666666667,
+        "pair_top1": 1.0,
+        "gallery_top1": 1.0,
+        "true_at95": 1.0,
+        "sibling_at95": 0.9166666666666666
+      },
+      "contrast/0.4": {
+        "true_accept": 0.025,
+        "sibling_accept": 0.025,
+        "pair_top1": 0.7833333333333333,
+        "gallery_top1": 0.15,
+        "true_at95": 0.9416666666666667,
+        "sibling_at95": 0.8166666666666667
+      },
+      "contrast/0.8": {
+        "true_accept": 0.0,
+        "sibling_accept": 0.008333333333333333,
+        "pair_top1": 0.6416666666666667,
+        "gallery_top1": 0.041666666666666664,
+        "true_at95": 0.7833333333333333,
+        "sibling_at95": 0.5666666666666667
+      },
+      "erasing/0.4": {
+        "true_accept": 0.85,
+        "sibling_accept": 0.041666666666666664,
+        "pair_top1": 0.9916666666666667,
+        "gallery_top1": 0.925,
+        "true_at95": 1.0,
+        "sibling_at95": 0.8916666666666667
+      },
+      "erasing/0.8": {
+        "true_accept": 0.23333333333333334,
+        "sibling_accept": 0.0,
+        "pair_top1": 0.9833333333333333,
+        "gallery_top1": 0.5333333333333333,
+        "true_at95": 1.0,
+        "sibling_at95": 0.8083333333333333
+      },
+      "noise/0.4": {
+        "true_accept": 0.975,
+        "sibling_accept": 0.125,
+        "pair_top1": 1.0,
+        "gallery_top1": 0.9833333333333333,
+        "true_at95": 1.0,
+        "sibling_at95": 0.9333333333333333
+      },
+      "noise/0.8": {
+        "true_accept": 0.8666666666666667,
+        "sibling_accept": 0.13333333333333333,
+        "pair_top1": 0.9666666666666667,
+        "gallery_top1": 0.7166666666666667,
+        "true_at95": 1.0,
+        "sibling_at95": 0.95
+      },
+      "resizedcrop/0.4": {
+        "true_accept": 1.0,
+        "sibling_accept": 0.09166666666666666,
+        "pair_top1": 1.0,
+        "gallery_top1": 1.0,
+        "true_at95": 1.0,
+        "sibling_at95": 0.9166666666666666
+      },
+      "resizedcrop/0.8": {
+        "true_accept": 0.9833333333333333,
+        "sibling_accept": 0.058333333333333334,
+        "pair_top1": 1.0,
+        "gallery_top1": 0.9833333333333333,
+        "true_at95": 1.0,
+        "sibling_at95": 0.9166666666666666
+      },
+      "rotation/0.4": {
+        "true_accept": 0.7166666666666667,
+        "sibling_accept": 0.03333333333333333,
+        "pair_top1": 0.9916666666666667,
+        "gallery_top1": 0.9083333333333333,
+        "true_at95": 1.0,
+        "sibling_at95": 0.9
+      },
+      "rotation/0.8": {
+        "true_accept": 0.39166666666666666,
+        "sibling_accept": 0.025,
+        "pair_top1": 0.9833333333333333,
+        "gallery_top1": 0.675,
+        "true_at95": 1.0,
+        "sibling_at95": 0.8916666666666667
+      }
+    },
+    "chroma": {
+      "blurring/0.4": {
+        "true_accept": 0.8166666666666667,
+        "sibling_accept": 0.025,
+        "pair_top1": 1.0,
+        "gallery_top1": 0.9916666666666667,
+        "true_at95": 1.0,
+        "sibling_at95": 0.4666666666666667
+      },
+      "blurring/0.8": {
+        "true_accept": 0.4166666666666667,
+        "sibling_accept": 0.016666666666666666,
+        "pair_top1": 0.9666666666666667,
+        "gallery_top1": 0.7416666666666667,
+        "true_at95": 0.9916666666666667,
+        "sibling_at95": 0.43333333333333335
+      },
+      "brightness/0.4": {
+        "true_accept": 0.7666666666666667,
+        "sibling_accept": 0.008333333333333333,
+        "pair_top1": 0.975,
+        "gallery_top1": 0.9083333333333333,
+        "true_at95": 0.9833333333333333,
+        "sibling_at95": 0.44166666666666665
+      },
+      "brightness/0.8": {
+        "true_accept": 0.35,
+        "sibling_accept": 0.008333333333333333,
+        "pair_top1": 0.925,
+        "gallery_top1": 0.7,
+        "true_at95": 0.925,
+        "sibling_at95": 0.38333333333333336
+      },
+      "compression/0.4": {
+        "true_accept": 0.9666666666666667,
+        "sibling_accept": 0.025,
+        "pair_top1": 1.0,
+        "gallery_top1": 0.9666666666666667,
+        "true_at95": 1.0,
+        "sibling_at95": 0.55
+      },
+      "compression/0.8": {
+        "true_accept": 0.925,
+        "sibling_accept": 0.03333333333333333,
+        "pair_top1": 0.9916666666666667,
+        "gallery_top1": 0.9083333333333333,
+        "true_at95": 1.0,
+        "sibling_at95": 0.525
+      },
+      "contrast/0.4": {
+        "true_accept": 0.15,
+        "sibling_accept": 0.016666666666666666,
+        "pair_top1": 0.9333333333333333,
+        "gallery_top1": 0.6833333333333333,
+        "true_at95": 0.8833333333333333,
+        "sibling_at95": 0.30833333333333335
+      },
+      "contrast/0.8": {
+        "true_accept": 0.05,
+        "sibling_accept": 0.008333333333333333,
+        "pair_top1": 0.8333333333333334,
+        "gallery_top1": 0.2833333333333333,
+        "true_at95": 0.4166666666666667,
+        "sibling_at95": 0.20833333333333334
+      },
+      "erasing/0.4": {
+        "true_accept": 1.0,
+        "sibling_accept": 0.025,
+        "pair_top1": 1.0,
+        "gallery_top1": 1.0,
+        "true_at95": 1.0,
+        "sibling_at95": 0.525
+      },
+      "erasing/0.8": {
+        "true_accept": 0.7833333333333333,
+        "sibling_accept": 0.03333333333333333,
+        "pair_top1": 0.9916666666666667,
+        "gallery_top1": 0.95,
+        "true_at95": 1.0,
+        "sibling_at95": 0.4666666666666667
+      },
+      "noise/0.4": {
+        "true_accept": 0.49166666666666664,
+        "sibling_accept": 0.008333333333333333,
+        "pair_top1": 0.9416666666666667,
+        "gallery_top1": 0.7416666666666667,
+        "true_at95": 0.9916666666666667,
+        "sibling_at95": 0.6083333333333333
+      },
+      "noise/0.8": {
+        "true_accept": 0.06666666666666667,
+        "sibling_accept": 0.0,
+        "pair_top1": 0.875,
+        "gallery_top1": 0.43333333333333335,
+        "true_at95": 0.8916666666666667,
+        "sibling_at95": 0.475
+      },
+      "resizedcrop/0.4": {
+        "true_accept": 1.0,
+        "sibling_accept": 0.03333333333333333,
+        "pair_top1": 0.9916666666666667,
+        "gallery_top1": 0.9916666666666667,
+        "true_at95": 1.0,
+        "sibling_at95": 0.5416666666666666
+      },
+      "resizedcrop/0.8": {
+        "true_accept": 0.975,
+        "sibling_accept": 0.025,
+        "pair_top1": 0.9833333333333333,
+        "gallery_top1": 0.9833333333333333,
+        "true_at95": 1.0,
+        "sibling_at95": 0.5166666666666667
+      },
+      "rotation/0.4": {
+        "true_accept": 0.9666666666666667,
+        "sibling_accept": 0.041666666666666664,
+        "pair_top1": 1.0,
+        "gallery_top1": 0.9916666666666667,
+        "true_at95": 1.0,
+        "sibling_at95": 0.5166666666666667
+      },
+      "rotation/0.8": {
+        "true_accept": 0.9,
+        "sibling_accept": 0.03333333333333333,
+        "pair_top1": 1.0,
+        "gallery_top1": 0.9583333333333334,
+        "true_at95": 1.0,
+        "sibling_at95": 0.5
+      }
+    },
+    "absolute_luma_chroma": {
+      "blurring/0.4": {
+        "true_accept": 0.9833333333333333,
+        "sibling_accept": 0.058333333333333334,
+        "pair_top1": 1.0,
+        "gallery_top1": 1.0,
+        "true_at95": 1.0,
+        "sibling_at95": 0.44166666666666665
+      },
+      "blurring/0.8": {
+        "true_accept": 0.7583333333333333,
+        "sibling_accept": 0.03333333333333333,
+        "pair_top1": 0.975,
+        "gallery_top1": 0.8666666666666667,
+        "true_at95": 1.0,
+        "sibling_at95": 0.4083333333333333
+      },
+      "brightness/0.4": {
+        "true_accept": 0.7166666666666667,
+        "sibling_accept": 0.05,
+        "pair_top1": 0.95,
+        "gallery_top1": 0.875,
+        "true_at95": 0.9333333333333333,
+        "sibling_at95": 0.4083333333333333
+      },
+      "brightness/0.8": {
+        "true_accept": 0.15833333333333333,
+        "sibling_accept": 0.025,
+        "pair_top1": 0.875,
+        "gallery_top1": 0.5333333333333333,
+        "true_at95": 0.725,
+        "sibling_at95": 0.2833333333333333
+      },
+      "compression/0.4": {
+        "true_accept": 1.0,
+        "sibling_accept": 0.09166666666666666,
+        "pair_top1": 1.0,
+        "gallery_top1": 1.0,
+        "true_at95": 1.0,
+        "sibling_at95": 0.5083333333333333
+      },
+      "compression/0.8": {
+        "true_accept": 0.9833333333333333,
+        "sibling_accept": 0.09166666666666666,
+        "pair_top1": 1.0,
+        "gallery_top1": 0.975,
+        "true_at95": 1.0,
+        "sibling_at95": 0.5083333333333333
+      },
+      "contrast/0.4": {
+        "true_accept": 0.36666666666666664,
+        "sibling_accept": 0.03333333333333333,
+        "pair_top1": 0.9833333333333333,
+        "gallery_top1": 0.8583333333333333,
+        "true_at95": 0.95,
+        "sibling_at95": 0.3416666666666667
+      },
+      "contrast/0.8": {
+        "true_accept": 0.14166666666666666,
+        "sibling_accept": 0.016666666666666666,
+        "pair_top1": 0.8666666666666667,
+        "gallery_top1": 0.39166666666666666,
+        "true_at95": 0.475,
+        "sibling_at95": 0.21666666666666667
+      },
+      "erasing/0.4": {
+        "true_accept": 1.0,
+        "sibling_accept": 0.08333333333333333,
+        "pair_top1": 1.0,
+        "gallery_top1": 1.0,
+        "true_at95": 1.0,
+        "sibling_at95": 0.48333333333333334
+      },
+      "erasing/0.8": {
+        "true_accept": 1.0,
+        "sibling_accept": 0.06666666666666667,
+        "pair_top1": 1.0,
+        "gallery_top1": 0.9916666666666667,
+        "true_at95": 1.0,
+        "sibling_at95": 0.4166666666666667
+      },
+      "noise/0.4": {
+        "true_accept": 0.875,
+        "sibling_accept": 0.058333333333333334,
+        "pair_top1": 0.9583333333333334,
+        "gallery_top1": 0.8833333333333333,
+        "true_at95": 1.0,
+        "sibling_at95": 0.6166666666666667
+      },
+      "noise/0.8": {
+        "true_accept": 0.39166666666666666,
+        "sibling_accept": 0.016666666666666666,
+        "pair_top1": 0.9083333333333333,
+        "gallery_top1": 0.6166666666666667,
+        "true_at95": 0.9666666666666667,
+        "sibling_at95": 0.55
+      },
+      "resizedcrop/0.4": {
+        "true_accept": 1.0,
+        "sibling_accept": 0.08333333333333333,
+        "pair_top1": 1.0,
+        "gallery_top1": 1.0,
+        "true_at95": 1.0,
+        "sibling_at95": 0.5
+      },
+      "resizedcrop/0.8": {
+        "true_accept": 1.0,
+        "sibling_accept": 0.09166666666666666,
+        "pair_top1": 1.0,
+        "gallery_top1": 1.0,
+        "true_at95": 1.0,
+        "sibling_at95": 0.48333333333333334
+      },
+      "rotation/0.4": {
+        "true_accept": 1.0,
+        "sibling_accept": 0.075,
+        "pair_top1": 1.0,
+        "gallery_top1": 1.0,
+        "true_at95": 1.0,
+        "sibling_at95": 0.475
+      },
+      "rotation/0.8": {
+        "true_accept": 1.0,
+        "sibling_accept": 0.06666666666666667,
+        "pair_top1": 1.0,
+        "gallery_top1": 1.0,
+        "true_at95": 1.0,
+        "sibling_at95": 0.4583333333333333
+      }
+    },
+    "rank_luma_chroma": {
+      "blurring/0.4": {
+        "true_accept": 0.9416666666666667,
+        "sibling_accept": 0.03333333333333333,
+        "pair_top1": 1.0,
+        "gallery_top1": 1.0,
+        "true_at95": 1.0,
+        "sibling_at95": 0.4666666666666667
+      },
+      "blurring/0.8": {
+        "true_accept": 0.7083333333333334,
+        "sibling_accept": 0.05,
+        "pair_top1": 0.975,
+        "gallery_top1": 0.8166666666666667,
+        "true_at95": 1.0,
+        "sibling_at95": 0.45
+      },
+      "brightness/0.4": {
+        "true_accept": 0.825,
+        "sibling_accept": 0.041666666666666664,
+        "pair_top1": 1.0,
+        "gallery_top1": 0.925,
+        "true_at95": 0.9833333333333333,
+        "sibling_at95": 0.44166666666666665
+      },
+      "brightness/0.8": {
+        "true_accept": 0.3416666666666667,
+        "sibling_accept": 0.008333333333333333,
+        "pair_top1": 0.95,
+        "gallery_top1": 0.6916666666666667,
+        "true_at95": 0.8916666666666667,
+        "sibling_at95": 0.31666666666666665
+      },
+      "compression/0.4": {
+        "true_accept": 0.9833333333333333,
+        "sibling_accept": 0.075,
+        "pair_top1": 1.0,
+        "gallery_top1": 0.9833333333333333,
+        "true_at95": 1.0,
+        "sibling_at95": 0.5416666666666666
+      },
+      "compression/0.8": {
+        "true_accept": 0.9666666666666667,
+        "sibling_accept": 0.058333333333333334,
+        "pair_top1": 0.9916666666666667,
+        "gallery_top1": 0.9333333333333333,
+        "true_at95": 1.0,
+        "sibling_at95": 0.525
+      },
+      "contrast/0.4": {
+        "true_accept": 0.3,
+        "sibling_accept": 0.016666666666666666,
+        "pair_top1": 0.9833333333333333,
+        "gallery_top1": 0.7916666666666666,
+        "true_at95": 0.9166666666666666,
+        "sibling_at95": 0.3333333333333333
+      },
+      "contrast/0.8": {
+        "true_accept": 0.08333333333333333,
+        "sibling_accept": 0.008333333333333333,
+        "pair_top1": 0.875,
+        "gallery_top1": 0.39166666666666666,
+        "true_at95": 0.4166666666666667,
+        "sibling_at95": 0.2
+      },
+      "erasing/0.4": {
+        "true_accept": 1.0,
+        "sibling_accept": 0.05,
+        "pair_top1": 1.0,
+        "gallery_top1": 1.0,
+        "true_at95": 1.0,
+        "sibling_at95": 0.48333333333333334
+      },
+      "erasing/0.8": {
+        "true_accept": 0.48333333333333334,
+        "sibling_accept": 0.03333333333333333,
+        "pair_top1": 0.9916666666666667,
+        "gallery_top1": 0.9666666666666667,
+        "true_at95": 1.0,
+        "sibling_at95": 0.4
+      },
+      "noise/0.4": {
+        "true_accept": 0.775,
+        "sibling_accept": 0.0,
+        "pair_top1": 0.9583333333333334,
+        "gallery_top1": 0.8333333333333334,
+        "true_at95": 1.0,
+        "sibling_at95": 0.5833333333333334
+      },
+      "noise/0.8": {
+        "true_accept": 0.19166666666666668,
+        "sibling_accept": 0.0,
+        "pair_top1": 0.9166666666666666,
+        "gallery_top1": 0.5916666666666667,
+        "true_at95": 0.95,
+        "sibling_at95": 0.5583333333333333
+      },
+      "resizedcrop/0.4": {
+        "true_accept": 1.0,
+        "sibling_accept": 0.058333333333333334,
+        "pair_top1": 1.0,
+        "gallery_top1": 1.0,
+        "true_at95": 1.0,
+        "sibling_at95": 0.5166666666666667
+      },
+      "resizedcrop/0.8": {
+        "true_accept": 0.9916666666666667,
+        "sibling_accept": 0.075,
+        "pair_top1": 1.0,
+        "gallery_top1": 1.0,
+        "true_at95": 1.0,
+        "sibling_at95": 0.5083333333333333
+      },
+      "rotation/0.4": {
+        "true_accept": 1.0,
+        "sibling_accept": 0.06666666666666667,
+        "pair_top1": 1.0,
+        "gallery_top1": 1.0,
+        "true_at95": 1.0,
+        "sibling_at95": 0.475
+      },
+      "rotation/0.8": {
+        "true_accept": 0.7916666666666666,
+        "sibling_accept": 0.05,
+        "pair_top1": 0.9916666666666667,
+        "gallery_top1": 0.9833333333333333,
+        "true_at95": 1.0,
+        "sibling_at95": 0.43333333333333335
+      }
+    }
+  },
+  "by_dataset": {
+    "rgb_share": {
+      "COCO": {
+        "true_accept": 0.5260416666666666,
+        "sibling_accept": 0.004166666666666667,
+        "pair_top1": 0.9395833333333333,
+        "gallery_top1": 0.6541666666666667,
+        "true_at95": 0.9645833333333333,
+        "sibling_at95": 0.6208333333333333
+      },
+      "SDP": {
+        "true_accept": 0.47708333333333336,
+        "sibling_accept": 0.0020833333333333333,
+        "pair_top1": 0.9729166666666667,
+        "gallery_top1": 0.6802083333333333,
+        "true_at95": 0.9489583333333333,
+        "sibling_at95": 0.23541666666666666
+      }
+    },
+    "rgb_hist": {
+      "COCO": {
+        "true_accept": 0.5947916666666667,
+        "sibling_accept": 0.0625,
+        "pair_top1": 0.89375,
+        "gallery_top1": 0.64375,
+        "true_at95": 0.93125,
+        "sibling_at95": 0.8239583333333333
+      },
+      "SDP": {
+        "true_accept": 0.5333333333333333,
+        "sibling_accept": 0.04479166666666667,
+        "pair_top1": 0.9072916666666667,
+        "gallery_top1": 0.6375,
+        "true_at95": 0.95625,
+        "sibling_at95": 0.84375
+      }
+    },
+    "chroma": {
+      "COCO": {
+        "true_accept": 0.6583333333333333,
+        "sibling_accept": 0.0375,
+        "pair_top1": 0.9458333333333333,
+        "gallery_top1": 0.8,
+        "true_at95": 0.9552083333333333,
+        "sibling_at95": 0.5885416666666666
+      },
+      "SDP": {
+        "true_accept": 0.6697916666666667,
+        "sibling_accept": 0.005208333333333333,
+        "pair_top1": 0.9802083333333333,
+        "gallery_top1": 0.8541666666666666,
+        "true_at95": 0.9302083333333333,
+        "sibling_at95": 0.34479166666666666
+      }
+    },
+    "absolute_luma_chroma": {
+      "COCO": {
+        "true_accept": 0.7739583333333333,
+        "sibling_accept": 0.09479166666666666,
+        "pair_top1": 0.959375,
+        "gallery_top1": 0.8635416666666667,
+        "true_at95": 0.9479166666666666,
+        "sibling_at95": 0.5583333333333333
+      },
+      "SDP": {
+        "true_accept": 0.7729166666666667,
+        "sibling_accept": 0.022916666666666665,
+        "pair_top1": 0.9802083333333333,
+        "gallery_top1": 0.8854166666666666,
+        "true_at95": 0.9333333333333333,
+        "sibling_at95": 0.32916666666666666
+      }
+    },
+    "rank_luma_chroma": {
+      "COCO": {
+        "true_accept": 0.7104166666666667,
+        "sibling_accept": 0.059375,
+        "pair_top1": 0.9666666666666667,
+        "gallery_top1": 0.8364583333333333,
+        "true_at95": 0.9552083333333333,
+        "sibling_at95": 0.5645833333333333
+      },
+      "SDP": {
+        "true_accept": 0.7125,
+        "sibling_accept": 0.01875,
+        "pair_top1": 0.9875,
+        "gallery_top1": 0.9020833333333333,
+        "true_at95": 0.9395833333333333,
+        "sibling_at95": 0.33958333333333335
+      }
+    }
+  },
+  "ci95": {
+    "rgb_share": {
+      "true_accept": [
+        0.46979166666666666,
+        0.5338541666666666
+      ],
+      "sibling_accept": [
+        0.0005208333333333333,
+        0.00625
+      ],
+      "pair_top1": [
+        0.9401041666666666,
+        0.9703125
+      ],
+      "gallery_top1": [
+        0.6369791666666667,
+        0.6968880208333331
+      ],
+      "true_at95": [
+        0.9432291666666667,
+        0.9692708333333333
+      ],
+      "sibling_at95": [
+        0.3307291666666667,
+        0.528125
+      ]
+    },
+    "rgb_hist": {
+      "true_accept": [
+        0.5453125,
+        0.5822916666666667
+      ],
+      "sibling_accept": [
+        0.022916666666666665,
+        0.08854166666666667
+      ],
+      "pair_top1": [
+        0.8869791666666667,
+        0.9130208333333333
+      ],
+      "gallery_top1": [
+        0.6171875,
+        0.6635416666666667
+      ],
+      "true_at95": [
+        0.9291666666666667,
+        0.9578125
+      ],
+      "sibling_at95": [
+        0.7682161458333333,
+        0.8921875
+      ]
+    },
+    "chroma": {
+      "true_accept": [
+        0.6473958333333333,
+        0.68125
+      ],
+      "sibling_accept": [
+        0.0036458333333333334,
+        0.04791666666666667
+      ],
+      "pair_top1": [
+        0.9510416666666667,
+        0.9734375
+      ],
+      "gallery_top1": [
+        0.8057291666666667,
+        0.8484375
+      ],
+      "true_at95": [
+        0.9338541666666667,
+        0.9515625
+      ],
+      "sibling_at95": [
+        0.371875,
+        0.5630338541666664
+      ]
+    },
+    "absolute_luma_chroma": {
+      "true_accept": [
+        0.7588541666666667,
+        0.7880208333333333
+      ],
+      "sibling_accept": [
+        0.02342447916666667,
+        0.10260416666666666
+      ],
+      "pair_top1": [
+        0.959375,
+        0.9791666666666666
+      ],
+      "gallery_top1": [
+        0.8567708333333334,
+        0.8916666666666667
+      ],
+      "true_at95": [
+        0.9296875,
+        0.9515625
+      ],
+      "sibling_at95": [
+        0.3515625,
+        0.540625
+      ]
+    },
+    "rank_luma_chroma": {
+      "true_accept": [
+        0.6921875,
+        0.7307291666666667
+      ],
+      "sibling_accept": [
+        0.013020833333333334,
+        0.07239583333333334
+      ],
+      "pair_top1": [
+        0.96875,
+        0.9848958333333333
+      ],
+      "gallery_top1": [
+        0.8489453125,
+        0.8895833333333333
+      ],
+      "true_at95": [
+        0.9390625,
+        0.9557291666666666
+      ],
+      "sibling_at95": [
+        0.35833333333333334,
+        0.5489583333333333
+      ]
+    }
+  },
+  "paired_difference_from_global_chroma_ci95": {
+    "rgb_share": {
+      "true_accept": [
+        -0.19166666666666668,
+        -0.13229166666666667
+      ],
+      "sibling_accept": [
+        -0.04479166666666667,
+        -0.0005208333333333333
+      ],
+      "pair_top1": [
+        -0.022929687499999993,
+        0.0078125
+      ],
+      "gallery_top1": [
+        -0.196875,
+        -0.121875
+      ],
+      "true_at95": [
+        0.0010416666666666667,
+        0.027083333333333334
+      ],
+      "sibling_at95": [
+        -0.13958333333333334,
+        0.06145833333333333
+      ]
+    },
+    "rgb_hist": {
+      "true_accept": [
+        -0.1265625,
+        -0.07291666666666667
+      ],
+      "sibling_accept": [
+        -0.0046875,
+        0.06979166666666667
+      ],
+      "pair_top1": [
+        -0.07708333333333334,
+        -0.04895833333333333
+      ],
+      "gallery_top1": [
+        -0.21354166666666666,
+        -0.15989583333333332
+      ],
+      "true_at95": [
+        -0.013541666666666667,
+        0.016145833333333335
+      ],
+      "sibling_at95": [
+        0.2598958333333333,
+        0.4734375
+      ]
+    },
+    "chroma": {
+      "true_accept": [
+        0.0,
+        0.0
+      ],
+      "sibling_accept": [
+        0.0,
+        0.0
+      ],
+      "pair_top1": [
+        0.0,
+        0.0
+      ],
+      "gallery_top1": [
+        0.0,
+        0.0
+      ],
+      "true_at95": [
+        0.0,
+        0.0
+      ],
+      "sibling_at95": [
+        0.0,
+        0.0
+      ]
+    },
+    "absolute_luma_chroma": {
+      "true_accept": [
+        0.0921875,
+        0.1265625
+      ],
+      "sibling_accept": [
+        0.013541666666666667,
+        0.0671875
+      ],
+      "pair_top1": [
+        -0.0020833333333333333,
+        0.016145833333333335
+      ],
+      "gallery_top1": [
+        0.03333333333333333,
+        0.0625
+      ],
+      "true_at95": [
+        -0.0109375,
+        0.00625
+      ],
+      "sibling_at95": [
+        -0.075,
+        0.024479166666666666
+      ]
+    },
+    "rank_luma_chroma": {
+      "true_accept": [
+        0.030729166666666665,
+        0.06354166666666666
+      ],
+      "sibling_accept": [
+        0.003125,
+        0.034375
+      ],
+      "pair_top1": [
+        0.007291666666666667,
+        0.020833333333333332
+      ],
+      "gallery_top1": [
+        0.030208333333333334,
+        0.05416666666666667
+      ],
+      "true_at95": [
+        -0.0010416666666666667,
+        0.010416666666666666
+      ],
+      "sibling_at95": [
+        -0.053125,
+        0.0203125
+      ]
+    }
+  }
+}
