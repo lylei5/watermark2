@@ -21,11 +21,14 @@ def score(x, gallery):
     return cdist(x[None],gallery)[0]/np.sqrt(2)
 
 
-def blocks(packed):
+def blocks(packed,layout_control=True):
     hybrid = packed['hybrid96_48']
     color, layout = hybrid[:96], hybrid[96:]
-    return dict(color=np.sqrt(color/color.sum()),layout=np.sqrt(layout/layout.sum()),
-                hybrid96_48=rootmass(hybrid),space16x9=rootmass(packed['space16x9']))
+    result=dict(color=np.sqrt(color/color.sum()),layout=np.sqrt(layout/layout.sum()),
+                hybrid96_48=rootmass(hybrid))
+    if layout_control:
+        result['space16x9']=rootmass(packed['space16x9'])
+    return result
 
 
 def joint(c,l,null):
@@ -34,7 +37,7 @@ def joint(c,l,null):
     return lower(c,'color')*lower(l,'layout')
 
 
-def collect(path, split, plan, waves, tables, null=None):
+def collect(path, split, plan, waves, tables, null=None, output=None, layout_control=True):
     refs, images, owners = [], [], []
     for s in read(path/'sources.json'):
         if s['split']!=split:
@@ -50,16 +53,16 @@ def collect(path, split, plan, waves, tables, null=None):
             images.append(im)
             owners.append((s['dataset'],s['task'],i))
             refs.append(descriptors(im,tables))
-    for m in METHODS[1:]:
+    for m in (METHODS[1:] if layout_control else ('hybrid96_48',)):
         data=b''.join(x[m].tobytes() for x in refs)
-        target=RUN/f'{split}_{m}.bin'
+        target=(output or RUN)/f'{split}_{m}.bin'
         target.write_bytes(data)
         assert target.stat().st_size==288*len(images)
         if split=='calibration':
             assert data==(PILOT/target.name).read_bytes()
         for i,code in enumerate(np.fromfile(target,dtype='<u2').reshape(-1,144)):
             refs[i][m]=code
-    decoded=[blocks(x) for x in refs]
+    decoded=[blocks(x,layout_control) for x in refs]
     gallery={k:np.stack([x[k] for x in decoded]) for k in decoded[0]}
     rows=[]
     for q,(im,(dataset,task,idx)) in enumerate(zip(images,owners)):
@@ -67,7 +70,7 @@ def collect(path, split, plan, waves, tables, null=None):
             for j,level in enumerate(plan['strengths'] if f else [0]):
                 seed=20261119+100*task+2*f+j
                 edit=waves.apply_distortion([im],family,strength=level,distortion_seed=seed)[0] if f else im
-                b=blocks(descriptors(edit,tables)) if f else decoded[q]
+                b=blocks(descriptors(edit,tables),layout_control) if f else decoded[q]
                 ds={k:score(b[k],gallery[k]) for k in b}
                 if null:
                     ds['joint']=joint(ds['color'],ds['layout'],null)

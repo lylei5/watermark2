@@ -1,0 +1,21 @@
+{
+  "veto": 0.7572209211553473,
+  "methods": {
+    "product": {
+      "cut": 0.0008592525964968089,
+      "accepted": 1216,
+      "wrong": 4
+    },
+    "veto": {
+      "cut": 0.0018866993182653335,
+      "accepted": 1216,
+      "wrong": 25
+    }
+  },
+  "input_hashes": {
+    "/data0/liyanlei/watermark_research/runs/color_joint_20261119/cal_scores.csv.gz": "905a0770eadc328ae7ccb077d311913c8728cbcc89e3f76414bf3bdad638f06b",
+    "/data0/liyanlei/watermark_research/runs/color_joint_20261119/calibration.json": "f9e55b8eb56667c6454ebe31f5378f5f4f2fba9548e2093160abbc81883e0b99",
+    "/data0/liyanlei/watermark_research/runs/color_veto_20261119/color_veto_20261119.json": "e41a32c88d7fb8cfd57c97682efc20a27c4806a054ae8184520298b1d41aff45"
+  },
+  "calibration_genuine_vetoed": 25
+}
