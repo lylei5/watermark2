@@ -1,0 +1,125 @@
+{
+  "n_queries": 1920,
+  "methods": {
+    "product": {
+      "frozen": {
+        "pass": 0.9484375,
+        "far": 0.025520833333333333,
+        "strong_blur_pass": 0.5833333333333334,
+        "strong_contrast_pass": 0.9916666666666667
+      },
+      "max_tpr": 1.0,
+      "matched": {
+        "cutoff": 0.0009762572053814808,
+        "tie_fraction": 1.0,
+        "inclusive": {
+          "pass": 0.95,
+          "far": 0.025520833333333333,
+          "strong_blur_pass": 0.5916666666666667,
+          "strong_contrast_pass": 0.9916666666666667
+        },
+        "exact": {
+          "pass": 0.95,
+          "far": 0.025520833333333333,
+          "strong_blur_pass": 0.5916666666666667,
+          "strong_contrast_pass": 0.9916666666666667
+        }
+      }
+    },
+    "veto": {
+      "frozen": {
+        "pass": 0.946875,
+        "far": 0.03229166666666667,
+        "strong_blur_pass": 0.6583333333333333,
+        "strong_contrast_pass": 0.9166666666666666
+      },
+      "max_tpr": 0.9890625,
+      "matched": {
+        "cutoff": 0.0023327793896381448,
+        "tie_fraction": 1.0,
+        "inclusive": {
+          "pass": 0.95,
+          "far": 0.033854166666666664,
+          "strong_blur_pass": 0.6583333333333333,
+          "strong_contrast_pass": 0.9166666666666666
+        },
+        "exact": {
+          "pass": 0.95,
+          "far": 0.033854166666666664,
+          "strong_blur_pass": 0.6583333333333333,
+          "strong_contrast_pass": 0.9166666666666666
+        }
+      }
+    }
+  },
+  "frozen_transitions": {
+    "pooled_genuine": {
+      "n": 1920,
+      "both": 1800,
+      "lost": 21,
+      "gained": 18
+    },
+    "pooled_wrong": {
+      "n": 1920,
+      "both": 47,
+      "lost": 2,
+      "gained": 15
+    },
+    "strong_blur": {
+      "n": 120,
+      "both": 70,
+      "lost": 0,
+      "gained": 9
+    },
+    "strong_contrast": {
+      "n": 120,
+      "both": 110,
+      "lost": 9,
+      "gained": 0
+    }
+  },
+  "bootstrap": {
+    "frozen": {
+      "n": 5000,
+      "delta_ci95": {
+        "pass": [
+          -0.0078125,
+          0.004687499999999956
+        ],
+        "far": [
+          0.000520833333333335,
+          0.014062500000000002
+        ],
+        "strong_blur_pass": [
+          0.025000000000000022,
+          0.1333333333333333
+        ],
+        "strong_contrast_pass": [
+          -0.13333333333333341,
+          -0.025000000000000022
+        ]
+      }
+    },
+    "exact": {
+      "n": 5000,
+      "delta_ci95": {
+        "pass": [
+          0.0,
+          0.0
+        ],
+        "far": [
+          -0.004687500000000001,
+          0.01666666666666667
+        ],
+        "strong_blur_pass": [
+          0.02499999999999991,
+          0.125
+        ],
+        "strong_contrast_pass": [
+          -0.13333333333333341,
+          -0.016666666666666607
+        ]
+      }
+    }
+  }
+}

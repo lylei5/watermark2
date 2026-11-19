@@ -2,11 +2,11 @@
   "schema_version": 3,
   "project_name": "watermark2",
   "updated_at": "2026-11-19",
-  "status": "image_identity_veto_confirmation_queued",
+  "status": "image_identity_veto_confirmation_complete",
   "active_experiments": 0,
-  "queued_experiments": 1,
+  "queued_experiments": 0,
   "active_runs": [],
-  "queued_runs": ["color_veto_20261119"],
+  "queued_runs": [],
   "research_plan": "docs/RESEARCH_PLAN.md",
   "evidence_index": "reports/README.md",
   "latest_progress_report": "reports/color_veto_20261119/report.md",
@@ -46,7 +46,6 @@
   ],
   "max_concurrent_gpus": 3,
   "evaluation_policy": "Unchanged published top-venue author attacks only; full budgets; no adaptive or improved attacks; independent null calibration and evaluation; report achieved FPR and absolute TPR.",
-  "execution_authorized": true,
-  "execution_scope": "Paired decision-rule confirmation on server 249 with 60 new prompts and unchanged image generation.",
+  "execution_authorized": false,
   "previous_state": "https://github.com/lylei5/watermark2/blob/ac09574711f9ea2b056b5782e683d51e5eb2f87e/project_state.json"
 }
