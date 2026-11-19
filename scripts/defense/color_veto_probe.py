@@ -159,4 +159,8 @@ if __name__=='__main__':
     if parser.parse_args().stage=='calibrate':
         calibrate()
     else:
-        evaluate()
+        import fcntl
+        with (RUN/'evaluation.lock').open('a') as lock:
+            fcntl.flock(lock,fcntl.LOCK_EX)
+            if not (RUN/'complete.json').exists():
+                evaluate()
