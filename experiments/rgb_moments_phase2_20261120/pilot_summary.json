@@ -1,0 +1,1266 @@
+{
+  "cal": [
+    {
+      "condition": "all_edits",
+      "method": "assigned_mean",
+      "accepted": 114,
+      "total": 120,
+      "rate": 0.95,
+      "clusters": 12,
+      "lo95": 0.6175723670216183,
+      "hi95": 0.9999596399623558
+    },
+    {
+      "condition": "all_edits",
+      "method": "assigned_moments",
+      "accepted": 114,
+      "total": 120,
+      "rate": 0.95,
+      "clusters": 12,
+      "lo95": 0.6175723670216183,
+      "hi95": 0.9999596399623558
+    },
+    {
+      "condition": "all_edits",
+      "method": "hist",
+      "accepted": 114,
+      "total": 120,
+      "rate": 0.95,
+      "clusters": 12,
+      "lo95": 0.6175723670216183,
+      "hi95": 0.9999596399623558
+    },
+    {
+      "condition": "all_edits",
+      "method": "hist_local",
+      "accepted": 114,
+      "total": 120,
+      "rate": 0.95,
+      "clusters": 12,
+      "lo95": 0.6175723670216183,
+      "hi95": 0.9999596399623558
+    },
+    {
+      "condition": "all_edits",
+      "method": "local",
+      "accepted": 114,
+      "total": 120,
+      "rate": 0.95,
+      "clusters": 12,
+      "lo95": 0.6175723670216183,
+      "hi95": 0.9999596399623558
+    },
+    {
+      "condition": "all_edits",
+      "method": "mean",
+      "accepted": 114,
+      "total": 120,
+      "rate": 0.95,
+      "clusters": 12,
+      "lo95": 0.6175723670216183,
+      "hi95": 0.9999596399623558
+    },
+    {
+      "condition": "all_edits",
+      "method": "moments",
+      "accepted": 114,
+      "total": 120,
+      "rate": 0.95,
+      "clusters": 12,
+      "lo95": 0.6175723670216183,
+      "hi95": 0.9999596399623558
+    },
+    {
+      "condition": "blurring",
+      "method": "assigned_mean",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "blurring",
+      "method": "assigned_moments",
+      "accepted": 22,
+      "total": 24,
+      "rate": 0.9166666666666666,
+      "clusters": 12,
+      "lo95": 0.5639368486116345,
+      "hi95": 0.9991928727880798
+    },
+    {
+      "condition": "blurring",
+      "method": "hist",
+      "accepted": 21,
+      "total": 24,
+      "rate": 0.875,
+      "clusters": 12,
+      "lo95": 0.5060284328040758,
+      "hi95": 0.9956737975167691
+    },
+    {
+      "condition": "blurring",
+      "method": "hist_local",
+      "accepted": 22,
+      "total": 24,
+      "rate": 0.9166666666666666,
+      "clusters": 12,
+      "lo95": 0.5639368486116345,
+      "hi95": 0.9991928727880798
+    },
+    {
+      "condition": "blurring",
+      "method": "local",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "blurring",
+      "method": "mean",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "blurring",
+      "method": "moments",
+      "accepted": 22,
+      "total": 24,
+      "rate": 0.9166666666666666,
+      "clusters": 12,
+      "lo95": 0.5639368486116345,
+      "hi95": 0.9991928727880798
+    },
+    {
+      "condition": "clean",
+      "method": "assigned_mean",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "clean",
+      "method": "assigned_moments",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "clean",
+      "method": "hist",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "clean",
+      "method": "hist_local",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "clean",
+      "method": "local",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "clean",
+      "method": "mean",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "clean",
+      "method": "moments",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "compression",
+      "method": "assigned_mean",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "compression",
+      "method": "assigned_moments",
+      "accepted": 23,
+      "total": 24,
+      "rate": 0.9583333333333334,
+      "clusters": 12,
+      "lo95": 0.6325616646591569,
+      "hi95": 0.9999902130311745
+    },
+    {
+      "condition": "compression",
+      "method": "hist",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "compression",
+      "method": "hist_local",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "compression",
+      "method": "local",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "compression",
+      "method": "mean",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "compression",
+      "method": "moments",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "crop50",
+      "method": "assigned_mean",
+      "accepted": 18,
+      "total": 24,
+      "rate": 0.75,
+      "clusters": 12,
+      "lo95": 0.3648099813053967,
+      "hi95": 0.9657633166565395
+    },
+    {
+      "condition": "crop50",
+      "method": "assigned_moments",
+      "accepted": 22,
+      "total": 24,
+      "rate": 0.9166666666666666,
+      "clusters": 12,
+      "lo95": 0.5639368486116345,
+      "hi95": 0.9991928727880798
+    },
+    {
+      "condition": "crop50",
+      "method": "hist",
+      "accepted": 21,
+      "total": 24,
+      "rate": 0.875,
+      "clusters": 12,
+      "lo95": 0.5060284328040758,
+      "hi95": 0.9956737975167691
+    },
+    {
+      "condition": "crop50",
+      "method": "hist_local",
+      "accepted": 20,
+      "total": 24,
+      "rate": 0.8333333333333334,
+      "clusters": 12,
+      "lo95": 0.4546126204328434,
+      "hi95": 0.9887958381251595
+    },
+    {
+      "condition": "crop50",
+      "method": "local",
+      "accepted": 18,
+      "total": 24,
+      "rate": 0.75,
+      "clusters": 12,
+      "lo95": 0.3648099813053967,
+      "hi95": 0.9657633166565395
+    },
+    {
+      "condition": "crop50",
+      "method": "mean",
+      "accepted": 18,
+      "total": 24,
+      "rate": 0.75,
+      "clusters": 12,
+      "lo95": 0.3648099813053967,
+      "hi95": 0.9657633166565395
+    },
+    {
+      "condition": "crop50",
+      "method": "moments",
+      "accepted": 20,
+      "total": 24,
+      "rate": 0.8333333333333334,
+      "clusters": 12,
+      "lo95": 0.4546126204328434,
+      "hi95": 0.9887958381251595
+    },
+    {
+      "condition": "cross_seed",
+      "method": "assigned_mean",
+      "accepted": 6,
+      "total": 24,
+      "rate": 0.25,
+      "clusters": 12,
+      "lo95": 0.03423668334346049,
+      "hi95": 0.6351900186946033
+    },
+    {
+      "condition": "cross_seed",
+      "method": "assigned_moments",
+      "accepted": 10,
+      "total": 24,
+      "rate": 0.4166666666666667,
+      "clusters": 12,
+      "lo95": 0.11034418186390686,
+      "hi95": 0.7799211760273989
+    },
+    {
+      "condition": "cross_seed",
+      "method": "hist",
+      "accepted": 10,
+      "total": 24,
+      "rate": 0.4166666666666667,
+      "clusters": 12,
+      "lo95": 0.11034418186390686,
+      "hi95": 0.7799211760273989
+    },
+    {
+      "condition": "cross_seed",
+      "method": "hist_local",
+      "accepted": 4,
+      "total": 24,
+      "rate": 0.16666666666666666,
+      "clusters": 12,
+      "lo95": 0.01120416187484056,
+      "hi95": 0.5453873795671567
+    },
+    {
+      "condition": "cross_seed",
+      "method": "local",
+      "accepted": 4,
+      "total": 24,
+      "rate": 0.16666666666666666,
+      "clusters": 12,
+      "lo95": 0.01120416187484056,
+      "hi95": 0.5453873795671567
+    },
+    {
+      "condition": "cross_seed",
+      "method": "mean",
+      "accepted": 6,
+      "total": 24,
+      "rate": 0.25,
+      "clusters": 12,
+      "lo95": 0.03423668334346049,
+      "hi95": 0.6351900186946033
+    },
+    {
+      "condition": "cross_seed",
+      "method": "moments",
+      "accepted": 6,
+      "total": 24,
+      "rate": 0.25,
+      "clusters": 12,
+      "lo95": 0.03423668334346049,
+      "hi95": 0.6351900186946033
+    },
+    {
+      "condition": "donor",
+      "method": "assigned_mean",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "donor",
+      "method": "assigned_moments",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "donor",
+      "method": "hist",
+      "accepted": 22,
+      "total": 24,
+      "rate": 0.9166666666666666,
+      "clusters": 12,
+      "lo95": 0.5639368486116345,
+      "hi95": 0.9991928727880798
+    },
+    {
+      "condition": "donor",
+      "method": "hist_local",
+      "accepted": 11,
+      "total": 24,
+      "rate": 0.4583333333333333,
+      "clusters": 12,
+      "lo95": 0.13474087126515316,
+      "hi95": 0.8104083217789617
+    },
+    {
+      "condition": "donor",
+      "method": "local",
+      "accepted": 9,
+      "total": 24,
+      "rate": 0.375,
+      "clusters": 12,
+      "lo95": 0.08800255045798185,
+      "hi95": 0.7473083594900514
+    },
+    {
+      "condition": "donor",
+      "method": "mean",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "donor",
+      "method": "moments",
+      "accepted": 23,
+      "total": 24,
+      "rate": 0.9583333333333334,
+      "clusters": 12,
+      "lo95": 0.6325616646591569,
+      "hi95": 0.9999902130311745
+    },
+    {
+      "condition": "noise",
+      "method": "assigned_mean",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "noise",
+      "method": "assigned_moments",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "noise",
+      "method": "hist",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "noise",
+      "method": "hist_local",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "noise",
+      "method": "local",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "noise",
+      "method": "mean",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "noise",
+      "method": "moments",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "resize70",
+      "method": "assigned_mean",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "resize70",
+      "method": "assigned_moments",
+      "accepted": 23,
+      "total": 24,
+      "rate": 0.9583333333333334,
+      "clusters": 12,
+      "lo95": 0.6325616646591569,
+      "hi95": 0.9999902130311745
+    },
+    {
+      "condition": "resize70",
+      "method": "hist",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "resize70",
+      "method": "hist_local",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "resize70",
+      "method": "local",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "resize70",
+      "method": "mean",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    },
+    {
+      "condition": "resize70",
+      "method": "moments",
+      "accepted": 24,
+      "total": 24,
+      "rate": 1.0,
+      "clusters": 12,
+      "lo95": 0.7353515306029487,
+      "hi95": 1.0
+    }
+  ],
+  "pilot": [
+    {
+      "condition": "all_edits",
+      "method": "assigned_mean",
+      "accepted": 56,
+      "total": 60,
+      "rate": 0.9333333333333333,
+      "clusters": 6,
+      "lo95": 0.413524953228631,
+      "hi95": 0.9999974922231173
+    },
+    {
+      "condition": "all_edits",
+      "method": "assigned_moments",
+      "accepted": 59,
+      "total": 60,
+      "rate": 0.9833333333333333,
+      "clusters": 6,
+      "lo95": 0.49668445308677184,
+      "hi95": 0.9999999999980598
+    },
+    {
+      "condition": "all_edits",
+      "method": "hist",
+      "accepted": 57,
+      "total": 60,
+      "rate": 0.95,
+      "clusters": 6,
+      "lo95": 0.43787681368758985,
+      "hi95": 0.9999999137973723
+    },
+    {
+      "condition": "all_edits",
+      "method": "hist_local",
+      "accepted": 55,
+      "total": 60,
+      "rate": 0.9166666666666666,
+      "clusters": 6,
+      "lo95": 0.391214145775477,
+      "hi95": 0.9999799958466699
+    },
+    {
+      "condition": "all_edits",
+      "method": "local",
+      "accepted": 52,
+      "total": 60,
+      "rate": 0.8666666666666667,
+      "clusters": 6,
+      "lo95": 0.33279422221207405,
+      "hi95": 0.9994753328995014
+    },
+    {
+      "condition": "all_edits",
+      "method": "mean",
+      "accepted": 55,
+      "total": 60,
+      "rate": 0.9166666666666666,
+      "clusters": 6,
+      "lo95": 0.391214145775477,
+      "hi95": 0.9999799958466699
+    },
+    {
+      "condition": "all_edits",
+      "method": "moments",
+      "accepted": 57,
+      "total": 60,
+      "rate": 0.95,
+      "clusters": 6,
+      "lo95": 0.43787681368758985,
+      "hi95": 0.9999999137973723
+    },
+    {
+      "condition": "blurring",
+      "method": "assigned_mean",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "blurring",
+      "method": "assigned_moments",
+      "accepted": 11,
+      "total": 12,
+      "rate": 0.9166666666666666,
+      "clusters": 6,
+      "lo95": 0.391214145775477,
+      "hi95": 0.9999799958466699
+    },
+    {
+      "condition": "blurring",
+      "method": "hist",
+      "accepted": 10,
+      "total": 12,
+      "rate": 0.8333333333333334,
+      "clusters": 6,
+      "lo95": 0.29897118416860213,
+      "hi95": 0.9983112996477629
+    },
+    {
+      "condition": "blurring",
+      "method": "hist_local",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "blurring",
+      "method": "local",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "blurring",
+      "method": "mean",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "blurring",
+      "method": "moments",
+      "accepted": 10,
+      "total": 12,
+      "rate": 0.8333333333333334,
+      "clusters": 6,
+      "lo95": 0.29897118416860213,
+      "hi95": 0.9983112996477629
+    },
+    {
+      "condition": "clean",
+      "method": "assigned_mean",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "clean",
+      "method": "assigned_moments",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "clean",
+      "method": "hist",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "clean",
+      "method": "hist_local",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "clean",
+      "method": "local",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "clean",
+      "method": "mean",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "clean",
+      "method": "moments",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "compression",
+      "method": "assigned_mean",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "compression",
+      "method": "assigned_moments",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "compression",
+      "method": "hist",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "compression",
+      "method": "hist_local",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "compression",
+      "method": "local",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "compression",
+      "method": "mean",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "compression",
+      "method": "moments",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "crop50",
+      "method": "assigned_mean",
+      "accepted": 8,
+      "total": 12,
+      "rate": 0.6666666666666666,
+      "clusters": 6,
+      "lo95": 0.1677687660394014,
+      "hi95": 0.9753781795355907
+    },
+    {
+      "condition": "crop50",
+      "method": "assigned_moments",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "crop50",
+      "method": "hist",
+      "accepted": 11,
+      "total": 12,
+      "rate": 0.9166666666666666,
+      "clusters": 6,
+      "lo95": 0.391214145775477,
+      "hi95": 0.9999799958466699
+    },
+    {
+      "condition": "crop50",
+      "method": "hist_local",
+      "accepted": 7,
+      "total": 12,
+      "rate": 0.5833333333333334,
+      "clusters": 6,
+      "lo95": 0.1191098002810221,
+      "hi95": 0.9520100702660745
+    },
+    {
+      "condition": "crop50",
+      "method": "local",
+      "accepted": 4,
+      "total": 12,
+      "rate": 0.3333333333333333,
+      "clusters": 6,
+      "lo95": 0.0246218204644093,
+      "hi95": 0.8322312339605985
+    },
+    {
+      "condition": "crop50",
+      "method": "mean",
+      "accepted": 7,
+      "total": 12,
+      "rate": 0.5833333333333334,
+      "clusters": 6,
+      "lo95": 0.1191098002810221,
+      "hi95": 0.9520100702660745
+    },
+    {
+      "condition": "crop50",
+      "method": "moments",
+      "accepted": 11,
+      "total": 12,
+      "rate": 0.9166666666666666,
+      "clusters": 6,
+      "lo95": 0.391214145775477,
+      "hi95": 0.9999799958466699
+    },
+    {
+      "condition": "cross_seed",
+      "method": "assigned_mean",
+      "accepted": 10,
+      "total": 12,
+      "rate": 0.8333333333333334,
+      "clusters": 6,
+      "lo95": 0.29897118416860213,
+      "hi95": 0.9983112996477629
+    },
+    {
+      "condition": "cross_seed",
+      "method": "assigned_moments",
+      "accepted": 9,
+      "total": 12,
+      "rate": 0.75,
+      "clusters": 6,
+      "lo95": 0.22677353201875197,
+      "hi95": 0.9907269659863156
+    },
+    {
+      "condition": "cross_seed",
+      "method": "hist",
+      "accepted": 4,
+      "total": 12,
+      "rate": 0.3333333333333333,
+      "clusters": 6,
+      "lo95": 0.0246218204644093,
+      "hi95": 0.8322312339605985
+    },
+    {
+      "condition": "cross_seed",
+      "method": "hist_local",
+      "accepted": 0,
+      "total": 12,
+      "rate": 0.0,
+      "clusters": 6,
+      "lo95": 0.0,
+      "hi95": 0.45925812643990055
+    },
+    {
+      "condition": "cross_seed",
+      "method": "local",
+      "accepted": 2,
+      "total": 12,
+      "rate": 0.16666666666666666,
+      "clusters": 6,
+      "lo95": 0.0016887003522370622,
+      "hi95": 0.7010288158313979
+    },
+    {
+      "condition": "cross_seed",
+      "method": "mean",
+      "accepted": 10,
+      "total": 12,
+      "rate": 0.8333333333333334,
+      "clusters": 6,
+      "lo95": 0.29897118416860213,
+      "hi95": 0.9983112996477629
+    },
+    {
+      "condition": "cross_seed",
+      "method": "moments",
+      "accepted": 6,
+      "total": 12,
+      "rate": 0.5,
+      "clusters": 6,
+      "lo95": 0.07940571028061241,
+      "hi95": 0.9205942897193876
+    },
+    {
+      "condition": "donor",
+      "method": "assigned_mean",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "donor",
+      "method": "assigned_moments",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "donor",
+      "method": "hist",
+      "accepted": 10,
+      "total": 12,
+      "rate": 0.8333333333333334,
+      "clusters": 6,
+      "lo95": 0.29897118416860213,
+      "hi95": 0.9983112996477629
+    },
+    {
+      "condition": "donor",
+      "method": "hist_local",
+      "accepted": 2,
+      "total": 12,
+      "rate": 0.16666666666666666,
+      "clusters": 6,
+      "lo95": 0.0016887003522370622,
+      "hi95": 0.7010288158313979
+    },
+    {
+      "condition": "donor",
+      "method": "local",
+      "accepted": 1,
+      "total": 12,
+      "rate": 0.08333333333333333,
+      "clusters": 6,
+      "lo95": 2.0004153330153086e-05,
+      "hi95": 0.6087858542245229
+    },
+    {
+      "condition": "donor",
+      "method": "mean",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "donor",
+      "method": "moments",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "noise",
+      "method": "assigned_mean",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "noise",
+      "method": "assigned_moments",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "noise",
+      "method": "hist",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "noise",
+      "method": "hist_local",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "noise",
+      "method": "local",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "noise",
+      "method": "mean",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "noise",
+      "method": "moments",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "resize70",
+      "method": "assigned_mean",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "resize70",
+      "method": "assigned_moments",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "resize70",
+      "method": "hist",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "resize70",
+      "method": "hist_local",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "resize70",
+      "method": "local",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "resize70",
+      "method": "mean",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    },
+    {
+      "condition": "resize70",
+      "method": "moments",
+      "accepted": 12,
+      "total": 12,
+      "rate": 1.0,
+      "clusters": 6,
+      "lo95": 0.5407418735600994,
+      "hi95": 1.0
+    }
+  ]
+}
