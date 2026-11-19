@@ -1,0 +1,295 @@
+{
+  "counts": {
+    "overall_pass": 1920,
+    "overall_far": 1920,
+    "strong_blur": 120,
+    "strong_contrast": 120,
+    "gray_pass": 928,
+    "gray_far": 928,
+    "gray_blur": 58,
+    "gray_contrast": 58,
+    "gray_reference_pass": 1104,
+    "gray_reference_far": 1104,
+    "enriched_pass": 1280,
+    "enriched_far": 1280
+  },
+  "gray_pairs_by_stratum": {
+    "random": 3,
+    "enriched": 26
+  },
+  "methods": {
+    "product": {
+      "frozen": {
+        "cut": 0.0008592525964968089,
+        "tie_fraction": 1.0,
+        "rates": {
+          "overall_pass": 0.9395833333333333,
+          "overall_far": 0.071875,
+          "strong_blur": 0.49166666666666664,
+          "strong_contrast": 1.0,
+          "gray_pass": 0.9956896551724138,
+          "gray_far": 0.8512931034482759,
+          "gray_blur": 0.9655172413793104,
+          "gray_contrast": 1.0,
+          "gray_reference_pass": 0.9945652173913043,
+          "gray_reference_far": 0.7373188405797102,
+          "enriched_pass": 0.98046875,
+          "enriched_far": 0.5703125
+        }
+      },
+      "overall95": {
+        "cut": 0.0013309274260631424,
+        "tie_fraction": 1.0,
+        "rates": {
+          "overall_pass": 0.95,
+          "overall_far": 0.07395833333333333,
+          "strong_blur": 0.55,
+          "strong_contrast": 1.0,
+          "gray_pass": 0.9956896551724138,
+          "gray_far": 0.865301724137931,
+          "gray_blur": 0.9655172413793104,
+          "gray_contrast": 1.0,
+          "gray_reference_pass": 0.9945652173913043,
+          "gray_reference_far": 0.75,
+          "enriched_pass": 0.98125,
+          "enriched_far": 0.58046875
+        }
+      },
+      "gray95": {
+        "cut": 0.000528958335999454,
+        "tie_fraction": 0.6,
+        "rates": {
+          "overall_pass": 0.8852083333333333,
+          "overall_far": 0.0546875,
+          "strong_blur": 0.45,
+          "strong_contrast": 0.725,
+          "gray_pass": 0.9500000000000001,
+          "gray_far": 0.6217672413793104,
+          "gray_blur": 0.9655172413793104,
+          "gray_contrast": 1.0,
+          "gray_reference_pass": 0.9498188405797101,
+          "gray_reference_far": 0.5443840579710145,
+          "enriched_pass": 0.9395312499999999,
+          "enriched_far": 0.421875
+        }
+      }
+    },
+    "weighted": {
+      "frozen": {
+        "cut": 0.001672800267648043,
+        "tie_fraction": 1.0,
+        "rates": {
+          "overall_pass": 0.9291666666666667,
+          "overall_far": 0.033854166666666664,
+          "strong_blur": 0.525,
+          "strong_contrast": 1.0,
+          "gray_pass": 0.7392241379310345,
+          "gray_far": 0.09482758620689655,
+          "gray_blur": 0.6206896551724138,
+          "gray_contrast": 1.0,
+          "gray_reference_pass": 0.7391304347826086,
+          "gray_reference_far": 0.08876811594202899,
+          "enriched_pass": 0.7984375,
+          "enriched_far": 0.0625
+        }
+      },
+      "overall95": {
+        "cut": 0.004128323332320374,
+        "tie_fraction": 1.0,
+        "rates": {
+          "overall_pass": 0.95,
+          "overall_far": 0.046875,
+          "strong_blur": 0.7166666666666667,
+          "strong_contrast": 1.0,
+          "gray_pass": 0.771551724137931,
+          "gray_far": 0.1476293103448276,
+          "gray_blur": 0.7068965517241379,
+          "gray_contrast": 1.0,
+          "gray_reference_pass": 0.779891304347826,
+          "gray_reference_far": 0.13858695652173914,
+          "enriched_pass": 0.83046875,
+          "enriched_far": 0.10703125
+        }
+      },
+      "gray95": {
+        "cut": 0.11690954263995304,
+        "tie_fraction": 0.6,
+        "rates": {
+          "overall_pass": 0.9947916666666666,
+          "overall_far": 0.27291666666666664,
+          "strong_blur": 1.0,
+          "strong_contrast": 1.0,
+          "gray_pass": 0.9500000000000001,
+          "gray_far": 0.45689655172413796,
+          "gray_blur": 0.9827586206896551,
+          "gray_contrast": 1.0,
+          "gray_reference_pass": 0.9525362318840579,
+          "gray_reference_far": 0.4592391304347826,
+          "enriched_pass": 0.9668749999999999,
+          "enriched_far": 0.44453125
+        }
+      }
+    }
+  },
+  "delta_ci95": {
+    "frozen": {
+      "n": 5000,
+      "intervals": {
+        "overall_pass": [
+          -0.03281250000000002,
+          0.008854166666666718
+        ],
+        "overall_far": [
+          -0.08645833333333333,
+          0.00104166666666667
+        ],
+        "strong_blur": [
+          -0.04166666666666663,
+          0.10833333333333328
+        ],
+        "strong_contrast": [
+          0.0,
+          0.0
+        ],
+        "gray_pass": [
+          -0.286462823275862,
+          -0.22499999999999998
+        ],
+        "gray_far": [
+          -0.8366935483870968,
+          -0.6620144314236114
+        ],
+        "gray_blur": [
+          -0.48484848484848486,
+          -0.2037037037037036
+        ],
+        "gray_contrast": [
+          0.0,
+          0.0
+        ],
+        "gray_reference_pass": [
+          -0.28166757246376817,
+          -0.2283315217391304
+        ],
+        "gray_reference_far": [
+          -0.7398897058823529,
+          -0.5456328188054883
+        ],
+        "enriched_pass": [
+          -0.22109374999999998,
+          -0.14374999999999993
+        ],
+        "enriched_far": [
+          -0.62890625,
+          -0.384375
+        ]
+      }
+    },
+    "overall95": {
+      "n": 5000,
+      "intervals": {
+        "overall_pass": [
+          0.0,
+          0.0
+        ],
+        "overall_far": [
+          -0.06510416666666666,
+          0.0031249999999999993
+        ],
+        "strong_blur": [
+          0.04999999999999993,
+          0.25
+        ],
+        "strong_contrast": [
+          0.0,
+          0.0
+        ],
+        "gray_pass": [
+          -0.2615776909722222,
+          -0.17708333333333337
+        ],
+        "gray_far": [
+          -0.8193386501736111,
+          -0.6032196969696969
+        ],
+        "gray_blur": [
+          -0.43103448275862066,
+          -0.11290322580645162
+        ],
+        "gray_contrast": [
+          0.0,
+          0.0
+        ],
+        "gray_reference_pass": [
+          -0.25568400349650355,
+          -0.17114889705882366
+        ],
+        "gray_reference_far": [
+          -0.7182553655264923,
+          -0.4939192708333334
+        ],
+        "enriched_pass": [
+          -0.19689453125,
+          -0.10310546875000019
+        ],
+        "enriched_far": [
+          -0.59765625,
+          -0.34453125000000007
+        ]
+      }
+    },
+    "gray95": {
+      "n": 5000,
+      "intervals": {
+        "overall_pass": [
+          0.08583333333333332,
+          0.13912369791666646
+        ],
+        "overall_far": [
+          0.12187500000000001,
+          0.32291666666666663
+        ],
+        "strong_blur": [
+          0.44999999999999996,
+          0.6416666666666666
+        ],
+        "strong_contrast": [
+          0.17665476190476187,
+          0.41666666666666663
+        ],
+        "gray_pass": [
+          0.0,
+          0.0
+        ],
+        "gray_far": [
+          -0.31855098601310483,
+          -0.04227541560102304
+        ],
+        "gray_blur": [
+          -0.046875,
+          0.10344827586206895
+        ],
+        "gray_contrast": [
+          0.0,
+          0.0
+        ],
+        "gray_reference_pass": [
+          -0.0027173913043477826,
+          0.010288106540084285
+        ],
+        "gray_reference_far": [
+          -0.22694028755868545,
+          0.03770604227761475
+        ],
+        "enriched_pass": [
+          0.012499999999999956,
+          0.04531328125000007
+        ],
+        "enriched_far": [
+          -0.13281249999999994,
+          0.16016015624999994
+        ]
+      }
+    }
+  }
+}
