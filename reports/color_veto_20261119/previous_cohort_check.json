@@ -1,0 +1,56 @@
+{
+  "calibration": {
+    "legitimate": {
+      "n": 1280,
+      "both": 1195,
+      "lost": 21,
+      "gained": 21
+    },
+    "wrong": {
+      "n": 1280,
+      "both": 4,
+      "lost": 0,
+      "gained": 21
+    },
+    "blurring": {
+      "n": 80,
+      "both": 44,
+      "lost": 0,
+      "gained": 11
+    },
+    "contrast": {
+      "n": 80,
+      "both": 68,
+      "lost": 12,
+      "gained": 0
+    },
+    "scores_sha256": "905a0770eadc328ae7ccb077d311913c8728cbcc89e3f76414bf3bdad638f06b"
+  },
+  "diagnosed_previous_cohort": {
+    "legitimate": {
+      "n": 1920,
+      "both": 1785,
+      "lost": 34,
+      "gained": 34
+    },
+    "wrong": {
+      "n": 1920,
+      "both": 99,
+      "lost": 15,
+      "gained": 13
+    },
+    "blurring": {
+      "n": 120,
+      "both": 75,
+      "lost": 0,
+      "gained": 15
+    },
+    "contrast": {
+      "n": 120,
+      "both": 101,
+      "lost": 17,
+      "gained": 1
+    },
+    "scores_sha256": "ce86302a966f41fd7f1c2437a2603737f2eaff9e19d37806941151e52914d350"
+  }
+}
