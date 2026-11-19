@@ -1,0 +1,73 @@
+{
+  "product_cutoff": 0.0008592525964968089,
+  "matched_product_cutoff": 0.0009762572053814808,
+  "comparison_veto": 0.7572209211553473,
+  "groups": {
+    "near_gray": {
+      "prompts": 2,
+      "affected": 2,
+      "errors": 42,
+      "opportunities": 64
+    },
+    "palette_close": {
+      "prompts": 7,
+      "affected": 4,
+      "errors": 45,
+      "opportunities": 224
+    },
+    "layout_close": {
+      "prompts": 1,
+      "affected": 1,
+      "errors": 14,
+      "opportunities": 32
+    },
+    "mirror_low_quartile": {
+      "prompts": 15,
+      "affected": 3,
+      "errors": 44,
+      "opportunities": 480
+    }
+  },
+  "mirror_edge": 0.24040686736177147,
+  "case_ids": [
+    5,
+    14,
+    23,
+    34,
+    43,
+    57
+  ],
+  "verified_pixels": 312,
+  "sensitivity": {
+    "0.01": {
+      "color": 39,
+      "neither": 9,
+      "layout": 1
+    },
+    "0.029313010703385774": {
+      "color": 40,
+      "layout": 7,
+      "both": 2
+    },
+    "0.03124511490427713": {
+      "color": 39,
+      "layout": 7,
+      "both": 3
+    },
+    "0.05": {
+      "color": 38,
+      "both": 11
+    }
+  },
+  "contrast_unique_layout_top1": 9,
+  "contrast_unique_layout_top1_all": 120,
+  "parent_receipt_sha256": "88804c1be47eaeb7299f085c20e878829d61ea65a935f0fec549dc113c0884fb",
+  "script_sha256": "fca720376f3c6a76f6671c4187ac384f9c8aa4b710d96e380ab4277a74e45c62",
+  "evidence": {
+    "prompts.csv": "7e78d84dff916c8cad46eb2a3948cd95693d4d96989127d1548c8ad5f584dcf5",
+    "false_accepts.csv": "33eea46a9cce1482177bd44daf735947a050fe61948190c05cf6208afbf81527",
+    "contrast.csv": "7b3be0faffe2fa2e0f8815eb2a5978f2f0213fc43034e6c8c870b1f14b78ca29",
+    "pairs.jpg": "435b151775e95c1dfe41da9998df2f859190117980dfbce9349918da99032a14",
+    "contrast.jpg": "440ca1cedc5d5560197f03040dca8f3ca2e68b0f28bf1a5539da08fdb95c58bc"
+  }
+}
