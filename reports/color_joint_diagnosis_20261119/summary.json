@@ -1,0 +1,394 @@
+{
+  "groups": [
+    {
+      "task": 7,
+      "dataset": "COCO",
+      "prompt": "A woman is sitting in a chair with an umbrella.",
+      "edited_false": 4,
+      "directions": [
+        4,
+        0
+      ],
+      "clean_tail": [
+        0.01717408274785324,
+        0.6924277907884465
+      ],
+      "clean_pass": false,
+      "clean_neutral_color_bin_mass": [
+        0.9342020935697499,
+        1.0
+      ],
+      "error_tail_medians": [
+        0.00078064012490242,
+        0.7138953942232631
+      ],
+      "balanced": {
+        "color": 4
+      },
+      "sufficient": {
+        "color": 4,
+        "layout": 0
+      },
+      "sensitivity": {
+        "0.01": {
+          "color": 4
+        },
+        "0.05": {
+          "color": 4
+        }
+      }
+    },
+    {
+      "task": 8,
+      "dataset": "COCO",
+      "prompt": "A large group of people standing in the street.",
+      "edited_false": 28,
+      "directions": [
+        14,
+        14
+      ],
+      "clean_tail": [
+        0.00078064012490242,
+        0.10382513661202186
+      ],
+      "clean_pass": true,
+      "clean_neutral_color_bin_mass": [
+        1.0,
+        1.0
+      ],
+      "error_tail_medians": [
+        0.00078064012490242,
+        0.1053864168618267
+      ],
+      "balanced": {
+        "color": 28
+      },
+      "sufficient": {
+        "color": 28,
+        "layout": 0
+      },
+      "sensitivity": {
+        "0.01": {
+          "color": 28
+        },
+        "0.05": {
+          "color": 28
+        }
+      }
+    },
+    {
+      "task": 12,
+      "dataset": "COCO",
+      "prompt": "The train engine is followed by a line of open cars.",
+      "edited_false": 28,
+      "directions": [
+        14,
+        14
+      ],
+      "clean_tail": [
+        0.00078064012490242,
+        0.49804839968774395
+      ],
+      "clean_pass": true,
+      "clean_neutral_color_bin_mass": [
+        0.994964292254166,
+        0.9943539034364891
+      ],
+      "error_tail_medians": [
+        0.00078064012490242,
+        0.5035128805620609
+      ],
+      "balanced": {
+        "color": 28
+      },
+      "sufficient": {
+        "color": 28,
+        "layout": 0
+      },
+      "sensitivity": {
+        "0.01": {
+          "color": 28
+        },
+        "0.05": {
+          "color": 28
+        }
+      }
+    },
+    {
+      "task": 22,
+      "dataset": "COCO",
+      "prompt": "Kite flying between water area and building complex, probably Japan.",
+      "edited_false": 1,
+      "directions": [
+        0,
+        1
+      ],
+      "clean_tail": [
+        0.09914129586260734,
+        0.3013270882123341
+      ],
+      "clean_pass": false,
+      "clean_neutral_color_bin_mass": [
+        0.9601123081148718,
+        0.7618873222242568
+      ],
+      "error_tail_medians": [
+        0.00156128024980484,
+        0.3286494925839188
+      ],
+      "balanced": {
+        "color": 1
+      },
+      "sufficient": {
+        "color": 0,
+        "layout": 0
+      },
+      "sensitivity": {
+        "0.01": {
+          "color": 1
+        },
+        "0.05": {
+          "color": 1
+        }
+      }
+    },
+    {
+      "task": 27,
+      "dataset": "COCO",
+      "prompt": "A very nice bathroom with toilet and mirror. ",
+      "edited_false": 3,
+      "directions": [
+        3,
+        0
+      ],
+      "clean_tail": [
+        0.00234192037470726,
+        0.8024980483996877
+      ],
+      "clean_pass": false,
+      "clean_neutral_color_bin_mass": [
+        0.82769775390625,
+        0.9454667521132778
+      ],
+      "error_tail_medians": [
+        0.00078064012490242,
+        0.843871975019516
+      ],
+      "balanced": {
+        "color": 3
+      },
+      "sufficient": {
+        "color": 3,
+        "layout": 0
+      },
+      "sensitivity": {
+        "0.01": {
+          "color": 3
+        },
+        "0.05": {
+          "color": 3
+        }
+      }
+    },
+    {
+      "task": 34,
+      "dataset": "SDP",
+      "prompt": "A full portrait of a world war two soldier, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by Krenz Cushart and Artem Demura and alphonse mucha",
+      "edited_false": 20,
+      "directions": [
+        11,
+        9
+      ],
+      "clean_tail": [
+        0.00078064012490242,
+        0.6377829820452772
+      ],
+      "clean_pass": true,
+      "clean_neutral_color_bin_mass": [
+        0.14954526033083076,
+        0.17678833007812497
+      ],
+      "error_tail_medians": [
+        0.00078064012490242,
+        0.6381733021077284
+      ],
+      "balanced": {
+        "color": 20
+      },
+      "sufficient": {
+        "color": 20,
+        "layout": 0
+      },
+      "sensitivity": {
+        "0.01": {
+          "color": 20
+        },
+        "0.05": {
+          "color": 20
+        }
+      }
+    },
+    {
+      "task": 57,
+      "dataset": "SDP",
+      "prompt": "concept art oil painting of and Old man by Jama Jurabaev, extremely detailed, brush hard, brush strokes, artstation",
+      "edited_false": 24,
+      "directions": [
+        12,
+        12
+      ],
+      "clean_tail": [
+        0.00078064012490242,
+        0.49492583918813426
+      ],
+      "clean_pass": true,
+      "clean_neutral_color_bin_mass": [
+        0.7859976805224929,
+        0.8216498306222724
+      ],
+      "error_tail_medians": [
+        0.00078064012490242,
+        0.4972677595628415
+      ],
+      "balanced": {
+        "color": 24
+      },
+      "sufficient": {
+        "color": 24,
+        "layout": 0
+      },
+      "sensitivity": {
+        "0.01": {
+          "color": 24
+        },
+        "0.05": {
+          "color": 24
+        }
+      }
+    },
+    {
+      "task": 58,
+      "dataset": "SDP",
+      "prompt": "beautiful classical holy decorative ornament, sacred death bird, wings spread, feathers, acanthus scrolls, lilies, ivy, energy, geometry, bones, petals, stems, ceremonial clouds, dripping paint, fibonacci rhythm, artstation, artgerm, wlop",
+      "edited_false": 6,
+      "directions": [
+        3,
+        3
+      ],
+      "clean_tail": [
+        0.7782982045277127,
+        0.00312256049960968
+      ],
+      "clean_pass": false,
+      "clean_neutral_color_bin_mass": [
+        0.5402386547441023,
+        0.917755126953125
+      ],
+      "error_tail_medians": [
+        0.7782982045277127,
+        0.00078064012490242
+      ],
+      "balanced": {
+        "layout": 6
+      },
+      "sufficient": {
+        "color": 0,
+        "layout": 6
+      },
+      "sensitivity": {
+        "0.01": {
+          "layout": 6
+        },
+        "0.05": {
+          "layout": 6
+        }
+      }
+    }
+  ],
+  "blur": {
+    "rejected": {
+      "n": 45,
+      "weak_pass": 35,
+      "color_weaker": 27,
+      "layout_weaker": 17,
+      "medians": {
+        "color": 0.27370572102030283,
+        "layout": 0.1672623595840917,
+        "color_weak": 0.17943464723709152,
+        "layout_weak": 0.11498071406713566,
+        "pc": 0.11787665886026542,
+        "pl": 0.0507416081186573,
+        "pc_weak": 0.01327088212334114,
+        "pl_weak": 0.00156128024980484,
+        "color_mass_shift": 0.2017356846679694,
+        "layout_mass_shift": 0.14344137215406216
+      },
+      "top1": {
+        "color": 14.0,
+        "layout": 42.0,
+        "joint": 33.0
+      },
+      "restored": {
+        "weak_also_fails": 10,
+        "either": 24,
+        "layout_only": 4,
+        "both_needed": 4,
+        "color_only": 3
+      },
+      "both_above_balance": 29
+    },
+    "passed": {
+      "n": 75,
+      "weak_pass": 75,
+      "color_weaker": 27,
+      "layout_weaker": 40,
+      "medians": {
+        "color": 0.1454251918520426,
+        "layout": 0.12964412725354382,
+        "color_weak": 0.09579361065646924,
+        "layout_weak": 0.08124941002516807,
+        "pc": 0.00156128024980484,
+        "pl": 0.01092896174863388,
+        "pc_weak": 0.00078064012490242,
+        "pl_weak": 0.00078064012490242,
+        "color_mass_shift": 0.0814604328232513,
+        "layout_mass_shift": 0.101566722358841
+      },
+      "top1": {
+        "color": 34.0,
+        "layout": 75.0,
+        "joint": 75.0
+      },
+      "restored": {
+        "either": 75
+      },
+      "both_above_balance": 0
+    }
+  },
+  "replayed_queries": 584,
+  "threshold": 0.0008592525964968089,
+  "balance": 0.029313010703385774,
+  "sensitivity": {
+    "0.01": {
+      "color": 108,
+      "layout": 6
+    },
+    "0.029313010703385774": {
+      "color": 108,
+      "layout": 6
+    },
+    "0.05": {
+      "color": 108,
+      "layout": 6
+    }
+  },
+  "parent_receipt_sha256": "13385733be550ad7fc0e2fcee79cc89a5f0687f9e0b644a784d6414233c1a944",
+  "script_sha256": "c3709dd884946be71e93e2a53a827d3f5d345788738c43a8230bba4f5278697d",
+  "waves_sha256": "73c6f0b8ada259aa416179a880f9d9bba510f0b60403ee9e5b0b976372e78bc4",
+  "artifact_sha256": {
+    "false_accepts.csv": "a19f0d62d08756c5dd4a773c11d2dc2a1ffe4f191c2609bd7401e45cf6933f41",
+    "blur_images.csv": "de152ba47dca275d51d5ffff06c52ceaa88f04433830f0ac5171b5419a6b07d5",
+    "pairs.jpg": "a0f4847c349b9765dc451b8b77445a659a2ef0c80cb0d27999b27f42ea8d8078",
+    "blur_cases.jpg": "9bf31cf93355668260c1ff85745b18b9104c0118d99c1304a5ae4b732d91e2bd"
+  }
+}
