@@ -1,9 +1,7 @@
 """Schedule the unchanged prompt-pair renderer on idle authorized devices."""
-import os
 import subprocess
 import sys
 import time
-from pathlib import Path
 
 import color_budget_sources as renderer
 from color_joint_sources import ROOT, select
@@ -57,4 +55,13 @@ if __name__=='__main__':
         if not idle(gpu):
             (RUN/f'gpu_race_{shard}').touch()
             sys.exit(2)
-        renderer.generate(shard,gpu)
+        try:
+            renderer.generate(shard,gpu)
+        except AssertionError as error:
+            # The unchanged renderer reports (index, GPU readings, processes) if
+            # occupancy changes between scheduling and its own final idle check.
+            info=error.args[0] if error.args else None
+            if isinstance(info,tuple) and len(info)==3 and info[0]==gpu:
+                (RUN/f'gpu_race_{shard}').touch()
+                sys.exit(2)
+            raise
