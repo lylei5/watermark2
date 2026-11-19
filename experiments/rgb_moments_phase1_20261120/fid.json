@@ -1,0 +1,22 @@
+{
+  "baseline": {
+    "vs_real_mixed": 252.37954255626556,
+    "vs_real_coco": 278.9870937593818,
+    "vs_paired_baseline": 0.0
+  },
+  "mean_gn8": {
+    "vs_real_mixed": 252.91616495536806,
+    "vs_real_coco": 278.4107165986277,
+    "vs_paired_baseline": 69.14608776464638
+  },
+  "joint_gn8": {
+    "vs_real_mixed": 254.0522187533166,
+    "vs_real_coco": 279.9556360991189,
+    "vs_paired_baseline": 83.06023041629277
+  },
+  "joint_adam20": {
+    "vs_real_mixed": 251.10872024423668,
+    "vs_real_coco": 277.3032030920632,
+    "vs_paired_baseline": 61.229567325706284
+  }
+}
