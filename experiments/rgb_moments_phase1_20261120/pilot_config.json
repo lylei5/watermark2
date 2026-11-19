@@ -1,0 +1,56 @@
+[
+  {
+    "name": "mean_adam_r1",
+    "arm": "mean",
+    "solver": "adam",
+    "ratio": 1,
+    "steps": 10,
+    "lr": 0.035,
+    "trust": 0.25
+  },
+  {
+    "name": "mean_gn_r1",
+    "arm": "mean",
+    "solver": "gn",
+    "ratio": 1,
+    "steps": 4,
+    "lr": 0.035,
+    "trust": 0.25
+  },
+  {
+    "name": "joint_adam_r1",
+    "arm": "joint",
+    "solver": "adam",
+    "ratio": 1,
+    "steps": 10,
+    "lr": 0.035,
+    "trust": 0.25
+  },
+  {
+    "name": "joint_adam_r4",
+    "arm": "joint",
+    "solver": "adam",
+    "ratio": 4,
+    "steps": 10,
+    "lr": 0.035,
+    "trust": 0.25
+  },
+  {
+    "name": "joint_gn_r1",
+    "arm": "joint",
+    "solver": "gn",
+    "ratio": 1,
+    "steps": 4,
+    "lr": 0.035,
+    "trust": 0.25
+  },
+  {
+    "name": "joint_gn_r4",
+    "arm": "joint",
+    "solver": "gn",
+    "ratio": 4,
+    "steps": 4,
+    "lr": 0.035,
+    "trust": 0.25
+  }
+]

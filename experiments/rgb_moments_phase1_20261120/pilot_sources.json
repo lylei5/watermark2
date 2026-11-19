@@ -1,0 +1,230 @@
+[
+  {
+    "id": 0,
+    "pair": 0,
+    "idx": 0,
+    "dataset": "COCO",
+    "prompt": "Eating a donut makes for a quick and easy breakfast.",
+    "seed": 138833995251091606,
+    "donor_seed": 423008832742710586,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_budget_20261119/images/039/0.png",
+    "donor_sha256": "dd28ebc30218db6ba9d5bfae52cc8f28258cc21a99461cb681f7d5acf106676f",
+    "target": [
+      0.5422636144300973,
+      0.40832540474693224,
+      0.31334551642928704,
+      0.059825597716652114,
+      0.07265329031285928,
+      0.059102442412347383
+    ]
+  },
+  {
+    "id": 1,
+    "pair": 0,
+    "idx": 1,
+    "dataset": "COCO",
+    "prompt": "Eating a donut makes for a quick and easy breakfast.",
+    "seed": 14729599742175857,
+    "donor_seed": 739028651838443315,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_budget_20261119/images/039/1.png",
+    "donor_sha256": "1c8815dc4020f8e35a6f3fcd673e770b9b9a88e5111a9e0bc6e0929840970031",
+    "target": [
+      0.5388226378197808,
+      0.3729841643689101,
+      0.3135367000805398,
+      0.07715257377735212,
+      0.0673011225599424,
+      0.06819360661638378
+    ]
+  },
+  {
+    "id": 2,
+    "pair": 1,
+    "idx": 0,
+    "dataset": "COCO",
+    "prompt": "A vase filled with yellow and white flowers.",
+    "seed": 775104259772150300,
+    "donor_seed": 364111811841360736,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_budget_20261119/images/012/0.png",
+    "donor_sha256": "b06fa33d1ed6f398e4dc44e532e190d9c1759bb87223f1b345277839f0978011",
+    "target": [
+      0.5110491584329169,
+      0.5024412416944561,
+      0.3237006692326263,
+      0.08683100859747071,
+      0.07407992119198538,
+      0.09156803622763454
+    ]
+  },
+  {
+    "id": 3,
+    "pair": 1,
+    "idx": 1,
+    "dataset": "COCO",
+    "prompt": "A vase filled with yellow and white flowers.",
+    "seed": 775097639379052745,
+    "donor_seed": 575768604689908564,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_budget_20261119/images/012/1.png",
+    "donor_sha256": "acfbe83fa0f001cb3e8eaecc4e6487001ce80748933be144596de3dfef0a085f",
+    "target": [
+      0.4788112415987776,
+      0.4439039342542086,
+      0.2762982985553099,
+      0.08216379585935633,
+      0.10462611417077711,
+      0.10024734819811142
+    ]
+  },
+  {
+    "id": 4,
+    "pair": 2,
+    "idx": 0,
+    "dataset": "COCO",
+    "prompt": "Two people are at a computer desk with a mouse.",
+    "seed": 969914269707990973,
+    "donor_seed": 312506908879577728,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_budget_20261119/images/019/0.png",
+    "donor_sha256": "c16784b413d4ae2c68550af1d238fa98e368ea105c43f38025a90aa40a6c53c0",
+    "target": [
+      0.5346881342869592,
+      0.49134475109629344,
+      0.47582909079157565,
+      0.09297532861308637,
+      0.06829464815473243,
+      0.0607336800817417
+    ]
+  },
+  {
+    "id": 5,
+    "pair": 2,
+    "idx": 1,
+    "dataset": "COCO",
+    "prompt": "Two people are at a computer desk with a mouse.",
+    "seed": 278246804719702257,
+    "donor_seed": 975816072928972764,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_budget_20261119/images/019/1.png",
+    "donor_sha256": "593414b2131dbe46c51c6a110c721199ee409b2122b272a79bcc3c2863c93976",
+    "target": [
+      0.4779534882191636,
+      0.48241252525194384,
+      0.4825555539599729,
+      0.11938073815926373,
+      0.11236907339966383,
+      0.1146322877192219
+    ]
+  },
+  {
+    "id": 6,
+    "pair": 3,
+    "idx": 0,
+    "dataset": "SDP",
+    "prompt": "symmetry!! front - faced portrait of catwoman, intricate, elegant, highly detailed, my rendition, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+    "seed": 1127618011428463339,
+    "donor_seed": 439920406865949062,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_budget_20261119/images/053/0.png",
+    "donor_sha256": "c39e1d91f0e116d56f867f0c328d1f7d3aabbaf1552ab2f7fc3f819fb32ae115",
+    "target": [
+      0.49140440996964885,
+      0.4473763110590995,
+      0.4312976313572785,
+      0.12270468382852352,
+      0.11531275512277549,
+      0.10799469864304616
+    ]
+  },
+  {
+    "id": 7,
+    "pair": 3,
+    "idx": 1,
+    "dataset": "SDP",
+    "prompt": "symmetry!! front - faced portrait of catwoman, intricate, elegant, highly detailed, my rendition, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+    "seed": 618051815971341876,
+    "donor_seed": 590378155774368899,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_budget_20261119/images/053/1.png",
+    "donor_sha256": "d35a7c958f7103607d983b436648d00414e6942eb75a3b9dee594b68a0ce7759",
+    "target": [
+      0.44323951870794215,
+      0.42819640215710225,
+      0.4178352355957793,
+      0.10092133728374525,
+      0.09148810348166235,
+      0.07329556430440162
+    ]
+  },
+  {
+    "id": 8,
+    "pair": 4,
+    "idx": 0,
+    "dataset": "SDP",
+    "prompt": "book cover, front portrait, dark witch with black hood and evil eyes, realism, soft, smooth, luminescent, art nouveau tarot, backlit glow, colorful swirly ripples, gaudy colors, aesthetic octane render, unreal engine, 8 k, by artgerm, greg rutkowski, alphonse mucha",
+    "seed": 498063379608377837,
+    "donor_seed": 429096566884696378,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_budget_20261119/images/069/0.png",
+    "donor_sha256": "94c6bc5af25328e4182c34b065e178f03793b1c14d02027e288b82b41a338ccb",
+    "target": [
+      0.5681148753447659,
+      0.4339155907724869,
+      0.48922267240640993,
+      0.07758018258770376,
+      0.050255556442020025,
+      0.04163346349873464
+    ]
+  },
+  {
+    "id": 9,
+    "pair": 4,
+    "idx": 1,
+    "dataset": "SDP",
+    "prompt": "book cover, front portrait, dark witch with black hood and evil eyes, realism, soft, smooth, luminescent, art nouveau tarot, backlit glow, colorful swirly ripples, gaudy colors, aesthetic octane render, unreal engine, 8 k, by artgerm, greg rutkowski, alphonse mucha",
+    "seed": 181758808983004185,
+    "donor_seed": 78617948572245165,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_budget_20261119/images/069/1.png",
+    "donor_sha256": "a90f88b7487347e548971e13eb7899c100a0f6bb076e4e651e29c57b2338c09f",
+    "target": [
+      0.3997528674557097,
+      0.3351856605680375,
+      0.46169210695754637,
+      0.11176577774802579,
+      0.06890000577557823,
+      0.06691336196012675
+    ]
+  },
+  {
+    "id": 10,
+    "pair": 5,
+    "idx": 0,
+    "dataset": "SDP",
+    "prompt": "anime illustration japanese very very beautiful cute girls doing cute things trending on artstation pixiv makoto shinkai smiling super detailed eyes eyebrowless symmetry face visual novel hairpin star",
+    "seed": 969257977628977442,
+    "donor_seed": 581811968934155543,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_budget_20261119/images/092/0.png",
+    "donor_sha256": "07cf2a18dc501954ce7269210f04b87c9010672fdbc790d9555dff9e39a31b88",
+    "target": [
+      0.5206491956524646,
+      0.5232490090760705,
+      0.5662151112274488,
+      0.06585671003018743,
+      0.07342817200208207,
+      0.058606252251524334
+    ]
+  },
+  {
+    "id": 11,
+    "pair": 5,
+    "idx": 1,
+    "dataset": "SDP",
+    "prompt": "anime illustration japanese very very beautiful cute girls doing cute things trending on artstation pixiv makoto shinkai smiling super detailed eyes eyebrowless symmetry face visual novel hairpin star",
+    "seed": 1112595443218739105,
+    "donor_seed": 975094703114237502,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_budget_20261119/images/092/1.png",
+    "donor_sha256": "e467ecb789ecdb8b6d0f64b5695ee461745f8fce7d8c687c3893c99c7b00014a",
+    "target": [
+      0.5187393038879862,
+      0.5623936223048958,
+      0.5750141816978256,
+      0.06857184441186889,
+      0.04414883683499426,
+      0.06040445139717388
+    ]
+  }
+]

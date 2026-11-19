@@ -1,0 +1,1218 @@
+[
+  {
+    "id": 0,
+    "pair": 0,
+    "idx": 0,
+    "dataset": "COCO",
+    "prompt": "A young man standing on top of a tennis court holding a racquet.",
+    "seed": 333765285624473258,
+    "donor_seed": 921650750099419225,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/016/0.png",
+    "donor_sha256": "5f56e9f61d595de2f2b92df8143222251dda46f4fd184e32d4dd1ef088e2664d",
+    "target": [
+      0.544799909404627,
+      0.626993456073555,
+      0.6272947274001647,
+      0.08579432339348426,
+      0.06494905053394824,
+      0.08372543509926121
+    ]
+  },
+  {
+    "id": 1,
+    "pair": 0,
+    "idx": 1,
+    "dataset": "COCO",
+    "prompt": "A young man standing on top of a tennis court holding a racquet.",
+    "seed": 204715278523126857,
+    "donor_seed": 779140827889253847,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/016/1.png",
+    "donor_sha256": "d7093058c84763402473e6ec4821c6905641b768c3989840f12a8fb8017fe206",
+    "target": [
+      0.3768246370206837,
+      0.5488997216314524,
+      0.5545215980677403,
+      0.07319298710307451,
+      0.0750407410843737,
+      0.07420448264326257
+    ]
+  },
+  {
+    "id": 2,
+    "pair": 1,
+    "idx": 0,
+    "dataset": "COCO",
+    "prompt": "A small child is reaching for the camera.",
+    "seed": 1130701221137523840,
+    "donor_seed": 232492508270422754,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/009/0.png",
+    "donor_sha256": "f8e0ad446e2e35dbf4015f137e50f61e29ebd4891abce68dad25d6bb6ab47791",
+    "target": [
+      0.4336850484212464,
+      0.4319519491756907,
+      0.43001773310645347,
+      0.03048923041360338,
+      0.030628633164564788,
+      0.03089755228956391
+    ]
+  },
+  {
+    "id": 3,
+    "pair": 1,
+    "idx": 1,
+    "dataset": "COCO",
+    "prompt": "A small child is reaching for the camera.",
+    "seed": 488734524849465120,
+    "donor_seed": 487033056659397231,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/009/1.png",
+    "donor_sha256": "618ba598812024c0f7969bbd73ce9652c3cf3a13e1953c58cb2b74d9794f1287",
+    "target": [
+      0.5050754322724708,
+      0.45601694443644863,
+      0.45233585133277737,
+      0.05369655628479615,
+      0.044852545874418566,
+      0.03771246934288081
+    ]
+  },
+  {
+    "id": 4,
+    "pair": 2,
+    "idx": 0,
+    "dataset": "COCO",
+    "prompt": "Small group with hand held video controllers interacting with out of frame screen.",
+    "seed": 461474080798850559,
+    "donor_seed": 626745120374833372,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/003/0.png",
+    "donor_sha256": "0f82ac5090e126a5ac25cdc6b89c280613d2887f7fe25a6be00fc357fe86508e",
+    "target": [
+      0.4382125405702789,
+      0.44737907858459486,
+      0.44506840425379157,
+      0.10033691451273523,
+      0.10068681057466582,
+      0.10979038958811627
+    ]
+  },
+  {
+    "id": 5,
+    "pair": 2,
+    "idx": 1,
+    "dataset": "COCO",
+    "prompt": "Small group with hand held video controllers interacting with out of frame screen.",
+    "seed": 63525904499067701,
+    "donor_seed": 137686296666064314,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/003/1.png",
+    "donor_sha256": "d186d1d0a67b5fcf9b2e5d580d8258ffe80e6f4ed497375a03a11065ba9e1bc5",
+    "target": [
+      0.5290556814157166,
+      0.4860469144932344,
+      0.4518762925090555,
+      0.10475143847130132,
+      0.10381519281112093,
+      0.1040450405845258
+    ]
+  },
+  {
+    "id": 6,
+    "pair": 3,
+    "idx": 0,
+    "dataset": "COCO",
+    "prompt": "The computer monitor has a framed picture near it.",
+    "seed": 948749982448059931,
+    "donor_seed": 457265753065870767,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/000/0.png",
+    "donor_sha256": "50fc5c77dcebacc57d107923717204a3b8d8d4a7f1a6ef6bd2678aeec02d51e3",
+    "target": [
+      0.5321752211625292,
+      0.4185574699851714,
+      0.2907257379269964,
+      0.07306043130564843,
+      0.05928322043823851,
+      0.05120083419603276
+    ]
+  },
+  {
+    "id": 7,
+    "pair": 3,
+    "idx": 1,
+    "dataset": "COCO",
+    "prompt": "The computer monitor has a framed picture near it.",
+    "seed": 957058363551096618,
+    "donor_seed": 988188246486362351,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/000/1.png",
+    "donor_sha256": "354675d41dfe67c9d17a094cc270f2733a35cb89e0510d2c59fce486c6f9d252",
+    "target": [
+      0.39439766079788535,
+      0.39134659112671205,
+      0.38820619770105297,
+      0.06806840552496246,
+      0.06967936565586309,
+      0.07055145243540654
+    ]
+  },
+  {
+    "id": 8,
+    "pair": 4,
+    "idx": 0,
+    "dataset": "COCO",
+    "prompt": "A group of people walking across a busy city street.",
+    "seed": 294002052714928676,
+    "donor_seed": 1004851991591715520,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/010/0.png",
+    "donor_sha256": "533820eb51f49b9377f8761c499e799ee9115496a22e18f2eba63b33a5297cde",
+    "target": [
+      0.570879139619497,
+      0.5370369406306358,
+      0.554818695666656,
+      0.10867406270816964,
+      0.08817670882701407,
+      0.0827910821875425
+    ]
+  },
+  {
+    "id": 9,
+    "pair": 4,
+    "idx": 1,
+    "dataset": "COCO",
+    "prompt": "A group of people walking across a busy city street.",
+    "seed": 776533855567884495,
+    "donor_seed": 154073737289442103,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/010/1.png",
+    "donor_sha256": "94716be164ac46d306418e170d10dd12ea1b5c989aef96df873f3c35b64e4c14",
+    "target": [
+      0.5067073896820088,
+      0.49414170209115393,
+      0.49581388585723807,
+      0.06907864322927317,
+      0.07005879052068133,
+      0.07253167873931533
+    ]
+  },
+  {
+    "id": 10,
+    "pair": 5,
+    "idx": 0,
+    "dataset": "COCO",
+    "prompt": "A couple of men standing on top of a field together.",
+    "seed": 685889830528709744,
+    "donor_seed": 998751185114738105,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/011/0.png",
+    "donor_sha256": "9400e9853c4064b6c32d58d9a403df47b523596fbdd7af520c5ca8fe0a94eb7a",
+    "target": [
+      0.4686391045066708,
+      0.42689306221758677,
+      0.32420124727160854,
+      0.0462484880649135,
+      0.03623257371624994,
+      0.022800562482394017
+    ]
+  },
+  {
+    "id": 11,
+    "pair": 5,
+    "idx": 1,
+    "dataset": "COCO",
+    "prompt": "A couple of men standing on top of a field together.",
+    "seed": 351977760247260001,
+    "donor_seed": 1076519852896554836,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/011/1.png",
+    "donor_sha256": "0769926822a697e15d3b6e9a7a964859af9da324e4d0dfe61443c5c4a9a128f9",
+    "target": [
+      0.4414984011181658,
+      0.4091335371426387,
+      0.3268891428032699,
+      0.05241751626467579,
+      0.0515556809642628,
+      0.05542100537581364
+    ]
+  },
+  {
+    "id": 12,
+    "pair": 6,
+    "idx": 0,
+    "dataset": "COCO",
+    "prompt": "The animal food tray and cage is empty.",
+    "seed": 425557727057633934,
+    "donor_seed": 936088346544779917,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/002/0.png",
+    "donor_sha256": "06caf40d44580f6e2c8c027354d009288df8e2f8286e16126f1f0fa919c3d183",
+    "target": [
+      0.5161583245968888,
+      0.4891340966318344,
+      0.43620989930396625,
+      0.057413776967520425,
+      0.04983706062709424,
+      0.04332778416414984
+    ]
+  },
+  {
+    "id": 13,
+    "pair": 6,
+    "idx": 1,
+    "dataset": "COCO",
+    "prompt": "The animal food tray and cage is empty.",
+    "seed": 446753306289586422,
+    "donor_seed": 120589792374599015,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/002/1.png",
+    "donor_sha256": "c9edb33aa85fcbdfc3827f4c3d08a9778e93ab862824863a1483311df69119af",
+    "target": [
+      0.4275972104539255,
+      0.48071480545348655,
+      0.37878512214219395,
+      0.10671436985943128,
+      0.07054387554120344,
+      0.06348043573888235
+    ]
+  },
+  {
+    "id": 14,
+    "pair": 7,
+    "idx": 0,
+    "dataset": "COCO",
+    "prompt": "A group of people flying kites on top of a sandy beach.",
+    "seed": 1020391686568803814,
+    "donor_seed": 80895956073827416,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/019/0.png",
+    "donor_sha256": "47beb4b15ef6dbc9fd3ace1636b8d7cd0fda2445ce605b5fbe93744922c1c716",
+    "target": [
+      0.5462162391812826,
+      0.6118499157473943,
+      0.6557415532125079,
+      0.04603903930854915,
+      0.019038355458651242,
+      0.02275967549620459
+    ]
+  },
+  {
+    "id": 15,
+    "pair": 7,
+    "idx": 1,
+    "dataset": "COCO",
+    "prompt": "A group of people flying kites on top of a sandy beach.",
+    "seed": 244934799361969534,
+    "donor_seed": 906818854400281305,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/019/1.png",
+    "donor_sha256": "8b6dedaf21db56be1ba5539673a45790fb4eec1a3ea05fea3c83db1e79fa87d3",
+    "target": [
+      0.47286116656126176,
+      0.5672455432372024,
+      0.6078368093455023,
+      0.03305316102967694,
+      0.014497961901376758,
+      0.020482250497697634
+    ]
+  },
+  {
+    "id": 16,
+    "pair": 8,
+    "idx": 0,
+    "dataset": "COCO",
+    "prompt": "A dog standing on the back of a brown car.",
+    "seed": 480967436831622564,
+    "donor_seed": 778830113538937442,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/026/0.png",
+    "donor_sha256": "24eb585c30c14a902fa8d01afa53d7e676961e7464c275e254c3bccbc541d315",
+    "target": [
+      0.45173727297314975,
+      0.39429774564863906,
+      0.3664055768182162,
+      0.09456232008192192,
+      0.09511497014198396,
+      0.10241793904289806
+    ]
+  },
+  {
+    "id": 17,
+    "pair": 8,
+    "idx": 1,
+    "dataset": "COCO",
+    "prompt": "A dog standing on the back of a brown car.",
+    "seed": 230808358988696455,
+    "donor_seed": 320556328826623191,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/026/1.png",
+    "donor_sha256": "bbfdec1b69a29714fa46a60d565ffc45498f830e35cc71edf11722ae1fb08b6e",
+    "target": [
+      0.459216592826031,
+      0.41078552545277525,
+      0.36999306772273594,
+      0.08387646734439122,
+      0.08339575917334831,
+      0.08891705551774261
+    ]
+  },
+  {
+    "id": 18,
+    "pair": 9,
+    "idx": 0,
+    "dataset": "COCO",
+    "prompt": "A bunch of brown signs on a pole.",
+    "seed": 823448934990196101,
+    "donor_seed": 1005662496157908714,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/027/0.png",
+    "donor_sha256": "ba60a81f3aceccad1a741b084f56589535a0fe3eb7a57d00c27ac864a2ca43ee",
+    "target": [
+      0.596452900007683,
+      0.585071847952775,
+      0.47533241720756725,
+      0.07727286120386787,
+      0.07683388767534961,
+      0.10473516926403363
+    ]
+  },
+  {
+    "id": 19,
+    "pair": 9,
+    "idx": 1,
+    "dataset": "COCO",
+    "prompt": "A bunch of brown signs on a pole.",
+    "seed": 738948240150749380,
+    "donor_seed": 273345583491971930,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/027/1.png",
+    "donor_sha256": "7030389b349d1cab9d4ebb489d8338fe90c5cfb0042e9169f07d7eb22802024b",
+    "target": [
+      0.5352689256853129,
+      0.4709804609710694,
+      0.4104273478190972,
+      0.051174879191120855,
+      0.046268201819327344,
+      0.044520596592184956
+    ]
+  },
+  {
+    "id": 20,
+    "pair": 10,
+    "idx": 0,
+    "dataset": "COCO",
+    "prompt": "A round intersection on a surburban street with one floor homes.",
+    "seed": 11089243248609407,
+    "donor_seed": 980572057180380286,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/005/0.png",
+    "donor_sha256": "69b60ee9d98b4fec5e19bc241164550d45a1a1c8b4e8167849b58bd72fd8a090",
+    "target": [
+      0.46851594214351866,
+      0.4706004722445991,
+      0.423093833175526,
+      0.060827884288173664,
+      0.056694019700254485,
+      0.0880046563711501
+    ]
+  },
+  {
+    "id": 21,
+    "pair": 10,
+    "idx": 1,
+    "dataset": "COCO",
+    "prompt": "A round intersection on a surburban street with one floor homes.",
+    "seed": 613656692487218823,
+    "donor_seed": 872614231609416526,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/005/1.png",
+    "donor_sha256": "bb5c3701e2dcf9e1d8f9c3591731950847b44d19bdf238d01aaac2584bb919d0",
+    "target": [
+      0.4841090931612137,
+      0.47330612481803996,
+      0.413067013609696,
+      0.040725798481817156,
+      0.03530797041822023,
+      0.04709311931736858
+    ]
+  },
+  {
+    "id": 22,
+    "pair": 11,
+    "idx": 0,
+    "dataset": "COCO",
+    "prompt": "A pink city bus at a bus stop.",
+    "seed": 1057759902685004325,
+    "donor_seed": 191393998438129319,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/028/0.png",
+    "donor_sha256": "941d0d771bab3bde4b0beddd636d1a68742db860fde4ba7e9219775ce5a1b12b",
+    "target": [
+      0.48871352251857153,
+      0.4490019854378202,
+      0.49194928337546256,
+      0.09322264108853245,
+      0.05185616256480929,
+      0.09107035011047249
+    ]
+  },
+  {
+    "id": 23,
+    "pair": 11,
+    "idx": 1,
+    "dataset": "COCO",
+    "prompt": "A pink city bus at a bus stop.",
+    "seed": 292619030161159057,
+    "donor_seed": 908689186924465267,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/028/1.png",
+    "donor_sha256": "4e90653968ba683944c580e908cbab76c7ce081204499ded9bd97803574908bd",
+    "target": [
+      0.6287710900399276,
+      0.5775774338665276,
+      0.6577593635109362,
+      0.11319519226387108,
+      0.06509898348468712,
+      0.06363102218063955
+    ]
+  },
+  {
+    "id": 24,
+    "pair": 12,
+    "idx": 0,
+    "dataset": "COCO",
+    "prompt": "2 Zebras standing next to each other in plaines",
+    "seed": 1122662546676070742,
+    "donor_seed": 334738981060359804,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/004/0.png",
+    "donor_sha256": "699fba8b5fdd1bb2f3189b5cf5707b33a2d8f496ceb3e8af2df2a5094f054f6d",
+    "target": [
+      0.4622291116153944,
+      0.41203022377170995,
+      0.31954842361767855,
+      0.055073010792638696,
+      0.047797994427647025,
+      0.04375361751316141
+    ]
+  },
+  {
+    "id": 25,
+    "pair": 12,
+    "idx": 1,
+    "dataset": "COCO",
+    "prompt": "2 Zebras standing next to each other in plaines",
+    "seed": 62758579560400673,
+    "donor_seed": 406081708357639032,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/004/1.png",
+    "donor_sha256": "bf331a5628eab19d3a52c66f4fbc1de29bbf99d9bfb0ae38d564b6322b3dfd87",
+    "target": [
+      0.5816426146264098,
+      0.4956656063303691,
+      0.3552112205356896,
+      0.12797711946919346,
+      0.10360184759822105,
+      0.06043781224500703
+    ]
+  },
+  {
+    "id": 26,
+    "pair": 13,
+    "idx": 0,
+    "dataset": "COCO",
+    "prompt": "A library bus outside of an apartment building",
+    "seed": 1027441725648917535,
+    "donor_seed": 596455317165598040,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/007/0.png",
+    "donor_sha256": "0dfb9ef4c95f7c7a6a326ad25a806159185c10c0c3285f50229f500b268a2c8f",
+    "target": [
+      0.48093519023804787,
+      0.41534571928132497,
+      0.3754885505228097,
+      0.08764587387158394,
+      0.05738670141159386,
+      0.06757701311789427
+    ]
+  },
+  {
+    "id": 27,
+    "pair": 13,
+    "idx": 1,
+    "dataset": "COCO",
+    "prompt": "A library bus outside of an apartment building",
+    "seed": 192547066086704500,
+    "donor_seed": 1134098958146609529,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/007/1.png",
+    "donor_sha256": "d0c306b0711769d4f727f282cb5164c6c7511c996463ceef73baad9c71c38381",
+    "target": [
+      0.5297740861480912,
+      0.4862309474570596,
+      0.4638911228554169,
+      0.11348636556892855,
+      0.08652956328793791,
+      0.08602423811179903
+    ]
+  },
+  {
+    "id": 28,
+    "pair": 14,
+    "idx": 0,
+    "dataset": "COCO",
+    "prompt": "A person on a skateboard on a skate ramp.",
+    "seed": 188486354611524261,
+    "donor_seed": 800707908917430011,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/017/0.png",
+    "donor_sha256": "86416eb8d92e3dee8bc3c3a996002a0414b1adfc1eaa092428874fd37da95330",
+    "target": [
+      0.6080558926444423,
+      0.5280327740835848,
+      0.461073482737705,
+      0.06931668552035354,
+      0.051654109887821924,
+      0.0733308328303317
+    ]
+  },
+  {
+    "id": 29,
+    "pair": 14,
+    "idx": 1,
+    "dataset": "COCO",
+    "prompt": "A person on a skateboard on a skate ramp.",
+    "seed": 46339810949487117,
+    "donor_seed": 553035653675689110,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/017/1.png",
+    "donor_sha256": "3ef339e1c48d50c968ce3253e91abc2371c107cdbb1b6269d0b8ddc57960ad40",
+    "target": [
+      0.5319351944270372,
+      0.476940798291988,
+      0.47147809196920387,
+      0.07686731098863286,
+      0.038897438808495916,
+      0.05929826936829991
+    ]
+  },
+  {
+    "id": 30,
+    "pair": 15,
+    "idx": 0,
+    "dataset": "COCO",
+    "prompt": "Men riding on horses and with other ones.",
+    "seed": 1069928751609736558,
+    "donor_seed": 395197949179461990,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/014/0.png",
+    "donor_sha256": "cc6346017ebb4e1d5c98f1dc90f1061e0af824ea2459aee06883150d6ae1d5e1",
+    "target": [
+      0.4819863861683169,
+      0.4807008331897986,
+      0.4817327162799528,
+      0.04603304282073554,
+      0.046236104343925104,
+      0.04614314968697528
+    ]
+  },
+  {
+    "id": 31,
+    "pair": 15,
+    "idx": 1,
+    "dataset": "COCO",
+    "prompt": "Men riding on horses and with other ones.",
+    "seed": 616770972984105735,
+    "donor_seed": 1068283409938704270,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/014/1.png",
+    "donor_sha256": "48863511943831505eab1872331a05688c0d4d822043a12bae5b839e7dcdf8a9",
+    "target": [
+      0.5365816004135767,
+      0.5359984753178307,
+      0.5360352310479559,
+      0.043103410220925044,
+      0.043239128889283586,
+      0.04312621645269575
+    ]
+  },
+  {
+    "id": 32,
+    "pair": 16,
+    "idx": 0,
+    "dataset": "SDP",
+    "prompt": "portrait of jack the ripper, anime fantasy illustration by tomoyuki yamasaki, kyoto studio, madhouse, ufotable, comixwave films, trending on artstation",
+    "seed": 120103059280573972,
+    "donor_seed": 428113492147135331,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/035/0.png",
+    "donor_sha256": "5f433c0fc1a0c4d538ea4f6082976c057eedc85a4404b2362443fc0bebc8eac8",
+    "target": [
+      0.5357940225040468,
+      0.42628350351363525,
+      0.4908550038056594,
+      0.08369735618884508,
+      0.11653194853578093,
+      0.10126074063640025
+    ]
+  },
+  {
+    "id": 33,
+    "pair": 16,
+    "idx": 1,
+    "dataset": "SDP",
+    "prompt": "portrait of jack the ripper, anime fantasy illustration by tomoyuki yamasaki, kyoto studio, madhouse, ufotable, comixwave films, trending on artstation",
+    "seed": 277561610323827105,
+    "donor_seed": 394595990974945161,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/035/1.png",
+    "donor_sha256": "1279c5b7a9ef617f724f449f537c83103efed31cac141f9653b1050672092766",
+    "target": [
+      0.47031028597980123,
+      0.4441793553970425,
+      0.4548036463121167,
+      0.17779816454679195,
+      0.18641602393129253,
+      0.18232160365041822
+    ]
+  },
+  {
+    "id": 34,
+    "pair": 17,
+    "idx": 0,
+    "dataset": "SDP",
+    "prompt": "annotated highly, detailed and intricate, sketch of a lodge room full of spring plants, marker concept art style rendering, concept art, half blueprint, trending on artstation, intricate details, center frame, annotations",
+    "seed": 382800736768833004,
+    "donor_seed": 167784650251983791,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/043/0.png",
+    "donor_sha256": "862add90d7660f57db8ea2a92c835e4b1faabdf55b4bcb5c9b901f0374fb77c5",
+    "target": [
+      0.6003928240606288,
+      0.6016552943807841,
+      0.5996094497978179,
+      0.06276834599426746,
+      0.06203068266198205,
+      0.062004810290481834
+    ]
+  },
+  {
+    "id": 35,
+    "pair": 17,
+    "idx": 1,
+    "dataset": "SDP",
+    "prompt": "annotated highly, detailed and intricate, sketch of a lodge room full of spring plants, marker concept art style rendering, concept art, half blueprint, trending on artstation, intricate details, center frame, annotations",
+    "seed": 481658829852876701,
+    "donor_seed": 812684821710207248,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/043/1.png",
+    "donor_sha256": "e460489db793767bf8e7360c0f852399541512f6ebd15e750a514203bb459338",
+    "target": [
+      0.5947468177945981,
+      0.5285643334483267,
+      0.5254532309140281,
+      0.06095262199830716,
+      0.061442525594654976,
+      0.05285893527634147
+    ]
+  },
+  {
+    "id": 36,
+    "pair": 18,
+    "idx": 0,
+    "dataset": "SDP",
+    "prompt": "evil male sorcerer, library background, the room filled with colorful magic, red robe, epic, white skin, young, sharp, brown hair, beard, concept art, digital art, dynamic lighting, unreal engine, octane, in the styles of greg rutkowski, svetlin velinov and frank frazetta",
+    "seed": 597596669873342228,
+    "donor_seed": 144135766115878980,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/038/0.png",
+    "donor_sha256": "97fbfa1787821bfa8bf3ce131b0bb78bb4983c7ef0bcf12d0ae57e370467610e",
+    "target": [
+      0.5793357250737606,
+      0.3896918053721308,
+      0.3632329753801047,
+      0.0529572952276495,
+      0.05169600726899723,
+      0.03623842576898639
+    ]
+  },
+  {
+    "id": 37,
+    "pair": 18,
+    "idx": 1,
+    "dataset": "SDP",
+    "prompt": "evil male sorcerer, library background, the room filled with colorful magic, red robe, epic, white skin, young, sharp, brown hair, beard, concept art, digital art, dynamic lighting, unreal engine, octane, in the styles of greg rutkowski, svetlin velinov and frank frazetta",
+    "seed": 803502961100694426,
+    "donor_seed": 433793018438995154,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/038/1.png",
+    "donor_sha256": "4be6a0b231a29f14b280886f892a38b810ad957ffe16abb6010b119ca078d449",
+    "target": [
+      0.5465431811763164,
+      0.2649743772021971,
+      0.19136089250175556,
+      0.03675890752564548,
+      0.01764713374874512,
+      0.007245742947088693
+    ]
+  },
+  {
+    "id": 38,
+    "pair": 19,
+    "idx": 0,
+    "dataset": "SDP",
+    "prompt": "a girl dancing elegantly, full body shot, intriguing outfit, fine - face, realistic shaded perfect body, fine details. night setting. very anime style. realistic shaded lighting poster by ilya kuvshinov katsuhiro, magali villeneuve, artgerm, jeremy lipkin and michael garmash, rob rey and kentaro miura style, trending on art station",
+    "seed": 903971806892215188,
+    "donor_seed": 511789491110267557,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/047/0.png",
+    "donor_sha256": "6cf94b9580fb7790e7f7cc5a22c4c683c3246a8db6fd5bd7a284ec1495db108d",
+    "target": [
+      0.45821009617235026,
+      0.38559706444843833,
+      0.4719434850356461,
+      0.03623164965571391,
+      0.0214080777155257,
+      0.015172058230941596
+    ]
+  },
+  {
+    "id": 39,
+    "pair": 19,
+    "idx": 1,
+    "dataset": "SDP",
+    "prompt": "a girl dancing elegantly, full body shot, intriguing outfit, fine - face, realistic shaded perfect body, fine details. night setting. very anime style. realistic shaded lighting poster by ilya kuvshinov katsuhiro, magali villeneuve, artgerm, jeremy lipkin and michael garmash, rob rey and kentaro miura style, trending on art station",
+    "seed": 760403876480198993,
+    "donor_seed": 629502994162843690,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/047/1.png",
+    "donor_sha256": "67b60d08c077c5ee8fd344ad57c76a0995276cbf69fa0822b920339e3672f93b",
+    "target": [
+      0.6528594671506729,
+      0.6274272395115679,
+      0.5987244400326244,
+      0.05174699009353126,
+      0.04024248318332486,
+      0.02518477193214735
+    ]
+  },
+  {
+    "id": 40,
+    "pair": 20,
+    "idx": 0,
+    "dataset": "SDP",
+    "prompt": "The Madhatter, digital painting, lots of details, extremely detailed, 4k, intricate, brush strokes, Mark Arian, Artgerm, Bastien Lecouffe-Deharme",
+    "seed": 899695291541866031,
+    "donor_seed": 1138362572375419764,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/033/0.png",
+    "donor_sha256": "5cceb07dd7b5f2c194015e48aea4b85dbea9b65a3dfaf7f341cb77e6b6903a63",
+    "target": [
+      0.5643203735352794,
+      0.4780612571569068,
+      0.4643409579408578,
+      0.10767851637389415,
+      0.13647481540446627,
+      0.1235452391357411
+    ]
+  },
+  {
+    "id": 41,
+    "pair": 20,
+    "idx": 1,
+    "dataset": "SDP",
+    "prompt": "The Madhatter, digital painting, lots of details, extremely detailed, 4k, intricate, brush strokes, Mark Arian, Artgerm, Bastien Lecouffe-Deharme",
+    "seed": 452835826613821491,
+    "donor_seed": 988980115067494963,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/033/1.png",
+    "donor_sha256": "794735080f9bee49a43c42985fb2709bdf8cf8e45feae4d6d06b0d6041995030",
+    "target": [
+      0.3815720801261077,
+      0.45542346729948785,
+      0.4176646213906705,
+      0.06914798831061765,
+      0.07862328382554491,
+      0.07535679464798224
+    ]
+  },
+  {
+    "id": 42,
+    "pair": 21,
+    "idx": 0,
+    "dataset": "SDP",
+    "prompt": "richly detailed color pencil illustration of a portrait of a kazakh princess with her hypnotic pet shi - tzu, by artgerm and range murata rendered with 3 d effect.",
+    "seed": 387590623463967218,
+    "donor_seed": 693589474356073847,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/053/0.png",
+    "donor_sha256": "acf925b137aafcf9e6ca9770e2dd1a91ae104e2855a6fec132f65c57637940ef",
+    "target": [
+      0.47566788617302247,
+      0.5395200991162618,
+      0.5156192555146508,
+      0.11807811807733457,
+      0.07692111301110428,
+      0.08708226254518538
+    ]
+  },
+  {
+    "id": 43,
+    "pair": 21,
+    "idx": 1,
+    "dataset": "SDP",
+    "prompt": "richly detailed color pencil illustration of a portrait of a kazakh princess with her hypnotic pet shi - tzu, by artgerm and range murata rendered with 3 d effect.",
+    "seed": 1068415101483869359,
+    "donor_seed": 425289117919998825,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/053/1.png",
+    "donor_sha256": "b9383e7de44f3da6c955cc4134d2ec2ae6c00ec6a0c1a7ad9faaa1f97b79a3a1",
+    "target": [
+      0.4445621864469087,
+      0.41158056820150235,
+      0.4671188504088869,
+      0.05327967528050142,
+      0.07454006707094026,
+      0.07516017807458071
+    ]
+  },
+  {
+    "id": 44,
+    "pair": 22,
+    "idx": 0,
+    "dataset": "SDP",
+    "prompt": "happy mask salesman from zelda, full body photo,, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha and wlop!!!!!!!",
+    "seed": 742193447538249413,
+    "donor_seed": 702225061627756047,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/051/0.png",
+    "donor_sha256": "b2d9511379c679263ffb78e20c1378ff47403c954c8160c9a4b598ec20d3b942",
+    "target": [
+      0.4863059997558938,
+      0.39852022657217145,
+      0.3193735010485451,
+      0.03592585967918325,
+      0.04067504554650514,
+      0.018088288556319783
+    ]
+  },
+  {
+    "id": 45,
+    "pair": 22,
+    "idx": 1,
+    "dataset": "SDP",
+    "prompt": "happy mask salesman from zelda, full body photo,, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha and wlop!!!!!!!",
+    "seed": 380874442664221306,
+    "donor_seed": 89727622980137610,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/051/1.png",
+    "donor_sha256": "34e9943bd81079c8e68ccf955409583bcd91663acc7f5a178b3df22e6c1842f4",
+    "target": [
+      0.5327695509965298,
+      0.43847345090377327,
+      0.3585648630179676,
+      0.037675397753242405,
+      0.02832139435334901,
+      0.026310050725993375
+    ]
+  },
+  {
+    "id": 46,
+    "pair": 23,
+    "idx": 0,
+    "dataset": "SDP",
+    "prompt": ": female native american shaman, fantasy magic, celtics, ireland, intricate, sharp focus, illustration, highly detailed, digital painting, concept art, matte, jahbu art ancient, cosmos, cosmic",
+    "seed": 674353997064924847,
+    "donor_seed": 601362580648923524,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/050/0.png",
+    "donor_sha256": "cb6a0053a00cd99cb8a5fb802c6ac716a34f579c98d6b331fe39d5ca345bc6af",
+    "target": [
+      0.49809327967027095,
+      0.5287137349447191,
+      0.5383143855077499,
+      0.07047589330596687,
+      0.08172990548624373,
+      0.1022843951801917
+    ]
+  },
+  {
+    "id": 47,
+    "pair": 23,
+    "idx": 1,
+    "dataset": "SDP",
+    "prompt": ": female native american shaman, fantasy magic, celtics, ireland, intricate, sharp focus, illustration, highly detailed, digital painting, concept art, matte, jahbu art ancient, cosmos, cosmic",
+    "seed": 1073953940639362080,
+    "donor_seed": 683232587948541286,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/050/1.png",
+    "donor_sha256": "9421e371a6310d8283f1a194d377d1365be585850cd22946ca1ea935b0ee81af",
+    "target": [
+      0.3068103715486663,
+      0.22228489296128964,
+      0.18762269861581912,
+      0.05265387891814705,
+      0.025327028691987306,
+      0.021231830432617796
+    ]
+  },
+  {
+    "id": 48,
+    "pair": 24,
+    "idx": 0,
+    "dataset": "SDP",
+    "prompt": "painting of jennifer morrison,, ultra realistic, sharp details, subsurface scattering, intricate details, warm lighting, beautiful features, highly detailed, photorealistic, octane render, 8 k, unreal engine, art by artgerm and greg rutkowski and alphonse mucha",
+    "seed": 28971928585654485,
+    "donor_seed": 371451290101749174,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/039/0.png",
+    "donor_sha256": "869a9c7dca18692a7211979d673e85dad0a54762d7fecd8bd4e22504a74167f3",
+    "target": [
+      0.49103226007200196,
+      0.4121583078421996,
+      0.40884053847370827,
+      0.040985775705323156,
+      0.03643389053694042,
+      0.03602184429518992
+    ]
+  },
+  {
+    "id": 49,
+    "pair": 24,
+    "idx": 1,
+    "dataset": "SDP",
+    "prompt": "painting of jennifer morrison,, ultra realistic, sharp details, subsurface scattering, intricate details, warm lighting, beautiful features, highly detailed, photorealistic, octane render, 8 k, unreal engine, art by artgerm and greg rutkowski and alphonse mucha",
+    "seed": 46301569088589081,
+    "donor_seed": 601296763166017497,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/039/1.png",
+    "donor_sha256": "d35e331898077b5f7dc04df205f6444bc2e9d58e3c2d84e3c07cb31c121e5c83",
+    "target": [
+      0.47810902315026865,
+      0.4012567258349285,
+      0.3411350624235789,
+      0.06586234983458869,
+      0.05865802654127419,
+      0.04785990624594514
+    ]
+  },
+  {
+    "id": 50,
+    "pair": 25,
+    "idx": 0,
+    "dataset": "SDP",
+    "prompt": "anime girl with a bow and arrow, female archer, angry, warrior, realistic, fire emblem heroes archery japanese cartoon woman, artstation trending, concept art, digital painting",
+    "seed": 775462272581316564,
+    "donor_seed": 213642119529748258,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/057/0.png",
+    "donor_sha256": "0af99ec86a49851c5c9e5b6e843ff1c1ea9a46073af5bbd7aff8459598303862",
+    "target": [
+      0.5677699519139704,
+      0.4075791901234388,
+      0.3653205123603236,
+      0.09493432426289988,
+      0.06937737091685434,
+      0.0355958900650595
+    ]
+  },
+  {
+    "id": 51,
+    "pair": 25,
+    "idx": 1,
+    "dataset": "SDP",
+    "prompt": "anime girl with a bow and arrow, female archer, angry, warrior, realistic, fire emblem heroes archery japanese cartoon woman, artstation trending, concept art, digital painting",
+    "seed": 488232080617541395,
+    "donor_seed": 257362335930600285,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/057/1.png",
+    "donor_sha256": "cdd1f082b555abf4e9c6be00df3809bb13d97b1f69b6c4103339ff73aed70d03",
+    "target": [
+      0.5918643577431467,
+      0.4999824673527335,
+      0.4525509105010973,
+      0.11532863175863148,
+      0.14458229852580506,
+      0.11294863971263278
+    ]
+  },
+  {
+    "id": 52,
+    "pair": 26,
+    "idx": 0,
+    "dataset": "SDP",
+    "prompt": "fairytale, fibonacci, sweat drops, insane, intricate, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, Unreal Engine 5, 8K, art by artgerm and greg rutkowski and alphonse mucha",
+    "seed": 434023302200146225,
+    "donor_seed": 130881168434577394,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/040/0.png",
+    "donor_sha256": "2f368be067ba9a9dd8ae51beca2889b1f2ffa3038f4a04c459152a47f71cc7c1",
+    "target": [
+      0.3768651326498263,
+      0.2826805264343804,
+      0.29656600952172146,
+      0.026333294716624996,
+      0.011575559245307872,
+      0.010681916258995804
+    ]
+  },
+  {
+    "id": 53,
+    "pair": 26,
+    "idx": 1,
+    "dataset": "SDP",
+    "prompt": "fairytale, fibonacci, sweat drops, insane, intricate, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, Unreal Engine 5, 8K, art by artgerm and greg rutkowski and alphonse mucha",
+    "seed": 554268917330254962,
+    "donor_seed": 834314265273485016,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/040/1.png",
+    "donor_sha256": "d61f626164fb7ec7bf7a63b2b815f700cdeaefda890141751c219f90fbfd4786",
+    "target": [
+      0.5350131016150483,
+      0.33106716380410284,
+      0.47460309196925343,
+      0.02865860014005636,
+      0.026708434465845962,
+      0.0281620526139094
+    ]
+  },
+  {
+    "id": 54,
+    "pair": 27,
+    "idx": 0,
+    "dataset": "SDP",
+    "prompt": "3 / 4 view of a woman with fairy wings, confident pose, pixie character, video game genshin impact, flat hand drawing, elegant, sharp focus, illustration, concept art, matte, magali villeneuve, artgerm, anime, trending on artstation",
+    "seed": 1084638623109142459,
+    "donor_seed": 25584530896232022,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/031/0.png",
+    "donor_sha256": "a4a8fa47d6ea04d88430242d42518c18495fd4b6f9236d515ae836c396b419dd",
+    "target": [
+      0.502595894009608,
+      0.47226831772764805,
+      0.5108223410210483,
+      0.07906081251566455,
+      0.06631139775890374,
+      0.08036486107445356
+    ]
+  },
+  {
+    "id": 55,
+    "pair": 27,
+    "idx": 1,
+    "dataset": "SDP",
+    "prompt": "3 / 4 view of a woman with fairy wings, confident pose, pixie character, video game genshin impact, flat hand drawing, elegant, sharp focus, illustration, concept art, matte, magali villeneuve, artgerm, anime, trending on artstation",
+    "seed": 258544481180962251,
+    "donor_seed": 632348653812878981,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/031/1.png",
+    "donor_sha256": "264ec8d61ebb730f0a4c517504bb6f983d4149ff8a3106384cb71fd8f56d3f5d",
+    "target": [
+      0.6387413324089702,
+      0.5473168017814422,
+      0.5592263464834398,
+      0.01882130832055664,
+      0.030905214698926715,
+      0.019278941792956285
+    ]
+  },
+  {
+    "id": 56,
+    "pair": 28,
+    "idx": 0,
+    "dataset": "SDP",
+    "prompt": "a handsome bearded caucasian male sorcerer with brown hair, he is in a alchemist lab, casting a spell from a open book, beakers, potions, magic, neutral pose, digital art, concept art, epic composition, 4 k, super coherent, by dave melvin and greg rutkowski",
+    "seed": 212572351489521808,
+    "donor_seed": 1079847406223305517,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/054/0.png",
+    "donor_sha256": "4910278f47b5621a506d5e20c83b9267bf0114fe7092d2891bbbe8b92e22c0b7",
+    "target": [
+      0.43668803794720307,
+      0.3996925354004427,
+      0.4644766115675261,
+      0.07632237127817539,
+      0.09568388353046707,
+      0.11932654334118477
+    ]
+  },
+  {
+    "id": 57,
+    "pair": 28,
+    "idx": 1,
+    "dataset": "SDP",
+    "prompt": "a handsome bearded caucasian male sorcerer with brown hair, he is in a alchemist lab, casting a spell from a open book, beakers, potions, magic, neutral pose, digital art, concept art, epic composition, 4 k, super coherent, by dave melvin and greg rutkowski",
+    "seed": 1126728841913632297,
+    "donor_seed": 206969266237215318,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/054/1.png",
+    "donor_sha256": "33ad075e7c0a6b76fa459e827ae28f772b31e31f600b1edaa9c28cefbcabeca1",
+    "target": [
+      0.31475572773066796,
+      0.25450321272321125,
+      0.19633056042262947,
+      0.04886981297664305,
+      0.04710060918644306,
+      0.040621492320986476
+    ]
+  },
+  {
+    "id": 58,
+    "pair": 29,
+    "idx": 0,
+    "dataset": "SDP",
+    "prompt": "blurred background. close-up portrait of a goddess in crown, by Artgerm and Afarin Sajedi and greg rutkowski. octane render",
+    "seed": 378327380676492331,
+    "donor_seed": 775214325373935191,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/045/0.png",
+    "donor_sha256": "c2ff18a68e36fa32659eb5f159cddf6aef0f1adb6949ea1e9dd62ce90d59f3d2",
+    "target": [
+      0.5254297144273209,
+      0.5334806105669796,
+      0.48168985703416795,
+      0.04237638354833892,
+      0.03883724057267109,
+      0.041989306706513095
+    ]
+  },
+  {
+    "id": 59,
+    "pair": 29,
+    "idx": 1,
+    "dataset": "SDP",
+    "prompt": "blurred background. close-up portrait of a goddess in crown, by Artgerm and Afarin Sajedi and greg rutkowski. octane render",
+    "seed": 406341437560616349,
+    "donor_seed": 1130655140523536975,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/045/1.png",
+    "donor_sha256": "9d5498cd99bb7539ec4312541273e03bba97a3ded6333b158890bf9db95309e0",
+    "target": [
+      0.4895379907944353,
+      0.4077412175197584,
+      0.4674539753035036,
+      0.05175947370561249,
+      0.05496842703305649,
+      0.050697850715786225
+    ]
+  },
+  {
+    "id": 60,
+    "pair": 30,
+    "idx": 0,
+    "dataset": "SDP",
+    "prompt": "painting of hybrid spider & cat & dragon & monkey, intercrossed animal, cat has eight legs, by zdzislaw beksinski, by lewis jones, by mattias adolfsson, cold hue's, warm tone gradient background, concept art, beautiful composition, digital painting",
+    "seed": 986445626828715789,
+    "donor_seed": 372435147228791315,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/056/0.png",
+    "donor_sha256": "c680694f787c169a69ebd8b4534affc34592967e42d59797b6939266856b83d0",
+    "target": [
+      0.560888552198255,
+      0.3882852890912682,
+      0.35896272846309435,
+      0.036275165373679,
+      0.006175407189307423,
+      0.007773728931256696
+    ]
+  },
+  {
+    "id": 61,
+    "pair": 30,
+    "idx": 1,
+    "dataset": "SDP",
+    "prompt": "painting of hybrid spider & cat & dragon & monkey, intercrossed animal, cat has eight legs, by zdzislaw beksinski, by lewis jones, by mattias adolfsson, cold hue's, warm tone gradient background, concept art, beautiful composition, digital painting",
+    "seed": 143617937622072080,
+    "donor_seed": 1136619016548850858,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/056/1.png",
+    "donor_sha256": "d125f13e458f4d73c7703c1cdb350acb32f1f565e4a08c1adb7dce0b48f5276c",
+    "target": [
+      0.5538940280092844,
+      0.34706530103512007,
+      0.25798656987228086,
+      0.10484093751185604,
+      0.02600346051766504,
+      0.01285451812427271
+    ]
+  },
+  {
+    "id": 62,
+    "pair": 31,
+    "idx": 0,
+    "dataset": "SDP",
+    "prompt": "soft lustrous biotech raver gutter punk cyborg biotech, futurist, battlestar galactica, golden ratio, details, scifi, fantasy, cyberpunk, intricate, decadent, highly detailed, digital painting, octane render, artstation, concept art, smooth, sharp focus, illustration, art by artgerm, loish, wlop",
+    "seed": 555052571209230331,
+    "donor_seed": 73326290299827249,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/041/0.png",
+    "donor_sha256": "956b08684c2e3888f18a4c5b0a6ed437e3580954426d963fb31829e47c67e2f7",
+    "target": [
+      0.5027368433335818,
+      0.5496551812864516,
+      0.6434954325357906,
+      0.05722952161382091,
+      0.06491568127165652,
+      0.056648631033698923
+    ]
+  },
+  {
+    "id": 63,
+    "pair": 31,
+    "idx": 1,
+    "dataset": "SDP",
+    "prompt": "soft lustrous biotech raver gutter punk cyborg biotech, futurist, battlestar galactica, golden ratio, details, scifi, fantasy, cyberpunk, intricate, decadent, highly detailed, digital painting, octane render, artstation, concept art, smooth, sharp focus, illustration, art by artgerm, loish, wlop",
+    "seed": 140925150286175802,
+    "donor_seed": 712074452012766427,
+    "donor": "/data0/liyanlei/watermark_research/runs/color_veto_20261119/images/041/1.png",
+    "donor_sha256": "ebea88b72bad64a4dad155d23d516be096d22eb07468af3239fe7de3fb6489fb",
+    "target": [
+      0.38078554938835535,
+      0.3973235036814057,
+      0.4340567046520804,
+      0.03549456046837923,
+      0.0736508900489658,
+      0.06993574826353154
+    ]
+  }
+]

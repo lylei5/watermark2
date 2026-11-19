@@ -1,0 +1,29 @@
+[
+  {
+    "name": "mean_gn8",
+    "arm": "mean",
+    "solver": "gn",
+    "ratio": 1,
+    "steps": 8,
+    "lr": 0.035,
+    "trust": 0.35
+  },
+  {
+    "name": "joint_gn8",
+    "arm": "joint",
+    "solver": "gn",
+    "ratio": 4,
+    "steps": 8,
+    "lr": 0.035,
+    "trust": 0.35
+  },
+  {
+    "name": "joint_adam20",
+    "arm": "joint",
+    "solver": "adam",
+    "ratio": 4,
+    "steps": 20,
+    "lr": 0.035,
+    "trust": 0.35
+  }
+]
