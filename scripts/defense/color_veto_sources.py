@@ -18,50 +18,54 @@ def idle(gpu):
     return memory<16 and utilization==0 and not processes.strip()
 
 
-def schedule():
+def schedule(run=RUN, worker_file=__file__):
     import fcntl
-    lock=(RUN/'generation.lock').open('a')
+    lock=(run/'generation.lock').open('a')
     fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
-    if not (RUN/'sources.json').exists():
-        select(RUN,[ROOT/'runs/color_joint_20261119/sources.json'],'color-veto-prompt-v1','color-veto-seed-v1')
+    if not (run/'sources.json').exists():
+        assert run==RUN
+        select(run,[ROOT/'runs/color_joint_20261119/sources.json'],'color-veto-prompt-v1','color-veto-seed-v1')
     active={}
-    while not all((RUN/f'generated_{s}.json').exists() for s in range(3)) or active:
+    while not all((run/f'generated_{s}.json').exists() for s in range(3)) or active:
         for gpu,(proc,log,shard) in list(active.items()):
             code=proc.poll()
             if code is not None:
                 log.close()
                 del active[gpu]
-                if code and not (RUN/f'gpu_race_{shard}').exists():
+                if code and not (run/f'gpu_race_{shard}').exists():
                     raise RuntimeError(f'Generation failed. See generate_{shard}.log')
         busy={entry[2] for entry in active.values()}
-        pending=[s for s in range(3) if s not in busy and not (RUN/f'generated_{s}.json').exists()]
+        pending=[s for s in range(3) if s not in busy and not (run/f'generated_{s}.json').exists()]
         for gpu in (4,5,7):
             if pending and gpu not in active and idle(gpu):
                 s=pending.pop(0)
-                (RUN/f'gpu_race_{s}').unlink(missing_ok=True)
-                log=(RUN/f'generate_{s}.log').open('a')
-                proc=subprocess.Popen([sys.executable,__file__,str(s),str(gpu)],stdout=log,stderr=log)
+                (run/f'gpu_race_{s}').unlink(missing_ok=True)
+                log=(run/f'generate_{s}.log').open('a')
+                proc=subprocess.Popen([sys.executable,worker_file,str(s),str(gpu)],stdout=log,stderr=log)
                 active[gpu]=(proc,log,s)
         if active or pending:
             time.sleep(20 if active else 60)
+
+
+def run_shard(run,shard,gpu):
+    renderer.RUN=run
+    if not idle(gpu):
+        (run/f'gpu_race_{shard}').touch()
+        sys.exit(2)
+    try:
+        renderer.generate(shard,gpu)
+    except AssertionError as error:
+        # The unchanged renderer reports (index, GPU readings, processes) if
+        # occupancy changes between scheduling and its own final idle check.
+        info=error.args[0] if error.args else None
+        if isinstance(info,tuple) and len(info)==3 and info[0]==gpu:
+            (run/f'gpu_race_{shard}').touch()
+            sys.exit(2)
+        raise
 
 
 if __name__=='__main__':
     if len(sys.argv)==1:
         schedule()
     else:
-        shard,gpu=map(int,sys.argv[1:])
-        renderer.RUN=RUN
-        if not idle(gpu):
-            (RUN/f'gpu_race_{shard}').touch()
-            sys.exit(2)
-        try:
-            renderer.generate(shard,gpu)
-        except AssertionError as error:
-            # The unchanged renderer reports (index, GPU readings, processes) if
-            # occupancy changes between scheduling and its own final idle check.
-            info=error.args[0] if error.args else None
-            if isinstance(info,tuple) and len(info)==3 and info[0]==gpu:
-                (RUN/f'gpu_race_{shard}').touch()
-                sys.exit(2)
-            raise
+        run_shard(RUN,*map(int,sys.argv[1:]))

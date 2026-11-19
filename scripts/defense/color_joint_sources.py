@@ -9,7 +9,8 @@ PILOT = ROOT/'runs/color_budget_20261119'
 RUN = ROOT/'runs/color_joint_20261119'
 
 
-def select(run=RUN, extra_prior=(), order_domain='colour-joint-confirm', seed_domain='joint-confirm'):
+def select(run=RUN, extra_prior=(), order_domain='colour-joint-confirm', seed_domain='joint-confirm',
+           strata=None):
     import pyarrow.parquet as pq
     from pathlib import Path
     from transformers import CLIPTokenizer
@@ -31,21 +32,29 @@ def select(run=RUN, extra_prior=(), order_domain='colour-joint-confirm', seed_do
         coco.setdefault(str(row['image_id']),row['caption'])
     sdp = pq.read_table(ROOT/'runs/phase1_contract_20261113/sdp_eval.parquet')['Prompt'].to_pylist()
     out = []
-    for dataset,pool in [('COCO',coco),('SDP',dict((str(i),p) for i,p in enumerate(sdp)))]:
+    pools={'COCO':coco,'SDP':dict((str(i),p) for i,p in enumerate(sdp))}
+    batches=[(dataset,None,30,None) for dataset in pools] if strata is None else strata
+    for dataset,stratum,target,pattern in batches:
+        pool=pools[dataset]
         selected = 0
         for sid in sorted(pool,key=lambda k:base.digest(f'{order_domain}/{dataset}/{k}')):
             prompt = pool[sid]
+            if pattern is not None and not pattern.search(prompt):
+                continue
             tok,grams,n = index.encode(prompt)
             if (dataset,sid) in used or n>75 or not normalize(prompt) or BLOCKED.search(prompt) or index.match(prompt,tok,grams):
                 continue
             index.add(prompt,tok,grams)
             seeds=[int(base.digest(f'{seed_domain}/{dataset}/{sid}/{i}')[:15],16) for i in range(2)]
             out.append(dict(task=len(out),dataset=dataset,source_id=sid,prompt=prompt,seeds=seeds,split='test'))
+            if stratum is not None:
+                out[-1]['stratum']=stratum
+            used.add((dataset,sid))
             selected+=1
-            if selected==30:
+            if selected==target:
                 break
-        assert selected==30
-    assert len({i for s in out for i in s['seeds']})==120
+        assert selected==target,(dataset,stratum,selected,target)
+    assert len({i for s in out for i in s['seeds']})==2*len(out)
     with (run/'sources.json').open('x') as f:
         json.dump(out,f,ensure_ascii=False,indent=2)
 
