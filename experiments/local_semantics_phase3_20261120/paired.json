@@ -1,0 +1,331 @@
+{
+  "comparisons": {
+    "pilot_public_replacement/replacement_output": {
+      "A__C": {
+        "a_accept_b_reject": 4,
+        "a_reject_b_accept": 0,
+        "exact_two_sided_p": 0.125
+      },
+      "B__C": {
+        "a_accept_b_reject": 1,
+        "a_reject_b_accept": 0,
+        "exact_two_sided_p": 1.0
+      },
+      "unordered__C": {
+        "a_accept_b_reject": 0,
+        "a_reject_b_accept": 0,
+        "exact_two_sided_p": 1.0
+      },
+      "C_full__C": {
+        "a_accept_b_reject": 3,
+        "a_reject_b_accept": 0,
+        "exact_two_sided_p": 0.25
+      },
+      "C__E": {
+        "a_accept_b_reject": 0,
+        "a_reject_b_accept": 0,
+        "exact_two_sided_p": 1.0
+      },
+      "public64__E": {
+        "a_accept_b_reject": 0,
+        "a_reject_b_accept": 0,
+        "exact_two_sided_p": 1.0
+      },
+      "C_E_spearman": 0.7999999999999999,
+      "key_accept_counts": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "pilot_public_replacement/all_edits": {
+      "A__C": {
+        "a_accept_b_reject": 1,
+        "a_reject_b_accept": 1
+      },
+      "B__C": {
+        "a_accept_b_reject": 0,
+        "a_reject_b_accept": 1
+      },
+      "unordered__C": {
+        "a_accept_b_reject": 0,
+        "a_reject_b_accept": 0
+      },
+      "C_full__C": {
+        "a_accept_b_reject": 1,
+        "a_reject_b_accept": 0
+      },
+      "C__E": {
+        "a_accept_b_reject": 1,
+        "a_reject_b_accept": 1
+      },
+      "public64__E": {
+        "a_accept_b_reject": 1,
+        "a_reject_b_accept": 1
+      },
+      "C_E_spearman": 0.9909774436090225,
+      "key_accept_counts": [
+        19,
+        19,
+        19,
+        20,
+        18
+      ]
+    },
+    "test/all_edits": {
+      "A__C": {
+        "a_accept_b_reject": 14,
+        "a_reject_b_accept": 6
+      },
+      "B__C": {
+        "a_accept_b_reject": 3,
+        "a_reject_b_accept": 4
+      },
+      "unordered__C": {
+        "a_accept_b_reject": 0,
+        "a_reject_b_accept": 1
+      },
+      "C_full__C": {
+        "a_accept_b_reject": 13,
+        "a_reject_b_accept": 5
+      },
+      "C__E": {
+        "a_accept_b_reject": 4,
+        "a_reject_b_accept": 4
+      },
+      "public64__E": {
+        "a_accept_b_reject": 4,
+        "a_reject_b_accept": 4
+      },
+      "C_E_spearman": 0.9950926181141817,
+      "key_accept_counts": [
+        186,
+        182,
+        186,
+        181,
+        185
+      ]
+    },
+    "test/cross_seed": {
+      "A__C": {
+        "a_accept_b_reject": 6,
+        "a_reject_b_accept": 0
+      },
+      "B__C": {
+        "a_accept_b_reject": 16,
+        "a_reject_b_accept": 0
+      },
+      "unordered__C": {
+        "a_accept_b_reject": 0,
+        "a_reject_b_accept": 0
+      },
+      "C_full__C": {
+        "a_accept_b_reject": 4,
+        "a_reject_b_accept": 0
+      },
+      "C__E": {
+        "a_accept_b_reject": 0,
+        "a_reject_b_accept": 0
+      },
+      "public64__E": {
+        "a_accept_b_reject": 0,
+        "a_reject_b_accept": 0
+      },
+      "C_E_spearman": 0.6345215759849907,
+      "key_accept_counts": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "test/donor": {
+      "A__C": {
+        "a_accept_b_reject": 13,
+        "a_reject_b_accept": 0
+      },
+      "B__C": {
+        "a_accept_b_reject": 12,
+        "a_reject_b_accept": 0
+      },
+      "unordered__C": {
+        "a_accept_b_reject": 1,
+        "a_reject_b_accept": 0
+      },
+      "C_full__C": {
+        "a_accept_b_reject": 6,
+        "a_reject_b_accept": 0
+      },
+      "C__E": {
+        "a_accept_b_reject": 0,
+        "a_reject_b_accept": 0
+      },
+      "public64__E": {
+        "a_accept_b_reject": 0,
+        "a_reject_b_accept": 0
+      },
+      "C_E_spearman": 0.7138836772983115,
+      "key_accept_counts": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "test_public_color/color_output": {
+      "A__C": {
+        "a_accept_b_reject": 2,
+        "a_reject_b_accept": 0,
+        "exact_two_sided_p": 0.5
+      },
+      "B__C": {
+        "a_accept_b_reject": 1,
+        "a_reject_b_accept": 0,
+        "exact_two_sided_p": 1.0
+      },
+      "unordered__C": {
+        "a_accept_b_reject": 0,
+        "a_reject_b_accept": 0,
+        "exact_two_sided_p": 1.0
+      },
+      "C_full__C": {
+        "a_accept_b_reject": 0,
+        "a_reject_b_accept": 0,
+        "exact_two_sided_p": 1.0
+      },
+      "C__E": {
+        "a_accept_b_reject": 0,
+        "a_reject_b_accept": 0,
+        "exact_two_sided_p": 1.0
+      },
+      "public64__E": {
+        "a_accept_b_reject": 0,
+        "a_reject_b_accept": 0,
+        "exact_two_sided_p": 1.0
+      },
+      "C_E_spearman": 0.39999999999999997,
+      "key_accept_counts": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "test_public_color/all_edits": {
+      "A__C": {
+        "a_accept_b_reject": 3,
+        "a_reject_b_accept": 2
+      },
+      "B__C": {
+        "a_accept_b_reject": 0,
+        "a_reject_b_accept": 1
+      },
+      "unordered__C": {
+        "a_accept_b_reject": 1,
+        "a_reject_b_accept": 0
+      },
+      "C_full__C": {
+        "a_accept_b_reject": 3,
+        "a_reject_b_accept": 2
+      },
+      "C__E": {
+        "a_accept_b_reject": 0,
+        "a_reject_b_accept": 0
+      },
+      "public64__E": {
+        "a_accept_b_reject": 0,
+        "a_reject_b_accept": 0
+      },
+      "C_E_spearman": 0.993984962406015,
+      "key_accept_counts": [
+        17,
+        17,
+        18,
+        17,
+        17
+      ]
+    },
+    "test_public_replacement/replacement_output": {
+      "A__C": {
+        "a_accept_b_reject": 12,
+        "a_reject_b_accept": 0,
+        "exact_two_sided_p": 0.00048828125
+      },
+      "B__C": {
+        "a_accept_b_reject": 6,
+        "a_reject_b_accept": 1,
+        "exact_two_sided_p": 0.125
+      },
+      "unordered__C": {
+        "a_accept_b_reject": 2,
+        "a_reject_b_accept": 0,
+        "exact_two_sided_p": 0.5
+      },
+      "C_full__C": {
+        "a_accept_b_reject": 8,
+        "a_reject_b_accept": 0,
+        "exact_two_sided_p": 0.0078125
+      },
+      "C__E": {
+        "a_accept_b_reject": 0,
+        "a_reject_b_accept": 2,
+        "exact_two_sided_p": 0.5
+      },
+      "public64__E": {
+        "a_accept_b_reject": 2,
+        "a_reject_b_accept": 2,
+        "exact_two_sided_p": 1.0
+      },
+      "C_E_spearman": 0.9323529411764706,
+      "key_accept_counts": [
+        6,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    "test_public_replacement/all_edits": {
+      "A__C": {
+        "a_accept_b_reject": 3,
+        "a_reject_b_accept": 3
+      },
+      "B__C": {
+        "a_accept_b_reject": 2,
+        "a_reject_b_accept": 7
+      },
+      "unordered__C": {
+        "a_accept_b_reject": 1,
+        "a_reject_b_accept": 0
+      },
+      "C_full__C": {
+        "a_accept_b_reject": 3,
+        "a_reject_b_accept": 7
+      },
+      "C__E": {
+        "a_accept_b_reject": 1,
+        "a_reject_b_accept": 1
+      },
+      "public64__E": {
+        "a_accept_b_reject": 2,
+        "a_reject_b_accept": 5
+      },
+      "C_E_spearman": 0.9948429442100327,
+      "key_accept_counts": [
+        77,
+        75,
+        74,
+        73,
+        76
+      ]
+    }
+  },
+  "orthogonal_max_abs": 1.0132789611816406e-06,
+  "orthogonal_decision_differences": 0,
+  "pairs": 784
+}
