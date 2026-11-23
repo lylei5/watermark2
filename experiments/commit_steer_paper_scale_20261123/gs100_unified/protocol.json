@@ -1,0 +1,1026 @@
+{
+  "run_name": "gs100_unified",
+  "n_prompts": 100,
+  "preview_steps": 12,
+  "step_range": [
+    5,
+    35
+  ],
+  "step_size": 0.042,
+  "stop_loss": 0.08,
+  "threshold": 0.6950993039820756,
+  "auth_threshold": 0.7083333333333334,
+  "gs9_conditions": {
+    "random_crop_ratio": 0.6,
+    "random_drop_ratio": 0.8,
+    "brightness_factor": 6,
+    "jpeg_ratio": 25,
+    "gaussian_blur_r": 4,
+    "gaussian_std": 0.05,
+    "median_blur_k": 7,
+    "sp_prob": 0.05,
+    "resize_ratio": 0.25
+  },
+  "sources": [
+    {
+      "index": 0,
+      "dataset": "COCO",
+      "source_id": "31322",
+      "prompt": "A flock of swans swims in a bay.",
+      "image_id": 31322,
+      "caption_id": 41217,
+      "full_clip_text_tokens": 9,
+      "effective_clip_tokens_sha256": "c038198bd234ffa9a4926a11895604b59791c2c4ddf9c9cdd82cab893a83b2c7",
+      "generation_seed": 1222301758988575066
+    },
+    {
+      "index": 1,
+      "dataset": "COCO",
+      "source_id": "275727",
+      "prompt": "Yellow and grey train near platform at railway station.",
+      "image_id": 275727,
+      "caption_id": 624583,
+      "full_clip_text_tokens": 10,
+      "effective_clip_tokens_sha256": "eacf4902536311ade0a19871858ca00e5eebe2fcaa76aaf2716f8186db3f440e",
+      "generation_seed": 8876436551881035167
+    },
+    {
+      "index": 2,
+      "dataset": "COCO",
+      "source_id": "149622",
+      "prompt": "The birds are sitting next to each other on a tree branch,",
+      "image_id": 149622,
+      "caption_id": 260363,
+      "full_clip_text_tokens": 13,
+      "effective_clip_tokens_sha256": "5f9a8241a6e94da57399e72648cf477dd0a4877602a6a3c7d83a358a9c1b433e",
+      "generation_seed": 234482411707690423
+    },
+    {
+      "index": 3,
+      "dataset": "COCO",
+      "source_id": "334555",
+      "prompt": "A cow is leashed up to a green pole near the civilians. ",
+      "image_id": 334555,
+      "caption_id": 368043,
+      "full_clip_text_tokens": 14,
+      "effective_clip_tokens_sha256": "1b9fa39bd31525ecac140d719efd196c92591b5e62fcfd1acdf063b2548e803d",
+      "generation_seed": 3236909165946826197
+    },
+    {
+      "index": 4,
+      "dataset": "COCO",
+      "source_id": "246968",
+      "prompt": "A young woman standing in the kitchen pours from a large measuring cup.",
+      "image_id": 246968,
+      "caption_id": 692352,
+      "full_clip_text_tokens": 14,
+      "effective_clip_tokens_sha256": "0b07b5db7be61268e4e068732ec90902fc25652944b9808b8a432ad9a3d2164d",
+      "generation_seed": 4057498953325750057
+    },
+    {
+      "index": 5,
+      "dataset": "COCO",
+      "source_id": "293794",
+      "prompt": "Man at street market with table full of bananas.",
+      "image_id": 293794,
+      "caption_id": 52948,
+      "full_clip_text_tokens": 10,
+      "effective_clip_tokens_sha256": "46e67fcdb68850c5ec530ec223e7ac078306d69c58e9ec4501dbfc7a1509e69b",
+      "generation_seed": 8823878540975148187
+    },
+    {
+      "index": 6,
+      "dataset": "COCO",
+      "source_id": "304404",
+      "prompt": "A batter swings at the ball during a baseball game",
+      "image_id": 304404,
+      "caption_id": 65072,
+      "full_clip_text_tokens": 10,
+      "effective_clip_tokens_sha256": "376e21b2bcf633ee49c98a70b8efc4acbb0a74531c1e5cf041f589ae4b2a75ef",
+      "generation_seed": 2611100000306461297
+    },
+    {
+      "index": 7,
+      "dataset": "COCO",
+      "source_id": "460927",
+      "prompt": "A majestic bear looks out across a grass plain.",
+      "image_id": 460927,
+      "caption_id": 476895,
+      "full_clip_text_tokens": 10,
+      "effective_clip_tokens_sha256": "e35c4225c92f81bd177b099ab3e97005d643a30d2aec67126fc1dbf6f7bc5f8c",
+      "generation_seed": 2441267918549116554
+    },
+    {
+      "index": 8,
+      "dataset": "COCO",
+      "source_id": "124975",
+      "prompt": "Two zebras standing side by side in a field. ",
+      "image_id": 124975,
+      "caption_id": 411865,
+      "full_clip_text_tokens": 11,
+      "effective_clip_tokens_sha256": "79748373c57007160c177fa54fd43868fb25f4d6dd87200b41f97225024cab31",
+      "generation_seed": 2112452903134357508
+    },
+    {
+      "index": 9,
+      "dataset": "COCO",
+      "source_id": "294695",
+      "prompt": "two girls walk off the windy beach while a kite flies overhead",
+      "image_id": 294695,
+      "caption_id": 180909,
+      "full_clip_text_tokens": 12,
+      "effective_clip_tokens_sha256": "14aa3dd48cf9488b82b3a60ce6eb191b7d0dd4b045304a539d5b836609651e7d",
+      "generation_seed": 6532612714571406365
+    },
+    {
+      "index": 10,
+      "dataset": "COCO",
+      "source_id": "520531",
+      "prompt": "an image of a cat sitting on top of the desk area",
+      "image_id": 520531,
+      "caption_id": 91229,
+      "full_clip_text_tokens": 12,
+      "effective_clip_tokens_sha256": "3d0753c0761b454603dbfb5473ef52f937f826988e566f3ddcc086b2b75397d7",
+      "generation_seed": 3775446897699052656
+    },
+    {
+      "index": 11,
+      "dataset": "COCO",
+      "source_id": "97988",
+      "prompt": "Man standing under banner that reads \"Run for Rights\"",
+      "image_id": 97988,
+      "caption_id": 376461,
+      "full_clip_text_tokens": 11,
+      "effective_clip_tokens_sha256": "6da692e9d08a0f288d71f496c7d1576629afdb69632905a583371b5e30473fd4",
+      "generation_seed": 3773633065852675830
+    },
+    {
+      "index": 12,
+      "dataset": "COCO",
+      "source_id": "389566",
+      "prompt": "The encompassing of an outside town in the picture.\n",
+      "image_id": 389566,
+      "caption_id": 610865,
+      "full_clip_text_tokens": 11,
+      "effective_clip_tokens_sha256": "87f3e4acd784f61e60b72a4842a59abb286b30ed97ed778a72114c0a825dd747",
+      "generation_seed": 2088666623344280070
+    },
+    {
+      "index": 13,
+      "dataset": "COCO",
+      "source_id": "311002",
+      "prompt": "A batter prepares to hit a baseball that has just been thrown.",
+      "image_id": 311002,
+      "caption_id": 168918,
+      "full_clip_text_tokens": 13,
+      "effective_clip_tokens_sha256": "0ab36d6c38eab27ab898c23a223008e661a54989c36718d09780332afca51d41",
+      "generation_seed": 6425282765339797814
+    },
+    {
+      "index": 14,
+      "dataset": "COCO",
+      "source_id": "340930",
+      "prompt": "Closeup of a cup holding scissors and other pens and pencils.",
+      "image_id": 340930,
+      "caption_id": 399415,
+      "full_clip_text_tokens": 12,
+      "effective_clip_tokens_sha256": "c05d1d78e8d5b20a23047f95fa8e32ca102478a4df620ebd063b456045288cd7",
+      "generation_seed": 1631235007280439071
+    },
+    {
+      "index": 15,
+      "dataset": "COCO",
+      "source_id": "303893",
+      "prompt": "A beautiful little girl sitting next to a little boy sharing a meal.",
+      "image_id": 303893,
+      "caption_id": 76093,
+      "full_clip_text_tokens": 14,
+      "effective_clip_tokens_sha256": "178359fe17d8db0c04b6980dac2d4948f1e0cebbd625ed01d096d17e4050b131",
+      "generation_seed": 4916972860161879409
+    },
+    {
+      "index": 16,
+      "dataset": "COCO",
+      "source_id": "102356",
+      "prompt": "Woman on a motorcycle with a sidecar in front of scenic backdrop in a showroom.",
+      "image_id": 102356,
+      "caption_id": 634498,
+      "full_clip_text_tokens": 17,
+      "effective_clip_tokens_sha256": "f1bb482be4c5f3f39b876e6066bc08bbb3e7ed20335906582b49958514d5c16e",
+      "generation_seed": 2969998323658574620
+    },
+    {
+      "index": 17,
+      "dataset": "COCO",
+      "source_id": "445834",
+      "prompt": "Men climbing on board a bus that needs to be repaired.",
+      "image_id": 445834,
+      "caption_id": 797135,
+      "full_clip_text_tokens": 12,
+      "effective_clip_tokens_sha256": "9eeb880a12f8ef3bf68f2284de3a635a9b670bc55240a5c2415cef9ef5a77189",
+      "generation_seed": 2333820331284241661
+    },
+    {
+      "index": 18,
+      "dataset": "COCO",
+      "source_id": "511384",
+      "prompt": "A person tossing an orange frisbee on top of a green field.",
+      "image_id": 511384,
+      "caption_id": 563873,
+      "full_clip_text_tokens": 14,
+      "effective_clip_tokens_sha256": "21750acbfc18d233b739f823cc4a40899327f31b86d2ed27c672ea4b0f6b87d1",
+      "generation_seed": 182709509245285815
+    },
+    {
+      "index": 19,
+      "dataset": "COCO",
+      "source_id": "277051",
+      "prompt": "two little sparrows standing on a table by a knife",
+      "image_id": 277051,
+      "caption_id": 320119,
+      "full_clip_text_tokens": 11,
+      "effective_clip_tokens_sha256": "fe5a42050e195e7cca90b35850a586053ae69235b11e888bda9c46c56c649525",
+      "generation_seed": 4608358232452248658
+    },
+    {
+      "index": 20,
+      "dataset": "COCO",
+      "source_id": "455624",
+      "prompt": "Person driving a plated motorcycle on a track with people watching.",
+      "image_id": 455624,
+      "caption_id": 189493,
+      "full_clip_text_tokens": 12,
+      "effective_clip_tokens_sha256": "0ad070f8556bf7ae06138100b23b48f81f58a37f68c5c55a741f68d4e43a54cb",
+      "generation_seed": 5818759250543422691
+    },
+    {
+      "index": 21,
+      "dataset": "COCO",
+      "source_id": "226903",
+      "prompt": "A table with many different objects, including a plate of sandwiches. ",
+      "image_id": 226903,
+      "caption_id": 436215,
+      "full_clip_text_tokens": 13,
+      "effective_clip_tokens_sha256": "e1e2546ea9ce3093f8d96dc0114bd7ed441c095cbb9dfd7713748079a161d18e",
+      "generation_seed": 2373494529991552274
+    },
+    {
+      "index": 22,
+      "dataset": "COCO",
+      "source_id": "535306",
+      "prompt": "A man is doing skateboard tricks on a ramp",
+      "image_id": 535306,
+      "caption_id": 597855,
+      "full_clip_text_tokens": 9,
+      "effective_clip_tokens_sha256": "83716fdf3a93e100d86d2f8c09d2168ac6951359d1912200c47750fccb2c615c",
+      "generation_seed": 1468658458746198457
+    },
+    {
+      "index": 23,
+      "dataset": "COCO",
+      "source_id": "164602",
+      "prompt": "A man and a woman standing in front of a mirror.",
+      "image_id": 164602,
+      "caption_id": 480605,
+      "full_clip_text_tokens": 12,
+      "effective_clip_tokens_sha256": "f8cb2b808c77cd6e3e3f552f45727a97364474e8e7998bda8daa2d9c73e74b34",
+      "generation_seed": 8947502619972289845
+    },
+    {
+      "index": 24,
+      "dataset": "COCO",
+      "source_id": "185802",
+      "prompt": "A banana in a little chair near a window.",
+      "image_id": 185802,
+      "caption_id": 280307,
+      "full_clip_text_tokens": 10,
+      "effective_clip_tokens_sha256": "e9c0b70bbe9becc759f6c2482dc7ac703a4f123e51713cbb5ad31a39d1a3dded",
+      "generation_seed": 9000384560388813349
+    },
+    {
+      "index": 25,
+      "dataset": "COCO",
+      "source_id": "253819",
+      "prompt": "A man that is jumping in the air with a skateboard.",
+      "image_id": 253819,
+      "caption_id": 626514,
+      "full_clip_text_tokens": 12,
+      "effective_clip_tokens_sha256": "b5a4b5b7cbe44ceb68b684b0dcdd7e2abb99e632a0fffdd80fc1a8080742919c",
+      "generation_seed": 2277948103744847686
+    },
+    {
+      "index": 26,
+      "dataset": "COCO",
+      "source_id": "498709",
+      "prompt": "A motorcycle parked on the side of a road near a city.",
+      "image_id": 498709,
+      "caption_id": 585589,
+      "full_clip_text_tokens": 13,
+      "effective_clip_tokens_sha256": "8848be8e4dd6e1a1fbb1dcdf3d1c66a6339d0c66180f41668b7069119f9cad49",
+      "generation_seed": 3893926612712970989
+    },
+    {
+      "index": 27,
+      "dataset": "COCO",
+      "source_id": "141597",
+      "prompt": "A large cargo van parked in front of a smart car.",
+      "image_id": 141597,
+      "caption_id": 769341,
+      "full_clip_text_tokens": 12,
+      "effective_clip_tokens_sha256": "13c9b708ece092cc429c498eabf79097f2e829f78c01e4484c7a9a1a175e59fe",
+      "generation_seed": 4673284624565492338
+    },
+    {
+      "index": 28,
+      "dataset": "COCO",
+      "source_id": "395801",
+      "prompt": "A street lined with cones with people up and down the sidewalk.",
+      "image_id": 395801,
+      "caption_id": 667373,
+      "full_clip_text_tokens": 13,
+      "effective_clip_tokens_sha256": "024e0ab88b74d215dd1ee2c24a64efd6040439d253805dd014dc0db6e11f7d0c",
+      "generation_seed": 3915097096645031152
+    },
+    {
+      "index": 29,
+      "dataset": "COCO",
+      "source_id": "213816",
+      "prompt": "a close up of a public transit train with its doors open",
+      "image_id": 213816,
+      "caption_id": 162431,
+      "full_clip_text_tokens": 12,
+      "effective_clip_tokens_sha256": "6a204014e9b99b3390d3d463795052a316ba2d03c5ecac437b228a60849caa7e",
+      "generation_seed": 8965225030277266032
+    },
+    {
+      "index": 30,
+      "dataset": "COCO",
+      "source_id": "104603",
+      "prompt": "A bear walks through tall grass near several trees.",
+      "image_id": 104603,
+      "caption_id": 674017,
+      "full_clip_text_tokens": 10,
+      "effective_clip_tokens_sha256": "2c7e5828af767eccf310e2b7a47fb0cda4bd3b0434ef50dcf65388099981af15",
+      "generation_seed": 2875564310825772729
+    },
+    {
+      "index": 31,
+      "dataset": "COCO",
+      "source_id": "195165",
+      "prompt": "A bathroom with a lot of items near the sink and counter.",
+      "image_id": 195165,
+      "caption_id": 585081,
+      "full_clip_text_tokens": 13,
+      "effective_clip_tokens_sha256": "b0bf29e0ad2ccaa9b56dfe8eb006203b13079e51a7f4b81d9b18884abfcc67b3",
+      "generation_seed": 2385087596627748816
+    },
+    {
+      "index": 32,
+      "dataset": "COCO",
+      "source_id": "70739",
+      "prompt": "A couple of women sitting next to each other.",
+      "image_id": 70739,
+      "caption_id": 510205,
+      "full_clip_text_tokens": 10,
+      "effective_clip_tokens_sha256": "dbbba74241e504517e2b1dd934f81a5d1512e87ed6db0b635eb7a2ef2e883284",
+      "generation_seed": 7513805912704281683
+    },
+    {
+      "index": 33,
+      "dataset": "COCO",
+      "source_id": "403385",
+      "prompt": "A bathroom that has a broken wall in the shower.",
+      "image_id": 403385,
+      "caption_id": 501985,
+      "full_clip_text_tokens": 11,
+      "effective_clip_tokens_sha256": "fe515a43c7ef4f24f97e4791b5ebd792eafc83887c160db27feee986c11b51b6",
+      "generation_seed": 2612628368687193336
+    },
+    {
+      "index": 34,
+      "dataset": "COCO",
+      "source_id": "335450",
+      "prompt": "Two brown ponies in grassy field next to a fence.",
+      "image_id": 335450,
+      "caption_id": 343006,
+      "full_clip_text_tokens": 11,
+      "effective_clip_tokens_sha256": "f0f505e62c35f2f65430448079b9add6d40728aeddd9ad178f3505a6ca07a361",
+      "generation_seed": 4867064601379678884
+    },
+    {
+      "index": 35,
+      "dataset": "COCO",
+      "source_id": "523194",
+      "prompt": "A fire hydrant on the side of a road.",
+      "image_id": 523194,
+      "caption_id": 325096,
+      "full_clip_text_tokens": 11,
+      "effective_clip_tokens_sha256": "dc617991841f8f3d76708c94b281f39248d267e4fe02d1576e91a26720494889",
+      "generation_seed": 5697452956719280837
+    },
+    {
+      "index": 36,
+      "dataset": "COCO",
+      "source_id": "101780",
+      "prompt": "A giraffe eating some leaves from a tree at the zoo",
+      "image_id": 101780,
+      "caption_id": 151104,
+      "full_clip_text_tokens": 11,
+      "effective_clip_tokens_sha256": "6dc3f4deaecdc7618f252f233d08820d38eae3c6180ebda5ae60e7d575e9284f",
+      "generation_seed": 8565503073659076904
+    },
+    {
+      "index": 37,
+      "dataset": "COCO",
+      "source_id": "428562",
+      "prompt": "a small sheep is standing in a pin",
+      "image_id": 428562,
+      "caption_id": 753504,
+      "full_clip_text_tokens": 8,
+      "effective_clip_tokens_sha256": "37d03fe87a05eae1604727b8a75612ee6403878b26c2934faf2c9ea4ebe79ac4",
+      "generation_seed": 2236122657851043175
+    },
+    {
+      "index": 38,
+      "dataset": "COCO",
+      "source_id": "491683",
+      "prompt": "There is only one horse in the grassy field. ",
+      "image_id": 491683,
+      "caption_id": 406067,
+      "full_clip_text_tokens": 10,
+      "effective_clip_tokens_sha256": "baae9e3dd301a07d11811124eee62df1310c3b7f5c7d71a9bd8db96602c1771b",
+      "generation_seed": 2251014034527921995
+    },
+    {
+      "index": 39,
+      "dataset": "COCO",
+      "source_id": "255912",
+      "prompt": "Two plates full of food sitting on a table next to a bottle.",
+      "image_id": 255912,
+      "caption_id": 304776,
+      "full_clip_text_tokens": 14,
+      "effective_clip_tokens_sha256": "4920eab9ac56ed4899f28fb5ead76715a027b1938255932c242705bd7f1f8cdd",
+      "generation_seed": 5128355192210157731
+    },
+    {
+      "index": 40,
+      "dataset": "COCO",
+      "source_id": "61333",
+      "prompt": "A orange and white cat sleeping on top of a blanket on a bed.",
+      "image_id": 61333,
+      "caption_id": 87107,
+      "full_clip_text_tokens": 15,
+      "effective_clip_tokens_sha256": "fcb2d8831db6f0aaf0a8d2646de9489a9110bdf39a2c64ed0676665b4a55312c",
+      "generation_seed": 6161098942004472858
+    },
+    {
+      "index": 41,
+      "dataset": "COCO",
+      "source_id": "33854",
+      "prompt": "A bus, old cabin cars, and motor cycles with people ",
+      "image_id": 33854,
+      "caption_id": 233394,
+      "full_clip_text_tokens": 12,
+      "effective_clip_tokens_sha256": "b2775dd6e7a93af8ae40742749c418d2e21330034e3f337be416a9e10c0d8c34",
+      "generation_seed": 7263283027773190828
+    },
+    {
+      "index": 42,
+      "dataset": "COCO",
+      "source_id": "376206",
+      "prompt": "A man is surfing in the ocean on a large wave.",
+      "image_id": 376206,
+      "caption_id": 611097,
+      "full_clip_text_tokens": 12,
+      "effective_clip_tokens_sha256": "c45dc7b5d860bd415e6285694a450cfff631fb32746ed1c4ee546d8434da626a",
+      "generation_seed": 9084291832068222399
+    },
+    {
+      "index": 43,
+      "dataset": "COCO",
+      "source_id": "188296",
+      "prompt": "A group of foot ball players standing on top of a football field.",
+      "image_id": 188296,
+      "caption_id": 531765,
+      "full_clip_text_tokens": 14,
+      "effective_clip_tokens_sha256": "da0f6fbc50dc2c8119b95d3182acb6a105b781d55f61849091076989578bb9c3",
+      "generation_seed": 1233344840295851634
+    },
+    {
+      "index": 44,
+      "dataset": "COCO",
+      "source_id": "176778",
+      "prompt": "A cat standing next to a white toilet near a bath tub.",
+      "image_id": 176778,
+      "caption_id": 549938,
+      "full_clip_text_tokens": 13,
+      "effective_clip_tokens_sha256": "d814d55f8c9ab2ead16078435f9fb8e4b9672f1f935440d929b45eb482dc8ae9",
+      "generation_seed": 2359887455437770536
+    },
+    {
+      "index": 45,
+      "dataset": "COCO",
+      "source_id": "357238",
+      "prompt": "A kite being flown in the middle of a beach.",
+      "image_id": 357238,
+      "caption_id": 680464,
+      "full_clip_text_tokens": 11,
+      "effective_clip_tokens_sha256": "0c52ac2a9d64b51447544425bd21d6dfc11ae948383b6d66c61951200615f6a1",
+      "generation_seed": 5587489775972731052
+    },
+    {
+      "index": 46,
+      "dataset": "COCO",
+      "source_id": "346638",
+      "prompt": "A bottle of beer sits next to the keyboard and mouse at the computer table.",
+      "image_id": 346638,
+      "caption_id": 178101,
+      "full_clip_text_tokens": 17,
+      "effective_clip_tokens_sha256": "c83353526dfa014899a9df5812b7e06c60a091358d1ff4bf7b92f29832aecf20",
+      "generation_seed": 1305771204109970235
+    },
+    {
+      "index": 47,
+      "dataset": "COCO",
+      "source_id": "20059",
+      "prompt": "Two zebras graze on grass inside of an enclosure. ",
+      "image_id": 20059,
+      "caption_id": 178108,
+      "full_clip_text_tokens": 12,
+      "effective_clip_tokens_sha256": "8c7c0461515f4f7039edbc19f87139f179c912656932d03df416cbfbe04074af",
+      "generation_seed": 8609496339301172713
+    },
+    {
+      "index": 48,
+      "dataset": "COCO",
+      "source_id": "400803",
+      "prompt": "A man standing on top of an orange boat on a river.",
+      "image_id": 400803,
+      "caption_id": 520987,
+      "full_clip_text_tokens": 13,
+      "effective_clip_tokens_sha256": "5e741694808a01fe32fe90aa0a0d866cab47207f447983d42ed50fbc5762b4dc",
+      "generation_seed": 1767977260502894070
+    },
+    {
+      "index": 49,
+      "dataset": "COCO",
+      "source_id": "338624",
+      "prompt": "a man is walking his dog through the city",
+      "image_id": 338624,
+      "caption_id": 746277,
+      "full_clip_text_tokens": 9,
+      "effective_clip_tokens_sha256": "74b01b80632f4e5d35c8ff330b30322ad6d71cfa03dd50263451ef1d772211a5",
+      "generation_seed": 193232930910338792
+    },
+    {
+      "index": 250,
+      "dataset": "SDP",
+      "source_id": "4346",
+      "prompt": "two fallen Angels with big wings fighting each other, painting, expressionism, amazing composition, vaporwave, David Hockney, minimalistic graffiti masterpiece, 3d abstract render overlayed, psychedelic therapy, trending on ArtStation, ink splatters, pen lines, incredible detail, creative, unique,",
+      "full_clip_text_tokens": 61,
+      "effective_clip_tokens_sha256": "b2d417abeb1f75e2de29606f24642eeb591778c038670dfa5b3b78383f6585f4",
+      "generation_seed": 3509234223615197490
+    },
+    {
+      "index": 251,
+      "dataset": "SDP",
+      "source_id": "5410",
+      "prompt": "steampunk city, sunrise, landscape, intricate, detailed, volumetric lighting, scenery, digital painting, highly detailed, artstation, sharp focus, illustration, concept art, ruan jia, steve mccurry n 9",
+      "full_clip_text_tokens": 43,
+      "effective_clip_tokens_sha256": "3f39b08f85737aa68de1bc4b115bd94494e4752fa1f6f11a9b63706f2381030c",
+      "generation_seed": 2049156284187161265
+    },
+    {
+      "index": 252,
+      "dataset": "SDP",
+      "source_id": "7388",
+      "prompt": "portrait of a man in orange t - shirt wrestling with a girl in green dress in front of dhl van, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "full_clip_text_tokens": 55,
+      "effective_clip_tokens_sha256": "d70d2e9aad420953ea983a622d2586c2de26710d32374b870b76f28aad190559",
+      "generation_seed": 6747013736907654956
+    },
+    {
+      "index": 253,
+      "dataset": "SDP",
+      "source_id": "2494",
+      "prompt": "acotar style, wow! fanart, elvish queen with swords and fireballs, throne of glass fantasy portrait of a magician casting spells, d & d, high fantasy, detailed, digital art, artstation, smooth, sharp focus, art by artgerm, greg rutkowski, alphonse mucha",
+      "full_clip_text_tokens": 62,
+      "effective_clip_tokens_sha256": "e54e86578bc48ab49350441920c720435cb6c889b777fe3584f967f943096aed",
+      "generation_seed": 7016624218428506461
+    },
+    {
+      "index": 254,
+      "dataset": "SDP",
+      "source_id": "4703",
+      "prompt": "Darth Vader portrait by Stanley Artgerm Lau, greg rutkowski, thomas kindkade, alphonse mucha, loish, norman Rockwell",
+      "full_clip_text_tokens": 27,
+      "effective_clip_tokens_sha256": "f3c83152c0d954d54069c46a7cc57aff2d26d803dcdeb8fbc6a24975239896a5",
+      "generation_seed": 2957941533807147504
+    },
+    {
+      "index": 255,
+      "dataset": "SDP",
+      "source_id": "6286",
+      "prompt": "a beautiful painting of a cyberpunk skull by james jean and pascal blanche and julian calle and nekro. in style of colorful comic noir illustration, symmetry, sci fi, hyper detailed. octane render. trending on artstation",
+      "full_clip_text_tokens": 44,
+      "effective_clip_tokens_sha256": "f0355af6542e411e41051648d80c8a34533081433cd2ff16502fe04abbcf889f",
+      "generation_seed": 8284804324407310147
+    },
+    {
+      "index": 256,
+      "dataset": "SDP",
+      "source_id": "182",
+      "prompt": "amazing lifelike award winning pencil illustration of ricki lake trending on art station artgerm Greg rutkowski cinematic",
+      "full_clip_text_tokens": 23,
+      "effective_clip_tokens_sha256": "5b4ad2ced830db21c94972abd848579b3f5e3972350b5b88e0795aca7f6dd3c0",
+      "generation_seed": 5369099632990558251
+    },
+    {
+      "index": 257,
+      "dataset": "SDP",
+      "source_id": "8046",
+      "prompt": "a film still from elysium by ian mcque, an anti - crime unti descends upon an alley on an industrial planet city, vibrant, 5 0 mm lens, video game character and environment design, behance hd, studio, evening, dramatic lighting, misty and raining, cinematic, global illumination, trending on artstation, bloom",
+      "full_clip_text_tokens": 68,
+      "effective_clip_tokens_sha256": "4d8b8a493eaed9101c412631961261cf800e894dc33701d5c8a37bde2c38252a",
+      "generation_seed": 8850383883660283924
+    },
+    {
+      "index": 258,
+      "dataset": "SDP",
+      "source_id": "6264",
+      "prompt": "hyperrealistic portrait of a cyberpunk man in cyberspace, by Guy Denning, Johannes Itten, Russ Mills, hacking effects, determined, detailed lines, color blocking!, acrylic on canvas, insane detail, intricate, front view, symmetrical, octane, concept art, abstract, artistic, 8k, cinematic, trending on artstation",
+      "full_clip_text_tokens": 67,
+      "effective_clip_tokens_sha256": "48fc1835a5a707276ecc0a62147d828670b2b4475c6c5e0e8cf4b3a1d574b80d",
+      "generation_seed": 2962388817850880837
+    },
+    {
+      "index": 259,
+      "dataset": "SDP",
+      "source_id": "6144",
+      "prompt": "minecraft girlfriend, full shot, ambient lighting, detailed face, by makoto shinkai, stanley artgerm lau, wlop, rossdraws",
+      "full_clip_text_tokens": 29,
+      "effective_clip_tokens_sha256": "c70cbc03eee3efa769eb5df8a1afd96f65fd8db573bcadbd86a2d85dc40570d1",
+      "generation_seed": 685036077585095642
+    },
+    {
+      "index": 260,
+      "dataset": "SDP",
+      "source_id": "2549",
+      "prompt": "still figurine of hatsune miku wearing an elegant summer blouse, statue, personification, dynamic pose, amazing details, detailed product photo, official art, featured on amiami, featured on pixiv, 8 5 mm, f. 1 4, beautiful composition",
+      "full_clip_text_tokens": 51,
+      "effective_clip_tokens_sha256": "875032e4b6eb0c58ab9749aa1ffcf93bd2222e2251d7ba475d39791d429cd22a",
+      "generation_seed": 7118778973820132643
+    },
+    {
+      "index": 261,
+      "dataset": "SDP",
+      "source_id": "6066",
+      "prompt": "elegant batman gown profile picture by greg rutkowski, dynamic pose, intricate, futuristic, fantasy, elegant, by stanley artgerm lau, greg rutkowski, thomas kindkade, alphonse mucha, loish, mugler, norman rockwell,",
+      "full_clip_text_tokens": 49,
+      "effective_clip_tokens_sha256": "a231b02e3421a3716fba1fa9276f6b416141a1037dff3e7785fe44440f88ae54",
+      "generation_seed": 6297192207728409549
+    },
+    {
+      "index": 262,
+      "dataset": "SDP",
+      "source_id": "4075",
+      "prompt": "girl tennis ball monster with weapons and uniform, serious, finely detailed, made by wlop, studio ghibli, artgerm, full body portrait, illustration, grass, sunny, sky, anime, side view, perfect anime face, detailed face, zoomed out, smooth,",
+      "full_clip_text_tokens": 56,
+      "effective_clip_tokens_sha256": "1e3de267297c7792f2f72bff2a51bda05f83f105ae8ed7a94cf6bd2f8a7739ed",
+      "generation_seed": 3690097837394846341
+    },
+    {
+      "index": 263,
+      "dataset": "SDP",
+      "source_id": "6477",
+      "prompt": "a statue of an extremely beautiful female riot policewoman made of black marble, haute couture tactical clothing, tactical ballgown, military dress, military skirt, the statue is not wearing a helmet, no helmet, 4 k, 8 k, hd, render, denoise, sharp focus, clear focus, beautiful lighting, trending on artstation, tactical gear, chest rig, straps, nylon, buckles, the statue is wearing a complex tactical chest rig, acronym, techwear, tactical clothing, sharp focus, award winning photograph, beautiful, clear, sharp, detailed, hyperreal, realistic",
+      "full_clip_text_tokens": 120,
+      "effective_clip_tokens_sha256": "a95cc8bbc27e584b2f1b0b393e11de7d1f9296384dec6d6fa46f5601c08e6883",
+      "generation_seed": 1990634392702637131
+    },
+    {
+      "index": 264,
+      "dataset": "SDP",
+      "source_id": "1333",
+      "prompt": "car engine car parts concept art, cards, comic page, realistic fortnite, ui cards",
+      "full_clip_text_tokens": 17,
+      "effective_clip_tokens_sha256": "cf8c8049e25827124c7b25a309da4140d38a4229a08ef79b65abe74ecd6c0b40",
+      "generation_seed": 780653119635302728
+    },
+    {
+      "index": 265,
+      "dataset": "SDP",
+      "source_id": "6670",
+      "prompt": "four arms futuristic distopic detroy cyberpunk hellraiser tattoo cyborg  clean design by apple , character sheet, Moebius, Greg Rutkowski, Zabrocki, Karlkka, Jayison Devadas, Phuoc Quan, trending on Artstation, 8K, tsutomu nihei, muira, mucha , zenith view, pincushion lens effect.",
+      "full_clip_text_tokens": 71,
+      "effective_clip_tokens_sha256": "49395a7ee5da254ca92959a173b7965daf8a30576708b0aac34a1ed29aa13ab3",
+      "generation_seed": 6432119838034896139
+    },
+    {
+      "index": 266,
+      "dataset": "SDP",
+      "source_id": "8120",
+      "prompt": "ultra realistic, concept art, intricate details, eerie, highly detailed, photorealistic, octane render, 8 k, unreal engine. art by artgerm and greg rutkowski and magali villeneuve and alphonse mucha",
+      "full_clip_text_tokens": 44,
+      "effective_clip_tokens_sha256": "b6034757b7a7ce1fecd0f0169e00ecdd2d7a787c62a27d318c2a68a1a8a48c9e",
+      "generation_seed": 7531465168326015011
+    },
+    {
+      "index": 267,
+      "dataset": "SDP",
+      "source_id": "4111",
+      "prompt": "closeup portrait photo of a woman playing violin, intricate, elegant, highly detailed, centered, digital painting, artstation, concept art, smooth, sharp focus, illustration, artgerm, tomasz alen kopera, peter mohrbacher, donato giancola, joseph christian leyendecker, wlop, boris vallejo",
+      "full_clip_text_tokens": 67,
+      "effective_clip_tokens_sha256": "9186f2bde5125b33b43b7d3767b74714fe039648ae45fc4dd99356ca46246c96",
+      "generation_seed": 9049644645319872146
+    },
+    {
+      "index": 268,
+      "dataset": "SDP",
+      "source_id": "683",
+      "prompt": "a girl eating a slice of toast, full shot, atmospheric lighting, detailed face, one piece style, by makoto shinkai, stanley artgerm lau, wlop, rossdraws",
+      "full_clip_text_tokens": 38,
+      "effective_clip_tokens_sha256": "d97f22d437a6a0c9125d6e65672410cf2a07c553b6200cb35fb66801c1f813be",
+      "generation_seed": 3769817338046179649
+    },
+    {
+      "index": 269,
+      "dataset": "SDP",
+      "source_id": "5851",
+      "prompt": "emma watson portrait of ottoman sultan gog, female, clear face, symetrical, masculine, full body, muscular, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, matte, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "full_clip_text_tokens": 61,
+      "effective_clip_tokens_sha256": "ee8f36ad86a9711bc5099bea32ca2831030f171046a015adcf8c958ae822ffc6",
+      "generation_seed": 4574807571845959441
+    },
+    {
+      "index": 270,
+      "dataset": "SDP",
+      "source_id": "2210",
+      "prompt": "a mirrored rolls royce in the center of a cornfield, hyper realistic, ambient lighting, concept art, intricate, hyper detailed, smooth, dynamic volumetric lighting, octane, raytrace, cinematic, high quality, high resolution, 4 k",
+      "full_clip_text_tokens": 49,
+      "effective_clip_tokens_sha256": "b36d85418783fc80ab26e6a8d3e780186ccf4401460aa60a68d4cf9d903aef69",
+      "generation_seed": 1740621445557610789
+    },
+    {
+      "index": 271,
+      "dataset": "SDP",
+      "source_id": "4217",
+      "prompt": "very detailed portrait of a very handsome american man in his late twenties, oval shaped face, very short beard, ( ( deep hazel eyes ) ), strong round!!! rosey nose, nice color scheme, by wlop and tyler oulton, detailed eyes, reading a book. starry background, trending, on artstation.",
+      "full_clip_text_tokens": 67,
+      "effective_clip_tokens_sha256": "fe5da59114e182c602674b67f2d2f64627aed393ee0e453ea0a498c3fd56b479",
+      "generation_seed": 8195422956789022172
+    },
+    {
+      "index": 272,
+      "dataset": "SDP",
+      "source_id": "1238",
+      "prompt": "a _ fantasy _ style _ portrait _ painting _ of chubby white barbarian male very short hair short stubble, brown hair, rpg dnd oil _ painting _ unreal _ 5 _ daz. _ rpg _ portrait _ extremely _ detailed _ artgerm _ greg _ rutkowski _ greg",
+      "full_clip_text_tokens": 56,
+      "effective_clip_tokens_sha256": "c982da84c9e0dfaa20c1faade62581474cf4813527bc955fa3fe31724e700ff7",
+      "generation_seed": 3923924479149086305
+    },
+    {
+      "index": 273,
+      "dataset": "SDP",
+      "source_id": "3544",
+      "prompt": ", ultra detailed close up facial portrait of rick grimes, extremely detailed digital painting, in the style of fenghua zhong and ruan jia and jeremy lipking and peter mohrbacher, mystical colors, rim light, beautiful lighting, 8 k, stunning scene, raytracing, octane, trending on artstation",
+      "full_clip_text_tokens": 63,
+      "effective_clip_tokens_sha256": "6d507b0b9291b40b7d3bcdc6901f368e23dabdd124df9016c223c6dec9e62916",
+      "generation_seed": 5285293808742457830
+    },
+    {
+      "index": 274,
+      "dataset": "SDP",
+      "source_id": "2854",
+      "prompt": "tenten from naruto, two hair buns, medium shot, visible face, detailed, perfectly shaded, perfectly shaded face, atmospheric lighting, realistic, by makoto shinkai, stanley artgerm lau, wlop, rossdraws",
+      "full_clip_text_tokens": 46,
+      "effective_clip_tokens_sha256": "e58fdbe54fc3a4864cd759774485e29c77211f2479dc9540d70456e77b29540d",
+      "generation_seed": 8750854124949007922
+    },
+    {
+      "index": 275,
+      "dataset": "SDP",
+      "source_id": "2939",
+      "prompt": "building by richard rogers, tron gem infrared myst water fisheye vice city futuristic thermal vision alien liberty city, archdaily, wallpaper, highly detailed, trending on artstation.",
+      "full_clip_text_tokens": 35,
+      "effective_clip_tokens_sha256": "bf1a48e782155905a4991fba36c37973cb5f819125b04420bb463d3983417368",
+      "generation_seed": 5264602875405505949
+    },
+    {
+      "index": 276,
+      "dataset": "SDP",
+      "source_id": "2325",
+      "prompt": "portrait of Zero Suit Samus Aran as Overwatch character, medium shot, asymmetrical, profile picture, Organic Painting, sunny day, Matte Painting, bold shapes, hard edges, street art, trending on artstation, by Greg Manchess and Huang Guangjian and Loish and Gil Elvgren and Sachin Teng",
+      "full_clip_text_tokens": 62,
+      "effective_clip_tokens_sha256": "bbfa0039b3bb93add412f021ddbc1c96bdcec386e862e66b0f5db62a3632ddef",
+      "generation_seed": 8889286601490668357
+    },
+    {
+      "index": 277,
+      "dataset": "SDP",
+      "source_id": "992",
+      "prompt": "elephant with monarch butterfly ears, fantasy digital art by jason felix, trending artstation",
+      "full_clip_text_tokens": 16,
+      "effective_clip_tokens_sha256": "d3f4dd0ad2882709e15fad4a77b9574dfc0c16094f9638319b952315702a2891",
+      "generation_seed": 3331202683188382561
+    },
+    {
+      "index": 278,
+      "dataset": "SDP",
+      "source_id": "6319",
+      "prompt": "Purple hair relistic Portrait of a woman with bright colored flying hair, all shades of purple. Hair coloring, long hair, blue eyes, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "full_clip_text_tokens": 66,
+      "effective_clip_tokens_sha256": "1a079b2605c457fff7c9b8b5a93ef71338e7656c37aefbc8d7d409e2f30f44b4",
+      "generation_seed": 7398111577983816073
+    },
+    {
+      "index": 279,
+      "dataset": "SDP",
+      "source_id": "7372",
+      "prompt": "aurora, girl with super long hair, hair becoming bright stars, intricate, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, unreal engine 5, 8 k, art by artgerm and greg rutkowski and alphonse mucha",
+      "full_clip_text_tokens": 54,
+      "effective_clip_tokens_sha256": "e852ce08860b9d2139606d192267e5cf5fe3629a0f0f6c0411298ddc2ce1d78e",
+      "generation_seed": 7569099593266245673
+    },
+    {
+      "index": 280,
+      "dataset": "SDP",
+      "source_id": "4912",
+      "prompt": "portrait of a berber tiefling woman with black hair in a desert, strong, fierce, elegant, fantasy, highly detailed, digital painting, artstation, concept art, character art, art by greg rutkowski and tyler jacobson and alphonse mucha",
+      "full_clip_text_tokens": 50,
+      "effective_clip_tokens_sha256": "8f77ed96297b4ef90aee3960f08d04686842ad7d6b1b5780a8d932917c50490f",
+      "generation_seed": 2644330925682507614
+    },
+    {
+      "index": 281,
+      "dataset": "SDP",
+      "source_id": "6021",
+      "prompt": "oil painting with brushstrokes, closeup view of a battle damaged space ship adrift in space, sci-fi classic, intricate, elegant, digital painting, trending on artstation, concept art, sharp focus, paint splatters, illustration by greg rutkowski, peter elson, 4k.",
+      "full_clip_text_tokens": 58,
+      "effective_clip_tokens_sha256": "1cd0c95a2bfd9af3383f718864187b3f945e04bf1e35a5c08f2f547fa053847f",
+      "generation_seed": 3681874022688833899
+    },
+    {
+      "index": 282,
+      "dataset": "SDP",
+      "source_id": "8118",
+      "prompt": "a Photorealistic dramatic hyperrealistic bright blue eyes, African American elegant girl, black hair, white veil,by WLOP,Artgerm,Greg Rutkowski,Alphonse Mucha, Beautiful dynamic dramatic bright sunset lighting,shadows,cinematic atmosphere,Artstation,concept design art,Octane render,8k",
+      "full_clip_text_tokens": 61,
+      "effective_clip_tokens_sha256": "850abbb6b89103932946392ee6279902fa454b7adba807fce11ca54f2fe4c003",
+      "generation_seed": 6335812041705678420
+    },
+    {
+      "index": 283,
+      "dataset": "SDP",
+      "source_id": "1041",
+      "prompt": "gloomy ruined server room in datacenter painting concept art of robodog colossus, sharp focus, emitting diodes, smoke, artillery, pacing, computers, racks, motherboard, by pascal blanche rutkowski artstation cinematic, dramatic, detailed matte painting, 4 k resolution",
+      "full_clip_text_tokens": 54,
+      "effective_clip_tokens_sha256": "b81c02c8b88e306aeba69d6b7b57aff0dffc89f4686d6cb026484a14e5e8e152",
+      "generation_seed": 1536835261206844020
+    },
+    {
+      "index": 284,
+      "dataset": "SDP",
+      "source_id": "7109",
+      "prompt": "by hokusai, samurai man vagabond, the samurai is wrapped in chains, detailed, editorial illustration, matte print, concept art, ink style, sketch, digital 2 d",
+      "full_clip_text_tokens": 37,
+      "effective_clip_tokens_sha256": "55d370aad65caa01d5babda7688f09c30164a8859783c74e13c0b0ad5a6c14a7",
+      "generation_seed": 3706640578098973455
+    },
+    {
+      "index": 285,
+      "dataset": "SDP",
+      "source_id": "1326",
+      "prompt": "anthropomorphic triangle brain in edgy darkiron terror bird, intricate, elegant, highly detailed animal monster, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm, dwayne barlowe, trending on artstation and greg rutkowski and alphonse mucha, 8 k",
+      "full_clip_text_tokens": 64,
+      "effective_clip_tokens_sha256": "00ffa6595f0b81be583278ebcd4a5329420b879179d38b1e5da6992da820003b",
+      "generation_seed": 8321867132991560100
+    },
+    {
+      "index": 286,
+      "dataset": "SDP",
+      "source_id": "6022",
+      "prompt": "portrait of headless horseman holding a lantern, halloween night, charlie bowater, artgerm, ilya kuvshinov, krenz cushart, ruan jia, realism, ultra detailed, 8 k resolution",
+      "full_clip_text_tokens": 43,
+      "effective_clip_tokens_sha256": "8c75be2338dd8a1a73ea3cf380dbdec561723c2c5ce4e0a19449d59cb4bc8188",
+      "generation_seed": 3480317427947733608
+    },
+    {
+      "index": 287,
+      "dataset": "SDP",
+      "source_id": "1726",
+      "prompt": "a robot entering a crowded plane, Anime. Soft lighting, 8K, octane render. By Makoto Shinkai, Stanley Artgerm Lau, WLOP, Rossdraws, James Jean, Andrei Riabovitchev, Marc Simonetti, krenz cushart, Sakimichan, D&D trending on ArtStation, digital art.",
+      "full_clip_text_tokens": 72,
+      "effective_clip_tokens_sha256": "bb406e19e2039b13351bc5266c34c86aa030fd40daa4edb666f7b06bfaca6aa8",
+      "generation_seed": 1346976208593392147
+    },
+    {
+      "index": 288,
+      "dataset": "SDP",
+      "source_id": "2910",
+      "prompt": "symmetry!! product render abstract mathematical, glowing lights!! intricate elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration",
+      "full_clip_text_tokens": 33,
+      "effective_clip_tokens_sha256": "994c71da5a06f5252f6477b91ff2a36d07421b1703a78c5f0dd4dfc43d6da1b6",
+      "generation_seed": 1737205386238817894
+    },
+    {
+      "index": 289,
+      "dataset": "SDP",
+      "source_id": "1025",
+      "prompt": "boris johnson as a inflatable doll, big eyes, grin, portrait by greg hildebrandt, studio lighting, muted colors, by terry richardson, handmade, by beeple, ultrarelistic, extreme detail, reflections, trending on artstation, 8 k",
+      "full_clip_text_tokens": 51,
+      "effective_clip_tokens_sha256": "859c3106fe950c2bbd23c19f571f416b7d7b3eb7a9947bf567368d348d73eed8",
+      "generation_seed": 5228637181962444910
+    },
+    {
+      "index": 290,
+      "dataset": "SDP",
+      "source_id": "4148",
+      "prompt": "photo of a cute alien woman wearing ornate plastic armor in the style of roger dean and alberto vargas and stefan kostic, realistic, sharp focus, 8 k high definition, insanely detailed, intricate, elegant, art by greg rutkowski and artgerm, extreme blur coral reef background",
+      "full_clip_text_tokens": 56,
+      "effective_clip_tokens_sha256": "4bea80d377f8339dcb0c17c6a104b9b73253575a42cf1831ad31cd957929c47a",
+      "generation_seed": 8092437404270424220
+    },
+    {
+      "index": 291,
+      "dataset": "SDP",
+      "source_id": "4300",
+      "prompt": "portrait of a middle - aged writer with a beard, he is smoking a cigarette, style of greg rutkowski",
+      "full_clip_text_tokens": 22,
+      "effective_clip_tokens_sha256": "7cdee461a5cdfa2dd7c9138d3ecf254d4d6076f44598fbe536ab3b766a34049b",
+      "generation_seed": 2780797380807152952
+    },
+    {
+      "index": 292,
+      "dataset": "SDP",
+      "source_id": "5568",
+      "prompt": "illustration of a yemeni boy, d & d, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "full_clip_text_tokens": 48,
+      "effective_clip_tokens_sha256": "9e7597c1e5dc6408adbec4c8b1f807fb43ec1aff11f487fed71882449a7ad0a0",
+      "generation_seed": 5453049348408878745
+    },
+    {
+      "index": 293,
+      "dataset": "SDP",
+      "source_id": "2532",
+      "prompt": "full body Princess Rosalina with a scifi futuristic space suit by Ilya Kuvshinov concept art, Mobile Suit Gundam Mech suit, symmetrical face Glycerine skin hyper realistic neon Bioluminescent Cleopatra, trending on artstation",
+      "full_clip_text_tokens": 46,
+      "effective_clip_tokens_sha256": "aef9440d0804f74217272852eb26eb4c6522316b03898fb6aa2142edd813ca16",
+      "generation_seed": 622704953907578757
+    },
+    {
+      "index": 294,
+      "dataset": "SDP",
+      "source_id": "4674",
+      "prompt": "a black and white photo of donald trump playing the role of clint eastwood, squinting at high noon, in the style of a clint eastwood movie, the good, the bad and the ugly, abraham lincoln, clint eastwood, steven seagal, vibe, bud spencer, donald trump, glory days, justice, american flag, patriotism, apple pie, black and white, artgerm, trending on artstation",
+      "full_clip_text_tokens": 82,
+      "effective_clip_tokens_sha256": "5d0e3af936a74fa47a2dde65cc33780c872f3f84c7436e1584070e911f521346",
+      "generation_seed": 8075826172401327031
+    },
+    {
+      "index": 295,
+      "dataset": "SDP",
+      "source_id": "7810",
+      "prompt": "hyperrealistic mixed media high resolution image of Danny DeVito screaming at a bowl of noodles, stunning 3d render inspired art by Istv\u00e1n S\u00e1ndorfi and Greg Rutkowski and Unreal Engine, perfect symmetry, dim volumetric lighting, 8k octane beautifully detailed render, post-processing, extremely hyper-detailed, intricate, epic composition, highly detailed attributes, highly detailed atmosphere, full body shot, cinematic lighting, masterpiece, trending on artstation, very very detailed, masterpiece, stunning, flawless structure, lifelike texture, perfection,",
+      "full_clip_text_tokens": 109,
+      "effective_clip_tokens_sha256": "49d1e9eb7ad12fc1c5f964428186b54c49c6aa5f63c7ce3842e47cf38483fd84",
+      "generation_seed": 7579602471287468937
+    },
+    {
+      "index": 296,
+      "dataset": "SDP",
+      "source_id": "5500",
+      "prompt": "techno magic robot surrounded by techy glowing glitch magic, interesting composition, cassette - futurism, d & d, sketchy lines and brushstrokes, no blur, 4 k resolution, ultra detailed, style of greg rutkowski, zac retz, kawase hasui, beeple, eddie mendoza, alphonse mucha,",
+      "full_clip_text_tokens": 64,
+      "effective_clip_tokens_sha256": "a7ec2aa41cab42a028e23dffebfc143a5a80e1f1ce916107670627d345b6cbd0",
+      "generation_seed": 6706262902929794301
+    },
+    {
+      "index": 297,
+      "dataset": "SDP",
+      "source_id": "1736",
+      "prompt": "Adele as a fantasy magic woman portrait, sci-fi, amber eyes, face, long hair, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "full_clip_text_tokens": 58,
+      "effective_clip_tokens_sha256": "43287249bcf6cf3e9bd90d58439ee80eded80559cdd9875f17795718d4107cbd",
+      "generation_seed": 9082715621188946798
+    },
+    {
+      "index": 298,
+      "dataset": "SDP",
+      "source_id": "2913",
+      "prompt": "phil noto, peter mohrbacher, thomas kinkade, artgerm, catwoman dc comics, symmetrical eyes, city rooftop",
+      "full_clip_text_tokens": 27,
+      "effective_clip_tokens_sha256": "93011168366db4f627e50dbfae467ffe3417d1e258db17e740aba4319cc2090e",
+      "generation_seed": 8939772511784229799
+    },
+    {
+      "index": 299,
+      "dataset": "SDP",
+      "source_id": "4657",
+      "prompt": "A futuristic Yeezy shoe in the middle of a garden, vintage camera, dreamy, atmospheric, golden hour, cinematic lighting, 8K concept art, melancholy, detailed",
+      "full_clip_text_tokens": 32,
+      "effective_clip_tokens_sha256": "f725eaa71b3bbab42ed8594f4f8fc4d644532a88db21d81e90f2fcf85c2288e3",
+      "generation_seed": 1331079688590183504
+    }
+  ]
+}

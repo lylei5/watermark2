@@ -1,0 +1,221 @@
+{
+  "elapsed_seconds": 783.2442494839997,
+  "gpu": 2,
+  "uuid": "GPU-3d3813cb-3429-0174-212f-fa9c7fe5e99a",
+  "threshold": 0.6950993039820756,
+  "n_unseen_prompts": 16,
+  "same_prompt_other_seed_far": "1/16",
+  "cross_prompt_far": "3/240",
+  "arms": {
+    "gs_unguided": {
+      "preview_seconds_mean": 0.43571864125010507,
+      "total_gen_seconds_mean": 2.2281464712500565,
+      "lpips_mean": 0.0,
+      "clip_mean": 0.2647622087970376,
+      "clean_ba": 1.0,
+      "clean_ber": 0.0,
+      "clean_joint": 0,
+      "gs9_auth_pass": 142,
+      "gs9_feat_pass": 0,
+      "gs9_joint_pass": 0,
+      "gs9_ber": 0.035698784722222224,
+      "by_cond": {
+        "clean": {
+          "n": 16,
+          "auth_pass": 16,
+          "feat_pass": 0,
+          "joint_pass": 0,
+          "full_ba": 1.0,
+          "p_ber": 0.0,
+          "d_blind": 0.9120420897943549
+        },
+        "random_crop_ratio": {
+          "n": 16,
+          "auth_pass": 16,
+          "feat_pass": 0,
+          "joint_pass": 0,
+          "full_ba": 0.978271484375,
+          "p_ber": 0.0234375,
+          "d_blind": 0.9761273050812516
+        },
+        "random_drop_ratio": {
+          "n": 16,
+          "auth_pass": 16,
+          "feat_pass": 0,
+          "joint_pass": 0,
+          "full_ba": 0.9736328125,
+          "p_ber": 0.0302734375,
+          "d_blind": 0.9980598398715227
+        },
+        "brightness_factor": {
+          "n": 16,
+          "auth_pass": 14,
+          "feat_pass": 0,
+          "joint_pass": 0,
+          "full_ba": 0.912353515625,
+          "p_ber": 0.0927734375,
+          "d_blind": 0.9407661600152577
+        },
+        "jpeg_ratio": {
+          "n": 16,
+          "auth_pass": 16,
+          "feat_pass": 0,
+          "joint_pass": 0,
+          "full_ba": 0.987060546875,
+          "p_ber": 0.013671875,
+          "d_blind": 0.907839867631022
+        },
+        "gaussian_blur_r": {
+          "n": 16,
+          "auth_pass": 16,
+          "feat_pass": 0,
+          "joint_pass": 0,
+          "full_ba": 0.97802734375,
+          "p_ber": 0.0283203125,
+          "d_blind": 0.9035708096464533
+        },
+        "gaussian_std": {
+          "n": 16,
+          "auth_pass": 16,
+          "feat_pass": 0,
+          "joint_pass": 0,
+          "full_ba": 0.962646484375,
+          "p_ber": 0.0380859375,
+          "d_blind": 0.9087880441405567
+        },
+        "median_blur_k": {
+          "n": 16,
+          "auth_pass": 16,
+          "feat_pass": 0,
+          "joint_pass": 0,
+          "full_ba": 0.999267578125,
+          "p_ber": 0.001953125,
+          "d_blind": 0.9048990991314276
+        },
+        "sp_prob": {
+          "n": 16,
+          "auth_pass": 16,
+          "feat_pass": 0,
+          "joint_pass": 0,
+          "full_ba": 0.91748046875,
+          "p_ber": 0.0908203125,
+          "d_blind": 0.9331907042095737
+        },
+        "resize_ratio": {
+          "n": 16,
+          "auth_pass": 16,
+          "feat_pass": 0,
+          "joint_pass": 0,
+          "full_ba": 0.99853515625,
+          "p_ber": 0.001953125,
+          "d_blind": 0.9086480707246141
+        }
+      }
+    },
+    "commit_steer_preview8": {
+      "preview_seconds_mean": 0.43571864125010507,
+      "total_gen_seconds_mean": 7.120122370062745,
+      "lpips_mean": 0.09383004019036889,
+      "clip_mean": 0.26145409420132637,
+      "clean_ba": 1.0,
+      "clean_ber": 0.0,
+      "clean_joint": 14,
+      "gs9_auth_pass": 142,
+      "gs9_feat_pass": 96,
+      "gs9_joint_pass": 96,
+      "gs9_ber": 0.029513888888888888,
+      "by_cond": {
+        "clean": {
+          "n": 16,
+          "auth_pass": 16,
+          "feat_pass": 14,
+          "joint_pass": 14,
+          "full_ba": 1.0,
+          "p_ber": 0.0,
+          "d_blind": 0.4343314803431303
+        },
+        "random_crop_ratio": {
+          "n": 16,
+          "auth_pass": 16,
+          "feat_pass": 5,
+          "joint_pass": 5,
+          "full_ba": 0.97900390625,
+          "p_ber": 0.0244140625,
+          "d_blind": 0.7712932777607356
+        },
+        "random_drop_ratio": {
+          "n": 16,
+          "auth_pass": 16,
+          "feat_pass": 2,
+          "joint_pass": 2,
+          "full_ba": 0.975830078125,
+          "p_ber": 0.0283203125,
+          "d_blind": 0.8433315137934358
+        },
+        "brightness_factor": {
+          "n": 16,
+          "auth_pass": 14,
+          "feat_pass": 9,
+          "joint_pass": 9,
+          "full_ba": 0.9228515625,
+          "p_ber": 0.0654296875,
+          "d_blind": 0.6526434797377855
+        },
+        "jpeg_ratio": {
+          "n": 16,
+          "auth_pass": 16,
+          "feat_pass": 15,
+          "joint_pass": 15,
+          "full_ba": 0.985107421875,
+          "p_ber": 0.0185546875,
+          "d_blind": 0.4565507946033013
+        },
+        "gaussian_blur_r": {
+          "n": 16,
+          "auth_pass": 16,
+          "feat_pass": 14,
+          "joint_pass": 14,
+          "full_ba": 0.979248046875,
+          "p_ber": 0.02734375,
+          "d_blind": 0.47985580757046287
+        },
+        "gaussian_std": {
+          "n": 16,
+          "auth_pass": 16,
+          "feat_pass": 11,
+          "joint_pass": 11,
+          "full_ba": 0.97021484375,
+          "p_ber": 0.02734375,
+          "d_blind": 0.6251220989891813
+        },
+        "median_blur_k": {
+          "n": 16,
+          "auth_pass": 16,
+          "feat_pass": 14,
+          "joint_pass": 14,
+          "full_ba": 1.0,
+          "p_ber": 0.0,
+          "d_blind": 0.44457937430257505
+        },
+        "sp_prob": {
+          "n": 16,
+          "auth_pass": 16,
+          "feat_pass": 12,
+          "joint_pass": 12,
+          "full_ba": 0.927001953125,
+          "p_ber": 0.0712890625,
+          "d_blind": 0.5848484059911001
+        },
+        "resize_ratio": {
+          "n": 16,
+          "auth_pass": 16,
+          "feat_pass": 14,
+          "joint_pass": 14,
+          "full_ba": 0.99755859375,
+          "p_ber": 0.0029296875,
+          "d_blind": 0.43479988812576154
+        }
+      }
+    }
+  }
+}

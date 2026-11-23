@@ -1,0 +1,38 @@
+{
+  "run_name": "payload_binding_stage0_20261122",
+  "scope": "CPU oracle screen of <=64-bit differentiable payload-embeddable descriptors across WAVES 16-edit holdout/confirmation, published Imprint & Reprompt+ attacks, external color-transfer/object-replacement benchmarks, and Reinhard invariance diagnostics.",
+  "methods": [
+    "rgb_mean_24b",
+    "rgb_mean_var_48b",
+    "chroma_ratio_48b",
+    "spatial_luma_48b",
+    "spatial_luma_chroma_64b",
+    "spatial_opponent_64b"
+  ],
+  "bit_budgets": {
+    "rgb_mean_24b": 24,
+    "rgb_mean_var_48b": 48,
+    "chroma_ratio_48b": 48,
+    "spatial_luma_48b": 48,
+    "spatial_luma_chroma_64b": 64,
+    "spatial_opponent_64b": 64
+  },
+  "calibration_source": "color_budget_20261119 calibration split (40 prompts, 1280 edited queries)",
+  "test_source": "color_budget_20261119 test split (60 prompts, 1920 edited queries)",
+  "confirm_source": "color_joint_20261119 confirmation split (60 prompts, 1920 edited queries)",
+  "target_legitimate_tpr": 0.95,
+  "families": [
+    "compression",
+    "resizedcrop",
+    "rotation",
+    "brightness",
+    "contrast",
+    "blurring",
+    "noise",
+    "erasing"
+  ],
+  "strengths": [
+    0.4,
+    0.8
+  ]
+}

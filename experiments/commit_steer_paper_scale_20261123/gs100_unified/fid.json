@@ -1,0 +1,16 @@
+{
+  "reference": "COCO test2017 deterministic 256-image pool3 (identical to rgb_moments_phase1_20261120)",
+  "unguided_native_gs": {
+    "vs_real_mixed_100": 214.95217518801226,
+    "vs_real_coco_50": 232.22486612113119,
+    "vs_real_sdp_50": 287.3578685982519
+  },
+  "guided_commit_steer": {
+    "vs_real_mixed_100": 216.1400769308433,
+    "vs_real_coco_50": 227.68736862299755,
+    "vs_real_sdp_50": 293.7668471960506,
+    "vs_paired_unguided_100": 55.753414009910784
+  },
+  "delta_vs_real_mixed_100": 1.1879017428310306,
+  "delta_vs_real_coco_50": -4.537497498133632
+}

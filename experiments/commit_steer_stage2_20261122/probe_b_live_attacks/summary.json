@@ -1,0 +1,202 @@
+{
+  "elapsed_seconds": 7983.285447794999,
+  "gpu": 3,
+  "uuid": "GPU-e602f6b2-50a3-72ee-ae1b-a0ae80eca5da",
+  "threshold": 0.6950993039820756,
+  "imprint_summary": {
+    "step_50": {
+      "n": 4,
+      "native_gs_fooled": 4,
+      "commit_steer_fooled": 0,
+      "mean_auth_ba": 1.0,
+      "mean_d_blind": 0.895797755075515,
+      "mean_psnr": 19.80747128864693
+    },
+    "step_100": {
+      "n": 4,
+      "native_gs_fooled": 4,
+      "commit_steer_fooled": 0,
+      "mean_auth_ba": 1.0,
+      "mean_d_blind": 0.885325388742686,
+      "mean_psnr": 18.867229682742508
+    },
+    "step_150": {
+      "n": 4,
+      "native_gs_fooled": 4,
+      "commit_steer_fooled": 0,
+      "mean_auth_ba": 1.0,
+      "mean_d_blind": 0.885263225697992,
+      "mean_psnr": 18.3396150366284
+    }
+  },
+  "imprint_cases": [
+    {
+      "task": 0,
+      "cover": "000_cover.png",
+      "seconds": 1877.5021354790006,
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.6417232751846313,
+          "psnr_vs_cover": 20.526030543547122,
+          "lpips_vs_cover": 0.23275722563266754,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.7844915982515681,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_100": {
+          "loss": 0.342329740524292,
+          "psnr_vs_cover": 19.375489735218714,
+          "lpips_vs_cover": 0.29025542736053467,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.753910643764766,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_150": {
+          "loss": 0.21322715282440186,
+          "psnr_vs_cover": 18.68827354845005,
+          "lpips_vs_cover": 0.3465026319026947,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.7598506703981704,
+          "feat_ok": false,
+          "joint_accept": false
+        }
+      }
+    },
+    {
+      "task": 1,
+      "cover": "001_cover.png",
+      "seconds": 1865.6080061790017,
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.5914548635482788,
+          "psnr_vs_cover": 18.88223169828128,
+          "lpips_vs_cover": 0.17841437458992004,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.8617625857880503,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_100": {
+          "loss": 0.34570634365081787,
+          "psnr_vs_cover": 17.953009821199032,
+          "lpips_vs_cover": 0.22546133399009705,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.8576206248427504,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_150": {
+          "loss": 0.23273488879203796,
+          "psnr_vs_cover": 17.40638549206259,
+          "lpips_vs_cover": 0.2583219110965729,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.8486754787150987,
+          "feat_ok": false,
+          "joint_accept": false
+        }
+      }
+    },
+    {
+      "task": 2,
+      "cover": "002_cover.png",
+      "seconds": 1887.7969889769993,
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.5441528558731079,
+          "psnr_vs_cover": 21.55218182509904,
+          "lpips_vs_cover": 0.13107356429100037,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.9049585217841688,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_100": {
+          "loss": 0.28166472911834717,
+          "psnr_vs_cover": 20.968637337893938,
+          "lpips_vs_cover": 0.15545222163200378,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.9122873952171962,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_150": {
+          "loss": 0.16694441437721252,
+          "psnr_vs_cover": 20.712690962528765,
+          "lpips_vs_cover": 0.17529374361038208,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.928972801361809,
+          "feat_ok": false,
+          "joint_accept": false
+        }
+      }
+    },
+    {
+      "task": 3,
+      "cover": "003_cover.png",
+      "seconds": 1866.429678771001,
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.6582510471343994,
+          "psnr_vs_cover": 18.26944108766028,
+          "lpips_vs_cover": 0.2075285166501999,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 1.0319783144782724,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_100": {
+          "loss": 0.3755123019218445,
+          "psnr_vs_cover": 17.171781836658347,
+          "lpips_vs_cover": 0.2608412504196167,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 1.017482891146031,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_150": {
+          "loss": 0.23955637216567993,
+          "psnr_vs_cover": 16.551110143472187,
+          "lpips_vs_cover": 0.301741361618042,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 1.0035539523168893,
+          "feat_ok": false,
+          "joint_accept": false
+        }
+      }
+    }
+  ],
+  "reprompt_plus_summary": {
+    "sd21": {
+      "n_candidates": 54,
+      "n_sources": 6,
+      "native_gs_cand": 54,
+      "native_gs_src": 6,
+      "commit_steer_cand": 0,
+      "commit_steer_src": 0,
+      "mean_d_blind": 0.965359125164125
+    },
+    "sd15": {
+      "n_candidates": 54,
+      "n_sources": 6,
+      "native_gs_cand": 54,
+      "native_gs_src": 6,
+      "commit_steer_cand": 2,
+      "commit_steer_src": 2,
+      "mean_d_blind": 0.9716908373413831
+    }
+  }
+}

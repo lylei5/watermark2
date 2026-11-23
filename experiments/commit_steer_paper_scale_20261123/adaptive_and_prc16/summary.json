@@ -1,0 +1,115 @@
+{
+  "elapsed_seconds": 595.8951226650024,
+  "gpu": 5,
+  "uuid": "GPU-e6f35928-0155-f121-e707-1eaf3c14965c",
+  "adaptive_stress_test": [
+    {
+      "eps_255": 4,
+      "mode": "public_P64_known",
+      "n": 4,
+      "clean_fooled": 4,
+      "post_jpeg25_fooled": 4,
+      "mean_d_clean": 1.8495667984674835e-05,
+      "mean_d_jpg25": 0.2637639945526594,
+      "mean_psnr": 37.72226276426576,
+      "mean_lpips": 0.03854125086218119
+    },
+    {
+      "eps_255": 4,
+      "mode": "secret_keyed_P64_unknown",
+      "n": 4,
+      "clean_fooled": 4,
+      "post_jpeg25_fooled": 1,
+      "mean_d_clean": 0.31976649242404886,
+      "mean_d_jpg25": 0.8230659087470242,
+      "mean_psnr": 37.05190249633807,
+      "mean_lpips": 0.039479747880250216
+    },
+    {
+      "eps_255": 8,
+      "mode": "public_P64_known",
+      "n": 4,
+      "clean_fooled": 4,
+      "post_jpeg25_fooled": 4,
+      "mean_d_clean": 4.256775108152366e-06,
+      "mean_d_jpg25": 0.08863163546405398,
+      "mean_psnr": 32.24583235513426,
+      "mean_lpips": 0.12225287221372128
+    },
+    {
+      "eps_255": 8,
+      "mode": "secret_keyed_P64_unknown",
+      "n": 4,
+      "clean_fooled": 4,
+      "post_jpeg25_fooled": 1,
+      "mean_d_clean": 0.19643078097251754,
+      "mean_d_jpg25": 0.7169924294327323,
+      "mean_psnr": 31.719234929393558,
+      "mean_lpips": 0.12091542780399323
+    },
+    {
+      "eps_255": 16,
+      "mode": "public_P64_known",
+      "n": 4,
+      "clean_fooled": 4,
+      "post_jpeg25_fooled": 4,
+      "mean_d_clean": 3.5886343975055635e-06,
+      "mean_d_jpg25": 0.027099257098311985,
+      "mean_psnr": 26.76239261317764,
+      "mean_lpips": 0.277348630130291
+    },
+    {
+      "eps_255": 16,
+      "mode": "secret_keyed_P64_unknown",
+      "n": 4,
+      "clean_fooled": 4,
+      "post_jpeg25_fooled": 4,
+      "mean_d_clean": 0.1874983945863367,
+      "mean_d_jpg25": 0.4429011159877149,
+      "mean_psnr": 26.61879898067295,
+      "mean_lpips": 0.264061838388443
+    },
+    {
+      "eps_255": 32,
+      "mode": "public_P64_known",
+      "n": 4,
+      "clean_fooled": 4,
+      "post_jpeg25_fooled": 4,
+      "mean_d_clean": 1.8390183495753387e-06,
+      "mean_d_jpg25": 0.018541542948220052,
+      "mean_psnr": 21.1907428560243,
+      "mean_lpips": 0.46449219435453415
+    },
+    {
+      "eps_255": 32,
+      "mode": "secret_keyed_P64_unknown",
+      "n": 4,
+      "clean_fooled": 4,
+      "post_jpeg25_fooled": 4,
+      "mean_d_clean": 0.18763580378740774,
+      "mean_d_jpg25": 0.332762339247554,
+      "mean_psnr": 21.378446059888866,
+      "mean_lpips": 0.45156823843717575
+    }
+  ],
+  "prc16_unified": {
+    "n_prompts": 16,
+    "sec_total_mean": 7.354681646999552,
+    "lpips_mean": 0.11126619065180421,
+    "clip_base_mean": 0.2801673077046871,
+    "clip_guid_mean": 0.2810611370950937,
+    "clean_detect": 16,
+    "clean_decode": 16,
+    "clean_joint": 15,
+    "edited_n": 64,
+    "edited_detect": 32,
+    "edited_decode": 23,
+    "edited_joint": 22,
+    "live_reprompt": {
+      "n": 8,
+      "native_detect_fooled": 8,
+      "native_decode_fooled": 8,
+      "commit_steer_fooled": 1
+    }
+  }
+}

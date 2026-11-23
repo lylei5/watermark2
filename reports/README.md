@@ -2,6 +2,10 @@
 
 运行状态见[机器状态](../project_state.json)。本页保存历史实验的实现范围、分母、工作点与逐样本证据。2026-11-18 的[语义读回研究记录](semantic_readback_20261118/receipt.json)列明已完成的评分文件和中止位置。旧统一基准的[部分产物清单](unified_null_stop_20261116/report.md)及[当时项目快照](https://github.com/lylei5/watermark2/blob/ac09574711f9ea2b056b5782e683d51e5eb2f87e/project_state.json)可用于回查。
 
+## 前向承诺与中步流形引导（Commit-then-Steer 无库内容绑定）
+
+[Commit-then-Steer Stage 0–3 完整实验报告](commit_steer_20261123/report.md)完成了纯 RGB/直方图/通道比例证伪（Stage 0）、中步 Tweedie 流形引导与窗口消融（Stage 1 & 3E）、官方统一集 100 条未见 prompt 的原生 256-bit GS 盲联合验证（Clean `99/100`、载荷 BER `0.00%`、9 项 GS 失真 `694/900 = 77.1%`、7 项常规失真 `86.1%`、离线 COCO-50 FID `-4.54`）、2,000 张真实 COCO 自然图经验 Null FPR（默认 `0/2,000`，经验 1% auth 切点下由 `15/1,000` 压至 `0/1,000`）、全预算 Live 151 步 Imprint（原生 `4/4` vs 本文 `0/4`）与 108 候选 Reprompt+（SD2.1 `0/54`、SD1.5 `2/54`）、跨载体原生 512-bit PRC 16 条统一 prompt（Clean `15/16`、失真可解码中 `22/23`、Live Reprompt `1/8` vs `8/8`）、多维度 64-bit 融合（`32b SSCD + 32b CLIP` Stage 0 Reprompt+ `1/180`、端到端 Live Reprompt `0/8`）及 80 步白盒自适应 PGD 压力测试（全部独立复核 `mismatches = 0`）。
+
 ## 生成图的颜色指纹
 
 [按登记原图色度丰富程度加权](color_richness_20261120/report.md)在 60 条随机提示词和 40 条定向提示词上测试原乘积与加权规则。近灰组自身合法通过对齐到 95% 时，误收从 577/928 降至 424/928；全局门限下另见近灰强模糊通过率下降。

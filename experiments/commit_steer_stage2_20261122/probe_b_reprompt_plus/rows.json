@@ -1,0 +1,1104 @@
+{
+  "sd21": {
+    "n_candidates": 54,
+    "n_sources": 6,
+    "native_gs_cand": 54,
+    "native_gs_src": 6,
+    "commit_steer_cand": 0,
+    "commit_steer_src": 0,
+    "mean_d_blind": 0.965359125164125,
+    "rows": [
+      {
+        "task": 0,
+        "prompt_idx": 0,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.1231155845673173,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 0,
+        "prompt_idx": 0,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.163780300967342,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 0,
+        "prompt_idx": 0,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.0404564727625945,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 0,
+        "prompt_idx": 1,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.942006125240234,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 0,
+        "prompt_idx": 1,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.1733205089330223,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 0,
+        "prompt_idx": 1,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.0588517220552167,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 0,
+        "prompt_idx": 2,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.1066583741096174,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 0,
+        "prompt_idx": 2,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.8712322950125581,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 0,
+        "prompt_idx": 2,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.8700879173739442,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 1,
+        "prompt_idx": 0,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.9974615688511391,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 1,
+        "prompt_idx": 0,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.9750599580823966,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 1,
+        "prompt_idx": 0,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.0513610336580435,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 1,
+        "prompt_idx": 1,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.7105967395021802,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 1,
+        "prompt_idx": 1,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.9658088884210525,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 1,
+        "prompt_idx": 1,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.7827533589147551,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 1,
+        "prompt_idx": 2,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.0459626130232318,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 1,
+        "prompt_idx": 2,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.870928787175384,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 1,
+        "prompt_idx": 2,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.7932584049832753,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 2,
+        "prompt_idx": 0,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.8799123842850022,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 2,
+        "prompt_idx": 0,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.8743798588059979,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 2,
+        "prompt_idx": 0,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.9956759148850274,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 2,
+        "prompt_idx": 1,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.9593904174733802,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 2,
+        "prompt_idx": 1,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.8374311560974617,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 2,
+        "prompt_idx": 1,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.9262909737646833,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 2,
+        "prompt_idx": 2,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.9717246826893751,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 2,
+        "prompt_idx": 2,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.7176288515922294,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 2,
+        "prompt_idx": 2,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.809854987624715,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 3,
+        "prompt_idx": 0,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.960252188429414,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 3,
+        "prompt_idx": 0,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.0297038027160001,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 3,
+        "prompt_idx": 0,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.9973560221706046,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 3,
+        "prompt_idx": 1,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.083236506802774,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 3,
+        "prompt_idx": 1,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.0075545259649459,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 3,
+        "prompt_idx": 1,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.9923394433748047,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 3,
+        "prompt_idx": 2,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.9295916491800604,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 3,
+        "prompt_idx": 2,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.925579193182563,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 3,
+        "prompt_idx": 2,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.9871750013775259,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 4,
+        "prompt_idx": 0,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.0804932861827583,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 4,
+        "prompt_idx": 0,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.9825630638669377,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 4,
+        "prompt_idx": 0,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.9463113186531266,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 4,
+        "prompt_idx": 1,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.0737412574733765,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 4,
+        "prompt_idx": 1,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.9373777443751857,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 4,
+        "prompt_idx": 1,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.9068112265520777,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 4,
+        "prompt_idx": 2,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.0404983703201136,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 4,
+        "prompt_idx": 2,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.0345259406408094,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 4,
+        "prompt_idx": 2,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.0794602433720815,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 5,
+        "prompt_idx": 0,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.7293549436527275,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 5,
+        "prompt_idx": 0,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.867690088659997,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 5,
+        "prompt_idx": 0,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.8304874201104302,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 5,
+        "prompt_idx": 1,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.2065804067096424,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 5,
+        "prompt_idx": 1,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.9353017709822495,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 5,
+        "prompt_idx": 1,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.0373047985976338,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 5,
+        "prompt_idx": 2,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.104200064789609,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 5,
+        "prompt_idx": 2,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.931506506149986,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 5,
+        "prompt_idx": 2,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.9774060937241381,
+        "feat_ok": false,
+        "joint_accept": false
+      }
+    ]
+  },
+  "sd15": {
+    "n_candidates": 54,
+    "n_sources": 6,
+    "native_gs_cand": 54,
+    "native_gs_src": 6,
+    "commit_steer_cand": 2,
+    "commit_steer_src": 2,
+    "mean_d_blind": 0.9716908373413831,
+    "rows": [
+      {
+        "task": 0,
+        "prompt_idx": 0,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.8515907837301478,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 0,
+        "prompt_idx": 0,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.8470872571799085,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 0,
+        "prompt_idx": 0,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.9060495120077486,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 0,
+        "prompt_idx": 1,
+        "resample_idx": 0,
+        "auth_ba": 0.9947916666666666,
+        "auth_ok": true,
+        "d_blind": 1.1670958672562377,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 0,
+        "prompt_idx": 1,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.0291104827174344,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 0,
+        "prompt_idx": 1,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.106090224226151,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 0,
+        "prompt_idx": 2,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.805108292573007,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 0,
+        "prompt_idx": 2,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.0246687113194217,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 0,
+        "prompt_idx": 2,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.643835505648886,
+        "feat_ok": true,
+        "joint_accept": true
+      },
+      {
+        "task": 1,
+        "prompt_idx": 0,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.9647924564892352,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 1,
+        "prompt_idx": 0,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.1005421473262391,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 1,
+        "prompt_idx": 0,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.0182970682863155,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 1,
+        "prompt_idx": 1,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.8594062045807057,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 1,
+        "prompt_idx": 1,
+        "resample_idx": 1,
+        "auth_ba": 0.9947916666666666,
+        "auth_ok": true,
+        "d_blind": 0.9030169035096229,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 1,
+        "prompt_idx": 1,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.8637867255473476,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 1,
+        "prompt_idx": 2,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.9295283986485676,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 1,
+        "prompt_idx": 2,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.1290751383591762,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 1,
+        "prompt_idx": 2,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.033104330413093,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 2,
+        "prompt_idx": 0,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.7565503688146887,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 2,
+        "prompt_idx": 0,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.0243412109385202,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 2,
+        "prompt_idx": 0,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.9138663619993025,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 2,
+        "prompt_idx": 1,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.7942397308949019,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 2,
+        "prompt_idx": 1,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.8121041241700863,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 2,
+        "prompt_idx": 1,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.8460915490007881,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 2,
+        "prompt_idx": 2,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.8690756398687823,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 2,
+        "prompt_idx": 2,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.0705244325549164,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 2,
+        "prompt_idx": 2,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.0252854427231335,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 3,
+        "prompt_idx": 0,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.9470172156608547,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 3,
+        "prompt_idx": 0,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.2709099188100401,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 3,
+        "prompt_idx": 0,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.938112668029888,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 3,
+        "prompt_idx": 1,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.039547289523668,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 3,
+        "prompt_idx": 1,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.9185314974839646,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 3,
+        "prompt_idx": 1,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.9990219620685072,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 3,
+        "prompt_idx": 2,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.8508896726553561,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 3,
+        "prompt_idx": 2,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.7838780004421915,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 3,
+        "prompt_idx": 2,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.1771893395142994,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 4,
+        "prompt_idx": 0,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.1534457198333938,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 4,
+        "prompt_idx": 0,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.05725062312846,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 4,
+        "prompt_idx": 0,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.0773730211369341,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 4,
+        "prompt_idx": 1,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.2332915154859185,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 4,
+        "prompt_idx": 1,
+        "resample_idx": 1,
+        "auth_ba": 0.9895833333333334,
+        "auth_ok": true,
+        "d_blind": 0.9109922594442693,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 4,
+        "prompt_idx": 1,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.0032090557920414,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 4,
+        "prompt_idx": 2,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.9861542204188618,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 4,
+        "prompt_idx": 2,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.2228718788213286,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 4,
+        "prompt_idx": 2,
+        "resample_idx": 2,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.8923218385712963,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 5,
+        "prompt_idx": 0,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.8540134092497024,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 5,
+        "prompt_idx": 0,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.6727034221336385,
+        "feat_ok": true,
+        "joint_accept": true
+      },
+      {
+        "task": 5,
+        "prompt_idx": 0,
+        "resample_idx": 2,
+        "auth_ba": 0.9947916666666666,
+        "auth_ok": true,
+        "d_blind": 0.9240303046265074,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 5,
+        "prompt_idx": 1,
+        "resample_idx": 0,
+        "auth_ba": 0.9947916666666666,
+        "auth_ok": true,
+        "d_blind": 1.0589191963659215,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 5,
+        "prompt_idx": 1,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 1.1079224968178796,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 5,
+        "prompt_idx": 1,
+        "resample_idx": 2,
+        "auth_ba": 0.9895833333333334,
+        "auth_ok": true,
+        "d_blind": 1.3711040386377364,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 5,
+        "prompt_idx": 2,
+        "resample_idx": 0,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.970885748497635,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 5,
+        "prompt_idx": 2,
+        "resample_idx": 1,
+        "auth_ba": 1.0,
+        "auth_ok": true,
+        "d_blind": 0.8304294744846005,
+        "feat_ok": false,
+        "joint_accept": false
+      },
+      {
+        "task": 5,
+        "prompt_idx": 2,
+        "resample_idx": 2,
+        "auth_ba": 0.9947916666666666,
+        "auth_ok": true,
+        "d_blind": 0.925024558015423,
+        "feat_ok": false,
+        "joint_accept": false
+      }
+    ]
+  }
+}

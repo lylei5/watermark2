@@ -1,0 +1,32 @@
+{
+  "total_mismatches": 0,
+  "details": {
+    "gs100_unified": {
+      "n_records": 1000,
+      "mismatches": 0
+    },
+    "null_fpr_2000": {
+      "n_images": 2000,
+      "mismatches": 0
+    },
+    "adaptive_and_prc16": {
+      "n_prc_records": 80,
+      "n_adaptive_rows": 8,
+      "mismatches": 0
+    },
+    "probe_b_imprint": {
+      "n_cases": 4,
+      "n_checkpoints": 12,
+      "mismatches": 0
+    },
+    "multidim_features": {
+      "n_stage0_methods": 7,
+      "n_live_arms": 2,
+      "mismatches": 0
+    },
+    "window_ablation": {
+      "n_records": 240,
+      "mismatches": 0
+    }
+  }
+}

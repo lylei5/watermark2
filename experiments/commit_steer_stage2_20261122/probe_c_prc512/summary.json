@@ -1,0 +1,146 @@
+{
+  "elapsed_seconds": 409.45950050199826,
+  "gpu": 5,
+  "uuid": "GPU-e6f35928-0155-f121-e707-1eaf3c14965c",
+  "threshold": 0.6950993039820756,
+  "arms": {
+    "prc_unguided": {
+      "seconds_mean": 2.203847246625628,
+      "lpips_mean": 0.0,
+      "clip_mean": 0.2550153397023678,
+      "clean_prc_detect": 8,
+      "clean_prc_decode": 8,
+      "clean_auth_exact": 8,
+      "clean_joint": 2,
+      "edited_n": 32,
+      "edited_prc_detect": 21,
+      "edited_prc_decode": 19,
+      "edited_joint": 2,
+      "by_cond": {
+        "clean": {
+          "n": 8,
+          "detect": 8,
+          "decode": 8,
+          "joint": 2
+        },
+        "jpeg_ratio": {
+          "n": 8,
+          "detect": 7,
+          "decode": 7,
+          "joint": 1
+        },
+        "brightness_factor": {
+          "n": 8,
+          "detect": 5,
+          "decode": 5,
+          "joint": 1
+        },
+        "gaussian_blur_r": {
+          "n": 8,
+          "detect": 5,
+          "decode": 3,
+          "joint": 0
+        },
+        "gaussian_std": {
+          "n": 8,
+          "detect": 4,
+          "decode": 4,
+          "joint": 0
+        }
+      }
+    },
+    "prc_commit_steer": {
+      "seconds_mean": 7.113043178624594,
+      "lpips_mean": 0.13912219554185867,
+      "clip_mean": 0.25596518628299236,
+      "clean_prc_detect": 8,
+      "clean_prc_decode": 8,
+      "clean_auth_exact": 8,
+      "clean_joint": 8,
+      "edited_n": 32,
+      "edited_prc_detect": 24,
+      "edited_prc_decode": 20,
+      "edited_joint": 20,
+      "by_cond": {
+        "clean": {
+          "n": 8,
+          "detect": 8,
+          "decode": 8,
+          "joint": 8
+        },
+        "jpeg_ratio": {
+          "n": 8,
+          "detect": 7,
+          "decode": 7,
+          "joint": 7
+        },
+        "brightness_factor": {
+          "n": 8,
+          "detect": 6,
+          "decode": 5,
+          "joint": 5
+        },
+        "gaussian_blur_r": {
+          "n": 8,
+          "detect": 7,
+          "decode": 4,
+          "joint": 4
+        },
+        "gaussian_std": {
+          "n": 8,
+          "detect": 4,
+          "decode": 4,
+          "joint": 4
+        }
+      }
+    }
+  },
+  "live_reprompt": {
+    "n": 4,
+    "native_prc_detect_fooled": 4,
+    "native_prc_decode_fooled": 4,
+    "commit_steer_fooled": 0,
+    "rows": [
+      {
+        "task": 8,
+        "prc_detect": true,
+        "prc_decode": true,
+        "auth_448_exact": true,
+        "payload_64_ber": 0.0,
+        "d_blind": 1.1105003269028169,
+        "feat_ok": false,
+        "joint_blind_ok": false
+      },
+      {
+        "task": 9,
+        "prc_detect": true,
+        "prc_decode": true,
+        "auth_448_exact": true,
+        "payload_64_ber": 0.0,
+        "d_blind": 0.7497684439216249,
+        "feat_ok": false,
+        "joint_blind_ok": false
+      },
+      {
+        "task": 10,
+        "prc_detect": true,
+        "prc_decode": true,
+        "auth_448_exact": true,
+        "payload_64_ber": 0.0,
+        "d_blind": 0.7920642965873111,
+        "feat_ok": false,
+        "joint_blind_ok": false
+      },
+      {
+        "task": 11,
+        "prc_detect": true,
+        "prc_decode": true,
+        "auth_448_exact": true,
+        "payload_64_ber": 0.0,
+        "d_blind": 0.9387544506559884,
+        "feat_ok": false,
+        "joint_blind_ok": false
+      }
+    ]
+  }
+}

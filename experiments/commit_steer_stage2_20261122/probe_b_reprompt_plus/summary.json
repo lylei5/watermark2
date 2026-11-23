@@ -1,0 +1,26 @@
+{
+  "elapsed_seconds": 548.6434777910035,
+  "gpu": 2,
+  "uuid": "GPU-3d3813cb-3429-0174-212f-fa9c7fe5e99a",
+  "threshold": 0.6950993039820756,
+  "reprompt_plus_summary": {
+    "sd21": {
+      "n_candidates": 54,
+      "n_sources": 6,
+      "native_gs_cand": 54,
+      "native_gs_src": 6,
+      "commit_steer_cand": 0,
+      "commit_steer_src": 0,
+      "mean_d_blind": 0.965359125164125
+    },
+    "sd15": {
+      "n_candidates": 54,
+      "n_sources": 6,
+      "native_gs_cand": 54,
+      "native_gs_src": 6,
+      "commit_steer_cand": 2,
+      "commit_steer_src": 2,
+      "mean_d_blind": 0.9716908373413831
+    }
+  }
+}

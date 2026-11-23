@@ -1,0 +1,20 @@
+{
+  "status": "ok",
+  "mismatches": 0,
+  "verified_methods": [
+    "rgb_mean_24b",
+    "rgb_mean_var_48b",
+    "chroma_ratio_48b",
+    "spatial_luma_48b",
+    "spatial_luma_chroma_64b",
+    "spatial_opponent_64b"
+  ],
+  "bit_budgets": {
+    "rgb_mean_24b": 24,
+    "rgb_mean_var_48b": 48,
+    "chroma_ratio_48b": 48,
+    "spatial_luma_48b": 48,
+    "spatial_luma_chroma_64b": 64,
+    "spatial_opponent_64b": 64
+  }
+}

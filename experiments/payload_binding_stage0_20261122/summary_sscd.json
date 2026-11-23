@@ -1,0 +1,671 @@
+{
+  "elapsed_seconds": 225.47465208499852,
+  "thresholds_95": {
+    "sscd_48b": 0.6696217492255268,
+    "sscd_64b": 0.6950993039820756,
+    "sscd_96b": 0.7085050942611051,
+    "sscd_512f": 0.6811457849817799
+  },
+  "confirm_60": {
+    "sscd_48b": {
+      "bits": 48,
+      "n_edited": 1920,
+      "tpr_count": 1831,
+      "tpr": 0.9536458333333333,
+      "sib_far_count": 217,
+      "sib_far": 0.11302083333333333,
+      "clean_sib_far_count": 16,
+      "clean_sib_far": 0.13333333333333333,
+      "roc95_sib_far_count": 167,
+      "roc95_sib_far": 0.08697916666666666,
+      "by_edit": {
+        "compression_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 17
+        },
+        "compression_0.8": {
+          "n": 120,
+          "tpr": 120,
+          "far": 13
+        },
+        "resizedcrop_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 17
+        },
+        "resizedcrop_0.8": {
+          "n": 120,
+          "tpr": 120,
+          "far": 12
+        },
+        "rotation_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 14
+        },
+        "rotation_0.8": {
+          "n": 120,
+          "tpr": 118,
+          "far": 11
+        },
+        "brightness_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 19
+        },
+        "brightness_0.8": {
+          "n": 120,
+          "tpr": 120,
+          "far": 19
+        },
+        "contrast_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 17
+        },
+        "contrast_0.8": {
+          "n": 120,
+          "tpr": 120,
+          "far": 17
+        },
+        "blurring_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 7
+        },
+        "blurring_0.8": {
+          "n": 120,
+          "tpr": 33,
+          "far": 5
+        },
+        "noise_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 10
+        },
+        "noise_0.8": {
+          "n": 120,
+          "tpr": 120,
+          "far": 8
+        },
+        "erasing_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 17
+        },
+        "erasing_0.8": {
+          "n": 120,
+          "tpr": 120,
+          "far": 14
+        }
+      }
+    },
+    "sscd_64b": {
+      "bits": 64,
+      "n_edited": 1920,
+      "tpr_count": 1819,
+      "tpr": 0.9473958333333333,
+      "sib_far_count": 165,
+      "sib_far": 0.0859375,
+      "clean_sib_far_count": 12,
+      "clean_sib_far": 0.1,
+      "roc95_sib_far_count": 199,
+      "roc95_sib_far": 0.10364583333333334,
+      "by_edit": {
+        "compression_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 13
+        },
+        "compression_0.8": {
+          "n": 120,
+          "tpr": 120,
+          "far": 14
+        },
+        "resizedcrop_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 8
+        },
+        "resizedcrop_0.8": {
+          "n": 120,
+          "tpr": 120,
+          "far": 10
+        },
+        "rotation_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 11
+        },
+        "rotation_0.8": {
+          "n": 120,
+          "tpr": 120,
+          "far": 9
+        },
+        "brightness_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 10
+        },
+        "brightness_0.8": {
+          "n": 120,
+          "tpr": 120,
+          "far": 14
+        },
+        "contrast_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 11
+        },
+        "contrast_0.8": {
+          "n": 120,
+          "tpr": 120,
+          "far": 11
+        },
+        "blurring_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 8
+        },
+        "blurring_0.8": {
+          "n": 120,
+          "tpr": 19,
+          "far": 4
+        },
+        "noise_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 12
+        },
+        "noise_0.8": {
+          "n": 120,
+          "tpr": 120,
+          "far": 9
+        },
+        "erasing_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 10
+        },
+        "erasing_0.8": {
+          "n": 120,
+          "tpr": 120,
+          "far": 11
+        }
+      }
+    },
+    "sscd_96b": {
+      "bits": 96,
+      "n_edited": 1920,
+      "tpr_count": 1831,
+      "tpr": 0.9536458333333333,
+      "sib_far_count": 195,
+      "sib_far": 0.1015625,
+      "clean_sib_far_count": 15,
+      "clean_sib_far": 0.125,
+      "roc95_sib_far_count": 153,
+      "roc95_sib_far": 0.0796875,
+      "by_edit": {
+        "compression_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 11
+        },
+        "compression_0.8": {
+          "n": 120,
+          "tpr": 120,
+          "far": 11
+        },
+        "resizedcrop_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 16
+        },
+        "resizedcrop_0.8": {
+          "n": 120,
+          "tpr": 120,
+          "far": 16
+        },
+        "rotation_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 14
+        },
+        "rotation_0.8": {
+          "n": 120,
+          "tpr": 120,
+          "far": 13
+        },
+        "brightness_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 16
+        },
+        "brightness_0.8": {
+          "n": 120,
+          "tpr": 120,
+          "far": 14
+        },
+        "contrast_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 16
+        },
+        "contrast_0.8": {
+          "n": 120,
+          "tpr": 120,
+          "far": 13
+        },
+        "blurring_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 8
+        },
+        "blurring_0.8": {
+          "n": 120,
+          "tpr": 31,
+          "far": 0
+        },
+        "noise_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 11
+        },
+        "noise_0.8": {
+          "n": 120,
+          "tpr": 120,
+          "far": 9
+        },
+        "erasing_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 14
+        },
+        "erasing_0.8": {
+          "n": 120,
+          "tpr": 120,
+          "far": 13
+        }
+      }
+    },
+    "sscd_512f": {
+      "bits": 16384,
+      "n_edited": 1920,
+      "tpr_count": 1826,
+      "tpr": 0.9510416666666667,
+      "sib_far_count": 79,
+      "sib_far": 0.04114583333333333,
+      "clean_sib_far_count": 10,
+      "clean_sib_far": 0.08333333333333333,
+      "roc95_sib_far_count": 66,
+      "roc95_sib_far": 0.034375,
+      "by_edit": {
+        "compression_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 6
+        },
+        "compression_0.8": {
+          "n": 120,
+          "tpr": 120,
+          "far": 5
+        },
+        "resizedcrop_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 5
+        },
+        "resizedcrop_0.8": {
+          "n": 120,
+          "tpr": 120,
+          "far": 8
+        },
+        "rotation_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 7
+        },
+        "rotation_0.8": {
+          "n": 120,
+          "tpr": 120,
+          "far": 6
+        },
+        "brightness_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 8
+        },
+        "brightness_0.8": {
+          "n": 120,
+          "tpr": 120,
+          "far": 5
+        },
+        "contrast_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 6
+        },
+        "contrast_0.8": {
+          "n": 120,
+          "tpr": 120,
+          "far": 6
+        },
+        "blurring_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 4
+        },
+        "blurring_0.8": {
+          "n": 120,
+          "tpr": 26,
+          "far": 0
+        },
+        "noise_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 3
+        },
+        "noise_0.8": {
+          "n": 120,
+          "tpr": 120,
+          "far": 2
+        },
+        "erasing_0.4": {
+          "n": 120,
+          "tpr": 120,
+          "far": 4
+        },
+        "erasing_0.8": {
+          "n": 120,
+          "tpr": 120,
+          "far": 4
+        }
+      }
+    }
+  },
+  "imprint": {
+    "GS": {
+      "sscd_48b": {
+        "n": 10,
+        "accept": 1,
+        "reinhard_diag_accept": 0
+      },
+      "sscd_64b": {
+        "n": 10,
+        "accept": 0,
+        "reinhard_diag_accept": 0
+      },
+      "sscd_96b": {
+        "n": 10,
+        "accept": 0,
+        "reinhard_diag_accept": 0
+      },
+      "sscd_512f": {
+        "n": 10,
+        "accept": 0,
+        "reinhard_diag_accept": 0
+      }
+    },
+    "TR": {
+      "sscd_48b": {
+        "n": 10,
+        "accept": 0,
+        "reinhard_diag_accept": 0
+      },
+      "sscd_64b": {
+        "n": 10,
+        "accept": 0,
+        "reinhard_diag_accept": 0
+      },
+      "sscd_96b": {
+        "n": 10,
+        "accept": 0,
+        "reinhard_diag_accept": 0
+      },
+      "sscd_512f": {
+        "n": 10,
+        "accept": 0,
+        "reinhard_diag_accept": 0
+      }
+    },
+    "PRC": {
+      "sscd_48b": {
+        "n": 10,
+        "accept": 0,
+        "reinhard_diag_accept": 0
+      },
+      "sscd_64b": {
+        "n": 10,
+        "accept": 0,
+        "reinhard_diag_accept": 0
+      },
+      "sscd_96b": {
+        "n": 10,
+        "accept": 0,
+        "reinhard_diag_accept": 1
+      },
+      "sscd_512f": {
+        "n": 10,
+        "accept": 0,
+        "reinhard_diag_accept": 0
+      }
+    },
+    "ALL": {
+      "sscd_48b": {
+        "n": 30,
+        "accept": 1,
+        "reinhard_diag_accept": 0
+      },
+      "sscd_64b": {
+        "n": 30,
+        "accept": 0,
+        "reinhard_diag_accept": 0
+      },
+      "sscd_96b": {
+        "n": 30,
+        "accept": 0,
+        "reinhard_diag_accept": 1
+      },
+      "sscd_512f": {
+        "n": 30,
+        "accept": 0,
+        "reinhard_diag_accept": 0
+      }
+    }
+  },
+  "reprompt_plus": {
+    "GS_sd21": {
+      "sscd_48b": {
+        "n_candidates": 90,
+        "n_sources": 10,
+        "cand_accept": 3,
+        "source_accept": 3,
+        "reinhard_diag_cand_accept": 3,
+        "reinhard_diag_source_accept": 3
+      },
+      "sscd_64b": {
+        "n_candidates": 90,
+        "n_sources": 10,
+        "cand_accept": 0,
+        "source_accept": 0,
+        "reinhard_diag_cand_accept": 1,
+        "reinhard_diag_source_accept": 1
+      },
+      "sscd_96b": {
+        "n_candidates": 90,
+        "n_sources": 10,
+        "cand_accept": 1,
+        "source_accept": 1,
+        "reinhard_diag_cand_accept": 2,
+        "reinhard_diag_source_accept": 2
+      },
+      "sscd_512f": {
+        "n_candidates": 90,
+        "n_sources": 10,
+        "cand_accept": 0,
+        "source_accept": 0,
+        "reinhard_diag_cand_accept": 0,
+        "reinhard_diag_source_accept": 0
+      }
+    },
+    "GS_sd15": {
+      "sscd_48b": {
+        "n_candidates": 90,
+        "n_sources": 10,
+        "cand_accept": 1,
+        "source_accept": 1,
+        "reinhard_diag_cand_accept": 1,
+        "reinhard_diag_source_accept": 1
+      },
+      "sscd_64b": {
+        "n_candidates": 90,
+        "n_sources": 10,
+        "cand_accept": 1,
+        "source_accept": 1,
+        "reinhard_diag_cand_accept": 0,
+        "reinhard_diag_source_accept": 0
+      },
+      "sscd_96b": {
+        "n_candidates": 90,
+        "n_sources": 10,
+        "cand_accept": 2,
+        "source_accept": 1,
+        "reinhard_diag_cand_accept": 2,
+        "reinhard_diag_source_accept": 1
+      },
+      "sscd_512f": {
+        "n_candidates": 90,
+        "n_sources": 10,
+        "cand_accept": 0,
+        "source_accept": 0,
+        "reinhard_diag_cand_accept": 1,
+        "reinhard_diag_source_accept": 1
+      }
+    },
+    "TR_sd21": {
+      "sscd_48b": {
+        "n_candidates": 30,
+        "n_sources": 10,
+        "cand_accept": 3,
+        "source_accept": 3,
+        "reinhard_diag_cand_accept": 3,
+        "reinhard_diag_source_accept": 3
+      },
+      "sscd_64b": {
+        "n_candidates": 30,
+        "n_sources": 10,
+        "cand_accept": 2,
+        "source_accept": 2,
+        "reinhard_diag_cand_accept": 1,
+        "reinhard_diag_source_accept": 1
+      },
+      "sscd_96b": {
+        "n_candidates": 30,
+        "n_sources": 10,
+        "cand_accept": 0,
+        "source_accept": 0,
+        "reinhard_diag_cand_accept": 1,
+        "reinhard_diag_source_accept": 1
+      },
+      "sscd_512f": {
+        "n_candidates": 30,
+        "n_sources": 10,
+        "cand_accept": 2,
+        "source_accept": 2,
+        "reinhard_diag_cand_accept": 2,
+        "reinhard_diag_source_accept": 2
+      }
+    },
+    "TR_sd15": {
+      "sscd_48b": {
+        "n_candidates": 30,
+        "n_sources": 10,
+        "cand_accept": 4,
+        "source_accept": 3,
+        "reinhard_diag_cand_accept": 6,
+        "reinhard_diag_source_accept": 5
+      },
+      "sscd_64b": {
+        "n_candidates": 30,
+        "n_sources": 10,
+        "cand_accept": 2,
+        "source_accept": 2,
+        "reinhard_diag_cand_accept": 1,
+        "reinhard_diag_source_accept": 1
+      },
+      "sscd_96b": {
+        "n_candidates": 30,
+        "n_sources": 10,
+        "cand_accept": 2,
+        "source_accept": 2,
+        "reinhard_diag_cand_accept": 2,
+        "reinhard_diag_source_accept": 2
+      },
+      "sscd_512f": {
+        "n_candidates": 30,
+        "n_sources": 10,
+        "cand_accept": 2,
+        "source_accept": 2,
+        "reinhard_diag_cand_accept": 2,
+        "reinhard_diag_source_accept": 2
+      }
+    }
+  },
+  "external": {
+    "iccv_dist_match": {
+      "sscd_48b": {
+        "n": 1,
+        "accept": 0
+      },
+      "sscd_64b": {
+        "n": 1,
+        "accept": 0
+      },
+      "sscd_96b": {
+        "n": 1,
+        "accept": 0
+      },
+      "sscd_512f": {
+        "n": 1,
+        "accept": 0
+      }
+    },
+    "cvpr_color_transfer": {
+      "sscd_48b": {
+        "n": 8,
+        "accept": 2
+      },
+      "sscd_64b": {
+        "n": 8,
+        "accept": 2
+      },
+      "sscd_96b": {
+        "n": 8,
+        "accept": 1
+      },
+      "sscd_512f": {
+        "n": 8,
+        "accept": 2
+      }
+    },
+    "magicbrush_all20": {
+      "sscd_48b": {
+        "n": 20,
+        "accept": 20
+      },
+      "sscd_64b": {
+        "n": 20,
+        "accept": 20
+      },
+      "sscd_96b": {
+        "n": 20,
+        "accept": 20
+      },
+      "sscd_512f": {
+        "n": 20,
+        "accept": 20
+      }
+    }
+  }
+}

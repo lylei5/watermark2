@@ -1,0 +1,75 @@
+{
+  "elapsed_seconds": 606.807522086001,
+  "gpu": 1,
+  "uuid": "GPU-af8ecfa2-a36f-798c-9762-0a3cfb8a1fcd",
+  "arms": {
+    "early_0_20": {
+      "step_range": [
+        0,
+        20
+      ],
+      "lpips": 0.052313574589788914,
+      "clip_guid": 0.2756871556242307,
+      "clip_base": 0.2761577380200227,
+      "clean_full_ba": 1.0,
+      "clean_p_ber": 0.0,
+      "clean_d_blind": 0.7661870483671072,
+      "clean_joint": "3/12",
+      "edit4_full_ba": 0.9820149739583334,
+      "edit4_p_ber": 0.01953125,
+      "edit4_d_blind": 0.811143723470939,
+      "edit4_joint": "9/48"
+    },
+    "mid_5_35": {
+      "step_range": [
+        5,
+        35
+      ],
+      "lpips": 0.09658551526566346,
+      "clip_guid": 0.27220793316761654,
+      "clip_base": 0.2761577380200227,
+      "clean_full_ba": 1.0,
+      "clean_p_ber": 0.0,
+      "clean_d_blind": 0.38600790420273207,
+      "clean_joint": "12/12",
+      "edit4_full_ba": 0.9867350260416666,
+      "edit4_p_ber": 0.0166015625,
+      "edit4_d_blind": 0.48723496157617663,
+      "edit4_joint": "44/48"
+    },
+    "notail_5_49": {
+      "step_range": [
+        5,
+        49
+      ],
+      "lpips": 0.13199226868649325,
+      "clip_guid": 0.2738657705485821,
+      "clip_base": 0.2761577380200227,
+      "clean_full_ba": 1.0,
+      "clean_p_ber": 0.0,
+      "clean_d_blind": 0.05935793650589199,
+      "clean_joint": "12/12",
+      "edit4_full_ba": 0.9857584635416666,
+      "edit4_p_ber": 0.015299479166666666,
+      "edit4_d_blind": 0.18973370737759673,
+      "edit4_joint": "48/48"
+    },
+    "late_25_49": {
+      "step_range": [
+        25,
+        49
+      ],
+      "lpips": 0.09261773340404034,
+      "clip_guid": 0.2760218145946662,
+      "clip_base": 0.2761577380200227,
+      "clean_full_ba": 1.0,
+      "clean_p_ber": 0.0,
+      "clean_d_blind": 0.06173242309388855,
+      "clean_joint": "12/12",
+      "edit4_full_ba": 0.9851888020833334,
+      "edit4_p_ber": 0.01953125,
+      "edit4_d_blind": 0.2032003663659497,
+      "edit4_joint": "46/48"
+    }
+  }
+}
