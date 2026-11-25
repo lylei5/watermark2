@@ -4,6 +4,8 @@
 
 ## 前向承诺与中步流形引导（Commit-then-Steer 无库内容绑定）
 
+[Commit-then-Steer Stage 4 阶段性审计报告](commit_steer_stage4_20261125/report.md)完成 **SDXL Base 1.0 (`1024×1024`) 跨骨干验证**（24 条不重叠统一集 Clean `24/24`、9 项 GS 失真 `184/216 = 85.2%`、`LPIPS=0.0705`、Live 36 候选 Reprompt+ `0/36` vs 原生 `36/36`、200 COCO 自然图 `0/200`，独立审计 `0 mismatch`）与 **100 图多维融合 `hyb_sscd32_clip32`** 主体及 2,000 COCO 自然图（`0/2,000`，`LPIPS=0.096`），同时推进 Native GS / 官方 PGID-F / 论文级 SemBind GS-S 同协议正面对比。
+
 [Commit-then-Steer Stage 0–3 完整实验报告](commit_steer_20261123/report.md)完成了纯 RGB/直方图/通道比例证伪（Stage 0）、中步 Tweedie 流形引导与窗口消融（Stage 1 & 3E）、官方统一集 100 条未见 prompt 的原生 256-bit GS 盲联合验证（Clean `99/100`、载荷 BER `0.00%`、9 项 GS 失真 `694/900 = 77.1%`、7 项常规失真 `86.1%`、离线 COCO-50 FID `-4.54`）、2,000 张真实 COCO 自然图经验 Null FPR（默认 `0/2,000`，经验 1% auth 切点下由 `15/1,000` 压至 `0/1,000`）、全预算 Live 151 步 Imprint（原生 `4/4` vs 本文 `0/4`）与 108 候选 Reprompt+（SD2.1 `0/54`、SD1.5 `2/54`）、跨载体原生 512-bit PRC 16 条统一 prompt（Clean `15/16`、失真可解码中 `22/23`、Live Reprompt `1/8` vs `8/8`）、多维度 64-bit 融合（`32b SSCD + 32b CLIP` Stage 0 Reprompt+ `1/180`、端到端 Live Reprompt `0/8`）及 80 步白盒自适应 PGD 压力测试（全部独立复核 `mismatches = 0`）。
 
 ## 生成图的颜色指纹

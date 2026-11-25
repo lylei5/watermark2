@@ -1,15 +1,23 @@
 {
   "schema_version": 3,
   "project_name": "watermark2",
-  "updated_at": "2026-11-23",
-  "status": "commit_steer_stage0_to_stage3_audited_complete",
-  "active_experiments": 0,
-  "queued_experiments": 0,
-  "active_runs": [],
-  "queued_runs": [],
+  "updated_at": "2026-11-26",
+  "status": "commit_steer_stage4_in_progress_sdxl_and_hyb100_audited",
+  "active_experiments": 3,
+  "queued_experiments": 3,
+  "active_runs": [
+    "runs/commit_steer_stage4_20261125/multidim100_hyb (GPU 2: live Imprint + 108-cand Reprompt+; gs100 & null2000 audited 0-mismatch)",
+    "runs/commit_steer_stage4_20261125/head2head_pgid_native_gs (GPU 1: PGID-F 30-prompt/null200/live attacks; native100 complete)",
+    "runs/commit_steer_stage4_20261125/head2head_sembind (GPU 0: benign20 shard 0/2; gen20 complete)"
+  ],
+  "queued_runs": [
+    "runs/commit_steer_stage4_20261125/head2head_sembind benign20 shard 1/2 (pidfd queued on GPU 2)",
+    "runs/commit_steer_stage4_20261125/head2head_sembind attacks_null (pidfd queued on first idle GPU 0/1/2)",
+    "runs/commit_steer_stage4_20261125/s4_audit_and_viz.py (offline COCO-50 FID + full 0-mismatch audit)"
+  ],
   "research_plan": "docs/RESEARCH_PLAN.md",
   "evidence_index": "reports/README.md",
-  "latest_progress_report": "reports/commit_steer_20261123/report.md",
+  "latest_progress_report": "reports/commit_steer_stage4_20261125/report.md",
   "native_sembind_reproduction_complete": false,
   "superiority_established": false,
   "server_workspace": {
@@ -25,6 +33,10 @@
     "local_model_downloads_allowed": false,
     "local_code_and_document_work_allowed": true,
     "allowed_gpu_indices": [
+      0,
+      1,
+      2,
+      3,
       4,
       5,
       7
@@ -37,6 +49,10 @@
     ]
   },
   "allowed_gpu_indices": [
+    0,
+    1,
+    2,
+    3,
     4,
     5,
     7
@@ -46,6 +62,6 @@
   ],
   "max_concurrent_gpus": 3,
   "evaluation_policy": "Unchanged published top-venue author attacks only; full budgets; no adaptive or improved attacks; independent null calibration and evaluation; report achieved FPR and absolute TPR.",
-  "execution_authorized": false,
-  "previous_state": "https://github.com/lylei5/watermark2/blob/ac09574711f9ea2b056b5782e683d51e5eb2f87e/project_state.json"
+  "execution_authorized": true,
+  "previous_state": "https://github.com/lylei5/watermark2/blob/3a2318a6094f9339c06eebffe95405883949b6c8/project_state.json"
 }

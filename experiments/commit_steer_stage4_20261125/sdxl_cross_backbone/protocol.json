@@ -1,0 +1,278 @@
+{
+  "run_name": "sdxl_cross_backbone",
+  "backbone": "stabilityai/stable-diffusion-xl-base-1.0",
+  "resolution": 1024,
+  "latent_shape": [
+    1,
+    4,
+    128,
+    128
+  ],
+  "carrier": "Native Gaussian Shading 256b (192b auth + 64b SSCD commitment, 16x16=256x spatial repetition)",
+  "n_prompts": 24,
+  "prompt_slices": "COCO[64:76] + SDP[64:76] (zero overlap with Stage 0-3)",
+  "num_steps": 30,
+  "preview_steps": 10,
+  "step_range": [
+    3,
+    21
+  ],
+  "step_size": 0.042,
+  "stop_loss": 0.08,
+  "threshold": 0.6950993039820756,
+  "threshold_source": "Stage 0 frozen 95%-TPR SSCD-64b threshold (zero retuning on SDXL)",
+  "auth_threshold": 0.7083333333333334,
+  "gs9_conditions": {
+    "random_crop_ratio": 0.6,
+    "random_drop_ratio": 0.8,
+    "brightness_factor": 6,
+    "jpeg_ratio": 25,
+    "gaussian_blur_r": 4,
+    "gaussian_std": 0.05,
+    "median_blur_k": 7,
+    "sp_prob": 0.05,
+    "resize_ratio": 0.25
+  },
+  "sources": [
+    {
+      "index": 64,
+      "dataset": "COCO",
+      "source_id": "359781",
+      "prompt": "The giraffe is walking toward a rock on a trail. ",
+      "image_id": 359781,
+      "caption_id": 685405,
+      "full_clip_text_tokens": 11,
+      "effective_clip_tokens_sha256": "4a7c6468571e02c7515597b54562490ee912da1b5998ee19d00a8f6fbdc7fc2b",
+      "generation_seed": 5773720359911213970
+    },
+    {
+      "index": 65,
+      "dataset": "COCO",
+      "source_id": "67213",
+      "prompt": "A lot of people that are looking at a pool.",
+      "image_id": 67213,
+      "caption_id": 146258,
+      "full_clip_text_tokens": 11,
+      "effective_clip_tokens_sha256": "e2beec7c02c6f50f2d3b3607be37f5fe00fc9d33f7943836562341eb4fa7963a",
+      "generation_seed": 6378879587126955931
+    },
+    {
+      "index": 66,
+      "dataset": "COCO",
+      "source_id": "466256",
+      "prompt": "a plate with some vegetables and rice on a plate",
+      "image_id": 466256,
+      "caption_id": 699366,
+      "full_clip_text_tokens": 10,
+      "effective_clip_tokens_sha256": "07aae01381348b9895ad042b84e731907142055b2244a4c2d569141367c32dcf",
+      "generation_seed": 2801017915851196275
+    },
+    {
+      "index": 67,
+      "dataset": "COCO",
+      "source_id": "125850",
+      "prompt": "A cat laying in a green bowl on a wooden table.",
+      "image_id": 125850,
+      "caption_id": 625713,
+      "full_clip_text_tokens": 12,
+      "effective_clip_tokens_sha256": "80f07ea414a3053ff33b0aa3e0a2434d01f6555d17e31ac4cd9cc817aa879d92",
+      "generation_seed": 1028809684579469914
+    },
+    {
+      "index": 68,
+      "dataset": "COCO",
+      "source_id": "323571",
+      "prompt": "A street sign on the street near a building.",
+      "image_id": 323571,
+      "caption_id": 344598,
+      "full_clip_text_tokens": 10,
+      "effective_clip_tokens_sha256": "2c4102dfa478da89e0dd2c3a10710811b67bdb0e9c8ab33bc36b317893bbddaf",
+      "generation_seed": 5686154396153619182
+    },
+    {
+      "index": 69,
+      "dataset": "COCO",
+      "source_id": "297353",
+      "prompt": "A man standing on a purple bed playing an electric guitar",
+      "image_id": 297353,
+      "caption_id": 554131,
+      "full_clip_text_tokens": 11,
+      "effective_clip_tokens_sha256": "97e2521ab064ef7304b3cda10df5c9a94ea3db7e34080cdd4093bf592e902f51",
+      "generation_seed": 2212861115830417326
+    },
+    {
+      "index": 70,
+      "dataset": "COCO",
+      "source_id": "311789",
+      "prompt": "The black cat with white patches is sleeping on a computer keyboard.",
+      "image_id": 311789,
+      "caption_id": 467448,
+      "full_clip_text_tokens": 14,
+      "effective_clip_tokens_sha256": "ea3f0872751ed3632e4a67c93b4f6b65b75a67ece28a4919c42dc941ff6e309d",
+      "generation_seed": 2995032346106218165
+    },
+    {
+      "index": 71,
+      "dataset": "COCO",
+      "source_id": "249550",
+      "prompt": "A spare bedroom with a bed with a flowered blanket.",
+      "image_id": 249550,
+      "caption_id": 358026,
+      "full_clip_text_tokens": 12,
+      "effective_clip_tokens_sha256": "20af009e1d44050fa8f769cbc682c0c4c7e8570f06b144bad7d4e4044cef0226",
+      "generation_seed": 2998703100045068966
+    },
+    {
+      "index": 72,
+      "dataset": "COCO",
+      "source_id": "324927",
+      "prompt": "A plate of two slices of pizza and a cup of juice.",
+      "image_id": 324927,
+      "caption_id": 417329,
+      "full_clip_text_tokens": 13,
+      "effective_clip_tokens_sha256": "7f021095e7e6b45fe6a7c5a5830f803b598c3cca854966e5cd44a4bcc02f7a69",
+      "generation_seed": 5771139802806670030
+    },
+    {
+      "index": 73,
+      "dataset": "COCO",
+      "source_id": "545730",
+      "prompt": "a herd of zebras crossing a shallow part of a river",
+      "image_id": 545730,
+      "caption_id": 313579,
+      "full_clip_text_tokens": 12,
+      "effective_clip_tokens_sha256": "93e82291507563b31653a692529e95bcc0fd94ccf81bd452b099534d233de0bb",
+      "generation_seed": 8848094991208598851
+    },
+    {
+      "index": 74,
+      "dataset": "COCO",
+      "source_id": "319721",
+      "prompt": "A brown horse standing next to a woman in front of a house.",
+      "image_id": 319721,
+      "caption_id": 155417,
+      "full_clip_text_tokens": 14,
+      "effective_clip_tokens_sha256": "3441ca3f359ca10698c7f33617cdcd39b2c23b3c8e258f65d69da5353c106233",
+      "generation_seed": 5034792409296554579
+    },
+    {
+      "index": 75,
+      "dataset": "COCO",
+      "source_id": "356125",
+      "prompt": "A elephant reaching out with some thing with its nose. ",
+      "image_id": 356125,
+      "caption_id": 677969,
+      "full_clip_text_tokens": 11,
+      "effective_clip_tokens_sha256": "3cd2d6c0a0065b5ebe3a7e72031959dc24556c3cd983ffd373ff24653227c279",
+      "generation_seed": 5909555909826667059
+    },
+    {
+      "index": 314,
+      "dataset": "SDP",
+      "source_id": "1860",
+      "prompt": "digital cyberpunk steampunk anime, cyborg - girl reaching into a mirror, mechanical insides, reflections, wlop, ilya kuvshinov, artgerm",
+      "full_clip_text_tokens": 31,
+      "effective_clip_tokens_sha256": "0d873a856a5f6ad98eebb8621c581e548378c36e4bc208e75964901291faf5fb",
+      "generation_seed": 8477807155778606357
+    },
+    {
+      "index": 315,
+      "dataset": "SDP",
+      "source_id": "2576",
+      "prompt": "arma 4, by cedric peyravernay, highly detailed, excellent composition, cinematic concept art, dramatic lighting, trending on artstation",
+      "full_clip_text_tokens": 27,
+      "effective_clip_tokens_sha256": "9c632e81859e8e566cc0ed87d5930801a5ceb47cf1a6e069114c85af0fd1b58f",
+      "generation_seed": 295153001177582121
+    },
+    {
+      "index": 316,
+      "dataset": "SDP",
+      "source_id": "7822",
+      "prompt": "unknown zodiac sign, wasopius, unique!!!!, trending on artstation, 4 k, 8 k, concept art, trending on artstation",
+      "full_clip_text_tokens": 33,
+      "effective_clip_tokens_sha256": "b4cb78d99bc1d424c9ab2e54268f40519bf9cbecf67108763153ee171a5b937d",
+      "generation_seed": 331128105954195530
+    },
+    {
+      "index": 317,
+      "dataset": "SDP",
+      "source_id": "1215",
+      "prompt": "fisherman, male, Jamaican, wide angle, yellows blacks greens reds, magical fishing rod weapon, D&D, fantasy, intricate, elegant, highly detailed, digital painting, artstation, octane render, concept art, matte, sharp focus, illustration, hearthstone, art by Artgerm and Greg Rutkowski and Alphonse Mucha",
+      "full_clip_text_tokens": 67,
+      "effective_clip_tokens_sha256": "0df8ea59a843b45f4522de4f37e7d4bdb0c73dfd4c74e0116ad821245972f2da",
+      "generation_seed": 3625300778544058079
+    },
+    {
+      "index": 318,
+      "dataset": "SDP",
+      "source_id": "8035",
+      "prompt": "portrait of aggressive smiling messi, d & d, muscular! fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "full_clip_text_tokens": 50,
+      "effective_clip_tokens_sha256": "e6e8fbb29caecc588fdd128a2ba5ef576199d029ac2d720bacae14161108fa95",
+      "generation_seed": 6996298071236086515
+    },
+    {
+      "index": 319,
+      "dataset": "SDP",
+      "source_id": "981",
+      "prompt": "professional concept art of a symmetrical fractal ominous floating robotic terrifying thing in a dark room by artgerm and greg rutkowski ( thin white border ). an intricate, elegant, highly detailed digital painting, concept art, smooth, sharp focus, illustration, in the style of cam sykes, wayne barlowe, igor kieryluk.",
+      "full_clip_text_tokens": 66,
+      "effective_clip_tokens_sha256": "d9c4f6cf2e56eaa7a2fb5a5ca1be4081a90afb89fbb74f6ae30cc33c09f1bf98",
+      "generation_seed": 1561903804166608836
+    },
+    {
+      "index": 320,
+      "dataset": "SDP",
+      "source_id": "1747",
+      "prompt": "ultra realistic illustration, man in a jacket with dark glasses, with black hair, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "full_clip_text_tokens": 52,
+      "effective_clip_tokens_sha256": "8d291a1788694181e440016188f0bc9133c15c37453acd5ed8c2454d41770413",
+      "generation_seed": 869674079619494009
+    },
+    {
+      "index": 321,
+      "dataset": "SDP",
+      "source_id": "4219",
+      "prompt": "Ariana Grande cosplaying as Samus Aran, golden hour, by greg Rutkowksi, by artgerm",
+      "full_clip_text_tokens": 22,
+      "effective_clip_tokens_sha256": "a866a3082eb2a604adf881f3d0528d89eff86d1a1c90f69f8240b35b22b857d1",
+      "generation_seed": 6018678729069429646
+    },
+    {
+      "index": 322,
+      "dataset": "SDP",
+      "source_id": "5595",
+      "prompt": "beautiful nordic woman, beautiful, detailed portrait, cell shaded, 4 k, concept art, by wlop, ilya kuvshinov, artgerm, krenz cushart, greg rutkowski, pixiv. cinematic dramatic atmosphere, sharp focus, volumetric lighting, cinematic lighting, studio quality",
+      "full_clip_text_tokens": 61,
+      "effective_clip_tokens_sha256": "4af5294dbc7893f6cf63cec3a4d8f8d1f0dca120e3cf120865d2aa0b523fde51",
+      "generation_seed": 5866302805622759125
+    },
+    {
+      "index": 323,
+      "dataset": "SDP",
+      "source_id": "3360",
+      "prompt": "cinematic shot epic portrait an warrior lifting his large sword, the sword is being hit by a lighting strike, foggy, storm, lighting strike, motion blur, broad light, ambient occlusion, blue colors, volumetric light effect, made by ivan aivazovsky, peter mohrbacher, greg rutkowski, matte painting, trending on artstation, 4 k, perfectly defined features, digital painting, cinematic, epic, highly detailed,",
+      "full_clip_text_tokens": 89,
+      "effective_clip_tokens_sha256": "2bc23ff5983607b0b84c45c3a85694984042f3df05a8bc293346bad96c8301ad",
+      "generation_seed": 1338342666411034970
+    },
+    {
+      "index": 324,
+      "dataset": "SDP",
+      "source_id": "7014",
+      "prompt": "full portrait of a young, attractive woman, soft hair, muscular, half body, cloth, pink hair, d & d, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by artgerm and greg rutkowski and alphonse mucha",
+      "full_clip_text_tokens": 64,
+      "effective_clip_tokens_sha256": "35c5d68f23f4704f77be9de8d4c617931c9c41bf24e7f5401aa786642a278aa9",
+      "generation_seed": 5058511143695346868
+    },
+    {
+      "index": 325,
+      "dataset": "SDP",
+      "source_id": "3221",
+      "prompt": "beer festival in germany, ornate, beautiful, atmosphere, vibe, mist, smoke, fire, chimney, rain, wet, pristine, puddles, melting, dripping, snow, creek, lush, ice, bridge, green, stained glass, forest, roses, flowers, by stanley artgerm lau, greg rutkowski, thomas kindkade, alphonse mucha, loish, norman rockwell",
+      "full_clip_text_tokens": 79,
+      "effective_clip_tokens_sha256": "202a8838918570c9f50b33bdd2f22291a93dc17eb2397f7737fbf153834bc331",
+      "generation_seed": 4706022796166282274
+    }
+  ]
+}

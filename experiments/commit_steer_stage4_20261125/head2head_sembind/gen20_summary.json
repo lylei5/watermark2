@@ -1,0 +1,212 @@
+{
+  "elapsed_seconds": 901.142521634989,
+  "n_prompts": 20,
+  "sec_gen_mean": 22.091048711849727,
+  "lpips_mean": 0.723210233449936,
+  "clip_plain_mean": 0.27438642308115957,
+  "clip_bound_mean": 0.26791042312979696,
+  "mean_hamming_aux_vs_bound": 66.55,
+  "mean_hamming_aux_vs_same": 72.45,
+  "rows": [
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "sec_gen_total": 43.2869761629845,
+      "hamming_aux_vs_bound": 33,
+      "hamming_aux_vs_same": 65,
+      "lpips_plain_vs_bound": 0.759824812412262,
+      "clip_plain": 0.2656712830066681,
+      "clip_bound": 0.2506548762321472
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "sec_gen_total": 22.035177782003302,
+      "hamming_aux_vs_bound": 93,
+      "hamming_aux_vs_same": 47,
+      "lpips_plain_vs_bound": 0.742793083190918,
+      "clip_plain": 0.25694048404693604,
+      "clip_bound": 0.2539466321468353
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "sec_gen_total": 20.727416993991937,
+      "hamming_aux_vs_bound": 50,
+      "hamming_aux_vs_same": 72,
+      "lpips_plain_vs_bound": 0.8235813975334167,
+      "clip_plain": 0.24773827195167542,
+      "clip_bound": 0.242519810795784
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "sec_gen_total": 20.36773019999964,
+      "hamming_aux_vs_bound": 82,
+      "hamming_aux_vs_same": 89,
+      "lpips_plain_vs_bound": 0.7331903576850891,
+      "clip_plain": 0.25971144437789917,
+      "clip_bound": 0.28460216522216797
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "sec_gen_total": 22.29558278096374,
+      "hamming_aux_vs_bound": 35,
+      "hamming_aux_vs_same": 42,
+      "lpips_plain_vs_bound": 0.8044668436050415,
+      "clip_plain": 0.288840115070343,
+      "clip_bound": 0.26787227392196655
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "sec_gen_total": 22.092817888013087,
+      "hamming_aux_vs_bound": 7,
+      "hamming_aux_vs_same": 10,
+      "lpips_plain_vs_bound": 0.6634771823883057,
+      "clip_plain": 0.2840730547904968,
+      "clip_bound": 0.2623600959777832
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "sec_gen_total": 21.821943201997783,
+      "hamming_aux_vs_bound": 113,
+      "hamming_aux_vs_same": 43,
+      "lpips_plain_vs_bound": 0.7655950784683228,
+      "clip_plain": 0.24329234659671783,
+      "clip_bound": 0.24811968207359314
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "sec_gen_total": 21.009042875026353,
+      "hamming_aux_vs_bound": 11,
+      "hamming_aux_vs_same": 5,
+      "lpips_plain_vs_bound": 0.7289917469024658,
+      "clip_plain": 0.252471387386322,
+      "clip_bound": 0.2575127184391022
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "sec_gen_total": 20.604658889991697,
+      "hamming_aux_vs_bound": 41,
+      "hamming_aux_vs_same": 27,
+      "lpips_plain_vs_bound": 0.6984519958496094,
+      "clip_plain": 0.2998914420604706,
+      "clip_bound": 0.2882138788700104
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "sec_gen_total": 20.138101860007737,
+      "hamming_aux_vs_bound": 70,
+      "hamming_aux_vs_same": 71,
+      "lpips_plain_vs_bound": 0.5729164481163025,
+      "clip_plain": 0.2841687500476837,
+      "clip_bound": 0.30366432666778564
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "sec_gen_total": 20.38385715300683,
+      "hamming_aux_vs_bound": 103,
+      "hamming_aux_vs_same": 128,
+      "lpips_plain_vs_bound": 0.8104292750358582,
+      "clip_plain": 0.28371018171310425,
+      "clip_bound": 0.290050745010376
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "sec_gen_total": 20.711803442973178,
+      "hamming_aux_vs_bound": 81,
+      "hamming_aux_vs_same": 92,
+      "lpips_plain_vs_bound": 0.6630152463912964,
+      "clip_plain": 0.2912960648536682,
+      "clip_bound": 0.26850277185440063
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "sec_gen_total": 20.21855750499526,
+      "hamming_aux_vs_bound": 105,
+      "hamming_aux_vs_same": 258,
+      "lpips_plain_vs_bound": 0.807890772819519,
+      "clip_plain": 0.3142940402030945,
+      "clip_bound": 0.2991985082626343
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "sec_gen_total": 20.306397459004074,
+      "hamming_aux_vs_bound": 78,
+      "hamming_aux_vs_same": 106,
+      "lpips_plain_vs_bound": 0.6461290121078491,
+      "clip_plain": 0.22799578309059143,
+      "clip_bound": 0.2705468535423279
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "sec_gen_total": 20.702094785985537,
+      "hamming_aux_vs_bound": 7,
+      "hamming_aux_vs_same": 7,
+      "lpips_plain_vs_bound": 0.7724902033805847,
+      "clip_plain": 0.27919161319732666,
+      "clip_bound": 0.24221841990947723
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "sec_gen_total": 22.84040546003962,
+      "hamming_aux_vs_bound": 101,
+      "hamming_aux_vs_same": 100,
+      "lpips_plain_vs_bound": 0.7029873132705688,
+      "clip_plain": 0.30847689509391785,
+      "clip_bound": 0.29439643025398254
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "sec_gen_total": 20.546698084974196,
+      "hamming_aux_vs_bound": 87,
+      "hamming_aux_vs_same": 116,
+      "lpips_plain_vs_bound": 0.7089874148368835,
+      "clip_plain": 0.27170324325561523,
+      "clip_bound": 0.270810067653656
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "sec_gen_total": 20.116567989985924,
+      "hamming_aux_vs_bound": 78,
+      "hamming_aux_vs_same": 50,
+      "lpips_plain_vs_bound": 0.6997063755989075,
+      "clip_plain": 0.24759575724601746,
+      "clip_bound": 0.23342931270599365
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "sec_gen_total": 20.724759882024955,
+      "hamming_aux_vs_bound": 42,
+      "hamming_aux_vs_same": 40,
+      "lpips_plain_vs_bound": 0.7187855243682861,
+      "clip_plain": 0.309037446975708,
+      "clip_bound": 0.3076099455356598
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "sec_gen_total": 20.890383839025162,
+      "hamming_aux_vs_bound": 114,
+      "hamming_aux_vs_same": 81,
+      "lpips_plain_vs_bound": 0.6404945850372314,
+      "clip_plain": 0.27162885665893555,
+      "clip_bound": 0.22197894752025604
+    }
+  ]
+}

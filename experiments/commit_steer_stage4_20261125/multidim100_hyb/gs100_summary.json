@@ -1,0 +1,117 @@
+{
+  "arm": "hyb_sscd32_clip32",
+  "gpu": 2,
+  "uuid": "GPU-3d3813cb-3429-0174-212f-fa9c7fe5e99a",
+  "elapsed_seconds": 2324.0745832009707,
+  "n_prompts": 100,
+  "threshold": 0.5530520000194534,
+  "sec_prev_mean": 0.6082145128038247,
+  "sec_total_mean": 8.509577381113195,
+  "lpips_mean": 0.09613969901576638,
+  "lpips_median": 0.09064918011426926,
+  "clip_base_mean": 0.27235739544034004,
+  "clip_guid_mean": 0.27387367844581606,
+  "clean_auth_pass": 100,
+  "clean_joint_pass": 96,
+  "clean_full_ba": 1.0,
+  "clean_p_ber": 0.0,
+  "gs7_regular_joint_pass": 552,
+  "gs9_auth_pass": 892,
+  "gs9_joint_pass": 613,
+  "gs9_p_ber": 0.03095486111111111,
+  "cross_prompt_far_count": 132,
+  "cross_prompt_far_total": 9900,
+  "cross_prompt_far": 0.013333333333333334,
+  "by_cond": {
+    "clean": {
+      "n": 100,
+      "auth_pass": 100,
+      "feat_pass": 96,
+      "joint_pass": 96,
+      "full_ba": 1.0,
+      "p_ber": 0.0,
+      "d_blind": 0.34956587731899796
+    },
+    "random_crop_ratio": {
+      "n": 100,
+      "auth_pass": 100,
+      "feat_pass": 47,
+      "joint_pass": 47,
+      "full_ba": 0.976484375,
+      "p_ber": 0.0225,
+      "d_blind": 0.5551885179544908
+    },
+    "random_drop_ratio": {
+      "n": 100,
+      "auth_pass": 100,
+      "feat_pass": 14,
+      "joint_pass": 14,
+      "full_ba": 0.95515625,
+      "p_ber": 0.04765625,
+      "d_blind": 0.6716166923429596
+    },
+    "brightness_factor": {
+      "n": 100,
+      "auth_pass": 95,
+      "feat_pass": 63,
+      "joint_pass": 63,
+      "full_ba": 0.95234375,
+      "p_ber": 0.04734375,
+      "d_blind": 0.5313602818404847
+    },
+    "jpeg_ratio": {
+      "n": 100,
+      "auth_pass": 100,
+      "feat_pass": 89,
+      "joint_pass": 89,
+      "full_ba": 0.9872265625,
+      "p_ber": 0.01640625,
+      "d_blind": 0.42215063528440594
+    },
+    "gaussian_blur_r": {
+      "n": 100,
+      "auth_pass": 100,
+      "feat_pass": 89,
+      "joint_pass": 89,
+      "full_ba": 0.98234375,
+      "p_ber": 0.0234375,
+      "d_blind": 0.4269462409790515
+    },
+    "gaussian_std": {
+      "n": 100,
+      "auth_pass": 100,
+      "feat_pass": 63,
+      "joint_pass": 63,
+      "full_ba": 0.9649609375,
+      "p_ber": 0.040625,
+      "d_blind": 0.5305341268250843
+    },
+    "median_blur_k": {
+      "n": 100,
+      "auth_pass": 100,
+      "feat_pass": 96,
+      "joint_pass": 96,
+      "full_ba": 0.9994921875,
+      "p_ber": 0.00109375,
+      "d_blind": 0.3673500252956007
+    },
+    "sp_prob": {
+      "n": 100,
+      "auth_pass": 97,
+      "feat_pass": 57,
+      "joint_pass": 57,
+      "full_ba": 0.923046875,
+      "p_ber": 0.076875,
+      "d_blind": 0.5425444020947993
+    },
+    "resize_ratio": {
+      "n": 100,
+      "auth_pass": 100,
+      "feat_pass": 95,
+      "joint_pass": 95,
+      "full_ba": 0.9979296875,
+      "p_ber": 0.00265625,
+      "d_blind": 0.3778897788738711
+    }
+  }
+}
