@@ -2,24 +2,24 @@
   "schema_version": 3,
   "project_name": "watermark2",
   "updated_at": "2026-11-26",
-  "status": "commit_steer_stage4_in_progress_sdxl_and_hyb100_audited",
-  "active_experiments": 3,
-  "queued_experiments": 3,
-  "active_runs": [
-    "runs/commit_steer_stage4_20261125/multidim100_hyb (GPU 2: live Imprint + 108-cand Reprompt+; gs100 & null2000 audited 0-mismatch)",
-    "runs/commit_steer_stage4_20261125/head2head_pgid_native_gs (GPU 1: PGID-F 30-prompt/null200/live attacks; native100 complete)",
-    "runs/commit_steer_stage4_20261125/head2head_sembind (GPU 0: benign20 shard 0/2; gen20 complete)"
-  ],
-  "queued_runs": [
-    "runs/commit_steer_stage4_20261125/head2head_sembind benign20 shard 1/2 (pidfd queued on GPU 2)",
-    "runs/commit_steer_stage4_20261125/head2head_sembind attacks_null (pidfd queued on first idle GPU 0/1/2)",
-    "runs/commit_steer_stage4_20261125/s4_audit_and_viz.py (offline COCO-50 FID + full 0-mismatch audit)"
+  "status": "commit_steer_stage4_complete_all_audited_0_mismatch",
+  "active_experiments": 0,
+  "queued_experiments": 0,
+  "active_runs": [],
+  "queued_runs": [],
+  "completed_stage4_runs": [
+    "runs/commit_steer_stage4_20261125/sdxl_cross_backbone (Stage 4A: SDXL 1024x1024, 24 prompts, Clean 24/24, 9-GS 184/216, Live 36 Reprompt+ 0/36, Null200 0/200; 0 mismatch)",
+    "runs/commit_steer_stage4_20261125/multidim100_hyb (Stage 4B: 100-prompt hyb_sscd32_clip32, Clean 96/100, 9-GS 613/900, LPIPS 0.096, COCO-50 FID 227.18->230.64 / paired 43.08, Null2000 0/2000, Live Imprint 0/4, Live 108 Reprompt+ SD2.1 1/54 & SD1.5 1/54; 0 mismatch)",
+    "runs/commit_steer_stage4_20261125/head2head_pgid_native_gs (Stage 4C: Native GS 100-prompt + Official PGID-F matched-30, verify 21.59s vs 4.22s, 9-GS 175/270 vs 219/270, Null200 0/200, Live Imprint 2/4, Live 108 Reprompt+ 104/108; 0 mismatch)",
+    "runs/commit_steer_stage4_20261125/head2head_sembind (Stage 4D: Paper-faithful SemBind GS-S matched-20, gen 22.09s, verify 49.51s, Clean 20/20, 9-GS 169/180, Null50 0/50, Live Imprint 0/4, Live 72 Reprompt+ 0/72 at >181/256; 0 mismatch)",
+    "runs/commit_steer_stage4_20261125/audit_stage4.json (independent full audit total_mismatches=0)"
   ],
   "research_plan": "docs/RESEARCH_PLAN.md",
   "evidence_index": "reports/README.md",
   "latest_progress_report": "reports/commit_steer_stage4_20261125/report.md",
   "native_sembind_reproduction_complete": false,
   "superiority_established": false,
+  "head2head_summary_note": "Commit-then-Steer strictly dominates Native GS and Official PGID-F on matched cohorts (5.1x faster verify, +16.3pp 9-GS robustness on matched-30, Imprint 0/4 vs 2/4, Reprompt+ 2/108 vs 104/108). Against Paper-faithful SemBind GS-S (matched-20; 4-carrier full matrix incl. GS++ and authors' private training/binding code remain outside released scope), there is a clear Pareto trade-off: Commit-then-Steer wins training-free, 3.0x faster generation, 11.7x faster verification, instance-preserving fidelity, and zero-shot SDXL/PRC transfer, whereas SemBind GS-S retains higher harsh-occlusion benign survival (93.9% vs 81.7%) and 0/72 Reprompt+ at >181/256.",
   "server_workspace": {
     "host": "172.18.185.249",
     "root": "/data0/liyanlei/watermark_research",
@@ -63,5 +63,5 @@
   "max_concurrent_gpus": 3,
   "evaluation_policy": "Unchanged published top-venue author attacks only; full budgets; no adaptive or improved attacks; independent null calibration and evaluation; report achieved FPR and absolute TPR.",
   "execution_authorized": true,
-  "previous_state": "https://github.com/lylei5/watermark2/blob/3a2318a6094f9339c06eebffe95405883949b6c8/project_state.json"
+  "previous_state": "https://github.com/lylei5/watermark2/blob/2fa4b540b3588411b7a4796825ddb4ca1add67f9/project_state.json"
 }

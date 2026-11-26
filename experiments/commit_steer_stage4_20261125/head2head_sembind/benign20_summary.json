@@ -1,0 +1,89 @@
+{
+  "n_prompts": 20,
+  "clean_gs_default": 20,
+  "gs7_regular_default": 135,
+  "gs9_all_default": 169,
+  "sec_verify_mean": 49.5131740733335,
+  "by_cond": {
+    "clean": {
+      "n": 20,
+      "pass_gs_default": 20,
+      "pass_gs_167": 20,
+      "mean_ba": 1.0,
+      "mean_hamming": 66.55,
+      "mean_sec_verify": 49.60015825224109
+    },
+    "random_crop_ratio": {
+      "n": 20,
+      "pass_gs_default": 19,
+      "pass_gs_167": 19,
+      "mean_ba": 0.9345703125,
+      "mean_hamming": 99.0,
+      "mean_sec_verify": 50.17948055284505
+    },
+    "random_drop_ratio": {
+      "n": 20,
+      "pass_gs_default": 15,
+      "pass_gs_167": 18,
+      "mean_ba": 0.834375,
+      "mean_hamming": 206.2,
+      "mean_sec_verify": 49.99856650849979
+    },
+    "brightness_factor": {
+      "n": 20,
+      "pass_gs_default": 19,
+      "pass_gs_167": 20,
+      "mean_ba": 0.9314453125,
+      "mean_hamming": 80.95,
+      "mean_sec_verify": 49.84827781500644
+    },
+    "jpeg_ratio": {
+      "n": 20,
+      "pass_gs_default": 20,
+      "pass_gs_167": 20,
+      "mean_ba": 0.9787109375,
+      "mean_hamming": 72.05,
+      "mean_sec_verify": 49.379814996451024
+    },
+    "gaussian_blur_r": {
+      "n": 20,
+      "pass_gs_default": 19,
+      "pass_gs_167": 19,
+      "mean_ba": 0.9474609375,
+      "mean_hamming": 82.65,
+      "mean_sec_verify": 49.35902399859333
+    },
+    "gaussian_std": {
+      "n": 20,
+      "pass_gs_default": 18,
+      "pass_gs_167": 19,
+      "mean_ba": 0.9263671875,
+      "mean_hamming": 83.8,
+      "mean_sec_verify": 49.31799362374586
+    },
+    "median_blur_k": {
+      "n": 20,
+      "pass_gs_default": 20,
+      "pass_gs_167": 20,
+      "mean_ba": 0.9939453125,
+      "mean_hamming": 71.2,
+      "mean_sec_verify": 49.31435015325551
+    },
+    "sp_prob": {
+      "n": 20,
+      "pass_gs_default": 19,
+      "pass_gs_167": 19,
+      "mean_ba": 0.92421875,
+      "mean_hamming": 85.15,
+      "mean_sec_verify": 49.21696249539673
+    },
+    "resize_ratio": {
+      "n": 20,
+      "pass_gs_default": 20,
+      "pass_gs_167": 20,
+      "mean_ba": 0.9890625,
+      "mean_hamming": 70.8,
+      "mean_sec_verify": 48.9171123373002
+    }
+  }
+}

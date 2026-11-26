@@ -1,0 +1,16 @@
+{
+  "reference": "COCO test2017 deterministic 256-image pool3 (identical to Stage 3A gs100_unified)",
+  "unguided_native_gs": {
+    "vs_real_mixed_100": 214.95927227567935,
+    "vs_real_coco_50": 227.17626733877955,
+    "vs_real_sdp_50": 294.2170846398285
+  },
+  "guided_hyb_sscd32_clip32": {
+    "vs_real_mixed_100": 217.892964107416,
+    "vs_real_coco_50": 230.63867501379474,
+    "vs_real_sdp_50": 298.3540499692962,
+    "vs_paired_unguided_100": 43.084564568390704
+  },
+  "delta_vs_real_mixed_100": 2.9336918317366383,
+  "delta_vs_real_coco_50": 3.4624076750151858
+}

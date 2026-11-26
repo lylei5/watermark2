@@ -1,0 +1,131 @@
+{
+  "elapsed_seconds": 14277.494493255974,
+  "gpu": 0,
+  "uuid": "GPU-aafaf524-a6f4-f646-a2b5-7d243e80c8a5",
+  "null_fpr_50": {
+    "n": 50,
+    "ba_mean": 0.498984375,
+    "ba_max": 0.58203125,
+    "fp_gs_default": 0,
+    "cp95_upper": 0.07112173646419764
+  },
+  "imprint_summary": {
+    "step_50": {
+      "n": 4,
+      "sembind_fooled": 0,
+      "mean_ba": 0.564453125
+    },
+    "step_100": {
+      "n": 4,
+      "sembind_fooled": 0,
+      "mean_ba": 0.5
+    },
+    "step_150": {
+      "n": 4,
+      "sembind_fooled": 0,
+      "mean_ba": 0.521484375
+    }
+  },
+  "imprint_cases": [
+    {
+      "gidx": 0,
+      "cover": "000_cover.png",
+      "checkpoints": {
+        "step_50": {
+          "ba": 0.58203125,
+          "accept_gs_default": false,
+          "code_hamming": 496
+        },
+        "step_100": {
+          "ba": 0.48828125,
+          "accept_gs_default": false,
+          "code_hamming": 514
+        },
+        "step_150": {
+          "ba": 0.58203125,
+          "accept_gs_default": false,
+          "code_hamming": 494
+        }
+      }
+    },
+    {
+      "gidx": 1,
+      "cover": "001_cover.png",
+      "checkpoints": {
+        "step_50": {
+          "ba": 0.43359375,
+          "accept_gs_default": false,
+          "code_hamming": 527
+        },
+        "step_100": {
+          "ba": 0.3984375,
+          "accept_gs_default": false,
+          "code_hamming": 532
+        },
+        "step_150": {
+          "ba": 0.421875,
+          "accept_gs_default": false,
+          "code_hamming": 536
+        }
+      }
+    },
+    {
+      "gidx": 2,
+      "cover": "002_cover.png",
+      "checkpoints": {
+        "step_50": {
+          "ba": 0.70703125,
+          "accept_gs_default": false,
+          "code_hamming": 454
+        },
+        "step_100": {
+          "ba": 0.6015625,
+          "accept_gs_default": false,
+          "code_hamming": 485
+        },
+        "step_150": {
+          "ba": 0.5703125,
+          "accept_gs_default": false,
+          "code_hamming": 490
+        }
+      }
+    },
+    {
+      "gidx": 3,
+      "cover": "003_cover.png",
+      "checkpoints": {
+        "step_50": {
+          "ba": 0.53515625,
+          "accept_gs_default": false,
+          "code_hamming": 495
+        },
+        "step_100": {
+          "ba": 0.51171875,
+          "accept_gs_default": false,
+          "code_hamming": 509
+        },
+        "step_150": {
+          "ba": 0.51171875,
+          "accept_gs_default": false,
+          "code_hamming": 514
+        }
+      }
+    }
+  ],
+  "reprompt_plus_summary": {
+    "sd21": {
+      "n_candidates": 36,
+      "n_sources": 4,
+      "sembind_cand": 0,
+      "sembind_src": 0,
+      "mean_ba": 0.5032552083333334
+    },
+    "sd15": {
+      "n_candidates": 36,
+      "n_sources": 4,
+      "sembind_cand": 0,
+      "sembind_src": 0,
+      "mean_ba": 0.5147569444444444
+    }
+  }
+}

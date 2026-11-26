@@ -10,6 +10,14 @@
     "stage4b_multidim100_hyb": {
       "n_records": 1000,
       "mismatches": 0
+    },
+    "stage4c_pgid_native_gs": {
+      "n_pgid30": 300,
+      "mismatches": 0
+    },
+    "stage4d_sembind": {
+      "n_benign": 200,
+      "mismatches": 0
     }
   },
   "matched_slices_commit_steer": {
