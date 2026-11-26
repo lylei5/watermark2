@@ -1,0 +1,46 @@
+{
+  "run_name": "removal_and_instance_cs",
+  "matched_20_gidx": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59
+  ],
+  "waves8_types": [
+    "rotation",
+    "resizedcrop",
+    "erasing",
+    "brightness",
+    "contrast",
+    "blurring",
+    "noise",
+    "compression"
+  ],
+  "waves_relative_strength": 0.5,
+  "regen_conditions": [
+    "vae_roundtrip",
+    "sd21_regen_01",
+    "sd21_regen_02",
+    "sd21_regen_03"
+  ],
+  "same_prompt_covers": "runs/commit_steer_stage4_20261125/head2head_sembind/images/{000..003}_same.png",
+  "sscd64_threshold": 0.6950993039820756,
+  "hyb_threshold": 0.5530520000194534,
+  "auth_threshold": 0.7083333333333334
+}

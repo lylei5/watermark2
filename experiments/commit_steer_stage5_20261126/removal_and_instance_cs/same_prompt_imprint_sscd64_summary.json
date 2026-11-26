@@ -1,0 +1,177 @@
+{
+  "elapsed_seconds": 7491.223620769975,
+  "arm": "sscd64",
+  "imprint_summary": {
+    "step_50": {
+      "n": 4,
+      "native_auth_fooled": 4,
+      "commit_steer_fooled": 2,
+      "mean_auth_ba": 1.0,
+      "mean_d_blind": 0.7711858520508109
+    },
+    "step_100": {
+      "n": 4,
+      "native_auth_fooled": 4,
+      "commit_steer_fooled": 2,
+      "mean_auth_ba": 1.0,
+      "mean_d_blind": 0.7567469943920941
+    },
+    "step_150": {
+      "n": 4,
+      "native_auth_fooled": 4,
+      "commit_steer_fooled": 2,
+      "mean_auth_ba": 1.0,
+      "mean_d_blind": 0.7527468840072504
+    }
+  },
+  "imprint_cases": [
+    {
+      "gidx": 0,
+      "prompt": "A flock of swans swims in a bay.",
+      "cover": "000_same.png",
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.6006209850311279,
+          "psnr_vs_cover": 21.05310372461348,
+          "lpips_vs_cover": 0.12247296422719955,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.9937944077947672,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_100": {
+          "loss": 0.3722308278083801,
+          "psnr_vs_cover": 19.762739858649724,
+          "lpips_vs_cover": 0.16302436590194702,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.9817219360895999,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_150": {
+          "loss": 0.2618998885154724,
+          "psnr_vs_cover": 19.120866519234088,
+          "lpips_vs_cover": 0.1956215500831604,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.9701637796102971,
+          "feat_ok": false,
+          "joint_accept": false
+        }
+      }
+    },
+    {
+      "gidx": 1,
+      "prompt": "Yellow and grey train near platform at railway station.",
+      "cover": "001_same.png",
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.4388187825679779,
+          "psnr_vs_cover": 21.559704493898405,
+          "lpips_vs_cover": 0.11797364801168442,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.8013888400040892,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_100": {
+          "loss": 0.27878063917160034,
+          "psnr_vs_cover": 20.233024998910007,
+          "lpips_vs_cover": 0.1570459008216858,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.8025878077907164,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_150": {
+          "loss": 0.19935816526412964,
+          "psnr_vs_cover": 19.384207853920863,
+          "lpips_vs_cover": 0.18781475722789764,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.8118892755801786,
+          "feat_ok": false,
+          "joint_accept": false
+        }
+      }
+    },
+    {
+      "gidx": 2,
+      "prompt": "The birds are sitting next to each other on a tree branch,",
+      "cover": "002_same.png",
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.5613824129104614,
+          "psnr_vs_cover": 22.926236790222262,
+          "lpips_vs_cover": 0.17452582716941833,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.6849261640377393,
+          "feat_ok": true,
+          "joint_accept": true
+        },
+        "step_100": {
+          "loss": 0.28008225560188293,
+          "psnr_vs_cover": 21.667184615931703,
+          "lpips_vs_cover": 0.22544750571250916,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.6455431358928172,
+          "feat_ok": true,
+          "joint_accept": true
+        },
+        "step_150": {
+          "loss": 0.16068574786186218,
+          "psnr_vs_cover": 20.908861526162923,
+          "lpips_vs_cover": 0.2582976818084717,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.6372591573263302,
+          "feat_ok": true,
+          "joint_accept": true
+        }
+      }
+    },
+    {
+      "gidx": 3,
+      "prompt": "A cow is leashed up to a green pole near the civilians. ",
+      "cover": "003_same.png",
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.6773897409439087,
+          "psnr_vs_cover": 21.637435414563445,
+          "lpips_vs_cover": 0.16062253713607788,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.604633996366648,
+          "feat_ok": true,
+          "joint_accept": true
+        },
+        "step_100": {
+          "loss": 0.36154890060424805,
+          "psnr_vs_cover": 19.908625591384755,
+          "lpips_vs_cover": 0.22468729317188263,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.597135097795243,
+          "feat_ok": true,
+          "joint_accept": true
+        },
+        "step_150": {
+          "loss": 0.21180197596549988,
+          "psnr_vs_cover": 19.01460832665875,
+          "lpips_vs_cover": 0.2790348529815674,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.5916753235121963,
+          "feat_ok": true,
+          "joint_accept": true
+        }
+      }
+    }
+  ]
+}

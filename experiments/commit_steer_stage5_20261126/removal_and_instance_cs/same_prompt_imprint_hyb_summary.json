@@ -1,0 +1,201 @@
+{
+  "elapsed_seconds": 7425.105111829005,
+  "arm": "hyb",
+  "imprint_summary": {
+    "step_50": {
+      "n": 4,
+      "native_auth_fooled": 4,
+      "commit_steer_fooled": 1,
+      "mean_auth_ba": 1.0,
+      "mean_d_blind": 0.6203916953438764
+    },
+    "step_100": {
+      "n": 4,
+      "native_auth_fooled": 4,
+      "commit_steer_fooled": 1,
+      "mean_auth_ba": 1.0,
+      "mean_d_blind": 0.6271174009838316
+    },
+    "step_150": {
+      "n": 4,
+      "native_auth_fooled": 4,
+      "commit_steer_fooled": 1,
+      "mean_auth_ba": 1.0,
+      "mean_d_blind": 0.6182694945942924
+    }
+  },
+  "imprint_cases": [
+    {
+      "gidx": 0,
+      "prompt": "A flock of swans swims in a bay.",
+      "cover": "000_same.png",
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.5733106732368469,
+          "psnr_vs_cover": 21.18242063131294,
+          "lpips_vs_cover": 0.12452481687068939,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.5801849249310893,
+          "d_clip32": 0.48270544230541523,
+          "d_blind": 0.5314451836182523,
+          "feat_ok": true,
+          "joint_accept": true
+        },
+        "step_100": {
+          "loss": 0.3533107042312622,
+          "psnr_vs_cover": 19.95573454075953,
+          "lpips_vs_cover": 0.1584407538175583,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.536391715250604,
+          "d_clip32": 0.5060277046779507,
+          "d_blind": 0.5212097099642774,
+          "feat_ok": true,
+          "joint_accept": true
+        },
+        "step_150": {
+          "loss": 0.2507787048816681,
+          "psnr_vs_cover": 19.356219758738323,
+          "lpips_vs_cover": 0.1856112778186798,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.5538999428534395,
+          "d_clip32": 0.4764691867996653,
+          "d_blind": 0.5151845648265524,
+          "feat_ok": true,
+          "joint_accept": true
+        }
+      }
+    },
+    {
+      "gidx": 1,
+      "prompt": "Yellow and grey train near platform at railway station.",
+      "cover": "001_same.png",
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.4382007122039795,
+          "psnr_vs_cover": 21.352712762758163,
+          "lpips_vs_cover": 0.11486097425222397,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 1.0776056044807052,
+          "d_clip32": 0.2391326468041497,
+          "d_blind": 0.6583691256424274,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_100": {
+          "loss": 0.27188384532928467,
+          "psnr_vs_cover": 19.8343321526333,
+          "lpips_vs_cover": 0.1480596363544464,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 1.0255821301653245,
+          "d_clip32": 0.24755841153613412,
+          "d_blind": 0.6365702708507293,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_150": {
+          "loss": 0.19722631573677063,
+          "psnr_vs_cover": 18.903088411976384,
+          "lpips_vs_cover": 0.18209820985794067,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.9813558961139822,
+          "d_clip32": 0.24461673910579818,
+          "d_blind": 0.6129863176098902,
+          "feat_ok": false,
+          "joint_accept": false
+        }
+      }
+    },
+    {
+      "gidx": 2,
+      "prompt": "The birds are sitting next to each other on a tree branch,",
+      "cover": "002_same.png",
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.5434610843658447,
+          "psnr_vs_cover": 23.045129779597687,
+          "lpips_vs_cover": 0.16851049661636353,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.5244927396189909,
+          "d_clip32": 0.6909292661545821,
+          "d_blind": 0.6077110028867865,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_100": {
+          "loss": 0.27777206897735596,
+          "psnr_vs_cover": 21.822442755768794,
+          "lpips_vs_cover": 0.2381226122379303,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.5869537562580891,
+          "d_clip32": 0.6433787373973701,
+          "d_blind": 0.6151662468277296,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_150": {
+          "loss": 0.1601138412952423,
+          "psnr_vs_cover": 21.177351901378884,
+          "lpips_vs_cover": 0.28486138582229614,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.5830643857986082,
+          "d_clip32": 0.6319057076699777,
+          "d_blind": 0.6074850467342929,
+          "feat_ok": false,
+          "joint_accept": false
+        }
+      }
+    },
+    {
+      "gidx": 3,
+      "prompt": "A cow is leashed up to a green pole near the civilians. ",
+      "cover": "003_same.png",
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.6723114252090454,
+          "psnr_vs_cover": 21.760959505083108,
+          "lpips_vs_cover": 0.15930017828941345,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.9501394565825915,
+          "d_clip32": 0.4179434818734874,
+          "d_blind": 0.6840414692280394,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_100": {
+          "loss": 0.3616413474082947,
+          "psnr_vs_cover": 19.932465621523363,
+          "lpips_vs_cover": 0.23028676211833954,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 1.0632715648906825,
+          "d_clip32": 0.40777518769449805,
+          "d_blind": 0.7355233762925903,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_150": {
+          "loss": 0.21825149655342102,
+          "psnr_vs_cover": 18.948033914974516,
+          "lpips_vs_cover": 0.2834075689315796,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 1.0647687194118478,
+          "d_clip32": 0.41007537900102065,
+          "d_blind": 0.7374220492064343,
+          "feat_ok": false,
+          "joint_accept": false
+        }
+      }
+    }
+  ]
+}

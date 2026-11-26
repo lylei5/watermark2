@@ -1,0 +1,2402 @@
+[
+  {
+    "gidx": 0,
+    "dataset": "COCO",
+    "condition": "waves_rotation",
+    "ba": 0.48828125,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 39,
+    "sec_verify": 57.46939338603988
+  },
+  {
+    "gidx": 0,
+    "dataset": "COCO",
+    "condition": "waves_resizedcrop",
+    "ba": 0.5234375,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 31,
+    "sec_verify": 58.39872475800803
+  },
+  {
+    "gidx": 0,
+    "dataset": "COCO",
+    "condition": "waves_erasing",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 29,
+    "sec_verify": 57.38552253099624
+  },
+  {
+    "gidx": 0,
+    "dataset": "COCO",
+    "condition": "waves_brightness",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 37,
+    "sec_verify": 56.18157572398195
+  },
+  {
+    "gidx": 0,
+    "dataset": "COCO",
+    "condition": "waves_contrast",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 32,
+    "sec_verify": 55.09527055401122
+  },
+  {
+    "gidx": 0,
+    "dataset": "COCO",
+    "condition": "waves_blurring",
+    "ba": 0.77734375,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 29,
+    "sec_verify": 55.411934782983735
+  },
+  {
+    "gidx": 0,
+    "dataset": "COCO",
+    "condition": "waves_noise",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 34,
+    "sec_verify": 53.33289149601478
+  },
+  {
+    "gidx": 0,
+    "dataset": "COCO",
+    "condition": "waves_compression",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 34,
+    "sec_verify": 52.07015758601483
+  },
+  {
+    "gidx": 0,
+    "dataset": "COCO",
+    "condition": "vae_roundtrip",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 34,
+    "sec_verify": 52.80737616500119
+  },
+  {
+    "gidx": 0,
+    "dataset": "COCO",
+    "condition": "sd21_regen_01",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 33,
+    "sec_verify": 53.305760255025234
+  },
+  {
+    "gidx": 0,
+    "dataset": "COCO",
+    "condition": "sd21_regen_02",
+    "ba": 0.9921875,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 28,
+    "sec_verify": 54.12581633403897
+  },
+  {
+    "gidx": 0,
+    "dataset": "COCO",
+    "condition": "sd21_regen_03",
+    "ba": 0.95703125,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 29,
+    "sec_verify": 54.408376750012394
+  },
+  {
+    "gidx": 2,
+    "dataset": "COCO",
+    "condition": "waves_rotation",
+    "ba": 0.49609375,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 81,
+    "sec_verify": 54.322413235960994
+  },
+  {
+    "gidx": 2,
+    "dataset": "COCO",
+    "condition": "waves_resizedcrop",
+    "ba": 0.55859375,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 64,
+    "sec_verify": 53.707484019047115
+  },
+  {
+    "gidx": 2,
+    "dataset": "COCO",
+    "condition": "waves_erasing",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 84,
+    "sec_verify": 53.64016221999191
+  },
+  {
+    "gidx": 2,
+    "dataset": "COCO",
+    "condition": "waves_brightness",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 37,
+    "sec_verify": 55.203623072011396
+  },
+  {
+    "gidx": 2,
+    "dataset": "COCO",
+    "condition": "waves_contrast",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 30,
+    "sec_verify": 55.26248640596168
+  },
+  {
+    "gidx": 2,
+    "dataset": "COCO",
+    "condition": "waves_blurring",
+    "ba": 0.84765625,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 26,
+    "sec_verify": 55.86811114003649
+  },
+  {
+    "gidx": 2,
+    "dataset": "COCO",
+    "condition": "waves_noise",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 45,
+    "sec_verify": 54.695086608990096
+  },
+  {
+    "gidx": 2,
+    "dataset": "COCO",
+    "condition": "waves_compression",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 36,
+    "sec_verify": 54.28677465801593
+  },
+  {
+    "gidx": 2,
+    "dataset": "COCO",
+    "condition": "vae_roundtrip",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 39,
+    "sec_verify": 54.0440981349675
+  },
+  {
+    "gidx": 2,
+    "dataset": "COCO",
+    "condition": "sd21_regen_01",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 25,
+    "sec_verify": 53.88501679804176
+  },
+  {
+    "gidx": 2,
+    "dataset": "COCO",
+    "condition": "sd21_regen_02",
+    "ba": 0.99609375,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 76,
+    "sec_verify": 53.54981829802273
+  },
+  {
+    "gidx": 2,
+    "dataset": "COCO",
+    "condition": "sd21_regen_03",
+    "ba": 0.96484375,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 18,
+    "sec_verify": 54.3743177470169
+  },
+  {
+    "gidx": 4,
+    "dataset": "COCO",
+    "condition": "waves_rotation",
+    "ba": 0.5234375,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 55,
+    "sec_verify": 54.02477191097569
+  },
+  {
+    "gidx": 4,
+    "dataset": "COCO",
+    "condition": "waves_resizedcrop",
+    "ba": 0.48046875,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 44,
+    "sec_verify": 53.9705360759981
+  },
+  {
+    "gidx": 4,
+    "dataset": "COCO",
+    "condition": "waves_erasing",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 87,
+    "sec_verify": 54.375194465974346
+  },
+  {
+    "gidx": 4,
+    "dataset": "COCO",
+    "condition": "waves_brightness",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 59,
+    "sec_verify": 52.76905702898512
+  },
+  {
+    "gidx": 4,
+    "dataset": "COCO",
+    "condition": "waves_contrast",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 39,
+    "sec_verify": 52.17583227198338
+  },
+  {
+    "gidx": 4,
+    "dataset": "COCO",
+    "condition": "waves_blurring",
+    "ba": 0.640625,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 141,
+    "sec_verify": 52.806684495997615
+  },
+  {
+    "gidx": 4,
+    "dataset": "COCO",
+    "condition": "waves_noise",
+    "ba": 0.99609375,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 32,
+    "sec_verify": 52.814567844965495
+  },
+  {
+    "gidx": 4,
+    "dataset": "COCO",
+    "condition": "waves_compression",
+    "ba": 0.99609375,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 36,
+    "sec_verify": 55.059193398978096
+  },
+  {
+    "gidx": 4,
+    "dataset": "COCO",
+    "condition": "vae_roundtrip",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 36,
+    "sec_verify": 52.654774386959616
+  },
+  {
+    "gidx": 4,
+    "dataset": "COCO",
+    "condition": "sd21_regen_01",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 27,
+    "sec_verify": 51.00255588802975
+  },
+  {
+    "gidx": 4,
+    "dataset": "COCO",
+    "condition": "sd21_regen_02",
+    "ba": 0.9765625,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 44,
+    "sec_verify": 50.606617423996795
+  },
+  {
+    "gidx": 4,
+    "dataset": "COCO",
+    "condition": "sd21_regen_03",
+    "ba": 0.9296875,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 56,
+    "sec_verify": 51.40492874197662
+  },
+  {
+    "gidx": 6,
+    "dataset": "COCO",
+    "condition": "waves_rotation",
+    "ba": 0.4921875,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 119,
+    "sec_verify": 52.35002907202579
+  },
+  {
+    "gidx": 6,
+    "dataset": "COCO",
+    "condition": "waves_resizedcrop",
+    "ba": 0.45703125,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 117,
+    "sec_verify": 51.04496000602376
+  },
+  {
+    "gidx": 6,
+    "dataset": "COCO",
+    "condition": "waves_erasing",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 116,
+    "sec_verify": 52.73310308199143
+  },
+  {
+    "gidx": 6,
+    "dataset": "COCO",
+    "condition": "waves_brightness",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 115,
+    "sec_verify": 52.332363680994604
+  },
+  {
+    "gidx": 6,
+    "dataset": "COCO",
+    "condition": "waves_contrast",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 113,
+    "sec_verify": 50.36418847099412
+  },
+  {
+    "gidx": 6,
+    "dataset": "COCO",
+    "condition": "waves_blurring",
+    "ba": 0.73046875,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 113,
+    "sec_verify": 50.04560282098828
+  },
+  {
+    "gidx": 6,
+    "dataset": "COCO",
+    "condition": "waves_noise",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 113,
+    "sec_verify": 48.83096836495679
+  },
+  {
+    "gidx": 6,
+    "dataset": "COCO",
+    "condition": "waves_compression",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 111,
+    "sec_verify": 50.6154211940011
+  },
+  {
+    "gidx": 6,
+    "dataset": "COCO",
+    "condition": "vae_roundtrip",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 113,
+    "sec_verify": 49.55556369503029
+  },
+  {
+    "gidx": 6,
+    "dataset": "COCO",
+    "condition": "sd21_regen_01",
+    "ba": 0.9921875,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 114,
+    "sec_verify": 48.74957202904625
+  },
+  {
+    "gidx": 6,
+    "dataset": "COCO",
+    "condition": "sd21_regen_02",
+    "ba": 0.9453125,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 114,
+    "sec_verify": 49.71178074204363
+  },
+  {
+    "gidx": 6,
+    "dataset": "COCO",
+    "condition": "sd21_regen_03",
+    "ba": 0.91796875,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 115,
+    "sec_verify": 50.72564793599304
+  },
+  {
+    "gidx": 8,
+    "dataset": "COCO",
+    "condition": "waves_rotation",
+    "ba": 0.53125,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 24,
+    "sec_verify": 51.18741899903398
+  },
+  {
+    "gidx": 8,
+    "dataset": "COCO",
+    "condition": "waves_resizedcrop",
+    "ba": 0.51953125,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 36,
+    "sec_verify": 51.23197134700604
+  },
+  {
+    "gidx": 8,
+    "dataset": "COCO",
+    "condition": "waves_erasing",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 51,
+    "sec_verify": 51.98400724696694
+  },
+  {
+    "gidx": 8,
+    "dataset": "COCO",
+    "condition": "waves_brightness",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 47,
+    "sec_verify": 50.78936861199327
+  },
+  {
+    "gidx": 8,
+    "dataset": "COCO",
+    "condition": "waves_contrast",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 42,
+    "sec_verify": 52.07070807897253
+  },
+  {
+    "gidx": 8,
+    "dataset": "COCO",
+    "condition": "waves_blurring",
+    "ba": 0.78125,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 46,
+    "sec_verify": 51.16447670897469
+  },
+  {
+    "gidx": 8,
+    "dataset": "COCO",
+    "condition": "waves_noise",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 40,
+    "sec_verify": 50.60106643597828
+  },
+  {
+    "gidx": 8,
+    "dataset": "COCO",
+    "condition": "waves_compression",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 38,
+    "sec_verify": 51.04591864300892
+  },
+  {
+    "gidx": 8,
+    "dataset": "COCO",
+    "condition": "vae_roundtrip",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 41,
+    "sec_verify": 50.97692397196079
+  },
+  {
+    "gidx": 8,
+    "dataset": "COCO",
+    "condition": "sd21_regen_01",
+    "ba": 0.9921875,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 31,
+    "sec_verify": 50.683074170025066
+  },
+  {
+    "gidx": 8,
+    "dataset": "COCO",
+    "condition": "sd21_regen_02",
+    "ba": 0.97265625,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 35,
+    "sec_verify": 50.770294940972235
+  },
+  {
+    "gidx": 8,
+    "dataset": "COCO",
+    "condition": "sd21_regen_03",
+    "ba": 0.93359375,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 34,
+    "sec_verify": 50.83624046703335
+  },
+  {
+    "gidx": 50,
+    "dataset": "SDP",
+    "condition": "waves_rotation",
+    "ba": 0.4921875,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 182,
+    "sec_verify": 51.48150179901859
+  },
+  {
+    "gidx": 50,
+    "dataset": "SDP",
+    "condition": "waves_resizedcrop",
+    "ba": 0.48046875,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 211,
+    "sec_verify": 50.97302402899368
+  },
+  {
+    "gidx": 50,
+    "dataset": "SDP",
+    "condition": "waves_erasing",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 125,
+    "sec_verify": 50.530093871988356
+  },
+  {
+    "gidx": 50,
+    "dataset": "SDP",
+    "condition": "waves_brightness",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 146,
+    "sec_verify": 50.37501585303107
+  },
+  {
+    "gidx": 50,
+    "dataset": "SDP",
+    "condition": "waves_contrast",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 123,
+    "sec_verify": 49.45552719401894
+  },
+  {
+    "gidx": 50,
+    "dataset": "SDP",
+    "condition": "waves_blurring",
+    "ba": 0.68359375,
+    "accept_gs_default": false,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 221,
+    "sec_verify": 49.292470943008084
+  },
+  {
+    "gidx": 50,
+    "dataset": "SDP",
+    "condition": "waves_noise",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 94,
+    "sec_verify": 50.54508228297345
+  },
+  {
+    "gidx": 50,
+    "dataset": "SDP",
+    "condition": "waves_compression",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 89,
+    "sec_verify": 50.10317344701616
+  },
+  {
+    "gidx": 50,
+    "dataset": "SDP",
+    "condition": "vae_roundtrip",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 105,
+    "sec_verify": 50.72092992498074
+  },
+  {
+    "gidx": 50,
+    "dataset": "SDP",
+    "condition": "sd21_regen_01",
+    "ba": 0.953125,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 135,
+    "sec_verify": 50.071441309992224
+  },
+  {
+    "gidx": 50,
+    "dataset": "SDP",
+    "condition": "sd21_regen_02",
+    "ba": 0.9609375,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 102,
+    "sec_verify": 52.80447276198538
+  },
+  {
+    "gidx": 50,
+    "dataset": "SDP",
+    "condition": "sd21_regen_03",
+    "ba": 0.92578125,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 87,
+    "sec_verify": 53.04337196203414
+  },
+  {
+    "gidx": 52,
+    "dataset": "SDP",
+    "condition": "waves_rotation",
+    "ba": 0.5234375,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 263,
+    "sec_verify": 53.57662493700627
+  },
+  {
+    "gidx": 52,
+    "dataset": "SDP",
+    "condition": "waves_resizedcrop",
+    "ba": 0.4296875,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 538,
+    "sec_verify": 51.265101764991414
+  },
+  {
+    "gidx": 52,
+    "dataset": "SDP",
+    "condition": "waves_erasing",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 156,
+    "sec_verify": 50.62610633100849
+  },
+  {
+    "gidx": 52,
+    "dataset": "SDP",
+    "condition": "waves_brightness",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 191,
+    "sec_verify": 50.960564150998835
+  },
+  {
+    "gidx": 52,
+    "dataset": "SDP",
+    "condition": "waves_contrast",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 137,
+    "sec_verify": 50.94951611600118
+  },
+  {
+    "gidx": 52,
+    "dataset": "SDP",
+    "condition": "waves_blurring",
+    "ba": 0.515625,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 536,
+    "sec_verify": 50.9518995580147
+  },
+  {
+    "gidx": 52,
+    "dataset": "SDP",
+    "condition": "waves_noise",
+    "ba": 0.98828125,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 124,
+    "sec_verify": 51.3302214150317
+  },
+  {
+    "gidx": 52,
+    "dataset": "SDP",
+    "condition": "waves_compression",
+    "ba": 0.99609375,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 110,
+    "sec_verify": 51.41965255897958
+  },
+  {
+    "gidx": 52,
+    "dataset": "SDP",
+    "condition": "vae_roundtrip",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 102,
+    "sec_verify": 51.19985275500221
+  },
+  {
+    "gidx": 52,
+    "dataset": "SDP",
+    "condition": "sd21_regen_01",
+    "ba": 0.98046875,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 107,
+    "sec_verify": 50.968382868974004
+  },
+  {
+    "gidx": 52,
+    "dataset": "SDP",
+    "condition": "sd21_regen_02",
+    "ba": 0.91796875,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 155,
+    "sec_verify": 52.26473997795256
+  },
+  {
+    "gidx": 52,
+    "dataset": "SDP",
+    "condition": "sd21_regen_03",
+    "ba": 0.8984375,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 112,
+    "sec_verify": 51.13195173302665
+  },
+  {
+    "gidx": 54,
+    "dataset": "SDP",
+    "condition": "waves_rotation",
+    "ba": 0.5078125,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 8,
+    "sec_verify": 51.63311665598303
+  },
+  {
+    "gidx": 54,
+    "dataset": "SDP",
+    "condition": "waves_resizedcrop",
+    "ba": 0.515625,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 8,
+    "sec_verify": 52.028417524008546
+  },
+  {
+    "gidx": 54,
+    "dataset": "SDP",
+    "condition": "waves_erasing",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 5,
+    "sec_verify": 51.62924949498847
+  },
+  {
+    "gidx": 54,
+    "dataset": "SDP",
+    "condition": "waves_brightness",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 6,
+    "sec_verify": 52.46316946297884
+  },
+  {
+    "gidx": 54,
+    "dataset": "SDP",
+    "condition": "waves_contrast",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 7,
+    "sec_verify": 51.2868004119955
+  },
+  {
+    "gidx": 54,
+    "dataset": "SDP",
+    "condition": "waves_blurring",
+    "ba": 0.73828125,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 14,
+    "sec_verify": 52.55098607100081
+  },
+  {
+    "gidx": 54,
+    "dataset": "SDP",
+    "condition": "waves_noise",
+    "ba": 0.9765625,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 7,
+    "sec_verify": 51.692125333007425
+  },
+  {
+    "gidx": 54,
+    "dataset": "SDP",
+    "condition": "waves_compression",
+    "ba": 0.98046875,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 8,
+    "sec_verify": 52.01331377000315
+  },
+  {
+    "gidx": 54,
+    "dataset": "SDP",
+    "condition": "vae_roundtrip",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 6,
+    "sec_verify": 53.704252661031205
+  },
+  {
+    "gidx": 54,
+    "dataset": "SDP",
+    "condition": "sd21_regen_01",
+    "ba": 0.9921875,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 7,
+    "sec_verify": 51.394362377992366
+  },
+  {
+    "gidx": 54,
+    "dataset": "SDP",
+    "condition": "sd21_regen_02",
+    "ba": 0.92578125,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 9,
+    "sec_verify": 50.8386168339639
+  },
+  {
+    "gidx": 54,
+    "dataset": "SDP",
+    "condition": "sd21_regen_03",
+    "ba": 0.890625,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 13,
+    "sec_verify": 51.491753358975984
+  },
+  {
+    "gidx": 56,
+    "dataset": "SDP",
+    "condition": "waves_rotation",
+    "ba": 0.4609375,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 83,
+    "sec_verify": 53.66222663898952
+  },
+  {
+    "gidx": 56,
+    "dataset": "SDP",
+    "condition": "waves_resizedcrop",
+    "ba": 0.5,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 115,
+    "sec_verify": 52.37202912999783
+  },
+  {
+    "gidx": 56,
+    "dataset": "SDP",
+    "condition": "waves_erasing",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 216,
+    "sec_verify": 51.326392167015
+  },
+  {
+    "gidx": 56,
+    "dataset": "SDP",
+    "condition": "waves_brightness",
+    "ba": 0.99609375,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 225,
+    "sec_verify": 50.95863065501908
+  },
+  {
+    "gidx": 56,
+    "dataset": "SDP",
+    "condition": "waves_contrast",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 150,
+    "sec_verify": 50.15684173395857
+  },
+  {
+    "gidx": 56,
+    "dataset": "SDP",
+    "condition": "waves_blurring",
+    "ba": 0.55859375,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 269,
+    "sec_verify": 50.43185605702456
+  },
+  {
+    "gidx": 56,
+    "dataset": "SDP",
+    "condition": "waves_noise",
+    "ba": 0.828125,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 260,
+    "sec_verify": 51.78904078801861
+  },
+  {
+    "gidx": 56,
+    "dataset": "SDP",
+    "condition": "waves_compression",
+    "ba": 0.97265625,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 90,
+    "sec_verify": 51.359873567998875
+  },
+  {
+    "gidx": 56,
+    "dataset": "SDP",
+    "condition": "vae_roundtrip",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 84,
+    "sec_verify": 53.12841914501041
+  },
+  {
+    "gidx": 56,
+    "dataset": "SDP",
+    "condition": "sd21_regen_01",
+    "ba": 0.95703125,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 118,
+    "sec_verify": 51.47189119801624
+  },
+  {
+    "gidx": 56,
+    "dataset": "SDP",
+    "condition": "sd21_regen_02",
+    "ba": 0.921875,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 99,
+    "sec_verify": 53.03710656199837
+  },
+  {
+    "gidx": 56,
+    "dataset": "SDP",
+    "condition": "sd21_regen_03",
+    "ba": 0.86328125,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 113,
+    "sec_verify": 51.947076560987625
+  },
+  {
+    "gidx": 58,
+    "dataset": "SDP",
+    "condition": "waves_rotation",
+    "ba": 0.5390625,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 38,
+    "sec_verify": 51.39582190098008
+  },
+  {
+    "gidx": 58,
+    "dataset": "SDP",
+    "condition": "waves_resizedcrop",
+    "ba": 0.515625,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 45,
+    "sec_verify": 52.50318786397111
+  },
+  {
+    "gidx": 58,
+    "dataset": "SDP",
+    "condition": "waves_erasing",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 75,
+    "sec_verify": 51.83101593598258
+  },
+  {
+    "gidx": 58,
+    "dataset": "SDP",
+    "condition": "waves_brightness",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 35,
+    "sec_verify": 51.59714311698917
+  },
+  {
+    "gidx": 58,
+    "dataset": "SDP",
+    "condition": "waves_contrast",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 47,
+    "sec_verify": 51.33758287795354
+  },
+  {
+    "gidx": 58,
+    "dataset": "SDP",
+    "condition": "waves_blurring",
+    "ba": 0.76953125,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 86,
+    "sec_verify": 52.29148305399576
+  },
+  {
+    "gidx": 58,
+    "dataset": "SDP",
+    "condition": "waves_noise",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 39,
+    "sec_verify": 51.151893071015365
+  },
+  {
+    "gidx": 58,
+    "dataset": "SDP",
+    "condition": "waves_compression",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 35,
+    "sec_verify": 51.19610835297499
+  },
+  {
+    "gidx": 58,
+    "dataset": "SDP",
+    "condition": "vae_roundtrip",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 40,
+    "sec_verify": 53.09252472396474
+  },
+  {
+    "gidx": 58,
+    "dataset": "SDP",
+    "condition": "sd21_regen_01",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 66,
+    "sec_verify": 52.033765237021726
+  },
+  {
+    "gidx": 58,
+    "dataset": "SDP",
+    "condition": "sd21_regen_02",
+    "ba": 0.9921875,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 49,
+    "sec_verify": 51.39551536302315
+  },
+  {
+    "gidx": 58,
+    "dataset": "SDP",
+    "condition": "sd21_regen_03",
+    "ba": 0.98828125,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 43,
+    "sec_verify": 51.14008696604287
+  },
+  {
+    "gidx": 1,
+    "dataset": "COCO",
+    "condition": "waves_rotation",
+    "ba": 0.515625,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 67,
+    "sec_verify": 54.71521654102253
+  },
+  {
+    "gidx": 1,
+    "dataset": "COCO",
+    "condition": "waves_resizedcrop",
+    "ba": 0.47265625,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 83,
+    "sec_verify": 52.47982500697253
+  },
+  {
+    "gidx": 1,
+    "dataset": "COCO",
+    "condition": "waves_erasing",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 111,
+    "sec_verify": 52.030058345990255
+  },
+  {
+    "gidx": 1,
+    "dataset": "COCO",
+    "condition": "waves_brightness",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 96,
+    "sec_verify": 51.876009696978144
+  },
+  {
+    "gidx": 1,
+    "dataset": "COCO",
+    "condition": "waves_contrast",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 63,
+    "sec_verify": 51.802560474025086
+  },
+  {
+    "gidx": 1,
+    "dataset": "COCO",
+    "condition": "waves_blurring",
+    "ba": 0.69921875,
+    "accept_gs_default": false,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 57,
+    "sec_verify": 51.680724620993715
+  },
+  {
+    "gidx": 1,
+    "dataset": "COCO",
+    "condition": "waves_noise",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 107,
+    "sec_verify": 51.687256399018224
+  },
+  {
+    "gidx": 1,
+    "dataset": "COCO",
+    "condition": "waves_compression",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 74,
+    "sec_verify": 50.86980981298257
+  },
+  {
+    "gidx": 1,
+    "dataset": "COCO",
+    "condition": "vae_roundtrip",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 84,
+    "sec_verify": 51.10884448699653
+  },
+  {
+    "gidx": 1,
+    "dataset": "COCO",
+    "condition": "sd21_regen_01",
+    "ba": 0.984375,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 130,
+    "sec_verify": 51.57740249001654
+  },
+  {
+    "gidx": 1,
+    "dataset": "COCO",
+    "condition": "sd21_regen_02",
+    "ba": 0.9375,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 170,
+    "sec_verify": 51.35929330799263
+  },
+  {
+    "gidx": 1,
+    "dataset": "COCO",
+    "condition": "sd21_regen_03",
+    "ba": 0.96484375,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 117,
+    "sec_verify": 51.13385999301681
+  },
+  {
+    "gidx": 3,
+    "dataset": "COCO",
+    "condition": "waves_rotation",
+    "ba": 0.5078125,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 80,
+    "sec_verify": 51.24556319700787
+  },
+  {
+    "gidx": 3,
+    "dataset": "COCO",
+    "condition": "waves_resizedcrop",
+    "ba": 0.515625,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 66,
+    "sec_verify": 51.281577449000906
+  },
+  {
+    "gidx": 3,
+    "dataset": "COCO",
+    "condition": "waves_erasing",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 35,
+    "sec_verify": 50.905395175970625
+  },
+  {
+    "gidx": 3,
+    "dataset": "COCO",
+    "condition": "waves_brightness",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 61,
+    "sec_verify": 49.987829600984696
+  },
+  {
+    "gidx": 3,
+    "dataset": "COCO",
+    "condition": "waves_contrast",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 87,
+    "sec_verify": 50.32345750904642
+  },
+  {
+    "gidx": 3,
+    "dataset": "COCO",
+    "condition": "waves_blurring",
+    "ba": 0.75,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 91,
+    "sec_verify": 50.74965265498031
+  },
+  {
+    "gidx": 3,
+    "dataset": "COCO",
+    "condition": "waves_noise",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 80,
+    "sec_verify": 50.966886317008175
+  },
+  {
+    "gidx": 3,
+    "dataset": "COCO",
+    "condition": "waves_compression",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 84,
+    "sec_verify": 50.91316384199308
+  },
+  {
+    "gidx": 3,
+    "dataset": "COCO",
+    "condition": "vae_roundtrip",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 89,
+    "sec_verify": 51.09567020297982
+  },
+  {
+    "gidx": 3,
+    "dataset": "COCO",
+    "condition": "sd21_regen_01",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 91,
+    "sec_verify": 52.397848601976875
+  },
+  {
+    "gidx": 3,
+    "dataset": "COCO",
+    "condition": "sd21_regen_02",
+    "ba": 0.97265625,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 97,
+    "sec_verify": 52.37536373001058
+  },
+  {
+    "gidx": 3,
+    "dataset": "COCO",
+    "condition": "sd21_regen_03",
+    "ba": 0.953125,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 87,
+    "sec_verify": 51.22793025500141
+  },
+  {
+    "gidx": 5,
+    "dataset": "COCO",
+    "condition": "waves_rotation",
+    "ba": 0.4375,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 12,
+    "sec_verify": 50.22004603501409
+  },
+  {
+    "gidx": 5,
+    "dataset": "COCO",
+    "condition": "waves_resizedcrop",
+    "ba": 0.484375,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 8,
+    "sec_verify": 51.13381178100826
+  },
+  {
+    "gidx": 5,
+    "dataset": "COCO",
+    "condition": "waves_erasing",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 29,
+    "sec_verify": 52.44638578197919
+  },
+  {
+    "gidx": 5,
+    "dataset": "COCO",
+    "condition": "waves_brightness",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 12,
+    "sec_verify": 50.51479710498825
+  },
+  {
+    "gidx": 5,
+    "dataset": "COCO",
+    "condition": "waves_contrast",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 9,
+    "sec_verify": 50.00395764602581
+  },
+  {
+    "gidx": 5,
+    "dataset": "COCO",
+    "condition": "waves_blurring",
+    "ba": 0.77734375,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 28,
+    "sec_verify": 49.64098340901546
+  },
+  {
+    "gidx": 5,
+    "dataset": "COCO",
+    "condition": "waves_noise",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 9,
+    "sec_verify": 49.745513169968035
+  },
+  {
+    "gidx": 5,
+    "dataset": "COCO",
+    "condition": "waves_compression",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 10,
+    "sec_verify": 49.88368859200273
+  },
+  {
+    "gidx": 5,
+    "dataset": "COCO",
+    "condition": "vae_roundtrip",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 7,
+    "sec_verify": 50.031883232004475
+  },
+  {
+    "gidx": 5,
+    "dataset": "COCO",
+    "condition": "sd21_regen_01",
+    "ba": 0.99609375,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 14,
+    "sec_verify": 49.24344642198412
+  },
+  {
+    "gidx": 5,
+    "dataset": "COCO",
+    "condition": "sd21_regen_02",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 12,
+    "sec_verify": 49.558760132989846
+  },
+  {
+    "gidx": 5,
+    "dataset": "COCO",
+    "condition": "sd21_regen_03",
+    "ba": 0.98046875,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 17,
+    "sec_verify": 50.7562893970171
+  },
+  {
+    "gidx": 7,
+    "dataset": "COCO",
+    "condition": "waves_rotation",
+    "ba": 0.58984375,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 24,
+    "sec_verify": 51.61067115102196
+  },
+  {
+    "gidx": 7,
+    "dataset": "COCO",
+    "condition": "waves_resizedcrop",
+    "ba": 0.48828125,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 12,
+    "sec_verify": 51.47042413899908
+  },
+  {
+    "gidx": 7,
+    "dataset": "COCO",
+    "condition": "waves_erasing",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 12,
+    "sec_verify": 50.49305017199367
+  },
+  {
+    "gidx": 7,
+    "dataset": "COCO",
+    "condition": "waves_brightness",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 16,
+    "sec_verify": 49.69092211202951
+  },
+  {
+    "gidx": 7,
+    "dataset": "COCO",
+    "condition": "waves_contrast",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 18,
+    "sec_verify": 50.06686873000581
+  },
+  {
+    "gidx": 7,
+    "dataset": "COCO",
+    "condition": "waves_blurring",
+    "ba": 0.67578125,
+    "accept_gs_default": false,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 9,
+    "sec_verify": 51.20030725299148
+  },
+  {
+    "gidx": 7,
+    "dataset": "COCO",
+    "condition": "waves_noise",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 13,
+    "sec_verify": 50.60835956898518
+  },
+  {
+    "gidx": 7,
+    "dataset": "COCO",
+    "condition": "waves_compression",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 14,
+    "sec_verify": 49.69420257699676
+  },
+  {
+    "gidx": 7,
+    "dataset": "COCO",
+    "condition": "vae_roundtrip",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 16,
+    "sec_verify": 50.58781686797738
+  },
+  {
+    "gidx": 7,
+    "dataset": "COCO",
+    "condition": "sd21_regen_01",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 12,
+    "sec_verify": 51.47269240103196
+  },
+  {
+    "gidx": 7,
+    "dataset": "COCO",
+    "condition": "sd21_regen_02",
+    "ba": 0.9921875,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 5,
+    "sec_verify": 50.51093623897759
+  },
+  {
+    "gidx": 7,
+    "dataset": "COCO",
+    "condition": "sd21_regen_03",
+    "ba": 0.93359375,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 23,
+    "sec_verify": 49.855661378998775
+  },
+  {
+    "gidx": 9,
+    "dataset": "COCO",
+    "condition": "waves_rotation",
+    "ba": 0.5234375,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 67,
+    "sec_verify": 49.92293909902219
+  },
+  {
+    "gidx": 9,
+    "dataset": "COCO",
+    "condition": "waves_resizedcrop",
+    "ba": 0.5390625,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 70,
+    "sec_verify": 50.69214318000013
+  },
+  {
+    "gidx": 9,
+    "dataset": "COCO",
+    "condition": "waves_erasing",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 94,
+    "sec_verify": 50.26297183695715
+  },
+  {
+    "gidx": 9,
+    "dataset": "COCO",
+    "condition": "waves_brightness",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 70,
+    "sec_verify": 50.00268983497517
+  },
+  {
+    "gidx": 9,
+    "dataset": "COCO",
+    "condition": "waves_contrast",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 64,
+    "sec_verify": 51.31700502400054
+  },
+  {
+    "gidx": 9,
+    "dataset": "COCO",
+    "condition": "waves_blurring",
+    "ba": 0.6875,
+    "accept_gs_default": false,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 76,
+    "sec_verify": 50.68842101399787
+  },
+  {
+    "gidx": 9,
+    "dataset": "COCO",
+    "condition": "waves_noise",
+    "ba": 0.99609375,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 71,
+    "sec_verify": 50.90415831003338
+  },
+  {
+    "gidx": 9,
+    "dataset": "COCO",
+    "condition": "waves_compression",
+    "ba": 0.99609375,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 72,
+    "sec_verify": 51.05998138897121
+  },
+  {
+    "gidx": 9,
+    "dataset": "COCO",
+    "condition": "vae_roundtrip",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 71,
+    "sec_verify": 51.30144546797965
+  },
+  {
+    "gidx": 9,
+    "dataset": "COCO",
+    "condition": "sd21_regen_01",
+    "ba": 0.9921875,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 56,
+    "sec_verify": 52.72452346194768
+  },
+  {
+    "gidx": 9,
+    "dataset": "COCO",
+    "condition": "sd21_regen_02",
+    "ba": 0.96484375,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 58,
+    "sec_verify": 53.47203612700105
+  },
+  {
+    "gidx": 9,
+    "dataset": "COCO",
+    "condition": "sd21_regen_03",
+    "ba": 0.93359375,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 72,
+    "sec_verify": 53.21212735702284
+  },
+  {
+    "gidx": 51,
+    "dataset": "SDP",
+    "condition": "waves_rotation",
+    "ba": 0.48046875,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 95,
+    "sec_verify": 52.61682397703407
+  },
+  {
+    "gidx": 51,
+    "dataset": "SDP",
+    "condition": "waves_resizedcrop",
+    "ba": 0.51953125,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 81,
+    "sec_verify": 52.10912882396951
+  },
+  {
+    "gidx": 51,
+    "dataset": "SDP",
+    "condition": "waves_erasing",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 84,
+    "sec_verify": 52.750703008961864
+  },
+  {
+    "gidx": 51,
+    "dataset": "SDP",
+    "condition": "waves_brightness",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 76,
+    "sec_verify": 52.316679604002275
+  },
+  {
+    "gidx": 51,
+    "dataset": "SDP",
+    "condition": "waves_contrast",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 77,
+    "sec_verify": 51.38559643400367
+  },
+  {
+    "gidx": 51,
+    "dataset": "SDP",
+    "condition": "waves_blurring",
+    "ba": 0.66015625,
+    "accept_gs_default": false,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 105,
+    "sec_verify": 52.24974130000919
+  },
+  {
+    "gidx": 51,
+    "dataset": "SDP",
+    "condition": "waves_noise",
+    "ba": 0.99609375,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 81,
+    "sec_verify": 51.529313692008145
+  },
+  {
+    "gidx": 51,
+    "dataset": "SDP",
+    "condition": "waves_compression",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 79,
+    "sec_verify": 50.30662102397764
+  },
+  {
+    "gidx": 51,
+    "dataset": "SDP",
+    "condition": "vae_roundtrip",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 78,
+    "sec_verify": 51.02842484397115
+  },
+  {
+    "gidx": 51,
+    "dataset": "SDP",
+    "condition": "sd21_regen_01",
+    "ba": 0.9921875,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 78,
+    "sec_verify": 50.77868655696511
+  },
+  {
+    "gidx": 51,
+    "dataset": "SDP",
+    "condition": "sd21_regen_02",
+    "ba": 0.984375,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 58,
+    "sec_verify": 51.76864821999334
+  },
+  {
+    "gidx": 51,
+    "dataset": "SDP",
+    "condition": "sd21_regen_03",
+    "ba": 0.92578125,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 79,
+    "sec_verify": 51.17447942099534
+  },
+  {
+    "gidx": 53,
+    "dataset": "SDP",
+    "condition": "waves_rotation",
+    "ba": 0.49609375,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 88,
+    "sec_verify": 50.68782844900852
+  },
+  {
+    "gidx": 53,
+    "dataset": "SDP",
+    "condition": "waves_resizedcrop",
+    "ba": 0.51171875,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 74,
+    "sec_verify": 51.22659355902579
+  },
+  {
+    "gidx": 53,
+    "dataset": "SDP",
+    "condition": "waves_erasing",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 84,
+    "sec_verify": 53.42370739101898
+  },
+  {
+    "gidx": 53,
+    "dataset": "SDP",
+    "condition": "waves_brightness",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 74,
+    "sec_verify": 52.83366287802346
+  },
+  {
+    "gidx": 53,
+    "dataset": "SDP",
+    "condition": "waves_contrast",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 81,
+    "sec_verify": 52.08716283598915
+  },
+  {
+    "gidx": 53,
+    "dataset": "SDP",
+    "condition": "waves_blurring",
+    "ba": 0.75390625,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 124,
+    "sec_verify": 51.48713247501291
+  },
+  {
+    "gidx": 53,
+    "dataset": "SDP",
+    "condition": "waves_noise",
+    "ba": 0.9921875,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 105,
+    "sec_verify": 50.29862058599247
+  },
+  {
+    "gidx": 53,
+    "dataset": "SDP",
+    "condition": "waves_compression",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 88,
+    "sec_verify": 50.158721927029546
+  },
+  {
+    "gidx": 53,
+    "dataset": "SDP",
+    "condition": "vae_roundtrip",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 86,
+    "sec_verify": 50.708899840014055
+  },
+  {
+    "gidx": 53,
+    "dataset": "SDP",
+    "condition": "sd21_regen_01",
+    "ba": 0.98046875,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 94,
+    "sec_verify": 50.997909795027226
+  },
+  {
+    "gidx": 53,
+    "dataset": "SDP",
+    "condition": "sd21_regen_02",
+    "ba": 0.91015625,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 116,
+    "sec_verify": 51.17238964297576
+  },
+  {
+    "gidx": 53,
+    "dataset": "SDP",
+    "condition": "sd21_regen_03",
+    "ba": 0.89453125,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 96,
+    "sec_verify": 51.09350637398893
+  },
+  {
+    "gidx": 55,
+    "dataset": "SDP",
+    "condition": "waves_rotation",
+    "ba": 0.46875,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 168,
+    "sec_verify": 50.558140809996985
+  },
+  {
+    "gidx": 55,
+    "dataset": "SDP",
+    "condition": "waves_resizedcrop",
+    "ba": 0.45703125,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 135,
+    "sec_verify": 49.991782934986986
+  },
+  {
+    "gidx": 55,
+    "dataset": "SDP",
+    "condition": "waves_erasing",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 76,
+    "sec_verify": 50.494881369988434
+  },
+  {
+    "gidx": 55,
+    "dataset": "SDP",
+    "condition": "waves_brightness",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 134,
+    "sec_verify": 49.633921579050366
+  },
+  {
+    "gidx": 55,
+    "dataset": "SDP",
+    "condition": "waves_contrast",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 110,
+    "sec_verify": 49.32693463994656
+  },
+  {
+    "gidx": 55,
+    "dataset": "SDP",
+    "condition": "waves_blurring",
+    "ba": 0.67578125,
+    "accept_gs_default": false,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 118,
+    "sec_verify": 50.626291180960834
+  },
+  {
+    "gidx": 55,
+    "dataset": "SDP",
+    "condition": "waves_noise",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 100,
+    "sec_verify": 50.159719881019555
+  },
+  {
+    "gidx": 55,
+    "dataset": "SDP",
+    "condition": "waves_compression",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 92,
+    "sec_verify": 50.2678152580047
+  },
+  {
+    "gidx": 55,
+    "dataset": "SDP",
+    "condition": "vae_roundtrip",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 105,
+    "sec_verify": 50.083175168023445
+  },
+  {
+    "gidx": 55,
+    "dataset": "SDP",
+    "condition": "sd21_regen_01",
+    "ba": 0.96875,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 140,
+    "sec_verify": 49.808754308964126
+  },
+  {
+    "gidx": 55,
+    "dataset": "SDP",
+    "condition": "sd21_regen_02",
+    "ba": 0.9765625,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 104,
+    "sec_verify": 50.58783768705325
+  },
+  {
+    "gidx": 55,
+    "dataset": "SDP",
+    "condition": "sd21_regen_03",
+    "ba": 0.9453125,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 70,
+    "sec_verify": 49.82105256099021
+  },
+  {
+    "gidx": 57,
+    "dataset": "SDP",
+    "condition": "waves_rotation",
+    "ba": 0.453125,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 104,
+    "sec_verify": 49.666478286031634
+  },
+  {
+    "gidx": 57,
+    "dataset": "SDP",
+    "condition": "waves_resizedcrop",
+    "ba": 0.484375,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 56,
+    "sec_verify": 49.91473885497544
+  },
+  {
+    "gidx": 57,
+    "dataset": "SDP",
+    "condition": "waves_erasing",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 60,
+    "sec_verify": 50.68479794601444
+  },
+  {
+    "gidx": 57,
+    "dataset": "SDP",
+    "condition": "waves_brightness",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 81,
+    "sec_verify": 50.376680208020844
+  },
+  {
+    "gidx": 57,
+    "dataset": "SDP",
+    "condition": "waves_contrast",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 73,
+    "sec_verify": 51.56784210598562
+  },
+  {
+    "gidx": 57,
+    "dataset": "SDP",
+    "condition": "waves_blurring",
+    "ba": 0.609375,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 106,
+    "sec_verify": 49.960072456044145
+  },
+  {
+    "gidx": 57,
+    "dataset": "SDP",
+    "condition": "waves_noise",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 57,
+    "sec_verify": 49.798869025020394
+  },
+  {
+    "gidx": 57,
+    "dataset": "SDP",
+    "condition": "waves_compression",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 82,
+    "sec_verify": 49.57650670298608
+  },
+  {
+    "gidx": 57,
+    "dataset": "SDP",
+    "condition": "vae_roundtrip",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 84,
+    "sec_verify": 49.84922149096383
+  },
+  {
+    "gidx": 57,
+    "dataset": "SDP",
+    "condition": "sd21_regen_01",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 48,
+    "sec_verify": 49.66014507296495
+  },
+  {
+    "gidx": 57,
+    "dataset": "SDP",
+    "condition": "sd21_regen_02",
+    "ba": 0.98828125,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 54,
+    "sec_verify": 49.41508878098102
+  },
+  {
+    "gidx": 57,
+    "dataset": "SDP",
+    "condition": "sd21_regen_03",
+    "ba": 0.97265625,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 43,
+    "sec_verify": 49.182579146989156
+  },
+  {
+    "gidx": 59,
+    "dataset": "SDP",
+    "condition": "waves_rotation",
+    "ba": 0.48828125,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 129,
+    "sec_verify": 49.87835501000518
+  },
+  {
+    "gidx": 59,
+    "dataset": "SDP",
+    "condition": "waves_resizedcrop",
+    "ba": 0.546875,
+    "accept_gs_default": false,
+    "accept_gs_167": false,
+    "code_hamming_vs_aux": 120,
+    "sec_verify": 50.29678622499341
+  },
+  {
+    "gidx": 59,
+    "dataset": "SDP",
+    "condition": "waves_erasing",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 91,
+    "sec_verify": 49.83996644697618
+  },
+  {
+    "gidx": 59,
+    "dataset": "SDP",
+    "condition": "waves_brightness",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 122,
+    "sec_verify": 49.46512225404149
+  },
+  {
+    "gidx": 59,
+    "dataset": "SDP",
+    "condition": "waves_contrast",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 119,
+    "sec_verify": 49.071288281993475
+  },
+  {
+    "gidx": 59,
+    "dataset": "SDP",
+    "condition": "waves_blurring",
+    "ba": 0.7421875,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 98,
+    "sec_verify": 48.903535460995045
+  },
+  {
+    "gidx": 59,
+    "dataset": "SDP",
+    "condition": "waves_noise",
+    "ba": 0.96875,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 117,
+    "sec_verify": 49.850112968997564
+  },
+  {
+    "gidx": 59,
+    "dataset": "SDP",
+    "condition": "waves_compression",
+    "ba": 0.9921875,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 115,
+    "sec_verify": 50.0856308680377
+  },
+  {
+    "gidx": 59,
+    "dataset": "SDP",
+    "condition": "vae_roundtrip",
+    "ba": 1.0,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 111,
+    "sec_verify": 49.84961623395793
+  },
+  {
+    "gidx": 59,
+    "dataset": "SDP",
+    "condition": "sd21_regen_01",
+    "ba": 0.9609375,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 134,
+    "sec_verify": 49.53181857900927
+  },
+  {
+    "gidx": 59,
+    "dataset": "SDP",
+    "condition": "sd21_regen_02",
+    "ba": 0.88671875,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 123,
+    "sec_verify": 49.60895376803819
+  },
+  {
+    "gidx": 59,
+    "dataset": "SDP",
+    "condition": "sd21_regen_03",
+    "ba": 0.84765625,
+    "accept_gs_default": true,
+    "accept_gs_167": true,
+    "code_hamming_vs_aux": 142,
+    "sec_verify": 51.2438631959958
+  }
+]

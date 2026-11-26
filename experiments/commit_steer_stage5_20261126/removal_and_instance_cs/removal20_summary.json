@@ -1,0 +1,254 @@
+{
+  "elapsed_seconds": 866.4520918470225,
+  "arms": {
+    "native_gs": {
+      "n_prompts": 20,
+      "waves8_pass": 113,
+      "waves8_total": 160,
+      "waves8_auth_pass": 113,
+      "regen4_pass": 80,
+      "regen4_total": 80,
+      "regen4_auth_pass": 80,
+      "by_cond": {
+        "waves_rotation": {
+          "n": 20,
+          "pass_count": 0,
+          "pass_gs_167": 0,
+          "mean_ba_256": 0.4947265625
+        },
+        "waves_resizedcrop": {
+          "n": 20,
+          "pass_count": 0,
+          "pass_gs_167": 0,
+          "mean_ba_256": 0.5271484375
+        },
+        "waves_erasing": {
+          "n": 20,
+          "pass_count": 20,
+          "pass_gs_167": 20,
+          "mean_ba_256": 1.0
+        },
+        "waves_brightness": {
+          "n": 20,
+          "pass_count": 20,
+          "pass_gs_167": 20,
+          "mean_ba_256": 1.0
+        },
+        "waves_contrast": {
+          "n": 20,
+          "pass_count": 20,
+          "pass_gs_167": 20,
+          "mean_ba_256": 0.9998046875
+        },
+        "waves_blurring": {
+          "n": 20,
+          "pass_count": 13,
+          "pass_gs_167": 19,
+          "mean_ba_256": 0.7216796875
+        },
+        "waves_noise": {
+          "n": 20,
+          "pass_count": 20,
+          "pass_gs_167": 20,
+          "mean_ba_256": 0.9974609375
+        },
+        "waves_compression": {
+          "n": 20,
+          "pass_count": 20,
+          "pass_gs_167": 20,
+          "mean_ba_256": 0.9986328125
+        },
+        "vae_roundtrip": {
+          "n": 20,
+          "pass_count": 20,
+          "pass_gs_167": 20,
+          "mean_ba_256": 1.0
+        },
+        "sd21_regen_01": {
+          "n": 20,
+          "pass_count": 20,
+          "pass_gs_167": 20,
+          "mean_ba_256": 0.99375
+        },
+        "sd21_regen_02": {
+          "n": 20,
+          "pass_count": 20,
+          "pass_gs_167": 20,
+          "mean_ba_256": 0.9794921875
+        },
+        "sd21_regen_03": {
+          "n": 20,
+          "pass_count": 20,
+          "pass_gs_167": 20,
+          "mean_ba_256": 0.952734375
+        }
+      }
+    },
+    "commit_steer_sscd64": {
+      "n_prompts": 20,
+      "waves8_pass": 104,
+      "waves8_total": 160,
+      "waves8_auth_pass": 112,
+      "regen4_pass": 65,
+      "regen4_total": 80,
+      "regen4_auth_pass": 80,
+      "by_cond": {
+        "waves_rotation": {
+          "n": 20,
+          "pass_count": 0,
+          "auth_pass": 0,
+          "mean_d_blind": 1.0227556169050385
+        },
+        "waves_resizedcrop": {
+          "n": 20,
+          "pass_count": 0,
+          "auth_pass": 0,
+          "mean_d_blind": 1.0226120344436502
+        },
+        "waves_erasing": {
+          "n": 20,
+          "pass_count": 20,
+          "auth_pass": 20,
+          "mean_d_blind": 0.4550794632886158
+        },
+        "waves_brightness": {
+          "n": 20,
+          "pass_count": 20,
+          "auth_pass": 20,
+          "mean_d_blind": 0.3866364568905302
+        },
+        "waves_contrast": {
+          "n": 20,
+          "pass_count": 20,
+          "auth_pass": 20,
+          "mean_d_blind": 0.3927674439747967
+        },
+        "waves_blurring": {
+          "n": 20,
+          "pass_count": 4,
+          "auth_pass": 12,
+          "mean_d_blind": 0.7710523473045313
+        },
+        "waves_noise": {
+          "n": 20,
+          "pass_count": 20,
+          "auth_pass": 20,
+          "mean_d_blind": 0.38521285772183017
+        },
+        "waves_compression": {
+          "n": 20,
+          "pass_count": 20,
+          "auth_pass": 20,
+          "mean_d_blind": 0.37638081396062184
+        },
+        "vae_roundtrip": {
+          "n": 20,
+          "pass_count": 20,
+          "auth_pass": 20,
+          "mean_d_blind": 0.3619388849075408
+        },
+        "sd21_regen_01": {
+          "n": 20,
+          "pass_count": 19,
+          "auth_pass": 20,
+          "mean_d_blind": 0.5158712424774967
+        },
+        "sd21_regen_02": {
+          "n": 20,
+          "pass_count": 14,
+          "auth_pass": 20,
+          "mean_d_blind": 0.5828993679168797
+        },
+        "sd21_regen_03": {
+          "n": 20,
+          "pass_count": 12,
+          "auth_pass": 20,
+          "mean_d_blind": 0.6753547833108138
+        }
+      }
+    },
+    "commit_steer_hyb": {
+      "n_prompts": 20,
+      "waves8_pass": 94,
+      "waves8_total": 160,
+      "waves8_auth_pass": 113,
+      "regen4_pass": 64,
+      "regen4_total": 80,
+      "regen4_auth_pass": 80,
+      "by_cond": {
+        "waves_rotation": {
+          "n": 20,
+          "pass_count": 0,
+          "auth_pass": 0,
+          "mean_d_blind": 0.9657091942002578
+        },
+        "waves_resizedcrop": {
+          "n": 20,
+          "pass_count": 0,
+          "auth_pass": 0,
+          "mean_d_blind": 0.9795131930892603
+        },
+        "waves_erasing": {
+          "n": 20,
+          "pass_count": 14,
+          "auth_pass": 20,
+          "mean_d_blind": 0.48832136996596276
+        },
+        "waves_brightness": {
+          "n": 20,
+          "pass_count": 19,
+          "auth_pass": 20,
+          "mean_d_blind": 0.35172953438394416
+        },
+        "waves_contrast": {
+          "n": 20,
+          "pass_count": 19,
+          "auth_pass": 20,
+          "mean_d_blind": 0.35681797828493667
+        },
+        "waves_blurring": {
+          "n": 20,
+          "pass_count": 3,
+          "auth_pass": 13,
+          "mean_d_blind": 0.7242742925659877
+        },
+        "waves_noise": {
+          "n": 20,
+          "pass_count": 20,
+          "auth_pass": 20,
+          "mean_d_blind": 0.3680948877440652
+        },
+        "waves_compression": {
+          "n": 20,
+          "pass_count": 19,
+          "auth_pass": 20,
+          "mean_d_blind": 0.37297202083025066
+        },
+        "vae_roundtrip": {
+          "n": 20,
+          "pass_count": 19,
+          "auth_pass": 20,
+          "mean_d_blind": 0.3468553309235075
+        },
+        "sd21_regen_01": {
+          "n": 20,
+          "pass_count": 19,
+          "auth_pass": 20,
+          "mean_d_blind": 0.4082418942722022
+        },
+        "sd21_regen_02": {
+          "n": 20,
+          "pass_count": 15,
+          "auth_pass": 20,
+          "mean_d_blind": 0.48847459343687233
+        },
+        "sd21_regen_03": {
+          "n": 20,
+          "pass_count": 11,
+          "auth_pass": 20,
+          "mean_d_blind": 0.5609678586619962
+        }
+      }
+    }
+  }
+}

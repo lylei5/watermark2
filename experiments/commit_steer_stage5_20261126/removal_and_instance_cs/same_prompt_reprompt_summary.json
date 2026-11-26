@@ -1,0 +1,41 @@
+{
+  "elapsed_seconds": 270.1913556920481,
+  "summary": {
+    "sscd64": {
+      "sd21": {
+        "n_candidates": 12,
+        "n_sources": 4,
+        "native_auth_cand": 12,
+        "commit_steer_cand": 7,
+        "commit_steer_src": 3,
+        "mean_d_blind": 0.7506166347020518
+      },
+      "sd15": {
+        "n_candidates": 12,
+        "n_sources": 4,
+        "native_auth_cand": 12,
+        "commit_steer_cand": 2,
+        "commit_steer_src": 1,
+        "mean_d_blind": 0.8686387799492666
+      }
+    },
+    "hyb": {
+      "sd21": {
+        "n_candidates": 12,
+        "n_sources": 4,
+        "native_auth_cand": 12,
+        "commit_steer_cand": 1,
+        "commit_steer_src": 1,
+        "mean_d_blind": 0.6646735111450525
+      },
+      "sd15": {
+        "n_candidates": 12,
+        "n_sources": 4,
+        "native_auth_cand": 12,
+        "commit_steer_cand": 1,
+        "commit_steer_src": 1,
+        "mean_d_blind": 0.6834875721383301
+      }
+    }
+  }
+}

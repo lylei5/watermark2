@@ -1,0 +1,98 @@
+{
+  "elapsed_seconds": 1116.933569921006,
+  "n_prompts": 20,
+  "waves8_total": 160,
+  "waves8_pass_12": 79,
+  "waves8_pass_4": 93,
+  "waves8_pass_2": 102,
+  "regen4_total": 80,
+  "regen4_pass_12": 21,
+  "regen4_pass_4": 29,
+  "regen4_pass_2": 37,
+  "by_cond": {
+    "waves_rotation": {
+      "n": 20,
+      "pass_12": 0,
+      "pass_4": 0,
+      "pass_2": 1,
+      "mean_matches": 0.35
+    },
+    "waves_resizedcrop": {
+      "n": 20,
+      "pass_12": 0,
+      "pass_4": 0,
+      "pass_2": 0,
+      "mean_matches": 0.1
+    },
+    "waves_erasing": {
+      "n": 20,
+      "pass_12": 19,
+      "pass_4": 19,
+      "pass_2": 20,
+      "mean_matches": 142.85
+    },
+    "waves_brightness": {
+      "n": 20,
+      "pass_12": 18,
+      "pass_4": 19,
+      "pass_2": 20,
+      "mean_matches": 106.6
+    },
+    "waves_contrast": {
+      "n": 20,
+      "pass_12": 19,
+      "pass_4": 19,
+      "pass_2": 20,
+      "mean_matches": 132.2
+    },
+    "waves_blurring": {
+      "n": 20,
+      "pass_12": 0,
+      "pass_4": 1,
+      "pass_2": 4,
+      "mean_matches": 0.9
+    },
+    "waves_noise": {
+      "n": 20,
+      "pass_12": 11,
+      "pass_4": 17,
+      "pass_2": 18,
+      "mean_matches": 44.5
+    },
+    "waves_compression": {
+      "n": 20,
+      "pass_12": 12,
+      "pass_4": 18,
+      "pass_2": 19,
+      "mean_matches": 58.55
+    },
+    "vae_roundtrip": {
+      "n": 20,
+      "pass_12": 18,
+      "pass_4": 20,
+      "pass_2": 20,
+      "mean_matches": 104.9
+    },
+    "sd21_regen_01": {
+      "n": 20,
+      "pass_12": 2,
+      "pass_4": 7,
+      "pass_2": 11,
+      "mean_matches": 4.6
+    },
+    "sd21_regen_02": {
+      "n": 20,
+      "pass_12": 1,
+      "pass_4": 2,
+      "pass_2": 5,
+      "mean_matches": 1.35
+    },
+    "sd21_regen_03": {
+      "n": 20,
+      "pass_12": 0,
+      "pass_4": 0,
+      "pass_2": 1,
+      "mean_matches": 0.3
+    }
+  }
+}

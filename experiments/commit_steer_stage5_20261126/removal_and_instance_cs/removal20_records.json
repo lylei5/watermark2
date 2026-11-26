@@ -1,0 +1,7208 @@
+{
+  "native_gs": [
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "ba_256": 0.5234375,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "ba_256": 0.5625,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "ba_256": 0.76171875,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "ba_256": 0.99609375,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "ba_256": 0.98828125,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "ba_256": 0.94921875,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "ba_256": 0.49609375,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "ba_256": 0.53515625,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "ba_256": 0.6484375,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "ba_256": 0.99609375,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "ba_256": 0.984375,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "ba_256": 0.94921875,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "ba_256": 0.4453125,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "ba_256": 0.55078125,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "ba_256": 0.76171875,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "ba_256": 0.97265625,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "ba_256": 0.50390625,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "ba_256": 0.52734375,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "ba_256": 0.76171875,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "ba_256": 0.9921875,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "ba_256": 0.98046875,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "ba_256": 0.47265625,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "ba_256": 0.4921875,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "ba_256": 0.71484375,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "ba_256": 0.99609375,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "ba_256": 0.99609375,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "ba_256": 0.97265625,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "ba_256": 0.49609375,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "ba_256": 0.51953125,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "ba_256": 0.71484375,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "ba_256": 0.99609375,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "ba_256": 0.9921875,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "ba_256": 0.51953125,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "ba_256": 0.47265625,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "ba_256": 0.66796875,
+      "accept_gs_default": false,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "ba_256": 0.98828125,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "ba_256": 0.96875,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "ba_256": 0.484375,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "ba_256": 0.49609375,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "ba_256": 0.78515625,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "ba_256": 0.99609375,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "ba_256": 0.9765625,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "ba_256": 0.5625,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "ba_256": 0.55859375,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "ba_256": 0.703125,
+      "accept_gs_default": false,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "ba_256": 0.984375,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "ba_256": 0.9375,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "ba_256": 0.484375,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "ba_256": 0.50390625,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "ba_256": 0.71875,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "ba_256": 0.99609375,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "ba_256": 0.984375,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "ba_256": 0.9296875,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "ba_256": 0.88671875,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "ba_256": 0.515625,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "ba_256": 0.57421875,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "ba_256": 0.70703125,
+      "accept_gs_default": false,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "ba_256": 0.9765625,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "ba_256": 0.9375,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "ba_256": 0.4609375,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "ba_256": 0.53125,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "ba_256": 0.76953125,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "ba_256": 0.9921875,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "ba_256": 0.98828125,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "ba_256": 0.46875,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "ba_256": 0.5625,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "ba_256": 0.73046875,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "ba_256": 0.9765625,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "ba_256": 0.953125,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "ba_256": 0.44140625,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "ba_256": 0.5234375,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "ba_256": 0.734375,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "ba_256": 0.96875,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "ba_256": 0.96484375,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "ba_256": 0.50390625,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "ba_256": 0.48046875,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "ba_256": 0.99609375,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "ba_256": 0.65625,
+      "accept_gs_default": false,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "ba_256": 0.9921875,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "ba_256": 0.94140625,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "ba_256": 0.91796875,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "ba_256": 0.8828125,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "ba_256": 0.53515625,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "ba_256": 0.51953125,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "ba_256": 0.703125,
+      "accept_gs_default": false,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "ba_256": 0.99609375,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "ba_256": 0.984375,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "ba_256": 0.94921875,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "ba_256": 0.4765625,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "ba_256": 0.484375,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "ba_256": 0.67578125,
+      "accept_gs_default": false,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "ba_256": 0.98828125,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "ba_256": 0.984375,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "ba_256": 0.94921875,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "ba_256": 0.48828125,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "ba_256": 0.54296875,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "ba_256": 0.76953125,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "ba_256": 0.97265625,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "ba_256": 0.48828125,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "ba_256": 0.50390625,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "ba_256": 0.72265625,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "ba_256": 0.99609375,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "ba_256": 0.9921875,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "ba_256": 0.52734375,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "ba_256": 0.6015625,
+      "accept_gs_default": false,
+      "accept_gs_167": false
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "ba_256": 0.7265625,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "ba_256": 0.94921875,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "ba_256": 0.984375,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "ba_256": 1.0,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "ba_256": 0.9765625,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "ba_256": 0.9375,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "ba_256": 0.87890625,
+      "accept_gs_default": true,
+      "accept_gs_167": true
+    }
+  ],
+  "commit_steer_sscd64": [
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "auth_ba": 0.5520833333333334,
+      "auth_ok": false,
+      "d_blind": 0.8873318804135931,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.53125,
+      "auth_ok": false,
+      "d_blind": 0.9835296163132361,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.39012527862053537,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.3145319224603812,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.36662931853461245,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "auth_ba": 0.7135416666666666,
+      "auth_ok": true,
+      "d_blind": 0.6236705955053605,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.3285158166455693,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.2914998018621858,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.3110608511428311,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.4815372144755323,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.984375,
+      "auth_ok": true,
+      "d_blind": 0.43705846998489095,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.9635416666666666,
+      "auth_ok": true,
+      "d_blind": 0.6129667213778807,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "auth_ba": 0.5,
+      "auth_ok": false,
+      "d_blind": 1.0117834296943233,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.5729166666666666,
+      "auth_ok": false,
+      "d_blind": 1.023846415698379,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.27507818864742417,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.1719771866267623,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.215876746387206,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "auth_ba": 0.609375,
+      "auth_ok": false,
+      "d_blind": 0.7859663008481577,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.2316764759300879,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.19793294524746985,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.17386252160186966,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.36408300103054336,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.9895833333333334,
+      "auth_ok": true,
+      "d_blind": 0.3144616507932152,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.9635416666666666,
+      "auth_ok": true,
+      "d_blind": 0.5493499167260067,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "auth_ba": 0.4895833333333333,
+      "auth_ok": false,
+      "d_blind": 1.0954577860629602,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.4895833333333333,
+      "auth_ok": false,
+      "d_blind": 0.8980988218729984,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.3770432771233636,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.2857453088247409,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.3325728110093963,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "auth_ba": 0.7135416666666666,
+      "auth_ok": true,
+      "d_blind": 0.5396382725559348,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.27262342566350206,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.303864443510232,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.2965136592450477,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.39234603630543086,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.5878265340170793,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.984375,
+      "auth_ok": true,
+      "d_blind": 0.7823017239331685,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "auth_ba": 0.4947916666666667,
+      "auth_ok": false,
+      "d_blind": 1.1934137067048567,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.5833333333333334,
+      "auth_ok": false,
+      "d_blind": 0.9658116140835924,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.592320757710306,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.4887873900296663,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.465996364084164,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "auth_ba": 0.8020833333333334,
+      "auth_ok": true,
+      "d_blind": 0.7734639036557827,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.4823906350377074,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.4421923451572801,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.4780624497129079,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.6836858706819857,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.7586121999832829,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.9791666666666666,
+      "auth_ok": true,
+      "d_blind": 0.8234204720698367,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "auth_ba": 0.515625,
+      "auth_ok": false,
+      "d_blind": 0.9148762466231326,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.5,
+      "auth_ok": false,
+      "d_blind": 0.9943469076192358,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.34801357489209384,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.3475546753612333,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.33884164552015583,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "auth_ba": 0.7083333333333334,
+      "auth_ok": false,
+      "d_blind": 0.5332203565133979,
+      "feat_ok": true,
+      "joint_accept": false
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.31868208418740196,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.29225641841269845,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.3031406935986254,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "auth_ba": 0.9947916666666666,
+      "auth_ok": true,
+      "d_blind": 0.3899814398110819,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.9947916666666666,
+      "auth_ok": true,
+      "d_blind": 0.4253030446699594,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.984375,
+      "auth_ok": true,
+      "d_blind": 0.6310755838479203,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "auth_ba": 0.4739583333333333,
+      "auth_ok": false,
+      "d_blind": 1.0865331863956196,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.5208333333333334,
+      "auth_ok": false,
+      "d_blind": 1.0291776555665992,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.32838890036093826,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.19823395760850315,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.18485746804448133,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "auth_ba": 0.6927083333333334,
+      "auth_ok": false,
+      "d_blind": 0.6777818841625315,
+      "feat_ok": true,
+      "joint_accept": false
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.21932355626515032,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.2017314161172694,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.204244847784411,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.39503107423093153,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.4005177020297831,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.5316429320003522,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "auth_ba": 0.484375,
+      "auth_ok": false,
+      "d_blind": 1.0305824504873702,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.5260416666666666,
+      "auth_ok": false,
+      "d_blind": 0.9638666424247335,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.4802832522102898,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.41125911006133753,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.4508341723695002,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "auth_ba": 0.6770833333333334,
+      "auth_ok": false,
+      "d_blind": 0.9291219598656935,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.40376378245811695,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.3923209310244651,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.3852646806264308,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.5335006602194707,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.6625191305490699,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.9947916666666666,
+      "auth_ok": true,
+      "d_blind": 0.8661394501989496,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "auth_ba": 0.46875,
+      "auth_ok": false,
+      "d_blind": 1.1824501573843882,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.5208333333333334,
+      "auth_ok": false,
+      "d_blind": 1.061633108856348,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.44159248873262635,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.3709674514829495,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.42435177327779416,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "auth_ba": 0.7395833333333334,
+      "auth_ok": true,
+      "d_blind": 0.6029855692999232,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.3858702738326252,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.3551433856668319,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.37042901942269624,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.5954147192401347,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.9895833333333334,
+      "auth_ok": true,
+      "d_blind": 0.7695132896957473,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.984375,
+      "auth_ok": true,
+      "d_blind": 0.7948016613832608,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "auth_ba": 0.4739583333333333,
+      "auth_ok": false,
+      "d_blind": 1.0013895553458623,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.53125,
+      "auth_ok": false,
+      "d_blind": 1.2642150182932301,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.6508877538748135,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.4170412793467211,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.47646522570169536,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "auth_ba": 0.7395833333333334,
+      "auth_ok": true,
+      "d_blind": 0.9875230985782101,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.4359518542600307,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.4209493650299466,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.425157162277482,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "auth_ba": 0.9947916666666666,
+      "auth_ok": true,
+      "d_blind": 0.5273943905927772,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.9739583333333334,
+      "auth_ok": true,
+      "d_blind": 0.639812790924403,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.9427083333333334,
+      "auth_ok": true,
+      "d_blind": 0.6735909730617746,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "auth_ba": 0.46875,
+      "auth_ok": false,
+      "d_blind": 1.021718365946475,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.4739583333333333,
+      "auth_ok": false,
+      "d_blind": 1.143759133718437,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.47723051297063834,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.5777406727726306,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.548192984434321,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "auth_ba": 0.6927083333333334,
+      "auth_ok": false,
+      "d_blind": 0.7492135685908616,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.559803053946466,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.561831997243496,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.5277929492505342,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "auth_ba": 0.9947916666666666,
+      "auth_ok": true,
+      "d_blind": 0.8210663025379533,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.9739583333333334,
+      "auth_ok": true,
+      "d_blind": 0.8144351343125639,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.921875,
+      "auth_ok": true,
+      "d_blind": 0.8717924966388312,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "auth_ba": 0.5364583333333334,
+      "auth_ok": false,
+      "d_blind": 0.8819530708201353,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.5625,
+      "auth_ok": false,
+      "d_blind": 1.131817780102654,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.6128912441372927,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.49478725454277117,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.5094210718686869,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "auth_ba": 0.6770833333333334,
+      "auth_ok": false,
+      "d_blind": 0.8100945795524097,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.42998413545607417,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.5335501937198808,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.43846395156545104,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.5075645146746448,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.9739583333333334,
+      "auth_ok": true,
+      "d_blind": 0.5614211805042211,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.9583333333333334,
+      "auth_ok": true,
+      "d_blind": 0.5639775248786845,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "auth_ba": 0.46875,
+      "auth_ok": false,
+      "d_blind": 1.0396436990267097,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.484375,
+      "auth_ok": false,
+      "d_blind": 1.0768251085831015,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.6144117491805304,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.5076782259598281,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.5161990549079231,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "auth_ba": 0.8177083333333334,
+      "auth_ok": true,
+      "d_blind": 0.7963692963050952,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.5262484535156561,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.5199824568632501,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.5625879095723765,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.6452772345893734,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.9947916666666666,
+      "auth_ok": true,
+      "d_blind": 0.7476338389565498,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.984375,
+      "auth_ok": true,
+      "d_blind": 0.7836484911221963,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "auth_ba": 0.5364583333333334,
+      "auth_ok": false,
+      "d_blind": 1.144389800091336,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.5520833333333334,
+      "auth_ok": false,
+      "d_blind": 0.66682597709655,
+      "feat_ok": true,
+      "joint_accept": false
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.5812791747664614,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.5096806137261454,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.4724542257069677,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "auth_ba": 0.7447916666666666,
+      "auth_ok": true,
+      "d_blind": 0.9132044297196957,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.5615342981537508,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.5259516045164578,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.46973909658270485,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.6818699518301707,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.9947916666666666,
+      "auth_ok": true,
+      "d_blind": 0.810185384040877,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.9583333333333334,
+      "auth_ok": true,
+      "d_blind": 0.8704601469812803,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "auth_ba": 0.5260416666666666,
+      "auth_ok": false,
+      "d_blind": 1.060994573591936,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.4895833333333333,
+      "auth_ok": false,
+      "d_blind": 0.9139536283830079,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.30194784516228246,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.28692051544723773,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.24220231380398183,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "auth_ba": 0.7135416666666666,
+      "auth_ok": true,
+      "d_blind": 0.5959013680317946,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.28537885812334574,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.2405221938601938,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.21828016501628011,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "auth_ba": 0.9947916666666666,
+      "auth_ok": true,
+      "d_blind": 0.36451899941992105,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.9791666666666666,
+      "auth_ok": true,
+      "d_blind": 0.4358427692643039,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.9635416666666666,
+      "auth_ok": true,
+      "d_blind": 0.6527458710412317,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "auth_ba": 0.5104166666666666,
+      "auth_ok": false,
+      "d_blind": 1.0973278025040847,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.46875,
+      "auth_ok": false,
+      "d_blind": 1.1612768140517589,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.42332082903375023,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.4506844408260825,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.45779908423592197,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "auth_ba": 0.6614583333333334,
+      "auth_ok": false,
+      "d_blind": 0.9598228337876077,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "auth_ba": 0.9947916666666666,
+      "auth_ok": true,
+      "d_blind": 0.4319060575475203,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "auth_ba": 0.9947916666666666,
+      "auth_ok": true,
+      "d_blind": 0.40532382365165887,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.3641269926996259,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "auth_ba": 0.984375,
+      "auth_ok": true,
+      "d_blind": 0.5091531856330782,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.9739583333333334,
+      "auth_ok": true,
+      "d_blind": 0.5067347632434144,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.90625,
+      "auth_ok": true,
+      "d_blind": 0.7761574696174123,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "auth_ba": 0.4895833333333333,
+      "auth_ok": false,
+      "d_blind": 0.9119959158762269,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.5208333333333334,
+      "auth_ok": false,
+      "d_blind": 0.9628562268562998,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.46269306985692926,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.4288184241117069,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.43674481786394126,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "auth_ba": 0.7552083333333334,
+      "auth_ok": true,
+      "d_blind": 0.7497041632900678,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.36604766410866796,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.386908649908443,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.4051908856031793,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.5017791994537549,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.9947916666666666,
+      "auth_ok": true,
+      "d_blind": 0.5528198402638766,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.96875,
+      "auth_ok": true,
+      "d_blind": 0.5588271757048549,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "auth_ba": 0.5052083333333334,
+      "auth_ok": false,
+      "d_blind": 1.0722012606869167,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.5208333333333334,
+      "auth_ok": false,
+      "d_blind": 1.055085859213362,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.531163439451882,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.3127535324575803,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.370317347962153,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "auth_ba": 0.6354166666666666,
+      "auth_ok": false,
+      "d_blind": 0.894228310152906,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "auth_ba": 0.9947916666666666,
+      "auth_ok": true,
+      "d_blind": 0.35122723893119046,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.32434957096613926,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.31028304741928614,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "auth_ba": 0.9947916666666666,
+      "auth_ok": true,
+      "d_blind": 0.499198771747452,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.9739583333333334,
+      "auth_ok": true,
+      "d_blind": 0.5743749542220711,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.921875,
+      "auth_ok": true,
+      "d_blind": 0.4158848562116303,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "auth_ba": 0.4895833333333333,
+      "auth_ok": false,
+      "d_blind": 1.1649459822944515,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.5885416666666666,
+      "auth_ok": false,
+      "d_blind": 1.1045595576674208,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.34580161594413683,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.2785181045204963,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.27724841976352876,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "auth_ba": 0.7447916666666666,
+      "auth_ok": true,
+      "d_blind": 0.7036823406982218,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.2759751187582089,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.27925674305229353,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.2562912539842448,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.3317098970886524,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.9947916666666666,
+      "auth_ok": true,
+      "d_blind": 0.375018564012349,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.9739583333333334,
+      "auth_ok": true,
+      "d_blind": 0.46204656386444065,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "auth_ba": 0.4947916666666667,
+      "auth_ok": false,
+      "d_blind": 0.8758238532810538,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.4947916666666667,
+      "auth_ok": false,
+      "d_blind": 1.0785882211382276,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.29119157774888726,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.2590524996844892,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.2632862284894354,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "auth_ba": 0.7291666666666666,
+      "auth_ok": true,
+      "d_blind": 0.7866053227343384,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.25999593486976125,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.2528900575564169,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.23644538178531727,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.4673133096512313,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.5781530739332215,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.9895833333333334,
+      "auth_ok": true,
+      "d_blind": 0.6108002351390025,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "auth_ba": 0.4895833333333333,
+      "auth_ok": false,
+      "d_blind": 0.7802996148693319,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.5677083333333334,
+      "auth_ok": false,
+      "d_blind": 0.9721665813338316,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.5759247353471355,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.6199965719593421,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.5050578055300661,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "auth_ba": 0.7291666666666666,
+      "auth_ok": true,
+      "d_blind": 1.0088487922426366,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "auth_ba": 0.9895833333333334,
+      "auth_ok": true,
+      "d_blind": 0.5773584367457706,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.599157935845827,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.5018401792595133,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_blind": 0.6249990763358146,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.9739583333333334,
+      "auth_ok": true,
+      "d_blind": 0.7057430429367147,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.9114583333333334,
+      "auth_ok": true,
+      "d_blind": 0.6754654004175616,
+      "feat_ok": true,
+      "joint_accept": true
+    }
+  ],
+  "commit_steer_hyb": [
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "auth_ba": 0.5052083333333334,
+      "auth_ok": false,
+      "d_sscd32": 1.0441308484650051,
+      "d_clip32": 1.1199468181556822,
+      "d_blind": 1.0820388333103437,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.3958333333333333,
+      "auth_ok": false,
+      "d_sscd32": 0.4118002340464647,
+      "d_clip32": 1.1805012295477624,
+      "d_blind": 0.7961507317971135,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.453749211839786,
+      "d_clip32": 0.5283121375608517,
+      "d_blind": 0.49103067470031886,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.2712391920960725,
+      "d_clip32": 0.4850561080508672,
+      "d_blind": 0.37814765007346984,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.3278623746559678,
+      "d_clip32": 0.4849771553580893,
+      "d_blind": 0.40641976500702853,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "auth_ba": 0.75,
+      "auth_ok": true,
+      "d_sscd32": 0.9998212018215823,
+      "d_clip32": 0.6001186502915312,
+      "d_blind": 0.7999699260565567,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "auth_ba": 0.9947916666666666,
+      "auth_ok": true,
+      "d_sscd32": 0.41815743575906805,
+      "d_clip32": 0.5133693101378215,
+      "d_blind": 0.4657633729484448,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.3056297875236643,
+      "d_clip32": 0.4493873448489526,
+      "d_blind": 0.37750856618630846,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.27092236497190647,
+      "d_clip32": 0.5000229446803899,
+      "d_blind": 0.3854726548261482,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.42706484417807755,
+      "d_clip32": 0.4434177579331625,
+      "d_blind": 0.43524130105562003,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.9895833333333334,
+      "auth_ok": true,
+      "d_sscd32": 0.5723502725447064,
+      "d_clip32": 0.44854158878074213,
+      "d_blind": 0.5104459306627243,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.9635416666666666,
+      "auth_ok": true,
+      "d_sscd32": 0.6231553913249115,
+      "d_clip32": 0.38514688964999244,
+      "d_blind": 0.5041511404874519,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "auth_ba": 0.4583333333333333,
+      "auth_ok": false,
+      "d_sscd32": 0.8679642712821276,
+      "d_clip32": 0.848180909739893,
+      "d_blind": 0.8580725905110103,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.5364583333333334,
+      "auth_ok": false,
+      "d_sscd32": 0.7785768436263494,
+      "d_clip32": 1.2252921697729247,
+      "d_blind": 1.001934506699637,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.7561559076176512,
+      "d_clip32": 0.23637983242374572,
+      "d_blind": 0.49626787002069844,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.5831124166830949,
+      "d_clip32": 0.2754231392767257,
+      "d_blind": 0.4292677779799103,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.7283229051660918,
+      "d_clip32": 0.24015793666033192,
+      "d_blind": 0.48424042091321184,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "auth_ba": 0.6822916666666666,
+      "auth_ok": false,
+      "d_sscd32": 0.9760689662315076,
+      "d_clip32": 0.5808123026848617,
+      "d_blind": 0.7784406344581847,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "auth_ba": 0.9947916666666666,
+      "auth_ok": true,
+      "d_sscd32": 0.6113633434877757,
+      "d_clip32": 0.33199981979830495,
+      "d_blind": 0.4716815816430403,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.5619248765193767,
+      "d_clip32": 0.343463124146814,
+      "d_blind": 0.45269400033309537,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.5601714158880784,
+      "d_clip32": 0.16994777575857722,
+      "d_blind": 0.3650595958233278,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.7655973002973293,
+      "d_clip32": 0.19473278007885197,
+      "d_blind": 0.48016504018809064,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.9635416666666666,
+      "auth_ok": true,
+      "d_sscd32": 0.6336698439181513,
+      "d_clip32": 0.27430131988998985,
+      "d_blind": 0.45398558190407057,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.953125,
+      "auth_ok": true,
+      "d_sscd32": 0.8898706421537912,
+      "d_clip32": 0.5003162782362753,
+      "d_blind": 0.6950934601950333,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "auth_ba": 0.3854166666666667,
+      "auth_ok": false,
+      "d_sscd32": 1.1734954591841726,
+      "d_clip32": 0.974067727919073,
+      "d_blind": 1.0737815935516228,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.5,
+      "auth_ok": false,
+      "d_sscd32": 1.144121006037612,
+      "d_clip32": 0.8789876016845114,
+      "d_blind": 1.0115543038610617,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.925012863260486,
+      "d_clip32": 0.4732569866032945,
+      "d_blind": 0.6991349249318903,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.8627263665488729,
+      "d_clip32": 0.31717144317868873,
+      "d_blind": 0.5899489048637808,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.8387673947726881,
+      "d_clip32": 0.3405617367599678,
+      "d_blind": 0.589664565766328,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "auth_ba": 0.6614583333333334,
+      "auth_ok": false,
+      "d_sscd32": 0.6106917487839412,
+      "d_clip32": 1.0127818735661391,
+      "d_blind": 0.8117368111750402,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "auth_ba": 0.9947916666666666,
+      "auth_ok": true,
+      "d_sscd32": 0.6634736982810597,
+      "d_clip32": 0.3347623437288636,
+      "d_blind": 0.49911802100496167,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.7586808047678368,
+      "d_clip32": 0.39693603012565226,
+      "d_blind": 0.5778084174467446,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.8418024866637264,
+      "d_clip32": 0.32174664569245837,
+      "d_blind": 0.5817745661780924,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "auth_ba": 0.9895833333333334,
+      "auth_ok": true,
+      "d_sscd32": 0.8444860637600975,
+      "d_clip32": 0.3709672752470359,
+      "d_blind": 0.6077266695035667,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.953125,
+      "auth_ok": true,
+      "d_sscd32": 0.4917773144753643,
+      "d_clip32": 0.46162366844106495,
+      "d_blind": 0.47670049145821464,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.9114583333333334,
+      "auth_ok": true,
+      "d_sscd32": 0.8884763867834192,
+      "d_clip32": 0.6675760904864336,
+      "d_blind": 0.7780262386349264,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "auth_ba": 0.5052083333333334,
+      "auth_ok": false,
+      "d_sscd32": 0.8675222007150967,
+      "d_clip32": 1.1763584122013842,
+      "d_blind": 1.0219403064582404,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.53125,
+      "auth_ok": false,
+      "d_sscd32": 1.149188384486066,
+      "d_clip32": 0.9498553867427033,
+      "d_blind": 1.0495218856143846,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.8526035614817495,
+      "d_clip32": 0.3820779931117507,
+      "d_blind": 0.6173407772967501,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.35083089281535074,
+      "d_clip32": 0.3778281036509056,
+      "d_blind": 0.36432949823312816,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.300343300899533,
+      "d_clip32": 0.37971578118010574,
+      "d_blind": 0.34002954103981936,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "auth_ba": 0.7916666666666666,
+      "auth_ok": true,
+      "d_sscd32": 0.7108606241360458,
+      "d_clip32": 0.5760843624992753,
+      "d_blind": 0.6434724933176605,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.45600737689808624,
+      "d_clip32": 0.36078709993628977,
+      "d_blind": 0.408397238417188,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.323680556162656,
+      "d_clip32": 0.47406925042339465,
+      "d_blind": 0.39887490329302533,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.3184547272186692,
+      "d_clip32": 0.4866680217964042,
+      "d_blind": 0.4025613745075367,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.6081610187761319,
+      "d_clip32": 0.43834927023373327,
+      "d_blind": 0.5232551445049326,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.9947916666666666,
+      "auth_ok": true,
+      "d_sscd32": 0.6534458242810623,
+      "d_clip32": 0.4734179389186324,
+      "d_blind": 0.5634318815998474,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.9791666666666666,
+      "auth_ok": true,
+      "d_sscd32": 1.027427821583973,
+      "d_clip32": 0.39443389964769004,
+      "d_blind": 0.7109308606158316,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "auth_ba": 0.484375,
+      "auth_ok": false,
+      "d_sscd32": 0.7787175946924288,
+      "d_clip32": 1.0779894613358239,
+      "d_blind": 0.9283535280141264,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.5052083333333334,
+      "auth_ok": false,
+      "d_sscd32": 1.0826950852051502,
+      "d_clip32": 1.1644675706269747,
+      "d_blind": 1.1235813279160625,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.40148453641104964,
+      "d_clip32": 0.39875430008404633,
+      "d_blind": 0.400119418247548,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.2101395963620457,
+      "d_clip32": 0.3320363064039128,
+      "d_blind": 0.27108795138297925,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.2724068832856201,
+      "d_clip32": 0.36128295837577684,
+      "d_blind": 0.3168449208306985,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "auth_ba": 0.703125,
+      "auth_ok": false,
+      "d_sscd32": 0.5300669166905105,
+      "d_clip32": 0.7429326103191427,
+      "d_blind": 0.6364997635048266,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.19839355795611457,
+      "d_clip32": 0.324849972105709,
+      "d_blind": 0.2616217650309118,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.22253428075525206,
+      "d_clip32": 0.36362546040330324,
+      "d_blind": 0.29307987057927765,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.2244213178403598,
+      "d_clip32": 0.31706504601185304,
+      "d_blind": 0.2707431819261064,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.318082465137031,
+      "d_clip32": 0.3820522121191088,
+      "d_blind": 0.3500673386280699,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.984375,
+      "auth_ok": true,
+      "d_sscd32": 0.46209701216233623,
+      "d_clip32": 0.5776973254977242,
+      "d_blind": 0.5198971688300302,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.96875,
+      "auth_ok": true,
+      "d_sscd32": 0.4556414505231916,
+      "d_clip32": 0.42787785266178224,
+      "d_blind": 0.4417596515924869,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "auth_ba": 0.4947916666666667,
+      "auth_ok": false,
+      "d_sscd32": 1.0102957830375754,
+      "d_clip32": 0.8453084758670273,
+      "d_blind": 0.9278021294523013,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.5260416666666666,
+      "auth_ok": false,
+      "d_sscd32": 0.8466288756630196,
+      "d_clip32": 1.0983057598854264,
+      "d_blind": 0.972467317774223,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.3845652264421373,
+      "d_clip32": 0.4881427509410464,
+      "d_blind": 0.43635398869159187,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.28119547088008445,
+      "d_clip32": 0.3069867132660762,
+      "d_blind": 0.2940910920730803,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.2709664992621892,
+      "d_clip32": 0.24592665343878906,
+      "d_blind": 0.2584465763504891,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "auth_ba": 0.7239583333333334,
+      "auth_ok": true,
+      "d_sscd32": 0.5199740443670582,
+      "d_clip32": 0.5977984502394824,
+      "d_blind": 0.5588862473032703,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.29631349704565846,
+      "d_clip32": 0.20113857933776913,
+      "d_blind": 0.2487260381917138,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.24405070779205218,
+      "d_clip32": 0.20803075616814237,
+      "d_blind": 0.22604073198009728,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.24964110586746857,
+      "d_clip32": 0.2221927676591412,
+      "d_blind": 0.23591693676330489,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.4029315028645438,
+      "d_clip32": 0.2557727406432848,
+      "d_blind": 0.3293521217539143,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.5796890121207634,
+      "d_clip32": 0.2585721978437967,
+      "d_blind": 0.41913060498228005,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.9947916666666666,
+      "auth_ok": true,
+      "d_sscd32": 0.526224502172012,
+      "d_clip32": 0.2572245902291733,
+      "d_blind": 0.39172454620059266,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "auth_ba": 0.4895833333333333,
+      "auth_ok": false,
+      "d_sscd32": 1.1410466866736468,
+      "d_clip32": 1.113161093349564,
+      "d_blind": 1.1271038900116053,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.5260416666666666,
+      "auth_ok": false,
+      "d_sscd32": 0.9718990577475218,
+      "d_clip32": 0.5883359306711997,
+      "d_blind": 0.7801174942093607,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.2597569935513354,
+      "d_clip32": 0.4354110017387687,
+      "d_blind": 0.34758399764505205,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.2634447211874723,
+      "d_clip32": 0.3375468836315676,
+      "d_blind": 0.30049580240951995,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.22578416514493227,
+      "d_clip32": 0.31669333368069674,
+      "d_blind": 0.2712387494128145,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "auth_ba": 0.8229166666666666,
+      "auth_ok": true,
+      "d_sscd32": 0.5179998840786926,
+      "d_clip32": 0.4096931615520012,
+      "d_blind": 0.4638465228153469,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.20836622651071735,
+      "d_clip32": 0.285559655636329,
+      "d_blind": 0.24696294107352318,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.129724781132196,
+      "d_clip32": 0.2342604705991559,
+      "d_blind": 0.18199262586567594,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.16129724997025774,
+      "d_clip32": 0.19775883018922158,
+      "d_blind": 0.17952804007973966,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.19139125309868898,
+      "d_clip32": 0.22958767633183885,
+      "d_blind": 0.21048946471526392,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.9895833333333334,
+      "auth_ok": true,
+      "d_sscd32": 0.306251115983147,
+      "d_clip32": 0.37142579923534447,
+      "d_blind": 0.33883845760924575,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.96875,
+      "auth_ok": true,
+      "d_sscd32": 0.37190801417728303,
+      "d_clip32": 0.4955256235332294,
+      "d_blind": 0.4337168188552562,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "auth_ba": 0.4427083333333333,
+      "auth_ok": false,
+      "d_sscd32": 0.9199233715328169,
+      "d_clip32": 0.859161582054413,
+      "d_blind": 0.8895424767936149,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.53125,
+      "auth_ok": false,
+      "d_sscd32": 0.9583259176593794,
+      "d_clip32": 0.8593309578079236,
+      "d_blind": 0.9088284377336515,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.8758457813188774,
+      "d_clip32": 0.4931032228238792,
+      "d_blind": 0.6844745020713783,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.5913092783120473,
+      "d_clip32": 0.1420513260284526,
+      "d_blind": 0.36668030217024994,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.51523445236898,
+      "d_clip32": 0.1466097262844942,
+      "d_blind": 0.3309220893267371,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "auth_ba": 0.7604166666666666,
+      "auth_ok": true,
+      "d_sscd32": 0.9946791661036317,
+      "d_clip32": 0.6533545130951132,
+      "d_blind": 0.8240168395993724,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.6169301737983822,
+      "d_clip32": 0.17163969830440184,
+      "d_blind": 0.39428493605139203,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.6321737750082113,
+      "d_clip32": 0.21111242187484502,
+      "d_blind": 0.42164309844152814,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.584851994883129,
+      "d_clip32": 0.14615195196497166,
+      "d_blind": 0.36550197342405033,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.5891423651429686,
+      "d_clip32": 0.1713429723244092,
+      "d_blind": 0.3802426687336889,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.9895833333333334,
+      "auth_ok": true,
+      "d_sscd32": 0.6466011986076072,
+      "d_clip32": 0.181534276254132,
+      "d_blind": 0.4140677374308696,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.9583333333333334,
+      "auth_ok": true,
+      "d_sscd32": 0.7199540251851627,
+      "d_clip32": 0.1686415822087527,
+      "d_blind": 0.4442978036969577,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "auth_ba": 0.453125,
+      "auth_ok": false,
+      "d_sscd32": 0.7293541570368012,
+      "d_clip32": 0.9362877282452707,
+      "d_blind": 0.832820942641036,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.453125,
+      "auth_ok": false,
+      "d_sscd32": 1.0952615604706746,
+      "d_clip32": 1.1977458730362955,
+      "d_blind": 1.146503716753485,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.37435395925097825,
+      "d_clip32": 0.4954058958620078,
+      "d_blind": 0.434879927556493,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.3352171807735911,
+      "d_clip32": 0.24305257815443138,
+      "d_blind": 0.28913487946401123,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.33477896374836524,
+      "d_clip32": 0.2235914295400584,
+      "d_blind": 0.2791851966442118,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "auth_ba": 0.6875,
+      "auth_ok": false,
+      "d_sscd32": 0.8448303796251702,
+      "d_clip32": 0.8389361860465417,
+      "d_blind": 0.841883282835856,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.30059796124990956,
+      "d_clip32": 0.24920300267218576,
+      "d_blind": 0.27490048196104766,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.31166327619493484,
+      "d_clip32": 0.3403134871837171,
+      "d_blind": 0.325988381689326,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.3258802033136927,
+      "d_clip32": 0.2578766689951498,
+      "d_blind": 0.2918784361544213,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "auth_ba": 0.9947916666666666,
+      "auth_ok": true,
+      "d_sscd32": 0.44040849476563115,
+      "d_clip32": 0.331026768865766,
+      "d_blind": 0.38571763181569857,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.9739583333333334,
+      "auth_ok": true,
+      "d_sscd32": 0.5063488217051234,
+      "d_clip32": 0.4144729755671198,
+      "d_blind": 0.4604108986361216,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.9375,
+      "auth_ok": true,
+      "d_sscd32": 0.5555265467946031,
+      "d_clip32": 0.530973227696967,
+      "d_blind": 0.543249887245785,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "waves_rotation",
+      "auth_ba": 0.4947916666666667,
+      "auth_ok": false,
+      "d_sscd32": 1.0970773867011272,
+      "d_clip32": 1.0078606232624308,
+      "d_blind": 1.0524690049817789,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.4895833333333333,
+      "auth_ok": false,
+      "d_sscd32": 1.1706242245153662,
+      "d_clip32": 0.8019490508984566,
+      "d_blind": 0.9862866377069114,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.6605518108474909,
+      "d_clip32": 0.5586542561082942,
+      "d_blind": 0.6096030334778926,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.4794498231709813,
+      "d_clip32": 0.34662743918629213,
+      "d_blind": 0.4130386311786367,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.5623569976334595,
+      "d_clip32": 0.3570436147263424,
+      "d_blind": 0.45970030617990093,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "waves_blurring",
+      "auth_ba": 0.6927083333333334,
+      "auth_ok": false,
+      "d_sscd32": 0.6785844052323269,
+      "d_clip32": 0.7100991709837914,
+      "d_blind": 0.6943417881080591,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.6001721084349447,
+      "d_clip32": 0.36505195299447113,
+      "d_blind": 0.48261203071470793,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.5764167102787559,
+      "d_clip32": 0.3655738238403041,
+      "d_blind": 0.47099526705953,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.5270546994453411,
+      "d_clip32": 0.37439212469727323,
+      "d_blind": 0.4507234120713072,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "sd21_regen_01",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.6154136042980334,
+      "d_clip32": 0.4001274907288793,
+      "d_blind": 0.5077705475134564,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.9895833333333334,
+      "auth_ok": true,
+      "d_sscd32": 0.7172863333070887,
+      "d_clip32": 0.3592989953834067,
+      "d_blind": 0.5382926643452477,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.921875,
+      "auth_ok": true,
+      "d_sscd32": 0.9630834324623182,
+      "d_clip32": 0.4097007910323166,
+      "d_blind": 0.6863921117473174,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "auth_ba": 0.4375,
+      "auth_ok": false,
+      "d_sscd32": 0.9912169676756746,
+      "d_clip32": 1.2469670053879687,
+      "d_blind": 1.1190919865318216,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.5208333333333334,
+      "auth_ok": false,
+      "d_sscd32": 0.7545451366067537,
+      "d_clip32": 0.8760115807067201,
+      "d_blind": 0.8152783586567369,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.24448586522326943,
+      "d_clip32": 0.4205162336213103,
+      "d_blind": 0.33250104942228986,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.21654177086218418,
+      "d_clip32": 0.3431736452458829,
+      "d_blind": 0.27985770805403354,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.18490791754275127,
+      "d_clip32": 0.38351196969862744,
+      "d_blind": 0.28420994362068935,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "auth_ba": 0.8177083333333334,
+      "auth_ok": true,
+      "d_sscd32": 0.8011673422139494,
+      "d_clip32": 0.8905770427515729,
+      "d_blind": 0.8458721924827611,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.16285306485535,
+      "d_clip32": 0.36247774607345395,
+      "d_blind": 0.262665405464402,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.17969818628569423,
+      "d_clip32": 0.41727135012889705,
+      "d_blind": 0.29848476820729564,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.17373413962886386,
+      "d_clip32": 0.3868835967957528,
+      "d_blind": 0.2803088682123083,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.2168231688583102,
+      "d_clip32": 0.416401019108699,
+      "d_blind": 0.3166120939835046,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.3019712738015652,
+      "d_clip32": 0.42316132470397827,
+      "d_blind": 0.36256629925277173,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 50,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.9791666666666666,
+      "auth_ok": true,
+      "d_sscd32": 0.36570282657202025,
+      "d_clip32": 0.3670305181983272,
+      "d_blind": 0.36636667238517373,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "auth_ba": 0.5,
+      "auth_ok": false,
+      "d_sscd32": 0.6267766250079725,
+      "d_clip32": 0.963720575867556,
+      "d_blind": 0.7952486004377642,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.4635416666666667,
+      "auth_ok": false,
+      "d_sscd32": 0.8830467759946266,
+      "d_clip32": 0.875418109383183,
+      "d_blind": 0.8792324426889048,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.739491609992224,
+      "d_clip32": 0.3524137451783721,
+      "d_blind": 0.5459526775852981,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.5289423872383889,
+      "d_clip32": 0.24725166772414464,
+      "d_blind": 0.3880970274812668,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.6326373671231458,
+      "d_clip32": 0.26043284920456267,
+      "d_blind": 0.4465351081638542,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "auth_ba": 0.828125,
+      "auth_ok": true,
+      "d_sscd32": 0.8097036646143452,
+      "d_clip32": 0.5366965036654041,
+      "d_blind": 0.6732000841398746,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "auth_ba": 0.9947916666666666,
+      "auth_ok": true,
+      "d_sscd32": 0.7700796252747978,
+      "d_clip32": 0.24625175651041753,
+      "d_blind": 0.5081656908926077,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.6832265060038862,
+      "d_clip32": 0.3037889689242882,
+      "d_blind": 0.4935077374640872,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.6278226877745601,
+      "d_clip32": 0.22816080316372633,
+      "d_blind": 0.4279917454691432,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.54642587617645,
+      "d_clip32": 0.22914703069756714,
+      "d_blind": 0.38778645343700857,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.984375,
+      "auth_ok": true,
+      "d_sscd32": 0.7056065983521422,
+      "d_clip32": 0.2611453752527165,
+      "d_blind": 0.4833759868024294,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 51,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.953125,
+      "auth_ok": true,
+      "d_sscd32": 0.8159099511632419,
+      "d_clip32": 0.4906291893967647,
+      "d_blind": 0.6532695702800033,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "auth_ba": 0.4895833333333333,
+      "auth_ok": false,
+      "d_sscd32": 0.9379605237516575,
+      "d_clip32": 1.0585151421217696,
+      "d_blind": 0.9982378329367135,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.5677083333333334,
+      "auth_ok": false,
+      "d_sscd32": 1.0830458001278145,
+      "d_clip32": 1.2099653064565066,
+      "d_blind": 1.1465055532921604,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.4416441777755461,
+      "d_clip32": 0.3477160507851629,
+      "d_blind": 0.3946801142803545,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.327896066045695,
+      "d_clip32": 0.3541185358045743,
+      "d_blind": 0.34100730092513465,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.2767909153605377,
+      "d_clip32": 0.3260971081276245,
+      "d_blind": 0.3014440117440811,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "auth_ba": 0.765625,
+      "auth_ok": true,
+      "d_sscd32": 0.5202298274800705,
+      "d_clip32": 0.4015767320315695,
+      "d_blind": 0.46090327975582,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.3239643813023332,
+      "d_clip32": 0.3328520983954285,
+      "d_blind": 0.32840823984888085,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.3058805907472566,
+      "d_clip32": 0.43192058314896786,
+      "d_blind": 0.36890058694811223,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.28133650993241976,
+      "d_clip32": 0.33486757971051784,
+      "d_blind": 0.3081020448214688,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.5029580608381714,
+      "d_clip32": 0.3910018779545865,
+      "d_blind": 0.44697996939637896,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.9895833333333334,
+      "auth_ok": true,
+      "d_sscd32": 0.5449846245885603,
+      "d_clip32": 0.4583441689649371,
+      "d_blind": 0.5016643967767487,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 52,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.984375,
+      "auth_ok": true,
+      "d_sscd32": 0.5549123773662858,
+      "d_clip32": 0.6760890496003953,
+      "d_blind": 0.6155007134833406,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "auth_ba": 0.4791666666666667,
+      "auth_ok": false,
+      "d_sscd32": 1.0512979569606344,
+      "d_clip32": 0.8556729276922097,
+      "d_blind": 0.9534854423264221,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.5625,
+      "auth_ok": false,
+      "d_sscd32": 1.0023154634213638,
+      "d_clip32": 0.6150858083347106,
+      "d_blind": 0.8087006358780372,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.24865376614867296,
+      "d_clip32": 0.315367368308735,
+      "d_blind": 0.282010567228704,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.19059783124933627,
+      "d_clip32": 0.22439282532776794,
+      "d_blind": 0.2074953282885521,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.16285297786274244,
+      "d_clip32": 0.26318355706209606,
+      "d_blind": 0.21301826746241925,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "auth_ba": 0.796875,
+      "auth_ok": true,
+      "d_sscd32": 0.7636045934617153,
+      "d_clip32": 0.9793979778489816,
+      "d_blind": 0.8715012856553485,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.19686571433596423,
+      "d_clip32": 0.27564575006523184,
+      "d_blind": 0.23625573220059803,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.17219000527964468,
+      "d_clip32": 0.25686306935982217,
+      "d_blind": 0.21452653731973342,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.19129965367880497,
+      "d_clip32": 0.24566842999437621,
+      "d_blind": 0.2184840418365906,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.29227983067182983,
+      "d_clip32": 0.28493514641377826,
+      "d_blind": 0.28860748854280405,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.9947916666666666,
+      "auth_ok": true,
+      "d_sscd32": 0.4303517354524027,
+      "d_clip32": 0.3246728957262318,
+      "d_blind": 0.37751231558931725,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 53,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.9791666666666666,
+      "auth_ok": true,
+      "d_sscd32": 0.5245924194024516,
+      "d_clip32": 0.3389164708314679,
+      "d_blind": 0.43175444511695976,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "auth_ba": 0.4791666666666667,
+      "auth_ok": false,
+      "d_sscd32": 1.126848730341095,
+      "d_clip32": 1.0602952876482936,
+      "d_blind": 1.0935720089946943,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.5416666666666666,
+      "auth_ok": false,
+      "d_sscd32": 0.9608661954025988,
+      "d_clip32": 1.1709577667537572,
+      "d_blind": 1.065911981078178,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.6029372524835594,
+      "d_clip32": 0.41786796695560213,
+      "d_blind": 0.5104026097195808,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.37300188030314585,
+      "d_clip32": 0.19531573287307114,
+      "d_blind": 0.2841588065881085,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.42969556532102937,
+      "d_clip32": 0.195333393357223,
+      "d_blind": 0.3125144793391262,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "auth_ba": 0.7239583333333334,
+      "auth_ok": true,
+      "d_sscd32": 0.988259332974796,
+      "d_clip32": 0.7661115951221331,
+      "d_blind": 0.8771854640484645,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.5187245236360241,
+      "d_clip32": 0.2671483336134062,
+      "d_blind": 0.3929364286247151,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "auth_ba": 0.9947916666666666,
+      "auth_ok": true,
+      "d_sscd32": 0.44255491800152125,
+      "d_clip32": 0.21612991364709266,
+      "d_blind": 0.32934241582430696,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.47362758867898824,
+      "d_clip32": 0.19923467118734783,
+      "d_blind": 0.33643112993316804,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "auth_ba": 0.9895833333333334,
+      "auth_ok": true,
+      "d_sscd32": 0.5079438050482772,
+      "d_clip32": 0.2342871261613343,
+      "d_blind": 0.37111546560480574,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.9791666666666666,
+      "auth_ok": true,
+      "d_sscd32": 0.8083397452624916,
+      "d_clip32": 0.4195038879466503,
+      "d_blind": 0.613921816604571,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 54,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.90625,
+      "auth_ok": true,
+      "d_sscd32": 0.5733982763146461,
+      "d_clip32": 0.5098043101003555,
+      "d_blind": 0.5416012932075008,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "auth_ba": 0.4739583333333333,
+      "auth_ok": false,
+      "d_sscd32": 1.105626665937699,
+      "d_clip32": 1.0708357730910891,
+      "d_blind": 1.0882312195143942,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.5,
+      "auth_ok": false,
+      "d_sscd32": 1.0282099779854201,
+      "d_clip32": 1.1556340381582437,
+      "d_blind": 1.091922008071832,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.519175758848116,
+      "d_clip32": 0.28467167592685183,
+      "d_blind": 0.4019237173874839,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.376327643896025,
+      "d_clip32": 0.20208408628503904,
+      "d_blind": 0.28920586509053203,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.4078321625789213,
+      "d_clip32": 0.20606507629258486,
+      "d_blind": 0.3069486194357531,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "auth_ba": 0.7552083333333334,
+      "auth_ok": true,
+      "d_sscd32": 1.0371140906242584,
+      "d_clip32": 0.5616996820839005,
+      "d_blind": 0.7994068863540795,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.39006699195445327,
+      "d_clip32": 0.25816117224758584,
+      "d_blind": 0.32411408210101955,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.4430107310238762,
+      "d_clip32": 0.2861629904185212,
+      "d_blind": 0.3645868607211987,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.41133913009189627,
+      "d_clip32": 0.2241156330935361,
+      "d_blind": 0.3177273815927162,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "auth_ba": 0.9791666666666666,
+      "auth_ok": true,
+      "d_sscd32": 0.39017149354012093,
+      "d_clip32": 0.24452264267227197,
+      "d_blind": 0.31734706810619645,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.9895833333333334,
+      "auth_ok": true,
+      "d_sscd32": 0.5406728632127668,
+      "d_clip32": 0.44464420994913945,
+      "d_blind": 0.4926585365809531,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 55,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.9322916666666666,
+      "auth_ok": true,
+      "d_sscd32": 0.7491944299594129,
+      "d_clip32": 0.5663754720494081,
+      "d_blind": 0.6577849510044105,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "auth_ba": 0.4739583333333333,
+      "auth_ok": false,
+      "d_sscd32": 0.6381550520582395,
+      "d_clip32": 0.7640745255848194,
+      "d_blind": 0.7011147888215294,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.53125,
+      "auth_ok": false,
+      "d_sscd32": 0.9007060755767713,
+      "d_clip32": 1.3129479080310462,
+      "d_blind": 1.1068269918039086,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.5124901042647534,
+      "d_clip32": 0.6842489816453505,
+      "d_blind": 0.598369542955052,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.36488956470354783,
+      "d_clip32": 0.3211350376128601,
+      "d_blind": 0.34301230115820397,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.3149414641458784,
+      "d_clip32": 0.3466526887180259,
+      "d_blind": 0.33079707643195216,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "auth_ba": 0.5677083333333334,
+      "auth_ok": false,
+      "d_sscd32": 1.079974053074447,
+      "d_clip32": 0.9497693343732531,
+      "d_blind": 1.01487169372385,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "auth_ba": 0.9947916666666666,
+      "auth_ok": true,
+      "d_sscd32": 0.5203246842803952,
+      "d_clip32": 0.3153522971416608,
+      "d_blind": 0.417838490711028,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.28425487666915195,
+      "d_clip32": 0.4421740062759395,
+      "d_blind": 0.3632144414725457,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.31187654028558887,
+      "d_clip32": 0.3937245671647088,
+      "d_blind": 0.35280055372514885,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.4757556206682696,
+      "d_clip32": 0.4591749553932497,
+      "d_blind": 0.46746528803075965,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.9791666666666666,
+      "auth_ok": true,
+      "d_sscd32": 0.4895581646962621,
+      "d_clip32": 0.6724386150406393,
+      "d_blind": 0.5809983898684508,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 56,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.9166666666666666,
+      "auth_ok": true,
+      "d_sscd32": 0.4896371896231235,
+      "d_clip32": 0.5421208695428208,
+      "d_blind": 0.5158790295829722,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "auth_ba": 0.46875,
+      "auth_ok": false,
+      "d_sscd32": 0.9288889605648856,
+      "d_clip32": 1.0752490140465465,
+      "d_blind": 1.002068987305716,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.4739583333333333,
+      "auth_ok": false,
+      "d_sscd32": 0.6930022318930602,
+      "d_clip32": 1.1630914777679588,
+      "d_blind": 0.9280468548305095,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.4684435226679019,
+      "d_clip32": 0.24297502666079118,
+      "d_blind": 0.35570927466434654,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.4116449206784276,
+      "d_clip32": 0.203339476160996,
+      "d_blind": 0.3074921984197118,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.42202388892425047,
+      "d_clip32": 0.22429912936160534,
+      "d_blind": 0.3231615091429279,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "auth_ba": 0.7083333333333334,
+      "auth_ok": false,
+      "d_sscd32": 0.7576464225575503,
+      "d_clip32": 0.6979996035585643,
+      "d_blind": 0.7278230130580573,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.39143576591774487,
+      "d_clip32": 0.2458155830950115,
+      "d_blind": 0.3186256745063782,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.42158057517185066,
+      "d_clip32": 0.46733714475086885,
+      "d_blind": 0.44445885996135975,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.42355692035694514,
+      "d_clip32": 0.22547650807619557,
+      "d_blind": 0.32451671421657036,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.43649902832669196,
+      "d_clip32": 0.2604220903710357,
+      "d_blind": 0.34846055934886383,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.5587434241026394,
+      "d_clip32": 0.26853323007090557,
+      "d_blind": 0.4136383270867725,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 57,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.9895833333333334,
+      "auth_ok": true,
+      "d_sscd32": 1.0231576442697996,
+      "d_clip32": 0.3693123462106648,
+      "d_blind": 0.6962349952402322,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "auth_ba": 0.5208333333333334,
+      "auth_ok": false,
+      "d_sscd32": 1.0519689314894278,
+      "d_clip32": 1.039819911156432,
+      "d_blind": 1.04589442132293,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.5572916666666666,
+      "auth_ok": false,
+      "d_sscd32": 0.8201636170128639,
+      "d_clip32": 0.7138527604101889,
+      "d_blind": 0.7670081887115263,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.5441129711228558,
+      "d_clip32": 0.4263403364163162,
+      "d_blind": 0.485226653769586,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.5525220755252918,
+      "d_clip32": 0.28462738835838863,
+      "d_blind": 0.4185747319418402,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.5273627394657678,
+      "d_clip32": 0.29907929193403826,
+      "d_blind": 0.41322101569990305,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "auth_ba": 0.75,
+      "auth_ok": true,
+      "d_sscd32": 0.7325498010526137,
+      "d_clip32": 0.6201315268178879,
+      "d_blind": 0.6763406639352507,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.5398104346514463,
+      "d_clip32": 0.29704889396867573,
+      "d_blind": 0.418429664310061,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.5135407296940775,
+      "d_clip32": 0.2647132768117678,
+      "d_blind": 0.38912700325292265,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.5324899756560806,
+      "d_clip32": 0.26082957899303205,
+      "d_blind": 0.3966597773245563,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.6690485231823983,
+      "d_clip32": 0.2542639890400845,
+      "d_blind": 0.4616562561112414,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.7723911918131238,
+      "d_clip32": 0.35502711685072186,
+      "d_blind": 0.5637091543319228,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 58,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.984375,
+      "auth_ok": true,
+      "d_sscd32": 0.7208374813861114,
+      "d_clip32": 0.36061062447759207,
+      "d_blind": 0.5407240529318518,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "waves_rotation",
+      "auth_ba": 0.4947916666666667,
+      "auth_ok": false,
+      "d_sscd32": 0.8219364886878,
+      "d_clip32": 0.6246901114871867,
+      "d_blind": 0.7233133000874934,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "waves_resizedcrop",
+      "auth_ba": 0.5208333333333334,
+      "auth_ok": false,
+      "d_sscd32": 1.050240086776911,
+      "d_clip32": 1.3575288866381323,
+      "d_blind": 1.2038844867075218,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "waves_erasing",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.7019785750603689,
+      "d_clip32": 0.5837455802735183,
+      "d_blind": 0.6428620776669436,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "waves_brightness",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.5278783473280191,
+      "d_clip32": 0.4310555124774461,
+      "d_blind": 0.4794669299027326,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "waves_contrast",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.4907320329689846,
+      "d_clip32": 0.4449027734045907,
+      "d_blind": 0.46781740318678766,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "waves_blurring",
+      "auth_ba": 0.7916666666666666,
+      "auth_ok": true,
+      "d_sscd32": 0.4978421740893728,
+      "d_clip32": 0.47273178389477677,
+      "d_blind": 0.4852869789920748,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "waves_noise",
+      "auth_ba": 0.9947916666666666,
+      "auth_ok": true,
+      "d_sscd32": 0.4070017856107494,
+      "d_clip32": 0.3937780927586164,
+      "d_blind": 0.4003899391846829,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "waves_compression",
+      "auth_ba": 0.9947916666666666,
+      "auth_ok": true,
+      "d_sscd32": 0.4787017856479955,
+      "d_clip32": 0.4546288994696879,
+      "d_blind": 0.4666653425588417,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "vae_roundtrip",
+      "auth_ba": 1.0,
+      "auth_ok": true,
+      "d_sscd32": 0.47764044478906575,
+      "d_clip32": 0.4122079343798256,
+      "d_blind": 0.4449241895844457,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "sd21_regen_01",
+      "auth_ba": 0.9947916666666666,
+      "auth_ok": true,
+      "d_sscd32": 0.7035045197447652,
+      "d_clip32": 0.3940541091955916,
+      "d_blind": 0.5487793144701785,
+      "feat_ok": true,
+      "joint_accept": true
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "sd21_regen_02",
+      "auth_ba": 0.9739583333333334,
+      "auth_ok": true,
+      "d_sscd32": 0.8212534181887235,
+      "d_clip32": 0.5472370385809935,
+      "d_blind": 0.6842452283848586,
+      "feat_ok": false,
+      "joint_accept": false
+    },
+    {
+      "gidx": 59,
+      "dataset": "SDP",
+      "condition": "sd21_regen_03",
+      "auth_ba": 0.9479166666666666,
+      "auth_ok": true,
+      "d_sscd32": 0.6565357892656668,
+      "d_clip32": 0.48526207220600925,
+      "d_blind": 0.5708989307358381,
+      "feat_ok": false,
+      "joint_accept": false
+    }
+  ]
+}

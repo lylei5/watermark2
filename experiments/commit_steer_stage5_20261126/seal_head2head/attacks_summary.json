@@ -1,0 +1,202 @@
+{
+  "elapsed_seconds": 7867.765446608013,
+  "gpu": 7,
+  "uuid": "GPU-9644fb82-cb6f-7311-8017-eaee41409bb7",
+  "imprint_summary": {
+    "step_50": {
+      "n": 4,
+      "fooled_12": 0,
+      "fooled_4": 0,
+      "fooled_2": 0,
+      "mean_matches": 0.25
+    },
+    "step_100": {
+      "n": 4,
+      "fooled_12": 0,
+      "fooled_4": 1,
+      "fooled_2": 1,
+      "mean_matches": 1.25
+    },
+    "step_150": {
+      "n": 4,
+      "fooled_12": 0,
+      "fooled_4": 2,
+      "fooled_2": 2,
+      "mean_matches": 2.75
+    }
+  },
+  "imprint_cases": [
+    {
+      "gidx": 0,
+      "seal_idx": 0,
+      "cover": "000_cover.png",
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.6596156358718872,
+          "matches": 0,
+          "accept_12": false,
+          "accept_4": false,
+          "accept_2": false,
+          "caption": "a train traveling through a forest",
+          "sec_verify": 3.442460837017279
+        },
+        "step_100": {
+          "loss": 0.35325318574905396,
+          "matches": 1,
+          "accept_12": false,
+          "accept_4": false,
+          "accept_2": false,
+          "caption": "a train traveling through a forest",
+          "sec_verify": 2.3088119989843108
+        },
+        "step_150": {
+          "loss": 0.21848689019680023,
+          "matches": 0,
+          "accept_12": false,
+          "accept_4": false,
+          "accept_2": false,
+          "caption": "a blurry image of a train in the woods",
+          "sec_verify": 2.46984123805305
+        }
+      }
+    },
+    {
+      "gidx": 1,
+      "seal_idx": 1,
+      "cover": "001_cover.png",
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.6128401756286621,
+          "matches": 0,
+          "accept_12": false,
+          "accept_4": false,
+          "accept_2": false,
+          "caption": "a man is standing next to a bed",
+          "sec_verify": 2.342096539970953
+        },
+        "step_100": {
+          "loss": 0.3575250506401062,
+          "matches": 0,
+          "accept_12": false,
+          "accept_4": false,
+          "accept_2": false,
+          "caption": "a man standing next to a bed",
+          "sec_verify": 2.2673336360021494
+        },
+        "step_150": {
+          "loss": 0.23674824833869934,
+          "matches": 1,
+          "accept_12": false,
+          "accept_4": false,
+          "accept_2": false,
+          "caption": "a man standing next to a bed",
+          "sec_verify": 2.3133864820119925
+        }
+      }
+    },
+    {
+      "gidx": 2,
+      "seal_idx": 2,
+      "cover": "002_cover.png",
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.5437146425247192,
+          "matches": 1,
+          "accept_12": false,
+          "accept_4": false,
+          "accept_2": false,
+          "caption": "a person catching a frisbee in a field",
+          "sec_verify": 2.526721216039732
+        },
+        "step_100": {
+          "loss": 0.28292661905288696,
+          "matches": 4,
+          "accept_12": false,
+          "accept_4": true,
+          "accept_2": true,
+          "caption": "a woman is catching a frisbee in a field",
+          "sec_verify": 2.5355976289720275
+        },
+        "step_150": {
+          "loss": 0.16353873908519745,
+          "matches": 5,
+          "accept_12": false,
+          "accept_4": true,
+          "accept_2": true,
+          "caption": "a woman is flying a frisbee in a field",
+          "sec_verify": 2.5189642710029148
+        }
+      }
+    },
+    {
+      "gidx": 3,
+      "seal_idx": 3,
+      "cover": "003_cover.png",
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.6874951124191284,
+          "matches": 0,
+          "accept_12": false,
+          "accept_4": false,
+          "accept_2": false,
+          "caption": "a group of people on skis on a snowy slope",
+          "sec_verify": 2.499041471979581
+        },
+        "step_100": {
+          "loss": 0.3905118703842163,
+          "matches": 0,
+          "accept_12": false,
+          "accept_4": false,
+          "accept_2": false,
+          "caption": "a man is snowboarding down a snowy slope",
+          "sec_verify": 2.1562592340051197
+        },
+        "step_150": {
+          "loss": 0.2545902729034424,
+          "matches": 5,
+          "accept_12": false,
+          "accept_4": true,
+          "accept_2": true,
+          "caption": "a person is skiing down a snowy slope",
+          "sec_verify": 2.0231745070195757
+        }
+      }
+    }
+  ],
+  "reprompt_summary": {
+    "sd21": {
+      "n_candidates": 18,
+      "n_sources": 6,
+      "fooled_12_cand": 0,
+      "fooled_4_cand": 10,
+      "fooled_2_cand": 13,
+      "fooled_12_src": 0,
+      "fooled_4_src": 4,
+      "fooled_2_src": 6,
+      "mean_matches": 4.055555555555555
+    },
+    "sd15": {
+      "n_candidates": 18,
+      "n_sources": 6,
+      "fooled_12_cand": 0,
+      "fooled_4_cand": 6,
+      "fooled_2_cand": 13,
+      "fooled_12_src": 0,
+      "fooled_4_src": 3,
+      "fooled_2_src": 6,
+      "mean_matches": 2.9444444444444446
+    }
+  },
+  "seal_target_regeneration_summary": {
+    "scope": "ICCV 2025 SEAL regeneration.py (target-model weight access; distinct from proxy-only Reprompt)",
+    "n_candidates": 18,
+    "n_sources": 6,
+    "fooled_12_cand": 0,
+    "fooled_4_cand": 10,
+    "fooled_2_cand": 15,
+    "fooled_12_src": 0,
+    "fooled_4_src": 6,
+    "fooled_2_src": 6,
+    "mean_matches": 4.5
+  }
+}

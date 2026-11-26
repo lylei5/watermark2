@@ -1,0 +1,17 @@
+{
+  "run_name": "sdxl_imprint",
+  "reused_stage4a": "/data0/liyanlei/watermark_research/runs/commit_steer_stage4_20261125/sdxl_cross_backbone",
+  "backbone": "stabilityai/stable-diffusion-xl-base-1.0",
+  "resolution": 1024,
+  "inv_steps": 30,
+  "imprint_steps": 151,
+  "lr": 0.01,
+  "checkpoints": [
+    50,
+    100,
+    150
+  ],
+  "n_cases": 4,
+  "threshold": 0.6950993039820756,
+  "auth_threshold": 0.7083333333333334
+}

@@ -1,0 +1,22 @@
+{
+  "run_name": "sembind_instance_and_removal",
+  "reused_stage4d": "/data0/liyanlei/watermark_research/runs/commit_steer_stage4_20261125/head2head_sembind",
+  "same_prompt_covers": "runs/commit_steer_stage4_20261125/head2head_sembind/images/{000..003}_same.png",
+  "waves8_types": [
+    "rotation",
+    "resizedcrop",
+    "erasing",
+    "brightness",
+    "contrast",
+    "blurring",
+    "noise",
+    "compression"
+  ],
+  "waves_relative_strength": 0.5,
+  "regen_conditions": [
+    "vae_roundtrip",
+    "sd21_regen_01",
+    "sd21_regen_02",
+    "sd21_regen_03"
+  ]
+}

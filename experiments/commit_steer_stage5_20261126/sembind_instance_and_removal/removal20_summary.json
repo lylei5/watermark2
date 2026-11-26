@@ -1,0 +1,108 @@
+{
+  "n_prompts": 20,
+  "waves8_pass_default": 110,
+  "waves8_pass_167": 116,
+  "waves8_total": 160,
+  "regen4_pass_default": 80,
+  "regen4_pass_167": 80,
+  "regen4_total": 80,
+  "sec_verify_mean": 51.47872687498675,
+  "by_cond": {
+    "waves_rotation": {
+      "n": 20,
+      "pass_gs_default": 0,
+      "pass_gs_167": 0,
+      "mean_ba": 0.50078125,
+      "mean_hamming": 86.3,
+      "mean_sec_verify": 52.111269054558946
+    },
+    "waves_resizedcrop": {
+      "n": 20,
+      "pass_gs_default": 0,
+      "pass_gs_167": 0,
+      "mean_ba": 0.5,
+      "mean_hamming": 95.7,
+      "mean_sec_verify": 51.904612423598884
+    },
+    "waves_erasing": {
+      "n": 20,
+      "pass_gs_default": 20,
+      "pass_gs_167": 20,
+      "mean_ba": 1.0,
+      "mean_hamming": 81.0,
+      "mean_sec_verify": 51.96963824113773
+    },
+    "waves_brightness": {
+      "n": 20,
+      "pass_gs_default": 20,
+      "pass_gs_167": 20,
+      "mean_ba": 0.9998046875,
+      "mean_hamming": 82.0,
+      "mean_sec_verify": 51.516441311503876
+    },
+    "waves_contrast": {
+      "n": 20,
+      "pass_gs_default": 20,
+      "pass_gs_167": 20,
+      "mean_ba": 1.0,
+      "mean_hamming": 71.05,
+      "mean_sec_verify": 51.25537138984364
+    },
+    "waves_blurring": {
+      "n": 20,
+      "pass_gs_default": 10,
+      "pass_gs_167": 16,
+      "mean_ba": 0.7037109375,
+      "mean_hamming": 114.65,
+      "mean_sec_verify": 51.40011837285128
+    },
+    "waves_noise": {
+      "n": 20,
+      "pass_gs_default": 20,
+      "pass_gs_167": 20,
+      "mean_ba": 0.987109375,
+      "mean_hamming": 76.4,
+      "mean_sec_verify": 51.11658767795016
+    },
+    "waves_compression": {
+      "n": 20,
+      "pass_gs_default": 20,
+      "pass_gs_167": 20,
+      "mean_ba": 0.9966796875,
+      "mean_hamming": 64.85,
+      "mean_sec_verify": 51.09928645849868
+    },
+    "vae_roundtrip": {
+      "n": 20,
+      "pass_gs_default": 20,
+      "pass_gs_167": 20,
+      "mean_ba": 1.0,
+      "mean_hamming": 66.55,
+      "mean_sec_verify": 51.376485669938845
+    },
+    "sd21_regen_01": {
+      "n": 20,
+      "pass_gs_default": 20,
+      "pass_gs_167": 20,
+      "mean_ba": 0.987109375,
+      "mean_hamming": 73.0,
+      "mean_sec_verify": 51.08795249110263
+    },
+    "sd21_regen_02": {
+      "n": 20,
+      "pass_gs_default": 20,
+      "pass_gs_167": 20,
+      "mean_ba": 0.9607421875,
+      "mean_hamming": 75.4,
+      "mean_sec_verify": 51.446704343700546
+    },
+    "sd21_regen_03": {
+      "n": 20,
+      "pass_gs_default": 20,
+      "pass_gs_167": 20,
+      "mean_ba": 0.9310546875,
+      "mean_hamming": 68.3,
+      "mean_sec_verify": 51.4602550651558
+    }
+  }
+}
