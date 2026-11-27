@@ -1,0 +1,197 @@
+{
+  "run_name": "imprint10",
+  "n_cases": 10,
+  "imprint_steps": 151,
+  "lr": 0.01,
+  "checkpoints": [
+    50,
+    100,
+    150
+  ],
+  "sscd64_threshold": 0.6950993039820756,
+  "hyb_threshold": 0.5530520000194534,
+  "auth_threshold": 0.7083333333333334,
+  "gs_default_threshold": 0.70703125,
+  "gs_167_threshold": 0.65234375,
+  "seal_thresholds": {
+    "paper_12": 12,
+    "fpr_01pct": 4,
+    "fpr_1pct": 2
+  },
+  "sources": [
+    {
+      "gidx": 0,
+      "dataset": "COCO",
+      "prompt": "A flock of swans swims in a bay."
+    },
+    {
+      "gidx": 1,
+      "dataset": "COCO",
+      "prompt": "Yellow and grey train near platform at railway station."
+    },
+    {
+      "gidx": 2,
+      "dataset": "COCO",
+      "prompt": "The birds are sitting next to each other on a tree branch,"
+    },
+    {
+      "gidx": 3,
+      "dataset": "COCO",
+      "prompt": "A cow is leashed up to a green pole near the civilians. "
+    },
+    {
+      "gidx": 4,
+      "dataset": "COCO",
+      "prompt": "A young woman standing in the kitchen pours from a large measuring cup."
+    },
+    {
+      "gidx": 5,
+      "dataset": "COCO",
+      "prompt": "Man at street market with table full of bananas."
+    },
+    {
+      "gidx": 6,
+      "dataset": "COCO",
+      "prompt": "A batter swings at the ball during a baseball game"
+    },
+    {
+      "gidx": 7,
+      "dataset": "COCO",
+      "prompt": "A majestic bear looks out across a grass plain."
+    },
+    {
+      "gidx": 8,
+      "dataset": "COCO",
+      "prompt": "Two zebras standing side by side in a field. "
+    },
+    {
+      "gidx": 9,
+      "dataset": "COCO",
+      "prompt": "two girls walk off the windy beach while a kite flies overhead"
+    }
+  ],
+  "cross_covers": [
+    {
+      "gidx": 0,
+      "path": "/data0/liyanlei/watermark_research/runs/published_imprint_dpm_full_20261110/inputs/000_cover.png",
+      "name": "000_cover.png",
+      "sha256": "996b65b746a3de367e27db378a125986637d70f4cbbe03e558c915b80bb2dc80"
+    },
+    {
+      "gidx": 1,
+      "path": "/data0/liyanlei/watermark_research/runs/published_imprint_dpm_full_20261110/inputs/001_cover.png",
+      "name": "001_cover.png",
+      "sha256": "59d114f57425a083cb377addd169eafeb8b547be801739991bfa55a0821596dc"
+    },
+    {
+      "gidx": 2,
+      "path": "/data0/liyanlei/watermark_research/runs/published_imprint_dpm_full_20261110/inputs/002_cover.png",
+      "name": "002_cover.png",
+      "sha256": "60fc8bd63c4d2292bf86f2e9160bd0bca3acbfab2382626bcd7f1bdac8b8f34e"
+    },
+    {
+      "gidx": 3,
+      "path": "/data0/liyanlei/watermark_research/runs/published_imprint_dpm_full_20261110/inputs/003_cover.png",
+      "name": "003_cover.png",
+      "sha256": "c968a0ca34f02b68da5865ee21dc0a99aee4e1261acf314f4eb2d906fe271b2c"
+    },
+    {
+      "gidx": 4,
+      "path": "/data0/liyanlei/watermark_research/runs/phase1_public_inputs_20261113/rgb512/004.png",
+      "name": "004.png",
+      "sha256": "5d1fb92573d71633c3c35b0bb7ba5e400b7f12d6ac7df7a5ed4291738f119081"
+    },
+    {
+      "gidx": 5,
+      "path": "/data0/liyanlei/watermark_research/runs/phase1_public_inputs_20261113/rgb512/005.png",
+      "name": "005.png",
+      "sha256": "347d0030f0cdc952d0dc198c2f10ba84801a9d720aa6387a4587ed41d082e74d"
+    },
+    {
+      "gidx": 6,
+      "path": "/data0/liyanlei/watermark_research/runs/phase1_public_inputs_20261113/rgb512/006.png",
+      "name": "006.png",
+      "sha256": "1417e9183cb9122a263a6bee90c112efc291b36bc04e39457271b60939054e28"
+    },
+    {
+      "gidx": 7,
+      "path": "/data0/liyanlei/watermark_research/runs/phase1_public_inputs_20261113/rgb512/007.png",
+      "name": "007.png",
+      "sha256": "e4f9d63b2e1debc50812fd1552d1b0f3acaa3a86496211ce1cf17b0ada911e63"
+    },
+    {
+      "gidx": 8,
+      "path": "/data0/liyanlei/watermark_research/runs/phase1_public_inputs_20261113/rgb512/008.png",
+      "name": "008.png",
+      "sha256": "fb0b18bf2292f6cc65bbb0f5c1d1654874ebd1d713dbe5a5a2b73c6528d68e28"
+    },
+    {
+      "gidx": 9,
+      "path": "/data0/liyanlei/watermark_research/runs/phase1_public_inputs_20261113/rgb512/009.png",
+      "name": "009.png",
+      "sha256": "9127bfd64a2aeb6b42ce1acaffbd01887903e1a0847cf9505cc4dd58a1f15029"
+    }
+  ],
+  "same_covers": [
+    {
+      "gidx": 0,
+      "path": "/data0/liyanlei/watermark_research/runs/commit_steer_stage4_20261125/head2head_sembind/images/000_same.png",
+      "name": "000_same.png",
+      "sha256": "0d8dd98790143732d72bed45744119e9064a3b526d3204b1d2310b9ae35a6e64"
+    },
+    {
+      "gidx": 1,
+      "path": "/data0/liyanlei/watermark_research/runs/commit_steer_stage4_20261125/head2head_sembind/images/001_same.png",
+      "name": "001_same.png",
+      "sha256": "f8798281d64cdb4415de6667fe5868ba128fb27d8b30321fe6317ce16fb7fb09"
+    },
+    {
+      "gidx": 2,
+      "path": "/data0/liyanlei/watermark_research/runs/commit_steer_stage4_20261125/head2head_sembind/images/002_same.png",
+      "name": "002_same.png",
+      "sha256": "8f8f5cf40f9cf71197c18b1965eb69d70d431a1173310948f74240bd51972dc4"
+    },
+    {
+      "gidx": 3,
+      "path": "/data0/liyanlei/watermark_research/runs/commit_steer_stage4_20261125/head2head_sembind/images/003_same.png",
+      "name": "003_same.png",
+      "sha256": "2d4649c9985303bc83f58e42167ac7c2affba5d0ac436b93e028470c735c872a"
+    },
+    {
+      "gidx": 4,
+      "path": "/data0/liyanlei/watermark_research/runs/commit_steer_stage4_20261125/head2head_sembind/images/004_same.png",
+      "name": "004_same.png",
+      "sha256": "cf69cf61e3f4c3118944e556d9b8c9790626f0ade3afe831fb4a634c99011936"
+    },
+    {
+      "gidx": 5,
+      "path": "/data0/liyanlei/watermark_research/runs/commit_steer_stage4_20261125/head2head_sembind/images/005_same.png",
+      "name": "005_same.png",
+      "sha256": "0d1ae2b42ee7e738167c6906d529740c46dd3bdd5d89d8cc4778ab6bb429dbf3"
+    },
+    {
+      "gidx": 6,
+      "path": "/data0/liyanlei/watermark_research/runs/commit_steer_stage4_20261125/head2head_sembind/images/006_same.png",
+      "name": "006_same.png",
+      "sha256": "2f671887483bde87fabdc478fc2a467f0340d8e04adf0ae6aadddc12889bf0df"
+    },
+    {
+      "gidx": 7,
+      "path": "/data0/liyanlei/watermark_research/runs/commit_steer_stage4_20261125/head2head_sembind/images/007_same.png",
+      "name": "007_same.png",
+      "sha256": "9c508db48cb5208f1b5f7025f9df224f49e91e2204d53dd775bd9e56eccfb96a"
+    },
+    {
+      "gidx": 8,
+      "path": "/data0/liyanlei/watermark_research/runs/commit_steer_stage4_20261125/head2head_sembind/images/008_same.png",
+      "name": "008_same.png",
+      "sha256": "2c386a57063290fa450ae8f7688335205af972f3a52146461ee97fe7a38fc443"
+    },
+    {
+      "gidx": 9,
+      "path": "/data0/liyanlei/watermark_research/runs/commit_steer_stage4_20261125/head2head_sembind/images/009_same.png",
+      "name": "009_same.png",
+      "sha256": "3b49be363844767938582b535b6dbaf30272c884200f83ed3c7aaab5ae9ecdb0"
+    }
+  ]
+}

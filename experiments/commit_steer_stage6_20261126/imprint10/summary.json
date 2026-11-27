@@ -1,0 +1,299 @@
+{
+  "n_cases": 10,
+  "cross_prompt": {
+    "native_gs_and_pgid_f": {
+      "step_50": {
+        "n": 10,
+        "native_gs_fooled": 10,
+        "pgid_f_fooled_default": 0,
+        "pgid_f_fooled_167": 0,
+        "pgid_cp95": [
+          0.0,
+          0.3084971078187608
+        ],
+        "mean_native_ba": 0.999609375,
+        "mean_pgid_ba": 0.53828125
+      },
+      "step_100": {
+        "n": 10,
+        "native_gs_fooled": 10,
+        "pgid_f_fooled_default": 0,
+        "pgid_f_fooled_167": 1,
+        "pgid_cp95": [
+          0.0,
+          0.3084971078187608
+        ],
+        "mean_native_ba": 1.0,
+        "mean_pgid_ba": 0.59453125
+      },
+      "step_150": {
+        "n": 10,
+        "native_gs_fooled": 10,
+        "pgid_f_fooled_default": 2,
+        "pgid_f_fooled_167": 5,
+        "pgid_cp95": [
+          0.02521072632683336,
+          0.5560954623076415
+        ],
+        "mean_native_ba": 1.0,
+        "mean_pgid_ba": 0.65
+      }
+    },
+    "seal": {
+      "step_50": {
+        "n": 10,
+        "fooled_12": 0,
+        "fooled_4": 2,
+        "fooled_2": 2,
+        "cp95_at4": [
+          0.02521072632683336,
+          0.5560954623076415
+        ],
+        "mean_matches": 1.1
+      },
+      "step_100": {
+        "n": 10,
+        "fooled_12": 0,
+        "fooled_4": 5,
+        "fooled_2": 5,
+        "cp95_at4": [
+          0.18708602844739855,
+          0.8129139715526015
+        ],
+        "mean_matches": 2.7
+      },
+      "step_150": {
+        "n": 10,
+        "fooled_12": 0,
+        "fooled_4": 6,
+        "fooled_2": 7,
+        "cp95_at4": [
+          0.26237807660694507,
+          0.8784477418801728
+        ],
+        "mean_matches": 3.9
+      }
+    },
+    "sembind_gs_s": {
+      "step_50": {
+        "n": 10,
+        "fooled_default": 0,
+        "fooled_167": 1,
+        "cp95": [
+          0.0,
+          0.3084971078187608
+        ],
+        "mean_ba": 0.52578125,
+        "mean_hamming": 505.5
+      },
+      "step_100": {
+        "n": 10,
+        "fooled_default": 0,
+        "fooled_167": 0,
+        "cp95": [
+          0.0,
+          0.3084971078187608
+        ],
+        "mean_ba": 0.495703125,
+        "mean_hamming": 514.5
+      },
+      "step_150": {
+        "n": 10,
+        "fooled_default": 0,
+        "fooled_167": 0,
+        "cp95": [
+          0.0,
+          0.3084971078187608
+        ],
+        "mean_ba": 0.49453125,
+        "mean_hamming": 513.3
+      }
+    },
+    "commit_steer_sscd64": {
+      "step_50": {
+        "n": 10,
+        "native_auth_fooled": 10,
+        "commit_steer_fooled": 0,
+        "cp95": [
+          0.0,
+          0.3084971078187608
+        ],
+        "mean_auth_ba": 1.0,
+        "mean_d_blind": 1.047492955074398
+      },
+      "step_100": {
+        "n": 10,
+        "native_auth_fooled": 10,
+        "commit_steer_fooled": 0,
+        "cp95": [
+          0.0,
+          0.3084971078187608
+        ],
+        "mean_auth_ba": 1.0,
+        "mean_d_blind": 1.0580560281593336
+      },
+      "step_150": {
+        "n": 10,
+        "native_auth_fooled": 10,
+        "commit_steer_fooled": 0,
+        "cp95": [
+          0.0,
+          0.3084971078187608
+        ],
+        "mean_auth_ba": 1.0,
+        "mean_d_blind": 1.047622609515446
+      }
+    },
+    "commit_steer_hyb": {
+      "step_50": {
+        "n": 10,
+        "native_auth_fooled": 10,
+        "commit_steer_fooled": 0,
+        "cp95": [
+          0.0,
+          0.3084971078187608
+        ],
+        "mean_auth_ba": 0.9989583333333332,
+        "mean_d_blind": 0.7650243572102394
+      },
+      "step_100": {
+        "n": 10,
+        "native_auth_fooled": 10,
+        "commit_steer_fooled": 0,
+        "cp95": [
+          0.0,
+          0.3084971078187608
+        ],
+        "mean_auth_ba": 1.0,
+        "mean_d_blind": 0.7622741311034857
+      },
+      "step_150": {
+        "n": 10,
+        "native_auth_fooled": 10,
+        "commit_steer_fooled": 0,
+        "cp95": [
+          0.0,
+          0.3084971078187608
+        ],
+        "mean_auth_ba": 1.0,
+        "mean_d_blind": 0.7777068281001697
+      }
+    }
+  },
+  "same_prompt": {
+    "sembind_gs_s": {
+      "step_50": {
+        "n": 10,
+        "fooled_default": 10,
+        "fooled_167": 10,
+        "cp95": [
+          0.6915028921812392,
+          1.0
+        ],
+        "mean_ba": 1.0,
+        "mean_hamming": 54.8
+      },
+      "step_100": {
+        "n": 10,
+        "fooled_default": 10,
+        "fooled_167": 10,
+        "cp95": [
+          0.6915028921812392,
+          1.0
+        ],
+        "mean_ba": 1.0,
+        "mean_hamming": 53.9
+      },
+      "step_150": {
+        "n": 10,
+        "fooled_default": 10,
+        "fooled_167": 10,
+        "cp95": [
+          0.6915028921812392,
+          1.0
+        ],
+        "mean_ba": 1.0,
+        "mean_hamming": 53.5
+      }
+    },
+    "commit_steer_sscd64": {
+      "step_50": {
+        "n": 10,
+        "native_auth_fooled": 10,
+        "commit_steer_fooled": 3,
+        "cp95": [
+          0.06673951117773447,
+          0.6524528500599973
+        ],
+        "mean_auth_ba": 1.0,
+        "mean_d_blind": 0.8246688949185094
+      },
+      "step_100": {
+        "n": 10,
+        "native_auth_fooled": 10,
+        "commit_steer_fooled": 3,
+        "cp95": [
+          0.06673951117773447,
+          0.6524528500599973
+        ],
+        "mean_auth_ba": 1.0,
+        "mean_d_blind": 0.8087204995078657
+      },
+      "step_150": {
+        "n": 10,
+        "native_auth_fooled": 10,
+        "commit_steer_fooled": 3,
+        "cp95": [
+          0.06673951117773447,
+          0.6524528500599973
+        ],
+        "mean_auth_ba": 1.0,
+        "mean_d_blind": 0.7964061055189625
+      }
+    },
+    "commit_steer_hyb": {
+      "step_50": {
+        "n": 10,
+        "native_auth_fooled": 10,
+        "commit_steer_fooled": 5,
+        "cp95": [
+          0.18708602844739855,
+          0.8129139715526015
+        ],
+        "mean_auth_ba": 1.0,
+        "mean_d_blind": 0.5514648920064344
+      },
+      "step_100": {
+        "n": 10,
+        "native_auth_fooled": 10,
+        "commit_steer_fooled": 5,
+        "cp95": [
+          0.18708602844739855,
+          0.8129139715526015
+        ],
+        "mean_auth_ba": 1.0,
+        "mean_d_blind": 0.5619593406893384
+      },
+      "step_150": {
+        "n": 10,
+        "native_auth_fooled": 10,
+        "commit_steer_fooled": 5,
+        "cp95": [
+          0.18708602844739855,
+          0.8129139715526015
+        ],
+        "mean_auth_ba": 1.0,
+        "mean_d_blind": 0.5634581167796421
+      }
+    }
+  },
+  "fisher_exact_two_sided_step150": {
+    "cross_step150_sscd64_vs_native_gs_p": 1.082508822446903e-05,
+    "cross_step150_hyb_vs_native_gs_p": 1.082508822446903e-05,
+    "cross_step150_sscd64_vs_pgid_default_p": 0.4736842105263158,
+    "cross_step150_sscd64_vs_pgid_167_p": 0.032507739938080496,
+    "cross_step150_sscd64_vs_seal_at4_p": 0.010835913312693497,
+    "same_step150_hyb_vs_sembind_p": 0.032507739938080496,
+    "same_step150_sscd64_vs_sembind_p": 0.0030959752321981426
+  }
+}

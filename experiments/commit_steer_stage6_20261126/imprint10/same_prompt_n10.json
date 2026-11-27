@@ -1,0 +1,1166 @@
+{
+  "sembind_gs_s": [
+    {
+      "gidx": 0,
+      "prompt": "A flock of swans swims in a bay.",
+      "cover": "000_same.png",
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.576646089553833,
+          "psnr_vs_cover": 21.123194343973456,
+          "lpips_vs_cover": 0.12444981187582016,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 68
+        },
+        "step_100": {
+          "loss": 0.3506707549095154,
+          "psnr_vs_cover": 19.79152482090199,
+          "lpips_vs_cover": 0.15406621992588043,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 69
+        },
+        "step_150": {
+          "loss": 0.24798548221588135,
+          "psnr_vs_cover": 19.141814082336925,
+          "lpips_vs_cover": 0.18146805465221405,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 71
+        }
+      }
+    },
+    {
+      "gidx": 1,
+      "prompt": "Yellow and grey train near platform at railway station.",
+      "cover": "001_same.png",
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.4311342239379883,
+          "psnr_vs_cover": 21.690899158515208,
+          "lpips_vs_cover": 0.10930802673101425,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 54
+        },
+        "step_100": {
+          "loss": 0.27271249890327454,
+          "psnr_vs_cover": 20.168567714134635,
+          "lpips_vs_cover": 0.14658568799495697,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 25
+        },
+        "step_150": {
+          "loss": 0.20145881175994873,
+          "psnr_vs_cover": 19.289181204729864,
+          "lpips_vs_cover": 0.17440900206565857,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 21
+        }
+      }
+    },
+    {
+      "gidx": 2,
+      "prompt": "The birds are sitting next to each other on a tree branch,",
+      "cover": "002_same.png",
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.5412452220916748,
+          "psnr_vs_cover": 22.914317211794142,
+          "lpips_vs_cover": 0.18250082433223724,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 70
+        },
+        "step_100": {
+          "loss": 0.26816150546073914,
+          "psnr_vs_cover": 21.659915792452566,
+          "lpips_vs_cover": 0.23157921433448792,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 92
+        },
+        "step_150": {
+          "loss": 0.15110962092876434,
+          "psnr_vs_cover": 20.965834565093417,
+          "lpips_vs_cover": 0.268673300743103,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 93
+        }
+      }
+    },
+    {
+      "gidx": 3,
+      "prompt": "A cow is leashed up to a green pole near the civilians. ",
+      "cover": "003_same.png",
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.6610691547393799,
+          "psnr_vs_cover": 21.620803679758374,
+          "lpips_vs_cover": 0.16235029697418213,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 95
+        },
+        "step_100": {
+          "loss": 0.34392234683036804,
+          "psnr_vs_cover": 19.80722960689984,
+          "lpips_vs_cover": 0.2350510060787201,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 86
+        },
+        "step_150": {
+          "loss": 0.1990201473236084,
+          "psnr_vs_cover": 18.817205540143902,
+          "lpips_vs_cover": 0.2792665362358093,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 77
+        }
+      }
+    },
+    {
+      "gidx": 4,
+      "prompt": "A young woman standing in the kitchen pours from a large measuring cup.",
+      "cover": "004_same.png",
+      "seconds": 1880.0117293029907,
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.4510881304740906,
+          "psnr_vs_cover": 25.71431839586397,
+          "lpips_vs_cover": 0.07841172814369202,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 40
+        },
+        "step_100": {
+          "loss": 0.25016894936561584,
+          "psnr_vs_cover": 23.180105728572276,
+          "lpips_vs_cover": 0.11762752383947372,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 52
+        },
+        "step_150": {
+          "loss": 0.16672545671463013,
+          "psnr_vs_cover": 21.618820635498373,
+          "lpips_vs_cover": 0.1480577141046524,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 48
+        }
+      }
+    },
+    {
+      "gidx": 5,
+      "prompt": "Man at street market with table full of bananas.",
+      "cover": "005_same.png",
+      "seconds": 1876.703713105002,
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.6887946128845215,
+          "psnr_vs_cover": 20.004762894737592,
+          "lpips_vs_cover": 0.12613409757614136,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 10
+        },
+        "step_100": {
+          "loss": 0.4235057234764099,
+          "psnr_vs_cover": 17.566815008545067,
+          "lpips_vs_cover": 0.19301365315914154,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 12
+        },
+        "step_150": {
+          "loss": 0.28516924381256104,
+          "psnr_vs_cover": 16.193408684273084,
+          "lpips_vs_cover": 0.23928020894527435,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 14
+        }
+      }
+    },
+    {
+      "gidx": 6,
+      "prompt": "A batter swings at the ball during a baseball game",
+      "cover": "006_same.png",
+      "seconds": 1869.820748196973,
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.4999798834323883,
+          "psnr_vs_cover": 23.515761983169774,
+          "lpips_vs_cover": 0.0980369970202446,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 115
+        },
+        "step_100": {
+          "loss": 0.27320119738578796,
+          "psnr_vs_cover": 21.99740354230257,
+          "lpips_vs_cover": 0.1244848370552063,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 106
+        },
+        "step_150": {
+          "loss": 0.1740264743566513,
+          "psnr_vs_cover": 21.092967245567404,
+          "lpips_vs_cover": 0.15184609591960907,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 110
+        }
+      }
+    },
+    {
+      "gidx": 7,
+      "prompt": "A majestic bear looks out across a grass plain.",
+      "cover": "007_same.png",
+      "seconds": 1867.7849566489458,
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.48966506123542786,
+          "psnr_vs_cover": 22.733114882375965,
+          "lpips_vs_cover": 0.1054832935333252,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 5
+        },
+        "step_100": {
+          "loss": 0.23856699466705322,
+          "psnr_vs_cover": 21.37530453504286,
+          "lpips_vs_cover": 0.14268828928470612,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 6
+        },
+        "step_150": {
+          "loss": 0.13975833356380463,
+          "psnr_vs_cover": 20.687033392098435,
+          "lpips_vs_cover": 0.16846498847007751,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 6
+        }
+      }
+    },
+    {
+      "gidx": 8,
+      "prompt": "Two zebras standing side by side in a field. ",
+      "cover": "008_same.png",
+      "seconds": 1882.6036501160124,
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.4186224937438965,
+          "psnr_vs_cover": 19.765719961105376,
+          "lpips_vs_cover": 0.1257537305355072,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 14
+        },
+        "step_100": {
+          "loss": 0.22048544883728027,
+          "psnr_vs_cover": 18.084568563190064,
+          "lpips_vs_cover": 0.15128439664840698,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 12
+        },
+        "step_150": {
+          "loss": 0.14188608527183533,
+          "psnr_vs_cover": 17.143947275451218,
+          "lpips_vs_cover": 0.17091113328933716,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 14
+        }
+      }
+    },
+    {
+      "gidx": 9,
+      "prompt": "two girls walk off the windy beach while a kite flies overhead",
+      "cover": "009_same.png",
+      "seconds": 1880.0317507649888,
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.3614279329776764,
+          "psnr_vs_cover": 28.207709437532216,
+          "lpips_vs_cover": 0.07360461354255676,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 77
+        },
+        "step_100": {
+          "loss": 0.17313021421432495,
+          "psnr_vs_cover": 26.503718897215904,
+          "lpips_vs_cover": 0.09865716099739075,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 79
+        },
+        "step_150": {
+          "loss": 0.09944282472133636,
+          "psnr_vs_cover": 25.53090225250365,
+          "lpips_vs_cover": 0.11770341545343399,
+          "ba": 1.0,
+          "accept_gs_default": true,
+          "accept_gs_167": true,
+          "code_hamming": 81
+        }
+      }
+    }
+  ],
+  "commit_steer_sscd64": [
+    {
+      "gidx": 0,
+      "prompt": "A flock of swans swims in a bay.",
+      "cover": "000_same.png",
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.6006209850311279,
+          "psnr_vs_cover": 21.05310372461348,
+          "lpips_vs_cover": 0.12247296422719955,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.9937944077947672,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_100": {
+          "loss": 0.3722308278083801,
+          "psnr_vs_cover": 19.762739858649724,
+          "lpips_vs_cover": 0.16302436590194702,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.9817219360895999,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_150": {
+          "loss": 0.2618998885154724,
+          "psnr_vs_cover": 19.120866519234088,
+          "lpips_vs_cover": 0.1956215500831604,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.9701637796102971,
+          "feat_ok": false,
+          "joint_accept": false
+        }
+      }
+    },
+    {
+      "gidx": 1,
+      "prompt": "Yellow and grey train near platform at railway station.",
+      "cover": "001_same.png",
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.4388187825679779,
+          "psnr_vs_cover": 21.559704493898405,
+          "lpips_vs_cover": 0.11797364801168442,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.8013888400040892,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_100": {
+          "loss": 0.27878063917160034,
+          "psnr_vs_cover": 20.233024998910007,
+          "lpips_vs_cover": 0.1570459008216858,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.8025878077907164,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_150": {
+          "loss": 0.19935816526412964,
+          "psnr_vs_cover": 19.384207853920863,
+          "lpips_vs_cover": 0.18781475722789764,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.8118892755801786,
+          "feat_ok": false,
+          "joint_accept": false
+        }
+      }
+    },
+    {
+      "gidx": 2,
+      "prompt": "The birds are sitting next to each other on a tree branch,",
+      "cover": "002_same.png",
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.5613824129104614,
+          "psnr_vs_cover": 22.926236790222262,
+          "lpips_vs_cover": 0.17452582716941833,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.6849261640377393,
+          "feat_ok": true,
+          "joint_accept": true
+        },
+        "step_100": {
+          "loss": 0.28008225560188293,
+          "psnr_vs_cover": 21.667184615931703,
+          "lpips_vs_cover": 0.22544750571250916,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.6455431358928172,
+          "feat_ok": true,
+          "joint_accept": true
+        },
+        "step_150": {
+          "loss": 0.16068574786186218,
+          "psnr_vs_cover": 20.908861526162923,
+          "lpips_vs_cover": 0.2582976818084717,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.6372591573263302,
+          "feat_ok": true,
+          "joint_accept": true
+        }
+      }
+    },
+    {
+      "gidx": 3,
+      "prompt": "A cow is leashed up to a green pole near the civilians. ",
+      "cover": "003_same.png",
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.6773897409439087,
+          "psnr_vs_cover": 21.637435414563445,
+          "lpips_vs_cover": 0.16062253713607788,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.604633996366648,
+          "feat_ok": true,
+          "joint_accept": true
+        },
+        "step_100": {
+          "loss": 0.36154890060424805,
+          "psnr_vs_cover": 19.908625591384755,
+          "lpips_vs_cover": 0.22468729317188263,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.597135097795243,
+          "feat_ok": true,
+          "joint_accept": true
+        },
+        "step_150": {
+          "loss": 0.21180197596549988,
+          "psnr_vs_cover": 19.01460832665875,
+          "lpips_vs_cover": 0.2790348529815674,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.5916753235121963,
+          "feat_ok": true,
+          "joint_accept": true
+        }
+      }
+    },
+    {
+      "gidx": 4,
+      "prompt": "A young woman standing in the kitchen pours from a large measuring cup.",
+      "cover": "004_same.png",
+      "seconds": 1872.3076854470419,
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.46592074632644653,
+          "psnr_vs_cover": 25.65621737710029,
+          "lpips_vs_cover": 0.07859104126691818,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 1.1525335971223336,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_100": {
+          "loss": 0.2595166862010956,
+          "psnr_vs_cover": 23.047625774187026,
+          "lpips_vs_cover": 0.11512434482574463,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 1.1200842482346258,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_150": {
+          "loss": 0.17275354266166687,
+          "psnr_vs_cover": 21.535900150551033,
+          "lpips_vs_cover": 0.1461106389760971,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 1.0588443187042316,
+          "feat_ok": false,
+          "joint_accept": false
+        }
+      }
+    },
+    {
+      "gidx": 5,
+      "prompt": "Man at street market with table full of bananas.",
+      "cover": "005_same.png",
+      "seconds": 1869.106640493963,
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.7199156880378723,
+          "psnr_vs_cover": 19.899445815659394,
+          "lpips_vs_cover": 0.13101136684417725,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.7493765512299602,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_100": {
+          "loss": 0.44426286220550537,
+          "psnr_vs_cover": 17.628578428556022,
+          "lpips_vs_cover": 0.19128717482089996,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.7748963317161632,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_150": {
+          "loss": 0.3071722984313965,
+          "psnr_vs_cover": 16.297793325159414,
+          "lpips_vs_cover": 0.23811979591846466,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.7821452845799955,
+          "feat_ok": false,
+          "joint_accept": false
+        }
+      }
+    },
+    {
+      "gidx": 6,
+      "prompt": "A batter swings at the ball during a baseball game",
+      "cover": "006_same.png",
+      "seconds": 1853.650308302953,
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.5214335918426514,
+          "psnr_vs_cover": 23.28389289348051,
+          "lpips_vs_cover": 0.10852444171905518,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.9402987174728324,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_100": {
+          "loss": 0.2854881286621094,
+          "psnr_vs_cover": 21.865693787601295,
+          "lpips_vs_cover": 0.13431988656520844,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.8570059622456938,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_150": {
+          "loss": 0.18167950212955475,
+          "psnr_vs_cover": 21.093139699586956,
+          "lpips_vs_cover": 0.15555620193481445,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.8749848873737328,
+          "feat_ok": false,
+          "joint_accept": false
+        }
+      }
+    },
+    {
+      "gidx": 7,
+      "prompt": "A majestic bear looks out across a grass plain.",
+      "cover": "007_same.png",
+      "seconds": 1867.8361006759806,
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.4924525022506714,
+          "psnr_vs_cover": 22.68596769385539,
+          "lpips_vs_cover": 0.10777194797992706,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.8122239686427252,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_100": {
+          "loss": 0.24946808815002441,
+          "psnr_vs_cover": 21.47043159698076,
+          "lpips_vs_cover": 0.14131787419319153,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.7908621306146981,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_150": {
+          "loss": 0.15036161243915558,
+          "psnr_vs_cover": 20.728576921910854,
+          "lpips_vs_cover": 0.17163300514221191,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.7443974647845799,
+          "feat_ok": false,
+          "joint_accept": false
+        }
+      }
+    },
+    {
+      "gidx": 8,
+      "prompt": "Two zebras standing side by side in a field. ",
+      "cover": "008_same.png",
+      "seconds": 1873.9270468339673,
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.42929261922836304,
+          "psnr_vs_cover": 19.574926004675916,
+          "lpips_vs_cover": 0.12108686566352844,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.6569633749917085,
+          "feat_ok": true,
+          "joint_accept": true
+        },
+        "step_100": {
+          "loss": 0.22731024026870728,
+          "psnr_vs_cover": 17.97289274100995,
+          "lpips_vs_cover": 0.1527918130159378,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.6499292139941846,
+          "feat_ok": true,
+          "joint_accept": true
+        },
+        "step_150": {
+          "loss": 0.14710134267807007,
+          "psnr_vs_cover": 17.041591976242447,
+          "lpips_vs_cover": 0.1767050325870514,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.6413461046119675,
+          "feat_ok": true,
+          "joint_accept": true
+        }
+      }
+    },
+    {
+      "gidx": 9,
+      "prompt": "two girls walk off the windy beach while a kite flies overhead",
+      "cover": "009_same.png",
+      "seconds": 1870.4988450449891,
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.3516538739204407,
+          "psnr_vs_cover": 28.093230303224228,
+          "lpips_vs_cover": 0.06981244683265686,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.8505493315222921,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_100": {
+          "loss": 0.16999182105064392,
+          "psnr_vs_cover": 26.520737913103765,
+          "lpips_vs_cover": 0.0963202714920044,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.8674391307049159,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_150": {
+          "loss": 0.09925371408462524,
+          "psnr_vs_cover": 25.608879836279755,
+          "lpips_vs_cover": 0.11346185207366943,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_blind": 0.8513554591061155,
+          "feat_ok": false,
+          "joint_accept": false
+        }
+      }
+    }
+  ],
+  "commit_steer_hyb": [
+    {
+      "gidx": 0,
+      "prompt": "A flock of swans swims in a bay.",
+      "cover": "000_same.png",
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.5733106732368469,
+          "psnr_vs_cover": 21.18242063131294,
+          "lpips_vs_cover": 0.12452481687068939,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.5801849249310893,
+          "d_clip32": 0.48270544230541523,
+          "d_blind": 0.5314451836182523,
+          "feat_ok": true,
+          "joint_accept": true
+        },
+        "step_100": {
+          "loss": 0.3533107042312622,
+          "psnr_vs_cover": 19.95573454075953,
+          "lpips_vs_cover": 0.1584407538175583,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.536391715250604,
+          "d_clip32": 0.5060277046779507,
+          "d_blind": 0.5212097099642774,
+          "feat_ok": true,
+          "joint_accept": true
+        },
+        "step_150": {
+          "loss": 0.2507787048816681,
+          "psnr_vs_cover": 19.356219758738323,
+          "lpips_vs_cover": 0.1856112778186798,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.5538999428534395,
+          "d_clip32": 0.4764691867996653,
+          "d_blind": 0.5151845648265524,
+          "feat_ok": true,
+          "joint_accept": true
+        }
+      }
+    },
+    {
+      "gidx": 1,
+      "prompt": "Yellow and grey train near platform at railway station.",
+      "cover": "001_same.png",
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.4382007122039795,
+          "psnr_vs_cover": 21.352712762758163,
+          "lpips_vs_cover": 0.11486097425222397,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 1.0776056044807052,
+          "d_clip32": 0.2391326468041497,
+          "d_blind": 0.6583691256424274,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_100": {
+          "loss": 0.27188384532928467,
+          "psnr_vs_cover": 19.8343321526333,
+          "lpips_vs_cover": 0.1480596363544464,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 1.0255821301653245,
+          "d_clip32": 0.24755841153613412,
+          "d_blind": 0.6365702708507293,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_150": {
+          "loss": 0.19722631573677063,
+          "psnr_vs_cover": 18.903088411976384,
+          "lpips_vs_cover": 0.18209820985794067,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.9813558961139822,
+          "d_clip32": 0.24461673910579818,
+          "d_blind": 0.6129863176098902,
+          "feat_ok": false,
+          "joint_accept": false
+        }
+      }
+    },
+    {
+      "gidx": 2,
+      "prompt": "The birds are sitting next to each other on a tree branch,",
+      "cover": "002_same.png",
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.5434610843658447,
+          "psnr_vs_cover": 23.045129779597687,
+          "lpips_vs_cover": 0.16851049661636353,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.5244927396189909,
+          "d_clip32": 0.6909292661545821,
+          "d_blind": 0.6077110028867865,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_100": {
+          "loss": 0.27777206897735596,
+          "psnr_vs_cover": 21.822442755768794,
+          "lpips_vs_cover": 0.2381226122379303,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.5869537562580891,
+          "d_clip32": 0.6433787373973701,
+          "d_blind": 0.6151662468277296,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_150": {
+          "loss": 0.1601138412952423,
+          "psnr_vs_cover": 21.177351901378884,
+          "lpips_vs_cover": 0.28486138582229614,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.5830643857986082,
+          "d_clip32": 0.6319057076699777,
+          "d_blind": 0.6074850467342929,
+          "feat_ok": false,
+          "joint_accept": false
+        }
+      }
+    },
+    {
+      "gidx": 3,
+      "prompt": "A cow is leashed up to a green pole near the civilians. ",
+      "cover": "003_same.png",
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.6723114252090454,
+          "psnr_vs_cover": 21.760959505083108,
+          "lpips_vs_cover": 0.15930017828941345,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.9501394565825915,
+          "d_clip32": 0.4179434818734874,
+          "d_blind": 0.6840414692280394,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_100": {
+          "loss": 0.3616413474082947,
+          "psnr_vs_cover": 19.932465621523363,
+          "lpips_vs_cover": 0.23028676211833954,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 1.0632715648906825,
+          "d_clip32": 0.40777518769449805,
+          "d_blind": 0.7355233762925903,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_150": {
+          "loss": 0.21825149655342102,
+          "psnr_vs_cover": 18.948033914974516,
+          "lpips_vs_cover": 0.2834075689315796,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 1.0647687194118478,
+          "d_clip32": 0.41007537900102065,
+          "d_blind": 0.7374220492064343,
+          "feat_ok": false,
+          "joint_accept": false
+        }
+      }
+    },
+    {
+      "gidx": 4,
+      "prompt": "A young woman standing in the kitchen pours from a large measuring cup.",
+      "cover": "004_same.png",
+      "seconds": 1928.0443295710138,
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.43446430563926697,
+          "psnr_vs_cover": 25.57454835018888,
+          "lpips_vs_cover": 0.08415181189775467,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.6212338583950741,
+          "d_clip32": 0.5188215553520201,
+          "d_blind": 0.5700277068735471,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_100": {
+          "loss": 0.2391531616449356,
+          "psnr_vs_cover": 22.95473724449358,
+          "lpips_vs_cover": 0.12095081061124802,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.664375404505055,
+          "d_clip32": 0.5199223966283095,
+          "d_blind": 0.5921489005666822,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_150": {
+          "loss": 0.15538595616817474,
+          "psnr_vs_cover": 21.425928312620318,
+          "lpips_vs_cover": 0.14840134978294373,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.6922844947729213,
+          "d_clip32": 0.6063769753495107,
+          "d_blind": 0.6493307350612161,
+          "feat_ok": false,
+          "joint_accept": false
+        }
+      }
+    },
+    {
+      "gidx": 5,
+      "prompt": "Man at street market with table full of bananas.",
+      "cover": "005_same.png",
+      "seconds": 1892.1931119709625,
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.6796972751617432,
+          "psnr_vs_cover": 19.962077775739797,
+          "lpips_vs_cover": 0.13086287677288055,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.6667765487304302,
+          "d_clip32": 0.3136271441995018,
+          "d_blind": 0.490201846464966,
+          "feat_ok": true,
+          "joint_accept": true
+        },
+        "step_100": {
+          "loss": 0.41622835397720337,
+          "psnr_vs_cover": 17.63805382376446,
+          "lpips_vs_cover": 0.19088703393936157,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.6277550987195619,
+          "d_clip32": 0.317155531292477,
+          "d_blind": 0.47245531500601945,
+          "feat_ok": true,
+          "joint_accept": true
+        },
+        "step_150": {
+          "loss": 0.28814008831977844,
+          "psnr_vs_cover": 16.282214554580104,
+          "lpips_vs_cover": 0.23822243511676788,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.6223915433207658,
+          "d_clip32": 0.33718121271860846,
+          "d_blind": 0.47978637801968715,
+          "feat_ok": true,
+          "joint_accept": true
+        }
+      }
+    },
+    {
+      "gidx": 6,
+      "prompt": "A batter swings at the ball during a baseball game",
+      "cover": "006_same.png",
+      "seconds": 1889.2813188349828,
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.48705220222473145,
+          "psnr_vs_cover": 23.29452303873657,
+          "lpips_vs_cover": 0.10090305656194687,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.6115393531702138,
+          "d_clip32": 0.2725060599210496,
+          "d_blind": 0.4420227065456317,
+          "feat_ok": true,
+          "joint_accept": true
+        },
+        "step_100": {
+          "loss": 0.26156526803970337,
+          "psnr_vs_cover": 21.923444048423455,
+          "lpips_vs_cover": 0.1264507919549942,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.6403241410999816,
+          "d_clip32": 0.28661392716707235,
+          "d_blind": 0.46346903413352697,
+          "feat_ok": true,
+          "joint_accept": true
+        },
+        "step_150": {
+          "loss": 0.16733187437057495,
+          "psnr_vs_cover": 21.104917095985236,
+          "lpips_vs_cover": 0.15189070999622345,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.6225328971202844,
+          "d_clip32": 0.2832801497305699,
+          "d_blind": 0.45290652342542714,
+          "feat_ok": true,
+          "joint_accept": true
+        }
+      }
+    },
+    {
+      "gidx": 7,
+      "prompt": "A majestic bear looks out across a grass plain.",
+      "cover": "007_same.png",
+      "seconds": 1891.0073359800153,
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.5286880731582642,
+          "psnr_vs_cover": 22.625730259150906,
+          "lpips_vs_cover": 0.11862994730472565,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.5537024812467178,
+          "d_clip32": 0.2341265903777091,
+          "d_blind": 0.3939145358122135,
+          "feat_ok": true,
+          "joint_accept": true
+        },
+        "step_100": {
+          "loss": 0.26386559009552,
+          "psnr_vs_cover": 21.41907130711651,
+          "lpips_vs_cover": 0.15608249604701996,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.6024156231651017,
+          "d_clip32": 0.2445866229614322,
+          "d_blind": 0.4235011230632669,
+          "feat_ok": true,
+          "joint_accept": true
+        },
+        "step_150": {
+          "loss": 0.16022330522537231,
+          "psnr_vs_cover": 20.817488397746942,
+          "lpips_vs_cover": 0.18262596428394318,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.6235610260506284,
+          "d_clip32": 0.2678150517770381,
+          "d_blind": 0.44568803891383324,
+          "feat_ok": true,
+          "joint_accept": true
+        }
+      }
+    },
+    {
+      "gidx": 8,
+      "prompt": "Two zebras standing side by side in a field. ",
+      "cover": "008_same.png",
+      "seconds": 1906.1700408650213,
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.4429895281791687,
+          "psnr_vs_cover": 19.702988313756716,
+          "lpips_vs_cover": 0.12209558486938477,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.6542252359801208,
+          "d_clip32": 0.3720611448946639,
+          "d_blind": 0.5131431904373924,
+          "feat_ok": true,
+          "joint_accept": true
+        },
+        "step_100": {
+          "loss": 0.23881983757019043,
+          "psnr_vs_cover": 18.16408605520824,
+          "lpips_vs_cover": 0.15280254185199738,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.6734207871036351,
+          "d_clip32": 0.37865723662376805,
+          "d_blind": 0.5260390118637015,
+          "feat_ok": true,
+          "joint_accept": true
+        },
+        "step_150": {
+          "loss": 0.15526634454727173,
+          "psnr_vs_cover": 17.227946640170646,
+          "lpips_vs_cover": 0.1774671971797943,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.6698018541304392,
+          "d_clip32": 0.38471217670435076,
+          "d_blind": 0.527257015417395,
+          "feat_ok": true,
+          "joint_accept": true
+        }
+      }
+    },
+    {
+      "gidx": 9,
+      "prompt": "two girls walk off the windy beach while a kite flies overhead",
+      "cover": "009_same.png",
+      "seconds": 1900.8281072680256,
+      "checkpoints": {
+        "step_50": {
+          "loss": 0.3443659543991089,
+          "psnr_vs_cover": 28.27675422650436,
+          "lpips_vs_cover": 0.07228685170412064,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.9547854218826292,
+          "d_clip32": 0.29275888322754773,
+          "d_blind": 0.6237721525550884,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_100": {
+          "loss": 0.1638379693031311,
+          "psnr_vs_cover": 26.685123132099825,
+          "lpips_vs_cover": 0.09657599776983261,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.9573632650060476,
+          "d_clip32": 0.3096575716436747,
+          "d_blind": 0.6335104183248612,
+          "feat_ok": false,
+          "joint_accept": false
+        },
+        "step_150": {
+          "loss": 0.09656569361686707,
+          "psnr_vs_cover": 25.716128395520464,
+          "lpips_vs_cover": 0.115049809217453,
+          "auth_ba": 1.0,
+          "auth_ok": true,
+          "d_sscd32": 0.8979765062649832,
+          "d_clip32": 0.3150924908984042,
+          "d_blind": 0.6065344985816936,
+          "feat_ok": false,
+          "joint_accept": false
+        }
+      }
+    }
+  ]
+}

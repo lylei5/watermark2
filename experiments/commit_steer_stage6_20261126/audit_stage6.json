@@ -1,0 +1,16 @@
+{
+  "total_mismatches": 0,
+  "details": {
+    "stage6a_coco1k_fid": {
+      "n_prompts": 1000,
+      "fid_checks": 8,
+      "mismatches": 0
+    },
+    "stage6b_imprint10": {
+      "n_cross_methods": 6,
+      "n_same_methods": 3,
+      "n_cases_per_method": 10,
+      "mismatches": 0
+    }
+  }
+}

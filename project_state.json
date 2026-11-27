@@ -1,8 +1,8 @@
 {
   "schema_version": 3,
   "project_name": "watermark2",
-  "updated_at": "2026-11-26",
-  "status": "commit_steer_stage5_complete_all_audited_0_mismatch",
+  "updated_at": "2026-11-27",
+  "status": "commit_steer_stage6_complete_all_audited_0_mismatch",
   "active_experiments": 0,
   "queued_experiments": 0,
   "active_runs": [],
@@ -21,12 +21,17 @@
     "runs/commit_steer_stage5_20261126/sdxl_imprint (Stage 5D: SDXL Base 1.0 1024x1024 Live 151-step Imprint, Native GS-SDXL 4/4 [12/12 ckpts auth_ba=1.0000] vs Commit-Steer SDXL 0/4 [12/12 ckpts blocked, mean d_blind=0.9207]; 0 mismatch)",
     "runs/commit_steer_stage5_20261126/audit_stage5.json (independent full audit total_mismatches=0)"
   ],
+  "completed_stage6_runs": [
+    "runs/commit_steer_stage6_20261126/coco1k_fid (Stage 6A: 1,000 disjoint unseen MS-COCO val2017 prompts vs 5,000 real test2017 FID; sscd_64b FID 52.97->52.17 [delta -0.79], CLIP 0.2614->0.2605, Clean auth 1000/1000 BER 0.0000, blind joint 973/1000 [97.3%], same-zT LPIPS 0.114 / paired FID 19.01; hyb FID 53.02->52.98 [delta -0.04], CLIP 0.2639->0.2634, Clean auth 1000/1000 BER 0.0000, blind joint 972/1000 [97.2%], same-zT LPIPS 0.089 / paired FID 14.83 vs unguided seed sanity 48.67; 0 mismatch)",
+    "runs/commit_steer_stage6_20261126/imprint10 (Stage 6B: SD2.1 Live 151-step Imprint scaled N=4->10; Cross-Prompt 6 methods x 10 cases: Native GS 10/10, SEAL @4 6/10 [@2 7/10, @12 0/10], PGID-F 2/10 default [5/10 @167], SemBind GS-S 0/10, Commit-Steer sscd_64b 0/10 [Fisher vs Native p=1.08e-5, vs SEAL@4 p=0.0108, vs PGID@167 p=0.0325], Commit-Steer hyb 0/10; Same-Prompt Sibling 3 methods x 10 cases: SemBind GS-S 10/10 [all 30/30 ckpts BA=1.0000] vs Commit-Steer sscd_64b 3/10 [Fisher p=0.0031] & hyb 5/10 [Fisher p=0.0325]; 0 mismatch)",
+    "runs/commit_steer_stage6_20261126/audit_stage6.json (independent full audit total_mismatches=0)"
+  ],
   "research_plan": "docs/RESEARCH_PLAN.md",
   "evidence_index": "reports/README.md",
-  "latest_progress_report": "reports/commit_steer_stage5_20261126/report.md",
+  "latest_progress_report": "reports/commit_steer_stage6_20261126/report.md",
   "native_sembind_reproduction_complete": false,
   "superiority_established": false,
-  "head2head_summary_note": "Commit-then-Steer strictly dominates Native GS, Official PGID-F, and SEAL across matched cohorts and operating points (vs PGID-F: 5.1x faster verify, +16.3pp 9-GS on matched-30, Imprint 0/4 vs 2/4, Reprompt+ 2/108 vs 104/108; vs SEAL: dominates across all 3 40k-calibrated points @12/@4/@2 where SEAL suffers robustness collapse at @12 [9-GS 45.6%, Regen-4 26.3%] and forgery collapse at @4/@2 [Imprint 2/4, Proxy Reprompt 16-26/36, target regen 10-15/18]). Against Paper-faithful SemBind GS-S (matched-20; 4-carrier full matrix incl. GS++ and authors' private training/binding code remain outside released scope), Stage 4D+5B/5C establish a clear architectural Pareto boundary: Commit-then-Steer wins training-free, 3.0x faster gen, 11.7x faster verify, instance-preserving fidelity, zero-shot SDXL/PRC transfer (incl. SDXL Live Imprint 0/4 vs 4/4), AND same-prompt instance-level security (Imprint hyb 1/4, sscd64 2/4 vs SemBind 4/4 BA=1.0000; Same-Prompt Reprompt+ hyb 2/24, sscd64 9/24 vs SemBind 24/24), whereas SemBind GS-S retains higher harsh-occlusion 9-GS survival (93.9% vs 81.7%), higher strong diffusion-regeneration joint survival (80/80 vs 65/80; Commit-Steer 192b auth is 80/80), and 0/72 cross-prompt Reprompt+ at >181/256.",
+  "head2head_summary_note": "Commit-then-Steer strictly dominates Native GS, Official PGID-F, and SEAL across matched cohorts and operating points, now backed by standard MS-COCO-1K FID/CLIP (vs Real-5K: sscd_64b 52.97->52.17, hyb 53.02->52.98; 1,000-image Clean blind joint 97.3%/97.2%) and statistically significant N=10 Live 151-step Imprint tests (Cross-Prompt: Commit-Steer 0/10 vs Native GS 10/10 [p=1.08e-5], SEAL @4 6/10 [p=0.0108], PGID-F >=167 5/10 [p=0.0325] / default 2/10; vs PGID-F also 5.1x faster verify, +16.3pp 9-GS on matched-30, Reprompt+ 2/108 vs 104/108; vs SEAL dominates across all 3 40k-calibrated points @12/@4/@2 where SEAL suffers robustness collapse at @12 [9-GS 45.6%, Regen-4 26.3%] and forgery collapse at @4/@2 [Imprint 6-7/10, Proxy Reprompt 16-26/36, target regen 10-15/18]). Against Paper-faithful SemBind GS-S (matched-20 & N=10 Imprint; 4-carrier full matrix incl. GS++ and authors' private training/binding code remain outside released scope), Stage 4D+5B/5C+6B establish a statistically significant architectural Pareto boundary: Commit-then-Steer wins training-free, 3.0x faster gen, 11.7x faster verify, instance-preserving low-drift trajectory, zero-shot SDXL/PRC transfer (incl. SDXL Live Imprint 0/4 vs 4/4), AND same-prompt instance-level security (N=10 Same-Prompt Imprint sscd_64b 3/10 [p=0.0031], hyb 5/10 [p=0.0325] vs SemBind 10/10 [all 30/30 ckpts BA=1.0000]; Same-Prompt Reprompt+ hyb 2/24, sscd64 9/24 vs SemBind 24/24), whereas SemBind GS-S retains higher harsh-occlusion 9-GS survival (93.9% vs 81.7%), higher strong diffusion-regeneration joint survival (80/80 vs 65/80; Commit-Steer 192b auth is 80/80), and 0/72 cross-prompt Reprompt+ at >181/256.",
   "server_workspace": {
     "host": "172.18.185.249",
     "root": "/data0/liyanlei/watermark_research",
@@ -70,5 +75,5 @@
   "max_concurrent_gpus": 3,
   "evaluation_policy": "Unchanged published top-venue author attacks only; full budgets; no adaptive or improved attacks; independent null calibration and evaluation; report achieved FPR and absolute TPR.",
   "execution_authorized": true,
-  "previous_state": "https://github.com/lylei5/watermark2/blob/3d73ce2b106f118a3edc8147e7d0f94a787fc98d/project_state.json"
+  "previous_state": "https://github.com/lylei5/watermark2/blob/6715175d96a29a4fe8498ea4ab374f4435980d42/project_state.json"
 }

@@ -1,0 +1,66 @@
+{
+  "n_prompts": 1000,
+  "n_real_ref_5k": 5000,
+  "n_real_ref_1k": 1000,
+  "fid_elapsed_seconds": 1460.418851999042,
+  "fid_sqrtm_vs_svd_max_diff": 3.7114401891358284e-05,
+  "fid": {
+    "vs_real_coco_5k": {
+      "native_gs_sscd_seed": 52.96597159815934,
+      "commit_steer_sscd64": 52.17338256786991,
+      "delta_sscd64": -0.7925890302894345,
+      "native_gs_hyb_seed": 53.02130591965431,
+      "commit_steer_hyb": 52.98020141164403,
+      "delta_hyb": -0.041104508010278096
+    },
+    "vs_real_coco_1k": {
+      "native_gs_sscd_seed": 68.15541166614787,
+      "commit_steer_sscd64": 67.56649395079194,
+      "delta_sscd64": -0.5889177153559331,
+      "native_gs_hyb_seed": 68.43949699084897,
+      "commit_steer_hyb": 68.60526760353292,
+      "delta_hyb": 0.1657706126839571
+    },
+    "paired_drift_1k": {
+      "sscd64_vs_paired_unguided": 19.005462378851803,
+      "hyb_vs_paired_unguided": 14.833810739033197,
+      "unguided_seed_sanity_check": 48.666182934067706
+    }
+  },
+  "sscd64": {
+    "n": 1000,
+    "lpips_mean": 0.114442926812917,
+    "lpips_median": 0.10966695472598076,
+    "lpips_std": 0.0409597132878768,
+    "psnr_mean": 24.521688518853747,
+    "psnr_median": 24.424656731178374,
+    "clip_base_mean": 0.26135349252820017,
+    "clip_guid_mean": 0.26050860748440025,
+    "clip_delta": -0.0008448850437999256,
+    "clean_auth_pass": 1000,
+    "clean_feat_pass": 973,
+    "clean_joint_pass": 973,
+    "clean_pay_ber_mean": 0.0,
+    "clean_d_blind_mean": 0.3852826070397449,
+    "sec_base_mean": 2.2478253622556803,
+    "sec_guid_total_mean": 9.480718262453506
+  },
+  "hyb_sscd32_clip32": {
+    "n": 1000,
+    "lpips_mean": 0.089223254179582,
+    "lpips_median": 0.0817389264702797,
+    "lpips_std": 0.04073152375236345,
+    "psnr_mean": 26.586953342421076,
+    "psnr_median": 26.32732959851306,
+    "clip_base_mean": 0.2638761497735977,
+    "clip_guid_mean": 0.2633668338805437,
+    "clip_delta": -0.0005093158930539743,
+    "clean_auth_pass": 1000,
+    "clean_feat_pass": 972,
+    "clean_joint_pass": 972,
+    "clean_pay_ber_mean": 0.0,
+    "clean_d_blind_mean": 0.33848040189325457,
+    "sec_base_mean": 2.249166484018322,
+    "sec_guid_total_mean": 10.680195107792096
+  }
+}
